@@ -2,5 +2,5 @@
 <PreferenceScreen android:title="Mods" android:key="@string/title_chat_settings"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kik="http://schemas.android.com/apk/res-auto">
     <kik.android.widget.preferences.KikEmptyPreference android:title="Mods:" />
-    <kik.android.widget.preferences.EnterKeySendPreference android:enabled="true" android:title="No pull" android:key="kinky.pull" android:summary="disables pull to search in convos" />
+    <kinky.Toggle android:enabled="true" android:title="No pull" android:key="kinky.pull" android:summary="disables pull to search in convos" />
 </PreferenceScreen>
