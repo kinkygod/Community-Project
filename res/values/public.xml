@@ -2060,6 +2060,7 @@
     <public type="xml" name="tell_a_friend_white_selector" id="0x7f07001f" />
     <public type="xml" name="topbar_button_selector" id="0x7f070020" />
     <public type="xml" name="topbar_button_selector_transparent" id="0x7f070021" />
+    <public type="xml" name="preferences_mods" id="0x7f070022" />
     <public type="raw" name="ca_certificates" id="0x7f080000" />
     <public type="raw" name="kik_icon" id="0x7f080001" />
     <public type="raw" name="lut_deeply" id="0x7f080002" />
