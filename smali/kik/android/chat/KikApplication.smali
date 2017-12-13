@@ -18,6 +18,8 @@
 
 .field private static final v:J
 
+.field public static Context:Lkik/android/chat/KikApplication;
+
 .field private static w:Lkik/android/chat/KikApplication;
 
 .field private static x:Lkik/android/KikNotificationHandler;
@@ -940,6 +942,8 @@
 
     .line 900
     sput-object p0, Lkik/android/chat/KikApplication;->w:Lkik/android/chat/KikApplication;
+    
+    sput-object p0, Lkik/android/chat/KikApplication;->Context:Lkik/android/chat/KikApplication;
 
     .line 901
     return-void
