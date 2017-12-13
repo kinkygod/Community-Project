@@ -1055,6 +1055,24 @@
     return-void
 .end method
 
+.method public onModsTapped()V
+    .locals 1
+    .annotation build Lbutterknife/OnClick;
+        value = {
+            0x7f100435
+        }
+    .end annotation
+
+    .prologue
+    .line 389
+    const v0, 0x7f070022
+
+    invoke-direct {p0, v0}, Lkik/android/chat/fragment/UserProfileFragment;->a(I)V
+
+    .line 390
+    return-void
+.end method
+
 .method public onChatTapped()V
     .locals 4
     .annotation build Lbutterknife/OnClick;
