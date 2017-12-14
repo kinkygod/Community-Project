@@ -3,7 +3,7 @@
   xmlns:android="http://schemas.android.com/apk/res/android">
     <FrameLayout android:layout_gravity="center|right" android:id="@id/mic_layout" android:background="@null" android:clickable="false" android:clipChildren="false" android:layout_width="@dimen/mic_record_bg" android:layout_height="@dimen/mic_record_bg" android:layout_marginRight="-11.0dip">
         <ImageView android:layout_gravity="center" android:id="@id/mic_recording_bg" android:visibility="gone" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/mic_recording_bg" android:scaleType="center" />
-        <ImageView android:layout_gravity="center" android:id="@id/mic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/voice_msg_icon" android:scaleType="center" android:adjustViewBounds="false" />
+        <ImageView android:layout_gravity="center" android:id="@id/mic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/voice_msg_icon" android:scaleType="center" android:adjustViewBounds="false" android:tint="@color/vip_media_bar_voice_record_mic_icon_tint" />
     </FrameLayout>
     <com.nhaarman.supertooltips.ToolTipRelativeLayout android:id="@id/tooltip_mic" android:layout_width="fill_parent" android:layout_height="fill_parent" />
 </FrameLayout>
