@@ -843,4 +843,7 @@
     <attr name="webAppCount" format="integer" />
     <attr name="onTouch" format="reference" />
     <attr name="KinkyBackground" format="color" />
+    <attr name="KinkySecondaryBackground" format="color" />
+    <attr name="KinkyTheme" format="color" />
+    <attr name="KinkySecondaryTheme" format="color" />
 </resources>
