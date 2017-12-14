@@ -238,4 +238,5 @@
     <color name="wubble_overlay">#80888888</color>
     <color name="icon_tint">#ff0000ff</color>
     <color name="vip_media_bar_voice_record_mic_icon_tint">#ffffffff</color>
-</resources>
+    <color name="Vip_chat_search_dividers">#ff151515</color>
+    </resources>
