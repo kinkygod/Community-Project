@@ -247,5 +247,8 @@
     <color name="vip_no_new_chats_text_tint">#ffffffff</color>
     <color name="vip_no_new_people_text_tint">#ffffffff</color>
     <color name="kinky_background">#ff262626</color>
+    <color name="kinky_background_two">#ff111111</color>
+    <color name="kinky_theme">#ff2196F3</color>
+    <color name="kinky_theme_2">#ffcccccc</color>
     </resources>
 <!-- to talk to each other use comments. Btw don't use capital letters in color names. --> 
