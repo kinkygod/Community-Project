@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="Developers"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kik="http://schemas.android.com/apk/res-auto">
+	<kik.android.widget.preferences.KikEmptyPreference android:title="So i can say i did something in class" />
+    <kik.android.widget.preferences.HelpPreference android:enabled="true" android:title="Suh Dudes Lol Dev Page" android:summary="Uhhhhh Soup">
+    </kik.android.widget.preferences.HelpPreference>
+</PreferenceScreen>
+<!-- @pluto you had a title that went to a string that didn't exist and i wanted to change the file name -->
