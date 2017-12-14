@@ -241,7 +241,8 @@
     <color name="Vip_chat_search_dividers">#ff151515</color>
     <color name="Vip_new_chat_list_background_color">#ff151515</color>
     <color name="Vip_new_chats_topbar">#ff1f1f1f</color>
-    <color name=Vip_mute_icon_tint_nctb">#ffffffff</color>
+    <color name="Vip_mute_icon_tint_nctb">#ffffffff</color>
+    <color name="you_forgot_a_quote_there_so_pluto_fixed">#ff00f6ff</color>
     <color name="Vip_trash_icon_tint">#ffffffff</color>
     <color name="Vip_no_new_chats_text_tint">#ffffffff</color>
     <color name="Vip_no_new_people_text_tint">#ffffffff</color>
