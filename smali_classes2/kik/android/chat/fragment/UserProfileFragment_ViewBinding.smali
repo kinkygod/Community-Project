@@ -23,6 +23,8 @@
 
 .field private h:Landroid/view/View;
 
+.field private i:Landroid/view/View;
+
 
 # direct methods
 .method public constructor <init>(Lkik/android/chat/fragment/UserProfileFragment;Landroid/view/View;)V
@@ -197,8 +199,27 @@
     invoke-direct {v1, p0, p1}, Lkik/android/chat/fragment/UserProfileFragment_ViewBinding$7;-><init>(Lkik/android/chat/fragment/UserProfileFragment_ViewBinding;Lkik/android/chat/fragment/UserProfileFragment;)V
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
+    
     .line 96
+    const v0, 0x7f100435
+
+    const-string v1, "method \'onModsTapped\'"
+
+    invoke-static {p2, v0, v1}, Lbutterknife/internal/Utils;->findRequiredView(Landroid/view/View;ILjava/lang/String;)Landroid/view/View;
+
+    move-result-object v0
+
+    .line 97
+    iput-object v0, p0, Lkik/android/chat/fragment/UserProfileFragment_ViewBinding;->i:Landroid/view/View;
+
+    .line 98
+    new-instance v1, Lkik/android/chat/fragment/UserProfileFragment_ViewBinding$8;
+
+    invoke-direct {v1, p0, p1}, Lkik/android/chat/fragment/UserProfileFragment_ViewBinding$8;-><init>(Lkik/android/chat/fragment/UserProfileFragment_ViewBinding;Lkik/android/chat/fragment/UserProfileFragment;)V
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 102
     return-void
 .end method
 
@@ -289,7 +310,15 @@
 
     .line 121
     iput-object v1, p0, Lkik/android/chat/fragment/UserProfileFragment_ViewBinding;->h:Landroid/view/View;
-
+    
     .line 122
+    iget-object v0, p0, Lkik/android/chat/fragment/UserProfileFragment_ViewBinding;->i:Landroid/view/View;
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 123
+    iput-object v1, p0, Lkik/android/chat/fragment/UserProfileFragment_ViewBinding;->i:Landroid/view/View;
+
+    .line 124
     return-void
 .end method
