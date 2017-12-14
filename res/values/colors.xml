@@ -239,4 +239,10 @@
     <color name="icon_tint">#ff0000ff</color>
     <color name="vip_media_bar_voice_record_mic_icon_tint">#ffffffff</color>
     <color name="Vip_chat_search_dividers">#ff151515</color>
+    <color name="Vip_new_chat_list_background_color">#ff151515</color>
+    <color name="Vip_new_chats_topbar">#ff1f1f1f</color>
+    <color name=Vip_mute_icon_tint_nctb">#ffffffff</color>
+    <color name="Vip_trash_icon_tint">#ffffffff</color>
+    <color name="Vip_no_new_chats_text_tint">#ffffffff</color>
+    <color name="Vip_no_new_people_text_tint">#ffffffff</color>
     </resources>
