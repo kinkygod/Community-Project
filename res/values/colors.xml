@@ -249,6 +249,7 @@
     <color name="kinky_background">#ff262626</color>
     <color name="kinky_background_two">#ff111111</color>
     <color name="kinky_theme">#ff2196F3</color>
-    <color name="kinky_theme_2">#ffcccccc</color>
+    <color name="kinky_theme_two">#ffcccccc</color>
     </resources>
-<!-- to talk to each other use comments. Btw don't use capital letters in color names. --> 
+<!-- to talk to each other use comments. Btw don't use capital letters in color names. 
+ Also don't use numbers -->
