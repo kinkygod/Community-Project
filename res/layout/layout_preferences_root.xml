@@ -3,37 +3,42 @@
   xmlns:android="http://schemas.android.com/apk/res/android">
     <View android:background="@color/list_divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/list_divider_line_height" />
     <LinearLayout android:id="@id/prefs_root_account" style="@style/PreferencesRow.Container">
-        <ImageView android:src="@drawable/ic_settings_account" style="@style/PreferencesRow.Icon" />
+        <ImageView android:tint="@color/settings_icon_tint" android:src="@drawable/ic_settings_account" style="@style/PreferencesRow.Icon" />
         <kik.android.widget.RobotoTextView android:text="@string/title_your_account_info" style="@style/PreferencesRow.Title" />
     </LinearLayout>
     <View android:background="@color/list_divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/list_divider_line_height" />
     <LinearLayout android:id="@id/prefs_root_kik_code" style="@style/PreferencesRow.Container">
-        <ImageView android:src="@drawable/ic_settings_kik_code" style="@style/PreferencesRow.Icon" />
+        <ImageView android:tint="@color/settings_icon_tint" android:src="@drawable/ic_settings_kik_code" style="@style/PreferencesRow.Icon" />
         <kik.android.widget.RobotoTextView android:text="@string/your_code" style="@style/PreferencesRow.Title" />
     </LinearLayout>
     <View android:background="@color/list_divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/list_divider_line_height" />
     <LinearLayout android:id="@id/prefs_root_web_history" style="@style/PreferencesRow.Container">
-        <ImageView android:src="@drawable/ic_settings_web_history" style="@style/PreferencesRow.Icon" />
+        <ImageView android:tint="@color/settings_icon_tint" android:src="@drawable/ic_settings_web_history" style="@style/PreferencesRow.Icon" />
         <kik.android.widget.RobotoTextView android:text="@string/title_your_web_history" style="@style/PreferencesRow.Title" />
     </LinearLayout>
     <View android:background="@color/list_divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/list_divider_line_height" />
+    <LinearLayout android:id="@id/dev_tab" style="@style/PreferencesRow.Container">
+        <ImageView android:tint="@color/settings_icon_tint" android:src="@drawable/img_emoji_smile_green" style="@style/PreferencesRow.Icon" />
+        <kik.android.widget.RobotoTextView android:text="Developers" style="@style/PreferencesRow.Title" />
+    </LinearLayout>
+    <View android:background="@color/list_divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/list_divider_line_height" />
     <LinearLayout android:id="@id/mod_tab" style="@style/PreferencesRow.Container">
-        <ImageView android:src="@drawable/ic_settings" style="@style/PreferencesRow.Icon" />
+        <ImageView android:tint="@color/settings_icon_tint" android:src="@drawable/ic_settings" style="@style/PreferencesRow.Icon" />
         <kik.android.widget.RobotoTextView android:text="Mod Settings" style="@style/PreferencesRow.Title" />
     </LinearLayout>
     <View android:background="@color/list_divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/list_divider_line_height" />
     <LinearLayout android:id="@id/prefs_root_notifications" style="@style/PreferencesRow.Container">
-        <ImageView android:src="@drawable/ic_settings_notifications" style="@style/PreferencesRow.Icon" />
+        <ImageView android:tint="@color/settings_icon_tint" android:src="@drawable/ic_settings_notifications" style="@style/PreferencesRow.Icon" />
         <kik.android.widget.RobotoTextView android:text="@string/title_notifications" style="@style/PreferencesRow.Title" />
     </LinearLayout>
     <View android:background="@color/list_divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/list_divider_line_height" />
     <LinearLayout android:id="@id/prefs_root_chat" style="@style/PreferencesRow.Container">
-        <ImageView android:src="@drawable/ic_settings_chat" style="@style/PreferencesRow.Icon" />
+        <ImageView android:tint="@color/settings_icon_tint" android:src="@drawable/ic_settings_chat" style="@style/PreferencesRow.Icon" />
         <kik.android.widget.RobotoTextView android:text="@string/title_chat_settings" style="@style/PreferencesRow.Title" />
     </LinearLayout>
     <View android:background="@color/list_divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/list_divider_line_height" />
     <LinearLayout android:id="@id/prefs_root_privacy" style="@style/PreferencesRow.Container">
-        <ImageView android:src="@drawable/ic_settings_privacy" style="@style/PreferencesRow.Icon" />
+        <ImageView android:tint="@color/settings_icon_tint" android:src="@drawable/ic_settings_privacy" style="@style/PreferencesRow.Icon" />
         <kik.android.widget.RobotoTextView android:text="@string/title_privacy" style="@style/PreferencesRow.Title" />
     </LinearLayout>
     <View android:background="@color/list_divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/list_divider_line_height" />
