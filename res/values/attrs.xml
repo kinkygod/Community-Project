@@ -842,4 +842,5 @@
     <attr name="controls_color" format="integer" />
     <attr name="webAppCount" format="integer" />
     <attr name="onTouch" format="reference" />
+    <attr name="KinkyBackground" format="color" />
 </resources>
