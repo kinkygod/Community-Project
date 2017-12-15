@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
     <RelativeLayout android:id="@id/topbar" android:background="@color/gray_1" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="@dimen/native_topbar_height" android:layout_alignParentTop="true">
         <include android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/button_settings" android:layout_alignParentLeft="true" layout="@layout/kik_back_button" />
         <ImageView android:id="@id/button_settings" android:background="?selectableItemBackgroundBorderless" android:layout_width="@dimen/material_navbar_button_width" android:layout_height="fill_parent" android:src="@drawable/ic_overflow_menu" android:scaleType="centerInside" android:layout_alignParentRight="true" />

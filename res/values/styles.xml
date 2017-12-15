@@ -225,10 +225,10 @@
     </style>
     <style name="AppTheme" parent="@style/BaseAppTheme">
         <item name="selectableItemBackground">@drawable/selectable_item_background_grey</item>
-        <item name="KinkyBackground">@color/kinky_background"</item>
+       <!-- <item name="KinkyBackground">@color/kinky_background"</item>
         <item name="KinkySecondaryBackground">@color/kinky_background_two"</item>
         <item name="KinkyTheme">@color/kinky_theme"</item>
-        <item name="KinkySecondaryTheme">@color/kinky_theme_two"</item>
+        <item name="KinkySecondaryTheme">@color/kinky_theme_two"</item> -->
     </style>
     <style name="Base.TextAppearance.AppCompat" parent="@android:style/TextAppearance">
         <item name="android:textSize">@dimen/abc_text_size_body_1_material</item>

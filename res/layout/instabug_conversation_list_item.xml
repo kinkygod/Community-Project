@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:id="@id/conversation_list_item_container" android:background="@null" style="@style/InstabugChatsItemContainer"
-  xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout android:id="@id/conversation_list_item_container" android:background="@null" style="@style/InstabugChatsItemContainer" xmlns:android="http://schemas.android.com/apk/res/android">
     <com.instabug.library.view.CircularImageView android:layout_gravity="center" android:id="@id/instabug_message_sender_avatar" android:layout_width="@dimen/instabug_chat_item_avatar_size" android:layout_height="@dimen/instabug_chat_item_avatar_size" android:layout_marginRight="16.0dip" android:src="@drawable/instabug_ic_avatar" />
     <LinearLayout android:orientation="horizontal" android:id="@id/instabug_conversation_item" android:layout_width="fill_parent" android:layout_height="fill_parent">
         <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.7">

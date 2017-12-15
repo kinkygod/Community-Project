@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merge
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kik="http://schemas.android.com/apk/res-auto">
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kik="http://schemas.android.com/apk/res-auto">
     <FrameLayout android:id="@id/abm_matches_image_3_container" android:background="@drawable/abm_matches_bar_circle" android:duplicateParentState="true" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="-7.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
         <com.kik.cache.SoftwareContactImageView android:layout_gravity="center" android:id="@id/abm_matches_image_3" android:layout_width="22.0dip" android:layout_height="22.0dip" kik:nullBackground="@drawable/img_profile_small" />
     </FrameLayout>

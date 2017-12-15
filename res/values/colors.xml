@@ -250,8 +250,8 @@
     <color name="kinky_background_two">#ff111111</color>
     <color name="kinky_theme">#ff2196F3</color>
     <color name="kinky_theme_two">#ffcccccc</color>
-    <color name="<color name="vip_trophy_icon_tint">#ffffffff</color>
-    <color name="<color name="vip_share_icon_tint">#ffffffff</color>
+    <color name="vip_trophy_icon_tint">#ffffffff</color>
+    <color name="vip_share_icon_tint">#ffffffff</color>
     <color name="vip_topbar_underline_color">#ffffffff</color>
     <color name="vip_settings_topbar">#ffffffff</color>
     <color name="vip_settings_profile_username">#ffffffff</color>
@@ -277,33 +277,32 @@
     <color name="vip_tab_trending_selector">#ffffffff</color>
     <color name="vip_tab_featured_selector">#ffffffff</color>
     <color name="vip_tab_emojis_selector">#ffffffff</color>
-<color name="vip_bio_text_color">#ffffffff</color>
-<color name="vip_contact_thumb_bg">#ffffffff</color>
-<color name="vip_bio_selector_text">#ffffffff</color>
-<color name="vip_days_on_kik_text">#ffffffff</color>
-<color name="vip_day_count">#ffffffff</color>
-<color name="vip_done_text_color">#ffffffff</color>
-<color name="vip_error_retry_text_color">#ffffffff</color>
-<color name="vip_media_bar_bg">#ffffffff</color>
-<color name="vip_media_bar_typing_text">#ffffffff</color>
-<color name="vip_media_bar_hint_text">#ffffffff</color>
-<color name="vip_sticker_match_with_chat_bg_color">#ff1f1f1f</color>
-<color name="vip_top_pref_divider_color">#ffffffff</color>
-<color name="vip_bottom_pref_divider_color">#ffffffff</color>
-<color name="vip_let_friends_find_me_text_color">#ffffffff</color>
-<color name="vip_smiley_tray_overlay">#ffffffff</color>
-<color name="vip_media_bar_widgets_smiley_widget_background">#ffffffff</color>
-<color name="vip_media_bar_widgets_smiley_widget_tooltip_tap_and_hold_text">#ffffffff</color>
-<color name="vip_media_bar_widgets_smiley_widget_bottom_bar_divider">#ffffffff</color>
-<color name="vip_media_bar_widgets_smiley_widget_bottom_bar_background">#ffffffff</color>
-<color name="vip_media_bar_widgets_smiley_widget_bot">#ffffffff</color>
-<color name="vip_sticker_removed_text_color">#ffffffff</color>
-<color name="vip_trophy_name_text_color">#ffffffff</color>
-<color name="vip_trophy_case_divider">#ffffffff</color>
-<color name="vip_media_bar_widgets_web_widget_background">#ffffffff</color>
-<color name="vip_media_bar_widgets_sticker_widget_background">#ffffffff</color>
-<color name="vip_media_bar_widgets_smiley_widget_tooltip_background">#ffffffff</color>
-
-    </resources>
+	<color name="vip_bio_text_color">#ffffffff</color>
+	<color name="vip_contact_thumb_bg">#ffffffff</color>
+	<color name="vip_bio_selector_text">#ffffffff</color>
+	<color name="vip_days_on_kik_text">#ffffffff</color>
+	<color name="vip_day_count">#ffffffff</color>
+	<color name="vip_done_text_color">#ffffffff</color>
+	<color name="vip_error_retry_text_color">#ffffffff</color>
+	<color name="vip_media_bar_bg">#ffffffff</color>
+	<color name="vip_media_bar_typing_text">#ffffffff</color>
+	<color name="vip_media_bar_hint_text">#ffffffff</color>
+	<color name="vip_sticker_match_with_chat_bg_color">#ff1f1f1f</color>
+	<color name="vip_top_pref_divider_color">#ffffffff</color>
+	<color name="vip_bottom_pref_divider_color">#ffffffff</color>
+	<color name="vip_let_friends_find_me_text_color">#ffffffff</color>
+	<color name="vip_smiley_tray_overlay">#ffffffff</color>
+	<color name="vip_media_bar_widgets_smiley_widget_background">#ffffffff</color>
+	<color name="vip_media_bar_widgets_smiley_widget_tooltip_tap_and_hold_text">#ffffffff</color>
+	<color name="vip_media_bar_widgets_smiley_widget_bottom_bar_divider">#ffffffff</color>
+	<color name="vip_media_bar_widgets_smiley_widget_bottom_bar_background">#ffffffff</color>
+	<color name="vip_media_bar_widgets_smiley_widget_bot">#ffffffff</color>
+	<color name="vip_sticker_removed_text_color">#ffffffff</color>
+	<color name="vip_trophy_name_text_color">#ffffffff</color>
+	<color name="vip_trophy_case_divider">#ffffffff</color>
+	<color name="vip_media_bar_widgets_web_widget_background">#ffffffff</color>
+	<color name="vip_media_bar_widgets_sticker_widget_background">#ffffffff</color>
+	<color name="vip_media_bar_widgets_smiley_widget_tooltip_background">#ffffffff</color>
+</resources>
 <!-- to talk to each other use comments. Btw don't use capital letters in color names. 
  Also don't use numbers -->

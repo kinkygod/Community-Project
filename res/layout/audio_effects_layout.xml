@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:orientation="horizontal" android:background="#ff101010" android:clickable="true" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:layout_gravity="left" android:background="ff101010" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="53.0dip">
+<FrameLayout android:orientation="horizontal" android:background="#ff101010" android:clickable="true" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="left" android:background="#ff101010" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="53.0dip">
         <FrameLayout android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
             <ToggleButton android:layout_gravity="center" android:id="@id/effect_baby" android:tag="0" android:background="@drawable/voice_effect_baby" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="32.0dip" android:layout_height="32.0dip" android:textOn="" android:textOff="" />
         </FrameLayout>

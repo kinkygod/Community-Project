@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kik="http://schemas.android.com/apk/res-auto">
+<FrameLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kik="http://schemas.android.com/apk/res-auto">
     <ScrollView android:id="@id/login_scroll" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/multi_page_reg_margin_top" android:fillViewport="true">
         <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
             <kik.android.widget.RobotoTextView android:textSize="22.0sp" android:textColor="#ff3a3b40" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/welcome_back_no_exclamation" />
