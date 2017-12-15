@@ -278,6 +278,17 @@
     <color name="vip_tab_trending_selector">#ffffffff</color>
     <color name="vip_tab_featured_selector">#ffffffff</color>
     <color name="vip_tab_emojis_selector">#ffffffff</color>
+<color name="vip_bio_text_color">#ffffffff</color>
+<color name="vip_contact_thumb_bg">#ffffffff</color>
+<color name="vip_bio_selector_text">#ffffffff</color>
+<color name="vip_days_on_kik_text">#ffffffff</color>
+<color name="vip_day_count">#ffffffff</color>
+<color name="vip_done_text_color">#ffffffff</color>
+<color name="vip_error_retry_text_color">#ffffffff</color>
+<color name="vip_media_bar_bg">#ffffffff</color>
+<color name="vip_media_bar_typing_text">#ffffffff</color>
+<color name="vip_media_bar_hint_text">#ffffffff</color>
+<color name="vip_expression_bar_background_color">#ffffffff</color>
     </resources>
 <!-- to talk to each other use comments. Btw don't use capital letters in color names. 
  Also don't use numbers -->
