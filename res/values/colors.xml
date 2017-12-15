@@ -259,7 +259,6 @@
     <color name="vip_settings_set_photo_icon_tint">#ffffffff</color>
     <color name="vip_settings_profile_pic_container_background">#ffffffff</color>
     <color name="vip_settings_background">#ffffffff</color>
-    <color name="vip_settings_background">#ffffffff</color>
     <color name="vip_pref_top_bar">#ffffffff</color>
     <color name="vip_gallery_list_bg">#ffffffff</color>
     <color name="vip_mediabar_gallerywidget_outline_text_color">#ffffffff</color>
@@ -288,7 +287,23 @@
 <color name="vip_media_bar_bg">#ffffffff</color>
 <color name="vip_media_bar_typing_text">#ffffffff</color>
 <color name="vip_media_bar_hint_text">#ffffffff</color>
-<color name="vip_expression_bar_background_color">#ffffffff</color>
+<color name="vip_sticker_match_with_chat_bg_color">#ff1f1f1f</color>
+<color name="vip_top_pref_divider_color">#ffffffff</color>
+<color name="vip_bottom_pref_divider_color">#ffffffff</color>
+<color name="vip_let_friends_find_me_text_color">#ffffffff</color>
+<color name="vip_smiley_tray_overlay">#ffffffff</color>
+<color name="vip_media_bar_widgets_smiley_widget_background">#ffffffff</color>
+<color name="vip_media_bar_widgets_smiley_widget_tooltip_tap_and_hold_text">#ffffffff</color>
+<color name="vip_media_bar_widgets_smiley_widget_bottom_bar_divider">#ffffffff</color>
+<color name="vip_media_bar_widgets_smiley_widget_bottom_bar_background">#ffffffff</color>
+<color name="vip_media_bar_widgets_smiley_widget_bot">#ffffffff</color>
+<color name="vip_sticker_removed_text_color">#ffffffff</color>
+<color name="vip_trophy_name_text_color">#ffffffff</color>
+<color name="vip_trophy_case_divider">#ffffffff</color>
+<color name="vip_media_bar_widgets_web_widget_background">#ffffffff</color>
+<color name="vip_media_bar_widgets_sticker_widget_background">#ffffffff</color>
+<color name="vip_media_bar_widgets_smiley_widget_tooltip_background">#ffffffff</color>
+
     </resources>
 <!-- to talk to each other use comments. Btw don't use capital letters in color names. 
  Also don't use numbers -->
