@@ -266,6 +266,18 @@
     <color name="vip_outline_selected_gallery_background">#ffffffff</color>
     <color name="vip_gallery_video_icon">#ffffffff</color>
     <color name="vip_viddur_text_color">#ffffffff</color>
+    <color name="vip_gif_widgets_background">#ffffffff</color>
+    <color name="vip_gif_widgets_txt_color">#ffffffff</color>
+    <color name="vip_fav_gif_text_color">#ffffffff</color>
+    <color name="vip_gif_search_bar_bg">#ffffffff</color>
+    <color name="vip_gif_search_text_color">#ffffffff</color>
+    <color name="vip_gif_search_text_hint">#ffffffff</color>
+    <color name="vip_gif_search_underlin_color">#ffffffff</color>
+    <color name="ip_gif_delete_icon_tint">#ffffffff</color>
+    <color name="vip_fav_tab_selector">#ffffffff</color>
+    <color name="vip_tab_trending_selector">#ffffffff</color>
+    <color name="vip_tab_featured_selector">#ffffffff</color>
+    <color name="vip_tab_emojis_selector">#ffffffff</color>
     </resources>
 <!-- to talk to each other use comments. Btw don't use capital letters in color names. 
  Also don't use numbers -->
