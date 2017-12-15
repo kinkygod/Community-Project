@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:tag="layout/talkto_cover_0" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+<LinearLayout android:orientation="vertical" android:tag="layout/talkto_cover_0" android:background="#ff1f1f1f" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <View android:tag="binding_1" android:background="@color/grey_shadow" android:layout_width="fill_parent" android:layout_height="1.0dip" />
     <FrameLayout android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content">
