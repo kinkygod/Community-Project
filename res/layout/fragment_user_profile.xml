@@ -10,9 +10,9 @@
                                 <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_set_photo" />
                                 <TextView android:textSize="14.0sp" android:textColor="@color/vip_settings_set_photo_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_photo" />
                             </LinearLayout>
-                            <kik.Android.widget.CircleCroppedImageView android:id="@id/profile_pic" android:tag="binding_4" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+                            <kik.android.widget.CircleCroppedImageView android:id="@id/profile_pic" android:tag="binding_4" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
                         </FrameLayout>
-                        <kik.Android.widget.EmojiStatusCircleView android:layout_gravity="bottom|center|right" android:id="@id/emoji_status_circle_view" android:tag="binding_5" style="@style/KikEmojiStatus.Large" />
+                        <kik.android.widget.EmojiStatusCircleView android:layout_gravity="bottom|center|right" android:id="@id/emoji_status_circle_view" android:tag="binding_5" style="@style/KikEmojiStatus.Large" />
                     </FrameLayout>
                     <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/profile_username_button" android:tag="binding_6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="16.0dip">
                         <TextView android:textSize="20.0sp" android:textColor="@color/vip_settings_profile_username" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/profile_name" android:tag="binding_7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:maxLines="1" />
