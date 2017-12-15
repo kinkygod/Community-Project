@@ -259,6 +259,8 @@
     <color name="vip_settings_set_photo_icon_tint">#ffffffff</color>
     <color name="vip_settings_profile_pic_container_background">#ffffffff</color>
     <color name="vip_settings_background">#ffffffff</color>
+<color name="vip_settings_background">#ffffffff</color>
+<color name="vip_icon_share">#ffffffff</color>
     </resources>
 <!-- to talk to each other use comments. Btw don't use capital letters in color names. 
  Also don't use numbers -->
