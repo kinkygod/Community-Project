@@ -250,6 +250,15 @@
     <color name="kinky_background_two">#ff111111</color>
     <color name="kinky_theme">#ff2196F3</color>
     <color name="kinky_theme_two">#ffcccccc</color>
+    <color name="<color name="vip_trophy_icon_tint">#ffffffff</color>
+    <color name="<color name="vip_share_icon_tint">#ffffffff</color>
+    <color name="vip_topbar_underline_color">#ffffffff</color>
+    <color name="vip_settings_topbar">#ffffffff</color>
+    <color name="vip_settings_profile_username">#ffffffff</color>
+    <color name="vip_settings_set_photo_text">#ffffffff</color>
+    <color name="vip_settings_set_photo_icon_tint">#ffffffff</color>
+    <color name="vip_settings_profile_pic_container_background">#ffffffff</color>
+    <color name="vip_settings_background">#ffffffff</color>
     </resources>
 <!-- to talk to each other use comments. Btw don't use capital letters in color names. 
  Also don't use numbers -->
