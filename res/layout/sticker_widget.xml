@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:tag="layout/sticker_widget_0" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+<FrameLayout android:tag="layout/sticker_widget_0" android:background="@color/vip_media_bar_widgets_sticker_widget_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <kik.android.widget.StickerPackViewPager android:id="@id/sticker_view_pager" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/sticker_tab_bar_height" />
     <FrameLayout android:gravity="center" android:layout_gravity="bottom" android:id="@id/sticker_tab_bar" android:layout_width="fill_parent" android:layout_height="@dimen/sticker_tab_bar_height">
