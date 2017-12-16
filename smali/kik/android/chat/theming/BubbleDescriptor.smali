@@ -57,7 +57,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 21
-    const/high16 v0, -0x1000000
+    const/high16 v0, -0x10000
 
     iput v0, p0, Lkik/android/chat/theming/BubbleDescriptor;->f:I
 
