@@ -2409,4 +2409,6 @@ full screen"</string>
     <string name="you_added_bot_attribution_message">You started chatting with the bot %1$s</string>
     <string name="you_are_video_chatting">You Are Video Chatting</string>
     <string name="you_need_to_accept_terms">"You need to accept Kik's Terms and Privacy Policy to sign up."</string>
+    <string name="kinky_devs">"Developers"</string>
+    <string name="kinky_help_key">kik.help</string>
 </resources>
