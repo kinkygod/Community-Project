@@ -43,7 +43,7 @@
 <color name="camera_icon_button_click_state">#55ffffff</color>
 <color name="camera_send_selector_pressed">#ffe0e1e9</color>
 <color name="camera_white_transparent">#4dffffff</color>
-<color name="chat_background_color">#ffeeeeee</color>
+<color name="chat_background_color">@color/black</color>
 <color name="chat_bubble_audio">#ff8241f3</color>
 <color name="chat_bubble_colour_black">#ff000000</color>
 <color name="chat_bubble_colour_charcoal">#ff373a4b</color>
@@ -287,7 +287,7 @@
 <color name="vip_media_bar_bg">#ff1f1f1f</color>
 <color name="vip_media_bar_typing_text">#ffffffff</color>
 <color name="vip_media_bar_hint_text">#ff151515</color>
-<color name="vip_sticker_match_with_chat_bg_color">#ff000000</color>
+<color name="vip_sticker_match_with_chat_bg_color">@color/black</color>
 <color name="vip_top_pref_divider_color">#ff151515</color>
 <color name="vip_bottom_pref_divider_color">#ff151515</color>
 <color name="vip_let_friends_find_me_text_color">#ffffffff</color>
