@@ -18,7 +18,7 @@
 
 .field private static final v:J
 
-.field public static Context:Lkik/android/chat/KikApplication;
+.field public static kinkyContext:Lkik/android/chat/KikApplication;
 
 .field private static w:Lkik/android/chat/KikApplication;
 
@@ -159,7 +159,7 @@
 
 .field private aJ:Z
 
-.field private aK:Lkik/android/util/bq;
+.field public aK:Lkik/android/util/bq;
 
 .field private aL:Lkik/core/interfaces/t;
 
@@ -943,7 +943,7 @@
     .line 900
     sput-object p0, Lkik/android/chat/KikApplication;->w:Lkik/android/chat/KikApplication;
     
-    sput-object p0, Lkik/android/chat/KikApplication;->Context:Lkik/android/chat/KikApplication;
+    sput-object p0, Lkik/android/chat/KikApplication;->kinkyContext:Lkik/android/chat/KikApplication;
 
     .line 901
     return-void
