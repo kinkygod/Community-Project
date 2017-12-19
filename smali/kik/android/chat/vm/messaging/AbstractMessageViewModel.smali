@@ -3261,7 +3261,7 @@
     return-object v0
 
     :cond_0
-    const/high16 v0, -0x10000
+    const/high16 v0, -0xFFCC67
 
     goto :goto_0
 .end method
