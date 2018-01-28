@@ -22,7 +22,7 @@
     iput-object p1, p0, Lcom/kik/cards/browser/OnDemandCaptchaFragment_ViewBinding;->a:Lcom/kik/cards/browser/OnDemandCaptchaFragment;
 
     .line 21
-    const v0, 0x7f10039d
+    const v0, 0x7f100399
 
     const-string v1, "field \'_errorView\'"
 
@@ -33,7 +33,7 @@
     iput-object v0, p1, Lcom/kik/cards/browser/OnDemandCaptchaFragment;->_errorView:Landroid/view/View;
 
     .line 22
-    const v0, 0x7f10042e
+    const v0, 0x7f100425
 
     const-string v1, "field \'_errorRefreshButton\'"
 

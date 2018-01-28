@@ -14,7 +14,7 @@
 
 
 # instance fields
-.field protected a:Lcom/kik/storage/p;
+.field protected a:Lcom/kik/storage/s;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -260,7 +260,7 @@
     invoke-virtual {v0}, Landroid/media/MediaMetadataRetriever;->release()V
 
     .line 107
-    iget-object v0, p0, Lkik/android/video/f;->a:Lcom/kik/storage/p;
+    iget-object v0, p0, Lkik/android/video/f;->a:Lcom/kik/storage/s;
 
     invoke-static {}, Ljava/util/UUID;->randomUUID()Ljava/util/UUID;
 
@@ -270,7 +270,7 @@
 
     move-result-object v1
 
-    invoke-interface {v0, v1}, Lcom/kik/storage/p;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {v0, v1}, Lcom/kik/storage/s;->b(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 

@@ -62,7 +62,7 @@
 .end method
 
 .method static synthetic a(Landroid/support/v7/widget/RecyclerView$SmoothScroller;II)V
-    .locals 3
+    .locals 4
 
     .prologue
     .line 10914
@@ -113,9 +113,9 @@
 
     iget-object v2, v0, Landroid/support/v7/widget/RecyclerView;->mState:Landroid/support/v7/widget/RecyclerView$State;
 
-    iget-object v2, p0, Landroid/support/v7/widget/RecyclerView$SmoothScroller;->g:Landroid/support/v7/widget/RecyclerView$SmoothScroller$Action;
+    iget-object v3, p0, Landroid/support/v7/widget/RecyclerView$SmoothScroller;->g:Landroid/support/v7/widget/RecyclerView$SmoothScroller$Action;
 
-    invoke-virtual {p0, v1, v2}, Landroid/support/v7/widget/RecyclerView$SmoothScroller;->a(Landroid/view/View;Landroid/support/v7/widget/RecyclerView$SmoothScroller$Action;)V
+    invoke-virtual {p0, v1, v2, v3}, Landroid/support/v7/widget/RecyclerView$SmoothScroller;->a(Landroid/view/View;Landroid/support/v7/widget/RecyclerView$State;Landroid/support/v7/widget/RecyclerView$SmoothScroller$Action;)V
 
     .line 13035
     iget-object v1, p0, Landroid/support/v7/widget/RecyclerView$SmoothScroller;->g:Landroid/support/v7/widget/RecyclerView$SmoothScroller$Action;
@@ -311,7 +311,7 @@
     return-void
 .end method
 
-.method protected abstract a(Landroid/view/View;Landroid/support/v7/widget/RecyclerView$SmoothScroller$Action;)V
+.method protected abstract a(Landroid/view/View;Landroid/support/v7/widget/RecyclerView$State;Landroid/support/v7/widget/RecyclerView$SmoothScroller$Action;)V
 .end method
 
 .method public final b()Landroid/support/v7/widget/RecyclerView$LayoutManager;
@@ -431,7 +431,7 @@
 
     iget-object v0, v0, Landroid/support/v7/widget/RecyclerView;->mLayout:Landroid/support/v7/widget/RecyclerView$LayoutManager;
 
-    invoke-virtual {v0}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->r()I
+    invoke-virtual {v0}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->t()I
 
     move-result v0
 

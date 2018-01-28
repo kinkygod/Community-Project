@@ -38,7 +38,7 @@
     .locals 0
 
     .prologue
-    .line 185
+    .line 195
     iput-object p1, p0, Lkik/core/profile/GroupManager$17;->a:Lkik/core/profile/GroupManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -54,13 +54,19 @@
     .prologue
     const/4 v4, 0x1
 
-    .line 185
+    .line 195
     check-cast p2, Ljava/util/List;
 
-    .line 1189
+    .line 1199
     if-eqz p2, :cond_3
 
-    .line 1190
+    invoke-interface {p2}, Ljava/util/List;->size()I
+
+    move-result v0
+
+    if-lez v0, :cond_3
+
+    .line 1200
     invoke-interface {p2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -79,7 +85,7 @@
 
     check-cast v0, Lkik/core/datatypes/p;
 
-    .line 1191
+    .line 1201
     invoke-virtual {v0}, Lkik/core/datatypes/p;->u()Z
 
     move-result v2
@@ -92,7 +98,7 @@
 
     if-eqz v2, :cond_1
 
-    .line 1192
+    .line 1202
     iget-object v2, p0, Lkik/core/profile/GroupManager$17;->a:Lkik/core/profile/GroupManager;
 
     invoke-virtual {v0}, Lkik/core/datatypes/p;->k()Ljava/lang/String;
@@ -101,22 +107,22 @@
 
     invoke-virtual {v2, v3}, Lkik/core/profile/GroupManager;->d(Ljava/lang/String;)V
 
-    .line 1194
+    .line 1204
     :cond_1
     iget-object v2, p0, Lkik/core/profile/GroupManager$17;->a:Lkik/core/profile/GroupManager;
 
     invoke-virtual {v2, v0}, Lkik/core/profile/GroupManager;->b(Lkik/core/datatypes/p;)V
 
-    .line 1195
+    .line 1205
     iget-object v2, p0, Lkik/core/profile/GroupManager$17;->a:Lkik/core/profile/GroupManager;
 
-    invoke-static {v2}, Lkik/core/profile/GroupManager;->b(Lkik/core/profile/GroupManager;)Lkik/core/interfaces/w;
+    invoke-static {v2}, Lkik/core/profile/GroupManager;->b(Lkik/core/profile/GroupManager;)Lkik/core/interfaces/v;
 
     move-result-object v2
 
-    invoke-interface {v2, v0, v4, v4}, Lkik/core/interfaces/w;->a(Lkik/core/datatypes/l;ZZ)Z
+    invoke-interface {v2, v0, v4, v4}, Lkik/core/interfaces/v;->a(Lkik/core/datatypes/l;ZZ)Z
 
-    .line 1196
+    .line 1206
     iget-object v2, p0, Lkik/core/profile/GroupManager$17;->a:Lkik/core/profile/GroupManager;
 
     invoke-static {v2}, Lkik/core/profile/GroupManager;->c(Lkik/core/profile/GroupManager;)Lcom/kik/events/g;
@@ -129,17 +135,30 @@
 
     invoke-virtual {v2, v3}, Lcom/kik/events/g;->a(Ljava/lang/Object;)V
 
-    .line 1198
+    .line 1207
+    iget-object v2, p0, Lkik/core/profile/GroupManager$17;->a:Lkik/core/profile/GroupManager;
+
+    invoke-static {v2}, Lkik/core/profile/GroupManager;->d(Lkik/core/profile/GroupManager;)Lrx/subjects/PublishSubject;
+
+    move-result-object v2
+
+    invoke-virtual {v0}, Lkik/core/datatypes/p;->k()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Lrx/subjects/PublishSubject;->a(Ljava/lang/Object;)V
+
+    .line 1209
     invoke-static {v0}, Lkik/core/util/j;->a(Lkik/core/datatypes/l;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 1199
+    .line 1210
     iget-object v0, p0, Lkik/core/profile/GroupManager$17;->a:Lkik/core/profile/GroupManager;
 
-    invoke-static {v0}, Lkik/core/profile/GroupManager;->d(Lkik/core/profile/GroupManager;)Lkik/core/util/f;
+    invoke-static {v0}, Lkik/core/profile/GroupManager;->e(Lkik/core/profile/GroupManager;)Lkik/core/util/f;
 
     move-result-object v0
 
@@ -153,17 +172,17 @@
 
     goto :goto_0
 
-    .line 1202
+    .line 1213
     :cond_2
     iget-object v0, p0, Lkik/core/profile/GroupManager$17;->a:Lkik/core/profile/GroupManager;
 
-    invoke-static {v0}, Lkik/core/profile/GroupManager;->a(Lkik/core/profile/GroupManager;)Lkik/core/interfaces/ae;
+    invoke-static {v0}, Lkik/core/profile/GroupManager;->a(Lkik/core/profile/GroupManager;)Lkik/core/interfaces/ad;
 
     move-result-object v0
 
-    invoke-interface {v0, p2}, Lkik/core/interfaces/ae;->b(Ljava/util/List;)Z
+    invoke-interface {v0, p2}, Lkik/core/interfaces/ad;->b(Ljava/util/List;)Z
 
-    .line 185
+    .line 195
     :cond_3
     return-void
 .end method

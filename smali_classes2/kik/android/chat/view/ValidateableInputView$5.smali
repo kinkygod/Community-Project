@@ -23,7 +23,7 @@
     .locals 0
 
     .prologue
-    .line 1123
+    .line 1181
     iput-object p1, p0, Lkik/android/chat/view/ValidateableInputView$5;->a:Lkik/android/chat/view/ValidateableInputView;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
@@ -37,11 +37,11 @@
     .locals 1
 
     .prologue
-    .line 1127
+    .line 1185
     iget-object v0, p0, Lkik/android/chat/view/ValidateableInputView$5;->a:Lkik/android/chat/view/ValidateableInputView;
 
     invoke-static {v0}, Lkik/android/chat/view/ValidateableInputView;->c(Lkik/android/chat/view/ValidateableInputView;)V
 
-    .line 1128
+    .line 1186
     return-void
 .end method

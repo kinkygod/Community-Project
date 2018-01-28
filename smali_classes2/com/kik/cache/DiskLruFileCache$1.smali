@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/kik/cache/DiskLruFileCache;->getFileFromNetwork(Ljava/io/File;Ljava/lang/String;Ljava/lang/String;Lkik/core/interfaces/y;Lcom/kik/android/Mixpanel;I)Lcom/kik/events/Promise;
+    value = Lcom/kik/cache/DiskLruFileCache;->getFileFromNetwork(Ljava/io/File;Ljava/lang/String;Ljava/lang/String;Lkik/core/interfaces/x;Lcom/kik/android/Mixpanel;I)Lcom/kik/events/Promise;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

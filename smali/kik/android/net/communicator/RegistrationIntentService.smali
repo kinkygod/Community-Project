@@ -9,7 +9,7 @@
     .end annotation
 .end field
 
-.field protected b:Lkik/core/interfaces/ae;
+.field protected b:Lkik/core/interfaces/ad;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -77,11 +77,11 @@
     move-result-object v0
 
     .line 52
-    iget-object v1, p0, Lkik/android/net/communicator/RegistrationIntentService;->b:Lkik/core/interfaces/ae;
+    iget-object v1, p0, Lkik/android/net/communicator/RegistrationIntentService;->b:Lkik/core/interfaces/ad;
 
     const-string v2, "GCM_PUSH_TOKEN"
 
-    invoke-interface {v1, v2}, Lkik/core/interfaces/ae;->s(Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {v1, v2}, Lkik/core/interfaces/ad;->s(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 

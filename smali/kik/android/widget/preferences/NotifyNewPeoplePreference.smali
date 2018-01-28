@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field protected c:Lkik/core/interfaces/ah;
+.field protected c:Lkik/core/interfaces/ag;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -115,14 +115,14 @@
     invoke-virtual {p0, v1}, Lkik/android/widget/preferences/NotifyNewPeoplePreference;->setEnabled(Z)V
 
     .line 74
-    iget-object v2, p0, Lkik/android/widget/preferences/NotifyNewPeoplePreference;->c:Lkik/core/interfaces/ah;
+    iget-object v2, p0, Lkik/android/widget/preferences/NotifyNewPeoplePreference;->c:Lkik/core/interfaces/ag;
 
     if-nez p1, :cond_0
 
     const/4 v0, 0x1
 
     :goto_0
-    invoke-interface {v2, v0}, Lkik/core/interfaces/ah;->a(Z)Lcom/kik/events/Promise;
+    invoke-interface {v2, v0}, Lkik/core/interfaces/ag;->a(Z)Lcom/kik/events/Promise;
 
     move-result-object v0
 
@@ -291,13 +291,13 @@
     move-result-object v1
 
     .line 62
-    iget-object v0, p0, Lkik/android/widget/preferences/NotifyNewPeoplePreference;->c:Lkik/core/interfaces/ah;
+    iget-object v0, p0, Lkik/android/widget/preferences/NotifyNewPeoplePreference;->c:Lkik/core/interfaces/ag;
 
-    invoke-interface {v0}, Lkik/core/interfaces/ah;->d()Lkik/core/datatypes/ac;
+    invoke-interface {v0}, Lkik/core/interfaces/ag;->d()Lkik/core/datatypes/ab;
 
     move-result-object v0
 
-    iget-object v0, v0, Lkik/core/datatypes/ac;->h:Ljava/lang/Boolean;
+    iget-object v0, v0, Lkik/core/datatypes/ab;->h:Ljava/lang/Boolean;
 
     invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
 
@@ -415,7 +415,7 @@
     invoke-direct {v0, v1}, Lkik/android/chat/fragment/KikBasicDialog$a;-><init>(Landroid/content/Context;)V
 
     .line 136
-    const v1, 0x7f09066d
+    const v1, 0x7f090675
 
     invoke-virtual {v0, v1}, Lkik/android/chat/fragment/KikBasicDialog$a;->a(I)Lkik/android/chat/fragment/KikBasicDialog$a;
 

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/vm/messaging/em;
+.implements Lkik/android/chat/vm/messaging/ei;
 
 
 # instance fields
@@ -12,7 +12,7 @@
     .end annotation
 .end field
 
-.field b:Lkik/core/interfaces/ae;
+.field b:Lkik/core/interfaces/ad;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -31,7 +31,7 @@
 
 
 # virtual methods
-.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
     .locals 0
 
     .prologue
@@ -39,7 +39,7 @@
     invoke-interface {p1, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/chat/vm/messaging/cc;)V
 
     .line 34
-    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/e;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/e;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 35
     return-void
@@ -57,11 +57,11 @@
     move-result-wide v2
 
     .line 41
-    iget-object v1, p0, Lkik/android/chat/vm/messaging/cc;->b:Lkik/core/interfaces/ae;
+    iget-object v1, p0, Lkik/android/chat/vm/messaging/cc;->b:Lkik/core/interfaces/ad;
 
     const-string v4, "times_audio_effects_tooltip_display"
 
-    invoke-interface {v1, v4, v0}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;I)Ljava/lang/Integer;
+    invoke-interface {v1, v4, v0}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;I)Ljava/lang/Integer;
 
     move-result-object v1
 
@@ -70,11 +70,11 @@
     move-result v1
 
     .line 42
-    iget-object v4, p0, Lkik/android/chat/vm/messaging/cc;->b:Lkik/core/interfaces/ae;
+    iget-object v4, p0, Lkik/android/chat/vm/messaging/cc;->b:Lkik/core/interfaces/ad;
 
     const-string v5, "last_audio_effects_tooltip_display"
 
-    invoke-interface {v4, v5}, Lkik/core/interfaces/ae;->v(Ljava/lang/String;)Ljava/lang/Long;
+    invoke-interface {v4, v5}, Lkik/core/interfaces/ad;->v(Ljava/lang/String;)Ljava/lang/Long;
 
     move-result-object v4
 
@@ -116,13 +116,13 @@
     move-result-wide v0
 
     .line 1056
-    iget-object v2, p0, Lkik/android/chat/vm/messaging/cc;->b:Lkik/core/interfaces/ae;
+    iget-object v2, p0, Lkik/android/chat/vm/messaging/cc;->b:Lkik/core/interfaces/ad;
 
     const-string v3, "times_audio_effects_tooltip_display"
 
     const/4 v4, 0x0
 
-    invoke-interface {v2, v3, v4}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;I)Ljava/lang/Integer;
+    invoke-interface {v2, v3, v4}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;I)Ljava/lang/Integer;
 
     move-result-object v2
 
@@ -134,7 +134,7 @@
     add-int/lit8 v2, v2, 0x1
 
     .line 1058
-    iget-object v3, p0, Lkik/android/chat/vm/messaging/cc;->b:Lkik/core/interfaces/ae;
+    iget-object v3, p0, Lkik/android/chat/vm/messaging/cc;->b:Lkik/core/interfaces/ad;
 
     const-string v4, "last_audio_effects_tooltip_display"
 
@@ -142,10 +142,10 @@
 
     move-result-object v0
 
-    invoke-interface {v3, v4, v0}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;Ljava/lang/Long;)Z
+    invoke-interface {v3, v4, v0}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Long;)Z
 
     .line 1059
-    iget-object v0, p0, Lkik/android/chat/vm/messaging/cc;->b:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/chat/vm/messaging/cc;->b:Lkik/core/interfaces/ad;
 
     const-string v1, "times_audio_effects_tooltip_display"
 
@@ -153,7 +153,7 @@
 
     move-result-object v2
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;Ljava/lang/Integer;)Z
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Integer;)Z
 
     .line 1060
     iget-object v0, p0, Lkik/android/chat/vm/messaging/cc;->a:Lcom/rounds/kik/analytics/IReporter;

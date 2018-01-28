@@ -39,7 +39,7 @@
 
     .prologue
     .line 48
-    const v0, 0x7f040153
+    const v0, 0x7f040158
 
     return v0
 .end method
@@ -122,7 +122,7 @@
     .line 77
     iget-object v0, p0, Lkik/android/chat/fragment/KikRegistrationFragment;->_setProfilePhotoView:Lkik/android/chat/view/SetProfilePhotoView;
 
-    new-instance v1, Lkik/android/widget/ad;
+    new-instance v1, Lkik/android/widget/af;
 
     invoke-static {}, Lkik/android/util/g;->a()Lkik/android/util/g;
 
@@ -132,7 +132,7 @@
 
     move-result-object v2
 
-    invoke-direct {v1, v2}, Lkik/android/widget/ad;-><init>(Landroid/graphics/Bitmap;)V
+    invoke-direct {v1, v2}, Lkik/android/widget/af;-><init>(Landroid/graphics/Bitmap;)V
 
     invoke-virtual {v0, v1}, Lkik/android/chat/view/SetProfilePhotoView;->a(Landroid/graphics/drawable/Drawable;)V
 
@@ -158,7 +158,7 @@
     invoke-super {p0, p1}, Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;->onCreate(Landroid/os/Bundle;)V
 
     .line 42
-    invoke-static {p0}, Lkik/android/chat/fragment/cz;->a(Lkik/android/chat/fragment/KikRegistrationFragment;)Landroid/view/View$OnClickListener;
+    invoke-static {p0}, Lkik/android/chat/fragment/da;->a(Lkik/android/chat/fragment/KikRegistrationFragment;)Landroid/view/View$OnClickListener;
 
     move-result-object v0
 
@@ -199,16 +199,16 @@
     return-void
 .end method
 
-.method protected screenOpenedEvent()Lcom/kik/metrics/b/s;
+.method protected screenOpenedEvent()Lcom/kik/metrics/b/t;
     .locals 1
 
     .prologue
     .line 84
-    invoke-static {}, Lcom/kik/metrics/b/ar;->b()Lcom/kik/metrics/b/ar$a;
+    invoke-static {}, Lcom/kik/metrics/b/au;->b()Lcom/kik/metrics/b/au$a;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/kik/metrics/b/ar$a;->a()Lcom/kik/metrics/b/ar;
+    invoke-virtual {v0}, Lcom/kik/metrics/b/au$a;->a()Lcom/kik/metrics/b/au;
 
     move-result-object v0
 

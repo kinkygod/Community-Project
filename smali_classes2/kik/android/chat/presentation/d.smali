@@ -5,7 +5,7 @@
 # interfaces
 .implements Lkik/android/chat/presentation/c;
 .implements Lkik/android/chat/view/b$a;
-.implements Lkik/core/interfaces/aj;
+.implements Lkik/core/interfaces/ai;
 
 
 # instance fields
@@ -15,7 +15,7 @@
 
 .field private c:Lkik/android/chat/presentation/c$a;
 
-.field private d:Lkik/core/interfaces/aj;
+.field private d:Lkik/core/interfaces/ai;
 
 
 # direct methods
@@ -87,7 +87,7 @@
     invoke-interface {p1, p0}, Lkik/android/chat/view/b;->a(Lkik/android/chat/view/b$a;)V
 
     .line 2025
-    invoke-interface {p1, p0}, Lkik/android/chat/view/b;->a(Lkik/core/interfaces/aj;)V
+    invoke-interface {p1, p0}, Lkik/android/chat/view/b;->a(Lkik/core/interfaces/ai;)V
 
     .line 13
     return-void
@@ -236,12 +236,12 @@
     return-void
 .end method
 
-.method public final a(Lkik/core/interfaces/aj;)V
+.method public final a(Lkik/core/interfaces/ai;)V
     .locals 0
 
     .prologue
     .line 65
-    iput-object p1, p0, Lkik/android/chat/presentation/d;->d:Lkik/core/interfaces/aj;
+    iput-object p1, p0, Lkik/android/chat/presentation/d;->d:Lkik/core/interfaces/ai;
 
     .line 66
     return-void
@@ -326,21 +326,21 @@
 
     .prologue
     .line 45
-    iget-object v0, p0, Lkik/android/chat/presentation/d;->d:Lkik/core/interfaces/aj;
+    iget-object v0, p0, Lkik/android/chat/presentation/d;->d:Lkik/core/interfaces/ai;
 
     if-eqz v0, :cond_0
 
     .line 46
-    iget-object v0, p0, Lkik/android/chat/presentation/d;->d:Lkik/core/interfaces/aj;
+    iget-object v0, p0, Lkik/android/chat/presentation/d;->d:Lkik/core/interfaces/ai;
 
-    invoke-interface {v0}, Lkik/core/interfaces/aj;->c()V
+    invoke-interface {v0}, Lkik/core/interfaces/ai;->c()V
 
     .line 48
     :cond_0
     return-void
 .end method
 
-.method public final k_()V
+.method public final m_()V
     .locals 1
 
     .prologue

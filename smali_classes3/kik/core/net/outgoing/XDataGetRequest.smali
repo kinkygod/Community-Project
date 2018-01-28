@@ -31,7 +31,7 @@
         value = {
             "Ljava/util/List",
             "<",
-            "Lkik/core/datatypes/ad;",
+            "Lkik/core/datatypes/ac;",
             ">;"
         }
     .end annotation
@@ -137,7 +137,7 @@
             "()",
             "Ljava/util/List",
             "<",
-            "Lkik/core/datatypes/ad;",
+            "Lkik/core/datatypes/ac;",
             ">;"
         }
     .end annotation
@@ -227,7 +227,7 @@
     .line 77
     iget-object v1, p0, Lkik/core/net/outgoing/XDataGetRequest;->_results:Ljava/util/List;
 
-    invoke-static {v0, v2, p1}, Lkik/core/net/outgoing/q;->a(Ljava/lang/String;Ljava/lang/String;Lkik/core/net/g;)Lkik/core/datatypes/ad;
+    invoke-static {v0, v2, p1}, Lkik/core/net/outgoing/q;->a(Ljava/lang/String;Ljava/lang/String;Lkik/core/net/g;)Lkik/core/datatypes/ac;
 
     move-result-object v0
 

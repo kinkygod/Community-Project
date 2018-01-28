@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field private a:Lkik/android/chat/vm/chats/search/IChatsSearchResultViewModel;
+.field private a:Lkik/android/chat/vm/chats/search/h;
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 142
+    .line 156
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -34,14 +34,14 @@
 
 
 # virtual methods
-.method public final a(Lkik/android/chat/vm/chats/search/IChatsSearchResultViewModel;)Lkik/android/e/n$a;
+.method public final a(Lkik/android/chat/vm/chats/search/h;)Lkik/android/e/n$a;
     .locals 0
 
     .prologue
-    .line 145
-    iput-object p1, p0, Lkik/android/e/n$a;->a:Lkik/android/chat/vm/chats/search/IChatsSearchResultViewModel;
+    .line 159
+    iput-object p1, p0, Lkik/android/e/n$a;->a:Lkik/android/chat/vm/chats/search/h;
 
-    .line 146
+    .line 160
     if-nez p1, :cond_0
 
     const/4 p0, 0x0
@@ -54,11 +54,11 @@
     .locals 1
 
     .prologue
-    .line 150
-    iget-object v0, p0, Lkik/android/e/n$a;->a:Lkik/android/chat/vm/chats/search/IChatsSearchResultViewModel;
+    .line 164
+    iget-object v0, p0, Lkik/android/e/n$a;->a:Lkik/android/chat/vm/chats/search/h;
 
-    invoke-interface {v0}, Lkik/android/chat/vm/chats/search/IChatsSearchResultViewModel;->m()V
+    invoke-interface {v0}, Lkik/android/chat/vm/chats/search/h;->m()V
 
-    .line 151
+    .line 165
     return-void
 .end method

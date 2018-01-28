@@ -60,7 +60,7 @@
     if-eqz v0, :cond_2
 
     .line 34
-    const v0, 0x7f04010e
+    const v0, 0x7f040112
 
     .line 36
     :goto_1
@@ -74,7 +74,7 @@
 
     .line 36
     :cond_2
-    const v0, 0x7f04010f
+    const v0, 0x7f040113
 
     goto :goto_1
 .end method
@@ -140,13 +140,13 @@
     if-eqz v0, :cond_1
 
     .line 45
-    const v0, 0x7f100353
+    const v0, 0x7f10034f
 
     invoke-virtual {v2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    invoke-static {v0}, Lkik/android/util/ca;->a(Landroid/view/View;)Lkik/android/util/ca$b;
+    invoke-static {v0}, Lkik/android/util/cb;->a(Landroid/view/View;)Lkik/android/util/cb$b;
 
     move-result-object v0
 
@@ -156,7 +156,7 @@
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Lkik/android/util/ca$b;->a(I)Lkik/android/util/ca$b;
+    invoke-virtual {v0, v1}, Lkik/android/util/cb$b;->a(I)Lkik/android/util/cb$b;
 
     .line 55
     :goto_1
@@ -208,16 +208,16 @@
     goto :goto_1
 .end method
 
-.method protected screenOpenedEvent()Lcom/kik/metrics/b/s;
+.method protected screenOpenedEvent()Lcom/kik/metrics/b/t;
     .locals 1
 
     .prologue
     .line 62
-    invoke-static {}, Lcom/kik/metrics/b/af;->b()Lcom/kik/metrics/b/af$a;
+    invoke-static {}, Lcom/kik/metrics/b/ah;->b()Lcom/kik/metrics/b/ah$a;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/kik/metrics/b/af$a;->a()Lcom/kik/metrics/b/af;
+    invoke-virtual {v0}, Lcom/kik/metrics/b/ah$a;->a()Lcom/kik/metrics/b/ah;
 
     move-result-object v0
 

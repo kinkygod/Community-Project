@@ -29,13 +29,13 @@
 
 .field private final c:Ljava/lang/Object;
 
-.field private final d:Lkik/core/interfaces/w;
+.field private final d:Lkik/core/interfaces/v;
 
-.field private final e:Lkik/core/interfaces/ae;
+.field private final e:Lkik/core/interfaces/ad;
 
 
 # direct methods
-.method public constructor <init>(Lkik/core/interfaces/w;Lkik/core/interfaces/ae;)V
+.method public constructor <init>(Lkik/core/interfaces/v;Lkik/core/interfaces/ad;)V
     .locals 1
 
     .prologue
@@ -64,10 +64,10 @@
     iput-object v0, p0, Lkik/android/h/b;->c:Ljava/lang/Object;
 
     .line 39
-    iput-object p1, p0, Lkik/android/h/b;->d:Lkik/core/interfaces/w;
+    iput-object p1, p0, Lkik/android/h/b;->d:Lkik/core/interfaces/v;
 
     .line 40
-    iput-object p2, p0, Lkik/android/h/b;->e:Lkik/core/interfaces/ae;
+    iput-object p2, p0, Lkik/android/h/b;->e:Lkik/core/interfaces/ad;
 
     .line 41
     invoke-direct {p0}, Lkik/android/h/b;->f()V
@@ -279,11 +279,11 @@
     move-result-object v0
 
     .line 132
-    iget-object v1, p0, Lkik/android/h/b;->e:Lkik/core/interfaces/ae;
+    iget-object v1, p0, Lkik/android/h/b;->e:Lkik/core/interfaces/ad;
 
     const-string v2, "kik.android.notifications.NotificationTracker.dismissed.ids"
 
-    invoke-interface {v1, v2, v0}, Lkik/core/interfaces/ae;->c(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-interface {v1, v2, v0}, Lkik/core/interfaces/ad;->c(Ljava/lang/String;Ljava/lang/String;)Z
     :try_end_0
     .catch Ljava/lang/OutOfMemoryError; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -304,11 +304,11 @@
     const/4 v1, 0x0
 
     .line 141
-    iget-object v0, p0, Lkik/android/h/b;->e:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/h/b;->e:Lkik/core/interfaces/ad;
 
     const-string v2, "kik.android.notifications.NotificationTracker.dismissed.ids"
 
-    invoke-interface {v0, v2}, Lkik/core/interfaces/ae;->s(Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {v0, v2}, Lkik/core/interfaces/ad;->s(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -391,7 +391,7 @@
 
     .prologue
     .line 233
-    iget-object v0, p0, Lkik/android/h/b;->d:Lkik/core/interfaces/w;
+    iget-object v0, p0, Lkik/android/h/b;->d:Lkik/core/interfaces/v;
 
     invoke-virtual {p1}, Lkik/core/datatypes/f;->g()Ljava/lang/String;
 
@@ -399,7 +399,7 @@
 
     const/4 v2, 0x1
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/w;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/v;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
 
     move-result-object v0
 
@@ -494,7 +494,7 @@
     if-eqz v0, :cond_0
 
     .line 59
-    iget-object v2, p0, Lkik/android/h/b;->d:Lkik/core/interfaces/w;
+    iget-object v2, p0, Lkik/android/h/b;->d:Lkik/core/interfaces/v;
 
     invoke-virtual {v0}, Lkik/core/datatypes/f;->g()Ljava/lang/String;
 
@@ -502,7 +502,7 @@
 
     const/4 v4, 0x1
 
-    invoke-interface {v2, v3, v4}, Lkik/core/interfaces/w;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
+    invoke-interface {v2, v3, v4}, Lkik/core/interfaces/v;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
 
     move-result-object v2
 

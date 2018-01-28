@@ -3,16 +3,16 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/a/b;
+.implements Ldagger/internal/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/a/b",
+        "Ldagger/internal/b",
         "<",
-        "Lcom/kik/android/b/g;",
+        "Lkik/android/util/SponsoredUsersManager;",
         ">;"
     }
 .end annotation
@@ -57,10 +57,10 @@
     .locals 1
 
     .prologue
-    .line 16
+    .line 17
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 17
+    .line 18
     sget-boolean v0, Lcom/kik/f/dg;->a:Z
 
     if-nez v0, :cond_0
@@ -73,30 +73,30 @@
 
     throw v0
 
-    .line 18
+    .line 19
     :cond_0
     iput-object p1, p0, Lcom/kik/f/dg;->b:Lcom/kik/f/df;
 
-    .line 19
+    .line 20
     return-void
 .end method
 
-.method public static a(Lcom/kik/f/df;)La/a/b;
+.method public static a(Lcom/kik/f/df;)Ldagger/internal/b;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lcom/kik/f/df;",
             ")",
-            "La/a/b",
+            "Ldagger/internal/b",
             "<",
-            "Lcom/kik/android/b/g;",
+            "Lkik/android/util/SponsoredUsersManager;",
             ">;"
         }
     .end annotation
 
     .prologue
-    .line 28
+    .line 30
     new-instance v0, Lcom/kik/f/dg;
 
     invoke-direct {v0, p0}, Lcom/kik/f/dg;-><init>(Lcom/kik/f/df;)V
@@ -111,22 +111,22 @@
 
     .prologue
     .line 8
-    .line 1023
+    .line 1024
     iget-object v0, p0, Lcom/kik/f/dg;->b:Lcom/kik/f/df;
 
-    .line 1024
-    invoke-virtual {v0}, Lcom/kik/f/df;->a()Lcom/kik/android/b/g;
+    .line 1025
+    invoke-virtual {v0}, Lcom/kik/f/df;->a()Lkik/android/util/SponsoredUsersManager;
 
     move-result-object v0
 
     const-string v1, "Cannot return null from a non-@Nullable @Provides method"
 
-    .line 1023
-    invoke-static {v0, v1}, La/a/c;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    .line 1024
+    invoke-static {v0, v1}, Ldagger/internal/c;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/kik/android/b/g;
+    check-cast v0, Lkik/android/util/SponsoredUsersManager;
 
     .line 8
     return-object v0

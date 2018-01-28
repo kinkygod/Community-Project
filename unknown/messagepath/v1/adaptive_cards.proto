@@ -6,7 +6,6 @@ option java_package = "com.kik.messagepath.model";
 option objc_class_prefix = "MPTH";
 option go_package = "github.com/kikinteractive/xiphias-model-common/generated/go/messagepath;messagepath";
 
-import "common_model.proto";
 import "protobuf_validation.proto";
 
 // AdaptiveCardAttachment defines the mechanism that allows bots to send an adaptive card message

@@ -3,44 +3,56 @@
 .source "SourceFile"
 
 
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        "U:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;"
+    }
+.end annotation
+
+
+# instance fields
+.field public a:Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "TT;"
+        }
+    .end annotation
+.end field
+
+.field public b:Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "TU;"
+        }
+    .end annotation
+.end field
+
+
 # direct methods
-.method public static a(Ljava/lang/String;)V
-    .locals 4
+.method public constructor <init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;TU;)V"
+        }
+    .end annotation
 
     .prologue
-    .line 51
-    invoke-static {}, Landroid/os/Looper;->myLooper()Landroid/os/Looper;
+    .line 12
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    move-result-object v0
+    .line 13
+    iput-object p1, p0, Lcom/kik/util/cy;->a:Ljava/lang/Object;
 
-    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
+    .line 14
+    iput-object p2, p0, Lcom/kik/util/cy;->b:Ljava/lang/Object;
 
-    move-result-object v1
-
-    if-eq v0, v1, :cond_0
-
-    .line 52
-    new-instance v0, Ljava/lang/IllegalStateException;
-
-    const-string v1, "Attempting to call method from a thread that is not the main thread.\n%s"
-
-    const/4 v2, 0x1
-
-    new-array v2, v2, [Ljava/lang/Object;
-
-    const/4 v3, 0x0
-
-    aput-object p0, v2, v3
-
-    invoke-static {v1, v2}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-
-    .line 54
-    :cond_0
+    .line 15
     return-void
 .end method

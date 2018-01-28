@@ -39,7 +39,7 @@
     .locals 0
 
     .prologue
-    .line 561
+    .line 572
     iput-object p1, p0, Lkik/core/profile/GroupManager$23;->b:Lkik/core/profile/GroupManager;
 
     iput-object p2, p0, Lkik/core/profile/GroupManager$23;->a:Lcom/kik/events/Promise;
@@ -55,8 +55,8 @@
     .locals 1
 
     .prologue
-    .line 561
-    .line 1565
+    .line 572
+    .line 1576
     iget-object v0, p0, Lkik/core/profile/GroupManager$23;->a:Lcom/kik/events/Promise;
 
     invoke-virtual {v0}, Lcom/kik/events/Promise;->g()Ljava/lang/Object;
@@ -65,11 +65,11 @@
 
     check-cast v0, Lkik/core/net/outgoing/GroupCreationRequest;
 
-    .line 1566
+    .line 1577
     invoke-virtual {v0}, Lkik/core/net/outgoing/GroupCreationRequest;->getGroup()Lkik/core/datatypes/p;
 
     move-result-object v0
 
-    .line 561
+    .line 572
     return-object v0
 .end method

@@ -32,7 +32,7 @@
     .locals 0
 
     .prologue
-    .line 268
+    .line 276
     iput-object p1, p0, Lcom/kik/cards/web/CardsWebViewFragment$12$1$1;->a:Lcom/kik/cards/web/CardsWebViewFragment$12$1;
 
     invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
@@ -46,6 +46,6 @@
     .locals 0
 
     .prologue
-    .line 273
+    .line 281
     return-void
 .end method

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/widget/dm$a;
+.implements Lkik/android/widget/ea$a;
 
 
 # annotations
@@ -16,7 +16,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkik/android/widget/AutoResizeRecyclerGridView;",
-        "Lkik/android/widget/dm$a",
+        "Lkik/android/widget/ea$a",
         "<",
         "Lkik/android/gifs/vm/bk;",
         "Lkik/android/gifs/view/EmojiRecyclerView$a;",
@@ -68,9 +68,9 @@
     check-cast p1, Lkik/android/gifs/vm/c;
 
     .line 31
-    new-instance v0, Lkik/android/widget/dm;
+    new-instance v0, Lkik/android/widget/ea;
 
-    invoke-direct {v0, p0, p1}, Lkik/android/widget/dm;-><init>(Lkik/android/widget/dm$a;Lkik/android/chat/vm/IListViewModel;)V
+    invoke-direct {v0, p0, p1}, Lkik/android/widget/ea;-><init>(Lkik/android/widget/ea$a;Lkik/android/chat/vm/IListViewModel;)V
 
     .line 32
     invoke-virtual {p0, v0}, Lkik/android/gifs/view/EmojiRecyclerView;->setAdapter(Landroid/support/v7/widget/RecyclerView$Adapter;)V
@@ -106,7 +106,7 @@
 
     move-result v2
 
-    invoke-virtual {v0}, Landroid/support/v7/widget/GridLayoutManager;->l()I
+    invoke-virtual {v0}, Landroid/support/v7/widget/GridLayoutManager;->k()I
 
     move-result v0
 
@@ -134,7 +134,7 @@
 
     .prologue
     .line 25
-    const v0, 0x7f04009b
+    const v0, 0x7f04009a
 
     return v0
 .end method

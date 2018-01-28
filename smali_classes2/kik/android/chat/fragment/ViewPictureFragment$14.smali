@@ -52,7 +52,7 @@
     .line 1041
     iget-object v0, p0, Lkik/android/chat/fragment/ViewPictureFragment$14;->a:Lkik/android/chat/fragment/ViewPictureFragment;
 
-    iget-object v0, v0, Lkik/android/chat/fragment/ViewPictureFragment;->j:Lcom/kik/storage/p;
+    iget-object v0, v0, Lkik/android/chat/fragment/ViewPictureFragment;->j:Lcom/kik/storage/s;
 
     iget-object v1, p0, Lkik/android/chat/fragment/ViewPictureFragment$14;->a:Lkik/android/chat/fragment/ViewPictureFragment;
 
@@ -66,7 +66,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lkik/android/chat/fragment/ProgressDialogFragment;->d()Lkik/core/interfaces/y;
+    invoke-virtual {v2}, Lkik/android/chat/fragment/ProgressDialogFragment;->d()Lkik/core/interfaces/x;
 
     move-result-object v2
 
@@ -74,7 +74,7 @@
 
     iget-object v3, v3, Lkik/android/chat/fragment/ViewPictureFragment;->f:Lcom/kik/android/Mixpanel;
 
-    invoke-interface {v0, v1, v2, v3}, Lcom/kik/storage/p;->a(Lkik/core/datatypes/messageExtensions/ContentMessage;Lkik/core/interfaces/y;Lcom/kik/android/Mixpanel;)Lcom/kik/events/Promise;
+    invoke-interface {v0, v1, v2, v3}, Lcom/kik/storage/s;->a(Lkik/core/datatypes/messageExtensions/ContentMessage;Lkik/core/interfaces/x;Lcom/kik/android/Mixpanel;)Lcom/kik/events/Promise;
 
     .line 1043
     :cond_0

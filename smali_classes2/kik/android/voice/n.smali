@@ -31,7 +31,7 @@
 
 .field private g:Ljava/lang/String;
 
-.field private h:Lcom/kik/storage/p;
+.field private h:Lcom/kik/storage/s;
 
 .field private i:[Ljava/lang/String;
 
@@ -76,7 +76,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Lcom/kik/storage/p;)V
+.method public constructor <init>(Lcom/kik/storage/s;)V
     .locals 3
 
     .prologue
@@ -119,7 +119,7 @@
     iput-object v0, p0, Lkik/android/voice/n;->m:Ljava/io/FileOutputStream;
 
     .line 52
-    iput-object p1, p0, Lkik/android/voice/n;->h:Lcom/kik/storage/p;
+    iput-object p1, p0, Lkik/android/voice/n;->h:Lcom/kik/storage/s;
 
     .line 53
     const v0, 0xac44
@@ -443,11 +443,11 @@
 
     .line 121
     .line 122
-    iget-object v1, p0, Lkik/android/voice/n;->h:Lcom/kik/storage/p;
+    iget-object v1, p0, Lkik/android/voice/n;->h:Lcom/kik/storage/s;
 
     iget-object v2, p0, Lkik/android/voice/n;->g:Ljava/lang/String;
 
-    invoke-interface {v1, v2}, Lcom/kik/storage/p;->c(Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {v1, v2}, Lcom/kik/storage/s;->c(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 

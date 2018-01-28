@@ -2,7 +2,7 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Landroid/view/View$OnClickListener;
+.implements Lrx/functions/b;
 
 
 # instance fields
@@ -20,7 +20,7 @@
     return-void
 .end method
 
-.method public static a(Lkik/android/chat/fragment/ProfileEditBioDialogFragment;)Landroid/view/View$OnClickListener;
+.method public static a(Lkik/android/chat/fragment/ProfileEditBioDialogFragment;)Lrx/functions/b;
     .locals 1
 
     new-instance v0, Lkik/android/chat/fragment/ex;
@@ -32,12 +32,14 @@
 
 
 # virtual methods
-.method public final onClick(Landroid/view/View;)V
+.method public final call(Ljava/lang/Object;)V
     .locals 1
 
     iget-object v0, p0, Lkik/android/chat/fragment/ex;->a:Lkik/android/chat/fragment/ProfileEditBioDialogFragment;
 
-    invoke-static {v0}, Lkik/android/chat/fragment/ProfileEditBioDialogFragment;->b(Lkik/android/chat/fragment/ProfileEditBioDialogFragment;)V
+    check-cast p1, Lkik/android/chat/vm/chats/profile/IValidateableInputEditorViewModel$ErrorType;
+
+    invoke-static {v0, p1}, Lkik/android/chat/fragment/ProfileEditBioDialogFragment;->a(Lkik/android/chat/fragment/ProfileEditBioDialogFragment;Lkik/android/chat/vm/chats/profile/IValidateableInputEditorViewModel$ErrorType;)V
 
     return-void
 .end method

@@ -15,3 +15,15 @@
         }
     .end annotation
 .end method
+
+.method public abstract b()Lrx/h;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/h",
+            "<",
+            "Lcom/kik/featureconfig/rpc/FeatureConfigService$GetFeatureConfigsResponse;",
+            ">;"
+        }
+    .end annotation
+.end method

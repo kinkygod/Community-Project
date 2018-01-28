@@ -58,11 +58,11 @@
     .line 2644
     iget-object v1, p0, Lkik/android/internal/platform/PlatformHelper$4$1;->b:Lkik/android/internal/platform/PlatformHelper$4;
 
-    iget-object v1, v1, Lkik/android/internal/platform/PlatformHelper$4;->b:Lkik/core/interfaces/w;
+    iget-object v1, v1, Lkik/android/internal/platform/PlatformHelper$4;->b:Lkik/core/interfaces/v;
 
     const/4 v2, 0x1
 
-    invoke-interface {v1, v0, v2}, Lkik/core/interfaces/w;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
+    invoke-interface {v1, v0, v2}, Lkik/core/interfaces/v;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
 
     move-result-object v1
 
@@ -174,7 +174,7 @@
 
     iget-object v4, p0, Lkik/android/internal/platform/PlatformHelper$4$1;->b:Lkik/android/internal/platform/PlatformHelper$4;
 
-    iget-object v4, v4, Lkik/android/internal/platform/PlatformHelper$4;->b:Lkik/core/interfaces/w;
+    iget-object v4, v4, Lkik/android/internal/platform/PlatformHelper$4;->b:Lkik/core/interfaces/v;
 
     iget-object v5, p0, Lkik/android/internal/platform/PlatformHelper$4$1;->b:Lkik/android/internal/platform/PlatformHelper$4;
 
@@ -188,7 +188,7 @@
 
     iget-object v6, v6, Lcom/kik/cards/web/kik/KikMessageParcelable;->j:Ljava/lang/String;
 
-    invoke-static/range {v0 .. v6}, Lkik/android/internal/platform/PlatformHelper;->a(Ljava/lang/String;Landroid/app/Activity;Lcom/kik/ui/fragment/FragmentBase$FragmentBundle$StackType;ZLkik/core/interfaces/w;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static/range {v0 .. v6}, Lkik/android/internal/platform/PlatformHelper;->a(Ljava/lang/String;Landroid/app/Activity;Lcom/kik/ui/fragment/FragmentBase$FragmentBundle$StackType;ZLkik/core/interfaces/v;Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 .end method

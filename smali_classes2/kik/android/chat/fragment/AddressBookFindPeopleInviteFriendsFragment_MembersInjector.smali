@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/b;
+.implements Ldagger/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/b",
+        "Ldagger/b",
         "<",
         "Lkik/android/chat/fragment/AddressBookFindPeopleInviteFriendsFragment;",
         ">;"
@@ -28,7 +28,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ae;",
+            "Lkik/core/interfaces/ad;",
             ">;"
         }
     .end annotation
@@ -127,7 +127,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/w;",
+            "Lkik/core/interfaces/v;",
             ">;"
         }
     .end annotation
@@ -138,7 +138,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ah;",
+            "Lkik/core/interfaces/ag;",
             ">;"
         }
     .end annotation
@@ -190,7 +190,7 @@
             "(",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ae;",
+            "Lkik/core/interfaces/ad;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -226,11 +226,11 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/w;",
+            "Lkik/core/interfaces/v;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ah;",
+            "Lkik/core/interfaces/ag;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -451,14 +451,14 @@
     return-void
 .end method
 
-.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)La/b;
+.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
     .locals 13
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ae;",
+            "Lkik/core/interfaces/ad;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -494,17 +494,17 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/w;",
+            "Lkik/core/interfaces/v;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ah;",
+            "Lkik/core/interfaces/ag;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
             "Lkik/core/interfaces/IConversation;",
             ">;)",
-            "La/b",
+            "Ldagger/b",
             "<",
             "Lkik/android/chat/fragment/AddressBookFindPeopleInviteFriendsFragment;",
             ">;"
@@ -546,7 +546,7 @@
 
 
 # virtual methods
-.method public final synthetic a(Ljava/lang/Object;)V
+.method public final synthetic injectMembers(Ljava/lang/Object;)V
     .locals 2
 
     .prologue
@@ -573,9 +573,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/interfaces/ae;
+    check-cast v0, Lkik/core/interfaces/ad;
 
-    iput-object v0, p1, Lkik/android/chat/fragment/KikScopedDialogFragment;->_storage:Lkik/core/interfaces/ae;
+    iput-object v0, p1, Lkik/android/chat/fragment/KikScopedDialogFragment;->_storage:Lkik/core/interfaces/ad;
 
     .line 1123
     iget-object v0, p0, Lkik/android/chat/fragment/AddressBookFindPeopleInviteFriendsFragment_MembersInjector;->c:Ljavax/inject/Provider;
@@ -691,29 +691,29 @@
     .line 1134
     iget-object v0, p0, Lkik/android/chat/fragment/AddressBookFindPeopleInviteFriendsFragment_MembersInjector;->k:Ljavax/inject/Provider;
 
-    invoke-static {v0}, La/a/a;->b(Ljavax/inject/Provider;)La/a;
+    invoke-static {v0}, Ldagger/internal/a;->b(Ljavax/inject/Provider;)Ldagger/a;
 
     move-result-object v0
 
-    iput-object v0, p1, Lkik/android/chat/fragment/AddressBookFindPeopleInviteFriendsFragment;->f:La/a;
+    iput-object v0, p1, Lkik/android/chat/fragment/AddressBookFindPeopleInviteFriendsFragment;->f:Ldagger/a;
 
     .line 1135
     iget-object v0, p0, Lkik/android/chat/fragment/AddressBookFindPeopleInviteFriendsFragment_MembersInjector;->l:Ljavax/inject/Provider;
 
-    invoke-static {v0}, La/a/a;->b(Ljavax/inject/Provider;)La/a;
+    invoke-static {v0}, Ldagger/internal/a;->b(Ljavax/inject/Provider;)Ldagger/a;
 
     move-result-object v0
 
-    iput-object v0, p1, Lkik/android/chat/fragment/AddressBookFindPeopleInviteFriendsFragment;->g:La/a;
+    iput-object v0, p1, Lkik/android/chat/fragment/AddressBookFindPeopleInviteFriendsFragment;->g:Ldagger/a;
 
     .line 1136
     iget-object v0, p0, Lkik/android/chat/fragment/AddressBookFindPeopleInviteFriendsFragment_MembersInjector;->m:Ljavax/inject/Provider;
 
-    invoke-static {v0}, La/a/a;->b(Ljavax/inject/Provider;)La/a;
+    invoke-static {v0}, Ldagger/internal/a;->b(Ljavax/inject/Provider;)Ldagger/a;
 
     move-result-object v0
 
-    iput-object v0, p1, Lkik/android/chat/fragment/AddressBookFindPeopleInviteFriendsFragment;->h:La/a;
+    iput-object v0, p1, Lkik/android/chat/fragment/AddressBookFindPeopleInviteFriendsFragment;->h:Ldagger/a;
 
     .line 20
     return-void

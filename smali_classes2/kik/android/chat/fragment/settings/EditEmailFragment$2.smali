@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/android/chat/fragment/settings/EditEmailFragment;->a(Lkik/android/chat/fragment/settings/EditEmailFragment;Lkik/core/datatypes/ac;Landroid/content/DialogInterface;)V
+    value = Lkik/android/chat/fragment/settings/EditEmailFragment;->a(Lkik/android/chat/fragment/settings/EditEmailFragment;Lkik/core/datatypes/ab;Landroid/content/DialogInterface;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

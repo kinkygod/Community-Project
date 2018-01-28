@@ -4,8 +4,8 @@
 
 
 # virtual methods
-.method public abstract a([B)V
+.method public abstract a()I
 .end method
 
-.method public abstract j_()V
+.method public abstract b()I
 .end method

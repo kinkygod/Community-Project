@@ -67,7 +67,7 @@
 
 .field private final h:Lkik/android/chat/b/a;
 
-.field private i:Lkik/core/interfaces/ae;
+.field private i:Lkik/core/interfaces/ad;
 
 .field private final j:Landroid/content/res/ColorStateList;
 
@@ -85,7 +85,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Landroid/content/Context;Lkik/android/chat/b/a;Lkik/core/interfaces/ae;)V
+.method public constructor <init>(Landroid/content/Context;Lkik/android/chat/b/a;Lkik/core/interfaces/ad;)V
     .locals 12
 
     .prologue
@@ -436,7 +436,7 @@
 
     sget-object v4, Lcom/kik/xdata/model/userpreferences/XUserPreferences$XBubbleColor;->COLOR_BRIGHT_BLUE:Lcom/kik/xdata/model/userpreferences/XUserPreferences$XBubbleColor;
 
-    const v5, 0x7f090539
+    const v5, 0x7f09053f
 
     .line 99
     invoke-static {v5}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
@@ -621,7 +621,7 @@
 
     sget-object v4, Lcom/kik/xdata/model/userpreferences/XUserPreferences$XBubbleColor;->COLOR_CHERRY_RED:Lcom/kik/xdata/model/userpreferences/XUserPreferences$XBubbleColor;
 
-    const v5, 0x7f09053a
+    const v5, 0x7f090540
 
     .line 108
     invoke-static {v5}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
@@ -644,7 +644,7 @@
 
     sget-object v4, Lcom/kik/xdata/model/userpreferences/XUserPreferences$XBubbleColor;->COLOR_ROSE_PINK:Lcom/kik/xdata/model/userpreferences/XUserPreferences$XBubbleColor;
 
-    const v5, 0x7f090541
+    const v5, 0x7f090547
 
     .line 109
     invoke-static {v5}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
@@ -667,7 +667,7 @@
 
     sget-object v4, Lcom/kik/xdata/model/userpreferences/XUserPreferences$XBubbleColor;->COLOR_PLUM:Lcom/kik/xdata/model/userpreferences/XUserPreferences$XBubbleColor;
 
-    const v5, 0x7f09053f
+    const v5, 0x7f090545
 
     .line 110
     invoke-static {v5}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
@@ -690,7 +690,7 @@
 
     sget-object v4, Lcom/kik/xdata/model/userpreferences/XUserPreferences$XBubbleColor;->COLOR_EGGPLANT:Lcom/kik/xdata/model/userpreferences/XUserPreferences$XBubbleColor;
 
-    const v5, 0x7f09053c
+    const v5, 0x7f090542
 
     .line 111
     invoke-static {v5}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
@@ -713,7 +713,7 @@
 
     sget-object v4, Lcom/kik/xdata/model/userpreferences/XUserPreferences$XBubbleColor;->COLOR_NAVY:Lcom/kik/xdata/model/userpreferences/XUserPreferences$XBubbleColor;
 
-    const v5, 0x7f09053e
+    const v5, 0x7f090544
 
     .line 112
     invoke-static {v5}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
@@ -738,7 +738,7 @@
 
     sget-object v5, Lcom/kik/xdata/model/userpreferences/XUserPreferences$XBubbleColor;->COLOR_ARMY_GREEN:Lcom/kik/xdata/model/userpreferences/XUserPreferences$XBubbleColor;
 
-    const v6, 0x7f090536
+    const v6, 0x7f09053c
 
     .line 113
     invoke-static {v6}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
@@ -763,7 +763,7 @@
 
     sget-object v5, Lcom/kik/xdata/model/userpreferences/XUserPreferences$XBubbleColor;->COLOR_AVOCADO:Lcom/kik/xdata/model/userpreferences/XUserPreferences$XBubbleColor;
 
-    const v6, 0x7f090537
+    const v6, 0x7f09053d
 
     .line 114
     invoke-static {v6}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
@@ -788,7 +788,7 @@
 
     sget-object v5, Lcom/kik/xdata/model/userpreferences/XUserPreferences$XBubbleColor;->COLOR_MANGO:Lcom/kik/xdata/model/userpreferences/XUserPreferences$XBubbleColor;
 
-    const v6, 0x7f09053d
+    const v6, 0x7f090543
 
     .line 115
     invoke-static {v6}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
@@ -813,7 +813,7 @@
 
     sget-object v5, Lcom/kik/xdata/model/userpreferences/XUserPreferences$XBubbleColor;->COLOR_PUMPKIN:Lcom/kik/xdata/model/userpreferences/XUserPreferences$XBubbleColor;
 
-    const v6, 0x7f090540
+    const v6, 0x7f090546
 
     .line 116
     invoke-static {v6}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
@@ -838,7 +838,7 @@
 
     sget-object v5, Lcom/kik/xdata/model/userpreferences/XUserPreferences$XBubbleColor;->COLOR_DARK_BROWN:Lcom/kik/xdata/model/userpreferences/XUserPreferences$XBubbleColor;
 
-    const v6, 0x7f09053b
+    const v6, 0x7f090541
 
     .line 117
     invoke-static {v6}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
@@ -863,7 +863,7 @@
 
     sget-object v5, Lcom/kik/xdata/model/userpreferences/XUserPreferences$XBubbleColor;->COLOR_BLACK:Lcom/kik/xdata/model/userpreferences/XUserPreferences$XBubbleColor;
 
-    const v6, 0x7f090538
+    const v6, 0x7f09053e
 
     .line 118
     invoke-static {v6}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
@@ -909,7 +909,7 @@
     iput-object p2, p0, Lkik/android/chat/theming/ChatBubbleManager;->h:Lkik/android/chat/b/a;
 
     .line 145
-    iput-object p3, p0, Lkik/android/chat/theming/ChatBubbleManager;->i:Lkik/core/interfaces/ae;
+    iput-object p3, p0, Lkik/android/chat/theming/ChatBubbleManager;->i:Lkik/core/interfaces/ad;
 
     .line 147
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -971,11 +971,11 @@
     invoke-virtual {p0}, Lkik/android/chat/theming/ChatBubbleManager;->a()Z
 
     .line 1222
-    iget-object v0, p0, Lkik/android/chat/theming/ChatBubbleManager;->i:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/chat/theming/ChatBubbleManager;->i:Lkik/core/interfaces/ad;
 
     const-string v1, "kik.chat.bubble.color"
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ae;->x(Ljava/lang/String;)Z
+    invoke-interface {v0, v1}, Lkik/core/interfaces/ad;->x(Ljava/lang/String;)Z
 
     .line 151
     :cond_1
@@ -1132,11 +1132,11 @@
 
     .prologue
     .line 227
-    iget-object v0, p0, Lkik/android/chat/theming/ChatBubbleManager;->i:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/chat/theming/ChatBubbleManager;->i:Lkik/core/interfaces/ad;
 
     const-string v1, "kik.chat.bubble.color"
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ae;->s(Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {v0, v1}, Lkik/core/interfaces/ad;->s(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

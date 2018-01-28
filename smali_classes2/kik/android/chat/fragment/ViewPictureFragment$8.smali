@@ -47,7 +47,7 @@
     .line 856
     iget-object v0, p0, Lkik/android/chat/fragment/ViewPictureFragment$8;->b:Lkik/android/chat/fragment/ViewPictureFragment;
 
-    iget-object v0, v0, Lkik/android/chat/fragment/ViewPictureFragment;->j:Lcom/kik/storage/p;
+    iget-object v0, v0, Lkik/android/chat/fragment/ViewPictureFragment;->j:Lcom/kik/storage/s;
 
     iget-object v1, p0, Lkik/android/chat/fragment/ViewPictureFragment$8;->a:Lkik/core/datatypes/messageExtensions/ContentMessage;
 
@@ -55,7 +55,7 @@
 
     move-result-object v1
 
-    invoke-interface {v0, v1}, Lcom/kik/storage/p;->f(Ljava/lang/String;)Z
+    invoke-interface {v0, v1}, Lcom/kik/storage/s;->f(Ljava/lang/String;)Z
 
     .line 857
     iget-object v0, p0, Lkik/android/chat/fragment/ViewPictureFragment$8;->b:Lkik/android/chat/fragment/ViewPictureFragment;

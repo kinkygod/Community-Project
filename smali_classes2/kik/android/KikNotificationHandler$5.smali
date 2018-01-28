@@ -36,7 +36,7 @@
     .locals 0
 
     .prologue
-    .line 216
+    .line 205
     iput-object p1, p0, Lkik/android/KikNotificationHandler$5;->a:Lkik/android/KikNotificationHandler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -50,8 +50,8 @@
     .locals 2
 
     .prologue
-    .line 216
-    .line 1220
+    .line 205
+    .line 1209
     iget-object v0, p0, Lkik/android/KikNotificationHandler$5;->a:Lkik/android/KikNotificationHandler;
 
     invoke-static {v0}, Lkik/android/KikNotificationHandler;->c(Lkik/android/KikNotificationHandler;)Lcom/kik/events/Promise;
@@ -60,7 +60,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 1221
+    .line 1210
     iget-object v0, p0, Lkik/android/KikNotificationHandler$5;->a:Lkik/android/KikNotificationHandler;
 
     invoke-static {v0}, Lkik/android/KikNotificationHandler;->c(Lkik/android/KikNotificationHandler;)Lcom/kik/events/Promise;
@@ -75,7 +75,7 @@
 
     invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Ljava/lang/Object;)V
 
-    .line 216
+    .line 205
     :cond_0
     return-void
 .end method

@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/android/i/a;->a(Lkik/core/e/f;Lkik/core/interfaces/ae;Lcom/kik/events/Promise;Lcom/kik/events/Promise;)V
+    value = Lkik/android/i/a;->a(Lkik/core/e/f;Lkik/core/interfaces/ad;Lcom/kik/events/Promise;Lcom/kik/events/Promise;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

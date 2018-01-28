@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/core/interfaces/w$a;
+.implements Lkik/core/interfaces/v$a;
 
 
 # annotations
@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 1268
+    .line 1256
     iput-object p1, p0, Lkik/core/profile/v$3$1;->a:Lkik/core/profile/v$3;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,11 +40,11 @@
     .locals 1
 
     .prologue
-    .line 1272
+    .line 1260
     const/4 v0, 0x0
 
     invoke-virtual {p1, v0}, Lkik/core/datatypes/l;->d(Z)V
 
-    .line 1273
+    .line 1261
     return-void
 .end method

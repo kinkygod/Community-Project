@@ -20,11 +20,11 @@
 
 .field private final b:Lcom/kik/android/b/j$a;
 
-.field private final c:Lkik/core/interfaces/ae;
+.field private final c:Lkik/core/interfaces/ad;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lkik/core/interfaces/ae;)V
+.method public constructor <init>(Landroid/content/Context;Lkik/core/interfaces/ad;)V
     .locals 2
 
     .prologue
@@ -32,12 +32,12 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 37
-    iput-object p2, p0, Lcom/kik/android/b/j;->c:Lkik/core/interfaces/ae;
+    iput-object p2, p0, Lcom/kik/android/b/j;->c:Lkik/core/interfaces/ad;
 
     .line 38
     new-instance v0, Lcom/kik/android/b/j$b;
 
-    invoke-interface {p2}, Lkik/core/interfaces/ae;->q()Ljava/lang/String;
+    invoke-interface {p2}, Lkik/core/interfaces/ad;->q()Ljava/lang/String;
 
     move-result-object v1
 
@@ -48,7 +48,7 @@
     .line 39
     new-instance v0, Lcom/kik/android/b/j$a;
 
-    invoke-interface {p2}, Lkik/core/interfaces/ae;->q()Ljava/lang/String;
+    invoke-interface {p2}, Lkik/core/interfaces/ad;->q()Ljava/lang/String;
 
     move-result-object v1
 
@@ -297,9 +297,9 @@
     if-eqz v0, :cond_1
 
     .line 258
-    iget-object v1, p0, Lcom/kik/android/b/j;->c:Lkik/core/interfaces/ae;
+    iget-object v1, p0, Lcom/kik/android/b/j;->c:Lkik/core/interfaces/ad;
 
-    invoke-interface {v1, v0}, Lkik/core/interfaces/ae;->v(Ljava/lang/String;)Ljava/lang/Long;
+    invoke-interface {v1, v0}, Lkik/core/interfaces/ad;->v(Ljava/lang/String;)Ljava/lang/Long;
 
     move-result-object v0
 
@@ -823,7 +823,7 @@
     if-eqz v0, :cond_0
 
     .line 268
-    iget-object v1, p0, Lcom/kik/android/b/j;->c:Lkik/core/interfaces/ae;
+    iget-object v1, p0, Lcom/kik/android/b/j;->c:Lkik/core/interfaces/ad;
 
     invoke-static {}, Lkik/core/util/v;->b()J
 
@@ -833,7 +833,7 @@
 
     move-result-object v2
 
-    invoke-interface {v1, v0, v2}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;Ljava/lang/Long;)Z
+    invoke-interface {v1, v0, v2}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Long;)Z
 
     .line 270
     :cond_0
@@ -1099,11 +1099,11 @@
 
     .prologue
     .line 275
-    iget-object v0, p0, Lcom/kik/android/b/j;->c:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lcom/kik/android/b/j;->c:Lkik/core/interfaces/ad;
 
     const-string v1, "com.kik.android.smileys.tray.opened"
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ae;->v(Ljava/lang/String;)Ljava/lang/Long;
+    invoke-interface {v0, v1}, Lkik/core/interfaces/ad;->v(Ljava/lang/String;)Ljava/lang/Long;
 
     move-result-object v0
 
@@ -1128,7 +1128,7 @@
 
     .prologue
     .line 282
-    iget-object v0, p0, Lcom/kik/android/b/j;->c:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lcom/kik/android/b/j;->c:Lkik/core/interfaces/ad;
 
     const-string v1, "com.kik.android.smileys.tray.opened"
 
@@ -1140,7 +1140,7 @@
 
     move-result-object v2
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;Ljava/lang/Long;)Z
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Long;)Z
 
     .line 283
     return-void
@@ -1153,11 +1153,11 @@
     const/4 v0, 0x1
 
     .line 288
-    iget-object v1, p0, Lcom/kik/android/b/j;->c:Lkik/core/interfaces/ae;
+    iget-object v1, p0, Lcom/kik/android/b/j;->c:Lkik/core/interfaces/ad;
 
     const-string v2, "com.kik.android.smileys.preload.complete"
 
-    invoke-interface {v1, v2}, Lkik/core/interfaces/ae;->w(Ljava/lang/String;)Ljava/lang/Boolean;
+    invoke-interface {v1, v2}, Lkik/core/interfaces/ad;->w(Ljava/lang/String;)Ljava/lang/Boolean;
 
     move-result-object v1
 
@@ -1181,7 +1181,7 @@
 
     .prologue
     .line 294
-    iget-object v0, p0, Lcom/kik/android/b/j;->c:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lcom/kik/android/b/j;->c:Lkik/core/interfaces/ad;
 
     const-string v1, "com.kik.android.smileys.preload.complete"
 
@@ -1191,7 +1191,7 @@
 
     move-result-object v2
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;Ljava/lang/Boolean;)Z
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Boolean;)Z
 
     .line 295
     return-void
@@ -1204,11 +1204,11 @@
     const/4 v0, 0x1
 
     .line 300
-    iget-object v1, p0, Lcom/kik/android/b/j;->c:Lkik/core/interfaces/ae;
+    iget-object v1, p0, Lcom/kik/android/b/j;->c:Lkik/core/interfaces/ad;
 
     const-string v2, "com.kik.android.smileys.longpress.complete"
 
-    invoke-interface {v1, v2}, Lkik/core/interfaces/ae;->w(Ljava/lang/String;)Ljava/lang/Boolean;
+    invoke-interface {v1, v2}, Lkik/core/interfaces/ad;->w(Ljava/lang/String;)Ljava/lang/Boolean;
 
     move-result-object v1
 
@@ -1232,7 +1232,7 @@
 
     .prologue
     .line 306
-    iget-object v0, p0, Lcom/kik/android/b/j;->c:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lcom/kik/android/b/j;->c:Lkik/core/interfaces/ad;
 
     const-string v1, "com.kik.android.smileys.longpress.complete"
 
@@ -1242,7 +1242,7 @@
 
     move-result-object v2
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;Ljava/lang/Boolean;)Z
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Boolean;)Z
 
     .line 307
     return-void

@@ -193,7 +193,7 @@
 
     const-wide/16 v2, 0x2800
 
-    invoke-static {p0, v0, v2, v3}, Lcom/kik/util/co;->a(Landroid/graphics/Bitmap;Landroid/graphics/Bitmap$CompressFormat;J)[B
+    invoke-static {p0, v0, v2, v3}, Lcom/kik/util/ct;->a(Landroid/graphics/Bitmap;Landroid/graphics/Bitmap$CompressFormat;J)[B
 
     move-result-object v0
 
@@ -216,7 +216,7 @@
 
     sget-object v1, Landroid/graphics/Bitmap$CompressFormat;->JPEG:Landroid/graphics/Bitmap$CompressFormat;
 
-    invoke-static {v0, v1}, Lcom/kik/util/co;->a(Ljava/io/InputStream;Landroid/graphics/Bitmap$CompressFormat;)[B
+    invoke-static {v0, v1}, Lcom/kik/util/ct;->a(Ljava/io/InputStream;Landroid/graphics/Bitmap$CompressFormat;)[B
 
     move-result-object p0
 

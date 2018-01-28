@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field a:Lkik/core/interfaces/w;
+.field a:Lkik/core/interfaces/v;
 
 .field b:Lcom/kik/android/Mixpanel;
 
@@ -12,7 +12,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lkik/core/interfaces/w;Lcom/kik/android/Mixpanel;Lkik/core/interfaces/IConversation;)V
+.method public constructor <init>(Lkik/core/interfaces/v;Lcom/kik/android/Mixpanel;Lkik/core/interfaces/IConversation;)V
     .locals 0
 
     .prologue
@@ -20,7 +20,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 32
-    iput-object p1, p0, Lkik/android/util/bb;->a:Lkik/core/interfaces/w;
+    iput-object p1, p0, Lkik/android/util/bb;->a:Lkik/core/interfaces/v;
 
     .line 33
     iput-object p2, p0, Lkik/android/util/bb;->b:Lcom/kik/android/Mixpanel;
@@ -58,7 +58,7 @@
     invoke-direct {v1}, Lkik/android/chat/fragment/KikDialogFragment$a;-><init>()V
 
     .line 44
-    const v0, 0x7f090687
+    const v0, 0x7f09068f
 
     invoke-virtual {v1, v0}, Lkik/android/chat/fragment/KikDialogFragment$a;->a(I)Lkik/android/chat/fragment/KikDialogFragment$a;
 

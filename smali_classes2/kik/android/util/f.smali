@@ -345,7 +345,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f02027d
+    const v1, 0x7f020265
 
     invoke-static {v0, v1}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
 
@@ -668,7 +668,7 @@
     .locals 7
 
     .prologue
-    const v6, 0x7f0203cf
+    const v6, 0x7f0203b6
 
     const/4 v3, 0x0
 
@@ -1005,13 +1005,13 @@
     throw v0
 .end method
 
-.method public static a(Lkik/core/datatypes/ac;Landroid/content/Context;Lcom/kik/cache/KikVolleyImageLoader;Lcom/kik/android/Mixpanel;)Landroid/graphics/Bitmap;
+.method public static a(Lkik/core/datatypes/ab;Landroid/content/Context;Lcom/kik/cache/KikVolleyImageLoader;Lcom/kik/android/Mixpanel;)Landroid/graphics/Bitmap;
     .locals 10
 
     .prologue
     const/4 v1, 0x0
 
-    const v9, 0x7f02027e
+    const v9, 0x7f020266
 
     const/4 v2, 0x0
 
@@ -1028,7 +1028,7 @@
 
     move-object v7, p3
 
-    invoke-static/range {v0 .. v7}, Lcom/kik/cache/MyPicImageRequest;->getProfileRequest(Lkik/core/datatypes/ac;Lcom/android/volley/h$b;IILcom/android/volley/h$a;ZZLcom/kik/android/Mixpanel;)Lcom/kik/cache/MyPicImageRequest;
+    invoke-static/range {v0 .. v7}, Lcom/kik/cache/MyPicImageRequest;->getProfileRequest(Lkik/core/datatypes/ab;Lcom/android/volley/h$b;IILcom/android/volley/h$a;ZZLcom/kik/android/Mixpanel;)Lcom/kik/cache/MyPicImageRequest;
 
     move-result-object v4
 
@@ -1732,7 +1732,7 @@
     goto :goto_0
 .end method
 
-.method public static a(Ljava/io/File;Ljava/lang/String;ZILkik/core/interfaces/ae;)Ljava/io/File;
+.method public static a(Ljava/io/File;Ljava/lang/String;ZILkik/core/interfaces/ad;)Ljava/io/File;
     .locals 8
 
     .prologue
@@ -1799,7 +1799,7 @@
 
     move v4, p2
 
-    invoke-interface/range {v0 .. v5}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;Ljava/lang/Object;ZZZ)Ljava/io/File;
+    invoke-interface/range {v0 .. v5}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Object;ZZZ)Ljava/io/File;
 
     move-result-object v0
 
@@ -1841,7 +1841,7 @@
     goto :goto_1
 .end method
 
-.method public static a(Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;Lkik/core/interfaces/ae;)Ljava/io/File;
+.method public static a(Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;Lkik/core/interfaces/ad;)Ljava/io/File;
     .locals 8
 
     .prologue
@@ -1973,7 +1973,7 @@
 
     move-object v1, p1
 
-    invoke-interface/range {v0 .. v5}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;Ljava/lang/Object;ZZZ)Ljava/io/File;
+    invoke-interface/range {v0 .. v5}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Object;ZZZ)Ljava/io/File;
 
     move-result-object v0
 
@@ -2029,7 +2029,7 @@
     goto :goto_0
 .end method
 
-.method public static a([BLjava/lang/String;Lkik/core/interfaces/ae;)Ljava/io/File;
+.method public static a([BLjava/lang/String;Lkik/core/interfaces/ad;)Ljava/io/File;
     .locals 7
 
     .prologue
@@ -2112,7 +2112,7 @@
 
     move-object v1, p1
 
-    invoke-interface/range {v0 .. v5}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;Ljava/lang/Object;ZZZ)Ljava/io/File;
+    invoke-interface/range {v0 .. v5}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Object;ZZZ)Ljava/io/File;
 
     move-result-object v0
 

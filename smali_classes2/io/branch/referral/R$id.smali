@@ -31,7 +31,7 @@
 
 .field public static final standard:I = 0x7f10007a
 
-.field public static final text2:I = 0x7f100399
+.field public static final text2:I = 0x7f100395
 
 .field public static final wide:I = 0x7f10007b
 

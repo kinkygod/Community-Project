@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/android/chat/vm/bt;->m_()V
+    value = Lkik/android/chat/vm/bt;->o_()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 163
+    .line 137
     iput-object p1, p0, Lkik/android/chat/vm/bt$2;->a:Lkik/android/chat/vm/bt;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -37,36 +37,28 @@
 
 # virtual methods
 .method public final a()V
-    .locals 2
+    .locals 1
 
     .prologue
-    .line 167
+    .line 141
     iget-object v0, p0, Lkik/android/chat/vm/bt$2;->a:Lkik/android/chat/vm/bt;
 
-    invoke-virtual {v0}, Lkik/android/chat/vm/bt;->B_()Lkik/android/chat/vm/aw;
+    invoke-virtual {v0}, Lkik/android/chat/vm/bt;->F_()Lkik/android/chat/vm/ay;
 
     move-result-object v0
 
-    invoke-interface {v0}, Lkik/android/chat/vm/aw;->h()V
+    invoke-interface {v0}, Lkik/android/chat/vm/ay;->g()V
 
-    .line 168
+    .line 142
     iget-object v0, p0, Lkik/android/chat/vm/bt$2;->a:Lkik/android/chat/vm/bt;
 
-    invoke-virtual {v0}, Lkik/android/chat/vm/bt;->B_()Lkik/android/chat/vm/aw;
+    invoke-virtual {v0}, Lkik/android/chat/vm/bt;->F_()Lkik/android/chat/vm/ay;
 
     move-result-object v0
 
-    invoke-interface {v0}, Lkik/android/chat/vm/aw;->i()Lcom/kik/events/Promise;
+    invoke-interface {v0}, Lkik/android/chat/vm/ay;->j()V
 
-    move-result-object v0
-
-    new-instance v1, Lkik/android/chat/vm/bt$2$1;
-
-    invoke-direct {v1, p0}, Lkik/android/chat/vm/bt$2$1;-><init>(Lkik/android/chat/vm/bt$2;)V
-
-    invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
-
-    .line 176
+    .line 143
     return-void
 .end method
 
@@ -74,21 +66,31 @@
     .locals 1
 
     .prologue
-    .line 181
+    .line 148
     iget-object v0, p0, Lkik/android/chat/vm/bt$2;->a:Lkik/android/chat/vm/bt;
 
-    invoke-virtual {v0}, Lkik/android/chat/vm/bt;->B_()Lkik/android/chat/vm/aw;
+    invoke-virtual {v0}, Lkik/android/chat/vm/bt;->G_()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 149
+    iget-object v0, p0, Lkik/android/chat/vm/bt$2;->a:Lkik/android/chat/vm/bt;
+
+    invoke-virtual {v0}, Lkik/android/chat/vm/bt;->F_()Lkik/android/chat/vm/ay;
 
     move-result-object v0
 
-    invoke-interface {v0}, Lkik/android/chat/vm/aw;->h()V
+    invoke-interface {v0}, Lkik/android/chat/vm/ay;->g()V
 
-    .line 182
+    .line 150
     iget-object v0, p0, Lkik/android/chat/vm/bt$2;->a:Lkik/android/chat/vm/bt;
 
     invoke-static {v0}, Lkik/android/chat/vm/bt;->c(Lkik/android/chat/vm/bt;)V
 
-    .line 183
+    .line 152
+    :cond_0
     return-void
 .end method
 
@@ -96,10 +98,10 @@
     .locals 3
 
     .prologue
-    .line 188
+    .line 157
     iget-object v0, p0, Lkik/android/chat/vm/bt$2;->a:Lkik/android/chat/vm/bt;
 
-    invoke-virtual {v0}, Lkik/android/chat/vm/bt;->B_()Lkik/android/chat/vm/aw;
+    invoke-virtual {v0}, Lkik/android/chat/vm/bt;->F_()Lkik/android/chat/vm/ay;
 
     move-result-object v0
 
@@ -113,8 +115,8 @@
 
     move-result-object v1
 
-    invoke-interface {v0, v1}, Lkik/android/chat/vm/aw;->a(Ljava/lang/String;)V
+    invoke-interface {v0, v1}, Lkik/android/chat/vm/ay;->a(Ljava/lang/String;)V
 
-    .line 189
+    .line 158
     return-void
 .end method

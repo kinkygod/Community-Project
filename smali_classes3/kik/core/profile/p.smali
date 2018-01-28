@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/core/interfaces/r;
+.implements Lkik/core/interfaces/q;
 
 
 # instance fields
@@ -57,7 +57,7 @@
 
 
 # virtual methods
-.method public final a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Hashtable;Lkik/core/interfaces/ak;)V
+.method public final a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Hashtable;Lkik/core/interfaces/aj;)V
     .locals 7
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -71,7 +71,7 @@
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             ">;",
-            "Lkik/core/interfaces/ak;",
+            "Lkik/core/interfaces/aj;",
             ")V"
         }
     .end annotation
@@ -103,7 +103,7 @@
 
     new-instance v2, Lkik/core/profile/p$1;
 
-    invoke-direct {v2, p0, p6, v0}, Lkik/core/profile/p$1;-><init>(Lkik/core/profile/p;Lkik/core/interfaces/ak;Lkik/core/net/outgoing/PreloginReregistrationRequest;)V
+    invoke-direct {v2, p0, p6, v0}, Lkik/core/profile/p$1;-><init>(Lkik/core/profile/p;Lkik/core/interfaces/aj;Lkik/core/net/outgoing/PreloginReregistrationRequest;)V
 
     invoke-virtual {v1, v2}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
 

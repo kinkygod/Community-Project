@@ -36,7 +36,7 @@
     .locals 0
 
     .prologue
-    .line 227
+    .line 230
     iput-object p1, p0, Lkik/android/chat/fragment/KikContactsListFragment$4;->a:Lkik/android/chat/fragment/KikContactsListFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -50,12 +50,12 @@
     .locals 1
 
     .prologue
-    .line 227
-    .line 1231
+    .line 230
+    .line 1234
     iget-object v0, p0, Lkik/android/chat/fragment/KikContactsListFragment$4;->a:Lkik/android/chat/fragment/KikContactsListFragment;
 
     invoke-static {v0}, Lkik/android/chat/fragment/KikContactsListFragment;->a(Lkik/android/chat/fragment/KikContactsListFragment;)V
 
-    .line 227
+    .line 230
     return-void
 .end method

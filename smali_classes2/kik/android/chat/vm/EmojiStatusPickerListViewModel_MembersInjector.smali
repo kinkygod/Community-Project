@@ -3,16 +3,16 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/b;
+.implements Ldagger/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/b",
+        "Ldagger/b",
         "<",
-        "Lkik/android/chat/vm/r;",
+        "Lkik/android/chat/vm/t;",
         ">;"
     }
 .end annotation
@@ -41,7 +41,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ah;",
+            "Lkik/core/interfaces/ag;",
             ">;"
         }
     .end annotation
@@ -74,7 +74,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ae;",
+            "Lkik/core/interfaces/ad;",
             ">;"
         }
     .end annotation
@@ -132,7 +132,7 @@
             ">;>;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ah;",
+            "Lkik/core/interfaces/ag;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -144,7 +144,7 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ae;",
+            "Lkik/core/interfaces/ad;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -263,7 +263,7 @@
     return-void
 .end method
 
-.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)La/b;
+.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
     .locals 7
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -276,7 +276,7 @@
             ">;>;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ah;",
+            "Lkik/core/interfaces/ag;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -288,15 +288,15 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ae;",
+            "Lkik/core/interfaces/ad;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
             "Lcom/kik/android/Mixpanel;",
             ">;)",
-            "La/b",
+            "Ldagger/b",
             "<",
-            "Lkik/android/chat/vm/r;",
+            "Lkik/android/chat/vm/t;",
             ">;"
         }
     .end annotation
@@ -324,12 +324,12 @@
 
 
 # virtual methods
-.method public final synthetic a(Ljava/lang/Object;)V
+.method public final synthetic injectMembers(Ljava/lang/Object;)V
     .locals 2
 
     .prologue
     .line 14
-    check-cast p1, Lkik/android/chat/vm/r;
+    check-cast p1, Lkik/android/chat/vm/t;
 
     .line 1071
     if-nez p1, :cond_0
@@ -353,7 +353,7 @@
 
     check-cast v0, Lkik/core/interfaces/g;
 
-    iput-object v0, p1, Lkik/android/chat/vm/r;->a:Lkik/core/interfaces/g;
+    iput-object v0, p1, Lkik/android/chat/vm/t;->a:Lkik/core/interfaces/g;
 
     .line 1075
     iget-object v0, p0, Lkik/android/chat/vm/EmojiStatusPickerListViewModel_MembersInjector;->c:Ljavax/inject/Provider;
@@ -362,9 +362,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/interfaces/ah;
+    check-cast v0, Lkik/core/interfaces/ag;
 
-    iput-object v0, p1, Lkik/android/chat/vm/r;->b:Lkik/core/interfaces/ah;
+    iput-object v0, p1, Lkik/android/chat/vm/t;->b:Lkik/core/interfaces/ag;
 
     .line 1076
     iget-object v0, p0, Lkik/android/chat/vm/EmojiStatusPickerListViewModel_MembersInjector;->d:Ljavax/inject/Provider;
@@ -375,7 +375,7 @@
 
     check-cast v0, Landroid/content/res/Resources;
 
-    iput-object v0, p1, Lkik/android/chat/vm/r;->c:Landroid/content/res/Resources;
+    iput-object v0, p1, Lkik/android/chat/vm/t;->c:Landroid/content/res/Resources;
 
     .line 1077
     iget-object v0, p0, Lkik/android/chat/vm/EmojiStatusPickerListViewModel_MembersInjector;->e:Ljavax/inject/Provider;
@@ -386,7 +386,7 @@
 
     check-cast v0, Lcom/kik/core/domain/users/UserController;
 
-    iput-object v0, p1, Lkik/android/chat/vm/r;->d:Lcom/kik/core/domain/users/UserController;
+    iput-object v0, p1, Lkik/android/chat/vm/t;->d:Lcom/kik/core/domain/users/UserController;
 
     .line 1078
     iget-object v0, p0, Lkik/android/chat/vm/EmojiStatusPickerListViewModel_MembersInjector;->f:Ljavax/inject/Provider;
@@ -395,9 +395,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/interfaces/ae;
+    check-cast v0, Lkik/core/interfaces/ad;
 
-    iput-object v0, p1, Lkik/android/chat/vm/r;->e:Lkik/core/interfaces/ae;
+    iput-object v0, p1, Lkik/android/chat/vm/t;->e:Lkik/core/interfaces/ad;
 
     .line 1079
     iget-object v0, p0, Lkik/android/chat/vm/EmojiStatusPickerListViewModel_MembersInjector;->g:Ljavax/inject/Provider;
@@ -408,7 +408,7 @@
 
     check-cast v0, Lcom/kik/android/Mixpanel;
 
-    iput-object v0, p1, Lkik/android/chat/vm/r;->f:Lcom/kik/android/Mixpanel;
+    iput-object v0, p1, Lkik/android/chat/vm/t;->f:Lcom/kik/android/Mixpanel;
 
     .line 14
     return-void

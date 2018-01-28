@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field private a:Lkik/android/chat/vm/widget/IStickerWidgetViewModel;
+.field private a:Lkik/android/chat/vm/widget/w;
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 158
+    .line 144
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -34,14 +34,14 @@
 
 
 # virtual methods
-.method public final a(Lkik/android/chat/vm/widget/IStickerWidgetViewModel;)Lkik/android/e/dk$a;
+.method public final a(Lkik/android/chat/vm/widget/w;)Lkik/android/e/dk$a;
     .locals 0
 
     .prologue
-    .line 161
-    iput-object p1, p0, Lkik/android/e/dk$a;->a:Lkik/android/chat/vm/widget/IStickerWidgetViewModel;
+    .line 147
+    iput-object p1, p0, Lkik/android/e/dk$a;->a:Lkik/android/chat/vm/widget/w;
 
-    .line 162
+    .line 148
     if-nez p1, :cond_0
 
     const/4 p0, 0x0
@@ -54,11 +54,11 @@
     .locals 1
 
     .prologue
-    .line 166
-    iget-object v0, p0, Lkik/android/e/dk$a;->a:Lkik/android/chat/vm/widget/IStickerWidgetViewModel;
+    .line 152
+    iget-object v0, p0, Lkik/android/e/dk$a;->a:Lkik/android/chat/vm/widget/w;
 
-    invoke-interface {v0}, Lkik/android/chat/vm/widget/IStickerWidgetViewModel;->aO_()V
+    invoke-interface {v0}, Lkik/android/chat/vm/widget/w;->i()V
 
-    .line 167
+    .line 153
     return-void
 .end method

@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/android/chat/presentation/MediaTrayPresenterImpl;-><init>(Lkik/android/util/KeyboardManipulator;Landroid/view/ViewGroup;ZZLcom/kik/components/CoreComponent;IIILkik/android/chat/presentation/r;Ljava/lang/String;Lkik/android/f/b;Lkik/android/chat/c;Lkik/android/chat/k;Lkik/android/chat/fragment/fl;Lkik/android/chat/vm/aw;Lkik/android/chat/fragment/fd;Lcom/kik/view/adapters/MediaTrayTabAdapter;Lkik/android/chat/vm/as;)V
+    value = Lkik/android/chat/presentation/MediaTrayPresenterImpl;-><init>(Lkik/android/util/KeyboardManipulator;Landroid/view/ViewGroup;ZZLcom/kik/components/CoreComponent;IIILkik/android/chat/presentation/r;Ljava/lang/String;Lkik/android/f/b;Lkik/android/chat/c;Lkik/android/chat/k;Lkik/android/chat/fragment/ft;Lkik/android/chat/vm/ay;Lkik/android/chat/fragment/fg;Lcom/kik/view/adapters/MediaTrayTabAdapter;Lkik/android/chat/vm/au;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -348,11 +348,11 @@
     :goto_3
     iget-object v2, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl$17;->b:Lkik/android/chat/presentation/MediaTrayPresenterImpl;
 
-    iget-object v2, v2, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->m:Lkik/core/interfaces/ae;
+    iget-object v2, v2, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->m:Lkik/core/interfaces/ad;
 
     const-string v3, "Bot Tutorial Completed"
 
-    invoke-interface {v2, v3, v1}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;Z)Ljava/lang/Boolean;
+    invoke-interface {v2, v3, v1}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Z)Ljava/lang/Boolean;
 
     move-result-object v1
 
@@ -432,7 +432,7 @@
     .line 925
     iget-object v0, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl$17;->b:Lkik/android/chat/presentation/MediaTrayPresenterImpl;
 
-    iget-object v0, v0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->m:Lkik/core/interfaces/ae;
+    iget-object v0, v0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->m:Lkik/core/interfaces/ad;
 
     const-string v1, "Bot Tutorial Completed"
 
@@ -440,7 +440,7 @@
 
     move-result-object v2
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;Ljava/lang/Boolean;)Z
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Boolean;)Z
 
     .line 927
     :cond_9

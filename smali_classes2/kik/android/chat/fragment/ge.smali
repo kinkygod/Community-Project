@@ -2,42 +2,42 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Landroid/media/MediaPlayer$OnPreparedListener;
+.implements Landroid/content/DialogInterface$OnCancelListener;
 
 
 # instance fields
-.field private final a:Lkik/android/chat/fragment/VideoMediaItemFragment;
+.field private final a:Lkik/android/util/g$a;
 
 
 # direct methods
-.method private constructor <init>(Lkik/android/chat/fragment/VideoMediaItemFragment;)V
+.method private constructor <init>(Lkik/android/util/g$a;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lkik/android/chat/fragment/ge;->a:Lkik/android/chat/fragment/VideoMediaItemFragment;
+    iput-object p1, p0, Lkik/android/chat/fragment/ge;->a:Lkik/android/util/g$a;
 
     return-void
 .end method
 
-.method public static a(Lkik/android/chat/fragment/VideoMediaItemFragment;)Landroid/media/MediaPlayer$OnPreparedListener;
+.method public static a(Lkik/android/util/g$a;)Landroid/content/DialogInterface$OnCancelListener;
     .locals 1
 
     new-instance v0, Lkik/android/chat/fragment/ge;
 
-    invoke-direct {v0, p0}, Lkik/android/chat/fragment/ge;-><init>(Lkik/android/chat/fragment/VideoMediaItemFragment;)V
+    invoke-direct {v0, p0}, Lkik/android/chat/fragment/ge;-><init>(Lkik/android/util/g$a;)V
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public final onPrepared(Landroid/media/MediaPlayer;)V
+.method public final onCancel(Landroid/content/DialogInterface;)V
     .locals 1
 
-    iget-object v0, p0, Lkik/android/chat/fragment/ge;->a:Lkik/android/chat/fragment/VideoMediaItemFragment;
+    iget-object v0, p0, Lkik/android/chat/fragment/ge;->a:Lkik/android/util/g$a;
 
-    invoke-static {v0, p1}, Lkik/android/chat/fragment/VideoMediaItemFragment;->a(Lkik/android/chat/fragment/VideoMediaItemFragment;Landroid/media/MediaPlayer;)V
+    invoke-static {v0}, Lkik/android/chat/fragment/UserProfileFragment;->a(Lkik/android/util/g$a;)V
 
     return-void
 .end method

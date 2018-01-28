@@ -5,35 +5,31 @@
 .implements Lrx/functions/g;
 
 
-# static fields
-.field private static final a:Lkik/core/profile/ao;
+# instance fields
+.field private final a:Lkik/core/profile/aj;
+
+.field private final b:Ljava/lang/String;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lkik/core/profile/ao;
-
-    invoke-direct {v0}, Lkik/core/profile/ao;-><init>()V
-
-    sput-object v0, Lkik/core/profile/ao;->a:Lkik/core/profile/ao;
-
-    return-void
-.end method
-
-.method private constructor <init>()V
+.method private constructor <init>(Lkik/core/profile/aj;Ljava/lang/String;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    iput-object p1, p0, Lkik/core/profile/ao;->a:Lkik/core/profile/aj;
+
+    iput-object p2, p0, Lkik/core/profile/ao;->b:Ljava/lang/String;
+
     return-void
 .end method
 
-.method public static a()Lrx/functions/g;
+.method public static a(Lkik/core/profile/aj;Ljava/lang/String;)Lrx/functions/g;
     .locals 1
 
-    sget-object v0, Lkik/core/profile/ao;->a:Lkik/core/profile/ao;
+    new-instance v0, Lkik/core/profile/ao;
+
+    invoke-direct {v0, p0, p1}, Lkik/core/profile/ao;-><init>(Lkik/core/profile/aj;Ljava/lang/String;)V
 
     return-object v0
 .end method
@@ -41,34 +37,17 @@
 
 # virtual methods
 .method public final call(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+    .locals 2
 
-    .prologue
-    .line 0
-    check-cast p1, Lkik/core/datatypes/s;
+    iget-object v0, p0, Lkik/core/profile/ao;->a:Lkik/core/profile/aj;
 
-    .line 1070
-    if-eqz p1, :cond_0
+    iget-object v1, p0, Lkik/core/profile/ao;->b:Ljava/lang/String;
 
-    invoke-virtual {p1}, Lkik/core/datatypes/s;->o()Z
+    check-cast p1, Ljava/lang/String;
 
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    const/4 v0, 0x1
-
-    :goto_0
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    invoke-static {v0, v1, p1}, Lkik/core/profile/aj;->a(Lkik/core/profile/aj;Ljava/lang/String;Ljava/lang/String;)Lkik/core/datatypes/l;
 
     move-result-object v0
 
-    .line 0
     return-object v0
-
-    .line 1070
-    :cond_0
-    const/4 v0, 0x0
-
-    goto :goto_0
 .end method

@@ -34,7 +34,7 @@
     .locals 0
 
     .prologue
-    .line 795
+    .line 801
     iput-object p1, p0, Lkik/android/chat/fragment/KikStartGroupFragment$4;->b:Lkik/android/chat/fragment/KikStartGroupFragment;
 
     iput-object p2, p0, Lkik/android/chat/fragment/KikStartGroupFragment$4;->a:Ljava/lang/String;
@@ -50,16 +50,16 @@
     .locals 2
 
     .prologue
-    .line 795
+    .line 801
     check-cast p1, Lkik/core/datatypes/l;
 
-    .line 1799
+    .line 1805
     iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment$4;->b:Lkik/android/chat/fragment/KikStartGroupFragment;
 
     iget-object v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment$4;->a:Ljava/lang/String;
 
     invoke-virtual {v0, v1, p1}, Lkik/android/chat/fragment/KikStartGroupFragment;->a(Ljava/lang/String;Lkik/core/datatypes/l;)V
 
-    .line 795
+    .line 801
     return-void
 .end method

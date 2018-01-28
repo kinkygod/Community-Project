@@ -12,11 +12,11 @@
 
 .field private final c:Ljava/util/List;
 
-.field private final d:Lkik/core/datatypes/KikSectionedContact;
+.field private final d:Lkik/core/datatypes/GroupContactInfoHolder;
 
 
 # direct methods
-.method private constructor <init>(Lkik/android/chat/fragment/KikGroupMembersListFragment;Ljava/util/List;Ljava/util/List;Lkik/core/datatypes/KikSectionedContact;)V
+.method private constructor <init>(Lkik/android/chat/fragment/KikGroupMembersListFragment;Ljava/util/List;Ljava/util/List;Lkik/core/datatypes/GroupContactInfoHolder;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -27,17 +27,17 @@
 
     iput-object p3, p0, Lkik/android/chat/fragment/cd;->c:Ljava/util/List;
 
-    iput-object p4, p0, Lkik/android/chat/fragment/cd;->d:Lkik/core/datatypes/KikSectionedContact;
+    iput-object p4, p0, Lkik/android/chat/fragment/cd;->d:Lkik/core/datatypes/GroupContactInfoHolder;
 
     return-void
 .end method
 
-.method public static a(Lkik/android/chat/fragment/KikGroupMembersListFragment;Ljava/util/List;Ljava/util/List;Lkik/core/datatypes/KikSectionedContact;)Landroid/widget/PopupMenu$OnMenuItemClickListener;
+.method public static a(Lkik/android/chat/fragment/KikGroupMembersListFragment;Ljava/util/List;Ljava/util/List;Lkik/core/datatypes/GroupContactInfoHolder;)Landroid/widget/PopupMenu$OnMenuItemClickListener;
     .locals 1
 
     new-instance v0, Lkik/android/chat/fragment/cd;
 
-    invoke-direct {v0, p0, p1, p2, p3}, Lkik/android/chat/fragment/cd;-><init>(Lkik/android/chat/fragment/KikGroupMembersListFragment;Ljava/util/List;Ljava/util/List;Lkik/core/datatypes/KikSectionedContact;)V
+    invoke-direct {v0, p0, p1, p2, p3}, Lkik/android/chat/fragment/cd;-><init>(Lkik/android/chat/fragment/KikGroupMembersListFragment;Ljava/util/List;Ljava/util/List;Lkik/core/datatypes/GroupContactInfoHolder;)V
 
     return-object v0
 .end method
@@ -53,9 +53,9 @@
 
     iget-object v2, p0, Lkik/android/chat/fragment/cd;->c:Ljava/util/List;
 
-    iget-object v3, p0, Lkik/android/chat/fragment/cd;->d:Lkik/core/datatypes/KikSectionedContact;
+    iget-object v3, p0, Lkik/android/chat/fragment/cd;->d:Lkik/core/datatypes/GroupContactInfoHolder;
 
-    invoke-static {v0, v1, v2, v3, p1}, Lkik/android/chat/fragment/KikGroupMembersListFragment;->a(Lkik/android/chat/fragment/KikGroupMembersListFragment;Ljava/util/List;Ljava/util/List;Lkik/core/datatypes/KikSectionedContact;Landroid/view/MenuItem;)Z
+    invoke-static {v0, v1, v2, v3, p1}, Lkik/android/chat/fragment/KikGroupMembersListFragment;->a(Lkik/android/chat/fragment/KikGroupMembersListFragment;Ljava/util/List;Ljava/util/List;Lkik/core/datatypes/GroupContactInfoHolder;Landroid/view/MenuItem;)Z
 
     move-result v0
 

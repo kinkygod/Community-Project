@@ -37,7 +37,7 @@
         value = {
             "Lrx/d$c",
             "<",
-            "Lkik/core/datatypes/ac;",
+            "Lkik/core/datatypes/ab;",
             "Lkik/core/interfaces/o",
             "<TI;>;>;"
         }
@@ -68,11 +68,11 @@
     .end annotation
 .end field
 
-.field private final e:Lkik/core/interfaces/w;
+.field private final e:Lkik/core/interfaces/v;
 
 
 # direct methods
-.method public constructor <init>(Lrx/d$c;Lrx/d$c;Lrx/d$c;Lrx/d$c;Lkik/core/interfaces/w;)V
+.method public constructor <init>(Lrx/d$c;Lrx/d$c;Lrx/d$c;Lrx/d$c;Lkik/core/interfaces/v;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -94,10 +94,10 @@
             "<TI;>;>;",
             "Lrx/d$c",
             "<",
-            "Lkik/core/datatypes/ac;",
+            "Lkik/core/datatypes/ab;",
             "Lkik/core/interfaces/o",
             "<TI;>;>;",
-            "Lkik/core/interfaces/w;",
+            "Lkik/core/interfaces/v;",
             ")V"
         }
     .end annotation
@@ -119,7 +119,7 @@
     iput-object p4, p0, Lkik/core/profile/a;->b:Lrx/d$c;
 
     .line 34
-    iput-object p5, p0, Lkik/core/profile/a;->e:Lkik/core/interfaces/w;
+    iput-object p5, p0, Lkik/core/profile/a;->e:Lkik/core/interfaces/v;
 
     .line 35
     return-void
@@ -180,11 +180,11 @@
     check-cast v0, Ljava/lang/String;
 
     .line 76
-    iget-object v3, p0, Lkik/core/profile/a;->e:Lkik/core/interfaces/w;
+    iget-object v3, p0, Lkik/core/profile/a;->e:Lkik/core/interfaces/v;
 
     const/4 v4, 0x0
 
-    invoke-interface {v3, v0, v4}, Lkik/core/interfaces/w;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
+    invoke-interface {v3, v0, v4}, Lkik/core/interfaces/v;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
 
     move-result-object v0
 
@@ -368,7 +368,7 @@
             "(",
             "Lrx/d",
             "<",
-            "Lkik/core/datatypes/ac;",
+            "Lkik/core/datatypes/ab;",
             ">;)",
             "Lrx/d",
             "<",

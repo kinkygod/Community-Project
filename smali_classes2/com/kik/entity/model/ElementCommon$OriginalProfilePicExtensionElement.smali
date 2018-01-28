@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/kik/entity/model/ElementCommon$j;
+.implements Lcom/kik/entity/model/ElementCommon$k;
 
 
 # annotations
@@ -147,7 +147,7 @@
     .line 1790
     iget-object v0, p0, Lcom/kik/entity/model/ElementCommon$OriginalProfilePicExtensionElement;->extensionDetail_:Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;
 
-    invoke-virtual {v0}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;->e()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;
+    invoke-virtual {v0}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;->d()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;
 
     move-result-object v0
 
@@ -155,7 +155,7 @@
 
     .line 1792
     :goto_1
-    invoke-static {}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;->g()Lcom/google/protobuf/Parser;
+    invoke-static {}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;->f()Lcom/google/protobuf/Parser;
 
     move-result-object v0
 
@@ -176,7 +176,7 @@
     invoke-virtual {v1, v0}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;->a(Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;)Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;
 
     .line 1795
-    invoke-virtual {v1}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;->b()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;
+    invoke-virtual {v1}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;->a()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;
 
     move-result-object v0
 
@@ -405,7 +405,7 @@
 
     if-nez v0, :cond_0
 
-    invoke-static {}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;->f()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;
+    invoke-static {}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;->e()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;
 
     move-result-object v0
 

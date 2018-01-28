@@ -53,9 +53,9 @@
 
 .field private final q:Lcom/kik/android/Mixpanel;
 
-.field private final r:Lcom/kik/storage/p;
+.field private final r:Lcom/kik/storage/s;
 
-.field private final s:Lkik/core/interfaces/ae;
+.field private final s:Lkik/core/interfaces/ad;
 
 .field private t:Lkik/android/chat/fragment/p;
 
@@ -87,7 +87,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Lcom/kik/android/Mixpanel;Lkik/core/interfaces/ae;Lcom/kik/storage/p;)V
+.method public constructor <init>(Lcom/kik/android/Mixpanel;Lkik/core/interfaces/ad;Lcom/kik/storage/s;)V
     .locals 2
 
     .prologue
@@ -130,10 +130,10 @@
     iput-object p1, p0, Lkik/android/chat/presentation/CameraPresenterImpl;->q:Lcom/kik/android/Mixpanel;
 
     .line 80
-    iput-object p2, p0, Lkik/android/chat/presentation/CameraPresenterImpl;->s:Lkik/core/interfaces/ae;
+    iput-object p2, p0, Lkik/android/chat/presentation/CameraPresenterImpl;->s:Lkik/core/interfaces/ad;
 
     .line 81
-    iput-object p3, p0, Lkik/android/chat/presentation/CameraPresenterImpl;->r:Lcom/kik/storage/p;
+    iput-object p3, p0, Lkik/android/chat/presentation/CameraPresenterImpl;->r:Lcom/kik/storage/s;
 
     .line 82
     return-void
@@ -525,7 +525,7 @@
     move-result v1
 
     .line 462
-    iget-object v2, p0, Lkik/android/chat/presentation/CameraPresenterImpl;->s:Lkik/core/interfaces/ae;
+    iget-object v2, p0, Lkik/android/chat/presentation/CameraPresenterImpl;->s:Lkik/core/interfaces/ad;
 
     const-string v3, "kik.android.chat.fragment.CameraFragment.SelectCameraPreference"
 
@@ -533,7 +533,7 @@
 
     move-result-object v1
 
-    invoke-interface {v2, v3, v1}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;Ljava/lang/Integer;)Z
+    invoke-interface {v2, v3, v1}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Integer;)Z
 
     .line 464
     iget-object v1, p0, Lkik/android/chat/presentation/CameraPresenterImpl;->u:Lkik/android/c/c;
@@ -624,11 +624,11 @@
     const/4 v0, 0x0
 
     .line 616
-    iget-object v1, p0, Lkik/android/chat/presentation/CameraPresenterImpl;->s:Lkik/core/interfaces/ae;
+    iget-object v1, p0, Lkik/android/chat/presentation/CameraPresenterImpl;->s:Lkik/core/interfaces/ad;
 
     const-string v2, "kik.num-videos-sent"
 
-    invoke-interface {v1, v2, v0}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;I)Ljava/lang/Integer;
+    invoke-interface {v1, v2, v0}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;I)Ljava/lang/Integer;
 
     move-result-object v1
 
@@ -659,11 +659,11 @@
     if-eqz v1, :cond_0
 
     .line 4627
-    iget-object v1, p0, Lkik/android/chat/presentation/CameraPresenterImpl;->s:Lkik/core/interfaces/ae;
+    iget-object v1, p0, Lkik/android/chat/presentation/CameraPresenterImpl;->s:Lkik/core/interfaces/ad;
 
     const-string v2, "kik.chat.video.videos-zoomed"
 
-    invoke-interface {v1, v2, v0}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;I)Ljava/lang/Integer;
+    invoke-interface {v1, v2, v0}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;I)Ljava/lang/Integer;
 
     move-result-object v1
 
@@ -1229,13 +1229,13 @@
     invoke-direct {p0}, Lkik/android/chat/presentation/CameraPresenterImpl;->z()V
 
     .line 105
-    iget-object v0, p0, Lkik/android/chat/presentation/CameraPresenterImpl;->s:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/chat/presentation/CameraPresenterImpl;->s:Lkik/core/interfaces/ad;
 
     const-string v1, "kik.android.chat.fragment.CameraFragment.SelectCameraPreference"
 
     const/4 v2, -0x1
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;I)Ljava/lang/Integer;
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;I)Ljava/lang/Integer;
 
     move-result-object v0
 
@@ -1251,7 +1251,7 @@
     move-result v0
 
     .line 108
-    iget-object v1, p0, Lkik/android/chat/presentation/CameraPresenterImpl;->s:Lkik/core/interfaces/ae;
+    iget-object v1, p0, Lkik/android/chat/presentation/CameraPresenterImpl;->s:Lkik/core/interfaces/ad;
 
     const-string v2, "kik.android.chat.fragment.CameraFragment.SelectCameraPreference"
 
@@ -1259,7 +1259,7 @@
 
     move-result-object v0
 
-    invoke-interface {v1, v2, v0}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;Ljava/lang/Integer;)Z
+    invoke-interface {v1, v2, v0}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Integer;)Z
 
     .line 109
     return-void
@@ -1373,11 +1373,11 @@
     .line 544
     iget-object v0, p0, Lkik/android/chat/presentation/CameraPresenterImpl;->u:Lkik/android/c/c;
 
-    iget-object v1, p0, Lkik/android/chat/presentation/CameraPresenterImpl;->r:Lcom/kik/storage/p;
+    iget-object v1, p0, Lkik/android/chat/presentation/CameraPresenterImpl;->r:Lcom/kik/storage/s;
 
     iget-object v2, p0, Lkik/android/chat/presentation/CameraPresenterImpl;->o:Ljava/lang/String;
 
-    invoke-interface {v1, v2}, Lcom/kik/storage/p;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {v1, v2}, Lcom/kik/storage/s;->b(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -1716,11 +1716,11 @@
     invoke-interface {v0, v1}, Lkik/android/chat/view/m;->a(Z)V
 
     .line 248
-    iget-object v0, p0, Lkik/android/chat/presentation/CameraPresenterImpl;->s:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/chat/presentation/CameraPresenterImpl;->s:Lkik/core/interfaces/ad;
 
     const-string v1, "kik.android.chat.fragment.CameraFragment.FlashPreference"
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ae;->s(Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {v0, v1}, Lkik/core/interfaces/ad;->s(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1762,11 +1762,11 @@
     if-eqz v0, :cond_2
 
     .line 259
-    iget-object v1, p0, Lkik/android/chat/presentation/CameraPresenterImpl;->s:Lkik/core/interfaces/ae;
+    iget-object v1, p0, Lkik/android/chat/presentation/CameraPresenterImpl;->s:Lkik/core/interfaces/ad;
 
     const-string v2, "kik.android.chat.fragment.CameraFragment.FlashPreference"
 
-    invoke-interface {v1, v2, v0}, Lkik/core/interfaces/ae;->c(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-interface {v1, v2, v0}, Lkik/core/interfaces/ad;->c(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 262
     :cond_2
@@ -1938,11 +1938,11 @@
     .line 356
     iget-object v0, p0, Lkik/android/chat/presentation/CameraPresenterImpl;->x:Lkik/android/chat/view/af;
 
-    iget-object v1, p0, Lkik/android/chat/presentation/CameraPresenterImpl;->r:Lcom/kik/storage/p;
+    iget-object v1, p0, Lkik/android/chat/presentation/CameraPresenterImpl;->r:Lcom/kik/storage/s;
 
     iget-object v2, p0, Lkik/android/chat/presentation/CameraPresenterImpl;->o:Ljava/lang/String;
 
-    invoke-interface {v1, v2}, Lcom/kik/storage/p;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {v1, v2}, Lcom/kik/storage/s;->b(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -2006,11 +2006,11 @@
     if-eqz v0, :cond_1
 
     .line 2632
-    iget-object v0, p0, Lkik/android/chat/presentation/CameraPresenterImpl;->s:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/chat/presentation/CameraPresenterImpl;->s:Lkik/core/interfaces/ad;
 
     const-string v1, "kik.chat.video.videos-zoomed"
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ae;->y(Ljava/lang/String;)Z
+    invoke-interface {v0, v1}, Lkik/core/interfaces/ad;->y(Ljava/lang/String;)Z
 
     .line 370
     :cond_1
@@ -2048,11 +2048,11 @@
     if-eqz v0, :cond_0
 
     .line 433
-    iget-object v1, p0, Lkik/android/chat/presentation/CameraPresenterImpl;->s:Lkik/core/interfaces/ae;
+    iget-object v1, p0, Lkik/android/chat/presentation/CameraPresenterImpl;->s:Lkik/core/interfaces/ad;
 
     const-string v2, "kik.android.chat.fragment.CameraFragment.FlashPreference"
 
-    invoke-interface {v1, v2, v0}, Lkik/core/interfaces/ae;->c(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-interface {v1, v2, v0}, Lkik/core/interfaces/ad;->c(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 436
     :cond_0
@@ -2180,11 +2180,11 @@
     if-nez v0, :cond_0
 
     .line 506
-    iget-object v0, p0, Lkik/android/chat/presentation/CameraPresenterImpl;->s:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/chat/presentation/CameraPresenterImpl;->s:Lkik/core/interfaces/ad;
 
     const-string v1, "kik.num-videos-sent"
 
-    invoke-interface {v0, v1, v3}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;I)Ljava/lang/Integer;
+    invoke-interface {v0, v1, v3}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;I)Ljava/lang/Integer;
 
     move-result-object v0
 
@@ -2193,7 +2193,7 @@
     move-result v0
 
     .line 507
-    iget-object v1, p0, Lkik/android/chat/presentation/CameraPresenterImpl;->s:Lkik/core/interfaces/ae;
+    iget-object v1, p0, Lkik/android/chat/presentation/CameraPresenterImpl;->s:Lkik/core/interfaces/ad;
 
     const-string v2, "kik.num-videos-sent"
 
@@ -2203,15 +2203,15 @@
 
     move-result-object v0
 
-    invoke-interface {v1, v2, v0}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;Ljava/lang/Integer;)Z
+    invoke-interface {v1, v2, v0}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Integer;)Z
 
     .line 509
     :cond_0
-    iget-object v0, p0, Lkik/android/chat/presentation/CameraPresenterImpl;->r:Lcom/kik/storage/p;
+    iget-object v0, p0, Lkik/android/chat/presentation/CameraPresenterImpl;->r:Lcom/kik/storage/s;
 
     iget-object v1, p0, Lkik/android/chat/presentation/CameraPresenterImpl;->o:Ljava/lang/String;
 
-    invoke-interface {v0, v1}, Lcom/kik/storage/p;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {v0, v1}, Lcom/kik/storage/s;->b(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -2232,20 +2232,20 @@
     invoke-direct {p0}, Lkik/android/chat/presentation/CameraPresenterImpl;->z()V
 
     .line 512
-    iget-object v1, p0, Lkik/android/chat/presentation/CameraPresenterImpl;->r:Lcom/kik/storage/p;
+    iget-object v1, p0, Lkik/android/chat/presentation/CameraPresenterImpl;->r:Lcom/kik/storage/s;
 
     iget-object v2, p0, Lkik/android/chat/presentation/CameraPresenterImpl;->o:Ljava/lang/String;
 
-    invoke-interface {v1, v2, v0}, Lcom/kik/storage/p;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-interface {v1, v2, v0}, Lcom/kik/storage/s;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 514
     iget-object v1, p0, Lkik/android/chat/presentation/CameraPresenterImpl;->u:Lkik/android/c/c;
 
     iget-object v2, p0, Lkik/android/chat/presentation/CameraPresenterImpl;->o:Ljava/lang/String;
 
-    iget-object v3, p0, Lkik/android/chat/presentation/CameraPresenterImpl;->s:Lkik/core/interfaces/ae;
+    iget-object v3, p0, Lkik/android/chat/presentation/CameraPresenterImpl;->s:Lkik/core/interfaces/ad;
 
-    invoke-interface {v1, v0, v2, v3}, Lkik/android/c/c;->a(Ljava/lang/String;Ljava/lang/String;Lkik/core/interfaces/ae;)V
+    invoke-interface {v1, v0, v2, v3}, Lkik/android/c/c;->a(Ljava/lang/String;Ljava/lang/String;Lkik/core/interfaces/ad;)V
 
     .line 520
     :goto_0
@@ -2262,9 +2262,9 @@
     .line 518
     iget-object v1, p0, Lkik/android/chat/presentation/CameraPresenterImpl;->u:Lkik/android/c/c;
 
-    iget-object v2, p0, Lkik/android/chat/presentation/CameraPresenterImpl;->s:Lkik/core/interfaces/ae;
+    iget-object v2, p0, Lkik/android/chat/presentation/CameraPresenterImpl;->s:Lkik/core/interfaces/ad;
 
-    invoke-interface {v1, v2, v0}, Lkik/android/c/c;->a(Lkik/core/interfaces/ae;Landroid/graphics/Bitmap;)V
+    invoke-interface {v1, v2, v0}, Lkik/android/c/c;->a(Lkik/core/interfaces/ad;Landroid/graphics/Bitmap;)V
 
     goto :goto_0
 .end method

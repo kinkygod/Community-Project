@@ -10,17 +10,17 @@
 
 .field private final _browserMetadata:Lcom/kik/cards/web/h;
 
-.field private final _conversationInterface:Lkik/core/interfaces/w;
+.field private final _conversationInterface:Lkik/core/interfaces/v;
 
 .field private final _dialogDelegate:Lcom/kik/cards/web/f;
 
-.field private final _navigator:Lkik/android/chat/vm/bu;
+.field private final _navigator:Lkik/android/chat/vm/bw;
 
 .field private _userName:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(Landroid/app/Activity;Lcom/kik/cards/web/f;Lkik/core/interfaces/w;Lcom/kik/cards/web/browser/BrowserPlugin$a;Lcom/kik/cards/web/h;)V
+.method public constructor <init>(Landroid/app/Activity;Lcom/kik/cards/web/f;Lkik/core/interfaces/v;Lcom/kik/cards/web/browser/BrowserPlugin$a;Lcom/kik/cards/web/h;)V
     .locals 2
 
     .prologue
@@ -35,17 +35,17 @@
     iput-object p1, p0, Lcom/kik/cards/web/profile/ProfilePlugin;->_activity:Landroid/app/Activity;
 
     .line 44
-    new-instance v0, Lkik/android/chat/vm/bu;
+    new-instance v0, Lkik/android/chat/vm/bw;
 
-    invoke-direct {v0, p1}, Lkik/android/chat/vm/bu;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p1}, Lkik/android/chat/vm/bw;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/kik/cards/web/profile/ProfilePlugin;->_navigator:Lkik/android/chat/vm/bu;
+    iput-object v0, p0, Lcom/kik/cards/web/profile/ProfilePlugin;->_navigator:Lkik/android/chat/vm/bw;
 
     .line 45
     iput-object p2, p0, Lcom/kik/cards/web/profile/ProfilePlugin;->_dialogDelegate:Lcom/kik/cards/web/f;
 
     .line 46
-    iput-object p3, p0, Lcom/kik/cards/web/profile/ProfilePlugin;->_conversationInterface:Lkik/core/interfaces/w;
+    iput-object p3, p0, Lcom/kik/cards/web/profile/ProfilePlugin;->_conversationInterface:Lkik/core/interfaces/v;
 
     .line 47
     iput-object p4, p0, Lcom/kik/cards/web/profile/ProfilePlugin;->_browser:Lcom/kik/cards/web/browser/BrowserPlugin$a;
@@ -97,12 +97,12 @@
     return-object v0
 .end method
 
-.method static synthetic access$400(Lcom/kik/cards/web/profile/ProfilePlugin;)Lkik/android/chat/vm/bu;
+.method static synthetic access$400(Lcom/kik/cards/web/profile/ProfilePlugin;)Lkik/android/chat/vm/bw;
     .locals 1
 
     .prologue
     .line 29
-    iget-object v0, p0, Lcom/kik/cards/web/profile/ProfilePlugin;->_navigator:Lkik/android/chat/vm/bu;
+    iget-object v0, p0, Lcom/kik/cards/web/profile/ProfilePlugin;->_navigator:Lkik/android/chat/vm/bw;
 
     return-object v0
 .end method
@@ -210,9 +210,9 @@
 
     .line 65
     :cond_1
-    iget-object v1, p0, Lcom/kik/cards/web/profile/ProfilePlugin;->_conversationInterface:Lkik/core/interfaces/w;
+    iget-object v1, p0, Lcom/kik/cards/web/profile/ProfilePlugin;->_conversationInterface:Lkik/core/interfaces/v;
 
-    invoke-interface {v1, v0}, Lkik/core/interfaces/w;->a(Ljava/lang/String;)Lkik/core/datatypes/l;
+    invoke-interface {v1, v0}, Lkik/core/interfaces/v;->a(Ljava/lang/String;)Lkik/core/datatypes/l;
 
     move-result-object v1
 
@@ -243,9 +243,9 @@
     invoke-interface {v1, v2}, Lcom/kik/cards/web/f;->b(Ljava/lang/String;)V
 
     .line 72
-    iget-object v1, p0, Lcom/kik/cards/web/profile/ProfilePlugin;->_conversationInterface:Lkik/core/interfaces/w;
+    iget-object v1, p0, Lcom/kik/cards/web/profile/ProfilePlugin;->_conversationInterface:Lkik/core/interfaces/v;
 
-    invoke-interface {v1, v0}, Lkik/core/interfaces/w;->e(Ljava/lang/String;)Lcom/kik/events/Promise;
+    invoke-interface {v1, v0}, Lkik/core/interfaces/v;->e(Ljava/lang/String;)Lcom/kik/events/Promise;
 
     move-result-object v0
 

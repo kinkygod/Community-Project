@@ -43,9 +43,9 @@
 .method public final call(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    check-cast p1, Landroid/graphics/Bitmap;
+    check-cast p1, Ljava/lang/String;
 
-    invoke-static {p1}, Lcom/kik/util/bq;->b(Landroid/graphics/Bitmap;)Ljava/lang/Boolean;
+    invoke-static {p1}, Lcom/kik/util/bt;->a(Ljava/lang/String;)Ljava/lang/Boolean;
 
     move-result-object v0
 

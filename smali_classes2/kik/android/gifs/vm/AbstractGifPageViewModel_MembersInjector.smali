@@ -3,19 +3,19 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/b;
+.implements Ldagger/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<ItemViewModel::",
-        "Lkik/android/chat/vm/ar;",
+        "Lkik/android/chat/vm/at;",
         "DataType:",
         "Ljava/lang/Object;",
         ">",
         "Ljava/lang/Object;",
-        "La/b",
+        "Ldagger/b",
         "<",
         "Lkik/android/gifs/vm/c",
         "<TItemViewModel;TDataType;>;>;"
@@ -69,7 +69,7 @@
 
 
 # virtual methods
-.method public final synthetic a(Ljava/lang/Object;)V
+.method public final synthetic injectMembers(Ljava/lang/Object;)V
     .locals 2
 
     .prologue

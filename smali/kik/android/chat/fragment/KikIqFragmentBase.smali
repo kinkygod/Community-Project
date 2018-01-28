@@ -173,7 +173,7 @@
 
     move-result-object v0
 
-    invoke-static {p1}, Lkik/android/util/ce;->a(I)Ljava/lang/String;
+    invoke-static {p1}, Lkik/android/util/cf;->a(I)Ljava/lang/String;
 
     move-result-object v1
 

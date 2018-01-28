@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/kik/entity/model/ElementCommon$l;
+.implements Lcom/kik/entity/model/ElementCommon$m;
 
 
 # annotations
@@ -22,7 +22,7 @@
         "<",
         "Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;",
         ">;",
-        "Lcom/kik/entity/model/ElementCommon$l;"
+        "Lcom/kik/entity/model/ElementCommon$m;"
     }
 .end annotation
 
@@ -73,7 +73,7 @@
     iput v0, p0, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;->a:I
 
     .line 4394
-    invoke-static {}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;->h()Z
+    invoke-static {}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;->g()Z
 
     .line 3385
     return-void
@@ -102,7 +102,7 @@
     iput v0, p0, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;->a:I
 
     .line 5394
-    invoke-static {}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;->h()Z
+    invoke-static {}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;->g()Z
 
     .line 3391
     return-void
@@ -132,7 +132,7 @@
 
     .line 3506
     :try_start_0
-    invoke-static {}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;->i()Lcom/google/protobuf/Parser;
+    invoke-static {}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;->h()Lcom/google/protobuf/Parser;
 
     move-result-object v0
 
@@ -292,21 +292,7 @@
     goto :goto_0
 .end method
 
-.method private b(Lcom/google/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;
-    .locals 1
-
-    .prologue
-    .line 3466
-    invoke-super {p0, p1, p2}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->addRepeatedField(Lcom/google/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lcom/google/protobuf/GeneratedMessageV3$Builder;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;
-
-    return-object v0
-.end method
-
-.method private c()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;
+.method private b()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;
     .locals 1
 
     .prologue
@@ -327,49 +313,50 @@
     return-object p0
 .end method
 
-
-# virtual methods
-.method public final a(Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement$a;)Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;
-    .locals 2
+.method private b(Lcom/google/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;
+    .locals 1
 
     .prologue
-    .line 3746
-    iget-object v0, p0, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;->d:Lcom/google/protobuf/SingleFieldBuilderV3;
-
-    if-nez v0, :cond_0
-
-    .line 3747
-    invoke-virtual {p1}, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement$a;->a()Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;
+    .line 3466
+    invoke-super {p0, p1, p2}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->addRepeatedField(Lcom/google/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lcom/google/protobuf/GeneratedMessageV3$Builder;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;->b:Ljava/lang/Object;
+    check-cast v0, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;
 
-    .line 3748
-    invoke-virtual {p0}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;->onChanged()V
-
-    .line 3752
-    :goto_0
-    const/4 v0, 0x3
-
-    iput v0, p0, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;->a:I
-
-    .line 3753
-    return-object p0
-
-    .line 3750
-    :cond_0
-    iget-object v0, p0, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;->d:Lcom/google/protobuf/SingleFieldBuilderV3;
-
-    invoke-virtual {p1}, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement$a;->a()Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lcom/google/protobuf/SingleFieldBuilderV3;->setMessage(Lcom/google/protobuf/AbstractMessage;)Lcom/google/protobuf/SingleFieldBuilderV3;
-
-    goto :goto_0
+    return-object v0
 .end method
 
+.method private c()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;
+    .locals 2
+
+    .prologue
+    .line 3414
+    invoke-virtual {p0}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;->a()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;
+
+    move-result-object v0
+
+    .line 3415
+    invoke-virtual {v0}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;->isInitialized()Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    .line 3416
+    invoke-static {v0}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;->newUninitializedMessageException(Lcom/google/protobuf/Message;)Lcom/google/protobuf/UninitializedMessageException;
+
+    move-result-object v0
+
+    throw v0
+
+    .line 3418
+    :cond_0
+    return-object v0
+.end method
+
+
+# virtual methods
 .method public final a(Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;)Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;
     .locals 5
 
@@ -379,7 +366,7 @@
     const/4 v3, 0x2
 
     .line 3478
-    invoke-static {}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;->f()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;
+    invoke-static {}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;->e()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;
 
     move-result-object v0
 
@@ -580,58 +567,6 @@
 .end method
 
 .method public final a()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;
-    .locals 2
-
-    .prologue
-    .line 3414
-    invoke-virtual {p0}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;->b()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;
-
-    move-result-object v0
-
-    .line 3415
-    invoke-virtual {v0}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;->isInitialized()Z
-
-    move-result v1
-
-    if-nez v1, :cond_0
-
-    .line 3416
-    invoke-static {v0}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;->newUninitializedMessageException(Lcom/google/protobuf/Message;)Lcom/google/protobuf/UninitializedMessageException;
-
-    move-result-object v0
-
-    throw v0
-
-    .line 3418
-    :cond_0
-    return-object v0
-.end method
-
-.method public final synthetic addRepeatedField(Lcom/google/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lcom/google/protobuf/GeneratedMessageV3$Builder;
-    .locals 1
-
-    .prologue
-    .line 3366
-    invoke-direct {p0, p1, p2}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;->b(Lcom/google/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final synthetic addRepeatedField(Lcom/google/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lcom/google/protobuf/Message$Builder;
-    .locals 1
-
-    .prologue
-    .line 3366
-    invoke-direct {p0, p1, p2}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;->b(Lcom/google/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final b()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;
     .locals 3
 
     .prologue
@@ -716,12 +651,36 @@
     goto :goto_1
 .end method
 
+.method public final synthetic addRepeatedField(Lcom/google/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lcom/google/protobuf/GeneratedMessageV3$Builder;
+    .locals 1
+
+    .prologue
+    .line 3366
+    invoke-direct {p0, p1, p2}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;->b(Lcom/google/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final synthetic addRepeatedField(Lcom/google/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lcom/google/protobuf/Message$Builder;
+    .locals 1
+
+    .prologue
+    .line 3366
+    invoke-direct {p0, p1, p2}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;->b(Lcom/google/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
 .method public final synthetic build()Lcom/google/protobuf/Message;
     .locals 1
 
     .prologue
     .line 3366
-    invoke-virtual {p0}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;->a()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;
+    invoke-direct {p0}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;->c()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;
 
     move-result-object v0
 
@@ -733,7 +692,7 @@
 
     .prologue
     .line 3366
-    invoke-virtual {p0}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;->a()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;
+    invoke-direct {p0}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;->c()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;
 
     move-result-object v0
 
@@ -745,7 +704,7 @@
 
     .prologue
     .line 3366
-    invoke-virtual {p0}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;->b()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;
+    invoke-virtual {p0}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;->a()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;
 
     move-result-object v0
 
@@ -757,7 +716,7 @@
 
     .prologue
     .line 3366
-    invoke-virtual {p0}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;->b()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;
+    invoke-virtual {p0}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;->a()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;
 
     move-result-object v0
 
@@ -769,7 +728,7 @@
 
     .prologue
     .line 3366
-    invoke-direct {p0}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;->c()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;
+    invoke-direct {p0}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;->b()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;
 
     move-result-object v0
 
@@ -781,7 +740,7 @@
 
     .prologue
     .line 3366
-    invoke-direct {p0}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;->c()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;
+    invoke-direct {p0}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;->b()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;
 
     move-result-object v0
 
@@ -793,7 +752,7 @@
 
     .prologue
     .line 3366
-    invoke-direct {p0}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;->c()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;
+    invoke-direct {p0}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;->b()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;
 
     move-result-object v0
 
@@ -805,7 +764,7 @@
 
     .prologue
     .line 3366
-    invoke-direct {p0}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;->c()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;
+    invoke-direct {p0}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;->b()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;
 
     move-result-object v0
 
@@ -978,7 +937,7 @@
 
     .prologue
     .line 13410
-    invoke-static {}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;->f()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;
+    invoke-static {}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;->e()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;
 
     move-result-object v0
 
@@ -991,7 +950,7 @@
 
     .prologue
     .line 12410
-    invoke-static {}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;->f()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;
+    invoke-static {}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;->e()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;
 
     move-result-object v0
 

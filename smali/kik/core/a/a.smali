@@ -41,12 +41,12 @@
     return-void
 .end method
 
-.method static synthetic a(Lkik/core/xiphias/ab;)Lcom/kik/groups/GroupSuggestService$GetSuggestedGroupSearchTermsResponse;
+.method static synthetic a(Lkik/core/xiphias/ag;)Lcom/kik/groups/GroupSuggestService$GetSuggestedGroupSearchTermsResponse;
     .locals 1
 
     .prologue
     .line 46
-    invoke-virtual {p0}, Lkik/core/xiphias/ab;->a()Ljava/lang/Object;
+    invoke-virtual {p0}, Lkik/core/xiphias/ag;->a()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -55,12 +55,12 @@
     return-object v0
 .end method
 
-.method static synthetic b(Lkik/core/xiphias/ab;)Lcom/kik/groups/GroupSearchService$FindGroupsResponse;
+.method static synthetic b(Lkik/core/xiphias/ag;)Lcom/kik/groups/GroupSearchService$FindGroupsResponse;
     .locals 1
 
     .prologue
     .line 33
-    invoke-virtual {p0}, Lkik/core/xiphias/ab;->a()Ljava/lang/Object;
+    invoke-virtual {p0}, Lkik/core/xiphias/ag;->a()Ljava/lang/Object;
 
     move-result-object v0
 

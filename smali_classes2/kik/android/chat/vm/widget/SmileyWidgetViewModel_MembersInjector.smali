@@ -3,16 +3,16 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/b;
+.implements Ldagger/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/b",
+        "Ldagger/b",
         "<",
-        "Lkik/android/chat/vm/widget/aw;",
+        "Lkik/android/chat/vm/widget/ax;",
         ">;"
     }
 .end annotation
@@ -195,7 +195,7 @@
     return-void
 .end method
 
-.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)La/b;
+.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -216,9 +216,9 @@
             "<",
             "Lcom/kik/metrics/c/d;",
             ">;)",
-            "La/b",
+            "Ldagger/b",
             "<",
-            "Lkik/android/chat/vm/widget/aw;",
+            "Lkik/android/chat/vm/widget/ax;",
             ">;"
         }
     .end annotation
@@ -234,12 +234,12 @@
 
 
 # virtual methods
-.method public final synthetic a(Ljava/lang/Object;)V
+.method public final synthetic injectMembers(Ljava/lang/Object;)V
     .locals 2
 
     .prologue
     .line 11
-    check-cast p1, Lkik/android/chat/vm/widget/aw;
+    check-cast p1, Lkik/android/chat/vm/widget/ax;
 
     .line 1051
     if-nez p1, :cond_0
@@ -263,7 +263,7 @@
 
     check-cast v0, Lcom/kik/android/b/g;
 
-    iput-object v0, p1, Lkik/android/chat/vm/widget/aw;->a:Lcom/kik/android/b/g;
+    iput-object v0, p1, Lkik/android/chat/vm/widget/ax;->a:Lcom/kik/android/b/g;
 
     .line 1055
     iget-object v0, p0, Lkik/android/chat/vm/widget/SmileyWidgetViewModel_MembersInjector;->c:Ljavax/inject/Provider;
@@ -274,7 +274,7 @@
 
     check-cast v0, Lcom/kik/android/Mixpanel;
 
-    iput-object v0, p1, Lkik/android/chat/vm/widget/aw;->b:Lcom/kik/android/Mixpanel;
+    iput-object v0, p1, Lkik/android/chat/vm/widget/ax;->b:Lcom/kik/android/Mixpanel;
 
     .line 1056
     iget-object v0, p0, Lkik/android/chat/vm/widget/SmileyWidgetViewModel_MembersInjector;->d:Ljavax/inject/Provider;
@@ -285,7 +285,7 @@
 
     check-cast v0, Landroid/content/res/Resources;
 
-    iput-object v0, p1, Lkik/android/chat/vm/widget/aw;->c:Landroid/content/res/Resources;
+    iput-object v0, p1, Lkik/android/chat/vm/widget/ax;->c:Landroid/content/res/Resources;
 
     .line 1057
     iget-object v0, p0, Lkik/android/chat/vm/widget/SmileyWidgetViewModel_MembersInjector;->e:Ljavax/inject/Provider;
@@ -296,7 +296,7 @@
 
     check-cast v0, Lcom/kik/metrics/c/d;
 
-    iput-object v0, p1, Lkik/android/chat/vm/widget/aw;->d:Lcom/kik/metrics/c/d;
+    iput-object v0, p1, Lkik/android/chat/vm/widget/ax;->d:Lcom/kik/metrics/c/d;
 
     .line 11
     return-void

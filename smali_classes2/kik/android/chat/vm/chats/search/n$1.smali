@@ -32,7 +32,7 @@
     .locals 0
 
     .prologue
-    .line 52
+    .line 55
     iput-object p1, p0, Lkik/android/chat/vm/chats/search/n$1;->a:Lkik/android/chat/vm/chats/search/n;
 
     invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
@@ -46,15 +46,15 @@
     .locals 1
 
     .prologue
-    .line 52
+    .line 55
     check-cast p1, Lkik/core/datatypes/l;
 
-    .line 1056
+    .line 1059
     iget-object v0, p0, Lkik/android/chat/vm/chats/search/n$1;->a:Lkik/android/chat/vm/chats/search/n;
 
     invoke-static {v0, p1}, Lkik/android/chat/vm/chats/search/n;->a(Lkik/android/chat/vm/chats/search/n;Lkik/core/datatypes/l;)V
 
-    .line 52
+    .line 55
     return-void
 .end method
 
@@ -62,11 +62,11 @@
     .locals 1
 
     .prologue
-    .line 62
+    .line 65
     iget-object v0, p0, Lkik/android/chat/vm/chats/search/n$1;->a:Lkik/android/chat/vm/chats/search/n;
 
     invoke-static {v0, p1}, Lkik/android/chat/vm/chats/search/n;->a(Lkik/android/chat/vm/chats/search/n;Ljava/lang/Throwable;)V
 
-    .line 63
+    .line 66
     return-void
 .end method

@@ -41,7 +41,7 @@
 
     check-cast p1, Ljava/lang/CharSequence;
 
-    invoke-virtual {v0, p1}, Lkik/android/chat/view/ValidateableInputView;->d(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, p1}, Lkik/android/chat/view/ValidateableInputView;->b(Ljava/lang/CharSequence;)V
 
     return-void
 .end method

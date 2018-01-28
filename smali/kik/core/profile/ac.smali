@@ -7,15 +7,15 @@
 
 
 # instance fields
-.field private final a:Lkik/core/interfaces/w;
+.field private final a:Lkik/core/interfaces/v;
 
-.field private final b:Lkik/core/xiphias/h;
+.field private final b:Lkik/core/xiphias/n;
 
 .field private final c:Lcom/kik/core/domain/users/a;
 
 
 # direct methods
-.method public constructor <init>(Lkik/core/interfaces/w;Lkik/core/xiphias/h;Lcom/kik/core/domain/users/a;)V
+.method public constructor <init>(Lkik/core/interfaces/v;Lkik/core/xiphias/n;Lcom/kik/core/domain/users/a;)V
     .locals 0
 
     .prologue
@@ -23,10 +23,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 39
-    iput-object p1, p0, Lkik/core/profile/ac;->a:Lkik/core/interfaces/w;
+    iput-object p1, p0, Lkik/core/profile/ac;->a:Lkik/core/interfaces/v;
 
     .line 40
-    iput-object p2, p0, Lkik/core/profile/ac;->b:Lkik/core/xiphias/h;
+    iput-object p2, p0, Lkik/core/profile/ac;->b:Lkik/core/xiphias/n;
 
     .line 41
     iput-object p3, p0, Lkik/core/profile/ac;->c:Lcom/kik/core/domain/users/a;
@@ -58,9 +58,9 @@
 
     .prologue
     .line 96
-    iget-object v0, p0, Lkik/core/profile/ac;->b:Lkik/core/xiphias/h;
+    iget-object v0, p0, Lkik/core/profile/ac;->b:Lkik/core/xiphias/n;
 
-    invoke-interface {v0, p1, p2}, Lkik/core/xiphias/h;->a(Lcom/kik/core/network/xmpp/jid/a;Lkik/core/chat/profile/EmojiStatus;)Lrx/h;
+    invoke-interface {v0, p1, p2}, Lkik/core/xiphias/n;->a(Lcom/kik/core/network/xmpp/jid/a;Lkik/core/chat/profile/EmojiStatus;)Lrx/h;
 
     move-result-object v0
 
@@ -82,7 +82,7 @@
 
     .prologue
     .line 86
-    iget-object v0, p0, Lkik/core/profile/ac;->a:Lkik/core/interfaces/w;
+    iget-object v0, p0, Lkik/core/profile/ac;->a:Lkik/core/interfaces/v;
 
     .line 2142
     invoke-virtual {p1}, Lcom/kik/core/network/xmpp/jid/a;->toString()Ljava/lang/String;
@@ -96,7 +96,7 @@
     .line 87
     const/4 v2, 0x0
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/w;->a(Lkik/core/datatypes/k;Lkik/core/datatypes/f;)Lcom/kik/events/Promise;
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/v;->a(Lkik/core/datatypes/k;Lkik/core/datatypes/f;)Lcom/kik/events/Promise;
 
     move-result-object v0
 
@@ -152,7 +152,7 @@
 
     .prologue
     .line 62
-    iget-object v0, p0, Lkik/core/profile/ac;->a:Lkik/core/interfaces/w;
+    iget-object v0, p0, Lkik/core/profile/ac;->a:Lkik/core/interfaces/v;
 
     .line 1142
     invoke-virtual {p1}, Lcom/kik/core/network/xmpp/jid/a;->toString()Ljava/lang/String;
@@ -164,7 +164,7 @@
     move-result-object v1
 
     .line 63
-    invoke-interface {v0, p2, v1}, Lkik/core/interfaces/w;->a(Lkik/core/datatypes/messageExtensions/FriendAttributeMessageAttachment;Lkik/core/datatypes/k;)Lcom/kik/events/Promise;
+    invoke-interface {v0, p2, v1}, Lkik/core/interfaces/v;->a(Lkik/core/datatypes/messageExtensions/FriendAttributeMessageAttachment;Lkik/core/datatypes/k;)Lcom/kik/events/Promise;
 
     move-result-object v0
 

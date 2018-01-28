@@ -2,56 +2,44 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lrx/functions/g;
+.implements Lcom/kik/storage/o$a;
 
 
 # instance fields
-.field private final a:Ljava/lang/String;
+.field private final a:Ljava/util/Hashtable;
 
 
 # direct methods
-.method private constructor <init>(Ljava/lang/String;)V
+.method private constructor <init>(Ljava/util/Hashtable;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/kik/storage/w;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/kik/storage/w;->a:Ljava/util/Hashtable;
 
     return-void
 .end method
 
-.method public static a(Ljava/lang/String;)Lrx/functions/g;
+.method public static a(Ljava/util/Hashtable;)Lcom/kik/storage/o$a;
     .locals 1
 
     new-instance v0, Lcom/kik/storage/w;
 
-    invoke-direct {v0, p0}, Lcom/kik/storage/w;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, p0}, Lcom/kik/storage/w;-><init>(Ljava/util/Hashtable;)V
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public final call(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
+.method public final a(Ljava/lang/Object;)V
+    .locals 1
 
-    .prologue
-    .line 0
-    iget-object v0, p0, Lcom/kik/storage/w;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/kik/storage/w;->a:Ljava/util/Hashtable;
 
-    check-cast p1, Lkik/core/a/f$a;
+    check-cast p1, Lcom/kik/storage/b;
 
-    .line 1033
-    iget-object v1, p1, Lkik/core/a/f$a;->a:Ljava/lang/String;
+    invoke-static {v0, p1}, Lcom/kik/storage/v;->a(Ljava/util/Hashtable;Lcom/kik/storage/b;)V
 
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v0
-
-    .line 0
-    return-object v0
+    return-void
 .end method

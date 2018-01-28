@@ -23,7 +23,7 @@
     .locals 0
 
     .prologue
-    .line 383
+    .line 403
     iput-object p1, p0, Lcom/kik/util/j$2;->a:Lrx/functions/a;
 
     invoke-direct {p0}, Lcom/kik/util/f;-><init>()V
@@ -37,16 +37,16 @@
     .locals 1
 
     .prologue
-    .line 387
+    .line 407
     iget-object v0, p0, Lcom/kik/util/j$2;->a:Lrx/functions/a;
 
     if-nez v0, :cond_0
 
-    .line 392
+    .line 412
     :goto_0
     return-void
 
-    .line 391
+    .line 411
     :cond_0
     iget-object v0, p0, Lcom/kik/util/j$2;->a:Lrx/functions/a;
 

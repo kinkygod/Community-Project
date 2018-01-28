@@ -3,16 +3,16 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/a/b;
+.implements Ldagger/internal/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/a/b",
+        "Ldagger/internal/b",
         "<",
-        "Lkik/android/chat/JoinGifTrayHelper;",
+        "Lcom/kik/core/domain/b/a;",
         ">;"
     }
 .end annotation
@@ -30,7 +30,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/b;",
+            "Lcom/kik/e/a;",
             ">;"
         }
     .end annotation
@@ -72,16 +72,16 @@
             "Lcom/kik/f/bi;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/b;",
+            "Lcom/kik/e/a;",
             ">;)V"
         }
     .end annotation
 
     .prologue
-    .line 21
+    .line 20
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 22
+    .line 21
     sget-boolean v0, Lcom/kik/f/bj;->a:Z
 
     if-nez v0, :cond_0
@@ -94,11 +94,11 @@
 
     throw v0
 
-    .line 23
+    .line 22
     :cond_0
     iput-object p1, p0, Lcom/kik/f/bj;->b:Lcom/kik/f/bi;
 
-    .line 24
+    .line 23
     sget-boolean v0, Lcom/kik/f/bj;->a:Z
 
     if-nez v0, :cond_1
@@ -111,15 +111,15 @@
 
     throw v0
 
-    .line 25
+    .line 24
     :cond_1
     iput-object p2, p0, Lcom/kik/f/bj;->c:Ljavax/inject/Provider;
 
-    .line 26
+    .line 25
     return-void
 .end method
 
-.method public static a(Lcom/kik/f/bi;Ljavax/inject/Provider;)La/a/b;
+.method public static a(Lcom/kik/f/bi;Ljavax/inject/Provider;)Ldagger/internal/b;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -127,17 +127,17 @@
             "Lcom/kik/f/bi;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/b;",
+            "Lcom/kik/e/a;",
             ">;)",
-            "La/a/b",
+            "Ldagger/internal/b",
             "<",
-            "Lkik/android/chat/JoinGifTrayHelper;",
+            "Lcom/kik/core/domain/b/a;",
             ">;"
         }
     .end annotation
 
     .prologue
-    .line 37
+    .line 36
     new-instance v0, Lcom/kik/f/bj;
 
     invoke-direct {v0, p0, p1}, Lcom/kik/f/bj;-><init>(Lcom/kik/f/bi;Ljavax/inject/Provider;)V
@@ -152,30 +152,28 @@
 
     .prologue
     .line 10
-    .line 1030
+    .line 1029
     iget-object v0, p0, Lcom/kik/f/bj;->c:Ljavax/inject/Provider;
 
-    .line 1031
+    .line 1030
     invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/interfaces/b;
+    check-cast v0, Lcom/kik/e/a;
 
-    .line 2017
-    new-instance v1, Lkik/android/chat/JoinGifTrayHelper;
-
-    invoke-direct {v1, v0}, Lkik/android/chat/JoinGifTrayHelper;-><init>(Lkik/core/interfaces/b;)V
-
-    .line 1031
-    const-string v0, "Cannot return null from a non-@Nullable @Provides method"
-
-    .line 1030
-    invoke-static {v1, v0}, La/a/c;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {v0}, Lcom/kik/f/bi;->a(Lcom/kik/e/a;)Lcom/kik/core/domain/b/a;
 
     move-result-object v0
 
-    check-cast v0, Lkik/android/chat/JoinGifTrayHelper;
+    const-string v1, "Cannot return null from a non-@Nullable @Provides method"
+
+    .line 1029
+    invoke-static {v0, v1}, Ldagger/internal/c;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/kik/core/domain/b/a;
 
     .line 10
     return-object v0

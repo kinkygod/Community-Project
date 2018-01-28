@@ -1,94 +1,37 @@
-.class public final Lkik/android/chat/vm/widget/aj;
-.super Lkik/android/chat/vm/widget/SmileyItemViewModel;
+.class public interface abstract Lkik/android/chat/vm/widget/aj;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/vm/widget/ISmileyPopupItemViewModel;
+.implements Lkik/android/chat/vm/IListViewModel;
 
 
-# direct methods
-.method public constructor <init>(Lcom/kik/android/b/g$b;Lkik/android/chat/presentation/MediaTrayPresenterImpl$b;)V
-    .locals 1
-
-    .prologue
-    .line 25
-    const/4 v0, 0x0
-
-    invoke-direct {p0, p1, p2, v0}, Lkik/android/chat/vm/widget/SmileyItemViewModel;-><init>(Lcom/kik/android/b/g$b;Lkik/android/chat/presentation/MediaTrayPresenterImpl$b;Lrx/subjects/PublishSubject;)V
-
-    .line 26
-    return-void
-.end method
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lkik/android/chat/vm/IListViewModel",
+        "<",
+        "Lkik/android/chat/vm/widget/ai;",
+        ">;"
+    }
+.end annotation
 
 
 # virtual methods
-.method public final a()V
-    .locals 0
-
-    .prologue
-    .line 50
-    return-void
+.method public abstract a(Z)V
 .end method
 
-.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
-    .locals 0
-
-    .prologue
-    .line 19
-    invoke-interface {p1, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/chat/vm/widget/SmileyItemViewModel;)V
-
-    .line 20
-    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/widget/SmileyItemViewModel;->b(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
-
-    .line 21
-    return-void
-.end method
-
-.method public final b()Lrx/d;
-    .locals 1
+.method public abstract aL_()Lrx/functions/h;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lrx/d",
+            "Lrx/functions/h",
             "<",
             "Ljava/lang/Integer;",
+            "Ljava/lang/Float;",
+            "Ljava/lang/Boolean;",
             ">;"
         }
     .end annotation
-
-    .prologue
-    .line 43
-    const/4 v0, 0x0
-
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lrx/d;->b(Ljava/lang/Object;)Lrx/d;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final f()V
-    .locals 0
-
-    .prologue
-    .line 38
-    return-void
-.end method
-
-.method public final j()J
-    .locals 2
-
-    .prologue
-    .line 31
-    sget-object v0, Lkik/android/chat/vm/widget/ISmileyPopupItemViewModel$PopupItemID;->SMILEY:Lkik/android/chat/vm/widget/ISmileyPopupItemViewModel$PopupItemID;
-
-    invoke-virtual {v0}, Lkik/android/chat/vm/widget/ISmileyPopupItemViewModel$PopupItemID;->getId()J
-
-    move-result-wide v0
-
-    return-wide v0
 .end method

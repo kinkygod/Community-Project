@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/vm/chats/profile/ax;
+.implements Lkik/android/chat/vm/chats/profile/cj;
 
 
 # instance fields
@@ -27,7 +27,7 @@
     .end annotation
 .end field
 
-.field protected e:Lkik/core/interfaces/ae;
+.field protected e:Lkik/core/interfaces/ad;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -139,12 +139,12 @@
     return-object v0
 .end method
 
-.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
     .locals 3
 
     .prologue
     .line 43
-    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/e;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/e;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 44
     invoke-interface {p1, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/chat/vm/chats/profile/k;)V
@@ -169,7 +169,7 @@
     iput-object v0, p0, Lkik/android/chat/vm/chats/profile/k;->h:Lrx/d;
 
     .line 47
-    invoke-virtual {p0}, Lkik/android/chat/vm/chats/profile/k;->ab_()Lrx/f/b;
+    invoke-virtual {p0}, Lkik/android/chat/vm/chats/profile/k;->ad_()Lrx/f/b;
 
     move-result-object v0
 
@@ -198,32 +198,7 @@
     return-void
 .end method
 
-.method public final ac_()Lrx/d;
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/d",
-            "<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
-
-    .prologue
-    .line 91
-    iget-object v0, p0, Lkik/android/chat/vm/chats/profile/k;->c:Lcom/kik/core/domain/users/a;
-
-    iget-object v1, p0, Lkik/android/chat/vm/chats/profile/k;->f:Lcom/kik/core/network/xmpp/jid/a;
-
-    invoke-interface {v0, v1}, Lcom/kik/core/domain/users/a;->b(Lcom/kik/core/network/xmpp/jid/a;)Lrx/d;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final ad_()V
+.method public final b()V
     .locals 3
 
     .prologue
@@ -274,31 +249,12 @@
     return-void
 .end method
 
-.method public final e()Lrx/d;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/d",
-            "<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
+.method public final e()V
+    .locals 0
 
     .prologue
-    .line 79
-    const/4 v0, 0x0
-
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lrx/d;->b(Ljava/lang/Object;)Lrx/d;
-
-    move-result-object v0
-
-    return-object v0
+    .line 80
+    return-void
 .end method
 
 .method public final g()Lrx/d;
@@ -315,7 +271,7 @@
 
     .prologue
     .line 85
-    invoke-virtual {p0}, Lkik/android/chat/vm/chats/profile/k;->ac_()Lrx/d;
+    invoke-virtual {p0}, Lkik/android/chat/vm/chats/profile/k;->j()Lrx/d;
 
     move-result-object v0
 
@@ -334,6 +290,31 @@
     move-result-object v2
 
     invoke-static {v0, v1, v2}, Lrx/d;->a(Lrx/d;Lrx/d;Lrx/functions/h;)Lrx/d;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final j()Lrx/d;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+
+    .prologue
+    .line 91
+    iget-object v0, p0, Lkik/android/chat/vm/chats/profile/k;->c:Lcom/kik/core/domain/users/a;
+
+    iget-object v1, p0, Lkik/android/chat/vm/chats/profile/k;->f:Lcom/kik/core/network/xmpp/jid/a;
+
+    invoke-interface {v0, v1}, Lcom/kik/core/domain/users/a;->c(Lcom/kik/core/network/xmpp/jid/a;)Lrx/d;
 
     move-result-object v0
 

@@ -92,7 +92,7 @@
     if-gt p2, v0, :cond_0
 
     .line 111
-    const v0, 0x7f02027f
+    const v0, 0x7f020267
 
     invoke-virtual {p0, v0}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -115,7 +115,7 @@
     if-gt p2, v1, :cond_1
 
     .line 114
-    const v0, 0x7f02027c
+    const v0, 0x7f020264
 
     invoke-virtual {p0, v0}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -127,7 +127,7 @@
 
     .line 117
     :cond_1
-    const v0, 0x7f02027b
+    const v0, 0x7f020263
 
     invoke-virtual {p0, v0}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -144,6 +144,35 @@
     .prologue
     .line 21
     iget-object v0, p0, Lcom/kik/cache/d;->b:Lcom/kik/cache/KikVolleyImageLoader;
+
+    return-object v0
+.end method
+
+.method private a(IILandroid/graphics/Bitmap;)Lrx/d;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(II",
+            "Landroid/graphics/Bitmap;",
+            ")",
+            "Lrx/d",
+            "<",
+            "Landroid/graphics/Bitmap;",
+            ">;"
+        }
+    .end annotation
+
+    .prologue
+    .line 43
+    iget-object v0, p0, Lcom/kik/cache/d;->a:Lrx/d;
+
+    invoke-static {p0, p1, p2, p3}, Lcom/kik/cache/e;->a(Lcom/kik/cache/d;IILandroid/graphics/Bitmap;)Lrx/functions/g;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lrx/d;->d(Lrx/functions/g;)Lrx/d;
+
+    move-result-object v0
 
     return-object v0
 .end method
@@ -225,7 +254,7 @@
 
 # virtual methods
 .method public final a(II)Lrx/d;
-    .locals 2
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",
@@ -244,17 +273,23 @@
 
     move-result-object v0
 
-    .line 1043
-    iget-object v1, p0, Lcom/kik/cache/d;->a:Lrx/d;
-
-    invoke-static {p0, p1, p2, v0}, Lcom/kik/cache/e;->a(Lcom/kik/cache/d;IILandroid/graphics/Bitmap;)Lrx/functions/g;
+    invoke-direct {p0, p1, p2, v0}, Lcom/kik/cache/d;->a(IILandroid/graphics/Bitmap;)Lrx/d;
 
     move-result-object v0
 
-    invoke-virtual {v1, v0}, Lrx/d;->d(Lrx/functions/g;)Lrx/d;
+    return-object v0
+.end method
+
+.method public final bridge synthetic a(IILjava/lang/Object;)Lrx/d;
+    .locals 1
+
+    .prologue
+    .line 21
+    check-cast p3, Landroid/graphics/Bitmap;
+
+    invoke-direct {p0, p1, p2, p3}, Lcom/kik/cache/d;->a(IILandroid/graphics/Bitmap;)Lrx/d;
 
     move-result-object v0
 
-    .line 37
     return-object v0
 .end method

@@ -37,7 +37,7 @@
 
     iget-object v0, p0, Lkik/android/chat/vm/dh;->a:Lkik/android/chat/vm/ReportDialogViewModel;
 
-    invoke-static {v0}, Lkik/android/chat/vm/ReportDialogViewModel;->a(Lkik/android/chat/vm/ReportDialogViewModel;)V
+    invoke-static {v0}, Lkik/android/chat/vm/ReportDialogViewModel;->c(Lkik/android/chat/vm/ReportDialogViewModel;)V
 
     return-void
 .end method

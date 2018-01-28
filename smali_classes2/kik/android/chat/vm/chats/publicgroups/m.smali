@@ -37,7 +37,7 @@
 
 
 # virtual methods
-.method public final L_()Lkik/android/chat/vm/chats/publicgroups/IPublicGroupItemViewModel$LayoutType;
+.method public final N_()Lkik/android/chat/vm/chats/publicgroups/IPublicGroupItemViewModel$LayoutType;
     .locals 1
 
     .prologue
@@ -47,7 +47,7 @@
     return-object v0
 .end method
 
-.method public final N_()Ljava/lang/String;
+.method public final P_()Ljava/lang/String;
     .locals 1
 
     .prologue
@@ -57,7 +57,7 @@
     return-object v0
 .end method
 
-.method public final g()V
+.method public final h()V
     .locals 0
 
     .prologue

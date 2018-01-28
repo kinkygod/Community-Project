@@ -43,7 +43,7 @@
     return v0
 .end method
 
-.method static synthetic b(Lkik/android/chat/fragment/MvvmFragment$a;)Lkik/android/chat/vm/bn;
+.method static synthetic b(Lkik/android/chat/fragment/MvvmFragment$a;)Lkik/android/chat/vm/bo;
     .locals 3
 
     .prologue
@@ -70,7 +70,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/android/chat/vm/bn;
+    check-cast v0, Lkik/android/chat/vm/bo;
 
     .line 2073
     invoke-static {}, Lkik/android/chat/fragment/MvvmFragment;->a()Ljava/util/Map;
@@ -102,7 +102,7 @@
     return-object p0
 .end method
 
-.method public final a(Lkik/android/chat/vm/bn;)Lkik/android/chat/fragment/MvvmFragment$a;
+.method public final a(Lkik/android/chat/vm/bo;)Lkik/android/chat/fragment/MvvmFragment$a;
     .locals 3
 
     .prologue

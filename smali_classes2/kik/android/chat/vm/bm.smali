@@ -1,18 +1,15 @@
-.class public interface abstract Lkik/android/chat/vm/bm;
+.class public final Lkik/android/chat/vm/bm;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lkik/android/chat/vm/IListViewModel;
 
+# direct methods
+.method public constructor <init>()V
+    .locals 0
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lkik/android/chat/vm/IListViewModel",
-        "<",
-        "Lkik/android/chat/vm/bl;",
-        ">;"
-    }
-.end annotation
+    .prologue
+    .line 7
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

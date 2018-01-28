@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field private a:Lkik/android/chat/vm/widget/af;
+.field private a:Lkik/android/chat/vm/widget/ISmileyPopupItemViewModel;
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 121
+    .line 105
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -34,14 +34,14 @@
 
 
 # virtual methods
-.method public final a(Lkik/android/chat/vm/widget/af;)Lkik/android/e/dj$a;
+.method public final a(Lkik/android/chat/vm/widget/ISmileyPopupItemViewModel;)Lkik/android/e/dj$a;
     .locals 0
 
     .prologue
-    .line 124
-    iput-object p1, p0, Lkik/android/e/dj$a;->a:Lkik/android/chat/vm/widget/af;
+    .line 108
+    iput-object p1, p0, Lkik/android/e/dj$a;->a:Lkik/android/chat/vm/widget/ISmileyPopupItemViewModel;
 
-    .line 125
+    .line 109
     if-nez p1, :cond_0
 
     const/4 p0, 0x0
@@ -54,11 +54,11 @@
     .locals 1
 
     .prologue
-    .line 129
-    iget-object v0, p0, Lkik/android/e/dj$a;->a:Lkik/android/chat/vm/widget/af;
+    .line 113
+    iget-object v0, p0, Lkik/android/e/dj$a;->a:Lkik/android/chat/vm/widget/ISmileyPopupItemViewModel;
 
-    invoke-interface {v0}, Lkik/android/chat/vm/widget/af;->e()V
+    invoke-interface {v0}, Lkik/android/chat/vm/widget/ISmileyPopupItemViewModel;->b()V
 
-    .line 130
+    .line 114
     return-void
 .end method

@@ -3,16 +3,16 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/a/b;
+.implements Ldagger/internal/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/a/b",
+        "Ldagger/internal/b",
         "<",
-        "Lcom/kik/util/cl;",
+        "Lkik/core/interfaces/t;",
         ">;"
     }
 .end annotation
@@ -23,7 +23,7 @@
 
 
 # instance fields
-.field private final b:Lcom/kik/f/dn;
+.field private final b:Lcom/kik/f/dl;
 
 
 # direct methods
@@ -53,14 +53,14 @@
     goto :goto_0
 .end method
 
-.method private constructor <init>(Lcom/kik/f/dn;)V
+.method private constructor <init>(Lcom/kik/f/dl;)V
     .locals 1
 
     .prologue
-    .line 15
+    .line 16
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 16
+    .line 17
     sget-boolean v0, Lcom/kik/f/do;->a:Z
 
     if-nez v0, :cond_0
@@ -73,33 +73,33 @@
 
     throw v0
 
-    .line 17
-    :cond_0
-    iput-object p1, p0, Lcom/kik/f/do;->b:Lcom/kik/f/dn;
-
     .line 18
+    :cond_0
+    iput-object p1, p0, Lcom/kik/f/do;->b:Lcom/kik/f/dl;
+
+    .line 19
     return-void
 .end method
 
-.method public static a(Lcom/kik/f/dn;)La/a/b;
+.method public static a(Lcom/kik/f/dl;)Ldagger/internal/b;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcom/kik/f/dn;",
+            "Lcom/kik/f/dl;",
             ")",
-            "La/a/b",
+            "Ldagger/internal/b",
             "<",
-            "Lcom/kik/util/cl;",
+            "Lkik/core/interfaces/t;",
             ">;"
         }
     .end annotation
 
     .prologue
-    .line 27
+    .line 29
     new-instance v0, Lcom/kik/f/do;
 
-    invoke-direct {v0, p0}, Lcom/kik/f/do;-><init>(Lcom/kik/f/dn;)V
+    invoke-direct {v0, p0}, Lcom/kik/f/do;-><init>(Lcom/kik/f/dl;)V
 
     return-object v0
 .end method
@@ -111,22 +111,22 @@
 
     .prologue
     .line 8
-    .line 1022
-    iget-object v0, p0, Lcom/kik/f/do;->b:Lcom/kik/f/dn;
-
     .line 1023
-    invoke-virtual {v0}, Lcom/kik/f/dn;->c()Lcom/kik/util/cl;
+    iget-object v0, p0, Lcom/kik/f/do;->b:Lcom/kik/f/dl;
+
+    .line 1024
+    invoke-virtual {v0}, Lcom/kik/f/dl;->b()Lkik/core/interfaces/t;
 
     move-result-object v0
 
     const-string v1, "Cannot return null from a non-@Nullable @Provides method"
 
-    .line 1022
-    invoke-static {v0, v1}, La/a/c;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    .line 1023
+    invoke-static {v0, v1}, Ldagger/internal/c;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/kik/util/cl;
+    check-cast v0, Lkik/core/interfaces/t;
 
     .line 8
     return-object v0

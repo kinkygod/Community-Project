@@ -5,27 +5,35 @@
 .implements Lrx/functions/g;
 
 
-# instance fields
-.field private final a:Lkik/android/chat/vm/messaging/gj;
+# static fields
+.field private static final a:Lkik/android/chat/vm/messaging/gn;
 
 
 # direct methods
-.method private constructor <init>(Lkik/android/chat/vm/messaging/gj;)V
-    .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lkik/android/chat/vm/messaging/gn;->a:Lkik/android/chat/vm/messaging/gj;
-
-    return-void
-.end method
-
-.method public static a(Lkik/android/chat/vm/messaging/gj;)Lrx/functions/g;
+.method static constructor <clinit>()V
     .locals 1
 
     new-instance v0, Lkik/android/chat/vm/messaging/gn;
 
-    invoke-direct {v0, p0}, Lkik/android/chat/vm/messaging/gn;-><init>(Lkik/android/chat/vm/messaging/gj;)V
+    invoke-direct {v0}, Lkik/android/chat/vm/messaging/gn;-><init>()V
+
+    sput-object v0, Lkik/android/chat/vm/messaging/gn;->a:Lkik/android/chat/vm/messaging/gn;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static a()Lrx/functions/g;
+    .locals 1
+
+    sget-object v0, Lkik/android/chat/vm/messaging/gn;->a:Lkik/android/chat/vm/messaging/gn;
 
     return-object v0
 .end method
@@ -35,11 +43,9 @@
 .method public final call(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    iget-object v0, p0, Lkik/android/chat/vm/messaging/gn;->a:Lkik/android/chat/vm/messaging/gj;
-
     check-cast p1, Ljava/lang/Boolean;
 
-    invoke-static {v0, p1}, Lkik/android/chat/vm/messaging/gj;->a(Lkik/android/chat/vm/messaging/gj;Ljava/lang/Boolean;)Ljava/lang/Boolean;
+    invoke-static {p1}, Lkik/android/chat/vm/messaging/gl;->a(Ljava/lang/Boolean;)Ljava/lang/Boolean;
 
     move-result-object v0
 

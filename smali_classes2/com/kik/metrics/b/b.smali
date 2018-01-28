@@ -1,9 +1,9 @@
 .class public final Lcom/kik/metrics/b/b;
-.super Lcom/kik/metrics/b/av;
+.super Lcom/kik/metrics/b/ay;
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/kik/metrics/b/s;
+.implements Lcom/kik/metrics/b/t;
 
 
 # annotations
@@ -29,26 +29,26 @@
 
 
 # direct methods
-.method private constructor <init>(Lcom/kik/metrics/b/at;)V
+.method private constructor <init>(Lcom/kik/metrics/b/aw;)V
     .locals 0
 
     .prologue
     .line 38
-    invoke-direct {p0}, Lcom/kik/metrics/b/av;-><init>()V
+    invoke-direct {p0}, Lcom/kik/metrics/b/ay;-><init>()V
 
     .line 39
-    iput-object p1, p0, Lcom/kik/metrics/b/b;->a:Lcom/kik/metrics/b/at;
+    iput-object p1, p0, Lcom/kik/metrics/b/b;->a:Lcom/kik/metrics/b/aw;
 
     .line 40
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/kik/metrics/b/at;B)V
+.method synthetic constructor <init>(Lcom/kik/metrics/b/aw;B)V
     .locals 0
 
     .prologue
     .line 12
-    invoke-direct {p0, p1}, Lcom/kik/metrics/b/b;-><init>(Lcom/kik/metrics/b/at;)V
+    invoke-direct {p0, p1}, Lcom/kik/metrics/b/b;-><init>(Lcom/kik/metrics/b/aw;)V
 
     return-void
 .end method
@@ -93,7 +93,7 @@
 
     .prologue
     .line 30
-    invoke-super {p0}, Lcom/kik/metrics/b/av;->a()Ljava/util/List;
+    invoke-super {p0}, Lcom/kik/metrics/b/ay;->a()Ljava/util/List;
 
     move-result-object v0
 

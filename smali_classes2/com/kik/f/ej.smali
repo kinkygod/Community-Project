@@ -3,16 +3,16 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/a/b;
+.implements Ldagger/internal/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/a/b",
+        "Ldagger/internal/b",
         "<",
-        "Lkik/android/voice/e;",
+        "Lkik/android/voice/f;",
         ">;"
     }
 .end annotation
@@ -30,7 +30,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lcom/kik/storage/p;",
+            "Lcom/kik/storage/s;",
             ">;"
         }
     .end annotation
@@ -72,7 +72,7 @@
             "Lcom/kik/f/ei;",
             "Ljavax/inject/Provider",
             "<",
-            "Lcom/kik/storage/p;",
+            "Lcom/kik/storage/s;",
             ">;)V"
         }
     .end annotation
@@ -119,7 +119,7 @@
     return-void
 .end method
 
-.method public static a(Lcom/kik/f/ei;Ljavax/inject/Provider;)La/a/b;
+.method public static a(Lcom/kik/f/ei;Ljavax/inject/Provider;)Ldagger/internal/b;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -127,11 +127,11 @@
             "Lcom/kik/f/ei;",
             "Ljavax/inject/Provider",
             "<",
-            "Lcom/kik/storage/p;",
+            "Lcom/kik/storage/s;",
             ">;)",
-            "La/a/b",
+            "Ldagger/internal/b",
             "<",
-            "Lkik/android/voice/e;",
+            "Lkik/android/voice/f;",
             ">;"
         }
     .end annotation
@@ -153,8 +153,6 @@
     .prologue
     .line 10
     .line 1030
-    iget-object v1, p0, Lcom/kik/f/ej;->b:Lcom/kik/f/ei;
-
     iget-object v0, p0, Lcom/kik/f/ej;->c:Ljavax/inject/Provider;
 
     .line 1031
@@ -162,20 +160,22 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/kik/storage/p;
+    check-cast v0, Lcom/kik/storage/s;
 
-    invoke-virtual {v1, v0}, Lcom/kik/f/ei;->a(Lcom/kik/storage/p;)Lkik/android/voice/e;
+    .line 2023
+    new-instance v1, Lkik/android/voice/n;
 
-    move-result-object v0
+    invoke-direct {v1, v0}, Lkik/android/voice/n;-><init>(Lcom/kik/storage/s;)V
 
-    const-string v1, "Cannot return null from a non-@Nullable @Provides method"
+    .line 1031
+    const-string v0, "Cannot return null from a non-@Nullable @Provides method"
 
     .line 1030
-    invoke-static {v0, v1}, La/a/c;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {v1, v0}, Ldagger/internal/c;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lkik/android/voice/e;
+    check-cast v0, Lkik/android/voice/f;
 
     .line 10
     return-object v0

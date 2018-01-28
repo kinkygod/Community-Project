@@ -259,6 +259,7 @@
     <item type="id" name="validateable_text_view_right_image">false</item>
     <item type="id" name="validateable_text_view_underline">false</item>
     <item type="id" name="validateable_subtext_view">false</item>
+    <item type="id" name="bio_view_text">false</item>
     <item type="id" name="bottom_bar_shadow">false</item>
     <item type="id" name="icon_lock">false</item>
     <item type="id" name="web_page_loading_spinner">false</item>
@@ -287,6 +288,8 @@
     <item type="id" name="camera_clip_frame">false</item>
     <item type="id" name="video_instruction_text">false</item>
     <item type="id" name="camera_preview_cover">false</item>
+    <item type="id" name="profile_name">false</item>
+    <item type="id" name="profile_username">false</item>
     <item type="id" name="chat_info_cell">false</item>
     <item type="id" name="chat_info_button_icon">false</item>
     <item type="id" name="chat_info_button_text">false</item>
@@ -300,8 +303,6 @@
     <item type="id" name="group_member_profile_pic">false</item>
     <item type="id" name="admin_badge">false</item>
     <item type="id" name="group_member_name">false</item>
-    <item type="id" name="profile_name">false</item>
-    <item type="id" name="profile_username">false</item>
     <item type="id" name="chat_search_bar_container">false</item>
     <item type="id" name="chat_search_back_button">false</item>
     <item type="id" name="chat_search_back_button_image">false</item>
@@ -410,6 +411,7 @@
     <item type="id" name="profile_pic_container">false</item>
     <item type="id" name="profile_pic">false</item>
     <item type="id" name="robotoTextView">false</item>
+    <item type="id" name="progress_wheel">false</item>
     <item type="id" name="tell_a_friend">false</item>
     <item type="id" name="code_container">false</item>
     <item type="id" name="fake_code">false</item>
@@ -449,18 +451,12 @@
     <item type="id" name="empty_view_text_view">false</item>
     <item type="id" name="sticker_recycler_view">false</item>
     <item type="id" name="empty_recycler_view">false</item>
-    <item type="id" name="confirm_theme_action">false</item>
-    <item type="id" name="trophy_case_navbar">false</item>
     <item type="id" name="user_profile_scrollview">false</item>
     <item type="id" name="set_profile_pic">false</item>
     <item type="id" name="emoji_status_circle_view">false</item>
     <item type="id" name="profile_username_button">false</item>
     <item type="id" name="tooltip_view_layout">false</item>
-    <item type="id" name="trophy_case_layout">false</item>
-    <item type="id" name="trophy_case">false</item>
-    <item type="id" name="trophy_notification">false</item>
     <item type="id" name="profile_share">false</item>
-    <item type="id" name="profile_background_image">false</item>
     <item type="id" name="view_root">false</item>
     <item type="id" name="video_texture_view">false</item>
     <item type="id" name="video_progress_bar">false</item>
@@ -660,11 +656,11 @@
     <item type="id" name="instabug_audio_attachment">false</item>
     <item type="id" name="instabug_btn_play_audio">false</item>
     <item type="id" name="instabug_audio_attachment_progress_bar">false</item>
+    <item type="id" name="interests_textview_pill">false</item>
     <item type="id" name="deeplink_spinner">false</item>
     <item type="id" name="group_count_view">false</item>
     <item type="id" name="overflow_menu">false</item>
     <item type="id" name="kik_switch">false</item>
-    <item type="id" name="bio_view_text">false</item>
     <item type="id" name="verified_star">false</item>
     <item type="id" name="selection_list">false</item>
     <item type="id" name="content_footer">false</item>
@@ -677,7 +673,6 @@
     <item type="id" name="content_text">false</item>
     <item type="id" name="content_url">false</item>
     <item type="id" name="profile_current_bio">false</item>
-    <item type="id" name="edit_bio_input">false</item>
     <item type="id" name="find_friends_empty_container">false</item>
     <item type="id" name="find_friends_empty_text">false</item>
     <item type="id" name="top_scroll">false</item>
@@ -695,6 +690,7 @@
     <item type="id" name="code_icon">false</item>
     <item type="id" name="photo_sr_iv">false</item>
     <item type="id" name="text_body">false</item>
+    <item type="id" name="edit_input">false</item>
     <item type="id" name="widget_background">false</item>
     <item type="id" name="error_image_view">false</item>
     <item type="id" name="something_went_wrong">false</item>
@@ -914,7 +910,6 @@
     <item type="id" name="suggested_chats">false</item>
     <item type="id" name="quick_suggestions_view">false</item>
     <item type="id" name="suggested_groups_retry_layout">false</item>
-    <item type="id" name="progress_wheel">false</item>
     <item type="id" name="suggested_groups_retry_button_layout">false</item>
     <item type="id" name="refresh_suggested_button">false</item>
     <item type="id" name="read_receipt_text">false</item>
@@ -940,10 +935,6 @@
     <item type="id" name="tooltip_pointer_up">false</item>
     <item type="id" name="tooltip_contenttv">false</item>
     <item type="id" name="tooltip_pointer_down">false</item>
-    <item type="id" name="trophy_image">false</item>
-    <item type="id" name="trophy_title">false</item>
-    <item type="id" name="trophy_body">false</item>
-    <item type="id" name="trophy_icon_layout">false</item>
     <item type="id" name="video_indicator_image_off">false</item>
     <item type="id" name="root">false</item>
     <item type="id" name="blue_panel">false</item>
@@ -977,6 +968,4 @@
     <item type="id" name="visible">false</item>
     <item type="id" name="masked">false</item>
     <item type="id" name="floating_search_background_shadow">false</item>
-    <item type="id" name="mod_tab">false</item>
-    <item type="id" name="dev_tab">false</item>
 </resources>

@@ -2,7 +2,7 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lrx/functions/a;
+.implements Lrx/functions/b;
 
 
 # instance fields
@@ -20,7 +20,7 @@
     return-void
 .end method
 
-.method public static a(Lkik/android/chat/vm/widget/StickerWidgetViewModel;)Lrx/functions/a;
+.method public static a(Lkik/android/chat/vm/widget/StickerWidgetViewModel;)Lrx/functions/b;
     .locals 1
 
     new-instance v0, Lkik/android/chat/vm/widget/bz;
@@ -32,12 +32,12 @@
 
 
 # virtual methods
-.method public final a()V
+.method public final call(Ljava/lang/Object;)V
     .locals 1
 
     iget-object v0, p0, Lkik/android/chat/vm/widget/bz;->a:Lkik/android/chat/vm/widget/StickerWidgetViewModel;
 
-    invoke-static {v0}, Lkik/android/chat/vm/widget/StickerWidgetViewModel;->b(Lkik/android/chat/vm/widget/StickerWidgetViewModel;)V
+    invoke-static {v0}, Lkik/android/chat/vm/widget/StickerWidgetViewModel;->c(Lkik/android/chat/vm/widget/StickerWidgetViewModel;)V
 
     return-void
 .end method

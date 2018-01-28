@@ -36,7 +36,7 @@
     .locals 0
 
     .prologue
-    .line 2040
+    .line 2094
     iput-object p1, p0, Lcom/kik/cards/web/CardsWebViewFragment$31;->c:Lcom/kik/cards/web/CardsWebViewFragment;
 
     iput-object p2, p0, Lcom/kik/cards/web/CardsWebViewFragment$31;->a:Landroid/webkit/GeolocationPermissions$Callback;
@@ -54,20 +54,20 @@
     .locals 4
 
     .prologue
-    .line 2040
+    .line 2094
     check-cast p1, Ljava/lang/Boolean;
 
-    .line 3044
+    .line 3098
     invoke-super {p0, p1}, Lcom/kik/events/k;->a(Ljava/lang/Object;)V
 
-    .line 3045
+    .line 3099
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 3046
+    .line 3100
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$31;->a:Landroid/webkit/GeolocationPermissions$Callback;
 
     iget-object v1, p0, Lcom/kik/cards/web/CardsWebViewFragment$31;->b:Ljava/lang/String;
@@ -81,7 +81,7 @@
     :goto_0
     return-void
 
-    .line 3049
+    .line 3103
     :cond_0
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$31;->c:Lcom/kik/cards/web/CardsWebViewFragment;
 
@@ -98,10 +98,10 @@
     .locals 3
 
     .prologue
-    .line 2056
+    .line 2110
     invoke-super {p0, p1}, Lcom/kik/events/k;->a(Ljava/lang/Throwable;)V
 
-    .line 2057
+    .line 2111
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$31;->c:Lcom/kik/cards/web/CardsWebViewFragment;
 
     iget-object v1, p0, Lcom/kik/cards/web/CardsWebViewFragment$31;->b:Ljava/lang/String;
@@ -110,6 +110,6 @@
 
     invoke-static {v0, v1, v2}, Lcom/kik/cards/web/CardsWebViewFragment;->a(Lcom/kik/cards/web/CardsWebViewFragment;Ljava/lang/String;Landroid/webkit/GeolocationPermissions$Callback;)V
 
-    .line 2058
+    .line 2112
     return-void
 .end method

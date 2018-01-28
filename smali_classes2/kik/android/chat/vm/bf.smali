@@ -4,22 +4,5 @@
 
 
 # virtual methods
-.method public abstract a()Lkik/core/datatypes/ac;
-.end method
-
-.method public abstract b()Lrx/d;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/d",
-            "<",
-            "Lkik/core/interfaces/o",
-            "<",
-            "Landroid/graphics/Bitmap;",
-            ">;>;"
-        }
-    .end annotation
-.end method
-
-.method public abstract c()Lcom/kik/android/Mixpanel;
+.method public abstract a()Lkik/android/chat/vm/ReportDialogViewModel$ReportReason;
 .end method

@@ -1,53 +1,78 @@
-.class final synthetic Lkik/core/xiphias/o;
+.class public final Lkik/core/xiphias/o;
 .super Ljava/lang/Object;
-
-# interfaces
-.implements Lcom/kik/events/p;
-
-
-# static fields
-.field private static final a:Lkik/core/xiphias/o;
+.source "SourceFile"
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public static a()Lkik/core/xiphias/XiphiasRequest;
+    .locals 5
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lkik/core/xiphias/XiphiasRequest",
+            "<",
+            "Lcom/kik/antispam/safetynet/rpc/SafetynetService$GetNonceResponse;",
+            ">;"
+        }
+    .end annotation
 
-    new-instance v0, Lkik/core/xiphias/o;
+    .prologue
+    .line 25
+    new-instance v0, Lkik/core/xiphias/XiphiasRequest;
 
-    invoke-direct {v0}, Lkik/core/xiphias/o;-><init>()V
+    const-string v1, "mobile.antispam.safetynet.v1.SafetyNet"
 
-    sput-object v0, Lkik/core/xiphias/o;->a:Lkik/core/xiphias/o;
+    const-string v2, "GetNonce"
 
-    return-void
-.end method
+    .line 27
+    invoke-static {}, Lcom/kik/xiphias/rpc/VoidRequest;->newBuilder()Lcom/kik/xiphias/rpc/VoidRequest$Builder;
 
-.method private constructor <init>()V
-    .locals 0
+    move-result-object v3
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-virtual {v3}, Lcom/kik/xiphias/rpc/VoidRequest$Builder;->build()Lcom/kik/xiphias/rpc/VoidRequest;
 
-    return-void
-.end method
+    move-result-object v3
 
-.method public static a()Lcom/kik/events/p;
-    .locals 1
+    .line 28
+    invoke-static {}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$GetNonceResponse;->e()Lcom/google/protobuf/Parser;
 
-    sget-object v0, Lkik/core/xiphias/o;->a:Lkik/core/xiphias/o;
+    move-result-object v4
 
+    invoke-direct {v0, v1, v2, v3, v4}, Lkik/core/xiphias/XiphiasRequest;-><init>(Ljava/lang/String;Ljava/lang/String;Lcom/google/protobuf/AbstractMessage;Lcom/google/protobuf/Parser;)V
+
+    .line 25
     return-object v0
 .end method
 
+.method public static a(Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;)Lkik/core/xiphias/XiphiasRequest;
+    .locals 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;",
+            ")",
+            "Lkik/core/xiphias/XiphiasRequest",
+            "<",
+            "Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultResponse;",
+            ">;"
+        }
+    .end annotation
 
-# virtual methods
-.method public final a(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+    .prologue
+    .line 33
+    new-instance v0, Lkik/core/xiphias/XiphiasRequest;
 
-    check-cast p1, Lkik/core/xiphias/ab;
+    const-string v1, "mobile.antispam.safetynet.v1.SafetyNet"
 
-    invoke-virtual {p1}, Lkik/core/xiphias/ab;->a()Ljava/lang/Object;
+    const-string v2, "VerifyAttestationResult"
 
-    move-result-object v0
+    .line 36
+    invoke-static {}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultResponse;->e()Lcom/google/protobuf/Parser;
 
+    move-result-object v3
+
+    invoke-direct {v0, v1, v2, p0, v3}, Lkik/core/xiphias/XiphiasRequest;-><init>(Ljava/lang/String;Ljava/lang/String;Lcom/google/protobuf/AbstractMessage;Lcom/google/protobuf/Parser;)V
+
+    .line 33
     return-object v0
 .end method

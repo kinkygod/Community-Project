@@ -3,16 +3,16 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/b;
+.implements Ldagger/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/b",
+        "Ldagger/b",
         "<",
-        "Lkik/android/chat/vm/widget/at;",
+        "Lkik/android/chat/vm/widget/au;",
         ">;"
     }
 .end annotation
@@ -39,7 +39,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ae;",
+            "Lkik/core/interfaces/ad;",
             ">;"
         }
     .end annotation
@@ -84,7 +84,7 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ae;",
+            "Lkik/core/interfaces/ad;",
             ">;)V"
         }
     .end annotation
@@ -131,7 +131,7 @@
     return-void
 .end method
 
-.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;)La/b;
+.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -142,11 +142,11 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ae;",
+            "Lkik/core/interfaces/ad;",
             ">;)",
-            "La/b",
+            "Ldagger/b",
             "<",
-            "Lkik/android/chat/vm/widget/at;",
+            "Lkik/android/chat/vm/widget/au;",
             ">;"
         }
     .end annotation
@@ -162,12 +162,12 @@
 
 
 # virtual methods
-.method public final synthetic a(Ljava/lang/Object;)V
+.method public final synthetic injectMembers(Ljava/lang/Object;)V
     .locals 2
 
     .prologue
     .line 9
-    check-cast p1, Lkik/android/chat/vm/widget/at;
+    check-cast p1, Lkik/android/chat/vm/widget/au;
 
     .line 1034
     if-nez p1, :cond_0
@@ -191,7 +191,7 @@
 
     check-cast v0, Lcom/kik/android/b/g;
 
-    iput-object v0, p1, Lkik/android/chat/vm/widget/at;->a:Lcom/kik/android/b/g;
+    iput-object v0, p1, Lkik/android/chat/vm/widget/au;->a:Lcom/kik/android/b/g;
 
     .line 1038
     iget-object v0, p0, Lkik/android/chat/vm/widget/SmileyPopupViewModel_MembersInjector;->c:Ljavax/inject/Provider;
@@ -200,9 +200,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/interfaces/ae;
+    check-cast v0, Lkik/core/interfaces/ad;
 
-    iput-object v0, p1, Lkik/android/chat/vm/widget/at;->b:Lkik/core/interfaces/ae;
+    iput-object v0, p1, Lkik/android/chat/vm/widget/au;->b:Lkik/core/interfaces/ad;
 
     .line 9
     return-void

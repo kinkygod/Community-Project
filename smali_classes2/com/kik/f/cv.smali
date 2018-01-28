@@ -3,16 +3,16 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/a/b;
+.implements Ldagger/internal/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/a/b",
+        "Ldagger/internal/b",
         "<",
-        "Lcom/rounds/kik/analytics/IReporter;",
+        "Landroid/content/res/Resources;",
         ">;"
     }
 .end annotation
@@ -81,16 +81,16 @@
     return-void
 .end method
 
-.method public static a(Lcom/kik/f/cu;)La/a/b;
+.method public static a(Lcom/kik/f/cu;)Ldagger/internal/b;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lcom/kik/f/cu;",
             ")",
-            "La/a/b",
+            "Ldagger/internal/b",
             "<",
-            "Lcom/rounds/kik/analytics/IReporter;",
+            "Landroid/content/res/Resources;",
             ">;"
         }
     .end annotation
@@ -115,18 +115,18 @@
     iget-object v0, p0, Lcom/kik/f/cv;->b:Lcom/kik/f/cu;
 
     .line 1023
-    invoke-virtual {v0}, Lcom/kik/f/cu;->a()Lcom/rounds/kik/analytics/IReporter;
+    invoke-virtual {v0}, Lcom/kik/f/cu;->a()Landroid/content/res/Resources;
 
     move-result-object v0
 
     const-string v1, "Cannot return null from a non-@Nullable @Provides method"
 
     .line 1022
-    invoke-static {v0, v1}, La/a/c;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {v0, v1}, Ldagger/internal/c;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/rounds/kik/analytics/IReporter;
+    check-cast v0, Landroid/content/res/Resources;
 
     .line 8
     return-object v0

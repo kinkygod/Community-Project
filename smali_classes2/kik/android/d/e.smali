@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/a/b;
+.implements Ldagger/internal/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/a/b",
+        "Ldagger/internal/b",
         "<",
         "Lkik/android/d/f;",
         ">;"
@@ -81,14 +81,14 @@
     return-void
 .end method
 
-.method public static a(Lkik/android/d/d;)La/a/b;
+.method public static a(Lkik/android/d/d;)Ldagger/internal/b;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lkik/android/d/d;",
             ")",
-            "La/a/b",
+            "Ldagger/internal/b",
             "<",
             "Lkik/android/d/f;",
             ">;"
@@ -167,7 +167,7 @@
     const-string v1, "Cannot return null from a non-@Nullable @Provides method"
 
     .line 1022
-    invoke-static {v0, v1}, La/a/c;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {v0, v1}, Ldagger/internal/c;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 

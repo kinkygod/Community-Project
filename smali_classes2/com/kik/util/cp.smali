@@ -1,23 +1,45 @@
-.class public final Lcom/kik/util/cp;
+.class final synthetic Lcom/kik/util/cp;
 .super Ljava/lang/Object;
-.source "SourceFile"
+
+# interfaces
+.implements Lrx/functions/b;
+
+
+# instance fields
+.field private final a:Lorg/apmem/tools/layouts/FlowLayout;
 
 
 # direct methods
-.method public static a(Landroid/net/Uri;)Z
-    .locals 2
+.method private constructor <init>(Lorg/apmem/tools/layouts/FlowLayout;)V
+    .locals 0
 
-    .prologue
-    .line 33
-    const-string v0, "kik.co"
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    invoke-virtual {p0}, Landroid/net/Uri;->getHost()Ljava/lang/String;
+    iput-object p1, p0, Lcom/kik/util/cp;->a:Lorg/apmem/tools/layouts/FlowLayout;
 
-    move-result-object v1
+    return-void
+.end method
 
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+.method public static a(Lorg/apmem/tools/layouts/FlowLayout;)Lrx/functions/b;
+    .locals 1
 
-    move-result v0
+    new-instance v0, Lcom/kik/util/cp;
 
-    return v0
+    invoke-direct {v0, p0}, Lcom/kik/util/cp;-><init>(Lorg/apmem/tools/layouts/FlowLayout;)V
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public final call(Ljava/lang/Object;)V
+    .locals 1
+
+    iget-object v0, p0, Lcom/kik/util/cp;->a:Lorg/apmem/tools/layouts/FlowLayout;
+
+    check-cast p1, Ljava/util/List;
+
+    invoke-static {v0, p1}, Lcom/kik/util/cn;->a(Lorg/apmem/tools/layouts/FlowLayout;Ljava/util/List;)V
+
+    return-void
 .end method

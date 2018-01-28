@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/b;
+.implements Ldagger/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/b",
+        "Ldagger/b",
         "<",
         "Lkik/android/gifs/vm/a;",
         ">;"
@@ -99,7 +99,7 @@
     return-void
 .end method
 
-.method public static a(Ljavax/inject/Provider;)La/b;
+.method public static a(Ljavax/inject/Provider;)Ldagger/b;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -108,7 +108,7 @@
             "<",
             "Lkik/android/gifs/c;",
             ">;)",
-            "La/b",
+            "Ldagger/b",
             "<",
             "Lkik/android/gifs/vm/a;",
             ">;"
@@ -126,7 +126,7 @@
 
 
 # virtual methods
-.method public final synthetic a(Ljava/lang/Object;)V
+.method public final synthetic injectMembers(Ljava/lang/Object;)V
     .locals 2
 
     .prologue

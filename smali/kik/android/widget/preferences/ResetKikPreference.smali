@@ -138,7 +138,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f090669
+    const v1, 0x7f090671
 
     .line 1098
     invoke-virtual {v0, v1}, Lkik/android/chat/fragment/KikIndeterminateProgressDialog$Builder;->a(I)Lkik/android/chat/fragment/KikIndeterminateProgressDialog$Builder;
@@ -185,7 +185,7 @@
     .line 1108
     iget-object v0, p0, Lkik/android/widget/preferences/ResetKikPreference;->b:Lkik/core/interfaces/IConversation;
 
-    invoke-interface {v0}, Lkik/core/interfaces/IConversation;->T()Lcom/kik/events/Promise;
+    invoke-interface {v0}, Lkik/core/interfaces/IConversation;->S()Lcom/kik/events/Promise;
 
     move-result-object v0
 
@@ -202,7 +202,7 @@
     :cond_0
     iget-object v0, p0, Lkik/android/widget/preferences/ResetKikPreference;->a:Lkik/core/ab;
 
-    invoke-interface {v0}, Lkik/core/ab;->h()V
+    invoke-interface {v0}, Lkik/core/ab;->g()V
 
     goto :goto_0
 .end method
@@ -342,15 +342,15 @@
     .line 90
     iget-object v0, p0, Lkik/android/widget/preferences/ResetKikPreference;->h:Lcom/kik/metrics/c/d;
 
-    invoke-static {}, Lcom/kik/metrics/b/ag;->b()Lcom/kik/metrics/b/ag$a;
+    invoke-static {}, Lcom/kik/metrics/b/ai;->b()Lcom/kik/metrics/b/ai$a;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/kik/metrics/b/ag$a;->a()Lcom/kik/metrics/b/ag;
+    invoke-virtual {v1}, Lcom/kik/metrics/b/ai$a;->a()Lcom/kik/metrics/b/ai;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/kik/metrics/c/d;->a(Lcom/kik/metrics/b/s;)V
+    invoke-virtual {v0, v1}, Lcom/kik/metrics/c/d;->a(Lcom/kik/metrics/b/t;)V
 
     .line 91
     const/4 v0, 0x0

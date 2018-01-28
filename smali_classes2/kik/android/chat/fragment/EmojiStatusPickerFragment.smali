@@ -12,7 +12,7 @@
 
 
 # instance fields
-.field private a:Lkik/android/chat/vm/chats/profile/ba;
+.field private a:Lkik/android/chat/vm/chats/profile/cm;
 
 
 # direct methods
@@ -33,9 +33,9 @@
 
     .prologue
     .line 53
-    iget-object v0, p0, Lkik/android/chat/fragment/EmojiStatusPickerFragment;->a:Lkik/android/chat/vm/chats/profile/ba;
+    iget-object v0, p0, Lkik/android/chat/fragment/EmojiStatusPickerFragment;->a:Lkik/android/chat/vm/chats/profile/cm;
 
-    invoke-interface {v0}, Lkik/android/chat/vm/chats/profile/ba;->n()V
+    invoke-interface {v0}, Lkik/android/chat/vm/chats/profile/cm;->n()V
 
     .line 54
     const/4 v0, 0x1
@@ -48,7 +48,7 @@
 
     .prologue
     .line 33
-    const v0, 0x7f040087
+    const v0, 0x7f040089
 
     const/4 v1, 0x0
 
@@ -56,15 +56,15 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/android/e/aa;
+    check-cast v0, Lkik/android/e/ab;
 
     .line 34
-    invoke-virtual {v0}, Lkik/android/e/aa;->getRoot()Landroid/view/View;
+    invoke-virtual {v0}, Lkik/android/e/ab;->getRoot()Landroid/view/View;
 
     move-result-object v1
 
     .line 36
-    new-instance v2, Lkik/android/chat/vm/r;
+    new-instance v2, Lkik/android/chat/vm/t;
 
     .line 1066
     new-instance v3, Lkik/android/chat/fragment/EmojiStatusPickerFragment$a;
@@ -83,19 +83,19 @@
 
     move-result-object v3
 
-    invoke-direct {v2, v3}, Lkik/android/chat/vm/r;-><init>(Lkik/core/chat/profile/EmojiStatus;)V
+    invoke-direct {v2, v3}, Lkik/android/chat/vm/t;-><init>(Lkik/core/chat/profile/EmojiStatus;)V
 
-    iput-object v2, p0, Lkik/android/chat/fragment/EmojiStatusPickerFragment;->a:Lkik/android/chat/vm/chats/profile/ba;
+    iput-object v2, p0, Lkik/android/chat/fragment/EmojiStatusPickerFragment;->a:Lkik/android/chat/vm/chats/profile/cm;
 
     .line 37
-    iget-object v2, p0, Lkik/android/chat/fragment/EmojiStatusPickerFragment;->a:Lkik/android/chat/vm/chats/profile/ba;
+    iget-object v2, p0, Lkik/android/chat/fragment/EmojiStatusPickerFragment;->a:Lkik/android/chat/vm/chats/profile/cm;
 
-    invoke-virtual {p0, v2}, Lkik/android/chat/fragment/EmojiStatusPickerFragment;->attachVm(Lkik/android/chat/vm/bn;)Lkik/android/chat/vm/bn;
+    invoke-virtual {p0, v2}, Lkik/android/chat/fragment/EmojiStatusPickerFragment;->attachVm(Lkik/android/chat/vm/bo;)Lkik/android/chat/vm/bo;
 
     .line 38
-    iget-object v2, p0, Lkik/android/chat/fragment/EmojiStatusPickerFragment;->a:Lkik/android/chat/vm/chats/profile/ba;
+    iget-object v2, p0, Lkik/android/chat/fragment/EmojiStatusPickerFragment;->a:Lkik/android/chat/vm/chats/profile/cm;
 
-    invoke-virtual {v0, v2}, Lkik/android/e/aa;->a(Lkik/android/chat/vm/chats/profile/ba;)V
+    invoke-virtual {v0, v2}, Lkik/android/e/ab;->a(Lkik/android/chat/vm/chats/profile/cm;)V
 
     .line 39
     const/4 v0, 0x1
@@ -122,16 +122,16 @@
     return-void
 .end method
 
-.method protected screenOpenedEvent()Lcom/kik/metrics/b/s;
+.method protected screenOpenedEvent()Lcom/kik/metrics/b/t;
     .locals 1
 
     .prologue
     .line 47
-    invoke-static {}, Lcom/kik/metrics/b/q;->b()Lcom/kik/metrics/b/q$a;
+    invoke-static {}, Lcom/kik/metrics/b/r;->b()Lcom/kik/metrics/b/r$a;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/kik/metrics/b/q$a;->a()Lcom/kik/metrics/b/q;
+    invoke-virtual {v0}, Lcom/kik/metrics/b/r$a;->a()Lcom/kik/metrics/b/r;
 
     move-result-object v0
 

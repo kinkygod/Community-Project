@@ -8,7 +8,7 @@
     value = {
         "Lcom/kik/cache/HundredYearImageRequest",
         "<",
-        "Lkik/core/datatypes/ac;",
+        "Lkik/core/datatypes/ab;",
         ">;"
     }
 .end annotation
@@ -29,12 +29,12 @@
 
 
 # direct methods
-.method private constructor <init>(Lkik/core/datatypes/ac;Ljava/lang/String;Lcom/android/volley/h$b;IILandroid/graphics/Bitmap$Config;Lcom/android/volley/h$a;ZZ)V
+.method private constructor <init>(Lkik/core/datatypes/ab;Ljava/lang/String;Lcom/android/volley/h$b;IILandroid/graphics/Bitmap$Config;Lcom/android/volley/h$a;ZZ)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkik/core/datatypes/ac;",
+            "Lkik/core/datatypes/ab;",
             "Ljava/lang/String;",
             "Lcom/android/volley/h$b",
             "<",
@@ -60,19 +60,19 @@
     return-void
 .end method
 
-.method public static getDiskCacheKey(Lkik/core/datatypes/ac;Z)Ljava/lang/String;
+.method public static getDiskCacheKey(Lkik/core/datatypes/ab;Z)Ljava/lang/String;
     .locals 1
 
     .prologue
     .line 99
-    invoke-static {p0, p1}, Lcom/kik/cache/MyPicImageRequest;->getUrlForProfileData(Lkik/core/datatypes/ac;Z)Ljava/lang/String;
+    invoke-static {p0, p1}, Lcom/kik/cache/MyPicImageRequest;->getUrlForProfileData(Lkik/core/datatypes/ab;Z)Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public static getKeyMatcher(Lkik/core/datatypes/ac;Z)Lcom/kik/cache/SimpleLruBitmapCache$a;
+.method public static getKeyMatcher(Lkik/core/datatypes/ab;Z)Lcom/kik/cache/SimpleLruBitmapCache$a;
     .locals 2
 
     .prologue
@@ -81,7 +81,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-static {p0, p1}, Lcom/kik/cache/MyPicImageRequest;->getUrlForProfileData(Lkik/core/datatypes/ac;Z)Ljava/lang/String;
+    invoke-static {p0, p1}, Lcom/kik/cache/MyPicImageRequest;->getUrlForProfileData(Lkik/core/datatypes/ab;Z)Ljava/lang/String;
 
     move-result-object v1
 
@@ -107,12 +107,12 @@
     return-object v1
 .end method
 
-.method public static getProfileRequest(Lkik/core/datatypes/ac;Lcom/android/volley/h$b;IILcom/android/volley/h$a;ZZ)Lcom/kik/cache/MyPicImageRequest;
+.method public static getProfileRequest(Lkik/core/datatypes/ab;Lcom/android/volley/h$b;IILcom/android/volley/h$a;ZZ)Lcom/kik/cache/MyPicImageRequest;
     .locals 8
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkik/core/datatypes/ac;",
+            "Lkik/core/datatypes/ab;",
             "Lcom/android/volley/h$b",
             "<",
             "Landroid/graphics/Bitmap;",
@@ -141,14 +141,14 @@
 
     move v6, p6
 
-    invoke-static/range {v0 .. v7}, Lcom/kik/cache/MyPicImageRequest;->getProfileRequest(Lkik/core/datatypes/ac;Lcom/android/volley/h$b;IILcom/android/volley/h$a;ZZLcom/kik/android/Mixpanel;)Lcom/kik/cache/MyPicImageRequest;
+    invoke-static/range {v0 .. v7}, Lcom/kik/cache/MyPicImageRequest;->getProfileRequest(Lkik/core/datatypes/ab;Lcom/android/volley/h$b;IILcom/android/volley/h$a;ZZLcom/kik/android/Mixpanel;)Lcom/kik/cache/MyPicImageRequest;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public static getProfileRequest(Lkik/core/datatypes/ac;Lcom/android/volley/h$b;IILcom/android/volley/h$a;ZZLcom/kik/android/Mixpanel;)Lcom/kik/cache/MyPicImageRequest;
+.method public static getProfileRequest(Lkik/core/datatypes/ab;Lcom/android/volley/h$b;IILcom/android/volley/h$a;ZZLcom/kik/android/Mixpanel;)Lcom/kik/cache/MyPicImageRequest;
     .locals 10
     .param p7    # Lcom/kik/android/Mixpanel;
         .annotation runtime Ljavax/annotation/Nullable;
@@ -157,7 +157,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkik/core/datatypes/ac;",
+            "Lkik/core/datatypes/ab;",
             "Lcom/android/volley/h$b",
             "<",
             "Landroid/graphics/Bitmap;",
@@ -172,7 +172,7 @@
 
     .prologue
     .line 34
-    invoke-static {p0, p5}, Lcom/kik/cache/MyPicImageRequest;->getUrlForProfileData(Lkik/core/datatypes/ac;Z)Ljava/lang/String;
+    invoke-static {p0, p5}, Lcom/kik/cache/MyPicImageRequest;->getUrlForProfileData(Lkik/core/datatypes/ab;Z)Ljava/lang/String;
 
     move-result-object v2
 
@@ -207,7 +207,7 @@
 
     move/from16 v9, p6
 
-    invoke-direct/range {v0 .. v9}, Lcom/kik/cache/MyPicImageRequest;-><init>(Lkik/core/datatypes/ac;Ljava/lang/String;Lcom/android/volley/h$b;IILandroid/graphics/Bitmap$Config;Lcom/android/volley/h$a;ZZ)V
+    invoke-direct/range {v0 .. v9}, Lcom/kik/cache/MyPicImageRequest;-><init>(Lkik/core/datatypes/ab;Ljava/lang/String;Lcom/android/volley/h$b;IILandroid/graphics/Bitmap$Config;Lcom/android/volley/h$a;ZZ)V
 
     .line 42
     if-eqz p6, :cond_0
@@ -222,14 +222,14 @@
     goto :goto_0
 .end method
 
-.method private static getUrlForProfileData(Lkik/core/datatypes/ac;Z)Ljava/lang/String;
+.method private static getUrlForProfileData(Lkik/core/datatypes/ab;Z)Ljava/lang/String;
     .locals 2
 
     .prologue
     .line 61
     if-eqz p0, :cond_0
 
-    iget-object v0, p0, Lkik/core/datatypes/ac;->f:Ljava/lang/String;
+    iget-object v0, p0, Lkik/core/datatypes/ab;->f:Ljava/lang/String;
 
     if-nez v0, :cond_1
 
@@ -250,7 +250,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v1, p0, Lkik/core/datatypes/ac;->f:Ljava/lang/String;
+    iget-object v1, p0, Lkik/core/datatypes/ab;->f:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -274,7 +274,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v1, p0, Lkik/core/datatypes/ac;->f:Ljava/lang/String;
+    iget-object v1, p0, Lkik/core/datatypes/ab;->f:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -346,11 +346,11 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/datatypes/ac;
+    check-cast v0, Lkik/core/datatypes/ab;
 
     iget-boolean v2, p0, Lcom/kik/cache/MyPicImageRequest;->_isFullSize:Z
 
-    invoke-static {v0, v2}, Lcom/kik/cache/MyPicImageRequest;->getUrlForProfileData(Lkik/core/datatypes/ac;Z)Ljava/lang/String;
+    invoke-static {v0, v2}, Lcom/kik/cache/MyPicImageRequest;->getUrlForProfileData(Lkik/core/datatypes/ab;Z)Ljava/lang/String;
 
     move-result-object v0
 

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_gravity="center" style="@style/InstabugBaseContainer" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout android:layout_gravity="center" style="@style/InstabugBaseContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <FrameLayout android:id="@id/instabug_annotation_image_container" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/divider">
         <FrameLayout android:layout_gravity="center" android:id="@id/instabug_annotation_image_border" android:layout_width="wrap_content" android:layout_height="fill_parent">
             <com.instabug.library.view.annotation.AnnotationView android:id="@id/instabug_annotation_image" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="fitCenter" android:adjustViewBounds="true" />

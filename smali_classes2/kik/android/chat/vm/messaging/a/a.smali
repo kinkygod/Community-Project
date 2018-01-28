@@ -64,7 +64,7 @@
 
 
 # virtual methods
-.method public final aA()Ljava/lang/String;
+.method public final aC()Ljava/lang/String;
     .locals 1
 
     .prologue
@@ -84,7 +84,7 @@
     iget-object v0, p0, Lkik/android/chat/vm/messaging/a/a;->f:Lkik/core/datatypes/messageExtensions/ContentMessage;
 
     .line 3148
-    invoke-static {v0}, Lkik/android/chat/vm/messaging/gj;->a(Lkik/core/datatypes/messageExtensions/ContentMessage;)Z
+    invoke-static {v0}, Lkik/android/chat/vm/messaging/gf;->a(Lkik/core/datatypes/messageExtensions/ContentMessage;)Z
 
     move-result v0
 
@@ -98,14 +98,14 @@
     return-object v0
 
     :cond_1
-    invoke-super {p0}, Lkik/android/chat/vm/messaging/ct;->aA()Ljava/lang/String;
+    invoke-super {p0}, Lkik/android/chat/vm/messaging/ct;->aC()Ljava/lang/String;
 
     move-result-object v0
 
     goto :goto_0
 .end method
 
-.method public final aB()Ljava/lang/String;
+.method public final aD()Ljava/lang/String;
     .locals 1
 
     .prologue
@@ -125,7 +125,7 @@
     iget-object v0, p0, Lkik/android/chat/vm/messaging/a/a;->f:Lkik/core/datatypes/messageExtensions/ContentMessage;
 
     .line 6148
-    invoke-static {v0}, Lkik/android/chat/vm/messaging/gj;->a(Lkik/core/datatypes/messageExtensions/ContentMessage;)Z
+    invoke-static {v0}, Lkik/android/chat/vm/messaging/gf;->a(Lkik/core/datatypes/messageExtensions/ContentMessage;)Z
 
     move-result v0
 
@@ -139,14 +139,14 @@
     return-object v0
 
     :cond_1
-    invoke-super {p0}, Lkik/android/chat/vm/messaging/ct;->aB()Ljava/lang/String;
+    invoke-super {p0}, Lkik/android/chat/vm/messaging/ct;->aD()Ljava/lang/String;
 
     move-result-object v0
 
     goto :goto_0
 .end method
 
-.method public final aC()I
+.method public final aE()I
     .locals 1
 
     .prologue
@@ -156,7 +156,7 @@
     return v0
 .end method
 
-.method public final aE()I
+.method public final aG()I
     .locals 1
 
     .prologue
@@ -166,7 +166,7 @@
     return v0
 .end method
 
-.method public final aG()Ljava/lang/String;
+.method public final aI()Ljava/lang/String;
     .locals 1
 
     .prologue
@@ -176,7 +176,7 @@
     return-object v0
 .end method
 
-.method public final aI()Z
+.method public final aK()Z
     .locals 1
 
     .prologue
@@ -192,7 +192,7 @@
     .line 73
     if-nez v0, :cond_0
 
-    invoke-super {p0}, Lkik/android/chat/vm/messaging/ct;->aI()Z
+    invoke-super {p0}, Lkik/android/chat/vm/messaging/ct;->aK()Z
 
     move-result v0
 
@@ -210,12 +210,12 @@
     goto :goto_0
 .end method
 
-.method public final aJ()F
+.method public final aL()F
     .locals 1
 
     .prologue
     .line 44
-    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/a/a;->aI()Z
+    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/a/a;->aK()Z
 
     move-result v0
 
@@ -232,12 +232,12 @@
     goto :goto_0
 .end method
 
-.method public final aK()F
+.method public final aM()F
     .locals 1
 
     .prologue
     .line 50
-    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/a/a;->aI()Z
+    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/a/a;->aK()Z
 
     move-result v0
 
@@ -254,7 +254,7 @@
     goto :goto_0
 .end method
 
-.method public final aL()Lkik/android/widget/ContentPreviewImageView$ContentType;
+.method public final aN()Lkik/android/widget/ContentPreviewImageView$ContentType;
     .locals 1
 
     .prologue
@@ -264,7 +264,7 @@
     return-object v0
 .end method
 
-.method public final aM()Lrx/d;
+.method public final aO()Lrx/d;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -303,14 +303,14 @@
     return-object v0
 
     :cond_0
-    invoke-super {p0}, Lkik/android/chat/vm/messaging/ct;->aM()Lrx/d;
+    invoke-super {p0}, Lkik/android/chat/vm/messaging/ct;->aO()Lrx/d;
 
     move-result-object v0
 
     goto :goto_0
 .end method
 
-.method public final aN()Lrx/d;
+.method public final aP()Lrx/d;
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -339,13 +339,13 @@
     if-eqz v0, :cond_0
 
     .line 88
-    iget-object v0, p0, Lkik/android/chat/vm/messaging/a/a;->A:Lcom/kik/storage/p;
+    iget-object v0, p0, Lkik/android/chat/vm/messaging/a/a;->B:Lcom/kik/storage/s;
 
     invoke-virtual {v2}, Lkik/core/datatypes/messageExtensions/ContentMessage;->n()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-interface {v0, v1}, Lcom/kik/storage/p;->k(Ljava/lang/String;)Landroid/graphics/Bitmap;
+    invoke-interface {v0, v1}, Lcom/kik/storage/s;->k(Ljava/lang/String;)Landroid/graphics/Bitmap;
 
     move-result-object v0
 
@@ -466,7 +466,23 @@
     goto :goto_0
 .end method
 
-.method public final b()Lrx/d;
+.method public final g()Z
+    .locals 1
+
+    .prologue
+    .line 148
+    .line 13038
+    iget-object v0, p0, Lkik/android/chat/vm/messaging/a/a;->f:Lkik/core/datatypes/messageExtensions/ContentMessage;
+
+    .line 148
+    invoke-static {v0}, Lkik/android/chat/vm/messaging/gf;->a(Lkik/core/datatypes/messageExtensions/ContentMessage;)Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public final k()Lrx/d;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -493,23 +509,7 @@
     return-object v0
 .end method
 
-.method public final g()Z
-    .locals 1
-
-    .prologue
-    .line 148
-    .line 13038
-    iget-object v0, p0, Lkik/android/chat/vm/messaging/a/a;->f:Lkik/core/datatypes/messageExtensions/ContentMessage;
-
-    .line 148
-    invoke-static {v0}, Lkik/android/chat/vm/messaging/gj;->a(Lkik/core/datatypes/messageExtensions/ContentMessage;)Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method protected final k()Lkik/core/datatypes/messageExtensions/ContentMessage;
+.method protected final l()Lkik/core/datatypes/messageExtensions/ContentMessage;
     .locals 1
 
     .prologue

@@ -1,37 +1,53 @@
-.class public interface abstract Lkik/android/chat/vm/profile/cx;
+.class public final Lkik/android/chat/vm/profile/cx;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/vm/bn;
+.implements Lkik/android/chat/vm/profile/dg;
+
+
+# instance fields
+.field private final a:Lkik/android/chat/fragment/ScanCodeTabFragment$OpenTypes;
+
+.field private b:Lcom/kik/core/network/xmpp/jid/a;
+
+
+# direct methods
+.method public constructor <init>(Lcom/kik/core/network/xmpp/jid/a;Lkik/android/chat/fragment/ScanCodeTabFragment$OpenTypes;)V
+    .locals 0
+
+    .prologue
+    .line 17
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 18
+    iput-object p1, p0, Lkik/android/chat/vm/profile/cx;->b:Lcom/kik/core/network/xmpp/jid/a;
+
+    .line 19
+    iput-object p2, p0, Lkik/android/chat/vm/profile/cx;->a:Lkik/android/chat/fragment/ScanCodeTabFragment$OpenTypes;
+
+    .line 20
+    return-void
+.end method
 
 
 # virtual methods
-.method public abstract a()Z
+.method public final a()Lcom/kik/core/network/xmpp/jid/a;
+    .locals 1
+
+    .prologue
+    .line 25
+    iget-object v0, p0, Lkik/android/chat/vm/profile/cx;->b:Lcom/kik/core/network/xmpp/jid/a;
+
+    return-object v0
 .end method
 
-.method public abstract b()Lrx/d;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/d",
-            "<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
-.end method
+.method public final b()Lkik/android/chat/fragment/ScanCodeTabFragment$OpenTypes;
+    .locals 1
 
-.method public abstract d()Lrx/d;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/d",
-            "<",
-            "Lkik/core/interfaces/o",
-            "<",
-            "Landroid/graphics/Bitmap;",
-            ">;>;"
-        }
-    .end annotation
+    .prologue
+    .line 31
+    iget-object v0, p0, Lkik/android/chat/vm/profile/cx;->a:Lkik/android/chat/fragment/ScanCodeTabFragment$OpenTypes;
+
+    return-object v0
 .end method

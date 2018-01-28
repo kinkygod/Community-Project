@@ -36,7 +36,7 @@
     .locals 0
 
     .prologue
-    .line 789
+    .line 790
     iput-object p1, p0, Lkik/android/chat/KikApplication$8;->a:Lkik/android/chat/KikApplication;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -50,7 +50,7 @@
     .locals 3
 
     .prologue
-    .line 793
+    .line 794
     iget-object v0, p0, Lkik/android/chat/KikApplication$8;->a:Lkik/android/chat/KikApplication;
 
     iget-object v0, v0, Lkik/android/chat/KikApplication;->a:Lcom/kik/android/Mixpanel;
@@ -59,34 +59,11 @@
 
     iget-object v2, p0, Lkik/android/chat/KikApplication$8;->a:Lkik/android/chat/KikApplication;
 
-    invoke-static {v2}, Lkik/android/chat/KikApplication;->e(Lkik/android/chat/KikApplication;)Lkik/core/interfaces/w;
+    invoke-static {v2}, Lkik/android/chat/KikApplication;->e(Lkik/android/chat/KikApplication;)Lkik/core/interfaces/v;
 
     move-result-object v2
 
-    invoke-interface {v2}, Lkik/core/interfaces/w;->o()Ljava/util/List;
-
-    move-result-object v2
-
-    invoke-interface {v2}, Ljava/util/List;->size()I
-
-    move-result v2
-
-    invoke-virtual {v0, v1, v2}, Lcom/kik/android/Mixpanel;->a(Ljava/lang/String;I)Lcom/kik/android/Mixpanel;
-
-    .line 794
-    iget-object v0, p0, Lkik/android/chat/KikApplication$8;->a:Lkik/android/chat/KikApplication;
-
-    iget-object v0, v0, Lkik/android/chat/KikApplication;->a:Lcom/kik/android/Mixpanel;
-
-    const-string v1, "Block List Size"
-
-    iget-object v2, p0, Lkik/android/chat/KikApplication$8;->a:Lkik/android/chat/KikApplication;
-
-    invoke-static {v2}, Lkik/android/chat/KikApplication;->e(Lkik/android/chat/KikApplication;)Lkik/core/interfaces/w;
-
-    move-result-object v2
-
-    invoke-interface {v2}, Lkik/core/interfaces/w;->p()Ljava/util/List;
+    invoke-interface {v2}, Lkik/core/interfaces/v;->n()Ljava/util/List;
 
     move-result-object v2
 
@@ -97,5 +74,28 @@
     invoke-virtual {v0, v1, v2}, Lcom/kik/android/Mixpanel;->a(Ljava/lang/String;I)Lcom/kik/android/Mixpanel;
 
     .line 795
+    iget-object v0, p0, Lkik/android/chat/KikApplication$8;->a:Lkik/android/chat/KikApplication;
+
+    iget-object v0, v0, Lkik/android/chat/KikApplication;->a:Lcom/kik/android/Mixpanel;
+
+    const-string v1, "Block List Size"
+
+    iget-object v2, p0, Lkik/android/chat/KikApplication$8;->a:Lkik/android/chat/KikApplication;
+
+    invoke-static {v2}, Lkik/android/chat/KikApplication;->e(Lkik/android/chat/KikApplication;)Lkik/core/interfaces/v;
+
+    move-result-object v2
+
+    invoke-interface {v2}, Lkik/core/interfaces/v;->o()Ljava/util/List;
+
+    move-result-object v2
+
+    invoke-interface {v2}, Ljava/util/List;->size()I
+
+    move-result v2
+
+    invoke-virtual {v0, v1, v2}, Lcom/kik/android/Mixpanel;->a(Ljava/lang/String;I)Lcom/kik/android/Mixpanel;
+
+    .line 796
     return-void
 .end method

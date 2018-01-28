@@ -1,5 +1,5 @@
 .class Lcom/kik/storage/e;
-.super Lcom/kik/storage/l;
+.super Lcom/kik/storage/o;
 .source "SourceFile"
 
 
@@ -13,7 +13,7 @@
 
     .prologue
     .line 59
-    invoke-direct {p0, p1}, Lcom/kik/storage/l;-><init>(Landroid/database/Cursor;)V
+    invoke-direct {p0, p1}, Lcom/kik/storage/o;-><init>(Landroid/database/Cursor;)V
 
     .line 55
     new-instance v0, Lcom/google/gson/e;

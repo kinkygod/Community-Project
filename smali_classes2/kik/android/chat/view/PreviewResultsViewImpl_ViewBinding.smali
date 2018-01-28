@@ -22,7 +22,7 @@
     iput-object p1, p0, Lkik/android/chat/view/PreviewResultsViewImpl_ViewBinding;->a:Lkik/android/chat/view/PreviewResultsViewImpl;
 
     .line 27
-    const v0, 0x7f10017d
+    const v0, 0x7f10017e
 
     const-string v1, "field \'_previewImage\'"
 
@@ -37,7 +37,7 @@
     iput-object v0, p1, Lkik/android/chat/view/PreviewResultsViewImpl;->_previewImage:Lkik/android/widget/AspectRatioImageView;
 
     .line 28
-    const v0, 0x7f10017e
+    const v0, 0x7f10017f
 
     const-string v1, "field \'_videoView\'"
 

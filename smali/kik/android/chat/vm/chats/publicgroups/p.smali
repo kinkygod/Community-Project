@@ -12,10 +12,10 @@
     .end annotation
 .end field
 
-.field c:Lkik/core/interfaces/ag;
+.field c:Lkik/core/interfaces/af;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lkik/core/interfaces/ag",
+            "Lkik/core/interfaces/af",
             "<",
             "Landroid/graphics/Bitmap;",
             ">;"
@@ -46,7 +46,7 @@
     .locals 3
 
     .prologue
-    .line 51
+    .line 43
     const/4 v0, 0x2
 
     new-array v0, v0, [Ljava/lang/Object;
@@ -71,33 +71,33 @@
 
     invoke-direct {p0, v0, v1, p3, p4}, Lkik/android/chat/vm/chats/publicgroups/a;-><init>(JZZ)V
 
-    .line 52
+    .line 44
     iput-object p1, p0, Lkik/android/chat/vm/chats/publicgroups/p;->f:Lcom/kik/core/domain/a/a/a;
 
-    .line 53
+    .line 45
     iput-object p2, p0, Lkik/android/chat/vm/chats/publicgroups/p;->g:Ljava/lang/String;
 
-    .line 54
+    .line 46
     return-void
 .end method
 
 
 # virtual methods
-.method public final L_()Lkik/android/chat/vm/chats/publicgroups/IPublicGroupItemViewModel$LayoutType;
+.method public final N_()Lkik/android/chat/vm/chats/publicgroups/IPublicGroupItemViewModel$LayoutType;
     .locals 1
 
     .prologue
-    .line 66
+    .line 58
     sget-object v0, Lkik/android/chat/vm/chats/publicgroups/IPublicGroupItemViewModel$LayoutType;->Related:Lkik/android/chat/vm/chats/publicgroups/IPublicGroupItemViewModel$LayoutType;
 
     return-object v0
 .end method
 
-.method public final P_()Ljava/lang/String;
+.method public final R_()Ljava/lang/String;
     .locals 1
 
     .prologue
-    .line 72
+    .line 64
     iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/p;->f:Lcom/kik/core/domain/a/a/a;
 
     invoke-interface {v0}, Lcom/kik/core/domain/a/a/a;->b()Ljava/lang/String;
@@ -110,14 +110,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 73
+    .line 65
     iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/p;->f:Lcom/kik/core/domain/a/a/a;
 
     invoke-interface {v0}, Lcom/kik/core/domain/a/a/a;->c()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 75
+    .line 67
     :goto_0
     return-object v0
 
@@ -131,13 +131,13 @@
     goto :goto_0
 .end method
 
-.method public final Q_()Ljava/lang/CharSequence;
+.method public final S_()Ljava/lang/CharSequence;
     .locals 8
 
     .prologue
     const/4 v2, 0x0
 
-    .line 81
+    .line 73
     iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/p;->f:Lcom/kik/core/domain/a/a/a;
 
     invoke-interface {v0}, Lcom/kik/core/domain/a/a/a;->c()Ljava/lang/String;
@@ -152,30 +152,30 @@
 
     move-result-object v3
 
-    .line 83
+    .line 75
     iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/p;->g:Ljava/lang/String;
 
     invoke-virtual {v3, v0}, Ljava/lang/String;->indexOf(Ljava/lang/String;)I
 
     move-result v1
 
-    .line 84
+    .line 76
     if-gez v1, :cond_0
 
-    .line 86
+    .line 78
     invoke-virtual {v3}, Ljava/lang/String;->length()I
 
     move-result v0
 
     move v1, v2
 
-    .line 93
+    .line 85
     :goto_0
     new-instance v4, Landroid/text/SpannableString;
 
     invoke-direct {v4, v3}, Landroid/text/SpannableString;-><init>(Ljava/lang/CharSequence;)V
 
-    .line 94
+    .line 86
     new-instance v5, Landroid/text/style/ForegroundColorSpan;
 
     iget-object v6, p0, Lkik/android/chat/vm/chats/publicgroups/p;->b:Landroid/content/res/Resources;
@@ -190,7 +190,7 @@
 
     invoke-virtual {v4, v5, v1, v0, v2}, Landroid/text/SpannableString;->setSpan(Ljava/lang/Object;III)V
 
-    .line 95
+    .line 87
     new-instance v1, Landroid/text/style/ForegroundColorSpan;
 
     iget-object v5, p0, Lkik/android/chat/vm/chats/publicgroups/p;->b:Landroid/content/res/Resources;
@@ -209,10 +209,10 @@
 
     invoke-virtual {v4, v1, v0, v3, v2}, Landroid/text/SpannableString;->setSpan(Ljava/lang/Object;III)V
 
-    .line 96
+    .line 88
     return-object v4
 
-    .line 90
+    .line 82
     :cond_0
     iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/p;->g:Ljava/lang/String;
 
@@ -225,25 +225,25 @@
     goto :goto_0
 .end method
 
-.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
     .locals 0
 
     .prologue
-    .line 59
-    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/chats/publicgroups/a;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    .line 51
+    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/chats/publicgroups/a;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
-    .line 60
+    .line 52
     invoke-interface {p1, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/chat/vm/chats/publicgroups/p;)V
 
-    .line 61
+    .line 53
     return-void
 .end method
 
-.method public final g()V
+.method public final h()V
     .locals 4
 
     .prologue
-    .line 131
+    .line 123
     iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/p;->e:Lcom/kik/android/Mixpanel;
 
     const-string v1, "Public Group Similar Group Tapped"
@@ -256,7 +256,7 @@
 
     iget-object v2, p0, Lkik/android/chat/vm/chats/publicgroups/p;->g:Ljava/lang/String;
 
-    .line 132
+    .line 124
     invoke-virtual {v0, v1, v2}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
 
     move-result-object v0
@@ -265,7 +265,7 @@
 
     iget-object v2, p0, Lkik/android/chat/vm/chats/publicgroups/p;->f:Lcom/kik/core/domain/a/a/a;
 
-    .line 133
+    .line 125
     invoke-interface {v2}, Lcom/kik/core/domain/a/a/a;->c()Ljava/lang/String;
 
     move-result-object v2
@@ -276,8 +276,8 @@
 
     const-string v1, "Total Results"
 
-    .line 134
-    invoke-virtual {p0}, Lkik/android/chat/vm/chats/publicgroups/p;->e()I
+    .line 126
+    invoke-virtual {p0}, Lkik/android/chat/vm/chats/publicgroups/p;->g()I
 
     move-result v2
 
@@ -289,8 +289,8 @@
 
     const-string v1, "Tapped Position"
 
-    .line 135
-    invoke-virtual {p0}, Lkik/android/chat/vm/chats/publicgroups/p;->d()I
+    .line 127
+    invoke-virtual {p0}, Lkik/android/chat/vm/chats/publicgroups/p;->e()I
 
     move-result v2
 
@@ -302,28 +302,28 @@
 
     move-result-object v0
 
-    .line 136
+    .line 128
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->g()Lcom/kik/android/Mixpanel$d;
 
     move-result-object v0
 
-    .line 137
+    .line 129
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
 
-    .line 139
+    .line 131
     iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/p;->f:Lcom/kik/core/domain/a/a/a;
 
     invoke-virtual {p0, v0}, Lkik/android/chat/vm/chats/publicgroups/p;->a(Lcom/kik/core/domain/a/a/a;)V
 
-    .line 140
+    .line 132
     return-void
 .end method
 
-.method public final h()Ljava/lang/String;
+.method public final i()Ljava/lang/String;
     .locals 2
 
     .prologue
-    .line 102
+    .line 94
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -361,7 +361,7 @@
     return-object v0
 .end method
 
-.method public final i()Lrx/d;
+.method public final j()Lrx/d;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -376,7 +376,7 @@
     .end annotation
 
     .prologue
-    .line 108
+    .line 100
     iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/p;->f:Lcom/kik/core/domain/a/a/a;
 
     invoke-interface {v0}, Lcom/kik/core/domain/a/a/a;->d()Ljava/lang/String;
@@ -385,7 +385,7 @@
 
     if-nez v0, :cond_0
 
-    .line 109
+    .line 101
     new-instance v0, Lkik/android/chat/vm/chats/publicgroups/p$1;
 
     invoke-direct {v0, p0}, Lkik/android/chat/vm/chats/publicgroups/p$1;-><init>(Lkik/android/chat/vm/chats/publicgroups/p;)V
@@ -394,12 +394,12 @@
 
     move-result-object v0
 
-    .line 125
+    .line 117
     :goto_0
     return-object v0
 
     :cond_0
-    iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/p;->c:Lkik/core/interfaces/ag;
+    iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/p;->c:Lkik/core/interfaces/af;
 
     iget-object v1, p0, Lkik/android/chat/vm/chats/publicgroups/p;->f:Lcom/kik/core/domain/a/a/a;
 
@@ -411,7 +411,7 @@
 
     move-result-object v1
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ag;->a(Lrx/d;)Lrx/d;
+    invoke-interface {v0, v1}, Lkik/core/interfaces/af;->a(Lrx/d;)Lrx/d;
 
     move-result-object v0
 

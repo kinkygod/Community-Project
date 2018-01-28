@@ -37,7 +37,7 @@
 
     iget-object v0, p0, Lkik/android/chat/fragment/ep;->a:Lkik/android/chat/fragment/MissedConversationsFragment;
 
-    invoke-static {v0}, Lkik/android/chat/fragment/MissedConversationsFragment;->c(Lkik/android/chat/fragment/MissedConversationsFragment;)V
+    invoke-static {v0}, Lkik/android/chat/fragment/MissedConversationsFragment;->d(Lkik/android/chat/fragment/MissedConversationsFragment;)V
 
     return-void
 .end method

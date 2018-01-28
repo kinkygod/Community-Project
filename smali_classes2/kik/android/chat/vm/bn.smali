@@ -4,8 +4,5 @@
 
 
 # virtual methods
-.method public abstract a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
-.end method
-
-.method public abstract aj_()V
+.method public abstract a()Ljava/lang/String;
 .end method

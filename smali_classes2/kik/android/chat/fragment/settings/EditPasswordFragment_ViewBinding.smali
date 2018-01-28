@@ -24,7 +24,7 @@
     iput-object p1, p0, Lkik/android/chat/fragment/settings/EditPasswordFragment_ViewBinding;->a:Lkik/android/chat/fragment/settings/EditPasswordFragment;
 
     .line 25
-    const v0, 0x7f1001f7
+    const v0, 0x7f1001f8
 
     const-string v1, "field \'_existingPasswordField\'"
 
@@ -39,7 +39,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/settings/EditPasswordFragment;->_existingPasswordField:Lkik/android/chat/view/ValidateableInputView;
 
     .line 26
-    const v0, 0x7f1001f8
+    const v0, 0x7f1001f9
 
     const-string v1, "field \'_newPasswordField\'"
 
@@ -54,7 +54,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/settings/EditPasswordFragment;->_newPasswordField:Lkik/android/chat/view/ValidateableInputView;
 
     .line 27
-    const v0, 0x7f1001f9
+    const v0, 0x7f1001fa
 
     const-string v1, "field \'_retypePasswordField\'"
 
@@ -69,7 +69,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/settings/EditPasswordFragment;->_retypePasswordField:Lkik/android/chat/view/ValidateableInputView;
 
     .line 28
-    const v0, 0x7f1001f6
+    const v0, 0x7f1001f7
 
     const-string v1, "field \'_saveButton\' and method \'onSaveClick\'"
 

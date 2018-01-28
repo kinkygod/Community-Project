@@ -23,7 +23,7 @@
     .locals 0
 
     .prologue
-    .line 1021
+    .line 1023
     iput-object p1, p0, Lkik/android/chat/fragment/KikConversationsFragment$15;->a:Lkik/android/chat/fragment/KikConversationsFragment;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
@@ -37,7 +37,7 @@
     .locals 2
 
     .prologue
-    .line 1025
+    .line 1027
     iget-object v0, p0, Lkik/android/chat/fragment/KikConversationsFragment$15;->a:Lkik/android/chat/fragment/KikConversationsFragment;
 
     iget-object v0, v0, Lkik/android/chat/fragment/KikConversationsFragment;->_searchBarBackIcon:Landroid/widget/ImageView;
@@ -46,6 +46,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setAlpha(F)V
 
-    .line 1026
+    .line 1028
     return-void
 .end method

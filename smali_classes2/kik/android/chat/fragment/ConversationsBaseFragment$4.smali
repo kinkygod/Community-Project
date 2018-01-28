@@ -36,7 +36,7 @@
     .locals 0
 
     .prologue
-    .line 154
+    .line 155
     iput-object p1, p0, Lkik/android/chat/fragment/ConversationsBaseFragment$4;->a:Lkik/android/chat/fragment/ConversationsBaseFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -52,10 +52,10 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 154
+    .line 155
     check-cast p2, Lkik/core/datatypes/Message;
 
-    .line 1158
+    .line 1159
     iget-object v0, p0, Lkik/android/chat/fragment/ConversationsBaseFragment$4;->a:Lkik/android/chat/fragment/ConversationsBaseFragment;
 
     invoke-static {v0}, Lkik/android/chat/fragment/ConversationsBaseFragment;->access$000(Lkik/android/chat/fragment/ConversationsBaseFragment;)Z
@@ -64,15 +64,15 @@
 
     if-nez v0, :cond_0
 
-    .line 1159
+    .line 1160
     invoke-static {p2}, Lkik/core/datatypes/messageExtensions/MessageAttachment;->shouldNotify(Lkik/core/datatypes/Message;)Z
 
     move-result v0
 
-    .line 1160
+    .line 1161
     if-eqz v0, :cond_0
 
-    .line 1163
+    .line 1164
     iget-object v0, p0, Lkik/android/chat/fragment/ConversationsBaseFragment$4;->a:Lkik/android/chat/fragment/ConversationsBaseFragment;
 
     iget-object v0, v0, Lkik/android/chat/fragment/ConversationsBaseFragment;->_convoManager:Lkik/core/interfaces/IConversation;
@@ -85,7 +85,7 @@
 
     move-result-object v0
 
-    .line 1164
+    .line 1165
     iget-object v2, p0, Lkik/android/chat/fragment/ConversationsBaseFragment$4;->a:Lkik/android/chat/fragment/ConversationsBaseFragment;
 
     iget-object v2, v2, Lkik/android/chat/fragment/ConversationsBaseFragment;->_convoManager:Lkik/core/interfaces/IConversation;
@@ -106,20 +106,20 @@
 
     move v0, v1
 
-    .line 1165
+    .line 1166
     :goto_0
     if-eqz v0, :cond_0
 
-    .line 1166
+    .line 1167
     iget-object v0, p0, Lkik/android/chat/fragment/ConversationsBaseFragment$4;->a:Lkik/android/chat/fragment/ConversationsBaseFragment;
 
     invoke-static {v0, v1}, Lkik/android/chat/fragment/ConversationsBaseFragment;->access$002(Lkik/android/chat/fragment/ConversationsBaseFragment;Z)Z
 
-    .line 154
+    .line 155
     :cond_0
     return-void
 
-    .line 1164
+    .line 1165
     :cond_1
     const/4 v0, 0x0
 

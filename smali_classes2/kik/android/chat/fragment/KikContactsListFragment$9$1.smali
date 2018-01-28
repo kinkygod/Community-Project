@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 958
+    .line 963
     iput-object p1, p0, Lkik/android/chat/fragment/KikContactsListFragment$9$1;->a:Lkik/android/chat/fragment/KikContactsListFragment$9;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,7 +40,7 @@
     .locals 3
 
     .prologue
-    .line 962
+    .line 967
     iget-object v0, p0, Lkik/android/chat/fragment/KikContactsListFragment$9$1;->a:Lkik/android/chat/fragment/KikContactsListFragment$9;
 
     iget-object v0, v0, Lkik/android/chat/fragment/KikContactsListFragment$9;->a:Lkik/android/chat/fragment/KikContactsListFragment;
@@ -51,7 +51,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 963
+    .line 968
     iget-object v0, p0, Lkik/android/chat/fragment/KikContactsListFragment$9$1;->a:Lkik/android/chat/fragment/KikContactsListFragment$9;
 
     iget-object v0, v0, Lkik/android/chat/fragment/KikContactsListFragment$9;->a:Lkik/android/chat/fragment/KikContactsListFragment;
@@ -60,7 +60,7 @@
 
     invoke-virtual {v0, v1}, Lkik/android/chat/fragment/KikContactsListFragment;->d(Ljava/lang/String;)V
 
-    .line 964
+    .line 969
     iget-object v0, p0, Lkik/android/chat/fragment/KikContactsListFragment$9$1;->a:Lkik/android/chat/fragment/KikContactsListFragment$9;
 
     iget-object v0, v0, Lkik/android/chat/fragment/KikContactsListFragment$9;->a:Lkik/android/chat/fragment/KikContactsListFragment;
@@ -75,7 +75,7 @@
 
     invoke-virtual {v0, v1}, Lkik/android/chat/view/SearchBarViewImpl;->a(Ljava/lang/String;)V
 
-    .line 965
+    .line 970
     iget-object v0, p0, Lkik/android/chat/fragment/KikContactsListFragment$9$1;->a:Lkik/android/chat/fragment/KikContactsListFragment$9;
 
     iget-object v0, v0, Lkik/android/chat/fragment/KikContactsListFragment$9;->a:Lkik/android/chat/fragment/KikContactsListFragment;
@@ -90,7 +90,7 @@
 
     invoke-virtual {v0, v1, v2}, Lkik/android/chat/fragment/KikContactsListFragment;->a(Ljava/lang/String;Z)V
 
-    .line 967
+    .line 972
     :cond_0
     iget-object v0, p0, Lkik/android/chat/fragment/KikContactsListFragment$9$1;->a:Lkik/android/chat/fragment/KikContactsListFragment$9;
 
@@ -100,14 +100,14 @@
 
     if-eqz v0, :cond_1
 
-    .line 968
+    .line 973
     iget-object v0, p0, Lkik/android/chat/fragment/KikContactsListFragment$9$1;->a:Lkik/android/chat/fragment/KikContactsListFragment$9;
 
     iget-object v0, v0, Lkik/android/chat/fragment/KikContactsListFragment$9;->a:Lkik/android/chat/fragment/KikContactsListFragment;
 
     invoke-virtual {v0}, Lkik/android/chat/fragment/KikContactsListFragment;->resignWaitDialog()V
 
-    .line 970
+    .line 975
     :cond_1
     return-void
 .end method

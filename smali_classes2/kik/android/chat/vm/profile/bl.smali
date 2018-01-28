@@ -45,10 +45,10 @@
 
     .prologue
     .line 0
-    check-cast p1, Landroid/graphics/Bitmap;
+    check-cast p1, Lcom/kik/core/domain/a/a/a;
 
-    .line 1285
-    if-eqz p1, :cond_0
+    .line 1327
+    if-nez p1, :cond_0
 
     const/4 v0, 0x1
 
@@ -60,7 +60,7 @@
     .line 0
     return-object v0
 
-    .line 1285
+    .line 1327
     :cond_0
     const/4 v0, 0x0
 

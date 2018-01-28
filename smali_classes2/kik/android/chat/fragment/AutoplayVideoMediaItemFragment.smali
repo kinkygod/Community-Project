@@ -93,9 +93,9 @@
 
     .prologue
     .line 74
-    iget-object v0, p0, Lkik/android/chat/fragment/AutoplayVideoMediaItemFragment;->h:Lkik/android/f/f;
+    iget-object v0, p0, Lkik/android/chat/fragment/AutoplayVideoMediaItemFragment;->h:Lkik/android/f/e;
 
-    invoke-interface {v0}, Lkik/android/f/f;->d()V
+    invoke-interface {v0}, Lkik/android/f/e;->d()V
 
     .line 75
     invoke-virtual {p0}, Lkik/android/chat/fragment/AutoplayVideoMediaItemFragment;->l()Z
@@ -144,7 +144,7 @@
 
     aput-object v1, v0, v2
 
-    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
     .line 88
     iget-object v0, p0, Lkik/android/chat/fragment/AutoplayVideoMediaItemFragment;->_textureView:Lkik/android/widget/KikTextureVideoView;

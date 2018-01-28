@@ -1,5 +1,5 @@
 .class public final Lkik/android/chat/vm/messaging/a/c;
-.super Lkik/android/chat/vm/messaging/fw;
+.super Lkik/android/chat/vm/messaging/fs;
 .source "SourceFile"
 
 
@@ -45,7 +45,7 @@
 
     move-object v2, v1
 
-    invoke-direct/range {v0 .. v7}, Lkik/android/chat/vm/messaging/fw;-><init>(Lkik/core/datatypes/Message;Ljava/lang/String;Lrx/d;Lrx/d;Lrx/d;Lrx/d;Lrx/d;)V
+    invoke-direct/range {v0 .. v7}, Lkik/android/chat/vm/messaging/fs;-><init>(Lkik/core/datatypes/Message;Ljava/lang/String;Lrx/d;Lrx/d;Lrx/d;Lrx/d;Lrx/d;)V
 
     .line 27
     iput-object p1, p0, Lkik/android/chat/vm/messaging/a/c;->g:Lkik/core/datatypes/messageExtensions/ContentMessage;
@@ -56,7 +56,7 @@
 
 
 # virtual methods
-.method public final aL()Lkik/android/widget/ContentPreviewImageView$ContentType;
+.method public final aN()Lkik/android/widget/ContentPreviewImageView$ContentType;
     .locals 1
 
     .prologue
@@ -66,7 +66,7 @@
     return-object v0
 .end method
 
-.method public final aN()Lrx/d;
+.method public final aP()Lrx/d;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -111,7 +111,7 @@
     return-object v0
 .end method
 
-.method public final ab()V
+.method public final ac()V
     .locals 0
 
     .prologue
@@ -119,7 +119,7 @@
     return-void
 .end method
 
-.method protected final k()Lkik/core/datatypes/messageExtensions/ContentMessage;
+.method protected final l()Lkik/core/datatypes/messageExtensions/ContentMessage;
     .locals 1
 
     .prologue

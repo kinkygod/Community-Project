@@ -57,7 +57,7 @@
 
     aput-object v1, v0, v5
 
-    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
     .line 603
     iget-object v0, p0, Lkik/android/scan/fragment/ScanFragment$5;->b:Lkik/android/scan/fragment/ScanFragment;

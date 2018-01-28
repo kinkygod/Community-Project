@@ -2,6 +2,9 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lkik/core/net/d;
+
 
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
@@ -15,16 +18,25 @@
 .method public abstract A()V
 .end method
 
-.method public abstract B()V
+.method public abstract B()Lkik/core/chat/c;
 .end method
 
-.method public abstract C()Lkik/core/chat/c;
+.method public abstract C()V
 .end method
 
 .method public abstract D()V
 .end method
 
-.method public abstract E()V
+.method public abstract E()Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List",
+            "<",
+            "Lkik/core/datatypes/f;",
+            ">;"
+        }
+    .end annotation
 .end method
 
 .method public abstract F()Ljava/util/List;
@@ -63,7 +75,19 @@
     .end annotation
 .end method
 
-.method public abstract I()Ljava/util/List;
+.method public abstract I()I
+.end method
+
+.method public abstract J()V
+.end method
+
+.method public abstract M()I
+.end method
+
+.method public abstract N()I
+.end method
+
+.method public abstract O()Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -73,18 +97,6 @@
             ">;"
         }
     .end annotation
-.end method
-
-.method public abstract J()I
-.end method
-
-.method public abstract K()V
-.end method
-
-.method public abstract N()I
-.end method
-
-.method public abstract O()I
 .end method
 
 .method public abstract P()Ljava/util/List;
@@ -99,22 +111,10 @@
     .end annotation
 .end method
 
-.method public abstract Q()Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/List",
-            "<",
-            "Lkik/core/datatypes/f;",
-            ">;"
-        }
-    .end annotation
+.method public abstract Q()I
 .end method
 
-.method public abstract R()I
-.end method
-
-.method public abstract S()Lcom/kik/events/Promise;
+.method public abstract R()Lcom/kik/events/Promise;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -126,7 +126,7 @@
     .end annotation
 .end method
 
-.method public abstract T()Lcom/kik/events/Promise;
+.method public abstract S()Lcom/kik/events/Promise;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -353,11 +353,11 @@
     .end annotation
 .end method
 
-.method public abstract j()Lcom/kik/events/c;
+.method public abstract j()Lrx/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lcom/kik/events/c",
+            "Lrx/d",
             "<",
             "Ljava/lang/String;",
             ">;"
@@ -442,18 +442,6 @@
         value = {
             "()",
             "Lcom/kik/events/c",
-            "<",
-            "Ljava/lang/Void;",
-            ">;"
-        }
-    .end annotation
-.end method
-
-.method public abstract r()Lcom/kik/events/c;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lcom/kik/events/c",
             "<[",
             "Ljava/lang/String;",
             ">;"
@@ -461,7 +449,7 @@
     .end annotation
 .end method
 
-.method public abstract s()Lcom/kik/events/c;
+.method public abstract r()Lcom/kik/events/c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -473,7 +461,7 @@
     .end annotation
 .end method
 
-.method public abstract t()Lcom/kik/events/c;
+.method public abstract s()Lcom/kik/events/c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -485,13 +473,25 @@
     .end annotation
 .end method
 
+.method public abstract t()Lcom/kik/events/c;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/kik/events/c",
+            "<",
+            "Lkik/core/chat/profile/n$c;",
+            ">;"
+        }
+    .end annotation
+.end method
+
 .method public abstract u()Lcom/kik/events/c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
             "Lcom/kik/events/c",
             "<",
-            "Lkik/core/chat/profile/i$c;",
+            "Ljava/lang/Integer;",
             ">;"
         }
     .end annotation
@@ -515,7 +515,7 @@
             "()",
             "Lcom/kik/events/c",
             "<",
-            "Ljava/lang/Integer;",
+            "Lkik/core/chat/profile/n$d;",
             ">;"
         }
     .end annotation
@@ -527,7 +527,7 @@
             "()",
             "Lcom/kik/events/c",
             "<",
-            "Lkik/core/chat/profile/i$d;",
+            "Lkik/core/datatypes/Message;",
             ">;"
         }
     .end annotation
@@ -539,20 +539,11 @@
             "()",
             "Lcom/kik/events/c",
             "<",
-            "Lkik/core/datatypes/Message;",
+            "Ljava/lang/Void;",
             ">;"
         }
     .end annotation
 .end method
 
-.method public abstract z()Lcom/kik/events/c;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lcom/kik/events/c",
-            "<",
-            "Ljava/lang/Void;",
-            ">;"
-        }
-    .end annotation
+.method public abstract z()V
 .end method

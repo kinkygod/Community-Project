@@ -49,7 +49,7 @@
     .line 12
     sput-object v0, Lkik/android/e/u;->d:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f1001a6
+    const v1, 0x7f1001a7
 
     const/4 v2, 0x2
 
@@ -136,7 +136,7 @@
 
     .prologue
     .line 142
-    const-string v0, "layout/conversations_empty_sync_contacts_view_0"
+    const-string v0, "layout/conversations_empty_public_groups_view_0"
 
     invoke-virtual {p0}, Landroid/view/View;->getTag()Ljava/lang/Object;
 

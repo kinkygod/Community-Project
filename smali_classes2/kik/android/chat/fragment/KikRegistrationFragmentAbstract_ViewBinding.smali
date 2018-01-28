@@ -22,7 +22,7 @@
     iput-object p1, p0, Lkik/android/chat/fragment/KikRegistrationFragmentAbstract_ViewBinding;->a:Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;
 
     .line 27
-    const v0, 0x7f1003b9
+    const v0, 0x7f1003b5
 
     const-string v1, "field \'_firstnameField\'"
 
@@ -37,7 +37,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;->_firstnameField:Lkik/android/chat/view/ValidateableInputView;
 
     .line 28
-    const v0, 0x7f1003ba
+    const v0, 0x7f1003b6
 
     const-string v1, "field \'_lastnameField\'"
 
@@ -52,7 +52,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;->_lastnameField:Lkik/android/chat/view/ValidateableInputView;
 
     .line 29
-    const v0, 0x7f1003bb
+    const v0, 0x7f1003b7
 
     const-string v1, "field \'_usernameField\'"
 
@@ -67,7 +67,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;->_usernameField:Lkik/android/chat/view/ValidateableInputView;
 
     .line 30
-    const v0, 0x7f1003be
+    const v0, 0x7f1003ba
 
     const-string v1, "field \'_birthdayField\'"
 
@@ -82,7 +82,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;->_birthdayField:Lkik/android/chat/view/ValidateableInputView;
 
     .line 31
-    const v0, 0x7f1003bd
+    const v0, 0x7f1003b9
 
     const-string v1, "field \'_passwordField\'"
 
@@ -97,7 +97,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;->_passwordField:Lkik/android/chat/view/ValidateableInputView;
 
     .line 32
-    const v0, 0x7f1003b8
+    const v0, 0x7f1003b4
 
     const-string v1, "field \'_setProfilePhotoView\'"
 
@@ -112,7 +112,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;->_setProfilePhotoView:Lkik/android/chat/view/SetProfilePhotoView;
 
     .line 33
-    const v0, 0x7f1003c0
+    const v0, 0x7f1003bc
 
     const-string v1, "field \'_registerButton\'"
 
@@ -127,7 +127,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;->_registerButton:Landroid/widget/Button;
 
     .line 34
-    const v0, 0x7f1003bf
+    const v0, 0x7f1003bb
 
     const-string v1, "field \'_phoneField\'"
 
@@ -142,7 +142,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;->_phoneField:Lkik/android/chat/view/ValidateableInputView;
 
     .line 35
-    const v0, 0x7f1003bc
+    const v0, 0x7f1003b8
 
     const-string v1, "field \'_emailField\'"
 
@@ -157,7 +157,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;->_emailField:Lkik/android/chat/view/AutoCompleteValidateableInputView;
 
     .line 36
-    const v0, 0x7f1003b7
+    const v0, 0x7f1003b3
 
     const-string v1, "field \'_scrollView\'"
 
@@ -172,7 +172,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;->_scrollView:Lcom/github/ksoichiro/android/observablescrollview/ObservableScrollView;
 
     .line 37
-    const v0, 0x7f100354
+    const v0, 0x7f100350
 
     const-string v1, "field \'_appBarShadow\'"
 

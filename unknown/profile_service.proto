@@ -43,6 +43,12 @@ message SetUserProfileRequest {
 
     common.profile.v1.EmojiStatusAction emoji_status = 5;
 
+    // Client should send up to FeatureConfig.max_user_interests user interests in 
+    // a defined order. 
+    // Only ids of the interests need to be filled in. Server does not require the 
+    // verbiage. 
+    common.profile.v1.InterestsAction interests = 6;
+
     // Don't use tag ranged [1000 - 1999]. They are reserved for internal use
 }
 

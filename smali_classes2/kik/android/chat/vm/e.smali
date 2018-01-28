@@ -3,15 +3,26 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/vm/bn;
+.implements Lkik/android/chat/vm/bo;
 
 
 # instance fields
-.field private a:Lkik/android/chat/vm/aw;
+.field private a:Lkik/android/chat/vm/ay;
 
 .field private b:Z
 
 .field private c:Lrx/f/b;
+
+.field private d:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List",
+            "<",
+            "Lkik/android/chat/vm/bo;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
@@ -19,36 +30,43 @@
     .locals 1
 
     .prologue
-    .line 10
+    .line 17
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 14
+    .line 21
     new-instance v0, Lrx/f/b;
 
     invoke-direct {v0}, Lrx/f/b;-><init>()V
 
     iput-object v0, p0, Lkik/android/chat/vm/e;->c:Lrx/f/b;
 
+    .line 22
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v0, p0, Lkik/android/chat/vm/e;->d:Ljava/util/List;
+
     return-void
 .end method
 
 
 # virtual methods
-.method protected final B_()Lkik/android/chat/vm/aw;
+.method protected final F_()Lkik/android/chat/vm/ay;
     .locals 2
 
     .prologue
-    .line 23
-    iget-object v0, p0, Lkik/android/chat/vm/e;->a:Lkik/android/chat/vm/aw;
+    .line 31
+    iget-object v0, p0, Lkik/android/chat/vm/e;->a:Lkik/android/chat/vm/ay;
 
     if-nez v0, :cond_1
 
-    .line 24
+    .line 32
     iget-boolean v0, p0, Lkik/android/chat/vm/e;->b:Z
 
     if-eqz v0, :cond_0
 
-    .line 25
+    .line 33
     new-instance v0, Ljava/lang/IllegalStateException;
 
     const-string v1, "Navigator requested after detach"
@@ -57,7 +75,7 @@
 
     throw v0
 
-    .line 28
+    .line 36
     :cond_0
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -67,19 +85,19 @@
 
     throw v0
 
-    .line 32
+    .line 40
     :cond_1
-    iget-object v0, p0, Lkik/android/chat/vm/e;->a:Lkik/android/chat/vm/aw;
+    iget-object v0, p0, Lkik/android/chat/vm/e;->a:Lkik/android/chat/vm/ay;
 
     return-object v0
 .end method
 
-.method protected final C_()Z
+.method protected G_()Z
     .locals 1
 
     .prologue
-    .line 37
-    iget-object v0, p0, Lkik/android/chat/vm/e;->a:Lkik/android/chat/vm/aw;
+    .line 45
+    iget-object v0, p0, Lkik/android/chat/vm/e;->a:Lkik/android/chat/vm/ay;
 
     if-eqz v0, :cond_0
 
@@ -94,14 +112,55 @@
     goto :goto_0
 .end method
 
-.method public a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+.method protected final a(Lkik/android/chat/vm/bo;Lcom/kik/components/CoreComponent;)Lkik/android/chat/vm/bo;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T::",
+            "Lkik/android/chat/vm/bo;",
+            ">(TT;",
+            "Lcom/kik/components/CoreComponent;",
+            ")TT;"
+        }
+    .end annotation
+
+    .prologue
+    .line 78
+    const-string v0, "You must attach view models from the main thread"
+
+    invoke-static {v0}, Lcom/kik/util/dd;->a(Ljava/lang/String;)V
+
+    .line 80
+    if-nez p1, :cond_0
+
+    .line 85
+    :goto_0
+    return-object p1
+
+    .line 83
+    :cond_0
+    invoke-virtual {p0}, Lkik/android/chat/vm/e;->F_()Lkik/android/chat/vm/ay;
+
+    move-result-object v0
+
+    invoke-interface {p1, p2, v0}, Lkik/android/chat/vm/bo;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
+
+    .line 84
+    iget-object v0, p0, Lkik/android/chat/vm/e;->d:Ljava/util/List;
+
+    invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    goto :goto_0
+.end method
+
+.method public a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
     .locals 2
 
     .prologue
-    .line 43
+    .line 52
     if-nez p2, :cond_0
 
-    .line 44
+    .line 53
     new-instance v0, Ljava/lang/NullPointerException;
 
     const-string v1, "Navigator cannot be null!"
@@ -110,43 +169,43 @@
 
     throw v0
 
-    .line 46
+    .line 55
     :cond_0
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lkik/android/chat/vm/e;->b:Z
 
-    .line 47
-    iput-object p2, p0, Lkik/android/chat/vm/e;->a:Lkik/android/chat/vm/aw;
+    .line 56
+    iput-object p2, p0, Lkik/android/chat/vm/e;->a:Lkik/android/chat/vm/ay;
 
-    .line 48
+    .line 57
     return-void
 .end method
 
-.method protected final ab_()Lrx/f/b;
+.method protected final ad_()Lrx/f/b;
     .locals 1
 
     .prologue
-    .line 18
+    .line 26
     iget-object v0, p0, Lkik/android/chat/vm/e;->c:Lrx/f/b;
 
     return-object v0
 .end method
 
-.method public aj_()V
+.method public ak_()V
     .locals 1
 
     .prologue
-    .line 53
+    .line 63
     iget-object v0, p0, Lkik/android/chat/vm/e;->c:Lrx/f/b;
 
     invoke-virtual {v0}, Lrx/f/b;->unsubscribe()V
 
-    .line 54
+    .line 64
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lkik/android/chat/vm/e;->a:Lkik/android/chat/vm/aw;
+    iput-object v0, p0, Lkik/android/chat/vm/e;->a:Lkik/android/chat/vm/ay;
 
-    .line 55
+    .line 65
     return-void
 .end method

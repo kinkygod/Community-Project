@@ -615,7 +615,7 @@
     move-result-object v6
 
     .line 168
-    invoke-interface/range {v26 .. v26}, Lkik/android/chat/vm/messaging/IAudioRecordingViewModel;->v()Lkik/android/chat/vm/messaging/em;
+    invoke-interface/range {v26 .. v26}, Lkik/android/chat/vm/messaging/IAudioRecordingViewModel;->v()Lkik/android/chat/vm/messaging/ei;
 
     move-result-object v5
 
@@ -692,7 +692,7 @@
 
     move-object/from16 v0, v17
 
-    invoke-static {v7, v0}, Lcom/kik/util/bq;->b(Lrx/d;[Ljava/lang/Object;)Lrx/d;
+    invoke-static {v7, v0}, Lcom/kik/util/bt;->b(Lrx/d;[Ljava/lang/Object;)Lrx/d;
 
     move-result-object v22
 
@@ -701,7 +701,7 @@
 
     move-object/from16 v0, v17
 
-    invoke-static {v7, v0}, Lcom/kik/util/bq;->b(Lrx/d;Ljava/lang/Object;)Lrx/d;
+    invoke-static {v7, v0}, Lcom/kik/util/bt;->b(Lrx/d;Ljava/lang/Object;)Lrx/d;
 
     move-result-object v21
 
@@ -710,7 +710,7 @@
 
     move-object/from16 v0, v17
 
-    invoke-static {v7, v0}, Lcom/kik/util/bq;->a(Lrx/d;Ljava/lang/Object;)Lrx/d;
+    invoke-static {v7, v0}, Lcom/kik/util/bt;->a(Lrx/d;Ljava/lang/Object;)Lrx/d;
 
     move-result-object v20
 
@@ -719,7 +719,7 @@
 
     move-object/from16 v0, v17
 
-    invoke-static {v7, v0}, Lcom/kik/util/bq;->a(Lrx/d;Ljava/lang/Object;)Lrx/d;
+    invoke-static {v7, v0}, Lcom/kik/util/bt;->a(Lrx/d;Ljava/lang/Object;)Lrx/d;
 
     move-result-object v19
 
@@ -728,7 +728,7 @@
 
     move-object/from16 v0, v17
 
-    invoke-static {v7, v0}, Lcom/kik/util/bq;->a(Lrx/d;Ljava/lang/Object;)Lrx/d;
+    invoke-static {v7, v0}, Lcom/kik/util/bt;->a(Lrx/d;Ljava/lang/Object;)Lrx/d;
 
     move-result-object v18
 
@@ -755,7 +755,7 @@
 
     move-object/from16 v0, v17
 
-    invoke-static {v7, v0}, Lcom/kik/util/bq;->a(Lrx/d;[Ljava/lang/Object;)Lrx/d;
+    invoke-static {v7, v0}, Lcom/kik/util/bt;->a(Lrx/d;[Ljava/lang/Object;)Lrx/d;
 
     move-result-object v17
 
@@ -764,7 +764,7 @@
 
     move-object/from16 v0, v23
 
-    invoke-static {v7, v0}, Lcom/kik/util/bq;->a(Lrx/d;Ljava/lang/Object;)Lrx/d;
+    invoke-static {v7, v0}, Lcom/kik/util/bt;->a(Lrx/d;Ljava/lang/Object;)Lrx/d;
 
     move-result-object v7
 
@@ -894,7 +894,7 @@
 
     iget-object v4, v0, Lkik/android/e/e;->d:Lkik/android/widget/AudioEffectsLayoutView;
 
-    invoke-virtual {v4, v6}, Lkik/android/widget/AudioEffectsLayoutView;->a(Lkik/android/chat/vm/messaging/em;)V
+    invoke-virtual {v4, v6}, Lkik/android/widget/AudioEffectsLayoutView;->a(Lkik/android/chat/vm/messaging/ei;)V
 
     .line 205
     move-object/from16 v0, p0

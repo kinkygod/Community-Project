@@ -9,7 +9,7 @@
     .end annotation
 .end field
 
-.field protected d:Lkik/core/interfaces/ah;
+.field protected d:Lkik/core/interfaces/ag;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -79,7 +79,7 @@
     invoke-super {p0, p1}, Lkik/android/widget/preferences/KikModalPreference;->onBindView(Landroid/view/View;)V
 
     .line 57
-    const v0, 0x7f1003a4
+    const v0, 0x7f1003a0
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -88,9 +88,9 @@
     check-cast v0, Landroid/widget/TextView;
 
     .line 59
-    iget-object v1, p0, Lkik/android/widget/preferences/UsernamePreference;->d:Lkik/core/interfaces/ah;
+    iget-object v1, p0, Lkik/android/widget/preferences/UsernamePreference;->d:Lkik/core/interfaces/ag;
 
-    invoke-interface {v1}, Lkik/core/interfaces/ah;->d()Lkik/core/datatypes/ac;
+    invoke-interface {v1}, Lkik/core/interfaces/ag;->d()Lkik/core/datatypes/ab;
 
     move-result-object v1
 
@@ -98,7 +98,7 @@
     if-eqz v0, :cond_0
 
     .line 62
-    iget-object v1, v1, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
+    iget-object v1, v1, Lkik/core/datatypes/ab;->c:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -136,7 +136,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f09063b
+    const v3, 0x7f090643
 
     invoke-virtual {v2, v3}, Lkik/android/chat/fragment/KikScopedDialogFragment;->getString(I)Ljava/lang/String;
 

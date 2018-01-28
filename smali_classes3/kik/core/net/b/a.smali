@@ -266,7 +266,7 @@
     .line 1093
     iget-object v1, p0, Lkik/core/net/b/a;->m:Lkik/core/datatypes/Message;
 
-    invoke-virtual {v1}, Lkik/core/datatypes/Message;->C()Lcom/kik/messagepath/model/TextMarkdown$TextMarkdownAttachment;
+    invoke-virtual {v1}, Lkik/core/datatypes/Message;->B()Lcom/kik/messagepath/model/TextMarkdown$TextMarkdownAttachment;
 
     move-result-object v1
 

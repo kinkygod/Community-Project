@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merge xmlns:android="http://schemas.android.com/apk/res/android">
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
     <include android:layout_gravity="top" android:layout_width="fill_parent" android:layout_height="@dimen/abm_matches_bar_height" android:layout_marginBottom="-1.0dip" layout="@layout/abm_matches_bar" />
     <ImageView android:layout_gravity="center_horizontal" android:id="@id/opted_out_big_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:src="@drawable/img_abm_large_logo" />
     <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/opted_in_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="21.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="21.0dip">

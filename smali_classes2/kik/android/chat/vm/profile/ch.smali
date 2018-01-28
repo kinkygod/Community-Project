@@ -2,56 +2,44 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lrx/functions/g;
+.implements Lrx/functions/b;
 
 
 # instance fields
-.field private final a:Lkik/android/chat/vm/profile/bo;
+.field private final a:Lkik/android/chat/vm/profile/ca;
 
 
 # direct methods
-.method private constructor <init>(Lkik/android/chat/vm/profile/bo;)V
+.method private constructor <init>(Lkik/android/chat/vm/profile/ca;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lkik/android/chat/vm/profile/ch;->a:Lkik/android/chat/vm/profile/bo;
+    iput-object p1, p0, Lkik/android/chat/vm/profile/ch;->a:Lkik/android/chat/vm/profile/ca;
 
     return-void
 .end method
 
-.method public static a(Lkik/android/chat/vm/profile/bo;)Lrx/functions/g;
+.method public static a(Lkik/android/chat/vm/profile/ca;)Lrx/functions/b;
     .locals 1
 
     new-instance v0, Lkik/android/chat/vm/profile/ch;
 
-    invoke-direct {v0, p0}, Lkik/android/chat/vm/profile/ch;-><init>(Lkik/android/chat/vm/profile/bo;)V
+    invoke-direct {v0, p0}, Lkik/android/chat/vm/profile/ch;-><init>(Lkik/android/chat/vm/profile/ca;)V
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public final call(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final call(Ljava/lang/Object;)V
     .locals 1
 
-    .prologue
-    .line 0
-    iget-object v0, p0, Lkik/android/chat/vm/profile/ch;->a:Lkik/android/chat/vm/profile/bo;
+    iget-object v0, p0, Lkik/android/chat/vm/profile/ch;->a:Lkik/android/chat/vm/profile/ca;
 
-    check-cast p1, Lcom/kik/core/network/xmpp/jid/a;
+    check-cast p1, Lcom/kik/core/domain/a/a/c;
 
-    .line 1235
-    iget-object v0, v0, Lkik/android/chat/vm/profile/bo;->l:Lcom/kik/core/domain/users/a;
+    invoke-static {v0, p1}, Lkik/android/chat/vm/profile/ca;->c(Lkik/android/chat/vm/profile/ca;Lcom/kik/core/domain/a/a/c;)V
 
-    invoke-interface {v0, p1}, Lcom/kik/core/domain/users/a;->a(Lcom/kik/core/network/xmpp/jid/a;)Lrx/d;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lrx/d;->g()Lrx/d;
-
-    move-result-object v0
-
-    .line 0
-    return-object v0
+    return-void
 .end method

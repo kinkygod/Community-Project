@@ -159,7 +159,7 @@
 
     const/16 v2, 0x50
 
-    invoke-static {v0, v1, v2}, Lcom/kik/util/co;->b(Landroid/graphics/Bitmap;Landroid/graphics/Bitmap$CompressFormat;I)[B
+    invoke-static {v0, v1, v2}, Lcom/kik/util/ct;->b(Landroid/graphics/Bitmap;Landroid/graphics/Bitmap$CompressFormat;I)[B
 
     move-result-object v1
 

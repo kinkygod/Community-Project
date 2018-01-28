@@ -36,7 +36,7 @@
     .locals 0
 
     .prologue
-    .line 1523
+    .line 1507
     iput-object p1, p0, Lkik/core/profile/v$9;->a:Lkik/core/profile/v;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -52,37 +52,37 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 1523
+    .line 1507
     check-cast p2, Ljava/lang/Boolean;
 
-    .line 2528
+    .line 2512
     invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2529
+    .line 2513
     iget-object v0, p0, Lkik/core/profile/v$9;->a:Lkik/core/profile/v;
 
     invoke-virtual {v0, v1, v1}, Lkik/core/profile/v;->a(ZZ)V
 
-    .line 2530
+    .line 2514
     iget-object v0, p0, Lkik/core/profile/v$9;->a:Lkik/core/profile/v;
 
-    invoke-virtual {v0}, Lkik/core/profile/v;->t()V
+    invoke-virtual {v0}, Lkik/core/profile/v;->s()V
 
-    .line 2531
+    .line 2515
     iget-object v0, p0, Lkik/core/profile/v$9;->a:Lkik/core/profile/v;
 
     invoke-static {v0}, Lkik/core/profile/v;->l(Lkik/core/profile/v;)V
 
-    .line 2532
+    .line 2516
     iget-object v0, p0, Lkik/core/profile/v$9;->a:Lkik/core/profile/v;
 
-    invoke-virtual {v0}, Lkik/core/profile/v;->w()V
+    invoke-virtual {v0}, Lkik/core/profile/v;->v()V
 
-    .line 1523
+    .line 1507
     :cond_0
     return-void
 .end method

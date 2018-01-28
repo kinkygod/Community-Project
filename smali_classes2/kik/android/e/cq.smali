@@ -12,7 +12,7 @@
 # instance fields
 .field private final c:Lkik/android/widget/ActionItemFrameLayout;
 
-.field private d:Lkik/android/chat/vm/profile/cs;
+.field private d:Lkik/android/chat/vm/profile/dd;
 
 .field private e:J
 
@@ -88,7 +88,7 @@
 
     .prologue
     .line 116
-    const-string v0, "layout/profile_mute_notifications_0"
+    const-string v0, "layout/profile_change_group_description_0"
 
     invoke-virtual {p0}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -160,7 +160,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 84
-    iget-object v2, p0, Lkik/android/e/cq;->d:Lkik/android/chat/vm/profile/cs;
+    iget-object v2, p0, Lkik/android/e/cq;->d:Lkik/android/chat/vm/profile/dd;
 
     .line 89
     const-wide/16 v4, 0x3
@@ -174,7 +174,7 @@
     .line 92
     iget-object v0, p0, Lkik/android/e/cq;->c:Lkik/android/widget/ActionItemFrameLayout;
 
-    invoke-virtual {v0, v2}, Lkik/android/widget/ActionItemFrameLayout;->a(Lkik/android/chat/vm/profile/cs;)V
+    invoke-virtual {v0, v2}, Lkik/android/widget/ActionItemFrameLayout;->a(Lkik/android/chat/vm/profile/dd;)V
 
     .line 94
     :cond_0
@@ -299,10 +299,10 @@
 
     .line 52
     :pswitch_0
-    check-cast p2, Lkik/android/chat/vm/profile/cs;
+    check-cast p2, Lkik/android/chat/vm/profile/dd;
 
     .line 1059
-    iput-object p2, p0, Lkik/android/e/cq;->d:Lkik/android/chat/vm/profile/cs;
+    iput-object p2, p0, Lkik/android/e/cq;->d:Lkik/android/chat/vm/profile/dd;
 
     .line 1060
     monitor-enter p0

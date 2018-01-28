@@ -2,7 +2,7 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lkik/core/interfaces/w$a;
+.implements Lkik/core/interfaces/v$a;
 
 
 # static fields
@@ -30,7 +30,7 @@
     return-void
 .end method
 
-.method public static a()Lkik/core/interfaces/w$a;
+.method public static a()Lkik/core/interfaces/v$a;
     .locals 1
 
     sget-object v0, Lkik/core/profile/z;->a:Lkik/core/profile/z;
@@ -45,7 +45,7 @@
 
     .prologue
     .line 0
-    .line 2302
+    .line 2290
     const/4 v0, 0x1
 
     invoke-virtual {p1, v0}, Lkik/core/datatypes/l;->e(Z)V

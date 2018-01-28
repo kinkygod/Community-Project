@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 230
+    .line 233
     iput-object p1, p0, Lkik/android/chat/fragment/SendToFragment$5;->a:Lkik/android/chat/fragment/SendToFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,12 +40,12 @@
     .locals 1
 
     .prologue
-    .line 261
+    .line 264
     iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment$5;->a:Lkik/android/chat/fragment/SendToFragment;
 
     invoke-static {v0}, Lkik/android/chat/fragment/SendToFragment;->m(Lkik/android/chat/fragment/SendToFragment;)V
 
-    .line 262
+    .line 265
     return-void
 .end method
 
@@ -53,7 +53,7 @@
     .locals 3
 
     .prologue
-    .line 242
+    .line 245
     iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment$5;->a:Lkik/android/chat/fragment/SendToFragment;
 
     invoke-static {v0}, Lkik/android/chat/fragment/SendToFragment;->h(Lkik/android/chat/fragment/SendToFragment;)Z
@@ -62,12 +62,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 243
+    .line 246
     iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment$5;->a:Lkik/android/chat/fragment/SendToFragment;
 
     invoke-static {v0}, Lkik/android/chat/fragment/SendToFragment;->i(Lkik/android/chat/fragment/SendToFragment;)Z
 
-    .line 244
+    .line 247
     iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment$5;->a:Lkik/android/chat/fragment/SendToFragment;
 
     iget-object v0, v0, Lkik/android/chat/fragment/SendToFragment;->h:Lcom/kik/android/Mixpanel;
@@ -82,20 +82,20 @@
 
     const-string v2, "Send To"
 
-    .line 245
+    .line 248
     invoke-virtual {v0, v1, v2}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
 
     move-result-object v0
 
-    .line 246
+    .line 249
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->g()Lcom/kik/android/Mixpanel$d;
 
     move-result-object v0
 
-    .line 247
+    .line 250
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
 
-    .line 249
+    .line 252
     :cond_0
     iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment$5;->a:Lkik/android/chat/fragment/SendToFragment;
 
@@ -105,23 +105,23 @@
 
     invoke-virtual {v0, p1}, Lkik/android/chat/vm/chats/search/ChatsSearchResultsViewModel;->a(Ljava/lang/String;)V
 
-    .line 250
+    .line 253
     invoke-static {p1}, Lkik/android/util/bs;->d(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 251
+    .line 254
     iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment$5;->a:Lkik/android/chat/fragment/SendToFragment;
 
     invoke-static {v0}, Lkik/android/chat/fragment/SendToFragment;->k(Lkik/android/chat/fragment/SendToFragment;)V
 
-    .line 256
+    .line 259
     :goto_0
     return-void
 
-    .line 254
+    .line 257
     :cond_1
     iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment$5;->a:Lkik/android/chat/fragment/SendToFragment;
 
@@ -134,7 +134,7 @@
     .locals 1
 
     .prologue
-    .line 234
+    .line 237
     if-eqz p1, :cond_0
 
     iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment$5;->a:Lkik/android/chat/fragment/SendToFragment;
@@ -145,12 +145,12 @@
 
     if-nez v0, :cond_0
 
-    .line 235
+    .line 238
     iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment$5;->a:Lkik/android/chat/fragment/SendToFragment;
 
     invoke-static {v0}, Lkik/android/chat/fragment/SendToFragment;->g(Lkik/android/chat/fragment/SendToFragment;)V
 
-    .line 237
+    .line 240
     :cond_0
     return-void
 .end method
@@ -159,7 +159,7 @@
     .locals 2
 
     .prologue
-    .line 267
+    .line 270
     iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment$5;->a:Lkik/android/chat/fragment/SendToFragment;
 
     invoke-static {v0}, Lkik/android/chat/fragment/SendToFragment;->n(Lkik/android/chat/fragment/SendToFragment;)Landroid/animation/AnimatorSet;
@@ -180,11 +180,11 @@
 
     if-eqz v0, :cond_0
 
-    .line 273
+    .line 276
     :goto_0
     return-void
 
-    .line 270
+    .line 273
     :cond_0
     iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment$5;->a:Lkik/android/chat/fragment/SendToFragment;
 
@@ -194,7 +194,7 @@
 
     invoke-virtual {v0, v1}, Lkik/android/chat/view/TransitionableSearchBarViewImpl;->a(Ljava/lang/String;)V
 
-    .line 271
+    .line 274
     iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment$5;->a:Lkik/android/chat/fragment/SendToFragment;
 
     iget-object v0, v0, Lkik/android/chat/fragment/SendToFragment;->_searchBar:Lkik/android/chat/view/TransitionableSearchBarViewImpl;
@@ -205,7 +205,7 @@
 
     invoke-virtual {v0}, Lkik/android/widget/RobotoEditText;->requestFocus()Z
 
-    .line 272
+    .line 275
     iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment$5;->a:Lkik/android/chat/fragment/SendToFragment;
 
     iget-object v1, p0, Lkik/android/chat/fragment/SendToFragment$5;->a:Lkik/android/chat/fragment/SendToFragment;

@@ -36,7 +36,7 @@
     .locals 0
 
     .prologue
-    .line 524
+    .line 526
     iput-object p1, p0, Lkik/android/chat/fragment/KikChatFragment$12;->a:Lkik/android/chat/fragment/KikChatFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -50,8 +50,8 @@
     .locals 3
 
     .prologue
-    .line 524
-    .line 1528
+    .line 526
+    .line 1530
     iget-object v0, p0, Lkik/android/chat/fragment/KikChatFragment$12;->a:Lkik/android/chat/fragment/KikChatFragment;
 
     iget-object v0, v0, Lkik/android/chat/fragment/KikChatFragment;->f:Lcom/kik/android/Mixpanel;
@@ -76,7 +76,7 @@
 
     invoke-virtual {v0, v1}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;)Lcom/kik/android/Mixpanel$d;
 
-    .line 1529
+    .line 1531
     iget-object v0, p0, Lkik/android/chat/fragment/KikChatFragment$12;->a:Lkik/android/chat/fragment/KikChatFragment;
 
     iget-object v0, v0, Lkik/android/chat/fragment/KikChatFragment;->f:Lcom/kik/android/Mixpanel;
@@ -101,6 +101,6 @@
 
     invoke-virtual {v0, v1}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;)Lcom/kik/android/Mixpanel$d;
 
-    .line 524
+    .line 526
     return-void
 .end method

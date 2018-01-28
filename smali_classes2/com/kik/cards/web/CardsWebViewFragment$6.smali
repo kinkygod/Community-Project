@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 461
+    .line 482
     iput-object p1, p0, Lcom/kik/cards/web/CardsWebViewFragment$6;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,14 +40,14 @@
     .locals 3
 
     .prologue
-    .line 466
+    .line 487
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$6;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
     iget-object v0, v0, Lcom/kik/cards/web/CardsWebViewFragment;->d:Lcom/kik/android/Mixpanel;
 
     if-eqz v0, :cond_0
 
-    .line 467
+    .line 488
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$6;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
     iget-object v0, v0, Lcom/kik/cards/web/CardsWebViewFragment;->d:Lcom/kik/android/Mixpanel;
@@ -64,12 +64,12 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
 
-    .line 469
+    .line 490
     :cond_0
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$6;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
     invoke-virtual {v0}, Lcom/kik/cards/web/CardsWebViewFragment;->finish()V
 
-    .line 470
+    .line 491
     return-void
 .end method

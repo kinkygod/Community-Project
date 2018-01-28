@@ -2,13 +2,12 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lkik/android/chat/vm/av;
-.implements Lkik/android/chat/vm/bn;
-
 
 # virtual methods
-.method public abstract j()Lrx/d;
+.method public abstract a()Ljava/lang/String;
+.end method
+
+.method public abstract b()Lrx/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -20,58 +19,7 @@
     .end annotation
 .end method
 
-.method public abstract k()Lrx/d;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/d",
-            "<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
-.end method
-
-.method public abstract l()Lrx/d;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/d",
-            "<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
-.end method
-
-.method public abstract m()Lrx/functions/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/functions/b",
-            "<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
-.end method
-
-.method public abstract n()Lrx/functions/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/functions/b",
-            "<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
-.end method
-
-.method public abstract o()V
-.end method
-
-.method public abstract q_()Lrx/d;
+.method public abstract d()Lrx/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -81,4 +29,25 @@
             ">;"
         }
     .end annotation
+.end method
+
+.method public abstract e()Lrx/d;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public abstract g()V
+.end method
+
+.method public abstract v_()V
+.end method
+
+.method public abstract w_()V
 .end method

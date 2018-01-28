@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:tag="layout/notifications_layout_0" android:layout_width="fill_parent" android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout android:orientation="vertical" android:tag="layout/notifications_layout_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <FrameLayout android:tag="binding_1" android:background="@color/gray_1" android:layout_width="fill_parent" android:layout_height="@dimen/native_topbar_height">
         <include android:id="@id/back_button" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/kik_databound_back_button" />
     </FrameLayout>

@@ -654,7 +654,7 @@
             "<TU;>;)",
             "Lcom/kik/events/Promise",
             "<",
-            "Lcom/kik/util/ct",
+            "Lcom/kik/util/cy",
             "<TT;TU;>;>;"
         }
     .end annotation

@@ -78,7 +78,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/SendToFragment;->_navigationBar:Landroid/view/View;
 
     .line 30
-    const v0, 0x7f100221
+    const v0, 0x7f100223
 
     const-string v1, "field \'_searchBarBackground\'"
 
@@ -119,7 +119,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/SendToFragment;->_titleText:Landroid/widget/TextView;
 
     .line 33
-    const v0, 0x7f10021f
+    const v0, 0x7f100221
 
     const-string v1, "field \'_listViewAnimHelperView\'"
 
@@ -130,7 +130,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/SendToFragment;->_listViewAnimHelperView:Landroid/view/View;
 
     .line 34
-    const v0, 0x7f100222
+    const v0, 0x7f100224
 
     const-string v1, "field \'_emptyViewTextView\'"
 
@@ -145,7 +145,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/SendToFragment;->_emptyViewTextView:Landroid/widget/TextView;
 
     .line 35
-    const v0, 0x7f100197
+    const v0, 0x7f100198
 
     const-string v1, "field \'_searchResults\'"
 

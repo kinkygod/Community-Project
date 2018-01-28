@@ -681,14 +681,14 @@
     move-result-object v3
 
     .line 5175
-    invoke-virtual {v3}, Lcom/kik/messagepath/model/CoreMessage;->a()Z
+    invoke-virtual {v3}, Lcom/kik/messagepath/model/CoreMessage;->c()Z
 
     move-result v4
 
     if-eqz v4, :cond_b
 
     .line 5176
-    invoke-virtual {v3}, Lcom/kik/messagepath/model/CoreMessage;->b()Lcom/kik/messagepath/model/VisibilityRules$VisibilityRulesAttachment;
+    invoke-virtual {v3}, Lcom/kik/messagepath/model/CoreMessage;->d()Lcom/kik/messagepath/model/VisibilityRules$VisibilityRulesAttachment;
 
     move-result-object v3
 

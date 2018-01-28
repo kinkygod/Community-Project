@@ -80,7 +80,7 @@
     const-string v0, "GetStageList"
 
     :goto_0
-    invoke-static {v1, v0}, Lkik/core/xiphias/f;->a(Lcom/kik/masksdata/rpc/MasksdataService$ListRequest;Ljava/lang/String;)Lkik/core/xiphias/XiphiasRequest;
+    invoke-static {v1, v0}, Lkik/core/xiphias/l;->a(Lcom/kik/masksdata/rpc/MasksdataService$ListRequest;Ljava/lang/String;)Lkik/core/xiphias/XiphiasRequest;
 
     move-result-object v0
 

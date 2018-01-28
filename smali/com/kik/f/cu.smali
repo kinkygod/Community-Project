@@ -4,38 +4,32 @@
 
 
 # instance fields
-.field private final a:Landroid/content/Context;
+.field private final a:Landroid/content/res/Resources;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;)V
+.method public constructor <init>(Landroid/content/res/Resources;)V
     .locals 0
 
     .prologue
-    .line 19
+    .line 18
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 20
-    iput-object p1, p0, Lcom/kik/f/cu;->a:Landroid/content/Context;
+    .line 19
+    iput-object p1, p0, Lcom/kik/f/cu;->a:Landroid/content/res/Resources;
 
-    .line 21
+    .line 20
     return-void
 .end method
 
 
 # virtual methods
-.method final a()Lcom/rounds/kik/analytics/IReporter;
-    .locals 2
-    .annotation runtime Ljavax/inject/Singleton;
-    .end annotation
+.method final a()Landroid/content/res/Resources;
+    .locals 1
 
     .prologue
-    .line 27
-    new-instance v0, Lcom/rounds/kik/analytics/Reporter;
-
-    iget-object v1, p0, Lcom/kik/f/cu;->a:Landroid/content/Context;
-
-    invoke-direct {v0, v1}, Lcom/rounds/kik/analytics/Reporter;-><init>(Landroid/content/Context;)V
+    .line 25
+    iget-object v0, p0, Lcom/kik/f/cu;->a:Landroid/content/res/Resources;
 
     return-object v0
 .end method

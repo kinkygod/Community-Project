@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/a/b;
+.implements Ldagger/internal/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/a/b",
+        "Ldagger/internal/b",
         "<",
         "Lkik/core/interfaces/b;",
         ">;"
@@ -41,7 +41,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/s;",
+            "Lkik/core/interfaces/r;",
             ">;"
         }
     .end annotation
@@ -87,7 +87,7 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/s;",
+            "Lkik/core/interfaces/r;",
             ">;)V"
         }
     .end annotation
@@ -151,7 +151,7 @@
     return-void
 .end method
 
-.method public static a(Lcom/kik/f/a;Ljavax/inject/Provider;Ljavax/inject/Provider;)La/a/b;
+.method public static a(Lcom/kik/f/a;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -163,9 +163,9 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/s;",
+            "Lkik/core/interfaces/r;",
             ">;)",
-            "La/a/b",
+            "Ldagger/internal/b",
             "<",
             "Lkik/core/interfaces/b;",
             ">;"
@@ -206,16 +206,16 @@
 
     move-result-object v1
 
-    check-cast v1, Lkik/core/interfaces/s;
+    check-cast v1, Lkik/core/interfaces/r;
 
-    invoke-virtual {v2, v0, v1}, Lcom/kik/f/a;->a(Lcom/kik/android/Mixpanel;Lkik/core/interfaces/s;)Lkik/core/interfaces/b;
+    invoke-virtual {v2, v0, v1}, Lcom/kik/f/a;->a(Lcom/kik/android/Mixpanel;Lkik/core/interfaces/r;)Lkik/core/interfaces/b;
 
     move-result-object v0
 
     const-string v1, "Cannot return null from a non-@Nullable @Provides method"
 
     .line 1036
-    invoke-static {v0, v1}, La/a/c;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {v0, v1}, Ldagger/internal/c;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 

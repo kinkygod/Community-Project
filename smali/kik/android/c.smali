@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/core/interfaces/al;
+.implements Lkik/core/interfaces/ak;
 
 
 # instance fields
@@ -15,11 +15,11 @@
 
 .field private d:Ljava/lang/String;
 
-.field private e:Lkik/core/interfaces/t;
+.field private e:Lkik/core/interfaces/s;
 
 
 # direct methods
-.method public constructor <init>(Lkik/android/chat/KikApplication;Lkik/android/util/ag;Ljava/lang/String;Lkik/core/interfaces/t;)V
+.method public constructor <init>(Lkik/android/chat/KikApplication;Lkik/android/util/ag;Ljava/lang/String;Lkik/core/interfaces/s;)V
     .locals 1
 
     .prologue
@@ -43,7 +43,7 @@
     iput-object p3, p0, Lkik/android/c;->d:Ljava/lang/String;
 
     .line 72
-    iput-object p4, p0, Lkik/android/c;->e:Lkik/core/interfaces/t;
+    iput-object p4, p0, Lkik/android/c;->e:Lkik/core/interfaces/s;
 
     .line 73
     return-void
@@ -51,7 +51,7 @@
 
 
 # virtual methods
-.method public final a(Lkik/core/interfaces/ae;Lkik/core/interfaces/ICommunication;Lkik/core/interfaces/ah;)Lkik/core/interfaces/IAddressBookIntegration;
+.method public final a(Lkik/core/interfaces/ad;Lkik/core/interfaces/ICommunication;Lkik/core/interfaces/ag;)Lkik/core/interfaces/IAddressBookIntegration;
     .locals 10
 
     .prologue
@@ -92,7 +92,7 @@
     move-object v5, p3
 
     .line 116
-    invoke-direct/range {v0 .. v6}, Lkik/android/addressbook/a;-><init>(Lkik/android/config/b;Lkik/core/interfaces/ae;Lkik/core/interfaces/ICommunication;Lkik/android/a;Lkik/core/interfaces/ah;Ljava/lang/String;)V
+    invoke-direct/range {v0 .. v6}, Lkik/android/addressbook/a;-><init>(Lkik/android/config/b;Lkik/core/interfaces/ad;Lkik/core/interfaces/ICommunication;Lkik/android/a;Lkik/core/interfaces/ag;Ljava/lang/String;)V
 
     .line 118
     new-instance v2, Lkik/android/config/e;
@@ -262,17 +262,17 @@
 
     iget-object v3, p0, Lkik/android/c;->c:Lkik/android/util/ag;
 
-    invoke-direct {v0, v1, v2, p0, v3}, Lkik/android/net/communicator/a;-><init>(Landroid/content/Context;Ljava/lang/String;Lkik/core/interfaces/al;Lkik/android/util/ai;)V
+    invoke-direct {v0, v1, v2, p0, v3}, Lkik/android/net/communicator/a;-><init>(Landroid/content/Context;Ljava/lang/String;Lkik/core/interfaces/ak;Lkik/android/util/ai;)V
 
     return-object v0
 .end method
 
-.method public final a(Lkik/core/interfaces/ICommunication;Lkik/core/interfaces/w;Lkik/core/interfaces/ae;Lkik/core/interfaces/ah;Lkik/core/interfaces/l;Ljava/util/concurrent/ExecutorService;Lkik/core/e/y;)Lkik/core/interfaces/IConversation;
+.method public final a(Lkik/core/interfaces/ICommunication;Lkik/core/interfaces/v;Lkik/core/interfaces/ad;Lkik/core/interfaces/ag;Lkik/core/interfaces/l;Ljava/util/concurrent/ExecutorService;Lkik/core/e/y;)Lkik/core/interfaces/IConversation;
     .locals 8
 
     .prologue
     .line 95
-    new-instance v0, Lkik/core/chat/profile/i;
+    new-instance v0, Lkik/core/chat/profile/n;
 
     move-object v1, p1
 
@@ -288,12 +288,12 @@
 
     move-object v7, p7
 
-    invoke-direct/range {v0 .. v7}, Lkik/core/chat/profile/i;-><init>(Lkik/core/interfaces/ICommunication;Lkik/core/interfaces/ae;Lkik/core/interfaces/w;Lkik/core/interfaces/ah;Lkik/core/interfaces/l;Ljava/util/concurrent/ExecutorService;Lkik/core/e/f;)V
+    invoke-direct/range {v0 .. v7}, Lkik/core/chat/profile/n;-><init>(Lkik/core/interfaces/ICommunication;Lkik/core/interfaces/ad;Lkik/core/interfaces/v;Lkik/core/interfaces/ag;Lkik/core/interfaces/l;Ljava/util/concurrent/ExecutorService;Lkik/core/e/f;)V
 
     return-object v0
 .end method
 
-.method public final a(Lkik/core/interfaces/aa;Ljava/util/concurrent/ExecutorService;Lkik/core/net/e;)Lkik/core/interfaces/ae;
+.method public final a(Lkik/core/interfaces/z;Ljava/util/concurrent/ExecutorService;Lkik/core/net/e;)Lkik/core/interfaces/ad;
     .locals 8
 
     .prologue
@@ -318,13 +318,13 @@
     invoke-interface {v1, v0}, Lkik/android/config/b;->a(Lkik/android/config/Configuration;)Z
 
     .line 82
-    new-instance v0, Lcom/kik/storage/z;
+    new-instance v0, Lcom/kik/storage/ab;
 
     iget-object v1, p0, Lkik/android/c;->a:Lkik/android/chat/KikApplication;
 
     iget-object v5, p0, Lkik/android/c;->c:Lkik/android/util/ag;
 
-    iget-object v6, p0, Lkik/android/c;->e:Lkik/core/interfaces/t;
+    iget-object v6, p0, Lkik/android/c;->e:Lkik/core/interfaces/s;
 
     iget-object v7, p0, Lkik/android/c;->d:Ljava/lang/String;
 
@@ -334,41 +334,41 @@
 
     move-object v4, p3
 
-    invoke-direct/range {v0 .. v7}, Lcom/kik/storage/z;-><init>(Landroid/content/Context;Lkik/core/interfaces/aa;Ljava/util/concurrent/ExecutorService;Lkik/core/net/e;Lkik/android/util/ag;Lkik/core/interfaces/t;Ljava/lang/String;)V
+    invoke-direct/range {v0 .. v7}, Lcom/kik/storage/ab;-><init>(Landroid/content/Context;Lkik/core/interfaces/z;Ljava/util/concurrent/ExecutorService;Lkik/core/net/e;Lkik/android/util/ag;Lkik/core/interfaces/s;Ljava/lang/String;)V
 
     return-object v0
 .end method
 
-.method public final a(Lkik/core/interfaces/ae;Lkik/core/interfaces/ICommunication;)Lkik/core/interfaces/ah;
+.method public final a(Lkik/core/interfaces/ad;Lkik/core/interfaces/ICommunication;)Lkik/core/interfaces/ag;
     .locals 1
 
     .prologue
     .line 184
     new-instance v0, Lkik/core/profile/ae;
 
-    invoke-direct {v0, p1, p2}, Lkik/core/profile/ae;-><init>(Lkik/core/interfaces/ae;Lkik/core/interfaces/ICommunication;)V
+    invoke-direct {v0, p1, p2}, Lkik/core/profile/ae;-><init>(Lkik/core/interfaces/ad;Lkik/core/interfaces/ICommunication;)V
 
     return-object v0
 .end method
 
-.method public final a(Lkik/core/interfaces/ICommunication;Lkik/core/interfaces/ae;Lkik/core/interfaces/aa;Lkik/core/interfaces/ah;)Lkik/core/interfaces/e;
+.method public final a(Lkik/core/interfaces/ICommunication;Lkik/core/interfaces/ad;Lkik/core/interfaces/z;Lkik/core/interfaces/ag;)Lkik/core/interfaces/e;
     .locals 1
 
     .prologue
     .line 101
     new-instance v0, Lcom/kik/cards/web/auth/a;
 
-    invoke-direct {v0, p1, p2, p3, p4}, Lcom/kik/cards/web/auth/a;-><init>(Lkik/core/interfaces/ICommunication;Lkik/core/interfaces/ae;Lkik/core/interfaces/aa;Lkik/core/interfaces/ah;)V
+    invoke-direct {v0, p1, p2, p3, p4}, Lcom/kik/cards/web/auth/a;-><init>(Lkik/core/interfaces/ICommunication;Lkik/core/interfaces/ad;Lkik/core/interfaces/z;Lkik/core/interfaces/ag;)V
 
     return-object v0
 .end method
 
-.method public final a(Lkik/core/interfaces/ae;Lkik/core/interfaces/ICommunication;Lkik/core/net/e;Lcom/kik/events/c;)Lkik/core/interfaces/f;
+.method public final a(Lkik/core/interfaces/ad;Lkik/core/interfaces/ICommunication;Lkik/core/net/e;Lcom/kik/events/c;)Lkik/core/interfaces/f;
     .locals 9
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkik/core/interfaces/ae;",
+            "Lkik/core/interfaces/ad;",
             "Lkik/core/interfaces/ICommunication;",
             "Lkik/core/net/e;",
             "Lcom/kik/events/c",
@@ -397,13 +397,13 @@
 
     iget-object v7, p0, Lkik/android/c;->c:Lkik/android/util/ag;
 
-    iget-object v8, p0, Lkik/android/c;->e:Lkik/core/interfaces/t;
+    iget-object v8, p0, Lkik/android/c;->e:Lkik/core/interfaces/s;
 
     move-object v4, p1
 
     move-object v5, p4
 
-    invoke-direct/range {v0 .. v8}, Lkik/android/a/b;-><init>(Landroid/content/Context;Ljava/lang/String;Lcom/kik/events/c;Lkik/core/interfaces/ae;Lcom/kik/events/c;ZLkik/android/util/ai;Lkik/core/interfaces/t;)V
+    invoke-direct/range {v0 .. v8}, Lkik/android/a/b;-><init>(Landroid/content/Context;Ljava/lang/String;Lcom/kik/events/c;Lkik/core/interfaces/ad;Lcom/kik/events/c;ZLkik/android/util/ai;Lkik/core/interfaces/s;)V
 
     return-object v0
 .end method
@@ -420,7 +420,7 @@
     return-object v0
 .end method
 
-.method public final c()Lkik/core/interfaces/aa;
+.method public final c()Lkik/core/interfaces/z;
     .locals 1
 
     .prologue
@@ -732,16 +732,16 @@
     return-object v0
 .end method
 
-.method public final f()Lkik/core/interfaces/ai;
+.method public final f()Lkik/core/interfaces/ah;
     .locals 4
 
     .prologue
     .line 236
-    iget-object v0, p0, Lkik/android/c;->e:Lkik/core/interfaces/t;
+    iget-object v0, p0, Lkik/android/c;->e:Lkik/core/interfaces/s;
 
     const-string v1, "xdata_cache"
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/t;->a(Ljava/lang/String;)Ljava/io/File;
+    invoke-interface {v0, v1}, Lkik/core/interfaces/s;->a(Ljava/lang/String;)Ljava/io/File;
 
     move-result-object v0
 
@@ -785,14 +785,14 @@
 
     iget-object v1, p0, Lkik/android/c;->a:Lkik/android/chat/KikApplication;
 
-    iget-object v2, p0, Lkik/android/c;->e:Lkik/core/interfaces/t;
+    iget-object v2, p0, Lkik/android/c;->e:Lkik/core/interfaces/s;
 
-    invoke-direct {v0, v1, v2}, Lkik/android/i/a;-><init>(Landroid/content/Context;Lkik/core/interfaces/t;)V
+    invoke-direct {v0, v1, v2}, Lkik/android/i/a;-><init>(Landroid/content/Context;Lkik/core/interfaces/s;)V
 
     return-object v0
 .end method
 
-.method public final h()Lkik/core/interfaces/ab;
+.method public final h()Lkik/core/interfaces/aa;
     .locals 1
 
     .prologue

@@ -1,47 +1,52 @@
-.class final synthetic Lkik/android/chat/vm/dk;
-.super Ljava/lang/Object;
+.class public final Lkik/android/chat/vm/dk;
+.super Lkik/android/chat/vm/DialogViewModel;
+.source "SourceFile"
 
 # interfaces
-.implements Lrx/functions/e;
+.implements Lkik/android/chat/vm/bf;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lkik/android/chat/vm/dk$a;
+    }
+.end annotation
 
 
 # instance fields
-.field private final a:Lcom/kik/cache/SimpleUrlRequest;
+.field private a:Lkik/android/chat/vm/ReportDialogViewModel$ReportReason;
 
 
 # direct methods
-.method private constructor <init>(Lcom/kik/cache/SimpleUrlRequest;)V
+.method public constructor <init>()V
     .locals 0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lkik/android/chat/vm/dk;->a:Lcom/kik/cache/SimpleUrlRequest;
+    .prologue
+    .line 7
+    invoke-direct {p0}, Lkik/android/chat/vm/DialogViewModel;-><init>()V
 
     return-void
 .end method
 
-.method public static a(Lcom/kik/cache/SimpleUrlRequest;)Lrx/functions/e;
-    .locals 1
+.method static synthetic a(Lkik/android/chat/vm/dk;Lkik/android/chat/vm/ReportDialogViewModel$ReportReason;)Lkik/android/chat/vm/ReportDialogViewModel$ReportReason;
+    .locals 0
 
-    new-instance v0, Lkik/android/chat/vm/dk;
+    .prologue
+    .line 7
+    iput-object p1, p0, Lkik/android/chat/vm/dk;->a:Lkik/android/chat/vm/ReportDialogViewModel$ReportReason;
 
-    invoke-direct {v0, p0}, Lkik/android/chat/vm/dk;-><init>(Lcom/kik/cache/SimpleUrlRequest;)V
-
-    return-object v0
+    return-object p1
 .end method
 
 
 # virtual methods
-.method public final a()V
+.method public final a()Lkik/android/chat/vm/ReportDialogViewModel$ReportReason;
     .locals 1
 
     .prologue
-    .line 0
-    iget-object v0, p0, Lkik/android/chat/vm/dk;->a:Lcom/kik/cache/SimpleUrlRequest;
+    .line 33
+    iget-object v0, p0, Lkik/android/chat/vm/dk;->a:Lkik/android/chat/vm/ReportDialogViewModel$ReportReason;
 
-    .line 1173
-    invoke-virtual {v0}, Lcom/kik/cache/SimpleUrlRequest;->cancel()V
-
-    .line 0
-    return-void
+    return-object v0
 .end method

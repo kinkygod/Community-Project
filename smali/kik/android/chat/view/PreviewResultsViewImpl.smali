@@ -20,13 +20,13 @@
 # instance fields
 .field protected _previewImage:Lkik/android/widget/AspectRatioImageView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f10017d
+        value = 0x7f10017e
     .end annotation
 .end field
 
 .field protected _videoView:Lkik/android/widget/KikTextureVideoView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f10017e
+        value = 0x7f10017f
     .end annotation
 .end field
 
@@ -35,7 +35,7 @@
     .end annotation
 .end field
 
-.field protected b:Lkik/core/interfaces/ae;
+.field protected b:Lkik/core/interfaces/ad;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -602,7 +602,7 @@
 
     .prologue
     .line 226
-    const v0, 0x7f040044
+    const v0, 0x7f040045
 
     invoke-static {p1, v0, p0}, Lkik/android/chat/view/PreviewResultsViewImpl;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -1266,14 +1266,14 @@
 
     aput-object v1, v0, v8
 
-    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
     .line 478
-    iget-object v0, p0, Lkik/android/chat/view/PreviewResultsViewImpl;->b:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/chat/view/PreviewResultsViewImpl;->b:Lkik/core/interfaces/ad;
 
     const-string v1, "STORAGE_HINT_COUNT"
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ae;->u(Ljava/lang/String;)Ljava/lang/Integer;
+    invoke-interface {v0, v1}, Lkik/core/interfaces/ad;->u(Ljava/lang/String;)Ljava/lang/Integer;
 
     move-result-object v0
 
@@ -1282,11 +1282,11 @@
     move-result v1
 
     .line 479
-    iget-object v0, p0, Lkik/android/chat/view/PreviewResultsViewImpl;->b:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/chat/view/PreviewResultsViewImpl;->b:Lkik/core/interfaces/ad;
 
     const-string v2, "STORAGE_HINT_TIMESTAMP"
 
-    invoke-interface {v0, v2}, Lkik/core/interfaces/ae;->v(Ljava/lang/String;)Ljava/lang/Long;
+    invoke-interface {v0, v2}, Lkik/core/interfaces/ad;->v(Ljava/lang/String;)Ljava/lang/Long;
 
     move-result-object v0
 
@@ -1329,7 +1329,7 @@
     check-cast v0, Landroid/view/LayoutInflater;
 
     .line 487
-    const v2, 0x7f0400a5
+    const v2, 0x7f0400a4
 
     const/4 v3, 0x0
 
@@ -1347,21 +1347,21 @@
     .line 490
     iget-object v0, p0, Lkik/android/chat/view/PreviewResultsViewImpl;->j:Landroid/view/View;
 
-    const v2, 0x7f100263
+    const v2, 0x7f10025f
 
     invoke-direct {p0, v0, v2, v10}, Lkik/android/chat/view/PreviewResultsViewImpl;->a(Landroid/view/View;II)V
 
     .line 491
     iget-object v0, p0, Lkik/android/chat/view/PreviewResultsViewImpl;->j:Landroid/view/View;
 
-    const v2, 0x7f100264
+    const v2, 0x7f100260
 
     invoke-direct {p0, v0, v2, v8}, Lkik/android/chat/view/PreviewResultsViewImpl;->a(Landroid/view/View;II)V
 
     .line 492
     iget-object v0, p0, Lkik/android/chat/view/PreviewResultsViewImpl;->j:Landroid/view/View;
 
-    const v2, 0x7f100265
+    const v2, 0x7f100261
 
     invoke-direct {p0, v0, v2, v9}, Lkik/android/chat/view/PreviewResultsViewImpl;->a(Landroid/view/View;II)V
 
@@ -1372,7 +1372,7 @@
     invoke-direct {p0, v0, v8}, Lkik/android/chat/view/PreviewResultsViewImpl;->a(IZ)V
 
     .line 498
-    iget-object v1, p0, Lkik/android/chat/view/PreviewResultsViewImpl;->b:Lkik/core/interfaces/ae;
+    iget-object v1, p0, Lkik/android/chat/view/PreviewResultsViewImpl;->b:Lkik/core/interfaces/ad;
 
     const-string v2, "STORAGE_HINT_COUNT"
 
@@ -1380,10 +1380,10 @@
 
     move-result-object v0
 
-    invoke-interface {v1, v2, v0}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;Ljava/lang/Integer;)Z
+    invoke-interface {v1, v2, v0}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Integer;)Z
 
     .line 499
-    iget-object v0, p0, Lkik/android/chat/view/PreviewResultsViewImpl;->b:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/chat/view/PreviewResultsViewImpl;->b:Lkik/core/interfaces/ad;
 
     const-string v1, "STORAGE_HINT_TIMESTAMP"
 
@@ -1391,7 +1391,7 @@
 
     move-result-object v2
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;Ljava/lang/Long;)Z
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Long;)Z
 
     .line 501
     :cond_0
@@ -1472,7 +1472,7 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
     goto :goto_0
 .end method
@@ -1767,7 +1767,7 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ca;->g([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->g([Landroid/view/View;)V
 
     .line 353
     return-void
@@ -1824,7 +1824,7 @@
 
     aput-object v1, v0, v2
 
-    invoke-static {v0}, Lkik/android/util/ca;->g([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->g([Landroid/view/View;)V
 
     .line 454
     invoke-static {}, Lkik/android/HeadphoneUnpluggedReceiver;->a()Lkik/android/HeadphoneUnpluggedReceiver;
@@ -1944,11 +1944,11 @@
     invoke-direct {p0}, Lkik/android/chat/view/PreviewResultsViewImpl;->h()V
 
     .line 538
-    iget-object v0, p0, Lkik/android/chat/view/PreviewResultsViewImpl;->b:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/chat/view/PreviewResultsViewImpl;->b:Lkik/core/interfaces/ad;
 
     const-string v1, "STORAGE_HINT_COUNT"
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ae;->u(Ljava/lang/String;)Ljava/lang/Integer;
+    invoke-interface {v0, v1}, Lkik/core/interfaces/ad;->u(Ljava/lang/String;)Ljava/lang/Integer;
 
     move-result-object v0
 

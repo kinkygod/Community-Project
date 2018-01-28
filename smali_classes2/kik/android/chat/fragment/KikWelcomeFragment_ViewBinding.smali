@@ -22,7 +22,7 @@
     iput-object p1, p0, Lkik/android/chat/fragment/KikWelcomeFragment_ViewBinding;->a:Lkik/android/chat/fragment/KikWelcomeFragment;
 
     .line 23
-    const v0, 0x7f1003c0
+    const v0, 0x7f1003bc
 
     const-string v1, "field \'_registerButton\'"
 
@@ -37,7 +37,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/KikWelcomeFragment;->_registerButton:Landroid/widget/TextView;
 
     .line 24
-    const v0, 0x7f100353
+    const v0, 0x7f10034f
 
     const-string v1, "field \'_loginButton\'"
 
@@ -52,7 +52,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/KikWelcomeFragment;->_loginButton:Landroid/widget/TextView;
 
     .line 25
-    const v0, 0x7f10042f
+    const v0, 0x7f100426
 
     const-string v1, "field \'_kikLogo\'"
 
@@ -67,7 +67,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/KikWelcomeFragment;->_kikLogo:Landroid/widget/ImageView;
 
     .line 26
-    const v0, 0x7f100431
+    const v0, 0x7f100428
 
     const-string v1, "field \'_buttonContainer\'"
 

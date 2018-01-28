@@ -53,7 +53,7 @@
 
     const/4 v1, 0x0
 
-    const v2, 0x7f01024f
+    const v2, 0x7f010259
 
     aput v2, v0, v1
 
@@ -66,10 +66,10 @@
     .array-data 4
         0x10100c4
         0x10100f1
-        0x7f0101e1
-        0x7f0101e2
-        0x7f0101e3
-        0x7f0101e4
+        0x7f0101eb
+        0x7f0101ec
+        0x7f0101ed
+        0x7f0101ee
     .end array-data
 .end method
 

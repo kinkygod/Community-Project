@@ -10,9 +10,9 @@
 
 
 # instance fields
-.field private final c:Lkik/android/widget/ToggleActionItemFrameLayout;
+.field private final c:Lkik/android/widget/ActionItemFrameLayout;
 
-.field private d:Lkik/android/chat/vm/profile/cy;
+.field private d:Lkik/android/chat/vm/profile/dd;
 
 .field private e:J
 
@@ -62,16 +62,16 @@
     .line 24
     aget-object v0, v0, v3
 
-    check-cast v0, Lkik/android/widget/ToggleActionItemFrameLayout;
+    check-cast v0, Lkik/android/widget/ActionItemFrameLayout;
 
-    iput-object v0, p0, Lkik/android/e/cr;->c:Lkik/android/widget/ToggleActionItemFrameLayout;
+    iput-object v0, p0, Lkik/android/e/cr;->c:Lkik/android/widget/ActionItemFrameLayout;
 
     .line 25
-    iget-object v0, p0, Lkik/android/e/cr;->c:Lkik/android/widget/ToggleActionItemFrameLayout;
+    iget-object v0, p0, Lkik/android/e/cr;->c:Lkik/android/widget/ActionItemFrameLayout;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lkik/android/widget/ToggleActionItemFrameLayout;->setTag(Ljava/lang/Object;)V
+    invoke-virtual {v0, v1}, Lkik/android/widget/ActionItemFrameLayout;->setTag(Ljava/lang/Object;)V
 
     .line 26
     invoke-virtual {p0, p2}, Lkik/android/e/cr;->setRootTag(Landroid/view/View;)V
@@ -88,7 +88,7 @@
 
     .prologue
     .line 116
-    const-string v0, "layout/profile_notifications_0"
+    const-string v0, "layout/profile_change_group_name_0"
 
     invoke-virtual {p0}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -160,7 +160,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 84
-    iget-object v2, p0, Lkik/android/e/cr;->d:Lkik/android/chat/vm/profile/cy;
+    iget-object v2, p0, Lkik/android/e/cr;->d:Lkik/android/chat/vm/profile/dd;
 
     .line 89
     const-wide/16 v4, 0x3
@@ -172,9 +172,9 @@
     if-eqz v0, :cond_0
 
     .line 92
-    iget-object v0, p0, Lkik/android/e/cr;->c:Lkik/android/widget/ToggleActionItemFrameLayout;
+    iget-object v0, p0, Lkik/android/e/cr;->c:Lkik/android/widget/ActionItemFrameLayout;
 
-    invoke-virtual {v0, v2}, Lkik/android/widget/ToggleActionItemFrameLayout;->a(Lkik/android/chat/vm/profile/cy;)V
+    invoke-virtual {v0, v2}, Lkik/android/widget/ActionItemFrameLayout;->a(Lkik/android/chat/vm/profile/dd;)V
 
     .line 94
     :cond_0
@@ -299,10 +299,10 @@
 
     .line 52
     :pswitch_0
-    check-cast p2, Lkik/android/chat/vm/profile/cy;
+    check-cast p2, Lkik/android/chat/vm/profile/dd;
 
     .line 1059
-    iput-object p2, p0, Lkik/android/e/cr;->d:Lkik/android/chat/vm/profile/cy;
+    iput-object p2, p0, Lkik/android/e/cr;->d:Lkik/android/chat/vm/profile/dd;
 
     .line 1060
     monitor-enter p0

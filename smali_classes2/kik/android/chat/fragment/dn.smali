@@ -37,7 +37,7 @@
 
     iget-object v0, p0, Lkik/android/chat/fragment/dn;->a:Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;
 
-    invoke-static {v0}, Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;->e(Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;)V
+    invoke-static {v0}, Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;->d(Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;)V
 
     return-void
 .end method

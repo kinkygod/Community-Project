@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Lcom/kik/util/j$a;
 
 
 # annotations
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field private a:Lkik/android/chat/vm/profile/cs;
+.field private a:Lkik/android/chat/vm/messaging/es;
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 157
+    .line 288
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -34,14 +34,14 @@
 
 
 # virtual methods
-.method public final a(Lkik/android/chat/vm/profile/cs;)Lkik/android/e/ci$a;
+.method public final a(Lkik/android/chat/vm/messaging/es;)Lkik/android/e/ci$a;
     .locals 0
 
     .prologue
-    .line 160
-    iput-object p1, p0, Lkik/android/e/ci$a;->a:Lkik/android/chat/vm/profile/cs;
+    .line 291
+    iput-object p1, p0, Lkik/android/e/ci$a;->a:Lkik/android/chat/vm/messaging/es;
 
-    .line 161
+    .line 292
     if-nez p1, :cond_0
 
     const/4 p0, 0x0
@@ -50,15 +50,22 @@
     return-object p0
 .end method
 
-.method public final run()V
-    .locals 1
+.method public final synthetic call(Ljava/lang/Object;)V
+    .locals 2
 
     .prologue
-    .line 165
-    iget-object v0, p0, Lkik/android/e/ci$a;->a:Lkik/android/chat/vm/profile/cs;
+    .line 288
+    check-cast p1, Ljava/lang/Integer;
 
-    invoke-interface {v0}, Lkik/android/chat/vm/profile/cs;->d()V
+    .line 1296
+    iget-object v0, p0, Lkik/android/e/ci$a;->a:Lkik/android/chat/vm/messaging/es;
 
-    .line 166
+    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
+
+    move-result v1
+
+    invoke-interface {v0, v1}, Lkik/android/chat/vm/messaging/es;->a(I)V
+
+    .line 288
     return-void
 .end method

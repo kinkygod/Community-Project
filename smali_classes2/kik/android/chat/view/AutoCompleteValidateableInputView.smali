@@ -169,7 +169,7 @@
     return-void
 .end method
 
-.method public final a(Lkik/core/interfaces/aj;)V
+.method public final a(Lkik/core/interfaces/ai;)V
     .locals 1
 
     .prologue
@@ -180,7 +180,7 @@
     check-cast v0, Lkik/android/widget/KikAutoCompleteTextView;
 
     .line 111
-    invoke-virtual {v0, p1}, Lkik/android/widget/KikAutoCompleteTextView;->a(Lkik/core/interfaces/aj;)V
+    invoke-virtual {v0, p1}, Lkik/android/widget/KikAutoCompleteTextView;->a(Lkik/core/interfaces/ai;)V
 
     .line 112
     return-void

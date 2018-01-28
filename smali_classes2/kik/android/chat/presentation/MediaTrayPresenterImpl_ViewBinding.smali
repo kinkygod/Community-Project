@@ -22,7 +22,7 @@
     iput-object p1, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl_ViewBinding;->a:Lkik/android/chat/presentation/MediaTrayPresenterImpl;
 
     .line 29
-    const v0, 0x7f100368
+    const v0, 0x7f100364
 
     const-string v1, "field \'_sendButton\'"
 
@@ -33,7 +33,7 @@
     iput-object v0, p1, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_sendButton:Landroid/view/View;
 
     .line 30
-    const v0, 0x7f100367
+    const v0, 0x7f100363
 
     const-string v1, "field \'_newMessageBox\'"
 
@@ -74,7 +74,7 @@
     iput-object v0, p1, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_topBar:Landroid/view/View;
 
     .line 33
-    const v0, 0x7f100376
+    const v0, 0x7f100372
 
     const-string v1, "field \'_suggestedRecyclerView\'"
 
@@ -89,7 +89,7 @@
     iput-object v0, p1, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_suggestedRecyclerView:Lkik/android/chat/view/SuggestedResponseRecyclerView;
 
     .line 34
-    const v0, 0x7f100375
+    const v0, 0x7f100371
 
     const-string v1, "field \'_suggestedRecyclerViewBorder\'"
 
@@ -115,7 +115,7 @@
     iput-object v0, p1, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_inlineBotSuggestionView:Lkik/android/chat/view/InlineBotListView;
 
     .line 36
-    const v0, 0x7f100374
+    const v0, 0x7f100370
 
     const-string v1, "field \'_mediaItemArea\'"
 
@@ -145,7 +145,7 @@
     iput-object v0, p1, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_tray:Landroid/view/ViewGroup;
 
     .line 38
-    const v0, 0x7f100373
+    const v0, 0x7f10036f
 
     const-string v1, "field \'_mediaBarView\'"
 
@@ -160,7 +160,7 @@
     iput-object v0, p1, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_mediaBarView:Landroid/view/ViewGroup;
 
     .line 39
-    const v0, 0x7f100366
+    const v0, 0x7f100362
 
     const-string v1, "field \'_trayBarTextLayout\'"
 
@@ -175,7 +175,7 @@
     iput-object v0, p1, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_trayBarTextLayout:Landroid/view/ViewGroup;
 
     .line 40
-    const v0, 0x7f100369
+    const v0, 0x7f100365
 
     const-string v1, "field \'_showSRButton\'"
 
@@ -216,7 +216,7 @@
     iput-object v0, p1, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_contentFrame:Landroid/widget/FrameLayout;
 
     .line 43
-    const v0, 0x7f10035e
+    const v0, 0x7f10035a
 
     const-string v1, "field \'_contentAttachLayout\'"
 
@@ -231,7 +231,7 @@
     iput-object v0, p1, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_contentAttachLayout:Landroid/widget/FrameLayout;
 
     .line 44
-    const v0, 0x7f10035f
+    const v0, 0x7f10035b
 
     const-string v1, "field \'_contentAttachScrollView\'"
 
@@ -246,7 +246,7 @@
     iput-object v0, p1, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_contentAttachScrollView:Landroid/widget/HorizontalScrollView;
 
     .line 45
-    const v0, 0x7f100360
+    const v0, 0x7f10035c
 
     const-string v1, "field \'_linearLayoutForImages\'"
 
@@ -261,7 +261,7 @@
     iput-object v0, p1, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_linearLayoutForImages:Landroid/widget/LinearLayout;
 
     .line 46
-    const v0, 0x7f100363
+    const v0, 0x7f10035f
 
     const-string v1, "field \'_contentAttachCover\'"
 
@@ -272,7 +272,7 @@
     iput-object v0, p1, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_contentAttachCover:Landroid/view/View;
 
     .line 47
-    const v0, 0x7f10036a
+    const v0, 0x7f100366
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

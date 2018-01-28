@@ -84,7 +84,7 @@
 .method protected abstract a(II)Landroid/graphics/Point;
 .end method
 
-.method protected a(Landroid/graphics/Bitmap;Ljava/lang/String;)Lkik/android/widget/be;
+.method protected a(Landroid/graphics/Bitmap;Ljava/lang/String;)Lkik/android/widget/bq;
     .locals 3
 
     .prologue
@@ -96,11 +96,11 @@
     if-eqz v0, :cond_0
 
     .line 58
-    new-instance v0, Lkik/android/widget/co;
+    new-instance v0, Lkik/android/widget/de;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p1, v1}, Lkik/android/widget/co;-><init>(Landroid/graphics/Bitmap;Ljava/lang/String;)V
+    invoke-direct {v0, p1, v1}, Lkik/android/widget/de;-><init>(Landroid/graphics/Bitmap;Ljava/lang/String;)V
 
     .line 65
     :goto_0

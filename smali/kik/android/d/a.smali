@@ -30,10 +30,10 @@
     .end annotation
 .end field
 
-.field private c:La/b;
+.field private c:Ldagger/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "La/b",
+            "Ldagger/b",
             "<",
             "Lkik/android/widget/MessageTextView;",
             ">;"
@@ -95,7 +95,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lkik/android/d/e;->a(Lkik/android/d/d;)La/a/b;
+    invoke-static {v0}, Lkik/android/d/e;->a(Lkik/android/d/d;)Ldagger/internal/b;
 
     move-result-object v0
 
@@ -105,11 +105,11 @@
     iget-object v0, p0, Lkik/android/d/a;->b:Ljavax/inject/Provider;
 
     .line 1039
-    invoke-static {v0}, Lkik/android/widget/MessageTextView_MembersInjector;->a(Ljavax/inject/Provider;)La/b;
+    invoke-static {v0}, Lkik/android/widget/MessageTextView_MembersInjector;->a(Ljavax/inject/Provider;)Ldagger/b;
 
     move-result-object v0
 
-    iput-object v0, p0, Lkik/android/d/a;->c:La/b;
+    iput-object v0, p0, Lkik/android/d/a;->c:Ldagger/b;
 
     .line 22
     return-void
@@ -146,9 +146,9 @@
 
     .prologue
     .line 44
-    iget-object v0, p0, Lkik/android/d/a;->c:La/b;
+    iget-object v0, p0, Lkik/android/d/a;->c:Ldagger/b;
 
-    invoke-interface {v0, p1}, La/b;->a(Ljava/lang/Object;)V
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
     .line 45
     return-void

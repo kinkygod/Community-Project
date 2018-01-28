@@ -45,11 +45,7 @@
 
     check-cast p1, Lcom/kik/core/domain/users/a/c;
 
-    invoke-interface {p1}, Lcom/kik/core/domain/users/a/c;->i()Z
-
-    move-result v0
-
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    invoke-static {p1}, Lkik/android/chat/vm/profile/profileactionvm/at;->a(Lcom/kik/core/domain/users/a/c;)Ljava/lang/Boolean;
 
     move-result-object v0
 

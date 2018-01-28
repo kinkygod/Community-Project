@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/widget/dm$a;
+.implements Lkik/android/widget/ea$a;
 
 
 # annotations
@@ -16,7 +16,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkik/android/widget/AutoScrollingRecyclerView;",
-        "Lkik/android/widget/dm$a",
+        "Lkik/android/widget/ea$a",
         "<",
         "Lkik/android/chat/vm/chats/search/IChatsSearchResultViewModel;",
         "Lkik/android/widget/ChatSearchRecyclerView$a;",
@@ -91,7 +91,7 @@
     .line 2041
     sget-object v0, Lkik/android/widget/ChatSearchRecyclerView$1;->a:[I
 
-    invoke-interface {p1}, Lkik/android/chat/vm/chats/search/IChatsSearchResultViewModel;->W_()Lkik/android/chat/vm/chats/search/IChatsSearchResultViewModel$LayoutType;
+    invoke-interface {p1}, Lkik/android/chat/vm/chats/search/IChatsSearchResultViewModel;->Y_()Lkik/android/chat/vm/chats/search/IChatsSearchResultViewModel$LayoutType;
 
     move-result-object v1
 
@@ -112,7 +112,7 @@
 
     invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-interface {p1}, Lkik/android/chat/vm/chats/search/IChatsSearchResultViewModel;->W_()Lkik/android/chat/vm/chats/search/IChatsSearchResultViewModel$LayoutType;
+    invoke-interface {p1}, Lkik/android/chat/vm/chats/search/IChatsSearchResultViewModel;->Y_()Lkik/android/chat/vm/chats/search/IChatsSearchResultViewModel$LayoutType;
 
     move-result-object v2
 
@@ -130,7 +130,7 @@
 
     .line 2043
     :pswitch_0
-    const v0, 0x7f040055
+    const v0, 0x7f040057
 
     .line 2050
     :goto_0
@@ -138,19 +138,19 @@
 
     .line 2045
     :pswitch_1
-    const v0, 0x7f040056
+    const v0, 0x7f040058
 
     goto :goto_0
 
     .line 2047
     :pswitch_2
-    const v0, 0x7f040057
+    const v0, 0x7f040059
 
     goto :goto_0
 
     .line 2050
     :pswitch_3
-    const v0, 0x7f040054
+    const v0, 0x7f040056
 
     goto :goto_0
 

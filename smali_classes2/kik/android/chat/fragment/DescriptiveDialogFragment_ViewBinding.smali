@@ -22,7 +22,7 @@
     iput-object p1, p0, Lkik/android/chat/fragment/DescriptiveDialogFragment_ViewBinding;->a:Lkik/android/chat/fragment/DescriptiveDialogFragment;
 
     .line 23
-    const v0, 0x7f1001af
+    const v0, 0x7f1001b0
 
     const-string v1, "field \'_titleTextView\'"
 
@@ -37,7 +37,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/DescriptiveDialogFragment;->_titleTextView:Lkik/android/widget/RobotoTextView;
 
     .line 24
-    const v0, 0x7f1001b0
+    const v0, 0x7f1001b1
 
     const-string v1, "field \'_descriptionTextView\'"
 
@@ -52,7 +52,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/DescriptiveDialogFragment;->_descriptionTextView:Lkik/android/widget/RobotoTextView;
 
     .line 25
-    const v0, 0x7f1001ae
+    const v0, 0x7f1001af
 
     const-string v1, "field \'_iconImageView\'"
 
@@ -67,7 +67,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/DescriptiveDialogFragment;->_iconImageView:Landroid/widget/ImageView;
 
     .line 26
-    const v0, 0x7f1001b1
+    const v0, 0x7f1001b2
 
     const-string v1, "field \'_button\'"
 

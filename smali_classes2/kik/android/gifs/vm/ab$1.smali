@@ -67,7 +67,7 @@
     .line 1109
     iget-object v0, p0, Lkik/android/gifs/vm/ab$1;->c:Lkik/android/gifs/vm/ab;
 
-    invoke-virtual {v0}, Lkik/android/gifs/vm/ab;->K_()V
+    invoke-virtual {v0}, Lkik/android/gifs/vm/ab;->aF_()V
 
     .line 1110
     iget-object v0, p0, Lkik/android/gifs/vm/ab$1;->c:Lkik/android/gifs/vm/ab;
@@ -143,7 +143,7 @@
     :goto_0
     iget-object v0, p0, Lkik/android/gifs/vm/ab$1;->c:Lkik/android/gifs/vm/ab;
 
-    invoke-virtual {v0}, Lkik/android/gifs/vm/ab;->K_()V
+    invoke-virtual {v0}, Lkik/android/gifs/vm/ab;->aF_()V
 
     .line 123
     return-void

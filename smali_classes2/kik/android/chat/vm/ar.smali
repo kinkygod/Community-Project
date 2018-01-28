@@ -2,10 +2,16 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lkik/android/chat/vm/bn;
-
 
 # virtual methods
-.method public abstract j()J
+.method public abstract a()Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List",
+            "<",
+            "Lkik/core/chat/profile/ag;",
+            ">;"
+        }
+    .end annotation
 .end method

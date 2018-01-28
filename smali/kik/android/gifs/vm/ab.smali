@@ -178,46 +178,7 @@
 
 
 # virtual methods
-.method protected final K_()V
-    .locals 2
-
-    .prologue
-    .line 149
-    invoke-virtual {p0}, Lkik/android/gifs/vm/ab;->d()Ljava/util/List;
-
-    move-result-object v0
-
-    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
-    move-result-object v1
-
-    :goto_0
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lkik/android/gifs/vm/bo;
-
-    .line 150
-    invoke-interface {v0}, Lkik/android/gifs/vm/bo;->aj_()V
-
-    goto :goto_0
-
-    .line 153
-    :cond_0
-    invoke-super {p0}, Lkik/android/gifs/vm/c;->K_()V
-
-    .line 154
-    return-void
-.end method
-
-.method public synthetic a(I)Lkik/android/chat/vm/ar;
+.method public synthetic a(I)Lkik/android/chat/vm/at;
     .locals 1
 
     .prologue
@@ -246,7 +207,7 @@
     return-void
 .end method
 
-.method public a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+.method public a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
     .locals 0
 
     .prologue
@@ -254,7 +215,7 @@
     invoke-interface {p1, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/gifs/vm/ab;)V
 
     .line 54
-    invoke-super {p0, p1, p2}, Lkik/android/gifs/vm/c;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    invoke-super {p0, p1, p2}, Lkik/android/gifs/vm/c;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 55
     return-void
@@ -332,7 +293,7 @@
     invoke-interface {v0}, Ljava/util/Map;->clear()V
 
     .line 95
-    invoke-virtual {p0}, Lkik/android/gifs/vm/ab;->K_()V
+    invoke-virtual {p0}, Lkik/android/gifs/vm/ab;->aF_()V
 
     .line 1158
     new-instance v1, Lcom/kik/events/Promise;
@@ -405,7 +366,46 @@
     goto :goto_0
 .end method
 
-.method public final aj_()V
+.method protected final aF_()V
+    .locals 2
+
+    .prologue
+    .line 149
+    invoke-virtual {p0}, Lkik/android/gifs/vm/ab;->q_()Ljava/util/List;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v1
+
+    :goto_0
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lkik/android/gifs/vm/bo;
+
+    .line 150
+    invoke-interface {v0}, Lkik/android/gifs/vm/bo;->ak_()V
+
+    goto :goto_0
+
+    .line 153
+    :cond_0
+    invoke-super {p0}, Lkik/android/gifs/vm/c;->aF_()V
+
+    .line 154
+    return-void
+.end method
+
+.method public final ak_()V
     .locals 1
 
     .prologue
@@ -415,7 +415,7 @@
     iput-object v0, p0, Lkik/android/gifs/vm/ab;->l:Lrx/functions/b;
 
     .line 61
-    invoke-super {p0}, Lkik/android/gifs/vm/c;->aj_()V
+    invoke-super {p0}, Lkik/android/gifs/vm/c;->ak_()V
 
     .line 62
     return-void

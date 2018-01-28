@@ -8,7 +8,7 @@
 
 .field private b:Lrx/f/b;
 
-.field private c:Lkik/android/chat/vm/au;
+.field private c:Lkik/android/chat/vm/aw;
 
 
 # direct methods
@@ -80,7 +80,7 @@
 
     .prologue
     .line 73
-    invoke-static {p0}, Lkik/android/widget/ae;->a(Lkik/android/widget/CirclePopupMenuImageView;)Landroid/view/View$OnClickListener;
+    invoke-static {p0}, Lkik/android/widget/ag;->a(Lkik/android/widget/CirclePopupMenuImageView;)Landroid/view/View$OnClickListener;
 
     move-result-object v0
 
@@ -90,7 +90,7 @@
     return-void
 .end method
 
-.method private a(Lkik/android/chat/vm/au;)V
+.method private a(Lkik/android/chat/vm/aw;)V
     .locals 0
 
     .prologue
@@ -98,7 +98,7 @@
     invoke-direct {p0}, Lkik/android/widget/CirclePopupMenuImageView;->b()V
 
     .line 110
-    iput-object p1, p0, Lkik/android/widget/CirclePopupMenuImageView;->c:Lkik/android/chat/vm/au;
+    iput-object p1, p0, Lkik/android/widget/CirclePopupMenuImageView;->c:Lkik/android/chat/vm/aw;
 
     .line 111
     return-void
@@ -109,13 +109,13 @@
 
     .prologue
     .line 75
-    iget-object v0, p0, Lkik/android/widget/CirclePopupMenuImageView;->c:Lkik/android/chat/vm/au;
+    iget-object v0, p0, Lkik/android/widget/CirclePopupMenuImageView;->c:Lkik/android/chat/vm/aw;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lkik/android/widget/CirclePopupMenuImageView;->c:Lkik/android/chat/vm/au;
+    iget-object v0, p0, Lkik/android/widget/CirclePopupMenuImageView;->c:Lkik/android/chat/vm/aw;
 
-    invoke-interface {v0}, Lkik/android/chat/vm/au;->ah_()Lrx/d;
+    invoke-interface {v0}, Lkik/android/chat/vm/aw;->ai_()Lrx/d;
 
     move-result-object v0
 
@@ -130,13 +130,13 @@
     :cond_1
     iget-object v0, p0, Lkik/android/widget/CirclePopupMenuImageView;->b:Lrx/f/b;
 
-    iget-object v1, p0, Lkik/android/widget/CirclePopupMenuImageView;->c:Lkik/android/chat/vm/au;
+    iget-object v1, p0, Lkik/android/widget/CirclePopupMenuImageView;->c:Lkik/android/chat/vm/aw;
 
-    invoke-interface {v1}, Lkik/android/chat/vm/au;->ah_()Lrx/d;
+    invoke-interface {v1}, Lkik/android/chat/vm/aw;->ai_()Lrx/d;
 
     move-result-object v1
 
-    invoke-static {p0}, Lkik/android/widget/af;->a(Lkik/android/widget/CirclePopupMenuImageView;)Lrx/functions/b;
+    invoke-static {p0}, Lkik/android/widget/ah;->a(Lkik/android/widget/CirclePopupMenuImageView;)Lrx/functions/b;
 
     move-result-object v2
 
@@ -149,7 +149,7 @@
     goto :goto_0
 .end method
 
-.method public static a(Lkik/android/widget/CirclePopupMenuImageView;Lkik/android/chat/vm/au;)V
+.method public static a(Lkik/android/widget/CirclePopupMenuImageView;Lkik/android/chat/vm/aw;)V
     .locals 0
     .annotation build Landroid/databinding/BindingAdapter;
         value = {
@@ -159,13 +159,13 @@
 
     .prologue
     .line 31
-    invoke-direct {p0, p1}, Lkik/android/widget/CirclePopupMenuImageView;->a(Lkik/android/chat/vm/au;)V
+    invoke-direct {p0, p1}, Lkik/android/widget/CirclePopupMenuImageView;->a(Lkik/android/chat/vm/aw;)V
 
     .line 32
     return-void
 .end method
 
-.method static synthetic a(Lkik/android/widget/CirclePopupMenuImageView;Lkik/android/chat/vm/cq;)V
+.method static synthetic a(Lkik/android/widget/CirclePopupMenuImageView;Lkik/android/chat/vm/cs;)V
     .locals 7
 
     .prologue
@@ -175,14 +175,14 @@
     invoke-direct {p0}, Lkik/android/widget/CirclePopupMenuImageView;->b()V
 
     .line 82
-    invoke-virtual {p1}, Lkik/android/chat/vm/cq;->a()Ljava/util/List;
+    invoke-virtual {p1}, Lkik/android/chat/vm/cs;->a()Ljava/util/List;
 
     move-result-object v3
 
     .line 84
-    iget-object v0, p0, Lkik/android/widget/CirclePopupMenuImageView;->c:Lkik/android/chat/vm/au;
+    iget-object v0, p0, Lkik/android/widget/CirclePopupMenuImageView;->c:Lkik/android/chat/vm/aw;
 
-    invoke-interface {v0}, Lkik/android/chat/vm/au;->ai_()V
+    invoke-interface {v0}, Lkik/android/chat/vm/aw;->aj_()V
 
     .line 85
     const/16 v0, 0x13
@@ -314,7 +314,7 @@
     :cond_3
     iget-object v0, p0, Lkik/android/widget/CirclePopupMenuImageView;->a:Landroid/widget/PopupMenu;
 
-    invoke-static {p0}, Lkik/android/widget/ag;->a(Lkik/android/widget/CirclePopupMenuImageView;)Landroid/widget/PopupMenu$OnDismissListener;
+    invoke-static {p0}, Lkik/android/widget/ai;->a(Lkik/android/widget/CirclePopupMenuImageView;)Landroid/widget/PopupMenu$OnDismissListener;
 
     move-result-object v1
 
@@ -323,7 +323,7 @@
     .line 101
     iget-object v0, p0, Lkik/android/widget/CirclePopupMenuImageView;->a:Landroid/widget/PopupMenu;
 
-    invoke-static {p1}, Lkik/android/widget/ah;->a(Lkik/android/chat/vm/cq;)Landroid/widget/PopupMenu$OnMenuItemClickListener;
+    invoke-static {p1}, Lkik/android/widget/aj;->a(Lkik/android/chat/vm/cs;)Landroid/widget/PopupMenu$OnMenuItemClickListener;
 
     move-result-object v1
 
@@ -332,13 +332,19 @@
     .line 102
     iget-object v0, p0, Lkik/android/widget/CirclePopupMenuImageView;->a:Landroid/widget/PopupMenu;
 
-    invoke-virtual {v0}, Landroid/widget/PopupMenu;->show()V
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    invoke-static {v0}, Lkik/android/widget/ak;->a(Landroid/widget/PopupMenu;)Ljava/lang/Runnable;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0}, Lkik/android/widget/CirclePopupMenuImageView;->post(Ljava/lang/Runnable;)Z
 
     .line 103
     return-void
 .end method
 
-.method public static a(Lkik/android/widget/CirclePopupMenuImageView;Lkik/android/chat/vm/messaging/et;)V
+.method public static a(Lkik/android/widget/CirclePopupMenuImageView;Lkik/android/chat/vm/messaging/ep;)V
     .locals 0
     .annotation build Landroid/databinding/BindingAdapter;
         value = {
@@ -348,13 +354,13 @@
 
     .prologue
     .line 37
-    invoke-direct {p0, p1}, Lkik/android/widget/CirclePopupMenuImageView;->a(Lkik/android/chat/vm/au;)V
+    invoke-direct {p0, p1}, Lkik/android/widget/CirclePopupMenuImageView;->a(Lkik/android/chat/vm/aw;)V
 
     .line 38
     return-void
 .end method
 
-.method static synthetic a(Lkik/android/chat/vm/cq;Landroid/view/MenuItem;)Z
+.method static synthetic a(Lkik/android/chat/vm/cs;Landroid/view/MenuItem;)Z
     .locals 1
 
     .prologue
@@ -363,7 +369,7 @@
 
     move-result v0
 
-    invoke-virtual {p0, v0}, Lkik/android/chat/vm/cq;->a(I)Z
+    invoke-virtual {p0, v0}, Lkik/android/chat/vm/cs;->a(I)Z
 
     move-result v0
 
@@ -404,9 +410,9 @@
     invoke-virtual {v0}, Lrx/f/b;->unsubscribe()V
 
     .line 99
-    iget-object v0, p0, Lkik/android/widget/CirclePopupMenuImageView;->c:Lkik/android/chat/vm/au;
+    iget-object v0, p0, Lkik/android/widget/CirclePopupMenuImageView;->c:Lkik/android/chat/vm/aw;
 
-    invoke-interface {v0}, Lkik/android/chat/vm/au;->f()V
+    invoke-interface {v0}, Lkik/android/chat/vm/aw;->f()V
 
     .line 100
     return-void

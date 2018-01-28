@@ -47,7 +47,7 @@
     .line 0
     check-cast p1, Lkik/core/datatypes/l;
 
-    .line 1114
+    .line 1122
     if-nez p1, :cond_0
 
     const-string v0, ""
@@ -60,7 +60,7 @@
     .line 0
     return-object v0
 
-    .line 1114
+    .line 1122
     :cond_0
     invoke-virtual {p1}, Lkik/core/datatypes/l;->b()Ljava/lang/String;
 

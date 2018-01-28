@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/vm/ac;
+.implements Lkik/android/chat/vm/ad;
 
 
 # instance fields

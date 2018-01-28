@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/kik/android/b/g;-><init>(Landroid/content/Context;Lkik/core/e/f;Lkik/core/interfaces/ae;Lcom/kik/events/Promise;Lkik/core/interfaces/ah;Lkik/core/interfaces/aa;Lkik/android/util/ai;Lkik/core/interfaces/t;)V
+    value = Lcom/kik/android/b/g;-><init>(Landroid/content/Context;Lkik/core/e/f;Lkik/core/interfaces/ad;Lcom/kik/events/Promise;Lkik/core/interfaces/ag;Lkik/core/interfaces/z;Lkik/android/util/ai;Lkik/core/interfaces/s;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -36,7 +36,7 @@
     .locals 0
 
     .prologue
-    .line 396
+    .line 404
     iput-object p1, p0, Lcom/kik/android/b/g$1;->a:Lcom/kik/android/b/g;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -47,15 +47,17 @@
 
 # virtual methods
 .method public final bridge synthetic a(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 0
+    .locals 1
 
     .prologue
-    .line 396
+    .line 404
     check-cast p2, Lcom/kik/cache/KikImageRequest;
 
-    .line 1400
-    invoke-static {p2}, Lcom/kik/android/b/g;->a(Lcom/kik/cache/KikImageRequest;)V
+    .line 1408
+    iget-object v0, p0, Lcom/kik/android/b/g$1;->a:Lcom/kik/android/b/g;
 
-    .line 396
+    invoke-static {v0, p2}, Lcom/kik/android/b/g;->a(Lcom/kik/android/b/g;Lcom/kik/cache/KikImageRequest;)V
+
+    .line 404
     return-void
 .end method

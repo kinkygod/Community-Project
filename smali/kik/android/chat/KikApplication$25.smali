@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/android/chat/KikApplication;->H()V
+    value = Lkik/android/chat/KikApplication;->G()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -32,7 +32,7 @@
     .locals 0
 
     .prologue
-    .line 1932
+    .line 1944
     iput-object p1, p0, Lkik/android/chat/KikApplication$25;->a:Lkik/android/chat/KikApplication;
 
     invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
@@ -46,14 +46,14 @@
     .locals 1
 
     .prologue
-    .line 1936
+    .line 1948
     const-string v0, "Unexpected failure storing chat IDs to XData."
 
     invoke-static {v0}, Lkik/android/util/aw;->a(Ljava/lang/String;)V
 
-    .line 1937
+    .line 1949
     invoke-static {p1}, Lkik/android/util/aw;->a(Ljava/lang/Throwable;)V
 
-    .line 1938
+    .line 1950
     return-void
 .end method

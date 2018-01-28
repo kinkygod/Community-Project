@@ -2,10 +2,10 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lkik/android/chat/vm/ar;
-
 
 # virtual methods
-.method public abstract aJ_()Lrx/b;
+.method public abstract a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
+.end method
+
+.method public abstract ak_()V
 .end method

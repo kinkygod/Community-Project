@@ -22,7 +22,7 @@
     iput-object p1, p0, Lkik/android/gifs/view/GifFavouriteToggle_ViewBinding;->a:Lkik/android/gifs/view/GifFavouriteToggle;
 
     .line 26
-    const v0, 0x7f100242
+    const v0, 0x7f10023e
 
     const-string v1, "field \'_starImageView\'"
 

@@ -36,7 +36,7 @@
     .locals 0
 
     .prologue
-    .line 467
+    .line 469
     iput-object p1, p0, Lkik/android/chat/fragment/KikChatFragment$9;->a:Lkik/android/chat/fragment/KikChatFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -50,10 +50,10 @@
     .locals 2
 
     .prologue
-    .line 467
+    .line 469
     check-cast p2, Lkik/core/datatypes/f;
 
-    .line 1471
+    .line 1473
     if-eqz p2, :cond_0
 
     iget-object v0, p0, Lkik/android/chat/fragment/KikChatFragment$9;->a:Lkik/android/chat/fragment/KikChatFragment;
@@ -102,13 +102,13 @@
 
     if-eqz v0, :cond_1
 
-    .line 1473
+    .line 1475
     :cond_0
     iget-object v0, p0, Lkik/android/chat/fragment/KikChatFragment$9;->a:Lkik/android/chat/fragment/KikChatFragment;
 
     invoke-static {v0}, Lkik/android/chat/fragment/KikChatFragment;->o(Lkik/android/chat/fragment/KikChatFragment;)V
 
-    .line 467
+    .line 469
     :cond_1
     return-void
 .end method

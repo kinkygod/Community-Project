@@ -2,7 +2,7 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lkik/core/interfaces/w$a;
+.implements Lkik/core/interfaces/v$a;
 
 
 # static fields
@@ -30,7 +30,7 @@
     return-void
 .end method
 
-.method public static a()Lkik/core/interfaces/w$a;
+.method public static a()Lkik/core/interfaces/v$a;
     .locals 1
 
     sget-object v0, Lkik/core/profile/x;->a:Lkik/core/profile/x;

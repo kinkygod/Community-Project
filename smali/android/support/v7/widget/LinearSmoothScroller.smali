@@ -200,7 +200,7 @@
     .line 303
     if-eqz v1, :cond_0
 
-    invoke-virtual {v1}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->g()Z
+    invoke-virtual {v1}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->f()Z
 
     move-result v0
 
@@ -223,7 +223,7 @@
     check-cast v0, Landroid/support/v7/widget/RecyclerView$LayoutParams;
 
     .line 308
-    invoke-static {p1}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->j(Landroid/view/View;)I
+    invoke-static {p1}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->m(Landroid/view/View;)I
 
     move-result v2
 
@@ -232,7 +232,7 @@
     sub-int/2addr v2, v3
 
     .line 309
-    invoke-static {p1}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->l(Landroid/view/View;)I
+    invoke-static {p1}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->o(Landroid/view/View;)I
 
     move-result v3
 
@@ -241,16 +241,16 @@
     add-int/2addr v0, v3
 
     .line 310
-    invoke-virtual {v1}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->x()I
+    invoke-virtual {v1}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->z()I
 
     move-result v3
 
     .line 311
-    invoke-virtual {v1}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->v()I
+    invoke-virtual {v1}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->x()I
 
     move-result v4
 
-    invoke-virtual {v1}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->z()I
+    invoke-virtual {v1}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->B()I
 
     move-result v1
 
@@ -477,7 +477,7 @@
     goto :goto_0
 .end method
 
-.method protected a(Landroid/view/View;Landroid/support/v7/widget/RecyclerView$SmoothScroller$Action;)V
+.method protected a(Landroid/view/View;Landroid/support/v7/widget/RecyclerView$State;Landroid/support/v7/widget/RecyclerView$SmoothScroller$Action;)V
     .locals 6
 
     .prologue
@@ -565,7 +565,7 @@
 
     iget-object v3, p0, Landroid/support/v7/widget/LinearSmoothScroller;->b:Landroid/view/animation/DecelerateInterpolator;
 
-    invoke-virtual {p2, v0, v1, v2, v3}, Landroid/support/v7/widget/RecyclerView$SmoothScroller$Action;->a(IIILandroid/view/animation/Interpolator;)V
+    invoke-virtual {p3, v0, v1, v2, v3}, Landroid/support/v7/widget/RecyclerView$SmoothScroller$Action;->a(IIILandroid/view/animation/Interpolator;)V
 
     .line 119
     :cond_3
@@ -643,7 +643,7 @@
     .line 328
     if-eqz v1, :cond_0
 
-    invoke-virtual {v1}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->f()Z
+    invoke-virtual {v1}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->e()Z
 
     move-result v0
 
@@ -666,7 +666,7 @@
     check-cast v0, Landroid/support/v7/widget/RecyclerView$LayoutParams;
 
     .line 333
-    invoke-static {p1}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->i(Landroid/view/View;)I
+    invoke-static {p1}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->l(Landroid/view/View;)I
 
     move-result v2
 
@@ -675,7 +675,7 @@
     sub-int/2addr v2, v3
 
     .line 334
-    invoke-static {p1}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->k(Landroid/view/View;)I
+    invoke-static {p1}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->n(Landroid/view/View;)I
 
     move-result v3
 
@@ -684,16 +684,16 @@
     add-int/2addr v0, v3
 
     .line 335
-    invoke-virtual {v1}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->w()I
+    invoke-virtual {v1}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->y()I
 
     move-result v3
 
     .line 336
-    invoke-virtual {v1}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->u()I
+    invoke-virtual {v1}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->w()I
 
     move-result v4
 
-    invoke-virtual {v1}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->y()I
+    invoke-virtual {v1}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->A()I
 
     move-result v1
 

@@ -1,49 +1,77 @@
-.class final synthetic Lkik/android/chat/vm/profile/profileactionvm/e;
-.super Ljava/lang/Object;
-
-# interfaces
-.implements Ljava/lang/Runnable;
+.class public Lkik/android/chat/vm/profile/profileactionvm/e;
+.super Lkik/android/chat/vm/profile/a;
+.source "SourceFile"
 
 
-# static fields
-.field private static final a:Lkik/android/chat/vm/profile/profileactionvm/e;
+# instance fields
+.field private final b:Lcom/kik/core/network/xmpp/jid/a;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lkik/android/chat/vm/profile/profileactionvm/e;
-
-    invoke-direct {v0}, Lkik/android/chat/vm/profile/profileactionvm/e;-><init>()V
-
-    sput-object v0, Lkik/android/chat/vm/profile/profileactionvm/e;->a:Lkik/android/chat/vm/profile/profileactionvm/e;
-
-    return-void
-.end method
-
-.method private constructor <init>()V
+.method public constructor <init>(Lcom/kik/core/network/xmpp/jid/a;)V
     .locals 0
+    .param p1    # Lcom/kik/core/network/xmpp/jid/a;
+        .annotation runtime Ljavax/annotation/Nonnull;
+        .end annotation
+    .end param
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .prologue
+    .line 22
+    invoke-direct {p0}, Lkik/android/chat/vm/profile/a;-><init>()V
 
+    .line 23
+    iput-object p1, p0, Lkik/android/chat/vm/profile/profileactionvm/e;->b:Lcom/kik/core/network/xmpp/jid/a;
+
+    .line 24
     return-void
-.end method
-
-.method public static a()Ljava/lang/Runnable;
-    .locals 1
-
-    sget-object v0, Lkik/android/chat/vm/profile/profileactionvm/e;->a:Lkik/android/chat/vm/profile/profileactionvm/e;
-
-    return-object v0
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 0
+.method public final d()V
+    .locals 3
 
-    invoke-static {}, Lkik/android/chat/vm/profile/profileactionvm/b;->o()V
+    .prologue
+    .line 35
+    invoke-virtual {p0}, Lkik/android/chat/vm/profile/profileactionvm/e;->F_()Lkik/android/chat/vm/ay;
 
+    move-result-object v0
+
+    new-instance v1, Lkik/android/chat/vm/profile/bz;
+
+    iget-object v2, p0, Lkik/android/chat/vm/profile/profileactionvm/e;->b:Lcom/kik/core/network/xmpp/jid/a;
+
+    invoke-direct {v1, v2}, Lkik/android/chat/vm/profile/bz;-><init>(Lcom/kik/core/network/xmpp/jid/a;)V
+
+    invoke-interface {v0, v1}, Lkik/android/chat/vm/ay;->a(Lkik/android/chat/vm/profile/bz;)V
+
+    .line 36
     return-void
+.end method
+
+.method public final h()Lrx/d;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+
+    .prologue
+    .line 29
+    const v0, 0x7f09018b
+
+    invoke-virtual {p0, v0}, Lkik/android/chat/vm/profile/profileactionvm/e;->a(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lrx/d;->b(Ljava/lang/Object;)Lrx/d;
+
+    move-result-object v0
+
+    return-object v0
 .end method

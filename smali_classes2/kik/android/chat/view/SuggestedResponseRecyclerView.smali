@@ -29,9 +29,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/android/chat/fragment/fh;
+    check-cast v0, Lkik/android/chat/fragment/fp;
 
-    invoke-virtual {v0, p1, p2}, Lkik/android/chat/fragment/fh;->a(Landroid/view/View;I)V
+    invoke-virtual {v0, p1, p2}, Lkik/android/chat/fragment/fp;->a(Landroid/view/View;I)V
 
     .line 26
     return-void

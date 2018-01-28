@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field a:Lkik/core/interfaces/ah;
+.field a:Lkik/core/interfaces/ag;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -58,13 +58,13 @@
 
     new-array v1, v1, [Ljava/lang/Object;
 
-    iget-object v2, p0, Lkik/android/widget/preferences/ShareSmsPreference;->a:Lkik/core/interfaces/ah;
+    iget-object v2, p0, Lkik/android/widget/preferences/ShareSmsPreference;->a:Lkik/core/interfaces/ag;
 
-    invoke-interface {v2}, Lkik/core/interfaces/ah;->d()Lkik/core/datatypes/ac;
+    invoke-interface {v2}, Lkik/core/interfaces/ag;->d()Lkik/core/datatypes/ab;
 
     move-result-object v2
 
-    iget-object v2, v2, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
+    iget-object v2, v2, Lkik/core/datatypes/ab;->c:Ljava/lang/String;
 
     aput-object v2, v1, v3
 

@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/b;
+.implements Ldagger/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/b",
+        "Ldagger/b",
         "<",
         "Lkik/android/chat/fragment/ProfileEditBioDialogFragment;",
         ">;"
@@ -34,13 +34,24 @@
     .end annotation
 .end field
 
+.field private final c:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lcom/kik/core/domain/a/c;",
+            ">;"
+        }
+    .end annotation
+.end field
+
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 1
 
     .prologue
-    .line 8
+    .line 9
     const-class v0, Lkik/android/chat/fragment/ProfileEditBioDialogFragment_MembersInjector;
 
     invoke-virtual {v0}, Ljava/lang/Class;->desiredAssertionStatus()Z
@@ -62,7 +73,7 @@
     goto :goto_0
 .end method
 
-.method private constructor <init>(Ljavax/inject/Provider;)V
+.method private constructor <init>(Ljavax/inject/Provider;Ljavax/inject/Provider;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -70,15 +81,19 @@
             "Ljavax/inject/Provider",
             "<",
             "Lcom/kik/android/Mixpanel;",
+            ">;",
+            "Ljavax/inject/Provider",
+            "<",
+            "Lcom/kik/core/domain/a/c;",
             ">;)V"
         }
     .end annotation
 
     .prologue
-    .line 16
+    .line 20
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 17
+    .line 21
     sget-boolean v0, Lkik/android/chat/fragment/ProfileEditBioDialogFragment_MembersInjector;->a:Z
 
     if-nez v0, :cond_0
@@ -91,15 +106,32 @@
 
     throw v0
 
-    .line 18
+    .line 22
     :cond_0
     iput-object p1, p0, Lkik/android/chat/fragment/ProfileEditBioDialogFragment_MembersInjector;->b:Ljavax/inject/Provider;
 
-    .line 19
+    .line 23
+    sget-boolean v0, Lkik/android/chat/fragment/ProfileEditBioDialogFragment_MembersInjector;->a:Z
+
+    if-nez v0, :cond_1
+
+    if-nez p2, :cond_1
+
+    new-instance v0, Ljava/lang/AssertionError;
+
+    invoke-direct {v0}, Ljava/lang/AssertionError;-><init>()V
+
+    throw v0
+
+    .line 24
+    :cond_1
+    iput-object p2, p0, Lkik/android/chat/fragment/ProfileEditBioDialogFragment_MembersInjector;->c:Ljavax/inject/Provider;
+
+    .line 25
     return-void
 .end method
 
-.method public static a(Ljavax/inject/Provider;)La/b;
+.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -107,8 +139,12 @@
             "Ljavax/inject/Provider",
             "<",
             "Lcom/kik/android/Mixpanel;",
+            ">;",
+            "Ljavax/inject/Provider",
+            "<",
+            "Lcom/kik/core/domain/a/c;",
             ">;)",
-            "La/b",
+            "Ldagger/b",
             "<",
             "Lkik/android/chat/fragment/ProfileEditBioDialogFragment;",
             ">;"
@@ -116,27 +152,27 @@
     .end annotation
 
     .prologue
-    .line 23
+    .line 29
     new-instance v0, Lkik/android/chat/fragment/ProfileEditBioDialogFragment_MembersInjector;
 
-    invoke-direct {v0, p0}, Lkik/android/chat/fragment/ProfileEditBioDialogFragment_MembersInjector;-><init>(Ljavax/inject/Provider;)V
+    invoke-direct {v0, p0, p1}, Lkik/android/chat/fragment/ProfileEditBioDialogFragment_MembersInjector;-><init>(Ljavax/inject/Provider;Ljavax/inject/Provider;)V
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public final synthetic a(Ljava/lang/Object;)V
+.method public final synthetic injectMembers(Ljava/lang/Object;)V
     .locals 2
 
     .prologue
-    .line 8
+    .line 9
     check-cast p1, Lkik/android/chat/fragment/ProfileEditBioDialogFragment;
 
-    .line 1028
+    .line 1035
     if-nez p1, :cond_0
 
-    .line 1029
+    .line 1036
     new-instance v0, Ljava/lang/NullPointerException;
 
     const-string v1, "Cannot inject members into a null reference"
@@ -145,7 +181,7 @@
 
     throw v0
 
-    .line 1031
+    .line 1038
     :cond_0
     iget-object v0, p0, Lkik/android/chat/fragment/ProfileEditBioDialogFragment_MembersInjector;->b:Ljavax/inject/Provider;
 
@@ -157,6 +193,17 @@
 
     iput-object v0, p1, Lkik/android/chat/fragment/ProfileEditBioDialogFragment;->g:Lcom/kik/android/Mixpanel;
 
-    .line 8
+    .line 1039
+    iget-object v0, p0, Lkik/android/chat/fragment/ProfileEditBioDialogFragment_MembersInjector;->c:Ljavax/inject/Provider;
+
+    invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/kik/core/domain/a/c;
+
+    iput-object v0, p1, Lkik/android/chat/fragment/ProfileEditBioDialogFragment;->h:Lcom/kik/core/domain/a/c;
+
+    .line 9
     return-void
 .end method

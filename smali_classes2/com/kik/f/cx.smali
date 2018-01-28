@@ -3,16 +3,16 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/a/b;
+.implements Ldagger/internal/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/a/b",
+        "Ldagger/internal/b",
         "<",
-        "Landroid/content/res/Resources;",
+        "Lkik/core/xiphias/n;",
         ">;"
     }
 .end annotation
@@ -25,13 +25,24 @@
 # instance fields
 .field private final b:Lcom/kik/f/cw;
 
+.field private final c:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/core/interfaces/ICommunication;",
+            ">;"
+        }
+    .end annotation
+.end field
+
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 1
 
     .prologue
-    .line 8
+    .line 10
     const-class v0, Lcom/kik/f/cx;
 
     invoke-virtual {v0}, Ljava/lang/Class;->desiredAssertionStatus()Z
@@ -53,14 +64,24 @@
     goto :goto_0
 .end method
 
-.method private constructor <init>(Lcom/kik/f/cw;)V
+.method private constructor <init>(Lcom/kik/f/cw;Ljavax/inject/Provider;)V
     .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/kik/f/cw;",
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/core/interfaces/ICommunication;",
+            ">;)V"
+        }
+    .end annotation
 
     .prologue
-    .line 15
+    .line 20
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 16
+    .line 21
     sget-boolean v0, Lcom/kik/f/cx;->a:Z
 
     if-nez v0, :cond_0
@@ -73,33 +94,53 @@
 
     throw v0
 
-    .line 17
+    .line 22
     :cond_0
     iput-object p1, p0, Lcom/kik/f/cx;->b:Lcom/kik/f/cw;
 
-    .line 18
+    .line 23
+    sget-boolean v0, Lcom/kik/f/cx;->a:Z
+
+    if-nez v0, :cond_1
+
+    if-nez p2, :cond_1
+
+    new-instance v0, Ljava/lang/AssertionError;
+
+    invoke-direct {v0}, Ljava/lang/AssertionError;-><init>()V
+
+    throw v0
+
+    .line 24
+    :cond_1
+    iput-object p2, p0, Lcom/kik/f/cx;->c:Ljavax/inject/Provider;
+
+    .line 25
     return-void
 .end method
 
-.method public static a(Lcom/kik/f/cw;)La/a/b;
+.method public static a(Lcom/kik/f/cw;Ljavax/inject/Provider;)Ldagger/internal/b;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lcom/kik/f/cw;",
-            ")",
-            "La/a/b",
+            "Ljavax/inject/Provider",
             "<",
-            "Landroid/content/res/Resources;",
+            "Lkik/core/interfaces/ICommunication;",
+            ">;)",
+            "Ldagger/internal/b",
+            "<",
+            "Lkik/core/xiphias/n;",
             ">;"
         }
     .end annotation
 
     .prologue
-    .line 27
+    .line 36
     new-instance v0, Lcom/kik/f/cx;
 
-    invoke-direct {v0, p0}, Lcom/kik/f/cx;-><init>(Lcom/kik/f/cw;)V
+    invoke-direct {v0, p0, p1}, Lcom/kik/f/cx;-><init>(Lcom/kik/f/cw;Ljavax/inject/Provider;)V
 
     return-object v0
 .end method
@@ -110,24 +151,30 @@
     .locals 2
 
     .prologue
-    .line 8
-    .line 1022
-    iget-object v0, p0, Lcom/kik/f/cx;->b:Lcom/kik/f/cw;
+    .line 10
+    .line 1029
+    iget-object v0, p0, Lcom/kik/f/cx;->c:Ljavax/inject/Provider;
 
-    .line 1023
-    invoke-virtual {v0}, Lcom/kik/f/cw;->a()Landroid/content/res/Resources;
+    .line 1030
+    invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lkik/core/interfaces/ICommunication;
+
+    invoke-static {v0}, Lcom/kik/f/cw;->a(Lkik/core/interfaces/ICommunication;)Lkik/core/xiphias/n;
 
     move-result-object v0
 
     const-string v1, "Cannot return null from a non-@Nullable @Provides method"
 
-    .line 1022
-    invoke-static {v0, v1}, La/a/c;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    .line 1029
+    invoke-static {v0, v1}, Ldagger/internal/c;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Landroid/content/res/Resources;
+    check-cast v0, Lkik/core/xiphias/n;
 
-    .line 8
+    .line 10
     return-object v0
 .end method

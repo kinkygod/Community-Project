@@ -39,15 +39,15 @@
     .locals 0
 
     .prologue
-    .line 89
+    .line 91
     iput-object p1, p0, Lkik/core/profile/v$a;->a:Lkik/core/profile/v;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 90
+    .line 92
     iput-object p2, p0, Lkik/core/profile/v$a;->b:Ljava/lang/String;
 
-    .line 91
+    .line 93
     return-void
 .end method
 
@@ -57,8 +57,8 @@
     .locals 3
 
     .prologue
-    .line 83
-    .line 1096
+    .line 85
+    .line 1098
     iget-object v0, p0, Lkik/core/profile/v$a;->a:Lkik/core/profile/v;
 
     iget-object v1, p0, Lkik/core/profile/v$a;->b:Ljava/lang/String;
@@ -69,6 +69,6 @@
 
     move-result-object v0
 
-    .line 83
+    .line 85
     return-object v0
 .end method

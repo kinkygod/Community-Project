@@ -59,7 +59,7 @@
 
 
 # virtual methods
-.method protected a(Landroid/graphics/Bitmap;Ljava/lang/String;)Lkik/android/widget/be;
+.method protected a(Landroid/graphics/Bitmap;Ljava/lang/String;)Lkik/android/widget/bq;
     .locals 2
 
     .prologue
@@ -90,16 +90,16 @@
     if-eqz v0, :cond_0
 
     .line 176
-    new-instance v0, Lkik/android/widget/co;
+    new-instance v0, Lkik/android/widget/de;
 
-    invoke-direct {v0, p1, p2}, Lkik/android/widget/co;-><init>(Landroid/graphics/Bitmap;Ljava/lang/String;)V
+    invoke-direct {v0, p1, p2}, Lkik/android/widget/de;-><init>(Landroid/graphics/Bitmap;Ljava/lang/String;)V
 
     .line 179
     :goto_0
     return-object v0
 
     :cond_0
-    invoke-super {p0, p1, p2}, Lkik/android/widget/KikNetworkedImageView;->a(Landroid/graphics/Bitmap;Ljava/lang/String;)Lkik/android/widget/be;
+    invoke-super {p0, p1, p2}, Lkik/android/widget/KikNetworkedImageView;->a(Landroid/graphics/Bitmap;Ljava/lang/String;)Lkik/android/widget/bq;
 
     move-result-object v0
 
@@ -138,7 +138,7 @@
     return-void
 .end method
 
-.method public final a(Lkik/core/datatypes/ac;Lcom/kik/cache/KikVolleyImageLoader;Lcom/kik/android/Mixpanel;)V
+.method public final a(Lkik/core/datatypes/ab;Lcom/kik/cache/KikVolleyImageLoader;Lcom/kik/android/Mixpanel;)V
     .locals 8
 
     .prologue
@@ -160,12 +160,12 @@
 
     move-object v7, p3
 
-    invoke-static/range {v0 .. v7}, Lcom/kik/cache/MyPicImageRequest;->getProfileRequest(Lkik/core/datatypes/ac;Lcom/android/volley/h$b;IILcom/android/volley/h$a;ZZLcom/kik/android/Mixpanel;)Lcom/kik/cache/MyPicImageRequest;
+    invoke-static/range {v0 .. v7}, Lcom/kik/cache/MyPicImageRequest;->getProfileRequest(Lkik/core/datatypes/ab;Lcom/android/volley/h$b;IILcom/android/volley/h$a;ZZLcom/kik/android/Mixpanel;)Lcom/kik/cache/MyPicImageRequest;
 
     move-result-object v0
 
     .line 1101
-    iget-object v1, p1, Lkik/core/datatypes/ac;->i:Ljava/lang/Boolean;
+    iget-object v1, p1, Lkik/core/datatypes/ab;->i:Ljava/lang/Boolean;
 
     iput-object v1, p0, Lcom/kik/cache/ContactImageView;->b:Ljava/lang/Boolean;
 
@@ -178,7 +178,7 @@
     return-void
 .end method
 
-.method public final a(Lkik/core/datatypes/l;Lcom/kik/cache/KikVolleyImageLoader;Lkik/core/interfaces/w;Lcom/kik/android/Mixpanel;)V
+.method public final a(Lkik/core/datatypes/l;Lcom/kik/cache/KikVolleyImageLoader;Lkik/core/interfaces/v;Lcom/kik/android/Mixpanel;)V
     .locals 7
 
     .prologue
@@ -198,13 +198,13 @@
 
     move-object v5, p4
 
-    invoke-virtual/range {v0 .. v6}, Lcom/kik/cache/ContactImageView;->a(Lkik/core/datatypes/l;Lcom/kik/cache/KikVolleyImageLoader;ZLkik/core/interfaces/w;Lcom/kik/android/Mixpanel;Lkik/core/interfaces/b;)V
+    invoke-virtual/range {v0 .. v6}, Lcom/kik/cache/ContactImageView;->a(Lkik/core/datatypes/l;Lcom/kik/cache/KikVolleyImageLoader;ZLkik/core/interfaces/v;Lcom/kik/android/Mixpanel;Lkik/core/interfaces/b;)V
 
     .line 108
     return-void
 .end method
 
-.method public final a(Lkik/core/datatypes/l;Lcom/kik/cache/KikVolleyImageLoader;ZLkik/core/interfaces/w;Lcom/kik/android/Mixpanel;Lkik/core/interfaces/b;)V
+.method public final a(Lkik/core/datatypes/l;Lcom/kik/cache/KikVolleyImageLoader;ZLkik/core/interfaces/v;Lcom/kik/android/Mixpanel;Lkik/core/interfaces/b;)V
     .locals 12
 
     .prologue
@@ -340,7 +340,7 @@
 
     move-object/from16 v10, p5
 
-    invoke-static/range {v1 .. v10}, Lcom/kik/cache/GroupImageRequest;->makeGroupImageRequest(Lkik/core/datatypes/p;Lcom/android/volley/h$b;IILandroid/graphics/Bitmap$Config;Lcom/android/volley/h$a;Lkik/core/interfaces/w;ZLcom/kik/cache/KikVolleyImageLoader;Lcom/kik/android/Mixpanel;)Lcom/kik/cache/GroupImageRequest;
+    invoke-static/range {v1 .. v10}, Lcom/kik/cache/GroupImageRequest;->makeGroupImageRequest(Lkik/core/datatypes/p;Lcom/android/volley/h$b;IILandroid/graphics/Bitmap$Config;Lcom/android/volley/h$a;Lkik/core/interfaces/v;ZLcom/kik/cache/KikVolleyImageLoader;Lcom/kik/android/Mixpanel;)Lcom/kik/cache/GroupImageRequest;
 
     move-result-object v1
 

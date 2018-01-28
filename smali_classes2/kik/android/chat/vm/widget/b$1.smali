@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/android/chat/vm/widget/b;->b()Lrx/d;
+    value = Lkik/android/chat/vm/widget/b;->d()Lrx/d;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

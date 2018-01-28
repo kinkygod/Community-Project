@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/core/profile/p;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Hashtable;Lkik/core/interfaces/ak;)V
+    value = Lkik/core/profile/p;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Hashtable;Lkik/core/interfaces/aj;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -24,7 +24,7 @@
 
 
 # instance fields
-.field final synthetic a:Lkik/core/interfaces/ak;
+.field final synthetic a:Lkik/core/interfaces/aj;
 
 .field final synthetic b:Lkik/core/net/outgoing/PreloginReregistrationRequest;
 
@@ -32,14 +32,14 @@
 
 
 # direct methods
-.method constructor <init>(Lkik/core/profile/p;Lkik/core/interfaces/ak;Lkik/core/net/outgoing/PreloginReregistrationRequest;)V
+.method constructor <init>(Lkik/core/profile/p;Lkik/core/interfaces/aj;Lkik/core/net/outgoing/PreloginReregistrationRequest;)V
     .locals 0
 
     .prologue
     .line 35
     iput-object p1, p0, Lkik/core/profile/p$1;->c:Lkik/core/profile/p;
 
-    iput-object p2, p0, Lkik/core/profile/p$1;->a:Lkik/core/interfaces/ak;
+    iput-object p2, p0, Lkik/core/profile/p$1;->a:Lkik/core/interfaces/aj;
 
     iput-object p3, p0, Lkik/core/profile/p$1;->b:Lkik/core/net/outgoing/PreloginReregistrationRequest;
 
@@ -103,11 +103,11 @@
 
     .prologue
     .line 57
-    iget-object v0, p0, Lkik/core/profile/p$1;->a:Lkik/core/interfaces/ak;
+    iget-object v0, p0, Lkik/core/profile/p$1;->a:Lkik/core/interfaces/aj;
 
     iget-object v1, p0, Lkik/core/profile/p$1;->b:Lkik/core/net/outgoing/PreloginReregistrationRequest;
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ak;->a(Lkik/core/net/outgoing/j;)Z
+    invoke-interface {v0, v1}, Lkik/core/interfaces/aj;->a(Lkik/core/net/outgoing/j;)Z
 
     .line 58
     return-void

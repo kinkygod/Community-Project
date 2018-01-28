@@ -2,42 +2,48 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Lrx/functions/b;
 
 
 # instance fields
-.field private final a:[Landroid/view/View;
+.field private final a:Lkik/android/chat/fragment/KikPickUsersFragment;
+
+.field private final b:Lkik/core/datatypes/l;
 
 
 # direct methods
-.method private constructor <init>([Landroid/view/View;)V
+.method private constructor <init>(Lkik/android/chat/fragment/KikPickUsersFragment;Lkik/core/datatypes/l;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lkik/android/chat/fragment/cu;->a:[Landroid/view/View;
+    iput-object p1, p0, Lkik/android/chat/fragment/cu;->a:Lkik/android/chat/fragment/KikPickUsersFragment;
+
+    iput-object p2, p0, Lkik/android/chat/fragment/cu;->b:Lkik/core/datatypes/l;
 
     return-void
 .end method
 
-.method public static a([Landroid/view/View;)Ljava/lang/Runnable;
+.method public static a(Lkik/android/chat/fragment/KikPickUsersFragment;Lkik/core/datatypes/l;)Lrx/functions/b;
     .locals 1
 
     new-instance v0, Lkik/android/chat/fragment/cu;
 
-    invoke-direct {v0, p0}, Lkik/android/chat/fragment/cu;-><init>([Landroid/view/View;)V
+    invoke-direct {v0, p0, p1}, Lkik/android/chat/fragment/cu;-><init>(Lkik/android/chat/fragment/KikPickUsersFragment;Lkik/core/datatypes/l;)V
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 1
+.method public final call(Ljava/lang/Object;)V
+    .locals 2
 
-    iget-object v0, p0, Lkik/android/chat/fragment/cu;->a:[Landroid/view/View;
+    iget-object v0, p0, Lkik/android/chat/fragment/cu;->a:Lkik/android/chat/fragment/KikPickUsersFragment;
 
-    invoke-static {v0}, Lkik/android/chat/fragment/KikPreregistrationFragmentBase;->b([Landroid/view/View;)V
+    iget-object v1, p0, Lkik/android/chat/fragment/cu;->b:Lkik/core/datatypes/l;
+
+    invoke-static {v0, v1}, Lkik/android/chat/fragment/KikPickUsersFragment;->a(Lkik/android/chat/fragment/KikPickUsersFragment;Lkik/core/datatypes/l;)V
 
     return-void
 .end method

@@ -32,41 +32,32 @@
     .line 545
     new-array v0, v5, [Ljava/lang/String;
 
-    const-string v1, "\n\"messagepath/v1/text_markdown.proto\u0012\u0015common.messagepath.v1\u001a\u0012common_model.proto\u001a\u0019protobuf_validation.proto\"3\n\u0016TextMarkdownAttachment\u0012\u0019\n\u0008markdown\u0018\u0001 \u0001(\tB\u0007\u00ca\u009d%\u00030\u00c4\u0013Bw\n\u0019com.kik.messagepath.modelZSgithub.com/kikinteractive/xiphias-model-common/generated/go/messagepath;messagepath\u00a2\u0002\u0004MPTHb\u0006proto3"
+    const-string v1, "\n\"messagepath/v1/text_markdown.proto\u0012\u0015common.messagepath.v1\u001a\u0019protobuf_validation.proto\"3\n\u0016TextMarkdownAttachment\u0012\u0019\n\u0008markdown\u0018\u0001 \u0001(\tB\u0007\u00ca\u009d%\u00030\u00c4\u0013Bw\n\u0019com.kik.messagepath.modelZSgithub.com/kikinteractive/xiphias-model-common/generated/go/messagepath;messagepath\u00a2\u0002\u0004MPTHb\u0006proto3"
 
     aput-object v1, v0, v4
 
-    .line 555
+    .line 554
     new-instance v1, Lcom/kik/messagepath/model/TextMarkdown$1;
 
     invoke-direct {v1}, Lcom/kik/messagepath/model/TextMarkdown$1;-><init>()V
 
-    .line 563
-    const/4 v2, 0x2
+    .line 562
+    new-array v2, v5, [Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    new-array v2, v2, [Lcom/google/protobuf/Descriptors$FileDescriptor;
-
-    .line 566
-    invoke-static {}, Lcom/kik/ximodel/CommonModelProto;->getDescriptor()Lcom/google/protobuf/Descriptors$FileDescriptor;
+    .line 565
+    invoke-static {}, Lcom/kik/protovalidation/ProtobufValidation;->a()Lcom/google/protobuf/Descriptors$FileDescriptor;
 
     move-result-object v3
 
     aput-object v3, v2, v4
 
-    .line 567
-    invoke-static {}, Lcom/kik/protovalidation/ProtobufValidation;->a()Lcom/google/protobuf/Descriptors$FileDescriptor;
-
-    move-result-object v3
-
-    aput-object v3, v2, v5
-
-    .line 564
+    .line 563
     invoke-static {v0, v2, v1}, Lcom/google/protobuf/Descriptors$FileDescriptor;->internalBuildGeneratedFileFrom([Ljava/lang/String;[Lcom/google/protobuf/Descriptors$FileDescriptor;Lcom/google/protobuf/Descriptors$FileDescriptor$InternalDescriptorAssigner;)V
 
     .line 1540
     sget-object v0, Lcom/kik/messagepath/model/TextMarkdown;->c:Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    .line 570
+    .line 568
     invoke-virtual {v0}, Lcom/google/protobuf/Descriptors$FileDescriptor;->getMessageTypes()Ljava/util/List;
 
     move-result-object v0
@@ -79,7 +70,7 @@
 
     sput-object v0, Lcom/kik/messagepath/model/TextMarkdown;->a:Lcom/google/protobuf/Descriptors$Descriptor;
 
-    .line 571
+    .line 569
     new-instance v0, Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
     sget-object v1, Lcom/kik/messagepath/model/TextMarkdown;->a:Lcom/google/protobuf/Descriptors$Descriptor;
@@ -94,29 +85,26 @@
 
     sput-object v0, Lcom/kik/messagepath/model/TextMarkdown;->b:Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
-    .line 576
+    .line 574
     invoke-static {}, Lcom/google/protobuf/ExtensionRegistry;->newInstance()Lcom/google/protobuf/ExtensionRegistry;
 
     move-result-object v0
 
-    .line 577
+    .line 575
     sget-object v1, Lcom/kik/protovalidation/ProtobufValidation;->a:Lcom/google/protobuf/GeneratedMessage$GeneratedExtension;
 
     invoke-virtual {v0, v1}, Lcom/google/protobuf/ExtensionRegistry;->add(Lcom/google/protobuf/GeneratedMessage$GeneratedExtension;)V
 
-    .line 578
+    .line 576
     sget-object v1, Lcom/kik/messagepath/model/TextMarkdown;->c:Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    .line 579
+    .line 577
     invoke-static {v1, v0}, Lcom/google/protobuf/Descriptors$FileDescriptor;->internalUpdateFileDescriptor(Lcom/google/protobuf/Descriptors$FileDescriptor;Lcom/google/protobuf/ExtensionRegistry;)V
 
-    .line 580
-    invoke-static {}, Lcom/kik/ximodel/CommonModelProto;->getDescriptor()Lcom/google/protobuf/Descriptors$FileDescriptor;
-
-    .line 581
+    .line 578
     invoke-static {}, Lcom/kik/protovalidation/ProtobufValidation;->a()Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    .line 582
+    .line 579
     return-void
 .end method
 

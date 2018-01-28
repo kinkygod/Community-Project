@@ -14,12 +14,12 @@
     .end annotation
 .end field
 
-.field protected f:Lkik/core/interfaces/w;
+.field protected f:Lkik/core/interfaces/v;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field protected g:Lkik/core/interfaces/ae;
+.field protected g:Lkik/core/interfaces/ad;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -43,7 +43,7 @@
 
 .field private o:Lcom/kik/a/c;
 
-.field private p:Lkik/android/chat/vm/aw;
+.field private p:Lkik/android/chat/vm/ay;
 
 .field private q:Lcom/kik/a/b;
 
@@ -226,9 +226,9 @@
 
     .line 346
     :cond_1
-    iget-object v1, p0, Lkik/android/chat/activity/KikApiLandingActivity;->g:Lkik/core/interfaces/ae;
+    iget-object v1, p0, Lkik/android/chat/activity/KikApiLandingActivity;->g:Lkik/core/interfaces/ad;
 
-    invoke-static {v1}, Lkik/core/z;->a(Lkik/core/interfaces/ae;)Z
+    invoke-static {v1}, Lkik/core/z;->a(Lkik/core/interfaces/ad;)Z
 
     move-result v1
 
@@ -371,7 +371,7 @@
     invoke-direct {v0, v1, v2, p1, v2}, Lkik/android/chat/a/a$b;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 458
-    invoke-direct {p0}, Lkik/android/chat/activity/KikApiLandingActivity;->f()Lkik/android/chat/vm/aw;
+    invoke-direct {p0}, Lkik/android/chat/activity/KikApiLandingActivity;->f()Lkik/android/chat/vm/ay;
 
     move-result-object v1
 
@@ -379,12 +379,12 @@
 
     move-result-object v2
 
-    invoke-static {v2}, Lkik/android/chat/vm/profile/dc;->a(Lcom/kik/core/network/xmpp/jid/a;)Lkik/android/chat/vm/profile/dc;
+    invoke-static {v2}, Lkik/android/chat/vm/profile/dp;->a(Lcom/kik/core/network/xmpp/jid/a;)Lkik/android/chat/vm/profile/dp;
 
     move-result-object v2
 
     .line 459
-    invoke-virtual {v2, v0}, Lkik/android/chat/vm/profile/dc;->a(Lkik/android/chat/a/a$b;)Lkik/android/chat/vm/profile/dc;
+    invoke-virtual {v2, v0}, Lkik/android/chat/vm/profile/dp;->a(Lkik/android/chat/a/a$b;)Lkik/android/chat/vm/profile/dp;
 
     move-result-object v0
 
@@ -393,17 +393,17 @@
 
     move-result v2
 
-    invoke-virtual {v0, v2}, Lkik/android/chat/vm/profile/dc;->a(Z)Lkik/android/chat/vm/profile/dc;
+    invoke-virtual {v0, v2}, Lkik/android/chat/vm/profile/dp;->a(Z)Lkik/android/chat/vm/profile/dp;
 
     move-result-object v0
 
     .line 461
-    invoke-virtual {v0}, Lkik/android/chat/vm/profile/dc;->b()Lkik/android/chat/vm/profile/cv;
+    invoke-virtual {v0}, Lkik/android/chat/vm/profile/dp;->b()Lkik/android/chat/vm/profile/di;
 
     move-result-object v0
 
     .line 458
-    invoke-interface {v1, v0}, Lkik/android/chat/vm/aw;->a(Lkik/android/chat/vm/profile/cv;)Lrx/d;
+    invoke-interface {v1, v0}, Lkik/android/chat/vm/ay;->a(Lkik/android/chat/vm/profile/di;)Lrx/d;
 
     .line 463
     :cond_0
@@ -484,7 +484,7 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Lkik/android/chat/vm/profile/dc;->a(Lcom/kik/core/network/xmpp/jid/a;)Lkik/android/chat/vm/profile/dc;
+    invoke-static {v1}, Lkik/android/chat/vm/profile/dp;->a(Lcom/kik/core/network/xmpp/jid/a;)Lkik/android/chat/vm/profile/dp;
 
     move-result-object v1
 
@@ -493,27 +493,27 @@
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Lkik/android/chat/vm/profile/dc;->a(Lkik/core/datatypes/MemberPermissions;)Lkik/android/chat/vm/profile/dc;
+    invoke-virtual {v1, v2}, Lkik/android/chat/vm/profile/dp;->a(Lkik/core/datatypes/MemberPermissions;)Lkik/android/chat/vm/profile/dp;
 
     move-result-object v1
 
     .line 485
-    invoke-virtual {v1, v0}, Lkik/android/chat/vm/profile/dc;->a(Lkik/android/chat/a/a$b;)Lkik/android/chat/vm/profile/dc;
+    invoke-virtual {v1, v0}, Lkik/android/chat/vm/profile/dp;->a(Lkik/android/chat/a/a$b;)Lkik/android/chat/vm/profile/dp;
 
     move-result-object v0
 
     .line 486
-    invoke-virtual {v0}, Lkik/android/chat/vm/profile/dc;->b()Lkik/android/chat/vm/profile/cv;
+    invoke-virtual {v0}, Lkik/android/chat/vm/profile/dp;->b()Lkik/android/chat/vm/profile/di;
 
     move-result-object v0
 
     .line 494
     :goto_1
-    invoke-direct {p0}, Lkik/android/chat/activity/KikApiLandingActivity;->f()Lkik/android/chat/vm/aw;
+    invoke-direct {p0}, Lkik/android/chat/activity/KikApiLandingActivity;->f()Lkik/android/chat/vm/ay;
 
     move-result-object v1
 
-    invoke-interface {v1, v0}, Lkik/android/chat/vm/aw;->a(Lkik/android/chat/vm/profile/cv;)Lrx/d;
+    invoke-interface {v1, v0}, Lkik/android/chat/vm/ay;->a(Lkik/android/chat/vm/profile/di;)Lrx/d;
 
     goto :goto_0
 
@@ -530,19 +530,19 @@
     if-eqz v0, :cond_2
 
     .line 489
-    new-instance v0, Lkik/android/chat/vm/profile/aw;
+    new-instance v0, Lkik/android/chat/vm/profile/bi;
 
     invoke-interface {p3}, Lcom/kik/core/domain/a/a/c;->a()Lcom/kik/core/network/xmpp/jid/a;
 
     move-result-object v1
 
-    invoke-direct {v0, v1, p2}, Lkik/android/chat/vm/profile/aw;-><init>(Lcom/kik/core/network/xmpp/jid/a;Ljava/lang/String;)V
+    invoke-direct {v0, v1, p2}, Lkik/android/chat/vm/profile/bi;-><init>(Lcom/kik/core/network/xmpp/jid/a;Ljava/lang/String;)V
 
     goto :goto_1
 
     .line 492
     :cond_2
-    new-instance v0, Lkik/android/chat/vm/profile/ai;
+    new-instance v0, Lkik/android/chat/vm/profile/au;
 
     invoke-interface {p3}, Lcom/kik/core/domain/a/a/c;->a()Lcom/kik/core/network/xmpp/jid/a;
 
@@ -556,7 +556,7 @@
 
     move-object v3, p2
 
-    invoke-direct/range {v0 .. v5}, Lkik/android/chat/vm/profile/ai;-><init>(Lcom/kik/core/network/xmpp/jid/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
+    invoke-direct/range {v0 .. v5}, Lkik/android/chat/vm/profile/au;-><init>(Lcom/kik/core/network/xmpp/jid/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
 
     goto :goto_1
 .end method
@@ -643,9 +643,9 @@
 
     .line 52
     .line 2210
-    iget-object v0, p0, Lkik/android/chat/activity/KikApiLandingActivity;->g:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/chat/activity/KikApiLandingActivity;->g:Lkik/core/interfaces/ad;
 
-    invoke-static {v0}, Lkik/core/z;->a(Lkik/core/interfaces/ae;)Z
+    invoke-static {v0}, Lkik/core/z;->a(Lkik/core/interfaces/ad;)Z
 
     move-result v0
 
@@ -760,9 +760,9 @@
     if-nez v1, :cond_7
 
     .line 3402
-    iget-object v1, p0, Lkik/android/chat/activity/KikApiLandingActivity;->f:Lkik/core/interfaces/w;
+    iget-object v1, p0, Lkik/android/chat/activity/KikApiLandingActivity;->f:Lkik/core/interfaces/v;
 
-    invoke-interface {v1, v0}, Lkik/core/interfaces/w;->a(Ljava/lang/String;)Lkik/core/datatypes/l;
+    invoke-interface {v1, v0}, Lkik/core/interfaces/v;->a(Ljava/lang/String;)Lkik/core/datatypes/l;
 
     move-result-object v1
 
@@ -801,7 +801,7 @@
     invoke-direct {v3, v4, v2, p2, v2}, Lkik/android/chat/a/a$b;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 3432
-    invoke-direct {p0}, Lkik/android/chat/activity/KikApiLandingActivity;->f()Lkik/android/chat/vm/aw;
+    invoke-direct {p0}, Lkik/android/chat/activity/KikApiLandingActivity;->f()Lkik/android/chat/vm/ay;
 
     move-result-object v2
 
@@ -809,22 +809,22 @@
 
     move-result-object v4
 
-    invoke-static {v4}, Lkik/android/chat/vm/profile/dc;->a(Lcom/kik/core/network/xmpp/jid/a;)Lkik/android/chat/vm/profile/dc;
+    invoke-static {v4}, Lkik/android/chat/vm/profile/dp;->a(Lcom/kik/core/network/xmpp/jid/a;)Lkik/android/chat/vm/profile/dp;
 
     move-result-object v4
 
     .line 3433
-    invoke-virtual {v4, v0}, Lkik/android/chat/vm/profile/dc;->a(Lkik/core/datatypes/MemberPermissions;)Lkik/android/chat/vm/profile/dc;
+    invoke-virtual {v4, v0}, Lkik/android/chat/vm/profile/dp;->a(Lkik/core/datatypes/MemberPermissions;)Lkik/android/chat/vm/profile/dp;
 
     move-result-object v0
 
     .line 3434
-    invoke-virtual {v0, v3}, Lkik/android/chat/vm/profile/dc;->a(Lkik/android/chat/a/a$b;)Lkik/android/chat/vm/profile/dc;
+    invoke-virtual {v0, v3}, Lkik/android/chat/vm/profile/dp;->a(Lkik/android/chat/a/a$b;)Lkik/android/chat/vm/profile/dp;
 
     move-result-object v0
 
     .line 3435
-    invoke-virtual {v0}, Lkik/android/chat/vm/profile/dc;->a()Lkik/android/chat/vm/profile/dc;
+    invoke-virtual {v0}, Lkik/android/chat/vm/profile/dp;->a()Lkik/android/chat/vm/profile/dp;
 
     move-result-object v0
 
@@ -833,17 +833,17 @@
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Lkik/android/chat/vm/profile/dc;->a(Z)Lkik/android/chat/vm/profile/dc;
+    invoke-virtual {v0, v1}, Lkik/android/chat/vm/profile/dp;->a(Z)Lkik/android/chat/vm/profile/dp;
 
     move-result-object v0
 
     .line 3437
-    invoke-virtual {v0}, Lkik/android/chat/vm/profile/dc;->b()Lkik/android/chat/vm/profile/cv;
+    invoke-virtual {v0}, Lkik/android/chat/vm/profile/dp;->b()Lkik/android/chat/vm/profile/di;
 
     move-result-object v0
 
     .line 3432
-    invoke-interface {v2, v0}, Lkik/android/chat/vm/aw;->a(Lkik/android/chat/vm/profile/cv;)Lrx/d;
+    invoke-interface {v2, v0}, Lkik/android/chat/vm/ay;->a(Lkik/android/chat/vm/profile/di;)Lrx/d;
 
     .line 3438
     invoke-virtual {p0}, Lkik/android/chat/activity/KikApiLandingActivity;->finish()V
@@ -1177,25 +1177,25 @@
     return-object v0
 .end method
 
-.method private f()Lkik/android/chat/vm/aw;
+.method private f()Lkik/android/chat/vm/ay;
     .locals 1
 
     .prologue
     .line 516
-    iget-object v0, p0, Lkik/android/chat/activity/KikApiLandingActivity;->p:Lkik/android/chat/vm/aw;
+    iget-object v0, p0, Lkik/android/chat/activity/KikApiLandingActivity;->p:Lkik/android/chat/vm/ay;
 
     if-nez v0, :cond_0
 
     .line 517
-    new-instance v0, Lkik/android/chat/vm/bu;
+    new-instance v0, Lkik/android/chat/vm/bw;
 
-    invoke-direct {v0, p0}, Lkik/android/chat/vm/bu;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p0}, Lkik/android/chat/vm/bw;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lkik/android/chat/activity/KikApiLandingActivity;->p:Lkik/android/chat/vm/aw;
+    iput-object v0, p0, Lkik/android/chat/activity/KikApiLandingActivity;->p:Lkik/android/chat/vm/ay;
 
     .line 520
     :cond_0
-    iget-object v0, p0, Lkik/android/chat/activity/KikApiLandingActivity;->p:Lkik/android/chat/vm/aw;
+    iget-object v0, p0, Lkik/android/chat/activity/KikApiLandingActivity;->p:Lkik/android/chat/vm/ay;
 
     return-object v0
 .end method
@@ -1306,13 +1306,13 @@
     iput-object v0, p0, Lkik/android/chat/activity/KikApiLandingActivity;->n:Landroid/widget/Toast;
 
     .line 282
-    iget-object v0, p0, Lkik/android/chat/activity/KikApiLandingActivity;->g:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/chat/activity/KikApiLandingActivity;->g:Lkik/core/interfaces/ad;
 
     const-string v1, "challenge.OnDemandCaptchaManager.shown"
 
     const/4 v2, 0x0
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;Z)Ljava/lang/Boolean;
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Z)Ljava/lang/Boolean;
 
     move-result-object v0
 
@@ -1336,11 +1336,11 @@
 
     .line 285
     :cond_1
-    iget-object v0, p0, Lkik/android/chat/activity/KikApiLandingActivity;->g:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/chat/activity/KikApiLandingActivity;->g:Lkik/core/interfaces/ad;
 
     const-string v1, "temporary.ban.manager.exists"
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ae;->w(Ljava/lang/String;)Ljava/lang/Boolean;
+    invoke-interface {v0, v1}, Lkik/core/interfaces/ad;->w(Ljava/lang/String;)Ljava/lang/Boolean;
 
     move-result-object v0
 

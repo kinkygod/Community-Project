@@ -200,7 +200,7 @@
     .line 1185
     iget-object v0, p0, Lcom/kik/cards/browser/PopupWindowActivity;->f:Landroid/widget/ImageView;
 
-    const v1, 0x7f020292
+    const v1, 0x7f020273
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -255,7 +255,7 @@
     .line 1191
     iget-object v0, p0, Lcom/kik/cards/browser/PopupWindowActivity;->f:Landroid/widget/ImageView;
 
-    const v1, 0x7f020350
+    const v1, 0x7f020333
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -414,7 +414,7 @@
     .line 2216
     iget-object v0, p0, Lcom/kik/cards/browser/PopupWindowActivity;->f:Landroid/widget/ImageView;
 
-    const v1, 0x7f020392
+    const v1, 0x7f020376
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 

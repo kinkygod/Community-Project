@@ -1,5 +1,5 @@
 .class Lcom/kik/storage/ae$a;
-.super Lcom/kik/storage/l;
+.super Lcom/kik/storage/o;
 .source "SourceFile"
 
 
@@ -20,7 +20,7 @@
 
     .prologue
     .line 201
-    invoke-direct {p0, p1}, Lcom/kik/storage/l;-><init>(Landroid/database/Cursor;)V
+    invoke-direct {p0, p1}, Lcom/kik/storage/o;-><init>(Landroid/database/Cursor;)V
 
     .line 202
     return-void

@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/android/c;->a(Lkik/core/interfaces/ae;Lkik/core/interfaces/ICommunication;Lkik/core/interfaces/ah;)Lkik/core/interfaces/IAddressBookIntegration;
+    value = Lkik/android/c;->a(Lkik/core/interfaces/ad;Lkik/core/interfaces/ICommunication;Lkik/core/interfaces/ag;)Lkik/core/interfaces/IAddressBookIntegration;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

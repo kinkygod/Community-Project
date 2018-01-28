@@ -15,15 +15,15 @@
 
 
 # static fields
-.field public static final debugDraw:I = 0x7f010183
+.field public static final debugDraw:I = 0x7f01018d
 
-.field public static final layoutDirection:I = 0x7f010182
+.field public static final layoutDirection:I = 0x7f01018c
 
-.field public static final layout_newLine:I = 0x7f010185
+.field public static final layout_newLine:I = 0x7f01018f
 
-.field public static final layout_weight:I = 0x7f010186
+.field public static final layout_weight:I = 0x7f010190
 
-.field public static final weightDefault:I = 0x7f010184
+.field public static final weightDefault:I = 0x7f01018e
 
 
 # direct methods

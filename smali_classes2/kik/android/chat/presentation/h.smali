@@ -11,7 +11,7 @@
 
 .field private b:Lkik/android/chat/view/l;
 
-.field private c:Lkik/core/interfaces/w;
+.field private c:Lkik/core/interfaces/v;
 
 .field private d:Lcom/kik/android/Mixpanel;
 
@@ -21,7 +21,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lkik/core/manager/g;Lkik/core/interfaces/w;Lcom/kik/android/Mixpanel;)V
+.method public constructor <init>(Lkik/core/manager/g;Lkik/core/interfaces/v;Lcom/kik/android/Mixpanel;)V
     .locals 2
 
     .prologue
@@ -44,7 +44,7 @@
     iput-object p1, p0, Lkik/android/chat/presentation/h;->a:Lkik/core/manager/g;
 
     .line 41
-    iput-object p2, p0, Lkik/android/chat/presentation/h;->c:Lkik/core/interfaces/w;
+    iput-object p2, p0, Lkik/android/chat/presentation/h;->c:Lkik/core/interfaces/v;
 
     .line 42
     iput-object p3, p0, Lkik/android/chat/presentation/h;->d:Lcom/kik/android/Mixpanel;
@@ -84,9 +84,9 @@
 
     .prologue
     .line 91
-    iget-object v0, p0, Lkik/android/chat/presentation/h;->c:Lkik/core/interfaces/w;
+    iget-object v0, p0, Lkik/android/chat/presentation/h;->c:Lkik/core/interfaces/v;
 
-    invoke-static {p1, v0}, Lkik/core/util/i;->b(Ljava/util/List;Lkik/core/interfaces/w;)Ljava/util/List;
+    invoke-static {p1, v0}, Lkik/core/util/i;->b(Ljava/util/List;Lkik/core/interfaces/v;)Ljava/util/List;
 
     move-result-object v0
 
@@ -98,9 +98,9 @@
 
     .prologue
     .line 90
-    iget-object v0, p0, Lkik/android/chat/presentation/h;->c:Lkik/core/interfaces/w;
+    iget-object v0, p0, Lkik/android/chat/presentation/h;->c:Lkik/core/interfaces/v;
 
-    invoke-static {p1, v0}, Lkik/android/util/i;->a(Lkik/core/datatypes/d;Lkik/core/interfaces/w;)Ljava/util/List;
+    invoke-static {p1, v0}, Lkik/android/util/i;->a(Lkik/core/datatypes/d;Lkik/core/interfaces/v;)Ljava/util/List;
 
     move-result-object v0
 
@@ -656,7 +656,7 @@
     goto :goto_0
 .end method
 
-.method public final k_()V
+.method public final m_()V
     .locals 1
 
     .prologue

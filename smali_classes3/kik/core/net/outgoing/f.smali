@@ -511,7 +511,7 @@
 
     .line 8156
     :cond_3
-    invoke-static {}, Lcom/kik/messagepath/model/CoreMessage;->o()Lcom/kik/messagepath/model/CoreMessage$a;
+    invoke-static {}, Lcom/kik/messagepath/model/CoreMessage;->q()Lcom/kik/messagepath/model/CoreMessage$a;
 
     move-result-object v3
 

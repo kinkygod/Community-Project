@@ -22,7 +22,7 @@
     iput-object p1, p0, Lkik/android/chat/fragment/PictureSuggestedResponseViewHolder_ViewBinding;->a:Lkik/android/chat/fragment/PictureSuggestedResponseViewHolder;
 
     .line 22
-    const v0, 0x7f100319
+    const v0, 0x7f100314
 
     const-string v1, "field \'_imageView\'"
 

@@ -1,68 +1,35 @@
-.class final synthetic Lkik/android/chat/vm/profile/bz;
+.class public final Lkik/android/chat/vm/profile/bz;
 .super Ljava/lang/Object;
-
-# interfaces
-.implements Lrx/functions/g;
+.source "SourceFile"
 
 
-# static fields
-.field private static final a:Lkik/android/chat/vm/profile/bz;
+# instance fields
+.field private final a:Lcom/kik/core/network/xmpp/jid/a;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lkik/android/chat/vm/profile/bz;
-
-    invoke-direct {v0}, Lkik/android/chat/vm/profile/bz;-><init>()V
-
-    sput-object v0, Lkik/android/chat/vm/profile/bz;->a:Lkik/android/chat/vm/profile/bz;
-
-    return-void
-.end method
-
-.method private constructor <init>()V
+.method public constructor <init>(Lcom/kik/core/network/xmpp/jid/a;)V
     .locals 0
 
+    .prologue
+    .line 14
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 15
+    iput-object p1, p0, Lkik/android/chat/vm/profile/bz;->a:Lcom/kik/core/network/xmpp/jid/a;
+
+    .line 16
     return-void
-.end method
-
-.method public static a()Lrx/functions/g;
-    .locals 1
-
-    sget-object v0, Lkik/android/chat/vm/profile/bz;->a:Lkik/android/chat/vm/profile/bz;
-
-    return-object v0
 .end method
 
 
 # virtual methods
-.method public final call(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final a()Lcom/kik/core/network/xmpp/jid/a;
     .locals 1
 
     .prologue
-    .line 0
-    check-cast p1, Lcom/kik/core/domain/a/a/c;
+    .line 20
+    iget-object v0, p0, Lkik/android/chat/vm/profile/bz;->a:Lcom/kik/core/network/xmpp/jid/a;
 
-    .line 1368
-    if-nez p1, :cond_0
-
-    const/4 v0, 0x1
-
-    :goto_0
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v0
-
-    .line 0
     return-object v0
-
-    .line 1368
-    :cond_0
-    const/4 v0, 0x0
-
-    goto :goto_0
 .end method

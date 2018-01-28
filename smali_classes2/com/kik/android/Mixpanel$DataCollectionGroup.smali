@@ -39,17 +39,17 @@
     .locals 1
 
     .prologue
-    .line 1473
+    .line 1470
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1474
+    .line 1471
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/kik/android/Mixpanel$DataCollectionGroup;->_intervals:Ljava/util/List;
 
-    .line 1475
+    .line 1472
     return-void
 .end method
 
@@ -68,7 +68,7 @@
     .end annotation
 
     .prologue
-    .line 1479
+    .line 1476
     iget-object v0, p0, Lcom/kik/android/Mixpanel$DataCollectionGroup;->_intervals:Ljava/util/List;
 
     return-object v0

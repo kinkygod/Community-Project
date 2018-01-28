@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/kik/entity/model/ElementCommon$i;
+.implements Lcom/kik/entity/model/ElementCommon$j;
 
 
 # annotations
@@ -22,7 +22,7 @@
         "<",
         "Lcom/kik/entity/model/ElementCommon$MaxGroupSizeElement$a;",
         ">;",
-        "Lcom/kik/entity/model/ElementCommon$i;"
+        "Lcom/kik/entity/model/ElementCommon$j;"
     }
 .end annotation
 

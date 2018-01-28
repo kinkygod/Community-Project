@@ -36,7 +36,7 @@
     .locals 0
 
     .prologue
-    .line 572
+    .line 574
     iput-object p1, p0, Lkik/android/chat/KikApplication$33;->a:Lkik/android/chat/KikApplication;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -50,14 +50,14 @@
     .locals 1
 
     .prologue
-    .line 572
+    .line 574
     check-cast p2, Lkik/core/datatypes/Message;
 
-    .line 1577
+    .line 1579
     iget-object v0, p0, Lkik/android/chat/KikApplication$33;->a:Lkik/android/chat/KikApplication;
 
     invoke-virtual {v0, p2}, Lkik/android/chat/KikApplication;->a(Lkik/core/datatypes/Message;)V
 
-    .line 572
+    .line 574
     return-void
 .end method

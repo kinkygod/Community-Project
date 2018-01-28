@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/kik/storage/l$a;
+.implements Lcom/kik/storage/o$a;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lcom/kik/storage/l$a",
+        "Lcom/kik/storage/o$a",
         "<",
         "Lcom/kik/storage/a$a;",
         ">;"

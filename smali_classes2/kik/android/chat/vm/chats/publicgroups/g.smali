@@ -7,16 +7,16 @@
 
 
 # virtual methods
-.method public abstract P_()Ljava/lang/String;
+.method public abstract R_()Ljava/lang/String;
 .end method
 
-.method public abstract Q_()Ljava/lang/CharSequence;
+.method public abstract S_()Ljava/lang/CharSequence;
 .end method
 
-.method public abstract h()Ljava/lang/String;
+.method public abstract i()Ljava/lang/String;
 .end method
 
-.method public abstract i()Lrx/d;
+.method public abstract j()Lrx/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",

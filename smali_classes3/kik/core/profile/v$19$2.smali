@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/core/interfaces/w$a;
+.implements Lkik/core/interfaces/v$a;
 
 
 # annotations
@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 1179
+    .line 1167
     iput-object p1, p0, Lkik/core/profile/v$19$2;->a:Lkik/core/profile/v$19;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,7 +40,7 @@
     .locals 2
 
     .prologue
-    .line 1187
+    .line 1175
     invoke-virtual {p1}, Lkik/core/datatypes/l;->y()Z
 
     move-result v0
@@ -51,24 +51,24 @@
 
     if-eq v0, v1, :cond_1
 
-    .line 1189
+    .line 1177
     invoke-virtual {p1}, Lkik/core/datatypes/l;->w()Z
 
     move-result v0
 
     invoke-virtual {p1, v0}, Lkik/core/datatypes/l;->g(Z)V
 
-    .line 1197
+    .line 1185
     :cond_0
     :goto_0
     const/4 v0, 0x0
 
     invoke-virtual {p1, v0}, Lkik/core/datatypes/l;->a(I)V
 
-    .line 1198
+    .line 1186
     return-void
 
-    .line 1191
+    .line 1179
     :cond_1
     invoke-virtual {p1}, Lkik/core/datatypes/l;->x()Z
 
@@ -80,7 +80,7 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 1193
+    .line 1181
     invoke-virtual {p1}, Lkik/core/datatypes/l;->v()Z
 
     move-result v0

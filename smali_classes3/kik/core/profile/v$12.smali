@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 573
+    .line 566
     iput-object p1, p0, Lkik/core/profile/v$12;->a:Lkik/core/profile/v;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,7 +40,7 @@
     .locals 2
 
     .prologue
-    .line 577
+    .line 570
     iget-object v0, p0, Lkik/core/profile/v$12;->a:Lkik/core/profile/v;
 
     invoke-static {v0}, Lkik/core/profile/v;->d(Lkik/core/profile/v;)Ljava/lang/Object;
@@ -49,26 +49,26 @@
 
     monitor-enter v1
 
-    .line 578
+    .line 571
     :try_start_0
     iget-object v0, p0, Lkik/core/profile/v$12;->a:Lkik/core/profile/v;
 
     invoke-static {v0}, Lkik/core/profile/v;->e(Lkik/core/profile/v;)Ljava/util/concurrent/ScheduledFuture;
 
-    .line 579
+    .line 572
     monitor-exit v1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 581
+    .line 574
     iget-object v0, p0, Lkik/core/profile/v$12;->a:Lkik/core/profile/v;
 
-    invoke-virtual {v0}, Lkik/core/profile/v;->v()V
+    invoke-virtual {v0}, Lkik/core/profile/v;->u()V
 
-    .line 582
+    .line 575
     return-void
 
-    .line 579
+    .line 572
     :catchall_0
     move-exception v0
 

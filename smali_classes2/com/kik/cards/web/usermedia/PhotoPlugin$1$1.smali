@@ -152,11 +152,11 @@
 
     iget-object v1, v1, Lcom/kik/cards/web/usermedia/PhotoPlugin$1;->i:Lcom/kik/cards/web/usermedia/PhotoPlugin;
 
-    invoke-static {v1}, Lcom/kik/cards/web/usermedia/PhotoPlugin;->access$300(Lcom/kik/cards/web/usermedia/PhotoPlugin;)Lcom/kik/util/cu;
+    invoke-static {v1}, Lcom/kik/cards/web/usermedia/PhotoPlugin;->access$300(Lcom/kik/cards/web/usermedia/PhotoPlugin;)Lcom/kik/util/cz;
 
     move-result-object v1
 
-    invoke-virtual {v1, v0}, Lcom/kik/util/cu;->a(Ljava/util/concurrent/Callable;)Lcom/kik/events/Promise;
+    invoke-virtual {v1, v0}, Lcom/kik/util/cz;->a(Ljava/util/concurrent/Callable;)Lcom/kik/events/Promise;
 
     move-result-object v0
 

@@ -43,9 +43,9 @@
 .method public final call(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    check-cast p1, Lkik/android/f/h;
+    check-cast p1, Lkik/android/f/g;
 
-    invoke-static {p1}, Lkik/android/chat/vm/messaging/ct;->a(Lkik/android/f/h;)Ljava/lang/Float;
+    invoke-static {p1}, Lkik/android/chat/vm/messaging/ct;->a(Lkik/android/f/g;)Ljava/lang/Float;
 
     move-result-object v0
 

@@ -128,7 +128,7 @@
     :try_start_0
     iget-object v0, p0, Lio/fabric/sdk/android/g;->a:Lio/fabric/sdk/android/h;
 
-    invoke-virtual {v0}, Lio/fabric/sdk/android/h;->a_()Z
+    invoke-virtual {v0}, Lio/fabric/sdk/android/h;->b_()Z
     :try_end_0
     .catch Lio/fabric/sdk/android/services/concurrency/UnmetDependencyException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1

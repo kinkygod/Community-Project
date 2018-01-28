@@ -106,7 +106,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/KikConversationsFragment;->_rearView:Landroid/view/View;
 
     .line 58
-    const v0, 0x7f100193
+    const v0, 0x7f100194
 
     const-string v1, "field \'_searchBackButton\' and method \'onSearchBackPress\'"
 
@@ -128,7 +128,7 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 67
-    const v0, 0x7f100196
+    const v0, 0x7f100197
 
     const-string v1, "field \'_searchBarView\'"
 
@@ -143,7 +143,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/KikConversationsFragment;->_searchBarView:Lkik/android/chat/view/SearchBarViewImpl;
 
     .line 68
-    const v0, 0x7f100192
+    const v0, 0x7f100193
 
     const-string v1, "field \'_searchBarContainer\'"
 
@@ -154,7 +154,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/KikConversationsFragment;->_searchBarContainer:Landroid/view/View;
 
     .line 69
-    const v0, 0x7f100197
+    const v0, 0x7f100198
 
     const-string v1, "field \'_searchResults\'"
 
@@ -169,7 +169,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/KikConversationsFragment;->_searchResults:Landroid/support/v7/widget/RecyclerView;
 
     .line 70
-    const v0, 0x7f100194
+    const v0, 0x7f100195
 
     const-string v1, "field \'_searchBarBackIcon\'"
 
@@ -184,7 +184,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/KikConversationsFragment;->_searchBarBackIcon:Landroid/widget/ImageView;
 
     .line 71
-    const v0, 0x7f100195
+    const v0, 0x7f100196
 
     const-string v1, "field \'_searchBarSearchIcon\'"
 
@@ -199,7 +199,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/KikConversationsFragment;->_searchBarSearchIcon:Landroid/widget/ImageView;
 
     .line 72
-    const v0, 0x7f100198
+    const v0, 0x7f100199
 
     const-string v1, "field \'_suggestedChatsView\'"
 

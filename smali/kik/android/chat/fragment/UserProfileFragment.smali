@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/f/g;
+.implements Lkik/android/f/f;
 
 
 # annotations
@@ -47,12 +47,12 @@
     .end annotation
 .end field
 
-.field protected e:Lkik/core/interfaces/ah;
+.field protected e:Lkik/core/interfaces/ag;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field protected f:Lkik/core/interfaces/t;
+.field protected f:Lkik/core/interfaces/s;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -69,9 +69,9 @@
 
 .field private final i:Lkik/android/chat/fragment/UserProfileFragment$a;
 
-.field private j:Lkik/android/chat/vm/aw;
+.field private j:Lkik/android/chat/vm/ay;
 
-.field private k:Lkik/android/chat/vm/chats/profile/al;
+.field private k:Lkik/android/chat/vm/chats/profile/au;
 
 .field private l:Z
 
@@ -83,10 +83,10 @@
     .locals 1
 
     .prologue
-    .line 80
+    .line 81
     invoke-direct {p0}, Lkik/android/chat/fragment/KikScopedDialogFragment;-><init>()V
 
-    .line 82
+    .line 83
     new-instance v0, Lkik/android/chat/fragment/UserProfileFragment$a;
 
     invoke-direct {v0}, Lkik/android/chat/fragment/UserProfileFragment$a;-><init>()V
@@ -100,7 +100,7 @@
     .locals 0
 
     .prologue
-    .line 379
+    .line 375
     invoke-static {}, Lkik/android/util/g;->a()Lkik/android/util/g;
 
     invoke-static {}, Lkik/android/util/g;->b()V
@@ -112,12 +112,12 @@
     .locals 3
 
     .prologue
-    .line 462
+    .line 458
     new-instance v0, Lkik/android/chat/fragment/settings/KikPreferenceFragment$a;
 
     invoke-direct {v0}, Lkik/android/chat/fragment/settings/KikPreferenceFragment$a;-><init>()V
 
-    .line 463
+    .line 459
     invoke-virtual {v0, p1}, Lkik/android/chat/fragment/settings/KikPreferenceFragment$a;->a(I)Lkik/android/chat/fragment/settings/PreferenceFragment$a;
 
     move-result-object v1
@@ -126,7 +126,7 @@
 
     invoke-virtual {v1, v2}, Lkik/android/chat/fragment/settings/PreferenceFragment$a;->b(I)Lkik/android/chat/fragment/settings/PreferenceFragment$a;
 
-    .line 464
+    .line 460
     invoke-virtual {p0}, Lkik/android/chat/fragment/UserProfileFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v1
@@ -137,7 +137,7 @@
 
     invoke-virtual {v0}, Lkik/android/chat/activity/KActivityLauncher$ActivityLaunchDescriptor;->e()Lcom/kik/events/Promise;
 
-    .line 465
+    .line 461
     return-void
 .end method
 
@@ -145,7 +145,7 @@
     .locals 6
 
     .prologue
-    .line 489
+    .line 485
     invoke-virtual {p0}, Lkik/android/chat/fragment/UserProfileFragment;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -154,7 +154,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f040176
+    const v1, 0x7f04017b
 
     const/4 v2, 0x0
 
@@ -164,8 +164,8 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    .line 490
-    const v1, 0x7f09057a
+    .line 486
+    const v1, 0x7f090580
 
     invoke-static {v1}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
 
@@ -173,7 +173,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 494
+    .line 490
     const/4 v1, 0x2
 
     const/high16 v2, 0x41900000    # 18.0f
@@ -190,12 +190,12 @@
 
     move-result v1
 
-    .line 495
+    .line 491
     new-instance v2, Lcom/nhaarman/supertooltips/ToolTip;
 
     invoke-direct {v2}, Lcom/nhaarman/supertooltips/ToolTip;-><init>()V
 
-    .line 496
+    .line 492
     invoke-virtual {v2, v0}, Lcom/nhaarman/supertooltips/ToolTip;->a(Landroid/view/View;)Lcom/nhaarman/supertooltips/ToolTip;
 
     move-result-object v0
@@ -204,14 +204,14 @@
 
     const-wide/16 v4, 0x64
 
-    .line 497
+    .line 493
     invoke-virtual {v0, v2, v4, v5}, Lcom/nhaarman/supertooltips/ToolTip;->a(Lcom/nhaarman/supertooltips/ToolTip$AnimationType;J)Lcom/nhaarman/supertooltips/ToolTip;
 
     move-result-object v0
 
     const v2, 0x7f0e0069
 
-    .line 498
+    .line 494
     invoke-static {v2}, Lkik/android/chat/KikApplication;->d(I)I
 
     move-result v2
@@ -222,7 +222,7 @@
 
     const/high16 v2, 0x41b00000    # 22.0f
 
-    .line 499
+    .line 495
     invoke-static {v2}, Lkik/android/chat/KikApplication;->a(F)I
 
     move-result v2
@@ -233,7 +233,7 @@
 
     const/high16 v2, 0x40e00000    # 7.0f
 
-    .line 500
+    .line 496
     invoke-static {v2}, Lkik/android/chat/KikApplication;->a(F)I
 
     move-result v2
@@ -244,7 +244,7 @@
 
     const/high16 v2, 0x41400000    # 12.0f
 
-    .line 501
+    .line 497
     invoke-static {v2}, Lkik/android/chat/KikApplication;->a(F)I
 
     move-result v2
@@ -255,24 +255,24 @@
 
     float-to-int v1, v1
 
-    .line 502
+    .line 498
     invoke-virtual {v0, v1}, Lcom/nhaarman/supertooltips/ToolTip;->b(I)Lcom/nhaarman/supertooltips/ToolTip;
 
     move-result-object v0
 
-    .line 503
+    .line 499
     invoke-virtual {v0}, Lcom/nhaarman/supertooltips/ToolTip;->e()Lcom/nhaarman/supertooltips/ToolTip;
 
     move-result-object v0
 
-    .line 504
+    .line 500
     invoke-virtual {v0}, Lcom/nhaarman/supertooltips/ToolTip;->f()Lcom/nhaarman/supertooltips/ToolTip;
 
     move-result-object v0
 
     const v1, 0x7f0e00ca
 
-    .line 505
+    .line 501
     invoke-static {v1}, Lkik/android/chat/KikApplication;->d(I)I
 
     move-result v1
@@ -283,7 +283,7 @@
 
     const/high16 v1, 0x3f800000    # 1.0f
 
-    .line 506
+    .line 502
     invoke-static {v1}, Lkik/android/chat/KikApplication;->a(F)I
 
     move-result v1
@@ -292,7 +292,7 @@
 
     move-result-object v0
 
-    .line 508
+    .line 504
     iget-object v1, p0, Lkik/android/chat/fragment/UserProfileFragment;->_toolTipParentView:Lcom/nhaarman/supertooltips/ToolTipRelativeLayout;
 
     iget-object v2, p0, Lkik/android/chat/fragment/UserProfileFragment;->_emojiStatusCircleView:Lkik/android/widget/EmojiStatusCircleView;
@@ -303,16 +303,16 @@
 
     iput-object v0, p0, Lkik/android/chat/fragment/UserProfileFragment;->m:Lcom/nhaarman/supertooltips/a;
 
-    .line 509
+    .line 505
     iget-object v0, p0, Lkik/android/chat/fragment/UserProfileFragment;->m:Lcom/nhaarman/supertooltips/a;
 
-    invoke-static {p0}, Lkik/android/chat/fragment/fz;->a(Lkik/android/chat/fragment/UserProfileFragment;)Lcom/nhaarman/supertooltips/a$c;
+    invoke-static {p0}, Lkik/android/chat/fragment/gh;->a(Lkik/android/chat/fragment/UserProfileFragment;)Lcom/nhaarman/supertooltips/a$c;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Lcom/nhaarman/supertooltips/a;->a(Lcom/nhaarman/supertooltips/a$c;)V
 
-    .line 515
+    .line 511
     return-void
 .end method
 
@@ -320,10 +320,10 @@
     .locals 4
 
     .prologue
-    .line 511
+    .line 507
     iget-object v0, p0, Lkik/android/chat/fragment/UserProfileFragment;->_emojiStatusCircleView:Lkik/android/widget/EmojiStatusCircleView;
 
-    invoke-static {p0}, Lkik/android/chat/fragment/ga;->a(Lkik/android/chat/fragment/UserProfileFragment;)Ljava/lang/Runnable;
+    invoke-static {p0}, Lkik/android/chat/fragment/gi;->a(Lkik/android/chat/fragment/UserProfileFragment;)Ljava/lang/Runnable;
 
     move-result-object v1
 
@@ -331,7 +331,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lkik/android/widget/EmojiStatusCircleView;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 514
+    .line 510
     return-void
 .end method
 
@@ -339,13 +339,13 @@
     .locals 0
 
     .prologue
-    .line 80
+    .line 81
     invoke-direct {p0, p1}, Lkik/android/chat/fragment/UserProfileFragment;->a(Landroid/view/ViewGroup;)V
 
     return-void
 .end method
 
-.method static synthetic a(Lkik/android/chat/fragment/UserProfileFragment;Lkik/android/chat/vm/bp;)V
+.method static synthetic a(Lkik/android/chat/fragment/UserProfileFragment;Lkik/android/chat/vm/bq;)V
     .locals 10
 
     .prologue
@@ -359,28 +359,28 @@
 
     const/4 v5, 0x1
 
-    .line 3266
-    new-instance v1, Lkik/android/chat/fragment/UserProfileFragment$3;
+    .line 2262
+    new-instance v1, Lkik/android/chat/fragment/UserProfileFragment$2;
 
-    invoke-direct {v1, p0}, Lkik/android/chat/fragment/UserProfileFragment$3;-><init>(Lkik/android/chat/fragment/UserProfileFragment;)V
+    invoke-direct {v1, p0}, Lkik/android/chat/fragment/UserProfileFragment$2;-><init>(Lkik/android/chat/fragment/UserProfileFragment;)V
 
-    .line 3277
+    .line 2273
     invoke-virtual {p0}, Lkik/android/chat/fragment/UserProfileFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v2
 
-    .line 3279
+    .line 2275
     new-instance v3, Lkik/android/chat/fragment/KikDialogFragment$a;
 
     invoke-direct {v3}, Lkik/android/chat/fragment/KikDialogFragment$a;-><init>()V
 
-    .line 3280
+    .line 2276
     const v0, 0x7f090440
 
     invoke-virtual {v3, v0}, Lkik/android/chat/fragment/KikDialogFragment$a;->a(I)Lkik/android/chat/fragment/KikDialogFragment$a;
 
-    .line 3282
-    invoke-interface {p1}, Lkik/android/chat/vm/bp;->a()Ljava/lang/String;
+    .line 2278
+    invoke-interface {p1}, Lkik/android/chat/vm/bq;->a()Ljava/lang/String;
 
     move-result-object v0
 
@@ -390,14 +390,14 @@
 
     if-eqz v0, :cond_1
 
-    .line 3284
+    .line 2280
     invoke-static {v2}, Lkik/android/util/DeviceUtils;->e(Landroid/content/Context;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 3285
+    .line 2281
     new-array v0, v7, [Ljava/lang/CharSequence;
 
     invoke-virtual {v2, v9}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -412,26 +412,26 @@
 
     aput-object v2, v0, v5
 
-    .line 3307
+    .line 2303
     :goto_0
-    invoke-static {p0, p1, v0, v1}, Lkik/android/chat/fragment/fv;->a(Lkik/android/chat/fragment/UserProfileFragment;Lkik/android/chat/vm/bp;[Ljava/lang/CharSequence;Lcom/kik/events/k;)Landroid/content/DialogInterface$OnClickListener;
+    invoke-static {p0, p1, v0, v1}, Lkik/android/chat/fragment/gd;->a(Lkik/android/chat/fragment/UserProfileFragment;Lkik/android/chat/vm/bq;[Ljava/lang/CharSequence;Lcom/kik/events/k;)Landroid/content/DialogInterface$OnClickListener;
 
     move-result-object v1
 
     invoke-virtual {v3, v0, v1}, Lkik/android/chat/fragment/KikDialogFragment$a;->a([Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Lkik/android/chat/fragment/KikDialogFragment$a;
 
-    .line 3333
+    .line 2329
     invoke-virtual {v3}, Lkik/android/chat/fragment/KikDialogFragment$a;->a()Lkik/android/chat/fragment/KikDialogFragment;
 
     move-result-object v0
 
     invoke-virtual {p0, v0}, Lkik/android/chat/fragment/UserProfileFragment;->replaceDialog(Lkik/android/chat/fragment/KikDialogFragment;)V
 
-    .line 3293
+    .line 2289
     :goto_1
     return-void
 
-    .line 3289
+    .line 2285
     :cond_0
     new-instance v0, Lkik/android/chat/vm/profile/PicturePickerFragment$a;
 
@@ -441,7 +441,7 @@
 
     move-result-object v0
 
-    .line 3291
+    .line 2287
     invoke-virtual {p0}, Lkik/android/chat/fragment/UserProfileFragment;->getContext()Landroid/content/Context;
 
     move-result-object v2
@@ -458,17 +458,17 @@
 
     move-result-object v2
 
-    .line 3290
+    .line 2286
     invoke-static {v0, v2}, Lkik/android/chat/activity/KActivityLauncher;->a(Landroid/content/Intent;Landroid/content/Context;)Lcom/kik/events/Promise;
 
     move-result-object v0
 
-    .line 3292
+    .line 2288
     invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
 
     goto :goto_1
 
-    .line 3297
+    .line 2293
     :cond_1
     invoke-static {v2}, Lkik/android/util/DeviceUtils;->e(Landroid/content/Context;)Z
 
@@ -476,7 +476,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 3298
+    .line 2294
     const/4 v0, 0x3
 
     new-array v0, v0, [Ljava/lang/CharSequence;
@@ -503,7 +503,7 @@
 
     goto :goto_0
 
-    .line 3301
+    .line 2297
     :cond_2
     new-array v0, v7, [Ljava/lang/CharSequence;
 
@@ -524,7 +524,7 @@
     goto :goto_0
 .end method
 
-.method static synthetic a(Lkik/android/chat/fragment/UserProfileFragment;Lkik/android/chat/vm/bp;[Ljava/lang/CharSequence;Lcom/kik/events/k;I)V
+.method static synthetic a(Lkik/android/chat/fragment/UserProfileFragment;Lkik/android/chat/vm/bq;[Ljava/lang/CharSequence;Lcom/kik/events/k;I)V
     .locals 4
 
     .prologue
@@ -532,8 +532,8 @@
 
     const/4 v2, 0x1
 
-    .line 309
-    invoke-interface {p1}, Lkik/android/chat/vm/bp;->a()Ljava/lang/String;
+    .line 305
+    invoke-interface {p1}, Lkik/android/chat/vm/bq;->a()Ljava/lang/String;
 
     move-result-object v0
 
@@ -543,7 +543,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 310
+    .line 306
     if-nez p4, :cond_0
 
     array-length v0, p2
@@ -552,7 +552,7 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 311
+    .line 307
     new-instance v0, Lkik/android/chat/vm/profile/PicturePickerFragment$a;
 
     invoke-direct {v0}, Lkik/android/chat/vm/profile/PicturePickerFragment$a;-><init>()V
@@ -561,7 +561,7 @@
 
     move-result-object v0
 
-    .line 331
+    .line 327
     :goto_0
     invoke-virtual {p0}, Lkik/android/chat/fragment/UserProfileFragment;->getContext()Landroid/content/Context;
 
@@ -577,10 +577,10 @@
 
     invoke-virtual {v0, p3}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
 
-    .line 332
+    .line 328
     return-void
 
-    .line 314
+    .line 310
     :cond_0
     new-instance v0, Lkik/android/chat/vm/profile/PicturePickerFragment$a;
 
@@ -592,17 +592,17 @@
 
     goto :goto_0
 
-    .line 318
+    .line 314
     :cond_1
     if-nez p4, :cond_2
 
-    .line 319
+    .line 315
     new-instance v0, Lkik/android/chat/fragment/ViewPictureFragment$a;
 
     invoke-direct {v0}, Lkik/android/chat/fragment/ViewPictureFragment$a;-><init>()V
 
-    .line 321
-    invoke-interface {p1}, Lkik/android/chat/vm/bp;->b()Lcom/kik/core/network/xmpp/jid/a;
+    .line 317
+    invoke-interface {p1}, Lkik/android/chat/vm/bq;->b()Lcom/kik/core/network/xmpp/jid/a;
 
     move-result-object v1
 
@@ -614,8 +614,8 @@
 
     move-result-object v0
 
-    .line 322
-    invoke-interface {p1}, Lkik/android/chat/vm/bp;->a()Ljava/lang/String;
+    .line 318
+    invoke-interface {p1}, Lkik/android/chat/vm/bq;->a()Ljava/lang/String;
 
     move-result-object v1
 
@@ -629,7 +629,7 @@
 
     goto :goto_0
 
-    .line 324
+    .line 320
     :cond_2
     array-length v0, p2
 
@@ -639,7 +639,7 @@
 
     if-ne p4, v2, :cond_3
 
-    .line 325
+    .line 321
     new-instance v0, Lkik/android/chat/vm/profile/PicturePickerFragment$a;
 
     invoke-direct {v0}, Lkik/android/chat/vm/profile/PicturePickerFragment$a;-><init>()V
@@ -650,7 +650,7 @@
 
     goto :goto_0
 
-    .line 328
+    .line 324
     :cond_3
     new-instance v0, Lkik/android/chat/vm/profile/PicturePickerFragment$a;
 
@@ -667,7 +667,7 @@
     .locals 1
 
     .prologue
-    .line 348
+    .line 344
     const/4 v0, 0x1
 
     invoke-virtual {p0, v0}, Lkik/android/util/g$a;->cancel(Z)Z
@@ -683,7 +683,7 @@
 
     const/4 v8, 0x1
 
-    .line 339
+    .line 335
     invoke-static {}, Lkik/android/chat/KikApplication;->k()Lkik/android/a/b;
 
     move-result-object v0
@@ -708,7 +708,7 @@
 
     sget-object v5, Lcom/kik/clientmetrics/model/Clientmetrics$ClientMetricsSettingsUsedType;->PROFILE_PIC:Lcom/kik/clientmetrics/model/Clientmetrics$ClientMetricsSettingsUsedType;
 
-    .line 340
+    .line 336
     invoke-virtual {v5}, Lcom/kik/clientmetrics/model/Clientmetrics$ClientMetricsSettingsUsedType;->getNumber()I
 
     move-result v5
@@ -721,30 +721,30 @@
 
     aput-object v5, v4, v8
 
-    .line 339
+    .line 335
     invoke-virtual {v0, v1, v2, v3, v4}, Lcom/kik/clientmetrics/f;->a(Lcom/kik/clientmetrics/model/Clientmetrics$ClientUserEventType;J[Ljava/lang/Object;)V
 
-    .line 342
+    .line 338
     new-instance v0, Lkik/android/util/g$a;
 
     iget-object v1, p0, Lkik/android/chat/fragment/UserProfileFragment;->c:Lkik/core/net/e;
 
     iget-object v2, p0, Lkik/android/chat/fragment/UserProfileFragment;->d:Lkik/core/interfaces/n;
 
-    iget-object v3, p0, Lkik/android/chat/fragment/UserProfileFragment;->e:Lkik/core/interfaces/ah;
+    iget-object v3, p0, Lkik/android/chat/fragment/UserProfileFragment;->e:Lkik/core/interfaces/ag;
 
-    iget-object v4, p0, Lkik/android/chat/fragment/UserProfileFragment;->_storage:Lkik/core/interfaces/ae;
+    iget-object v4, p0, Lkik/android/chat/fragment/UserProfileFragment;->_storage:Lkik/core/interfaces/ad;
 
-    invoke-direct {v0, v1, v2, v3, v4}, Lkik/android/util/g$a;-><init>(Lkik/core/net/e;Lkik/core/interfaces/n;Lkik/core/interfaces/ah;Lkik/core/interfaces/ae;)V
+    invoke-direct {v0, v1, v2, v3, v4}, Lkik/android/util/g$a;-><init>(Lkik/core/net/e;Lkik/core/interfaces/n;Lkik/core/interfaces/ag;Lkik/core/interfaces/ad;)V
 
-    .line 343
-    new-array v1, v8, [Lkik/android/f/g;
+    .line 339
+    new-array v1, v8, [Lkik/android/f/f;
 
     aput-object p0, v1, v9
 
     invoke-virtual {v0, v1}, Lkik/android/util/g$a;->a([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
-    .line 345
+    .line 341
     new-instance v1, Lkik/android/chat/fragment/KikIndeterminateProgressDialog$Builder;
 
     invoke-virtual {p0}, Lkik/android/chat/fragment/UserProfileFragment;->getContext()Landroid/content/Context;
@@ -753,38 +753,38 @@
 
     invoke-direct {v1, v2}, Lkik/android/chat/fragment/KikIndeterminateProgressDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    .line 346
+    .line 342
     invoke-virtual {v1, v8}, Lkik/android/chat/fragment/KikIndeterminateProgressDialog$Builder;->a(Z)Lkik/android/chat/fragment/KikIndeterminateProgressDialog$Builder;
 
     move-result-object v1
 
     const v2, 0x7f090320
 
-    .line 347
+    .line 343
     invoke-virtual {v1, v2}, Lkik/android/chat/fragment/KikIndeterminateProgressDialog$Builder;->a(I)Lkik/android/chat/fragment/KikIndeterminateProgressDialog$Builder;
 
     move-result-object v1
 
-    invoke-static {v0}, Lkik/android/chat/fragment/fw;->a(Lkik/android/util/g$a;)Landroid/content/DialogInterface$OnCancelListener;
+    invoke-static {v0}, Lkik/android/chat/fragment/ge;->a(Lkik/android/util/g$a;)Landroid/content/DialogInterface$OnCancelListener;
 
     move-result-object v0
 
-    .line 3063
+    .line 2063
     iget-object v2, v1, Lkik/android/chat/fragment/KikIndeterminateProgressDialog$Builder;->a:Lkik/android/chat/fragment/KikDialogFragment$a;
 
     invoke-virtual {v2, v0}, Lkik/android/chat/fragment/KikDialogFragment$a;->a(Landroid/content/DialogInterface$OnCancelListener;)Lkik/android/chat/fragment/KikDialogFragment$a;
 
-    .line 3075
+    .line 2075
     iget-object v0, v1, Lkik/android/chat/fragment/KikIndeterminateProgressDialog$Builder;->a:Lkik/android/chat/fragment/KikDialogFragment$a;
 
     invoke-virtual {v0}, Lkik/android/chat/fragment/KikDialogFragment$a;->a()Lkik/android/chat/fragment/KikDialogFragment;
 
     move-result-object v0
 
-    .line 345
+    .line 341
     invoke-virtual {p0, v0}, Lkik/android/chat/fragment/UserProfileFragment;->replaceDialog(Lkik/android/chat/fragment/KikDialogFragment;)V
 
-    .line 349
+    .line 345
     return-void
 .end method
 
@@ -792,10 +792,10 @@
     .locals 1
 
     .prologue
-    .line 511
-    iget-object v0, p0, Lkik/android/chat/fragment/UserProfileFragment;->k:Lkik/android/chat/vm/chats/profile/al;
+    .line 507
+    iget-object v0, p0, Lkik/android/chat/fragment/UserProfileFragment;->k:Lkik/android/chat/vm/chats/profile/au;
 
-    invoke-virtual {v0}, Lkik/android/chat/vm/chats/profile/al;->q()V
+    invoke-virtual {v0}, Lkik/android/chat/vm/chats/profile/au;->l()V
 
     return-void
 .end method
@@ -804,7 +804,7 @@
     .locals 0
 
     .prologue
-    .line 378
+    .line 374
     invoke-direct {p0}, Lkik/android/chat/fragment/UserProfileFragment;->b()V
 
     return-void
@@ -814,14 +814,14 @@
     .locals 2
 
     .prologue
-    .line 138
+    .line 137
     iget-object v0, p0, Lkik/android/chat/fragment/UserProfileFragment;->_toolTipParentView:Lcom/nhaarman/supertooltips/ToolTipRelativeLayout;
 
     iget-object v1, p0, Lkik/android/chat/fragment/UserProfileFragment;->m:Lcom/nhaarman/supertooltips/a;
 
     invoke-virtual {v0, v1}, Lcom/nhaarman/supertooltips/ToolTipRelativeLayout;->removeView(Landroid/view/View;)V
 
-    .line 139
+    .line 138
     return-void
 .end method
 
@@ -829,7 +829,7 @@
     .locals 0
 
     .prologue
-    .line 80
+    .line 81
     invoke-direct {p0}, Lkik/android/chat/fragment/UserProfileFragment;->b()V
 
     return-void
@@ -841,17 +841,17 @@
     .locals 3
 
     .prologue
-    .line 360
+    .line 356
     const/4 v0, 0x0
 
     invoke-virtual {p0, v0}, Lkik/android/chat/fragment/UserProfileFragment;->replaceDialog(Lkik/android/chat/fragment/KikDialogFragment;)V
 
-    .line 362
-    iget-object v0, p0, Lkik/android/chat/fragment/UserProfileFragment;->e:Lkik/core/interfaces/ah;
+    .line 358
+    iget-object v0, p0, Lkik/android/chat/fragment/UserProfileFragment;->e:Lkik/core/interfaces/ag;
 
-    invoke-interface {v0, p1, p1}, Lkik/core/interfaces/ah;->a([B[B)V
+    invoke-interface {v0, p1, p1}, Lkik/core/interfaces/ag;->a([B[B)V
 
-    .line 364
+    .line 360
     invoke-virtual {p0}, Lkik/android/chat/fragment/UserProfileFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v0
@@ -866,7 +866,7 @@
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 365
+    .line 361
     iget-object v0, p0, Lkik/android/chat/fragment/UserProfileFragment;->a:Lcom/kik/android/Mixpanel;
 
     const-string v1, "settings_profilepicture_uploaded"
@@ -881,29 +881,29 @@
 
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
 
-    .line 366
+    .line 362
     return-void
 .end method
 
-.method public getNavigator()Lkik/android/chat/vm/aw;
+.method public getNavigator()Lkik/android/chat/vm/ay;
     .locals 1
 
     .prologue
-    .line 180
-    iget-object v0, p0, Lkik/android/chat/fragment/UserProfileFragment;->j:Lkik/android/chat/vm/aw;
+    .line 176
+    iget-object v0, p0, Lkik/android/chat/fragment/UserProfileFragment;->j:Lkik/android/chat/vm/ay;
 
     if-nez v0, :cond_0
 
-    .line 181
+    .line 177
     new-instance v0, Lkik/android/chat/fragment/UserProfileFragment$1;
 
     invoke-direct {v0, p0, p0}, Lkik/android/chat/fragment/UserProfileFragment$1;-><init>(Lkik/android/chat/fragment/UserProfileFragment;Lkik/android/chat/fragment/KikScopedDialogFragment;)V
 
-    iput-object v0, p0, Lkik/android/chat/fragment/UserProfileFragment;->j:Lkik/android/chat/vm/aw;
+    iput-object v0, p0, Lkik/android/chat/fragment/UserProfileFragment;->j:Lkik/android/chat/vm/ay;
 
-    .line 191
+    .line 187
     :cond_0
-    iget-object v0, p0, Lkik/android/chat/fragment/UserProfileFragment;->j:Lkik/android/chat/vm/aw;
+    iget-object v0, p0, Lkik/android/chat/fragment/UserProfileFragment;->j:Lkik/android/chat/vm/ay;
 
     return-object v0
 .end method
@@ -912,7 +912,7 @@
     .locals 2
 
     .prologue
-    .line 162
+    .line 158
     iget-object v0, p0, Lkik/android/chat/fragment/UserProfileFragment;->i:Lkik/android/chat/fragment/UserProfileFragment$a;
 
     invoke-virtual {v0}, Lkik/android/chat/fragment/UserProfileFragment$a;->c()Z
@@ -921,7 +921,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 163
+    .line 159
     new-instance v0, Lkik/android/chat/fragment/KikConversationsFragment$a;
 
     invoke-direct {v0}, Lkik/android/chat/fragment/KikConversationsFragment$a;-><init>()V
@@ -940,10 +940,10 @@
 
     invoke-virtual {v0}, Lkik/android/chat/activity/KActivityLauncher$ActivityLaunchDescriptor;->e()Lcom/kik/events/Promise;
 
-    .line 164
+    .line 160
     const/4 v0, 0x1
 
-    .line 166
+    .line 162
     :goto_0
     return v0
 
@@ -955,16 +955,16 @@
     goto :goto_0
 .end method
 
-.method public final j_()V
+.method public final l_()V
     .locals 3
 
     .prologue
-    .line 371
+    .line 367
     const/4 v0, 0x0
 
     invoke-virtual {p0, v0}, Lkik/android/chat/fragment/UserProfileFragment;->replaceDialog(Lkik/android/chat/fragment/KikDialogFragment;)V
 
-    .line 373
+    .line 369
     invoke-static {}, Lkik/android/util/g;->a()Lkik/android/util/g;
 
     move-result-object v0
@@ -975,12 +975,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 374
+    .line 370
     new-instance v0, Lkik/android/chat/fragment/KikDialogFragment$a;
 
     invoke-direct {v0}, Lkik/android/chat/fragment/KikDialogFragment$a;-><init>()V
 
-    .line 375
+    .line 371
     invoke-static {}, Lkik/android/util/bs;->a()Ljava/lang/String;
 
     move-result-object v1
@@ -991,48 +991,48 @@
 
     const v1, 0x7f0902cd
 
-    .line 376
+    .line 372
     invoke-virtual {v0, v1}, Lkik/android/chat/fragment/KikDialogFragment$a;->b(I)Lkik/android/chat/fragment/KikDialogFragment$a;
 
     move-result-object v0
 
     const/4 v1, 0x1
 
-    .line 377
+    .line 373
     invoke-virtual {v0, v1}, Lkik/android/chat/fragment/KikDialogFragment$a;->b(Z)Lkik/android/chat/fragment/KikDialogFragment$a;
 
     move-result-object v0
 
     const v1, 0x7f09044f
 
-    invoke-static {p0}, Lkik/android/chat/fragment/fx;->a(Lkik/android/chat/fragment/UserProfileFragment;)Landroid/content/DialogInterface$OnClickListener;
+    invoke-static {p0}, Lkik/android/chat/fragment/gf;->a(Lkik/android/chat/fragment/UserProfileFragment;)Landroid/content/DialogInterface$OnClickListener;
 
     move-result-object v2
 
-    .line 378
+    .line 374
     invoke-virtual {v0, v1, v2}, Lkik/android/chat/fragment/KikDialogFragment$a;->a(ILandroid/content/DialogInterface$OnClickListener;)Lkik/android/chat/fragment/KikDialogFragment$a;
 
     move-result-object v0
 
     const v1, 0x7f0903d7
 
-    invoke-static {}, Lkik/android/chat/fragment/fy;->a()Landroid/content/DialogInterface$OnClickListener;
+    invoke-static {}, Lkik/android/chat/fragment/gg;->a()Landroid/content/DialogInterface$OnClickListener;
 
     move-result-object v2
 
-    .line 379
+    .line 375
     invoke-virtual {v0, v1, v2}, Lkik/android/chat/fragment/KikDialogFragment$a;->b(ILandroid/content/DialogInterface$OnClickListener;)Lkik/android/chat/fragment/KikDialogFragment$a;
 
     move-result-object v0
 
-    .line 380
+    .line 376
     invoke-virtual {v0}, Lkik/android/chat/fragment/KikDialogFragment$a;->a()Lkik/android/chat/fragment/KikDialogFragment;
 
     move-result-object v0
 
     invoke-virtual {p0, v0}, Lkik/android/chat/fragment/UserProfileFragment;->replaceDialog(Lkik/android/chat/fragment/KikDialogFragment;)V
 
-    .line 382
+    .line 378
     :cond_0
     return-void
 .end method
@@ -1041,53 +1041,17 @@
     .locals 1
     .annotation build Lbutterknife/OnClick;
         value = {
-            0x7f10030e
+            0x7f100309
         }
     .end annotation
 
     .prologue
-    .line 389
+    .line 385
     const v0, 0x7f070019
 
     invoke-direct {p0, v0}, Lkik/android/chat/fragment/UserProfileFragment;->a(I)V
 
-    .line 390
-    return-void
-.end method
-
-.method public onDevsTapped()V
-    .locals 1
-    .annotation build Lbutterknife/OnClick;
-        value = {
-            0x7f100436
-        }
-    .end annotation
-
-    .prologue
-    .line 389
-    const v0, 0x7f070023
-
-    invoke-direct {p0, v0}, Lkik/android/chat/fragment/UserProfileFragment;->a(I)V
-
-    .line 390
-    return-void
-.end method
-
-.method public onModsTapped()V
-    .locals 1
-    .annotation build Lbutterknife/OnClick;
-        value = {
-            0x7f100435
-        }
-    .end annotation
-
-    .prologue
-    .line 389
-    const v0, 0x7f070022
-
-    invoke-direct {p0, v0}, Lkik/android/chat/fragment/UserProfileFragment;->a(I)V
-
-    .line 390
+    .line 386
     return-void
 .end method
 
@@ -1095,12 +1059,12 @@
     .locals 4
     .annotation build Lbutterknife/OnClick;
         value = {
-            0x7f100312
+            0x7f10030d
         }
     .end annotation
 
     .prologue
-    .line 437
+    .line 433
     iget-object v0, p0, Lkik/android/chat/fragment/UserProfileFragment;->h:Lcom/kik/metrics/c/d;
 
     invoke-static {}, Lcom/kik/metrics/b/b;->b()Lcom/kik/metrics/b/b$a;
@@ -1111,7 +1075,7 @@
 
     const/4 v3, 0x1
 
-    .line 438
+    .line 434
     invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v3
@@ -1122,15 +1086,15 @@
 
     move-result-object v1
 
-    .line 439
+    .line 435
     invoke-virtual {v1}, Lcom/kik/metrics/b/b$a;->a()Lcom/kik/metrics/b/b;
 
     move-result-object v1
 
-    .line 437
-    invoke-virtual {v0, v1}, Lcom/kik/metrics/c/d;->a(Lcom/kik/metrics/b/s;)V
+    .line 433
+    invoke-virtual {v0, v1}, Lcom/kik/metrics/c/d;->a(Lcom/kik/metrics/b/t;)V
 
-    .line 441
+    .line 437
     iget-object v0, p0, Lkik/android/chat/fragment/UserProfileFragment;->a:Lcom/kik/android/Mixpanel;
 
     const-string v1, "augmentum_uploader_test"
@@ -1143,20 +1107,20 @@
 
     const/4 v2, 0x0
 
-    .line 442
+    .line 438
     invoke-virtual {v0, v1, v2}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Z)Lcom/kik/android/Mixpanel$d;
 
     move-result-object v0
 
-    .line 443
+    .line 439
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
 
-    .line 445
+    .line 441
     const v0, 0x7f07001a
 
     invoke-direct {p0, v0}, Lkik/android/chat/fragment/UserProfileFragment;->a(I)V
 
-    .line 446
+    .line 442
     return-void
 .end method
 
@@ -1164,15 +1128,15 @@
     .locals 1
 
     .prologue
-    .line 173
+    .line 169
     iget-object v0, p0, Lkik/android/chat/fragment/UserProfileFragment;->_toolTipParentView:Lcom/nhaarman/supertooltips/ToolTipRelativeLayout;
 
     invoke-virtual {v0}, Lcom/nhaarman/supertooltips/ToolTipRelativeLayout;->removeAllViews()V
 
-    .line 174
+    .line 170
     invoke-super {p0, p1}, Lkik/android/chat/fragment/KikScopedDialogFragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
-    .line 175
+    .line 171
     return-void
 .end method
 
@@ -1180,17 +1144,17 @@
     .locals 4
 
     .prologue
-    .line 107
+    .line 108
     invoke-virtual {p0}, Lkik/android/chat/fragment/UserProfileFragment;->getCoreComponent()Lcom/kik/components/CoreComponent;
 
     move-result-object v0
 
     invoke-interface {v0, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/chat/fragment/UserProfileFragment;)V
 
-    .line 108
+    .line 109
     invoke-super {p0, p1}, Lkik/android/chat/fragment/KikScopedDialogFragment;->onCreate(Landroid/os/Bundle;)V
 
-    .line 109
+    .line 110
     iget-object v0, p0, Lkik/android/chat/fragment/UserProfileFragment;->i:Lkik/android/chat/fragment/UserProfileFragment$a;
 
     invoke-virtual {p0}, Lkik/android/chat/fragment/UserProfileFragment;->getArguments()Landroid/os/Bundle;
@@ -1199,7 +1163,7 @@
 
     invoke-virtual {v0, v1}, Lkik/android/chat/fragment/UserProfileFragment$a;->a(Landroid/os/Bundle;)V
 
-    .line 110
+    .line 111
     iget-object v0, p0, Lkik/android/chat/fragment/UserProfileFragment;->i:Lkik/android/chat/fragment/UserProfileFragment$a;
 
     invoke-virtual {v0}, Lkik/android/chat/fragment/UserProfileFragment$a;->d()Z
@@ -1208,7 +1172,7 @@
 
     iput-boolean v0, p0, Lkik/android/chat/fragment/UserProfileFragment;->l:Z
 
-    .line 111
+    .line 112
     invoke-static {}, Lkik/android/chat/KikApplication;->k()Lkik/android/a/b;
 
     move-result-object v0
@@ -1225,19 +1189,19 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/kik/clientmetrics/f;->a(Lcom/kik/clientmetrics/model/Clientmetrics$ClientUserEventType;J)V
 
-    .line 1257
-    iget-object v0, p0, Lkik/android/chat/fragment/UserProfileFragment;->_storage:Lkik/core/interfaces/ae;
+    .line 1253
+    iget-object v0, p0, Lkik/android/chat/fragment/UserProfileFragment;->_storage:Lkik/core/interfaces/ad;
 
     const-string v1, "kik.web.home.preloaded"
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ae;->D(Ljava/lang/String;)Z
+    invoke-interface {v0, v1}, Lkik/core/interfaces/ad;->D(Ljava/lang/String;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 1258
-    iget-object v0, p0, Lkik/android/chat/fragment/UserProfileFragment;->_storage:Lkik/core/interfaces/ae;
+    .line 1254
+    iget-object v0, p0, Lkik/android/chat/fragment/UserProfileFragment;->_storage:Lkik/core/interfaces/ad;
 
     const-string v1, "kik.web.home.preloaded"
 
@@ -1247,273 +1211,205 @@
 
     move-result-object v2
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;Ljava/lang/Boolean;)Z
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Boolean;)Z
 
-    .line 1259
+    .line 1255
     const-string v0, "https://home.kik.com/"
 
     invoke-virtual {p0}, Lkik/android/chat/fragment/UserProfileFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v1
 
-    iget-object v2, p0, Lkik/android/chat/fragment/UserProfileFragment;->f:Lkik/core/interfaces/t;
+    iget-object v2, p0, Lkik/android/chat/fragment/UserProfileFragment;->f:Lkik/core/interfaces/s;
 
-    invoke-static {v0, v1, v2}, Lcom/kik/cards/web/CardsWebViewFragment;->a(Ljava/lang/String;Landroid/content/Context;Lkik/core/interfaces/t;)Lcom/kik/events/Promise;
+    invoke-static {v0, v1, v2}, Lcom/kik/cards/web/CardsWebViewFragment;->a(Ljava/lang/String;Landroid/content/Context;Lkik/core/interfaces/s;)Lcom/kik/events/Promise;
 
-    .line 113
+    .line 114
     :cond_0
     return-void
 .end method
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
-    .locals 7
+    .locals 6
 
     .prologue
-    .line 126
-    iget-object v0, p0, Lkik/android/chat/fragment/UserProfileFragment;->b:Lkik/core/interfaces/b;
-
-    const-string v1, "profile_themes_android"
-
-    const-string v2, "show_profile_themes"
-
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/b;->a(Ljava/lang/String;Ljava/lang/String;)Z
-
-    move-result v2
-
     .line 127
-    if-eqz v2, :cond_1
+    const v0, 0x7f040095
 
-    const v0, 0x7f040096
-
-    .line 128
-    :goto_0
     const/4 v1, 0x0
 
     invoke-static {p1, v0, p2, v1}, Landroid/databinding/DataBindingUtil;->inflate(Landroid/view/LayoutInflater;ILandroid/view/ViewGroup;Z)Landroid/databinding/ViewDataBinding;
 
     move-result-object v0
 
-    .line 129
+    .line 128
     invoke-virtual {v0}, Landroid/databinding/ViewDataBinding;->getRoot()Landroid/view/View;
 
     move-result-object v1
 
-    .line 130
-    iget-object v3, p0, Lkik/android/chat/fragment/UserProfileFragment;->_storage:Lkik/core/interfaces/ae;
+    .line 129
+    iget-object v2, p0, Lkik/android/chat/fragment/UserProfileFragment;->_storage:Lkik/core/interfaces/ad;
 
-    invoke-static {v3}, Lkik/core/z;->b(Lkik/core/interfaces/ae;)Lkik/core/z;
-
-    move-result-object v3
-
-    .line 131
-    if-eqz v3, :cond_0
-
-    invoke-virtual {v3}, Lkik/core/z;->a()Lkik/core/datatypes/k;
-
-    move-result-object v4
-
-    if-nez v4, :cond_2
-
-    .line 133
-    :cond_0
-    invoke-virtual {p0}, Lkik/android/chat/fragment/UserProfileFragment;->finish()V
-
-    .line 134
-    const/4 v1, 0x0
-
-    .line 156
-    :goto_1
-    return-object v1
-
-    .line 127
-    :cond_1
-    const v0, 0x7f040095
-
-    goto :goto_0
-
-    .line 136
-    :cond_2
-    invoke-virtual {v3}, Lkik/core/z;->a()Lkik/core/datatypes/k;
-
-    move-result-object v3
-
-    invoke-static {v3}, Lcom/kik/core/network/xmpp/jid/a;->a(Lkik/core/datatypes/k;)Lcom/kik/core/network/xmpp/jid/a;
-
-    move-result-object v3
-
-    .line 137
-    invoke-static {p0}, Lkik/android/chat/fragment/fu;->a(Lkik/android/chat/fragment/UserProfileFragment;)Lkik/core/util/a;
-
-    move-result-object v4
-
-    .line 140
-    new-instance v5, Lkik/android/chat/vm/chats/profile/al;
-
-    invoke-direct {v5, v3, v4}, Lkik/android/chat/vm/chats/profile/al;-><init>(Lcom/kik/core/network/xmpp/jid/a;Lkik/core/util/a;)V
-
-    iput-object v5, p0, Lkik/android/chat/fragment/UserProfileFragment;->k:Lkik/android/chat/vm/chats/profile/al;
-
-    .line 141
-    const/16 v4, 0x17
-
-    iget-object v5, p0, Lkik/android/chat/fragment/UserProfileFragment;->k:Lkik/android/chat/vm/chats/profile/al;
-
-    invoke-virtual {p0, v5}, Lkik/android/chat/fragment/UserProfileFragment;->attachVm(Lkik/android/chat/vm/bn;)Lkik/android/chat/vm/bn;
-
-    move-result-object v5
-
-    invoke-virtual {v0, v4, v5}, Landroid/databinding/ViewDataBinding;->setVariable(ILjava/lang/Object;)Z
-
-    .line 142
-    iget-object v4, p0, Lkik/android/chat/fragment/UserProfileFragment;->b:Lkik/core/interfaces/b;
-
-    const-string v5, "profile-bios"
-
-    const-string v6, "show-profile-bios"
-
-    invoke-interface {v4, v5, v6}, Lkik/core/interfaces/b;->a(Ljava/lang/String;Ljava/lang/String;)Z
-
-    move-result v4
-
-    if-nez v4, :cond_3
-
-    iget-object v4, p0, Lkik/android/chat/fragment/UserProfileFragment;->b:Lkik/core/interfaces/b;
-
-    invoke-static {v4}, Lkik/android/util/a;->d(Lkik/core/interfaces/b;)Z
-
-    move-result v4
-
-    if-eqz v4, :cond_6
-
-    .line 143
-    :cond_3
-    const/4 v4, 0x2
-
-    new-instance v5, Lkik/android/chat/vm/chats/profile/ad;
-
-    invoke-direct {v5, v3}, Lkik/android/chat/vm/chats/profile/ad;-><init>(Lcom/kik/core/network/xmpp/jid/a;)V
-
-    invoke-virtual {p0, v5}, Lkik/android/chat/fragment/UserProfileFragment;->attachVm(Lkik/android/chat/vm/bn;)Lkik/android/chat/vm/bn;
-
-    move-result-object v3
-
-    invoke-virtual {v0, v4, v3}, Landroid/databinding/ViewDataBinding;->setVariable(ILjava/lang/Object;)Z
-
-    .line 148
-    :cond_4
-    :goto_2
-    invoke-static {p0, v1}, Lbutterknife/ButterKnife;->bind(Ljava/lang/Object;Landroid/view/View;)Lbutterknife/Unbinder;
-
-    .line 149
-    if-nez v2, :cond_5
-
-    .line 150
-    const v0, 0x7f100227
-
-    invoke-virtual {v1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/github/ksoichiro/android/observablescrollview/ObservableScrollView;
-
-    const v2, 0x7f1001ee
-
-    .line 151
-    invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-static {v2}, Lkik/core/z;->b(Lkik/core/interfaces/ad;)Lkik/core/z;
 
     move-result-object v2
 
-    const v3, 0x7f10010e
+    .line 130
+    if-eqz v2, :cond_0
 
-    invoke-virtual {v1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v2}, Lkik/core/z;->a()Lkik/core/datatypes/k;
 
     move-result-object v3
 
-    .line 2196
-    new-instance v4, Lkik/android/chat/fragment/UserProfileFragment$2;
+    if-nez v3, :cond_1
 
-    invoke-direct {v4, p0, v0, v3, v2}, Lkik/android/chat/fragment/UserProfileFragment$2;-><init>(Lkik/android/chat/fragment/UserProfileFragment;Lcom/github/ksoichiro/android/observablescrollview/ObservableScrollView;Landroid/view/View;Landroid/view/View;)V
+    .line 132
+    :cond_0
+    invoke-virtual {p0}, Lkik/android/chat/fragment/UserProfileFragment;->finish()V
 
-    invoke-virtual {v0, v4}, Lcom/github/ksoichiro/android/observablescrollview/ObservableScrollView;->a(Lcom/github/ksoichiro/android/observablescrollview/a;)V
+    .line 133
+    const/4 v1, 0x0
 
-    :cond_5
+    .line 152
+    :goto_0
+    return-object v1
+
+    .line 135
+    :cond_1
+    invoke-virtual {v2}, Lkik/core/z;->a()Lkik/core/datatypes/k;
+
+    move-result-object v2
+
+    invoke-static {v2}, Lcom/kik/core/network/xmpp/jid/a;->a(Lkik/core/datatypes/k;)Lcom/kik/core/network/xmpp/jid/a;
+
+    move-result-object v2
+
+    .line 136
+    invoke-static {p0}, Lkik/android/chat/fragment/gc;->a(Lkik/android/chat/fragment/UserProfileFragment;)Lkik/core/util/a;
+
+    move-result-object v3
+
+    .line 139
+    new-instance v4, Lkik/android/chat/vm/chats/profile/au;
+
+    invoke-direct {v4, v2, v3}, Lkik/android/chat/vm/chats/profile/au;-><init>(Lcom/kik/core/network/xmpp/jid/a;Lkik/core/util/a;)V
+
+    iput-object v4, p0, Lkik/android/chat/fragment/UserProfileFragment;->k:Lkik/android/chat/vm/chats/profile/au;
+
+    .line 140
+    const/16 v3, 0x17
+
+    iget-object v4, p0, Lkik/android/chat/fragment/UserProfileFragment;->k:Lkik/android/chat/vm/chats/profile/au;
+
+    invoke-virtual {p0, v4}, Lkik/android/chat/fragment/UserProfileFragment;->attachVm(Lkik/android/chat/vm/bo;)Lkik/android/chat/vm/bo;
+
+    move-result-object v4
+
+    invoke-virtual {v0, v3, v4}, Landroid/databinding/ViewDataBinding;->setVariable(ILjava/lang/Object;)Z
+
+    .line 141
+    const/16 v3, 0xc
+
+    new-instance v4, Lkik/android/chat/vm/chats/profile/an;
+
+    invoke-direct {v4, v2}, Lkik/android/chat/vm/chats/profile/an;-><init>(Lcom/kik/core/network/xmpp/jid/a;)V
+
+    invoke-virtual {p0, v4}, Lkik/android/chat/fragment/UserProfileFragment;->attachVm(Lkik/android/chat/vm/bo;)Lkik/android/chat/vm/bo;
+
+    move-result-object v4
+
+    invoke-virtual {v0, v3, v4}, Landroid/databinding/ViewDataBinding;->setVariable(ILjava/lang/Object;)Z
+
+    .line 142
+    iget-object v3, p0, Lkik/android/chat/fragment/UserProfileFragment;->b:Lkik/core/interfaces/b;
+
+    const-string v4, "profile-bios"
+
+    const-string v5, "show-profile-bios"
+
+    invoke-interface {v3, v4, v5}, Lkik/core/interfaces/b;->a(Ljava/lang/String;Ljava/lang/String;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_3
+
+    .line 143
+    const/4 v3, 0x2
+
+    new-instance v4, Lkik/android/chat/vm/chats/profile/ai;
+
+    invoke-direct {v4, v2}, Lkik/android/chat/vm/chats/profile/ai;-><init>(Lcom/kik/core/network/xmpp/jid/a;)V
+
+    invoke-virtual {p0, v4}, Lkik/android/chat/fragment/UserProfileFragment;->attachVm(Lkik/android/chat/vm/bo;)Lkik/android/chat/vm/bo;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v3, v2}, Landroid/databinding/ViewDataBinding;->setVariable(ILjava/lang/Object;)Z
+
+    .line 148
+    :cond_2
+    :goto_1
+    invoke-static {p0, v1}, Lbutterknife/ButterKnife;->bind(Ljava/lang/Object;Landroid/view/View;)Lbutterknife/Unbinder;
+
     move-object v0, v1
 
-    .line 154
+    .line 150
     check-cast v0, Landroid/view/ViewGroup;
 
-    .line 2470
+    .line 1466
     iget-boolean v2, p0, Lkik/android/chat/fragment/UserProfileFragment;->l:Z
 
-    if-eqz v2, :cond_7
+    if-eqz v2, :cond_4
 
-    .line 2471
+    .line 1467
     invoke-direct {p0, v0}, Lkik/android/chat/fragment/UserProfileFragment;->a(Landroid/view/ViewGroup;)V
+
+    goto :goto_0
+
+    .line 145
+    :cond_3
+    iget-object v3, p0, Lkik/android/chat/fragment/UserProfileFragment;->b:Lkik/core/interfaces/b;
+
+    invoke-static {v3}, Lkik/android/util/a;->c(Lkik/core/interfaces/b;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_2
+
+    .line 146
+    const/4 v3, 0x5
+
+    new-instance v4, Lkik/android/chat/vm/profile/aq;
+
+    invoke-direct {v4, v2}, Lkik/android/chat/vm/profile/aq;-><init>(Lcom/kik/core/network/xmpp/jid/a;)V
+
+    invoke-virtual {p0, v4}, Lkik/android/chat/fragment/UserProfileFragment;->attachVm(Lkik/android/chat/vm/bo;)Lkik/android/chat/vm/bo;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v3, v2}, Landroid/databinding/ViewDataBinding;->setVariable(ILjava/lang/Object;)Z
 
     goto :goto_1
 
-    .line 145
-    :cond_6
-    iget-object v4, p0, Lkik/android/chat/fragment/UserProfileFragment;->b:Lkik/core/interfaces/b;
-
-    invoke-static {v4}, Lkik/android/util/a;->e(Lkik/core/interfaces/b;)Z
-
-    move-result v4
-
-    if-eqz v4, :cond_4
-
-    .line 146
-    const/4 v4, 0x5
-
-    new-instance v5, Lkik/android/chat/vm/profile/ae;
-
-    invoke-direct {v5, v3}, Lkik/android/chat/vm/profile/ae;-><init>(Lcom/kik/core/network/xmpp/jid/a;)V
-
-    invoke-virtual {p0, v5}, Lkik/android/chat/fragment/UserProfileFragment;->attachVm(Lkik/android/chat/vm/bn;)Lkik/android/chat/vm/bn;
-
-    move-result-object v3
-
-    invoke-virtual {v0, v4, v3}, Landroid/databinding/ViewDataBinding;->setVariable(ILjava/lang/Object;)Z
-
-    goto :goto_2
-
-    .line 2474
-    :cond_7
+    .line 1470
+    :cond_4
     iget-object v2, p0, Lkik/android/chat/fragment/UserProfileFragment;->g:Lkik/core/e/c;
 
     invoke-interface {v2}, Lkik/core/e/c;->i()Lcom/kik/events/Promise;
 
     move-result-object v2
 
-    new-instance v3, Lkik/android/chat/fragment/UserProfileFragment$4;
+    new-instance v3, Lkik/android/chat/fragment/UserProfileFragment$3;
 
-    invoke-direct {v3, p0, v0}, Lkik/android/chat/fragment/UserProfileFragment$4;-><init>(Lkik/android/chat/fragment/UserProfileFragment;Landroid/view/ViewGroup;)V
+    invoke-direct {v3, p0, v0}, Lkik/android/chat/fragment/UserProfileFragment$3;-><init>(Lkik/android/chat/fragment/UserProfileFragment;Landroid/view/ViewGroup;)V
 
     invoke-virtual {v2, v3}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
 
-    goto/16 :goto_1
+    goto :goto_0
 .end method
 
 .method public onHelpTapped()V
     .locals 1
-    .annotation build Lbutterknife/OnClick;
-        value = {
-            0x7f100314
-        }
-    .end annotation
-
-    .prologue
-    .line 457
-    const v0, 0x7f070018
-
-    invoke-direct {p0, v0}, Lkik/android/chat/fragment/UserProfileFragment;->a(I)V
-
-    .line 458
-    return-void
-.end method
-
-.method public onKikCodeTapped()V
-    .locals 2
     .annotation build Lbutterknife/OnClick;
         value = {
             0x7f10030f
@@ -1521,19 +1417,37 @@
     .end annotation
 
     .prologue
-    .line 395
+    .line 453
+    const v0, 0x7f070018
+
+    invoke-direct {p0, v0}, Lkik/android/chat/fragment/UserProfileFragment;->a(I)V
+
+    .line 454
+    return-void
+.end method
+
+.method public onKikCodeTapped()V
+    .locals 2
+    .annotation build Lbutterknife/OnClick;
+        value = {
+            0x7f10030a
+        }
+    .end annotation
+
+    .prologue
+    .line 391
     new-instance v0, Lkik/android/chat/fragment/ScanCodeTabFragment$a;
 
     invoke-direct {v0}, Lkik/android/chat/fragment/ScanCodeTabFragment$a;-><init>()V
 
-    .line 396
+    .line 392
     invoke-virtual {v0}, Lkik/android/chat/fragment/ScanCodeTabFragment$a;->b()Lkik/android/chat/fragment/ScanCodeTabFragment$a;
 
     move-result-object v0
 
     sget-object v1, Lkik/android/chat/fragment/ScanCodeTabFragment$OpenTypes;->SETTINGS:Lkik/android/chat/fragment/ScanCodeTabFragment$OpenTypes;
 
-    .line 397
+    .line 393
     invoke-virtual {v0, v1}, Lkik/android/chat/fragment/ScanCodeTabFragment$a;->a(Lkik/android/chat/fragment/ScanCodeTabFragment$OpenTypes;)Lkik/android/chat/fragment/ScanCodeTabFragment$a;
 
     move-result-object v0
@@ -1542,15 +1456,15 @@
 
     move-result-object v1
 
-    .line 395
+    .line 391
     invoke-static {v0, v1}, Lkik/android/chat/activity/KActivityLauncher;->a(Lkik/android/util/ad;Landroid/content/Context;)Lkik/android/chat/activity/KActivityLauncher$ActivityLaunchDescriptor;
 
     move-result-object v0
 
-    .line 398
+    .line 394
     invoke-virtual {v0}, Lkik/android/chat/activity/KActivityLauncher$ActivityLaunchDescriptor;->e()Lcom/kik/events/Promise;
 
-    .line 399
+    .line 395
     return-void
 .end method
 
@@ -1558,17 +1472,17 @@
     .locals 1
     .annotation build Lbutterknife/OnClick;
         value = {
-            0x7f100311
+            0x7f10030c
         }
     .end annotation
 
     .prologue
-    .line 431
+    .line 427
     const v0, 0x7f07001c
 
     invoke-direct {p0, v0}, Lkik/android/chat/fragment/UserProfileFragment;->a(I)V
 
-    .line 432
+    .line 428
     return-void
 .end method
 
@@ -1576,17 +1490,17 @@
     .locals 1
     .annotation build Lbutterknife/OnClick;
         value = {
-            0x7f100313
+            0x7f10030e
         }
     .end annotation
 
     .prologue
-    .line 451
+    .line 447
     const v0, 0x7f07001d
 
     invoke-direct {p0, v0}, Lkik/android/chat/fragment/UserProfileFragment;->a(I)V
 
-    .line 452
+    .line 448
     return-void
 .end method
 
@@ -1594,12 +1508,12 @@
     .locals 4
     .annotation build Lbutterknife/OnClick;
         value = {
-            0x7f100310
+            0x7f10030b
         }
     .end annotation
 
     .prologue
-    .line 405
+    .line 401
     iget-object v0, p0, Lkik/android/chat/fragment/UserProfileFragment;->a:Lcom/kik/android/Mixpanel;
 
     const-string v1, "Browser Screen Opened"
@@ -1612,7 +1526,7 @@
 
     const-string v2, "Settings"
 
-    .line 406
+    .line 402
     invoke-virtual {v0, v1, v2}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
 
     move-result-object v0
@@ -1621,7 +1535,7 @@
 
     const-string v2, "https://home.kik.com/"
 
-    .line 407
+    .line 403
     invoke-virtual {v0, v1, v2}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
 
     move-result-object v0
@@ -1630,7 +1544,7 @@
 
     const-string v2, "https://home.kik.com/"
 
-    .line 408
+    .line 404
     invoke-static {v2}, Lcom/kik/cards/web/s;->j(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
@@ -1641,7 +1555,7 @@
 
     const-string v1, "Depth"
 
-    .line 409
+    .line 405
     invoke-static {}, Lkik/android/chat/activity/KActivityLauncher;->f()I
 
     move-result v2
@@ -1652,10 +1566,10 @@
 
     move-result-object v0
 
-    .line 410
+    .line 406
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
 
-    .line 412
+    .line 408
     iget-object v0, p0, Lkik/android/chat/fragment/UserProfileFragment;->a:Lcom/kik/android/Mixpanel;
 
     const-string v1, "Browser Button Tapped"
@@ -1666,21 +1580,21 @@
 
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
 
-    .line 414
+    .line 410
     new-instance v0, Lcom/kik/cards/web/CardsWebViewFragment$a;
 
     invoke-direct {v0}, Lcom/kik/cards/web/CardsWebViewFragment$a;-><init>()V
 
     const-string v1, "https://home.kik.com/"
 
-    .line 415
+    .line 411
     invoke-virtual {v0, v1}, Lcom/kik/cards/web/CardsWebViewFragment$a;->a(Ljava/lang/String;)Lcom/kik/cards/web/CardsWebViewFragment$a;
 
     move-result-object v0
 
     const-string v1, "https://home.kik.com/"
 
-    .line 416
+    .line 412
     invoke-static {v1}, Lcom/kik/cards/util/b;->b(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
@@ -1691,28 +1605,28 @@
 
     sget-object v1, Lcom/kik/ui/fragment/FragmentBase$FragmentBundle$StackType;->HomeRoot:Lcom/kik/ui/fragment/FragmentBase$FragmentBundle$StackType;
 
-    .line 423
+    .line 419
     invoke-virtual {v0, v1}, Lcom/kik/cards/web/CardsWebViewFragment$a;->a(Lcom/kik/ui/fragment/FragmentBase$FragmentBundle$StackType;)Lcom/kik/ui/fragment/FragmentBase$FragmentBundle;
 
     move-result-object v0
 
-    .line 425
+    .line 421
     invoke-virtual {p0, v0}, Lkik/android/chat/fragment/UserProfileFragment;->startFragmentForResult(Lkik/android/util/ad;)Lcom/kik/events/Promise;
 
-    .line 426
+    .line 422
     return-void
 .end method
 
-.method protected screenOpenedEvent()Lcom/kik/metrics/b/s;
+.method protected screenOpenedEvent()Lcom/kik/metrics/b/t;
     .locals 1
 
     .prologue
-    .line 119
-    invoke-static {}, Lcom/kik/metrics/b/ay;->b()Lcom/kik/metrics/b/ay$a;
+    .line 120
+    invoke-static {}, Lcom/kik/metrics/b/bg;->b()Lcom/kik/metrics/b/bg$a;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/kik/metrics/b/ay$a;->a()Lcom/kik/metrics/b/ay;
+    invoke-virtual {v0}, Lcom/kik/metrics/b/bg$a;->a()Lcom/kik/metrics/b/bg;
 
     move-result-object v0
 

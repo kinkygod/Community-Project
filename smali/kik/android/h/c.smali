@@ -27,7 +27,7 @@
     return v0
 .end method
 
-.method public static a(Lkik/core/interfaces/w;Lkik/core/datatypes/Message;Landroid/content/Context;)Ljava/lang/CharSequence;
+.method public static a(Lkik/core/interfaces/v;Lkik/core/datatypes/Message;Landroid/content/Context;)Ljava/lang/CharSequence;
     .locals 9
 
     .prologue
@@ -242,7 +242,7 @@
 
     move-result-object v1
 
-    invoke-interface {p0, v1, v3}, Lkik/core/interfaces/w;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
+    invoke-interface {p0, v1, v3}, Lkik/core/interfaces/v;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
 
     move-result-object v1
 
@@ -260,7 +260,7 @@
 
     move-result-object v1
 
-    invoke-interface {p0, v1, v3}, Lkik/core/interfaces/w;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
+    invoke-interface {p0, v1, v3}, Lkik/core/interfaces/v;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
 
     move-result-object v2
 
@@ -326,13 +326,13 @@
     goto/16 :goto_0
 .end method
 
-.method public static a(Landroid/content/Context;Lkik/core/interfaces/w;Ljava/util/List;)Ljava/lang/String;
+.method public static a(Landroid/content/Context;Lkik/core/interfaces/v;Ljava/util/List;)Ljava/lang/String;
     .locals 9
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroid/content/Context;",
-            "Lkik/core/interfaces/w;",
+            "Lkik/core/interfaces/v;",
             "Ljava/util/List",
             "<",
             "Lkik/core/datatypes/f;",
@@ -398,7 +398,7 @@
 
     move-result-object v0
 
-    invoke-interface {p1, v0, v3}, Lkik/core/interfaces/w;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
+    invoke-interface {p1, v0, v3}, Lkik/core/interfaces/v;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
 
     move-result-object v2
 
@@ -411,7 +411,7 @@
 
     move-object v1, p1
 
-    invoke-static/range {v0 .. v5}, Lkik/android/h/c;->a(Landroid/content/Context;Lkik/core/interfaces/w;Lkik/core/datatypes/l;ZILkik/core/interfaces/b;)Ljava/lang/String;
+    invoke-static/range {v0 .. v5}, Lkik/android/h/c;->a(Landroid/content/Context;Lkik/core/interfaces/v;Lkik/core/datatypes/l;ZILkik/core/interfaces/b;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -477,7 +477,7 @@
     goto :goto_0
 .end method
 
-.method public static a(Landroid/content/Context;Lkik/core/interfaces/w;Lkik/core/datatypes/l;ZILkik/core/interfaces/b;)Ljava/lang/String;
+.method public static a(Landroid/content/Context;Lkik/core/interfaces/v;Lkik/core/datatypes/l;ZILkik/core/interfaces/b;)Ljava/lang/String;
     .locals 3
 
     .prologue
@@ -554,7 +554,7 @@
 
     .line 209
     :cond_1
-    invoke-static {v1, p1, p4}, Lkik/android/util/bs;->a(Ljava/util/List;Lkik/core/interfaces/w;I)Ljava/lang/String;
+    invoke-static {v1, p1, p4}, Lkik/android/util/bs;->a(Ljava/util/List;Lkik/core/interfaces/v;I)Ljava/lang/String;
 
     move-result-object v0
 

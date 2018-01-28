@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field protected a:Lkik/core/interfaces/ah;
+.field protected a:Lkik/core/interfaces/ag;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -44,14 +44,14 @@
     const/4 v3, 0x0
 
     .line 40
-    iget-object v0, p0, Lkik/android/widget/preferences/ShareSocialPreference;->a:Lkik/core/interfaces/ah;
+    iget-object v0, p0, Lkik/android/widget/preferences/ShareSocialPreference;->a:Lkik/core/interfaces/ag;
 
-    invoke-interface {v0}, Lkik/core/interfaces/ah;->d()Lkik/core/datatypes/ac;
+    invoke-interface {v0}, Lkik/core/interfaces/ag;->d()Lkik/core/datatypes/ab;
 
     move-result-object v0
 
     .line 42
-    iget-object v1, v0, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
+    iget-object v1, v0, Lkik/core/datatypes/ab;->c:Ljava/lang/String;
 
     if-eqz v1, :cond_0
 
@@ -70,7 +70,7 @@
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    iget-object v0, v0, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
+    iget-object v0, v0, Lkik/core/datatypes/ab;->c:Ljava/lang/String;
 
     aput-object v0, v2, v3
 

@@ -2,20 +2,24 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lkik/android/chat/vm/widget/u;
-.implements Lkik/android/widget/bm;
-
 
 # virtual methods
-.method public abstract a(Lkik/core/datatypes/z;)V
+.method public abstract a()Lkik/core/datatypes/ab;
 .end method
 
-.method public abstract aK_()V
+.method public abstract b()Lrx/d;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<",
+            "Lkik/core/interfaces/o",
+            "<",
+            "Landroid/graphics/Bitmap;",
+            ">;>;"
+        }
+    .end annotation
 .end method
 
-.method public abstract b(Lkik/core/datatypes/z;)V
-.end method
-
-.method public abstract c(Lkik/core/datatypes/z;)V
+.method public abstract c()Lcom/kik/android/Mixpanel;
 .end method

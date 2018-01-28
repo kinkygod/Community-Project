@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/android/chat/fragment/KikStartGroupFragment;->j_()V
+    value = Lkik/android/chat/fragment/KikStartGroupFragment;->l_()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 693
+    .line 699
     iput-object p1, p0, Lkik/android/chat/fragment/KikStartGroupFragment$3;->a:Lkik/android/chat/fragment/KikStartGroupFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,7 +40,7 @@
     .locals 4
 
     .prologue
-    .line 697
+    .line 703
     iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment$3;->a:Lkik/android/chat/fragment/KikStartGroupFragment;
 
     iget-object v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment$3;->a:Lkik/android/chat/fragment/KikStartGroupFragment;
@@ -55,15 +55,15 @@
 
     const v3, 0x7f09005c
 
-    .line 698
+    .line 704
     invoke-virtual {v2, v3}, Lkik/android/chat/fragment/KikStartGroupFragment;->getStringFromResource(I)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 697
+    .line 703
     invoke-virtual {v0, v1, v2}, Lkik/android/chat/fragment/KikStartGroupFragment;->displayErrorDialog(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 699
+    .line 705
     iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment$3;->a:Lkik/android/chat/fragment/KikStartGroupFragment;
 
     iget-object v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment$3;->a:Lkik/android/chat/fragment/KikStartGroupFragment;
@@ -74,6 +74,6 @@
 
     invoke-static {v0, v1}, Lkik/android/chat/fragment/KikStartGroupFragment;->b(Lkik/android/chat/fragment/KikStartGroupFragment;Lkik/core/datatypes/p;)V
 
-    .line 700
+    .line 706
     return-void
 .end method

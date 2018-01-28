@@ -12,43 +12,7 @@
         "Ljava/lang/Object;",
         "Lkik/android/chat/vm/IListViewModel",
         "<",
-        "Lkik/android/chat/vm/widget/v;",
+        "Lkik/android/chat/vm/widget/ISmileyPopupItemViewModel;",
         ">;"
     }
 .end annotation
-
-
-# virtual methods
-.method public abstract aG_()Z
-.end method
-
-.method public abstract aH_()V
-.end method
-
-.method public abstract e()V
-.end method
-
-.method public abstract f()Lrx/d;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/d",
-            "<",
-            "Landroid/graphics/drawable/Drawable;",
-            ">;"
-        }
-    .end annotation
-.end method
-
-.method public abstract h()Lrx/functions/g;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/functions/g",
-            "<",
-            "Ljava/lang/Integer;",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
-.end method

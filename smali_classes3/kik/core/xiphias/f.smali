@@ -1,37 +1,51 @@
-.class public final Lkik/core/xiphias/f;
+.class final synthetic Lkik/core/xiphias/f;
 .super Ljava/lang/Object;
-.source "SourceFile"
+
+# interfaces
+.implements Lrx/functions/b;
+
+
+# instance fields
+.field private final a:Lkik/core/xiphias/d;
+
+.field private final b:Lcom/kik/core/network/xmpp/jid/a;
 
 
 # direct methods
-.method public static a(Lcom/kik/masksdata/rpc/MasksdataService$ListRequest;Ljava/lang/String;)Lkik/core/xiphias/XiphiasRequest;
-    .locals 3
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/kik/masksdata/rpc/MasksdataService$ListRequest;",
-            "Ljava/lang/String;",
-            ")",
-            "Lkik/core/xiphias/XiphiasRequest",
-            "<",
-            "Lcom/kik/masksdata/rpc/MasksdataService$ListResponse;",
-            ">;"
-        }
-    .end annotation
+.method private constructor <init>(Lkik/core/xiphias/d;Lcom/kik/core/network/xmpp/jid/a;)V
+    .locals 0
 
-    .prologue
-    .line 15
-    new-instance v0, Lkik/core/xiphias/XiphiasRequest;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const-string v1, "mobile.masks.v1.MasksData"
+    iput-object p1, p0, Lkik/core/xiphias/f;->a:Lkik/core/xiphias/d;
 
-    .line 18
-    invoke-static {}, Lcom/kik/masksdata/rpc/MasksdataService$ListResponse;->parser()Lcom/google/protobuf/Parser;
+    iput-object p2, p0, Lkik/core/xiphias/f;->b:Lcom/kik/core/network/xmpp/jid/a;
 
-    move-result-object v2
+    return-void
+.end method
 
-    invoke-direct {v0, v1, p1, p0, v2}, Lkik/core/xiphias/XiphiasRequest;-><init>(Ljava/lang/String;Ljava/lang/String;Lcom/google/protobuf/AbstractMessage;Lcom/google/protobuf/Parser;)V
+.method public static a(Lkik/core/xiphias/d;Lcom/kik/core/network/xmpp/jid/a;)Lrx/functions/b;
+    .locals 1
 
-    .line 15
+    new-instance v0, Lkik/core/xiphias/f;
+
+    invoke-direct {v0, p0, p1}, Lkik/core/xiphias/f;-><init>(Lkik/core/xiphias/d;Lcom/kik/core/network/xmpp/jid/a;)V
+
     return-object v0
+.end method
+
+
+# virtual methods
+.method public final call(Ljava/lang/Object;)V
+    .locals 2
+
+    iget-object v0, p0, Lkik/core/xiphias/f;->a:Lkik/core/xiphias/d;
+
+    iget-object v1, p0, Lkik/core/xiphias/f;->b:Lcom/kik/core/network/xmpp/jid/a;
+
+    check-cast p1, Ljava/lang/Throwable;
+
+    invoke-static {v0, v1, p1}, Lkik/core/xiphias/d;->a(Lkik/core/xiphias/d;Lcom/kik/core/network/xmpp/jid/a;Ljava/lang/Throwable;)V
+
+    return-void
 .end method

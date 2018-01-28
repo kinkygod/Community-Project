@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/android/internal/platform/PlatformHelper;->a(Lkik/core/datatypes/messageExtensions/ContentMessage;Landroid/app/Activity;Lkik/core/interfaces/w;Lkik/core/interfaces/ae;)Lcom/kik/events/Promise;
+    value = Lkik/android/internal/platform/PlatformHelper;->a(Lkik/core/datatypes/messageExtensions/ContentMessage;Landroid/app/Activity;Lkik/core/interfaces/v;Lkik/core/interfaces/ad;)Lcom/kik/events/Promise;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -28,19 +28,19 @@
 
 .field final synthetic b:Landroid/app/Activity;
 
-.field final synthetic c:Lkik/core/interfaces/ae;
+.field final synthetic c:Lkik/core/interfaces/ad;
 
 .field final synthetic d:Lcom/kik/events/Promise;
 
 .field final synthetic e:Z
 
-.field final synthetic f:Lkik/core/interfaces/w;
+.field final synthetic f:Lkik/core/interfaces/v;
 
 .field final synthetic g:Lkik/android/internal/platform/PlatformHelper;
 
 
 # direct methods
-.method constructor <init>(Lkik/android/internal/platform/PlatformHelper;Lcom/kik/events/Promise;Landroid/app/Activity;Lkik/core/interfaces/ae;Lcom/kik/events/Promise;Lkik/core/interfaces/w;)V
+.method constructor <init>(Lkik/android/internal/platform/PlatformHelper;Lcom/kik/events/Promise;Landroid/app/Activity;Lkik/core/interfaces/ad;Lcom/kik/events/Promise;Lkik/core/interfaces/v;)V
     .locals 1
 
     .prologue
@@ -51,7 +51,7 @@
 
     iput-object p3, p0, Lkik/android/internal/platform/PlatformHelper$11;->b:Landroid/app/Activity;
 
-    iput-object p4, p0, Lkik/android/internal/platform/PlatformHelper$11;->c:Lkik/core/interfaces/ae;
+    iput-object p4, p0, Lkik/android/internal/platform/PlatformHelper$11;->c:Lkik/core/interfaces/ad;
 
     iput-object p5, p0, Lkik/android/internal/platform/PlatformHelper$11;->d:Lcom/kik/events/Promise;
 
@@ -59,7 +59,7 @@
 
     iput-boolean v0, p0, Lkik/android/internal/platform/PlatformHelper$11;->e:Z
 
-    iput-object p6, p0, Lkik/android/internal/platform/PlatformHelper$11;->f:Lkik/core/interfaces/w;
+    iput-object p6, p0, Lkik/android/internal/platform/PlatformHelper$11;->f:Lkik/core/interfaces/v;
 
     invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
 

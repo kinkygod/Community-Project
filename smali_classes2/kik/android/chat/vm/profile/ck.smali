@@ -2,44 +2,46 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lrx/functions/b;
+.implements Lrx/functions/g;
 
 
 # instance fields
-.field private final a:Lkik/android/chat/vm/profile/bo;
+.field private final a:Lkik/android/chat/vm/profile/ca;
 
 
 # direct methods
-.method private constructor <init>(Lkik/android/chat/vm/profile/bo;)V
+.method private constructor <init>(Lkik/android/chat/vm/profile/ca;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lkik/android/chat/vm/profile/ck;->a:Lkik/android/chat/vm/profile/bo;
+    iput-object p1, p0, Lkik/android/chat/vm/profile/ck;->a:Lkik/android/chat/vm/profile/ca;
 
     return-void
 .end method
 
-.method public static a(Lkik/android/chat/vm/profile/bo;)Lrx/functions/b;
+.method public static a(Lkik/android/chat/vm/profile/ca;)Lrx/functions/g;
     .locals 1
 
     new-instance v0, Lkik/android/chat/vm/profile/ck;
 
-    invoke-direct {v0, p0}, Lkik/android/chat/vm/profile/ck;-><init>(Lkik/android/chat/vm/profile/bo;)V
+    invoke-direct {v0, p0}, Lkik/android/chat/vm/profile/ck;-><init>(Lkik/android/chat/vm/profile/ca;)V
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public final call(Ljava/lang/Object;)V
+.method public final call(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    iget-object v0, p0, Lkik/android/chat/vm/profile/ck;->a:Lkik/android/chat/vm/profile/bo;
+    iget-object v0, p0, Lkik/android/chat/vm/profile/ck;->a:Lkik/android/chat/vm/profile/ca;
 
-    check-cast p1, Ljava/util/List;
+    check-cast p1, Lcom/kik/core/domain/a/a/c;
 
-    invoke-static {v0, p1}, Lkik/android/chat/vm/profile/bo;->a(Lkik/android/chat/vm/profile/bo;Ljava/util/List;)V
+    invoke-static {v0, p1}, Lkik/android/chat/vm/profile/ca;->a(Lkik/android/chat/vm/profile/ca;Lcom/kik/core/domain/a/a/c;)Ljava/lang/String;
 
-    return-void
+    move-result-object v0
+
+    return-object v0
 .end method

@@ -34,7 +34,7 @@
     .locals 0
 
     .prologue
-    .line 315
+    .line 316
     iput-object p1, p0, Lkik/android/chat/fragment/ConversationsBaseFragment$2;->b:Lkik/android/chat/fragment/ConversationsBaseFragment;
 
     iput-object p2, p0, Lkik/android/chat/fragment/ConversationsBaseFragment$2;->a:Lkik/core/datatypes/f;
@@ -50,10 +50,10 @@
     .locals 2
 
     .prologue
-    .line 315
+    .line 316
     check-cast p1, Landroid/os/Bundle;
 
-    .line 1319
+    .line 1320
     iget-object v0, p0, Lkik/android/chat/fragment/ConversationsBaseFragment$2;->b:Lkik/android/chat/fragment/ConversationsBaseFragment;
 
     iget-object v1, p0, Lkik/android/chat/fragment/ConversationsBaseFragment$2;->a:Lkik/core/datatypes/f;
@@ -64,9 +64,9 @@
 
     invoke-virtual {v0, v1}, Lkik/android/chat/fragment/ConversationsBaseFragment;->runOnUiIfAttached(Ljava/lang/Runnable;)V
 
-    .line 1323
+    .line 1324
     invoke-super {p0, p1}, Lcom/kik/events/k;->b(Ljava/lang/Object;)V
 
-    .line 315
+    .line 316
     return-void
 .end method

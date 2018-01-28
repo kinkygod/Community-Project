@@ -2,48 +2,50 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lrx/functions/k;
+.implements Lrx/functions/g;
 
 
-# static fields
-.field private static final a:Lcom/kik/util/bw;
+# instance fields
+.field private final a:I
+
+.field private final b:I
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lcom/kik/util/bw;
-
-    invoke-direct {v0}, Lcom/kik/util/bw;-><init>()V
-
-    sput-object v0, Lcom/kik/util/bw;->a:Lcom/kik/util/bw;
-
-    return-void
-.end method
-
-.method private constructor <init>()V
+.method private constructor <init>(II)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    iput p1, p0, Lcom/kik/util/bw;->a:I
+
+    iput p2, p0, Lcom/kik/util/bw;->b:I
+
     return-void
 .end method
 
-.method public static a()Lrx/functions/k;
+.method public static a(II)Lrx/functions/g;
     .locals 1
 
-    sget-object v0, Lcom/kik/util/bw;->a:Lcom/kik/util/bw;
+    new-instance v0, Lcom/kik/util/bw;
+
+    invoke-direct {v0, p0, p1}, Lcom/kik/util/bw;-><init>(II)V
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public final a([Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.method public final call(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
 
-    invoke-static {p1}, Lcom/kik/util/bq;->a([Ljava/lang/Object;)Ljava/lang/Boolean;
+    iget v0, p0, Lcom/kik/util/bw;->a:I
+
+    iget v1, p0, Lcom/kik/util/bw;->b:I
+
+    check-cast p1, Ljava/lang/Boolean;
+
+    invoke-static {v0, v1, p1}, Lcom/kik/util/bt;->a(IILjava/lang/Boolean;)Ljava/lang/Integer;
 
     move-result-object v0
 

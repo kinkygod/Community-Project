@@ -11,7 +11,7 @@
 
 .field private final b:Lkik/core/e/f;
 
-.field private final c:Lkik/core/interfaces/ae;
+.field private final c:Lkik/core/interfaces/ad;
 
 .field private final d:Lkik/android/config/b;
 
@@ -41,7 +41,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/kik/android/b/e;Lkik/core/e/f;Lkik/core/interfaces/ae;Lkik/android/config/b;Lkik/android/util/ai;)V
+.method public constructor <init>(Lcom/kik/android/b/e;Lkik/core/e/f;Lkik/core/interfaces/ad;Lkik/android/config/b;Lkik/android/util/ai;)V
     .locals 10
 
     .prologue
@@ -71,7 +71,7 @@
     iput-object p2, p0, Lcom/kik/android/b/l;->b:Lkik/core/e/f;
 
     .line 47
-    iput-object p3, p0, Lcom/kik/android/b/l;->c:Lkik/core/interfaces/ae;
+    iput-object p3, p0, Lcom/kik/android/b/l;->c:Lkik/core/interfaces/ad;
 
     .line 48
     iput-object p4, p0, Lcom/kik/android/b/l;->d:Lkik/android/config/b;
@@ -209,11 +209,11 @@
 
     .prologue
     .line 224
-    iget-object v0, p0, Lcom/kik/android/b/l;->c:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lcom/kik/android/b/l;->c:Lkik/core/interfaces/ad;
 
     const-string v1, "com.kik.android.smileys.xSmileyManagerStorage.restored"
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ae;->w(Ljava/lang/String;)Ljava/lang/Boolean;
+    invoke-interface {v0, v1}, Lkik/core/interfaces/ad;->w(Ljava/lang/String;)Ljava/lang/Boolean;
 
     move-result-object v0
 
@@ -309,12 +309,12 @@
     goto :goto_0
 .end method
 
-.method static synthetic b(Lcom/kik/android/b/l;)Lkik/core/interfaces/ae;
+.method static synthetic b(Lcom/kik/android/b/l;)Lkik/core/interfaces/ad;
     .locals 1
 
     .prologue
     .line 27
-    iget-object v0, p0, Lcom/kik/android/b/l;->c:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lcom/kik/android/b/l;->c:Lkik/core/interfaces/ad;
 
     return-object v0
 .end method
@@ -411,7 +411,7 @@
     .line 209
     const-string v3, "smiley_alternate"
 
-    invoke-static {v3, v1, v0}, Lkik/core/datatypes/ad;->a(Ljava/lang/String;Ljava/lang/String;Lcom/dyuproject/protostuff/p;)Lkik/core/datatypes/ad;
+    invoke-static {v3, v1, v0}, Lkik/core/datatypes/ac;->a(Ljava/lang/String;Ljava/lang/String;Lcom/dyuproject/protostuff/p;)Lkik/core/datatypes/ac;
 
     move-result-object v0
 
@@ -499,7 +499,7 @@
     .line 80
     const-string v4, "smiley_list"
 
-    invoke-static {v4, v0, v3}, Lkik/core/datatypes/ad;->a(Ljava/lang/String;Ljava/lang/String;Lcom/dyuproject/protostuff/p;)Lkik/core/datatypes/ad;
+    invoke-static {v4, v0, v3}, Lkik/core/datatypes/ac;->a(Ljava/lang/String;Ljava/lang/String;Lcom/dyuproject/protostuff/p;)Lkik/core/datatypes/ac;
 
     move-result-object v0
 

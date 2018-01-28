@@ -10,11 +10,11 @@
 # instance fields
 .field private a:Landroid/content/Context;
 
-.field private c:Lkik/core/interfaces/t;
+.field private c:Lkik/core/interfaces/s;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lkik/core/interfaces/t;)V
+.method public constructor <init>(Landroid/content/Context;Lkik/core/interfaces/s;)V
     .locals 5
 
     .prologue
@@ -27,7 +27,7 @@
     iput-object p1, p0, Lkik/android/b/c;->a:Landroid/content/Context;
 
     .line 38
-    iput-object p2, p0, Lkik/android/b/c;->c:Lkik/core/interfaces/t;
+    iput-object p2, p0, Lkik/android/b/c;->c:Lkik/core/interfaces/s;
 
     .line 1078
     :try_start_0
@@ -181,7 +181,7 @@
     .line 67
     new-instance v0, Lcom/kik/cache/KikVolleyImageLoader;
 
-    invoke-static {}, Lcom/kik/util/co;->a()Lcom/kik/cache/SimpleLruBitmapCache;
+    invoke-static {}, Lcom/kik/util/ct;->a()Lcom/kik/cache/SimpleLruBitmapCache;
 
     move-result-object v1
 
@@ -231,11 +231,11 @@
 
     .prologue
     .line 116
-    iget-object v0, p0, Lkik/android/b/c;->c:Lkik/core/interfaces/t;
+    iget-object v0, p0, Lkik/android/b/c;->c:Lkik/core/interfaces/s;
 
     const-string v1, "volleyCardsIcons"
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/t;->a(Ljava/lang/String;)Ljava/io/File;
+    invoke-interface {v0, v1}, Lkik/core/interfaces/s;->a(Ljava/lang/String;)Ljava/io/File;
 
     move-result-object v0
 

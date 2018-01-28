@@ -36,7 +36,7 @@
     .locals 0
 
     .prologue
-    .line 352
+    .line 365
     iput-object p1, p0, Lcom/kik/cards/web/CardsWebViewFragment$43;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -50,12 +50,12 @@
     .locals 1
 
     .prologue
-    .line 352
-    .line 1356
+    .line 365
+    .line 1369
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$43;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
     invoke-virtual {v0}, Lcom/kik/cards/web/CardsWebViewFragment;->finish()V
 
-    .line 352
+    .line 365
     return-void
 .end method

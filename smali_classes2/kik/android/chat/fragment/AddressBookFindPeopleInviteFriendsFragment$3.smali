@@ -74,7 +74,7 @@
     iget-object v2, v2, Lkik/android/chat/fragment/AddressBookFindPeopleInviteFriendsFragment;->m:Lkik/android/chat/fragment/AddressbookFragmentBase$a;
 
     .line 390
-    invoke-virtual {v2}, Lkik/android/chat/fragment/AddressbookFragmentBase$a;->g_()Ljava/lang/String;
+    invoke-virtual {v2}, Lkik/android/chat/fragment/AddressbookFragmentBase$a;->h_()Ljava/lang/String;
 
     move-result-object v2
 
@@ -117,7 +117,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f04017b
+    const v2, 0x7f04017e
 
     const-wide/16 v4, 0x3e8
 

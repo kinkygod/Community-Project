@@ -2,7 +2,7 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lcom/kik/storage/l$a;
+.implements Lcom/kik/storage/o$a;
 
 
 # instance fields
@@ -28,7 +28,7 @@
     return-void
 .end method
 
-.method public static a(Ljava/util/List;Ljava/util/List;Lcom/kik/core/network/xmpp/jid/a;)Lcom/kik/storage/l$a;
+.method public static a(Ljava/util/List;Ljava/util/List;Lcom/kik/core/network/xmpp/jid/a;)Lcom/kik/storage/o$a;
     .locals 1
 
     new-instance v0, Lcom/kik/storage/af;

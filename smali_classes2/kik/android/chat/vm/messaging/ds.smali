@@ -2,7 +2,7 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lrx/functions/b;
+.implements Lrx/functions/g;
 
 
 # static fields
@@ -30,7 +30,7 @@
     return-void
 .end method
 
-.method public static a()Lrx/functions/b;
+.method public static a()Lrx/functions/g;
     .locals 1
 
     sget-object v0, Lkik/android/chat/vm/messaging/ds;->a:Lkik/android/chat/vm/messaging/ds;
@@ -40,10 +40,14 @@
 
 
 # virtual methods
-.method public final call(Ljava/lang/Object;)V
-    .locals 0
+.method public final call(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
-    invoke-static {}, Lkik/android/chat/vm/messaging/dq;->r()V
+    check-cast p1, Lkik/core/datatypes/l;
 
-    return-void
+    invoke-virtual {p1}, Lkik/core/datatypes/l;->l()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
 .end method

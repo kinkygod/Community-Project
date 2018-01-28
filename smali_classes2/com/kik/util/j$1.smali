@@ -23,7 +23,7 @@
     .locals 0
 
     .prologue
-    .line 357
+    .line 377
     iput-object p1, p0, Lcom/kik/util/j$1;->a:Lrx/functions/a;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
@@ -37,16 +37,16 @@
     .locals 1
 
     .prologue
-    .line 361
+    .line 381
     iget-object v0, p0, Lcom/kik/util/j$1;->a:Lrx/functions/a;
 
     if-nez v0, :cond_0
 
-    .line 366
+    .line 386
     :goto_0
     return-void
 
-    .line 365
+    .line 385
     :cond_0
     iget-object v0, p0, Lcom/kik/util/j$1;->a:Lrx/functions/a;
 

@@ -401,7 +401,17 @@
     return-void
 .end method
 
-.method protected final a_()Z
+.method public final b()Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 453
+    const-string v0, "com.crashlytics.sdk.android:answers"
+
+    return-object v0
+.end method
+
+.method protected final b_()Z
     .locals 13
     .annotation build Landroid/annotation/SuppressLint;
         value = {
@@ -617,16 +627,6 @@
 
     .line 423
     goto :goto_2
-.end method
-
-.method public final b()Ljava/lang/String;
-    .locals 1
-
-    .prologue
-    .line 453
-    const-string v0, "com.crashlytics.sdk.android:answers"
-
-    return-object v0
 .end method
 
 .method protected final synthetic e()Ljava/lang/Object;

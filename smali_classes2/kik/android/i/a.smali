@@ -24,9 +24,9 @@
 
 .field private c:Lkik/core/e/f;
 
-.field private d:Lkik/core/interfaces/t;
+.field private d:Lkik/core/interfaces/s;
 
-.field private e:Lkik/core/interfaces/ae;
+.field private e:Lkik/core/interfaces/ad;
 
 .field private f:Landroid/content/Context;
 
@@ -50,7 +50,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Landroid/content/Context;Lkik/core/interfaces/t;)V
+.method public constructor <init>(Landroid/content/Context;Lkik/core/interfaces/s;)V
     .locals 1
 
     .prologue
@@ -68,7 +68,7 @@
     iput-object p1, p0, Lkik/android/i/a;->f:Landroid/content/Context;
 
     .line 55
-    iput-object p2, p0, Lkik/android/i/a;->d:Lkik/core/interfaces/t;
+    iput-object p2, p0, Lkik/android/i/a;->d:Lkik/core/interfaces/s;
 
     .line 56
     return-void
@@ -84,12 +84,12 @@
     return-object p1
 .end method
 
-.method static synthetic a(Lkik/android/i/a;)Lkik/core/interfaces/ae;
+.method static synthetic a(Lkik/android/i/a;)Lkik/core/interfaces/ad;
     .locals 1
 
     .prologue
     .line 37
-    iget-object v0, p0, Lkik/android/i/a;->e:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/i/a;->e:Lkik/core/interfaces/ad;
 
     return-object v0
 .end method
@@ -122,11 +122,11 @@
     if-nez p1, :cond_0
 
     .line 258
-    iget-object v0, p0, Lkik/android/i/a;->e:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/i/a;->e:Lkik/core/interfaces/ad;
 
     const-string v1, "AddressIntegration.UPLOAD_MY_INFO_OPT_IN_KEY"
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ae;->x(Ljava/lang/String;)Z
+    invoke-interface {v0, v1}, Lkik/core/interfaces/ad;->x(Ljava/lang/String;)Z
 
     .line 264
     :goto_0
@@ -144,11 +144,11 @@
 
     .line 262
     :goto_1
-    iget-object v1, p0, Lkik/android/i/a;->e:Lkik/core/interfaces/ae;
+    iget-object v1, p0, Lkik/android/i/a;->e:Lkik/core/interfaces/ad;
 
     const-string v2, "AddressIntegration.UPLOAD_MY_INFO_OPT_IN_KEY"
 
-    invoke-interface {v1, v2, v0}, Lkik/core/interfaces/ae;->c(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-interface {v1, v2, v0}, Lkik/core/interfaces/ad;->c(Ljava/lang/String;Ljava/lang/String;)Z
 
     goto :goto_0
 
@@ -174,11 +174,11 @@
 
     .prologue
     .line 127
-    iget-object v0, p0, Lkik/android/i/a;->d:Lkik/core/interfaces/t;
+    iget-object v0, p0, Lkik/android/i/a;->d:Lkik/core/interfaces/s;
 
     const-string v1, "addressFilterFile"
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/t;->c(Ljava/lang/String;)Ljava/io/File;
+    invoke-interface {v0, v1}, Lkik/core/interfaces/s;->c(Ljava/lang/String;)Ljava/io/File;
 
     move-result-object v0
 
@@ -190,11 +190,11 @@
 
     .prologue
     .line 404
-    iget-object v0, p0, Lkik/android/i/a;->e:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/i/a;->e:Lkik/core/interfaces/ad;
 
     const-string v1, "AddressIntegration.UPLOAD_MY_INFO_OPT_IN_KEY"
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ae;->s(Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {v0, v1}, Lkik/core/interfaces/ad;->s(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -529,13 +529,13 @@
     goto :goto_1
 .end method
 
-.method public final a(Lkik/core/e/f;Lkik/core/interfaces/ae;Lcom/kik/events/Promise;Lcom/kik/events/Promise;)V
+.method public final a(Lkik/core/e/f;Lkik/core/interfaces/ad;Lcom/kik/events/Promise;Lcom/kik/events/Promise;)V
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lkik/core/e/f;",
-            "Lkik/core/interfaces/ae;",
+            "Lkik/core/interfaces/ad;",
             "Lcom/kik/events/Promise",
             "<",
             "Ljava/lang/Object;",
@@ -552,7 +552,7 @@
     iput-object p1, p0, Lkik/android/i/a;->c:Lkik/core/e/f;
 
     .line 62
-    iput-object p2, p0, Lkik/android/i/a;->e:Lkik/core/interfaces/ae;
+    iput-object p2, p0, Lkik/android/i/a;->e:Lkik/core/interfaces/ad;
 
     .line 63
     iget-object v0, p0, Lkik/android/i/a;->f:Landroid/content/Context;
@@ -612,11 +612,11 @@
     invoke-direct {v0}, Lcom/kik/events/Promise;-><init>()V
 
     .line 162
-    iget-object v1, p0, Lkik/android/i/a;->e:Lkik/core/interfaces/ae;
+    iget-object v1, p0, Lkik/android/i/a;->e:Lkik/core/interfaces/ad;
 
     const-string v2, "AddressIntegration.MATCHING_OPT_IN_KEY"
 
-    invoke-interface {v1, v2}, Lkik/core/interfaces/ae;->s(Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {v1, v2}, Lkik/core/interfaces/ad;->s(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -675,13 +675,13 @@
     const/4 v3, 0x1
 
     .line 205
-    iget-object v0, p0, Lkik/android/i/a;->e:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/i/a;->e:Lkik/core/interfaces/ad;
 
     const-string v1, "AddressIntegration.MATCHING_OPT_IN_KEY"
 
     const-string v2, "true"
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ae;->c(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->c(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 207
     iget-object v0, p0, Lkik/android/i/a;->g:Lkik/core/datatypes/a;
@@ -750,13 +750,13 @@
     const/4 v3, 0x0
 
     .line 232
-    iget-object v0, p0, Lkik/android/i/a;->e:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/i/a;->e:Lkik/core/interfaces/ad;
 
     const-string v1, "AddressIntegration.MATCHING_OPT_IN_KEY"
 
     const-string v2, "false"
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ae;->c(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->c(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 233
     iget-object v0, p0, Lkik/android/i/a;->g:Lkik/core/datatypes/a;
@@ -880,20 +880,20 @@
 
     .prologue
     .line 329
-    iget-object v0, p0, Lkik/android/i/a;->e:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/i/a;->e:Lkik/core/interfaces/ad;
 
     const-string v1, "AddressIntegration.MATCHING_OPT_IN_KEY"
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ae;->s(Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {v0, v1}, Lkik/core/interfaces/ad;->s(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
     .line 330
-    iget-object v1, p0, Lkik/android/i/a;->e:Lkik/core/interfaces/ae;
+    iget-object v1, p0, Lkik/android/i/a;->e:Lkik/core/interfaces/ad;
 
     const-string v2, "AddressIntegration.UPLOAD_MY_INFO_OPT_IN_KEY"
 
-    invoke-interface {v1, v2}, Lkik/core/interfaces/ae;->s(Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {v1, v2}, Lkik/core/interfaces/ad;->s(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -973,11 +973,11 @@
 
     .prologue
     .line 384
-    iget-object v0, p0, Lkik/android/i/a;->e:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/i/a;->e:Lkik/core/interfaces/ad;
 
     const-string v1, "AddressIntegration.MATCHING_OPT_IN_KEY"
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ae;->s(Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {v0, v1}, Lkik/core/interfaces/ad;->s(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -996,11 +996,11 @@
 
     .prologue
     .line 391
-    iget-object v0, p0, Lkik/android/i/a;->e:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/i/a;->e:Lkik/core/interfaces/ad;
 
     const-string v1, "AddressIntegration.UPLOAD_MY_INFO_OPT_IN_KEY"
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ae;->s(Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {v0, v1}, Lkik/core/interfaces/ad;->s(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1050,11 +1050,11 @@
 
     .prologue
     .line 419
-    iget-object v0, p0, Lkik/android/i/a;->d:Lkik/core/interfaces/t;
+    iget-object v0, p0, Lkik/android/i/a;->d:Lkik/core/interfaces/s;
 
     const-string v1, "addressFilterFile"
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/t;->c(Ljava/lang/String;)Ljava/io/File;
+    invoke-interface {v0, v1}, Lkik/core/interfaces/s;->c(Ljava/lang/String;)Ljava/io/File;
 
     move-result-object v0
 

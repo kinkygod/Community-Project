@@ -84,7 +84,7 @@
 
     iget-object v1, v1, Lcom/kik/cards/web/profile/ProfilePlugin$2;->b:Lcom/kik/cards/web/profile/ProfilePlugin;
 
-    invoke-static {v1}, Lcom/kik/cards/web/profile/ProfilePlugin;->access$400(Lcom/kik/cards/web/profile/ProfilePlugin;)Lkik/android/chat/vm/bu;
+    invoke-static {v1}, Lcom/kik/cards/web/profile/ProfilePlugin;->access$400(Lcom/kik/cards/web/profile/ProfilePlugin;)Lkik/android/chat/vm/bw;
 
     move-result-object v1
 
@@ -96,19 +96,19 @@
 
     move-result-object v2
 
-    invoke-static {v2}, Lkik/android/chat/vm/profile/dc;->a(Lcom/kik/core/network/xmpp/jid/a;)Lkik/android/chat/vm/profile/dc;
+    invoke-static {v2}, Lkik/android/chat/vm/profile/dp;->a(Lcom/kik/core/network/xmpp/jid/a;)Lkik/android/chat/vm/profile/dp;
 
     move-result-object v2
 
     iget-object v3, p0, Lcom/kik/cards/web/profile/ProfilePlugin$2$1;->a:Lkik/core/datatypes/MemberPermissions;
 
     .line 1126
-    invoke-virtual {v2, v3}, Lkik/android/chat/vm/profile/dc;->a(Lkik/core/datatypes/MemberPermissions;)Lkik/android/chat/vm/profile/dc;
+    invoke-virtual {v2, v3}, Lkik/android/chat/vm/profile/dp;->a(Lkik/core/datatypes/MemberPermissions;)Lkik/android/chat/vm/profile/dp;
 
     move-result-object v2
 
     .line 1127
-    invoke-virtual {v2, v0}, Lkik/android/chat/vm/profile/dc;->a(Lkik/android/chat/a/a$b;)Lkik/android/chat/vm/profile/dc;
+    invoke-virtual {v2, v0}, Lkik/android/chat/vm/profile/dp;->a(Lkik/android/chat/a/a$b;)Lkik/android/chat/vm/profile/dp;
 
     move-result-object v0
 
@@ -121,22 +121,22 @@
 
     move-result v2
 
-    invoke-virtual {v0, v2}, Lkik/android/chat/vm/profile/dc;->a(Z)Lkik/android/chat/vm/profile/dc;
+    invoke-virtual {v0, v2}, Lkik/android/chat/vm/profile/dp;->a(Z)Lkik/android/chat/vm/profile/dp;
 
     move-result-object v0
 
     .line 1129
-    invoke-virtual {v0}, Lkik/android/chat/vm/profile/dc;->a()Lkik/android/chat/vm/profile/dc;
+    invoke-virtual {v0}, Lkik/android/chat/vm/profile/dp;->a()Lkik/android/chat/vm/profile/dp;
 
     move-result-object v0
 
     .line 1130
-    invoke-virtual {v0}, Lkik/android/chat/vm/profile/dc;->b()Lkik/android/chat/vm/profile/cv;
+    invoke-virtual {v0}, Lkik/android/chat/vm/profile/dp;->b()Lkik/android/chat/vm/profile/di;
 
     move-result-object v0
 
     .line 1125
-    invoke-virtual {v1, v0}, Lkik/android/chat/vm/bu;->a(Lkik/android/chat/vm/profile/cv;)Lrx/d;
+    invoke-virtual {v1, v0}, Lkik/android/chat/vm/bw;->a(Lkik/android/chat/vm/profile/di;)Lrx/d;
 
     .line 118
     return-void
@@ -151,7 +151,7 @@
 
     iget-object v0, v0, Lcom/kik/cards/web/profile/ProfilePlugin$2;->b:Lcom/kik/cards/web/profile/ProfilePlugin;
 
-    invoke-static {v0}, Lcom/kik/cards/web/profile/ProfilePlugin;->access$400(Lcom/kik/cards/web/profile/ProfilePlugin;)Lkik/android/chat/vm/bu;
+    invoke-static {v0}, Lcom/kik/cards/web/profile/ProfilePlugin;->access$400(Lcom/kik/cards/web/profile/ProfilePlugin;)Lkik/android/chat/vm/bw;
 
     move-result-object v0
 
@@ -163,14 +163,14 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Lkik/android/chat/vm/profile/dc;->a(Lcom/kik/core/network/xmpp/jid/a;)Lkik/android/chat/vm/profile/dc;
+    invoke-static {v1}, Lkik/android/chat/vm/profile/dp;->a(Lcom/kik/core/network/xmpp/jid/a;)Lkik/android/chat/vm/profile/dp;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/kik/cards/web/profile/ProfilePlugin$2$1;->a:Lkik/core/datatypes/MemberPermissions;
 
     .line 137
-    invoke-virtual {v1, v2}, Lkik/android/chat/vm/profile/dc;->a(Lkik/core/datatypes/MemberPermissions;)Lkik/android/chat/vm/profile/dc;
+    invoke-virtual {v1, v2}, Lkik/android/chat/vm/profile/dp;->a(Lkik/core/datatypes/MemberPermissions;)Lkik/android/chat/vm/profile/dp;
 
     move-result-object v1
 
@@ -183,16 +183,16 @@
 
     move-result v2
 
-    invoke-virtual {v1, v2}, Lkik/android/chat/vm/profile/dc;->a(Z)Lkik/android/chat/vm/profile/dc;
+    invoke-virtual {v1, v2}, Lkik/android/chat/vm/profile/dp;->a(Z)Lkik/android/chat/vm/profile/dp;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lkik/android/chat/vm/profile/dc;->b()Lkik/android/chat/vm/profile/cv;
+    invoke-virtual {v1}, Lkik/android/chat/vm/profile/dp;->b()Lkik/android/chat/vm/profile/di;
 
     move-result-object v1
 
     .line 136
-    invoke-virtual {v0, v1}, Lkik/android/chat/vm/bu;->a(Lkik/android/chat/vm/profile/cv;)Lrx/d;
+    invoke-virtual {v0, v1}, Lkik/android/chat/vm/bw;->a(Lkik/android/chat/vm/profile/di;)Lrx/d;
 
     .line 139
     return-void

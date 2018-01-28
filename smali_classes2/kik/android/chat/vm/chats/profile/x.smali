@@ -44,11 +44,8 @@
     .locals 1
 
     .prologue
-    .line 0
-    check-cast p1, Lkik/core/chat/profile/e;
-
-    .line 1066
-    iget-object v0, p1, Lkik/core/chat/profile/e;->b:Lkik/core/chat/profile/a;
+    .line 1057
+    const-string v0, ""
 
     .line 0
     return-object v0

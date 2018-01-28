@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/core/interfaces/ak;
+.implements Lkik/core/interfaces/aj;
 
 
 # annotations
@@ -173,13 +173,13 @@
 
 
 # virtual methods
-.method public final a(Ljava/lang/String;Lkik/core/datatypes/ac;ZLcom/kik/abtesting/rpc/AbService$GetExperimentsResponse;)V
+.method public final a(Ljava/lang/String;Lkik/core/datatypes/ab;ZLcom/kik/abtesting/rpc/AbService$GetExperimentsResponse;)V
     .locals 8
 
     .prologue
     const-wide/16 v6, 0x0
 
-    const/4 v4, 0x1
+    const/4 v5, 0x1
 
     const/4 v3, 0x0
 
@@ -200,16 +200,16 @@
 
     iget-object v2, v2, Lkik/android/chat/fragment/KikLoginFragmentAbstract;->_loginButton:Landroid/view/View;
 
-    aput-object v2, v1, v4
+    aput-object v2, v1, v5
 
     invoke-virtual {v0, v1}, Lkik/android/chat/fragment/KikLoginFragmentAbstract;->a([Landroid/view/View;)V
 
     .line 253
     iget-object v0, p0, Lkik/android/chat/fragment/KikLoginFragmentAbstract$1;->a:Lkik/android/chat/fragment/KikLoginFragmentAbstract;
 
-    iget-object v0, v0, Lkik/android/chat/fragment/KikLoginFragmentAbstract;->n:Lkik/core/interfaces/ah;
+    iget-object v0, v0, Lkik/android/chat/fragment/KikLoginFragmentAbstract;->n:Lkik/core/interfaces/ag;
 
-    invoke-interface {v0}, Lkik/core/interfaces/ah;->d()Lkik/core/datatypes/ac;
+    invoke-interface {v0}, Lkik/core/interfaces/ag;->d()Lkik/core/datatypes/ab;
 
     move-result-object v0
 
@@ -226,106 +226,49 @@
 
     move-result-object v1
 
-    iget-object v2, p2, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
+    iget-object v2, p2, Lkik/core/datatypes/ab;->c:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v1
 
     .line 258
-    iget-object v2, p2, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
+    iget-object v2, p2, Lkik/core/datatypes/ab;->c:Ljava/lang/String;
 
-    iput-object v2, v0, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
+    iput-object v2, v0, Lkik/core/datatypes/ab;->c:Ljava/lang/String;
 
     .line 259
-    iget-object v2, p2, Lkik/core/datatypes/ac;->d:Ljava/lang/String;
+    iget-object v2, p2, Lkik/core/datatypes/ab;->d:Ljava/lang/String;
 
-    iput-object v2, v0, Lkik/core/datatypes/ac;->d:Ljava/lang/String;
+    iput-object v2, v0, Lkik/core/datatypes/ab;->d:Ljava/lang/String;
 
     .line 260
-    iget-object v2, p2, Lkik/core/datatypes/ac;->e:Ljava/lang/String;
+    iget-object v2, p2, Lkik/core/datatypes/ab;->e:Ljava/lang/String;
 
-    iput-object v2, v0, Lkik/core/datatypes/ac;->e:Ljava/lang/String;
+    iput-object v2, v0, Lkik/core/datatypes/ab;->e:Ljava/lang/String;
 
     .line 261
-    iget-object v2, p2, Lkik/core/datatypes/ac;->a:Ljava/lang/String;
+    iget-object v2, p2, Lkik/core/datatypes/ab;->a:Ljava/lang/String;
 
-    iput-object v2, v0, Lkik/core/datatypes/ac;->a:Ljava/lang/String;
+    iput-object v2, v0, Lkik/core/datatypes/ab;->a:Ljava/lang/String;
 
     .line 262
     invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v2
 
-    iput-object v2, v0, Lkik/core/datatypes/ac;->g:Ljava/lang/Boolean;
+    iput-object v2, v0, Lkik/core/datatypes/ab;->g:Ljava/lang/Boolean;
 
     .line 264
     iget-object v2, p0, Lkik/android/chat/fragment/KikLoginFragmentAbstract$1;->a:Lkik/android/chat/fragment/KikLoginFragmentAbstract;
 
-    iget-object v2, v2, Lkik/android/chat/fragment/KikLoginFragmentAbstract;->n:Lkik/core/interfaces/ah;
+    iget-object v2, v2, Lkik/android/chat/fragment/KikLoginFragmentAbstract;->n:Lkik/core/interfaces/ag;
 
     const-string v3, "Login"
 
-    invoke-interface {v2, v0, v3}, Lkik/core/interfaces/ah;->a(Lkik/core/datatypes/ac;Ljava/lang/String;)V
+    invoke-interface {v2, v0, v3}, Lkik/core/interfaces/ag;->a(Lkik/core/datatypes/ab;Ljava/lang/String;)V
 
-    .line 267
-    iget-object v0, p0, Lkik/android/chat/fragment/KikLoginFragmentAbstract$1;->a:Lkik/android/chat/fragment/KikLoginFragmentAbstract;
-
-    iget-object v0, v0, Lkik/android/chat/fragment/KikLoginFragmentAbstract;->l:Lcom/kik/android/Mixpanel;
-
-    const-string v2, "Login Complete"
-
-    invoke-virtual {v0, v2}, Lcom/kik/android/Mixpanel;->b(Ljava/lang/String;)Lcom/kik/android/Mixpanel$d;
-
-    move-result-object v0
-
-    const-string v2, "Attempts"
-
-    .line 268
-    invoke-virtual {v0, v2, v6, v7}, Lcom/kik/android/Mixpanel$d;->b(Ljava/lang/String;J)Lcom/kik/android/Mixpanel$d;
-
-    move-result-object v0
-
-    const-string v2, "By Username"
-
-    .line 269
-    invoke-virtual {v0, v2, v1}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Z)Lcom/kik/android/Mixpanel$d;
-
-    move-result-object v0
-
-    .line 270
-    iget-object v2, p0, Lkik/android/chat/fragment/KikLoginFragmentAbstract$1;->a:Lkik/android/chat/fragment/KikLoginFragmentAbstract;
-
-    iget-object v2, v2, Lkik/android/chat/fragment/KikLoginFragmentAbstract;->f:Lkik/core/manager/n;
-
-    .line 1226
-    invoke-virtual {v2}, Lkik/core/manager/n;->a()Lkik/core/manager/n$c;
-
-    move-result-object v2
-
-    iget-object v2, v2, Lkik/core/manager/n$c;->b:Ljava/lang/String;
-
-    .line 271
-    invoke-static {v2}, Lkik/android/util/bs;->d(Ljava/lang/String;)Z
-
-    move-result v3
-
-    if-nez v3, :cond_0
-
-    .line 272
-    const-string v3, "Source"
-
-    invoke-virtual {v0, v3, v2}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
-
-    .line 274
-    :cond_0
-    invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->g()Lcom/kik/android/Mixpanel$d;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
-
-    .line 276
+    .line 266
     new-instance v2, Lkik/core/datatypes/k;
 
     iget-object v0, p0, Lkik/android/chat/fragment/KikLoginFragmentAbstract$1;->a:Lkik/android/chat/fragment/KikLoginFragmentAbstract;
@@ -340,7 +283,7 @@
 
     invoke-direct {v2, p1, v0, v3}, Lkik/core/datatypes/k;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 278
+    .line 268
     iget-object v0, p0, Lkik/android/chat/fragment/KikLoginFragmentAbstract$1;->a:Lkik/android/chat/fragment/KikLoginFragmentAbstract;
 
     iget-object v0, v0, Lkik/android/chat/fragment/KikLoginFragmentAbstract;->p:Lkik/core/aa;
@@ -352,6 +295,63 @@
     move-result-object v3
 
     invoke-interface {v0, v2, v3}, Lkik/core/aa;->a(Lkik/core/datatypes/k;Ljava/lang/String;)V
+
+    .line 271
+    iget-object v0, p0, Lkik/android/chat/fragment/KikLoginFragmentAbstract$1;->a:Lkik/android/chat/fragment/KikLoginFragmentAbstract;
+
+    iget-object v0, v0, Lkik/android/chat/fragment/KikLoginFragmentAbstract;->l:Lcom/kik/android/Mixpanel;
+
+    const-string v3, "Login Complete"
+
+    invoke-virtual {v0, v3}, Lcom/kik/android/Mixpanel;->b(Ljava/lang/String;)Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v0
+
+    const-string v3, "Attempts"
+
+    .line 272
+    invoke-virtual {v0, v3, v6, v7}, Lcom/kik/android/Mixpanel$d;->b(Ljava/lang/String;J)Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v0
+
+    const-string v3, "By Username"
+
+    .line 273
+    invoke-virtual {v0, v3, v1}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Z)Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v0
+
+    .line 274
+    iget-object v3, p0, Lkik/android/chat/fragment/KikLoginFragmentAbstract$1;->a:Lkik/android/chat/fragment/KikLoginFragmentAbstract;
+
+    iget-object v3, v3, Lkik/android/chat/fragment/KikLoginFragmentAbstract;->f:Lkik/core/manager/n;
+
+    .line 1226
+    invoke-virtual {v3}, Lkik/core/manager/n;->a()Lkik/core/manager/n$c;
+
+    move-result-object v3
+
+    iget-object v3, v3, Lkik/core/manager/n$c;->b:Ljava/lang/String;
+
+    .line 275
+    invoke-static {v3}, Lkik/android/util/bs;->d(Ljava/lang/String;)Z
+
+    move-result v4
+
+    if-nez v4, :cond_0
+
+    .line 276
+    const-string v4, "Source"
+
+    invoke-virtual {v0, v4, v3}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
+
+    .line 278
+    :cond_0
+    invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->g()Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
 
     .line 281
     iget-object v0, p0, Lkik/android/chat/fragment/KikLoginFragmentAbstract$1;->a:Lkik/android/chat/fragment/KikLoginFragmentAbstract;
@@ -414,7 +414,7 @@
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
 
     .line 301
-    invoke-static {}, Lkik/android/widget/bz;->c()V
+    invoke-static {}, Lkik/android/widget/cl;->c()V
 
     .line 303
     invoke-static {}, Lkik/android/chat/KikApplication;->k()Lkik/android/a/b;
@@ -441,27 +441,27 @@
     .line 305
     iget-object v0, p0, Lkik/android/chat/fragment/KikLoginFragmentAbstract$1;->a:Lkik/android/chat/fragment/KikLoginFragmentAbstract;
 
-    iget-object v0, v0, Lkik/android/chat/fragment/KikLoginFragmentAbstract;->n:Lkik/core/interfaces/ah;
+    iget-object v0, v0, Lkik/android/chat/fragment/KikLoginFragmentAbstract;->n:Lkik/core/interfaces/ag;
 
-    invoke-interface {v0}, Lkik/core/interfaces/ah;->e()V
+    invoke-interface {v0}, Lkik/core/interfaces/ag;->e()V
 
     .line 306
     iget-object v0, p0, Lkik/android/chat/fragment/KikLoginFragmentAbstract$1;->a:Lkik/android/chat/fragment/KikLoginFragmentAbstract;
 
-    iget-object v0, v0, Lkik/android/chat/fragment/KikLoginFragmentAbstract;->o:Lkik/core/interfaces/ae;
+    iget-object v0, v0, Lkik/android/chat/fragment/KikLoginFragmentAbstract;->o:Lkik/core/interfaces/ad;
 
     const-string v1, "kik.android.util.session.login"
 
-    invoke-static {v4}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    invoke-static {v5}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v3
 
-    invoke-interface {v0, v1, v3}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;Ljava/lang/Boolean;)Z
+    invoke-interface {v0, v1, v3}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Boolean;)Z
 
     .line 307
     iget-object v0, p0, Lkik/android/chat/fragment/KikLoginFragmentAbstract$1;->a:Lkik/android/chat/fragment/KikLoginFragmentAbstract;
 
-    iget-object v0, v0, Lkik/android/chat/fragment/KikLoginFragmentAbstract;->o:Lkik/core/interfaces/ae;
+    iget-object v0, v0, Lkik/android/chat/fragment/KikLoginFragmentAbstract;->o:Lkik/core/interfaces/ad;
 
     const-string v1, "kik.logintime"
 
@@ -473,14 +473,14 @@
 
     move-result-object v3
 
-    invoke-interface {v0, v1, v3}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;Ljava/lang/Long;)Z
+    invoke-interface {v0, v1, v3}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Long;)Z
 
     .line 310
     iget-object v0, p0, Lkik/android/chat/fragment/KikLoginFragmentAbstract$1;->a:Lkik/android/chat/fragment/KikLoginFragmentAbstract;
 
     iget-object v0, v0, Lkik/android/chat/fragment/KikLoginFragmentAbstract;->e:Lkik/core/interfaces/IConversation;
 
-    invoke-interface {v0}, Lkik/core/interfaces/IConversation;->S()Lcom/kik/events/Promise;
+    invoke-interface {v0}, Lkik/core/interfaces/IConversation;->R()Lcom/kik/events/Promise;
 
     move-result-object v0
 
@@ -551,7 +551,7 @@
 
     move-result v0
 
-    invoke-static {v0}, Lkik/android/util/ce;->a(I)Ljava/lang/String;
+    invoke-static {v0}, Lkik/android/util/cf;->a(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -787,7 +787,7 @@
 
     move-result v0
 
-    invoke-static {v0}, Lkik/android/util/ce;->a(I)Ljava/lang/String;
+    invoke-static {v0}, Lkik/android/util/cf;->a(I)Ljava/lang/String;
 
     move-result-object v0
 

@@ -17,7 +17,7 @@
 # instance fields
 .field private a:Landroid/content/Context;
 
-.field private b:Lcom/kik/storage/p;
+.field private b:Lcom/kik/storage/s;
 
 .field private c:Lcom/kik/android/Mixpanel;
 
@@ -51,7 +51,7 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lcom/kik/storage/p;Lcom/kik/android/Mixpanel;)V
+.method public constructor <init>(Landroid/content/Context;Lcom/kik/storage/s;Lcom/kik/android/Mixpanel;)V
     .locals 1
 
     .prologue
@@ -76,7 +76,7 @@
     iput-object p1, p0, Lkik/android/gifs/b;->a:Landroid/content/Context;
 
     .line 34
-    iput-object p2, p0, Lkik/android/gifs/b;->b:Lcom/kik/storage/p;
+    iput-object p2, p0, Lkik/android/gifs/b;->b:Lcom/kik/storage/s;
 
     .line 35
     iput-object p3, p0, Lkik/android/gifs/b;->c:Lcom/kik/android/Mixpanel;
@@ -252,11 +252,11 @@
 
     .line 1086
     :cond_1
-    iget-object v0, p0, Lkik/android/gifs/b;->b:Lcom/kik/storage/p;
+    iget-object v0, p0, Lkik/android/gifs/b;->b:Lcom/kik/storage/s;
 
     iget-object v1, p0, Lkik/android/gifs/b;->c:Lcom/kik/android/Mixpanel;
 
-    invoke-interface {v0, p1, v1}, Lcom/kik/storage/p;->a(Ljava/lang/String;Lcom/kik/android/Mixpanel;)Lcom/kik/events/Promise;
+    invoke-interface {v0, p1, v1}, Lcom/kik/storage/s;->a(Ljava/lang/String;Lcom/kik/android/Mixpanel;)Lcom/kik/events/Promise;
 
     move-result-object v6
 

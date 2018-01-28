@@ -88,7 +88,7 @@
     if-eqz v0, :cond_0
 
     .line 165
-    invoke-static {p0}, Lkik/android/widget/bk;->a(Lkik/android/widget/GifWidget;)Ljava/lang/Runnable;
+    invoke-static {p0}, Lkik/android/widget/bw;->a(Lkik/android/widget/GifWidget;)Ljava/lang/Runnable;
 
     move-result-object v0
 
@@ -377,7 +377,7 @@
     if-nez v0, :cond_0
 
     .line 215
-    invoke-static {p0}, Lkik/android/widget/bi;->a(Lkik/android/widget/GifWidget;)Ljava/lang/Runnable;
+    invoke-static {p0}, Lkik/android/widget/bu;->a(Lkik/android/widget/GifWidget;)Ljava/lang/Runnable;
 
     move-result-object v0
 
@@ -407,7 +407,7 @@
     if-nez v0, :cond_0
 
     .line 225
-    invoke-static {p0}, Lkik/android/widget/bj;->a(Lkik/android/widget/GifWidget;)Ljava/lang/Runnable;
+    invoke-static {p0}, Lkik/android/widget/bv;->a(Lkik/android/widget/GifWidget;)Ljava/lang/Runnable;
 
     move-result-object v0
 
@@ -492,7 +492,7 @@
 
     .prologue
     .line 69
-    const v0, 0x7f0400a0
+    const v0, 0x7f04009f
 
     const/4 v1, 0x0
 
@@ -516,11 +516,11 @@
 
     move-result-object v2
 
-    invoke-virtual {p0}, Lkik/android/widget/GifWidget;->getNavigator()Lkik/android/chat/vm/aw;
+    invoke-virtual {p0}, Lkik/android/widget/GifWidget;->getNavigator()Lkik/android/chat/vm/ay;
 
     move-result-object v3
 
-    invoke-virtual {v1, v2, v3}, Lkik/android/gifs/vm/aj;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    invoke-virtual {v1, v2, v3}, Lkik/android/gifs/vm/aj;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 74
     const/16 v1, 0xe
@@ -597,7 +597,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/databinding/ViewDataBinding;->setVariable(ILjava/lang/Object;)Z
 
     .line 80
-    const/16 v1, 0x14
+    const/16 v1, 0x15
 
     invoke-direct {p0}, Lkik/android/widget/GifWidget;->g()Lkik/android/gifs/vm/aj;
 
@@ -665,7 +665,7 @@
     .line 99
     iget-object v0, p0, Lkik/android/widget/GifWidget;->e:Lkik/android/gifs/vm/aj;
 
-    invoke-virtual {v0}, Lkik/android/gifs/vm/aj;->aj_()V
+    invoke-virtual {v0}, Lkik/android/gifs/vm/aj;->ak_()V
 
     .line 100
     const/4 v0, 0x0
@@ -694,7 +694,7 @@
 
     move-result-object v0
 
-    invoke-static {p0}, Lkik/android/widget/bh;->a(Lkik/android/widget/GifWidget;)Lcom/kik/events/e;
+    invoke-static {p0}, Lkik/android/widget/bt;->a(Lkik/android/widget/GifWidget;)Lcom/kik/events/e;
 
     move-result-object v1
 

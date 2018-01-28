@@ -36,7 +36,7 @@
     .locals 0
 
     .prologue
-    .line 536
+    .line 538
     iput-object p1, p0, Lkik/android/chat/fragment/KikChatFragment$13;->a:Lkik/android/chat/fragment/KikChatFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -50,10 +50,10 @@
     .locals 2
 
     .prologue
-    .line 536
+    .line 538
     check-cast p2, Lkik/core/datatypes/f;
 
-    .line 1540
+    .line 1542
     if-eqz p2, :cond_0
 
     iget-object v0, p0, Lkik/android/chat/fragment/KikChatFragment$13;->a:Lkik/android/chat/fragment/KikChatFragment;
@@ -64,12 +64,12 @@
 
     if-nez v0, :cond_1
 
-    .line 1541
+    .line 1543
     :cond_0
     :goto_0
     return-void
 
-    .line 1543
+    .line 1545
     :cond_1
     invoke-virtual {p2}, Lkik/core/datatypes/f;->g()Ljava/lang/String;
 
@@ -91,7 +91,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 1546
+    .line 1548
     iget-object v0, p0, Lkik/android/chat/fragment/KikChatFragment$13;->a:Lkik/android/chat/fragment/KikChatFragment;
 
     invoke-static {v0}, Lkik/android/chat/fragment/KikChatFragment;->m(Lkik/android/chat/fragment/KikChatFragment;)Landroid/os/Handler;

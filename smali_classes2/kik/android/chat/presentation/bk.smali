@@ -47,7 +47,7 @@
 
     check-cast p2, Lkik/android/chat/presentation/MediaTrayPresenterImpl$a;
 
-    invoke-static {p1, p2}, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->a(Lkik/core/content/ContentAttachState;Lkik/android/chat/presentation/MediaTrayPresenterImpl$a;)Lcom/kik/util/ct;
+    invoke-static {p1, p2}, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->a(Lkik/core/content/ContentAttachState;Lkik/android/chat/presentation/MediaTrayPresenterImpl$a;)Lcom/kik/util/cy;
 
     move-result-object v0
 

@@ -122,10 +122,10 @@
 
 .field private r:Ljava/lang/String;
 
-.field private s:La/a;
+.field private s:Ldagger/a;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "La/a",
+            "Ldagger/a",
             "<",
             "Lkik/core/datatypes/messageExtensions/ContentMessage$ContextualLinkAction;",
             ">;"
@@ -299,11 +299,11 @@
     iput-object v0, p0, Lkik/core/datatypes/messageExtensions/ContentMessage;->l:Ljava/util/Map;
 
     .line 283
-    invoke-static {p0}, Lkik/core/datatypes/messageExtensions/c;->a(Lkik/core/datatypes/messageExtensions/ContentMessage;)La/a;
+    invoke-static {p0}, Lkik/core/datatypes/messageExtensions/c;->a(Lkik/core/datatypes/messageExtensions/ContentMessage;)Ldagger/a;
 
     move-result-object v0
 
-    iput-object v0, p0, Lkik/core/datatypes/messageExtensions/ContentMessage;->s:La/a;
+    iput-object v0, p0, Lkik/core/datatypes/messageExtensions/ContentMessage;->s:Ldagger/a;
 
     .line 385
     invoke-static {}, Ljava/util/UUID;->randomUUID()Ljava/util/UUID;
@@ -378,11 +378,11 @@
     iput-object v0, p0, Lkik/core/datatypes/messageExtensions/ContentMessage;->l:Ljava/util/Map;
 
     .line 283
-    invoke-static {p0}, Lkik/core/datatypes/messageExtensions/d;->a(Lkik/core/datatypes/messageExtensions/ContentMessage;)La/a;
+    invoke-static {p0}, Lkik/core/datatypes/messageExtensions/d;->a(Lkik/core/datatypes/messageExtensions/ContentMessage;)Ldagger/a;
 
     move-result-object v0
 
-    iput-object v0, p0, Lkik/core/datatypes/messageExtensions/ContentMessage;->s:La/a;
+    iput-object v0, p0, Lkik/core/datatypes/messageExtensions/ContentMessage;->s:Ldagger/a;
 
     .line 395
     iput-object p2, p0, Lkik/core/datatypes/messageExtensions/ContentMessage;->c:Ljava/lang/String;
@@ -481,11 +481,11 @@
     iput-object v0, p0, Lkik/core/datatypes/messageExtensions/ContentMessage;->l:Ljava/util/Map;
 
     .line 283
-    invoke-static {p0}, Lkik/core/datatypes/messageExtensions/f;->a(Lkik/core/datatypes/messageExtensions/ContentMessage;)La/a;
+    invoke-static {p0}, Lkik/core/datatypes/messageExtensions/f;->a(Lkik/core/datatypes/messageExtensions/ContentMessage;)Ldagger/a;
 
     move-result-object v0
 
-    iput-object v0, p0, Lkik/core/datatypes/messageExtensions/ContentMessage;->s:La/a;
+    iput-object v0, p0, Lkik/core/datatypes/messageExtensions/ContentMessage;->s:Ldagger/a;
 
     .line 443
     iput-object p2, p0, Lkik/core/datatypes/messageExtensions/ContentMessage;->d:Ljava/lang/String;
@@ -642,11 +642,11 @@
     iput-object v0, p0, Lkik/core/datatypes/messageExtensions/ContentMessage;->l:Ljava/util/Map;
 
     .line 283
-    invoke-static {p0}, Lkik/core/datatypes/messageExtensions/g;->a(Lkik/core/datatypes/messageExtensions/ContentMessage;)La/a;
+    invoke-static {p0}, Lkik/core/datatypes/messageExtensions/g;->a(Lkik/core/datatypes/messageExtensions/ContentMessage;)Ldagger/a;
 
     move-result-object v0
 
-    iput-object v0, p0, Lkik/core/datatypes/messageExtensions/ContentMessage;->s:La/a;
+    iput-object v0, p0, Lkik/core/datatypes/messageExtensions/ContentMessage;->s:Ldagger/a;
 
     .line 478
     iput-object p2, p0, Lkik/core/datatypes/messageExtensions/ContentMessage;->d:Ljava/lang/String;
@@ -773,11 +773,11 @@
     iput-object v0, p0, Lkik/core/datatypes/messageExtensions/ContentMessage;->l:Ljava/util/Map;
 
     .line 283
-    invoke-static {p0}, Lkik/core/datatypes/messageExtensions/e;->a(Lkik/core/datatypes/messageExtensions/ContentMessage;)La/a;
+    invoke-static {p0}, Lkik/core/datatypes/messageExtensions/e;->a(Lkik/core/datatypes/messageExtensions/ContentMessage;)Ldagger/a;
 
     move-result-object v0
 
-    iput-object v0, p0, Lkik/core/datatypes/messageExtensions/ContentMessage;->s:La/a;
+    iput-object v0, p0, Lkik/core/datatypes/messageExtensions/ContentMessage;->s:Ldagger/a;
 
     .line 407
     iput-object p2, p0, Lkik/core/datatypes/messageExtensions/ContentMessage;->d:Ljava/lang/String;
@@ -892,11 +892,11 @@
     iput-object v0, p0, Lkik/core/datatypes/messageExtensions/ContentMessage;->l:Ljava/util/Map;
 
     .line 283
-    invoke-static {p0}, Lkik/core/datatypes/messageExtensions/b;->a(Lkik/core/datatypes/messageExtensions/ContentMessage;)La/a;
+    invoke-static {p0}, Lkik/core/datatypes/messageExtensions/b;->a(Lkik/core/datatypes/messageExtensions/ContentMessage;)Ldagger/a;
 
     move-result-object v0
 
-    iput-object v0, p0, Lkik/core/datatypes/messageExtensions/ContentMessage;->s:La/a;
+    iput-object v0, p0, Lkik/core/datatypes/messageExtensions/ContentMessage;->s:Ldagger/a;
 
     .line 343
     if-eqz p2, :cond_2
@@ -1778,9 +1778,9 @@
 
     .prologue
     .line 1236
-    iget-object v0, p0, Lkik/core/datatypes/messageExtensions/ContentMessage;->s:La/a;
+    iget-object v0, p0, Lkik/core/datatypes/messageExtensions/ContentMessage;->s:Ldagger/a;
 
-    invoke-interface {v0}, La/a;->get()Ljava/lang/Object;
+    invoke-interface {v0}, Ldagger/a;->get()Ljava/lang/Object;
 
     move-result-object v0
 

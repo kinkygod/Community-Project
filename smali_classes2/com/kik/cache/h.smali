@@ -68,6 +68,35 @@
     return-void
 .end method
 
+.method private a(IILandroid/graphics/Bitmap;)Lrx/d;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(II",
+            "Landroid/graphics/Bitmap;",
+            ")",
+            "Lrx/d",
+            "<",
+            "Landroid/graphics/Bitmap;",
+            ">;"
+        }
+    .end annotation
+
+    .prologue
+    .line 55
+    iget-object v0, p0, Lcom/kik/cache/h;->a:Lrx/d;
+
+    invoke-static {p0, p3, p1, p2}, Lcom/kik/cache/i;->a(Lcom/kik/cache/h;Landroid/graphics/Bitmap;II)Lrx/functions/g;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lrx/d;->d(Lrx/functions/g;)Lrx/d;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
 .method static synthetic a(Lcom/kik/cache/h;Lcom/kik/cache/KikImageRequest;IILrx/Emitter;)V
     .locals 6
 
@@ -140,7 +169,7 @@
     .line 43
     iget-object v0, p0, Lcom/kik/cache/h;->c:Landroid/content/res/Resources;
 
-    const v1, 0x7f020276
+    const v1, 0x7f02025e
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -154,25 +183,17 @@
 
     move-result-object v0
 
-    .line 1055
-    iget-object v1, p0, Lcom/kik/cache/h;->a:Lrx/d;
-
-    invoke-static {p0, v0, p1, p2}, Lcom/kik/cache/i;->a(Lcom/kik/cache/h;Landroid/graphics/Bitmap;II)Lrx/functions/g;
+    invoke-direct {p0, p1, p2, v0}, Lcom/kik/cache/h;->a(IILandroid/graphics/Bitmap;)Lrx/d;
 
     move-result-object v0
 
-    invoke-virtual {v1, v0}, Lrx/d;->d(Lrx/functions/g;)Lrx/d;
-
-    move-result-object v0
-
-    .line 49
     return-object v0
 
     .line 46
     :cond_0
     iget-object v0, p0, Lcom/kik/cache/h;->c:Landroid/content/res/Resources;
 
-    const v1, 0x7f020275
+    const v1, 0x7f02025d
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -181,4 +202,18 @@
     check-cast v0, Landroid/graphics/drawable/BitmapDrawable;
 
     goto :goto_0
+.end method
+
+.method public final bridge synthetic a(IILjava/lang/Object;)Lrx/d;
+    .locals 1
+
+    .prologue
+    .line 24
+    check-cast p3, Landroid/graphics/Bitmap;
+
+    invoke-direct {p0, p1, p2, p3}, Lcom/kik/cache/h;->a(IILandroid/graphics/Bitmap;)Lrx/d;
+
+    move-result-object v0
+
+    return-object v0
 .end method

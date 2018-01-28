@@ -67,7 +67,7 @@
 
 
 # virtual methods
-.method public final a()I
+.method public final d()I
     .locals 1
 
     .prologue

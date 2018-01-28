@@ -14,13 +14,13 @@
 # instance fields
 .field protected _errorRefreshButton:Landroid/widget/Button;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f10042e
+        value = 0x7f100425
     .end annotation
 .end field
 
 .field protected _errorView:Landroid/view/View;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f10039d
+        value = 0x7f100399
     .end annotation
 .end field
 
@@ -52,7 +52,7 @@
 
     .prologue
     .line 87
-    const v0, 0x7f040136
+    const v0, 0x7f04013a
 
     return v0
 .end method
@@ -95,7 +95,7 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
     .line 70
     return-void
@@ -116,7 +116,7 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ca;->g([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->g([Landroid/view/View;)V
 
     .line 76
     return-void

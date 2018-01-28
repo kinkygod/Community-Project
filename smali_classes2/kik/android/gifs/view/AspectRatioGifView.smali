@@ -98,7 +98,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bq;->e(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
+    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bt;->e(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
 
     .line 26
     return-void

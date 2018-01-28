@@ -3,6 +3,14 @@
 .source "SourceFile"
 
 
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lkik/android/e/y$a;
+    }
+.end annotation
+
+
 # static fields
 .field private static final a:Landroid/databinding/ViewDataBinding$IncludedLayouts;
 
@@ -10,11 +18,17 @@
 
 
 # instance fields
-.field private final c:Lkik/android/widget/RadioButtonDialogRecycler;
+.field private final c:Landroid/widget/LinearLayout;
 
-.field private d:Lkik/android/chat/vm/ah;
+.field private final d:Lkik/android/widget/RobotoTextView;
 
-.field private e:J
+.field private final e:Landroid/widget/RadioButton;
+
+.field private f:Lkik/android/chat/vm/ai;
+
+.field private g:Lkik/android/e/y$a;
+
+.field private h:J
 
 
 # direct methods
@@ -35,21 +49,23 @@
 .end method
 
 .method private constructor <init>(Landroid/databinding/DataBindingComponent;Landroid/view/View;)V
-    .locals 4
+    .locals 5
 
     .prologue
+    const/4 v4, 0x0
+
     const/4 v3, 0x0
 
-    .line 22
-    invoke-direct {p0, p1, p2, v3}, Landroid/databinding/ViewDataBinding;-><init>(Landroid/databinding/DataBindingComponent;Landroid/view/View;I)V
+    .line 25
+    invoke-direct {p0, p1, p2, v4}, Landroid/databinding/ViewDataBinding;-><init>(Landroid/databinding/DataBindingComponent;Landroid/view/View;I)V
 
-    .line 98
+    .line 132
     const-wide/16 v0, -0x1
 
-    iput-wide v0, p0, Lkik/android/e/y;->e:J
+    iput-wide v0, p0, Lkik/android/e/y;->h:J
 
-    .line 23
-    const/4 v0, 0x1
+    .line 26
+    const/4 v0, 0x3
 
     sget-object v1, Lkik/android/e/y;->a:Landroid/databinding/ViewDataBinding$IncludedLayouts;
 
@@ -57,29 +73,55 @@
 
     invoke-static {p1, p2, v0, v1, v2}, Lkik/android/e/y;->mapBindings(Landroid/databinding/DataBindingComponent;Landroid/view/View;ILandroid/databinding/ViewDataBinding$IncludedLayouts;Landroid/util/SparseIntArray;)[Ljava/lang/Object;
 
-    move-result-object v0
+    move-result-object v1
 
-    .line 24
-    aget-object v0, v0, v3
+    .line 27
+    aget-object v0, v1, v4
 
-    check-cast v0, Lkik/android/widget/RadioButtonDialogRecycler;
+    check-cast v0, Landroid/widget/LinearLayout;
 
-    iput-object v0, p0, Lkik/android/e/y;->c:Lkik/android/widget/RadioButtonDialogRecycler;
-
-    .line 25
-    iget-object v0, p0, Lkik/android/e/y;->c:Lkik/android/widget/RadioButtonDialogRecycler;
-
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, v1}, Lkik/android/widget/RadioButtonDialogRecycler;->setTag(Ljava/lang/Object;)V
-
-    .line 26
-    invoke-virtual {p0, p2}, Lkik/android/e/y;->setRootTag(Landroid/view/View;)V
+    iput-object v0, p0, Lkik/android/e/y;->c:Landroid/widget/LinearLayout;
 
     .line 28
-    invoke-virtual {p0}, Lkik/android/e/y;->invalidateAll()V
+    iget-object v0, p0, Lkik/android/e/y;->c:Landroid/widget/LinearLayout;
+
+    invoke-virtual {v0, v3}, Landroid/widget/LinearLayout;->setTag(Ljava/lang/Object;)V
 
     .line 29
+    const/4 v0, 0x1
+
+    aget-object v0, v1, v0
+
+    check-cast v0, Lkik/android/widget/RobotoTextView;
+
+    iput-object v0, p0, Lkik/android/e/y;->d:Lkik/android/widget/RobotoTextView;
+
+    .line 30
+    iget-object v0, p0, Lkik/android/e/y;->d:Lkik/android/widget/RobotoTextView;
+
+    invoke-virtual {v0, v3}, Lkik/android/widget/RobotoTextView;->setTag(Ljava/lang/Object;)V
+
+    .line 31
+    const/4 v0, 0x2
+
+    aget-object v0, v1, v0
+
+    check-cast v0, Landroid/widget/RadioButton;
+
+    iput-object v0, p0, Lkik/android/e/y;->e:Landroid/widget/RadioButton;
+
+    .line 32
+    iget-object v0, p0, Lkik/android/e/y;->e:Landroid/widget/RadioButton;
+
+    invoke-virtual {v0, v3}, Landroid/widget/RadioButton;->setTag(Ljava/lang/Object;)V
+
+    .line 33
+    invoke-virtual {p0, p2}, Lkik/android/e/y;->setRootTag(Landroid/view/View;)V
+
+    .line 35
+    invoke-virtual {p0}, Lkik/android/e/y;->invalidateAll()V
+
+    .line 36
     return-void
 .end method
 
@@ -87,8 +129,8 @@
     .locals 3
 
     .prologue
-    .line 116
-    const-string v0, "layout/dialog_single_select_radio_0"
+    .line 150
+    const-string v0, "layout/dialog_radio_option_0"
 
     invoke-virtual {p0}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -100,7 +142,7 @@
 
     if-nez v0, :cond_0
 
-    .line 117
+    .line 151
     new-instance v0, Ljava/lang/RuntimeException;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -125,7 +167,7 @@
 
     throw v0
 
-    .line 119
+    .line 153
     :cond_0
     new-instance v0, Lkik/android/e/y;
 
@@ -136,99 +178,100 @@
 
 
 # virtual methods
-.method public final a(Lkik/android/chat/vm/ah;)V
-    .locals 4
-
-    .prologue
-    .line 59
-    iput-object p1, p0, Lkik/android/e/y;->d:Lkik/android/chat/vm/ah;
-
-    .line 60
-    monitor-enter p0
-
-    .line 61
-    :try_start_0
-    iget-wide v0, p0, Lkik/android/e/y;->e:J
-
-    const-wide/16 v2, 0x1
-
-    or-long/2addr v0, v2
-
-    iput-wide v0, p0, Lkik/android/e/y;->e:J
-
-    .line 62
-    monitor-exit p0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 63
-    const/16 v0, 0xe
-
-    invoke-virtual {p0, v0}, Lkik/android/e/y;->notifyPropertyChanged(I)V
-
-    .line 64
-    invoke-super {p0}, Landroid/databinding/ViewDataBinding;->requestRebind()V
-
-    .line 65
-    return-void
-
-    .line 62
-    :catchall_0
-    move-exception v0
-
-    :try_start_1
-    monitor-exit p0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    throw v0
-.end method
-
 .method protected final executeBindings()V
-    .locals 8
+    .locals 12
 
     .prologue
-    const-wide/16 v6, 0x0
+    const-wide/16 v10, 0x3
 
-    .line 80
+    const-wide/16 v8, 0x0
+
+    const/4 v0, 0x0
+
+    .line 87
     monitor-enter p0
 
-    .line 81
+    .line 88
     :try_start_0
-    iget-wide v0, p0, Lkik/android/e/y;->e:J
-
-    .line 82
-    const-wide/16 v2, 0x0
-
-    iput-wide v2, p0, Lkik/android/e/y;->e:J
-
-    .line 83
-    monitor-exit p0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 84
-    iget-object v2, p0, Lkik/android/e/y;->d:Lkik/android/chat/vm/ah;
+    iget-wide v4, p0, Lkik/android/e/y;->h:J
 
     .line 89
-    const-wide/16 v4, 0x3
+    const-wide/16 v2, 0x0
 
-    and-long/2addr v0, v4
+    iput-wide v2, p0, Lkik/android/e/y;->h:J
 
-    cmp-long v0, v0, v6
-
-    if-eqz v0, :cond_0
-
-    .line 92
-    iget-object v0, p0, Lkik/android/e/y;->c:Lkik/android/widget/RadioButtonDialogRecycler;
-
-    invoke-static {v0, v2}, Lcom/kik/util/j;->a(Landroid/support/v7/widget/RecyclerView;Lkik/android/chat/vm/IListViewModel;)V
+    .line 90
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 94
+    iget-object v3, p0, Lkik/android/e/y;->f:Lkik/android/chat/vm/ai;
+
+    .line 96
+    and-long v6, v4, v10
+
+    cmp-long v1, v6, v8
+
+    if-eqz v1, :cond_2
+
+    .line 100
+    if-eqz v3, :cond_2
+
+    .line 102
+    iget-object v0, p0, Lkik/android/e/y;->g:Lkik/android/e/y$a;
+
+    if-nez v0, :cond_1
+
+    new-instance v0, Lkik/android/e/y$a;
+
+    invoke-direct {v0}, Lkik/android/e/y$a;-><init>()V
+
+    iput-object v0, p0, Lkik/android/e/y;->g:Lkik/android/e/y$a;
+
+    :goto_0
+    invoke-virtual {v0, v3}, Lkik/android/e/y$a;->a(Lkik/android/chat/vm/ai;)Lkik/android/e/y$a;
+
+    move-result-object v2
+
+    .line 104
+    invoke-interface {v3}, Lkik/android/chat/vm/ai;->d()Lrx/d;
+
+    move-result-object v1
+
+    .line 106
+    invoke-interface {v3}, Lkik/android/chat/vm/ai;->b()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 110
+    :goto_1
+    and-long/2addr v4, v10
+
+    cmp-long v3, v4, v8
+
+    if-eqz v3, :cond_0
+
+    .line 113
+    iget-object v3, p0, Lkik/android/e/y;->c:Landroid/widget/LinearLayout;
+
+    invoke-static {v3, v2}, Lcom/kik/util/j;->a(Landroid/view/View;Ljava/lang/Runnable;)V
+
+    .line 114
+    iget-object v2, p0, Lkik/android/e/y;->d:Lkik/android/widget/RobotoTextView;
+
+    invoke-static {v2, v0}, Landroid/databinding/adapters/TextViewBindingAdapter;->setText(Landroid/widget/TextView;Ljava/lang/CharSequence;)V
+
+    .line 115
+    iget-object v0, p0, Lkik/android/e/y;->e:Landroid/widget/RadioButton;
+
+    invoke-static {v0, v1}, Lcom/kik/util/j;->a(Landroid/widget/CompoundButton;Lrx/d;)V
+
+    .line 117
     :cond_0
     return-void
 
-    .line 83
+    .line 90
     :catchall_0
     move-exception v0
 
@@ -238,18 +281,31 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     throw v0
+
+    .line 102
+    :cond_1
+    iget-object v0, p0, Lkik/android/e/y;->g:Lkik/android/e/y$a;
+
+    goto :goto_0
+
+    :cond_2
+    move-object v1, v0
+
+    move-object v2, v0
+
+    goto :goto_1
 .end method
 
 .method public final hasPendingBindings()Z
     .locals 4
 
     .prologue
-    .line 41
+    .line 48
     monitor-enter p0
 
-    .line 42
+    .line 49
     :try_start_0
-    iget-wide v0, p0, Lkik/android/e/y;->e:J
+    iget-wide v0, p0, Lkik/android/e/y;->h:J
 
     const-wide/16 v2, 0x0
 
@@ -257,25 +313,25 @@
 
     if-eqz v0, :cond_0
 
-    .line 43
+    .line 50
     const/4 v0, 0x1
 
     monitor-exit p0
 
-    .line 46
+    .line 53
     :goto_0
     return v0
 
-    .line 45
+    .line 52
     :cond_0
     monitor-exit p0
 
-    .line 46
+    .line 53
     const/4 v0, 0x0
 
     goto :goto_0
 
-    .line 45
+    .line 52
     :catchall_0
     move-exception v0
 
@@ -290,27 +346,27 @@
     .locals 2
 
     .prologue
-    .line 33
+    .line 40
     monitor-enter p0
 
-    .line 34
+    .line 41
     const-wide/16 v0, 0x2
 
     :try_start_0
-    iput-wide v0, p0, Lkik/android/e/y;->e:J
+    iput-wide v0, p0, Lkik/android/e/y;->h:J
 
-    .line 35
+    .line 42
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 36
+    .line 43
     invoke-virtual {p0}, Lkik/android/e/y;->requestRebind()V
 
-    .line 37
+    .line 44
     return-void
 
-    .line 35
+    .line 42
     :catchall_0
     move-exception v0
 
@@ -326,37 +382,77 @@
     .locals 1
 
     .prologue
-    .line 74
+    .line 81
     const/4 v0, 0x0
 
     return v0
 .end method
 
 .method public final setVariable(ILjava/lang/Object;)Z
-    .locals 1
+    .locals 4
 
     .prologue
-    .line 50
+    .line 57
     packed-switch p1, :pswitch_data_0
 
-    .line 55
+    .line 62
     const/4 v0, 0x0
 
     :goto_0
     return v0
 
-    .line 52
+    .line 59
     :pswitch_0
-    check-cast p2, Lkik/android/chat/vm/ah;
+    check-cast p2, Lkik/android/chat/vm/ai;
 
-    invoke-virtual {p0, p2}, Lkik/android/e/y;->a(Lkik/android/chat/vm/ah;)V
+    .line 1066
+    iput-object p2, p0, Lkik/android/e/y;->f:Lkik/android/chat/vm/ai;
 
-    .line 53
+    .line 1067
+    monitor-enter p0
+
+    .line 1068
+    :try_start_0
+    iget-wide v0, p0, Lkik/android/e/y;->h:J
+
+    const-wide/16 v2, 0x1
+
+    or-long/2addr v0, v2
+
+    iput-wide v0, p0, Lkik/android/e/y;->h:J
+
+    .line 1069
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 1070
+    const/16 v0, 0xe
+
+    invoke-virtual {p0, v0}, Lkik/android/e/y;->notifyPropertyChanged(I)V
+
+    .line 1071
+    invoke-super {p0}, Landroid/databinding/ViewDataBinding;->requestRebind()V
+
+    .line 60
     const/4 v0, 0x1
 
     goto :goto_0
 
-    .line 50
+    .line 1069
+    :catchall_0
+    move-exception v0
+
+    :try_start_1
+    monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    throw v0
+
+    .line 57
+    nop
+
     :pswitch_data_0
     .packed-switch 0xe
         :pswitch_0

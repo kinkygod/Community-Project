@@ -595,7 +595,7 @@
     return-object v0
 .end method
 
-.method public final a(Landroid/content/Intent;ILkik/android/chat/vm/aw;)Lkik/android/gallery/a;
+.method public final a(Landroid/content/Intent;ILkik/android/chat/vm/ay;)Lkik/android/gallery/a;
     .locals 10
 
     .prologue
@@ -760,7 +760,7 @@
 
     move-result-object v0
 
-    invoke-interface {p3, v0}, Lkik/android/chat/vm/aw;->b(Ljava/lang/String;)V
+    invoke-interface {p3, v0}, Lkik/android/chat/vm/ay;->b(Ljava/lang/String;)V
 
     move-object v1, v8
 

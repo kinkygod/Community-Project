@@ -2,7 +2,7 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Lrx/functions/b;
 
 
 # instance fields
@@ -20,7 +20,7 @@
     return-void
 .end method
 
-.method public static a(Lkik/android/chat/view/ValidateableInputView;)Ljava/lang/Runnable;
+.method public static a(Lkik/android/chat/view/ValidateableInputView;)Lrx/functions/b;
     .locals 1
 
     new-instance v0, Lkik/android/chat/view/au;
@@ -32,12 +32,12 @@
 
 
 # virtual methods
-.method public final run()V
+.method public final call(Ljava/lang/Object;)V
     .locals 1
 
     iget-object v0, p0, Lkik/android/chat/view/au;->a:Lkik/android/chat/view/ValidateableInputView;
 
-    invoke-virtual {v0}, Lkik/android/chat/view/ValidateableInputView;->i()V
+    invoke-static {v0}, Lkik/android/chat/view/ValidateableInputView;->a(Lkik/android/chat/view/ValidateableInputView;)V
 
     return-void
 .end method

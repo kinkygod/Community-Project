@@ -32,7 +32,7 @@
     .locals 0
 
     .prologue
-    .line 1379
+    .line 1381
     iput-object p1, p0, Lkik/android/chat/fragment/KikConversationsFragment$4;->a:Lkik/android/chat/fragment/KikConversationsFragment;
 
     invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
@@ -46,13 +46,13 @@
     .locals 1
 
     .prologue
-    .line 1383
+    .line 1385
     invoke-static {}, Lkik/android/internal/platform/PlatformHelper;->a()Lkik/android/internal/platform/PlatformHelper;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lkik/android/internal/platform/PlatformHelper;->b()V
 
-    .line 1384
+    .line 1386
     return-void
 .end method

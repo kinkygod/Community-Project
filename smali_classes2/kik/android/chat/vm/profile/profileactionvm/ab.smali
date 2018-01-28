@@ -1,46 +1,47 @@
-.class public final Lkik/android/chat/vm/profile/profileactionvm/ab;
+.class final synthetic Lkik/android/chat/vm/profile/profileactionvm/ab;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
-
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lkik/android/chat/vm/profile/profileactionvm/ab$d;,
-        Lkik/android/chat/vm/profile/profileactionvm/ab$b;,
-        Lkik/android/chat/vm/profile/profileactionvm/ab$c;,
-        Lkik/android/chat/vm/profile/profileactionvm/ab$a;
-    }
-.end annotation
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
 # static fields
-.field private static a:Ljava/text/SimpleDateFormat;
+.field private static final a:Lkik/android/chat/vm/profile/profileactionvm/ab;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 2
+    .locals 1
 
-    .prologue
-    .line 41
-    new-instance v0, Ljava/text/SimpleDateFormat;
+    new-instance v0, Lkik/android/chat/vm/profile/profileactionvm/ab;
 
-    const-string v1, "h:mm a"
+    invoke-direct {v0}, Lkik/android/chat/vm/profile/profileactionvm/ab;-><init>()V
 
-    invoke-direct {v0, v1}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;)V
-
-    sput-object v0, Lkik/android/chat/vm/profile/profileactionvm/ab;->a:Ljava/text/SimpleDateFormat;
+    sput-object v0, Lkik/android/chat/vm/profile/profileactionvm/ab;->a:Lkik/android/chat/vm/profile/profileactionvm/ab;
 
     return-void
 .end method
 
-.method static synthetic a()Ljava/text/SimpleDateFormat;
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static a()Ljava/lang/Runnable;
     .locals 1
 
-    .prologue
-    .line 39
-    sget-object v0, Lkik/android/chat/vm/profile/profileactionvm/ab;->a:Ljava/text/SimpleDateFormat;
+    sget-object v0, Lkik/android/chat/vm/profile/profileactionvm/ab;->a:Lkik/android/chat/vm/profile/profileactionvm/ab;
 
     return-object v0
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 0
+
+    return-void
 .end method

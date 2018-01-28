@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/android/chat/theming/ChatBubbleManager;-><init>(Landroid/content/Context;Lkik/android/chat/b/a;Lkik/core/interfaces/ae;)V
+    value = Lkik/android/chat/theming/ChatBubbleManager;-><init>(Landroid/content/Context;Lkik/android/chat/b/a;Lkik/core/interfaces/ad;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

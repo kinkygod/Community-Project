@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/vm/bb;
+.implements Lkik/android/chat/vm/bd;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/android/chat/vm/chats/publicgroups/y;->g()V
+    value = Lkik/android/chat/vm/chats/publicgroups/y;->h()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

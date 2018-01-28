@@ -20,7 +20,7 @@
 
 
 # virtual methods
-.method public final W_()Lkik/android/chat/vm/chats/search/IChatsSearchResultViewModel$LayoutType;
+.method public final Y_()Lkik/android/chat/vm/chats/search/IChatsSearchResultViewModel$LayoutType;
     .locals 1
 
     .prologue
@@ -30,7 +30,7 @@
     return-object v0
 .end method
 
-.method public final Y_()Z
+.method public final ab_()Z
     .locals 3
 
     .prologue
@@ -119,9 +119,9 @@
     if-eqz v1, :cond_1
 
     .line 1050
-    iget-object v1, p0, Lkik/android/chat/vm/chats/search/k;->b:Lkik/core/interfaces/w;
+    iget-object v1, p0, Lkik/android/chat/vm/chats/search/k;->b:Lkik/core/interfaces/v;
 
-    invoke-static {v0, v1}, Lkik/android/util/bs;->a(Lkik/core/datatypes/p;Lkik/core/interfaces/w;)Ljava/lang/String;
+    invoke-static {v0, v1}, Lkik/android/util/bs;->a(Lkik/core/datatypes/p;Lkik/core/interfaces/v;)Ljava/lang/String;
 
     move-result-object v0
 

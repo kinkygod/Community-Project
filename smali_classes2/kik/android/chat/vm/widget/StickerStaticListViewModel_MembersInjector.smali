@@ -3,16 +3,16 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/b;
+.implements Ldagger/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/b",
+        "Ldagger/b",
         "<",
-        "Lkik/android/chat/vm/widget/bm;",
+        "Lkik/android/chat/vm/widget/bn;",
         ">;"
     }
 .end annotation
@@ -28,7 +28,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ac;",
+            "Lkik/core/interfaces/ab;",
             ">;"
         }
     .end annotation
@@ -72,7 +72,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/w;",
+            "Lkik/core/interfaces/v;",
             ">;"
         }
     .end annotation
@@ -83,7 +83,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ae;",
+            "Lkik/core/interfaces/ad;",
             ">;"
         }
     .end annotation
@@ -94,7 +94,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ad;",
+            "Lkik/core/interfaces/ac;",
             ">;"
         }
     .end annotation
@@ -146,7 +146,7 @@
             "(",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ac;",
+            "Lkik/core/interfaces/ab;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -162,15 +162,15 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/w;",
-            ">;",
-            "Ljavax/inject/Provider",
-            "<",
-            "Lkik/core/interfaces/ae;",
+            "Lkik/core/interfaces/v;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
             "Lkik/core/interfaces/ad;",
+            ">;",
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/core/interfaces/ac;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -323,14 +323,14 @@
     return-void
 .end method
 
-.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)La/b;
+.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
     .locals 9
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ac;",
+            "Lkik/core/interfaces/ab;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -346,11 +346,7 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/w;",
-            ">;",
-            "Ljavax/inject/Provider",
-            "<",
-            "Lkik/core/interfaces/ae;",
+            "Lkik/core/interfaces/v;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -358,11 +354,15 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
+            "Lkik/core/interfaces/ac;",
+            ">;",
+            "Ljavax/inject/Provider",
+            "<",
             "Lcom/kik/android/Mixpanel;",
             ">;)",
-            "La/b",
+            "Ldagger/b",
             "<",
-            "Lkik/android/chat/vm/widget/bm;",
+            "Lkik/android/chat/vm/widget/bn;",
             ">;"
         }
     .end annotation
@@ -394,12 +394,12 @@
 
 
 # virtual methods
-.method public final synthetic a(Ljava/lang/Object;)V
+.method public final synthetic injectMembers(Ljava/lang/Object;)V
     .locals 2
 
     .prologue
     .line 15
-    check-cast p1, Lkik/android/chat/vm/widget/bm;
+    check-cast p1, Lkik/android/chat/vm/widget/bn;
 
     .line 1086
     if-nez p1, :cond_0
@@ -422,9 +422,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/interfaces/ac;
+    check-cast v0, Lkik/core/interfaces/ab;
 
-    iput-object v0, p1, Lkik/android/chat/vm/widget/a;->a:Lkik/core/interfaces/ac;
+    iput-object v0, p1, Lkik/android/chat/vm/widget/a;->a:Lkik/core/interfaces/ab;
 
     .line 1091
     iget-object v0, p0, Lkik/android/chat/vm/widget/StickerStaticListViewModel_MembersInjector;->c:Ljavax/inject/Provider;
@@ -446,7 +446,7 @@
 
     check-cast v0, Lkik/core/interfaces/b;
 
-    iput-object v0, p1, Lkik/android/chat/vm/widget/bm;->d:Lkik/core/interfaces/b;
+    iput-object v0, p1, Lkik/android/chat/vm/widget/bn;->d:Lkik/core/interfaces/b;
 
     .line 1093
     iget-object v0, p0, Lkik/android/chat/vm/widget/StickerStaticListViewModel_MembersInjector;->e:Ljavax/inject/Provider;
@@ -457,7 +457,7 @@
 
     check-cast v0, Lkik/core/interfaces/IConversation;
 
-    iput-object v0, p1, Lkik/android/chat/vm/widget/bm;->e:Lkik/core/interfaces/IConversation;
+    iput-object v0, p1, Lkik/android/chat/vm/widget/bn;->e:Lkik/core/interfaces/IConversation;
 
     .line 1094
     iget-object v0, p0, Lkik/android/chat/vm/widget/StickerStaticListViewModel_MembersInjector;->f:Ljavax/inject/Provider;
@@ -466,9 +466,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/interfaces/w;
+    check-cast v0, Lkik/core/interfaces/v;
 
-    iput-object v0, p1, Lkik/android/chat/vm/widget/bm;->f:Lkik/core/interfaces/w;
+    iput-object v0, p1, Lkik/android/chat/vm/widget/bn;->f:Lkik/core/interfaces/v;
 
     .line 1095
     iget-object v0, p0, Lkik/android/chat/vm/widget/StickerStaticListViewModel_MembersInjector;->g:Ljavax/inject/Provider;
@@ -477,9 +477,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/interfaces/ae;
+    check-cast v0, Lkik/core/interfaces/ad;
 
-    iput-object v0, p1, Lkik/android/chat/vm/widget/bm;->g:Lkik/core/interfaces/ae;
+    iput-object v0, p1, Lkik/android/chat/vm/widget/bn;->g:Lkik/core/interfaces/ad;
 
     .line 1096
     iget-object v0, p0, Lkik/android/chat/vm/widget/StickerStaticListViewModel_MembersInjector;->h:Ljavax/inject/Provider;
@@ -488,9 +488,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/interfaces/ad;
+    check-cast v0, Lkik/core/interfaces/ac;
 
-    iput-object v0, p1, Lkik/android/chat/vm/widget/bm;->h:Lkik/core/interfaces/ad;
+    iput-object v0, p1, Lkik/android/chat/vm/widget/bn;->h:Lkik/core/interfaces/ac;
 
     .line 1097
     iget-object v0, p0, Lkik/android/chat/vm/widget/StickerStaticListViewModel_MembersInjector;->i:Ljavax/inject/Provider;
@@ -501,7 +501,7 @@
 
     check-cast v0, Lcom/kik/android/Mixpanel;
 
-    iput-object v0, p1, Lkik/android/chat/vm/widget/bm;->i:Lcom/kik/android/Mixpanel;
+    iput-object v0, p1, Lkik/android/chat/vm/widget/bn;->i:Lcom/kik/android/Mixpanel;
 
     .line 15
     return-void

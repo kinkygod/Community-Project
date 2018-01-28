@@ -6,25 +6,25 @@
 # instance fields
 .field protected _buttonContainer:Landroid/widget/LinearLayout;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f100431
+        value = 0x7f100428
     .end annotation
 .end field
 
 .field protected _kikLogo:Landroid/widget/ImageView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f10042f
+        value = 0x7f100426
     .end annotation
 .end field
 
 .field protected _loginButton:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f100353
+        value = 0x7f10034f
     .end annotation
 .end field
 
 .field protected _registerButton:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1003c0
+        value = 0x7f1003bc
     .end annotation
 .end field
 
@@ -33,7 +33,7 @@
     .end annotation
 .end field
 
-.field protected b:Lkik/core/interfaces/ah;
+.field protected b:Lkik/core/interfaces/ag;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -82,7 +82,7 @@
     invoke-direct {p0}, Lkik/android/chat/fragment/KikIqFragmentBase;-><init>()V
 
     .line 76
-    invoke-static {p0}, Lkik/android/chat/fragment/eg;->a(Lkik/android/chat/fragment/KikWelcomeFragment;)Lcom/kik/events/e;
+    invoke-static {p0}, Lkik/android/chat/fragment/eh;->a(Lkik/android/chat/fragment/KikWelcomeFragment;)Lcom/kik/events/e;
 
     move-result-object v0
 
@@ -109,17 +109,17 @@
     .line 280
     iget-object v0, p0, Lkik/android/chat/fragment/KikWelcomeFragment;->_loginButton:Landroid/widget/TextView;
 
-    invoke-static {v0, v1}, Lkik/android/util/ca;->d(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lkik/android/util/cb;->d(Landroid/view/View;I)V
 
     .line 281
     iget-object v0, p0, Lkik/android/chat/fragment/KikWelcomeFragment;->_registerButton:Landroid/widget/TextView;
 
-    invoke-static {v0, v1}, Lkik/android/util/ca;->d(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lkik/android/util/cb;->d(Landroid/view/View;I)V
 
     .line 284
     iget-object v0, p0, Lkik/android/chat/fragment/KikWelcomeFragment;->_loginButton:Landroid/widget/TextView;
 
-    invoke-static {v0}, Lkik/android/util/ca;->a(Landroid/view/View;)Lkik/android/util/ca$b;
+    invoke-static {v0}, Lkik/android/util/cb;->a(Landroid/view/View;)Lkik/android/util/cb$b;
 
     move-result-object v0
 
@@ -127,7 +127,7 @@
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Lkik/android/util/ca$b;->b(I)Lkik/android/util/ca$b;
+    invoke-virtual {v0, v1}, Lkik/android/util/cb$b;->b(I)Lkik/android/util/cb$b;
 
     move-result-object v0
 
@@ -135,12 +135,12 @@
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Lkik/android/util/ca$b;->c(I)Lkik/android/util/ca$b;
+    invoke-virtual {v0, v1}, Lkik/android/util/cb$b;->c(I)Lkik/android/util/cb$b;
 
     .line 285
     iget-object v0, p0, Lkik/android/chat/fragment/KikWelcomeFragment;->_registerButton:Landroid/widget/TextView;
 
-    invoke-static {v0}, Lkik/android/util/ca;->a(Landroid/view/View;)Lkik/android/util/ca$b;
+    invoke-static {v0}, Lkik/android/util/cb;->a(Landroid/view/View;)Lkik/android/util/cb$b;
 
     move-result-object v0
 
@@ -148,7 +148,7 @@
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Lkik/android/util/ca$b;->b(I)Lkik/android/util/ca$b;
+    invoke-virtual {v0, v1}, Lkik/android/util/cb$b;->b(I)Lkik/android/util/cb$b;
 
     move-result-object v0
 
@@ -156,7 +156,7 @@
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Lkik/android/util/ca$b;->c(I)Lkik/android/util/ca$b;
+    invoke-virtual {v0, v1}, Lkik/android/util/cb$b;->c(I)Lkik/android/util/cb$b;
 
     .line 286
     return-void
@@ -203,7 +203,7 @@
 
     move-result-object v2
 
-    invoke-static {p0}, Lkik/android/chat/fragment/el;->a(Lkik/android/chat/fragment/KikWelcomeFragment;)Landroid/content/DialogInterface$OnClickListener;
+    invoke-static {p0}, Lkik/android/chat/fragment/em;->a(Lkik/android/chat/fragment/KikWelcomeFragment;)Landroid/content/DialogInterface$OnClickListener;
 
     move-result-object v3
 
@@ -275,14 +275,14 @@
 
     invoke-direct {v0}, Lkik/android/chat/fragment/KikDialogFragment$a;-><init>()V
 
-    const v1, 0x7f09055e
+    const v1, 0x7f090564
 
     .line 152
     invoke-virtual {v0, v1}, Lkik/android/chat/fragment/KikDialogFragment$a;->a(I)Lkik/android/chat/fragment/KikDialogFragment$a;
 
     move-result-object v0
 
-    const v1, 0x7f09055d
+    const v1, 0x7f090563
 
     .line 153
     invoke-virtual {v0, v1}, Lkik/android/chat/fragment/KikDialogFragment$a;->b(I)Lkik/android/chat/fragment/KikDialogFragment$a;
@@ -296,7 +296,7 @@
 
     move-result-object v1
 
-    invoke-static {p0}, Lkik/android/chat/fragment/ek;->a(Lkik/android/chat/fragment/KikWelcomeFragment;)Landroid/content/DialogInterface$OnClickListener;
+    invoke-static {p0}, Lkik/android/chat/fragment/el;->a(Lkik/android/chat/fragment/KikWelcomeFragment;)Landroid/content/DialogInterface$OnClickListener;
 
     move-result-object v2
 
@@ -334,17 +334,17 @@
     .line 291
     iget-object v0, p0, Lkik/android/chat/fragment/KikWelcomeFragment;->_loginButton:Landroid/widget/TextView;
 
-    invoke-static {v0, v3}, Lkik/android/util/ca;->d(Landroid/view/View;I)V
+    invoke-static {v0, v3}, Lkik/android/util/cb;->d(Landroid/view/View;I)V
 
     .line 292
     iget-object v0, p0, Lkik/android/chat/fragment/KikWelcomeFragment;->_registerButton:Landroid/widget/TextView;
 
-    invoke-static {v0, v3}, Lkik/android/util/ca;->d(Landroid/view/View;I)V
+    invoke-static {v0, v3}, Lkik/android/util/cb;->d(Landroid/view/View;I)V
 
     .line 295
     iget-object v0, p0, Lkik/android/chat/fragment/KikWelcomeFragment;->_loginButton:Landroid/widget/TextView;
 
-    invoke-static {v0}, Lkik/android/util/ca;->a(Landroid/view/View;)Lkik/android/util/ca$b;
+    invoke-static {v0}, Lkik/android/util/cb;->a(Landroid/view/View;)Lkik/android/util/cb$b;
 
     move-result-object v0
 
@@ -352,7 +352,7 @@
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Lkik/android/util/ca$b;->b(I)Lkik/android/util/ca$b;
+    invoke-virtual {v0, v1}, Lkik/android/util/cb$b;->b(I)Lkik/android/util/cb$b;
 
     move-result-object v0
 
@@ -360,12 +360,12 @@
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Lkik/android/util/ca$b;->c(I)Lkik/android/util/ca$b;
+    invoke-virtual {v0, v1}, Lkik/android/util/cb$b;->c(I)Lkik/android/util/cb$b;
 
     .line 296
     iget-object v0, p0, Lkik/android/chat/fragment/KikWelcomeFragment;->_registerButton:Landroid/widget/TextView;
 
-    invoke-static {v0}, Lkik/android/util/ca;->a(Landroid/view/View;)Lkik/android/util/ca$b;
+    invoke-static {v0}, Lkik/android/util/cb;->a(Landroid/view/View;)Lkik/android/util/cb$b;
 
     move-result-object v0
 
@@ -373,7 +373,7 @@
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Lkik/android/util/ca$b;->b(I)Lkik/android/util/ca$b;
+    invoke-virtual {v0, v1}, Lkik/android/util/cb$b;->b(I)Lkik/android/util/cb$b;
 
     move-result-object v0
 
@@ -381,7 +381,7 @@
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Lkik/android/util/ca$b;->c(I)Lkik/android/util/ca$b;
+    invoke-virtual {v0, v1}, Lkik/android/util/cb$b;->c(I)Lkik/android/util/cb$b;
 
     .line 297
     return-void
@@ -649,7 +649,7 @@
 
     .prologue
     .line 81
-    const v0, 0x7f040186
+    const v0, 0x7f040189
 
     const/4 v1, 0x0
 
@@ -667,9 +667,9 @@
     .line 83
     iget-object v0, p0, Lkik/android/chat/fragment/KikWelcomeFragment;->h:Lcom/kik/events/d;
 
-    iget-object v1, p0, Lkik/android/chat/fragment/KikWelcomeFragment;->b:Lkik/core/interfaces/ah;
+    iget-object v1, p0, Lkik/android/chat/fragment/KikWelcomeFragment;->b:Lkik/core/interfaces/ag;
 
-    invoke-interface {v1}, Lkik/core/interfaces/ah;->b()Lcom/kik/events/c;
+    invoke-interface {v1}, Lkik/core/interfaces/ag;->b()Lcom/kik/events/c;
 
     move-result-object v1
 
@@ -678,9 +678,9 @@
     invoke-virtual {v0, v1, v2}, Lcom/kik/events/d;->a(Lcom/kik/events/c;Lcom/kik/events/e;)Lcom/kik/events/e;
 
     .line 85
-    iget-object v0, p0, Lkik/android/chat/fragment/KikWelcomeFragment;->b:Lkik/core/interfaces/ah;
+    iget-object v0, p0, Lkik/android/chat/fragment/KikWelcomeFragment;->b:Lkik/core/interfaces/ag;
 
-    invoke-interface {v0}, Lkik/core/interfaces/ah;->h()Lcom/kik/events/Promise;
+    invoke-interface {v0}, Lkik/core/interfaces/ag;->h()Lcom/kik/events/Promise;
 
     move-result-object v0
 
@@ -718,14 +718,14 @@
 
     .line 96
     :goto_0
-    invoke-static {p0}, Lkik/android/chat/fragment/eh;->a(Lkik/android/chat/fragment/KikWelcomeFragment;)Landroid/view/View$OnClickListener;
+    invoke-static {p0}, Lkik/android/chat/fragment/ei;->a(Lkik/android/chat/fragment/KikWelcomeFragment;)Landroid/view/View$OnClickListener;
 
     move-result-object v0
 
     iput-object v0, p0, Lkik/android/chat/fragment/KikWelcomeFragment;->g:Landroid/view/View$OnClickListener;
 
     .line 104
-    invoke-static {p0}, Lkik/android/chat/fragment/ei;->a(Lkik/android/chat/fragment/KikWelcomeFragment;)Landroid/view/View$OnClickListener;
+    invoke-static {p0}, Lkik/android/chat/fragment/ej;->a(Lkik/android/chat/fragment/KikWelcomeFragment;)Landroid/view/View$OnClickListener;
 
     move-result-object v0
 
@@ -766,7 +766,7 @@
     :cond_0
     iget-object v0, p0, Lkik/android/chat/fragment/KikWelcomeFragment;->e:Lkik/core/manager/n;
 
-    invoke-static {p0}, Lkik/android/chat/fragment/ej;->a(Lkik/android/chat/fragment/KikWelcomeFragment;)Lkik/core/manager/n$a;
+    invoke-static {p0}, Lkik/android/chat/fragment/ek;->a(Lkik/android/chat/fragment/KikWelcomeFragment;)Lkik/core/manager/n$a;
 
     move-result-object v1
 
@@ -811,7 +811,7 @@
     const/4 v1, 0x0
 
     .line 199
-    invoke-static {}, Lkik/android/widget/bz;->b()Z
+    invoke-static {}, Lkik/android/widget/cl;->b()Z
 
     move-result v2
 
@@ -842,7 +842,7 @@
     .line 1234
     iget-object v2, p0, Lkik/android/chat/fragment/KikWelcomeFragment;->i:Landroid/view/View;
 
-    invoke-static {p0}, Lkik/android/chat/fragment/en;->a(Lkik/android/chat/fragment/KikWelcomeFragment;)Ljava/lang/Runnable;
+    invoke-static {p0}, Lkik/android/chat/fragment/eo;->a(Lkik/android/chat/fragment/KikWelcomeFragment;)Ljava/lang/Runnable;
 
     move-result-object v4
 
@@ -867,7 +867,7 @@
     .line 2222
     iget-object v0, p0, Lkik/android/chat/fragment/KikWelcomeFragment;->i:Landroid/view/View;
 
-    invoke-static {p0}, Lkik/android/chat/fragment/em;->a(Lkik/android/chat/fragment/KikWelcomeFragment;)Ljava/lang/Runnable;
+    invoke-static {p0}, Lkik/android/chat/fragment/en;->a(Lkik/android/chat/fragment/KikWelcomeFragment;)Ljava/lang/Runnable;
 
     move-result-object v1
 
@@ -929,16 +929,16 @@
     goto :goto_1
 .end method
 
-.method public screenOpenedEvent()Lcom/kik/metrics/b/s;
+.method public screenOpenedEvent()Lcom/kik/metrics/b/t;
     .locals 1
 
     .prologue
     .line 302
-    invoke-static {}, Lcom/kik/metrics/b/bi;->b()Lcom/kik/metrics/b/bi$a;
+    invoke-static {}, Lcom/kik/metrics/b/bq;->b()Lcom/kik/metrics/b/bq$a;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/kik/metrics/b/bi$a;->a()Lcom/kik/metrics/b/bi;
+    invoke-virtual {v0}, Lcom/kik/metrics/b/bq$a;->a()Lcom/kik/metrics/b/bq;
 
     move-result-object v0
 

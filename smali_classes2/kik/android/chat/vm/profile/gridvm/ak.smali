@@ -2,48 +2,50 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lrx/functions/h;
+.implements Lrx/functions/b;
 
 
-# instance fields
-.field private final a:Lkik/android/chat/vm/profile/gridvm/t;
+# static fields
+.field private static final a:Lkik/android/chat/vm/profile/gridvm/ak;
 
 
 # direct methods
-.method private constructor <init>(Lkik/android/chat/vm/profile/gridvm/t;)V
-    .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lkik/android/chat/vm/profile/gridvm/ak;->a:Lkik/android/chat/vm/profile/gridvm/t;
-
-    return-void
-.end method
-
-.method public static a(Lkik/android/chat/vm/profile/gridvm/t;)Lrx/functions/h;
+.method static constructor <clinit>()V
     .locals 1
 
     new-instance v0, Lkik/android/chat/vm/profile/gridvm/ak;
 
-    invoke-direct {v0, p0}, Lkik/android/chat/vm/profile/gridvm/ak;-><init>(Lkik/android/chat/vm/profile/gridvm/t;)V
+    invoke-direct {v0}, Lkik/android/chat/vm/profile/gridvm/ak;-><init>()V
+
+    sput-object v0, Lkik/android/chat/vm/profile/gridvm/ak;->a:Lkik/android/chat/vm/profile/gridvm/ak;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static a()Lrx/functions/b;
+    .locals 1
+
+    sget-object v0, Lkik/android/chat/vm/profile/gridvm/ak;->a:Lkik/android/chat/vm/profile/gridvm/ak;
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.method public final call(Ljava/lang/Object;)V
+    .locals 0
 
-    iget-object v0, p0, Lkik/android/chat/vm/profile/gridvm/ak;->a:Lkik/android/chat/vm/profile/gridvm/t;
+    check-cast p1, Lcom/kik/android/Mixpanel$d;
 
-    check-cast p1, Lcom/kik/core/domain/users/a/c;
+    invoke-virtual {p1}, Lcom/kik/android/Mixpanel$d;->b()V
 
-    check-cast p2, Lcom/kik/core/domain/a/a/c;
-
-    invoke-static {v0, p1, p2}, Lkik/android/chat/vm/profile/gridvm/t;->c(Lkik/android/chat/vm/profile/gridvm/t;Lcom/kik/core/domain/users/a/c;Lcom/kik/core/domain/a/a/c;)Lkik/android/chat/vm/cq;
-
-    move-result-object v0
-
-    return-object v0
+    return-void
 .end method

@@ -9,7 +9,7 @@
 
     .prologue
     .line 63
-    invoke-virtual {p4}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->r()I
+    invoke-virtual {p4}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->t()I
 
     move-result v0
 
@@ -88,7 +88,7 @@
     const/4 v0, 0x0
 
     .line 32
-    invoke-virtual {p4}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->r()I
+    invoke-virtual {p4}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->t()I
 
     move-result v1
 
@@ -244,7 +244,7 @@
 
     .prologue
     .line 82
-    invoke-virtual {p4}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->r()I
+    invoke-virtual {p4}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->t()I
 
     move-result v0
 

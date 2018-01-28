@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/android/internal/platform/PlatformHelper;->a(Lcom/kik/cards/web/kik/KikMessageParcelable;Landroid/app/Activity;Lcom/kik/cards/web/f;Lcom/kik/ui/fragment/FragmentBase$FragmentBundle$StackType;Lkik/core/interfaces/w;)Lcom/kik/events/Promise;
+    value = Lkik/android/internal/platform/PlatformHelper;->a(Lcom/kik/cards/web/kik/KikMessageParcelable;Landroid/app/Activity;Lcom/kik/cards/web/f;Lcom/kik/ui/fragment/FragmentBase$FragmentBundle$StackType;Lkik/core/interfaces/v;)Lcom/kik/events/Promise;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -26,7 +26,7 @@
 # instance fields
 .field final synthetic a:Lcom/kik/events/Promise;
 
-.field final synthetic b:Lkik/core/interfaces/w;
+.field final synthetic b:Lkik/core/interfaces/v;
 
 .field final synthetic c:Landroid/app/Activity;
 
@@ -42,7 +42,7 @@
 
 
 # direct methods
-.method constructor <init>(Lkik/android/internal/platform/PlatformHelper;Lcom/kik/events/Promise;Lkik/core/interfaces/w;Landroid/app/Activity;Lcom/kik/ui/fragment/FragmentBase$FragmentBundle$StackType;ZLcom/kik/cards/web/kik/KikMessageParcelable;Lcom/kik/events/Promise;)V
+.method constructor <init>(Lkik/android/internal/platform/PlatformHelper;Lcom/kik/events/Promise;Lkik/core/interfaces/v;Landroid/app/Activity;Lcom/kik/ui/fragment/FragmentBase$FragmentBundle$StackType;ZLcom/kik/cards/web/kik/KikMessageParcelable;Lcom/kik/events/Promise;)V
     .locals 0
 
     .prologue
@@ -51,7 +51,7 @@
 
     iput-object p2, p0, Lkik/android/internal/platform/PlatformHelper$4;->a:Lcom/kik/events/Promise;
 
-    iput-object p3, p0, Lkik/android/internal/platform/PlatformHelper$4;->b:Lkik/core/interfaces/w;
+    iput-object p3, p0, Lkik/android/internal/platform/PlatformHelper$4;->b:Lkik/core/interfaces/v;
 
     iput-object p4, p0, Lkik/android/internal/platform/PlatformHelper$4;->c:Landroid/app/Activity;
 

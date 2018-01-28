@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/core/profile/v;->t()V
+    value = Lkik/core/profile/v;->s()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -36,7 +36,7 @@
     .locals 0
 
     .prologue
-    .line 341
+    .line 334
     iput-object p1, p0, Lkik/core/profile/v$1;->b:Lkik/core/profile/v;
 
     iput-object p2, p0, Lkik/core/profile/v$1;->a:Ljava/util/Set;
@@ -52,10 +52,10 @@
     .locals 6
 
     .prologue
-    .line 341
+    .line 334
     check-cast p1, Ljava/util/Set;
 
-    .line 1345
+    .line 1338
     iget-object v0, p0, Lkik/core/profile/v$1;->b:Lkik/core/profile/v;
 
     invoke-static {v0}, Lkik/core/profile/v;->a(Lkik/core/profile/v;)Ljava/util/LinkedHashMap;
@@ -64,7 +64,7 @@
 
     monitor-enter v2
 
-    .line 1346
+    .line 1339
     :try_start_0
     invoke-interface {p1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
@@ -83,7 +83,7 @@
 
     check-cast v0, Lkik/core/datatypes/l;
 
-    .line 1347
+    .line 1340
     invoke-virtual {v0}, Lkik/core/datatypes/l;->j()Lkik/core/datatypes/k;
 
     move-result-object v1
@@ -92,7 +92,7 @@
 
     move-result-object v4
 
-    .line 1349
+    .line 1342
     iget-object v1, p0, Lkik/core/profile/v$1;->b:Lkik/core/profile/v;
 
     invoke-static {v1}, Lkik/core/profile/v;->a(Lkik/core/profile/v;)Ljava/util/LinkedHashMap;
@@ -107,7 +107,7 @@
 
     invoke-virtual {v1, v0}, Lcom/kik/events/Promise;->a(Ljava/lang/Object;)V
 
-    .line 1350
+    .line 1343
     iget-object v0, p0, Lkik/core/profile/v$1;->b:Lkik/core/profile/v;
 
     invoke-static {v0}, Lkik/core/profile/v;->a(Lkik/core/profile/v;)Ljava/util/LinkedHashMap;
@@ -118,7 +118,7 @@
 
     goto :goto_0
 
-    .line 1366
+    .line 1359
     :catchall_0
     move-exception v0
 
@@ -128,7 +128,7 @@
 
     throw v0
 
-    .line 1355
+    .line 1348
     :cond_0
     :try_start_1
     iget-object v0, p0, Lkik/core/profile/v$1;->a:Ljava/util/Set;
@@ -151,7 +151,7 @@
 
     check-cast v0, Ljava/lang/String;
 
-    .line 1356
+    .line 1349
     iget-object v1, p0, Lkik/core/profile/v$1;->b:Lkik/core/profile/v;
 
     invoke-static {v1}, Lkik/core/profile/v;->a(Lkik/core/profile/v;)Ljava/util/LinkedHashMap;
@@ -164,10 +164,10 @@
 
     check-cast v1, Lcom/kik/events/Promise;
 
-    .line 1359
+    .line 1352
     if-eqz v1, :cond_1
 
-    .line 1360
+    .line 1353
     new-instance v4, Ljava/lang/Throwable;
 
     const-string v5, "failed user lookup"
@@ -176,7 +176,7 @@
 
     invoke-virtual {v1, v4}, Lcom/kik/events/Promise;->a(Ljava/lang/Throwable;)V
 
-    .line 1361
+    .line 1354
     iget-object v1, p0, Lkik/core/profile/v$1;->b:Lkik/core/profile/v;
 
     invoke-static {v1}, Lkik/core/profile/v;->a(Lkik/core/profile/v;)Ljava/util/LinkedHashMap;
@@ -187,23 +187,23 @@
 
     goto :goto_1
 
-    .line 1365
+    .line 1358
     :cond_2
     iget-object v0, p0, Lkik/core/profile/v$1;->b:Lkik/core/profile/v;
 
     invoke-static {v0}, Lkik/core/profile/v;->b(Lkik/core/profile/v;)Z
 
-    .line 1366
+    .line 1359
     monitor-exit v2
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 1368
+    .line 1361
     iget-object v0, p0, Lkik/core/profile/v$1;->b:Lkik/core/profile/v;
 
-    invoke-virtual {v0}, Lkik/core/profile/v;->t()V
+    invoke-virtual {v0}, Lkik/core/profile/v;->s()V
 
-    .line 341
+    .line 334
     return-void
 .end method
 
@@ -211,7 +211,7 @@
     .locals 4
 
     .prologue
-    .line 374
+    .line 367
     iget-object v0, p0, Lkik/core/profile/v$1;->b:Lkik/core/profile/v;
 
     invoke-static {v0}, Lkik/core/profile/v;->a(Lkik/core/profile/v;)Ljava/util/LinkedHashMap;
@@ -220,7 +220,7 @@
 
     monitor-enter v2
 
-    .line 375
+    .line 368
     :try_start_0
     iget-object v0, p0, Lkik/core/profile/v$1;->a:Ljava/util/Set;
 
@@ -242,7 +242,7 @@
 
     check-cast v0, Ljava/lang/String;
 
-    .line 376
+    .line 369
     iget-object v1, p0, Lkik/core/profile/v$1;->b:Lkik/core/profile/v;
 
     invoke-static {v1}, Lkik/core/profile/v;->a(Lkik/core/profile/v;)Ljava/util/LinkedHashMap;
@@ -255,10 +255,10 @@
 
     check-cast v1, Lcom/kik/events/Promise;
 
-    .line 379
+    .line 372
     if-eqz v1, :cond_0
 
-    .line 380
+    .line 373
     iget-object v1, p0, Lkik/core/profile/v$1;->b:Lkik/core/profile/v;
 
     invoke-static {v1}, Lkik/core/profile/v;->a(Lkik/core/profile/v;)Ljava/util/LinkedHashMap;
@@ -273,7 +273,7 @@
 
     invoke-virtual {v1, p1}, Lcom/kik/events/Promise;->a(Ljava/lang/Throwable;)V
 
-    .line 384
+    .line 377
     iget-object v1, p0, Lkik/core/profile/v$1;->b:Lkik/core/profile/v;
 
     invoke-static {v1}, Lkik/core/profile/v;->a(Lkik/core/profile/v;)Ljava/util/LinkedHashMap;
@@ -284,7 +284,7 @@
 
     goto :goto_0
 
-    .line 390
+    .line 383
     :catchall_0
     move-exception v0
 
@@ -294,19 +294,19 @@
 
     throw v0
 
-    .line 389
+    .line 382
     :cond_1
     :try_start_1
     iget-object v0, p0, Lkik/core/profile/v$1;->b:Lkik/core/profile/v;
 
     invoke-static {v0}, Lkik/core/profile/v;->b(Lkik/core/profile/v;)Z
 
-    .line 390
+    .line 383
     monitor-exit v2
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 392
+    .line 385
     iget-object v0, p0, Lkik/core/profile/v$1;->b:Lkik/core/profile/v;
 
     invoke-static {v0}, Lkik/core/profile/v;->c(Lkik/core/profile/v;)Lkik/core/interfaces/ICommunication;
@@ -319,12 +319,12 @@
 
     if-eqz v0, :cond_2
 
-    .line 393
+    .line 386
     iget-object v0, p0, Lkik/core/profile/v$1;->b:Lkik/core/profile/v;
 
-    invoke-virtual {v0}, Lkik/core/profile/v;->t()V
+    invoke-virtual {v0}, Lkik/core/profile/v;->s()V
 
-    .line 395
+    .line 388
     :cond_2
     return-void
 .end method

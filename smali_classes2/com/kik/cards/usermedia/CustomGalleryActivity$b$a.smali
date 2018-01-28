@@ -344,7 +344,7 @@
 
     aput-object v1, v0, v10
 
-    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
     .line 470
     :goto_2
@@ -411,7 +411,7 @@
 
     aput-object v1, v0, v10
 
-    invoke-static {v0}, Lkik/android/util/ca;->g([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->g([Landroid/view/View;)V
 
     .line 467
     iget-object v0, p0, Lcom/kik/cards/usermedia/CustomGalleryActivity$b$a;->c:Lcom/kik/cards/usermedia/CustomGalleryActivity$a$a;

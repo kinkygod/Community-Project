@@ -36,7 +36,7 @@
     .locals 0
 
     .prologue
-    .line 515
+    .line 517
     iput-object p1, p0, Lkik/android/chat/fragment/KikChatFragment$11;->a:Lkik/android/chat/fragment/KikChatFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -50,10 +50,10 @@
     .locals 2
 
     .prologue
-    .line 515
+    .line 517
     check-cast p2, Lkik/core/net/outgoing/GroupLeaveRequest;
 
-    .line 1519
+    .line 1521
     iget-object v0, p0, Lkik/android/chat/fragment/KikChatFragment$11;->a:Lkik/android/chat/fragment/KikChatFragment;
 
     iget-object v0, v0, Lkik/android/chat/fragment/KikChatFragment;->b:Lkik/core/manager/x;
@@ -64,6 +64,6 @@
 
     invoke-interface {v0, v1}, Lkik/core/manager/x;->c(Ljava/lang/String;)V
 
-    .line 515
+    .line 517
     return-void
 .end method

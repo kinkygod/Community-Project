@@ -17,7 +17,7 @@
     value = {
         "Lcom/kik/events/k",
         "<",
-        "Lkik/core/datatypes/ac;",
+        "Lkik/core/datatypes/ab;",
         ">;"
     }
 .end annotation
@@ -56,7 +56,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f04017b
+    const v2, 0x7f04017e
 
     const-wide/16 v4, 0x3e8
 

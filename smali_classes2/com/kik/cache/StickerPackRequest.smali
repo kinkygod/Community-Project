@@ -23,11 +23,11 @@
 
 .field private _url:Ljava/lang/String;
 
-.field private _userProfile:Lkik/core/interfaces/ah;
+.field private _userProfile:Lkik/core/interfaces/ag;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Lorg/json/JSONObject;Lcom/android/volley/h$b;Lcom/android/volley/h$a;Lkik/core/interfaces/ah;Lkik/core/interfaces/e;)V
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Lorg/json/JSONObject;Lcom/android/volley/h$b;Lcom/android/volley/h$a;Lkik/core/interfaces/ag;Lkik/core/interfaces/e;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -40,7 +40,7 @@
             "Lorg/json/JSONObject;",
             ">;",
             "Lcom/android/volley/h$a;",
-            "Lkik/core/interfaces/ah;",
+            "Lkik/core/interfaces/ag;",
             "Lkik/core/interfaces/e;",
             ")V"
         }
@@ -63,7 +63,7 @@
     iput-object p5, p0, Lcom/kik/cache/StickerPackRequest;->_errorListener:Lcom/android/volley/h$a;
 
     .line 40
-    iput-object p6, p0, Lcom/kik/cache/StickerPackRequest;->_userProfile:Lkik/core/interfaces/ah;
+    iput-object p6, p0, Lcom/kik/cache/StickerPackRequest;->_userProfile:Lkik/core/interfaces/ag;
 
     .line 41
     iput-object p7, p0, Lcom/kik/cache/StickerPackRequest;->_authManager:Lkik/core/interfaces/e;
@@ -136,13 +136,13 @@
 
     .line 51
     :try_start_0
-    iget-object v0, p0, Lcom/kik/cache/StickerPackRequest;->_userProfile:Lkik/core/interfaces/ah;
+    iget-object v0, p0, Lcom/kik/cache/StickerPackRequest;->_userProfile:Lkik/core/interfaces/ag;
 
-    invoke-interface {v0}, Lkik/core/interfaces/ah;->d()Lkik/core/datatypes/ac;
+    invoke-interface {v0}, Lkik/core/interfaces/ag;->d()Lkik/core/datatypes/ab;
 
     move-result-object v0
 
-    iget-object v1, v0, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
+    iget-object v1, v0, Lkik/core/datatypes/ab;->c:Ljava/lang/String;
 
     .line 52
     iget-object v0, p0, Lcom/kik/cache/StickerPackRequest;->_authManager:Lkik/core/interfaces/e;

@@ -53,14 +53,14 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ca;->g([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->g([Landroid/view/View;)V
 
     .line 796
     iget-object v0, p0, Lkik/android/chat/fragment/KikCodeFragment$10;->a:Lkik/android/chat/fragment/KikCodeFragment;
 
     iget-object v0, v0, Lkik/android/chat/fragment/KikCodeFragment;->_codeInfo:Landroid/view/ViewGroup;
 
-    invoke-static {v0}, Lkik/android/util/ca;->c(Landroid/view/View;)Z
+    invoke-static {v0}, Lkik/android/util/cb;->c(Landroid/view/View;)Z
 
     move-result v0
 

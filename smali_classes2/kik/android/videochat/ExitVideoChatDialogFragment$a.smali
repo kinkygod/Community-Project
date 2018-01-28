@@ -23,12 +23,12 @@
     invoke-direct {p0}, Lkik/android/chat/fragment/KikDialogFragment$a;-><init>()V
 
     .line 18
-    const v0, 0x7f09057c
+    const v0, 0x7f090582
 
     invoke-virtual {p0, v0}, Lkik/android/videochat/ExitVideoChatDialogFragment$a;->a(I)Lkik/android/chat/fragment/KikDialogFragment$a;
 
     .line 19
-    const v0, 0x7f09057b
+    const v0, 0x7f090581
 
     invoke-virtual {p0, v0}, Lkik/android/videochat/ExitVideoChatDialogFragment$a;->b(I)Lkik/android/chat/fragment/KikDialogFragment$a;
 

@@ -43,9 +43,9 @@
 .method public final call(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    check-cast p1, Ljava/lang/Boolean;
+    check-cast p1, Ljava/lang/Long;
 
-    invoke-static {p1}, Lcom/kik/util/bq;->a(Ljava/lang/Boolean;)Ljava/lang/Boolean;
+    invoke-static {p1}, Lcom/kik/util/bt;->a(Ljava/lang/Long;)Ljava/lang/String;
 
     move-result-object v0
 

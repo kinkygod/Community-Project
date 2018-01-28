@@ -22,7 +22,7 @@
 
 .field public final f:Landroid/widget/ImageView;
 
-.field public final g:Lkik/android/e/dm;
+.field public final g:Lkik/android/e/du;
 
 .field private final j:Landroid/widget/LinearLayout;
 
@@ -68,7 +68,7 @@
 
     new-array v3, v5, [I
 
-    const v4, 0x7f04016e
+    const v4, 0x7f040174
 
     aput v4, v3, v6
 
@@ -82,7 +82,7 @@
     .line 16
     sput-object v0, Lkik/android/e/i;->i:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f100192
+    const v1, 0x7f100193
 
     const/4 v2, 0x4
 
@@ -91,7 +91,7 @@
     .line 17
     sget-object v0, Lkik/android/e/i;->i:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f100193
+    const v1, 0x7f100194
 
     const/4 v2, 0x5
 
@@ -100,7 +100,7 @@
     .line 18
     sget-object v0, Lkik/android/e/i;->i:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f100194
+    const v1, 0x7f100195
 
     const/4 v2, 0x6
 
@@ -109,7 +109,7 @@
     .line 19
     sget-object v0, Lkik/android/e/i;->i:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f100195
+    const v1, 0x7f100196
 
     const/4 v2, 0x7
 
@@ -118,7 +118,7 @@
     .line 20
     sget-object v0, Lkik/android/e/i;->i:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f100196
+    const v1, 0x7f100197
 
     const/16 v2, 0x8
 
@@ -219,12 +219,12 @@
 
     aget-object v0, v1, v0
 
-    check-cast v0, Lkik/android/e/dm;
+    check-cast v0, Lkik/android/e/du;
 
-    iput-object v0, p0, Lkik/android/e/i;->g:Lkik/android/e/dm;
+    iput-object v0, p0, Lkik/android/e/i;->g:Lkik/android/e/du;
 
     .line 50
-    iget-object v0, p0, Lkik/android/e/i;->g:Lkik/android/e/dm;
+    iget-object v0, p0, Lkik/android/e/i;->g:Lkik/android/e/du;
 
     invoke-virtual {p0, v0}, Lkik/android/e/i;->setContainedBinding(Landroid/databinding/ViewDataBinding;)V
 
@@ -397,7 +397,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 99
-    const/16 v0, 0x13
+    const/16 v0, 0x14
 
     invoke-virtual {p0, v0}, Lkik/android/e/i;->notifyPropertyChanged(I)V
 
@@ -544,9 +544,9 @@
     invoke-static {v0, v1}, Lkik/android/widget/AutoScrollingRecyclerView;->c(Lkik/android/widget/AutoScrollingRecyclerView;Lrx/d;)V
 
     .line 169
-    iget-object v0, p0, Lkik/android/e/i;->g:Lkik/android/e/dm;
+    iget-object v0, p0, Lkik/android/e/i;->g:Lkik/android/e/du;
 
-    invoke-virtual {v0, v5}, Lkik/android/e/dm;->a(Lkik/android/chat/vm/chats/search/f;)V
+    invoke-virtual {v0, v5}, Lkik/android/e/du;->a(Lkik/android/chat/vm/chats/search/f;)V
 
     .line 171
     :cond_0
@@ -559,13 +559,13 @@
     if-eqz v0, :cond_1
 
     .line 174
-    iget-object v0, p0, Lkik/android/e/i;->g:Lkik/android/e/dm;
+    iget-object v0, p0, Lkik/android/e/i;->g:Lkik/android/e/du;
 
-    invoke-virtual {v0, v4}, Lkik/android/e/dm;->a(Lkik/android/chat/vm/chats/b;)V
+    invoke-virtual {v0, v4}, Lkik/android/e/du;->a(Lkik/android/chat/vm/chats/b;)V
 
     .line 176
     :cond_1
-    iget-object v0, p0, Lkik/android/e/i;->g:Lkik/android/e/dm;
+    iget-object v0, p0, Lkik/android/e/i;->g:Lkik/android/e/du;
 
     invoke-static {v0}, Lkik/android/e/i;->executeBindingsOn(Landroid/databinding/ViewDataBinding;)V
 
@@ -623,9 +623,9 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 76
-    iget-object v1, p0, Lkik/android/e/i;->g:Lkik/android/e/dm;
+    iget-object v1, p0, Lkik/android/e/i;->g:Lkik/android/e/du;
 
-    invoke-virtual {v1}, Lkik/android/e/dm;->hasPendingBindings()Z
+    invoke-virtual {v1}, Lkik/android/e/du;->hasPendingBindings()Z
 
     move-result v1
 
@@ -667,9 +667,9 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 65
-    iget-object v0, p0, Lkik/android/e/i;->g:Lkik/android/e/dm;
+    iget-object v0, p0, Lkik/android/e/i;->g:Lkik/android/e/du;
 
-    invoke-virtual {v0}, Lkik/android/e/dm;->invalidateAll()V
+    invoke-virtual {v0}, Lkik/android/e/du;->invalidateAll()V
 
     .line 66
     invoke-virtual {p0}, Lkik/android/e/i;->requestRebind()V
@@ -753,6 +753,7 @@
     :pswitch_data_0
     .packed-switch 0x11
         :pswitch_2
+        :pswitch_0
         :pswitch_0
         :pswitch_1
     .end packed-switch

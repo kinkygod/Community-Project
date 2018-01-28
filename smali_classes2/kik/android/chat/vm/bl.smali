@@ -3,42 +3,19 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/vm/ar;
+.implements Lkik/android/chat/vm/widget/v;
+.implements Lkik/android/widget/by;
 
 
 # virtual methods
-.method public abstract F_()V
+.method public abstract a(Lkik/core/datatypes/z;)V
 .end method
 
-.method public abstract a()I
+.method public abstract aH_()V
 .end method
 
-.method public abstract b()Ljava/lang/String;
+.method public abstract b(Lkik/core/datatypes/z;)V
 .end method
 
-.method public abstract d()Z
-.end method
-
-.method public abstract e()Lrx/d;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/d",
-            "<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
-.end method
-
-.method public abstract g()Lrx/d;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/d",
-            "<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
+.method public abstract c(Lkik/core/datatypes/z;)V
 .end method

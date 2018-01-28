@@ -14,31 +14,31 @@
 # instance fields
 .field _body:Lkik/android/widget/RobotoTextView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1001d2
+        value = 0x7f1001d3
     .end annotation
 .end field
 
 .field _dialogImage:Landroid/widget/ImageView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1001d0
+        value = 0x7f1001d1
     .end annotation
 .end field
 
 .field _negativeButton:Landroid/widget/Button;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1001d4
+        value = 0x7f1001d5
     .end annotation
 .end field
 
 .field _positiveButton:Landroid/widget/Button;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1001d3
+        value = 0x7f1001d4
     .end annotation
 .end field
 
 .field _title:Lkik/android/widget/RobotoTextView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1001d1
+        value = 0x7f1001d2
     .end annotation
 .end field
 
@@ -74,7 +74,7 @@
 
     aput-object v1, v0, v2
 
-    invoke-static {v0}, Lkik/android/util/ca;->g([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->g([Landroid/view/View;)V
 
     .line 57
     :cond_0
@@ -98,7 +98,7 @@
 
     aput-object v1, v0, v2
 
-    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
     goto :goto_0
 .end method

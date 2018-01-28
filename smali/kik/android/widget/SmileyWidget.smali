@@ -28,9 +28,9 @@
 
 .field private g:Z
 
-.field private h:Lkik/android/chat/vm/widget/x;
+.field private h:Lkik/android/chat/vm/widget/y;
 
-.field private i:Lkik/android/chat/vm/bu;
+.field private i:Lkik/android/chat/vm/bw;
 
 .field private j:Landroid/view/LayoutInflater;
 
@@ -84,7 +84,7 @@
 
     .line 47
     :cond_0
-    invoke-static {p1}, Lkik/android/widget/db;->a(Lrx/functions/g;)Landroid/view/View$OnTouchListener;
+    invoke-static {p1}, Lkik/android/widget/dp;->a(Lrx/functions/g;)Landroid/view/View$OnTouchListener;
 
     move-result-object v0
 
@@ -137,7 +137,7 @@
     iput-object v0, p0, Lkik/android/widget/SmileyWidget;->j:Landroid/view/LayoutInflater;
 
     .line 124
-    iput-object v0, p0, Lkik/android/widget/SmileyWidget;->i:Lkik/android/chat/vm/bu;
+    iput-object v0, p0, Lkik/android/widget/SmileyWidget;->i:Lkik/android/chat/vm/bw;
 
     .line 125
     return-void
@@ -192,7 +192,7 @@
     .line 107
     iget-object v0, p0, Lkik/android/widget/SmileyWidget;->a:Lcom/kik/android/b/g;
 
-    invoke-virtual {v0}, Lcom/kik/android/b/g;->h()V
+    invoke-virtual {v0}, Lcom/kik/android/b/g;->i()V
 
     .line 109
     :cond_0
@@ -206,27 +206,27 @@
     const/4 v5, 0x1
 
     .line 165
-    new-instance v1, Lkik/android/chat/vm/widget/at;
+    new-instance v1, Lkik/android/chat/vm/widget/au;
 
     invoke-virtual {p2}, Lcom/kik/android/b/f;->g()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-direct {v1, v0, p0}, Lkik/android/chat/vm/widget/at;-><init>(Ljava/lang/String;Lkik/android/chat/presentation/MediaTrayPresenterImpl$b;)V
+    invoke-direct {v1, v0, p0}, Lkik/android/chat/vm/widget/au;-><init>(Ljava/lang/String;Lkik/android/chat/presentation/MediaTrayPresenterImpl$b;)V
 
     .line 166
     invoke-virtual {p0}, Lkik/android/widget/SmileyWidget;->getCoreComponent()Lcom/kik/components/CoreComponent;
 
     move-result-object v0
 
-    iget-object v2, p0, Lkik/android/widget/SmileyWidget;->i:Lkik/android/chat/vm/bu;
+    iget-object v2, p0, Lkik/android/widget/SmileyWidget;->i:Lkik/android/chat/vm/bw;
 
-    invoke-virtual {v1, v0, v2}, Lkik/android/chat/vm/widget/at;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    invoke-virtual {v1, v0, v2}, Lkik/android/chat/vm/widget/au;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 168
     iget-object v0, p0, Lkik/android/widget/SmileyWidget;->j:Landroid/view/LayoutInflater;
 
-    const v2, 0x7f040138
+    const v2, 0x7f04013c
 
     iget-object v3, p0, Lkik/android/widget/SmileyWidget;->d:Landroid/view/ViewGroup;
 
@@ -236,15 +236,15 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/android/e/ch;
+    check-cast v0, Lkik/android/e/cn;
 
     .line 169
-    invoke-virtual {v0, v1}, Lkik/android/e/ch;->a(Lkik/android/chat/vm/widget/w;)V
+    invoke-virtual {v0, v1}, Lkik/android/e/cn;->a(Lkik/android/chat/vm/widget/x;)V
 
     .line 171
     iget-object v1, p0, Lkik/android/widget/SmileyWidget;->e:Lkik/android/f/b;
 
-    invoke-virtual {v0}, Lkik/android/e/ch;->getRoot()Landroid/view/View;
+    invoke-virtual {v0}, Lkik/android/e/cn;->getRoot()Landroid/view/View;
 
     move-result-object v0
 
@@ -399,14 +399,14 @@
 
     .prologue
     .line 196
-    iget-object v0, p0, Lkik/android/widget/SmileyWidget;->h:Lkik/android/chat/vm/widget/x;
+    iget-object v0, p0, Lkik/android/widget/SmileyWidget;->h:Lkik/android/chat/vm/widget/y;
 
     if-eqz v0, :cond_0
 
     .line 197
-    iget-object v0, p0, Lkik/android/widget/SmileyWidget;->h:Lkik/android/chat/vm/widget/x;
+    iget-object v0, p0, Lkik/android/widget/SmileyWidget;->h:Lkik/android/chat/vm/widget/y;
 
-    invoke-interface {v0}, Lkik/android/chat/vm/widget/x;->aH_()V
+    invoke-interface {v0}, Lkik/android/chat/vm/widget/y;->d()V
 
     .line 199
     :cond_0
@@ -441,11 +441,11 @@
 
     .prologue
     .line 72
-    new-instance v0, Lkik/android/chat/vm/bu;
+    new-instance v0, Lkik/android/chat/vm/bw;
 
-    invoke-direct {v0, p0}, Lkik/android/chat/vm/bu;-><init>(Lkik/android/chat/fragment/KikScopedDialogFragment;)V
+    invoke-direct {v0, p0}, Lkik/android/chat/vm/bw;-><init>(Lkik/android/chat/fragment/KikScopedDialogFragment;)V
 
-    iput-object v0, p0, Lkik/android/widget/SmileyWidget;->i:Lkik/android/chat/vm/bu;
+    iput-object v0, p0, Lkik/android/widget/SmileyWidget;->i:Lkik/android/chat/vm/bw;
 
     .line 73
     iput-object p1, p0, Lkik/android/widget/SmileyWidget;->j:Landroid/view/LayoutInflater;
@@ -453,7 +453,7 @@
     .line 76
     iget-object v0, p0, Lkik/android/widget/SmileyWidget;->j:Landroid/view/LayoutInflater;
 
-    const v1, 0x7f040164
+    const v1, 0x7f04016a
 
     const/4 v2, 0x0
 
@@ -461,35 +461,35 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/android/e/dd;
+    check-cast v0, Lkik/android/e/dl;
 
     .line 77
-    new-instance v1, Lkik/android/chat/vm/widget/aw;
+    new-instance v1, Lkik/android/chat/vm/widget/ax;
 
     iget-object v2, p0, Lkik/android/widget/SmileyWidget;->c:Lkik/android/chat/fragment/KikChatFragment$b;
 
-    invoke-direct {v1, p0, v2}, Lkik/android/chat/vm/widget/aw;-><init>(Lkik/android/chat/presentation/MediaTrayPresenterImpl$b;Lkik/android/chat/fragment/KikChatFragment$b;)V
+    invoke-direct {v1, p0, v2}, Lkik/android/chat/vm/widget/ax;-><init>(Lkik/android/chat/presentation/MediaTrayPresenterImpl$b;Lkik/android/chat/fragment/KikChatFragment$b;)V
 
-    iput-object v1, p0, Lkik/android/widget/SmileyWidget;->h:Lkik/android/chat/vm/widget/x;
+    iput-object v1, p0, Lkik/android/widget/SmileyWidget;->h:Lkik/android/chat/vm/widget/y;
 
     .line 78
-    iget-object v1, p0, Lkik/android/widget/SmileyWidget;->h:Lkik/android/chat/vm/widget/x;
+    iget-object v1, p0, Lkik/android/widget/SmileyWidget;->h:Lkik/android/chat/vm/widget/y;
 
     invoke-virtual {p0}, Lkik/android/widget/SmileyWidget;->getCoreComponent()Lcom/kik/components/CoreComponent;
 
     move-result-object v2
 
-    iget-object v3, p0, Lkik/android/widget/SmileyWidget;->i:Lkik/android/chat/vm/bu;
+    iget-object v3, p0, Lkik/android/widget/SmileyWidget;->i:Lkik/android/chat/vm/bw;
 
-    invoke-interface {v1, v2, v3}, Lkik/android/chat/vm/widget/x;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    invoke-interface {v1, v2, v3}, Lkik/android/chat/vm/widget/y;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 79
-    iget-object v1, p0, Lkik/android/widget/SmileyWidget;->h:Lkik/android/chat/vm/widget/x;
+    iget-object v1, p0, Lkik/android/widget/SmileyWidget;->h:Lkik/android/chat/vm/widget/y;
 
-    invoke-virtual {v0, v1}, Lkik/android/e/dd;->a(Lkik/android/chat/vm/widget/x;)V
+    invoke-virtual {v0, v1}, Lkik/android/e/dl;->a(Lkik/android/chat/vm/widget/y;)V
 
     .line 81
-    invoke-virtual {v0}, Lkik/android/e/dd;->getRoot()Landroid/view/View;
+    invoke-virtual {v0}, Lkik/android/e/dl;->getRoot()Landroid/view/View;
 
     move-result-object v1
 
@@ -507,7 +507,7 @@
 
     .line 87
     :cond_0
-    invoke-virtual {v0}, Lkik/android/e/dd;->getRoot()Landroid/view/View;
+    invoke-virtual {v0}, Lkik/android/e/dl;->getRoot()Landroid/view/View;
 
     move-result-object v0
 
@@ -522,9 +522,9 @@
     invoke-super {p0}, Lkik/android/chat/fragment/KikScopedDialogFragment;->onDestroyView()V
 
     .line 115
-    iget-object v0, p0, Lkik/android/widget/SmileyWidget;->h:Lkik/android/chat/vm/widget/x;
+    iget-object v0, p0, Lkik/android/widget/SmileyWidget;->h:Lkik/android/chat/vm/widget/y;
 
-    invoke-interface {v0}, Lkik/android/chat/vm/widget/x;->aj_()V
+    invoke-interface {v0}, Lkik/android/chat/vm/widget/y;->ak_()V
 
     .line 116
     return-void
@@ -537,7 +537,7 @@
     .line 93
     iget-object v0, p0, Lkik/android/widget/SmileyWidget;->a:Lcom/kik/android/b/g;
 
-    invoke-virtual {v0}, Lcom/kik/android/b/g;->h()V
+    invoke-virtual {v0}, Lcom/kik/android/b/g;->i()V
 
     .line 94
     invoke-super {p0}, Lkik/android/chat/fragment/KikScopedDialogFragment;->onResume()V

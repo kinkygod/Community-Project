@@ -45,10 +45,14 @@
 
     .prologue
     .line 0
-    check-cast p1, Lcom/kik/core/domain/a/a/c;
+    check-cast p1, Lcom/kik/core/domain/a/a/a;
 
-    .line 1288
-    invoke-interface {p1}, Lcom/kik/core/domain/a/a/c;->m()Z
+    .line 1224
+    invoke-interface {p1}, Lcom/kik/core/domain/a/a/a;->d()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lkik/android/util/bs;->d(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -64,7 +68,7 @@
     .line 0
     return-object v0
 
-    .line 1288
+    .line 1224
     :cond_0
     const/4 v0, 0x0
 

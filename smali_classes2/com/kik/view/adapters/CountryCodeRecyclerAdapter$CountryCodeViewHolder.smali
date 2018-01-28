@@ -17,13 +17,13 @@
 # instance fields
 .field _countryCode:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f10034e
+        value = 0x7f10034a
     .end annotation
 .end field
 
 .field _countryDescription:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f10034d
+        value = 0x7f100349
     .end annotation
 .end field
 
@@ -81,7 +81,7 @@
     .locals 2
     .annotation build Lbutterknife/OnClick;
         value = {
-            0x7f10034c
+            0x7f100348
         }
     .end annotation
 

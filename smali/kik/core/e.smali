@@ -51,7 +51,7 @@
     .line 51
     iget-object v0, p0, Lkik/core/e;->a:Lkik/core/a;
 
-    invoke-virtual {v0}, Lkik/core/a;->l()Lkik/core/interfaces/ICommunication;
+    invoke-virtual {v0}, Lkik/core/a;->k()Lkik/core/interfaces/ICommunication;
 
     move-result-object v0
 
@@ -65,63 +65,63 @@
     .line 57
     iget-object v0, p0, Lkik/core/e;->a:Lkik/core/a;
 
-    invoke-virtual {v0}, Lkik/core/a;->n()Lkik/core/net/e;
+    invoke-virtual {v0}, Lkik/core/a;->m()Lkik/core/net/e;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method final e()Lkik/core/interfaces/aa;
+.method final e()Lkik/core/interfaces/z;
     .locals 1
 
     .prologue
     .line 63
     iget-object v0, p0, Lkik/core/e;->a:Lkik/core/a;
 
-    invoke-virtual {v0}, Lkik/core/a;->m()Lkik/core/interfaces/aa;
+    invoke-virtual {v0}, Lkik/core/a;->l()Lkik/core/interfaces/z;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method final f()Lkik/core/interfaces/ah;
+.method final f()Lkik/core/interfaces/ag;
     .locals 1
 
     .prologue
     .line 69
     iget-object v0, p0, Lkik/core/e;->a:Lkik/core/a;
 
-    invoke-virtual {v0}, Lkik/core/a;->p()Lkik/core/interfaces/ah;
+    invoke-virtual {v0}, Lkik/core/a;->o()Lkik/core/interfaces/ag;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method final g()Lkik/core/interfaces/ae;
+.method final g()Lkik/core/interfaces/ad;
     .locals 1
 
     .prologue
     .line 75
     iget-object v0, p0, Lkik/core/e;->a:Lkik/core/a;
 
-    invoke-virtual {v0}, Lkik/core/a;->o()Lkik/core/interfaces/ae;
+    invoke-virtual {v0}, Lkik/core/a;->n()Lkik/core/interfaces/ad;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method final h()Lkik/core/interfaces/ab;
+.method final h()Lkik/core/interfaces/aa;
     .locals 1
 
     .prologue
     .line 81
     iget-object v0, p0, Lkik/core/e;->a:Lkik/core/a;
 
-    invoke-virtual {v0}, Lkik/core/a;->k()Lkik/core/interfaces/ab;
+    invoke-virtual {v0}, Lkik/core/a;->j()Lkik/core/interfaces/aa;
 
     move-result-object v0
 
@@ -135,7 +135,7 @@
     .line 87
     iget-object v0, p0, Lkik/core/e;->a:Lkik/core/a;
 
-    invoke-virtual {v0}, Lkik/core/a;->t()Lkik/core/interfaces/e;
+    invoke-virtual {v0}, Lkik/core/a;->s()Lkik/core/interfaces/e;
 
     move-result-object v0
 
@@ -149,21 +149,21 @@
     .line 93
     iget-object v0, p0, Lkik/core/e;->a:Lkik/core/a;
 
-    invoke-virtual {v0}, Lkik/core/a;->s()Lkik/core/interfaces/IConversation;
+    invoke-virtual {v0}, Lkik/core/a;->r()Lkik/core/interfaces/IConversation;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method final k()Lkik/core/interfaces/w;
+.method final k()Lkik/core/interfaces/v;
     .locals 1
 
     .prologue
     .line 99
     iget-object v0, p0, Lkik/core/e;->a:Lkik/core/a;
 
-    invoke-virtual {v0}, Lkik/core/a;->u()Lkik/core/interfaces/w;
+    invoke-virtual {v0}, Lkik/core/a;->t()Lkik/core/interfaces/v;
 
     move-result-object v0
 
@@ -177,7 +177,7 @@
     .line 105
     iget-object v0, p0, Lkik/core/e;->a:Lkik/core/a;
 
-    invoke-virtual {v0}, Lkik/core/a;->q()Lkik/core/interfaces/IAddressBookIntegration;
+    invoke-virtual {v0}, Lkik/core/a;->p()Lkik/core/interfaces/IAddressBookIntegration;
 
     move-result-object v0
 
@@ -191,7 +191,7 @@
     .line 111
     iget-object v0, p0, Lkik/core/e;->a:Lkik/core/a;
 
-    invoke-virtual {v0}, Lkik/core/a;->r()Lkik/core/interfaces/f;
+    invoke-virtual {v0}, Lkik/core/a;->q()Lkik/core/interfaces/f;
 
     move-result-object v0
 
@@ -205,7 +205,7 @@
     .line 117
     iget-object v0, p0, Lkik/core/e;->a:Lkik/core/a;
 
-    invoke-virtual {v0}, Lkik/core/a;->z()Lkik/core/e/d;
+    invoke-virtual {v0}, Lkik/core/a;->y()Lkik/core/e/d;
 
     move-result-object v0
 
@@ -219,7 +219,7 @@
     .line 123
     iget-object v0, p0, Lkik/core/e;->a:Lkik/core/a;
 
-    invoke-virtual {v0}, Lkik/core/a;->v()Lkik/core/interfaces/l;
+    invoke-virtual {v0}, Lkik/core/a;->u()Lkik/core/interfaces/l;
 
     move-result-object v0
 
@@ -233,7 +233,7 @@
     .line 129
     iget-object v0, p0, Lkik/core/e;->a:Lkik/core/a;
 
-    invoke-virtual {v0}, Lkik/core/a;->w()Lkik/core/interfaces/n;
+    invoke-virtual {v0}, Lkik/core/a;->v()Lkik/core/interfaces/n;
 
     move-result-object v0
 
@@ -247,7 +247,7 @@
     .line 135
     iget-object v0, p0, Lkik/core/e;->a:Lkik/core/a;
 
-    invoke-virtual {v0}, Lkik/core/a;->x()Lkik/core/d/b;
+    invoke-virtual {v0}, Lkik/core/a;->w()Lkik/core/d/b;
 
     move-result-object v0
 
@@ -261,7 +261,7 @@
     .line 141
     iget-object v0, p0, Lkik/core/e;->a:Lkik/core/a;
 
-    invoke-virtual {v0}, Lkik/core/a;->B()Lkik/core/interfaces/k;
+    invoke-virtual {v0}, Lkik/core/a;->A()Lkik/core/interfaces/k;
 
     move-result-object v0
 
@@ -275,7 +275,7 @@
     .line 147
     iget-object v0, p0, Lkik/core/e;->a:Lkik/core/a;
 
-    invoke-virtual {v0}, Lkik/core/a;->y()Lkik/core/interfaces/m;
+    invoke-virtual {v0}, Lkik/core/a;->x()Lkik/core/interfaces/m;
 
     move-result-object v0
 

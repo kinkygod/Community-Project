@@ -62,7 +62,7 @@
 
     .line 1168
     :cond_0
-    iget-object v0, v0, Lkik/android/chat/vm/chats/publicgroups/t;->c:Lkik/core/interfaces/ag;
+    iget-object v0, v0, Lkik/android/chat/vm/chats/publicgroups/t;->c:Lkik/core/interfaces/af;
 
     invoke-interface {p1}, Lcom/kik/core/domain/a/a/a;->d()Ljava/lang/String;
 
@@ -72,7 +72,7 @@
 
     move-result-object v1
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ag;->a(Lrx/d;)Lrx/d;
+    invoke-interface {v0, v1}, Lkik/core/interfaces/af;->a(Lrx/d;)Lrx/d;
 
     move-result-object v0
 

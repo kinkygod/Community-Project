@@ -101,7 +101,7 @@
 
     iget-object v1, p0, Lkik/android/chat/fragment/AddressbookFragmentBase;->m:Lkik/android/chat/fragment/AddressbookFragmentBase$a;
 
-    invoke-virtual {v1}, Lkik/android/chat/fragment/AddressbookFragmentBase$a;->g_()Ljava/lang/String;
+    invoke-virtual {v1}, Lkik/android/chat/fragment/AddressbookFragmentBase$a;->h_()Ljava/lang/String;
 
     move-result-object v4
 
@@ -242,7 +242,7 @@
 
     iget-object v1, p0, Lkik/android/chat/fragment/AddressbookFragmentBase;->m:Lkik/android/chat/fragment/AddressbookFragmentBase$a;
 
-    invoke-virtual {v1}, Lkik/android/chat/fragment/AddressbookFragmentBase$a;->g_()Ljava/lang/String;
+    invoke-virtual {v1}, Lkik/android/chat/fragment/AddressbookFragmentBase$a;->h_()Ljava/lang/String;
 
     move-result-object v1
 
@@ -303,7 +303,7 @@
 
     iget-object v2, p0, Lkik/android/chat/fragment/AddressbookFragmentBase;->m:Lkik/android/chat/fragment/AddressbookFragmentBase$a;
 
-    invoke-virtual {v2}, Lkik/android/chat/fragment/AddressbookFragmentBase$a;->g_()Ljava/lang/String;
+    invoke-virtual {v2}, Lkik/android/chat/fragment/AddressbookFragmentBase$a;->h_()Ljava/lang/String;
 
     move-result-object v2
 

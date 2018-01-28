@@ -6,30 +6,26 @@
 
 
 # instance fields
-.field private final a:Lcom/kik/core/a/c;
-
-.field private final b:Ljava/lang/Object;
+.field private final a:Lcom/kik/core/a/d;
 
 
 # direct methods
-.method private constructor <init>(Lcom/kik/core/a/c;Ljava/lang/Object;)V
+.method private constructor <init>(Lcom/kik/core/a/d;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/kik/core/a/e;->a:Lcom/kik/core/a/c;
-
-    iput-object p2, p0, Lcom/kik/core/a/e;->b:Ljava/lang/Object;
+    iput-object p1, p0, Lcom/kik/core/a/e;->a:Lcom/kik/core/a/d;
 
     return-void
 .end method
 
-.method public static a(Lcom/kik/core/a/c;Ljava/lang/Object;)Lrx/functions/b;
+.method public static a(Lcom/kik/core/a/d;)Lrx/functions/b;
     .locals 1
 
     new-instance v0, Lcom/kik/core/a/e;
 
-    invoke-direct {v0, p0, p1}, Lcom/kik/core/a/e;-><init>(Lcom/kik/core/a/c;Ljava/lang/Object;)V
+    invoke-direct {v0, p0}, Lcom/kik/core/a/e;-><init>(Lcom/kik/core/a/d;)V
 
     return-object v0
 .end method
@@ -37,15 +33,13 @@
 
 # virtual methods
 .method public final call(Ljava/lang/Object;)V
-    .locals 2
+    .locals 1
 
-    iget-object v0, p0, Lcom/kik/core/a/e;->a:Lcom/kik/core/a/c;
+    iget-object v0, p0, Lcom/kik/core/a/e;->a:Lcom/kik/core/a/d;
 
-    iget-object v1, p0, Lcom/kik/core/a/e;->b:Ljava/lang/Object;
+    check-cast p1, Lcom/kik/core/a/a;
 
-    check-cast p1, Lcom/google/common/base/Optional;
-
-    invoke-static {v0, v1, p1}, Lcom/kik/core/a/c;->a(Lcom/kik/core/a/c;Ljava/lang/Object;Lcom/google/common/base/Optional;)V
+    invoke-static {v0, p1}, Lcom/kik/core/a/d;->a(Lcom/kik/core/a/d;Lcom/kik/core/a/a;)V
 
     return-void
 .end method

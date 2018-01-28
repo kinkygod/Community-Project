@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 2713
+    .line 2710
     iput-object p1, p0, Lcom/kik/android/Mixpanel$6;->a:Lcom/kik/android/Mixpanel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,11 +40,11 @@
     .locals 1
 
     .prologue
-    .line 2716
+    .line 2713
     iget-object v0, p0, Lcom/kik/android/Mixpanel$6;->a:Lcom/kik/android/Mixpanel;
 
     invoke-static {v0}, Lcom/kik/android/Mixpanel;->l(Lcom/kik/android/Mixpanel;)V
 
-    .line 2717
+    .line 2714
     return-void
 .end method

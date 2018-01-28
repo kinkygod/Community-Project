@@ -37,7 +37,7 @@
 
 .field private volatile e:J
 
-.field private final g:Lkik/core/interfaces/s;
+.field private final g:Lkik/core/interfaces/r;
 
 .field private final h:Ljava/io/File;
 
@@ -82,20 +82,20 @@
     return-void
 .end method
 
-.method public constructor <init>(Lkik/core/interfaces/s;Ljava/io/File;Lcom/kik/performance/metrics/c;)V
+.method public constructor <init>(Lkik/core/interfaces/r;Ljava/io/File;Lcom/kik/performance/metrics/c;)V
     .locals 1
 
     .prologue
     .line 122
     const-string v0, "https://clientmetrics-augmentum.kik.com/clientmetrics/augmentum/v1/data?flattened=true"
 
-    invoke-direct {p0, p1, p2, v0, p3}, Lcom/kik/b/b;-><init>(Lkik/core/interfaces/s;Ljava/io/File;Ljava/lang/String;Lcom/kik/performance/metrics/c;)V
+    invoke-direct {p0, p1, p2, v0, p3}, Lcom/kik/b/b;-><init>(Lkik/core/interfaces/r;Ljava/io/File;Ljava/lang/String;Lcom/kik/performance/metrics/c;)V
 
     .line 123
     return-void
 .end method
 
-.method private constructor <init>(Lkik/core/interfaces/s;Ljava/io/File;Ljava/lang/String;Lcom/kik/performance/metrics/c;)V
+.method private constructor <init>(Lkik/core/interfaces/r;Ljava/io/File;Ljava/lang/String;Lcom/kik/performance/metrics/c;)V
     .locals 6
 
     .prologue
@@ -167,7 +167,7 @@
     iput-object v0, p0, Lcom/kik/b/b;->p:Lcom/kik/performance/metrics/c$a;
 
     .line 127
-    iput-object p1, p0, Lcom/kik/b/b;->g:Lkik/core/interfaces/s;
+    iput-object p1, p0, Lcom/kik/b/b;->g:Lkik/core/interfaces/r;
 
     .line 128
     iput-object p2, p0, Lcom/kik/b/b;->h:Ljava/io/File;
@@ -1206,9 +1206,9 @@
 
     .line 217
     :cond_0
-    iget-object v0, p0, Lcom/kik/b/b;->g:Lkik/core/interfaces/s;
+    iget-object v0, p0, Lcom/kik/b/b;->g:Lkik/core/interfaces/r;
 
-    invoke-interface {v0}, Lkik/core/interfaces/s;->d()Lkik/core/datatypes/k;
+    invoke-interface {v0}, Lkik/core/interfaces/r;->d()Lkik/core/datatypes/k;
 
     move-result-object v0
 
@@ -1228,9 +1228,9 @@
     :cond_1
     const-string v0, "deviceId"
 
-    iget-object v2, p0, Lcom/kik/b/b;->g:Lkik/core/interfaces/s;
+    iget-object v2, p0, Lcom/kik/b/b;->g:Lkik/core/interfaces/r;
 
-    invoke-interface {v2}, Lkik/core/interfaces/s;->a()Ljava/lang/String;
+    invoke-interface {v2}, Lkik/core/interfaces/r;->a()Ljava/lang/String;
 
     move-result-object v2
 
@@ -1239,9 +1239,9 @@
     .line 223
     const-string v0, "clientVersion"
 
-    iget-object v2, p0, Lcom/kik/b/b;->g:Lkik/core/interfaces/s;
+    iget-object v2, p0, Lcom/kik/b/b;->g:Lkik/core/interfaces/r;
 
-    invoke-interface {v2}, Lkik/core/interfaces/s;->c()Ljava/lang/String;
+    invoke-interface {v2}, Lkik/core/interfaces/r;->c()Ljava/lang/String;
 
     move-result-object v2
 
@@ -1327,9 +1327,9 @@
     :try_start_1
     const-string v0, "commonData:Android Id"
 
-    iget-object v2, p0, Lcom/kik/b/b;->g:Lkik/core/interfaces/s;
+    iget-object v2, p0, Lcom/kik/b/b;->g:Lkik/core/interfaces/r;
 
-    invoke-interface {v2}, Lkik/core/interfaces/s;->b()Ljava/lang/String;
+    invoke-interface {v2}, Lkik/core/interfaces/r;->b()Ljava/lang/String;
 
     move-result-object v2
 

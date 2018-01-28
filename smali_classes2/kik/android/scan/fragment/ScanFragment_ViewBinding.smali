@@ -22,7 +22,7 @@
     iput-object p1, p0, Lkik/android/scan/fragment/ScanFragment_ViewBinding;->a:Lkik/android/scan/fragment/ScanFragment;
 
     .line 25
-    const v0, 0x7f1003d0
+    const v0, 0x7f1003cc
 
     const-string v1, "field \'_scanContainer\'"
 
@@ -37,7 +37,7 @@
     iput-object v0, p1, Lkik/android/scan/fragment/ScanFragment;->_scanContainer:Landroid/view/ViewGroup;
 
     .line 26
-    const v0, 0x7f1002c7
+    const v0, 0x7f1002c3
 
     const-string v1, "field \'_animationContainer\'"
 
@@ -48,7 +48,7 @@
     iput-object v0, p1, Lkik/android/scan/fragment/ScanFragment;->_animationContainer:Landroid/view/View;
 
     .line 27
-    const v0, 0x7f1003d5
+    const v0, 0x7f1003d1
 
     const-string v1, "field \'_loadingContainer\'"
 
@@ -59,7 +59,7 @@
     iput-object v0, p1, Lkik/android/scan/fragment/ScanFragment;->_loadingContainer:Landroid/view/View;
 
     .line 28
-    const v0, 0x7f1003d6
+    const v0, 0x7f1003d2
 
     const-string v1, "field \'_progress\'"
 
@@ -74,7 +74,7 @@
     iput-object v0, p1, Lkik/android/scan/fragment/ScanFragment;->_progress:Landroid/widget/ProgressBar;
 
     .line 29
-    const v0, 0x7f1003d7
+    const v0, 0x7f1003d3
 
     const-string v1, "field \'_errorImage\'"
 
@@ -85,7 +85,7 @@
     iput-object v0, p1, Lkik/android/scan/fragment/ScanFragment;->_errorImage:Landroid/view/View;
 
     .line 30
-    const v0, 0x7f1003d8
+    const v0, 0x7f1003d4
 
     const-string v1, "field \'_errorTitle\'"
 
@@ -100,7 +100,7 @@
     iput-object v0, p1, Lkik/android/scan/fragment/ScanFragment;->_errorTitle:Landroid/widget/TextView;
 
     .line 31
-    const v0, 0x7f100175
+    const v0, 0x7f100176
 
     const-string v1, "field \'_cameraErrorCover\'"
 
@@ -111,7 +111,7 @@
     iput-object v0, p1, Lkik/android/scan/fragment/ScanFragment;->_cameraErrorCover:Landroid/view/View;
 
     .line 32
-    const v0, 0x7f1003d3
+    const v0, 0x7f1003cf
 
     const-string v1, "field \'_scanFinder\'"
 
@@ -126,7 +126,7 @@
     iput-object v0, p1, Lkik/android/scan/fragment/ScanFragment;->_scanFinder:Lkik/android/scan/widget/ScannerViewFinder;
 
     .line 33
-    const v0, 0x7f1003d2
+    const v0, 0x7f1003ce
 
     const-string v1, "field \'_resultImageView\'"
 
@@ -141,7 +141,7 @@
     iput-object v0, p1, Lkik/android/scan/fragment/ScanFragment;->_resultImageView:Landroid/widget/ImageView;
 
     .line 34
-    const v0, 0x7f1003d4
+    const v0, 0x7f1003d0
 
     const-string v1, "field \'_callToActionTextView\'"
 
@@ -156,7 +156,7 @@
     iput-object v0, p1, Lkik/android/scan/fragment/ScanFragment;->_callToActionTextView:Landroid/widget/TextView;
 
     .line 35
-    const v0, 0x7f1003d1
+    const v0, 0x7f1003cd
 
     const-string v1, "field \'_cameraBlurView\'"
 
@@ -171,7 +171,7 @@
     iput-object v0, p1, Lkik/android/scan/fragment/ScanFragment;->_cameraBlurView:Landroid/widget/ImageView;
 
     .line 36
-    const v0, 0x7f1003d9
+    const v0, 0x7f1003d5
 
     const-string v1, "field \'_errorText\'"
 
@@ -186,7 +186,7 @@
     iput-object v0, p1, Lkik/android/scan/fragment/ScanFragment;->_errorText:Landroid/widget/TextView;
 
     .line 37
-    const v0, 0x7f1003da
+    const v0, 0x7f1003d6
 
     const-string v1, "field \'_errorRetryButton\'"
 

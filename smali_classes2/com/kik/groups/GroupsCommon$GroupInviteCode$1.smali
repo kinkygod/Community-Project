@@ -28,7 +28,7 @@
     .locals 0
 
     .prologue
-    .line 7013
+    .line 7077
     invoke-direct {p0}, Lcom/google/protobuf/AbstractParser;-><init>()V
 
     return-void
@@ -45,7 +45,7 @@
     .end annotation
 
     .prologue
-    .line 7018
+    .line 7082
     new-instance v0, Lcom/kik/groups/GroupsCommon$GroupInviteCode;
 
     const/4 v1, 0x0
@@ -64,7 +64,7 @@
     .end annotation
 
     .prologue
-    .line 7013
+    .line 7077
     invoke-virtual {p0, p1, p2}, Lcom/kik/groups/GroupsCommon$GroupInviteCode$1;->parsePartialFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/kik/groups/GroupsCommon$GroupInviteCode;
 
     move-result-object v0

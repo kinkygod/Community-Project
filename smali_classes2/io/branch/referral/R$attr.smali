@@ -15,17 +15,17 @@
 
 
 # static fields
-.field public static final buttonSize:I = 0x7f0101f9
+.field public static final buttonSize:I = 0x7f010203
 
-.field public static final circleCrop:I = 0x7f01019c
+.field public static final circleCrop:I = 0x7f0101a6
 
-.field public static final colorScheme:I = 0x7f0101fa
+.field public static final colorScheme:I = 0x7f010204
 
-.field public static final imageAspectRatio:I = 0x7f01019b
+.field public static final imageAspectRatio:I = 0x7f0101a5
 
-.field public static final imageAspectRatioAdjust:I = 0x7f01019a
+.field public static final imageAspectRatioAdjust:I = 0x7f0101a4
 
-.field public static final scopeUris:I = 0x7f0101fb
+.field public static final scopeUris:I = 0x7f010205
 
 
 # direct methods

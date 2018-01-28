@@ -17,7 +17,7 @@
     return-void
 .end method
 
-.method public static a(Lkik/core/datatypes/FriendPickerAttachment;Lkik/core/interfaces/w;)Ljava/lang/String;
+.method public static a(Lkik/core/datatypes/FriendPickerAttachment;Lkik/core/interfaces/v;)Ljava/lang/String;
     .locals 4
 
     .prologue
@@ -56,7 +56,7 @@
     .line 39
     const/4 v3, 0x0
 
-    invoke-interface {p1, v0, v3}, Lkik/core/interfaces/w;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
+    invoke-interface {p1, v0, v3}, Lkik/core/interfaces/v;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
 
     move-result-object v0
 

@@ -36,7 +36,7 @@
     .locals 0
 
     .prologue
-    .line 137
+    .line 138
     iput-object p1, p0, Lkik/android/chat/fragment/ConversationsBaseFragment$3;->a:Lkik/android/chat/fragment/ConversationsBaseFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -52,10 +52,10 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 137
+    .line 138
     check-cast p2, Ljava/lang/String;
 
-    .line 1141
+    .line 1142
     iget-object v0, p0, Lkik/android/chat/fragment/ConversationsBaseFragment$3;->a:Lkik/android/chat/fragment/ConversationsBaseFragment;
 
     invoke-static {v0}, Lkik/android/chat/fragment/ConversationsBaseFragment;->access$000(Lkik/android/chat/fragment/ConversationsBaseFragment;)Z
@@ -64,7 +64,7 @@
 
     if-nez v0, :cond_0
 
-    .line 1142
+    .line 1143
     iget-object v0, p0, Lkik/android/chat/fragment/ConversationsBaseFragment$3;->a:Lkik/android/chat/fragment/ConversationsBaseFragment;
 
     iget-object v0, v0, Lkik/android/chat/fragment/ConversationsBaseFragment;->_convoManager:Lkik/core/interfaces/IConversation;
@@ -73,7 +73,7 @@
 
     move-result-object v0
 
-    .line 1143
+    .line 1144
     iget-object v2, p0, Lkik/android/chat/fragment/ConversationsBaseFragment$3;->a:Lkik/android/chat/fragment/ConversationsBaseFragment;
 
     iget-object v2, v2, Lkik/android/chat/fragment/ConversationsBaseFragment;->_convoManager:Lkik/core/interfaces/IConversation;
@@ -94,20 +94,20 @@
 
     move v0, v1
 
-    .line 1144
+    .line 1145
     :goto_0
     if-eqz v0, :cond_0
 
-    .line 1145
+    .line 1146
     iget-object v0, p0, Lkik/android/chat/fragment/ConversationsBaseFragment$3;->a:Lkik/android/chat/fragment/ConversationsBaseFragment;
 
     invoke-static {v0, v1}, Lkik/android/chat/fragment/ConversationsBaseFragment;->access$002(Lkik/android/chat/fragment/ConversationsBaseFragment;Z)Z
 
-    .line 137
+    .line 138
     :cond_0
     return-void
 
-    .line 1143
+    .line 1144
     :cond_1
     const/4 v0, 0x0
 

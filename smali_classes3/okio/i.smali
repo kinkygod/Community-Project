@@ -97,42 +97,42 @@
     return-object v0
 .end method
 
-.method public final aS_()J
+.method public final aO_()J
     .locals 2
 
     .prologue
     .line 46
     iget-object v0, p0, Lokio/i;->a:Lokio/t;
 
-    invoke-virtual {v0}, Lokio/t;->aS_()J
+    invoke-virtual {v0}, Lokio/t;->aO_()J
 
     move-result-wide v0
 
     return-wide v0
 .end method
 
-.method public final aT_()Z
+.method public final aP_()Z
     .locals 1
 
     .prologue
     .line 50
     iget-object v0, p0, Lokio/i;->a:Lokio/t;
 
-    invoke-virtual {v0}, Lokio/t;->aT_()Z
+    invoke-virtual {v0}, Lokio/t;->aP_()Z
 
     move-result v0
 
     return v0
 .end method
 
-.method public final aU_()Lokio/t;
+.method public final aQ_()Lokio/t;
     .locals 1
 
     .prologue
     .line 62
     iget-object v0, p0, Lokio/i;->a:Lokio/t;
 
-    invoke-virtual {v0}, Lokio/t;->aU_()Lokio/t;
+    invoke-virtual {v0}, Lokio/t;->aQ_()Lokio/t;
 
     move-result-object v0
 

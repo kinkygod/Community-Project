@@ -37,13 +37,13 @@
 
     iget-object v0, p0, Lcom/kik/util/aj;->a:Landroid/view/View;
 
-    check-cast p1, Ljava/lang/Integer;
+    check-cast p1, Ljava/lang/Boolean;
 
-    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Landroid/view/View;->setEnabled(Z)V
 
     return-void
 .end method

@@ -4,15 +4,15 @@
 
 
 # instance fields
-.field private d:Lcom/kik/view/adapters/l;
+.field private e:Lcom/kik/view/adapters/m;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Landroid/database/Cursor;ZZLcom/kik/view/adapters/l;Lcom/kik/cache/KikVolleyImageLoader;Lkik/core/interfaces/w;Lcom/kik/android/Mixpanel;)V
-    .locals 8
+.method public constructor <init>(Landroid/content/Context;Landroid/database/Cursor;ZZLcom/kik/view/adapters/m;Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
+    .locals 7
 
     .prologue
-    .line 20
+    .line 19
     move-object v0, p0
 
     move-object v1, p1
@@ -27,14 +27,12 @@
 
     move-object v6, p7
 
-    move-object/from16 v7, p8
+    invoke-direct/range {v0 .. v6}, Lcom/kik/view/adapters/ContactsCursorAdapter;-><init>(Landroid/content/Context;Landroid/database/Cursor;ZZLcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
-    invoke-direct/range {v0 .. v7}, Lcom/kik/view/adapters/ContactsCursorAdapter;-><init>(Landroid/content/Context;Landroid/database/Cursor;ZZLcom/kik/cache/KikVolleyImageLoader;Lkik/core/interfaces/w;Lcom/kik/android/Mixpanel;)V
+    .line 20
+    iput-object p5, p0, Lcom/kik/view/adapters/MultiselectContactsCursorAdapter;->e:Lcom/kik/view/adapters/m;
 
     .line 21
-    iput-object p5, p0, Lcom/kik/view/adapters/MultiselectContactsCursorAdapter;->d:Lcom/kik/view/adapters/l;
-
-    .line 22
     return-void
 .end method
 
@@ -44,8 +42,8 @@
     .locals 1
 
     .prologue
-    .line 27
-    const v0, 0x7f0400f7
+    .line 26
+    const v0, 0x7f0400fb
 
     return v0
 .end method
@@ -54,42 +52,42 @@
     .locals 3
 
     .prologue
-    .line 41
+    .line 40
     invoke-super {p0, p1, p2, p3}, Lcom/kik/view/adapters/ContactsCursorAdapter;->bindView(Landroid/view/View;Landroid/content/Context;Landroid/database/Cursor;)V
 
-    .line 42
+    .line 41
     invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/kik/view/adapters/e;
+    check-cast v0, Lcom/kik/view/adapters/f;
 
-    .line 1048
-    iget-object v1, p0, Lcom/kik/view/adapters/MultiselectContactsCursorAdapter;->d:Lcom/kik/view/adapters/l;
+    .line 1047
+    iget-object v1, p0, Lcom/kik/view/adapters/MultiselectContactsCursorAdapter;->e:Lcom/kik/view/adapters/m;
 
     if-eqz v1, :cond_0
 
-    iget-object v1, p0, Lcom/kik/view/adapters/MultiselectContactsCursorAdapter;->d:Lcom/kik/view/adapters/l;
+    iget-object v1, p0, Lcom/kik/view/adapters/MultiselectContactsCursorAdapter;->e:Lcom/kik/view/adapters/m;
 
-    invoke-interface {v1}, Lcom/kik/view/adapters/l;->b()Z
+    invoke-interface {v1}, Lcom/kik/view/adapters/m;->b()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 1049
-    iget-object v1, v0, Lcom/kik/view/adapters/e;->a:Landroid/widget/CheckBox;
+    .line 1048
+    iget-object v1, v0, Lcom/kik/view/adapters/f;->a:Landroid/widget/CheckBox;
 
     const/4 v2, 0x0
 
     invoke-virtual {v1, v2}, Landroid/widget/CheckBox;->setVisibility(I)V
 
-    .line 1050
-    iget-object v0, v0, Lcom/kik/view/adapters/e;->a:Landroid/widget/CheckBox;
+    .line 1049
+    iget-object v0, v0, Lcom/kik/view/adapters/f;->a:Landroid/widget/CheckBox;
 
-    iget-object v1, p0, Lcom/kik/view/adapters/MultiselectContactsCursorAdapter;->d:Lcom/kik/view/adapters/l;
+    iget-object v1, p0, Lcom/kik/view/adapters/MultiselectContactsCursorAdapter;->e:Lcom/kik/view/adapters/m;
 
-    invoke-interface {v1, p3}, Lcom/kik/view/adapters/l;->a(Landroid/database/Cursor;)Z
+    invoke-interface {v1, p3}, Lcom/kik/view/adapters/m;->a(Landroid/database/Cursor;)Z
 
     move-result v1
 
@@ -98,9 +96,9 @@
     :goto_0
     return-void
 
-    .line 1053
+    .line 1052
     :cond_0
-    iget-object v0, v0, Lcom/kik/view/adapters/e;->a:Landroid/widget/CheckBox;
+    iget-object v0, v0, Lcom/kik/view/adapters/f;->a:Landroid/widget/CheckBox;
 
     const/16 v1, 0x8
 
@@ -113,18 +111,18 @@
     .locals 2
 
     .prologue
-    .line 33
+    .line 32
     invoke-super {p0, p1, p2, p3}, Lcom/kik/view/adapters/ContactsCursorAdapter;->newView(Landroid/content/Context;Landroid/database/Cursor;Landroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object v0
 
-    .line 34
-    new-instance v1, Lcom/kik/view/adapters/e;
+    .line 33
+    new-instance v1, Lcom/kik/view/adapters/f;
 
-    invoke-direct {v1, v0}, Lcom/kik/view/adapters/e;-><init>(Landroid/view/View;)V
+    invoke-direct {v1, v0}, Lcom/kik/view/adapters/f;-><init>(Landroid/view/View;)V
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
-    .line 35
+    .line 34
     return-object v0
 .end method

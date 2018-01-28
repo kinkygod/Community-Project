@@ -2,44 +2,48 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Landroid/media/MediaPlayer$OnErrorListener;
+.implements Landroid/content/DialogInterface$OnClickListener;
 
 
-# instance fields
-.field private final a:Lkik/android/chat/fragment/VideoMediaItemFragment;
+# static fields
+.field private static final a:Lkik/android/chat/fragment/gg;
 
 
 # direct methods
-.method private constructor <init>(Lkik/android/chat/fragment/VideoMediaItemFragment;)V
-    .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lkik/android/chat/fragment/gg;->a:Lkik/android/chat/fragment/VideoMediaItemFragment;
-
-    return-void
-.end method
-
-.method public static a(Lkik/android/chat/fragment/VideoMediaItemFragment;)Landroid/media/MediaPlayer$OnErrorListener;
+.method static constructor <clinit>()V
     .locals 1
 
     new-instance v0, Lkik/android/chat/fragment/gg;
 
-    invoke-direct {v0, p0}, Lkik/android/chat/fragment/gg;-><init>(Lkik/android/chat/fragment/VideoMediaItemFragment;)V
+    invoke-direct {v0}, Lkik/android/chat/fragment/gg;-><init>()V
+
+    sput-object v0, Lkik/android/chat/fragment/gg;->a:Lkik/android/chat/fragment/gg;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static a()Landroid/content/DialogInterface$OnClickListener;
+    .locals 1
+
+    sget-object v0, Lkik/android/chat/fragment/gg;->a:Lkik/android/chat/fragment/gg;
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public final onError(Landroid/media/MediaPlayer;II)Z
-    .locals 1
+.method public final onClick(Landroid/content/DialogInterface;I)V
+    .locals 0
 
-    iget-object v0, p0, Lkik/android/chat/fragment/gg;->a:Lkik/android/chat/fragment/VideoMediaItemFragment;
+    invoke-static {}, Lkik/android/chat/fragment/UserProfileFragment;->a()V
 
-    invoke-static {v0}, Lkik/android/chat/fragment/VideoMediaItemFragment;->a(Lkik/android/chat/fragment/VideoMediaItemFragment;)Z
-
-    move-result v0
-
-    return v0
+    return-void
 .end method

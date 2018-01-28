@@ -3,44 +3,17 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/vm/messaging/IContentMessageViewModel;
+.implements Lkik/android/chat/vm/messaging/IMessageViewModel;
 
 
 # virtual methods
-.method public abstract ap()Lrx/d;
+.method public abstract g()Lrx/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
             "Lrx/d",
             "<",
-            "Ljava/io/File;",
-            ">;"
-        }
-    .end annotation
-.end method
-
-.method public abstract aq()Lrx/d;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/d",
-            "<",
-            "Ljava/lang/Integer;",
-            ">;"
-        }
-    .end annotation
-.end method
-
-.method public abstract ar()I
-.end method
-
-.method public abstract q()Lrx/d;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/d",
-            "<",
-            "Ljava/lang/Boolean;",
+            "Ljava/lang/String;",
             ">;"
         }
     .end annotation

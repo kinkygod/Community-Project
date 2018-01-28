@@ -3,16 +3,16 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/b;
+.implements Ldagger/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/b",
+        "Ldagger/b",
         "<",
-        "Lkik/android/chat/vm/profile/profileactionvm/ab$c;",
+        "Lkik/android/chat/vm/profile/profileactionvm/ag$c;",
         ">;"
     }
 .end annotation
@@ -195,7 +195,7 @@
     return-void
 .end method
 
-.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)La/b;
+.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -216,9 +216,9 @@
             "<",
             "Lcom/kik/core/domain/a/c;",
             ">;)",
-            "La/b",
+            "Ldagger/b",
             "<",
-            "Lkik/android/chat/vm/profile/profileactionvm/ab$c;",
+            "Lkik/android/chat/vm/profile/profileactionvm/ag$c;",
             ">;"
         }
     .end annotation
@@ -234,12 +234,12 @@
 
 
 # virtual methods
-.method public final synthetic a(Ljava/lang/Object;)V
+.method public final synthetic injectMembers(Ljava/lang/Object;)V
     .locals 2
 
     .prologue
     .line 11
-    check-cast p1, Lkik/android/chat/vm/profile/profileactionvm/ab$c;
+    check-cast p1, Lkik/android/chat/vm/profile/profileactionvm/ag$c;
 
     .line 1052
     if-nez p1, :cond_0
@@ -269,7 +269,7 @@
 
     check-cast v0, Lcom/kik/android/Mixpanel;
 
-    iput-object v0, p1, Lkik/android/chat/vm/profile/profileactionvm/ab$a;->b:Lcom/kik/android/Mixpanel;
+    iput-object v0, p1, Lkik/android/chat/vm/profile/profileactionvm/ag$a;->b:Lcom/kik/android/Mixpanel;
 
     .line 1059
     iget-object v0, p0, Lkik/android/chat/vm/profile/profileactionvm/MuteToggleItemViewModels_GroupMuteNotificationsItemViewModel_MembersInjector;->d:Ljavax/inject/Provider;
@@ -281,7 +281,7 @@
 
     check-cast v0, Lkik/core/interfaces/IConversation;
 
-    iput-object v0, p1, Lkik/android/chat/vm/profile/profileactionvm/ab$a;->c:Lkik/core/interfaces/IConversation;
+    iput-object v0, p1, Lkik/android/chat/vm/profile/profileactionvm/ag$a;->c:Lkik/core/interfaces/IConversation;
 
     .line 1061
     iget-object v0, p0, Lkik/android/chat/vm/profile/profileactionvm/MuteToggleItemViewModels_GroupMuteNotificationsItemViewModel_MembersInjector;->e:Ljavax/inject/Provider;
@@ -292,7 +292,7 @@
 
     check-cast v0, Lcom/kik/core/domain/a/c;
 
-    iput-object v0, p1, Lkik/android/chat/vm/profile/profileactionvm/ab$c;->d:Lcom/kik/core/domain/a/c;
+    iput-object v0, p1, Lkik/android/chat/vm/profile/profileactionvm/ag$c;->d:Lcom/kik/core/domain/a/c;
 
     .line 11
     return-void

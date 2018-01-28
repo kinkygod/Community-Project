@@ -3,16 +3,16 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/b;
+.implements Ldagger/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/b",
+        "Ldagger/b",
         "<",
-        "Lkik/android/chat/vm/co;",
+        "Lkik/android/chat/vm/cq;",
         ">;"
     }
 .end annotation
@@ -39,7 +39,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/w;",
+            "Lkik/core/interfaces/v;",
             ">;"
         }
     .end annotation
@@ -95,7 +95,7 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/w;",
+            "Lkik/core/interfaces/v;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -163,7 +163,7 @@
     return-void
 .end method
 
-.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)La/b;
+.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -174,15 +174,15 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/w;",
+            "Lkik/core/interfaces/v;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
             "Landroid/content/res/Resources;",
             ">;)",
-            "La/b",
+            "Ldagger/b",
             "<",
-            "Lkik/android/chat/vm/co;",
+            "Lkik/android/chat/vm/cq;",
             ">;"
         }
     .end annotation
@@ -198,12 +198,12 @@
 
 
 # virtual methods
-.method public final synthetic a(Ljava/lang/Object;)V
+.method public final synthetic injectMembers(Ljava/lang/Object;)V
     .locals 2
 
     .prologue
     .line 10
-    check-cast p1, Lkik/android/chat/vm/co;
+    check-cast p1, Lkik/android/chat/vm/cq;
 
     .line 1044
     if-nez p1, :cond_0
@@ -227,7 +227,7 @@
 
     check-cast v0, Lkik/core/interfaces/b;
 
-    iput-object v0, p1, Lkik/android/chat/vm/co;->a:Lkik/core/interfaces/b;
+    iput-object v0, p1, Lkik/android/chat/vm/cq;->a:Lkik/core/interfaces/b;
 
     .line 1048
     iget-object v0, p0, Lkik/android/chat/vm/MediaTabBarViewModel_MembersInjector;->c:Ljavax/inject/Provider;
@@ -236,9 +236,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/interfaces/w;
+    check-cast v0, Lkik/core/interfaces/v;
 
-    iput-object v0, p1, Lkik/android/chat/vm/co;->b:Lkik/core/interfaces/w;
+    iput-object v0, p1, Lkik/android/chat/vm/cq;->b:Lkik/core/interfaces/v;
 
     .line 1049
     iget-object v0, p0, Lkik/android/chat/vm/MediaTabBarViewModel_MembersInjector;->d:Ljavax/inject/Provider;
@@ -249,7 +249,7 @@
 
     check-cast v0, Landroid/content/res/Resources;
 
-    iput-object v0, p1, Lkik/android/chat/vm/co;->c:Landroid/content/res/Resources;
+    iput-object v0, p1, Lkik/android/chat/vm/cq;->c:Landroid/content/res/Resources;
 
     .line 10
     return-void

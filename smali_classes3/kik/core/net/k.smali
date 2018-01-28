@@ -21,7 +21,7 @@
 
     .prologue
     .line 22
-    const-string v0, "talk11400an"
+    const-string v0, "talk1220an"
 
     return-object v0
 .end method

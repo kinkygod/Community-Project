@@ -5,7 +5,6 @@ package common.profile.v1;
 option java_package = "com.kik.profile";
 option go_package = "github.com/kikinteractive/xiphias-model-common/generated/go/profile/v1;profile";
 
-import "common_model.proto";
 import "entity/v1/element_common.proto";
 
 // User/Group bio
@@ -46,4 +45,14 @@ message EmojiStatusAction {
     }
     
     common.entity.v1.EmojiStatusElement element_emoji_status = 2;
+}
+
+message InterestsAction {
+    Type action_type = 1;
+    enum Type {
+        SET   = 0;
+        UNSET = 1;
+    }
+    
+    common.entity.v1.InterestsElement interests = 2;
 }

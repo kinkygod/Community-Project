@@ -71,7 +71,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Lkik/core/interfaces/ICommunication;Lcom/kik/events/c;Lkik/core/interfaces/ae;)V
+.method public constructor <init>(Lkik/core/interfaces/ICommunication;Lcom/kik/events/c;Lkik/core/interfaces/ad;)V
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -81,7 +81,7 @@
             "<",
             "Ljava/lang/Object;",
             ">;",
-            "Lkik/core/interfaces/ae;",
+            "Lkik/core/interfaces/ad;",
             ")V"
         }
     .end annotation
@@ -121,7 +121,7 @@
     .line 62
     new-instance v0, Lkik/core/content/LinkResultCache;
 
-    invoke-interface {p3}, Lkik/core/interfaces/ae;->t()Ljava/io/File;
+    invoke-interface {p3}, Lkik/core/interfaces/ad;->t()Ljava/io/File;
 
     move-result-object v1
 

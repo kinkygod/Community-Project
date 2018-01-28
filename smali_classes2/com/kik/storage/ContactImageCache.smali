@@ -643,7 +643,7 @@
     return-object v0
 .end method
 
-.method public saveMyProfilePic([BLkik/core/datatypes/ac;)V
+.method public saveMyProfilePic([BLkik/core/datatypes/ab;)V
     .locals 4
 
     .prologue
@@ -710,7 +710,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {p2, v1}, Lcom/kik/cache/MyPicImageRequest;->getKeyMatcher(Lkik/core/datatypes/ac;Z)Lcom/kik/cache/SimpleLruBitmapCache$a;
+    invoke-static {p2, v1}, Lcom/kik/cache/MyPicImageRequest;->getKeyMatcher(Lkik/core/datatypes/ab;Z)Lcom/kik/cache/SimpleLruBitmapCache$a;
 
     move-result-object v1
 
@@ -719,7 +719,7 @@
     goto :goto_0
 .end method
 
-.method public saveMyProfilePicLarge([BLkik/core/datatypes/ac;)V
+.method public saveMyProfilePicLarge([BLkik/core/datatypes/ab;)V
     .locals 4
 
     .prologue
@@ -786,7 +786,7 @@
 
     const/4 v1, 0x1
 
-    invoke-static {p2, v1}, Lcom/kik/cache/MyPicImageRequest;->getKeyMatcher(Lkik/core/datatypes/ac;Z)Lcom/kik/cache/SimpleLruBitmapCache$a;
+    invoke-static {p2, v1}, Lcom/kik/cache/MyPicImageRequest;->getKeyMatcher(Lkik/core/datatypes/ab;Z)Lcom/kik/cache/SimpleLruBitmapCache$a;
 
     move-result-object v1
 
@@ -976,7 +976,7 @@
     iput-object v0, p0, Lcom/kik/storage/ContactImageCache;->_localQueue:Lcom/kik/cache/ad;
 
     .line 100
-    invoke-static {}, Lcom/kik/util/co;->a()Lcom/kik/cache/SimpleLruBitmapCache;
+    invoke-static {}, Lcom/kik/util/ct;->a()Lcom/kik/cache/SimpleLruBitmapCache;
 
     move-result-object v0
 

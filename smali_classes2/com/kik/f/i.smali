@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/a/b;
+.implements Ldagger/internal/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/a/b",
+        "Ldagger/internal/b",
         "<",
         "Lkik/core/chat/profile/IBotProfileRepository;",
         ">;"
@@ -30,7 +30,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/xiphias/d;",
+            "Lkik/core/xiphias/j;",
             ">;"
         }
     .end annotation
@@ -83,7 +83,7 @@
             "Lcom/kik/f/g;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/xiphias/d;",
+            "Lkik/core/xiphias/j;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -151,7 +151,7 @@
     return-void
 .end method
 
-.method public static a(Lcom/kik/f/g;Ljavax/inject/Provider;Ljavax/inject/Provider;)La/a/b;
+.method public static a(Lcom/kik/f/g;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -159,13 +159,13 @@
             "Lcom/kik/f/g;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/xiphias/d;",
+            "Lkik/core/xiphias/j;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
             "Lkik/core/chat/profile/IBotProfileCache;",
             ">;)",
-            "La/a/b",
+            "Ldagger/internal/b",
             "<",
             "Lkik/core/chat/profile/IBotProfileRepository;",
             ">;"
@@ -196,7 +196,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/xiphias/d;
+    check-cast v0, Lkik/core/xiphias/j;
 
     iget-object v1, p0, Lcom/kik/f/i;->d:Ljavax/inject/Provider;
 
@@ -209,13 +209,13 @@
     .line 2025
     new-instance v2, Lkik/core/chat/profile/c;
 
-    invoke-direct {v2, v0, v1}, Lkik/core/chat/profile/c;-><init>(Lkik/core/xiphias/d;Lkik/core/chat/profile/IBotProfileCache;)V
+    invoke-direct {v2, v0, v1}, Lkik/core/chat/profile/c;-><init>(Lkik/core/xiphias/j;Lkik/core/chat/profile/IBotProfileCache;)V
 
     .line 1038
     const-string v0, "Cannot return null from a non-@Nullable @Provides method"
 
     .line 1037
-    invoke-static {v2, v0}, La/a/c;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {v2, v0}, Ldagger/internal/c;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 

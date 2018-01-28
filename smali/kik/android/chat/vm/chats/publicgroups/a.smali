@@ -68,7 +68,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lkik/android/chat/vm/profile/dc;->a(Lcom/kik/core/network/xmpp/jid/a;)Lkik/android/chat/vm/profile/dc;
+    invoke-static {v0}, Lkik/android/chat/vm/profile/dp;->a(Lcom/kik/core/network/xmpp/jid/a;)Lkik/android/chat/vm/profile/dp;
 
     move-result-object v0
 
@@ -77,36 +77,36 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lkik/android/chat/vm/profile/dc;->a(Lkik/core/datatypes/MemberPermissions;)Lkik/android/chat/vm/profile/dc;
+    invoke-virtual {v0, v1}, Lkik/android/chat/vm/profile/dp;->a(Lkik/core/datatypes/MemberPermissions;)Lkik/android/chat/vm/profile/dp;
 
     move-result-object v0
 
     .line 94
-    invoke-virtual {v0}, Lkik/android/chat/vm/profile/dc;->a()Lkik/android/chat/vm/profile/dc;
+    invoke-virtual {v0}, Lkik/android/chat/vm/profile/dp;->a()Lkik/android/chat/vm/profile/dp;
 
     move-result-object v0
 
     .line 95
-    invoke-virtual {v0}, Lkik/android/chat/vm/profile/dc;->b()Lkik/android/chat/vm/profile/cv;
+    invoke-virtual {v0}, Lkik/android/chat/vm/profile/dp;->b()Lkik/android/chat/vm/profile/di;
 
     move-result-object v0
 
     .line 100
     :goto_0
-    invoke-virtual {p0}, Lkik/android/chat/vm/chats/publicgroups/a;->B_()Lkik/android/chat/vm/aw;
+    invoke-virtual {p0}, Lkik/android/chat/vm/chats/publicgroups/a;->F_()Lkik/android/chat/vm/ay;
 
     move-result-object v1
 
-    invoke-interface {v1, v0}, Lkik/android/chat/vm/aw;->a(Lkik/android/chat/vm/profile/cv;)Lrx/d;
+    invoke-interface {v1, v0}, Lkik/android/chat/vm/ay;->a(Lkik/android/chat/vm/profile/di;)Lrx/d;
 
     .line 101
     return-void
 
     .line 98
     :cond_0
-    new-instance v0, Lkik/android/chat/vm/profile/ai;
+    new-instance v0, Lkik/android/chat/vm/profile/au;
 
-    invoke-direct {v0, p1}, Lkik/android/chat/vm/profile/ai;-><init>(Lcom/kik/core/domain/a/a/a;)V
+    invoke-direct {v0, p1}, Lkik/android/chat/vm/profile/au;-><init>(Lcom/kik/core/domain/a/a/a;)V
 
     goto :goto_0
 .end method
@@ -127,12 +127,12 @@
     return-void
 .end method
 
-.method public a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+.method public a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
     .locals 0
 
     .prologue
     .line 41
-    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/e;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/e;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 42
     invoke-interface {p1, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/chat/vm/chats/publicgroups/a;)V
@@ -146,7 +146,7 @@
 
     .prologue
     .line 87
-    invoke-virtual {p0}, Lkik/android/chat/vm/chats/publicgroups/a;->ab_()Lrx/f/b;
+    invoke-virtual {p0}, Lkik/android/chat/vm/chats/publicgroups/a;->ad_()Lrx/f/b;
 
     move-result-object v0
 
@@ -178,7 +178,17 @@
     return-void
 .end method
 
-.method public final a()Z
+.method public final ag_()J
+    .locals 2
+
+    .prologue
+    .line 48
+    iget-wide v0, p0, Lkik/android/chat/vm/chats/publicgroups/a;->b:J
+
+    return-wide v0
+.end method
+
+.method public final b()Z
     .locals 1
 
     .prologue
@@ -188,7 +198,7 @@
     return v0
 .end method
 
-.method public final b()Z
+.method public final d()Z
     .locals 1
 
     .prologue
@@ -198,7 +208,7 @@
     return v0
 .end method
 
-.method protected final d()I
+.method protected final e()I
     .locals 1
 
     .prologue
@@ -208,7 +218,7 @@
     return v0
 .end method
 
-.method protected final e()I
+.method protected final g()I
     .locals 1
 
     .prologue
@@ -216,14 +226,4 @@
     iget v0, p0, Lkik/android/chat/vm/chats/publicgroups/a;->f:I
 
     return v0
-.end method
-
-.method public final j()J
-    .locals 2
-
-    .prologue
-    .line 48
-    iget-wide v0, p0, Lkik/android/chat/vm/chats/publicgroups/a;->b:J
-
-    return-wide v0
 .end method

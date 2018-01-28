@@ -36,7 +36,7 @@
     .line 77
     iget-object v0, p0, Lkik/android/chat/fragment/KikBasicDialog$a;->a:Lkik/android/chat/fragment/KikBasicDialog;
 
-    const v1, 0x7f040075
+    const v1, 0x7f040077
 
     const/4 v2, 0x0
 
@@ -57,7 +57,7 @@
 
     .prologue
     .line 158
-    const v0, 0x7f020270
+    const v0, 0x7f020258
 
     invoke-static {v0}, Lkik/android/chat/KikApplication;->f(I)Landroid/graphics/drawable/Drawable;
 
@@ -139,7 +139,7 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
     .line 168
     :cond_0
@@ -170,7 +170,7 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
     .line 90
     return-object p0
@@ -200,7 +200,7 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
     .line 126
     iget-object v0, p0, Lkik/android/chat/fragment/KikBasicDialog$a;->a:Lkik/android/chat/fragment/KikBasicDialog;
@@ -280,7 +280,7 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
     .line 103
     return-object p0
@@ -310,7 +310,7 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
     .line 140
     iget-object v0, p0, Lkik/android/chat/fragment/KikBasicDialog$a;->a:Lkik/android/chat/fragment/KikBasicDialog;
@@ -371,7 +371,7 @@
 
     iget-object v0, v0, Lkik/android/chat/fragment/KikBasicDialog;->_body:Lkik/android/widget/RobotoTextView;
 
-    invoke-static {v0}, Lkik/android/chat/view/text/c;->a(Landroid/widget/TextView;)V
+    invoke-static {v0}, Lkik/android/chat/view/text/d;->a(Landroid/widget/TextView;)V
 
     .line 112
     const/4 v0, 0x1
@@ -384,7 +384,7 @@
 
     aput-object v1, v0, v2
 
-    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
     .line 113
     return-object p0

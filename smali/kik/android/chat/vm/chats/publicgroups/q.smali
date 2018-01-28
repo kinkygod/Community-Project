@@ -149,7 +149,7 @@
 
     move-result-object v2
 
-    invoke-static {v0, v1, p0, v2}, Lcom/kik/util/bq;->e(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
+    invoke-static {v0, v1, p0, v2}, Lcom/kik/util/bt;->e(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
 
     .line 34
     new-instance v0, Lkik/android/chat/vm/chats/publicgroups/q$1;
@@ -241,7 +241,7 @@
 
 
 # virtual methods
-.method public final R_()Ljava/util/EnumSet;
+.method public final T_()Ljava/util/EnumSet;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -319,7 +319,7 @@
     goto :goto_0
 .end method
 
-.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
     .locals 0
 
     .prologue
@@ -327,7 +327,7 @@
     invoke-interface {p1, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/chat/vm/chats/publicgroups/q;)V
 
     .line 84
-    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/e;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/e;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 85
     return-void

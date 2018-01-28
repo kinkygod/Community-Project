@@ -42,7 +42,7 @@
 
     .prologue
     .line 19
-    invoke-static {}, Lcom/kik/cache/am;->a()Lcom/kik/events/p;
+    invoke-static {}, Lcom/kik/cache/ai;->a()Lcom/kik/events/p;
 
     move-result-object v0
 

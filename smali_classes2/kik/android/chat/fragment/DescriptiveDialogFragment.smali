@@ -6,25 +6,25 @@
 # instance fields
 .field protected _button:Landroid/widget/Button;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1001b1
+        value = 0x7f1001b2
     .end annotation
 .end field
 
 .field protected _descriptionTextView:Lkik/android/widget/RobotoTextView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1001b0
+        value = 0x7f1001b1
     .end annotation
 .end field
 
 .field protected _iconImageView:Landroid/widget/ImageView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1001ae
+        value = 0x7f1001af
     .end annotation
 .end field
 
 .field protected _titleTextView:Lkik/android/widget/RobotoTextView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1001af
+        value = 0x7f1001b0
     .end annotation
 .end field
 
@@ -60,7 +60,7 @@
 
     aput-object v1, v0, v2
 
-    invoke-static {v0}, Lkik/android/util/ca;->g([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->g([Landroid/view/View;)V
 
     .line 71
     :goto_0
@@ -74,7 +74,7 @@
 
     aput-object v1, v0, v2
 
-    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
     goto :goto_0
 .end method
@@ -122,7 +122,7 @@
     invoke-super {p0, p1, p2, p3}, Lkik/android/chat/fragment/CustomDialogFragment;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
 
     .line 33
-    const v0, 0x7f040063
+    const v0, 0x7f040065
 
     invoke-virtual {p1, v0, p2, v4}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 

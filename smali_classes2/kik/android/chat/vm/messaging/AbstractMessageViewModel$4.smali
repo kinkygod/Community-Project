@@ -34,7 +34,7 @@
     .locals 0
 
     .prologue
-    .line 1412
+    .line 1439
     iput-object p1, p0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel$4;->b:Lkik/android/chat/vm/messaging/AbstractMessageViewModel;
 
     iput-object p2, p0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel$4;->a:Lkik/core/datatypes/p;
@@ -50,17 +50,17 @@
     .locals 4
 
     .prologue
-    .line 1412
+    .line 1439
     check-cast p1, Lkik/core/net/outgoing/KickBanFromGroupRequest;
 
-    .line 2416
+    .line 2443
     invoke-virtual {p1}, Lkik/core/net/outgoing/KickBanFromGroupRequest;->isBanRequest()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 2417
+    .line 2444
     iget-object v0, p0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel$4;->b:Lkik/android/chat/vm/messaging/AbstractMessageViewModel;
 
     iget-object v0, v0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->q:Lcom/kik/android/Mixpanel;
@@ -109,7 +109,7 @@
     :goto_0
     return-void
 
-    .line 2419
+    .line 2446
     :cond_1
     invoke-virtual {p1}, Lkik/core/net/outgoing/KickBanFromGroupRequest;->isKickRequest()Z
 
@@ -117,7 +117,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 2420
+    .line 2447
     iget-object v0, p0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel$4;->b:Lkik/android/chat/vm/messaging/AbstractMessageViewModel;
 
     iget-object v0, v0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->q:Lcom/kik/android/Mixpanel;
@@ -153,27 +153,27 @@
     .locals 3
 
     .prologue
-    .line 1427
+    .line 1454
     instance-of v0, p1, Lkik/core/net/StanzaException;
 
     if-eqz v0, :cond_0
 
-    .line 1428
+    .line 1455
     invoke-static {p1}, Lkik/core/net/StanzaException;->a(Ljava/lang/Throwable;)I
 
     move-result v0
 
-    .line 1429
+    .line 1456
     invoke-static {p1}, Lkik/core/net/StanzaException;->b(Ljava/lang/Throwable;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 1430
+    .line 1457
     iget-object v2, p0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel$4;->b:Lkik/android/chat/vm/messaging/AbstractMessageViewModel;
 
     invoke-static {v2, v0, v1}, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->a(Lkik/android/chat/vm/messaging/AbstractMessageViewModel;ILjava/lang/String;)V
 
-    .line 1432
+    .line 1459
     :cond_0
     return-void
 .end method
@@ -182,15 +182,15 @@
     .locals 1
 
     .prologue
-    .line 1437
+    .line 1464
     iget-object v0, p0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel$4;->b:Lkik/android/chat/vm/messaging/AbstractMessageViewModel;
 
-    invoke-static {v0}, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->m(Lkik/android/chat/vm/messaging/AbstractMessageViewModel;)Lkik/android/chat/vm/aw;
+    invoke-static {v0}, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->m(Lkik/android/chat/vm/messaging/AbstractMessageViewModel;)Lkik/android/chat/vm/ay;
 
     move-result-object v0
 
-    invoke-interface {v0}, Lkik/android/chat/vm/aw;->h()V
+    invoke-interface {v0}, Lkik/android/chat/vm/ay;->g()V
 
-    .line 1438
+    .line 1465
     return-void
 .end method

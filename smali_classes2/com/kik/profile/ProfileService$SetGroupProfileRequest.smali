@@ -65,14 +65,14 @@
     .locals 1
 
     .prologue
-    .line 3391
+    .line 3690
     new-instance v0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;
 
     invoke-direct {v0}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;-><init>()V
 
     sput-object v0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->DEFAULT_INSTANCE:Lcom/kik/profile/ProfileService$SetGroupProfileRequest;
 
-    .line 3399
+    .line 3698
     new-instance v0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest$1;
 
     invoke-direct {v0}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest$1;-><init>()V
@@ -86,15 +86,15 @@
     .locals 1
 
     .prologue
-    .line 2348
+    .line 2647
     invoke-direct {p0}, Lcom/google/protobuf/GeneratedMessageV3;-><init>()V
 
-    .line 2535
+    .line 2834
     const/4 v0, -0x1
 
     iput-byte v0, p0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->memoizedIsInitialized:B
 
-    .line 2349
+    .line 2648
     return-void
 .end method
 
@@ -111,29 +111,29 @@
 
     const/4 v2, 0x0
 
-    .line 2360
+    .line 2659
     invoke-direct {p0}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;-><init>()V
 
-    .line 2363
+    .line 2662
     const/4 v0, 0x0
 
     move v3, v0
 
-    .line 2364
+    .line 2663
     :cond_0
     :goto_0
     if-nez v3, :cond_1
 
-    .line 2365
+    .line 2664
     :try_start_0
     invoke-virtual {p1}, Lcom/google/protobuf/CodedInputStream;->readTag()I
 
     move-result v0
 
-    .line 2366
+    .line 2665
     sparse-switch v0, :sswitch_data_0
 
-    .line 2371
+    .line 2670
     invoke-virtual {p1, v0}, Lcom/google/protobuf/CodedInputStream;->skipField(I)Z
 
     move-result v0
@@ -142,22 +142,22 @@
 
     move v3, v4
 
-    .line 2372
+    .line 2671
     goto :goto_0
 
     :sswitch_0
     move v3, v4
 
-    .line 2369
+    .line 2668
     goto :goto_0
 
-    .line 2378
+    .line 2677
     :sswitch_1
     iget-object v0, p0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->id_:Lcom/kik/ximodel/XiGroupJid;
 
     if-eqz v0, :cond_5
 
-    .line 2379
+    .line 2678
     iget-object v0, p0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->id_:Lcom/kik/ximodel/XiGroupJid;
 
     invoke-virtual {v0}, Lcom/kik/ximodel/XiGroupJid;->toBuilder()Lcom/kik/ximodel/XiGroupJid$Builder;
@@ -166,7 +166,7 @@
 
     move-object v1, v0
 
-    .line 2381
+    .line 2680
     :goto_1
     invoke-static {}, Lcom/kik/ximodel/XiGroupJid;->parser()Lcom/google/protobuf/Parser;
 
@@ -180,15 +180,15 @@
 
     iput-object v0, p0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->id_:Lcom/kik/ximodel/XiGroupJid;
 
-    .line 2382
+    .line 2681
     if-eqz v1, :cond_0
 
-    .line 2383
+    .line 2682
     iget-object v0, p0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->id_:Lcom/kik/ximodel/XiGroupJid;
 
     invoke-virtual {v1, v0}, Lcom/kik/ximodel/XiGroupJid$Builder;->mergeFrom(Lcom/kik/ximodel/XiGroupJid;)Lcom/kik/ximodel/XiGroupJid$Builder;
 
-    .line 2384
+    .line 2683
     invoke-virtual {v1}, Lcom/kik/ximodel/XiGroupJid$Builder;->buildPartial()Lcom/kik/ximodel/XiGroupJid;
 
     move-result-object v0
@@ -201,7 +201,7 @@
 
     goto :goto_0
 
-    .line 2431
+    .line 2730
     :catch_0
     move-exception v0
 
@@ -214,7 +214,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 2436
+    .line 2735
     :catchall_0
     move-exception v0
 
@@ -222,14 +222,14 @@
 
     throw v0
 
-    .line 2391
+    .line 2690
     :sswitch_2
     :try_start_2
     iget-object v0, p0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->bio_:Lcom/kik/profile/ProfileCommon$BioAction;
 
     if-eqz v0, :cond_4
 
-    .line 2392
+    .line 2691
     iget-object v0, p0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->bio_:Lcom/kik/profile/ProfileCommon$BioAction;
 
     invoke-virtual {v0}, Lcom/kik/profile/ProfileCommon$BioAction;->f()Lcom/kik/profile/ProfileCommon$BioAction$a;
@@ -238,7 +238,7 @@
 
     move-object v1, v0
 
-    .line 2394
+    .line 2693
     :goto_2
     invoke-static {}, Lcom/kik/profile/ProfileCommon$BioAction;->h()Lcom/google/protobuf/Parser;
 
@@ -252,15 +252,15 @@
 
     iput-object v0, p0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->bio_:Lcom/kik/profile/ProfileCommon$BioAction;
 
-    .line 2395
+    .line 2694
     if-eqz v1, :cond_0
 
-    .line 2396
+    .line 2695
     iget-object v0, p0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->bio_:Lcom/kik/profile/ProfileCommon$BioAction;
 
     invoke-virtual {v1, v0}, Lcom/kik/profile/ProfileCommon$BioAction$a;->a(Lcom/kik/profile/ProfileCommon$BioAction;)Lcom/kik/profile/ProfileCommon$BioAction$a;
 
-    .line 2397
+    .line 2696
     invoke-virtual {v1}, Lcom/kik/profile/ProfileCommon$BioAction$a;->b()Lcom/kik/profile/ProfileCommon$BioAction;
 
     move-result-object v0
@@ -273,17 +273,17 @@
 
     goto :goto_0
 
-    .line 2432
+    .line 2731
     :catch_1
     move-exception v0
 
-    .line 2433
+    .line 2732
     :try_start_3
     new-instance v1, Lcom/google/protobuf/InvalidProtocolBufferException;
 
     invoke-direct {v1, v0}, Lcom/google/protobuf/InvalidProtocolBufferException;-><init>(Ljava/io/IOException;)V
 
-    .line 2434
+    .line 2733
     invoke-virtual {v1, p0}, Lcom/google/protobuf/InvalidProtocolBufferException;->setUnfinishedMessage(Lcom/google/protobuf/MessageLite;)Lcom/google/protobuf/InvalidProtocolBufferException;
 
     move-result-object v0
@@ -292,14 +292,14 @@
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    .line 2404
+    .line 2703
     :sswitch_3
     :try_start_4
     iget-object v0, p0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->originalProfilePicExtensionAction_:Lcom/kik/profile/ProfileCommon$OriginalProfilePicExtensionAction;
 
     if-eqz v0, :cond_3
 
-    .line 2405
+    .line 2704
     iget-object v0, p0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->originalProfilePicExtensionAction_:Lcom/kik/profile/ProfileCommon$OriginalProfilePicExtensionAction;
 
     invoke-virtual {v0}, Lcom/kik/profile/ProfileCommon$OriginalProfilePicExtensionAction;->e()Lcom/kik/profile/ProfileCommon$OriginalProfilePicExtensionAction$a;
@@ -308,7 +308,7 @@
 
     move-object v1, v0
 
-    .line 2407
+    .line 2706
     :goto_3
     invoke-static {}, Lcom/kik/profile/ProfileCommon$OriginalProfilePicExtensionAction;->g()Lcom/google/protobuf/Parser;
 
@@ -322,15 +322,15 @@
 
     iput-object v0, p0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->originalProfilePicExtensionAction_:Lcom/kik/profile/ProfileCommon$OriginalProfilePicExtensionAction;
 
-    .line 2408
+    .line 2707
     if-eqz v1, :cond_0
 
-    .line 2409
+    .line 2708
     iget-object v0, p0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->originalProfilePicExtensionAction_:Lcom/kik/profile/ProfileCommon$OriginalProfilePicExtensionAction;
 
     invoke-virtual {v1, v0}, Lcom/kik/profile/ProfileCommon$OriginalProfilePicExtensionAction$a;->a(Lcom/kik/profile/ProfileCommon$OriginalProfilePicExtensionAction;)Lcom/kik/profile/ProfileCommon$OriginalProfilePicExtensionAction$a;
 
-    .line 2410
+    .line 2709
     invoke-virtual {v1}, Lcom/kik/profile/ProfileCommon$OriginalProfilePicExtensionAction$a;->a()Lcom/kik/profile/ProfileCommon$OriginalProfilePicExtensionAction;
 
     move-result-object v0
@@ -339,24 +339,24 @@
 
     goto/16 :goto_0
 
-    .line 2417
+    .line 2716
     :sswitch_4
     iget-object v0, p0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->backgroundProfilePicExtensionAction_:Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;
 
     if-eqz v0, :cond_2
 
-    .line 2418
+    .line 2717
     iget-object v0, p0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->backgroundProfilePicExtensionAction_:Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;
 
-    invoke-virtual {v0}, Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;->f()Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction$a;
+    invoke-virtual {v0}, Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;->e()Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction$a;
 
     move-result-object v0
 
     move-object v1, v0
 
-    .line 2420
+    .line 2719
     :goto_4
-    invoke-static {}, Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;->h()Lcom/google/protobuf/Parser;
+    invoke-static {}, Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;->g()Lcom/google/protobuf/Parser;
 
     move-result-object v0
 
@@ -368,16 +368,16 @@
 
     iput-object v0, p0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->backgroundProfilePicExtensionAction_:Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;
 
-    .line 2421
+    .line 2720
     if-eqz v1, :cond_0
 
-    .line 2422
+    .line 2721
     iget-object v0, p0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->backgroundProfilePicExtensionAction_:Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;
 
     invoke-virtual {v1, v0}, Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction$a;->a(Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;)Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction$a;
 
-    .line 2423
-    invoke-virtual {v1}, Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction$a;->b()Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;
+    .line 2722
+    invoke-virtual {v1}, Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction$a;->a()Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;
 
     move-result-object v0
 
@@ -389,11 +389,11 @@
 
     goto/16 :goto_0
 
-    .line 2436
+    .line 2735
     :cond_1
     invoke-virtual {p0}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->makeExtensionsImmutable()V
 
-    .line 2437
+    .line 2736
     return-void
 
     :cond_2
@@ -416,7 +416,7 @@
 
     goto/16 :goto_1
 
-    .line 2366
+    .line 2665
     nop
 
     :sswitch_data_0
@@ -438,7 +438,7 @@
     .end annotation
 
     .prologue
-    .line 2340
+    .line 2639
     invoke-direct {p0, p1, p2}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;-><init>(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)V
 
     return-void
@@ -455,15 +455,15 @@
     .end annotation
 
     .prologue
-    .line 2346
+    .line 2645
     invoke-direct {p0, p1}, Lcom/google/protobuf/GeneratedMessageV3;-><init>(Lcom/google/protobuf/GeneratedMessageV3$Builder;)V
 
-    .line 2535
+    .line 2834
     const/4 v0, -0x1
 
     iput-byte v0, p0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->memoizedIsInitialized:B
 
-    .line 2347
+    .line 2646
     return-void
 .end method
 
@@ -471,67 +471,67 @@
     .locals 0
 
     .prologue
-    .line 2340
+    .line 2639
     invoke-direct {p0, p1}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;-><init>(Lcom/google/protobuf/GeneratedMessageV3$Builder;)V
 
     return-void
 .end method
 
-.method static synthetic access$2900()Z
+.method static synthetic access$3000()Z
     .locals 1
 
     .prologue
-    .line 2340
+    .line 2639
     sget-boolean v0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->alwaysUseFieldBuilders:Z
 
     return v0
 .end method
 
-.method static synthetic access$3102(Lcom/kik/profile/ProfileService$SetGroupProfileRequest;Lcom/kik/ximodel/XiGroupJid;)Lcom/kik/ximodel/XiGroupJid;
+.method static synthetic access$3202(Lcom/kik/profile/ProfileService$SetGroupProfileRequest;Lcom/kik/ximodel/XiGroupJid;)Lcom/kik/ximodel/XiGroupJid;
     .locals 0
 
     .prologue
-    .line 2340
+    .line 2639
     iput-object p1, p0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->id_:Lcom/kik/ximodel/XiGroupJid;
 
     return-object p1
 .end method
 
-.method static synthetic access$3202(Lcom/kik/profile/ProfileService$SetGroupProfileRequest;Lcom/kik/profile/ProfileCommon$BioAction;)Lcom/kik/profile/ProfileCommon$BioAction;
+.method static synthetic access$3302(Lcom/kik/profile/ProfileService$SetGroupProfileRequest;Lcom/kik/profile/ProfileCommon$BioAction;)Lcom/kik/profile/ProfileCommon$BioAction;
     .locals 0
 
     .prologue
-    .line 2340
+    .line 2639
     iput-object p1, p0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->bio_:Lcom/kik/profile/ProfileCommon$BioAction;
 
     return-object p1
 .end method
 
-.method static synthetic access$3302(Lcom/kik/profile/ProfileService$SetGroupProfileRequest;Lcom/kik/profile/ProfileCommon$OriginalProfilePicExtensionAction;)Lcom/kik/profile/ProfileCommon$OriginalProfilePicExtensionAction;
+.method static synthetic access$3402(Lcom/kik/profile/ProfileService$SetGroupProfileRequest;Lcom/kik/profile/ProfileCommon$OriginalProfilePicExtensionAction;)Lcom/kik/profile/ProfileCommon$OriginalProfilePicExtensionAction;
     .locals 0
 
     .prologue
-    .line 2340
+    .line 2639
     iput-object p1, p0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->originalProfilePicExtensionAction_:Lcom/kik/profile/ProfileCommon$OriginalProfilePicExtensionAction;
 
     return-object p1
 .end method
 
-.method static synthetic access$3402(Lcom/kik/profile/ProfileService$SetGroupProfileRequest;Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;)Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;
+.method static synthetic access$3502(Lcom/kik/profile/ProfileService$SetGroupProfileRequest;Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;)Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;
     .locals 0
 
     .prologue
-    .line 2340
+    .line 2639
     iput-object p1, p0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->backgroundProfilePicExtensionAction_:Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;
 
     return-object p1
 .end method
 
-.method static synthetic access$3500()Lcom/google/protobuf/Parser;
+.method static synthetic access$3600()Lcom/google/protobuf/Parser;
     .locals 1
 
     .prologue
-    .line 2340
+    .line 2639
     sget-object v0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->PARSER:Lcom/google/protobuf/Parser;
 
     return-object v0
@@ -541,7 +541,7 @@
     .locals 1
 
     .prologue
-    .line 3395
+    .line 3694
     sget-object v0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->DEFAULT_INSTANCE:Lcom/kik/profile/ProfileService$SetGroupProfileRequest;
 
     return-object v0
@@ -551,7 +551,7 @@
     .locals 1
 
     .prologue
-    .line 2441
+    .line 2740
     invoke-static {}, Lcom/kik/profile/ProfileService;->e()Lcom/google/protobuf/Descriptors$Descriptor;
 
     move-result-object v0
@@ -563,7 +563,7 @@
     .locals 1
 
     .prologue
-    .line 2710
+    .line 3009
     sget-object v0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->DEFAULT_INSTANCE:Lcom/kik/profile/ProfileService$SetGroupProfileRequest;
 
     invoke-virtual {v0}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->toBuilder()Lcom/kik/profile/ProfileService$SetGroupProfileRequest$a;
@@ -577,7 +577,7 @@
     .locals 1
 
     .prologue
-    .line 2713
+    .line 3012
     sget-object v0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->DEFAULT_INSTANCE:Lcom/kik/profile/ProfileService$SetGroupProfileRequest;
 
     invoke-virtual {v0}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->toBuilder()Lcom/kik/profile/ProfileService$SetGroupProfileRequest$a;
@@ -600,17 +600,17 @@
     .end annotation
 
     .prologue
-    .line 2684
+    .line 2983
     sget-object v0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->PARSER:Lcom/google/protobuf/Parser;
 
-    .line 2685
+    .line 2984
     invoke-static {v0, p0}, Lcom/google/protobuf/GeneratedMessageV3;->parseDelimitedWithIOException(Lcom/google/protobuf/Parser;Ljava/io/InputStream;)Lcom/google/protobuf/Message;
 
     move-result-object v0
 
     check-cast v0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;
 
-    .line 2684
+    .line 2983
     return-object v0
 .end method
 
@@ -623,17 +623,17 @@
     .end annotation
 
     .prologue
-    .line 2691
+    .line 2990
     sget-object v0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->PARSER:Lcom/google/protobuf/Parser;
 
-    .line 2692
+    .line 2991
     invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageV3;->parseDelimitedWithIOException(Lcom/google/protobuf/Parser;Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/Message;
 
     move-result-object v0
 
     check-cast v0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;
 
-    .line 2691
+    .line 2990
     return-object v0
 .end method
 
@@ -646,7 +646,7 @@
     .end annotation
 
     .prologue
-    .line 2652
+    .line 2951
     sget-object v0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0}, Lcom/google/protobuf/Parser;->parseFrom(Lcom/google/protobuf/ByteString;)Ljava/lang/Object;
@@ -667,7 +667,7 @@
     .end annotation
 
     .prologue
-    .line 2658
+    .line 2957
     sget-object v0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0, p1}, Lcom/google/protobuf/Parser;->parseFrom(Lcom/google/protobuf/ByteString;Lcom/google/protobuf/ExtensionRegistryLite;)Ljava/lang/Object;
@@ -688,17 +688,17 @@
     .end annotation
 
     .prologue
-    .line 2697
+    .line 2996
     sget-object v0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->PARSER:Lcom/google/protobuf/Parser;
 
-    .line 2698
+    .line 2997
     invoke-static {v0, p0}, Lcom/google/protobuf/GeneratedMessageV3;->parseWithIOException(Lcom/google/protobuf/Parser;Lcom/google/protobuf/CodedInputStream;)Lcom/google/protobuf/Message;
 
     move-result-object v0
 
     check-cast v0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;
 
-    .line 2697
+    .line 2996
     return-object v0
 .end method
 
@@ -711,17 +711,17 @@
     .end annotation
 
     .prologue
-    .line 2704
+    .line 3003
     sget-object v0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->PARSER:Lcom/google/protobuf/Parser;
 
-    .line 2705
+    .line 3004
     invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageV3;->parseWithIOException(Lcom/google/protobuf/Parser;Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/Message;
 
     move-result-object v0
 
     check-cast v0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;
 
-    .line 2704
+    .line 3003
     return-object v0
 .end method
 
@@ -734,17 +734,17 @@
     .end annotation
 
     .prologue
-    .line 2672
+    .line 2971
     sget-object v0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->PARSER:Lcom/google/protobuf/Parser;
 
-    .line 2673
+    .line 2972
     invoke-static {v0, p0}, Lcom/google/protobuf/GeneratedMessageV3;->parseWithIOException(Lcom/google/protobuf/Parser;Ljava/io/InputStream;)Lcom/google/protobuf/Message;
 
     move-result-object v0
 
     check-cast v0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;
 
-    .line 2672
+    .line 2971
     return-object v0
 .end method
 
@@ -757,17 +757,17 @@
     .end annotation
 
     .prologue
-    .line 2679
+    .line 2978
     sget-object v0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->PARSER:Lcom/google/protobuf/Parser;
 
-    .line 2680
+    .line 2979
     invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageV3;->parseWithIOException(Lcom/google/protobuf/Parser;Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/Message;
 
     move-result-object v0
 
     check-cast v0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;
 
-    .line 2679
+    .line 2978
     return-object v0
 .end method
 
@@ -780,7 +780,7 @@
     .end annotation
 
     .prologue
-    .line 2662
+    .line 2961
     sget-object v0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0}, Lcom/google/protobuf/Parser;->parseFrom([B)Ljava/lang/Object;
@@ -801,7 +801,7 @@
     .end annotation
 
     .prologue
-    .line 2668
+    .line 2967
     sget-object v0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0, p1}, Lcom/google/protobuf/Parser;->parseFrom([BLcom/google/protobuf/ExtensionRegistryLite;)Ljava/lang/Object;
@@ -826,7 +826,7 @@
     .end annotation
 
     .prologue
-    .line 3409
+    .line 3708
     sget-object v0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->PARSER:Lcom/google/protobuf/Parser;
 
     return-object v0
@@ -842,32 +842,32 @@
 
     const/4 v1, 0x1
 
-    .line 2589
+    .line 2888
     if-ne p1, p0, :cond_1
 
-    .line 2618
+    .line 2917
     :cond_0
     :goto_0
     return v1
 
-    .line 2592
+    .line 2891
     :cond_1
     instance-of v0, p1, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;
 
     if-nez v0, :cond_2
 
-    .line 2593
+    .line 2892
     invoke-super {p0, p1}, Lcom/google/protobuf/GeneratedMessageV3;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
     goto :goto_0
 
-    .line 2595
+    .line 2894
     :cond_2
     check-cast p1, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;
 
-    .line 2598
+    .line 2897
     invoke-virtual {p0}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->hasId()Z
 
     move-result v0
@@ -880,7 +880,7 @@
 
     move v0, v1
 
-    .line 2599
+    .line 2898
     :goto_1
     invoke-virtual {p0}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->hasId()Z
 
@@ -888,14 +888,14 @@
 
     if-eqz v3, :cond_3
 
-    .line 2600
+    .line 2899
     if-eqz v0, :cond_8
 
     invoke-virtual {p0}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->getId()Lcom/kik/ximodel/XiGroupJid;
 
     move-result-object v0
 
-    .line 2601
+    .line 2900
     invoke-virtual {p1}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->getId()Lcom/kik/ximodel/XiGroupJid;
 
     move-result-object v3
@@ -908,7 +908,7 @@
 
     move v0, v1
 
-    .line 2603
+    .line 2902
     :cond_3
     :goto_2
     if-eqz v0, :cond_9
@@ -925,7 +925,7 @@
 
     move v0, v1
 
-    .line 2604
+    .line 2903
     :goto_3
     invoke-virtual {p0}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->hasBio()Z
 
@@ -933,14 +933,14 @@
 
     if-eqz v3, :cond_4
 
-    .line 2605
+    .line 2904
     if-eqz v0, :cond_a
 
     invoke-virtual {p0}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->getBio()Lcom/kik/profile/ProfileCommon$BioAction;
 
     move-result-object v0
 
-    .line 2606
+    .line 2905
     invoke-virtual {p1}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->getBio()Lcom/kik/profile/ProfileCommon$BioAction;
 
     move-result-object v3
@@ -953,7 +953,7 @@
 
     move v0, v1
 
-    .line 2608
+    .line 2907
     :cond_4
     :goto_4
     if-eqz v0, :cond_b
@@ -970,7 +970,7 @@
 
     move v0, v1
 
-    .line 2609
+    .line 2908
     :goto_5
     invoke-virtual {p0}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->hasOriginalProfilePicExtensionAction()Z
 
@@ -978,14 +978,14 @@
 
     if-eqz v3, :cond_5
 
-    .line 2610
+    .line 2909
     if-eqz v0, :cond_c
 
     invoke-virtual {p0}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->getOriginalProfilePicExtensionAction()Lcom/kik/profile/ProfileCommon$OriginalProfilePicExtensionAction;
 
     move-result-object v0
 
-    .line 2611
+    .line 2910
     invoke-virtual {p1}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->getOriginalProfilePicExtensionAction()Lcom/kik/profile/ProfileCommon$OriginalProfilePicExtensionAction;
 
     move-result-object v3
@@ -998,7 +998,7 @@
 
     move v0, v1
 
-    .line 2613
+    .line 2912
     :cond_5
     :goto_6
     if-eqz v0, :cond_d
@@ -1015,7 +1015,7 @@
 
     move v0, v1
 
-    .line 2614
+    .line 2913
     :goto_7
     invoke-virtual {p0}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->hasBackgroundProfilePicExtensionAction()Z
 
@@ -1023,14 +1023,14 @@
 
     if-eqz v3, :cond_e
 
-    .line 2615
+    .line 2914
     if-eqz v0, :cond_6
 
     invoke-virtual {p0}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->getBackgroundProfilePicExtensionAction()Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;
 
     move-result-object v0
 
-    .line 2616
+    .line 2915
     invoke-virtual {p1}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->getBackgroundProfilePicExtensionAction()Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;
 
     move-result-object v3
@@ -1049,43 +1049,43 @@
     :cond_7
     move v0, v2
 
-    .line 2598
+    .line 2897
     goto/16 :goto_1
 
     :cond_8
     move v0, v2
 
-    .line 2601
+    .line 2900
     goto :goto_2
 
     :cond_9
     move v0, v2
 
-    .line 2603
+    .line 2902
     goto :goto_3
 
     :cond_a
     move v0, v2
 
-    .line 2606
+    .line 2905
     goto :goto_4
 
     :cond_b
     move v0, v2
 
-    .line 2608
+    .line 2907
     goto :goto_5
 
     :cond_c
     move v0, v2
 
-    .line 2611
+    .line 2910
     goto :goto_6
 
     :cond_d
     move v0, v2
 
-    .line 2613
+    .line 2912
     goto :goto_7
 
     :cond_e
@@ -1098,12 +1098,12 @@
     .locals 1
 
     .prologue
-    .line 2526
+    .line 2825
     iget-object v0, p0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->backgroundProfilePicExtensionAction_:Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;
 
     if-nez v0, :cond_0
 
-    invoke-static {}, Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;->g()Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;
+    invoke-static {}, Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;->f()Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;
 
     move-result-object v0
 
@@ -1120,7 +1120,7 @@
     .locals 1
 
     .prologue
-    .line 2532
+    .line 2831
     invoke-virtual {p0}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->getBackgroundProfilePicExtensionAction()Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;
 
     move-result-object v0
@@ -1132,7 +1132,7 @@
     .locals 1
 
     .prologue
-    .line 2484
+    .line 2783
     iget-object v0, p0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->bio_:Lcom/kik/profile/ProfileCommon$BioAction;
 
     if-nez v0, :cond_0
@@ -1154,7 +1154,7 @@
     .locals 1
 
     .prologue
-    .line 2490
+    .line 2789
     invoke-virtual {p0}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->getBio()Lcom/kik/profile/ProfileCommon$BioAction;
 
     move-result-object v0
@@ -1166,7 +1166,7 @@
     .locals 1
 
     .prologue
-    .line 2340
+    .line 2639
     invoke-virtual {p0}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->getDefaultInstanceForType()Lcom/kik/profile/ProfileService$SetGroupProfileRequest;
 
     move-result-object v0
@@ -1178,7 +1178,7 @@
     .locals 1
 
     .prologue
-    .line 2340
+    .line 2639
     invoke-virtual {p0}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->getDefaultInstanceForType()Lcom/kik/profile/ProfileService$SetGroupProfileRequest;
 
     move-result-object v0
@@ -1190,7 +1190,7 @@
     .locals 1
 
     .prologue
-    .line 3418
+    .line 3717
     sget-object v0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->DEFAULT_INSTANCE:Lcom/kik/profile/ProfileService$SetGroupProfileRequest;
 
     return-object v0
@@ -1200,7 +1200,7 @@
     .locals 1
 
     .prologue
-    .line 2463
+    .line 2762
     iget-object v0, p0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->id_:Lcom/kik/ximodel/XiGroupJid;
 
     if-nez v0, :cond_0
@@ -1222,7 +1222,7 @@
     .locals 1
 
     .prologue
-    .line 2469
+    .line 2768
     invoke-virtual {p0}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->getId()Lcom/kik/ximodel/XiGroupJid;
 
     move-result-object v0
@@ -1234,7 +1234,7 @@
     .locals 1
 
     .prologue
-    .line 2505
+    .line 2804
     iget-object v0, p0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->originalProfilePicExtensionAction_:Lcom/kik/profile/ProfileCommon$OriginalProfilePicExtensionAction;
 
     if-nez v0, :cond_0
@@ -1252,11 +1252,11 @@
     goto :goto_0
 .end method
 
-.method public final getOriginalProfilePicExtensionActionOrBuilder()Lcom/kik/profile/ProfileCommon$d;
+.method public final getOriginalProfilePicExtensionActionOrBuilder()Lcom/kik/profile/ProfileCommon$e;
     .locals 1
 
     .prologue
-    .line 2511
+    .line 2810
     invoke-virtual {p0}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->getOriginalProfilePicExtensionAction()Lcom/kik/profile/ProfileCommon$OriginalProfilePicExtensionAction;
 
     move-result-object v0
@@ -1277,7 +1277,7 @@
     .end annotation
 
     .prologue
-    .line 3414
+    .line 3713
     sget-object v0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->PARSER:Lcom/google/protobuf/Parser;
 
     return-object v0
@@ -1287,31 +1287,31 @@
     .locals 3
 
     .prologue
-    .line 2562
+    .line 2861
     iget v0, p0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->memoizedSize:I
 
-    .line 2563
+    .line 2862
     const/4 v1, -0x1
 
     if-eq v0, v1, :cond_0
 
-    .line 2583
+    .line 2882
     :goto_0
     return v0
 
-    .line 2565
+    .line 2864
     :cond_0
     const/4 v0, 0x0
 
-    .line 2566
+    .line 2865
     iget-object v1, p0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->id_:Lcom/kik/ximodel/XiGroupJid;
 
     if-eqz v1, :cond_1
 
-    .line 2567
+    .line 2866
     const/4 v0, 0x1
 
-    .line 2568
+    .line 2867
     invoke-virtual {p0}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->getId()Lcom/kik/ximodel/XiGroupJid;
 
     move-result-object v1
@@ -1322,16 +1322,16 @@
 
     add-int/lit8 v0, v0, 0x0
 
-    .line 2570
+    .line 2869
     :cond_1
     iget-object v1, p0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->bio_:Lcom/kik/profile/ProfileCommon$BioAction;
 
     if-eqz v1, :cond_2
 
-    .line 2571
+    .line 2870
     const/4 v1, 0x2
 
-    .line 2572
+    .line 2871
     invoke-virtual {p0}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->getBio()Lcom/kik/profile/ProfileCommon$BioAction;
 
     move-result-object v2
@@ -1342,16 +1342,16 @@
 
     add-int/2addr v0, v1
 
-    .line 2574
+    .line 2873
     :cond_2
     iget-object v1, p0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->originalProfilePicExtensionAction_:Lcom/kik/profile/ProfileCommon$OriginalProfilePicExtensionAction;
 
     if-eqz v1, :cond_3
 
-    .line 2575
+    .line 2874
     const/4 v1, 0x3
 
-    .line 2576
+    .line 2875
     invoke-virtual {p0}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->getOriginalProfilePicExtensionAction()Lcom/kik/profile/ProfileCommon$OriginalProfilePicExtensionAction;
 
     move-result-object v2
@@ -1362,16 +1362,16 @@
 
     add-int/2addr v0, v1
 
-    .line 2578
+    .line 2877
     :cond_3
     iget-object v1, p0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->backgroundProfilePicExtensionAction_:Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;
 
     if-eqz v1, :cond_4
 
-    .line 2579
+    .line 2878
     const/4 v1, 0x4
 
-    .line 2580
+    .line 2879
     invoke-virtual {p0}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->getBackgroundProfilePicExtensionAction()Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;
 
     move-result-object v2
@@ -1382,7 +1382,7 @@
 
     add-int/2addr v0, v1
 
-    .line 2582
+    .line 2881
     :cond_4
     iput v0, p0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->memoizedSize:I
 
@@ -1393,7 +1393,7 @@
     .locals 1
 
     .prologue
-    .line 2354
+    .line 2653
     invoke-static {}, Lcom/google/protobuf/UnknownFieldSet;->getDefaultInstance()Lcom/google/protobuf/UnknownFieldSet;
 
     move-result-object v0
@@ -1405,7 +1405,7 @@
     .locals 1
 
     .prologue
-    .line 2520
+    .line 2819
     iget-object v0, p0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->backgroundProfilePicExtensionAction_:Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;
 
     if-eqz v0, :cond_0
@@ -1425,7 +1425,7 @@
     .locals 1
 
     .prologue
-    .line 2478
+    .line 2777
     iget-object v0, p0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->bio_:Lcom/kik/profile/ProfileCommon$BioAction;
 
     if-eqz v0, :cond_0
@@ -1445,7 +1445,7 @@
     .locals 1
 
     .prologue
-    .line 2457
+    .line 2756
     iget-object v0, p0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->id_:Lcom/kik/ximodel/XiGroupJid;
 
     if-eqz v0, :cond_0
@@ -1465,7 +1465,7 @@
     .locals 1
 
     .prologue
-    .line 2499
+    .line 2798
     iget-object v0, p0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->originalProfilePicExtensionAction_:Lcom/kik/profile/ProfileCommon$OriginalProfilePicExtensionAction;
 
     if-eqz v0, :cond_0
@@ -1485,19 +1485,19 @@
     .locals 2
 
     .prologue
-    .line 2623
+    .line 2922
     iget v0, p0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->memoizedHashCode:I
 
     if-eqz v0, :cond_0
 
-    .line 2624
+    .line 2923
     iget v0, p0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->memoizedHashCode:I
 
-    .line 2646
+    .line 2945
     :goto_0
     return v0
 
-    .line 2627
+    .line 2926
     :cond_0
     invoke-virtual {p0}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->getDescriptorForType()Lcom/google/protobuf/Descriptors$Descriptor;
 
@@ -1509,19 +1509,19 @@
 
     add-int/lit16 v0, v0, 0x30b
 
-    .line 2628
+    .line 2927
     invoke-virtual {p0}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->hasId()Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    .line 2629
+    .line 2928
     mul-int/lit8 v0, v0, 0x25
 
     add-int/lit8 v0, v0, 0x1
 
-    .line 2630
+    .line 2929
     mul-int/lit8 v0, v0, 0x35
 
     invoke-virtual {p0}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->getId()Lcom/kik/ximodel/XiGroupJid;
@@ -1534,7 +1534,7 @@
 
     add-int/2addr v0, v1
 
-    .line 2632
+    .line 2931
     :cond_1
     invoke-virtual {p0}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->hasBio()Z
 
@@ -1542,12 +1542,12 @@
 
     if-eqz v1, :cond_2
 
-    .line 2633
+    .line 2932
     mul-int/lit8 v0, v0, 0x25
 
     add-int/lit8 v0, v0, 0x2
 
-    .line 2634
+    .line 2933
     mul-int/lit8 v0, v0, 0x35
 
     invoke-virtual {p0}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->getBio()Lcom/kik/profile/ProfileCommon$BioAction;
@@ -1560,7 +1560,7 @@
 
     add-int/2addr v0, v1
 
-    .line 2636
+    .line 2935
     :cond_2
     invoke-virtual {p0}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->hasOriginalProfilePicExtensionAction()Z
 
@@ -1568,12 +1568,12 @@
 
     if-eqz v1, :cond_3
 
-    .line 2637
+    .line 2936
     mul-int/lit8 v0, v0, 0x25
 
     add-int/lit8 v0, v0, 0x3
 
-    .line 2638
+    .line 2937
     mul-int/lit8 v0, v0, 0x35
 
     invoke-virtual {p0}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->getOriginalProfilePicExtensionAction()Lcom/kik/profile/ProfileCommon$OriginalProfilePicExtensionAction;
@@ -1586,7 +1586,7 @@
 
     add-int/2addr v0, v1
 
-    .line 2640
+    .line 2939
     :cond_3
     invoke-virtual {p0}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->hasBackgroundProfilePicExtensionAction()Z
 
@@ -1594,12 +1594,12 @@
 
     if-eqz v1, :cond_4
 
-    .line 2641
+    .line 2940
     mul-int/lit8 v0, v0, 0x25
 
     add-int/lit8 v0, v0, 0x4
 
-    .line 2642
+    .line 2941
     mul-int/lit8 v0, v0, 0x35
 
     invoke-virtual {p0}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->getBackgroundProfilePicExtensionAction()Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;
@@ -1612,7 +1612,7 @@
 
     add-int/2addr v0, v1
 
-    .line 2644
+    .line 2943
     :cond_4
     mul-int/lit8 v0, v0, 0x1d
 
@@ -1624,7 +1624,7 @@
 
     add-int/2addr v0, v1
 
-    .line 2645
+    .line 2944
     iput v0, p0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->memoizedHashCode:I
 
     goto :goto_0
@@ -1634,7 +1634,7 @@
     .locals 3
 
     .prologue
-    .line 2446
+    .line 2745
     invoke-static {}, Lcom/kik/profile/ProfileService;->f()Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
     move-result-object v0
@@ -1643,12 +1643,12 @@
 
     const-class v2, Lcom/kik/profile/ProfileService$SetGroupProfileRequest$a;
 
-    .line 2447
+    .line 2746
     invoke-virtual {v0, v1, v2}, Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;->ensureFieldAccessorsInitialized(Ljava/lang/Class;Ljava/lang/Class;)Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
     move-result-object v0
 
-    .line 2446
+    .line 2745
     return-object v0
 .end method
 
@@ -1658,17 +1658,17 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 2537
+    .line 2836
     iget-byte v1, p0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->memoizedIsInitialized:B
 
-    .line 2538
+    .line 2837
     if-ne v1, v0, :cond_0
 
-    .line 2542
+    .line 2841
     :goto_0
     return v0
 
-    .line 2539
+    .line 2838
     :cond_0
     if-nez v1, :cond_1
 
@@ -1676,7 +1676,7 @@
 
     goto :goto_0
 
-    .line 2541
+    .line 2840
     :cond_1
     iput-byte v0, p0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->memoizedIsInitialized:B
 
@@ -1687,7 +1687,7 @@
     .locals 1
 
     .prologue
-    .line 2340
+    .line 2639
     invoke-virtual {p0}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->newBuilderForType()Lcom/kik/profile/ProfileService$SetGroupProfileRequest$a;
 
     move-result-object v0
@@ -1699,7 +1699,7 @@
     .locals 1
 
     .prologue
-    .line 2340
+    .line 2639
     invoke-virtual {p0, p1}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->newBuilderForType(Lcom/google/protobuf/GeneratedMessageV3$BuilderParent;)Lcom/kik/profile/ProfileService$SetGroupProfileRequest$a;
 
     move-result-object v0
@@ -1711,7 +1711,7 @@
     .locals 1
 
     .prologue
-    .line 2340
+    .line 2639
     invoke-virtual {p0}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->newBuilderForType()Lcom/kik/profile/ProfileService$SetGroupProfileRequest$a;
 
     move-result-object v0
@@ -1723,7 +1723,7 @@
     .locals 1
 
     .prologue
-    .line 2708
+    .line 3007
     invoke-static {}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->newBuilder()Lcom/kik/profile/ProfileService$SetGroupProfileRequest$a;
 
     move-result-object v0
@@ -1735,14 +1735,14 @@
     .locals 2
 
     .prologue
-    .line 2723
+    .line 3022
     new-instance v0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest$a;
 
     const/4 v1, 0x0
 
     invoke-direct {v0, p1, v1}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest$a;-><init>(Lcom/google/protobuf/GeneratedMessageV3$BuilderParent;B)V
 
-    .line 2724
+    .line 3023
     return-object v0
 .end method
 
@@ -1750,7 +1750,7 @@
     .locals 1
 
     .prologue
-    .line 2340
+    .line 2639
     invoke-virtual {p0}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->toBuilder()Lcom/kik/profile/ProfileService$SetGroupProfileRequest$a;
 
     move-result-object v0
@@ -1762,7 +1762,7 @@
     .locals 1
 
     .prologue
-    .line 2340
+    .line 2639
     invoke-virtual {p0}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->toBuilder()Lcom/kik/profile/ProfileService$SetGroupProfileRequest$a;
 
     move-result-object v0
@@ -1776,7 +1776,7 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 2716
+    .line 3015
     sget-object v0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->DEFAULT_INSTANCE:Lcom/kik/profile/ProfileService$SetGroupProfileRequest;
 
     if-ne p0, v0, :cond_0
@@ -1793,7 +1793,7 @@
 
     invoke-direct {v0, v1}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest$a;-><init>(B)V
 
-    .line 2717
+    .line 3016
     invoke-virtual {v0, p0}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest$a;->a(Lcom/kik/profile/ProfileService$SetGroupProfileRequest;)Lcom/kik/profile/ProfileService$SetGroupProfileRequest$a;
 
     move-result-object v0
@@ -1810,12 +1810,12 @@
     .end annotation
 
     .prologue
-    .line 2547
+    .line 2846
     iget-object v0, p0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->id_:Lcom/kik/ximodel/XiGroupJid;
 
     if-eqz v0, :cond_0
 
-    .line 2548
+    .line 2847
     const/4 v0, 0x1
 
     invoke-virtual {p0}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->getId()Lcom/kik/ximodel/XiGroupJid;
@@ -1824,13 +1824,13 @@
 
     invoke-virtual {p1, v0, v1}, Lcom/google/protobuf/CodedOutputStream;->writeMessage(ILcom/google/protobuf/MessageLite;)V
 
-    .line 2550
+    .line 2849
     :cond_0
     iget-object v0, p0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->bio_:Lcom/kik/profile/ProfileCommon$BioAction;
 
     if-eqz v0, :cond_1
 
-    .line 2551
+    .line 2850
     const/4 v0, 0x2
 
     invoke-virtual {p0}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->getBio()Lcom/kik/profile/ProfileCommon$BioAction;
@@ -1839,13 +1839,13 @@
 
     invoke-virtual {p1, v0, v1}, Lcom/google/protobuf/CodedOutputStream;->writeMessage(ILcom/google/protobuf/MessageLite;)V
 
-    .line 2553
+    .line 2852
     :cond_1
     iget-object v0, p0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->originalProfilePicExtensionAction_:Lcom/kik/profile/ProfileCommon$OriginalProfilePicExtensionAction;
 
     if-eqz v0, :cond_2
 
-    .line 2554
+    .line 2853
     const/4 v0, 0x3
 
     invoke-virtual {p0}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->getOriginalProfilePicExtensionAction()Lcom/kik/profile/ProfileCommon$OriginalProfilePicExtensionAction;
@@ -1854,13 +1854,13 @@
 
     invoke-virtual {p1, v0, v1}, Lcom/google/protobuf/CodedOutputStream;->writeMessage(ILcom/google/protobuf/MessageLite;)V
 
-    .line 2556
+    .line 2855
     :cond_2
     iget-object v0, p0, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->backgroundProfilePicExtensionAction_:Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;
 
     if-eqz v0, :cond_3
 
-    .line 2557
+    .line 2856
     const/4 v0, 0x4
 
     invoke-virtual {p0}, Lcom/kik/profile/ProfileService$SetGroupProfileRequest;->getBackgroundProfilePicExtensionAction()Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;
@@ -1869,7 +1869,7 @@
 
     invoke-virtual {p1, v0, v1}, Lcom/google/protobuf/CodedOutputStream;->writeMessage(ILcom/google/protobuf/MessageLite;)V
 
-    .line 2559
+    .line 2858
     :cond_3
     return-void
 .end method

@@ -89,13 +89,13 @@
     iget-object v0, p0, Lkik/android/gifs/vm/a;->a:Lkik/android/gifs/c;
 
     .line 54
-    invoke-virtual {p0}, Lkik/android/gifs/vm/a;->d()Ljava/lang/String;
+    invoke-virtual {p0}, Lkik/android/gifs/vm/a;->e()Ljava/lang/String;
 
     move-result-object v1
 
     sget-object v2, Lkik/android/gifs/a;->d:Lkik/android/gifs/api/GifResponseData$MediaType;
 
-    invoke-virtual {p0}, Lkik/android/gifs/vm/a;->e()Ljava/lang/String;
+    invoke-virtual {p0}, Lkik/android/gifs/vm/a;->g()Ljava/lang/String;
 
     move-result-object v3
 
@@ -115,7 +115,21 @@
 
 
 # virtual methods
-.method public final a()Landroid/graphics/drawable/Drawable;
+.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
+    .locals 0
+
+    .prologue
+    .line 40
+    invoke-interface {p1, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/gifs/vm/a;)V
+
+    .line 41
+    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/e;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
+
+    .line 42
+    return-void
+.end method
+
+.method public final b()Landroid/graphics/drawable/Drawable;
     .locals 1
 
     .prologue
@@ -125,21 +139,7 @@
     return-object v0
 .end method
 
-.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
-    .locals 0
-
-    .prologue
-    .line 40
-    invoke-interface {p1, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/gifs/vm/a;)V
-
-    .line 41
-    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/e;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
-
-    .line 42
-    return-void
-.end method
-
-.method public final b()Lrx/d;
+.method public final d()Lrx/d;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -164,8 +164,8 @@
     return-object v0
 .end method
 
-.method public abstract d()Ljava/lang/String;
+.method public abstract e()Ljava/lang/String;
 .end method
 
-.method public abstract e()Ljava/lang/String;
+.method public abstract g()Ljava/lang/String;
 .end method

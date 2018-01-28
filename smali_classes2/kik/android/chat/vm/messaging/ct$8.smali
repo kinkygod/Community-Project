@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/android/chat/vm/messaging/ct;->S()Lrx/d;
+    value = Lkik/android/chat/vm/messaging/ct;->T()Lrx/d;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -73,7 +73,7 @@
     :cond_0
     iget-object v0, p0, Lkik/android/chat/vm/messaging/ct$8;->a:Lkik/android/chat/vm/messaging/ct;
 
-    invoke-virtual {v0}, Lkik/android/chat/vm/messaging/ct;->av()Ljava/lang/String;
+    invoke-virtual {v0}, Lkik/android/chat/vm/messaging/ct;->ax()Ljava/lang/String;
 
     move-result-object v0
 

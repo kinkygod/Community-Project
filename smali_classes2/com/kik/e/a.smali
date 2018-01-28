@@ -18,7 +18,7 @@
 
 .field private final d:Landroid/content/Context;
 
-.field private final e:Lkik/core/interfaces/ae;
+.field private final e:Lkik/core/interfaces/ad;
 
 .field private final f:Lkik/android/config/b;
 
@@ -85,7 +85,7 @@
     .end array-data
 .end method
 
-.method public constructor <init>(Landroid/content/Context;Lkik/core/interfaces/ae;Lkik/android/config/b;Lkik/android/util/ai;)V
+.method public constructor <init>(Landroid/content/Context;Lkik/core/interfaces/ad;Lkik/android/config/b;Lkik/android/util/ai;)V
     .locals 4
 
     .prologue
@@ -121,7 +121,7 @@
     iput-object p1, p0, Lcom/kik/e/a;->d:Landroid/content/Context;
 
     .line 64
-    iput-object p2, p0, Lcom/kik/e/a;->e:Lkik/core/interfaces/ae;
+    iput-object p2, p0, Lcom/kik/e/a;->e:Lkik/core/interfaces/ad;
 
     .line 65
     iput-object p3, p0, Lcom/kik/e/a;->f:Lkik/android/config/b;
@@ -600,11 +600,11 @@
 
     .prologue
     .line 102
-    iget-object v0, p0, Lcom/kik/e/a;->e:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lcom/kik/e/a;->e:Lkik/core/interfaces/ad;
 
     const-string v1, "com.kik.kin.passkey"
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ae;->s(Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {v0, v1}, Lkik/core/interfaces/ad;->s(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -627,11 +627,11 @@
     move-result-object v0
 
     .line 111
-    iget-object v1, p0, Lcom/kik/e/a;->e:Lkik/core/interfaces/ae;
+    iget-object v1, p0, Lcom/kik/e/a;->e:Lkik/core/interfaces/ad;
 
     const-string v2, "com.kik.kin.passkey"
 
-    invoke-interface {v1, v2, v0}, Lkik/core/interfaces/ae;->c(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-interface {v1, v2, v0}, Lkik/core/interfaces/ad;->c(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 114
     :cond_0

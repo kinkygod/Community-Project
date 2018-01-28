@@ -190,7 +190,7 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f090586
+    const v0, 0x7f09058c
 
     :goto_0
     invoke-virtual {v1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
@@ -298,7 +298,7 @@
     return-object v0
 .end method
 
-.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
     .locals 0
 
     .prologue
@@ -306,7 +306,7 @@
     invoke-interface {p1, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/gifs/vm/z;)V
 
     .line 64
-    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/e;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/e;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 65
     return-void
@@ -623,7 +623,7 @@
     return-void
 .end method
 
-.method public final aj_()V
+.method public final ak_()V
     .locals 1
 
     .prologue
@@ -639,7 +639,7 @@
     iput-object v0, p0, Lkik/android/gifs/vm/z;->p:Lrx/functions/f;
 
     .line 73
-    invoke-super {p0}, Lkik/android/chat/vm/e;->aj_()V
+    invoke-super {p0}, Lkik/android/chat/vm/e;->ak_()V
 
     .line 74
     return-void

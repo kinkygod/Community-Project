@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private H:Lrx/d;
+.field private I:Lrx/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lrx/d",
@@ -18,7 +18,7 @@
     .end annotation
 .end field
 
-.field private I:Lrx/g;
+.field private J:Lrx/g;
 
 .field protected f:Lkik/android/HeadphoneUnpluggedReceiver;
 
@@ -91,7 +91,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lkik/android/chat/vm/messaging/e;->I:Lrx/g;
+    iput-object v0, p0, Lkik/android/chat/vm/messaging/e;->J:Lrx/g;
 
     .line 43
     invoke-static {}, Lkik/android/HeadphoneUnpluggedReceiver;->a()Lkik/android/HeadphoneUnpluggedReceiver;
@@ -154,7 +154,7 @@
 
     .prologue
     .line 145
-    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/e;->r()V
+    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/e;->s()V
 
     return-void
 .end method
@@ -166,13 +166,13 @@
     const/4 v2, 0x0
 
     .line 88
-    iget-object v0, p0, Lkik/android/chat/vm/messaging/e;->A:Lcom/kik/storage/p;
+    iget-object v0, p0, Lkik/android/chat/vm/messaging/e;->B:Lcom/kik/storage/s;
 
     invoke-virtual {p1}, Lkik/core/datatypes/messageExtensions/ContentMessage;->n()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-interface {v0, v1}, Lcom/kik/storage/p;->h(Ljava/lang/String;)Ljava/io/File;
+    invoke-interface {v0, v1}, Lcom/kik/storage/s;->h(Ljava/lang/String;)Ljava/io/File;
 
     move-result-object v0
 
@@ -199,18 +199,18 @@
 
     .line 101
     :cond_1
-    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/e;->s()Z
+    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/e;->t()Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
     .line 102
-    iget-object v0, p0, Lkik/android/chat/vm/messaging/e;->A:Lcom/kik/storage/p;
+    iget-object v0, p0, Lkik/android/chat/vm/messaging/e;->B:Lcom/kik/storage/s;
 
     iget-object v1, p0, Lkik/android/chat/vm/messaging/e;->q:Lcom/kik/android/Mixpanel;
 
-    invoke-interface {v0, p1, v1}, Lcom/kik/storage/p;->a(Lkik/core/datatypes/messageExtensions/ContentMessage;Lcom/kik/android/Mixpanel;)Lcom/kik/events/Promise;
+    invoke-interface {v0, p1, v1}, Lcom/kik/storage/s;->a(Lkik/core/datatypes/messageExtensions/ContentMessage;Lcom/kik/android/Mixpanel;)Lcom/kik/events/Promise;
 
     move-result-object v0
 
@@ -229,11 +229,11 @@
 
     .line 106
     :cond_2
-    iget-object v0, p0, Lkik/android/chat/vm/messaging/e;->A:Lcom/kik/storage/p;
+    iget-object v0, p0, Lkik/android/chat/vm/messaging/e;->B:Lcom/kik/storage/s;
 
     iget-object v1, p0, Lkik/android/chat/vm/messaging/e;->q:Lcom/kik/android/Mixpanel;
 
-    invoke-interface {v0, p1, v2, v1}, Lcom/kik/storage/p;->a(Lkik/core/datatypes/messageExtensions/ContentMessage;Lkik/core/interfaces/y;Lcom/kik/android/Mixpanel;)Lcom/kik/events/Promise;
+    invoke-interface {v0, p1, v2, v1}, Lcom/kik/storage/s;->a(Lkik/core/datatypes/messageExtensions/ContentMessage;Lkik/core/interfaces/x;Lcom/kik/android/Mixpanel;)Lcom/kik/events/Promise;
 
     move-result-object v0
 
@@ -248,22 +248,22 @@
 
 
 # virtual methods
-.method public a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+.method public a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
     .locals 4
 
     .prologue
     const/4 v1, 0x1
 
     .line 49
-    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/messaging/ct;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/messaging/ct;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 9078
-    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/e;->k()Lkik/core/datatypes/messageExtensions/ContentMessage;
+    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/e;->l()Lkik/core/datatypes/messageExtensions/ContentMessage;
 
     move-result-object v2
 
     .line 10064
-    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/e;->k()Lkik/core/datatypes/messageExtensions/ContentMessage;
+    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/e;->l()Lkik/core/datatypes/messageExtensions/ContentMessage;
 
     move-result-object v0
 
@@ -295,7 +295,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lkik/android/chat/vm/messaging/e;->H:Lrx/d;
+    iput-object v0, p0, Lkik/android/chat/vm/messaging/e;->I:Lrx/d;
 
     .line 51
     :goto_1
@@ -342,7 +342,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lkik/android/chat/vm/messaging/e;->I:Lrx/g;
+    iget-object v1, p0, Lkik/android/chat/vm/messaging/e;->J:Lrx/g;
 
     .line 9146
     invoke-virtual {v0, v1}, Lrx/d;->b(Lrx/g;)Lrx/d;
@@ -350,7 +350,7 @@
     move-result-object v0
 
     .line 9148
-    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/e;->q()Lrx/d;
+    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/e;->r()Lrx/d;
 
     move-result-object v1
 
@@ -372,7 +372,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lkik/android/chat/vm/messaging/e;->H:Lrx/d;
+    iput-object v0, p0, Lkik/android/chat/vm/messaging/e;->I:Lrx/d;
 
     goto :goto_1
 .end method
@@ -380,12 +380,12 @@
 .method abstract a(Ljava/lang/Throwable;)V
 .end method
 
-.method public aj_()V
+.method public ak_()V
     .locals 1
 
     .prologue
     .line 57
-    invoke-super {p0}, Lkik/android/chat/vm/messaging/ct;->aj_()V
+    invoke-super {p0}, Lkik/android/chat/vm/messaging/ct;->ak_()V
 
     .line 58
     iget-object v0, p0, Lkik/android/chat/vm/messaging/e;->f:Lkik/android/HeadphoneUnpluggedReceiver;
@@ -401,7 +401,7 @@
     return-void
 .end method
 
-.method public final p()Lrx/d;
+.method public final q()Lrx/d;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -415,12 +415,12 @@
 
     .prologue
     .line 72
-    iget-object v0, p0, Lkik/android/chat/vm/messaging/e;->H:Lrx/d;
+    iget-object v0, p0, Lkik/android/chat/vm/messaging/e;->I:Lrx/d;
 
     return-object v0
 .end method
 
-.method abstract q()Lrx/d;
+.method abstract r()Lrx/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -432,8 +432,8 @@
     .end annotation
 .end method
 
-.method abstract r()V
+.method abstract s()V
 .end method
 
-.method abstract s()Z
+.method abstract t()Z
 .end method

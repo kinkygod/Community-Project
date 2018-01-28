@@ -2,7 +2,7 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lrx/functions/b;
+.implements Lrx/functions/g;
 
 
 # instance fields
@@ -20,7 +20,7 @@
     return-void
 .end method
 
-.method public static a(Lkik/android/chat/vm/widget/SmileyItemViewModel;)Lrx/functions/b;
+.method public static a(Lkik/android/chat/vm/widget/SmileyItemViewModel;)Lrx/functions/g;
     .locals 1
 
     new-instance v0, Lkik/android/chat/vm/widget/an;
@@ -32,14 +32,16 @@
 
 
 # virtual methods
-.method public final call(Ljava/lang/Object;)V
+.method public final call(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     iget-object v0, p0, Lkik/android/chat/vm/widget/an;->a:Lkik/android/chat/vm/widget/SmileyItemViewModel;
 
     check-cast p1, Lcom/kik/android/b/f;
 
-    invoke-static {v0, p1}, Lkik/android/chat/vm/widget/SmileyItemViewModel;->a(Lkik/android/chat/vm/widget/SmileyItemViewModel;Lcom/kik/android/b/f;)V
+    invoke-static {v0, p1}, Lkik/android/chat/vm/widget/SmileyItemViewModel;->b(Lkik/android/chat/vm/widget/SmileyItemViewModel;Lcom/kik/android/b/f;)Ljava/lang/Boolean;
 
-    return-void
+    move-result-object v0
+
+    return-object v0
 .end method

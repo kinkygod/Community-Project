@@ -63,7 +63,7 @@
 
     const-string v4, "heart"
 
-    const v5, 0x7f020272
+    const v5, 0x7f02025a
 
     move v3, v2
 
@@ -78,7 +78,7 @@
 
     const-string v7, "thumbs-up"
 
-    const v8, 0x7f020274
+    const v8, 0x7f02025c
 
     move v5, v9
 
@@ -95,7 +95,7 @@
 
     const-string v7, "fire"
 
-    const v8, 0x7f020271
+    const v8, 0x7f020259
 
     move v5, v10
 
@@ -112,7 +112,7 @@
 
     const-string v7, "smiley"
 
-    const v8, 0x7f020273
+    const v8, 0x7f02025b
 
     move v5, v11
 

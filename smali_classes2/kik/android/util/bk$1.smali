@@ -18,9 +18,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/kik/view/adapters/x;
+.field final synthetic a:Lcom/kik/view/adapters/y;
 
-.field final synthetic b:Lkik/android/f/i;
+.field final synthetic b:Lkik/android/f/h;
 
 .field final synthetic c:Lcom/kik/events/Promise;
 
@@ -30,16 +30,16 @@
 
 
 # direct methods
-.method constructor <init>(Lkik/android/util/bk;Lcom/kik/view/adapters/x;Lkik/android/f/i;Lcom/kik/events/Promise;Ljava/lang/String;)V
+.method constructor <init>(Lkik/android/util/bk;Lcom/kik/view/adapters/y;Lkik/android/f/h;Lcom/kik/events/Promise;Ljava/lang/String;)V
     .locals 0
 
     .prologue
     .line 256
     iput-object p1, p0, Lkik/android/util/bk$1;->e:Lkik/android/util/bk;
 
-    iput-object p2, p0, Lkik/android/util/bk$1;->a:Lcom/kik/view/adapters/x;
+    iput-object p2, p0, Lkik/android/util/bk$1;->a:Lcom/kik/view/adapters/y;
 
-    iput-object p3, p0, Lkik/android/util/bk$1;->b:Lkik/android/f/i;
+    iput-object p3, p0, Lkik/android/util/bk$1;->b:Lkik/android/f/h;
 
     iput-object p4, p0, Lkik/android/util/bk$1;->c:Lcom/kik/events/Promise;
 
@@ -57,18 +57,18 @@
 
     .prologue
     .line 260
-    iget-object v0, p0, Lkik/android/util/bk$1;->a:Lcom/kik/view/adapters/x;
+    iget-object v0, p0, Lkik/android/util/bk$1;->a:Lcom/kik/view/adapters/y;
 
-    invoke-virtual {v0, p2}, Lcom/kik/view/adapters/x;->getItem(I)Ljava/lang/Object;
+    invoke-virtual {v0, p2}, Lcom/kik/view/adapters/y;->getItem(I)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/content/pm/ResolveInfo;
 
     .line 262
-    iget-object v1, p0, Lkik/android/util/bk$1;->b:Lkik/android/f/i;
+    iget-object v1, p0, Lkik/android/util/bk$1;->b:Lkik/android/f/h;
 
-    invoke-interface {v1}, Lkik/android/f/i;->a()V
+    invoke-interface {v1}, Lkik/android/f/h;->a()V
 
     .line 263
     iget-object v1, p0, Lkik/android/util/bk$1;->c:Lcom/kik/events/Promise;

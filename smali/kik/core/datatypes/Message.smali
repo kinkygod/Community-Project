@@ -298,7 +298,7 @@
     return-object v1
 .end method
 
-.method public static a(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Lkik/core/datatypes/Message$MessageSource;Lkik/core/interfaces/w;Ljava/lang/String;)Lkik/core/datatypes/Message;
+.method public static a(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Lkik/core/datatypes/Message$MessageSource;Lkik/core/interfaces/v;Ljava/lang/String;)Lkik/core/datatypes/Message;
     .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -310,7 +310,7 @@
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             "Lkik/core/datatypes/Message$MessageSource;",
-            "Lkik/core/interfaces/w;",
+            "Lkik/core/interfaces/v;",
             "Ljava/lang/String;",
             ")",
             "Lkik/core/datatypes/Message;"
@@ -339,7 +339,7 @@
 
     move-result-object v3
 
-    invoke-static {v1, p4}, Lkik/core/net/messageExtensions/e;->a(Lkik/core/datatypes/FriendPickerAttachment;Lkik/core/interfaces/w;)Ljava/lang/String;
+    invoke-static {v1, p4}, Lkik/core/net/messageExtensions/e;->a(Lkik/core/datatypes/FriendPickerAttachment;Lkik/core/interfaces/v;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -369,7 +369,7 @@
     move-result-object v2
 
     .line 182
-    invoke-static {p0}, Lkik/core/xiphias/aa;->a(Ljava/util/List;)Ljava/util/List;
+    invoke-static {p0}, Lkik/core/xiphias/af;->a(Ljava/util/List;)Ljava/util/List;
 
     move-result-object v3
 
@@ -402,80 +402,30 @@
 
 # virtual methods
 .method public final A()Z
-    .locals 3
-
-    .prologue
-    .line 519
-    iget-object v0, p0, Lkik/core/datatypes/Message;->i:Ljava/util/Vector;
-
-    invoke-virtual {v0}, Ljava/util/Vector;->iterator()Ljava/util/Iterator;
-
-    move-result-object v1
-
-    :cond_0
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lkik/core/datatypes/messageExtensions/MessageAttachment;
-
-    .line 520
-    instance-of v2, v0, Lkik/core/datatypes/messageExtensions/ContentMessage;
-
-    if-eqz v2, :cond_0
-
-    check-cast v0, Lkik/core/datatypes/messageExtensions/ContentMessage;
-
-    invoke-virtual {v0}, Lkik/core/datatypes/messageExtensions/ContentMessage;->A()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 521
-    const/4 v0, 0x1
-
-    .line 524
-    :goto_0
-    return v0
-
-    :cond_1
-    const/4 v0, 0x0
-
-    goto :goto_0
-.end method
-
-.method public final B()Z
     .locals 1
 
     .prologue
-    .line 529
+    .line 519
     iget-boolean v0, p0, Lkik/core/datatypes/Message;->j:Z
 
     return v0
 .end method
 
-.method public final C()Lcom/kik/messagepath/model/TextMarkdown$TextMarkdownAttachment;
+.method public final B()Lcom/kik/messagepath/model/TextMarkdown$TextMarkdownAttachment;
     .locals 1
     .annotation runtime Ljavax/annotation/Nullable;
     .end annotation
 
     .prologue
-    .line 560
-    .line 18554
+    .line 550
+    .line 18544
     iget-object v0, p0, Lkik/core/datatypes/Message;->p:Lcom/kik/messagepath/model/CoreMessage;
 
     if-eqz v0, :cond_0
 
     iget-object v0, p0, Lkik/core/datatypes/Message;->p:Lcom/kik/messagepath/model/CoreMessage;
 
-    invoke-virtual {v0}, Lcom/kik/messagepath/model/CoreMessage;->m()Z
+    invoke-virtual {v0}, Lcom/kik/messagepath/model/CoreMessage;->o()Z
 
     move-result v0
 
@@ -483,28 +433,28 @@
 
     const/4 v0, 0x1
 
-    .line 560
+    .line 550
     :goto_0
     if-eqz v0, :cond_1
 
-    .line 561
+    .line 551
     iget-object v0, p0, Lkik/core/datatypes/Message;->p:Lcom/kik/messagepath/model/CoreMessage;
 
-    invoke-virtual {v0}, Lcom/kik/messagepath/model/CoreMessage;->n()Lcom/kik/messagepath/model/TextMarkdown$TextMarkdownAttachment;
+    invoke-virtual {v0}, Lcom/kik/messagepath/model/CoreMessage;->p()Lcom/kik/messagepath/model/TextMarkdown$TextMarkdownAttachment;
 
     move-result-object v0
 
-    .line 563
+    .line 553
     :goto_1
     return-object v0
 
-    .line 18554
+    .line 18544
     :cond_0
     const/4 v0, 0x0
 
     goto :goto_0
 
-    .line 563
+    .line 553
     :cond_1
     const/4 v0, 0x0
 
@@ -971,10 +921,10 @@
     .locals 0
 
     .prologue
-    .line 534
+    .line 524
     iput-boolean p1, p0, Lkik/core/datatypes/Message;->j:Z
 
-    .line 535
+    .line 525
     return-void
 .end method
 
@@ -1117,7 +1067,7 @@
     iget-object v0, p0, Lkik/core/datatypes/Message;->p:Lcom/kik/messagepath/model/CoreMessage;
 
     .line 402
-    invoke-virtual {v0}, Lcom/kik/messagepath/model/CoreMessage;->a()Z
+    invoke-virtual {v0}, Lcom/kik/messagepath/model/CoreMessage;->c()Z
 
     move-result v0
 
@@ -1126,7 +1076,7 @@
     iget-object v0, p0, Lkik/core/datatypes/Message;->p:Lcom/kik/messagepath/model/CoreMessage;
 
     .line 403
-    invoke-virtual {v0}, Lcom/kik/messagepath/model/CoreMessage;->b()Lcom/kik/messagepath/model/VisibilityRules$VisibilityRulesAttachment;
+    invoke-virtual {v0}, Lcom/kik/messagepath/model/CoreMessage;->d()Lcom/kik/messagepath/model/VisibilityRules$VisibilityRulesAttachment;
 
     move-result-object v0
 
@@ -1135,7 +1085,7 @@
     iget-object v0, p0, Lkik/core/datatypes/Message;->p:Lcom/kik/messagepath/model/CoreMessage;
 
     .line 404
-    invoke-virtual {v0}, Lcom/kik/messagepath/model/CoreMessage;->b()Lcom/kik/messagepath/model/VisibilityRules$VisibilityRulesAttachment;
+    invoke-virtual {v0}, Lcom/kik/messagepath/model/CoreMessage;->d()Lcom/kik/messagepath/model/VisibilityRules$VisibilityRulesAttachment;
 
     move-result-object v0
 
@@ -1148,7 +1098,7 @@
     iget-object v0, p0, Lkik/core/datatypes/Message;->p:Lcom/kik/messagepath/model/CoreMessage;
 
     .line 405
-    invoke-virtual {v0}, Lcom/kik/messagepath/model/CoreMessage;->b()Lcom/kik/messagepath/model/VisibilityRules$VisibilityRulesAttachment;
+    invoke-virtual {v0}, Lcom/kik/messagepath/model/CoreMessage;->d()Lcom/kik/messagepath/model/VisibilityRules$VisibilityRulesAttachment;
 
     move-result-object v0
 
@@ -1191,7 +1141,7 @@
     :cond_0
     iget-object v0, p0, Lkik/core/datatypes/Message;->p:Lcom/kik/messagepath/model/CoreMessage;
 
-    invoke-virtual {v0}, Lcom/kik/messagepath/model/CoreMessage;->b()Lcom/kik/messagepath/model/VisibilityRules$VisibilityRulesAttachment;
+    invoke-virtual {v0}, Lcom/kik/messagepath/model/CoreMessage;->d()Lcom/kik/messagepath/model/VisibilityRules$VisibilityRulesAttachment;
 
     move-result-object v0
 
@@ -1199,7 +1149,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lkik/core/xiphias/aa;->a(Lcom/kik/ximodel/XiBareUserJid;)Lkik/core/datatypes/k;
+    invoke-static {v0}, Lkik/core/xiphias/af;->a(Lcom/kik/ximodel/XiBareUserJid;)Lkik/core/datatypes/k;
 
     move-result-object v0
 
@@ -1221,7 +1171,7 @@
 
     iget-object v0, p0, Lkik/core/datatypes/Message;->p:Lcom/kik/messagepath/model/CoreMessage;
 
-    invoke-virtual {v0}, Lcom/kik/messagepath/model/CoreMessage;->a()Z
+    invoke-virtual {v0}, Lcom/kik/messagepath/model/CoreMessage;->c()Z
 
     move-result v0
 
@@ -1230,7 +1180,7 @@
     iget-object v0, p0, Lkik/core/datatypes/Message;->p:Lcom/kik/messagepath/model/CoreMessage;
 
     .line 424
-    invoke-virtual {v0}, Lcom/kik/messagepath/model/CoreMessage;->b()Lcom/kik/messagepath/model/VisibilityRules$VisibilityRulesAttachment;
+    invoke-virtual {v0}, Lcom/kik/messagepath/model/CoreMessage;->d()Lcom/kik/messagepath/model/VisibilityRules$VisibilityRulesAttachment;
 
     move-result-object v0
 
@@ -1247,7 +1197,7 @@
     :cond_1
     iget-object v0, p0, Lkik/core/datatypes/Message;->p:Lcom/kik/messagepath/model/CoreMessage;
 
-    invoke-virtual {v0}, Lcom/kik/messagepath/model/CoreMessage;->b()Lcom/kik/messagepath/model/VisibilityRules$VisibilityRulesAttachment;
+    invoke-virtual {v0}, Lcom/kik/messagepath/model/CoreMessage;->d()Lcom/kik/messagepath/model/VisibilityRules$VisibilityRulesAttachment;
 
     move-result-object v0
 
@@ -1356,7 +1306,7 @@
 
     iget-object v0, p0, Lkik/core/datatypes/Message;->p:Lcom/kik/messagepath/model/CoreMessage;
 
-    invoke-virtual {v0}, Lcom/kik/messagepath/model/CoreMessage;->e()Z
+    invoke-virtual {v0}, Lcom/kik/messagepath/model/CoreMessage;->g()Z
 
     move-result v0
 
@@ -1364,7 +1314,7 @@
 
     iget-object v0, p0, Lkik/core/datatypes/Message;->p:Lcom/kik/messagepath/model/CoreMessage;
 
-    invoke-virtual {v0}, Lcom/kik/messagepath/model/CoreMessage;->f()Lcom/kik/messagepath/model/Keyboards$KeyboardAttachment;
+    invoke-virtual {v0}, Lcom/kik/messagepath/model/CoreMessage;->h()Lcom/kik/messagepath/model/Keyboards$KeyboardAttachment;
 
     move-result-object v0
 
@@ -1387,7 +1337,7 @@
     .line 497
     iget-object v0, p0, Lkik/core/datatypes/Message;->p:Lcom/kik/messagepath/model/CoreMessage;
 
-    invoke-virtual {v0}, Lcom/kik/messagepath/model/CoreMessage;->f()Lcom/kik/messagepath/model/Keyboards$KeyboardAttachment;
+    invoke-virtual {v0}, Lcom/kik/messagepath/model/CoreMessage;->h()Lcom/kik/messagepath/model/Keyboards$KeyboardAttachment;
 
     move-result-object v0
 

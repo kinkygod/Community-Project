@@ -22,7 +22,7 @@
     iput-object p1, p0, Lkik/android/chat/fragment/KikCodeFragment_ViewBinding;->a:Lkik/android/chat/fragment/KikCodeFragment;
 
     .line 28
-    const v0, 0x7f100190
+    const v0, 0x7f100184
 
     const-string v1, "field \'_nameText\'"
 
@@ -37,7 +37,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/KikCodeFragment;->_nameText:Landroid/widget/TextView;
 
     .line 29
-    const v0, 0x7f100191
+    const v0, 0x7f100185
 
     const-string v1, "field \'_usernameText\'"
 
@@ -52,7 +52,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/KikCodeFragment;->_usernameText:Landroid/widget/TextView;
 
     .line 30
-    const v0, 0x7f100206
+    const v0, 0x7f100208
 
     const-string v1, "field \'_scanText\'"
 
@@ -67,7 +67,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/KikCodeFragment;->_scanText:Landroid/widget/TextView;
 
     .line 31
-    const v0, 0x7f100201
+    const v0, 0x7f100203
 
     const-string v1, "field \'_drawArea\'"
 
@@ -82,7 +82,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/KikCodeFragment;->_drawArea:Lkik/android/widget/KikFinderCodeImageView;
 
     .line 32
-    const v0, 0x7f100200
+    const v0, 0x7f100202
 
     const-string v1, "field \'_fakeCode\'"
 
@@ -97,7 +97,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/KikCodeFragment;->_fakeCode:Lkik/android/widget/KikCodeBackgroundImageView;
 
     .line 33
-    const v0, 0x7f1001fe
+    const v0, 0x7f100200
 
     const-string v1, "field \'_tellAFriendImage\'"
 
@@ -112,7 +112,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/KikCodeFragment;->_tellAFriendImage:Landroid/widget/ImageView;
 
     .line 34
-    const v0, 0x7f1001fc
+    const v0, 0x7f1001fd
 
     const-string v1, "field \'_profilePic\'"
 
@@ -127,7 +127,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/KikCodeFragment;->_profilePic:Lcom/kik/cache/ContactImageView;
 
     .line 35
-    const v0, 0x7f100204
+    const v0, 0x7f100206
 
     const-string v1, "field \'_codeInfo\'"
 
@@ -142,7 +142,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/KikCodeFragment;->_codeInfo:Landroid/view/ViewGroup;
 
     .line 36
-    const v0, 0x7f100202
+    const v0, 0x7f100204
 
     const-string v1, "field \'_spinner\'"
 
@@ -157,7 +157,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/KikCodeFragment;->_spinner:Landroid/widget/ProgressBar;
 
     .line 37
-    const v0, 0x7f100207
+    const v0, 0x7f100209
 
     const-string v1, "field \'_errorHolder\'"
 
@@ -172,7 +172,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/KikCodeFragment;->_errorHolder:Landroid/widget/LinearLayout;
 
     .line 38
-    const v0, 0x7f100203
+    const v0, 0x7f100205
 
     const-string v1, "field \'_retryImage\'"
 
@@ -187,7 +187,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/KikCodeFragment;->_retryImage:Landroid/widget/ImageView;
 
     .line 39
-    const v0, 0x7f100208
+    const v0, 0x7f10020a
 
     const-string v1, "field \'_wipeContainer\'"
 
@@ -198,7 +198,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/KikCodeFragment;->_wipeContainer:Landroid/view/View;
 
     .line 40
-    const v0, 0x7f1001ff
+    const v0, 0x7f100201
 
     const-string v1, "field \'_codeContainer\'"
 

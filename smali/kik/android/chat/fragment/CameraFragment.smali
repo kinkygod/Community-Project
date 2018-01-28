@@ -23,29 +23,29 @@
 # instance fields
 .field protected _cameraErrorCover:Landroid/view/View;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f100175
+        value = 0x7f100176
     .end annotation
 .end field
 
 .field protected _cameraIconBarView:Lkik/android/chat/view/m;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f100176
+        value = 0x7f100177
     .end annotation
 .end field
 
 .field protected _liveCameraContainer:Lkik/android/chat/view/s;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f100173
+        value = 0x7f100174
     .end annotation
 .end field
 
 .field protected _previewContainer:Lkik/android/chat/view/af;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f100174
+        value = 0x7f100175
     .end annotation
 .end field
 
-.field protected b:Lkik/core/interfaces/ae;
+.field protected b:Lkik/core/interfaces/ad;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -55,7 +55,7 @@
     .end annotation
 .end field
 
-.field protected d:Lcom/kik/storage/p;
+.field protected d:Lcom/kik/storage/s;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -153,7 +153,7 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
     .line 143
     return-void
@@ -236,7 +236,7 @@
 
     .prologue
     .line 103
-    const v0, 0x7f040040
+    const v0, 0x7f040041
 
     const/4 v1, 0x0
 
@@ -262,7 +262,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lkik/android/util/ca;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lkik/android/util/cb;->a(Landroid/app/Activity;)V
 
     .line 111
     iget-object v0, p0, Lkik/android/chat/fragment/CameraFragment;->e:Lkik/android/chat/presentation/n;
@@ -313,7 +313,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lkik/android/util/ca;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lkik/android/util/cb;->a(Landroid/app/Activity;)V
 
     .line 123
     iget-object v0, p0, Lkik/android/chat/fragment/CameraFragment;->e:Lkik/android/chat/presentation/n;

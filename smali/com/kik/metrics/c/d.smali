@@ -72,7 +72,7 @@
 
 
 # virtual methods
-.method public final a(Lcom/kik/metrics/b/s;)V
+.method public final a(Lcom/kik/metrics/b/t;)V
     .locals 3
 
     .prologue
@@ -97,7 +97,7 @@
     check-cast v0, Lcom/kik/metrics/c/c;
 
     .line 33
-    invoke-interface {v0}, Lcom/kik/metrics/c/c;->a()Lcom/kik/metrics/b/s;
+    invoke-interface {v0}, Lcom/kik/metrics/c/c;->a()Lcom/kik/metrics/b/t;
 
     move-result-object p1
 
@@ -161,7 +161,7 @@
     check-cast v0, Lcom/kik/metrics/c/b;
 
     .line 43
-    invoke-interface {v0, p1, v1}, Lcom/kik/metrics/c/b;->a(Lcom/kik/metrics/b/s;Lcom/kik/metrics/a/d;)V
+    invoke-interface {v0, p1, v1}, Lcom/kik/metrics/c/b;->a(Lcom/kik/metrics/b/t;Lcom/kik/metrics/a/d;)V
 
     goto :goto_2
 

@@ -14,28 +14,28 @@
 # instance fields
 .field protected _firstNameInput:Lkik/android/chat/view/ValidateableInputView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1001f4
+        value = 0x7f1001f5
     .end annotation
 .end field
 
 .field protected _lastNameInput:Lkik/android/chat/view/ValidateableInputView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1001f5
+        value = 0x7f1001f6
     .end annotation
 .end field
 
 .field protected _saveButton:Landroid/view/View;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1001f3
+        value = 0x7f1001f4
     .end annotation
 .end field
 
-.field protected a:Lkik/core/interfaces/ah;
+.field protected a:Lkik/core/interfaces/ag;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field protected b:Lkik/core/interfaces/w;
+.field protected b:Lkik/core/interfaces/v;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -292,7 +292,7 @@
 
     .prologue
     .line 72
-    const v0, 0x7f040085
+    const v0, 0x7f040087
 
     const/4 v1, 0x0
 
@@ -304,19 +304,19 @@
     invoke-static {p0, v0}, Lbutterknife/ButterKnife;->bind(Ljava/lang/Object;Landroid/view/View;)Lbutterknife/Unbinder;
 
     .line 75
-    iget-object v1, p0, Lkik/android/chat/fragment/settings/EditNameFragment;->a:Lkik/core/interfaces/ah;
+    iget-object v1, p0, Lkik/android/chat/fragment/settings/EditNameFragment;->a:Lkik/core/interfaces/ag;
 
-    invoke-interface {v1}, Lkik/core/interfaces/ah;->d()Lkik/core/datatypes/ac;
+    invoke-interface {v1}, Lkik/core/interfaces/ag;->d()Lkik/core/datatypes/ab;
 
     move-result-object v1
 
     .line 77
-    iget-object v2, v1, Lkik/core/datatypes/ac;->d:Ljava/lang/String;
+    iget-object v2, v1, Lkik/core/datatypes/ab;->d:Ljava/lang/String;
 
     iput-object v2, p0, Lkik/android/chat/fragment/settings/EditNameFragment;->c:Ljava/lang/String;
 
     .line 78
-    iget-object v1, v1, Lkik/core/datatypes/ac;->e:Ljava/lang/String;
+    iget-object v1, v1, Lkik/core/datatypes/ab;->e:Ljava/lang/String;
 
     iput-object v1, p0, Lkik/android/chat/fragment/settings/EditNameFragment;->d:Ljava/lang/String;
 
@@ -398,7 +398,7 @@
     .locals 4
     .annotation build Lbutterknife/OnClick;
         value = {
-            0x7f1001f3
+            0x7f1001f4
         }
     .end annotation
 
@@ -526,9 +526,9 @@
 
     .line 143
     :cond_4
-    iget-object v2, p0, Lkik/android/chat/fragment/settings/EditNameFragment;->a:Lkik/core/interfaces/ah;
+    iget-object v2, p0, Lkik/android/chat/fragment/settings/EditNameFragment;->a:Lkik/core/interfaces/ag;
 
-    invoke-interface {v2, v0, v1}, Lkik/core/interfaces/ah;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/kik/events/Promise;
+    invoke-interface {v2, v0, v1}, Lkik/core/interfaces/ag;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/kik/events/Promise;
 
     move-result-object v0
 
@@ -577,7 +577,7 @@
     goto :goto_0
 .end method
 
-.method protected screenOpenedEvent()Lcom/kik/metrics/b/s;
+.method protected screenOpenedEvent()Lcom/kik/metrics/b/t;
     .locals 1
 
     .prologue

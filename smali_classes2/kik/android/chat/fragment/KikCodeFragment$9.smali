@@ -55,7 +55,7 @@
 
     aput-object v1, v0, v2
 
-    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
     .line 771
     new-array v0, v4, [Landroid/view/View;
@@ -72,7 +72,7 @@
 
     aput-object v1, v0, v3
 
-    invoke-static {v0}, Lkik/android/util/ca;->g([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->g([Landroid/view/View;)V
 
     .line 772
     new-array v0, v4, [Landroid/view/View;

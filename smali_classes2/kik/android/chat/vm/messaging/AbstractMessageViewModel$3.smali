@@ -36,7 +36,7 @@
     .locals 0
 
     .prologue
-    .line 619
+    .line 643
     iput-object p1, p0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel$3;->a:Lkik/android/chat/vm/messaging/AbstractMessageViewModel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -44,14 +44,20 @@
     return-void
 .end method
 
-
-# virtual methods
-.method public final a(II)Lrx/d;
+.method private b(II)Lrx/d;
     .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(II)",
+            "Lrx/d",
+            "<",
+            "Landroid/graphics/Bitmap;",
+            ">;"
+        }
+    .end annotation
 
     .prologue
-    .line 623
-    .line 1629
+    .line 653
     iget-object v0, p0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel$3;->a:Lkik/android/chat/vm/messaging/AbstractMessageViewModel;
 
     iget-object v0, v0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->o:Landroid/content/res/Resources;
@@ -64,6 +70,31 @@
 
     move-result-object v0
 
-    .line 623
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public final a(II)Lrx/d;
+    .locals 1
+
+    .prologue
+    .line 647
+    invoke-direct {p0, p1, p2}, Lkik/android/chat/vm/messaging/AbstractMessageViewModel$3;->b(II)Lrx/d;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final synthetic a(IILjava/lang/Object;)Lrx/d;
+    .locals 1
+
+    .prologue
+    .line 643
+    invoke-direct {p0, p1, p2}, Lkik/android/chat/vm/messaging/AbstractMessageViewModel$3;->b(II)Lrx/d;
+
+    move-result-object v0
+
     return-object v0
 .end method

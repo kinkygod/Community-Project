@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/android/scan/c;->a(Lkik/core/datatypes/ac;I)Lcom/kik/events/Promise;
+    value = Lkik/android/scan/c;->a(Lkik/core/datatypes/ab;I)Lcom/kik/events/Promise;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field final synthetic a:Lkik/core/datatypes/ac;
+.field final synthetic a:Lkik/core/datatypes/ab;
 
 .field final synthetic b:I
 
@@ -28,14 +28,14 @@
 
 
 # direct methods
-.method constructor <init>(Lkik/android/scan/c;Lkik/core/datatypes/ac;ILcom/kik/events/Promise;)V
+.method constructor <init>(Lkik/android/scan/c;Lkik/core/datatypes/ab;ILcom/kik/events/Promise;)V
     .locals 0
 
     .prologue
     .line 263
     iput-object p1, p0, Lkik/android/scan/c$5;->d:Lkik/android/scan/c;
 
-    iput-object p2, p0, Lkik/android/scan/c$5;->a:Lkik/core/datatypes/ac;
+    iput-object p2, p0, Lkik/android/scan/c$5;->a:Lkik/core/datatypes/ab;
 
     iput p3, p0, Lkik/android/scan/c$5;->b:I
 
@@ -55,11 +55,11 @@
     const/4 v1, 0x0
 
     .line 267
-    iget-object v0, p0, Lkik/android/scan/c$5;->a:Lkik/core/datatypes/ac;
+    iget-object v0, p0, Lkik/android/scan/c$5;->a:Lkik/core/datatypes/ab;
 
     iget v2, p0, Lkik/android/scan/c$5;->b:I
 
-    invoke-static {v0, v2}, Lkik/android/scan/c;->b(Lkik/core/datatypes/ac;I)Lorg/json/JSONObject;
+    invoke-static {v0, v2}, Lkik/android/scan/c;->b(Lkik/core/datatypes/ab;I)Lorg/json/JSONObject;
 
     move-result-object v2
 

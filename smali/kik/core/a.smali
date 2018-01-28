@@ -49,13 +49,13 @@
 
 .field protected c:Lkik/core/interfaces/e;
 
-.field protected d:Lkik/core/interfaces/aa;
+.field protected d:Lkik/core/interfaces/z;
 
 .field protected e:Lkik/core/interfaces/k;
 
-.field protected f:Lkik/core/interfaces/ae;
+.field protected f:Lkik/core/interfaces/ad;
 
-.field protected g:Lkik/core/interfaces/ab;
+.field protected g:Lkik/core/interfaces/aa;
 
 .field protected h:Lkik/core/interfaces/ICommunication;
 
@@ -65,7 +65,7 @@
 
 .field protected k:Lkik/core/net/e;
 
-.field protected l:Lkik/core/interfaces/ah;
+.field protected l:Lkik/core/interfaces/ag;
 
 .field protected m:Lkik/core/profile/v;
 
@@ -226,9 +226,9 @@
 
     .prologue
     .line 331
-    iget-object v0, p0, Lkik/core/a;->f:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/core/a;->f:Lkik/core/interfaces/ad;
 
-    invoke-static {v0}, Lkik/core/z;->b(Lkik/core/interfaces/ae;)Lkik/core/z;
+    invoke-static {v0}, Lkik/core/z;->b(Lkik/core/interfaces/ad;)Lkik/core/z;
 
     move-result-object v0
 
@@ -246,178 +246,7 @@
 
 
 # virtual methods
-.method public final A()V
-    .locals 4
-
-    .prologue
-    const/4 v3, 0x0
-
-    .line 259
-    iget-object v0, p0, Lkik/core/a;->l:Lkik/core/interfaces/ah;
-
-    invoke-interface {v0}, Lkik/core/interfaces/ah;->d()Lkik/core/datatypes/ac;
-
-    move-result-object v0
-
-    .line 260
-    iget-object v1, p0, Lkik/core/a;->f:Lkik/core/interfaces/ae;
-
-    .line 1404
-    iget-object v2, p0, Lkik/core/a;->p:Lkik/core/interfaces/IConversation;
-
-    if-eqz v2, :cond_0
-
-    .line 1405
-    iget-object v2, p0, Lkik/core/a;->p:Lkik/core/interfaces/IConversation;
-
-    invoke-interface {v2}, Lkik/core/interfaces/IConversation;->E()V
-
-    .line 1408
-    :cond_0
-    iget-object v2, p0, Lkik/core/a;->n:Lkik/core/interfaces/IAddressBookIntegration;
-
-    if-eqz v2, :cond_1
-
-    .line 1409
-    iget-object v2, p0, Lkik/core/a;->n:Lkik/core/interfaces/IAddressBookIntegration;
-
-    invoke-interface {v2}, Lkik/core/interfaces/IAddressBookIntegration;->a()V
-
-    .line 1412
-    :cond_1
-    iget-object v2, p0, Lkik/core/a;->m:Lkik/core/profile/v;
-
-    if-eqz v2, :cond_2
-
-    .line 1413
-    iget-object v2, p0, Lkik/core/a;->m:Lkik/core/profile/v;
-
-    invoke-virtual {v2}, Lkik/core/profile/v;->r()V
-
-    .line 1416
-    :cond_2
-    iget-object v2, p0, Lkik/core/a;->l:Lkik/core/interfaces/ah;
-
-    if-eqz v2, :cond_3
-
-    .line 1417
-    iget-object v2, p0, Lkik/core/a;->l:Lkik/core/interfaces/ah;
-
-    invoke-interface {v2}, Lkik/core/interfaces/ah;->i()V
-
-    .line 1420
-    :cond_3
-    iget-object v2, p0, Lkik/core/a;->h:Lkik/core/interfaces/ICommunication;
-
-    if-eqz v2, :cond_4
-
-    .line 1421
-    iget-object v2, p0, Lkik/core/a;->h:Lkik/core/interfaces/ICommunication;
-
-    invoke-interface {v2}, Lkik/core/interfaces/ICommunication;->o()V
-
-    .line 1424
-    :cond_4
-    iget-object v2, p0, Lkik/core/a;->f:Lkik/core/interfaces/ae;
-
-    if-eqz v2, :cond_5
-
-    .line 1425
-    iget-object v2, p0, Lkik/core/a;->f:Lkik/core/interfaces/ae;
-
-    invoke-interface {v2}, Lkik/core/interfaces/ae;->o()V
-
-    .line 1427
-    :cond_5
-    iget-object v2, p0, Lkik/core/a;->e:Lkik/core/interfaces/k;
-
-    if-eqz v2, :cond_6
-
-    .line 1428
-    iget-object v2, p0, Lkik/core/a;->e:Lkik/core/interfaces/k;
-
-    invoke-interface {v2}, Lkik/core/interfaces/k;->b()V
-
-    .line 1431
-    :cond_6
-    iget-object v2, p0, Lkik/core/a;->s:Lkik/core/e/t;
-
-    if-eqz v2, :cond_7
-
-    .line 1432
-    iget-object v2, p0, Lkik/core/a;->s:Lkik/core/e/t;
-
-    invoke-virtual {v2}, Lkik/core/e/t;->c()V
-
-    .line 1435
-    :cond_7
-    iget-object v2, p0, Lkik/core/a;->c:Lkik/core/interfaces/e;
-
-    if-eqz v2, :cond_8
-
-    .line 1436
-    iget-object v2, p0, Lkik/core/a;->c:Lkik/core/interfaces/e;
-
-    invoke-interface {v2}, Lkik/core/interfaces/e;->a()V
-
-    .line 1439
-    :cond_8
-    iget-object v2, p0, Lkik/core/a;->i:Lkik/core/interfaces/l;
-
-    if-eqz v2, :cond_9
-
-    .line 1440
-    iget-object v2, p0, Lkik/core/a;->i:Lkik/core/interfaces/l;
-
-    invoke-interface {v2}, Lkik/core/interfaces/l;->g()V
-
-    .line 1443
-    :cond_9
-    iput-object v3, p0, Lkik/core/a;->p:Lkik/core/interfaces/IConversation;
-
-    .line 1444
-    iput-object v3, p0, Lkik/core/a;->m:Lkik/core/profile/v;
-
-    .line 1445
-    iput-object v3, p0, Lkik/core/a;->l:Lkik/core/interfaces/ah;
-
-    .line 1446
-    iput-object v3, p0, Lkik/core/a;->h:Lkik/core/interfaces/ICommunication;
-
-    .line 1447
-    iput-object v3, p0, Lkik/core/a;->f:Lkik/core/interfaces/ae;
-
-    .line 1448
-    iput-object v3, p0, Lkik/core/a;->e:Lkik/core/interfaces/k;
-
-    .line 1449
-    iput-object v3, p0, Lkik/core/a;->k:Lkik/core/net/e;
-
-    .line 1450
-    iput-object v3, p0, Lkik/core/a;->s:Lkik/core/e/t;
-
-    .line 1452
-    iput-object v3, p0, Lkik/core/a;->d:Lkik/core/interfaces/aa;
-
-    .line 1453
-    iput-object v3, p0, Lkik/core/a;->i:Lkik/core/interfaces/l;
-
-    .line 1454
-    iput-object v3, p0, Lkik/core/a;->j:Lkik/core/interfaces/n;
-
-    .line 1455
-    const/4 v2, 0x0
-
-    iput-boolean v2, p0, Lkik/core/a;->b:Z
-
-    .line 262
-    invoke-interface {v1, v0}, Lkik/core/interfaces/ae;->a(Lkik/core/datatypes/ac;)V
-
-    .line 263
-    return-void
-.end method
-
-.method public final B()Lkik/core/interfaces/k;
+.method public final A()Lkik/core/interfaces/k;
     .locals 1
 
     .prologue
@@ -495,16 +324,16 @@
     iput-object v0, p0, Lkik/core/a;->k:Lkik/core/net/e;
 
     .line 301
-    invoke-virtual {p1}, Lkik/core/d;->c()Lkik/core/interfaces/aa;
+    invoke-virtual {p1}, Lkik/core/d;->c()Lkik/core/interfaces/z;
 
     move-result-object v0
 
-    iput-object v0, p0, Lkik/core/a;->d:Lkik/core/interfaces/aa;
+    iput-object v0, p0, Lkik/core/a;->d:Lkik/core/interfaces/z;
 
     .line 302
-    iget-object v0, p0, Lkik/core/a;->d:Lkik/core/interfaces/aa;
+    iget-object v0, p0, Lkik/core/a;->d:Lkik/core/interfaces/z;
 
-    invoke-interface {v0}, Lkik/core/interfaces/aa;->a()V
+    invoke-interface {v0}, Lkik/core/interfaces/z;->a()V
 
     .line 303
     invoke-virtual {p1}, Lkik/core/d;->b()Lkik/core/interfaces/k;
@@ -519,22 +348,22 @@
     invoke-interface {v0, v5, p0}, Lkik/core/interfaces/k;->a(Ljava/util/concurrent/ExecutorService;Lkik/core/a;)V
 
     .line 305
-    iget-object v0, p0, Lkik/core/a;->d:Lkik/core/interfaces/aa;
+    iget-object v0, p0, Lkik/core/a;->d:Lkik/core/interfaces/z;
 
     iget-object v1, p0, Lkik/core/a;->k:Lkik/core/net/e;
 
-    invoke-virtual {p1, v0, v5, v1}, Lkik/core/d;->a(Lkik/core/interfaces/aa;Ljava/util/concurrent/ExecutorService;Lkik/core/net/e;)Lkik/core/interfaces/ae;
+    invoke-virtual {p1, v0, v5, v1}, Lkik/core/d;->a(Lkik/core/interfaces/z;Ljava/util/concurrent/ExecutorService;Lkik/core/net/e;)Lkik/core/interfaces/ad;
 
     move-result-object v0
 
-    iput-object v0, p0, Lkik/core/a;->f:Lkik/core/interfaces/ae;
+    iput-object v0, p0, Lkik/core/a;->f:Lkik/core/interfaces/ad;
 
     .line 308
-    invoke-virtual {p1}, Lkik/core/d;->h()Lkik/core/interfaces/ab;
+    invoke-virtual {p1}, Lkik/core/d;->h()Lkik/core/interfaces/aa;
 
     move-result-object v0
 
-    iput-object v0, p0, Lkik/core/a;->g:Lkik/core/interfaces/ab;
+    iput-object v0, p0, Lkik/core/a;->g:Lkik/core/interfaces/aa;
 
     .line 312
     invoke-virtual {p1}, Lkik/core/d;->a()Lkik/core/interfaces/ICommunication;
@@ -548,50 +377,50 @@
 
     iget-object v1, p0, Lkik/core/a;->k:Lkik/core/net/e;
 
-    iget-object v2, p0, Lkik/core/a;->g:Lkik/core/interfaces/ab;
+    iget-object v2, p0, Lkik/core/a;->g:Lkik/core/interfaces/aa;
 
-    invoke-interface {v0, v5, v1, v2}, Lkik/core/interfaces/ICommunication;->a(Ljava/util/concurrent/ExecutorService;Lkik/core/net/e;Lkik/core/interfaces/ab;)V
+    invoke-interface {v0, v5, v1, v2}, Lkik/core/interfaces/ICommunication;->a(Ljava/util/concurrent/ExecutorService;Lkik/core/net/e;Lkik/core/interfaces/aa;)V
 
     .line 314
-    iget-object v0, p0, Lkik/core/a;->f:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/core/a;->f:Lkik/core/interfaces/ad;
 
     iget-object v1, p0, Lkik/core/a;->h:Lkik/core/interfaces/ICommunication;
 
-    invoke-virtual {p1, v0, v1}, Lkik/core/d;->a(Lkik/core/interfaces/ae;Lkik/core/interfaces/ICommunication;)Lkik/core/interfaces/ah;
+    invoke-virtual {p1, v0, v1}, Lkik/core/d;->a(Lkik/core/interfaces/ad;Lkik/core/interfaces/ICommunication;)Lkik/core/interfaces/ag;
 
     move-result-object v0
 
-    iput-object v0, p0, Lkik/core/a;->l:Lkik/core/interfaces/ah;
+    iput-object v0, p0, Lkik/core/a;->l:Lkik/core/interfaces/ag;
 
     .line 315
-    iget-object v0, p0, Lkik/core/a;->l:Lkik/core/interfaces/ah;
+    iget-object v0, p0, Lkik/core/a;->l:Lkik/core/interfaces/ag;
 
-    invoke-interface {v0, v5}, Lkik/core/interfaces/ah;->a(Ljava/util/concurrent/ExecutorService;)V
+    invoke-interface {v0, v5}, Lkik/core/interfaces/ag;->a(Ljava/util/concurrent/ExecutorService;)V
 
     .line 316
     new-instance v0, Lkik/core/profile/v;
 
-    iget-object v1, p0, Lkik/core/a;->f:Lkik/core/interfaces/ae;
+    iget-object v1, p0, Lkik/core/a;->f:Lkik/core/interfaces/ad;
 
     iget-object v2, p0, Lkik/core/a;->h:Lkik/core/interfaces/ICommunication;
 
     iget-object v3, p0, Lkik/core/a;->e:Lkik/core/interfaces/k;
 
-    invoke-direct {v0, v1, v2, v3, v5}, Lkik/core/profile/v;-><init>(Lkik/core/interfaces/ae;Lkik/core/interfaces/ICommunication;Lkik/core/interfaces/k;Ljava/util/concurrent/ExecutorService;)V
+    invoke-direct {v0, v1, v2, v3, v5}, Lkik/core/profile/v;-><init>(Lkik/core/interfaces/ad;Lkik/core/interfaces/ICommunication;Lkik/core/interfaces/k;Ljava/util/concurrent/ExecutorService;)V
 
     iput-object v0, p0, Lkik/core/a;->m:Lkik/core/profile/v;
 
     .line 317
     iget-object v0, p0, Lkik/core/a;->m:Lkik/core/profile/v;
 
-    invoke-virtual {v0}, Lkik/core/profile/v;->s()V
+    invoke-virtual {v0}, Lkik/core/profile/v;->r()V
 
     .line 318
     new-instance v0, Lkik/core/profile/GroupManager;
 
     iget-object v1, p0, Lkik/core/a;->m:Lkik/core/profile/v;
 
-    invoke-virtual {v1}, Lkik/core/profile/v;->u()Ljava/util/Map;
+    invoke-virtual {v1}, Lkik/core/profile/v;->t()Ljava/util/Map;
 
     move-result-object v1
 
@@ -599,38 +428,38 @@
 
     iget-object v3, p0, Lkik/core/a;->h:Lkik/core/interfaces/ICommunication;
 
-    iget-object v4, p0, Lkik/core/a;->f:Lkik/core/interfaces/ae;
+    iget-object v4, p0, Lkik/core/a;->f:Lkik/core/interfaces/ad;
 
     move-object/from16 v6, p2
 
-    invoke-direct/range {v0 .. v6}, Lkik/core/profile/GroupManager;-><init>(Ljava/util/Map;Lkik/core/interfaces/w;Lkik/core/interfaces/ICommunication;Lkik/core/interfaces/ae;Ljava/util/concurrent/ExecutorService;Lkik/core/util/f;)V
+    invoke-direct/range {v0 .. v6}, Lkik/core/profile/GroupManager;-><init>(Ljava/util/Map;Lkik/core/interfaces/v;Lkik/core/interfaces/ICommunication;Lkik/core/interfaces/ad;Ljava/util/concurrent/ExecutorService;Lkik/core/util/f;)V
 
     iput-object v0, p0, Lkik/core/a;->i:Lkik/core/interfaces/l;
 
     .line 319
     new-instance v0, Lkik/core/content/e;
 
-    iget-object v1, p0, Lkik/core/a;->f:Lkik/core/interfaces/ae;
+    iget-object v1, p0, Lkik/core/a;->f:Lkik/core/interfaces/ad;
 
-    invoke-direct {v0, v1}, Lkik/core/content/e;-><init>(Lkik/core/interfaces/ae;)V
+    invoke-direct {v0, v1}, Lkik/core/content/e;-><init>(Lkik/core/interfaces/ad;)V
 
     iput-object v0, p0, Lkik/core/a;->j:Lkik/core/interfaces/n;
 
     .line 320
-    iget-object v0, p0, Lkik/core/a;->f:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/core/a;->f:Lkik/core/interfaces/ad;
 
     iget-object v1, p0, Lkik/core/a;->h:Lkik/core/interfaces/ICommunication;
 
-    iget-object v2, p0, Lkik/core/a;->l:Lkik/core/interfaces/ah;
+    iget-object v2, p0, Lkik/core/a;->l:Lkik/core/interfaces/ag;
 
-    invoke-virtual {p1, v0, v1, v2}, Lkik/core/d;->a(Lkik/core/interfaces/ae;Lkik/core/interfaces/ICommunication;Lkik/core/interfaces/ah;)Lkik/core/interfaces/IAddressBookIntegration;
+    invoke-virtual {p1, v0, v1, v2}, Lkik/core/d;->a(Lkik/core/interfaces/ad;Lkik/core/interfaces/ICommunication;Lkik/core/interfaces/ag;)Lkik/core/interfaces/IAddressBookIntegration;
 
     move-result-object v0
 
     iput-object v0, p0, Lkik/core/a;->n:Lkik/core/interfaces/IAddressBookIntegration;
 
     .line 321
-    iget-object v0, p0, Lkik/core/a;->f:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/core/a;->f:Lkik/core/interfaces/ad;
 
     iget-object v1, p0, Lkik/core/a;->h:Lkik/core/interfaces/ICommunication;
 
@@ -644,7 +473,7 @@
     move-result-object v3
 
     .line 321
-    invoke-virtual {p1, v0, v1, v2, v3}, Lkik/core/d;->a(Lkik/core/interfaces/ae;Lkik/core/interfaces/ICommunication;Lkik/core/net/e;Lcom/kik/events/c;)Lkik/core/interfaces/f;
+    invoke-virtual {p1, v0, v1, v2, v3}, Lkik/core/d;->a(Lkik/core/interfaces/ad;Lkik/core/interfaces/ICommunication;Lkik/core/net/e;Lcom/kik/events/c;)Lkik/core/interfaces/f;
 
     move-result-object v0
 
@@ -660,22 +489,22 @@
     .line 324
     iget-object v0, p0, Lkik/core/a;->s:Lkik/core/e/t;
 
-    invoke-virtual {p1}, Lkik/core/d;->f()Lkik/core/interfaces/ai;
+    invoke-virtual {p1}, Lkik/core/d;->f()Lkik/core/interfaces/ah;
 
     move-result-object v1
 
     iget-object v2, p0, Lkik/core/a;->h:Lkik/core/interfaces/ICommunication;
 
-    invoke-virtual {v0, v1, v2}, Lkik/core/e/t;->a(Lkik/core/interfaces/ai;Lkik/core/interfaces/ICommunication;)V
+    invoke-virtual {v0, v1, v2}, Lkik/core/e/t;->a(Lkik/core/interfaces/ah;Lkik/core/interfaces/ICommunication;)V
 
     .line 326
     iget-object v7, p0, Lkik/core/a;->h:Lkik/core/interfaces/ICommunication;
 
     iget-object v8, p0, Lkik/core/a;->m:Lkik/core/profile/v;
 
-    iget-object v9, p0, Lkik/core/a;->f:Lkik/core/interfaces/ae;
+    iget-object v9, p0, Lkik/core/a;->f:Lkik/core/interfaces/ad;
 
-    iget-object v10, p0, Lkik/core/a;->l:Lkik/core/interfaces/ah;
+    iget-object v10, p0, Lkik/core/a;->l:Lkik/core/interfaces/ag;
 
     iget-object v11, p0, Lkik/core/a;->i:Lkik/core/interfaces/l;
 
@@ -685,7 +514,7 @@
 
     move-object v12, v5
 
-    invoke-virtual/range {v6 .. v13}, Lkik/core/d;->a(Lkik/core/interfaces/ICommunication;Lkik/core/interfaces/w;Lkik/core/interfaces/ae;Lkik/core/interfaces/ah;Lkik/core/interfaces/l;Ljava/util/concurrent/ExecutorService;Lkik/core/e/y;)Lkik/core/interfaces/IConversation;
+    invoke-virtual/range {v6 .. v13}, Lkik/core/d;->a(Lkik/core/interfaces/ICommunication;Lkik/core/interfaces/v;Lkik/core/interfaces/ad;Lkik/core/interfaces/ag;Lkik/core/interfaces/l;Ljava/util/concurrent/ExecutorService;Lkik/core/e/y;)Lkik/core/interfaces/IConversation;
 
     move-result-object v0
 
@@ -712,9 +541,9 @@
     .line 330
     iget-object v0, p0, Lkik/core/a;->t:Lcom/kik/events/d;
 
-    iget-object v1, p0, Lkik/core/a;->l:Lkik/core/interfaces/ah;
+    iget-object v1, p0, Lkik/core/a;->l:Lkik/core/interfaces/ag;
 
-    invoke-interface {v1}, Lkik/core/interfaces/ah;->c()Lcom/kik/events/c;
+    invoke-interface {v1}, Lkik/core/interfaces/ag;->c()Lcom/kik/events/c;
 
     move-result-object v1
 
@@ -742,13 +571,13 @@
     .line 337
     iget-object v0, p0, Lkik/core/a;->h:Lkik/core/interfaces/ICommunication;
 
-    iget-object v1, p0, Lkik/core/a;->f:Lkik/core/interfaces/ae;
+    iget-object v1, p0, Lkik/core/a;->f:Lkik/core/interfaces/ad;
 
-    iget-object v2, p0, Lkik/core/a;->d:Lkik/core/interfaces/aa;
+    iget-object v2, p0, Lkik/core/a;->d:Lkik/core/interfaces/z;
 
-    iget-object v3, p0, Lkik/core/a;->l:Lkik/core/interfaces/ah;
+    iget-object v3, p0, Lkik/core/a;->l:Lkik/core/interfaces/ag;
 
-    invoke-virtual {p1, v0, v1, v2, v3}, Lkik/core/d;->a(Lkik/core/interfaces/ICommunication;Lkik/core/interfaces/ae;Lkik/core/interfaces/aa;Lkik/core/interfaces/ah;)Lkik/core/interfaces/e;
+    invoke-virtual {p1, v0, v1, v2, v3}, Lkik/core/d;->a(Lkik/core/interfaces/ICommunication;Lkik/core/interfaces/ad;Lkik/core/interfaces/z;Lkik/core/interfaces/ag;)Lkik/core/interfaces/e;
 
     move-result-object v0
 
@@ -773,9 +602,9 @@
     .line 341
     new-instance v0, Lkik/core/content/d;
 
-    iget-object v1, p0, Lkik/core/a;->f:Lkik/core/interfaces/ae;
+    iget-object v1, p0, Lkik/core/a;->f:Lkik/core/interfaces/ad;
 
-    invoke-direct {v0, v1}, Lkik/core/content/d;-><init>(Lkik/core/interfaces/ae;)V
+    invoke-direct {v0, v1}, Lkik/core/content/d;-><init>(Lkik/core/interfaces/ad;)V
 
     iput-object v0, p0, Lkik/core/a;->r:Lkik/core/interfaces/m;
 
@@ -784,19 +613,19 @@
 
     iget-object v1, p0, Lkik/core/a;->s:Lkik/core/e/t;
 
-    iget-object v2, p0, Lkik/core/a;->f:Lkik/core/interfaces/ae;
+    iget-object v2, p0, Lkik/core/a;->f:Lkik/core/interfaces/ad;
 
     .line 2087
     iget-object v3, p0, Lkik/core/a;->B:Lcom/kik/events/Promise;
 
     .line 343
-    iget-object v4, p0, Lkik/core/a;->l:Lkik/core/interfaces/ah;
+    iget-object v4, p0, Lkik/core/a;->l:Lkik/core/interfaces/ag;
 
-    invoke-interface {v4}, Lkik/core/interfaces/ah;->h()Lcom/kik/events/Promise;
+    invoke-interface {v4}, Lkik/core/interfaces/ag;->h()Lcom/kik/events/Promise;
 
     move-result-object v4
 
-    invoke-interface {v0, v1, v2, v3, v4}, Lkik/core/interfaces/d;->a(Lkik/core/e/f;Lkik/core/interfaces/ae;Lcom/kik/events/Promise;Lcom/kik/events/Promise;)V
+    invoke-interface {v0, v1, v2, v3, v4}, Lkik/core/interfaces/d;->a(Lkik/core/e/f;Lkik/core/interfaces/ad;Lcom/kik/events/Promise;Lcom/kik/events/Promise;)V
 
     .line 344
     iget-object v0, p0, Lkik/core/a;->n:Lkik/core/interfaces/IAddressBookIntegration;
@@ -818,14 +647,14 @@
     iput-boolean v0, p0, Lkik/core/a;->b:Z
 
     .line 348
-    iget-object v0, p0, Lkik/core/a;->f:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/core/a;->f:Lkik/core/interfaces/ad;
 
-    invoke-interface {v0}, Lkik/core/interfaces/ae;->g()V
+    invoke-interface {v0}, Lkik/core/interfaces/ad;->g()V
 
     .line 351
-    iget-object v0, p0, Lkik/core/a;->f:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/core/a;->f:Lkik/core/interfaces/ad;
 
-    invoke-static {v0}, Lkik/core/z;->b(Lkik/core/interfaces/ae;)Lkik/core/z;
+    invoke-static {v0}, Lkik/core/z;->b(Lkik/core/interfaces/ad;)Lkik/core/z;
 
     move-result-object v0
 
@@ -848,7 +677,7 @@
     :cond_0
     iget-object v0, p0, Lkik/core/a;->p:Lkik/core/interfaces/IConversation;
 
-    invoke-interface {v0}, Lkik/core/interfaces/IConversation;->A()V
+    invoke-interface {v0}, Lkik/core/interfaces/IConversation;->z()V
 
     .line 360
     return-void
@@ -897,16 +726,16 @@
     const/4 v1, 0x0
 
     .line 371
-    iget-object v0, p0, Lkik/core/a;->l:Lkik/core/interfaces/ah;
+    iget-object v0, p0, Lkik/core/a;->l:Lkik/core/interfaces/ag;
 
-    invoke-interface {v0}, Lkik/core/interfaces/ah;->d()Lkik/core/datatypes/ac;
+    invoke-interface {v0}, Lkik/core/interfaces/ag;->d()Lkik/core/datatypes/ab;
 
     move-result-object v4
 
     .line 373
-    iget-object v0, p0, Lkik/core/a;->f:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/core/a;->f:Lkik/core/interfaces/ad;
 
-    invoke-static {v0}, Lkik/core/z;->b(Lkik/core/interfaces/ae;)Lkik/core/z;
+    invoke-static {v0}, Lkik/core/z;->b(Lkik/core/interfaces/ad;)Lkik/core/z;
 
     move-result-object v0
 
@@ -959,11 +788,11 @@
 
     .line 380
     :cond_3
-    iget-object v0, v4, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
+    iget-object v0, v4, Lkik/core/datatypes/ab;->c:Ljava/lang/String;
 
-    iget-object v1, v4, Lkik/core/datatypes/ac;->a:Ljava/lang/String;
+    iget-object v1, v4, Lkik/core/datatypes/ab;->a:Ljava/lang/String;
 
-    iget-object v2, p0, Lkik/core/a;->f:Lkik/core/interfaces/ae;
+    iget-object v2, p0, Lkik/core/a;->f:Lkik/core/interfaces/ad;
 
     .line 3079
     const-string v3, "niCRwL7isZHny24qgLvy"
@@ -986,12 +815,12 @@
 
     move-result-object v5
 
-    invoke-interface {v2, v3, v5}, Lkik/core/interfaces/ae;->c(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-interface {v2, v3, v5}, Lkik/core/interfaces/ad;->c(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 3083
     const-string v3, "CredentialData.password"
 
-    invoke-interface {v2, v3, p2}, Lkik/core/interfaces/ae;->c(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-interface {v2, v3, p2}, Lkik/core/interfaces/ad;->c(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 3085
     const-string v3, "CredentialData.username_passkey"
@@ -1000,7 +829,7 @@
 
     move-result-object v0
 
-    invoke-interface {v2, v3, v0}, Lkik/core/interfaces/ae;->c(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-interface {v2, v3, v0}, Lkik/core/interfaces/ad;->c(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 3086
     const-string v0, "CredentialData.email_passkey"
@@ -1009,12 +838,12 @@
 
     move-result-object v1
 
-    invoke-interface {v2, v0, v1}, Lkik/core/interfaces/ae;->c(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-interface {v2, v0, v1}, Lkik/core/interfaces/ad;->c(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 383
-    iget-object v0, p0, Lkik/core/a;->f:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/core/a;->f:Lkik/core/interfaces/ad;
 
-    invoke-static {v0}, Lkik/core/z;->b(Lkik/core/interfaces/ae;)Lkik/core/z;
+    invoke-static {v0}, Lkik/core/z;->b(Lkik/core/interfaces/ad;)Lkik/core/z;
 
     move-result-object v0
 
@@ -1043,7 +872,7 @@
     .line 391
     iget-object v1, p0, Lkik/core/a;->s:Lkik/core/e/t;
 
-    iget-object v2, v4, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
+    iget-object v2, v4, Lkik/core/datatypes/ab;->c:Ljava/lang/String;
 
     invoke-virtual {v1, v0, v2}, Lkik/core/e/t;->a(Lkik/core/z;Ljava/lang/String;)V
 
@@ -1133,26 +962,7 @@
     return-object v0
 .end method
 
-.method public final f()Lcom/kik/events/Promise;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lcom/kik/events/Promise",
-            "<",
-            "Lkik/core/z;",
-            ">;"
-        }
-    .end annotation
-
-    .prologue
-    .line 93
-    iget-object v0, p0, Lkik/core/a;->A:Lcom/kik/events/Promise;
-
-    return-object v0
-.end method
-
-.method public final g()V
+.method public final f()V
     .locals 2
 
     .prologue
@@ -1167,7 +977,7 @@
     return-void
 .end method
 
-.method public final h()V
+.method public final g()V
     .locals 2
 
     .prologue
@@ -1182,7 +992,7 @@
     return-void
 .end method
 
-.method public final i()V
+.method public final h()V
     .locals 2
 
     .prologue
@@ -1197,7 +1007,7 @@
     return-void
 .end method
 
-.method public final j()Z
+.method public final i()Z
     .locals 1
 
     .prologue
@@ -1207,17 +1017,17 @@
     return v0
 .end method
 
-.method public final k()Lkik/core/interfaces/ab;
+.method public final j()Lkik/core/interfaces/aa;
     .locals 1
 
     .prologue
     .line 174
-    iget-object v0, p0, Lkik/core/a;->g:Lkik/core/interfaces/ab;
+    iget-object v0, p0, Lkik/core/a;->g:Lkik/core/interfaces/aa;
 
     return-object v0
 .end method
 
-.method public final l()Lkik/core/interfaces/ICommunication;
+.method public final k()Lkik/core/interfaces/ICommunication;
     .locals 1
 
     .prologue
@@ -1227,17 +1037,17 @@
     return-object v0
 .end method
 
-.method public final m()Lkik/core/interfaces/aa;
+.method public final l()Lkik/core/interfaces/z;
     .locals 1
 
     .prologue
     .line 184
-    iget-object v0, p0, Lkik/core/a;->d:Lkik/core/interfaces/aa;
+    iget-object v0, p0, Lkik/core/a;->d:Lkik/core/interfaces/z;
 
     return-object v0
 .end method
 
-.method public final n()Lkik/core/net/e;
+.method public final m()Lkik/core/net/e;
     .locals 1
 
     .prologue
@@ -1247,27 +1057,27 @@
     return-object v0
 .end method
 
-.method public final o()Lkik/core/interfaces/ae;
+.method public final n()Lkik/core/interfaces/ad;
     .locals 1
 
     .prologue
     .line 194
-    iget-object v0, p0, Lkik/core/a;->f:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/core/a;->f:Lkik/core/interfaces/ad;
 
     return-object v0
 .end method
 
-.method public final p()Lkik/core/interfaces/ah;
+.method public final o()Lkik/core/interfaces/ag;
     .locals 1
 
     .prologue
     .line 199
-    iget-object v0, p0, Lkik/core/a;->l:Lkik/core/interfaces/ah;
+    iget-object v0, p0, Lkik/core/a;->l:Lkik/core/interfaces/ag;
 
     return-object v0
 .end method
 
-.method public final q()Lkik/core/interfaces/IAddressBookIntegration;
+.method public final p()Lkik/core/interfaces/IAddressBookIntegration;
     .locals 1
 
     .prologue
@@ -1277,7 +1087,7 @@
     return-object v0
 .end method
 
-.method public final r()Lkik/core/interfaces/f;
+.method public final q()Lkik/core/interfaces/f;
     .locals 1
 
     .prologue
@@ -1287,7 +1097,7 @@
     return-object v0
 .end method
 
-.method public final s()Lkik/core/interfaces/IConversation;
+.method public final r()Lkik/core/interfaces/IConversation;
     .locals 1
 
     .prologue
@@ -1297,7 +1107,7 @@
     return-object v0
 .end method
 
-.method public final t()Lkik/core/interfaces/e;
+.method public final s()Lkik/core/interfaces/e;
     .locals 1
 
     .prologue
@@ -1307,7 +1117,7 @@
     return-object v0
 .end method
 
-.method public final u()Lkik/core/interfaces/w;
+.method public final t()Lkik/core/interfaces/v;
     .locals 1
 
     .prologue
@@ -1317,7 +1127,7 @@
     return-object v0
 .end method
 
-.method public final v()Lkik/core/interfaces/l;
+.method public final u()Lkik/core/interfaces/l;
     .locals 1
 
     .prologue
@@ -1327,7 +1137,7 @@
     return-object v0
 .end method
 
-.method public final w()Lkik/core/interfaces/n;
+.method public final v()Lkik/core/interfaces/n;
     .locals 1
 
     .prologue
@@ -1337,7 +1147,7 @@
     return-object v0
 .end method
 
-.method public final x()Lkik/core/d/b;
+.method public final w()Lkik/core/d/b;
     .locals 1
 
     .prologue
@@ -1347,7 +1157,7 @@
     return-object v0
 .end method
 
-.method public final y()Lkik/core/interfaces/m;
+.method public final x()Lkik/core/interfaces/m;
     .locals 1
 
     .prologue
@@ -1357,7 +1167,7 @@
     return-object v0
 .end method
 
-.method public final z()Lkik/core/e/d;
+.method public final y()Lkik/core/e/d;
     .locals 1
 
     .prologue
@@ -1365,4 +1175,175 @@
     iget-object v0, p0, Lkik/core/a;->s:Lkik/core/e/t;
 
     return-object v0
+.end method
+
+.method public final z()V
+    .locals 4
+
+    .prologue
+    const/4 v3, 0x0
+
+    .line 259
+    iget-object v0, p0, Lkik/core/a;->l:Lkik/core/interfaces/ag;
+
+    invoke-interface {v0}, Lkik/core/interfaces/ag;->d()Lkik/core/datatypes/ab;
+
+    move-result-object v0
+
+    .line 260
+    iget-object v1, p0, Lkik/core/a;->f:Lkik/core/interfaces/ad;
+
+    .line 1404
+    iget-object v2, p0, Lkik/core/a;->p:Lkik/core/interfaces/IConversation;
+
+    if-eqz v2, :cond_0
+
+    .line 1405
+    iget-object v2, p0, Lkik/core/a;->p:Lkik/core/interfaces/IConversation;
+
+    invoke-interface {v2}, Lkik/core/interfaces/IConversation;->D()V
+
+    .line 1408
+    :cond_0
+    iget-object v2, p0, Lkik/core/a;->n:Lkik/core/interfaces/IAddressBookIntegration;
+
+    if-eqz v2, :cond_1
+
+    .line 1409
+    iget-object v2, p0, Lkik/core/a;->n:Lkik/core/interfaces/IAddressBookIntegration;
+
+    invoke-interface {v2}, Lkik/core/interfaces/IAddressBookIntegration;->a()V
+
+    .line 1412
+    :cond_1
+    iget-object v2, p0, Lkik/core/a;->m:Lkik/core/profile/v;
+
+    if-eqz v2, :cond_2
+
+    .line 1413
+    iget-object v2, p0, Lkik/core/a;->m:Lkik/core/profile/v;
+
+    invoke-virtual {v2}, Lkik/core/profile/v;->q()V
+
+    .line 1416
+    :cond_2
+    iget-object v2, p0, Lkik/core/a;->l:Lkik/core/interfaces/ag;
+
+    if-eqz v2, :cond_3
+
+    .line 1417
+    iget-object v2, p0, Lkik/core/a;->l:Lkik/core/interfaces/ag;
+
+    invoke-interface {v2}, Lkik/core/interfaces/ag;->i()V
+
+    .line 1420
+    :cond_3
+    iget-object v2, p0, Lkik/core/a;->h:Lkik/core/interfaces/ICommunication;
+
+    if-eqz v2, :cond_4
+
+    .line 1421
+    iget-object v2, p0, Lkik/core/a;->h:Lkik/core/interfaces/ICommunication;
+
+    invoke-interface {v2}, Lkik/core/interfaces/ICommunication;->o()V
+
+    .line 1424
+    :cond_4
+    iget-object v2, p0, Lkik/core/a;->f:Lkik/core/interfaces/ad;
+
+    if-eqz v2, :cond_5
+
+    .line 1425
+    iget-object v2, p0, Lkik/core/a;->f:Lkik/core/interfaces/ad;
+
+    invoke-interface {v2}, Lkik/core/interfaces/ad;->o()V
+
+    .line 1427
+    :cond_5
+    iget-object v2, p0, Lkik/core/a;->e:Lkik/core/interfaces/k;
+
+    if-eqz v2, :cond_6
+
+    .line 1428
+    iget-object v2, p0, Lkik/core/a;->e:Lkik/core/interfaces/k;
+
+    invoke-interface {v2}, Lkik/core/interfaces/k;->b()V
+
+    .line 1431
+    :cond_6
+    iget-object v2, p0, Lkik/core/a;->s:Lkik/core/e/t;
+
+    if-eqz v2, :cond_7
+
+    .line 1432
+    iget-object v2, p0, Lkik/core/a;->s:Lkik/core/e/t;
+
+    invoke-virtual {v2}, Lkik/core/e/t;->c()V
+
+    .line 1435
+    :cond_7
+    iget-object v2, p0, Lkik/core/a;->c:Lkik/core/interfaces/e;
+
+    if-eqz v2, :cond_8
+
+    .line 1436
+    iget-object v2, p0, Lkik/core/a;->c:Lkik/core/interfaces/e;
+
+    invoke-interface {v2}, Lkik/core/interfaces/e;->a()V
+
+    .line 1439
+    :cond_8
+    iget-object v2, p0, Lkik/core/a;->i:Lkik/core/interfaces/l;
+
+    if-eqz v2, :cond_9
+
+    .line 1440
+    iget-object v2, p0, Lkik/core/a;->i:Lkik/core/interfaces/l;
+
+    invoke-interface {v2}, Lkik/core/interfaces/l;->h()V
+
+    .line 1443
+    :cond_9
+    iput-object v3, p0, Lkik/core/a;->p:Lkik/core/interfaces/IConversation;
+
+    .line 1444
+    iput-object v3, p0, Lkik/core/a;->m:Lkik/core/profile/v;
+
+    .line 1445
+    iput-object v3, p0, Lkik/core/a;->l:Lkik/core/interfaces/ag;
+
+    .line 1446
+    iput-object v3, p0, Lkik/core/a;->h:Lkik/core/interfaces/ICommunication;
+
+    .line 1447
+    iput-object v3, p0, Lkik/core/a;->f:Lkik/core/interfaces/ad;
+
+    .line 1448
+    iput-object v3, p0, Lkik/core/a;->e:Lkik/core/interfaces/k;
+
+    .line 1449
+    iput-object v3, p0, Lkik/core/a;->k:Lkik/core/net/e;
+
+    .line 1450
+    iput-object v3, p0, Lkik/core/a;->s:Lkik/core/e/t;
+
+    .line 1452
+    iput-object v3, p0, Lkik/core/a;->d:Lkik/core/interfaces/z;
+
+    .line 1453
+    iput-object v3, p0, Lkik/core/a;->i:Lkik/core/interfaces/l;
+
+    .line 1454
+    iput-object v3, p0, Lkik/core/a;->j:Lkik/core/interfaces/n;
+
+    .line 1455
+    const/4 v2, 0x0
+
+    iput-boolean v2, p0, Lkik/core/a;->b:Z
+
+    .line 262
+    invoke-interface {v1, v0}, Lkik/core/interfaces/ad;->a(Lkik/core/datatypes/ab;)V
+
+    .line 263
+    return-void
 .end method

@@ -77,7 +77,7 @@
 
     aput-object v1, v0, v5
 
-    const-string v1, "d\"\u0080\u0001\n\u000fXiClientVersion\u0012\u001c\n\u0005major\u0018\u0001 \u0001(\rB\r\u00ca\u009d%\t9\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0012\r\n\u0005minor\u0018\u0002 \u0001(\r\u0012\u000e\n\u0006bugfix\u0018\u0003 \u0001(\r\u0012\u0015\n\u0005build\u0018\u0004 \u0001(\tB\u0006\u00ca\u009d%\u00020\n\u0012\u0019\n\tdev_build\u0018\u0005 \u0001(\tB\u0006\u00ca\u009d%\u00020\n\"K\n\u0008XiLocale\u0012?\n\u0006locale\u0018\u0001 \u0001(\tB/\u00ca\u009d%+\u0012)^(?i)[a-z]{2,8}(?:_([a-z]{2}|[0-9]{3}))?$Br\n\u000fcom.kik.ximodelB\u0010CommonModelProtoP\u0001ZBgithub.com/kikinteractive/xiphias-model-common/generated/go;common\u00a0\u0001\u0001\u00aa\u00a3*\u0002\u0010\u0001b\u0006proto3"
+    const-string v1, "d\"\u0080\u0001\n\u000fXiClientVersion\u0012\u001c\n\u0005major\u0018\u0001 \u0001(\rB\r\u00ca\u009d%\t9\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0012\r\n\u0005minor\u0018\u0002 \u0001(\r\u0012\u000e\n\u0006bugfix\u0018\u0003 \u0001(\r\u0012\u0015\n\u0005build\u0018\u0004 \u0001(\tB\u0006\u00ca\u009d%\u00020\n\u0012\u0019\n\tdev_build\u0018\u0005 \u0001(\tB\u0006\u00ca\u009d%\u00020\n\"M\n\u0008XiLocale\u0012A\n\u0006locale\u0018\u0001 \u0001(\tB1\u00ca\u009d%-\u0012+^(?i)[a-z]{2,8}(?:_([a-z]{2}|[0-9]{2,3}))?$Br\n\u000fcom.kik.ximodelB\u0010CommonModelProtoP\u0001ZBgithub.com/kikinteractive/xiphias-model-common/generated/go;common\u00a0\u0001\u0001\u00aa\u00a3*\u0002\u0010\u0001b\u0006proto3"
 
     aput-object v1, v0, v6
 

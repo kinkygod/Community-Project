@@ -38,7 +38,7 @@
     .locals 0
 
     .prologue
-    .line 456
+    .line 458
     iput-object p1, p0, Lkik/android/chat/fragment/KikChatFragment$8;->a:Lkik/android/chat/fragment/KikChatFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -52,15 +52,15 @@
     .locals 2
 
     .prologue
-    .line 456
-    .line 1460
+    .line 458
+    .line 1462
     iget-object v0, p0, Lkik/android/chat/fragment/KikChatFragment$8;->a:Lkik/android/chat/fragment/KikChatFragment;
 
     iget-object v0, v0, Lkik/android/chat/fragment/KikChatFragment;->_bugmeBar:Lkik/android/widget/BugmeBarView;
 
     if-eqz v0, :cond_0
 
-    .line 1461
+    .line 1463
     iget-object v0, p0, Lkik/android/chat/fragment/KikChatFragment$8;->a:Lkik/android/chat/fragment/KikChatFragment;
 
     invoke-static {v0}, Lkik/android/chat/fragment/KikChatFragment;->m(Lkik/android/chat/fragment/KikChatFragment;)Landroid/os/Handler;
@@ -71,7 +71,7 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
-    .line 456
+    .line 458
     :cond_0
     return-void
 .end method

@@ -1,84 +1,94 @@
-.class final synthetic Lkik/android/chat/vm/widget/ak;
-.super Ljava/lang/Object;
+.class public final Lkik/android/chat/vm/widget/ak;
+.super Lkik/android/chat/vm/widget/SmileyItemViewModel;
+.source "SourceFile"
 
 # interfaces
-.implements Lrx/functions/h;
-
-
-# static fields
-.field private static final a:Lkik/android/chat/vm/widget/ak;
+.implements Lkik/android/chat/vm/widget/ISmileyPopupItemViewModel;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public constructor <init>(Lcom/kik/android/b/g$b;Lkik/android/chat/presentation/MediaTrayPresenterImpl$b;)V
     .locals 1
 
-    new-instance v0, Lkik/android/chat/vm/widget/ak;
+    .prologue
+    .line 25
+    const/4 v0, 0x0
 
-    invoke-direct {v0}, Lkik/android/chat/vm/widget/ak;-><init>()V
+    invoke-direct {p0, p1, p2, v0}, Lkik/android/chat/vm/widget/SmileyItemViewModel;-><init>(Lcom/kik/android/b/g$b;Lkik/android/chat/presentation/MediaTrayPresenterImpl$b;Lrx/subjects/PublishSubject;)V
 
-    sput-object v0, Lkik/android/chat/vm/widget/ak;->a:Lkik/android/chat/vm/widget/ak;
-
+    .line 26
     return-void
-.end method
-
-.method private constructor <init>()V
-    .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-.method public static a()Lrx/functions/h;
-    .locals 1
-
-    sget-object v0, Lkik/android/chat/vm/widget/ak;->a:Lkik/android/chat/vm/widget/ak;
-
-    return-object v0
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
+    .locals 0
 
     .prologue
-    .line 0
-    check-cast p1, Ljava/lang/Boolean;
+    .line 19
+    invoke-interface {p1, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/chat/vm/widget/SmileyItemViewModel;)V
 
-    check-cast p2, Ljava/lang/Boolean;
+    .line 20
+    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/widget/SmileyItemViewModel;->b(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
-    .line 1089
-    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
+    .line 21
+    return-void
+.end method
 
-    move-result v0
+.method public final ag_()J
+    .locals 2
 
-    if-eqz v0, :cond_0
+    .prologue
+    .line 31
+    sget-object v0, Lkik/android/chat/vm/widget/ISmileyPopupItemViewModel$PopupItemID;->SMILEY:Lkik/android/chat/vm/widget/ISmileyPopupItemViewModel$PopupItemID;
 
-    .line 1090
-    sget-object v0, Lkik/android/chat/vm/widget/SmileyItemViewModel$IndicatorBackgroundEnum;->UNSEEN:Lkik/android/chat/vm/widget/SmileyItemViewModel$IndicatorBackgroundEnum;
+    invoke-virtual {v0}, Lkik/android/chat/vm/widget/ISmileyPopupItemViewModel$PopupItemID;->getId()J
 
-    .line 1093
-    :goto_0
+    move-result-wide v0
+
+    return-wide v0
+.end method
+
+.method public final b()V
+    .locals 0
+
+    .prologue
+    .line 50
+    return-void
+.end method
+
+.method public final d()Lrx/d;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<",
+            "Ljava/lang/Integer;",
+            ">;"
+        }
+    .end annotation
+
+    .prologue
+    .line 43
+    const/4 v0, 0x0
+
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lrx/d;->b(Ljava/lang/Object;)Lrx/d;
+
+    move-result-object v0
+
     return-object v0
+.end method
 
-    .line 1092
-    :cond_0
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+.method public final g()V
+    .locals 0
 
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    .line 1093
-    sget-object v0, Lkik/android/chat/vm/widget/SmileyItemViewModel$IndicatorBackgroundEnum;->UNUSED:Lkik/android/chat/vm/widget/SmileyItemViewModel$IndicatorBackgroundEnum;
-
-    goto :goto_0
-
-    .line 1096
-    :cond_1
-    sget-object v0, Lkik/android/chat/vm/widget/SmileyItemViewModel$IndicatorBackgroundEnum;->NULL:Lkik/android/chat/vm/widget/SmileyItemViewModel$IndicatorBackgroundEnum;
-
-    goto :goto_0
+    .prologue
+    .line 38
+    return-void
 .end method

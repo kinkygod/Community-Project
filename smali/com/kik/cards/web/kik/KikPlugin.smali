@@ -24,7 +24,7 @@
 
 .field private _pickerPlugin:Lcom/kik/cards/web/picker/PickerPlugin;
 
-.field private final _profile:Lkik/core/interfaces/w;
+.field private final _profile:Lkik/core/interfaces/v;
 
 .field private volatile _sendInProgress:Z
 
@@ -48,7 +48,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Lcom/kik/cards/web/h;Lcom/kik/cards/web/kik/a;Lcom/kik/cards/web/browser/BrowserPlugin$a;Lcom/kik/cards/web/picker/PickerPlugin;Lcom/kik/android/b/g;Ljava/lang/String;Lkik/core/interfaces/w;)V
+.method public constructor <init>(Lcom/kik/cards/web/h;Lcom/kik/cards/web/kik/a;Lcom/kik/cards/web/browser/BrowserPlugin$a;Lcom/kik/cards/web/picker/PickerPlugin;Lcom/kik/android/b/g;Ljava/lang/String;Lkik/core/interfaces/v;)V
     .locals 2
 
     .prologue
@@ -70,7 +70,7 @@
     iput-boolean v0, p0, Lcom/kik/cards/web/kik/KikPlugin;->_sendInProgress:Z
 
     .line 62
-    invoke-interface {p2, p7}, Lcom/kik/cards/web/kik/a;->a(Lkik/core/interfaces/w;)Lcom/kik/cards/web/kik/b;
+    invoke-interface {p2, p7}, Lcom/kik/cards/web/kik/a;->a(Lkik/core/interfaces/v;)Lcom/kik/cards/web/kik/b;
 
     move-result-object v0
 
@@ -99,7 +99,7 @@
     iput-object p1, p0, Lcom/kik/cards/web/kik/KikPlugin;->_browserMetadata:Lcom/kik/cards/web/h;
 
     .line 69
-    iput-object p7, p0, Lcom/kik/cards/web/kik/KikPlugin;->_profile:Lkik/core/interfaces/w;
+    iput-object p7, p0, Lcom/kik/cards/web/kik/KikPlugin;->_profile:Lkik/core/interfaces/v;
 
     .line 70
     return-void
@@ -1260,9 +1260,9 @@
     move-result v2
 
     .line 115
-    iget-object v3, p0, Lcom/kik/cards/web/kik/KikPlugin;->_profile:Lkik/core/interfaces/w;
+    iget-object v3, p0, Lcom/kik/cards/web/kik/KikPlugin;->_profile:Lkik/core/interfaces/v;
 
-    invoke-interface {v3, v0}, Lkik/core/interfaces/w;->a(Ljava/lang/String;)Lkik/core/datatypes/l;
+    invoke-interface {v3, v0}, Lkik/core/interfaces/v;->a(Ljava/lang/String;)Lkik/core/datatypes/l;
 
     move-result-object v3
 
@@ -1300,9 +1300,9 @@
 
     .line 120
     :cond_1
-    iget-object v3, p0, Lcom/kik/cards/web/kik/KikPlugin;->_profile:Lkik/core/interfaces/w;
+    iget-object v3, p0, Lcom/kik/cards/web/kik/KikPlugin;->_profile:Lkik/core/interfaces/v;
 
-    invoke-interface {v3, v0}, Lkik/core/interfaces/w;->e(Ljava/lang/String;)Lcom/kik/events/Promise;
+    invoke-interface {v3, v0}, Lkik/core/interfaces/v;->e(Ljava/lang/String;)Lcom/kik/events/Promise;
 
     move-result-object v0
 

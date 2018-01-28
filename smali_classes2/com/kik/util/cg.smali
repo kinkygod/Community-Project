@@ -2,50 +2,44 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lrx/functions/b;
+.implements Lrx/functions/g;
 
 
 # instance fields
-.field private final a:Lrx/functions/b;
-
-.field private final b:I
-
-.field private final c:Ljava/lang/String;
+.field private final a:[Ljava/lang/Object;
 
 
 # direct methods
-.method private constructor <init>(Lrx/functions/b;ILjava/lang/String;)V
+.method private constructor <init>([Ljava/lang/Object;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/kik/util/cg;->a:Lrx/functions/b;
-
-    iput p2, p0, Lcom/kik/util/cg;->b:I
-
-    iput-object p3, p0, Lcom/kik/util/cg;->c:Ljava/lang/String;
+    iput-object p1, p0, Lcom/kik/util/cg;->a:[Ljava/lang/Object;
 
     return-void
 .end method
 
-.method public static a(Lrx/functions/b;ILjava/lang/String;)Lrx/functions/b;
+.method public static a([Ljava/lang/Object;)Lrx/functions/g;
     .locals 1
 
     new-instance v0, Lcom/kik/util/cg;
 
-    invoke-direct {v0, p0, p1, p2}, Lcom/kik/util/cg;-><init>(Lrx/functions/b;ILjava/lang/String;)V
+    invoke-direct {v0, p0}, Lcom/kik/util/cg;-><init>([Ljava/lang/Object;)V
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public final call(Ljava/lang/Object;)V
+.method public final call(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    iget-object v0, p0, Lcom/kik/util/cg;->a:Lrx/functions/b;
+    iget-object v0, p0, Lcom/kik/util/cg;->a:[Ljava/lang/Object;
 
-    invoke-static {v0, p1}, Lcom/kik/util/bq$1;->a(Lrx/functions/b;Ljava/lang/Object;)V
+    invoke-static {v0, p1}, Lcom/kik/util/bt;->b([Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Boolean;
 
-    return-void
+    move-result-object v0
+
+    return-object v0
 .end method

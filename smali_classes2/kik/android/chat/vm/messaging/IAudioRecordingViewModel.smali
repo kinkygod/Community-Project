@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/vm/bn;
+.implements Lkik/android/chat/vm/bo;
 
 
 # annotations
@@ -139,5 +139,5 @@
     .end annotation
 .end method
 
-.method public abstract v()Lkik/android/chat/vm/messaging/em;
+.method public abstract v()Lkik/android/chat/vm/messaging/ei;
 .end method

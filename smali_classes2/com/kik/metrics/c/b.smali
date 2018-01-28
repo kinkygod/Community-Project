@@ -4,5 +4,5 @@
 
 
 # virtual methods
-.method public abstract a(Lcom/kik/metrics/b/s;Lcom/kik/metrics/a/d;)V
+.method public abstract a(Lcom/kik/metrics/b/t;Lcom/kik/metrics/a/d;)V
 .end method

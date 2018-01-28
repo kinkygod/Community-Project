@@ -2,7 +2,7 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lrx/functions/a;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
@@ -20,7 +20,7 @@
     return-void
 .end method
 
-.method public static a(Lkik/android/chat/vm/profile/profileactionvm/k;)Lrx/functions/a;
+.method public static a(Lkik/android/chat/vm/profile/profileactionvm/k;)Ljava/lang/Runnable;
     .locals 1
 
     new-instance v0, Lkik/android/chat/vm/profile/profileactionvm/l;
@@ -32,7 +32,7 @@
 
 
 # virtual methods
-.method public final a()V
+.method public final run()V
     .locals 1
 
     iget-object v0, p0, Lkik/android/chat/vm/profile/profileactionvm/l;->a:Lkik/android/chat/vm/profile/profileactionvm/k;

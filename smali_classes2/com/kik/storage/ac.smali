@@ -1,45 +1,48 @@
-.class final synthetic Lcom/kik/storage/ac;
+.class public final Lcom/kik/storage/ac;
 .super Ljava/lang/Object;
-
-# interfaces
-.implements Lcom/kik/storage/l$a;
-
-
-# instance fields
-.field private final a:Lcom/kik/storage/ab;
+.source "SourceFile"
 
 
 # direct methods
-.method private constructor <init>(Lcom/kik/storage/ab;)V
-    .locals 0
+.method public static a(I)Ljava/lang/String;
+    .locals 3
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .prologue
+    .line 9
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    iput-object p1, p0, Lcom/kik/storage/ac;->a:Lcom/kik/storage/ab;
+    mul-int/lit8 v0, p0, 0x2
 
-    return-void
-.end method
+    add-int/lit8 v0, v0, -0x1
 
-.method public static a(Lcom/kik/storage/ab;)Lcom/kik/storage/l$a;
-    .locals 1
+    invoke-direct {v1, v0}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    new-instance v0, Lcom/kik/storage/ac;
+    .line 10
+    const-string v0, "?"
 
-    invoke-direct {v0, p0}, Lcom/kik/storage/ac;-><init>(Lcom/kik/storage/ab;)V
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 12
+    const/4 v0, 0x1
+
+    :goto_0
+    if-ge v0, p0, :cond_0
+
+    .line 13
+    const-string v2, ",?"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 12
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_0
+
+    .line 16
+    :cond_0
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
 
     return-object v0
-.end method
-
-
-# virtual methods
-.method public final a(Ljava/lang/Object;)V
-    .locals 1
-
-    iget-object v0, p0, Lcom/kik/storage/ac;->a:Lcom/kik/storage/ab;
-
-    check-cast p1, Lcom/kik/storage/ab$a;
-
-    invoke-static {v0, p1}, Lcom/kik/storage/ab;->a(Lcom/kik/storage/ab;Lcom/kik/storage/ab$a;)V
-
-    return-void
 .end method

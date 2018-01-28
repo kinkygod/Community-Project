@@ -112,7 +112,7 @@
     return-object v0
 .end method
 
-.method private getFileFromNetwork(Ljava/io/File;Ljava/lang/String;Ljava/lang/String;Lkik/core/interfaces/y;Lcom/kik/android/Mixpanel;I)Lcom/kik/events/Promise;
+.method private getFileFromNetwork(Ljava/io/File;Ljava/lang/String;Ljava/lang/String;Lkik/core/interfaces/x;Lcom/kik/android/Mixpanel;I)Lcom/kik/events/Promise;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -120,7 +120,7 @@
             "Ljava/io/File;",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
-            "Lkik/core/interfaces/y;",
+            "Lkik/core/interfaces/x;",
             "Lcom/kik/android/Mixpanel;",
             "I)",
             "Lcom/kik/events/Promise",
@@ -178,7 +178,7 @@
     .line 275
     iget-object v1, p0, Lcom/kik/cache/DiskLruFileCache;->_fileDownloadHandler:Lkik/android/h;
 
-    invoke-virtual {v1, p4, p3}, Lkik/android/h;->a(Lkik/core/interfaces/y;Ljava/lang/String;)V
+    invoke-virtual {v1, p4, p3}, Lkik/android/h;->a(Lkik/core/interfaces/x;Ljava/lang/String;)V
 
     .line 277
     :cond_2
@@ -231,14 +231,14 @@
     goto :goto_0
 .end method
 
-.method public fetchFile(Ljava/lang/String;Ljava/lang/String;Lkik/core/interfaces/y;Lcom/kik/android/Mixpanel;I)Lcom/kik/events/Promise;
+.method public fetchFile(Ljava/lang/String;Ljava/lang/String;Lkik/core/interfaces/x;Lcom/kik/android/Mixpanel;I)Lcom/kik/events/Promise;
     .locals 7
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
-            "Lkik/core/interfaces/y;",
+            "Lkik/core/interfaces/x;",
             "Lcom/kik/android/Mixpanel;",
             "I)",
             "Lcom/kik/events/Promise",
@@ -289,7 +289,7 @@
     move v6, p5
 
     .line 167
-    invoke-direct/range {v0 .. v6}, Lcom/kik/cache/DiskLruFileCache;->getFileFromNetwork(Ljava/io/File;Ljava/lang/String;Ljava/lang/String;Lkik/core/interfaces/y;Lcom/kik/android/Mixpanel;I)Lcom/kik/events/Promise;
+    invoke-direct/range {v0 .. v6}, Lcom/kik/cache/DiskLruFileCache;->getFileFromNetwork(Ljava/io/File;Ljava/lang/String;Ljava/lang/String;Lkik/core/interfaces/x;Lcom/kik/android/Mixpanel;I)Lcom/kik/events/Promise;
 
     move-result-object v0
 

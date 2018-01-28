@@ -6,7 +6,7 @@
 # instance fields
 .field _starImageView:Landroid/widget/ImageView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f100242
+        value = 0x7f10023e
     .end annotation
 .end field
 
@@ -50,7 +50,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f04009c
+    const v1, 0x7f04009b
 
     invoke-static {v0, v1, p0}, Lkik/android/gifs/view/GifFavouriteToggle;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -262,7 +262,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0201bd
+    const v2, 0x7f0201a5
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -391,7 +391,7 @@
 
     .prologue
     .line 35
-    const v0, 0x7f010188
+    const v0, 0x7f010192
 
     invoke-static {p0}, Lkik/android/gifs/view/d;->a(Lkik/android/gifs/view/GifFavouriteToggle;)Lrx/functions/b;
 
@@ -403,7 +403,7 @@
 
     move-result-object v2
 
-    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bq;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
+    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bt;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
 
     .line 36
     return-void
@@ -420,7 +420,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0201bb
+    const v2, 0x7f0201a3
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 

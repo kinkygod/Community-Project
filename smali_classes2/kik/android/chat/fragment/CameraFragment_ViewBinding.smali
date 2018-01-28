@@ -22,7 +22,7 @@
     iput-object p1, p0, Lkik/android/chat/fragment/CameraFragment_ViewBinding;->a:Lkik/android/chat/fragment/CameraFragment;
 
     .line 23
-    const v0, 0x7f100176
+    const v0, 0x7f100177
 
     const-string v1, "field \'_cameraIconBarView\'"
 
@@ -37,7 +37,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/CameraFragment;->_cameraIconBarView:Lkik/android/chat/view/m;
 
     .line 24
-    const v0, 0x7f100173
+    const v0, 0x7f100174
 
     const-string v1, "field \'_liveCameraContainer\'"
 
@@ -52,7 +52,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/CameraFragment;->_liveCameraContainer:Lkik/android/chat/view/s;
 
     .line 25
-    const v0, 0x7f100174
+    const v0, 0x7f100175
 
     const-string v1, "field \'_previewContainer\'"
 
@@ -67,7 +67,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/CameraFragment;->_previewContainer:Lkik/android/chat/view/af;
 
     .line 26
-    const v0, 0x7f100175
+    const v0, 0x7f100176
 
     const-string v1, "field \'_cameraErrorCover\'"
 

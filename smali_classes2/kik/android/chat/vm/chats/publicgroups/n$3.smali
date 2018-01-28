@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/android/chat/vm/chats/publicgroups/n;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    value = Lkik/android/chat/vm/chats/publicgroups/n;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

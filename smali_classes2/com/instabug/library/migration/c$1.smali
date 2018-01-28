@@ -110,12 +110,12 @@
     return-void
 .end method
 
-.method public final aV_()V
+.method public final aR_()V
     .locals 0
 
     .prologue
     .line 36
-    invoke-super {p0}, Lrx/j;->aV_()V
+    invoke-super {p0}, Lrx/j;->aR_()V
 
     .line 37
     return-void

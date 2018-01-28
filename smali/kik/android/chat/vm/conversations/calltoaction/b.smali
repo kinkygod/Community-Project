@@ -12,7 +12,7 @@
     .end annotation
 .end field
 
-.field c:Lkik/core/interfaces/ae;
+.field c:Lkik/core/interfaces/ad;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -82,7 +82,7 @@
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
 
     .line 43
-    iget-object v0, p0, Lkik/android/chat/vm/conversations/calltoaction/b;->c:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/chat/vm/conversations/calltoaction/b;->c:Lkik/core/interfaces/ad;
 
     const-string v1, "kik.friend.helper"
 
@@ -92,7 +92,7 @@
 
     move-result-object v2
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;Ljava/lang/Boolean;)Z
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Boolean;)Z
 
     .line 44
     iget-object v0, p0, Lkik/android/chat/vm/conversations/calltoaction/b;->a:Lkik/android/chat/vm/conversations/calltoaction/a$a;
@@ -103,12 +103,12 @@
     return-void
 .end method
 
-.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
     .locals 0
 
     .prologue
     .line 33
-    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/conversations/calltoaction/a;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/conversations/calltoaction/a;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 34
     invoke-interface {p1, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/chat/vm/conversations/calltoaction/b;)V
@@ -139,11 +139,11 @@
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
 
     .line 53
-    invoke-virtual {p0}, Lkik/android/chat/vm/conversations/calltoaction/b;->ab_()Lrx/f/b;
+    invoke-virtual {p0}, Lkik/android/chat/vm/conversations/calltoaction/b;->ad_()Lrx/f/b;
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lkik/android/chat/vm/conversations/calltoaction/b;->B_()Lkik/android/chat/vm/aw;
+    invoke-virtual {p0}, Lkik/android/chat/vm/conversations/calltoaction/b;->F_()Lkik/android/chat/vm/ay;
 
     move-result-object v1
 
@@ -151,7 +151,7 @@
 
     invoke-direct {v2, p0}, Lkik/android/chat/vm/conversations/calltoaction/b$1;-><init>(Lkik/android/chat/vm/conversations/calltoaction/b;)V
 
-    invoke-interface {v1, v2}, Lkik/android/chat/vm/aw;->a(Lkik/android/chat/vm/ak;)Lrx/d;
+    invoke-interface {v1, v2}, Lkik/android/chat/vm/ay;->a(Lkik/android/chat/vm/am;)Lrx/d;
 
     move-result-object v1
 

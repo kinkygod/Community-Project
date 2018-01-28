@@ -7,7 +7,7 @@
 
 
 # virtual methods
-.method public abstract S_()Lrx/d;
+.method public abstract U_()Lrx/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -19,7 +19,7 @@
     .end annotation
 .end method
 
-.method public abstract T_()Lrx/d;
+.method public abstract V_()Lrx/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -31,7 +31,7 @@
     .end annotation
 .end method
 
-.method public abstract h()Lrx/d;
+.method public abstract i()Lrx/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -43,7 +43,7 @@
     .end annotation
 .end method
 
-.method public abstract i()Ljava/lang/String;
+.method public abstract j()Ljava/lang/String;
 .end method
 
 .method public abstract k()Ljava/lang/String;

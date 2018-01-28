@@ -22,7 +22,7 @@
     iput-object p1, p0, Lkik/android/widget/BugmeBarView_ViewBinding;->a:Lkik/android/widget/BugmeBarView;
 
     .line 26
-    const v0, 0x7f100172
+    const v0, 0x7f100173
 
     const-string v1, "field \'_textView\'"
 

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/vm/profile/cy;
+.implements Lkik/android/chat/vm/profile/dk;
 
 
 # instance fields
@@ -37,7 +37,7 @@
     iput-object v0, p0, Lkik/android/chat/vm/profile/i;->c:Lrx/subjects/PublishSubject;
 
     .line 21
-    invoke-virtual {p0}, Lkik/android/chat/vm/profile/i;->ab_()Lrx/f/b;
+    invoke-virtual {p0}, Lkik/android/chat/vm/profile/i;->ad_()Lrx/f/b;
 
     move-result-object v0
 
@@ -139,7 +139,7 @@
     return-object v0
 .end method
 
-.method public final o()Lrx/functions/b;
+.method public final n()Lrx/functions/b;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {

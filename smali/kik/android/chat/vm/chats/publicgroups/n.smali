@@ -21,7 +21,7 @@
 
 
 # instance fields
-.field protected a:Lkik/android/chat/p;
+.field protected a:Lkik/android/chat/q;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -414,7 +414,7 @@
     invoke-direct {p0}, Lkik/android/chat/vm/chats/publicgroups/n;->l()V
 
     .line 147
-    invoke-virtual {p0}, Lkik/android/chat/vm/chats/publicgroups/n;->K_()V
+    invoke-virtual {p0}, Lkik/android/chat/vm/chats/publicgroups/n;->aF_()V
 
     goto :goto_0
 
@@ -458,7 +458,7 @@
     invoke-direct {p0}, Lkik/android/chat/vm/chats/publicgroups/n;->l()V
 
     .line 4268
-    invoke-virtual {p0}, Lkik/android/chat/vm/chats/publicgroups/n;->K_()V
+    invoke-virtual {p0}, Lkik/android/chat/vm/chats/publicgroups/n;->aF_()V
 
     .line 38
     return-void
@@ -569,7 +569,7 @@
 
     .prologue
     .line 38
-    invoke-virtual {p0}, Lkik/android/chat/vm/chats/publicgroups/n;->K_()V
+    invoke-virtual {p0}, Lkik/android/chat/vm/chats/publicgroups/n;->aF_()V
 
     return-void
 .end method
@@ -702,9 +702,9 @@
     invoke-virtual {v0, v1}, Lrx/subjects/a;->a(Ljava/lang/Object;)V
 
     .line 327
-    iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/n;->a:Lkik/android/chat/p;
+    iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/n;->a:Lkik/android/chat/q;
 
-    invoke-virtual {v0}, Lkik/android/chat/p;->a()Lcom/kik/events/Promise;
+    invoke-virtual {v0}, Lkik/android/chat/q;->a()Lcom/kik/events/Promise;
 
     move-result-object v0
 
@@ -723,7 +723,7 @@
 
 
 # virtual methods
-.method public final O_()V
+.method public final Q_()V
     .locals 0
 
     .prologue
@@ -734,7 +734,7 @@
     return-void
 .end method
 
-.method protected final synthetic a(I)Lkik/android/chat/vm/ar;
+.method protected final synthetic a(I)Lkik/android/chat/vm/at;
     .locals 6
 
     .prologue
@@ -823,7 +823,7 @@
 
     iget-object v1, p0, Lkik/android/chat/vm/chats/publicgroups/n;->c:Landroid/content/res/Resources;
 
-    const v2, 0x7f09061f
+    const v2, 0x7f090627
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -886,12 +886,12 @@
     goto :goto_2
 .end method
 
-.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
     .locals 2
 
     .prologue
     .line 118
-    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/c;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/c;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 119
     invoke-interface {p1, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/chat/vm/chats/publicgroups/n;)V
@@ -938,12 +938,12 @@
     return-void
 .end method
 
-.method public final aj_()V
+.method public final ak_()V
     .locals 2
 
     .prologue
     .line 156
-    invoke-super {p0}, Lkik/android/chat/vm/c;->aj_()V
+    invoke-super {p0}, Lkik/android/chat/vm/c;->ak_()V
 
     .line 157
     iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/n;->l:Lrx/k;

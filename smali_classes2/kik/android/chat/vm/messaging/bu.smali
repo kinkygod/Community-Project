@@ -39,7 +39,7 @@
 
     check-cast p1, Ljava/lang/String;
 
-    invoke-static {v0, p1}, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->e(Lkik/android/chat/vm/messaging/AbstractMessageViewModel;Ljava/lang/String;)Ljava/lang/Boolean;
+    invoke-static {v0, p1}, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->f(Lkik/android/chat/vm/messaging/AbstractMessageViewModel;Ljava/lang/String;)Ljava/lang/Boolean;
 
     move-result-object v0
 

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/kik/entity/mobile/EntityService$i;
+.implements Lcom/kik/entity/mobile/EntityService$j;
 
 
 # annotations
@@ -22,7 +22,7 @@
         "<",
         "Lcom/kik/entity/mobile/EntityService$GetUsersResponse$a;",
         ">;",
-        "Lcom/kik/entity/mobile/EntityService$i;"
+        "Lcom/kik/entity/mobile/EntityService$j;"
     }
 .end annotation
 
@@ -258,7 +258,7 @@
 
     .line 1944
     :try_start_0
-    invoke-static {}, Lcom/kik/entity/mobile/EntityService$GetUsersResponse;->o()Lcom/google/protobuf/Parser;
+    invoke-static {}, Lcom/kik/entity/mobile/EntityService$GetUsersResponse;->p()Lcom/google/protobuf/Parser;
 
     move-result-object v0
 
@@ -423,7 +423,7 @@
 
     .prologue
     .line 1685
-    invoke-static {}, Lcom/kik/entity/mobile/EntityService$GetUsersResponse;->j()Z
+    invoke-static {}, Lcom/kik/entity/mobile/EntityService$GetUsersResponse;->k()Z
 
     move-result v0
 
@@ -1119,7 +1119,7 @@
     const/4 v1, 0x0
 
     .line 1822
-    invoke-static {}, Lcom/kik/entity/mobile/EntityService$GetUsersResponse;->h()Lcom/kik/entity/mobile/EntityService$GetUsersResponse;
+    invoke-static {}, Lcom/kik/entity/mobile/EntityService$GetUsersResponse;->i()Lcom/kik/entity/mobile/EntityService$GetUsersResponse;
 
     move-result-object v0
 
@@ -1416,7 +1416,7 @@
     iput v0, p0, Lcom/kik/entity/mobile/EntityService$GetUsersResponse$a;->a:I
 
     .line 1845
-    invoke-static {}, Lcom/kik/entity/mobile/EntityService$GetUsersResponse;->k()Z
+    invoke-static {}, Lcom/kik/entity/mobile/EntityService$GetUsersResponse;->l()Z
 
     move-result v0
 
@@ -1531,7 +1531,7 @@
     iput v0, p0, Lcom/kik/entity/mobile/EntityService$GetUsersResponse$a;->a:I
 
     .line 1871
-    invoke-static {}, Lcom/kik/entity/mobile/EntityService$GetUsersResponse;->l()Z
+    invoke-static {}, Lcom/kik/entity/mobile/EntityService$GetUsersResponse;->m()Z
 
     move-result v0
 
@@ -1646,7 +1646,7 @@
     iput v0, p0, Lcom/kik/entity/mobile/EntityService$GetUsersResponse$a;->a:I
 
     .line 1897
-    invoke-static {}, Lcom/kik/entity/mobile/EntityService$GetUsersResponse;->m()Z
+    invoke-static {}, Lcom/kik/entity/mobile/EntityService$GetUsersResponse;->n()Z
 
     move-result v0
 
@@ -1761,7 +1761,7 @@
     iput v0, p0, Lcom/kik/entity/mobile/EntityService$GetUsersResponse$a;->a:I
 
     .line 1923
-    invoke-static {}, Lcom/kik/entity/mobile/EntityService$GetUsersResponse;->n()Z
+    invoke-static {}, Lcom/kik/entity/mobile/EntityService$GetUsersResponse;->o()Z
 
     move-result v0
 
@@ -2076,7 +2076,7 @@
 
     .prologue
     .line 12729
-    invoke-static {}, Lcom/kik/entity/mobile/EntityService$GetUsersResponse;->h()Lcom/kik/entity/mobile/EntityService$GetUsersResponse;
+    invoke-static {}, Lcom/kik/entity/mobile/EntityService$GetUsersResponse;->i()Lcom/kik/entity/mobile/EntityService$GetUsersResponse;
 
     move-result-object v0
 
@@ -2089,7 +2089,7 @@
 
     .prologue
     .line 11729
-    invoke-static {}, Lcom/kik/entity/mobile/EntityService$GetUsersResponse;->h()Lcom/kik/entity/mobile/EntityService$GetUsersResponse;
+    invoke-static {}, Lcom/kik/entity/mobile/EntityService$GetUsersResponse;->i()Lcom/kik/entity/mobile/EntityService$GetUsersResponse;
 
     move-result-object v0
 

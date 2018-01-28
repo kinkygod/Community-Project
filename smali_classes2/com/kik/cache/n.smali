@@ -19,13 +19,13 @@
 
 .field private b:Ljava/lang/Object;
 
-.field private final c:Lkik/core/interfaces/w;
+.field private final c:Lkik/core/interfaces/v;
 
 .field private d:Z
 
 
 # direct methods
-.method private constructor <init>(Lcom/kik/core/domain/a/a/c;Ljava/lang/String;Lcom/android/volley/h$b;IILandroid/graphics/Bitmap$Config;Lcom/android/volley/h$a;Lkik/core/interfaces/w;ZLcom/kik/cache/KikVolleyImageLoader;)V
+.method private constructor <init>(Lcom/kik/core/domain/a/a/c;Ljava/lang/String;Lcom/android/volley/h$b;IILandroid/graphics/Bitmap$Config;Lcom/android/volley/h$a;Lkik/core/interfaces/v;ZLcom/kik/cache/KikVolleyImageLoader;)V
     .locals 1
 
     .prologue
@@ -40,7 +40,7 @@
     iput-object v0, p0, Lcom/kik/cache/n;->b:Ljava/lang/Object;
 
     .line 45
-    iput-object p8, p0, Lcom/kik/cache/n;->c:Lkik/core/interfaces/w;
+    iput-object p8, p0, Lcom/kik/cache/n;->c:Lkik/core/interfaces/v;
 
     .line 46
     iput-boolean p9, p0, Lcom/kik/cache/n;->d:Z
@@ -52,7 +52,7 @@
     return-void
 .end method
 
-.method public static a(Lcom/kik/core/domain/a/a/c;Lcom/android/volley/h$b;IILandroid/graphics/Bitmap$Config;Lcom/android/volley/h$a;Lkik/core/interfaces/w;ZLcom/kik/cache/KikVolleyImageLoader;)Lcom/kik/cache/n;
+.method public static a(Lcom/kik/core/domain/a/a/c;Lcom/android/volley/h$b;IILandroid/graphics/Bitmap$Config;Lcom/android/volley/h$a;Lkik/core/interfaces/v;ZLcom/kik/cache/KikVolleyImageLoader;)Lcom/kik/cache/n;
     .locals 11
 
     .prologue
@@ -82,7 +82,7 @@
 
     move-object/from16 v10, p8
 
-    invoke-direct/range {v0 .. v10}, Lcom/kik/cache/n;-><init>(Lcom/kik/core/domain/a/a/c;Ljava/lang/String;Lcom/android/volley/h$b;IILandroid/graphics/Bitmap$Config;Lcom/android/volley/h$a;Lkik/core/interfaces/w;ZLcom/kik/cache/KikVolleyImageLoader;)V
+    invoke-direct/range {v0 .. v10}, Lcom/kik/cache/n;-><init>(Lcom/kik/core/domain/a/a/c;Ljava/lang/String;Lcom/android/volley/h$b;IILandroid/graphics/Bitmap$Config;Lcom/android/volley/h$a;Lkik/core/interfaces/v;ZLcom/kik/cache/KikVolleyImageLoader;)V
 
     return-object v0
 .end method
@@ -399,11 +399,11 @@
     move-result-object v0
 
     .line 1133
-    iget-object v5, p0, Lcom/kik/cache/n;->c:Lkik/core/interfaces/w;
+    iget-object v5, p0, Lcom/kik/cache/n;->c:Lkik/core/interfaces/v;
 
     const/4 v6, 0x1
 
-    invoke-interface {v5, v0, v6}, Lkik/core/interfaces/w;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
+    invoke-interface {v5, v0, v6}, Lkik/core/interfaces/v;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
 
     move-result-object v0
 

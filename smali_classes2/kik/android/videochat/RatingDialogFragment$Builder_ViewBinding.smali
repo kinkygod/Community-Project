@@ -22,7 +22,7 @@
     iput-object p1, p0, Lkik/android/videochat/RatingDialogFragment$Builder_ViewBinding;->a:Lkik/android/videochat/RatingDialogFragment$Builder;
 
     .line 22
-    const v0, 0x7f1003af
+    const v0, 0x7f1003ab
 
     const-string v1, "field \'_oneStar\'"
 
@@ -37,7 +37,7 @@
     iput-object v0, p1, Lkik/android/videochat/RatingDialogFragment$Builder;->_oneStar:Landroid/widget/ImageView;
 
     .line 23
-    const v0, 0x7f1003b0
+    const v0, 0x7f1003ac
 
     const-string v1, "field \'_twoStar\'"
 
@@ -52,7 +52,7 @@
     iput-object v0, p1, Lkik/android/videochat/RatingDialogFragment$Builder;->_twoStar:Landroid/widget/ImageView;
 
     .line 24
-    const v0, 0x7f1003b1
+    const v0, 0x7f1003ad
 
     const-string v1, "field \'_threeStar\'"
 
@@ -67,7 +67,7 @@
     iput-object v0, p1, Lkik/android/videochat/RatingDialogFragment$Builder;->_threeStar:Landroid/widget/ImageView;
 
     .line 25
-    const v0, 0x7f1003b2
+    const v0, 0x7f1003ae
 
     const-string v1, "field \'_fourStar\'"
 
@@ -82,7 +82,7 @@
     iput-object v0, p1, Lkik/android/videochat/RatingDialogFragment$Builder;->_fourStar:Landroid/widget/ImageView;
 
     .line 26
-    const v0, 0x7f1003b3
+    const v0, 0x7f1003af
 
     const-string v1, "field \'_fiveStar\'"
 

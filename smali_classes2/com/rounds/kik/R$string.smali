@@ -15,9 +15,9 @@
 
 
 # static fields
-.field public static final release_to_chat:I = 0x7f090620
+.field public static final release_to_chat:I = 0x7f090628
 
-.field public static final release_to_full:I = 0x7f090621
+.field public static final release_to_full:I = 0x7f090629
 
 
 # direct methods

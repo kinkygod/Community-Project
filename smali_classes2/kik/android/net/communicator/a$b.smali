@@ -343,7 +343,7 @@
     .line 379
     iget-object v1, p0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
-    invoke-static {v1}, Lkik/android/net/communicator/a;->n(Lkik/android/net/communicator/a;)Lkik/core/interfaces/ab;
+    invoke-static {v1}, Lkik/android/net/communicator/a;->n(Lkik/android/net/communicator/a;)Lkik/core/interfaces/aa;
 
     move-result-object v1
 
@@ -351,7 +351,7 @@
 
     move-result-wide v2
 
-    invoke-interface {v1, v2, v3}, Lkik/core/interfaces/ab;->a(J)V
+    invoke-interface {v1, v2, v3}, Lkik/core/interfaces/aa;->a(J)V
 
     .line 381
     invoke-static {}, Lcom/kik/sdkutils/d;->a()J
@@ -447,11 +447,11 @@
 
     iget-object v2, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
-    invoke-static {v2}, Lkik/android/net/communicator/a;->o(Lkik/android/net/communicator/a;)Lkik/core/interfaces/al;
+    invoke-static {v2}, Lkik/android/net/communicator/a;->o(Lkik/android/net/communicator/a;)Lkik/core/interfaces/ak;
 
     move-result-object v2
 
-    invoke-interface {v2}, Lkik/core/interfaces/al;->d()Ljava/lang/String;
+    invoke-interface {v2}, Lkik/core/interfaces/ak;->d()Ljava/lang/String;
 
     move-result-object v2
 
@@ -1302,7 +1302,7 @@
 
     iget-object v3, v3, Lkik/android/net/communicator/a;->e:Lkik/core/ab;
 
-    invoke-interface {v3}, Lkik/core/ab;->h()V
+    invoke-interface {v3}, Lkik/core/ab;->g()V
     :try_end_11
     .catchall {:try_start_11 .. :try_end_11} :catchall_10
 

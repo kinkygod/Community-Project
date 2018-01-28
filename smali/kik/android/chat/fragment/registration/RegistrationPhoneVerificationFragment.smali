@@ -17,7 +17,7 @@
 # instance fields
 .field _enterNumberView:Lkik/android/chat/view/ae;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f10021e
+        value = 0x7f100220
     .end annotation
 .end field
 
@@ -708,7 +708,7 @@
     const/4 v7, 0x0
 
     .line 70
-    const v0, 0x7f040090
+    const v0, 0x7f040092
 
     invoke-virtual {p1, v0, p2, v7}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
@@ -862,7 +862,7 @@
     .locals 3
     .annotation build Lbutterknife/OnClick;
         value = {
-            0x7f10021d
+            0x7f10021f
         }
     .end annotation
 
@@ -900,16 +900,16 @@
     return-void
 .end method
 
-.method protected screenOpenedEvent()Lcom/kik/metrics/b/s;
+.method protected screenOpenedEvent()Lcom/kik/metrics/b/t;
     .locals 1
 
     .prologue
     .line 90
-    invoke-static {}, Lcom/kik/metrics/b/al;->b()Lcom/kik/metrics/b/al$a;
+    invoke-static {}, Lcom/kik/metrics/b/an;->b()Lcom/kik/metrics/b/an$a;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/kik/metrics/b/al$a;->a()Lcom/kik/metrics/b/al;
+    invoke-virtual {v0}, Lcom/kik/metrics/b/an$a;->a()Lcom/kik/metrics/b/an;
 
     move-result-object v0
 

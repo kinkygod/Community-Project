@@ -48,7 +48,7 @@
 
     const/4 v2, 0x0
 
-    .line 1148
+    .line 1207
     new-instance v0, Lkik/android/chat/view/ValidateableInputView$TextValidityState;
 
     const-string v1, "Valid"
@@ -57,7 +57,7 @@
 
     sput-object v0, Lkik/android/chat/view/ValidateableInputView$TextValidityState;->Valid:Lkik/android/chat/view/ValidateableInputView$TextValidityState;
 
-    .line 1149
+    .line 1208
     new-instance v0, Lkik/android/chat/view/ValidateableInputView$TextValidityState;
 
     const-string v1, "Invalid"
@@ -66,7 +66,7 @@
 
     sput-object v0, Lkik/android/chat/view/ValidateableInputView$TextValidityState;->Invalid:Lkik/android/chat/view/ValidateableInputView$TextValidityState;
 
-    .line 1150
+    .line 1209
     new-instance v0, Lkik/android/chat/view/ValidateableInputView$TextValidityState;
 
     const-string v1, "Validating"
@@ -75,7 +75,7 @@
 
     sput-object v0, Lkik/android/chat/view/ValidateableInputView$TextValidityState;->Validating:Lkik/android/chat/view/ValidateableInputView$TextValidityState;
 
-    .line 1151
+    .line 1210
     new-instance v0, Lkik/android/chat/view/ValidateableInputView$TextValidityState;
 
     const-string v1, "Empty"
@@ -84,7 +84,7 @@
 
     sput-object v0, Lkik/android/chat/view/ValidateableInputView$TextValidityState;->Empty:Lkik/android/chat/view/ValidateableInputView$TextValidityState;
 
-    .line 1147
+    .line 1205
     const/4 v0, 0x4
 
     new-array v0, v0, [Lkik/android/chat/view/ValidateableInputView$TextValidityState;
@@ -119,7 +119,7 @@
     .end annotation
 
     .prologue
-    .line 1147
+    .line 1205
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -129,7 +129,7 @@
     .locals 1
 
     .prologue
-    .line 1147
+    .line 1205
     const-class v0, Lkik/android/chat/view/ValidateableInputView$TextValidityState;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -145,7 +145,7 @@
     .locals 1
 
     .prologue
-    .line 1147
+    .line 1205
     sget-object v0, Lkik/android/chat/view/ValidateableInputView$TextValidityState;->$VALUES:[Lkik/android/chat/view/ValidateableInputView$TextValidityState;
 
     invoke-virtual {v0}, [Lkik/android/chat/view/ValidateableInputView$TextValidityState;->clone()Ljava/lang/Object;

@@ -14,11 +14,11 @@
 
 .field private final _mixpanel:Lcom/kik/android/Mixpanel;
 
-.field private final _navigator:Lkik/android/chat/vm/aw;
+.field private final _navigator:Lkik/android/chat/vm/ay;
 
 .field private final _smileyManager:Lcom/kik/android/b/g;
 
-.field private final _stickerManager:Lkik/core/interfaces/ac;
+.field private final _stickerManager:Lkik/core/interfaces/ab;
 
 .field private _validUrls:Ljava/util/regex/Pattern;
 
@@ -40,7 +40,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Lkik/core/interfaces/ac;Lcom/kik/android/Mixpanel;Lkik/android/chat/vm/aw;Lcom/kik/android/b/g;)V
+.method public constructor <init>(Lkik/core/interfaces/ab;Lcom/kik/android/Mixpanel;Lkik/android/chat/vm/ay;Lcom/kik/android/b/g;)V
     .locals 2
 
     .prologue
@@ -68,13 +68,13 @@
     iput-object v0, p0, Lcom/kik/android/stickers/StickerPlugin;->_validUrls:Ljava/util/regex/Pattern;
 
     .line 41
-    iput-object p1, p0, Lcom/kik/android/stickers/StickerPlugin;->_stickerManager:Lkik/core/interfaces/ac;
+    iput-object p1, p0, Lcom/kik/android/stickers/StickerPlugin;->_stickerManager:Lkik/core/interfaces/ab;
 
     .line 42
     iput-object p2, p0, Lcom/kik/android/stickers/StickerPlugin;->_mixpanel:Lcom/kik/android/Mixpanel;
 
     .line 43
-    iput-object p3, p0, Lcom/kik/android/stickers/StickerPlugin;->_navigator:Lkik/android/chat/vm/aw;
+    iput-object p3, p0, Lcom/kik/android/stickers/StickerPlugin;->_navigator:Lkik/android/chat/vm/ay;
 
     .line 44
     iput-object p4, p0, Lcom/kik/android/stickers/StickerPlugin;->_smileyManager:Lcom/kik/android/b/g;
@@ -120,9 +120,9 @@
     move-result-object v0
 
     .line 146
-    iget-object v4, p0, Lcom/kik/android/stickers/StickerPlugin;->_stickerManager:Lkik/core/interfaces/ac;
+    iget-object v4, p0, Lcom/kik/android/stickers/StickerPlugin;->_stickerManager:Lkik/core/interfaces/ab;
 
-    invoke-interface {v4, v0}, Lkik/core/interfaces/ac;->b(Ljava/lang/String;)V
+    invoke-interface {v4, v0}, Lkik/core/interfaces/ab;->b(Ljava/lang/String;)V
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -238,7 +238,7 @@
 
     iget-object v1, p0, Lcom/kik/android/stickers/StickerPlugin;->_smileyManager:Lcom/kik/android/b/g;
 
-    invoke-virtual {v1}, Lcom/kik/android/b/g;->e()Ljava/util/List;
+    invoke-virtual {v1}, Lcom/kik/android/b/g;->f()Ljava/util/List;
 
     move-result-object v1
 
@@ -258,9 +258,9 @@
 
     .prologue
     .line 64
-    iget-object v0, p0, Lcom/kik/android/stickers/StickerPlugin;->_stickerManager:Lkik/core/interfaces/ac;
+    iget-object v0, p0, Lcom/kik/android/stickers/StickerPlugin;->_stickerManager:Lkik/core/interfaces/ab;
 
-    invoke-interface {v0}, Lkik/core/interfaces/ac;->j()Ljava/util/List;
+    invoke-interface {v0}, Lkik/core/interfaces/ab;->j()Ljava/util/List;
 
     move-result-object v0
 
@@ -399,9 +399,9 @@
     move-result-object v0
 
     .line 161
-    iget-object v1, p0, Lcom/kik/android/stickers/StickerPlugin;->_stickerManager:Lkik/core/interfaces/ac;
+    iget-object v1, p0, Lcom/kik/android/stickers/StickerPlugin;->_stickerManager:Lkik/core/interfaces/ab;
 
-    invoke-interface {v1, v0}, Lkik/core/interfaces/ac;->a(Lkik/core/datatypes/z;)V
+    invoke-interface {v1, v0}, Lkik/core/interfaces/ab;->a(Lkik/core/datatypes/z;)V
 
     .line 162
     new-instance v0, Lcom/kik/cards/web/plugin/g;
@@ -418,13 +418,13 @@
 
     .prologue
     .line 168
-    iget-object v0, p0, Lcom/kik/android/stickers/StickerPlugin;->_navigator:Lkik/android/chat/vm/aw;
+    iget-object v0, p0, Lcom/kik/android/stickers/StickerPlugin;->_navigator:Lkik/android/chat/vm/ay;
 
-    new-instance v1, Lkik/android/chat/vm/widget/bl;
+    new-instance v1, Lkik/android/chat/vm/widget/bm;
 
-    invoke-direct {v1}, Lkik/android/chat/vm/widget/bl;-><init>()V
+    invoke-direct {v1}, Lkik/android/chat/vm/widget/bm;-><init>()V
 
-    invoke-interface {v0}, Lkik/android/chat/vm/aw;->e()V
+    invoke-interface {v0}, Lkik/android/chat/vm/ay;->e()V
 
     .line 169
     iget-object v0, p0, Lcom/kik/android/stickers/StickerPlugin;->_mixpanel:Lcom/kik/android/Mixpanel;

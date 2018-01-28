@@ -32,7 +32,7 @@
     .locals 0
 
     .prologue
-    .line 962
+    .line 998
     iput-object p1, p0, Lcom/kik/cards/web/CardsWebViewFragment$19;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
     invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
@@ -46,11 +46,11 @@
     .locals 1
 
     .prologue
-    .line 967
+    .line 1003
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$19;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
     invoke-static {v0}, Lcom/kik/cards/web/CardsWebViewFragment;->s(Lcom/kik/cards/web/CardsWebViewFragment;)V
 
-    .line 968
+    .line 1004
     return-void
 .end method

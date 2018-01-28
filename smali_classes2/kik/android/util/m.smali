@@ -12,7 +12,7 @@
 
 
 # static fields
-.field public static final a:Lkik/android/util/ca$d;
+.field public static final a:Lkik/android/util/cb$d;
 
 
 # direct methods
@@ -21,7 +21,7 @@
 
     .prologue
     .line 35
-    new-instance v0, Lkik/android/util/ca$d;
+    new-instance v0, Lkik/android/util/cb$d;
 
     const v1, 0x7f0e003c
 
@@ -30,9 +30,9 @@
 
     move-result v1
 
-    invoke-direct {v0, v1}, Lkik/android/util/ca$d;-><init>(I)V
+    invoke-direct {v0, v1}, Lkik/android/util/cb$d;-><init>(I)V
 
-    sput-object v0, Lkik/android/util/m;->a:Lkik/android/util/ca$d;
+    sput-object v0, Lkik/android/util/m;->a:Lkik/android/util/cb$d;
 
     .line 35
     return-void
@@ -143,7 +143,7 @@
     invoke-direct {v2, p3}, Lkik/android/chat/vm/messaging/a/c;-><init>(Lkik/core/datatypes/messageExtensions/ContentMessage;)V
 
     .line 72
-    const v3, 0x7f04011d
+    const v3, 0x7f040121
 
     invoke-virtual {v8, v3}, Landroid/view/ViewStub;->setLayoutResource(I)V
 
@@ -176,11 +176,11 @@
     invoke-virtual {v9, v0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 97
-    new-instance v0, Lkik/android/chat/vm/bu;
+    new-instance v0, Lkik/android/chat/vm/bw;
 
-    invoke-direct {v0, p1}, Lkik/android/chat/vm/bu;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p1}, Lkik/android/chat/vm/bw;-><init>(Landroid/content/Context;)V
 
-    invoke-interface {v7, p2, v0}, Lkik/android/chat/vm/messaging/IMessageViewModel;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    invoke-interface {v7, p2, v0}, Lkik/android/chat/vm/messaging/IMessageViewModel;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 99
     invoke-virtual {v8}, Landroid/view/ViewStub;->inflate()Landroid/view/View;
@@ -219,7 +219,7 @@
     invoke-direct {v2, p3}, Lkik/android/chat/vm/messaging/a/b;-><init>(Lkik/core/datatypes/messageExtensions/ContentMessage;)V
 
     .line 76
-    const v3, 0x7f040119
+    const v3, 0x7f04011d
 
     invoke-virtual {v8, v3}, Landroid/view/ViewStub;->setLayoutResource(I)V
 
@@ -241,7 +241,7 @@
     if-eqz v2, :cond_4
 
     .line 81
-    const v2, 0x7f040122
+    const v2, 0x7f040126
 
     invoke-virtual {v8, v2}, Landroid/view/ViewStub;->setLayoutResource(I)V
 
@@ -253,7 +253,7 @@
 
     .line 84
     :cond_4
-    const v2, 0x7f040118
+    const v2, 0x7f04011c
 
     invoke-virtual {v8, v2}, Landroid/view/ViewStub;->setLayoutResource(I)V
 

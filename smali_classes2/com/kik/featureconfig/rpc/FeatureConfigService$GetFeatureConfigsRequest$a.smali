@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/kik/featureconfig/rpc/FeatureConfigService$a;
+.implements Lcom/kik/featureconfig/rpc/FeatureConfigService$b;
 
 
 # annotations
@@ -22,7 +22,7 @@
         "<",
         "Lcom/kik/featureconfig/rpc/FeatureConfigService$GetFeatureConfigsRequest$a;",
         ">;",
-        "Lcom/kik/featureconfig/rpc/FeatureConfigService$a;"
+        "Lcom/kik/featureconfig/rpc/FeatureConfigService$b;"
     }
 .end annotation
 

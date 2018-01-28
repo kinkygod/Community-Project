@@ -170,5 +170,7 @@ message XiLocale {
         // Follows toString() of java.util.Locale with only language and region set
         // Can be parsed using com.kik.i18n.LangUtils.parseLocale
         // Example patterns: en, en_CA, en_029
-        regex: "^(?i)[a-z]{2,8}(?:_([a-z]{2}|[0-9]{3}))?$" }];
+        // This has been relaxed to allow es_41, which is being sent by some versions of 
+        // android
+        regex: "^(?i)[a-z]{2,8}(?:_([a-z]{2}|[0-9]{2,3}))?$" }];
 }

@@ -14,7 +14,7 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lkik/core/interfaces/t;Ljava/lang/String;Lcom/kik/cache/SimpleLruBitmapCache;)V
+.method public constructor <init>(Landroid/content/Context;Lkik/core/interfaces/s;Ljava/lang/String;Lcom/kik/cache/SimpleLruBitmapCache;)V
     .locals 4
 
     .prologue
@@ -22,7 +22,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 44
-    invoke-interface {p2, p3}, Lkik/core/interfaces/t;->a(Ljava/lang/String;)Ljava/io/File;
+    invoke-interface {p2, p3}, Lkik/core/interfaces/s;->a(Ljava/lang/String;)Ljava/io/File;
 
     move-result-object v1
 

@@ -2,7 +2,7 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lrx/functions/g;
+.implements Lrx/functions/b;
 
 
 # instance fields
@@ -20,7 +20,7 @@
     return-void
 .end method
 
-.method public static a(Landroid/view/View;)Lrx/functions/g;
+.method public static a(Landroid/view/View;)Lrx/functions/b;
     .locals 1
 
     new-instance v0, Lcom/kik/util/br;
@@ -32,16 +32,18 @@
 
 
 # virtual methods
-.method public final call(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.method public final call(Ljava/lang/Object;)V
+    .locals 2
 
     iget-object v0, p0, Lcom/kik/util/br;->a:Landroid/view/View;
 
-    check-cast p1, Ljava/lang/Integer;
+    check-cast p1, Ljava/lang/Float;
 
-    invoke-static {v0, p1}, Lcom/kik/util/bq;->a(Landroid/view/View;Ljava/lang/Integer;)Ljava/lang/Integer;
+    invoke-virtual {p1}, Ljava/lang/Float;->floatValue()F
 
-    move-result-object v0
+    move-result v1
 
-    return-object v0
+    invoke-virtual {v0, v1}, Landroid/view/View;->setAlpha(F)V
+
+    return-void
 .end method

@@ -43,9 +43,9 @@
 .method public final a(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    check-cast p1, Lkik/core/xiphias/ab;
+    check-cast p1, Lkik/core/xiphias/ag;
 
-    invoke-static {p1}, Lkik/android/challenge/SafetyNetValidator;->a(Lkik/core/xiphias/ab;)[B
+    invoke-static {p1}, Lkik/android/challenge/SafetyNetValidator;->a(Lkik/core/xiphias/ag;)[B
 
     move-result-object v0
 

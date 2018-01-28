@@ -37,7 +37,7 @@
 
     iget-object v0, p0, Lkik/android/chat/view/av;->a:Lkik/android/chat/view/ValidateableInputView;
 
-    invoke-virtual {v0}, Lkik/android/chat/view/ValidateableInputView;->j()V
+    invoke-virtual {v0}, Lkik/android/chat/view/ValidateableInputView;->h()V
 
     return-void
 .end method

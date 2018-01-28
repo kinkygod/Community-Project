@@ -71,7 +71,7 @@
     .line 348
     iget-object v0, p0, Lcom/kik/events/l$3;->b:Lcom/kik/events/Promise;
 
-    new-instance v1, Lcom/kik/util/ct;
+    new-instance v1, Lcom/kik/util/cy;
 
     iget-object v2, p0, Lcom/kik/events/l$3;->a:Lcom/kik/events/Promise;
 
@@ -79,7 +79,7 @@
 
     move-result-object v2
 
-    invoke-direct {v1, v2, p1}, Lcom/kik/util/ct;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v1, v2, p1}, Lcom/kik/util/cy;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Ljava/lang/Object;)V
 
@@ -109,7 +109,7 @@
     .line 357
     iget-object v0, p0, Lcom/kik/events/l$3;->b:Lcom/kik/events/Promise;
 
-    new-instance v1, Lcom/kik/util/ct;
+    new-instance v1, Lcom/kik/util/cy;
 
     iget-object v2, p0, Lcom/kik/events/l$3;->a:Lcom/kik/events/Promise;
 
@@ -119,7 +119,7 @@
 
     const/4 v3, 0x0
 
-    invoke-direct {v1, v2, v3}, Lcom/kik/util/ct;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v1, v2, v3}, Lcom/kik/util/cy;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Ljava/lang/Object;)V
 
@@ -158,7 +158,7 @@
     .line 370
     iget-object v0, p0, Lcom/kik/events/l$3;->b:Lcom/kik/events/Promise;
 
-    new-instance v1, Lcom/kik/util/ct;
+    new-instance v1, Lcom/kik/util/cy;
 
     iget-object v2, p0, Lcom/kik/events/l$3;->a:Lcom/kik/events/Promise;
 
@@ -168,7 +168,7 @@
 
     const/4 v3, 0x0
 
-    invoke-direct {v1, v2, v3}, Lcom/kik/util/ct;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v1, v2, v3}, Lcom/kik/util/cy;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Ljava/lang/Object;)V
 

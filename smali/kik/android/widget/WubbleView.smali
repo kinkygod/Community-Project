@@ -14,7 +14,7 @@
     .end annotation
 .end field
 
-.field protected b:Lcom/kik/storage/p;
+.field protected b:Lcom/kik/storage/s;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -24,7 +24,7 @@
     .end annotation
 .end field
 
-.field protected d:Lkik/core/interfaces/t;
+.field protected d:Lkik/core/interfaces/s;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -34,7 +34,7 @@
     .end annotation
 .end field
 
-.field protected f:Lcom/kik/storage/p;
+.field protected f:Lcom/kik/storage/s;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -119,17 +119,17 @@
 
     .prologue
     .line 64
-    const v0, 0x7f010025
+    const v0, 0x7f010027
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p0}, Lkik/android/widget/dx;->a(Lkik/android/widget/WubbleView;)Lrx/functions/b;
+    invoke-static {p0}, Lkik/android/widget/el;->a(Lkik/android/widget/WubbleView;)Lrx/functions/b;
 
     move-result-object v1
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bq;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
+    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bt;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
 
     .line 65
     return-void
@@ -252,13 +252,13 @@
     .line 1119
     new-instance v0, Lcom/kik/cards/web/u;
 
-    iget-object v1, p0, Lkik/android/widget/WubbleView;->b:Lcom/kik/storage/p;
+    iget-object v1, p0, Lkik/android/widget/WubbleView;->b:Lcom/kik/storage/s;
 
     invoke-virtual {p0}, Lkik/android/widget/WubbleView;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
-    invoke-direct {v0, v1, v2}, Lcom/kik/cards/web/u;-><init>(Lcom/kik/storage/p;Landroid/content/Context;)V
+    invoke-direct {v0, v1, v2}, Lcom/kik/cards/web/u;-><init>(Lcom/kik/storage/s;Landroid/content/Context;)V
 
     iput-object v0, p0, Lkik/android/widget/WubbleView;->j:Lcom/kik/cards/web/u;
 
@@ -280,13 +280,13 @@
 
     iget-object v4, p0, Lkik/android/widget/WubbleView;->c:Lkik/core/net/e;
 
-    iget-object v5, p0, Lkik/android/widget/WubbleView;->d:Lkik/core/interfaces/t;
+    iget-object v5, p0, Lkik/android/widget/WubbleView;->d:Lkik/core/interfaces/s;
 
     iget-object v6, p0, Lkik/android/widget/WubbleView;->j:Lcom/kik/cards/web/u;
 
     move-object v3, p0
 
-    invoke-direct/range {v0 .. v6}, Lcom/kik/cards/web/v;-><init>(Landroid/content/Context;Lcom/kik/util/a;Lcom/kik/cards/web/l;Lkik/core/net/e;Lkik/core/interfaces/t;Lcom/kik/cards/web/u;)V
+    invoke-direct/range {v0 .. v6}, Lcom/kik/cards/web/v;-><init>(Landroid/content/Context;Lcom/kik/util/a;Lcom/kik/cards/web/l;Lkik/core/net/e;Lkik/core/interfaces/s;Lcom/kik/cards/web/u;)V
 
     .line 1125
     new-instance v1, Lcom/kik/cards/web/n;
@@ -298,23 +298,23 @@
 
     move-result-object v3
 
-    new-instance v5, Lcom/kik/view/adapters/z;
+    new-instance v5, Lcom/kik/view/adapters/aa;
 
     .line 1127
     invoke-virtual {p0}, Lkik/android/widget/WubbleView;->getContext()Landroid/content/Context;
 
     move-result-object v4
 
-    invoke-direct {v5, v4, v0}, Lcom/kik/view/adapters/z;-><init>(Landroid/content/Context;Landroid/webkit/WebView;)V
+    invoke-direct {v5, v4, v0}, Lcom/kik/view/adapters/aa;-><init>(Landroid/content/Context;Landroid/webkit/WebView;)V
 
-    new-instance v11, Lkik/android/chat/vm/bu;
+    new-instance v11, Lkik/android/chat/vm/bw;
 
     .line 1128
     invoke-virtual {p0}, Lkik/android/widget/WubbleView;->getContext()Landroid/content/Context;
 
     move-result-object v4
 
-    invoke-direct {v11, v4}, Lkik/android/chat/vm/bu;-><init>(Landroid/content/Context;)V
+    invoke-direct {v11, v4}, Lkik/android/chat/vm/bw;-><init>(Landroid/content/Context;)V
 
     move-object v4, v0
 
@@ -326,7 +326,7 @@
 
     move-object v10, p0
 
-    invoke-direct/range {v1 .. v11}, Lcom/kik/cards/web/n;-><init>(Lcom/kik/components/CoreComponent;Landroid/app/Activity;Landroid/webkit/WebView;Lcom/kik/cards/web/browser/BrowserPlugin$a;Lcom/kik/cards/web/b;Lcom/kik/cards/web/picker/PickerRequest;Ljava/lang/String;Lcom/kik/cards/web/r;Lcom/kik/cards/web/f;Lkik/android/chat/vm/aw;)V
+    invoke-direct/range {v1 .. v11}, Lcom/kik/cards/web/n;-><init>(Lcom/kik/components/CoreComponent;Landroid/app/Activity;Landroid/webkit/WebView;Lcom/kik/cards/web/browser/BrowserPlugin$a;Lcom/kik/cards/web/b;Lcom/kik/cards/web/picker/PickerRequest;Ljava/lang/String;Lcom/kik/cards/web/r;Lcom/kik/cards/web/f;Lkik/android/chat/vm/ay;)V
 
     .line 1129
     iget-object v2, p0, Lkik/android/widget/WubbleView;->h:Ljava/lang/String;

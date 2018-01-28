@@ -327,7 +327,7 @@
 
     iget-object v1, p0, Lkik/android/gifs/vm/t;->m:Lkik/android/gifs/vm/bo;
 
-    invoke-interface {v1}, Lkik/android/gifs/vm/bo;->e()Ljava/lang/String;
+    invoke-interface {v1}, Lkik/android/gifs/vm/bo;->g()Ljava/lang/String;
 
     move-result-object v1
 
@@ -504,7 +504,7 @@
     return-object v0
 .end method
 
-.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
     .locals 0
 
     .prologue
@@ -512,7 +512,7 @@
     invoke-interface {p1, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/gifs/vm/t;)V
 
     .line 64
-    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/e;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/e;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 65
     return-void
@@ -533,7 +533,7 @@
 
     .line 121
     :cond_0
-    invoke-virtual {p0}, Lkik/android/gifs/vm/t;->ab_()Lrx/f/b;
+    invoke-virtual {p0}, Lkik/android/gifs/vm/t;->ad_()Lrx/f/b;
 
     move-result-object v0
 
@@ -597,13 +597,13 @@
     .line 134
     iget-object v0, p0, Lkik/android/gifs/vm/t;->a:Lkik/android/gifs/c;
 
-    invoke-interface {p1}, Lkik/android/gifs/vm/bo;->d()Ljava/lang/String;
+    invoke-interface {p1}, Lkik/android/gifs/vm/bo;->e()Ljava/lang/String;
 
     move-result-object v1
 
     sget-object v2, Lkik/android/gifs/a;->c:Lkik/android/gifs/api/GifResponseData$MediaType;
 
-    invoke-interface {p1}, Lkik/android/gifs/vm/bo;->e()Ljava/lang/String;
+    invoke-interface {p1}, Lkik/android/gifs/vm/bo;->g()Ljava/lang/String;
 
     move-result-object v3
 
@@ -638,7 +638,7 @@
     return-void
 .end method
 
-.method public final aj_()V
+.method public final ak_()V
     .locals 2
 
     .prologue
@@ -674,7 +674,7 @@
     iput-object v1, p0, Lkik/android/gifs/vm/t;->l:Lkik/android/gifs/api/GifApiProvider;
 
     .line 79
-    invoke-super {p0}, Lkik/android/chat/vm/e;->aj_()V
+    invoke-super {p0}, Lkik/android/chat/vm/e;->ak_()V
 
     .line 80
     return-void

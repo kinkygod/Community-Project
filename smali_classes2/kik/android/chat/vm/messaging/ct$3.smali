@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/vm/al;
+.implements Lkik/android/chat/vm/an;
 
 
 # annotations
@@ -47,7 +47,7 @@
     .line 418
     iget-object v0, p0, Lkik/android/chat/vm/messaging/ct$3;->b:Lkik/android/chat/vm/messaging/ct;
 
-    invoke-virtual {v0}, Lkik/android/chat/vm/messaging/ct;->k()Lkik/core/datatypes/messageExtensions/ContentMessage;
+    invoke-virtual {v0}, Lkik/android/chat/vm/messaging/ct;->l()Lkik/core/datatypes/messageExtensions/ContentMessage;
 
     move-result-object v0
 

@@ -6,8 +6,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lkik/core/chat/profile/IContactProfileRepository$ThemeForbiddenException;,
-        Lkik/core/chat/profile/IContactProfileRepository$ThemeBackgroundImageModerationException;,
+        Lkik/core/chat/profile/IContactProfileRepository$InterestsForbiddenException;,
         Lkik/core/chat/profile/IContactProfileRepository$BioForbiddenException;,
         Lkik/core/chat/profile/IContactProfileRepository$BioModerationException;,
         Lkik/core/chat/profile/IContactProfileRepository$RequestFailedException;
@@ -16,12 +15,12 @@
 
 
 # virtual methods
-.method public abstract a(Lcom/kik/core/network/xmpp/jid/a;Lkik/core/chat/profile/Theme;)Lrx/b;
+.method public abstract a(Lcom/kik/core/network/xmpp/jid/a;Lkik/core/chat/profile/a;)Lrx/b;
     .param p1    # Lcom/kik/core/network/xmpp/jid/a;
         .annotation runtime Ljavax/annotation/Nonnull;
         .end annotation
     .end param
-    .param p2    # Lkik/core/chat/profile/Theme;
+    .param p2    # Lkik/core/chat/profile/a;
         .annotation runtime Ljavax/annotation/Nullable;
         .end annotation
     .end param
@@ -29,12 +28,12 @@
     .end annotation
 .end method
 
-.method public abstract a(Lcom/kik/core/network/xmpp/jid/a;Lkik/core/chat/profile/a;)Lrx/b;
+.method public abstract a(Lcom/kik/core/network/xmpp/jid/a;Lkik/core/chat/profile/ah;)Lrx/b;
     .param p1    # Lcom/kik/core/network/xmpp/jid/a;
         .annotation runtime Ljavax/annotation/Nonnull;
         .end annotation
     .end param
-    .param p2    # Lkik/core/chat/profile/a;
+    .param p2    # Lkik/core/chat/profile/ah;
         .annotation runtime Ljavax/annotation/Nullable;
         .end annotation
     .end param
@@ -82,4 +81,21 @@
 
     .annotation runtime Ljavax/annotation/Nonnull;
     .end annotation
+.end method
+
+.method public abstract b(Lcom/kik/core/network/xmpp/jid/a;)V
+.end method
+
+.method public abstract b(Lkik/core/datatypes/l;)V
+    .param p1    # Lkik/core/datatypes/l;
+        .annotation runtime Ljavax/annotation/Nonnull;
+        .end annotation
+    .end param
+.end method
+
+.method public abstract c(Lcom/kik/core/network/xmpp/jid/a;)V
+    .param p1    # Lcom/kik/core/network/xmpp/jid/a;
+        .annotation runtime Ljavax/annotation/Nonnull;
+        .end annotation
+    .end param
 .end method

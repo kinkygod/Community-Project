@@ -9,31 +9,31 @@
 # instance fields
 .field _enteredPhoneNumber:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1003c3
+        value = 0x7f1003bf
     .end annotation
 .end field
 
 .field _resendCodeField:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1003c7
+        value = 0x7f1003c3
     .end annotation
 .end field
 
 .field _verificationCodeError:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1003c5
+        value = 0x7f1003c1
     .end annotation
 .end field
 
 .field _verificationCodeField:Lkik/android/widget/RobotoEditText;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1003c4
+        value = 0x7f1003c0
     .end annotation
 .end field
 
 .field private a:Lkik/android/chat/view/ad$a;
 
-.field private b:Lkik/android/widget/ar;
+.field private b:Lkik/android/widget/ba;
 
 .field private c:Landroid/text/TextWatcher;
 
@@ -140,7 +140,7 @@
 
     .prologue
     .line 78
-    const v0, 0x7f040154
+    const v0, 0x7f040159
 
     invoke-static {p1, v0, p0}, Lkik/android/chat/view/registration/RegPhoneVerificationEnterCodeViewImpl;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -167,18 +167,18 @@
     invoke-virtual {v0, v1}, Lkik/android/widget/RobotoEditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     .line 84
-    new-instance v0, Lkik/android/widget/ar;
+    new-instance v0, Lkik/android/widget/ba;
 
     iget-object v1, p0, Lkik/android/chat/view/registration/RegPhoneVerificationEnterCodeViewImpl;->_verificationCodeField:Lkik/android/widget/RobotoEditText;
 
     iget-object v2, p0, Lkik/android/chat/view/registration/RegPhoneVerificationEnterCodeViewImpl;->_verificationCodeError:Landroid/widget/TextView;
 
-    invoke-direct {v0, v1, v2}, Lkik/android/widget/ar;-><init>(Landroid/widget/EditText;Landroid/widget/TextView;)V
+    invoke-direct {v0, v1, v2}, Lkik/android/widget/ba;-><init>(Landroid/widget/EditText;Landroid/widget/TextView;)V
 
-    iput-object v0, p0, Lkik/android/chat/view/registration/RegPhoneVerificationEnterCodeViewImpl;->b:Lkik/android/widget/ar;
+    iput-object v0, p0, Lkik/android/chat/view/registration/RegPhoneVerificationEnterCodeViewImpl;->b:Lkik/android/widget/ba;
 
     .line 85
-    const v0, 0x7f0200f0
+    const v0, 0x7f0200d8
 
     invoke-static {v0}, Lkik/android/chat/KikApplication;->f(I)Landroid/graphics/drawable/Drawable;
 
@@ -196,9 +196,9 @@
 
     .prologue
     .line 131
-    iget-object v0, p0, Lkik/android/chat/view/registration/RegPhoneVerificationEnterCodeViewImpl;->b:Lkik/android/widget/ar;
+    iget-object v0, p0, Lkik/android/chat/view/registration/RegPhoneVerificationEnterCodeViewImpl;->b:Lkik/android/widget/ba;
 
-    invoke-virtual {v0}, Lkik/android/widget/ar;->a()V
+    invoke-virtual {v0}, Lkik/android/widget/ba;->a()V
 
     .line 132
     return-void
@@ -209,7 +209,7 @@
 
     .prologue
     .line 125
-    iget-object v0, p0, Lkik/android/chat/view/registration/RegPhoneVerificationEnterCodeViewImpl;->b:Lkik/android/widget/ar;
+    iget-object v0, p0, Lkik/android/chat/view/registration/RegPhoneVerificationEnterCodeViewImpl;->b:Lkik/android/widget/ba;
 
     iget-object v1, p0, Lkik/android/chat/view/registration/RegPhoneVerificationEnterCodeViewImpl;->d:Landroid/graphics/drawable/Drawable;
 
@@ -217,7 +217,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lkik/android/widget/ar;->a(Landroid/graphics/drawable/Drawable;Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v1, v2}, Lkik/android/widget/ba;->a(Landroid/graphics/drawable/Drawable;Ljava/lang/CharSequence;)V
 
     .line 126
     return-void
@@ -309,7 +309,7 @@
     .locals 1
     .annotation build Lbutterknife/OnClick;
         value = {
-            0x7f1003c7
+            0x7f1003c3
         }
     .end annotation
 
@@ -333,7 +333,7 @@
     .locals 1
     .annotation build Lbutterknife/OnClick;
         value = {
-            0x7f1003c6
+            0x7f1003c2
         }
     .end annotation
 

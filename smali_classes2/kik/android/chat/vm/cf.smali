@@ -2,47 +2,45 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnCancelListener;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field private final a:Lrx/i;
+.field private final a:Lkik/android/chat/vm/j$a;
 
 
 # direct methods
-.method private constructor <init>(Lrx/i;)V
+.method private constructor <init>(Lkik/android/chat/vm/j$a;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lkik/android/chat/vm/cf;->a:Lrx/i;
+    iput-object p1, p0, Lkik/android/chat/vm/cf;->a:Lkik/android/chat/vm/j$a;
 
     return-void
 .end method
 
-.method public static a(Lrx/i;)Landroid/content/DialogInterface$OnCancelListener;
+.method public static a(Lkik/android/chat/vm/j$a;)Ljava/lang/Runnable;
     .locals 1
 
     new-instance v0, Lkik/android/chat/vm/cf;
 
-    invoke-direct {v0, p0}, Lkik/android/chat/vm/cf;-><init>(Lrx/i;)V
+    invoke-direct {v0, p0}, Lkik/android/chat/vm/cf;-><init>(Lkik/android/chat/vm/j$a;)V
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public final onCancel(Landroid/content/DialogInterface;)V
-    .locals 2
+.method public final run()V
+    .locals 1
 
     .prologue
     .line 0
-    iget-object v0, p0, Lkik/android/chat/vm/cf;->a:Lrx/i;
+    iget-object v0, p0, Lkik/android/chat/vm/cf;->a:Lkik/android/chat/vm/j$a;
 
-    .line 1477
-    sget-object v1, Lkik/android/chat/vm/IShareUsernameViewModel$ShareResult;->CANCELLED:Lkik/android/chat/vm/IShareUsernameViewModel$ShareResult;
-
-    invoke-virtual {v0, v1}, Lrx/i;->a(Ljava/lang/Object;)V
+    .line 1757
+    invoke-virtual {v0}, Lkik/android/chat/vm/j$a;->c()V
 
     .line 0
     return-void

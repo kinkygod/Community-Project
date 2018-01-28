@@ -47,7 +47,7 @@
     .line 84
     iget-object v0, p0, Lkik/android/chat/fragment/KikAddToBlockFragment$2;->b:Lkik/android/chat/fragment/KikAddToBlockFragment;
 
-    iget-object v0, v0, Lkik/android/chat/fragment/KikAddToBlockFragment;->u:Lkik/core/interfaces/w;
+    iget-object v0, v0, Lkik/android/chat/fragment/KikAddToBlockFragment;->u:Lkik/core/interfaces/v;
 
     iget-object v1, p0, Lkik/android/chat/fragment/KikAddToBlockFragment$2;->a:Ljava/lang/String;
 
@@ -55,7 +55,7 @@
 
     move-result-object v1
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/w;->c(Lkik/core/datatypes/k;)Lcom/kik/events/Promise;
+    invoke-interface {v0, v1}, Lkik/core/interfaces/v;->c(Lkik/core/datatypes/k;)Lcom/kik/events/Promise;
 
     move-result-object v0
 

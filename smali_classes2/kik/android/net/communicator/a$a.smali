@@ -292,7 +292,7 @@
 
     iget-object v1, v1, Lkik/android/net/communicator/a;->a:Lkik/android/challenge/a;
 
-    invoke-virtual {v0, v1}, Lkik/core/net/challenge/d;->a(Lkik/core/interfaces/v;)V
+    invoke-virtual {v0, v1}, Lkik/core/net/challenge/d;->a(Lkik/core/interfaces/u;)V
 
     .line 668
     iget-object v1, p0, Lkik/android/net/communicator/a$a;->a:Lkik/android/net/communicator/a;
@@ -325,7 +325,7 @@
 
     iget-object v2, v2, Lkik/android/net/communicator/a;->b:Lkik/android/challenge/f;
 
-    invoke-virtual {v1, v2}, Lkik/core/net/challenge/f;->a(Lkik/core/interfaces/af;)V
+    invoke-virtual {v1, v2}, Lkik/core/net/challenge/f;->a(Lkik/core/interfaces/ae;)V
 
     .line 677
     iget-object v1, p0, Lkik/android/net/communicator/a$a;->a:Lkik/android/net/communicator/a;

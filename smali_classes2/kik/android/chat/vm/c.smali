@@ -16,7 +16,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<ItemViewModel::",
-        "Lkik/android/chat/vm/ar;",
+        "Lkik/android/chat/vm/at;",
         ">",
         "Lkik/android/chat/vm/e;",
         "Lkik/android/chat/vm/IListViewModel",
@@ -84,15 +84,15 @@
     .line 195
     const-string v0, "You shouldn\'t be modifying list data from a non-main thread!"
 
-    .line 2032
+    .line 2033
     invoke-static {}, Lkik/android/util/DeviceUtils;->f()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 2033
-    invoke-static {v0}, Lcom/kik/util/cy;->a(Ljava/lang/String;)V
+    .line 2034
+    invoke-static {v0}, Lcom/kik/util/dd;->a(Ljava/lang/String;)V
 
     .line 196
     :cond_0
@@ -101,23 +101,6 @@
 
 
 # virtual methods
-.method protected K_()V
-    .locals 2
-
-    .prologue
-    .line 204
-    iget-object v0, p0, Lkik/android/chat/vm/c;->c:Lrx/subjects/PublishSubject;
-
-    invoke-static {}, Lkik/android/chat/vm/IListViewModel$a;->a()Lkik/android/chat/vm/IListViewModel$a;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lrx/subjects/PublishSubject;->a(Ljava/lang/Object;)V
-
-    .line 205
-    return-void
-.end method
-
 .method protected final a()Lcom/kik/components/CoreComponent;
     .locals 1
 
@@ -128,7 +111,7 @@
     return-object v0
 .end method
 
-.method protected abstract a(I)Lkik/android/chat/vm/ar;
+.method protected abstract a(I)Lkik/android/chat/vm/at;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)TItemViewModel;"
@@ -182,7 +165,7 @@
 
     move-result-object v1
 
-    check-cast v1, Lkik/android/chat/vm/ar;
+    check-cast v1, Lkik/android/chat/vm/at;
 
     move-object v2, v1
 
@@ -201,7 +184,7 @@
 
     move-object v1, v0
 
-    invoke-virtual {v1}, Lkik/android/chat/vm/e;->C_()Z
+    invoke-virtual {v1}, Lkik/android/chat/vm/e;->G_()Z
 
     move-result v1
 
@@ -216,7 +199,7 @@
 
     const/4 v3, 0x0
 
-    invoke-direct {v1, p0, v2, v3}, Lkik/android/chat/vm/c$a;-><init>(Lkik/android/chat/vm/c;Lkik/android/chat/vm/ar;Z)V
+    invoke-direct {v1, p0, v2, v3}, Lkik/android/chat/vm/c$a;-><init>(Lkik/android/chat/vm/c;Lkik/android/chat/vm/at;Z)V
 
     monitor-exit v5
 
@@ -241,7 +224,7 @@
 
     .line 1101
     :cond_3
-    invoke-virtual {p0, p2}, Lkik/android/chat/vm/c;->a(I)Lkik/android/chat/vm/ar;
+    invoke-virtual {p0, p2}, Lkik/android/chat/vm/c;->a(I)Lkik/android/chat/vm/at;
 
     move-result-object v2
 
@@ -269,7 +252,7 @@
 
     const/4 v3, 0x1
 
-    invoke-direct {v1, p0, v2, v3}, Lkik/android/chat/vm/c$a;-><init>(Lkik/android/chat/vm/c;Lkik/android/chat/vm/ar;Z)V
+    invoke-direct {v1, p0, v2, v3}, Lkik/android/chat/vm/c$a;-><init>(Lkik/android/chat/vm/c;Lkik/android/chat/vm/at;Z)V
 
     goto :goto_2
 
@@ -310,12 +293,12 @@
     return-void
 .end method
 
-.method public a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+.method public a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
     .locals 2
 
     .prologue
     .line 113
-    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/e;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/e;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 115
     new-instance v0, Ljava/util/ArrayList;
@@ -326,7 +309,7 @@
     iput-object p1, p0, Lkik/android/chat/vm/c;->a:Lcom/kik/components/CoreComponent;
 
     .line 119
-    invoke-virtual {p0}, Lkik/android/chat/vm/c;->d()Ljava/util/List;
+    invoke-virtual {p0}, Lkik/android/chat/vm/c;->q_()Ljava/util/List;
 
     move-result-object v0
 
@@ -345,10 +328,10 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/android/chat/vm/ar;
+    check-cast v0, Lkik/android/chat/vm/at;
 
     .line 120
-    invoke-interface {v0, p1, p2}, Lkik/android/chat/vm/ar;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    invoke-interface {v0, p1, p2}, Lkik/android/chat/vm/at;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     goto :goto_0
 
@@ -357,12 +340,29 @@
     return-void
 .end method
 
-.method public aj_()V
+.method protected aF_()V
+    .locals 2
+
+    .prologue
+    .line 204
+    iget-object v0, p0, Lkik/android/chat/vm/c;->c:Lrx/subjects/PublishSubject;
+
+    invoke-static {}, Lkik/android/chat/vm/IListViewModel$a;->a()Lkik/android/chat/vm/IListViewModel$a;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lrx/subjects/PublishSubject;->a(Ljava/lang/Object;)V
+
+    .line 205
+    return-void
+.end method
+
+.method public ak_()V
     .locals 2
 
     .prologue
     .line 127
-    invoke-super {p0}, Lkik/android/chat/vm/e;->aj_()V
+    invoke-super {p0}, Lkik/android/chat/vm/e;->ak_()V
 
     .line 129
     const/4 v0, 0x0
@@ -370,7 +370,7 @@
     iput-object v0, p0, Lkik/android/chat/vm/c;->a:Lcom/kik/components/CoreComponent;
 
     .line 131
-    invoke-virtual {p0}, Lkik/android/chat/vm/c;->d()Ljava/util/List;
+    invoke-virtual {p0}, Lkik/android/chat/vm/c;->q_()Ljava/util/List;
 
     move-result-object v0
 
@@ -389,10 +389,10 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/android/chat/vm/ar;
+    check-cast v0, Lkik/android/chat/vm/at;
 
     .line 132
-    invoke-interface {v0}, Lkik/android/chat/vm/ar;->aj_()V
+    invoke-interface {v0}, Lkik/android/chat/vm/at;->ak_()V
 
     goto :goto_0
 
@@ -482,7 +482,107 @@
     return-void
 .end method
 
-.method protected d()Ljava/util/List;
+.method public final d(I)Lkik/android/chat/vm/at;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I)TItemViewModel;"
+        }
+    .end annotation
+
+    .prologue
+    .line 46
+    invoke-virtual {p0, p1}, Lkik/android/chat/vm/c;->f(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 47
+    if-eqz v0, :cond_1
+
+    .line 48
+    invoke-virtual {p0, v0, p1}, Lkik/android/chat/vm/c;->a(Ljava/lang/String;I)Lkik/android/chat/vm/c$a;
+
+    move-result-object v1
+
+    .line 49
+    iget-object v0, v1, Lkik/android/chat/vm/c$a;->a:Lkik/android/chat/vm/at;
+
+    .line 50
+    iget-boolean v1, v1, Lkik/android/chat/vm/c$a;->b:Z
+
+    .line 52
+    invoke-virtual {p0}, Lkik/android/chat/vm/c;->G_()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    if-eqz v0, :cond_0
+
+    if-eqz v1, :cond_0
+
+    .line 1027
+    iget-object v1, p0, Lkik/android/chat/vm/c;->a:Lcom/kik/components/CoreComponent;
+
+    .line 53
+    invoke-virtual {p0}, Lkik/android/chat/vm/c;->F_()Lkik/android/chat/vm/ay;
+
+    move-result-object v2
+
+    invoke-interface {v0, v1, v2}, Lkik/android/chat/vm/at;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
+
+    .line 58
+    :cond_0
+    :goto_0
+    return-object v0
+
+    :cond_1
+    const/4 v0, 0x0
+
+    goto :goto_0
+.end method
+
+.method protected final e(I)Lkik/android/chat/vm/at;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I)TItemViewModel;"
+        }
+    .end annotation
+
+    .prologue
+    .line 101
+    invoke-virtual {p0, p1}, Lkik/android/chat/vm/c;->a(I)Lkik/android/chat/vm/at;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method protected abstract f(I)Ljava/lang/String;
+.end method
+
+.method protected final g(I)V
+    .locals 2
+
+    .prologue
+    .line 189
+    invoke-static {}, Lkik/android/chat/vm/c;->j()V
+
+    .line 190
+    iget-object v0, p0, Lkik/android/chat/vm/c;->c:Lrx/subjects/PublishSubject;
+
+    invoke-static {p1}, Lkik/android/chat/vm/IListViewModel$a;->b(I)Lkik/android/chat/vm/IListViewModel$a;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lrx/subjects/PublishSubject;->a(Ljava/lang/Object;)V
+
+    .line 191
+    return-void
+.end method
+
+.method protected q_()Ljava/util/List;
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -534,7 +634,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/android/chat/vm/ar;
+    check-cast v0, Lkik/android/chat/vm/at;
 
     .line 144
     if-eqz v0, :cond_0
@@ -562,104 +662,4 @@
 
     .line 150
     return-object v1
-.end method
-
-.method public final d(I)Lkik/android/chat/vm/ar;
-    .locals 3
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(I)TItemViewModel;"
-        }
-    .end annotation
-
-    .prologue
-    .line 46
-    invoke-virtual {p0, p1}, Lkik/android/chat/vm/c;->f(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 47
-    if-eqz v0, :cond_1
-
-    .line 48
-    invoke-virtual {p0, v0, p1}, Lkik/android/chat/vm/c;->a(Ljava/lang/String;I)Lkik/android/chat/vm/c$a;
-
-    move-result-object v1
-
-    .line 49
-    iget-object v0, v1, Lkik/android/chat/vm/c$a;->a:Lkik/android/chat/vm/ar;
-
-    .line 50
-    iget-boolean v1, v1, Lkik/android/chat/vm/c$a;->b:Z
-
-    .line 52
-    invoke-virtual {p0}, Lkik/android/chat/vm/c;->C_()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_0
-
-    if-eqz v0, :cond_0
-
-    if-eqz v1, :cond_0
-
-    .line 1027
-    iget-object v1, p0, Lkik/android/chat/vm/c;->a:Lcom/kik/components/CoreComponent;
-
-    .line 53
-    invoke-virtual {p0}, Lkik/android/chat/vm/c;->B_()Lkik/android/chat/vm/aw;
-
-    move-result-object v2
-
-    invoke-interface {v0, v1, v2}, Lkik/android/chat/vm/ar;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
-
-    .line 58
-    :cond_0
-    :goto_0
-    return-object v0
-
-    :cond_1
-    const/4 v0, 0x0
-
-    goto :goto_0
-.end method
-
-.method protected final e(I)Lkik/android/chat/vm/ar;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(I)TItemViewModel;"
-        }
-    .end annotation
-
-    .prologue
-    .line 101
-    invoke-virtual {p0, p1}, Lkik/android/chat/vm/c;->a(I)Lkik/android/chat/vm/ar;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method protected abstract f(I)Ljava/lang/String;
-.end method
-
-.method protected final g(I)V
-    .locals 2
-
-    .prologue
-    .line 189
-    invoke-static {}, Lkik/android/chat/vm/c;->j()V
-
-    .line 190
-    iget-object v0, p0, Lkik/android/chat/vm/c;->c:Lrx/subjects/PublishSubject;
-
-    invoke-static {p1}, Lkik/android/chat/vm/IListViewModel$a;->b(I)Lkik/android/chat/vm/IListViewModel$a;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lrx/subjects/PublishSubject;->a(Ljava/lang/Object;)V
-
-    .line 191
-    return-void
 .end method

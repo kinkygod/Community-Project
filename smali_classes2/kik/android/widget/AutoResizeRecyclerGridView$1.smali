@@ -60,7 +60,7 @@
     .line 64
     check-cast v0, Landroid/support/v7/widget/GridLayoutManager;
 
-    invoke-virtual {v0}, Landroid/support/v7/widget/GridLayoutManager;->c()I
+    invoke-virtual {v0}, Landroid/support/v7/widget/GridLayoutManager;->b()I
 
     move-result v0
 

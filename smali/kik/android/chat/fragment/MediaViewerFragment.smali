@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/f/f;
+.implements Lkik/android/f/e;
 
 
 # instance fields
@@ -15,7 +15,7 @@
 
 .field _mediaViewPager:Lkik/android/widget/MediaViewPager;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f100378
+        value = 0x7f100374
     .end annotation
 .end field
 
@@ -41,7 +41,7 @@
     .end annotation
 .end field
 
-.field protected c:Lkik/core/interfaces/w;
+.field protected c:Lkik/core/interfaces/v;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -238,7 +238,7 @@
     check-cast v1, Lkik/core/datatypes/messageExtensions/ContentMessage;
 
     .line 226
-    iget-object v5, p0, Lkik/android/chat/fragment/MediaViewerFragment;->c:Lkik/core/interfaces/w;
+    iget-object v5, p0, Lkik/android/chat/fragment/MediaViewerFragment;->c:Lkik/core/interfaces/v;
 
     invoke-virtual {v0}, Lkik/core/datatypes/Message;->h()Ljava/lang/String;
 
@@ -246,7 +246,7 @@
 
     const/4 v9, 0x0
 
-    invoke-interface {v5, v8, v9}, Lkik/core/interfaces/w;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
+    invoke-interface {v5, v8, v9}, Lkik/core/interfaces/v;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
 
     move-result-object v8
 
@@ -351,7 +351,7 @@
 
     .line 3246
     :cond_6
-    invoke-virtual {v0}, Lkik/core/datatypes/Message;->B()Z
+    invoke-virtual {v0}, Lkik/core/datatypes/Message;->A()Z
 
     move-result v5
 
@@ -572,9 +572,9 @@
     move-result-object v0
 
     .line 274
-    iget-object v1, p0, Lkik/android/chat/fragment/MediaViewerFragment;->c:Lkik/core/interfaces/w;
+    iget-object v1, p0, Lkik/android/chat/fragment/MediaViewerFragment;->c:Lkik/core/interfaces/v;
 
-    invoke-static {v0, v1}, Lkik/android/util/bg;->a(Lkik/core/datatypes/f;Lkik/core/interfaces/w;)Z
+    invoke-static {v0, v1}, Lkik/android/util/bg;->a(Lkik/core/datatypes/f;Lkik/core/interfaces/v;)Z
 
     move-result v0
 
@@ -837,7 +837,7 @@
 
     aput-object v1, v0, v2
 
-    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
     goto :goto_0
 
@@ -849,7 +849,7 @@
 
     aput-object v1, v0, v2
 
-    invoke-static {v0}, Lkik/android/util/ca;->g([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->g([Landroid/view/View;)V
 
     goto :goto_0
 .end method
@@ -1001,7 +1001,7 @@
     const/4 v4, 0x0
 
     .line 104
-    const v0, 0x7f040115
+    const v0, 0x7f040119
 
     invoke-virtual {p1, v0, p2, v4}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
@@ -1040,7 +1040,7 @@
 
     move-result-object v3
 
-    invoke-direct {v2, v3, v1, p0}, Lcom/kik/view/adapters/MediaViewerAdapter;-><init>(Landroid/support/v4/app/FragmentManager;Ljava/util/List;Lkik/android/f/f;)V
+    invoke-direct {v2, v3, v1, p0}, Lcom/kik/view/adapters/MediaViewerAdapter;-><init>(Landroid/support/v4/app/FragmentManager;Ljava/util/List;Lkik/android/f/e;)V
 
     iput-object v2, p0, Lkik/android/chat/fragment/MediaViewerFragment;->j:Lcom/kik/view/adapters/MediaViewerAdapter;
 

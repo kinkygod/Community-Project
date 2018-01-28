@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private f:Lkik/android/chat/vm/bu;
+.field private f:Lkik/android/chat/vm/bw;
 
 
 # direct methods
@@ -45,18 +45,18 @@
     invoke-direct {v0, v1, v3, v2, v3}, Lkik/android/chat/a/a$b;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 37
-    iget-object v1, p0, Lkik/android/deeplinks/ChatInfoDeepLinkActivity;->f:Lkik/android/chat/vm/bu;
+    iget-object v1, p0, Lkik/android/deeplinks/ChatInfoDeepLinkActivity;->f:Lkik/android/chat/vm/bw;
 
     invoke-interface {p1}, Lcom/kik/core/domain/users/a/c;->a()Lcom/kik/core/network/xmpp/jid/a;
 
     move-result-object v2
 
-    invoke-static {v2}, Lkik/android/chat/vm/profile/dc;->a(Lcom/kik/core/network/xmpp/jid/a;)Lkik/android/chat/vm/profile/dc;
+    invoke-static {v2}, Lkik/android/chat/vm/profile/dp;->a(Lcom/kik/core/network/xmpp/jid/a;)Lkik/android/chat/vm/profile/dp;
 
     move-result-object v2
 
     .line 38
-    invoke-virtual {v2, v0}, Lkik/android/chat/vm/profile/dc;->a(Lkik/android/chat/a/a$b;)Lkik/android/chat/vm/profile/dc;
+    invoke-virtual {v2, v0}, Lkik/android/chat/vm/profile/dp;->a(Lkik/android/chat/a/a$b;)Lkik/android/chat/vm/profile/dp;
 
     move-result-object v0
 
@@ -65,17 +65,17 @@
 
     move-result v2
 
-    invoke-virtual {v0, v2}, Lkik/android/chat/vm/profile/dc;->a(Z)Lkik/android/chat/vm/profile/dc;
+    invoke-virtual {v0, v2}, Lkik/android/chat/vm/profile/dp;->a(Z)Lkik/android/chat/vm/profile/dp;
 
     move-result-object v0
 
     .line 40
-    invoke-virtual {v0}, Lkik/android/chat/vm/profile/dc;->b()Lkik/android/chat/vm/profile/cv;
+    invoke-virtual {v0}, Lkik/android/chat/vm/profile/dp;->b()Lkik/android/chat/vm/profile/di;
 
     move-result-object v0
 
     .line 37
-    invoke-virtual {v1, v0}, Lkik/android/chat/vm/bu;->a(Lkik/android/chat/vm/profile/cv;)Lrx/d;
+    invoke-virtual {v1, v0}, Lkik/android/chat/vm/bw;->a(Lkik/android/chat/vm/profile/di;)Lrx/d;
 
     .line 42
     :cond_0
@@ -141,11 +141,11 @@
     invoke-super {p0, p1}, Lkik/android/deeplinks/DeepLinkActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 21
-    new-instance v0, Lkik/android/chat/vm/bu;
+    new-instance v0, Lkik/android/chat/vm/bw;
 
-    invoke-direct {v0, p0}, Lkik/android/chat/vm/bu;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p0}, Lkik/android/chat/vm/bw;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lkik/android/deeplinks/ChatInfoDeepLinkActivity;->f:Lkik/android/chat/vm/bu;
+    iput-object v0, p0, Lkik/android/deeplinks/ChatInfoDeepLinkActivity;->f:Lkik/android/chat/vm/bw;
 
     .line 22
     return-void

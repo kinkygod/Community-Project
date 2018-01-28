@@ -75,7 +75,7 @@
 
     .prologue
     .line 30
-    const v0, 0x7f0100db
+    const v0, 0x7f0100dd
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -83,7 +83,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bq;->d(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
+    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bt;->d(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
 
     .line 31
     return-void

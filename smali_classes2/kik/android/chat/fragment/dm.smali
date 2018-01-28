@@ -2,7 +2,7 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroid/content/DialogInterface$OnClickListener;
 
 
 # instance fields
@@ -20,7 +20,7 @@
     return-void
 .end method
 
-.method public static a(Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;)Ljava/lang/Runnable;
+.method public static a(Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;)Landroid/content/DialogInterface$OnClickListener;
     .locals 1
 
     new-instance v0, Lkik/android/chat/fragment/dm;
@@ -32,12 +32,12 @@
 
 
 # virtual methods
-.method public final run()V
+.method public final onClick(Landroid/content/DialogInterface;I)V
     .locals 1
 
     iget-object v0, p0, Lkik/android/chat/fragment/dm;->a:Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;
 
-    invoke-static {v0}, Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;->d(Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;)V
+    invoke-static {v0}, Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;->g(Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;)V
 
     return-void
 .end method

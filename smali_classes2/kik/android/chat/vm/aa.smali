@@ -2,48 +2,52 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Lcom/google/common/base/Predicate;
 
 
-# instance fields
-.field private final a:Lorg/apmem/tools/layouts/FlowLayout;
-
-.field private final b:Lkik/android/e/z;
+# static fields
+.field private static final a:Lkik/android/chat/vm/aa;
 
 
 # direct methods
-.method private constructor <init>(Lorg/apmem/tools/layouts/FlowLayout;Lkik/android/e/z;)V
-    .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lkik/android/chat/vm/aa;->a:Lorg/apmem/tools/layouts/FlowLayout;
-
-    iput-object p2, p0, Lkik/android/chat/vm/aa;->b:Lkik/android/e/z;
-
-    return-void
-.end method
-
-.method public static a(Lorg/apmem/tools/layouts/FlowLayout;Lkik/android/e/z;)Ljava/lang/Runnable;
+.method static constructor <clinit>()V
     .locals 1
 
     new-instance v0, Lkik/android/chat/vm/aa;
 
-    invoke-direct {v0, p0, p1}, Lkik/android/chat/vm/aa;-><init>(Lorg/apmem/tools/layouts/FlowLayout;Lkik/android/e/z;)V
+    invoke-direct {v0}, Lkik/android/chat/vm/aa;-><init>()V
+
+    sput-object v0, Lkik/android/chat/vm/aa;->a:Lkik/android/chat/vm/aa;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static a()Lcom/google/common/base/Predicate;
+    .locals 1
+
+    sget-object v0, Lkik/android/chat/vm/aa;->a:Lkik/android/chat/vm/aa;
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 2
+.method public final apply(Ljava/lang/Object;)Z
+    .locals 1
 
-    iget-object v0, p0, Lkik/android/chat/vm/aa;->a:Lorg/apmem/tools/layouts/FlowLayout;
+    check-cast p1, Lkik/core/chat/profile/EmojiStatus$Name;
 
-    iget-object v1, p0, Lkik/android/chat/vm/aa;->b:Lkik/android/e/z;
+    invoke-static {p1}, Lkik/android/chat/vm/t;->b(Lkik/core/chat/profile/EmojiStatus$Name;)Z
 
-    invoke-static {v0, v1}, Lkik/android/chat/vm/r$1;->a(Lorg/apmem/tools/layouts/FlowLayout;Lkik/android/e/z;)V
+    move-result v0
 
-    return-void
+    return v0
 .end method

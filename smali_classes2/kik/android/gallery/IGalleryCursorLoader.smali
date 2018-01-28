@@ -22,7 +22,7 @@
 .method public abstract a(Lkik/android/gallery/a;Landroid/graphics/BitmapFactory$Options;)Lcom/kik/cache/GalleryImageRequest;
 .end method
 
-.method public abstract a(Landroid/content/Intent;ILkik/android/chat/vm/aw;)Lkik/android/gallery/a;
+.method public abstract a(Landroid/content/Intent;ILkik/android/chat/vm/ay;)Lkik/android/gallery/a;
 .end method
 
 .method public abstract b()V

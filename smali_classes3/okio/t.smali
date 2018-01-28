@@ -114,7 +114,7 @@
     return-object p0
 .end method
 
-.method public aS_()J
+.method public aO_()J
     .locals 2
 
     .prologue
@@ -124,7 +124,7 @@
     return-wide v0
 .end method
 
-.method public aT_()Z
+.method public aP_()Z
     .locals 1
 
     .prologue
@@ -134,7 +134,7 @@
     return v0
 .end method
 
-.method public aU_()Lokio/t;
+.method public aQ_()Lokio/t;
     .locals 2
 
     .prologue

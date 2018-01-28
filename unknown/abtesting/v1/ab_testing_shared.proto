@@ -6,7 +6,6 @@ option objc_class_prefix = "XIAB";
 
 option go_package = "github.com/kikinteractive/xiphias-model-common/generated/go/abtesting/v1;abtesting";
 
-import "common_model.proto";
 import "protobuf_validation.proto";
 
 //*************************************************************************************************

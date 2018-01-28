@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 290
+    .line 293
     iput-object p1, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$6;->a:Lkik/android/chat/fragment/KikGroupMembersListFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -49,7 +49,7 @@
     .end annotation
 
     .prologue
-    .line 294
+    .line 297
     iget-object v0, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$6;->a:Lkik/android/chat/fragment/KikGroupMembersListFragment;
 
     iget-object v0, v0, Lkik/android/chat/fragment/KikGroupMembersListFragment;->_groupMembersList:Landroid/widget/ListView;
@@ -58,33 +58,38 @@
 
     move-result-object v0
 
-    .line 295
+    .line 298
     if-eqz v0, :cond_0
 
-    instance-of v1, v0, Lkik/core/datatypes/KikSectionedContact;
+    instance-of v1, v0, Lkik/android/chat/vm/a/c;
 
     if-eqz v1, :cond_0
 
-    .line 296
+    .line 299
+    check-cast v0, Lkik/android/chat/vm/a/c;
+
+    .line 300
     const v1, 0x7f10010c
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
-    .line 298
+    .line 302
     if-nez v1, :cond_1
 
-    .line 302
+    .line 306
     :goto_0
-    check-cast v0, Lkik/core/datatypes/KikSectionedContact;
+    invoke-virtual {v0}, Lkik/android/chat/vm/a/c;->e()Lkik/core/datatypes/GroupContactInfoHolder;
 
-    .line 303
+    move-result-object v0
+
+    .line 307
     iget-object v1, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$6;->a:Lkik/android/chat/fragment/KikGroupMembersListFragment;
 
-    invoke-static {v1, p2, v0}, Lkik/android/chat/fragment/KikGroupMembersListFragment;->a(Lkik/android/chat/fragment/KikGroupMembersListFragment;Landroid/view/View;Lkik/core/datatypes/KikSectionedContact;)V
+    invoke-static {v1, p2, v0}, Lkik/android/chat/fragment/KikGroupMembersListFragment;->a(Lkik/android/chat/fragment/KikGroupMembersListFragment;Landroid/view/View;Lkik/core/datatypes/GroupContactInfoHolder;)V
 
-    .line 305
+    .line 309
     :cond_0
     return-void
 

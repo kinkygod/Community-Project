@@ -4,15 +4,15 @@
 
 
 # static fields
-.field private static final a:Landroid/databinding/ViewDataBinding$IncludedLayouts;
+.field private static final b:Landroid/databinding/ViewDataBinding$IncludedLayouts;
 
-.field private static final b:Landroid/util/SparseIntArray;
+.field private static final c:Landroid/util/SparseIntArray;
 
 
 # instance fields
-.field private final c:Lkik/android/widget/ActionItemFrameLayout;
+.field public final a:Lkik/android/widget/SmileyPopupRecyclerView;
 
-.field private d:Lkik/android/chat/vm/profile/cs;
+.field private d:Lkik/android/chat/vm/widget/x;
 
 .field private e:J
 
@@ -25,10 +25,10 @@
     const/4 v0, 0x0
 
     .line 10
-    sput-object v0, Lkik/android/e/cn;->a:Landroid/databinding/ViewDataBinding$IncludedLayouts;
+    sput-object v0, Lkik/android/e/cn;->b:Landroid/databinding/ViewDataBinding$IncludedLayouts;
 
     .line 11
-    sput-object v0, Lkik/android/e/cn;->b:Landroid/util/SparseIntArray;
+    sput-object v0, Lkik/android/e/cn;->c:Landroid/util/SparseIntArray;
 
     .line 12
     return-void
@@ -51,9 +51,9 @@
     .line 23
     const/4 v0, 0x1
 
-    sget-object v1, Lkik/android/e/cn;->a:Landroid/databinding/ViewDataBinding$IncludedLayouts;
+    sget-object v1, Lkik/android/e/cn;->b:Landroid/databinding/ViewDataBinding$IncludedLayouts;
 
-    sget-object v2, Lkik/android/e/cn;->b:Landroid/util/SparseIntArray;
+    sget-object v2, Lkik/android/e/cn;->c:Landroid/util/SparseIntArray;
 
     invoke-static {p1, p2, v0, v1, v2}, Lkik/android/e/cn;->mapBindings(Landroid/databinding/DataBindingComponent;Landroid/view/View;ILandroid/databinding/ViewDataBinding$IncludedLayouts;Landroid/util/SparseIntArray;)[Ljava/lang/Object;
 
@@ -62,16 +62,16 @@
     .line 24
     aget-object v0, v0, v3
 
-    check-cast v0, Lkik/android/widget/ActionItemFrameLayout;
+    check-cast v0, Lkik/android/widget/SmileyPopupRecyclerView;
 
-    iput-object v0, p0, Lkik/android/e/cn;->c:Lkik/android/widget/ActionItemFrameLayout;
+    iput-object v0, p0, Lkik/android/e/cn;->a:Lkik/android/widget/SmileyPopupRecyclerView;
 
     .line 25
-    iget-object v0, p0, Lkik/android/e/cn;->c:Lkik/android/widget/ActionItemFrameLayout;
+    iget-object v0, p0, Lkik/android/e/cn;->a:Lkik/android/widget/SmileyPopupRecyclerView;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lkik/android/widget/ActionItemFrameLayout;->setTag(Ljava/lang/Object;)V
+    invoke-virtual {v0, v1}, Lkik/android/widget/SmileyPopupRecyclerView;->setTag(Ljava/lang/Object;)V
 
     .line 26
     invoke-virtual {p0, p2}, Lkik/android/e/cn;->setRootTag(Landroid/view/View;)V
@@ -88,7 +88,7 @@
 
     .prologue
     .line 116
-    const-string v0, "layout/profile_discover_bots_0"
+    const-string v0, "layout/popup_smiley_chooser_0"
 
     invoke-virtual {p0}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -136,6 +136,54 @@
 
 
 # virtual methods
+.method public final a(Lkik/android/chat/vm/widget/x;)V
+    .locals 4
+
+    .prologue
+    .line 59
+    iput-object p1, p0, Lkik/android/e/cn;->d:Lkik/android/chat/vm/widget/x;
+
+    .line 60
+    monitor-enter p0
+
+    .line 61
+    :try_start_0
+    iget-wide v0, p0, Lkik/android/e/cn;->e:J
+
+    const-wide/16 v2, 0x1
+
+    or-long/2addr v0, v2
+
+    iput-wide v0, p0, Lkik/android/e/cn;->e:J
+
+    .line 62
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 63
+    const/16 v0, 0xe
+
+    invoke-virtual {p0, v0}, Lkik/android/e/cn;->notifyPropertyChanged(I)V
+
+    .line 64
+    invoke-super {p0}, Landroid/databinding/ViewDataBinding;->requestRebind()V
+
+    .line 65
+    return-void
+
+    .line 62
+    :catchall_0
+    move-exception v0
+
+    :try_start_1
+    monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    throw v0
+.end method
+
 .method protected final executeBindings()V
     .locals 8
 
@@ -160,7 +208,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 84
-    iget-object v2, p0, Lkik/android/e/cn;->d:Lkik/android/chat/vm/profile/cs;
+    iget-object v2, p0, Lkik/android/e/cn;->d:Lkik/android/chat/vm/widget/x;
 
     .line 89
     const-wide/16 v4, 0x3
@@ -172,9 +220,9 @@
     if-eqz v0, :cond_0
 
     .line 92
-    iget-object v0, p0, Lkik/android/e/cn;->c:Lkik/android/widget/ActionItemFrameLayout;
+    iget-object v0, p0, Lkik/android/e/cn;->a:Lkik/android/widget/SmileyPopupRecyclerView;
 
-    invoke-virtual {v0, v2}, Lkik/android/widget/ActionItemFrameLayout;->a(Lkik/android/chat/vm/profile/cs;)V
+    invoke-static {v0, v2}, Lcom/kik/util/j;->a(Landroid/support/v7/widget/RecyclerView;Lkik/android/chat/vm/IListViewModel;)V
 
     .line 94
     :cond_0
@@ -285,7 +333,7 @@
 .end method
 
 .method public final setVariable(ILjava/lang/Object;)Z
-    .locals 4
+    .locals 1
 
     .prologue
     .line 50
@@ -299,56 +347,16 @@
 
     .line 52
     :pswitch_0
-    check-cast p2, Lkik/android/chat/vm/profile/cs;
+    check-cast p2, Lkik/android/chat/vm/widget/x;
 
-    .line 1059
-    iput-object p2, p0, Lkik/android/e/cn;->d:Lkik/android/chat/vm/profile/cs;
-
-    .line 1060
-    monitor-enter p0
-
-    .line 1061
-    :try_start_0
-    iget-wide v0, p0, Lkik/android/e/cn;->e:J
-
-    const-wide/16 v2, 0x1
-
-    or-long/2addr v0, v2
-
-    iput-wide v0, p0, Lkik/android/e/cn;->e:J
-
-    .line 1062
-    monitor-exit p0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 1063
-    const/16 v0, 0xe
-
-    invoke-virtual {p0, v0}, Lkik/android/e/cn;->notifyPropertyChanged(I)V
-
-    .line 1064
-    invoke-super {p0}, Landroid/databinding/ViewDataBinding;->requestRebind()V
+    invoke-virtual {p0, p2}, Lkik/android/e/cn;->a(Lkik/android/chat/vm/widget/x;)V
 
     .line 53
     const/4 v0, 0x1
 
     goto :goto_0
 
-    .line 1062
-    :catchall_0
-    move-exception v0
-
-    :try_start_1
-    monitor-exit p0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    throw v0
-
     .line 50
-    nop
-
     :pswitch_data_0
     .packed-switch 0xe
         :pswitch_0

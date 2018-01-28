@@ -14,7 +14,7 @@
 
 .field private final d:Lkik/android/widget/RobotoTextView;
 
-.field private e:Lkik/android/chat/vm/af;
+.field private e:Lkik/android/chat/vm/ah;
 
 .field private f:J
 
@@ -152,12 +152,12 @@
 
 
 # virtual methods
-.method public final a(Lkik/android/chat/vm/af;)V
+.method public final a(Lkik/android/chat/vm/ah;)V
     .locals 4
 
     .prologue
     .line 62
-    iput-object p1, p0, Lkik/android/e/be;->e:Lkik/android/chat/vm/af;
+    iput-object p1, p0, Lkik/android/e/be;->e:Lkik/android/chat/vm/ah;
 
     .line 63
     monitor-enter p0
@@ -228,7 +228,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 87
-    iget-object v4, p0, Lkik/android/e/be;->e:Lkik/android/chat/vm/af;
+    iget-object v4, p0, Lkik/android/e/be;->e:Lkik/android/chat/vm/ah;
 
     .line 92
     and-long v6, v2, v10
@@ -241,18 +241,18 @@
     if-eqz v4, :cond_1
 
     .line 98
-    invoke-interface {v4}, Lkik/android/chat/vm/af;->af_()Lrx/d;
+    invoke-interface {v4}, Lkik/android/chat/vm/ah;->af_()Lrx/d;
 
     move-result-object v1
 
     .line 100
-    invoke-interface {v4}, Lkik/android/chat/vm/af;->ae_()Lrx/d;
+    invoke-interface {v4}, Lkik/android/chat/vm/ah;->ae_()Lrx/d;
 
     move-result-object v0
 
     .line 105
     :goto_0
-    invoke-static {v0}, Lcom/kik/util/bq;->g(Lrx/d;)Lrx/d;
+    invoke-static {v0}, Lcom/kik/util/bt;->e(Lrx/d;)Lrx/d;
 
     move-result-object v0
 
@@ -407,9 +407,9 @@
 
     .line 55
     :pswitch_0
-    check-cast p2, Lkik/android/chat/vm/af;
+    check-cast p2, Lkik/android/chat/vm/ah;
 
-    invoke-virtual {p0, p2}, Lkik/android/e/be;->a(Lkik/android/chat/vm/af;)V
+    invoke-virtual {p0, p2}, Lkik/android/e/be;->a(Lkik/android/chat/vm/ah;)V
 
     .line 56
     const/4 v0, 0x1

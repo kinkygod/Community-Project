@@ -101,7 +101,7 @@
     const-string v1, "Is Landscape"
 
     .line 124
-    invoke-virtual {p0}, Lkik/android/gallery/vm/g;->d()Z
+    invoke-virtual {p0}, Lkik/android/gallery/vm/g;->e()Z
 
     move-result v2
 
@@ -260,9 +260,9 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lkik/android/gallery/vm/g;->c:Lkik/core/interfaces/ae;
+    iget-object v2, p0, Lkik/android/gallery/vm/g;->c:Lkik/core/interfaces/ad;
 
-    invoke-virtual {v1, v0, v2}, Lkik/android/internal/platform/PlatformHelper;->a(Ljava/io/File;Lkik/core/interfaces/ae;)Lkik/core/datatypes/messageExtensions/ContentMessage;
+    invoke-virtual {v1, v0, v2}, Lkik/android/internal/platform/PlatformHelper;->a(Ljava/io/File;Lkik/core/interfaces/ad;)Lkik/core/datatypes/messageExtensions/ContentMessage;
 
     move-result-object v0
 
@@ -412,7 +412,7 @@
     invoke-super {p0, v0, v1}, Lkik/android/gallery/vm/a;->a(Lcom/rounds/kik/analytics/group/ChatAlbumEvents$Builder;Z)V
 
     .line 62
-    invoke-virtual {p0}, Lkik/android/gallery/vm/g;->B_()Lkik/android/chat/vm/aw;
+    invoke-virtual {p0}, Lkik/android/gallery/vm/g;->F_()Lkik/android/chat/vm/ay;
 
     move-result-object v0
 
@@ -420,7 +420,7 @@
 
     invoke-direct {v1, p0}, Lkik/android/gallery/vm/g$1;-><init>(Lkik/android/gallery/vm/g;)V
 
-    invoke-interface {v0, v1}, Lkik/android/chat/vm/aw;->a(Lkik/android/gallery/vm/s;)Lrx/d;
+    invoke-interface {v0, v1}, Lkik/android/chat/vm/ay;->a(Lkik/android/gallery/vm/s;)Lrx/d;
 
     move-result-object v0
 
@@ -484,7 +484,7 @@
     const-string v1, "Is Landscape"
 
     .line 3136
-    invoke-virtual {p0}, Lkik/android/gallery/vm/g;->d()Z
+    invoke-virtual {p0}, Lkik/android/gallery/vm/g;->e()Z
 
     move-result v2
 

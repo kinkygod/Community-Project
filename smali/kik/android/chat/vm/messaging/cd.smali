@@ -769,7 +769,7 @@
     return-object v0
 .end method
 
-.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
     .locals 3
 
     .prologue
@@ -777,15 +777,15 @@
     invoke-interface {p1, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/chat/vm/messaging/cd;)V
 
     .line 94
-    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/e;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/e;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 95
     iget-object v0, p0, Lkik/android/chat/vm/messaging/cd;->s:Lkik/android/chat/vm/messaging/cc;
 
-    invoke-virtual {v0, p1, p2}, Lkik/android/chat/vm/messaging/cc;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    invoke-virtual {v0, p1, p2}, Lkik/android/chat/vm/messaging/cc;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 96
-    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/cd;->ab_()Lrx/f/b;
+    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/cd;->ad_()Lrx/f/b;
 
     move-result-object v0
 
@@ -805,17 +805,17 @@
     return-void
 .end method
 
-.method public final aj_()V
+.method public final ak_()V
     .locals 1
 
     .prologue
     .line 334
-    invoke-super {p0}, Lkik/android/chat/vm/e;->aj_()V
+    invoke-super {p0}, Lkik/android/chat/vm/e;->ak_()V
 
     .line 335
     iget-object v0, p0, Lkik/android/chat/vm/messaging/cd;->s:Lkik/android/chat/vm/messaging/cc;
 
-    invoke-virtual {v0}, Lkik/android/chat/vm/messaging/cc;->aj_()V
+    invoke-virtual {v0}, Lkik/android/chat/vm/messaging/cc;->ak_()V
 
     .line 336
     return-void
@@ -1136,7 +1136,7 @@
     invoke-virtual {v2, v1}, Lrx/subjects/a;->a(Ljava/lang/Object;)V
 
     .line 223
-    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/cd;->ab_()Lrx/f/b;
+    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/cd;->ad_()Lrx/f/b;
 
     move-result-object v2
 
@@ -1260,7 +1260,7 @@
     .line 282
     sget-object v3, Lkik/android/chat/vm/messaging/IAudioRecordingViewModel$AudioRecordingState;->Completed:Lkik/android/chat/vm/messaging/IAudioRecordingViewModel$AudioRecordingState;
 
-    invoke-static {v2, v3}, Lcom/kik/util/bq;->b(Lrx/d;Ljava/lang/Object;)Lrx/d;
+    invoke-static {v2, v3}, Lcom/kik/util/bt;->b(Lrx/d;Ljava/lang/Object;)Lrx/d;
 
     move-result-object v2
 
@@ -1274,7 +1274,7 @@
     .line 282
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lcom/kik/util/bq;->a([Lrx/d;)Lrx/d;
+    invoke-static {v0}, Lcom/kik/util/bt;->a([Lrx/d;)Lrx/d;
 
     move-result-object v0
 
@@ -1401,7 +1401,7 @@
     return-object v0
 .end method
 
-.method public final v()Lkik/android/chat/vm/messaging/em;
+.method public final v()Lkik/android/chat/vm/messaging/ei;
     .locals 1
 
     .prologue

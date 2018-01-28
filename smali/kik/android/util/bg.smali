@@ -36,7 +36,7 @@
     return-object v0
 .end method
 
-.method public static a(Lkik/core/interfaces/ae;)V
+.method public static a(Lkik/core/interfaces/ad;)V
     .locals 2
 
     .prologue
@@ -52,7 +52,7 @@
 
     move-result-object v1
 
-    invoke-interface {p0, v0, v1}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;Ljava/lang/Boolean;)Z
+    invoke-interface {p0, v0, v1}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Boolean;)Z
 
     .line 96
     :cond_0
@@ -139,7 +139,7 @@
     .end packed-switch
 .end method
 
-.method public static a(Lkik/core/datatypes/f;Lkik/core/interfaces/w;)Z
+.method public static a(Lkik/core/datatypes/f;Lkik/core/interfaces/v;)Z
     .locals 4
 
     .prologue
@@ -165,7 +165,7 @@
 
     move-result-object v0
 
-    invoke-interface {p1, v0, v1}, Lkik/core/interfaces/w;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
+    invoke-interface {p1, v0, v1}, Lkik/core/interfaces/v;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
 
     move-result-object v0
 

@@ -4,17 +4,17 @@
 
 
 # static fields
-.field private static final b:Landroid/databinding/ViewDataBinding$IncludedLayouts;
+.field private static final c:Landroid/databinding/ViewDataBinding$IncludedLayouts;
 
-.field private static final c:Landroid/util/SparseIntArray;
+.field private static final d:Landroid/util/SparseIntArray;
 
 
 # instance fields
-.field public final a:Lkik/android/widget/ContentPreviewImageView;
+.field public final a:Lkik/android/widget/BubbleFramelayout;
 
-.field private final d:Landroid/widget/LinearLayout;
+.field public final b:Lkik/android/widget/VoicePlayerView;
 
-.field private e:Lkik/android/chat/vm/messaging/eu;
+.field private e:Lkik/android/chat/vm/messaging/eh;
 
 .field private f:J
 
@@ -27,10 +27,10 @@
     const/4 v0, 0x0
 
     .line 10
-    sput-object v0, Lkik/android/e/bz;->b:Landroid/databinding/ViewDataBinding$IncludedLayouts;
+    sput-object v0, Lkik/android/e/bz;->c:Landroid/databinding/ViewDataBinding$IncludedLayouts;
 
     .line 11
-    sput-object v0, Lkik/android/e/bz;->c:Landroid/util/SparseIntArray;
+    sput-object v0, Lkik/android/e/bz;->d:Landroid/util/SparseIntArray;
 
     .line 12
     return-void
@@ -47,7 +47,7 @@
     .line 23
     invoke-direct {p0, p1, p2, v3}, Landroid/databinding/ViewDataBinding;-><init>(Landroid/databinding/DataBindingComponent;Landroid/view/View;I)V
 
-    .line 123
+    .line 130
     const-wide/16 v0, -0x1
 
     iput-wide v0, p0, Lkik/android/e/bz;->f:J
@@ -55,39 +55,39 @@
     .line 24
     const/4 v0, 0x2
 
-    sget-object v1, Lkik/android/e/bz;->b:Landroid/databinding/ViewDataBinding$IncludedLayouts;
+    sget-object v1, Lkik/android/e/bz;->c:Landroid/databinding/ViewDataBinding$IncludedLayouts;
 
-    sget-object v2, Lkik/android/e/bz;->c:Landroid/util/SparseIntArray;
+    sget-object v2, Lkik/android/e/bz;->d:Landroid/util/SparseIntArray;
 
     invoke-static {p1, p2, v0, v1, v2}, Lkik/android/e/bz;->mapBindings(Landroid/databinding/DataBindingComponent;Landroid/view/View;ILandroid/databinding/ViewDataBinding$IncludedLayouts;Landroid/util/SparseIntArray;)[Ljava/lang/Object;
 
     move-result-object v1
 
     .line 25
+    aget-object v0, v1, v3
+
+    check-cast v0, Lkik/android/widget/BubbleFramelayout;
+
+    iput-object v0, p0, Lkik/android/e/bz;->a:Lkik/android/widget/BubbleFramelayout;
+
+    .line 26
+    iget-object v0, p0, Lkik/android/e/bz;->a:Lkik/android/widget/BubbleFramelayout;
+
+    invoke-virtual {v0, v4}, Lkik/android/widget/BubbleFramelayout;->setTag(Ljava/lang/Object;)V
+
+    .line 27
     const/4 v0, 0x1
 
     aget-object v0, v1, v0
 
-    check-cast v0, Lkik/android/widget/ContentPreviewImageView;
+    check-cast v0, Lkik/android/widget/VoicePlayerView;
 
-    iput-object v0, p0, Lkik/android/e/bz;->a:Lkik/android/widget/ContentPreviewImageView;
-
-    .line 26
-    iget-object v0, p0, Lkik/android/e/bz;->a:Lkik/android/widget/ContentPreviewImageView;
-
-    invoke-virtual {v0, v4}, Lkik/android/widget/ContentPreviewImageView;->setTag(Ljava/lang/Object;)V
-
-    .line 27
-    aget-object v0, v1, v3
-
-    check-cast v0, Landroid/widget/LinearLayout;
-
-    iput-object v0, p0, Lkik/android/e/bz;->d:Landroid/widget/LinearLayout;
+    iput-object v0, p0, Lkik/android/e/bz;->b:Lkik/android/widget/VoicePlayerView;
 
     .line 28
-    iget-object v0, p0, Lkik/android/e/bz;->d:Landroid/widget/LinearLayout;
+    iget-object v0, p0, Lkik/android/e/bz;->b:Lkik/android/widget/VoicePlayerView;
 
-    invoke-virtual {v0, v4}, Landroid/widget/LinearLayout;->setTag(Ljava/lang/Object;)V
+    invoke-virtual {v0, v4}, Lkik/android/widget/VoicePlayerView;->setTag(Ljava/lang/Object;)V
 
     .line 29
     invoke-virtual {p0, p2}, Lkik/android/e/bz;->setRootTag(Landroid/view/View;)V
@@ -103,8 +103,8 @@
     .locals 3
 
     .prologue
-    .line 141
-    const-string v0, "layout/message_bubble_sticker_preview_0"
+    .line 148
+    const-string v0, "layout/message_bubble_audio_0"
 
     invoke-virtual {p0}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -116,7 +116,7 @@
 
     if-nez v0, :cond_0
 
-    .line 142
+    .line 149
     new-instance v0, Ljava/lang/RuntimeException;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -141,7 +141,7 @@
 
     throw v0
 
-    .line 144
+    .line 151
     :cond_0
     new-instance v0, Lkik/android/e/bz;
 
@@ -167,7 +167,7 @@
 
     .line 84
     :try_start_0
-    iget-wide v4, p0, Lkik/android/e/bz;->f:J
+    iget-wide v6, p0, Lkik/android/e/bz;->f:J
 
     .line 85
     const-wide/16 v2, 0x0
@@ -180,68 +180,86 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 88
-    iget-object v3, p0, Lkik/android/e/bz;->e:Lkik/android/chat/vm/messaging/eu;
+    iget-object v5, p0, Lkik/android/e/bz;->e:Lkik/android/chat/vm/messaging/eh;
 
-    .line 93
-    and-long v6, v4, v10
+    .line 92
+    const/4 v1, 0x0
 
-    cmp-long v1, v6, v8
+    .line 95
+    and-long v2, v6, v10
 
-    if-eqz v1, :cond_2
+    cmp-long v2, v2, v8
 
-    .line 97
-    if-eqz v3, :cond_1
+    if-eqz v2, :cond_2
 
     .line 99
-    invoke-interface {v3}, Lkik/android/chat/vm/messaging/eu;->aN()Lrx/d;
+    if-eqz v5, :cond_1
+
+    .line 101
+    invoke-interface {v5}, Lkik/android/chat/vm/messaging/eh;->r()Lrx/d;
+
+    move-result-object v4
+
+    .line 103
+    invoke-interface {v5}, Lkik/android/chat/vm/messaging/eh;->as()Lrx/d;
+
+    move-result-object v3
+
+    .line 105
+    invoke-interface {v5}, Lkik/android/chat/vm/messaging/eh;->K()Lrx/d;
 
     move-result-object v2
 
-    .line 101
-    invoke-interface {v3}, Lkik/android/chat/vm/messaging/eu;->J()Lrx/d;
+    .line 107
+    invoke-interface {v5}, Lkik/android/chat/vm/messaging/eh;->at()I
 
-    move-result-object v1
+    move-result v1
 
-    .line 103
-    invoke-interface {v3}, Lkik/android/chat/vm/messaging/eu;->aL()Lkik/android/widget/ContentPreviewImageView$ContentType;
+    .line 109
+    invoke-interface {v5}, Lkik/android/chat/vm/messaging/eh;->ar()Lrx/d;
 
     move-result-object v0
 
-    .line 108
-    :goto_0
-    invoke-static {v1}, Lcom/kik/util/bq;->b(Lrx/d;)Lrx/d;
-
-    move-result-object v1
-
-    .line 111
-    :goto_1
-    and-long/2addr v4, v10
-
-    cmp-long v3, v4, v8
-
-    if-eqz v3, :cond_0
-
     .line 114
-    iget-object v3, p0, Lkik/android/e/bz;->a:Lkik/android/widget/ContentPreviewImageView;
+    :goto_0
+    invoke-static {v2}, Lcom/kik/util/bt;->b(Lrx/d;)Lrx/d;
 
-    invoke-static {v3, v2}, Lkik/android/widget/ContentPreviewImageView;->a(Lkik/android/widget/ContentPreviewImageView;Lrx/d;)V
-
-    .line 115
-    iget-object v3, p0, Lkik/android/e/bz;->a:Lkik/android/widget/ContentPreviewImageView;
-
-    invoke-static {v3, v2}, Lcom/kik/util/j;->o(Landroid/view/View;Lrx/d;)V
-
-    .line 116
-    iget-object v2, p0, Lkik/android/e/bz;->a:Lkik/android/widget/ContentPreviewImageView;
-
-    invoke-static {v2, v0}, Lkik/android/widget/ContentPreviewImageView;->a(Lkik/android/widget/ContentPreviewImageView;Lkik/android/widget/ContentPreviewImageView$ContentType;)V
+    move-result-object v2
 
     .line 117
-    iget-object v0, p0, Lkik/android/e/bz;->d:Landroid/widget/LinearLayout;
+    :goto_1
+    and-long/2addr v6, v10
 
-    invoke-static {v0, v1}, Lcom/kik/util/j;->j(Landroid/view/View;Lrx/d;)V
+    cmp-long v5, v6, v8
 
-    .line 119
+    if-eqz v5, :cond_0
+
+    .line 120
+    iget-object v5, p0, Lkik/android/e/bz;->a:Lkik/android/widget/BubbleFramelayout;
+
+    invoke-static {v5, v2}, Lcom/kik/util/j;->j(Landroid/view/View;Lrx/d;)V
+
+    .line 121
+    iget-object v2, p0, Lkik/android/e/bz;->b:Lkik/android/widget/VoicePlayerView;
+
+    invoke-static {v2, v0}, Lkik/android/widget/VoicePlayerView;->a(Lkik/android/widget/VoicePlayerView;Lrx/d;)V
+
+    .line 122
+    iget-object v0, p0, Lkik/android/e/bz;->b:Lkik/android/widget/VoicePlayerView;
+
+    invoke-static {v0, v4}, Lkik/android/widget/VoicePlayerView;->b(Lkik/android/widget/VoicePlayerView;Lrx/d;)V
+
+    .line 123
+    iget-object v0, p0, Lkik/android/e/bz;->b:Lkik/android/widget/VoicePlayerView;
+
+    invoke-static {v0, v3}, Lkik/android/widget/VoicePlayerView;->c(Lkik/android/widget/VoicePlayerView;Lrx/d;)V
+
+    .line 124
+    iget-object v0, p0, Lkik/android/e/bz;->b:Lkik/android/widget/VoicePlayerView;
+
+    invoke-virtual {v0, v1}, Lkik/android/widget/VoicePlayerView;->a(I)V
+
+    .line 126
     :cond_0
     return-void
 
@@ -257,16 +275,20 @@
     throw v0
 
     :cond_1
-    move-object v1, v0
-
     move-object v2, v0
+
+    move-object v3, v0
+
+    move-object v4, v0
 
     goto :goto_0
 
     :cond_2
-    move-object v1, v0
+    move-object v3, v0
 
     move-object v2, v0
+
+    move-object v4, v0
 
     goto :goto_1
 .end method
@@ -378,10 +400,10 @@
 
     .line 55
     :pswitch_0
-    check-cast p2, Lkik/android/chat/vm/messaging/eu;
+    check-cast p2, Lkik/android/chat/vm/messaging/eh;
 
     .line 1062
-    iput-object p2, p0, Lkik/android/e/bz;->e:Lkik/android/chat/vm/messaging/eu;
+    iput-object p2, p0, Lkik/android/e/bz;->e:Lkik/android/chat/vm/messaging/eh;
 
     .line 1063
     monitor-enter p0

@@ -35,7 +35,7 @@
 .end method
 
 .method private c(Landroid/support/v7/widget/AdapterHelper$UpdateOp;)V
-    .locals 4
+    .locals 5
 
     .prologue
     .line 866
@@ -70,11 +70,13 @@
 
     iget-object v0, v0, Landroid/support/v7/widget/RecyclerView;->mLayout:Landroid/support/v7/widget/RecyclerView$LayoutManager;
 
-    iget v1, p1, Landroid/support/v7/widget/AdapterHelper$UpdateOp;->b:I
+    iget-object v1, p0, Landroid/support/v7/widget/RecyclerView$6;->a:Landroid/support/v7/widget/RecyclerView;
 
-    iget v2, p1, Landroid/support/v7/widget/AdapterHelper$UpdateOp;->d:I
+    iget v2, p1, Landroid/support/v7/widget/AdapterHelper$UpdateOp;->b:I
 
-    invoke-virtual {v0, v1, v2}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->a(II)V
+    iget v3, p1, Landroid/support/v7/widget/AdapterHelper$UpdateOp;->d:I
+
+    invoke-virtual {v0, v1, v2, v3}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->b(Landroid/support/v7/widget/RecyclerView;II)V
 
     goto :goto_0
 
@@ -84,11 +86,13 @@
 
     iget-object v0, v0, Landroid/support/v7/widget/RecyclerView;->mLayout:Landroid/support/v7/widget/RecyclerView$LayoutManager;
 
-    iget v1, p1, Landroid/support/v7/widget/AdapterHelper$UpdateOp;->b:I
+    iget-object v1, p0, Landroid/support/v7/widget/RecyclerView$6;->a:Landroid/support/v7/widget/RecyclerView;
 
-    iget v2, p1, Landroid/support/v7/widget/AdapterHelper$UpdateOp;->d:I
+    iget v2, p1, Landroid/support/v7/widget/AdapterHelper$UpdateOp;->b:I
 
-    invoke-virtual {v0, v1, v2}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->b(II)V
+    iget v3, p1, Landroid/support/v7/widget/AdapterHelper$UpdateOp;->d:I
+
+    invoke-virtual {v0, v1, v2, v3}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->c(Landroid/support/v7/widget/RecyclerView;II)V
 
     goto :goto_0
 
@@ -98,15 +102,21 @@
 
     iget-object v0, v0, Landroid/support/v7/widget/RecyclerView;->mLayout:Landroid/support/v7/widget/RecyclerView$LayoutManager;
 
-    iget v1, p1, Landroid/support/v7/widget/AdapterHelper$UpdateOp;->b:I
+    iget-object v1, p0, Landroid/support/v7/widget/RecyclerView$6;->a:Landroid/support/v7/widget/RecyclerView;
 
-    iget v2, p1, Landroid/support/v7/widget/AdapterHelper$UpdateOp;->d:I
+    iget v2, p1, Landroid/support/v7/widget/AdapterHelper$UpdateOp;->b:I
 
-    invoke-virtual {v0, v1, v2}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->c(II)V
+    iget v3, p1, Landroid/support/v7/widget/AdapterHelper$UpdateOp;->d:I
+
+    const/4 v4, 0x1
+
+    invoke-virtual {v0, v1, v2, v3, v4}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->a(Landroid/support/v7/widget/RecyclerView;III)V
 
     goto :goto_0
 
     .line 866
+    nop
+
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_1

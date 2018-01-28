@@ -2,7 +2,7 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lrx/functions/b;
+.implements Lrx/functions/a;
 
 
 # instance fields
@@ -20,7 +20,7 @@
     return-void
 .end method
 
-.method public static a(Lkik/android/chat/view/BioExpandableView;)Lrx/functions/b;
+.method public static a(Lkik/android/chat/view/BioExpandableView;)Lrx/functions/a;
     .locals 1
 
     new-instance v0, Lkik/android/chat/view/k;
@@ -32,16 +32,12 @@
 
 
 # virtual methods
-.method public final call(Ljava/lang/Object;)V
+.method public final a()V
     .locals 1
 
     iget-object v0, p0, Lkik/android/chat/view/k;->a:Lkik/android/chat/view/BioExpandableView;
 
-    check-cast p1, Ljava/lang/String;
-
-    check-cast p1, Ljava/lang/CharSequence;
-
-    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0}, Lkik/android/widget/ExpandingTextView;->c()V
 
     return-void
 .end method

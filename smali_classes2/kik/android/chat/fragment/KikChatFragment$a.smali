@@ -19,10 +19,10 @@
     .locals 0
 
     .prologue
-    .line 2067
+    .line 2090
     invoke-direct {p0}, Lcom/kik/ui/fragment/FragmentBase$FragmentBundle;-><init>()V
 
-    .line 2068
+    .line 2091
     return-void
 .end method
 
@@ -30,8 +30,8 @@
     .locals 1
 
     .prologue
-    .line 2049
-    .line 3187
+    .line 2072
+    .line 3210
     const-string v0, "returnToMissedConvos"
 
     invoke-virtual {p0, v0}, Lkik/android/chat/fragment/KikChatFragment$a;->g(Ljava/lang/String;)Ljava/lang/Boolean;
@@ -42,7 +42,7 @@
 
     move-result v0
 
-    .line 2049
+    .line 2072
     return v0
 .end method
 
@@ -50,8 +50,8 @@
     .locals 2
 
     .prologue
-    .line 2049
-    .line 3231
+    .line 2072
+    .line 3254
     const-string v0, "KikChatFragment.CardIndex"
 
     const/4 v1, -0x1
@@ -60,7 +60,7 @@
 
     move-result v0
 
-    .line 2049
+    .line 2072
     return v0
 .end method
 
@@ -68,15 +68,15 @@
     .locals 1
 
     .prologue
-    .line 2049
-    .line 4176
+    .line 2072
+    .line 4199
     const-string v0, "chatGroupJID"
 
     invoke-virtual {p0, v0}, Lkik/android/chat/fragment/KikChatFragment$a;->h(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 2049
+    .line 2072
     return-object v0
 .end method
 
@@ -84,15 +84,15 @@
     .locals 1
 
     .prologue
-    .line 2049
-    .line 5171
+    .line 2072
+    .line 5194
     const-string v0, "chatContactJID"
 
     invoke-virtual {p0, v0}, Lkik/android/chat/fragment/KikChatFragment$a;->h(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 2049
+    .line 2072
     return-object v0
 .end method
 
@@ -100,8 +100,8 @@
     .locals 1
 
     .prologue
-    .line 2049
-    .line 5198
+    .line 2072
+    .line 5221
     const-string v0, "showKeyBoard"
 
     invoke-virtual {p0, v0}, Lkik/android/chat/fragment/KikChatFragment$a;->g(Ljava/lang/String;)Ljava/lang/Boolean;
@@ -112,7 +112,7 @@
 
     move-result v0
 
-    .line 2049
+    .line 2072
     return v0
 .end method
 
@@ -120,8 +120,8 @@
     .locals 1
 
     .prologue
-    .line 2049
-    .line 5290
+    .line 2072
+    .line 5313
     const-string v0, "kik.chat.is-forward"
 
     invoke-virtual {p0, v0}, Lkik/android/chat/fragment/KikChatFragment$a;->g(Ljava/lang/String;)Ljava/lang/Boolean;
@@ -132,7 +132,7 @@
 
     move-result v0
 
-    .line 2049
+    .line 2072
     return v0
 .end method
 
@@ -140,8 +140,8 @@
     .locals 2
 
     .prologue
-    .line 2049
-    .line 6243
+    .line 2072
+    .line 6266
     const-string v0, "kik.chat.close.on.block"
 
     const/4 v1, 0x1
@@ -154,7 +154,7 @@
 
     move-result v0
 
-    .line 2049
+    .line 2072
     return v0
 .end method
 
@@ -164,12 +164,12 @@
     .locals 6
 
     .prologue
-    .line 2073
+    .line 2096
     invoke-super {p0}, Lcom/kik/ui/fragment/FragmentBase$FragmentBundle;->a()Landroid/os/Bundle;
 
     move-result-object v1
 
-    .line 2076
+    .line 2099
     :try_start_0
     const-string v0, "jid"
 
@@ -179,12 +179,12 @@
 
     if-nez v0, :cond_1
 
-    .line 2077
+    .line 2100
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 2079
+    .line 2102
     invoke-virtual {v1}, Landroid/os/Bundle;->keySet()Ljava/util/Set;
 
     move-result-object v0
@@ -206,19 +206,19 @@
 
     check-cast v0, Ljava/lang/String;
 
-    .line 2080
+    .line 2103
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->length()I
 
     move-result v4
 
     if-lez v4, :cond_0
 
-    .line 2081
+    .line 2104
     const-string v4, ", "
 
     invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 2083
+    .line 2106
     :cond_0
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -252,17 +252,17 @@
 
     goto :goto_0
 
-    .line 2090
+    .line 2113
     :catch_0
     move-exception v0
 
     invoke-static {v0}, Lcom/crashlytics/android/a;->a(Ljava/lang/Throwable;)V
 
-    .line 2093
+    .line 2116
     :cond_1
     return-object v1
 
-    .line 2086
+    .line 2109
     :cond_2
     :try_start_1
     new-instance v0, Ljava/lang/IllegalArgumentException;
@@ -296,12 +296,12 @@
     .locals 1
 
     .prologue
-    .line 2103
+    .line 2126
     const-string v0, "jid"
 
     invoke-virtual {p0, v0, p1}, Lkik/android/chat/fragment/KikChatFragment$a;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2104
+    .line 2127
     return-object p0
 .end method
 
@@ -309,17 +309,17 @@
     .locals 2
 
     .prologue
-    .line 2125
+    .line 2148
     if-eqz p2, :cond_0
 
     if-nez p1, :cond_1
 
-    .line 2137
+    .line 2160
     :cond_0
     :goto_0
     return-object p0
 
-    .line 2128
+    .line 2151
     :cond_1
     invoke-virtual {p1}, Lkik/core/datatypes/f;->g()Ljava/lang/String;
 
@@ -333,7 +333,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 2129
+    .line 2152
     const-string v0, "chatGroupJID"
 
     invoke-virtual {p1}, Lkik/core/datatypes/f;->g()Ljava/lang/String;
@@ -342,7 +342,7 @@
 
     invoke-virtual {p0, v0, v1}, Lkik/android/chat/fragment/KikChatFragment$a;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2135
+    .line 2158
     :goto_1
     invoke-virtual {p1}, Lkik/core/datatypes/f;->g()Ljava/lang/String;
 
@@ -352,7 +352,7 @@
 
     goto :goto_0
 
-    .line 2132
+    .line 2155
     :cond_2
     const-string v0, "chatContactJID"
 
@@ -369,10 +369,10 @@
     .locals 2
 
     .prologue
-    .line 2151
+    .line 2174
     if-eqz p1, :cond_0
 
-    .line 2152
+    .line 2175
     const-string v0, "chatContactJID"
 
     invoke-virtual {p1}, Lkik/core/datatypes/l;->k()Ljava/lang/String;
@@ -381,14 +381,14 @@
 
     invoke-virtual {p0, v0, v1}, Lkik/android/chat/fragment/KikChatFragment$a;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2153
+    .line 2176
     invoke-virtual {p1}, Lkik/core/datatypes/l;->k()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {p0, v0}, Lkik/android/chat/fragment/KikChatFragment$a;->a(Ljava/lang/String;)Lkik/android/chat/fragment/KikChatFragment$a;
 
-    .line 2155
+    .line 2178
     :cond_0
     return-object p0
 .end method
@@ -397,12 +397,12 @@
     .locals 1
 
     .prologue
-    .line 2160
+    .line 2183
     const-string v0, "kik.chat.should-join-conference"
 
     invoke-virtual {p0, v0, p1}, Lkik/android/chat/fragment/KikChatFragment$a;->b(Ljava/lang/String;Z)V
 
-    .line 2161
+    .line 2184
     return-object p0
 .end method
 
@@ -410,17 +410,17 @@
     .locals 1
 
     .prologue
-    .line 2295
+    .line 2318
     const-string v0, "kik.chat.add-to-roster"
 
     invoke-virtual {p0, v0, p1}, Lkik/android/chat/fragment/KikChatFragment$a;->b(Ljava/lang/String;Z)V
 
-    .line 2296
+    .line 2319
     const-string v0, "kik.chat.add-to-roster-source"
 
     invoke-virtual {p0, v0, p2}, Lkik/android/chat/fragment/KikChatFragment$a;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2297
+    .line 2320
     return-object p0
 .end method
 
@@ -428,12 +428,12 @@
     .locals 1
 
     .prologue
-    .line 2109
+    .line 2132
     const-string v0, "kik.chat.origin"
 
     invoke-virtual {p0, v0, p1}, Lkik/android/chat/fragment/KikChatFragment$a;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2110
+    .line 2133
     return-object p0
 .end method
 
@@ -441,12 +441,12 @@
     .locals 1
 
     .prologue
-    .line 2192
+    .line 2215
     const-string v0, "showKeyBoard"
 
     invoke-virtual {p0, v0, p1}, Lkik/android/chat/fragment/KikChatFragment$a;->b(Ljava/lang/String;Z)V
 
-    .line 2193
+    .line 2216
     return-object p0
 .end method
 
@@ -454,7 +454,7 @@
     .locals 1
 
     .prologue
-    .line 2166
+    .line 2189
     const-string v0, "kik.chat.should-join-conference"
 
     invoke-virtual {p0, v0}, Lkik/android/chat/fragment/KikChatFragment$a;->g(Ljava/lang/String;)Ljava/lang/Boolean;
@@ -472,14 +472,14 @@
     .locals 2
 
     .prologue
-    .line 2181
+    .line 2204
     const-string v0, "returnToMissedConvos"
 
     const/4 v1, 0x1
 
     invoke-virtual {p0, v0, v1}, Lkik/android/chat/fragment/KikChatFragment$a;->b(Ljava/lang/String;Z)V
 
-    .line 2182
+    .line 2205
     return-object p0
 .end method
 
@@ -487,18 +487,18 @@
     .locals 1
 
     .prologue
-    .line 2142
+    .line 2165
     if-eqz p1, :cond_0
 
-    .line 2143
+    .line 2166
     const-string v0, "chatContactJID"
 
     invoke-virtual {p0, v0, p1}, Lkik/android/chat/fragment/KikChatFragment$a;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2144
+    .line 2167
     invoke-virtual {p0, p1}, Lkik/android/chat/fragment/KikChatFragment$a;->a(Ljava/lang/String;)Lkik/android/chat/fragment/KikChatFragment$a;
 
-    .line 2146
+    .line 2169
     :cond_0
     return-object p0
 .end method
@@ -507,12 +507,12 @@
     .locals 1
 
     .prologue
-    .line 2203
+    .line 2226
     const-string v0, "kikchatPluginOpenedDirectly"
 
     invoke-virtual {p0, v0, p1}, Lkik/android/chat/fragment/KikChatFragment$a;->b(Ljava/lang/String;Z)V
 
-    .line 2204
+    .line 2227
     return-object p0
 .end method
 
@@ -520,12 +520,12 @@
     .locals 1
 
     .prologue
-    .line 2248
+    .line 2271
     const-string v0, "name"
 
     invoke-virtual {p0, v0, p1}, Lkik/android/chat/fragment/KikChatFragment$a;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2249
+    .line 2272
     return-object p0
 .end method
 
@@ -533,12 +533,12 @@
     .locals 1
 
     .prologue
-    .line 2214
+    .line 2237
     const-string v0, "skipTalkToCover"
 
     invoke-virtual {p0, v0, p1}, Lkik/android/chat/fragment/KikChatFragment$a;->b(Ljava/lang/String;Z)V
 
-    .line 2215
+    .line 2238
     return-object p0
 .end method
 
@@ -546,7 +546,7 @@
     .locals 2
 
     .prologue
-    .line 2220
+    .line 2243
     const-string v0, "skipTalkToCover"
 
     const/4 v1, 0x0
@@ -566,7 +566,7 @@
     .locals 2
 
     .prologue
-    .line 2285
+    .line 2308
     const-string v0, "kik.chat.source"
 
     const/4 v1, 0x0
@@ -582,12 +582,12 @@
     .locals 1
 
     .prologue
-    .line 2259
+    .line 2282
     const-string v0, "url"
 
     invoke-virtual {p0, v0, p1}, Lkik/android/chat/fragment/KikChatFragment$a;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2260
+    .line 2283
     return-object p0
 .end method
 
@@ -595,12 +595,12 @@
     .locals 1
 
     .prologue
-    .line 2236
+    .line 2259
     const-string v0, "kik.chat.close.on.block"
 
     invoke-virtual {p0, v0, p1}, Lkik/android/chat/fragment/KikChatFragment$a;->b(Ljava/lang/String;Z)V
 
-    .line 2237
+    .line 2260
     return-object p0
 .end method
 
@@ -608,12 +608,12 @@
     .locals 1
 
     .prologue
-    .line 2276
+    .line 2299
     const-string v0, "kik.chat.source"
 
     invoke-virtual {p0, v0, p1}, Lkik/android/chat/fragment/KikChatFragment$a;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2277
+    .line 2300
     return-object p0
 .end method
 
@@ -621,12 +621,12 @@
     .locals 1
 
     .prologue
-    .line 2270
+    .line 2293
     const-string v0, "kik.chat.is-forward"
 
     invoke-virtual {p0, v0, p1}, Lkik/android/chat/fragment/KikChatFragment$a;->b(Ljava/lang/String;Z)V
 
-    .line 2271
+    .line 2294
     return-object p0
 .end method
 
@@ -634,7 +634,7 @@
     .locals 1
 
     .prologue
-    .line 2302
+    .line 2325
     const-string v0, "kik.chat.add-to-roster"
 
     invoke-virtual {p0, v0}, Lkik/android/chat/fragment/KikChatFragment$a;->g(Ljava/lang/String;)Ljava/lang/Boolean;
@@ -652,7 +652,7 @@
     .locals 1
 
     .prologue
-    .line 2307
+    .line 2330
     const-string v0, "kik.chat.add-to-roster-source"
 
     invoke-virtual {p0, v0}, Lkik/android/chat/fragment/KikChatFragment$a;->h(Ljava/lang/String;)Ljava/lang/String;
@@ -666,14 +666,14 @@
     .locals 2
 
     .prologue
-    .line 2312
+    .line 2335
     const-string v0, "kik.chat.from.convo.list"
 
     const/4 v1, 0x1
 
     invoke-virtual {p0, v0, v1}, Lkik/android/chat/fragment/KikChatFragment$a;->b(Ljava/lang/String;Z)V
 
-    .line 2313
+    .line 2336
     return-object p0
 .end method
 
@@ -681,7 +681,7 @@
     .locals 2
 
     .prologue
-    .line 2318
+    .line 2341
     const-string v0, "kik.chat.from.convo.list"
 
     const/4 v1, 0x0

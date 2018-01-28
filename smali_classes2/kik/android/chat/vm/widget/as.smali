@@ -2,7 +2,7 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lcom/android/volley/h$a;
+.implements Lcom/android/volley/h$b;
 
 
 # static fields
@@ -30,7 +30,7 @@
     return-void
 .end method
 
-.method public static a()Lcom/android/volley/h$a;
+.method public static a()Lcom/android/volley/h$b;
     .locals 1
 
     sget-object v0, Lkik/android/chat/vm/widget/as;->a:Lkik/android/chat/vm/widget/as;
@@ -40,7 +40,7 @@
 
 
 # virtual methods
-.method public final a(Lcom/android/volley/VolleyError;)V
+.method public final a(Ljava/lang/Object;)V
     .locals 0
 
     return-void

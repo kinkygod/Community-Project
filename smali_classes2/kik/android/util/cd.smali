@@ -1,60 +1,55 @@
-.class public final Lkik/android/util/cd;
-.super Lkik/android/util/bu;
-.source "SourceFile"
+.class final synthetic Lkik/android/util/cd;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Landroid/animation/ValueAnimator$AnimatorUpdateListener;
 
 
-# static fields
-.field private static a:Lkik/android/util/cd;
+# instance fields
+.field private final a:Landroid/view/ViewGroup$MarginLayoutParams;
+
+.field private final b:Landroid/view/View;
+
+.field private final c:Landroid/animation/ValueAnimator$AnimatorUpdateListener;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    .prologue
-    .line 16
-    new-instance v0, Lkik/android/util/cd;
-
-    invoke-direct {v0}, Lkik/android/util/cd;-><init>()V
-
-    sput-object v0, Lkik/android/util/cd;->a:Lkik/android/util/cd;
-
-    return-void
-.end method
-
-.method private constructor <init>()V
+.method private constructor <init>(Landroid/view/ViewGroup$MarginLayoutParams;Landroid/view/View;Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
     .locals 0
 
-    .prologue
-    .line 25
-    invoke-direct {p0}, Lkik/android/util/bu;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 26
+    iput-object p1, p0, Lkik/android/util/cd;->a:Landroid/view/ViewGroup$MarginLayoutParams;
+
+    iput-object p2, p0, Lkik/android/util/cd;->b:Landroid/view/View;
+
+    iput-object p3, p0, Lkik/android/util/cd;->c:Landroid/animation/ValueAnimator$AnimatorUpdateListener;
+
     return-void
 .end method
 
-.method public static a()Landroid/text/method/MovementMethod;
+.method public static a(Landroid/view/ViewGroup$MarginLayoutParams;Landroid/view/View;Landroid/animation/ValueAnimator$AnimatorUpdateListener;)Landroid/animation/ValueAnimator$AnimatorUpdateListener;
     .locals 1
 
-    .prologue
-    .line 20
-    sget-object v0, Lkik/android/util/cd;->a:Lkik/android/util/cd;
+    new-instance v0, Lkik/android/util/cd;
+
+    invoke-direct {v0, p0, p1, p2}, Lkik/android/util/cd;-><init>(Landroid/view/ViewGroup$MarginLayoutParams;Landroid/view/View;Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public final onTouchEvent(Landroid/widget/TextView;Landroid/text/Spannable;Landroid/view/MotionEvent;)Z
-    .locals 1
+.method public final onAnimationUpdate(Landroid/animation/ValueAnimator;)V
+    .locals 3
 
-    .prologue
-    .line 31
-    const-class v0, Landroid/text/style/ClickableSpan;
+    iget-object v0, p0, Lkik/android/util/cd;->a:Landroid/view/ViewGroup$MarginLayoutParams;
 
-    invoke-static {p1, p2, p3, v0}, Lkik/android/util/cd;->a(Landroid/widget/TextView;Landroid/text/Spannable;Landroid/view/MotionEvent;Ljava/lang/Class;)Z
+    iget-object v1, p0, Lkik/android/util/cd;->b:Landroid/view/View;
 
-    move-result v0
+    iget-object v2, p0, Lkik/android/util/cd;->c:Landroid/animation/ValueAnimator$AnimatorUpdateListener;
 
-    return v0
+    invoke-static {v0, v1, v2, p1}, Lkik/android/util/cb;->a(Landroid/view/ViewGroup$MarginLayoutParams;Landroid/view/View;Landroid/animation/ValueAnimator$AnimatorUpdateListener;Landroid/animation/ValueAnimator;)V
+
+    return-void
 .end method

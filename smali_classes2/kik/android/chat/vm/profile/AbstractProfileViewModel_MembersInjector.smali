@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/b;
+.implements Ldagger/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/b",
+        "Ldagger/b",
         "<",
         "Lkik/android/chat/vm/profile/b;",
         ">;"
@@ -61,7 +61,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/x",
+            "Lkik/core/interfaces/w",
             "<",
             "Landroid/graphics/Bitmap;",
             ">;>;"
@@ -132,7 +132,7 @@
 
 
 # virtual methods
-.method public final synthetic a(Ljava/lang/Object;)V
+.method public final synthetic injectMembers(Ljava/lang/Object;)V
     .locals 2
 
     .prologue
@@ -186,9 +186,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/interfaces/x;
+    check-cast v0, Lkik/core/interfaces/w;
 
-    iput-object v0, p1, Lkik/android/chat/vm/profile/b;->f:Lkik/core/interfaces/x;
+    iput-object v0, p1, Lkik/android/chat/vm/profile/b;->f:Lkik/core/interfaces/w;
 
     .line 1087
     iget-object v0, p0, Lkik/android/chat/vm/profile/AbstractProfileViewModel_MembersInjector;->f:Ljavax/inject/Provider;

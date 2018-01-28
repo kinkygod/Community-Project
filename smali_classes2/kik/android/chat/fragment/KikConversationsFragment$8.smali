@@ -34,7 +34,7 @@
     .locals 0
 
     .prologue
-    .line 337
+    .line 339
     iput-object p1, p0, Lkik/android/chat/fragment/KikConversationsFragment$8;->b:Lkik/android/chat/fragment/KikConversationsFragment;
 
     iput-boolean p2, p0, Lkik/android/chat/fragment/KikConversationsFragment$8;->a:Z
@@ -54,10 +54,10 @@
 
     const/4 v1, 0x1
 
-    .line 337
+    .line 339
     check-cast p1, Ljava/lang/Boolean;
 
-    .line 1341
+    .line 1343
     iget-boolean v0, p0, Lkik/android/chat/fragment/KikConversationsFragment$8;->a:Z
 
     if-nez v0, :cond_3
@@ -70,7 +70,7 @@
 
     move v0, v1
 
-    .line 1343
+    .line 1345
     :goto_0
     iget-object v3, p0, Lkik/android/chat/fragment/KikConversationsFragment$8;->b:Lkik/android/chat/fragment/KikConversationsFragment;
 
@@ -94,7 +94,7 @@
 
     move v3, v1
 
-    .line 1346
+    .line 1348
     :goto_1
     iget-object v4, p0, Lkik/android/chat/fragment/KikConversationsFragment$8;->b:Lkik/android/chat/fragment/KikConversationsFragment;
 
@@ -124,7 +124,7 @@
 
     move v2, v1
 
-    .line 1348
+    .line 1350
     :cond_0
     if-eqz v3, :cond_5
 
@@ -134,7 +134,7 @@
 
     if-eqz v4, :cond_5
 
-    .line 1350
+    .line 1352
     iget-object v0, p0, Lkik/android/chat/fragment/KikConversationsFragment$8;->b:Lkik/android/chat/fragment/KikConversationsFragment;
 
     iget-object v0, v0, Lkik/android/chat/fragment/KikConversationsFragment;->b:Lkik/core/interfaces/IAddressBookIntegration;
@@ -145,7 +145,7 @@
 
     invoke-interface {v0, v2}, Lkik/core/interfaces/IAddressBookIntegration;->a(Ljava/lang/Boolean;)V
 
-    .line 1351
+    .line 1353
     iget-object v0, p0, Lkik/android/chat/fragment/KikConversationsFragment$8;->b:Lkik/android/chat/fragment/KikConversationsFragment;
 
     iget-object v0, v0, Lkik/android/chat/fragment/KikConversationsFragment;->b:Lkik/core/interfaces/IAddressBookIntegration;
@@ -154,7 +154,7 @@
 
     invoke-interface {v0, v2}, Lkik/core/interfaces/IAddressBookIntegration;->b(Ljava/lang/String;)V
 
-    .line 1362
+    .line 1364
     :cond_1
     :goto_2
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
@@ -163,7 +163,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 1364
+    .line 1366
     iget-object v0, p0, Lkik/android/chat/fragment/KikConversationsFragment$8;->b:Lkik/android/chat/fragment/KikConversationsFragment;
 
     invoke-static {v0}, Lkik/android/chat/fragment/KikConversationsFragment;->n(Lkik/android/chat/fragment/KikConversationsFragment;)Lkik/android/chat/fragment/KikConversationsFragment$a;
@@ -182,10 +182,10 @@
 
     if-nez v0, :cond_2
 
-    .line 1365
+    .line 1367
     iget-object v0, p0, Lkik/android/chat/fragment/KikConversationsFragment$8;->b:Lkik/android/chat/fragment/KikConversationsFragment;
 
-    iget-object v0, v0, Lkik/android/chat/fragment/KikConversationsFragment;->_storage:Lkik/core/interfaces/ae;
+    iget-object v0, v0, Lkik/android/chat/fragment/KikConversationsFragment;->_storage:Lkik/core/interfaces/ad;
 
     const-string v2, "kik.addressbook.permission"
 
@@ -193,12 +193,12 @@
 
     move-result-object v3
 
-    invoke-interface {v0, v2, v3}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;Ljava/lang/Boolean;)Z
+    invoke-interface {v0, v2, v3}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Boolean;)Z
 
-    .line 1366
+    .line 1368
     iget-object v0, p0, Lkik/android/chat/fragment/KikConversationsFragment$8;->b:Lkik/android/chat/fragment/KikConversationsFragment;
 
-    iget-object v0, v0, Lkik/android/chat/fragment/KikConversationsFragment;->_storage:Lkik/core/interfaces/ae;
+    iget-object v0, v0, Lkik/android/chat/fragment/KikConversationsFragment;->_storage:Lkik/core/interfaces/ad;
 
     const-string v2, "kik.addressbook.flow.finished"
 
@@ -206,9 +206,9 @@
 
     move-result-object v1
 
-    invoke-interface {v0, v2, v1}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;Ljava/lang/Boolean;)Z
+    invoke-interface {v0, v2, v1}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Boolean;)Z
 
-    .line 1368
+    .line 1370
     iget-object v0, p0, Lkik/android/chat/fragment/KikConversationsFragment$8;->b:Lkik/android/chat/fragment/KikConversationsFragment;
 
     iget-object v0, v0, Lkik/android/chat/fragment/KikConversationsFragment;->b:Lkik/core/interfaces/IAddressBookIntegration;
@@ -225,29 +225,29 @@
 
     invoke-interface {v0, v1}, Lkik/core/interfaces/IAddressBookIntegration;->d(Ljava/lang/String;)V
 
-    .line 337
+    .line 339
     :cond_2
     return-void
 
     :cond_3
     move v0, v2
 
-    .line 1341
+    .line 1343
     goto/16 :goto_0
 
     :cond_4
     move v3, v2
 
-    .line 1343
+    .line 1345
     goto :goto_1
 
-    .line 1353
+    .line 1355
     :cond_5
     if-nez v3, :cond_6
 
     if-eqz v2, :cond_7
 
-    .line 1355
+    .line 1357
     :cond_6
     iget-object v0, p0, Lkik/android/chat/fragment/KikConversationsFragment$8;->b:Lkik/android/chat/fragment/KikConversationsFragment;
 
@@ -257,11 +257,11 @@
 
     goto :goto_2
 
-    .line 1357
+    .line 1359
     :cond_7
     if-eqz v0, :cond_1
 
-    .line 1359
+    .line 1361
     iget-object v0, p0, Lkik/android/chat/fragment/KikConversationsFragment$8;->b:Lkik/android/chat/fragment/KikConversationsFragment;
 
     iget-object v2, p0, Lkik/android/chat/fragment/KikConversationsFragment$8;->b:Lkik/android/chat/fragment/KikConversationsFragment;

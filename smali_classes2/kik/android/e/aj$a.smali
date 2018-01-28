@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field private a:Lkik/android/gallery/vm/p;
+.field private a:Lkik/android/gifs/vm/bk;
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 189
+    .line 119
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -34,14 +34,14 @@
 
 
 # virtual methods
-.method public final a(Lkik/android/gallery/vm/p;)Lkik/android/e/aj$a;
+.method public final a(Lkik/android/gifs/vm/bk;)Lkik/android/e/aj$a;
     .locals 0
 
     .prologue
-    .line 192
-    iput-object p1, p0, Lkik/android/e/aj$a;->a:Lkik/android/gallery/vm/p;
+    .line 122
+    iput-object p1, p0, Lkik/android/e/aj$a;->a:Lkik/android/gifs/vm/bk;
 
-    .line 193
+    .line 123
     if-nez p1, :cond_0
 
     const/4 p0, 0x0
@@ -54,11 +54,11 @@
     .locals 1
 
     .prologue
-    .line 197
-    iget-object v0, p0, Lkik/android/e/aj$a;->a:Lkik/android/gallery/vm/p;
+    .line 127
+    iget-object v0, p0, Lkik/android/e/aj$a;->a:Lkik/android/gifs/vm/bk;
 
-    invoke-interface {v0}, Lkik/android/gallery/vm/p;->m()V
+    invoke-interface {v0}, Lkik/android/gifs/vm/bk;->g()V
 
-    .line 198
+    .line 128
     return-void
 .end method

@@ -22,7 +22,7 @@
     iput-object p1, p0, Lkik/android/chat/view/SetProfilePhotoView_ViewBinding;->a:Lkik/android/chat/view/SetProfilePhotoView;
 
     .line 26
-    const v0, 0x7f1003df
+    const v0, 0x7f1003db
 
     const-string v1, "field \'_setPhotoContentsContainer\'"
 
@@ -33,7 +33,7 @@
     iput-object v0, p1, Lkik/android/chat/view/SetProfilePhotoView;->_setPhotoContentsContainer:Landroid/view/View;
 
     .line 27
-    const v0, 0x7f1003e0
+    const v0, 0x7f1003dc
 
     const-string v1, "field \'_profilePhotoImageView\'"
 

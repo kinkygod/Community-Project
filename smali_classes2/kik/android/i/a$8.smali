@@ -95,7 +95,7 @@
     .line 1359
     iget-object v0, p0, Lkik/android/i/a$8;->a:Lkik/android/i/a;
 
-    invoke-static {v0}, Lkik/android/i/a;->a(Lkik/android/i/a;)Lkik/core/interfaces/ae;
+    invoke-static {v0}, Lkik/android/i/a;->a(Lkik/android/i/a;)Lkik/core/interfaces/ad;
 
     move-result-object v0
 
@@ -103,7 +103,7 @@
 
     const-string v4, "true"
 
-    invoke-interface {v0, v1, v4}, Lkik/core/interfaces/ae;->c(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-interface {v0, v1, v4}, Lkik/core/interfaces/ad;->c(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 1365
     :goto_1
@@ -134,7 +134,7 @@
     :cond_2
     iget-object v0, p0, Lkik/android/i/a$8;->a:Lkik/android/i/a;
 
-    invoke-static {v0}, Lkik/android/i/a;->a(Lkik/android/i/a;)Lkik/core/interfaces/ae;
+    invoke-static {v0}, Lkik/android/i/a;->a(Lkik/android/i/a;)Lkik/core/interfaces/ad;
 
     move-result-object v0
 
@@ -142,7 +142,7 @@
 
     const-string v4, "false"
 
-    invoke-interface {v0, v1, v4}, Lkik/core/interfaces/ae;->c(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-interface {v0, v1, v4}, Lkik/core/interfaces/ad;->c(Ljava/lang/String;Ljava/lang/String;)Z
 
     goto :goto_1
 .end method

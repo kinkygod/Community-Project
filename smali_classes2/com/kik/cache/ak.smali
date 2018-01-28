@@ -2,62 +2,64 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lrx/functions/b;
+.implements Lrx/functions/g;
 
 
 # instance fields
-.field private final a:Lcom/kik/cache/ai;
+.field private final a:Lcom/kik/cache/aj;
 
-.field private final b:Lcom/kik/cache/HundredYearImageRequest;
+.field private final b:I
 
 .field private final c:I
 
-.field private final d:I
+.field private final d:Landroid/graphics/Bitmap;
 
 
 # direct methods
-.method private constructor <init>(Lcom/kik/cache/ai;Lcom/kik/cache/HundredYearImageRequest;II)V
+.method private constructor <init>(Lcom/kik/cache/aj;IILandroid/graphics/Bitmap;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/kik/cache/ak;->a:Lcom/kik/cache/ai;
+    iput-object p1, p0, Lcom/kik/cache/ak;->a:Lcom/kik/cache/aj;
 
-    iput-object p2, p0, Lcom/kik/cache/ak;->b:Lcom/kik/cache/HundredYearImageRequest;
+    iput p2, p0, Lcom/kik/cache/ak;->b:I
 
     iput p3, p0, Lcom/kik/cache/ak;->c:I
 
-    iput p4, p0, Lcom/kik/cache/ak;->d:I
+    iput-object p4, p0, Lcom/kik/cache/ak;->d:Landroid/graphics/Bitmap;
 
     return-void
 .end method
 
-.method public static a(Lcom/kik/cache/ai;Lcom/kik/cache/HundredYearImageRequest;II)Lrx/functions/b;
+.method public static a(Lcom/kik/cache/aj;IILandroid/graphics/Bitmap;)Lrx/functions/g;
     .locals 1
 
     new-instance v0, Lcom/kik/cache/ak;
 
-    invoke-direct {v0, p0, p1, p2, p3}, Lcom/kik/cache/ak;-><init>(Lcom/kik/cache/ai;Lcom/kik/cache/HundredYearImageRequest;II)V
+    invoke-direct {v0, p0, p1, p2, p3}, Lcom/kik/cache/ak;-><init>(Lcom/kik/cache/aj;IILandroid/graphics/Bitmap;)V
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public final call(Ljava/lang/Object;)V
+.method public final call(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 4
 
-    iget-object v0, p0, Lcom/kik/cache/ak;->a:Lcom/kik/cache/ai;
+    iget-object v0, p0, Lcom/kik/cache/ak;->a:Lcom/kik/cache/aj;
 
-    iget-object v1, p0, Lcom/kik/cache/ak;->b:Lcom/kik/cache/HundredYearImageRequest;
+    iget v1, p0, Lcom/kik/cache/ak;->b:I
 
     iget v2, p0, Lcom/kik/cache/ak;->c:I
 
-    iget v3, p0, Lcom/kik/cache/ak;->d:I
+    iget-object v3, p0, Lcom/kik/cache/ak;->d:Landroid/graphics/Bitmap;
 
-    check-cast p1, Lrx/Emitter;
+    check-cast p1, Lcom/kik/core/domain/users/a/c;
 
-    invoke-static {v0, v1, v2, v3, p1}, Lcom/kik/cache/ai;->a(Lcom/kik/cache/ai;Lcom/kik/cache/HundredYearImageRequest;IILrx/Emitter;)V
+    invoke-static {v0, v1, v2, v3, p1}, Lcom/kik/cache/aj;->a(Lcom/kik/cache/aj;IILandroid/graphics/Bitmap;Lcom/kik/core/domain/users/a/c;)Lrx/d;
 
-    return-void
+    move-result-object v0
+
+    return-object v0
 .end method

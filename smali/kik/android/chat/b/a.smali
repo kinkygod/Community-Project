@@ -10,7 +10,7 @@
 # instance fields
 .field private b:Lkik/core/e/f;
 
-.field private c:Lkik/core/interfaces/ae;
+.field private c:Lkik/core/interfaces/ad;
 
 .field private d:Lcom/kik/events/Promise;
     .annotation system Ldalvik/annotation/Signature;
@@ -41,7 +41,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Lkik/core/e/f;Lcom/kik/events/Promise;Lkik/core/interfaces/ae;)V
+.method public constructor <init>(Lkik/core/e/f;Lcom/kik/events/Promise;Lkik/core/interfaces/ad;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -51,7 +51,7 @@
             "<",
             "Ljava/lang/Object;",
             ">;",
-            "Lkik/core/interfaces/ae;",
+            "Lkik/core/interfaces/ad;",
             ")V"
         }
     .end annotation
@@ -71,7 +71,7 @@
     iput-object p1, p0, Lkik/android/chat/b/a;->b:Lkik/core/e/f;
 
     .line 30
-    iput-object p3, p0, Lkik/android/chat/b/a;->c:Lkik/core/interfaces/ae;
+    iput-object p3, p0, Lkik/android/chat/b/a;->c:Lkik/core/interfaces/ad;
 
     .line 31
     new-instance v0, Lkik/android/chat/b/a$1;
@@ -90,7 +90,7 @@
     .prologue
     .line 17
     .line 1094
-    iget-object v0, p0, Lkik/android/chat/b/a;->c:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/chat/b/a;->c:Lkik/core/interfaces/ad;
 
     const-string v1, "kik.android.chat.preferences.UserPreferenceManager.restored"
 
@@ -100,7 +100,7 @@
 
     move-result-object v2
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;Ljava/lang/Boolean;)Z
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Boolean;)Z
 
     .line 17
     return-void
@@ -173,7 +173,7 @@
 
     .line 46
     :cond_0
-    iget-object v0, p0, Lkik/android/chat/b/a;->c:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/chat/b/a;->c:Lkik/core/interfaces/ad;
 
     const-string v1, "kik.chat.bubble.id"
 
@@ -185,7 +185,7 @@
 
     move-result-object v2
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;Ljava/lang/Integer;)Z
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Integer;)Z
 
     .line 47
     iget-object v0, p0, Lkik/android/chat/b/a;->b:Lkik/core/e/f;
@@ -208,7 +208,7 @@
 
     .prologue
     .line 52
-    iget-object v0, p0, Lkik/android/chat/b/a;->c:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/chat/b/a;->c:Lkik/core/interfaces/ad;
 
     const-string v1, "kik.enterbutton.sends"
 
@@ -216,7 +216,7 @@
 
     move-result-object v2
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;Ljava/lang/Boolean;)Z
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Boolean;)Z
 
     .line 53
     iget-object v0, p0, Lkik/android/chat/b/a;->b:Lkik/core/e/f;
@@ -242,11 +242,11 @@
 
     .prologue
     .line 73
-    iget-object v0, p0, Lkik/android/chat/b/a;->c:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/chat/b/a;->c:Lkik/core/interfaces/ad;
 
     const-string v1, "kik.enterbutton.sends"
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ae;->w(Ljava/lang/String;)Ljava/lang/Boolean;
+    invoke-interface {v0, v1}, Lkik/core/interfaces/ad;->w(Ljava/lang/String;)Ljava/lang/Boolean;
 
     move-result-object v0
 
@@ -262,13 +262,13 @@
 
     .prologue
     .line 78
-    iget-object v0, p0, Lkik/android/chat/b/a;->c:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/chat/b/a;->c:Lkik/core/interfaces/ad;
 
     const-string v1, "kik.chat.bubble.id"
 
     const/4 v2, -0x1
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;I)Ljava/lang/Integer;
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;I)Ljava/lang/Integer;
 
     move-result-object v0
 
@@ -288,7 +288,7 @@
 
     .prologue
     .line 58
-    iget-object v0, p0, Lkik/android/chat/b/a;->c:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/chat/b/a;->c:Lkik/core/interfaces/ad;
 
     const-string v1, "kik.android.chat.video.automatic_fullscreen"
 
@@ -296,7 +296,7 @@
 
     move-result-object v2
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;Ljava/lang/Boolean;)Z
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Boolean;)Z
 
     .line 59
     iget-object v0, p0, Lkik/android/chat/b/a;->b:Lkik/core/e/f;
@@ -322,13 +322,13 @@
 
     .prologue
     .line 83
-    iget-object v0, p0, Lkik/android/chat/b/a;->c:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/chat/b/a;->c:Lkik/core/interfaces/ad;
 
     const-string v1, "kik.android.chat.video.automatic_fullscreen"
 
     const/4 v2, 0x0
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;Z)Ljava/lang/Boolean;
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Z)Ljava/lang/Boolean;
 
     move-result-object v0
 
@@ -345,11 +345,11 @@
     .prologue
     .line 99
     .line 1089
-    iget-object v0, p0, Lkik/android/chat/b/a;->c:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/chat/b/a;->c:Lkik/core/interfaces/ad;
 
     const-string v1, "kik.android.chat.preferences.UserPreferenceManager.restored"
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ae;->w(Ljava/lang/String;)Ljava/lang/Boolean;
+    invoke-interface {v0, v1}, Lkik/core/interfaces/ad;->w(Ljava/lang/String;)Ljava/lang/Boolean;
 
     move-result-object v0
 

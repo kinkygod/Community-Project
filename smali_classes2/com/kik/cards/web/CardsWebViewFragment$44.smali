@@ -36,7 +36,7 @@
     .locals 0
 
     .prologue
-    .line 365
+    .line 379
     iput-object p1, p0, Lcom/kik/cards/web/CardsWebViewFragment$44;->b:Lcom/kik/cards/web/CardsWebViewFragment;
 
     iput-object p2, p0, Lcom/kik/cards/web/CardsWebViewFragment$44;->a:Ljava/lang/String;
@@ -54,16 +54,16 @@
     .prologue
     const-wide/16 v6, 0x0
 
-    .line 365
+    .line 379
     check-cast p1, Ljava/util/List;
 
-    .line 1369
+    .line 1383
     const/4 v1, 0x1
 
-    .line 1370
+    .line 1384
     if-eqz p1, :cond_4
 
-    .line 1371
+    .line 1385
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v2
@@ -81,10 +81,10 @@
 
     check-cast v0, Lkik/core/d/b$a;
 
-    .line 1372
+    .line 1386
     if-eqz v0, :cond_0
 
-    .line 1375
+    .line 1389
     invoke-virtual {v0}, Lkik/core/d/b$a;->b()Ljava/lang/String;
 
     move-result-object v3
@@ -103,21 +103,21 @@
 
     if-eqz v0, :cond_0
 
-    .line 1376
+    .line 1390
     const/4 v0, 0x0
 
-    .line 1381
+    .line 1395
     :goto_0
     new-instance v3, Ljava/util/HashMap;
 
     invoke-direct {v3}, Ljava/util/HashMap;-><init>()V
 
-    .line 1382
+    .line 1396
     new-instance v5, Ljava/util/HashMap;
 
     invoke-direct {v5}, Ljava/util/HashMap;-><init>()V
 
-    .line 1383
+    .line 1397
     const-string v1, "t"
 
     invoke-static {v6, v7}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
@@ -126,14 +126,14 @@
 
     invoke-interface {v5, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1384
+    .line 1398
     const-string v1, "url"
 
     iget-object v2, p0, Lcom/kik/cards/web/CardsWebViewFragment$44;->a:Ljava/lang/String;
 
     invoke-interface {v3, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1385
+    .line 1399
     const-string v2, "fl"
 
     if-eqz v0, :cond_3
@@ -147,7 +147,7 @@
 
     invoke-interface {v5, v2, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1386
+    .line 1400
     invoke-static {}, Lkik/core/util/v;->b()J
 
     move-result-wide v0
@@ -156,15 +156,15 @@
 
     move-result-object v0
 
-    .line 1387
+    .line 1401
     invoke-static {}, Lkik/android/chat/KikApplication;->k()Lkik/android/a/b;
 
     move-result-object v1
 
-    .line 1388
+    .line 1402
     if-eqz v1, :cond_1
 
-    .line 1389
+    .line 1403
     invoke-virtual {v1}, Lkik/android/a/b;->c()Lcom/kik/clientmetrics/f;
 
     move-result-object v1
@@ -179,7 +179,7 @@
 
     invoke-virtual/range {v1 .. v7}, Lcom/kik/clientmetrics/f;->a(Lcom/kik/clientmetrics/model/Clientmetrics$ClientUserEventType;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;J)V
 
-    .line 1391
+    .line 1405
     :cond_1
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$44;->b:Lcom/kik/cards/web/CardsWebViewFragment;
 
@@ -187,7 +187,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 1392
+    .line 1406
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$44;->b:Lcom/kik/cards/web/CardsWebViewFragment;
 
     iget-object v0, v0, Lcom/kik/cards/web/CardsWebViewFragment;->d:Lcom/kik/android/Mixpanel;
@@ -202,7 +202,7 @@
 
     iget-object v2, p0, Lcom/kik/cards/web/CardsWebViewFragment$44;->a:Ljava/lang/String;
 
-    .line 1393
+    .line 1407
     invoke-virtual {v0, v1, v2}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
 
     move-result-object v0
@@ -211,7 +211,7 @@
 
     iget-object v2, p0, Lcom/kik/cards/web/CardsWebViewFragment$44;->a:Ljava/lang/String;
 
-    .line 1394
+    .line 1408
     invoke-static {v2}, Lcom/kik/cards/web/s;->j(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
@@ -220,17 +220,17 @@
 
     move-result-object v0
 
-    .line 1395
+    .line 1409
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
 
-    .line 365
+    .line 379
     :cond_2
     return-void
 
     :cond_3
     move-wide v0, v6
 
-    .line 1385
+    .line 1399
     goto :goto_1
 
     :cond_4

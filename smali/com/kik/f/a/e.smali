@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field private b:Lkik/android/chat/view/text/d;
+.field private b:Lkik/android/chat/view/text/e;
 
 
 # direct methods
@@ -25,7 +25,7 @@
     sput-object v0, Lcom/kik/f/a/e;->a:Lkik/android/chat/presentation/bx;
 
     .line 29
-    iput-object v0, p0, Lcom/kik/f/a/e;->b:Lkik/android/chat/view/text/d;
+    iput-object v0, p0, Lcom/kik/f/a/e;->b:Lkik/android/chat/view/text/e;
 
     .line 30
     return-void
@@ -33,7 +33,7 @@
 
 
 # virtual methods
-.method final a(Lcom/kik/android/Mixpanel;Lkik/core/interfaces/w;Lcom/kik/cache/KikVolleyImageLoader;)Lkik/android/chat/presentation/bw;
+.method final a(Lcom/kik/android/Mixpanel;Lkik/core/interfaces/v;Lcom/kik/cache/KikVolleyImageLoader;)Lkik/android/chat/presentation/bw;
     .locals 2
     .param p3    # Lcom/kik/cache/KikVolleyImageLoader;
         .annotation runtime Ljavax/inject/Named;
@@ -50,14 +50,14 @@
     .line 37
     new-instance v0, Lkik/android/chat/presentation/bx;
 
-    invoke-direct {v0, p1, p2, p3}, Lkik/android/chat/presentation/bx;-><init>(Lcom/kik/android/Mixpanel;Lkik/core/interfaces/w;Lcom/kik/cache/KikVolleyImageLoader;)V
+    invoke-direct {v0, p1, p2, p3}, Lkik/android/chat/presentation/bx;-><init>(Lcom/kik/android/Mixpanel;Lkik/core/interfaces/v;Lcom/kik/cache/KikVolleyImageLoader;)V
 
     .line 38
     sput-object v0, Lcom/kik/f/a/e;->a:Lkik/android/chat/presentation/bx;
 
-    iget-object v1, p0, Lcom/kik/f/a/e;->b:Lkik/android/chat/view/text/d;
+    iget-object v1, p0, Lcom/kik/f/a/e;->b:Lkik/android/chat/view/text/e;
 
-    invoke-virtual {v0, v1}, Lkik/android/chat/presentation/bx;->a(Lkik/android/chat/view/text/d;)V
+    invoke-virtual {v0, v1}, Lkik/android/chat/presentation/bx;->a(Lkik/android/chat/view/text/e;)V
 
     .line 40
     :cond_0

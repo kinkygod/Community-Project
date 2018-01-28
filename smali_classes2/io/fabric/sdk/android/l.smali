@@ -608,7 +608,17 @@
     return-object v0
 .end method
 
-.method protected final a_()Z
+.method public final b()Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 148
+    const-string v0, "io.fabric.sdk.android:fabric"
+
+    return-object v0
+.end method
+
+.method protected final b_()Z
     .locals 5
 
     .prologue
@@ -754,16 +764,6 @@
     invoke-interface {v2, v3, v4, v1}, Lio/fabric/sdk/android/k;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     goto :goto_1
-.end method
-
-.method public final b()Ljava/lang/String;
-    .locals 1
-
-    .prologue
-    .line 148
-    const-string v0, "io.fabric.sdk.android:fabric"
-
-    return-object v0
 .end method
 
 .method protected final synthetic e()Ljava/lang/Object;

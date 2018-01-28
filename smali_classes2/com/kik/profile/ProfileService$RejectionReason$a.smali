@@ -36,18 +36,18 @@
     .locals 1
 
     .prologue
-    .line 4722
+    .line 5021
     invoke-direct {p0}, Lcom/google/protobuf/GeneratedMessageV3$Builder;-><init>()V
 
-    .line 4833
+    .line 5132
     const/4 v0, 0x0
 
     iput v0, p0, Lcom/kik/profile/ProfileService$RejectionReason$a;->a:I
 
-    .line 5733
+    .line 6032
     invoke-static {}, Lcom/kik/profile/ProfileService$RejectionReason;->f()Z
 
-    .line 4724
+    .line 5023
     return-void
 .end method
 
@@ -55,7 +55,7 @@
     .locals 0
 
     .prologue
-    .line 4705
+    .line 5004
     invoke-direct {p0}, Lcom/kik/profile/ProfileService$RejectionReason$a;-><init>()V
 
     return-void
@@ -65,18 +65,18 @@
     .locals 1
 
     .prologue
-    .line 4728
+    .line 5027
     invoke-direct {p0, p1}, Lcom/google/protobuf/GeneratedMessageV3$Builder;-><init>(Lcom/google/protobuf/GeneratedMessageV3$BuilderParent;)V
 
-    .line 4833
+    .line 5132
     const/4 v0, 0x0
 
     iput v0, p0, Lcom/kik/profile/ProfileService$RejectionReason$a;->a:I
 
-    .line 6733
+    .line 7032
     invoke-static {}, Lcom/kik/profile/ProfileService$RejectionReason;->f()Z
 
-    .line 4730
+    .line 5029
     return-void
 .end method
 
@@ -84,7 +84,7 @@
     .locals 0
 
     .prologue
-    .line 4705
+    .line 5004
     invoke-direct {p0, p1}, Lcom/kik/profile/ProfileService$RejectionReason$a;-><init>(Lcom/google/protobuf/GeneratedMessageV3$BuilderParent;)V
 
     return-void
@@ -94,15 +94,15 @@
     .locals 1
 
     .prologue
-    .line 4737
+    .line 5036
     invoke-super {p0}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->clear()Lcom/google/protobuf/GeneratedMessageV3$Builder;
 
-    .line 4738
+    .line 5037
     const/4 v0, 0x0
 
     iput v0, p0, Lcom/kik/profile/ProfileService$RejectionReason$a;->a:I
 
-    .line 4740
+    .line 5039
     return-object p0
 .end method
 
@@ -115,10 +115,10 @@
     .end annotation
 
     .prologue
-    .line 4819
+    .line 5118
     const/4 v2, 0x0
 
-    .line 4821
+    .line 5120
     :try_start_0
     invoke-static {}, Lcom/kik/profile/ProfileService$RejectionReason;->g()Lcom/google/protobuf/Parser;
 
@@ -133,23 +133,23 @@
     .catch Lcom/google/protobuf/InvalidProtocolBufferException; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 4826
+    .line 5125
     if-eqz v0, :cond_0
 
-    .line 4827
+    .line 5126
     invoke-virtual {p0, v0}, Lcom/kik/profile/ProfileService$RejectionReason$a;->a(Lcom/kik/profile/ProfileService$RejectionReason;)Lcom/kik/profile/ProfileService$RejectionReason$a;
 
-    .line 4830
+    .line 5129
     :cond_0
     return-object p0
 
-    .line 4822
+    .line 5121
     :catch_0
     move-exception v0
 
     move-object v1, v0
 
-    .line 4823
+    .line 5122
     :try_start_1
     invoke-virtual {v1}, Lcom/google/protobuf/InvalidProtocolBufferException;->getUnfinishedMessage()Lcom/google/protobuf/MessageLite;
 
@@ -159,7 +159,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 4824
+    .line 5123
     :try_start_2
     invoke-virtual {v1}, Lcom/google/protobuf/InvalidProtocolBufferException;->unwrapIOException()Ljava/io/IOException;
 
@@ -169,7 +169,7 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 4826
+    .line 5125
     :catchall_0
     move-exception v1
 
@@ -182,13 +182,13 @@
     :goto_0
     if-eqz v1, :cond_1
 
-    .line 4827
+    .line 5126
     invoke-virtual {p0, v1}, Lcom/kik/profile/ProfileService$RejectionReason$a;->a(Lcom/kik/profile/ProfileService$RejectionReason;)Lcom/kik/profile/ProfileService$RejectionReason$a;
 
     :cond_1
     throw v0
 
-    .line 4826
+    .line 5125
     :catchall_1
     move-exception v0
 
@@ -201,7 +201,7 @@
     .locals 1
 
     .prologue
-    .line 4777
+    .line 5076
     invoke-super {p0, p1}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->clearField(Lcom/google/protobuf/Descriptors$FieldDescriptor;)Lcom/google/protobuf/GeneratedMessageV3$Builder;
 
     move-result-object v0
@@ -215,7 +215,7 @@
     .locals 1
 
     .prologue
-    .line 4786
+    .line 5085
     invoke-super {p0, p1, p2, p3}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->setRepeatedField(Lcom/google/protobuf/Descriptors$FieldDescriptor;ILjava/lang/Object;)Lcom/google/protobuf/GeneratedMessageV3$Builder;
 
     move-result-object v0
@@ -229,7 +229,7 @@
     .locals 1
 
     .prologue
-    .line 4773
+    .line 5072
     invoke-super {p0, p1, p2}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->setField(Lcom/google/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lcom/google/protobuf/GeneratedMessageV3$Builder;
 
     move-result-object v0
@@ -243,7 +243,7 @@
     .locals 1
 
     .prologue
-    .line 4781
+    .line 5080
     invoke-super {p0, p1}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->clearOneof(Lcom/google/protobuf/Descriptors$OneofDescriptor;)Lcom/google/protobuf/GeneratedMessageV3$Builder;
 
     move-result-object v0
@@ -257,23 +257,23 @@
     .locals 1
 
     .prologue
-    .line 4794
+    .line 5093
     instance-of v0, p1, Lcom/kik/profile/ProfileService$RejectionReason;
 
     if-eqz v0, :cond_0
 
-    .line 4795
+    .line 5094
     check-cast p1, Lcom/kik/profile/ProfileService$RejectionReason;
 
     invoke-virtual {p0, p1}, Lcom/kik/profile/ProfileService$RejectionReason$a;->a(Lcom/kik/profile/ProfileService$RejectionReason;)Lcom/kik/profile/ProfileService$RejectionReason$a;
 
     move-result-object p0
 
-    .line 4798
+    .line 5097
     :goto_0
     return-object p0
 
-    .line 4797
+    .line 5096
     :cond_0
     invoke-super {p0, p1}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->mergeFrom(Lcom/google/protobuf/Message;)Lcom/google/protobuf/AbstractMessage$Builder;
 
@@ -284,7 +284,7 @@
     .locals 1
 
     .prologue
-    .line 4791
+    .line 5090
     invoke-super {p0, p1, p2}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->addRepeatedField(Lcom/google/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lcom/google/protobuf/GeneratedMessageV3$Builder;
 
     move-result-object v0
@@ -298,26 +298,26 @@
     .locals 2
 
     .prologue
-    .line 4753
+    .line 5052
     invoke-direct {p0}, Lcom/kik/profile/ProfileService$RejectionReason$a;->c()Lcom/kik/profile/ProfileService$RejectionReason;
 
     move-result-object v0
 
-    .line 4754
+    .line 5053
     invoke-virtual {v0}, Lcom/kik/profile/ProfileService$RejectionReason;->isInitialized()Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    .line 4755
+    .line 5054
     invoke-static {v0}, Lcom/kik/profile/ProfileService$RejectionReason$a;->newUninitializedMessageException(Lcom/google/protobuf/Message;)Lcom/google/protobuf/UninitializedMessageException;
 
     move-result-object v0
 
     throw v0
 
-    .line 4757
+    .line 5056
     :cond_0
     return-object v0
 .end method
@@ -326,22 +326,22 @@
     .locals 2
 
     .prologue
-    .line 4761
+    .line 5060
     new-instance v0, Lcom/kik/profile/ProfileService$RejectionReason;
 
     const/4 v1, 0x0
 
     invoke-direct {v0, p0, v1}, Lcom/kik/profile/ProfileService$RejectionReason;-><init>(Lcom/google/protobuf/GeneratedMessageV3$Builder;B)V
 
-    .line 4762
+    .line 5061
     iget v1, p0, Lcom/kik/profile/ProfileService$RejectionReason$a;->a:I
 
     invoke-static {v0, v1}, Lcom/kik/profile/ProfileService$RejectionReason;->a(Lcom/kik/profile/ProfileService$RejectionReason;I)I
 
-    .line 4763
+    .line 5062
     invoke-virtual {p0}, Lcom/kik/profile/ProfileService$RejectionReason$a;->onBuilt()V
 
-    .line 4764
+    .line 5063
     return-object v0
 .end method
 
@@ -351,18 +351,18 @@
     .locals 1
 
     .prologue
-    .line 4803
+    .line 5102
     invoke-static {}, Lcom/kik/profile/ProfileService$RejectionReason;->d()Lcom/kik/profile/ProfileService$RejectionReason;
 
     move-result-object v0
 
     if-ne p1, v0, :cond_0
 
-    .line 4808
+    .line 5107
     :goto_0
     return-object p0
 
-    .line 4804
+    .line 5103
     :cond_0
     invoke-static {p1}, Lcom/kik/profile/ProfileService$RejectionReason;->a(Lcom/kik/profile/ProfileService$RejectionReason;)I
 
@@ -370,18 +370,18 @@
 
     if-eqz v0, :cond_1
 
-    .line 4805
+    .line 5104
     invoke-virtual {p1}, Lcom/kik/profile/ProfileService$RejectionReason;->b()I
 
     move-result v0
 
-    .line 6844
+    .line 7143
     iput v0, p0, Lcom/kik/profile/ProfileService$RejectionReason$a;->a:I
 
-    .line 6845
+    .line 7144
     invoke-virtual {p0}, Lcom/kik/profile/ProfileService$RejectionReason$a;->onChanged()V
 
-    .line 4807
+    .line 5106
     :cond_1
     invoke-virtual {p0}, Lcom/kik/profile/ProfileService$RejectionReason$a;->onChanged()V
 
@@ -392,7 +392,7 @@
     .locals 1
 
     .prologue
-    .line 4705
+    .line 5004
     invoke-direct {p0, p1, p2}, Lcom/kik/profile/ProfileService$RejectionReason$a;->b(Lcom/google/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lcom/kik/profile/ProfileService$RejectionReason$a;
 
     move-result-object v0
@@ -404,7 +404,7 @@
     .locals 1
 
     .prologue
-    .line 4705
+    .line 5004
     invoke-direct {p0, p1, p2}, Lcom/kik/profile/ProfileService$RejectionReason$a;->b(Lcom/google/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lcom/kik/profile/ProfileService$RejectionReason$a;
 
     move-result-object v0
@@ -416,7 +416,7 @@
     .locals 1
 
     .prologue
-    .line 4705
+    .line 5004
     invoke-direct {p0}, Lcom/kik/profile/ProfileService$RejectionReason$a;->b()Lcom/kik/profile/ProfileService$RejectionReason;
 
     move-result-object v0
@@ -428,7 +428,7 @@
     .locals 1
 
     .prologue
-    .line 4705
+    .line 5004
     invoke-direct {p0}, Lcom/kik/profile/ProfileService$RejectionReason$a;->b()Lcom/kik/profile/ProfileService$RejectionReason;
 
     move-result-object v0
@@ -440,7 +440,7 @@
     .locals 1
 
     .prologue
-    .line 4705
+    .line 5004
     invoke-direct {p0}, Lcom/kik/profile/ProfileService$RejectionReason$a;->c()Lcom/kik/profile/ProfileService$RejectionReason;
 
     move-result-object v0
@@ -452,7 +452,7 @@
     .locals 1
 
     .prologue
-    .line 4705
+    .line 5004
     invoke-direct {p0}, Lcom/kik/profile/ProfileService$RejectionReason$a;->c()Lcom/kik/profile/ProfileService$RejectionReason;
 
     move-result-object v0
@@ -464,7 +464,7 @@
     .locals 1
 
     .prologue
-    .line 4705
+    .line 5004
     invoke-direct {p0}, Lcom/kik/profile/ProfileService$RejectionReason$a;->a()Lcom/kik/profile/ProfileService$RejectionReason$a;
 
     move-result-object v0
@@ -476,7 +476,7 @@
     .locals 1
 
     .prologue
-    .line 4705
+    .line 5004
     invoke-direct {p0}, Lcom/kik/profile/ProfileService$RejectionReason$a;->a()Lcom/kik/profile/ProfileService$RejectionReason$a;
 
     move-result-object v0
@@ -488,7 +488,7 @@
     .locals 1
 
     .prologue
-    .line 4705
+    .line 5004
     invoke-direct {p0}, Lcom/kik/profile/ProfileService$RejectionReason$a;->a()Lcom/kik/profile/ProfileService$RejectionReason$a;
 
     move-result-object v0
@@ -500,7 +500,7 @@
     .locals 1
 
     .prologue
-    .line 4705
+    .line 5004
     invoke-direct {p0}, Lcom/kik/profile/ProfileService$RejectionReason$a;->a()Lcom/kik/profile/ProfileService$RejectionReason$a;
 
     move-result-object v0
@@ -512,7 +512,7 @@
     .locals 1
 
     .prologue
-    .line 4705
+    .line 5004
     invoke-direct {p0, p1}, Lcom/kik/profile/ProfileService$RejectionReason$a;->a(Lcom/google/protobuf/Descriptors$FieldDescriptor;)Lcom/kik/profile/ProfileService$RejectionReason$a;
 
     move-result-object v0
@@ -524,7 +524,7 @@
     .locals 1
 
     .prologue
-    .line 4705
+    .line 5004
     invoke-direct {p0, p1}, Lcom/kik/profile/ProfileService$RejectionReason$a;->a(Lcom/google/protobuf/Descriptors$FieldDescriptor;)Lcom/kik/profile/ProfileService$RejectionReason$a;
 
     move-result-object v0
@@ -536,7 +536,7 @@
     .locals 1
 
     .prologue
-    .line 4705
+    .line 5004
     invoke-direct {p0, p1}, Lcom/kik/profile/ProfileService$RejectionReason$a;->a(Lcom/google/protobuf/Descriptors$OneofDescriptor;)Lcom/kik/profile/ProfileService$RejectionReason$a;
 
     move-result-object v0
@@ -548,7 +548,7 @@
     .locals 1
 
     .prologue
-    .line 4705
+    .line 5004
     invoke-direct {p0, p1}, Lcom/kik/profile/ProfileService$RejectionReason$a;->a(Lcom/google/protobuf/Descriptors$OneofDescriptor;)Lcom/kik/profile/ProfileService$RejectionReason$a;
 
     move-result-object v0
@@ -560,7 +560,7 @@
     .locals 1
 
     .prologue
-    .line 4705
+    .line 5004
     invoke-direct {p0, p1}, Lcom/kik/profile/ProfileService$RejectionReason$a;->a(Lcom/google/protobuf/Descriptors$OneofDescriptor;)Lcom/kik/profile/ProfileService$RejectionReason$a;
 
     move-result-object v0
@@ -572,15 +572,15 @@
     .locals 1
 
     .prologue
-    .line 4705
-    .line 9768
+    .line 5004
+    .line 10067
     invoke-super {p0}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->clone()Lcom/google/protobuf/GeneratedMessageV3$Builder;
 
     move-result-object v0
 
     check-cast v0, Lcom/kik/profile/ProfileService$RejectionReason$a;
 
-    .line 4705
+    .line 5004
     return-object v0
 .end method
 
@@ -588,15 +588,15 @@
     .locals 1
 
     .prologue
-    .line 4705
-    .line 14768
+    .line 5004
+    .line 15067
     invoke-super {p0}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->clone()Lcom/google/protobuf/GeneratedMessageV3$Builder;
 
     move-result-object v0
 
     check-cast v0, Lcom/kik/profile/ProfileService$RejectionReason$a;
 
-    .line 4705
+    .line 5004
     return-object v0
 .end method
 
@@ -604,15 +604,15 @@
     .locals 1
 
     .prologue
-    .line 4705
-    .line 8768
+    .line 5004
+    .line 9067
     invoke-super {p0}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->clone()Lcom/google/protobuf/GeneratedMessageV3$Builder;
 
     move-result-object v0
 
     check-cast v0, Lcom/kik/profile/ProfileService$RejectionReason$a;
 
-    .line 4705
+    .line 5004
     return-object v0
 .end method
 
@@ -620,15 +620,15 @@
     .locals 1
 
     .prologue
-    .line 4705
-    .line 11768
+    .line 5004
+    .line 12067
     invoke-super {p0}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->clone()Lcom/google/protobuf/GeneratedMessageV3$Builder;
 
     move-result-object v0
 
     check-cast v0, Lcom/kik/profile/ProfileService$RejectionReason$a;
 
-    .line 4705
+    .line 5004
     return-object v0
 .end method
 
@@ -636,15 +636,15 @@
     .locals 1
 
     .prologue
-    .line 4705
-    .line 12768
+    .line 5004
+    .line 13067
     invoke-super {p0}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->clone()Lcom/google/protobuf/GeneratedMessageV3$Builder;
 
     move-result-object v0
 
     check-cast v0, Lcom/kik/profile/ProfileService$RejectionReason$a;
 
-    .line 4705
+    .line 5004
     return-object v0
 .end method
 
@@ -657,15 +657,15 @@
     .end annotation
 
     .prologue
-    .line 4705
-    .line 15768
+    .line 5004
+    .line 16067
     invoke-super {p0}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->clone()Lcom/google/protobuf/GeneratedMessageV3$Builder;
 
     move-result-object v0
 
     check-cast v0, Lcom/kik/profile/ProfileService$RejectionReason$a;
 
-    .line 4705
+    .line 5004
     return-object v0
 .end method
 
@@ -673,12 +673,12 @@
     .locals 1
 
     .prologue
-    .line 14749
+    .line 15048
     invoke-static {}, Lcom/kik/profile/ProfileService$RejectionReason;->d()Lcom/kik/profile/ProfileService$RejectionReason;
 
     move-result-object v0
 
-    .line 4705
+    .line 5004
     return-object v0
 .end method
 
@@ -686,12 +686,12 @@
     .locals 1
 
     .prologue
-    .line 13749
+    .line 14048
     invoke-static {}, Lcom/kik/profile/ProfileService$RejectionReason;->d()Lcom/kik/profile/ProfileService$RejectionReason;
 
     move-result-object v0
 
-    .line 4705
+    .line 5004
     return-object v0
 .end method
 
@@ -699,8 +699,8 @@
     .locals 1
 
     .prologue
-    .line 4745
-    invoke-static {}, Lcom/kik/profile/ProfileService;->g()Lcom/google/protobuf/Descriptors$Descriptor;
+    .line 5044
+    invoke-static {}, Lcom/kik/profile/ProfileService;->i()Lcom/google/protobuf/Descriptors$Descriptor;
 
     move-result-object v0
 
@@ -711,8 +711,8 @@
     .locals 3
 
     .prologue
-    .line 4716
-    invoke-static {}, Lcom/kik/profile/ProfileService;->h()Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
+    .line 5015
+    invoke-static {}, Lcom/kik/profile/ProfileService;->j()Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
     move-result-object v0
 
@@ -720,12 +720,12 @@
 
     const-class v2, Lcom/kik/profile/ProfileService$RejectionReason$a;
 
-    .line 4717
+    .line 5016
     invoke-virtual {v0, v1, v2}, Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;->ensureFieldAccessorsInitialized(Ljava/lang/Class;Ljava/lang/Class;)Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
     move-result-object v0
 
-    .line 4716
+    .line 5015
     return-object v0
 .end method
 
@@ -733,7 +733,7 @@
     .locals 1
 
     .prologue
-    .line 4812
+    .line 5111
     const/4 v0, 0x1
 
     return v0
@@ -748,7 +748,7 @@
     .end annotation
 
     .prologue
-    .line 4705
+    .line 5004
     invoke-direct {p0, p1, p2}, Lcom/kik/profile/ProfileService$RejectionReason$a;->a(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/kik/profile/ProfileService$RejectionReason$a;
 
     move-result-object v0
@@ -760,7 +760,7 @@
     .locals 1
 
     .prologue
-    .line 4705
+    .line 5004
     invoke-direct {p0, p1}, Lcom/kik/profile/ProfileService$RejectionReason$a;->a(Lcom/google/protobuf/Message;)Lcom/kik/profile/ProfileService$RejectionReason$a;
 
     move-result-object v0
@@ -777,7 +777,7 @@
     .end annotation
 
     .prologue
-    .line 4705
+    .line 5004
     invoke-direct {p0, p1, p2}, Lcom/kik/profile/ProfileService$RejectionReason$a;->a(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/kik/profile/ProfileService$RejectionReason$a;
 
     move-result-object v0
@@ -794,7 +794,7 @@
     .end annotation
 
     .prologue
-    .line 4705
+    .line 5004
     invoke-direct {p0, p1, p2}, Lcom/kik/profile/ProfileService$RejectionReason$a;->a(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/kik/profile/ProfileService$RejectionReason$a;
 
     move-result-object v0
@@ -806,7 +806,7 @@
     .locals 1
 
     .prologue
-    .line 4705
+    .line 5004
     invoke-direct {p0, p1}, Lcom/kik/profile/ProfileService$RejectionReason$a;->a(Lcom/google/protobuf/Message;)Lcom/kik/profile/ProfileService$RejectionReason$a;
 
     move-result-object v0
@@ -823,7 +823,7 @@
     .end annotation
 
     .prologue
-    .line 4705
+    .line 5004
     invoke-direct {p0, p1, p2}, Lcom/kik/profile/ProfileService$RejectionReason$a;->a(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/kik/profile/ProfileService$RejectionReason$a;
 
     move-result-object v0
@@ -835,7 +835,7 @@
     .locals 0
 
     .prologue
-    .line 4705
+    .line 5004
     return-object p0
 .end method
 
@@ -843,7 +843,7 @@
     .locals 0
 
     .prologue
-    .line 4705
+    .line 5004
     return-object p0
 .end method
 
@@ -851,7 +851,7 @@
     .locals 0
 
     .prologue
-    .line 4705
+    .line 5004
     return-object p0
 .end method
 
@@ -859,7 +859,7 @@
     .locals 1
 
     .prologue
-    .line 4705
+    .line 5004
     invoke-direct {p0, p1, p2}, Lcom/kik/profile/ProfileService$RejectionReason$a;->a(Lcom/google/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lcom/kik/profile/ProfileService$RejectionReason$a;
 
     move-result-object v0
@@ -871,7 +871,7 @@
     .locals 1
 
     .prologue
-    .line 4705
+    .line 5004
     invoke-direct {p0, p1, p2}, Lcom/kik/profile/ProfileService$RejectionReason$a;->a(Lcom/google/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lcom/kik/profile/ProfileService$RejectionReason$a;
 
     move-result-object v0
@@ -883,7 +883,7 @@
     .locals 1
 
     .prologue
-    .line 4705
+    .line 5004
     invoke-direct {p0, p1, p2, p3}, Lcom/kik/profile/ProfileService$RejectionReason$a;->a(Lcom/google/protobuf/Descriptors$FieldDescriptor;ILjava/lang/Object;)Lcom/kik/profile/ProfileService$RejectionReason$a;
 
     move-result-object v0
@@ -895,7 +895,7 @@
     .locals 1
 
     .prologue
-    .line 4705
+    .line 5004
     invoke-direct {p0, p1, p2, p3}, Lcom/kik/profile/ProfileService$RejectionReason$a;->a(Lcom/google/protobuf/Descriptors$FieldDescriptor;ILjava/lang/Object;)Lcom/kik/profile/ProfileService$RejectionReason$a;
 
     move-result-object v0
@@ -907,7 +907,7 @@
     .locals 0
 
     .prologue
-    .line 4705
+    .line 5004
     return-object p0
 .end method
 
@@ -915,6 +915,6 @@
     .locals 0
 
     .prologue
-    .line 4705
+    .line 5004
     return-object p0
 .end method

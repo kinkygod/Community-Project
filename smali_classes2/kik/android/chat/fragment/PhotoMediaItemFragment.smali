@@ -62,16 +62,16 @@
 
     .line 2106
     :cond_1
-    iget-object v0, p0, Lkik/android/chat/fragment/PhotoMediaItemFragment;->h:Lkik/android/f/f;
+    iget-object v0, p0, Lkik/android/chat/fragment/PhotoMediaItemFragment;->h:Lkik/android/f/e;
 
     if-eqz v0, :cond_2
 
     .line 2107
-    iget-object v0, p0, Lkik/android/chat/fragment/PhotoMediaItemFragment;->h:Lkik/android/f/f;
+    iget-object v0, p0, Lkik/android/chat/fragment/PhotoMediaItemFragment;->h:Lkik/android/f/e;
 
     const/4 v1, 0x0
 
-    invoke-interface {v0, v1}, Lkik/android/f/f;->b(Z)V
+    invoke-interface {v0, v1}, Lkik/android/f/e;->b(Z)V
 
     .line 2110
     :cond_2
@@ -121,11 +121,11 @@
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lkik/android/chat/fragment/PhotoMediaItemFragment;->f:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/chat/fragment/PhotoMediaItemFragment;->f:Lkik/core/interfaces/ad;
 
     iget-object v1, p0, Lkik/android/chat/fragment/PhotoMediaItemFragment;->j:Lkik/core/datatypes/messageExtensions/ContentMessage;
 
-    invoke-static {v0, v1}, Lkik/android/util/d;->a(Lkik/core/interfaces/ae;Lkik/core/datatypes/messageExtensions/ContentMessage;)Z
+    invoke-static {v0, v1}, Lkik/android/util/d;->a(Lkik/core/interfaces/ad;Lkik/core/datatypes/messageExtensions/ContentMessage;)Z
 
     move-result v0
 
@@ -149,18 +149,18 @@
 
     .line 65
     :cond_0
-    iget-object v0, p0, Lkik/android/chat/fragment/PhotoMediaItemFragment;->h:Lkik/android/f/f;
+    iget-object v0, p0, Lkik/android/chat/fragment/PhotoMediaItemFragment;->h:Lkik/android/f/e;
 
-    const v1, 0x7f02034c
+    const v1, 0x7f02032f
 
-    invoke-interface {v0, v1}, Lkik/android/f/f;->b(I)V
+    invoke-interface {v0, v1}, Lkik/android/f/e;->b(I)V
 
     .line 66
-    iget-object v0, p0, Lkik/android/chat/fragment/PhotoMediaItemFragment;->h:Lkik/android/f/f;
+    iget-object v0, p0, Lkik/android/chat/fragment/PhotoMediaItemFragment;->h:Lkik/android/f/e;
 
     const/4 v1, 0x0
 
-    invoke-interface {v0, v1}, Lkik/android/f/f;->b(Z)V
+    invoke-interface {v0, v1}, Lkik/android/f/e;->b(Z)V
 
     .line 80
     :goto_0
@@ -168,27 +168,27 @@
 
     .line 70
     :cond_1
-    iget-object v0, p0, Lkik/android/chat/fragment/PhotoMediaItemFragment;->h:Lkik/android/f/f;
+    iget-object v0, p0, Lkik/android/chat/fragment/PhotoMediaItemFragment;->h:Lkik/android/f/e;
 
-    const v1, 0x7f02034b
+    const v1, 0x7f02032e
 
-    invoke-interface {v0, v1}, Lkik/android/f/f;->b(I)V
+    invoke-interface {v0, v1}, Lkik/android/f/e;->b(I)V
 
     .line 71
-    iget-object v0, p0, Lkik/android/chat/fragment/PhotoMediaItemFragment;->h:Lkik/android/f/f;
+    iget-object v0, p0, Lkik/android/chat/fragment/PhotoMediaItemFragment;->h:Lkik/android/f/e;
 
     const/4 v1, 0x1
 
-    invoke-interface {v0, v1}, Lkik/android/f/f;->b(Z)V
+    invoke-interface {v0, v1}, Lkik/android/f/e;->b(Z)V
 
     .line 72
-    iget-object v0, p0, Lkik/android/chat/fragment/PhotoMediaItemFragment;->h:Lkik/android/f/f;
+    iget-object v0, p0, Lkik/android/chat/fragment/PhotoMediaItemFragment;->h:Lkik/android/f/e;
 
     new-instance v1, Lkik/android/chat/fragment/PhotoMediaItemFragment$1;
 
     invoke-direct {v1, p0, p1, p0}, Lkik/android/chat/fragment/PhotoMediaItemFragment$1;-><init>(Lkik/android/chat/fragment/PhotoMediaItemFragment;Lkik/core/datatypes/b;Lkik/android/chat/fragment/MediaItemFragment;)V
 
-    invoke-interface {v0, v1}, Lkik/android/f/f;->a(Landroid/view/View$OnClickListener;)V
+    invoke-interface {v0, v1}, Lkik/android/f/e;->a(Landroid/view/View$OnClickListener;)V
 
     goto :goto_0
 .end method
@@ -220,9 +220,9 @@
 
     iget-object v2, p0, Lkik/android/chat/fragment/PhotoMediaItemFragment;->e:Lkik/core/net/e;
 
-    iget-object v3, p0, Lkik/android/chat/fragment/PhotoMediaItemFragment;->f:Lkik/core/interfaces/ae;
+    iget-object v3, p0, Lkik/android/chat/fragment/PhotoMediaItemFragment;->f:Lkik/core/interfaces/ad;
 
-    invoke-static {v3}, Lkik/core/z;->b(Lkik/core/interfaces/ae;)Lkik/core/z;
+    invoke-static {v3}, Lkik/core/z;->b(Lkik/core/interfaces/ad;)Lkik/core/z;
 
     move-result-object v3
 
@@ -268,11 +268,11 @@
 
     iget-object v3, p0, Lkik/android/chat/fragment/PhotoMediaItemFragment;->_viewRoot:Landroid/widget/FrameLayout;
 
-    iget-object v4, p0, Lkik/android/chat/fragment/PhotoMediaItemFragment;->h:Lkik/android/f/f;
+    iget-object v4, p0, Lkik/android/chat/fragment/PhotoMediaItemFragment;->h:Lkik/android/f/e;
 
     iget-object v5, p0, Lkik/android/chat/fragment/PhotoMediaItemFragment;->o:Landroid/graphics/Point;
 
-    invoke-direct {v2, v3, v4, p0, v5}, Lkik/android/util/ax;-><init>(Landroid/widget/FrameLayout;Lkik/android/f/f;Lkik/android/chat/fragment/MediaItemFragment;Landroid/graphics/Point;)V
+    invoke-direct {v2, v3, v4, p0, v5}, Lkik/android/util/ax;-><init>(Landroid/widget/FrameLayout;Lkik/android/f/e;Lkik/android/chat/fragment/MediaItemFragment;Landroid/graphics/Point;)V
 
     invoke-virtual {v1, v2}, Lcom/kik/cache/ContentImageView;->a(Landroid/view/View$OnTouchListener;)V
 

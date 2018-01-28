@@ -15,7 +15,7 @@
         value = {
             "Ljava/util/List",
             "<",
-            "Lkik/core/datatypes/ad;",
+            "Lkik/core/datatypes/ac;",
             ">;"
         }
     .end annotation
@@ -26,7 +26,7 @@
         value = {
             "Ljava/util/List",
             "<",
-            "Lkik/core/datatypes/ad;",
+            "Lkik/core/datatypes/ac;",
             ">;"
         }
     .end annotation
@@ -41,7 +41,7 @@
             "(",
             "Ljava/util/List",
             "<",
-            "Lkik/core/datatypes/ad;",
+            "Lkik/core/datatypes/ac;",
             ">;)V"
         }
     .end annotation
@@ -68,14 +68,14 @@
     return-void
 .end method
 
-.method public constructor <init>(Lkik/core/datatypes/ad;)V
+.method public constructor <init>(Lkik/core/datatypes/ac;)V
     .locals 2
 
     .prologue
     .line 31
     const/4 v0, 0x1
 
-    new-array v0, v0, [Lkik/core/datatypes/ad;
+    new-array v0, v0, [Lkik/core/datatypes/ac;
 
     const/4 v1, 0x0
 
@@ -91,7 +91,7 @@
     return-void
 .end method
 
-.method private writeRecord(Lkik/core/datatypes/ad;Lkik/core/net/h;)V
+.method private writeRecord(Lkik/core/datatypes/ac;Lkik/core/net/h;)V
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -109,7 +109,7 @@
     invoke-virtual {p2, v2, v0}, Lkik/core/net/h;->c(Ljava/lang/String;Ljava/lang/String;)Lkik/org/xmlpull/v1/b;
 
     .line 100
-    invoke-virtual {p1}, Lkik/core/datatypes/ad;->b()Ljava/lang/String;
+    invoke-virtual {p1}, Lkik/core/datatypes/ac;->b()Ljava/lang/String;
 
     move-result-object v0
 
@@ -118,7 +118,7 @@
     .line 101
     const-string v0, "sk"
 
-    invoke-virtual {p1}, Lkik/core/datatypes/ad;->b()Ljava/lang/String;
+    invoke-virtual {p1}, Lkik/core/datatypes/ac;->b()Ljava/lang/String;
 
     move-result-object v1
 
@@ -127,7 +127,7 @@
 
     .line 107
     :goto_0
-    invoke-virtual {p1}, Lkik/core/datatypes/ad;->d()Z
+    invoke-virtual {p1}, Lkik/core/datatypes/ac;->d()Z
 
     move-result v0
 
@@ -155,7 +155,7 @@
     :cond_0
     const-string v0, "pk"
 
-    invoke-virtual {p1}, Lkik/core/datatypes/ad;->a()Ljava/lang/String;
+    invoke-virtual {p1}, Lkik/core/datatypes/ac;->a()Ljava/lang/String;
 
     move-result-object v1
 
@@ -166,7 +166,7 @@
 
     .line 113
     :cond_1
-    invoke-virtual {p1}, Lkik/core/datatypes/ad;->c()[B
+    invoke-virtual {p1}, Lkik/core/datatypes/ac;->c()[B
 
     move-result-object v0
 
@@ -189,7 +189,7 @@
             "()",
             "Ljava/util/List",
             "<",
-            "Lkik/core/datatypes/ad;",
+            "Lkik/core/datatypes/ac;",
             ">;"
         }
     .end annotation
@@ -370,11 +370,11 @@
 
     .prologue
     .line 185
-    new-instance v0, Lkik/core/datatypes/ad;
+    new-instance v0, Lkik/core/datatypes/ac;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p1, p2, v1}, Lkik/core/datatypes/ad;-><init>(Ljava/lang/String;Ljava/lang/String;[B)V
+    invoke-direct {v0, p1, p2, v1}, Lkik/core/datatypes/ac;-><init>(Ljava/lang/String;Ljava/lang/String;[B)V
 
     .line 187
     iget-object v1, p0, Lkik/core/net/outgoing/XDataUpdateRequest;->_errorResults:Ljava/util/List;
@@ -544,15 +544,15 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/datatypes/ad;
+    check-cast v0, Lkik/core/datatypes/ac;
 
     .line 53
-    invoke-virtual {v0}, Lkik/core/datatypes/ad;->a()Ljava/lang/String;
+    invoke-virtual {v0}, Lkik/core/datatypes/ac;->a()Ljava/lang/String;
 
     move-result-object v4
 
     .line 54
-    invoke-virtual {v0}, Lkik/core/datatypes/ad;->b()Ljava/lang/String;
+    invoke-virtual {v0}, Lkik/core/datatypes/ac;->b()Ljava/lang/String;
 
     move-result-object v1
 
@@ -603,17 +603,17 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/datatypes/ad;
+    check-cast v0, Lkik/core/datatypes/ac;
 
     .line 72
-    invoke-virtual {v0}, Lkik/core/datatypes/ad;->b()Ljava/lang/String;
+    invoke-virtual {v0}, Lkik/core/datatypes/ac;->b()Ljava/lang/String;
 
     move-result-object v3
 
     if-nez v3, :cond_3
 
     .line 73
-    invoke-direct {p0, v0, p1}, Lkik/core/net/outgoing/XDataUpdateRequest;->writeRecord(Lkik/core/datatypes/ad;Lkik/core/net/h;)V
+    invoke-direct {p0, v0, p1}, Lkik/core/net/outgoing/XDataUpdateRequest;->writeRecord(Lkik/core/datatypes/ac;Lkik/core/net/h;)V
 
     goto :goto_1
 
@@ -675,10 +675,10 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/datatypes/ad;
+    check-cast v0, Lkik/core/datatypes/ac;
 
     .line 86
-    invoke-direct {p0, v0, p1}, Lkik/core/net/outgoing/XDataUpdateRequest;->writeRecord(Lkik/core/datatypes/ad;Lkik/core/net/h;)V
+    invoke-direct {p0, v0, p1}, Lkik/core/net/outgoing/XDataUpdateRequest;->writeRecord(Lkik/core/datatypes/ac;Lkik/core/net/h;)V
 
     goto :goto_3
 

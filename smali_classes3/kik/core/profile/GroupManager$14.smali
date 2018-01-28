@@ -37,7 +37,7 @@
     .locals 0
 
     .prologue
-    .line 815
+    .line 826
     iput-object p1, p0, Lkik/core/profile/GroupManager$14;->a:Lkik/core/profile/GroupManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -51,16 +51,16 @@
     .locals 1
 
     .prologue
-    .line 815
+    .line 826
     check-cast p1, Lkik/core/net/outgoing/CheckHashtagUniquenessRequest;
 
-    .line 1819
+    .line 1830
     invoke-virtual {p1}, Lkik/core/net/outgoing/CheckHashtagUniquenessRequest;->getFinalContext()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Lkik/core/profile/GroupManager$HashtagAvailabilityState;
 
-    .line 815
+    .line 826
     return-object v0
 .end method

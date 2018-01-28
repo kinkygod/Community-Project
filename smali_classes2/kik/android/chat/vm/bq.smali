@@ -2,29 +2,10 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lkik/android/chat/vm/aq;
-
 
 # virtual methods
-.method public abstract b()Lkik/core/datatypes/messageExtensions/ContentMessage;
+.method public abstract a()Ljava/lang/String;
 .end method
 
-.method public abstract d()Lkik/core/datatypes/Message;
-.end method
-
-.method public abstract e()Ljava/util/Map;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/Map",
-            "<",
-            "Ljava/lang/String;",
-            "Ljava/lang/Object;",
-            ">;"
-        }
-    .end annotation
-.end method
-
-.method public abstract g()Z
+.method public abstract b()Lcom/kik/core/network/xmpp/jid/a;
 .end method

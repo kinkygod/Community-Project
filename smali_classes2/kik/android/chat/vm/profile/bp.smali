@@ -2,110 +2,44 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lrx/functions/h;
+.implements Lrx/functions/b;
 
 
-# static fields
-.field private static final a:Lkik/android/chat/vm/profile/bp;
+# instance fields
+.field private final a:Lkik/android/chat/vm/profile/bi;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lkik/android/chat/vm/profile/bp;
-
-    invoke-direct {v0}, Lkik/android/chat/vm/profile/bp;-><init>()V
-
-    sput-object v0, Lkik/android/chat/vm/profile/bp;->a:Lkik/android/chat/vm/profile/bp;
-
-    return-void
-.end method
-
-.method private constructor <init>()V
+.method private constructor <init>(Lkik/android/chat/vm/profile/bi;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    iput-object p1, p0, Lkik/android/chat/vm/profile/bp;->a:Lkik/android/chat/vm/profile/bi;
+
     return-void
 .end method
 
-.method public static a()Lrx/functions/h;
+.method public static a(Lkik/android/chat/vm/profile/bi;)Lrx/functions/b;
     .locals 1
 
-    sget-object v0, Lkik/android/chat/vm/profile/bp;->a:Lkik/android/chat/vm/profile/bp;
+    new-instance v0, Lkik/android/chat/vm/profile/bp;
+
+    invoke-direct {v0, p0}, Lkik/android/chat/vm/profile/bp;-><init>(Lkik/android/chat/vm/profile/bi;)V
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
+.method public final call(Ljava/lang/Object;)V
+    .locals 1
 
-    .prologue
-    .line 0
-    check-cast p1, Lcom/kik/core/domain/users/a/c;
+    iget-object v0, p0, Lkik/android/chat/vm/profile/bp;->a:Lkik/android/chat/vm/profile/bi;
 
-    check-cast p2, Lcom/kik/core/domain/users/a/c;
+    check-cast p1, Ljava/lang/Throwable;
 
-    .line 1100
-    if-ne p1, p2, :cond_0
+    invoke-static {v0, p1}, Lkik/android/chat/vm/profile/bi;->a(Lkik/android/chat/vm/profile/bi;Ljava/lang/Throwable;)V
 
-    .line 1101
-    const/4 v0, 0x0
-
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v0
-
-    .line 1109
-    :goto_0
-    return-object v0
-
-    .line 1104
-    :cond_0
-    if-nez p1, :cond_1
-
-    .line 1105
-    const/4 v0, 0x1
-
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v0
-
-    goto :goto_0
-
-    .line 1108
-    :cond_1
-    if-nez p2, :cond_2
-
-    .line 1109
-    const/4 v0, -0x1
-
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v0
-
-    goto :goto_0
-
-    .line 1111
-    :cond_2
-    invoke-interface {p1}, Lcom/kik/core/domain/users/a/c;->b()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-interface {p2}, Lcom/kik/core/domain/users/a/c;->b()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->compareTo(Ljava/lang/String;)I
-
-    move-result v0
-
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v0
-
-    goto :goto_0
+    return-void
 .end method

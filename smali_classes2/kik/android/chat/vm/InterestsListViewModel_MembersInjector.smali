@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/b;
+.implements Ldagger/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/b",
+        "Ldagger/b",
         "<",
         "Lkik/android/chat/vm/bt;",
         ">;"
@@ -61,7 +61,40 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ae;",
+            "Lkik/core/interfaces/ad;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final f:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lcom/kik/core/a/c;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final g:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/core/xiphias/b;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final h:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lcom/kik/metrics/c/d;",
             ">;"
         }
     .end annotation
@@ -73,7 +106,7 @@
     .locals 1
 
     .prologue
-    .line 11
+    .line 15
     const-class v0, Lkik/android/chat/vm/InterestsListViewModel_MembersInjector;
 
     invoke-virtual {v0}, Ljava/lang/Class;->desiredAssertionStatus()Z
@@ -95,7 +128,7 @@
     goto :goto_0
 .end method
 
-.method private constructor <init>(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)V
+.method private constructor <init>(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -114,16 +147,28 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ae;",
+            "Lkik/core/interfaces/ad;",
+            ">;",
+            "Ljavax/inject/Provider",
+            "<",
+            "Lcom/kik/core/a/c;",
+            ">;",
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/core/xiphias/b;",
+            ">;",
+            "Ljavax/inject/Provider",
+            "<",
+            "Lcom/kik/metrics/c/d;",
             ">;)V"
         }
     .end annotation
 
     .prologue
-    .line 29
+    .line 42
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 30
+    .line 43
     sget-boolean v0, Lkik/android/chat/vm/InterestsListViewModel_MembersInjector;->a:Z
 
     if-nez v0, :cond_0
@@ -136,11 +181,11 @@
 
     throw v0
 
-    .line 31
+    .line 44
     :cond_0
     iput-object p1, p0, Lkik/android/chat/vm/InterestsListViewModel_MembersInjector;->b:Ljavax/inject/Provider;
 
-    .line 32
+    .line 45
     sget-boolean v0, Lkik/android/chat/vm/InterestsListViewModel_MembersInjector;->a:Z
 
     if-nez v0, :cond_1
@@ -153,11 +198,11 @@
 
     throw v0
 
-    .line 33
+    .line 46
     :cond_1
     iput-object p2, p0, Lkik/android/chat/vm/InterestsListViewModel_MembersInjector;->c:Ljavax/inject/Provider;
 
-    .line 34
+    .line 47
     sget-boolean v0, Lkik/android/chat/vm/InterestsListViewModel_MembersInjector;->a:Z
 
     if-nez v0, :cond_2
@@ -170,11 +215,11 @@
 
     throw v0
 
-    .line 35
+    .line 48
     :cond_2
     iput-object p3, p0, Lkik/android/chat/vm/InterestsListViewModel_MembersInjector;->d:Ljavax/inject/Provider;
 
-    .line 36
+    .line 49
     sget-boolean v0, Lkik/android/chat/vm/InterestsListViewModel_MembersInjector;->a:Z
 
     if-nez v0, :cond_3
@@ -187,16 +232,67 @@
 
     throw v0
 
-    .line 37
+    .line 50
     :cond_3
     iput-object p4, p0, Lkik/android/chat/vm/InterestsListViewModel_MembersInjector;->e:Ljavax/inject/Provider;
 
-    .line 38
+    .line 51
+    sget-boolean v0, Lkik/android/chat/vm/InterestsListViewModel_MembersInjector;->a:Z
+
+    if-nez v0, :cond_4
+
+    if-nez p5, :cond_4
+
+    new-instance v0, Ljava/lang/AssertionError;
+
+    invoke-direct {v0}, Ljava/lang/AssertionError;-><init>()V
+
+    throw v0
+
+    .line 52
+    :cond_4
+    iput-object p5, p0, Lkik/android/chat/vm/InterestsListViewModel_MembersInjector;->f:Ljavax/inject/Provider;
+
+    .line 53
+    sget-boolean v0, Lkik/android/chat/vm/InterestsListViewModel_MembersInjector;->a:Z
+
+    if-nez v0, :cond_5
+
+    if-nez p6, :cond_5
+
+    new-instance v0, Ljava/lang/AssertionError;
+
+    invoke-direct {v0}, Ljava/lang/AssertionError;-><init>()V
+
+    throw v0
+
+    .line 54
+    :cond_5
+    iput-object p6, p0, Lkik/android/chat/vm/InterestsListViewModel_MembersInjector;->g:Ljavax/inject/Provider;
+
+    .line 55
+    sget-boolean v0, Lkik/android/chat/vm/InterestsListViewModel_MembersInjector;->a:Z
+
+    if-nez v0, :cond_6
+
+    if-nez p7, :cond_6
+
+    new-instance v0, Ljava/lang/AssertionError;
+
+    invoke-direct {v0}, Ljava/lang/AssertionError;-><init>()V
+
+    throw v0
+
+    .line 56
+    :cond_6
+    iput-object p7, p0, Lkik/android/chat/vm/InterestsListViewModel_MembersInjector;->h:Ljavax/inject/Provider;
+
+    .line 57
     return-void
 .end method
 
-.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)La/b;
-    .locals 1
+.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+    .locals 8
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -214,9 +310,21 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ae;",
+            "Lkik/core/interfaces/ad;",
+            ">;",
+            "Ljavax/inject/Provider",
+            "<",
+            "Lcom/kik/core/a/c;",
+            ">;",
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/core/xiphias/b;",
+            ">;",
+            "Ljavax/inject/Provider",
+            "<",
+            "Lcom/kik/metrics/c/d;",
             ">;)",
-            "La/b",
+            "Ldagger/b",
             "<",
             "Lkik/android/chat/vm/bt;",
             ">;"
@@ -224,27 +332,41 @@
     .end annotation
 
     .prologue
-    .line 45
+    .line 67
     new-instance v0, Lkik/android/chat/vm/InterestsListViewModel_MembersInjector;
 
-    invoke-direct {v0, p0, p1, p2, p3}, Lkik/android/chat/vm/InterestsListViewModel_MembersInjector;-><init>(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)V
+    move-object v1, p0
+
+    move-object v2, p1
+
+    move-object v3, p2
+
+    move-object v4, p3
+
+    move-object v5, p4
+
+    move-object v6, p5
+
+    move-object v7, p6
+
+    invoke-direct/range {v0 .. v7}, Lkik/android/chat/vm/InterestsListViewModel_MembersInjector;-><init>(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)V
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public final synthetic a(Ljava/lang/Object;)V
+.method public final synthetic injectMembers(Ljava/lang/Object;)V
     .locals 2
 
     .prologue
-    .line 11
+    .line 15
     check-cast p1, Lkik/android/chat/vm/bt;
 
-    .line 1051
+    .line 1079
     if-nez p1, :cond_0
 
-    .line 1052
+    .line 1080
     new-instance v0, Ljava/lang/NullPointerException;
 
     const-string v1, "Cannot inject members into a null reference"
@@ -253,7 +375,7 @@
 
     throw v0
 
-    .line 1054
+    .line 1082
     :cond_0
     iget-object v0, p0, Lkik/android/chat/vm/InterestsListViewModel_MembersInjector;->b:Ljavax/inject/Provider;
 
@@ -265,7 +387,7 @@
 
     iput-object v0, p1, Lkik/android/chat/vm/bt;->a:Landroid/content/res/Resources;
 
-    .line 1055
+    .line 1083
     iget-object v0, p0, Lkik/android/chat/vm/InterestsListViewModel_MembersInjector;->c:Ljavax/inject/Provider;
 
     invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
@@ -276,7 +398,7 @@
 
     iput-object v0, p1, Lkik/android/chat/vm/bt;->b:Lkik/core/chat/profile/IContactProfileRepository;
 
-    .line 1056
+    .line 1084
     iget-object v0, p0, Lkik/android/chat/vm/InterestsListViewModel_MembersInjector;->d:Ljavax/inject/Provider;
 
     invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
@@ -287,17 +409,46 @@
 
     iput-object v0, p1, Lkik/android/chat/vm/bt;->c:Lcom/kik/android/Mixpanel;
 
-    .line 1057
+    .line 1085
     iget-object v0, p0, Lkik/android/chat/vm/InterestsListViewModel_MembersInjector;->e:Ljavax/inject/Provider;
 
     invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/interfaces/ae;
+    check-cast v0, Lkik/core/interfaces/ad;
 
-    iput-object v0, p1, Lkik/android/chat/vm/bt;->d:Lkik/core/interfaces/ae;
+    iput-object v0, p1, Lkik/android/chat/vm/bt;->d:Lkik/core/interfaces/ad;
 
-    .line 11
+    .line 1086
+    iget-object v0, p0, Lkik/android/chat/vm/InterestsListViewModel_MembersInjector;->f:Ljavax/inject/Provider;
+
+    invoke-static {v0}, Ldagger/internal/a;->b(Ljavax/inject/Provider;)Ldagger/a;
+
+    move-result-object v0
+
+    iput-object v0, p1, Lkik/android/chat/vm/bt;->e:Ldagger/a;
+
+    .line 1087
+    iget-object v0, p0, Lkik/android/chat/vm/InterestsListViewModel_MembersInjector;->g:Ljavax/inject/Provider;
+
+    invoke-static {v0}, Ldagger/internal/a;->b(Ljavax/inject/Provider;)Ldagger/a;
+
+    move-result-object v0
+
+    iput-object v0, p1, Lkik/android/chat/vm/bt;->f:Ldagger/a;
+
+    .line 1088
+    iget-object v0, p0, Lkik/android/chat/vm/InterestsListViewModel_MembersInjector;->h:Ljavax/inject/Provider;
+
+    invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/kik/metrics/c/d;
+
+    iput-object v0, p1, Lkik/android/chat/vm/bt;->g:Lcom/kik/metrics/c/d;
+
+    .line 15
     return-void
 .end method

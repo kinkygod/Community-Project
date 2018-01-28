@@ -32,7 +32,7 @@
     .locals 0
 
     .prologue
-    .line 1948
+    .line 1945
     iput-object p1, p0, Lcom/kik/android/Mixpanel$3;->a:Lcom/kik/android/Mixpanel;
 
     invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
@@ -46,26 +46,26 @@
     .locals 2
 
     .prologue
-    .line 1948
+    .line 1945
     check-cast p1, Lcom/kik/xdata/model/mixpanelmetrics/XMixpanelMetrics;
 
-    .line 2952
+    .line 2949
     if-eqz p1, :cond_1
 
-    .line 2953
+    .line 2950
     invoke-virtual {p1}, Lcom/kik/xdata/model/mixpanelmetrics/XMixpanelMetrics;->a()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 2954
+    .line 2951
     if-eqz v0, :cond_0
 
-    .line 2955
+    .line 2952
     iget-object v1, p0, Lcom/kik/android/Mixpanel$3;->a:Lcom/kik/android/Mixpanel;
 
     invoke-static {v1, v0}, Lcom/kik/android/Mixpanel;->a(Lcom/kik/android/Mixpanel;Ljava/lang/String;)V
 
-    .line 2956
+    .line 2953
     iget-object v0, p0, Lcom/kik/android/Mixpanel$3;->a:Lcom/kik/android/Mixpanel;
 
     invoke-virtual {p1}, Lcom/kik/xdata/model/mixpanelmetrics/XMixpanelMetrics;->b()Ljava/lang/Boolean;
@@ -78,17 +78,17 @@
 
     invoke-static {v0, v1}, Lcom/kik/android/Mixpanel;->a(Lcom/kik/android/Mixpanel;Z)V
 
-    .line 2957
+    .line 2954
     iget-object v0, p0, Lcom/kik/android/Mixpanel$3;->a:Lcom/kik/android/Mixpanel;
 
     invoke-static {v0}, Lcom/kik/android/Mixpanel;->h(Lcom/kik/android/Mixpanel;)V
 
-    .line 2959
+    .line 2956
     :cond_0
     :goto_0
     return-void
 
-    .line 2962
+    .line 2959
     :cond_1
     iget-object v0, p0, Lcom/kik/android/Mixpanel$3;->a:Lcom/kik/android/Mixpanel;
 

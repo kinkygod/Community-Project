@@ -34,7 +34,7 @@
     .locals 0
 
     .prologue
-    .line 1607
+    .line 1655
     iput-object p1, p0, Lcom/kik/cards/web/CardsWebViewFragment$26;->b:Lcom/kik/cards/web/CardsWebViewFragment;
 
     iput-object p2, p0, Lcom/kik/cards/web/CardsWebViewFragment$26;->a:Lcom/kik/cards/web/kik/KikMessageParcelable;
@@ -50,13 +50,13 @@
     .locals 3
 
     .prologue
-    .line 1607
+    .line 1655
     check-cast p1, Lcom/kik/cards/web/h$a;
 
-    .line 2611
+    .line 2659
     invoke-super {p0, p1}, Lcom/kik/events/k;->a(Ljava/lang/Object;)V
 
-    .line 2612
+    .line 2660
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$26;->a:Lcom/kik/cards/web/kik/KikMessageParcelable;
 
     invoke-virtual {p1}, Lcom/kik/cards/web/h$a;->f()Ljava/lang/String;
@@ -65,14 +65,14 @@
 
     iput-object v1, v0, Lcom/kik/cards/web/kik/KikMessageParcelable;->i:Ljava/lang/String;
 
-    .line 2614
+    .line 2662
     invoke-virtual {p1}, Lcom/kik/cards/web/h$a;->g()Ljava/lang/String;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 2615
+    .line 2663
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$26;->a:Lcom/kik/cards/web/kik/KikMessageParcelable;
 
     invoke-virtual {p1}, Lcom/kik/cards/web/h$a;->g()Ljava/lang/String;
@@ -89,7 +89,7 @@
 
     iput-object v1, v0, Lcom/kik/cards/web/kik/KikMessageParcelable;->k:Ljava/lang/String;
 
-    .line 2617
+    .line 2665
     :cond_0
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$26;->a:Lcom/kik/cards/web/kik/KikMessageParcelable;
 
@@ -107,7 +107,7 @@
 
     invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
 
-    .line 1607
+    .line 1655
     return-void
 .end method
 
@@ -115,14 +115,14 @@
     .locals 1
 
     .prologue
-    .line 1638
+    .line 1687
     invoke-super {p0, p1}, Lcom/kik/events/k;->a(Ljava/lang/Throwable;)V
 
-    .line 1639
+    .line 1688
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$26;->b:Lcom/kik/cards/web/CardsWebViewFragment;
 
     invoke-virtual {v0}, Lcom/kik/cards/web/CardsWebViewFragment;->finish()V
 
-    .line 1640
+    .line 1689
     return-void
 .end method

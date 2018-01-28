@@ -45,11 +45,11 @@
 
     iget-object v0, v0, Lkik/android/chat/fragment/AbTestsFragment$3;->a:Lkik/android/chat/fragment/AbTestsFragment;
 
-    invoke-static {v0}, Lkik/android/chat/fragment/AbTestsFragment;->b(Lkik/android/chat/fragment/AbTestsFragment;)Lcom/kik/view/adapters/w;
+    invoke-static {v0}, Lkik/android/chat/fragment/AbTestsFragment;->b(Lkik/android/chat/fragment/AbTestsFragment;)Lcom/kik/view/adapters/x;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/kik/view/adapters/w;->notifyDataSetChanged()V
+    invoke-virtual {v0}, Lcom/kik/view/adapters/x;->notifyDataSetChanged()V
 
     .line 191
     return-void

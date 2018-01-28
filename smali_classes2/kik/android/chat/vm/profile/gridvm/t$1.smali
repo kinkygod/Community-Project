@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lrx/c;
+.implements Lkik/core/interfaces/o;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/android/chat/vm/profile/gridvm/t;->a(Lkik/android/chat/vm/profile/gridvm/t;Lcom/kik/core/domain/users/a/c;Lcom/kik/core/domain/a/a/c;)V
+    value = Lkik/android/chat/vm/profile/gridvm/t;->i()Lrx/d;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -16,165 +16,103 @@
     name = null
 .end annotation
 
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lkik/core/interfaces/o",
+        "<",
+        "Landroid/graphics/Bitmap;",
+        ">;"
+    }
+.end annotation
+
 
 # instance fields
-.field final synthetic a:Lcom/kik/core/domain/a/a/c;
-
-.field final synthetic b:Lkik/android/chat/vm/profile/gridvm/t;
+.field final synthetic a:Lkik/android/chat/vm/profile/gridvm/t;
 
 
 # direct methods
-.method constructor <init>(Lkik/android/chat/vm/profile/gridvm/t;Lcom/kik/core/domain/a/a/c;)V
+.method constructor <init>(Lkik/android/chat/vm/profile/gridvm/t;)V
     .locals 0
 
     .prologue
-    .line 274
-    iput-object p1, p0, Lkik/android/chat/vm/profile/gridvm/t$1;->b:Lkik/android/chat/vm/profile/gridvm/t;
-
-    iput-object p2, p0, Lkik/android/chat/vm/profile/gridvm/t$1;->a:Lcom/kik/core/domain/a/a/c;
+    .line 106
+    iput-object p1, p0, Lkik/android/chat/vm/profile/gridvm/t$1;->a:Lkik/android/chat/vm/profile/gridvm/t;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
+.method private a()Lrx/d;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<",
+            "Landroid/graphics/Bitmap;",
+            ">;"
+        }
+    .end annotation
+
+    .prologue
+    .line 116
+    iget-object v0, p0, Lkik/android/chat/vm/profile/gridvm/t$1;->a:Lkik/android/chat/vm/profile/gridvm/t;
+
+    iget-object v0, v0, Lkik/android/chat/vm/profile/gridvm/t;->c:Landroid/content/res/Resources;
+
+    const v1, 0x7f020263
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/graphics/drawable/BitmapDrawable;
+
+    .line 117
+    invoke-virtual {v0}, Landroid/graphics/drawable/BitmapDrawable;->getBitmap()Landroid/graphics/Bitmap;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lrx/d;->b(Ljava/lang/Object;)Lrx/d;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
 
 # virtual methods
-.method public final a()V
+.method public final a(II)Lrx/d;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(II)",
+            "Lrx/d",
+            "<",
+            "Landroid/graphics/Bitmap;",
+            ">;"
+        }
+    .end annotation
+
+    .prologue
+    .line 110
+    invoke-direct {p0}, Lkik/android/chat/vm/profile/gridvm/t$1;->a()Lrx/d;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final bridge synthetic a(IILjava/lang/Object;)Lrx/d;
     .locals 1
 
     .prologue
-    .line 278
-    iget-object v0, p0, Lkik/android/chat/vm/profile/gridvm/t$1;->b:Lkik/android/chat/vm/profile/gridvm/t;
-
-    invoke-static {v0}, Lkik/android/chat/vm/profile/gridvm/t;->b(Lkik/android/chat/vm/profile/gridvm/t;)Lkik/android/chat/vm/aw;
+    .line 106
+    invoke-direct {p0}, Lkik/android/chat/vm/profile/gridvm/t$1;->a()Lrx/d;
 
     move-result-object v0
 
-    invoke-interface {v0}, Lkik/android/chat/vm/aw;->h()V
-
-    .line 279
-    return-void
-.end method
-
-.method public final a(Ljava/lang/Throwable;)V
-    .locals 3
-
-    .prologue
-    .line 284
-    new-instance v0, Lkik/android/chat/vm/DialogViewModel$b;
-
-    invoke-direct {v0}, Lkik/android/chat/vm/DialogViewModel$b;-><init>()V
-
-    iget-object v1, p0, Lkik/android/chat/vm/profile/gridvm/t$1;->b:Lkik/android/chat/vm/profile/gridvm/t;
-
-    .line 285
-    invoke-static {v1}, Lkik/android/chat/vm/profile/gridvm/t;->e(Lkik/android/chat/vm/profile/gridvm/t;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lkik/android/chat/vm/DialogViewModel$b;->a(Ljava/lang/String;)Lkik/android/chat/vm/DialogViewModel$b;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lkik/android/chat/vm/profile/gridvm/t$1;->b:Lkik/android/chat/vm/profile/gridvm/t;
-
-    .line 286
-    invoke-static {v1}, Lkik/android/chat/vm/profile/gridvm/t;->d(Lkik/android/chat/vm/profile/gridvm/t;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lkik/android/chat/vm/DialogViewModel$b;->b(Ljava/lang/String;)Lkik/android/chat/vm/DialogViewModel$b;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lkik/android/chat/vm/profile/gridvm/t$1;->b:Lkik/android/chat/vm/profile/gridvm/t;
-
-    .line 287
-    invoke-static {v1}, Lkik/android/chat/vm/profile/gridvm/t;->c(Lkik/android/chat/vm/profile/gridvm/t;)Ljava/lang/String;
-
-    move-result-object v1
-
-    const/4 v2, 0x0
-
-    invoke-virtual {v0, v1, v2}, Lkik/android/chat/vm/DialogViewModel$b;->b(Ljava/lang/String;Ljava/lang/Runnable;)Lkik/android/chat/vm/DialogViewModel$b;
-
-    move-result-object v0
-
-    const/4 v1, 0x1
-
-    .line 288
-    invoke-virtual {v0, v1}, Lkik/android/chat/vm/DialogViewModel$b;->a(Z)Lkik/android/chat/vm/DialogViewModel$b;
-
-    move-result-object v0
-
-    .line 289
-    invoke-virtual {v0}, Lkik/android/chat/vm/DialogViewModel$b;->a()Lkik/android/chat/vm/DialogViewModel;
-
-    move-result-object v0
-
-    .line 291
-    iget-object v1, p0, Lkik/android/chat/vm/profile/gridvm/t$1;->b:Lkik/android/chat/vm/profile/gridvm/t;
-
-    invoke-static {v1}, Lkik/android/chat/vm/profile/gridvm/t;->f(Lkik/android/chat/vm/profile/gridvm/t;)Lkik/android/chat/vm/aw;
-
-    move-result-object v1
-
-    invoke-interface {v1, v0}, Lkik/android/chat/vm/aw;->a(Lkik/android/chat/vm/DialogViewModel;)V
-
-    .line 292
-    return-void
-.end method
-
-.method public final a(Lrx/k;)V
-    .locals 4
-
-    .prologue
-    .line 297
-    iget-object v0, p0, Lkik/android/chat/vm/profile/gridvm/t$1;->b:Lkik/android/chat/vm/profile/gridvm/t;
-
-    iget-object v0, v0, Lkik/android/chat/vm/profile/gridvm/t;->i:Lcom/kik/android/Mixpanel;
-
-    const-string v1, "Admin Promoted"
-
-    invoke-virtual {v0, v1}, Lcom/kik/android/Mixpanel;->b(Ljava/lang/String;)Lcom/kik/android/Mixpanel$d;
-
-    move-result-object v0
-
-    const-string v1, "Admin Count"
-
-    iget-object v2, p0, Lkik/android/chat/vm/profile/gridvm/t$1;->a:Lcom/kik/core/domain/a/a/c;
-
-    invoke-interface {v2}, Lcom/kik/core/domain/a/a/c;->j()Ljava/util/Set;
-
-    move-result-object v2
-
-    invoke-interface {v2}, Ljava/util/Set;->size()I
-
-    move-result v2
-
-    iget-object v3, p0, Lkik/android/chat/vm/profile/gridvm/t$1;->a:Lcom/kik/core/domain/a/a/c;
-
-    invoke-interface {v3}, Lcom/kik/core/domain/a/a/c;->i()Ljava/util/Set;
-
-    move-result-object v3
-
-    invoke-interface {v3}, Ljava/util/Set;->size()I
-
-    move-result v3
-
-    add-int/2addr v2, v3
-
-    add-int/lit8 v2, v2, 0x1
-
-    int-to-long v2, v2
-
-    invoke-virtual {v0, v1, v2, v3}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;J)Lcom/kik/android/Mixpanel$d;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
-
-    .line 298
-    return-void
+    return-object v0
 .end method

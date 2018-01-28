@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/core/profile/v;->w()V
+    value = Lkik/core/profile/v;->v()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -34,7 +34,7 @@
     .locals 0
 
     .prologue
-    .line 1124
+    .line 1112
     iput-object p1, p0, Lkik/core/profile/v$19;->b:Lkik/core/profile/v;
 
     iput-object p2, p0, Lkik/core/profile/v$19;->a:Ljava/lang/String;
@@ -52,13 +52,13 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 1124
-    .line 2143
+    .line 1112
+    .line 2131
     iget-object v0, p0, Lkik/core/profile/v$19;->b:Lkik/core/profile/v;
 
     invoke-virtual {v0, v1, v1}, Lkik/core/profile/v;->a(ZZ)V
 
-    .line 1124
+    .line 1112
     return-void
 .end method
 
@@ -70,16 +70,16 @@
 
     const/4 v1, 0x1
 
-    .line 1149
-    .line 1151
+    .line 1137
+    .line 1139
     instance-of v0, p1, Lkik/core/net/StanzaException;
 
     if-eqz v0, :cond_3
 
-    .line 1152
+    .line 1140
     check-cast p1, Lkik/core/net/StanzaException;
 
-    .line 1154
+    .line 1142
     invoke-virtual {p1}, Lkik/core/net/StanzaException;->b()I
 
     move-result v0
@@ -92,7 +92,7 @@
 
     move v0, v1
 
-    .line 1161
+    .line 1149
     :goto_0
     iget-object v3, p0, Lkik/core/profile/v$19;->b:Lkik/core/profile/v;
 
@@ -102,11 +102,11 @@
 
     invoke-direct {v5, p0}, Lkik/core/profile/v$19$1;-><init>(Lkik/core/profile/v$19;)V
 
-    invoke-virtual {v3, v4, v1, v5}, Lkik/core/profile/v;->a(Ljava/lang/String;ZLkik/core/interfaces/w$a;)Lkik/core/datatypes/l;
+    invoke-virtual {v3, v4, v1, v5}, Lkik/core/profile/v;->a(Ljava/lang/String;ZLkik/core/interfaces/v$a;)Lkik/core/datatypes/l;
 
     move-result-object v3
 
-    .line 1175
+    .line 1163
     if-nez v0, :cond_0
 
     invoke-virtual {v3}, Lkik/core/datatypes/l;->n()I
@@ -120,11 +120,11 @@
     :cond_0
     move v2, v1
 
-    .line 1177
+    .line 1165
     :cond_1
     if-eqz v2, :cond_2
 
-    .line 1178
+    .line 1166
     iget-object v0, p0, Lkik/core/profile/v$19;->b:Lkik/core/profile/v;
 
     iget-object v2, p0, Lkik/core/profile/v$19;->a:Ljava/lang/String;
@@ -133,9 +133,9 @@
 
     invoke-direct {v3, p0}, Lkik/core/profile/v$19$2;-><init>(Lkik/core/profile/v$19;)V
 
-    invoke-virtual {v0, v2, v1, v3}, Lkik/core/profile/v;->a(Ljava/lang/String;ZLkik/core/interfaces/w$a;)Lkik/core/datatypes/l;
+    invoke-virtual {v0, v2, v1, v3}, Lkik/core/profile/v;->a(Ljava/lang/String;ZLkik/core/interfaces/v$a;)Lkik/core/datatypes/l;
 
-    .line 1201
+    .line 1189
     :cond_2
     return-void
 
@@ -149,12 +149,12 @@
     .locals 2
 
     .prologue
-    .line 1128
+    .line 1116
     iget-object v0, p0, Lkik/core/profile/v$19;->b:Lkik/core/profile/v;
 
     invoke-static {v0}, Lkik/core/profile/v;->g(Lkik/core/profile/v;)Lcom/kik/events/Promise;
 
-    .line 1132
+    .line 1120
     iget-object v0, p0, Lkik/core/profile/v$19;->b:Lkik/core/profile/v;
 
     invoke-static {v0}, Lkik/core/profile/v;->c(Lkik/core/profile/v;)Lkik/core/interfaces/ICommunication;
@@ -167,7 +167,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 1133
+    .line 1121
     iget-object v0, p0, Lkik/core/profile/v$19;->b:Lkik/core/profile/v;
 
     invoke-static {v0}, Lkik/core/profile/v;->h(Lkik/core/profile/v;)Ljava/lang/Object;
@@ -176,20 +176,20 @@
 
     monitor-enter v1
 
-    .line 1134
+    .line 1122
     :try_start_0
     iget-object v0, p0, Lkik/core/profile/v$19;->b:Lkik/core/profile/v;
 
-    invoke-virtual {v0}, Lkik/core/profile/v;->w()V
+    invoke-virtual {v0}, Lkik/core/profile/v;->v()V
 
-    .line 1135
+    .line 1123
     monitor-exit v1
 
-    .line 1137
+    .line 1125
     :cond_0
     return-void
 
-    .line 1135
+    .line 1123
     :catchall_0
     move-exception v0
 

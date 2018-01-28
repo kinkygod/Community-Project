@@ -33,17 +33,37 @@
 
 # virtual methods
 .method public final call(Ljava/lang/Object;)V
-    .locals 2
+    .locals 5
 
+    .prologue
+    .line 0
     iget-object v0, p0, Lcom/kik/util/bb;->a:Landroid/view/View;
 
-    check-cast p1, Ljava/lang/Boolean;
+    check-cast p1, Ljava/lang/Integer;
 
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+    .line 1627
+    invoke-virtual {v0}, Landroid/view/View;->getPaddingLeft()I
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setClickable(Z)V
+    .line 1628
+    invoke-virtual {v0}, Landroid/view/View;->getPaddingTop()I
 
+    move-result v2
+
+    .line 1629
+    invoke-virtual {v0}, Landroid/view/View;->getPaddingRight()I
+
+    move-result v3
+
+    .line 1630
+    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
+
+    move-result v4
+
+    .line 1626
+    invoke-virtual {v0, v1, v2, v3, v4}, Landroid/view/View;->setPadding(IIII)V
+
+    .line 0
     return-void
 .end method

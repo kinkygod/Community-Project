@@ -24,7 +24,7 @@
     iput-object p1, p0, Lcom/kik/view/adapters/InviteFriendsRecyclerAdapter$ViewHolder_ViewBinding;->a:Lcom/kik/view/adapters/InviteFriendsRecyclerAdapter$ViewHolder;
 
     .line 26
-    const v0, 0x7f100320
+    const v0, 0x7f10031c
 
     const-string v1, "field \'contactName\'"
 
@@ -39,7 +39,7 @@
     iput-object v0, p1, Lcom/kik/view/adapters/InviteFriendsRecyclerAdapter$ViewHolder;->contactName:Landroid/widget/TextView;
 
     .line 27
-    const v0, 0x7f100321
+    const v0, 0x7f10031d
 
     const-string v1, "field \'phoneNumberOrEmail\'"
 
@@ -54,7 +54,7 @@
     iput-object v0, p1, Lcom/kik/view/adapters/InviteFriendsRecyclerAdapter$ViewHolder;->phoneNumberOrEmail:Landroid/widget/TextView;
 
     .line 28
-    const v0, 0x7f10031e
+    const v0, 0x7f10031a
 
     const-string v1, "method \'onFriendClicked\'"
 

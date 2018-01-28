@@ -62,7 +62,7 @@
     .end annotation
 .end method
 
-.method public abstract a(Ljava/util/concurrent/ExecutorService;Lkik/core/net/e;Lkik/core/interfaces/ab;)V
+.method public abstract a(Ljava/util/concurrent/ExecutorService;Lkik/core/net/e;Lkik/core/interfaces/aa;)V
 .end method
 
 .method public abstract a(Lkik/core/interfaces/ICommunication$b;J)V

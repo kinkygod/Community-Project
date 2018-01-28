@@ -52,20 +52,8 @@
     .end annotation
 .end method
 
-.method public abstract f()Lcom/kik/events/Promise;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lcom/kik/events/Promise",
-            "<",
-            "Lkik/core/z;",
-            ">;"
-        }
-    .end annotation
+.method public abstract g()V
 .end method
 
 .method public abstract h()V
-.end method
-
-.method public abstract i()V
 .end method

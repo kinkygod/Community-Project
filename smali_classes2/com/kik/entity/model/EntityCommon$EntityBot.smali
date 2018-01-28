@@ -57,20 +57,22 @@
 
 .field private registrationElement_:Lcom/kik/entity/model/ElementCommon$RegistrationElement;
 
+.field private trusted_:Lcom/kik/entity/model/ElementCommon$TrustedElement;
+
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 1
 
     .prologue
-    .line 8417
+    .line 9985
     new-instance v0, Lcom/kik/entity/model/EntityCommon$EntityBot;
 
     invoke-direct {v0}, Lcom/kik/entity/model/EntityCommon$EntityBot;-><init>()V
 
     sput-object v0, Lcom/kik/entity/model/EntityCommon$EntityBot;->a:Lcom/kik/entity/model/EntityCommon$EntityBot;
 
-    .line 8425
+    .line 9993
     new-instance v0, Lcom/kik/entity/model/EntityCommon$EntityBot$1;
 
     invoke-direct {v0}, Lcom/kik/entity/model/EntityCommon$EntityBot$1;-><init>()V
@@ -84,15 +86,15 @@
     .locals 1
 
     .prologue
-    .line 6543
+    .line 7882
     invoke-direct {p0}, Lcom/google/protobuf/GeneratedMessageV3;-><init>()V
 
-    .line 6904
+    .line 8289
     const/4 v0, -0x1
 
     iput-byte v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->memoizedIsInitialized:B
 
-    .line 6544
+    .line 7883
     return-void
 .end method
 
@@ -109,29 +111,29 @@
 
     const/4 v2, 0x0
 
-    .line 6555
+    .line 7894
     invoke-direct {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;-><init>()V
 
-    .line 6558
+    .line 7897
     const/4 v0, 0x0
 
     move v3, v0
 
-    .line 6559
+    .line 7898
     :cond_0
     :goto_0
     if-nez v3, :cond_1
 
-    .line 6560
+    .line 7899
     :try_start_0
     invoke-virtual {p1}, Lcom/google/protobuf/CodedInputStream;->readTag()I
 
     move-result v0
 
-    .line 6561
+    .line 7900
     sparse-switch v0, :sswitch_data_0
 
-    .line 6566
+    .line 7905
     invoke-virtual {p1, v0}, Lcom/google/protobuf/CodedInputStream;->skipField(I)Z
 
     move-result v0
@@ -140,22 +142,22 @@
 
     move v3, v4
 
-    .line 6567
+    .line 7906
     goto :goto_0
 
     :sswitch_0
     move v3, v4
 
-    .line 6564
+    .line 7903
     goto :goto_0
 
-    .line 6573
+    .line 7912
     :sswitch_1
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->id_:Lcom/kik/ximodel/XiBareUserJid;
 
-    if-eqz v0, :cond_8
+    if-eqz v0, :cond_9
 
-    .line 6574
+    .line 7913
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->id_:Lcom/kik/ximodel/XiBareUserJid;
 
     invoke-virtual {v0}, Lcom/kik/ximodel/XiBareUserJid;->toBuilder()Lcom/kik/ximodel/XiBareUserJid$Builder;
@@ -164,7 +166,7 @@
 
     move-object v1, v0
 
-    .line 6576
+    .line 7915
     :goto_1
     invoke-static {}, Lcom/kik/ximodel/XiBareUserJid;->parser()Lcom/google/protobuf/Parser;
 
@@ -178,15 +180,15 @@
 
     iput-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->id_:Lcom/kik/ximodel/XiBareUserJid;
 
-    .line 6577
+    .line 7916
     if-eqz v1, :cond_0
 
-    .line 6578
+    .line 7917
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->id_:Lcom/kik/ximodel/XiBareUserJid;
 
     invoke-virtual {v1, v0}, Lcom/kik/ximodel/XiBareUserJid$Builder;->mergeFrom(Lcom/kik/ximodel/XiBareUserJid;)Lcom/kik/ximodel/XiBareUserJid$Builder;
 
-    .line 6579
+    .line 7918
     invoke-virtual {v1}, Lcom/kik/ximodel/XiBareUserJid$Builder;->buildPartial()Lcom/kik/ximodel/XiBareUserJid;
 
     move-result-object v0
@@ -199,7 +201,7 @@
 
     goto :goto_0
 
-    .line 6665
+    .line 8017
     :catch_0
     move-exception v0
 
@@ -212,7 +214,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 6670
+    .line 8022
     :catchall_0
     move-exception v0
 
@@ -220,14 +222,14 @@
 
     throw v0
 
-    .line 6586
+    .line 7925
     :sswitch_2
     :try_start_2
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->bioElement_:Lcom/kik/entity/model/ElementCommon$BioElement;
 
-    if-eqz v0, :cond_7
+    if-eqz v0, :cond_8
 
-    .line 6587
+    .line 7926
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->bioElement_:Lcom/kik/entity/model/ElementCommon$BioElement;
 
     invoke-virtual {v0}, Lcom/kik/entity/model/ElementCommon$BioElement;->c()Lcom/kik/entity/model/ElementCommon$BioElement$a;
@@ -236,7 +238,7 @@
 
     move-object v1, v0
 
-    .line 6589
+    .line 7928
     :goto_2
     invoke-static {}, Lcom/kik/entity/model/ElementCommon$BioElement;->e()Lcom/google/protobuf/Parser;
 
@@ -250,15 +252,15 @@
 
     iput-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->bioElement_:Lcom/kik/entity/model/ElementCommon$BioElement;
 
-    .line 6590
+    .line 7929
     if-eqz v1, :cond_0
 
-    .line 6591
+    .line 7930
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->bioElement_:Lcom/kik/entity/model/ElementCommon$BioElement;
 
     invoke-virtual {v1, v0}, Lcom/kik/entity/model/ElementCommon$BioElement$a;->a(Lcom/kik/entity/model/ElementCommon$BioElement;)Lcom/kik/entity/model/ElementCommon$BioElement$a;
 
-    .line 6592
+    .line 7931
     invoke-virtual {v1}, Lcom/kik/entity/model/ElementCommon$BioElement$a;->b()Lcom/kik/entity/model/ElementCommon$BioElement;
 
     move-result-object v0
@@ -271,17 +273,17 @@
 
     goto :goto_0
 
-    .line 6666
+    .line 8018
     :catch_1
     move-exception v0
 
-    .line 6667
+    .line 8019
     :try_start_3
     new-instance v1, Lcom/google/protobuf/InvalidProtocolBufferException;
 
     invoke-direct {v1, v0}, Lcom/google/protobuf/InvalidProtocolBufferException;-><init>(Ljava/io/IOException;)V
 
-    .line 6668
+    .line 8020
     invoke-virtual {v1, p0}, Lcom/google/protobuf/InvalidProtocolBufferException;->setUnfinishedMessage(Lcom/google/protobuf/MessageLite;)Lcom/google/protobuf/InvalidProtocolBufferException;
 
     move-result-object v0
@@ -290,14 +292,14 @@
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    .line 6599
+    .line 7938
     :sswitch_3
     :try_start_4
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->originalProfilePicExtension_:Lcom/kik/entity/model/ElementCommon$OriginalProfilePicExtensionElement;
 
-    if-eqz v0, :cond_6
+    if-eqz v0, :cond_7
 
-    .line 6600
+    .line 7939
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->originalProfilePicExtension_:Lcom/kik/entity/model/ElementCommon$OriginalProfilePicExtensionElement;
 
     invoke-virtual {v0}, Lcom/kik/entity/model/ElementCommon$OriginalProfilePicExtensionElement;->c()Lcom/kik/entity/model/ElementCommon$OriginalProfilePicExtensionElement$a;
@@ -306,7 +308,7 @@
 
     move-object v1, v0
 
-    .line 6602
+    .line 7941
     :goto_3
     invoke-static {}, Lcom/kik/entity/model/ElementCommon$OriginalProfilePicExtensionElement;->e()Lcom/google/protobuf/Parser;
 
@@ -320,15 +322,15 @@
 
     iput-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->originalProfilePicExtension_:Lcom/kik/entity/model/ElementCommon$OriginalProfilePicExtensionElement;
 
-    .line 6603
+    .line 7942
     if-eqz v1, :cond_0
 
-    .line 6604
+    .line 7943
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->originalProfilePicExtension_:Lcom/kik/entity/model/ElementCommon$OriginalProfilePicExtensionElement;
 
     invoke-virtual {v1, v0}, Lcom/kik/entity/model/ElementCommon$OriginalProfilePicExtensionElement$a;->a(Lcom/kik/entity/model/ElementCommon$OriginalProfilePicExtensionElement;)Lcom/kik/entity/model/ElementCommon$OriginalProfilePicExtensionElement$a;
 
-    .line 6605
+    .line 7944
     invoke-virtual {v1}, Lcom/kik/entity/model/ElementCommon$OriginalProfilePicExtensionElement$a;->a()Lcom/kik/entity/model/ElementCommon$OriginalProfilePicExtensionElement;
 
     move-result-object v0
@@ -337,24 +339,24 @@
 
     goto/16 :goto_0
 
-    .line 6612
+    .line 7951
     :sswitch_4
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->backgroundProfilePicExtension_:Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement;
 
-    if-eqz v0, :cond_5
+    if-eqz v0, :cond_6
 
-    .line 6613
+    .line 7952
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->backgroundProfilePicExtension_:Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement;
 
-    invoke-virtual {v0}, Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement;->d()Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement$a;
+    invoke-virtual {v0}, Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement;->c()Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement$a;
 
     move-result-object v0
 
     move-object v1, v0
 
-    .line 6615
+    .line 7954
     :goto_4
-    invoke-static {}, Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement;->f()Lcom/google/protobuf/Parser;
+    invoke-static {}, Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement;->e()Lcom/google/protobuf/Parser;
 
     move-result-object v0
 
@@ -366,16 +368,16 @@
 
     iput-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->backgroundProfilePicExtension_:Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement;
 
-    .line 6616
+    .line 7955
     if-eqz v1, :cond_0
 
-    .line 6617
+    .line 7956
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->backgroundProfilePicExtension_:Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement;
 
     invoke-virtual {v1, v0}, Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement$a;->a(Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement;)Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement$a;
 
-    .line 6618
-    invoke-virtual {v1}, Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement$a;->b()Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement;
+    .line 7957
+    invoke-virtual {v1}, Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement$a;->a()Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement;
 
     move-result-object v0
 
@@ -383,13 +385,13 @@
 
     goto/16 :goto_0
 
-    .line 6625
+    .line 7964
     :sswitch_5
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->registrationElement_:Lcom/kik/entity/model/ElementCommon$RegistrationElement;
 
-    if-eqz v0, :cond_4
+    if-eqz v0, :cond_5
 
-    .line 6626
+    .line 7965
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->registrationElement_:Lcom/kik/entity/model/ElementCommon$RegistrationElement;
 
     invoke-virtual {v0}, Lcom/kik/entity/model/ElementCommon$RegistrationElement;->c()Lcom/kik/entity/model/ElementCommon$RegistrationElement$a;
@@ -398,7 +400,7 @@
 
     move-object v1, v0
 
-    .line 6628
+    .line 7967
     :goto_5
     invoke-static {}, Lcom/kik/entity/model/ElementCommon$RegistrationElement;->e()Lcom/google/protobuf/Parser;
 
@@ -412,15 +414,15 @@
 
     iput-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->registrationElement_:Lcom/kik/entity/model/ElementCommon$RegistrationElement;
 
-    .line 6629
+    .line 7968
     if-eqz v1, :cond_0
 
-    .line 6630
+    .line 7969
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->registrationElement_:Lcom/kik/entity/model/ElementCommon$RegistrationElement;
 
     invoke-virtual {v1, v0}, Lcom/kik/entity/model/ElementCommon$RegistrationElement$a;->a(Lcom/kik/entity/model/ElementCommon$RegistrationElement;)Lcom/kik/entity/model/ElementCommon$RegistrationElement$a;
 
-    .line 6631
+    .line 7970
     invoke-virtual {v1}, Lcom/kik/entity/model/ElementCommon$RegistrationElement$a;->a()Lcom/kik/entity/model/ElementCommon$RegistrationElement;
 
     move-result-object v0
@@ -429,13 +431,13 @@
 
     goto/16 :goto_0
 
-    .line 6638
+    .line 7977
     :sswitch_6
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->bylineElement_:Lcom/kik/entity/model/ElementCommon$BylineElement;
 
-    if-eqz v0, :cond_3
+    if-eqz v0, :cond_4
 
-    .line 6639
+    .line 7978
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->bylineElement_:Lcom/kik/entity/model/ElementCommon$BylineElement;
 
     invoke-virtual {v0}, Lcom/kik/entity/model/ElementCommon$BylineElement;->b()Lcom/kik/entity/model/ElementCommon$BylineElement$a;
@@ -444,7 +446,7 @@
 
     move-object v1, v0
 
-    .line 6641
+    .line 7980
     :goto_6
     invoke-static {}, Lcom/kik/entity/model/ElementCommon$BylineElement;->d()Lcom/google/protobuf/Parser;
 
@@ -458,15 +460,15 @@
 
     iput-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->bylineElement_:Lcom/kik/entity/model/ElementCommon$BylineElement;
 
-    .line 6642
+    .line 7981
     if-eqz v1, :cond_0
 
-    .line 6643
+    .line 7982
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->bylineElement_:Lcom/kik/entity/model/ElementCommon$BylineElement;
 
     invoke-virtual {v1, v0}, Lcom/kik/entity/model/ElementCommon$BylineElement$a;->a(Lcom/kik/entity/model/ElementCommon$BylineElement;)Lcom/kik/entity/model/ElementCommon$BylineElement$a;
 
-    .line 6644
+    .line 7983
     invoke-virtual {v1}, Lcom/kik/entity/model/ElementCommon$BylineElement$a;->a()Lcom/kik/entity/model/ElementCommon$BylineElement;
 
     move-result-object v0
@@ -475,13 +477,13 @@
 
     goto/16 :goto_0
 
-    .line 6651
+    .line 7990
     :sswitch_7
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->ratingSummary_:Lcom/kik/entity/model/ElementCommon$RatingSummary;
 
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_3
 
-    .line 6652
+    .line 7991
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->ratingSummary_:Lcom/kik/entity/model/ElementCommon$RatingSummary;
 
     invoke-virtual {v0}, Lcom/kik/entity/model/ElementCommon$RatingSummary;->c()Lcom/kik/entity/model/ElementCommon$RatingSummary$a;
@@ -490,7 +492,7 @@
 
     move-object v1, v0
 
-    .line 6654
+    .line 7993
     :goto_7
     invoke-static {}, Lcom/kik/entity/model/ElementCommon$RatingSummary;->e()Lcom/google/protobuf/Parser;
 
@@ -504,20 +506,66 @@
 
     iput-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->ratingSummary_:Lcom/kik/entity/model/ElementCommon$RatingSummary;
 
-    .line 6655
+    .line 7994
     if-eqz v1, :cond_0
 
-    .line 6656
+    .line 7995
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->ratingSummary_:Lcom/kik/entity/model/ElementCommon$RatingSummary;
 
     invoke-virtual {v1, v0}, Lcom/kik/entity/model/ElementCommon$RatingSummary$a;->a(Lcom/kik/entity/model/ElementCommon$RatingSummary;)Lcom/kik/entity/model/ElementCommon$RatingSummary$a;
 
-    .line 6657
+    .line 7996
     invoke-virtual {v1}, Lcom/kik/entity/model/ElementCommon$RatingSummary$a;->a()Lcom/kik/entity/model/ElementCommon$RatingSummary;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->ratingSummary_:Lcom/kik/entity/model/ElementCommon$RatingSummary;
+
+    goto/16 :goto_0
+
+    .line 8003
+    :sswitch_8
+    iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->trusted_:Lcom/kik/entity/model/ElementCommon$TrustedElement;
+
+    if-eqz v0, :cond_2
+
+    .line 8004
+    iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->trusted_:Lcom/kik/entity/model/ElementCommon$TrustedElement;
+
+    invoke-virtual {v0}, Lcom/kik/entity/model/ElementCommon$TrustedElement;->b()Lcom/kik/entity/model/ElementCommon$TrustedElement$a;
+
+    move-result-object v0
+
+    move-object v1, v0
+
+    .line 8006
+    :goto_8
+    invoke-static {}, Lcom/kik/entity/model/ElementCommon$TrustedElement;->d()Lcom/google/protobuf/Parser;
+
+    move-result-object v0
+
+    invoke-virtual {p1, v0, p2}, Lcom/google/protobuf/CodedInputStream;->readMessage(Lcom/google/protobuf/Parser;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/MessageLite;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/kik/entity/model/ElementCommon$TrustedElement;
+
+    iput-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->trusted_:Lcom/kik/entity/model/ElementCommon$TrustedElement;
+
+    .line 8007
+    if-eqz v1, :cond_0
+
+    .line 8008
+    iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->trusted_:Lcom/kik/entity/model/ElementCommon$TrustedElement;
+
+    invoke-virtual {v1, v0}, Lcom/kik/entity/model/ElementCommon$TrustedElement$a;->a(Lcom/kik/entity/model/ElementCommon$TrustedElement;)Lcom/kik/entity/model/ElementCommon$TrustedElement$a;
+
+    .line 8009
+    invoke-virtual {v1}, Lcom/kik/entity/model/ElementCommon$TrustedElement$a;->a()Lcom/kik/entity/model/ElementCommon$TrustedElement;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->trusted_:Lcom/kik/entity/model/ElementCommon$TrustedElement;
     :try_end_4
     .catch Lcom/google/protobuf/InvalidProtocolBufferException; {:try_start_4 .. :try_end_4} :catch_0
     .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_1
@@ -525,49 +573,56 @@
 
     goto/16 :goto_0
 
-    .line 6670
+    .line 8022
     :cond_1
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->makeExtensionsImmutable()V
 
-    .line 6671
+    .line 8023
     return-void
 
     :cond_2
     move-object v1, v2
 
-    goto :goto_7
+    goto :goto_8
 
     :cond_3
     move-object v1, v2
 
-    goto :goto_6
+    goto :goto_7
 
     :cond_4
     move-object v1, v2
 
-    goto :goto_5
+    goto :goto_6
 
     :cond_5
     move-object v1, v2
 
-    goto/16 :goto_4
+    goto/16 :goto_5
 
     :cond_6
     move-object v1, v2
 
-    goto/16 :goto_3
+    goto/16 :goto_4
 
     :cond_7
     move-object v1, v2
 
-    goto/16 :goto_2
+    goto/16 :goto_3
 
     :cond_8
     move-object v1, v2
 
+    goto/16 :goto_2
+
+    :cond_9
+    move-object v1, v2
+
     goto/16 :goto_1
 
-    .line 6561
+    .line 7900
+    nop
+
     :sswitch_data_0
     .sparse-switch
         0x0 -> :sswitch_0
@@ -578,6 +633,7 @@
         0x33a -> :sswitch_5
         0x642 -> :sswitch_6
         0x64a -> :sswitch_7
+        0x652 -> :sswitch_8
     .end sparse-switch
 .end method
 
@@ -590,7 +646,7 @@
     .end annotation
 
     .prologue
-    .line 6535
+    .line 7874
     invoke-direct {p0, p1, p2}, Lcom/kik/entity/model/EntityCommon$EntityBot;-><init>(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)V
 
     return-void
@@ -607,15 +663,15 @@
     .end annotation
 
     .prologue
-    .line 6541
+    .line 7880
     invoke-direct {p0, p1}, Lcom/google/protobuf/GeneratedMessageV3;-><init>(Lcom/google/protobuf/GeneratedMessageV3$Builder;)V
 
-    .line 6904
+    .line 8289
     const/4 v0, -0x1
 
     iput-byte v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->memoizedIsInitialized:B
 
-    .line 6542
+    .line 7881
     return-void
 .end method
 
@@ -623,7 +679,7 @@
     .locals 0
 
     .prologue
-    .line 6535
+    .line 7874
     invoke-direct {p0, p1}, Lcom/kik/entity/model/EntityCommon$EntityBot;-><init>(Lcom/google/protobuf/GeneratedMessageV3$Builder;)V
 
     return-void
@@ -633,7 +689,7 @@
     .locals 0
 
     .prologue
-    .line 6535
+    .line 7874
     iput-object p1, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->backgroundProfilePicExtension_:Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement;
 
     return-object p1
@@ -643,7 +699,7 @@
     .locals 0
 
     .prologue
-    .line 6535
+    .line 7874
     iput-object p1, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->bioElement_:Lcom/kik/entity/model/ElementCommon$BioElement;
 
     return-object p1
@@ -653,7 +709,7 @@
     .locals 0
 
     .prologue
-    .line 6535
+    .line 7874
     iput-object p1, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->bylineElement_:Lcom/kik/entity/model/ElementCommon$BylineElement;
 
     return-object p1
@@ -663,7 +719,7 @@
     .locals 0
 
     .prologue
-    .line 6535
+    .line 7874
     iput-object p1, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->originalProfilePicExtension_:Lcom/kik/entity/model/ElementCommon$OriginalProfilePicExtensionElement;
 
     return-object p1
@@ -673,7 +729,7 @@
     .locals 0
 
     .prologue
-    .line 6535
+    .line 7874
     iput-object p1, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->ratingSummary_:Lcom/kik/entity/model/ElementCommon$RatingSummary;
 
     return-object p1
@@ -683,8 +739,18 @@
     .locals 0
 
     .prologue
-    .line 6535
+    .line 7874
     iput-object p1, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->registrationElement_:Lcom/kik/entity/model/ElementCommon$RegistrationElement;
+
+    return-object p1
+.end method
+
+.method static synthetic a(Lcom/kik/entity/model/EntityCommon$EntityBot;Lcom/kik/entity/model/ElementCommon$TrustedElement;)Lcom/kik/entity/model/ElementCommon$TrustedElement;
+    .locals 0
+
+    .prologue
+    .line 7874
+    iput-object p1, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->trusted_:Lcom/kik/entity/model/ElementCommon$TrustedElement;
 
     return-object p1
 .end method
@@ -693,23 +759,23 @@
     .locals 0
 
     .prologue
-    .line 6535
+    .line 7874
     iput-object p1, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->id_:Lcom/kik/ximodel/XiBareUserJid;
 
     return-object p1
 .end method
 
-.method public static o()Lcom/kik/entity/model/EntityCommon$EntityBot;
+.method public static q()Lcom/kik/entity/model/EntityCommon$EntityBot;
     .locals 1
 
     .prologue
-    .line 8421
+    .line 9989
     sget-object v0, Lcom/kik/entity/model/EntityCommon$EntityBot;->a:Lcom/kik/entity/model/EntityCommon$EntityBot;
 
     return-object v0
 .end method
 
-.method public static p()Lcom/google/protobuf/Parser;
+.method public static r()Lcom/google/protobuf/Parser;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -722,39 +788,39 @@
     .end annotation
 
     .prologue
-    .line 8435
+    .line 10003
     sget-object v0, Lcom/kik/entity/model/EntityCommon$EntityBot;->b:Lcom/google/protobuf/Parser;
 
     return-object v0
 .end method
 
-.method static synthetic q()Z
+.method static synthetic s()Z
     .locals 1
 
     .prologue
-    .line 6535
+    .line 7874
     sget-boolean v0, Lcom/kik/entity/model/EntityCommon$EntityBot;->alwaysUseFieldBuilders:Z
 
     return v0
 .end method
 
-.method static synthetic r()Lcom/google/protobuf/Parser;
+.method static synthetic t()Lcom/google/protobuf/Parser;
     .locals 1
 
     .prologue
-    .line 6535
+    .line 7874
     sget-object v0, Lcom/kik/entity/model/EntityCommon$EntityBot;->b:Lcom/google/protobuf/Parser;
 
     return-object v0
 .end method
 
-.method private s()Lcom/kik/entity/model/EntityCommon$EntityBot$a;
+.method private u()Lcom/kik/entity/model/EntityCommon$EntityBot$a;
     .locals 2
 
     .prologue
     const/4 v1, 0x0
 
-    .line 7133
+    .line 8534
     sget-object v0, Lcom/kik/entity/model/EntityCommon$EntityBot;->a:Lcom/kik/entity/model/EntityCommon$EntityBot;
 
     if-ne p0, v0, :cond_0
@@ -771,7 +837,7 @@
 
     invoke-direct {v0, v1}, Lcom/kik/entity/model/EntityCommon$EntityBot$a;-><init>(B)V
 
-    .line 7134
+    .line 8535
     invoke-virtual {v0, p0}, Lcom/kik/entity/model/EntityCommon$EntityBot$a;->a(Lcom/kik/entity/model/EntityCommon$EntityBot;)Lcom/kik/entity/model/EntityCommon$EntityBot$a;
 
     move-result-object v0
@@ -785,7 +851,7 @@
     .locals 1
 
     .prologue
-    .line 6691
+    .line 8043
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->id_:Lcom/kik/ximodel/XiBareUserJid;
 
     if-eqz v0, :cond_0
@@ -805,7 +871,7 @@
     .locals 1
 
     .prologue
-    .line 6697
+    .line 8049
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->id_:Lcom/kik/ximodel/XiBareUserJid;
 
     if-nez v0, :cond_0
@@ -827,7 +893,7 @@
     .locals 1
 
     .prologue
-    .line 6716
+    .line 8068
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->bioElement_:Lcom/kik/entity/model/ElementCommon$BioElement;
 
     if-eqz v0, :cond_0
@@ -847,7 +913,7 @@
     .locals 1
 
     .prologue
-    .line 6726
+    .line 8078
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->bioElement_:Lcom/kik/entity/model/ElementCommon$BioElement;
 
     if-nez v0, :cond_0
@@ -869,7 +935,7 @@
     .locals 1
 
     .prologue
-    .line 6749
+    .line 8101
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->originalProfilePicExtension_:Lcom/kik/entity/model/ElementCommon$OriginalProfilePicExtensionElement;
 
     if-eqz v0, :cond_0
@@ -893,32 +959,32 @@
 
     const/4 v1, 0x1
 
-    .line 6979
+    .line 8371
     if-ne p1, p0, :cond_1
 
-    .line 7023
+    .line 8420
     :cond_0
     :goto_0
     return v1
 
-    .line 6982
+    .line 8374
     :cond_1
     instance-of v0, p1, Lcom/kik/entity/model/EntityCommon$EntityBot;
 
     if-nez v0, :cond_2
 
-    .line 6983
+    .line 8375
     invoke-super {p0, p1}, Lcom/google/protobuf/GeneratedMessageV3;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
     goto :goto_0
 
-    .line 6985
+    .line 8377
     :cond_2
     check-cast p1, Lcom/kik/entity/model/EntityCommon$EntityBot;
 
-    .line 6988
+    .line 8380
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->a()Z
 
     move-result v0
@@ -927,11 +993,11 @@
 
     move-result v3
 
-    if-ne v0, v3, :cond_a
+    if-ne v0, v3, :cond_b
 
     move v0, v1
 
-    .line 6989
+    .line 8381
     :goto_1
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->a()Z
 
@@ -939,14 +1005,14 @@
 
     if-eqz v3, :cond_3
 
-    .line 6990
-    if-eqz v0, :cond_b
+    .line 8382
+    if-eqz v0, :cond_c
 
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->b()Lcom/kik/ximodel/XiBareUserJid;
 
     move-result-object v0
 
-    .line 6991
+    .line 8383
     invoke-virtual {p1}, Lcom/kik/entity/model/EntityCommon$EntityBot;->b()Lcom/kik/ximodel/XiBareUserJid;
 
     move-result-object v3
@@ -955,14 +1021,14 @@
 
     move-result v0
 
-    if-eqz v0, :cond_b
+    if-eqz v0, :cond_c
 
     move v0, v1
 
-    .line 6993
+    .line 8385
     :cond_3
     :goto_2
-    if-eqz v0, :cond_c
+    if-eqz v0, :cond_d
 
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->c()Z
 
@@ -972,11 +1038,11 @@
 
     move-result v3
 
-    if-ne v0, v3, :cond_c
+    if-ne v0, v3, :cond_d
 
     move v0, v1
 
-    .line 6994
+    .line 8386
     :goto_3
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->c()Z
 
@@ -984,14 +1050,14 @@
 
     if-eqz v3, :cond_4
 
-    .line 6995
-    if-eqz v0, :cond_d
+    .line 8387
+    if-eqz v0, :cond_e
 
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->d()Lcom/kik/entity/model/ElementCommon$BioElement;
 
     move-result-object v0
 
-    .line 6996
+    .line 8388
     invoke-virtual {p1}, Lcom/kik/entity/model/EntityCommon$EntityBot;->d()Lcom/kik/entity/model/ElementCommon$BioElement;
 
     move-result-object v3
@@ -1000,14 +1066,14 @@
 
     move-result v0
 
-    if-eqz v0, :cond_d
+    if-eqz v0, :cond_e
 
     move v0, v1
 
-    .line 6998
+    .line 8390
     :cond_4
     :goto_4
-    if-eqz v0, :cond_e
+    if-eqz v0, :cond_f
 
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->e()Z
 
@@ -1017,11 +1083,11 @@
 
     move-result v3
 
-    if-ne v0, v3, :cond_e
+    if-ne v0, v3, :cond_f
 
     move v0, v1
 
-    .line 6999
+    .line 8391
     :goto_5
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->e()Z
 
@@ -1029,14 +1095,14 @@
 
     if-eqz v3, :cond_5
 
-    .line 7000
-    if-eqz v0, :cond_f
+    .line 8392
+    if-eqz v0, :cond_10
 
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->f()Lcom/kik/entity/model/ElementCommon$OriginalProfilePicExtensionElement;
 
     move-result-object v0
 
-    .line 7001
+    .line 8393
     invoke-virtual {p1}, Lcom/kik/entity/model/EntityCommon$EntityBot;->f()Lcom/kik/entity/model/ElementCommon$OriginalProfilePicExtensionElement;
 
     move-result-object v3
@@ -1045,14 +1111,14 @@
 
     move-result v0
 
-    if-eqz v0, :cond_f
+    if-eqz v0, :cond_10
 
     move v0, v1
 
-    .line 7003
+    .line 8395
     :cond_5
     :goto_6
-    if-eqz v0, :cond_10
+    if-eqz v0, :cond_11
 
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->g()Z
 
@@ -1062,11 +1128,11 @@
 
     move-result v3
 
-    if-ne v0, v3, :cond_10
+    if-ne v0, v3, :cond_11
 
     move v0, v1
 
-    .line 7004
+    .line 8396
     :goto_7
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->g()Z
 
@@ -1074,14 +1140,14 @@
 
     if-eqz v3, :cond_6
 
-    .line 7005
-    if-eqz v0, :cond_11
+    .line 8397
+    if-eqz v0, :cond_12
 
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->h()Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement;
 
     move-result-object v0
 
-    .line 7006
+    .line 8398
     invoke-virtual {p1}, Lcom/kik/entity/model/EntityCommon$EntityBot;->h()Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement;
 
     move-result-object v3
@@ -1090,14 +1156,14 @@
 
     move-result v0
 
-    if-eqz v0, :cond_11
+    if-eqz v0, :cond_12
 
     move v0, v1
 
-    .line 7008
+    .line 8400
     :cond_6
     :goto_8
-    if-eqz v0, :cond_12
+    if-eqz v0, :cond_13
 
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->i()Z
 
@@ -1107,11 +1173,11 @@
 
     move-result v3
 
-    if-ne v0, v3, :cond_12
+    if-ne v0, v3, :cond_13
 
     move v0, v1
 
-    .line 7009
+    .line 8401
     :goto_9
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->i()Z
 
@@ -1119,14 +1185,14 @@
 
     if-eqz v3, :cond_7
 
-    .line 7010
-    if-eqz v0, :cond_13
+    .line 8402
+    if-eqz v0, :cond_14
 
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->j()Lcom/kik/entity/model/ElementCommon$RegistrationElement;
 
     move-result-object v0
 
-    .line 7011
+    .line 8403
     invoke-virtual {p1}, Lcom/kik/entity/model/EntityCommon$EntityBot;->j()Lcom/kik/entity/model/ElementCommon$RegistrationElement;
 
     move-result-object v3
@@ -1135,14 +1201,14 @@
 
     move-result v0
 
-    if-eqz v0, :cond_13
+    if-eqz v0, :cond_14
 
     move v0, v1
 
-    .line 7013
+    .line 8405
     :cond_7
     :goto_a
-    if-eqz v0, :cond_14
+    if-eqz v0, :cond_15
 
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->k()Z
 
@@ -1152,11 +1218,11 @@
 
     move-result v3
 
-    if-ne v0, v3, :cond_14
+    if-ne v0, v3, :cond_15
 
     move v0, v1
 
-    .line 7014
+    .line 8406
     :goto_b
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->k()Z
 
@@ -1164,14 +1230,14 @@
 
     if-eqz v3, :cond_8
 
-    .line 7015
-    if-eqz v0, :cond_15
+    .line 8407
+    if-eqz v0, :cond_16
 
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->l()Lcom/kik/entity/model/ElementCommon$BylineElement;
 
     move-result-object v0
 
-    .line 7016
+    .line 8408
     invoke-virtual {p1}, Lcom/kik/entity/model/EntityCommon$EntityBot;->l()Lcom/kik/entity/model/ElementCommon$BylineElement;
 
     move-result-object v3
@@ -1180,14 +1246,14 @@
 
     move-result v0
 
-    if-eqz v0, :cond_15
+    if-eqz v0, :cond_16
 
     move v0, v1
 
-    .line 7018
+    .line 8410
     :cond_8
     :goto_c
-    if-eqz v0, :cond_16
+    if-eqz v0, :cond_17
 
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->m()Z
 
@@ -1197,26 +1263,26 @@
 
     move-result v3
 
-    if-ne v0, v3, :cond_16
+    if-ne v0, v3, :cond_17
 
     move v0, v1
 
-    .line 7019
+    .line 8411
     :goto_d
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->m()Z
 
     move-result v3
 
-    if-eqz v3, :cond_17
+    if-eqz v3, :cond_9
 
-    .line 7020
-    if-eqz v0, :cond_9
+    .line 8412
+    if-eqz v0, :cond_18
 
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->n()Lcom/kik/entity/model/ElementCommon$RatingSummary;
 
     move-result-object v0
 
-    .line 7021
+    .line 8413
     invoke-virtual {p1}, Lcom/kik/entity/model/EntityCommon$EntityBot;->n()Lcom/kik/entity/model/ElementCommon$RatingSummary;
 
     move-result-object v3
@@ -1225,92 +1291,149 @@
 
     move-result v0
 
+    if-eqz v0, :cond_18
+
+    move v0, v1
+
+    .line 8415
+    :cond_9
+    :goto_e
+    if-eqz v0, :cond_19
+
+    invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->o()Z
+
+    move-result v0
+
+    invoke-virtual {p1}, Lcom/kik/entity/model/EntityCommon$EntityBot;->o()Z
+
+    move-result v3
+
+    if-ne v0, v3, :cond_19
+
+    move v0, v1
+
+    .line 8416
+    :goto_f
+    invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->o()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_1a
+
+    .line 8417
+    if-eqz v0, :cond_a
+
+    invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->p()Lcom/kik/entity/model/ElementCommon$TrustedElement;
+
+    move-result-object v0
+
+    .line 8418
+    invoke-virtual {p1}, Lcom/kik/entity/model/EntityCommon$EntityBot;->p()Lcom/kik/entity/model/ElementCommon$TrustedElement;
+
+    move-result-object v3
+
+    invoke-virtual {v0, v3}, Lcom/kik/entity/model/ElementCommon$TrustedElement;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
     if-nez v0, :cond_0
 
-    :cond_9
+    :cond_a
     move v1, v2
 
     goto/16 :goto_0
 
-    :cond_a
-    move v0, v2
-
-    .line 6988
-    goto/16 :goto_1
-
     :cond_b
     move v0, v2
 
-    .line 6991
-    goto/16 :goto_2
+    .line 8380
+    goto/16 :goto_1
 
     :cond_c
     move v0, v2
 
-    .line 6993
-    goto/16 :goto_3
+    .line 8383
+    goto/16 :goto_2
 
     :cond_d
     move v0, v2
 
-    .line 6996
-    goto/16 :goto_4
+    .line 8385
+    goto/16 :goto_3
 
     :cond_e
     move v0, v2
 
-    .line 6998
-    goto/16 :goto_5
+    .line 8388
+    goto/16 :goto_4
 
     :cond_f
     move v0, v2
 
-    .line 7001
-    goto/16 :goto_6
+    .line 8390
+    goto/16 :goto_5
 
     :cond_10
     move v0, v2
 
-    .line 7003
-    goto/16 :goto_7
+    .line 8393
+    goto/16 :goto_6
 
     :cond_11
     move v0, v2
 
-    .line 7006
-    goto/16 :goto_8
+    .line 8395
+    goto/16 :goto_7
 
     :cond_12
     move v0, v2
 
-    .line 7008
-    goto :goto_9
+    .line 8398
+    goto/16 :goto_8
 
     :cond_13
     move v0, v2
 
-    .line 7011
-    goto :goto_a
+    .line 8400
+    goto/16 :goto_9
 
     :cond_14
     move v0, v2
 
-    .line 7013
-    goto :goto_b
+    .line 8403
+    goto/16 :goto_a
 
     :cond_15
     move v0, v2
 
-    .line 7016
-    goto :goto_c
+    .line 8405
+    goto :goto_b
 
     :cond_16
     move v0, v2
 
-    .line 7018
-    goto :goto_d
+    .line 8408
+    goto :goto_c
 
     :cond_17
+    move v0, v2
+
+    .line 8410
+    goto :goto_d
+
+    :cond_18
+    move v0, v2
+
+    .line 8413
+    goto :goto_e
+
+    :cond_19
+    move v0, v2
+
+    .line 8415
+    goto :goto_f
+
+    :cond_1a
     move v1, v0
 
     goto/16 :goto_0
@@ -1320,7 +1443,7 @@
     .locals 1
 
     .prologue
-    .line 6759
+    .line 8111
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->originalProfilePicExtension_:Lcom/kik/entity/model/ElementCommon$OriginalProfilePicExtensionElement;
 
     if-nez v0, :cond_0
@@ -1342,7 +1465,7 @@
     .locals 1
 
     .prologue
-    .line 6782
+    .line 8134
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->backgroundProfilePicExtension_:Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement;
 
     if-eqz v0, :cond_0
@@ -1362,10 +1485,10 @@
     .locals 1
 
     .prologue
-    .line 12444
+    .line 14012
     sget-object v0, Lcom/kik/entity/model/EntityCommon$EntityBot;->a:Lcom/kik/entity/model/EntityCommon$EntityBot;
 
-    .line 6535
+    .line 7874
     return-object v0
 .end method
 
@@ -1373,10 +1496,10 @@
     .locals 1
 
     .prologue
-    .line 11444
+    .line 13012
     sget-object v0, Lcom/kik/entity/model/EntityCommon$EntityBot;->a:Lcom/kik/entity/model/EntityCommon$EntityBot;
 
-    .line 6535
+    .line 7874
     return-object v0
 .end method
 
@@ -1393,7 +1516,7 @@
     .end annotation
 
     .prologue
-    .line 8440
+    .line 10008
     sget-object v0, Lcom/kik/entity/model/EntityCommon$EntityBot;->b:Lcom/google/protobuf/Parser;
 
     return-object v0
@@ -1403,31 +1526,31 @@
     .locals 3
 
     .prologue
-    .line 6940
+    .line 8328
     iget v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->memoizedSize:I
 
-    .line 6941
+    .line 8329
     const/4 v1, -0x1
 
     if-eq v0, v1, :cond_0
 
-    .line 6973
+    .line 8365
     :goto_0
     return v0
 
-    .line 6943
+    .line 8331
     :cond_0
     const/4 v0, 0x0
 
-    .line 6944
+    .line 8332
     iget-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->id_:Lcom/kik/ximodel/XiBareUserJid;
 
     if-eqz v1, :cond_1
 
-    .line 6945
+    .line 8333
     const/4 v0, 0x1
 
-    .line 6946
+    .line 8334
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->b()Lcom/kik/ximodel/XiBareUserJid;
 
     move-result-object v1
@@ -1438,16 +1561,16 @@
 
     add-int/lit8 v0, v0, 0x0
 
-    .line 6948
+    .line 8336
     :cond_1
     iget-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->bioElement_:Lcom/kik/entity/model/ElementCommon$BioElement;
 
     if-eqz v1, :cond_2
 
-    .line 6949
+    .line 8337
     const/16 v1, 0x64
 
-    .line 6950
+    .line 8338
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->d()Lcom/kik/entity/model/ElementCommon$BioElement;
 
     move-result-object v2
@@ -1458,16 +1581,16 @@
 
     add-int/2addr v0, v1
 
-    .line 6952
+    .line 8340
     :cond_2
     iget-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->originalProfilePicExtension_:Lcom/kik/entity/model/ElementCommon$OriginalProfilePicExtensionElement;
 
     if-eqz v1, :cond_3
 
-    .line 6953
+    .line 8341
     const/16 v1, 0x65
 
-    .line 6954
+    .line 8342
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->f()Lcom/kik/entity/model/ElementCommon$OriginalProfilePicExtensionElement;
 
     move-result-object v2
@@ -1478,16 +1601,16 @@
 
     add-int/2addr v0, v1
 
-    .line 6956
+    .line 8344
     :cond_3
     iget-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->backgroundProfilePicExtension_:Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement;
 
     if-eqz v1, :cond_4
 
-    .line 6957
+    .line 8345
     const/16 v1, 0x66
 
-    .line 6958
+    .line 8346
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->h()Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement;
 
     move-result-object v2
@@ -1498,16 +1621,16 @@
 
     add-int/2addr v0, v1
 
-    .line 6960
+    .line 8348
     :cond_4
     iget-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->registrationElement_:Lcom/kik/entity/model/ElementCommon$RegistrationElement;
 
     if-eqz v1, :cond_5
 
-    .line 6961
+    .line 8349
     const/16 v1, 0x67
 
-    .line 6962
+    .line 8350
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->j()Lcom/kik/entity/model/ElementCommon$RegistrationElement;
 
     move-result-object v2
@@ -1518,16 +1641,16 @@
 
     add-int/2addr v0, v1
 
-    .line 6964
+    .line 8352
     :cond_5
     iget-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->bylineElement_:Lcom/kik/entity/model/ElementCommon$BylineElement;
 
     if-eqz v1, :cond_6
 
-    .line 6965
+    .line 8353
     const/16 v1, 0xc8
 
-    .line 6966
+    .line 8354
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->l()Lcom/kik/entity/model/ElementCommon$BylineElement;
 
     move-result-object v2
@@ -1538,16 +1661,16 @@
 
     add-int/2addr v0, v1
 
-    .line 6968
+    .line 8356
     :cond_6
     iget-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->ratingSummary_:Lcom/kik/entity/model/ElementCommon$RatingSummary;
 
     if-eqz v1, :cond_7
 
-    .line 6969
+    .line 8357
     const/16 v1, 0xc9
 
-    .line 6970
+    .line 8358
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->n()Lcom/kik/entity/model/ElementCommon$RatingSummary;
 
     move-result-object v2
@@ -1558,8 +1681,28 @@
 
     add-int/2addr v0, v1
 
-    .line 6972
+    .line 8360
     :cond_7
+    iget-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->trusted_:Lcom/kik/entity/model/ElementCommon$TrustedElement;
+
+    if-eqz v1, :cond_8
+
+    .line 8361
+    const/16 v1, 0xca
+
+    .line 8362
+    invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->p()Lcom/kik/entity/model/ElementCommon$TrustedElement;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Lcom/google/protobuf/CodedOutputStream;->computeMessageSize(ILcom/google/protobuf/MessageLite;)I
+
+    move-result v1
+
+    add-int/2addr v0, v1
+
+    .line 8364
+    :cond_8
     iput v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->memoizedSize:I
 
     goto :goto_0
@@ -1569,7 +1712,7 @@
     .locals 1
 
     .prologue
-    .line 6549
+    .line 7888
     invoke-static {}, Lcom/google/protobuf/UnknownFieldSet;->getDefaultInstance()Lcom/google/protobuf/UnknownFieldSet;
 
     move-result-object v0
@@ -1581,12 +1724,12 @@
     .locals 1
 
     .prologue
-    .line 6792
+    .line 8144
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->backgroundProfilePicExtension_:Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement;
 
     if-nez v0, :cond_0
 
-    invoke-static {}, Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement;->e()Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement;
+    invoke-static {}, Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement;->d()Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement;
 
     move-result-object v0
 
@@ -1603,19 +1746,19 @@
     .locals 2
 
     .prologue
-    .line 7028
+    .line 8425
     iget v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->memoizedHashCode:I
 
     if-eqz v0, :cond_0
 
-    .line 7029
+    .line 8426
     iget v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->memoizedHashCode:I
 
-    .line 7063
+    .line 8464
     :goto_0
     return v0
 
-    .line 7032
+    .line 8429
     :cond_0
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->getDescriptorForType()Lcom/google/protobuf/Descriptors$Descriptor;
 
@@ -1627,19 +1770,19 @@
 
     add-int/lit16 v0, v0, 0x30b
 
-    .line 7033
+    .line 8430
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->a()Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    .line 7034
+    .line 8431
     mul-int/lit8 v0, v0, 0x25
 
     add-int/lit8 v0, v0, 0x1
 
-    .line 7035
+    .line 8432
     mul-int/lit8 v0, v0, 0x35
 
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->b()Lcom/kik/ximodel/XiBareUserJid;
@@ -1652,7 +1795,7 @@
 
     add-int/2addr v0, v1
 
-    .line 7037
+    .line 8434
     :cond_1
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->c()Z
 
@@ -1660,12 +1803,12 @@
 
     if-eqz v1, :cond_2
 
-    .line 7038
+    .line 8435
     mul-int/lit8 v0, v0, 0x25
 
     add-int/lit8 v0, v0, 0x64
 
-    .line 7039
+    .line 8436
     mul-int/lit8 v0, v0, 0x35
 
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->d()Lcom/kik/entity/model/ElementCommon$BioElement;
@@ -1678,7 +1821,7 @@
 
     add-int/2addr v0, v1
 
-    .line 7041
+    .line 8438
     :cond_2
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->e()Z
 
@@ -1686,12 +1829,12 @@
 
     if-eqz v1, :cond_3
 
-    .line 7042
+    .line 8439
     mul-int/lit8 v0, v0, 0x25
 
     add-int/lit8 v0, v0, 0x65
 
-    .line 7043
+    .line 8440
     mul-int/lit8 v0, v0, 0x35
 
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->f()Lcom/kik/entity/model/ElementCommon$OriginalProfilePicExtensionElement;
@@ -1704,7 +1847,7 @@
 
     add-int/2addr v0, v1
 
-    .line 7045
+    .line 8442
     :cond_3
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->g()Z
 
@@ -1712,12 +1855,12 @@
 
     if-eqz v1, :cond_4
 
-    .line 7046
+    .line 8443
     mul-int/lit8 v0, v0, 0x25
 
     add-int/lit8 v0, v0, 0x66
 
-    .line 7047
+    .line 8444
     mul-int/lit8 v0, v0, 0x35
 
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->h()Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement;
@@ -1730,7 +1873,7 @@
 
     add-int/2addr v0, v1
 
-    .line 7049
+    .line 8446
     :cond_4
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->i()Z
 
@@ -1738,12 +1881,12 @@
 
     if-eqz v1, :cond_5
 
-    .line 7050
+    .line 8447
     mul-int/lit8 v0, v0, 0x25
 
     add-int/lit8 v0, v0, 0x67
 
-    .line 7051
+    .line 8448
     mul-int/lit8 v0, v0, 0x35
 
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->j()Lcom/kik/entity/model/ElementCommon$RegistrationElement;
@@ -1756,7 +1899,7 @@
 
     add-int/2addr v0, v1
 
-    .line 7053
+    .line 8450
     :cond_5
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->k()Z
 
@@ -1764,12 +1907,12 @@
 
     if-eqz v1, :cond_6
 
-    .line 7054
+    .line 8451
     mul-int/lit8 v0, v0, 0x25
 
     add-int/lit16 v0, v0, 0xc8
 
-    .line 7055
+    .line 8452
     mul-int/lit8 v0, v0, 0x35
 
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->l()Lcom/kik/entity/model/ElementCommon$BylineElement;
@@ -1782,7 +1925,7 @@
 
     add-int/2addr v0, v1
 
-    .line 7057
+    .line 8454
     :cond_6
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->m()Z
 
@@ -1790,12 +1933,12 @@
 
     if-eqz v1, :cond_7
 
-    .line 7058
+    .line 8455
     mul-int/lit8 v0, v0, 0x25
 
     add-int/lit16 v0, v0, 0xc9
 
-    .line 7059
+    .line 8456
     mul-int/lit8 v0, v0, 0x35
 
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->n()Lcom/kik/entity/model/ElementCommon$RatingSummary;
@@ -1808,8 +1951,34 @@
 
     add-int/2addr v0, v1
 
-    .line 7061
+    .line 8458
     :cond_7
+    invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->o()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_8
+
+    .line 8459
+    mul-int/lit8 v0, v0, 0x25
+
+    add-int/lit16 v0, v0, 0xca
+
+    .line 8460
+    mul-int/lit8 v0, v0, 0x35
+
+    invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->p()Lcom/kik/entity/model/ElementCommon$TrustedElement;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/kik/entity/model/ElementCommon$TrustedElement;->hashCode()I
+
+    move-result v1
+
+    add-int/2addr v0, v1
+
+    .line 8462
+    :cond_8
     mul-int/lit8 v0, v0, 0x1d
 
     iget-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->unknownFields:Lcom/google/protobuf/UnknownFieldSet;
@@ -1820,7 +1989,7 @@
 
     add-int/2addr v0, v1
 
-    .line 7062
+    .line 8463
     iput v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->memoizedHashCode:I
 
     goto/16 :goto_0
@@ -1830,7 +1999,7 @@
     .locals 1
 
     .prologue
-    .line 6815
+    .line 8167
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->registrationElement_:Lcom/kik/entity/model/ElementCommon$RegistrationElement;
 
     if-eqz v0, :cond_0
@@ -1850,7 +2019,7 @@
     .locals 3
 
     .prologue
-    .line 6680
+    .line 8032
     invoke-static {}, Lcom/kik/entity/model/EntityCommon;->i()Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
     move-result-object v0
@@ -1859,12 +2028,12 @@
 
     const-class v2, Lcom/kik/entity/model/EntityCommon$EntityBot$a;
 
-    .line 6681
+    .line 8033
     invoke-virtual {v0, v1, v2}, Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;->ensureFieldAccessorsInitialized(Ljava/lang/Class;Ljava/lang/Class;)Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
     move-result-object v0
 
-    .line 6680
+    .line 8032
     return-object v0
 .end method
 
@@ -1874,17 +2043,17 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 6906
+    .line 8291
     iget-byte v1, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->memoizedIsInitialized:B
 
-    .line 6907
+    .line 8292
     if-ne v1, v0, :cond_0
 
-    .line 6911
+    .line 8296
     :goto_0
     return v0
 
-    .line 6908
+    .line 8293
     :cond_0
     if-nez v1, :cond_1
 
@@ -1892,7 +2061,7 @@
 
     goto :goto_0
 
-    .line 6910
+    .line 8295
     :cond_1
     iput-byte v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->memoizedIsInitialized:B
 
@@ -1903,7 +2072,7 @@
     .locals 1
 
     .prologue
-    .line 6825
+    .line 8177
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->registrationElement_:Lcom/kik/entity/model/ElementCommon$RegistrationElement;
 
     if-nez v0, :cond_0
@@ -1925,7 +2094,7 @@
     .locals 1
 
     .prologue
-    .line 6848
+    .line 8200
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->bylineElement_:Lcom/kik/entity/model/ElementCommon$BylineElement;
 
     if-eqz v0, :cond_0
@@ -1945,7 +2114,7 @@
     .locals 1
 
     .prologue
-    .line 6858
+    .line 8210
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->bylineElement_:Lcom/kik/entity/model/ElementCommon$BylineElement;
 
     if-nez v0, :cond_0
@@ -1967,7 +2136,7 @@
     .locals 1
 
     .prologue
-    .line 6881
+    .line 8233
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->ratingSummary_:Lcom/kik/entity/model/ElementCommon$RatingSummary;
 
     if-eqz v0, :cond_0
@@ -1987,7 +2156,7 @@
     .locals 1
 
     .prologue
-    .line 6891
+    .line 8243
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->ratingSummary_:Lcom/kik/entity/model/ElementCommon$RatingSummary;
 
     if-nez v0, :cond_0
@@ -2009,14 +2178,14 @@
     .locals 1
 
     .prologue
-    .line 10127
+    .line 11528
     sget-object v0, Lcom/kik/entity/model/EntityCommon$EntityBot;->a:Lcom/kik/entity/model/EntityCommon$EntityBot;
 
-    invoke-direct {v0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->s()Lcom/kik/entity/model/EntityCommon$EntityBot$a;
+    invoke-direct {v0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->u()Lcom/kik/entity/model/EntityCommon$EntityBot$a;
 
     move-result-object v0
 
-    .line 6535
+    .line 7874
     return-object v0
 .end method
 
@@ -2024,14 +2193,14 @@
     .locals 2
 
     .prologue
-    .line 9140
+    .line 10541
     new-instance v0, Lcom/kik/entity/model/EntityCommon$EntityBot$a;
 
     const/4 v1, 0x0
 
     invoke-direct {v0, p1, v1}, Lcom/kik/entity/model/EntityCommon$EntityBot$a;-><init>(Lcom/google/protobuf/GeneratedMessageV3$BuilderParent;B)V
 
-    .line 6535
+    .line 7874
     return-object v0
 .end method
 
@@ -2039,23 +2208,65 @@
     .locals 1
 
     .prologue
-    .line 11127
+    .line 12528
     sget-object v0, Lcom/kik/entity/model/EntityCommon$EntityBot;->a:Lcom/kik/entity/model/EntityCommon$EntityBot;
 
-    invoke-direct {v0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->s()Lcom/kik/entity/model/EntityCommon$EntityBot$a;
+    invoke-direct {v0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->u()Lcom/kik/entity/model/EntityCommon$EntityBot$a;
 
     move-result-object v0
 
-    .line 6535
+    .line 7874
     return-object v0
+.end method
+
+.method public final o()Z
+    .locals 1
+
+    .prologue
+    .line 8266
+    iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->trusted_:Lcom/kik/entity/model/ElementCommon$TrustedElement;
+
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x1
+
+    :goto_0
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_0
+.end method
+
+.method public final p()Lcom/kik/entity/model/ElementCommon$TrustedElement;
+    .locals 1
+
+    .prologue
+    .line 8276
+    iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->trusted_:Lcom/kik/entity/model/ElementCommon$TrustedElement;
+
+    if-nez v0, :cond_0
+
+    invoke-static {}, Lcom/kik/entity/model/ElementCommon$TrustedElement;->c()Lcom/kik/entity/model/ElementCommon$TrustedElement;
+
+    move-result-object v0
+
+    :goto_0
+    return-object v0
+
+    :cond_0
+    iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->trusted_:Lcom/kik/entity/model/ElementCommon$TrustedElement;
+
+    goto :goto_0
 .end method
 
 .method public final synthetic toBuilder()Lcom/google/protobuf/Message$Builder;
     .locals 1
 
     .prologue
-    .line 6535
-    invoke-direct {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->s()Lcom/kik/entity/model/EntityCommon$EntityBot$a;
+    .line 7874
+    invoke-direct {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->u()Lcom/kik/entity/model/EntityCommon$EntityBot$a;
 
     move-result-object v0
 
@@ -2066,8 +2277,8 @@
     .locals 1
 
     .prologue
-    .line 6535
-    invoke-direct {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->s()Lcom/kik/entity/model/EntityCommon$EntityBot$a;
+    .line 7874
+    invoke-direct {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->u()Lcom/kik/entity/model/EntityCommon$EntityBot$a;
 
     move-result-object v0
 
@@ -2083,12 +2294,12 @@
     .end annotation
 
     .prologue
-    .line 6916
+    .line 8301
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->id_:Lcom/kik/ximodel/XiBareUserJid;
 
     if-eqz v0, :cond_0
 
-    .line 6917
+    .line 8302
     const/4 v0, 0x1
 
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->b()Lcom/kik/ximodel/XiBareUserJid;
@@ -2097,13 +2308,13 @@
 
     invoke-virtual {p1, v0, v1}, Lcom/google/protobuf/CodedOutputStream;->writeMessage(ILcom/google/protobuf/MessageLite;)V
 
-    .line 6919
+    .line 8304
     :cond_0
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->bioElement_:Lcom/kik/entity/model/ElementCommon$BioElement;
 
     if-eqz v0, :cond_1
 
-    .line 6920
+    .line 8305
     const/16 v0, 0x64
 
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->d()Lcom/kik/entity/model/ElementCommon$BioElement;
@@ -2112,13 +2323,13 @@
 
     invoke-virtual {p1, v0, v1}, Lcom/google/protobuf/CodedOutputStream;->writeMessage(ILcom/google/protobuf/MessageLite;)V
 
-    .line 6922
+    .line 8307
     :cond_1
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->originalProfilePicExtension_:Lcom/kik/entity/model/ElementCommon$OriginalProfilePicExtensionElement;
 
     if-eqz v0, :cond_2
 
-    .line 6923
+    .line 8308
     const/16 v0, 0x65
 
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->f()Lcom/kik/entity/model/ElementCommon$OriginalProfilePicExtensionElement;
@@ -2127,13 +2338,13 @@
 
     invoke-virtual {p1, v0, v1}, Lcom/google/protobuf/CodedOutputStream;->writeMessage(ILcom/google/protobuf/MessageLite;)V
 
-    .line 6925
+    .line 8310
     :cond_2
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->backgroundProfilePicExtension_:Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement;
 
     if-eqz v0, :cond_3
 
-    .line 6926
+    .line 8311
     const/16 v0, 0x66
 
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->h()Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement;
@@ -2142,13 +2353,13 @@
 
     invoke-virtual {p1, v0, v1}, Lcom/google/protobuf/CodedOutputStream;->writeMessage(ILcom/google/protobuf/MessageLite;)V
 
-    .line 6928
+    .line 8313
     :cond_3
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->registrationElement_:Lcom/kik/entity/model/ElementCommon$RegistrationElement;
 
     if-eqz v0, :cond_4
 
-    .line 6929
+    .line 8314
     const/16 v0, 0x67
 
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->j()Lcom/kik/entity/model/ElementCommon$RegistrationElement;
@@ -2157,13 +2368,13 @@
 
     invoke-virtual {p1, v0, v1}, Lcom/google/protobuf/CodedOutputStream;->writeMessage(ILcom/google/protobuf/MessageLite;)V
 
-    .line 6931
+    .line 8316
     :cond_4
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->bylineElement_:Lcom/kik/entity/model/ElementCommon$BylineElement;
 
     if-eqz v0, :cond_5
 
-    .line 6932
+    .line 8317
     const/16 v0, 0xc8
 
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->l()Lcom/kik/entity/model/ElementCommon$BylineElement;
@@ -2172,13 +2383,13 @@
 
     invoke-virtual {p1, v0, v1}, Lcom/google/protobuf/CodedOutputStream;->writeMessage(ILcom/google/protobuf/MessageLite;)V
 
-    .line 6934
+    .line 8319
     :cond_5
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->ratingSummary_:Lcom/kik/entity/model/ElementCommon$RatingSummary;
 
     if-eqz v0, :cond_6
 
-    .line 6935
+    .line 8320
     const/16 v0, 0xc9
 
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->n()Lcom/kik/entity/model/ElementCommon$RatingSummary;
@@ -2187,7 +2398,22 @@
 
     invoke-virtual {p1, v0, v1}, Lcom/google/protobuf/CodedOutputStream;->writeMessage(ILcom/google/protobuf/MessageLite;)V
 
-    .line 6937
+    .line 8322
     :cond_6
+    iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityBot;->trusted_:Lcom/kik/entity/model/ElementCommon$TrustedElement;
+
+    if-eqz v0, :cond_7
+
+    .line 8323
+    const/16 v0, 0xca
+
+    invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityBot;->p()Lcom/kik/entity/model/ElementCommon$TrustedElement;
+
+    move-result-object v1
+
+    invoke-virtual {p1, v0, v1}, Lcom/google/protobuf/CodedOutputStream;->writeMessage(ILcom/google/protobuf/MessageLite;)V
+
+    .line 8325
+    :cond_7
     return-void
 .end method

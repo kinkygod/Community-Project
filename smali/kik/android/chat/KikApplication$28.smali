@@ -32,24 +32,24 @@
 
 .field final synthetic b:Lkik/core/interfaces/ICommunication;
 
-.field final synthetic c:Lkik/core/datatypes/ac;
+.field final synthetic c:Lkik/core/datatypes/ab;
 
 .field final synthetic d:Lkik/android/chat/KikApplication;
 
 
 # direct methods
-.method constructor <init>(Lkik/android/chat/KikApplication;Lcom/kik/events/d;Lkik/core/interfaces/ICommunication;Lkik/core/datatypes/ac;)V
+.method constructor <init>(Lkik/android/chat/KikApplication;Lcom/kik/events/d;Lkik/core/interfaces/ICommunication;Lkik/core/datatypes/ab;)V
     .locals 0
 
     .prologue
-    .line 2272
+    .line 2286
     iput-object p1, p0, Lkik/android/chat/KikApplication$28;->d:Lkik/android/chat/KikApplication;
 
     iput-object p2, p0, Lkik/android/chat/KikApplication$28;->a:Lcom/kik/events/d;
 
     iput-object p3, p0, Lkik/android/chat/KikApplication$28;->b:Lkik/core/interfaces/ICommunication;
 
-    iput-object p4, p0, Lkik/android/chat/KikApplication$28;->c:Lkik/core/datatypes/ac;
+    iput-object p4, p0, Lkik/android/chat/KikApplication$28;->c:Lkik/core/datatypes/ab;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -62,22 +62,22 @@
     .locals 3
 
     .prologue
-    .line 2272
-    .line 3277
+    .line 2286
+    .line 3291
     iget-object v0, p0, Lkik/android/chat/KikApplication$28;->a:Lcom/kik/events/d;
 
     invoke-virtual {v0}, Lcom/kik/events/d;->a()V
 
-    .line 3278
+    .line 3292
     iget-object v0, p0, Lkik/android/chat/KikApplication$28;->b:Lkik/core/interfaces/ICommunication;
 
     new-instance v1, Lkik/core/net/outgoing/UserProfileRequest$a;
 
     invoke-direct {v1}, Lkik/core/net/outgoing/UserProfileRequest$a;-><init>()V
 
-    iget-object v2, p0, Lkik/android/chat/KikApplication$28;->c:Lkik/core/datatypes/ac;
+    iget-object v2, p0, Lkik/android/chat/KikApplication$28;->c:Lkik/core/datatypes/ab;
 
-    iget-object v2, v2, Lkik/core/datatypes/ac;->h:Ljava/lang/Boolean;
+    iget-object v2, v2, Lkik/core/datatypes/ab;->h:Ljava/lang/Boolean;
 
     invoke-virtual {v1, v2}, Lkik/core/net/outgoing/UserProfileRequest$a;->a(Ljava/lang/Boolean;)Lkik/core/net/outgoing/UserProfileRequest$a;
 
@@ -89,6 +89,6 @@
 
     invoke-interface {v0, v1}, Lkik/core/interfaces/ICommunication;->a(Lkik/core/net/outgoing/j;)Lcom/kik/events/Promise;
 
-    .line 2272
+    .line 2286
     return-void
 .end method

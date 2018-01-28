@@ -1,49 +1,72 @@
-.class final synthetic Lcom/kik/view/adapters/q;
-.super Ljava/lang/Object;
-
-# interfaces
-.implements Landroid/view/View$OnClickListener;
+.class public final Lcom/kik/view/adapters/q;
+.super Lcom/kik/view/adapters/x;
+.source "SourceFile"
 
 
 # instance fields
-.field private final a:Lcom/kik/view/adapters/p;
+.field private a:Ljava/lang/String;
 
-.field private final b:I
+.field private b:Ljava/lang/String;
 
 
 # direct methods
-.method private constructor <init>(Lcom/kik/view/adapters/p;I)V
-    .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lcom/kik/view/adapters/q;->a:Lcom/kik/view/adapters/p;
-
-    iput p2, p0, Lcom/kik/view/adapters/q;->b:I
-
-    return-void
-.end method
-
-.method public static a(Lcom/kik/view/adapters/p;I)Landroid/view/View$OnClickListener;
+.method public constructor <init>(Landroid/content/Context;)V
     .locals 1
 
-    new-instance v0, Lcom/kik/view/adapters/q;
+    .prologue
+    .line 16
+    invoke-direct {p0, p1}, Lcom/kik/view/adapters/x;-><init>(Landroid/content/Context;)V
 
-    invoke-direct {v0, p0, p1}, Lcom/kik/view/adapters/q;-><init>(Lcom/kik/view/adapters/p;I)V
+    .line 17
+    const v0, 0x7f090250
 
-    return-object v0
+    invoke-virtual {p1, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/kik/view/adapters/q;->a:Ljava/lang/String;
+
+    .line 18
+    const v0, 0x7f0903ab
+
+    invoke-virtual {p1, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/String;->toUpperCase()Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/kik/view/adapters/q;->b:Ljava/lang/String;
+
+    .line 19
+    return-void
 .end method
 
 
 # virtual methods
-.method public final onClick(Landroid/view/View;)V
-    .locals 2
+.method public final a(Landroid/widget/Adapter;)V
+    .locals 1
 
-    iget-object v0, p0, Lcom/kik/view/adapters/q;->a:Lcom/kik/view/adapters/p;
+    .prologue
+    .line 27
+    iget-object v0, p0, Lcom/kik/view/adapters/q;->a:Ljava/lang/String;
 
-    iget v1, p0, Lcom/kik/view/adapters/q;->b:I
+    invoke-super {p0, v0, p1}, Lcom/kik/view/adapters/x;->f(Ljava/lang/String;Landroid/widget/Adapter;)V
 
-    invoke-static {v0, v1}, Lcom/kik/view/adapters/p;->a(Lcom/kik/view/adapters/p;I)V
+    .line 28
+    return-void
+.end method
 
+.method public final b(Landroid/widget/Adapter;)V
+    .locals 1
+
+    .prologue
+    .line 40
+    iget-object v0, p0, Lcom/kik/view/adapters/q;->b:Ljava/lang/String;
+
+    invoke-super {p0, v0, p1}, Lcom/kik/view/adapters/x;->d(Ljava/lang/String;Landroid/widget/Adapter;)V
+
+    .line 41
     return-void
 .end method

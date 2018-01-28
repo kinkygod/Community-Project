@@ -71,11 +71,11 @@
 
     iget-object v1, p0, Lkik/android/b/e$1;->c:Lkik/android/b/e;
 
-    invoke-static {v1}, Lkik/android/b/e;->a(Lkik/android/b/e;)Lkik/core/datatypes/ac;
+    invoke-static {v1}, Lkik/android/b/e;->a(Lkik/android/b/e;)Lkik/core/datatypes/ab;
 
     move-result-object v1
 
-    iget-object v1, v1, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
+    iget-object v1, v1, Lkik/core/datatypes/ab;->c:Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -83,11 +83,11 @@
 
     iget-object v3, p0, Lkik/android/b/e$1;->c:Lkik/android/b/e;
 
-    invoke-static {v3}, Lkik/android/b/e;->a(Lkik/android/b/e;)Lkik/core/datatypes/ac;
+    invoke-static {v3}, Lkik/android/b/e;->a(Lkik/android/b/e;)Lkik/core/datatypes/ab;
 
     move-result-object v3
 
-    iget-object v3, v3, Lkik/core/datatypes/ac;->d:Ljava/lang/String;
+    iget-object v3, v3, Lkik/core/datatypes/ab;->d:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -101,11 +101,11 @@
 
     iget-object v3, p0, Lkik/android/b/e$1;->c:Lkik/android/b/e;
 
-    invoke-static {v3}, Lkik/android/b/e;->a(Lkik/android/b/e;)Lkik/core/datatypes/ac;
+    invoke-static {v3}, Lkik/android/b/e;->a(Lkik/android/b/e;)Lkik/core/datatypes/ab;
 
     move-result-object v3
 
-    iget-object v3, v3, Lkik/core/datatypes/ac;->e:Ljava/lang/String;
+    iget-object v3, v3, Lkik/core/datatypes/ab;->e:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -117,11 +117,11 @@
 
     iget-object v3, p0, Lkik/android/b/e$1;->c:Lkik/android/b/e;
 
-    invoke-static {v3}, Lkik/android/b/e;->a(Lkik/android/b/e;)Lkik/core/datatypes/ac;
+    invoke-static {v3}, Lkik/android/b/e;->a(Lkik/android/b/e;)Lkik/core/datatypes/ab;
 
     move-result-object v3
 
-    iget-object v3, v3, Lkik/core/datatypes/ac;->f:Ljava/lang/String;
+    iget-object v3, v3, Lkik/core/datatypes/ab;->f:Ljava/lang/String;
 
     invoke-direct {v0, v1, v2, v3}, Lcom/kik/cards/util/UserDataParcelable;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 

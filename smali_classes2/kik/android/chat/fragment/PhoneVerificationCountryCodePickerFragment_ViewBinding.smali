@@ -22,7 +22,7 @@
     iput-object p1, p0, Lkik/android/chat/fragment/PhoneVerificationCountryCodePickerFragment_ViewBinding;->a:Lkik/android/chat/fragment/PhoneVerificationCountryCodePickerFragment;
 
     .line 23
-    const v0, 0x7f100216
+    const v0, 0x7f100218
 
     const-string v1, "field \'_resultsList\'"
 
@@ -37,7 +37,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/PhoneVerificationCountryCodePickerFragment;->_resultsList:Landroid/support/v7/widget/RecyclerView;
 
     .line 24
-    const v0, 0x7f100215
+    const v0, 0x7f100217
 
     const-string v1, "field \'_searchView\'"
 

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/vm/profile/cs;
+.implements Lkik/android/chat/vm/profile/dd;
 
 
 # direct methods
@@ -19,6 +19,30 @@
 
 
 # virtual methods
+.method public aC_()Z
+    .locals 1
+
+    .prologue
+    .line 47
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public final ag_()J
+    .locals 2
+
+    .prologue
+    .line 23
+    invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
+
+    move-result v0
+
+    int-to-long v0, v0
+
+    return-wide v0
+.end method
+
 .method public b()Lrx/d;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
@@ -73,21 +97,7 @@
     return-object v0
 .end method
 
-.method public final j()J
-    .locals 2
-
-    .prologue
-    .line 23
-    invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
-
-    move-result v0
-
-    int-to-long v0, v0
-
-    return-wide v0
-.end method
-
-.method public k()Z
+.method public j()Z
     .locals 1
 
     .prologue
@@ -97,17 +107,7 @@
     return v0
 .end method
 
-.method public l()Z
-    .locals 1
-
-    .prologue
-    .line 47
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public final m()Lrx/d;
+.method public final l()Lrx/d;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -121,7 +121,7 @@
 
     .prologue
     .line 53
-    invoke-virtual {p0}, Lkik/android/chat/vm/profile/a;->k()Z
+    invoke-virtual {p0}, Lkik/android/chat/vm/profile/a;->j()Z
 
     move-result v0
 
@@ -144,7 +144,7 @@
 
     .line 57
     :cond_0
-    invoke-virtual {p0}, Lkik/android/chat/vm/profile/a;->l()Z
+    invoke-virtual {p0}, Lkik/android/chat/vm/profile/a;->aC_()Z
 
     move-result v0
 
@@ -190,7 +190,7 @@
     goto :goto_0
 .end method
 
-.method public n()Lrx/d;
+.method public m()Lrx/d;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {

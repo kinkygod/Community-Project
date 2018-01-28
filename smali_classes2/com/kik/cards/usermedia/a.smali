@@ -9,11 +9,11 @@
 # instance fields
 .field private a:Lcom/kik/cards/web/a;
 
-.field private b:Lkik/core/interfaces/ae;
+.field private b:Lkik/core/interfaces/ad;
 
 
 # direct methods
-.method public constructor <init>(Lcom/kik/cards/web/a;Lkik/core/interfaces/ae;)V
+.method public constructor <init>(Lcom/kik/cards/web/a;Lkik/core/interfaces/ad;)V
     .locals 0
 
     .prologue
@@ -24,7 +24,7 @@
     iput-object p1, p0, Lcom/kik/cards/usermedia/a;->a:Lcom/kik/cards/web/a;
 
     .line 30
-    iput-object p2, p0, Lcom/kik/cards/usermedia/a;->b:Lkik/core/interfaces/ae;
+    iput-object p2, p0, Lcom/kik/cards/usermedia/a;->b:Lkik/core/interfaces/ad;
 
     .line 31
     return-void
@@ -137,12 +137,12 @@
     goto :goto_2
 .end method
 
-.method static synthetic a(Lcom/kik/cards/usermedia/a;)Lkik/core/interfaces/ae;
+.method static synthetic a(Lcom/kik/cards/usermedia/a;)Lkik/core/interfaces/ad;
     .locals 1
 
     .prologue
     .line 22
-    iget-object v0, p0, Lcom/kik/cards/usermedia/a;->b:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lcom/kik/cards/usermedia/a;->b:Lkik/core/interfaces/ad;
 
     return-object v0
 .end method

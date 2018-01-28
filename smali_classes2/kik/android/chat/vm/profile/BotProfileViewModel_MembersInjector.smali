@@ -3,16 +3,16 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/b;
+.implements Ldagger/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/b",
+        "Ldagger/b",
         "<",
-        "Lkik/android/chat/vm/profile/l;",
+        "Lkik/android/chat/vm/profile/x;",
         ">;"
     }
 .end annotation
@@ -61,7 +61,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/x",
+            "Lkik/core/interfaces/w",
             "<",
             "Landroid/graphics/Bitmap;",
             ">;>;"
@@ -129,7 +129,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/w;",
+            "Lkik/core/interfaces/v;",
             ">;"
         }
     .end annotation
@@ -162,7 +162,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ae;",
+            "Lkik/core/interfaces/ad;",
             ">;"
         }
     .end annotation
@@ -184,7 +184,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/android/chat/vm/profile/bm;",
+            "Lkik/android/chat/vm/profile/by;",
             ">;"
         }
     .end annotation
@@ -237,7 +237,7 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/x",
+            "Lkik/core/interfaces/w",
             "<",
             "Landroid/graphics/Bitmap;",
             ">;>;",
@@ -263,7 +263,7 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/w;",
+            "Lkik/core/interfaces/v;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -275,7 +275,7 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ae;",
+            "Lkik/core/interfaces/ad;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -283,7 +283,7 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/android/chat/vm/profile/bm;",
+            "Lkik/android/chat/vm/profile/by;",
             ">;)V"
         }
     .end annotation
@@ -555,7 +555,7 @@
     return-void
 .end method
 
-.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)La/b;
+.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
     .locals 16
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -574,7 +574,7 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/x",
+            "Lkik/core/interfaces/w",
             "<",
             "Landroid/graphics/Bitmap;",
             ">;>;",
@@ -600,7 +600,7 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/w;",
+            "Lkik/core/interfaces/v;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -612,7 +612,7 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ae;",
+            "Lkik/core/interfaces/ad;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -620,11 +620,11 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/android/chat/vm/profile/bm;",
+            "Lkik/android/chat/vm/profile/by;",
             ">;)",
-            "La/b",
+            "Ldagger/b",
             "<",
-            "Lkik/android/chat/vm/profile/l;",
+            "Lkik/android/chat/vm/profile/x;",
             ">;"
         }
     .end annotation
@@ -670,12 +670,12 @@
 
 
 # virtual methods
-.method public final synthetic a(Ljava/lang/Object;)V
+.method public final synthetic injectMembers(Ljava/lang/Object;)V
     .locals 2
 
     .prologue
     .line 22
-    check-cast p1, Lkik/android/chat/vm/profile/l;
+    check-cast p1, Lkik/android/chat/vm/profile/x;
 
     .line 1142
     if-nez p1, :cond_0
@@ -724,9 +724,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/interfaces/x;
+    check-cast v0, Lkik/core/interfaces/w;
 
-    iput-object v0, p1, Lkik/android/chat/vm/profile/b;->f:Lkik/core/interfaces/x;
+    iput-object v0, p1, Lkik/android/chat/vm/profile/b;->f:Lkik/core/interfaces/w;
 
     .line 1150
     iget-object v0, p0, Lkik/android/chat/vm/profile/BotProfileViewModel_MembersInjector;->f:Ljavax/inject/Provider;
@@ -770,7 +770,7 @@
 
     check-cast v0, Lcom/kik/core/domain/users/a;
 
-    iput-object v0, p1, Lkik/android/chat/vm/profile/n;->k:Lcom/kik/core/domain/users/a;
+    iput-object v0, p1, Lkik/android/chat/vm/profile/z;->k:Lcom/kik/core/domain/users/a;
 
     .line 1154
     iget-object v0, p0, Lkik/android/chat/vm/profile/BotProfileViewModel_MembersInjector;->d:Ljavax/inject/Provider;
@@ -781,7 +781,7 @@
 
     check-cast v0, Lkik/core/interfaces/IConversation;
 
-    iput-object v0, p1, Lkik/android/chat/vm/profile/n;->l:Lkik/core/interfaces/IConversation;
+    iput-object v0, p1, Lkik/android/chat/vm/profile/z;->l:Lkik/core/interfaces/IConversation;
 
     .line 1155
     iget-object v0, p0, Lkik/android/chat/vm/profile/BotProfileViewModel_MembersInjector;->c:Ljavax/inject/Provider;
@@ -792,7 +792,7 @@
 
     check-cast v0, Lcom/kik/android/Mixpanel;
 
-    iput-object v0, p1, Lkik/android/chat/vm/profile/n;->m:Lcom/kik/android/Mixpanel;
+    iput-object v0, p1, Lkik/android/chat/vm/profile/z;->m:Lcom/kik/android/Mixpanel;
 
     .line 1156
     iget-object v0, p0, Lkik/android/chat/vm/profile/BotProfileViewModel_MembersInjector;->i:Ljavax/inject/Provider;
@@ -803,7 +803,7 @@
 
     check-cast v0, Lkik/android/videochat/c;
 
-    iput-object v0, p1, Lkik/android/chat/vm/profile/n;->n:Lkik/android/videochat/c;
+    iput-object v0, p1, Lkik/android/chat/vm/profile/z;->n:Lkik/android/videochat/c;
 
     .line 1157
     iget-object v0, p0, Lkik/android/chat/vm/profile/BotProfileViewModel_MembersInjector;->e:Ljavax/inject/Provider;
@@ -812,9 +812,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/interfaces/x;
+    check-cast v0, Lkik/core/interfaces/w;
 
-    iput-object v0, p1, Lkik/android/chat/vm/profile/n;->o:Lkik/core/interfaces/x;
+    iput-object v0, p1, Lkik/android/chat/vm/profile/z;->o:Lkik/core/interfaces/w;
 
     .line 1158
     iget-object v0, p0, Lkik/android/chat/vm/profile/BotProfileViewModel_MembersInjector;->j:Ljavax/inject/Provider;
@@ -825,7 +825,7 @@
 
     check-cast v0, Lkik/core/interfaces/b;
 
-    iput-object v0, p1, Lkik/android/chat/vm/profile/n;->p:Lkik/core/interfaces/b;
+    iput-object v0, p1, Lkik/android/chat/vm/profile/z;->p:Lkik/core/interfaces/b;
 
     .line 1159
     iget-object v0, p0, Lkik/android/chat/vm/profile/BotProfileViewModel_MembersInjector;->k:Ljavax/inject/Provider;
@@ -834,9 +834,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/interfaces/w;
+    check-cast v0, Lkik/core/interfaces/v;
 
-    iput-object v0, p1, Lkik/android/chat/vm/profile/n;->q:Lkik/core/interfaces/w;
+    iput-object v0, p1, Lkik/android/chat/vm/profile/z;->q:Lkik/core/interfaces/v;
 
     .line 1160
     iget-object v0, p0, Lkik/android/chat/vm/profile/BotProfileViewModel_MembersInjector;->l:Ljavax/inject/Provider;
@@ -847,7 +847,7 @@
 
     check-cast v0, Lkik/android/util/SponsoredUsersManager;
 
-    iput-object v0, p1, Lkik/android/chat/vm/profile/n;->r:Lkik/android/util/SponsoredUsersManager;
+    iput-object v0, p1, Lkik/android/chat/vm/profile/z;->r:Lkik/android/util/SponsoredUsersManager;
 
     .line 1161
     iget-object v0, p0, Lkik/android/chat/vm/profile/BotProfileViewModel_MembersInjector;->m:Ljavax/inject/Provider;
@@ -858,7 +858,7 @@
 
     check-cast v0, Lkik/android/scan/c;
 
-    iput-object v0, p1, Lkik/android/chat/vm/profile/n;->s:Lkik/android/scan/c;
+    iput-object v0, p1, Lkik/android/chat/vm/profile/z;->s:Lkik/android/scan/c;
 
     .line 1162
     iget-object v0, p0, Lkik/android/chat/vm/profile/BotProfileViewModel_MembersInjector;->n:Ljavax/inject/Provider;
@@ -867,9 +867,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/interfaces/ae;
+    check-cast v0, Lkik/core/interfaces/ad;
 
-    iput-object v0, p1, Lkik/android/chat/vm/profile/n;->t:Lkik/core/interfaces/ae;
+    iput-object v0, p1, Lkik/android/chat/vm/profile/z;->t:Lkik/core/interfaces/ad;
 
     .line 1163
     iget-object v0, p0, Lkik/android/chat/vm/profile/BotProfileViewModel_MembersInjector;->o:Ljavax/inject/Provider;
@@ -880,7 +880,7 @@
 
     check-cast v0, Lcom/kik/core/domain/a/c;
 
-    iput-object v0, p1, Lkik/android/chat/vm/profile/n;->u:Lcom/kik/core/domain/a/c;
+    iput-object v0, p1, Lkik/android/chat/vm/profile/z;->u:Lcom/kik/core/domain/a/c;
 
     .line 1164
     iget-object v0, p0, Lkik/android/chat/vm/profile/BotProfileViewModel_MembersInjector;->p:Ljavax/inject/Provider;
@@ -889,9 +889,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/android/chat/vm/profile/bm;
+    check-cast v0, Lkik/android/chat/vm/profile/by;
 
-    iput-object v0, p1, Lkik/android/chat/vm/profile/n;->v:Lkik/android/chat/vm/profile/bm;
+    iput-object v0, p1, Lkik/android/chat/vm/profile/z;->v:Lkik/android/chat/vm/profile/by;
 
     .line 1165
     iget-object v0, p0, Lkik/android/chat/vm/profile/BotProfileViewModel_MembersInjector;->f:Ljavax/inject/Provider;
@@ -902,7 +902,7 @@
 
     check-cast v0, Lcom/kik/core/domain/users/a;
 
-    iput-object v0, p1, Lkik/android/chat/vm/profile/l;->j:Lcom/kik/core/domain/users/a;
+    iput-object v0, p1, Lkik/android/chat/vm/profile/x;->j:Lcom/kik/core/domain/users/a;
 
     .line 22
     return-void

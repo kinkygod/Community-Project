@@ -45,7 +45,7 @@
     .end annotation
 .end method
 
-.method public abstract aQ_()V
+.method public abstract aM_()V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lkik/core/net/challenge/ChallengeException;

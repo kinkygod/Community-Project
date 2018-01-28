@@ -32,9 +32,9 @@
     .end annotation
 .end field
 
-.field private final d:Lkik/core/interfaces/ae;
+.field private final d:Lkik/core/interfaces/ad;
 
-.field private final e:Lkik/core/interfaces/ah;
+.field private final e:Lkik/core/interfaces/ag;
 
 .field private final f:Lkik/core/interfaces/l;
 
@@ -42,7 +42,7 @@
 
 .field private final h:Lkik/android/util/ai;
 
-.field private i:Lkik/core/interfaces/w;
+.field private i:Lkik/core/interfaces/v;
 
 .field private j:Lcom/kik/android/Mixpanel;
 
@@ -86,7 +86,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Lkik/core/interfaces/ae;Lkik/core/interfaces/ah;Lkik/core/interfaces/l;Lkik/android/config/b;Lkik/android/util/ai;)V
+.method public constructor <init>(Lkik/core/interfaces/ad;Lkik/core/interfaces/ag;Lkik/core/interfaces/l;Lkik/android/config/b;Lkik/android/util/ai;)V
     .locals 7
 
     .prologue
@@ -117,10 +117,10 @@
     iput-object v0, p0, Lkik/android/util/SponsoredUsersManager;->m:Lcom/kik/events/e;
 
     .line 145
-    iput-object p1, p0, Lkik/android/util/SponsoredUsersManager;->d:Lkik/core/interfaces/ae;
+    iput-object p1, p0, Lkik/android/util/SponsoredUsersManager;->d:Lkik/core/interfaces/ad;
 
     .line 146
-    iput-object p2, p0, Lkik/android/util/SponsoredUsersManager;->e:Lkik/core/interfaces/ah;
+    iput-object p2, p0, Lkik/android/util/SponsoredUsersManager;->e:Lkik/core/interfaces/ag;
 
     .line 147
     iput-object p3, p0, Lkik/android/util/SponsoredUsersManager;->f:Lkik/core/interfaces/l;
@@ -371,20 +371,20 @@
     .line 2249
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lkik/android/util/SponsoredUsersManager;->i:Lkik/core/interfaces/w;
+    iget-object v2, v0, Lkik/android/util/SponsoredUsersManager;->i:Lkik/core/interfaces/v;
 
     invoke-virtual {v3}, Lkik/core/datatypes/k;->a()Ljava/lang/String;
 
     move-result-object v6
 
-    invoke-interface {v2, v6}, Lkik/core/interfaces/w;->b(Ljava/lang/String;)Z
+    invoke-interface {v2, v6}, Lkik/core/interfaces/v;->b(Ljava/lang/String;)Z
 
     move-result v6
 
     .line 2250
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lkik/android/util/SponsoredUsersManager;->i:Lkik/core/interfaces/w;
+    iget-object v2, v0, Lkik/android/util/SponsoredUsersManager;->i:Lkik/core/interfaces/v;
 
     invoke-virtual {v3}, Lkik/core/datatypes/k;->a()Ljava/lang/String;
 
@@ -392,7 +392,7 @@
 
     const/4 v15, 0x0
 
-    invoke-interface {v2, v7, v15}, Lkik/core/interfaces/w;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
+    invoke-interface {v2, v7, v15}, Lkik/core/interfaces/v;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
 
     move-result-object v2
 
@@ -434,9 +434,9 @@
     .line 2258
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lkik/android/util/SponsoredUsersManager;->i:Lkik/core/interfaces/w;
+    iget-object v3, v0, Lkik/android/util/SponsoredUsersManager;->i:Lkik/core/interfaces/v;
 
-    invoke-interface {v3, v2}, Lkik/core/interfaces/w;->a(Lkik/core/datatypes/l;)V
+    invoke-interface {v3, v2}, Lkik/core/interfaces/v;->a(Lkik/core/datatypes/l;)V
 
     .line 2234
     :cond_2
@@ -865,12 +865,12 @@
     return-object v0
 .end method
 
-.method static synthetic c(Lkik/android/util/SponsoredUsersManager;)Lkik/core/interfaces/ae;
+.method static synthetic c(Lkik/android/util/SponsoredUsersManager;)Lkik/core/interfaces/ad;
     .locals 1
 
     .prologue
     .line 48
-    iget-object v0, p0, Lkik/android/util/SponsoredUsersManager;->d:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/util/SponsoredUsersManager;->d:Lkik/core/interfaces/ad;
 
     return-object v0
 .end method
@@ -945,13 +945,13 @@
     iput-object v1, v0, Lkik/android/util/SponsoredUsersManager$PromotionData;->d:Lkik/android/util/SponsoredUsersManager$PromotionData$FetchState;
 
     .line 1168
-    iget-object v0, p0, Lkik/android/util/SponsoredUsersManager;->e:Lkik/core/interfaces/ah;
+    iget-object v0, p0, Lkik/android/util/SponsoredUsersManager;->e:Lkik/core/interfaces/ag;
 
-    invoke-interface {v0}, Lkik/core/interfaces/ah;->d()Lkik/core/datatypes/ac;
+    invoke-interface {v0}, Lkik/core/interfaces/ag;->d()Lkik/core/datatypes/ab;
 
     move-result-object v0
 
-    iget-object v0, v0, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
+    iget-object v0, v0, Lkik/core/datatypes/ab;->c:Ljava/lang/String;
 
     .line 1169
     const-string v1, "%s/v2/discovery/%s?username=%s"
@@ -1005,12 +1005,12 @@
     goto :goto_0
 .end method
 
-.method public final a(Lkik/core/interfaces/w;Lcom/kik/android/Mixpanel;)V
+.method public final a(Lkik/core/interfaces/v;Lcom/kik/android/Mixpanel;)V
     .locals 3
 
     .prologue
     .line 159
-    iput-object p1, p0, Lkik/android/util/SponsoredUsersManager;->i:Lkik/core/interfaces/w;
+    iput-object p1, p0, Lkik/android/util/SponsoredUsersManager;->i:Lkik/core/interfaces/v;
 
     .line 160
     iput-object p2, p0, Lkik/android/util/SponsoredUsersManager;->j:Lcom/kik/android/Mixpanel;
@@ -1018,9 +1018,9 @@
     .line 162
     iget-object v0, p0, Lkik/android/util/SponsoredUsersManager;->k:Lcom/kik/events/d;
 
-    iget-object v1, p0, Lkik/android/util/SponsoredUsersManager;->i:Lkik/core/interfaces/w;
+    iget-object v1, p0, Lkik/android/util/SponsoredUsersManager;->i:Lkik/core/interfaces/v;
 
-    invoke-interface {v1}, Lkik/core/interfaces/w;->e()Lcom/kik/events/c;
+    invoke-interface {v1}, Lkik/core/interfaces/v;->e()Lcom/kik/events/c;
 
     move-result-object v1
 
@@ -1169,9 +1169,9 @@
 
     iget-object v0, v0, Lkik/android/util/SponsoredUsersManager$PromotionData;->a:Ljava/util/ArrayList;
 
-    iget-object v2, p0, Lkik/android/util/SponsoredUsersManager;->i:Lkik/core/interfaces/w;
+    iget-object v2, p0, Lkik/android/util/SponsoredUsersManager;->i:Lkik/core/interfaces/v;
 
-    invoke-static {v0, v2}, Lkik/core/util/i;->b(Ljava/util/List;Lkik/core/interfaces/w;)Ljava/util/List;
+    invoke-static {v0, v2}, Lkik/core/util/i;->b(Ljava/util/List;Lkik/core/interfaces/v;)Ljava/util/List;
 
     move-result-object v0
 

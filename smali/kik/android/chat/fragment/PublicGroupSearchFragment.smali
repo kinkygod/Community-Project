@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field protected a:Lkik/android/chat/p;
+.field protected a:Lkik/android/chat/q;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -36,7 +36,7 @@
 
 .field private f:Lkik/android/chat/view/TransitionableSearchBarViewImpl;
 
-.field private g:Lkik/android/chat/vm/bu;
+.field private g:Lkik/android/chat/vm/bw;
 
 .field private h:Landroid/view/View;
 
@@ -154,15 +154,15 @@
 
     .prologue
     .line 132
-    invoke-virtual {p0}, Lkik/android/chat/fragment/PublicGroupSearchFragment;->getNavigator()Lkik/android/chat/vm/aw;
+    invoke-virtual {p0}, Lkik/android/chat/fragment/PublicGroupSearchFragment;->getNavigator()Lkik/android/chat/vm/ay;
 
     move-result-object v0
 
-    new-instance v1, Lkik/android/chat/vm/dm;
+    new-instance v1, Lkik/android/chat/vm/du;
 
-    invoke-direct {v1}, Lkik/android/chat/vm/dm;-><init>()V
+    invoke-direct {v1}, Lkik/android/chat/vm/du;-><init>()V
 
-    invoke-interface {v0, v1}, Lkik/android/chat/vm/aw;->a(Lkik/android/chat/vm/bh;)V
+    invoke-interface {v0, v1}, Lkik/android/chat/vm/ay;->a(Lkik/android/chat/vm/bk;)V
 
     .line 133
     return-void
@@ -314,12 +314,12 @@
     return-void
 .end method
 
-.method public getNavigator()Lkik/android/chat/vm/aw;
+.method public getNavigator()Lkik/android/chat/vm/ay;
     .locals 1
 
     .prologue
     .line 160
-    iget-object v0, p0, Lkik/android/chat/fragment/PublicGroupSearchFragment;->g:Lkik/android/chat/vm/bu;
+    iget-object v0, p0, Lkik/android/chat/fragment/PublicGroupSearchFragment;->g:Lkik/android/chat/vm/bw;
 
     if-nez v0, :cond_0
 
@@ -328,11 +328,11 @@
 
     invoke-direct {v0, p0, p0}, Lkik/android/chat/fragment/PublicGroupSearchFragment$1;-><init>(Lkik/android/chat/fragment/PublicGroupSearchFragment;Lkik/android/chat/fragment/KikScopedDialogFragment;)V
 
-    iput-object v0, p0, Lkik/android/chat/fragment/PublicGroupSearchFragment;->g:Lkik/android/chat/vm/bu;
+    iput-object v0, p0, Lkik/android/chat/fragment/PublicGroupSearchFragment;->g:Lkik/android/chat/vm/bw;
 
     .line 170
     :cond_0
-    iget-object v0, p0, Lkik/android/chat/fragment/PublicGroupSearchFragment;->g:Lkik/android/chat/vm/bu;
+    iget-object v0, p0, Lkik/android/chat/fragment/PublicGroupSearchFragment;->g:Lkik/android/chat/vm/bw;
 
     return-object v0
 .end method
@@ -342,7 +342,7 @@
 
     .prologue
     .line 148
-    const v0, 0x7f090610
+    const v0, 0x7f090618
 
     return v0
 .end method
@@ -495,46 +495,46 @@
     invoke-direct {v3, v0, v4, v5, v2}, Lkik/android/chat/vm/chats/publicgroups/k;-><init>(Lrx/d;Lrx/d;Lrx/d;Lkik/android/chat/vm/chats/publicgroups/k$a;)V
 
     .line 96
-    invoke-virtual {p0, v1}, Lkik/android/chat/fragment/PublicGroupSearchFragment;->attachVm(Lkik/android/chat/vm/bn;)Lkik/android/chat/vm/bn;
+    invoke-virtual {p0, v1}, Lkik/android/chat/fragment/PublicGroupSearchFragment;->attachVm(Lkik/android/chat/vm/bo;)Lkik/android/chat/vm/bo;
 
     .line 97
-    invoke-virtual {p0, v2}, Lkik/android/chat/fragment/PublicGroupSearchFragment;->attachVm(Lkik/android/chat/vm/bn;)Lkik/android/chat/vm/bn;
+    invoke-virtual {p0, v2}, Lkik/android/chat/fragment/PublicGroupSearchFragment;->attachVm(Lkik/android/chat/vm/bo;)Lkik/android/chat/vm/bo;
 
     .line 98
-    invoke-virtual {p0, v3}, Lkik/android/chat/fragment/PublicGroupSearchFragment;->attachVm(Lkik/android/chat/vm/bn;)Lkik/android/chat/vm/bn;
+    invoke-virtual {p0, v3}, Lkik/android/chat/fragment/PublicGroupSearchFragment;->attachVm(Lkik/android/chat/vm/bo;)Lkik/android/chat/vm/bo;
 
     .line 100
-    const v0, 0x7f04008e
+    const v0, 0x7f040090
 
     invoke-static {p1, v0, p2, v6}, Landroid/databinding/DataBindingUtil;->inflate(Landroid/view/LayoutInflater;ILandroid/view/ViewGroup;Z)Landroid/databinding/ViewDataBinding;
 
     move-result-object v0
 
-    check-cast v0, Lkik/android/e/ac;
+    check-cast v0, Lkik/android/e/ad;
 
     .line 101
-    invoke-virtual {v0, v1}, Lkik/android/e/ac;->a(Lkik/android/chat/vm/chats/publicgroups/h;)V
+    invoke-virtual {v0, v1}, Lkik/android/e/ad;->a(Lkik/android/chat/vm/chats/publicgroups/h;)V
 
     .line 102
-    invoke-virtual {v0, v2}, Lkik/android/e/ac;->a(Lkik/android/chat/vm/chats/publicgroups/e;)V
+    invoke-virtual {v0, v2}, Lkik/android/e/ad;->a(Lkik/android/chat/vm/chats/publicgroups/e;)V
 
     .line 103
-    invoke-virtual {v0, v3}, Lkik/android/e/ac;->a(Lkik/android/chat/vm/chats/publicgroups/c;)V
+    invoke-virtual {v0, v3}, Lkik/android/e/ad;->a(Lkik/android/chat/vm/chats/publicgroups/c;)V
 
     .line 104
-    iget-object v2, v0, Lkik/android/e/ac;->a:Lkik/android/e/dn;
+    iget-object v2, v0, Lkik/android/e/ad;->a:Lkik/android/e/dv;
 
-    invoke-virtual {v2, v3}, Lkik/android/e/dn;->a(Lkik/android/chat/vm/chats/publicgroups/c;)V
+    invoke-virtual {v2, v3}, Lkik/android/e/dv;->a(Lkik/android/chat/vm/chats/publicgroups/c;)V
 
     .line 105
-    iget-object v2, v0, Lkik/android/e/ac;->a:Lkik/android/e/dn;
+    iget-object v2, v0, Lkik/android/e/ad;->a:Lkik/android/e/dv;
 
-    iget-object v2, v2, Lkik/android/e/dn;->b:Lkik/android/e/cy;
+    iget-object v2, v2, Lkik/android/e/dv;->b:Lkik/android/e/df;
 
-    invoke-virtual {v2, v3}, Lkik/android/e/cy;->a(Lkik/android/chat/vm/chats/publicgroups/c;)V
+    invoke-virtual {v2, v3}, Lkik/android/e/df;->a(Lkik/android/chat/vm/chats/publicgroups/c;)V
 
     .line 107
-    iget-object v0, v0, Lkik/android/e/ac;->d:Lkik/android/chat/view/AnimatingSearchBarLayout;
+    iget-object v0, v0, Lkik/android/e/ad;->d:Lkik/android/chat/view/AnimatingSearchBarLayout;
 
     iput-object v0, p0, Lkik/android/chat/fragment/PublicGroupSearchFragment;->d:Lkik/android/chat/view/AnimatingSearchBarLayout;
 
@@ -609,7 +609,7 @@
 
     move-result-object v0
 
-    invoke-static {p0}, Lkik/android/chat/fragment/fb;->a(Lkik/android/chat/fragment/PublicGroupSearchFragment;)Landroid/widget/TextView$OnEditorActionListener;
+    invoke-static {p0}, Lkik/android/chat/fragment/fe;->a(Lkik/android/chat/fragment/PublicGroupSearchFragment;)Landroid/widget/TextView$OnEditorActionListener;
 
     move-result-object v1
 
@@ -651,7 +651,7 @@
     .line 131
     iget-object v0, p0, Lkik/android/chat/fragment/PublicGroupSearchFragment;->h:Landroid/view/View;
 
-    invoke-static {p0}, Lkik/android/chat/fragment/fc;->a(Lkik/android/chat/fragment/PublicGroupSearchFragment;)Landroid/view/View$OnClickListener;
+    invoke-static {p0}, Lkik/android/chat/fragment/ff;->a(Lkik/android/chat/fragment/PublicGroupSearchFragment;)Landroid/view/View$OnClickListener;
 
     move-result-object v1
 
@@ -686,16 +686,16 @@
     return-void
 .end method
 
-.method protected screenOpenedEvent()Lcom/kik/metrics/b/s;
+.method protected screenOpenedEvent()Lcom/kik/metrics/b/t;
     .locals 1
 
     .prologue
     .line 83
-    invoke-static {}, Lcom/kik/metrics/b/ap;->b()Lcom/kik/metrics/b/ap$a;
+    invoke-static {}, Lcom/kik/metrics/b/as;->b()Lcom/kik/metrics/b/as$a;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/kik/metrics/b/ap$a;->a()Lcom/kik/metrics/b/ap;
+    invoke-virtual {v0}, Lcom/kik/metrics/b/as$a;->a()Lcom/kik/metrics/b/as;
 
     move-result-object v0
 

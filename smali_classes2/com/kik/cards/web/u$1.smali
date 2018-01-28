@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/kik/cards/web/u;-><init>(Lcom/kik/storage/p;Landroid/content/Context;)V
+    value = Lcom/kik/cards/web/u;-><init>(Lcom/kik/storage/s;Landroid/content/Context;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

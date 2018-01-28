@@ -1,9 +1,9 @@
 .class public final Lcom/kik/metrics/b/x;
-.super Lcom/kik/metrics/b/av;
+.super Lcom/kik/metrics/b/ay;
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/kik/metrics/b/s;
+.implements Lcom/kik/metrics/b/t;
 
 
 # annotations
@@ -15,26 +15,26 @@
 
 
 # direct methods
-.method private constructor <init>(Lcom/kik/metrics/b/at;)V
+.method private constructor <init>(Lcom/kik/metrics/b/aw;)V
     .locals 0
 
     .prologue
     .line 20
-    invoke-direct {p0}, Lcom/kik/metrics/b/av;-><init>()V
+    invoke-direct {p0}, Lcom/kik/metrics/b/ay;-><init>()V
 
     .line 21
-    iput-object p1, p0, Lcom/kik/metrics/b/x;->a:Lcom/kik/metrics/b/at;
+    iput-object p1, p0, Lcom/kik/metrics/b/x;->a:Lcom/kik/metrics/b/aw;
 
     .line 22
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/kik/metrics/b/at;B)V
+.method synthetic constructor <init>(Lcom/kik/metrics/b/aw;B)V
     .locals 0
 
     .prologue
     .line 12
-    invoke-direct {p0, p1}, Lcom/kik/metrics/b/x;-><init>(Lcom/kik/metrics/b/at;)V
+    invoke-direct {p0, p1}, Lcom/kik/metrics/b/x;-><init>(Lcom/kik/metrics/b/aw;)V
 
     return-void
 .end method
@@ -67,7 +67,7 @@
 
     .prologue
     .line 17
-    invoke-super {p0}, Lcom/kik/metrics/b/av;->a()Ljava/util/List;
+    invoke-super {p0}, Lcom/kik/metrics/b/ay;->a()Ljava/util/List;
 
     move-result-object v0
 
@@ -79,7 +79,7 @@
 
     .prologue
     .line 34
-    const-string v0, "groupprofile_screen_opened"
+    const-string v0, "groupmembers_screen_opened"
 
     return-object v0
 .end method

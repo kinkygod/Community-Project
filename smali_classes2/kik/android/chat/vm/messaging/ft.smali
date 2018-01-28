@@ -43,27 +43,11 @@
 .method public final call(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    .prologue
-    .line 0
-    check-cast p1, Lkik/core/datatypes/e;
+    check-cast p1, [B
 
-    .line 1254
-    const/4 v0, 0x0
-
-    .line 1255
-    if-eqz p1, :cond_0
-
-    .line 1256
-    invoke-virtual {p1}, Lkik/core/datatypes/e;->e()Z
-
-    move-result v0
-
-    .line 1258
-    :cond_0
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    invoke-static {p1}, Lkik/android/chat/vm/messaging/fs;->a([B)Landroid/graphics/Bitmap;
 
     move-result-object v0
 
-    .line 0
     return-object v0
 .end method

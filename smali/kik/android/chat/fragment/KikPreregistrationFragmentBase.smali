@@ -14,17 +14,17 @@
     .end annotation
 .end field
 
-.field protected m:Lkik/core/interfaces/aa;
+.field protected m:Lkik/core/interfaces/z;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field protected n:Lkik/core/interfaces/ah;
+.field protected n:Lkik/core/interfaces/ag;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field protected o:Lkik/core/interfaces/ae;
+.field protected o:Lkik/core/interfaces/ad;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -80,7 +80,7 @@
     .line 1105
     iget-object v0, p0, Lkik/android/chat/fragment/KikPreregistrationFragmentBase;->s:Lkik/core/ab;
 
-    invoke-interface {v0}, Lkik/core/ab;->i()V
+    invoke-interface {v0}, Lkik/core/ab;->h()V
 
     .line 99
     return-void
@@ -118,7 +118,7 @@
     .line 74
     const/4 v0, 0x0
 
-    invoke-static {v0, p0}, Lkik/android/util/ca;->a(Z[Landroid/view/View;)V
+    invoke-static {v0, p0}, Lkik/android/util/cb;->a(Z[Landroid/view/View;)V
 
     return-void
 .end method
@@ -182,12 +182,12 @@
     if-ne p4, v1, :cond_1
 
     .line 85
-    invoke-static {p0}, Lkik/android/chat/fragment/cv;->a(Lkik/android/chat/fragment/KikPreregistrationFragmentBase;)Landroid/content/DialogInterface$OnClickListener;
+    invoke-static {p0}, Lkik/android/chat/fragment/cw;->a(Lkik/android/chat/fragment/KikPreregistrationFragmentBase;)Landroid/content/DialogInterface$OnClickListener;
 
     move-result-object v1
 
     .line 89
-    invoke-static {p0}, Lkik/android/chat/fragment/cw;->a(Lkik/android/chat/fragment/KikPreregistrationFragmentBase;)Landroid/content/DialogInterface$OnCancelListener;
+    invoke-static {p0}, Lkik/android/chat/fragment/cx;->a(Lkik/android/chat/fragment/KikPreregistrationFragmentBase;)Landroid/content/DialogInterface$OnCancelListener;
 
     move-result-object v2
 
@@ -226,7 +226,7 @@
     invoke-virtual {v1, v2}, Lkik/android/chat/fragment/KikDialogFragment$a;->a(Landroid/content/DialogInterface$OnCancelListener;)Lkik/android/chat/fragment/KikDialogFragment$a;
 
     .line 99
-    invoke-static {p0}, Lkik/android/chat/fragment/cx;->a(Lkik/android/chat/fragment/KikPreregistrationFragmentBase;)Landroid/content/DialogInterface$OnClickListener;
+    invoke-static {p0}, Lkik/android/chat/fragment/cy;->a(Lkik/android/chat/fragment/KikPreregistrationFragmentBase;)Landroid/content/DialogInterface$OnClickListener;
 
     move-result-object v1
 
@@ -240,7 +240,7 @@
 
     .prologue
     .line 74
-    invoke-static {p1}, Lkik/android/chat/fragment/cu;->a([Landroid/view/View;)Ljava/lang/Runnable;
+    invoke-static {p1}, Lkik/android/chat/fragment/cv;->a([Landroid/view/View;)Ljava/lang/Runnable;
 
     move-result-object v0
 

@@ -206,7 +206,10 @@
     return-void
 .end method
 
-.method protected a_()Z
+.method public abstract b()Ljava/lang/String;
+.end method
+
+.method protected b_()Z
     .locals 1
 
     .prologue
@@ -214,9 +217,6 @@
     const/4 v0, 0x1
 
     return v0
-.end method
-
-.method public abstract b()Ljava/lang/String;
 .end method
 
 .method public synthetic compareTo(Ljava/lang/Object;)I

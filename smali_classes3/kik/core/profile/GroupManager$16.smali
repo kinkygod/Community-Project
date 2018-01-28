@@ -39,7 +39,7 @@
     .locals 0
 
     .prologue
-    .line 858
+    .line 869
     iput-object p1, p0, Lkik/core/profile/GroupManager$16;->b:Lkik/core/profile/GroupManager;
 
     iput-object p2, p0, Lkik/core/profile/GroupManager$16;->a:Lkik/core/datatypes/p;
@@ -55,10 +55,10 @@
     .locals 1
 
     .prologue
-    .line 858
-    .line 1862
+    .line 869
+    .line 1873
     iget-object v0, p0, Lkik/core/profile/GroupManager$16;->a:Lkik/core/datatypes/p;
 
-    .line 858
+    .line 869
     return-object v0
 .end method

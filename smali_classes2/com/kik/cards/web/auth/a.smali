@@ -14,11 +14,11 @@
 # instance fields
 .field private final b:Lkik/core/interfaces/ICommunication;
 
-.field private final c:Lkik/core/interfaces/ae;
+.field private final c:Lkik/core/interfaces/ad;
 
-.field private final d:Lkik/core/interfaces/aa;
+.field private final d:Lkik/core/interfaces/z;
 
-.field private final e:Lkik/core/interfaces/ah;
+.field private final e:Lkik/core/interfaces/ag;
 
 .field private f:Ljava/lang/String;
 
@@ -72,7 +72,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Lkik/core/interfaces/ICommunication;Lkik/core/interfaces/ae;Lkik/core/interfaces/aa;Lkik/core/interfaces/ah;)V
+.method public constructor <init>(Lkik/core/interfaces/ICommunication;Lkik/core/interfaces/ad;Lkik/core/interfaces/z;Lkik/core/interfaces/ag;)V
     .locals 3
 
     .prologue
@@ -109,20 +109,20 @@
     iput-object p1, p0, Lcom/kik/cards/web/auth/a;->b:Lkik/core/interfaces/ICommunication;
 
     .line 111
-    iput-object p2, p0, Lcom/kik/cards/web/auth/a;->c:Lkik/core/interfaces/ae;
+    iput-object p2, p0, Lcom/kik/cards/web/auth/a;->c:Lkik/core/interfaces/ad;
 
     .line 112
-    iput-object p3, p0, Lcom/kik/cards/web/auth/a;->d:Lkik/core/interfaces/aa;
+    iput-object p3, p0, Lcom/kik/cards/web/auth/a;->d:Lkik/core/interfaces/z;
 
     .line 113
-    iput-object p4, p0, Lcom/kik/cards/web/auth/a;->e:Lkik/core/interfaces/ah;
+    iput-object p4, p0, Lcom/kik/cards/web/auth/a;->e:Lkik/core/interfaces/ag;
 
     .line 1258
-    iget-object v0, p0, Lcom/kik/cards/web/auth/a;->c:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lcom/kik/cards/web/auth/a;->c:Lkik/core/interfaces/ad;
 
     const-string v1, "kik.auth.manager.store.url"
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ae;->s(Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {v0, v1}, Lkik/core/interfaces/ad;->s(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -130,11 +130,11 @@
     iput-object v0, p0, Lcom/kik/cards/web/auth/a;->f:Ljava/lang/String;
 
     .line 1263
-    iget-object v0, p0, Lcom/kik/cards/web/auth/a;->c:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lcom/kik/cards/web/auth/a;->c:Lkik/core/interfaces/ad;
 
     const-string v1, "kik.auth.manager.store.revalidate"
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ae;->v(Ljava/lang/String;)Ljava/lang/Long;
+    invoke-interface {v0, v1}, Lkik/core/interfaces/ad;->v(Ljava/lang/String;)Ljava/lang/Long;
 
     move-result-object v0
 
@@ -146,11 +146,11 @@
     iput-wide v0, p0, Lcom/kik/cards/web/auth/a;->g:J
 
     .line 1288
-    iget-object v0, p0, Lcom/kik/cards/web/auth/a;->c:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lcom/kik/cards/web/auth/a;->c:Lkik/core/interfaces/ad;
 
     const-string v1, "kik.auth.manager.store.signature"
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ae;->s(Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {v0, v1}, Lkik/core/interfaces/ad;->s(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -158,11 +158,11 @@
     iput-object v0, p0, Lcom/kik/cards/web/auth/a;->h:Ljava/lang/String;
 
     .line 2268
-    iget-object v0, p0, Lcom/kik/cards/web/auth/a;->c:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lcom/kik/cards/web/auth/a;->c:Lkik/core/interfaces/ad;
 
     const-string v1, "kik.auth.manager.store.username.in.hash"
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ae;->s(Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {v0, v1}, Lkik/core/interfaces/ad;->s(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -170,11 +170,11 @@
     iput-object v0, p0, Lcom/kik/cards/web/auth/a;->i:Ljava/lang/String;
 
     .line 121
-    invoke-interface {p4}, Lkik/core/interfaces/ah;->d()Lkik/core/datatypes/ac;
+    invoke-interface {p4}, Lkik/core/interfaces/ag;->d()Lkik/core/datatypes/ab;
 
     move-result-object v0
 
-    iget-object v0, v0, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
+    iget-object v0, v0, Lkik/core/datatypes/ab;->c:Ljava/lang/String;
 
     invoke-direct {p0, v0}, Lcom/kik/cards/web/auth/a;->a(Ljava/lang/String;)V
 
@@ -194,9 +194,9 @@
     .line 124
     iget-object v0, p0, Lcom/kik/cards/web/auth/a;->k:Lcom/kik/events/d;
 
-    iget-object v1, p0, Lcom/kik/cards/web/auth/a;->e:Lkik/core/interfaces/ah;
+    iget-object v1, p0, Lcom/kik/cards/web/auth/a;->e:Lkik/core/interfaces/ag;
 
-    invoke-interface {v1}, Lkik/core/interfaces/ah;->a()Lcom/kik/events/c;
+    invoke-interface {v1}, Lkik/core/interfaces/ag;->a()Lcom/kik/events/c;
 
     move-result-object v1
 
@@ -611,18 +611,18 @@
     move-result-object v1
 
     .line 6327
-    iget-object v2, p0, Lcom/kik/cards/web/auth/a;->c:Lkik/core/interfaces/ae;
+    iget-object v2, p0, Lcom/kik/cards/web/auth/a;->c:Lkik/core/interfaces/ad;
 
     const-string v3, "kik.auth.gen.pub.key"
 
-    invoke-interface {v2, v3, v0}, Lkik/core/interfaces/ae;->c(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-interface {v2, v3, v0}, Lkik/core/interfaces/ad;->c(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 6328
-    iget-object v0, p0, Lcom/kik/cards/web/auth/a;->c:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lcom/kik/cards/web/auth/a;->c:Lkik/core/interfaces/ad;
 
     const-string v2, "kik.auth.gen.priv.key"
 
-    invoke-interface {v0, v2, v1}, Lkik/core/interfaces/ae;->c(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-interface {v0, v2, v1}, Lkik/core/interfaces/ad;->c(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 60
     return-void
@@ -646,18 +646,18 @@
     if-nez v0, :cond_0
 
     .line 3333
-    iget-object v0, p0, Lcom/kik/cards/web/auth/a;->c:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lcom/kik/cards/web/auth/a;->c:Lkik/core/interfaces/ad;
 
     const-string v1, "kik.auth.gen.pub.key"
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ae;->c(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->c(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 3334
-    iget-object v0, p0, Lcom/kik/cards/web/auth/a;->c:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lcom/kik/cards/web/auth/a;->c:Lkik/core/interfaces/ad;
 
     const-string v1, "kik.auth.gen.priv.key"
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ae;->c(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->c(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 280
     invoke-direct {p0}, Lcom/kik/cards/web/auth/a;->d()V
@@ -666,13 +666,13 @@
     iput-object p1, p0, Lcom/kik/cards/web/auth/a;->i:Ljava/lang/String;
 
     .line 282
-    iget-object v0, p0, Lcom/kik/cards/web/auth/a;->c:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lcom/kik/cards/web/auth/a;->c:Lkik/core/interfaces/ad;
 
     const-string v1, "kik.auth.manager.store.username.in.hash"
 
     iget-object v2, p0, Lcom/kik/cards/web/auth/a;->i:Ljava/lang/String;
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ae;->c(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->c(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 284
     :cond_0
@@ -686,9 +686,9 @@
     const/4 v0, 0x0
 
     .line 351
-    iget-object v1, p0, Lcom/kik/cards/web/auth/a;->c:Lkik/core/interfaces/ae;
+    iget-object v1, p0, Lcom/kik/cards/web/auth/a;->c:Lkik/core/interfaces/ad;
 
-    invoke-static {v1}, Lkik/core/z;->a(Lkik/core/interfaces/ae;)Z
+    invoke-static {v1}, Lkik/core/z;->a(Lkik/core/interfaces/ad;)Z
 
     move-result v1
 
@@ -765,12 +765,12 @@
     goto :goto_0
 .end method
 
-.method static synthetic b(Lcom/kik/cards/web/auth/a;)Lkik/core/interfaces/ah;
+.method static synthetic b(Lcom/kik/cards/web/auth/a;)Lkik/core/interfaces/ag;
     .locals 1
 
     .prologue
     .line 60
-    iget-object v0, p0, Lcom/kik/cards/web/auth/a;->e:Lkik/core/interfaces/ah;
+    iget-object v0, p0, Lcom/kik/cards/web/auth/a;->e:Lkik/core/interfaces/ag;
 
     return-object v0
 .end method
@@ -881,9 +881,9 @@
 
     .line 168
     :goto_0
-    iget-object v1, p0, Lcom/kik/cards/web/auth/a;->c:Lkik/core/interfaces/ae;
+    iget-object v1, p0, Lcom/kik/cards/web/auth/a;->c:Lkik/core/interfaces/ad;
 
-    invoke-static {v1}, Lkik/core/z;->b(Lkik/core/interfaces/ae;)Lkik/core/z;
+    invoke-static {v1}, Lkik/core/z;->b(Lkik/core/interfaces/ad;)Lkik/core/z;
 
     move-result-object v1
 
@@ -1009,16 +1009,16 @@
 
     .prologue
     .line 251
-    iget-object v0, p0, Lcom/kik/cards/web/auth/a;->c:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lcom/kik/cards/web/auth/a;->c:Lkik/core/interfaces/ad;
 
     const-string v1, "kik.auth.manager.store.url"
 
     iget-object v2, p0, Lcom/kik/cards/web/auth/a;->f:Ljava/lang/String;
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ae;->c(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->c(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 252
-    iget-object v0, p0, Lcom/kik/cards/web/auth/a;->c:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lcom/kik/cards/web/auth/a;->c:Lkik/core/interfaces/ad;
 
     const-string v1, "kik.auth.manager.store.revalidate"
 
@@ -1028,16 +1028,16 @@
 
     move-result-object v2
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;Ljava/lang/Long;)Z
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Long;)Z
 
     .line 253
-    iget-object v0, p0, Lcom/kik/cards/web/auth/a;->c:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lcom/kik/cards/web/auth/a;->c:Lkik/core/interfaces/ad;
 
     const-string v1, "kik.auth.manager.store.signature"
 
     iget-object v2, p0, Lcom/kik/cards/web/auth/a;->h:Ljava/lang/String;
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ae;->c(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->c(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 254
     return-void
@@ -1089,9 +1089,9 @@
     move-result-object v0
 
     .line 345
-    iget-object v1, p0, Lcom/kik/cards/web/auth/a;->d:Lkik/core/interfaces/aa;
+    iget-object v1, p0, Lcom/kik/cards/web/auth/a;->d:Lkik/core/interfaces/z;
 
-    invoke-interface {v1, v0}, Lkik/core/interfaces/aa;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {v1, v0}, Lkik/core/interfaces/z;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1110,11 +1110,11 @@
     .prologue
     .line 385
     .line 3467
-    iget-object v0, p0, Lcom/kik/cards/web/auth/a;->c:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lcom/kik/cards/web/auth/a;->c:Lkik/core/interfaces/ad;
 
     const-string v1, "kik.auth.gen.pub.key"
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ae;->s(Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {v0, v1}, Lkik/core/interfaces/ad;->s(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1702,11 +1702,11 @@
     .line 432
     .line 4472
     :try_start_0
-    iget-object v0, p0, Lcom/kik/cards/web/auth/a;->c:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lcom/kik/cards/web/auth/a;->c:Lkik/core/interfaces/ad;
 
     const-string v2, "kik.auth.gen.priv.key"
 
-    invoke-interface {v0, v2}, Lkik/core/interfaces/ae;->s(Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {v0, v2}, Lkik/core/interfaces/ad;->s(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

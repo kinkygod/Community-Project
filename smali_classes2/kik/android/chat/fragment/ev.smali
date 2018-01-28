@@ -2,7 +2,7 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lrx/functions/b;
+.implements Landroid/content/DialogInterface$OnKeyListener;
 
 
 # instance fields
@@ -20,7 +20,7 @@
     return-void
 .end method
 
-.method public static a(Lkik/android/chat/fragment/ProfileEditBioDialogFragment;)Lrx/functions/b;
+.method public static a(Lkik/android/chat/fragment/ProfileEditBioDialogFragment;)Landroid/content/DialogInterface$OnKeyListener;
     .locals 1
 
     new-instance v0, Lkik/android/chat/fragment/ev;
@@ -32,14 +32,14 @@
 
 
 # virtual methods
-.method public final call(Ljava/lang/Object;)V
+.method public final onKey(Landroid/content/DialogInterface;ILandroid/view/KeyEvent;)Z
     .locals 1
 
     iget-object v0, p0, Lkik/android/chat/fragment/ev;->a:Lkik/android/chat/fragment/ProfileEditBioDialogFragment;
 
-    check-cast p1, Ljava/lang/Boolean;
+    invoke-static {v0, p2, p3}, Lkik/android/chat/fragment/ProfileEditBioDialogFragment;->a(Lkik/android/chat/fragment/ProfileEditBioDialogFragment;ILandroid/view/KeyEvent;)Z
 
-    invoke-static {v0, p1}, Lkik/android/chat/fragment/ProfileEditBioDialogFragment;->a(Lkik/android/chat/fragment/ProfileEditBioDialogFragment;Ljava/lang/Boolean;)V
+    move-result v0
 
-    return-void
+    return v0
 .end method

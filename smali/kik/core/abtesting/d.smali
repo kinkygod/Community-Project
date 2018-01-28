@@ -19,13 +19,13 @@
 
 
 # virtual methods
-.method public final a(Lkik/core/interfaces/a;Lkik/core/interfaces/s;)Ljava/util/List;
+.method public final a(Lkik/core/interfaces/a;Lkik/core/interfaces/r;)Ljava/util/List;
     .locals 10
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lkik/core/interfaces/a;",
-            "Lkik/core/interfaces/s;",
+            "Lkik/core/interfaces/r;",
             ")",
             "Ljava/util/List",
             "<",
@@ -58,7 +58,7 @@
     const-string v0, "prereg_10_6"
 
     .line 30
-    invoke-interface {p2}, Lkik/core/interfaces/s;->a()Ljava/lang/String;
+    invoke-interface {p2}, Lkik/core/interfaces/r;->a()Ljava/lang/String;
 
     move-result-object v1
 

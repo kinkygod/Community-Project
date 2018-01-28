@@ -292,7 +292,7 @@
 
     aput-object v1, v0, v5
 
-    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
     .line 513
     iget-object v0, p0, Lcom/kik/cards/usermedia/CustomGalleryActivity;->q:Ljava/util/HashMap;
@@ -337,7 +337,7 @@
 
     aput-object v1, v0, v4
 
-    invoke-static {v0}, Lkik/android/util/ca;->g([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->g([Landroid/view/View;)V
 
     .line 528
     :cond_0
@@ -450,7 +450,7 @@
 
     aput-object v3, v1, v2
 
-    invoke-static {v1}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v1}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
     .line 482
     iget-object v1, p0, Lcom/kik/cards/usermedia/CustomGalleryActivity;->g:Landroid/widget/GridView;
@@ -718,7 +718,7 @@
     iput-object v0, p0, Lcom/kik/cards/usermedia/CustomGalleryActivity;->g:Landroid/widget/GridView;
 
     .line 143
-    const v0, 0x7f10030d
+    const v0, 0x7f100308
 
     invoke-virtual {p0, v0}, Lcom/kik/cards/usermedia/CustomGalleryActivity;->findViewById(I)Landroid/view/View;
 
@@ -747,7 +747,7 @@
     iput-object v0, p0, Lcom/kik/cards/usermedia/CustomGalleryActivity;->j:Landroid/view/View;
 
     .line 147
-    const v0, 0x7f10030c
+    const v0, 0x7f100307
 
     invoke-virtual {p0, v0}, Lcom/kik/cards/usermedia/CustomGalleryActivity;->findViewById(I)Landroid/view/View;
 
@@ -891,7 +891,7 @@
 
     aput-object v1, v0, v12
 
-    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
     .line 165
     :goto_2
@@ -981,7 +981,7 @@
 
     aput-object v1, v0, v12
 
-    invoke-static {v0}, Lkik/android/util/ca;->g([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->g([Landroid/view/View;)V
 
     goto :goto_2
 .end method

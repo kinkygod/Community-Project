@@ -120,7 +120,7 @@
     return-void
 .end method
 
-.method public final aj_()V
+.method public final ak_()V
     .locals 1
 
     .prologue
@@ -130,7 +130,7 @@
     iput-object v0, p0, Lkik/android/gifs/vm/ae;->b:Lrx/functions/b;
 
     .line 27
-    invoke-super {p0}, Lkik/android/chat/vm/e;->aj_()V
+    invoke-super {p0}, Lkik/android/chat/vm/e;->ak_()V
 
     .line 28
     return-void

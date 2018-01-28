@@ -2,50 +2,48 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Landroid/widget/CompoundButton$OnCheckedChangeListener;
+.implements Lrx/functions/b;
 
 
 # instance fields
-.field private final a:Lrx/functions/b;
+.field private final a:Landroid/support/v7/widget/RecyclerView;
 
 
 # direct methods
-.method private constructor <init>(Lrx/functions/b;)V
+.method private constructor <init>(Landroid/support/v7/widget/RecyclerView;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/kik/util/bj;->a:Lrx/functions/b;
+    iput-object p1, p0, Lcom/kik/util/bj;->a:Landroid/support/v7/widget/RecyclerView;
 
     return-void
 .end method
 
-.method public static a(Lrx/functions/b;)Landroid/widget/CompoundButton$OnCheckedChangeListener;
+.method public static a(Landroid/support/v7/widget/RecyclerView;)Lrx/functions/b;
     .locals 1
 
     new-instance v0, Lcom/kik/util/bj;
 
-    invoke-direct {v0, p0}, Lcom/kik/util/bj;-><init>(Lrx/functions/b;)V
+    invoke-direct {v0, p0}, Lcom/kik/util/bj;-><init>(Landroid/support/v7/widget/RecyclerView;)V
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public final onCheckedChanged(Landroid/widget/CompoundButton;Z)V
+.method public final call(Ljava/lang/Object;)V
     .locals 2
 
-    .prologue
-    .line 0
-    iget-object v0, p0, Lcom/kik/util/bj;->a:Lrx/functions/b;
+    iget-object v0, p0, Lcom/kik/util/bj;->a:Landroid/support/v7/widget/RecyclerView;
 
-    .line 1719
-    invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    check-cast p1, Ljava/lang/Integer;
 
-    move-result-object v1
+    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
 
-    invoke-interface {v0, v1}, Lrx/functions/b;->call(Ljava/lang/Object;)V
+    move-result v1
 
-    .line 0
+    invoke-virtual {v0, v1}, Landroid/support/v7/widget/RecyclerView;->scrollToPosition(I)V
+
     return-void
 .end method

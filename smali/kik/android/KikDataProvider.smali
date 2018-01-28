@@ -16,11 +16,11 @@
 
 .field public static final f:Landroid/net/Uri;
 
-.field private static g:Lkik/core/interfaces/ae;
+.field private static g:Lkik/core/interfaces/ad;
 
-.field private static h:Lcom/kik/storage/p;
+.field private static h:Lcom/kik/storage/s;
 
-.field private static i:Lkik/core/interfaces/ah;
+.field private static i:Lkik/core/interfaces/ag;
 
 .field private static final j:Landroid/content/UriMatcher;
 
@@ -403,9 +403,9 @@
 
     .line 316
     :cond_0
-    sget-object v2, Lkik/android/KikDataProvider;->h:Lcom/kik/storage/p;
+    sget-object v2, Lkik/android/KikDataProvider;->h:Lcom/kik/storage/s;
 
-    invoke-interface {v2, v1, v0}, Lcom/kik/storage/p;->a(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
+    invoke-interface {v2, v1, v0}, Lcom/kik/storage/s;->a(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
 
     move-result-object v0
 
@@ -469,14 +469,14 @@
 
     move-result-object v1
 
-    sget-object v2, Lkik/android/KikDataProvider;->i:Lkik/core/interfaces/ah;
+    sget-object v2, Lkik/android/KikDataProvider;->i:Lkik/core/interfaces/ag;
 
     .line 276
-    invoke-interface {v2}, Lkik/core/interfaces/ah;->d()Lkik/core/datatypes/ac;
+    invoke-interface {v2}, Lkik/core/interfaces/ag;->d()Lkik/core/datatypes/ab;
 
     move-result-object v2
 
-    iget-object v2, v2, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
+    iget-object v2, v2, Lkik/core/datatypes/ab;->c:Ljava/lang/String;
 
     invoke-static {v2}, Landroid/database/DatabaseUtils;->sqlEscapeString(Ljava/lang/String;)Ljava/lang/String;
 
@@ -610,9 +610,9 @@
     .line 293
     if-eqz p3, :cond_3
 
-    sget-object v0, Lkik/android/KikDataProvider;->h:Lcom/kik/storage/p;
+    sget-object v0, Lkik/android/KikDataProvider;->h:Lcom/kik/storage/s;
 
-    invoke-interface {v0, v2}, Lcom/kik/storage/p;->a(Ljava/lang/String;)Landroid/database/Cursor;
+    invoke-interface {v0, v2}, Lcom/kik/storage/s;->a(Ljava/lang/String;)Landroid/database/Cursor;
 
     move-result-object v0
 
@@ -622,9 +622,9 @@
 
     .line 293
     :cond_3
-    sget-object v0, Lkik/android/KikDataProvider;->h:Lcom/kik/storage/p;
+    sget-object v0, Lkik/android/KikDataProvider;->h:Lcom/kik/storage/s;
 
-    invoke-interface {v0, v2, v1}, Lcom/kik/storage/p;->a(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
+    invoke-interface {v0, v2, v1}, Lcom/kik/storage/s;->a(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
 
     move-result-object v0
 
@@ -634,7 +634,7 @@
     :cond_4
     if-eqz p3, :cond_5
 
-    sget-object v0, Lkik/android/KikDataProvider;->h:Lcom/kik/storage/p;
+    sget-object v0, Lkik/android/KikDataProvider;->h:Lcom/kik/storage/s;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -654,16 +654,16 @@
 
     move-result-object v1
 
-    invoke-interface {v0, v1}, Lcom/kik/storage/p;->a(Ljava/lang/String;)Landroid/database/Cursor;
+    invoke-interface {v0, v1}, Lcom/kik/storage/s;->a(Ljava/lang/String;)Landroid/database/Cursor;
 
     move-result-object v0
 
     goto :goto_2
 
     :cond_5
-    sget-object v0, Lkik/android/KikDataProvider;->h:Lcom/kik/storage/p;
+    sget-object v0, Lkik/android/KikDataProvider;->h:Lcom/kik/storage/s;
 
-    invoke-interface {v0, v2, v1}, Lcom/kik/storage/p;->a(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
+    invoke-interface {v0, v2, v1}, Lcom/kik/storage/s;->a(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
 
     move-result-object v0
 
@@ -697,9 +697,9 @@
     const-string v1, "pending_in_roster = 1 AND pending_is_blocked = 0 AND is_group = 0"
 
     .line 395
-    sget-object v0, Lkik/android/KikDataProvider;->g:Lkik/core/interfaces/ae;
+    sget-object v0, Lkik/android/KikDataProvider;->g:Lkik/core/interfaces/ad;
 
-    invoke-static {v0}, Lkik/core/z;->b(Lkik/core/interfaces/ae;)Lkik/core/z;
+    invoke-static {v0}, Lkik/core/z;->b(Lkik/core/interfaces/ad;)Lkik/core/z;
 
     move-result-object v0
 
@@ -807,9 +807,9 @@
 
     .line 406
     :cond_1
-    sget-object v0, Lkik/android/KikDataProvider;->h:Lcom/kik/storage/p;
+    sget-object v0, Lkik/android/KikDataProvider;->h:Lcom/kik/storage/s;
 
-    invoke-interface {v0, v1}, Lcom/kik/storage/p;->a(Ljava/lang/String;)Landroid/database/Cursor;
+    invoke-interface {v0, v1}, Lcom/kik/storage/s;->a(Ljava/lang/String;)Landroid/database/Cursor;
 
     move-result-object v0
 
@@ -839,9 +839,9 @@
     const/4 v2, 0x0
 
     .line 370
-    sget-object v1, Lkik/android/KikDataProvider;->g:Lkik/core/interfaces/ae;
+    sget-object v1, Lkik/android/KikDataProvider;->g:Lkik/core/interfaces/ad;
 
-    invoke-static {v1}, Lkik/core/z;->b(Lkik/core/interfaces/ae;)Lkik/core/z;
+    invoke-static {v1}, Lkik/core/z;->b(Lkik/core/interfaces/ad;)Lkik/core/z;
 
     move-result-object v1
 
@@ -993,9 +993,9 @@
 
     .line 384
     :goto_1
-    sget-object v2, Lkik/android/KikDataProvider;->h:Lcom/kik/storage/p;
+    sget-object v2, Lkik/android/KikDataProvider;->h:Lcom/kik/storage/s;
 
-    invoke-interface {v2, v1, v0}, Lcom/kik/storage/p;->a(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
+    invoke-interface {v2, v1, v0}, Lcom/kik/storage/s;->a(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
 
     move-result-object v0
 
@@ -1086,18 +1086,18 @@
     return-object v1
 .end method
 
-.method public static a(Lkik/core/interfaces/ae;Lcom/kik/storage/p;Lkik/core/interfaces/ah;)V
+.method public static a(Lkik/core/interfaces/ad;Lcom/kik/storage/s;Lkik/core/interfaces/ag;)V
     .locals 0
 
     .prologue
     .line 105
-    sput-object p0, Lkik/android/KikDataProvider;->g:Lkik/core/interfaces/ae;
+    sput-object p0, Lkik/android/KikDataProvider;->g:Lkik/core/interfaces/ad;
 
     .line 106
-    sput-object p1, Lkik/android/KikDataProvider;->h:Lcom/kik/storage/p;
+    sput-object p1, Lkik/android/KikDataProvider;->h:Lcom/kik/storage/s;
 
     .line 107
-    sput-object p2, Lkik/android/KikDataProvider;->i:Lkik/core/interfaces/ah;
+    sput-object p2, Lkik/android/KikDataProvider;->i:Lkik/core/interfaces/ag;
 
     .line 108
     return-void
@@ -1155,14 +1155,14 @@
 
     move-result-object v0
 
-    sget-object v1, Lkik/android/KikDataProvider;->i:Lkik/core/interfaces/ah;
+    sget-object v1, Lkik/android/KikDataProvider;->i:Lkik/core/interfaces/ag;
 
     .line 332
-    invoke-interface {v1}, Lkik/core/interfaces/ah;->d()Lkik/core/datatypes/ac;
+    invoke-interface {v1}, Lkik/core/interfaces/ag;->d()Lkik/core/datatypes/ab;
 
     move-result-object v1
 
-    iget-object v1, v1, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
+    iget-object v1, v1, Lkik/core/datatypes/ab;->c:Ljava/lang/String;
 
     invoke-static {v1}, Landroid/database/DatabaseUtils;->sqlEscapeString(Ljava/lang/String;)Ljava/lang/String;
 
@@ -1180,9 +1180,9 @@
     if-nez p1, :cond_0
 
     .line 334
-    sget-object v1, Lkik/android/KikDataProvider;->h:Lcom/kik/storage/p;
+    sget-object v1, Lkik/android/KikDataProvider;->h:Lcom/kik/storage/s;
 
-    invoke-interface {v1, v0}, Lcom/kik/storage/p;->a(Ljava/lang/String;)Landroid/database/Cursor;
+    invoke-interface {v1, v0}, Lcom/kik/storage/s;->a(Ljava/lang/String;)Landroid/database/Cursor;
 
     move-result-object v0
 
@@ -1211,9 +1211,9 @@
     move-result-object v0
 
     .line 338
-    sget-object v1, Lkik/android/KikDataProvider;->h:Lcom/kik/storage/p;
+    sget-object v1, Lkik/android/KikDataProvider;->h:Lcom/kik/storage/s;
 
-    invoke-interface {v1, v0}, Lcom/kik/storage/p;->a(Ljava/lang/String;)Landroid/database/Cursor;
+    invoke-interface {v1, v0}, Lcom/kik/storage/s;->a(Ljava/lang/String;)Landroid/database/Cursor;
 
     move-result-object v0
 
@@ -1479,9 +1479,9 @@
 
     .line 1363
     :cond_3
-    sget-object v1, Lkik/android/KikDataProvider;->h:Lcom/kik/storage/p;
+    sget-object v1, Lkik/android/KikDataProvider;->h:Lcom/kik/storage/s;
 
-    invoke-interface {v1, v0, v2}, Lcom/kik/storage/p;->a(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
+    invoke-interface {v1, v0, v2}, Lcom/kik/storage/s;->a(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
 
     move-result-object v0
 
@@ -1575,9 +1575,9 @@
 
     .line 4228
     :cond_6
-    sget-object v1, Lkik/android/KikDataProvider;->h:Lcom/kik/storage/p;
+    sget-object v1, Lkik/android/KikDataProvider;->h:Lcom/kik/storage/s;
 
-    invoke-interface {v1, v0, v2}, Lcom/kik/storage/p;->a(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
+    invoke-interface {v1, v0, v2}, Lcom/kik/storage/s;->a(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
 
     move-result-object v0
 
@@ -1697,9 +1697,9 @@
 
     .line 5239
     :cond_9
-    sget-object v1, Lkik/android/KikDataProvider;->h:Lcom/kik/storage/p;
+    sget-object v1, Lkik/android/KikDataProvider;->h:Lcom/kik/storage/s;
 
-    invoke-interface {v1, v0, v2}, Lcom/kik/storage/p;->a(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
+    invoke-interface {v1, v0, v2}, Lcom/kik/storage/s;->a(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
 
     move-result-object v0
 
@@ -1722,14 +1722,14 @@
 
     invoke-direct {v0, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    sget-object v2, Lkik/android/KikDataProvider;->i:Lkik/core/interfaces/ah;
+    sget-object v2, Lkik/android/KikDataProvider;->i:Lkik/core/interfaces/ag;
 
     .line 5345
-    invoke-interface {v2}, Lkik/core/interfaces/ah;->d()Lkik/core/datatypes/ac;
+    invoke-interface {v2}, Lkik/core/interfaces/ag;->d()Lkik/core/datatypes/ab;
 
     move-result-object v2
 
-    iget-object v2, v2, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
+    iget-object v2, v2, Lkik/core/datatypes/ab;->c:Ljava/lang/String;
 
     invoke-static {v2}, Landroid/database/DatabaseUtils;->sqlEscapeString(Ljava/lang/String;)Ljava/lang/String;
 
@@ -1747,9 +1747,9 @@
     if-nez v1, :cond_a
 
     .line 5347
-    sget-object v1, Lkik/android/KikDataProvider;->h:Lcom/kik/storage/p;
+    sget-object v1, Lkik/android/KikDataProvider;->h:Lcom/kik/storage/s;
 
-    invoke-interface {v1, v0}, Lcom/kik/storage/p;->a(Ljava/lang/String;)Landroid/database/Cursor;
+    invoke-interface {v1, v0}, Lcom/kik/storage/s;->a(Ljava/lang/String;)Landroid/database/Cursor;
 
     move-result-object v0
 
@@ -1776,9 +1776,9 @@
     move-result-object v0
 
     .line 5351
-    sget-object v1, Lkik/android/KikDataProvider;->h:Lcom/kik/storage/p;
+    sget-object v1, Lkik/android/KikDataProvider;->h:Lcom/kik/storage/s;
 
-    invoke-interface {v1, v0}, Lcom/kik/storage/p;->a(Ljava/lang/String;)Landroid/database/Cursor;
+    invoke-interface {v1, v0}, Lcom/kik/storage/s;->a(Ljava/lang/String;)Landroid/database/Cursor;
 
     move-result-object v0
 
@@ -1786,9 +1786,9 @@
 
     .line 6244
     :cond_b
-    sget-object v0, Lkik/android/KikDataProvider;->g:Lkik/core/interfaces/ae;
+    sget-object v0, Lkik/android/KikDataProvider;->g:Lkik/core/interfaces/ad;
 
-    invoke-static {v0}, Lkik/core/z;->b(Lkik/core/interfaces/ae;)Lkik/core/z;
+    invoke-static {v0}, Lkik/core/z;->b(Lkik/core/interfaces/ad;)Lkik/core/z;
 
     move-result-object v3
 
@@ -1878,9 +1878,9 @@
 
     .line 6255
     :goto_3
-    sget-object v1, Lkik/android/KikDataProvider;->h:Lcom/kik/storage/p;
+    sget-object v1, Lkik/android/KikDataProvider;->h:Lcom/kik/storage/s;
 
-    invoke-interface {v1, v0, v2}, Lcom/kik/storage/p;->a(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
+    invoke-interface {v1, v0, v2}, Lcom/kik/storage/s;->a(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
 
     move-result-object v0
 

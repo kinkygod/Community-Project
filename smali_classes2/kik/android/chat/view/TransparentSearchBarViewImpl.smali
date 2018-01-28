@@ -66,7 +66,7 @@
     invoke-super {p0, p1, p2}, Lkik/android/chat/view/SearchBarViewImpl;->a(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 37
-    const v0, 0x7f1003db
+    const v0, 0x7f1003d7
 
     invoke-virtual {p0, v0}, Lkik/android/chat/view/TransparentSearchBarViewImpl;->findViewById(I)Landroid/view/View;
 

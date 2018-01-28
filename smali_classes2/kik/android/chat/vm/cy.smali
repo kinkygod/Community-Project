@@ -6,30 +6,30 @@
 
 
 # instance fields
-.field private final a:Lkik/android/chat/vm/cr;
+.field private final a:Lkik/android/chat/vm/ct;
 
-.field private final b:Lcom/kik/events/k;
+.field private final b:Lkik/core/datatypes/l;
 
 
 # direct methods
-.method private constructor <init>(Lkik/android/chat/vm/cr;Lcom/kik/events/k;)V
+.method private constructor <init>(Lkik/android/chat/vm/ct;Lkik/core/datatypes/l;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lkik/android/chat/vm/cy;->a:Lkik/android/chat/vm/cr;
+    iput-object p1, p0, Lkik/android/chat/vm/cy;->a:Lkik/android/chat/vm/ct;
 
-    iput-object p2, p0, Lkik/android/chat/vm/cy;->b:Lcom/kik/events/k;
+    iput-object p2, p0, Lkik/android/chat/vm/cy;->b:Lkik/core/datatypes/l;
 
     return-void
 .end method
 
-.method public static a(Lkik/android/chat/vm/cr;Lcom/kik/events/k;)Ljava/lang/Runnable;
+.method public static a(Lkik/android/chat/vm/ct;Lkik/core/datatypes/l;)Ljava/lang/Runnable;
     .locals 1
 
     new-instance v0, Lkik/android/chat/vm/cy;
 
-    invoke-direct {v0, p0, p1}, Lkik/android/chat/vm/cy;-><init>(Lkik/android/chat/vm/cr;Lcom/kik/events/k;)V
+    invoke-direct {v0, p0, p1}, Lkik/android/chat/vm/cy;-><init>(Lkik/android/chat/vm/ct;Lkik/core/datatypes/l;)V
 
     return-object v0
 .end method
@@ -39,11 +39,11 @@
 .method public final run()V
     .locals 2
 
-    iget-object v0, p0, Lkik/android/chat/vm/cy;->a:Lkik/android/chat/vm/cr;
+    iget-object v0, p0, Lkik/android/chat/vm/cy;->a:Lkik/android/chat/vm/ct;
 
-    iget-object v1, p0, Lkik/android/chat/vm/cy;->b:Lcom/kik/events/k;
+    iget-object v1, p0, Lkik/android/chat/vm/cy;->b:Lkik/core/datatypes/l;
 
-    invoke-static {v0, v1}, Lkik/android/chat/vm/cr;->c(Lkik/android/chat/vm/cr;Lcom/kik/events/k;)V
+    invoke-static {v0, v1}, Lkik/android/chat/vm/ct;->a(Lkik/android/chat/vm/ct;Lkik/core/datatypes/l;)V
 
     return-void
 .end method

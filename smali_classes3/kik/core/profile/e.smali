@@ -45,12 +45,12 @@
 
     .prologue
     .line 0
-    check-cast p1, Lkik/core/datatypes/ac;
+    check-cast p1, Lkik/core/datatypes/ab;
 
     .line 1112
     if-eqz p1, :cond_0
 
-    iget-object v0, p1, Lkik/core/datatypes/ac;->f:Ljava/lang/String;
+    iget-object v0, p1, Lkik/core/datatypes/ab;->f:Ljava/lang/String;
 
     if-nez v0, :cond_1
 

@@ -140,7 +140,7 @@
 
 
 # virtual methods
-.method public final synthetic a(I)Lkik/android/chat/vm/ar;
+.method public final synthetic a(I)Lkik/android/chat/vm/at;
     .locals 1
 
     .prologue
@@ -152,15 +152,15 @@
     return-object v0
 .end method
 
-.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
     .locals 3
 
     .prologue
     .line 37
-    invoke-super {p0, p1, p2}, Lkik/android/gifs/vm/ab;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    invoke-super {p0, p1, p2}, Lkik/android/gifs/vm/ab;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 39
-    invoke-virtual {p0}, Lkik/android/gifs/vm/l;->ab_()Lrx/f/b;
+    invoke-virtual {p0}, Lkik/android/gifs/vm/l;->ad_()Lrx/f/b;
 
     move-result-object v0
 
@@ -192,7 +192,7 @@
     invoke-virtual {v0, v1}, Lrx/f/b;->a(Lrx/k;)V
 
     .line 48
-    invoke-virtual {p0}, Lkik/android/gifs/vm/l;->ab_()Lrx/f/b;
+    invoke-virtual {p0}, Lkik/android/gifs/vm/l;->ad_()Lrx/f/b;
 
     move-result-object v0
 
@@ -298,7 +298,7 @@
     invoke-interface {v0}, Ljava/util/Map;->clear()V
 
     .line 66
-    invoke-virtual {p0}, Lkik/android/gifs/vm/l;->K_()V
+    invoke-virtual {p0}, Lkik/android/gifs/vm/l;->aF_()V
 
     .line 68
     new-instance v0, Lcom/kik/events/Promise;

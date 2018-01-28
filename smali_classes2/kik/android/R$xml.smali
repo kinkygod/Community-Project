@@ -75,13 +75,15 @@
 
 .field public static final preferences_privacy:I = 0x7f07001d
 
-.field public static final settings_item_selector:I = 0x7f07001e
+.field public static final selectable_interests_pill_background_selector:I = 0x7f07001e
 
-.field public static final tell_a_friend_white_selector:I = 0x7f07001f
+.field public static final settings_item_selector:I = 0x7f07001f
 
-.field public static final topbar_button_selector:I = 0x7f070020
+.field public static final tell_a_friend_white_selector:I = 0x7f070020
 
-.field public static final topbar_button_selector_transparent:I = 0x7f070021
+.field public static final topbar_button_selector:I = 0x7f070021
+
+.field public static final topbar_button_selector_transparent:I = 0x7f070022
 
 
 # direct methods
@@ -89,7 +91,7 @@
     .locals 0
 
     .prologue
-    .line 10024
+    .line 10049
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

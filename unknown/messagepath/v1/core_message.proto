@@ -20,6 +20,7 @@ import "messagepath/v1/keyboards.proto";
 import "messagepath/v1/widgets.proto";
 import "messagepath/v1/adaptive_cards.proto";
 import "messagepath/v1/text_markdown.proto";
+import "messagepath/v1/carousels.proto";
 
 //##################################################################################################
 // Core message definition
@@ -35,6 +36,7 @@ message CoreMessage {
     // Main mutually exclusive attachments
     // 500-999
     //----------------------------------------------------------------------------------------------
+    CarouselMessageAttachment carousel_message_attachment = 515;
 
     //----------------------------------------------------------------------------------------------
     // Other non-exclusive attachments

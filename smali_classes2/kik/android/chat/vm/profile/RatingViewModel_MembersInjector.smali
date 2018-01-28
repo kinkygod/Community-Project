@@ -3,16 +3,16 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/b;
+.implements Ldagger/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/b",
+        "Ldagger/b",
         "<",
-        "Lkik/android/chat/vm/profile/dd;",
+        "Lkik/android/chat/vm/profile/dq;",
         ">;"
     }
 .end annotation
@@ -131,7 +131,7 @@
     return-void
 .end method
 
-.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;)La/b;
+.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -144,9 +144,9 @@
             "<",
             "Lcom/kik/core/domain/users/a;",
             ">;)",
-            "La/b",
+            "Ldagger/b",
             "<",
-            "Lkik/android/chat/vm/profile/dd;",
+            "Lkik/android/chat/vm/profile/dq;",
             ">;"
         }
     .end annotation
@@ -162,12 +162,12 @@
 
 
 # virtual methods
-.method public final synthetic a(Ljava/lang/Object;)V
+.method public final synthetic injectMembers(Ljava/lang/Object;)V
     .locals 2
 
     .prologue
     .line 9
-    check-cast p1, Lkik/android/chat/vm/profile/dd;
+    check-cast p1, Lkik/android/chat/vm/profile/dq;
 
     .line 1035
     if-nez p1, :cond_0
@@ -191,7 +191,7 @@
 
     check-cast v0, Lkik/core/chat/profile/IBotProfileRepository;
 
-    iput-object v0, p1, Lkik/android/chat/vm/profile/dd;->a:Lkik/core/chat/profile/IBotProfileRepository;
+    iput-object v0, p1, Lkik/android/chat/vm/profile/dq;->a:Lkik/core/chat/profile/IBotProfileRepository;
 
     .line 1039
     iget-object v0, p0, Lkik/android/chat/vm/profile/RatingViewModel_MembersInjector;->c:Ljavax/inject/Provider;
@@ -202,7 +202,7 @@
 
     check-cast v0, Lcom/kik/core/domain/users/a;
 
-    iput-object v0, p1, Lkik/android/chat/vm/profile/dd;->b:Lcom/kik/core/domain/users/a;
+    iput-object v0, p1, Lkik/android/chat/vm/profile/dq;->b:Lcom/kik/core/domain/users/a;
 
     .line 9
     return-void

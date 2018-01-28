@@ -3,16 +3,16 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/b;
+.implements Ldagger/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/b",
+        "Ldagger/b",
         "<",
-        "Lkik/android/chat/vm/profile/profileactionvm/k;",
+        "Lkik/android/chat/vm/profile/profileactionvm/p;",
         ">;"
     }
 .end annotation
@@ -163,7 +163,7 @@
     return-void
 .end method
 
-.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)La/b;
+.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -180,9 +180,9 @@
             "<",
             "Lcom/kik/core/domain/a/b;",
             ">;)",
-            "La/b",
+            "Ldagger/b",
             "<",
-            "Lkik/android/chat/vm/profile/profileactionvm/k;",
+            "Lkik/android/chat/vm/profile/profileactionvm/p;",
             ">;"
         }
     .end annotation
@@ -198,12 +198,12 @@
 
 
 # virtual methods
-.method public final synthetic a(Ljava/lang/Object;)V
+.method public final synthetic injectMembers(Ljava/lang/Object;)V
     .locals 2
 
     .prologue
     .line 10
-    check-cast p1, Lkik/android/chat/vm/profile/profileactionvm/k;
+    check-cast p1, Lkik/android/chat/vm/profile/profileactionvm/p;
 
     .line 1044
     if-nez p1, :cond_0
@@ -232,7 +232,7 @@
 
     check-cast v0, Lcom/kik/android/Mixpanel;
 
-    iput-object v0, p1, Lkik/android/chat/vm/profile/profileactionvm/k;->b:Lcom/kik/android/Mixpanel;
+    iput-object v0, p1, Lkik/android/chat/vm/profile/profileactionvm/p;->b:Lcom/kik/android/Mixpanel;
 
     .line 1050
     iget-object v0, p0, Lkik/android/chat/vm/profile/profileactionvm/JoinPrivateGroupActionItemViewModel_MembersInjector;->d:Ljavax/inject/Provider;
@@ -243,7 +243,7 @@
 
     check-cast v0, Lcom/kik/core/domain/a/b;
 
-    iput-object v0, p1, Lkik/android/chat/vm/profile/profileactionvm/k;->c:Lcom/kik/core/domain/a/b;
+    iput-object v0, p1, Lkik/android/chat/vm/profile/profileactionvm/p;->c:Lcom/kik/core/domain/a/b;
 
     .line 10
     return-void

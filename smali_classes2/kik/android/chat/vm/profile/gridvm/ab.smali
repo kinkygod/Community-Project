@@ -49,7 +49,7 @@
 
     iget-object v2, p0, Lkik/android/chat/vm/profile/gridvm/ab;->c:Lcom/kik/core/domain/a/a/c;
 
-    invoke-static {v0, v1, v2}, Lkik/android/chat/vm/profile/gridvm/t;->h(Lkik/android/chat/vm/profile/gridvm/t;Lcom/kik/core/domain/users/a/c;Lcom/kik/core/domain/a/a/c;)V
+    invoke-static {v0, v1, v2}, Lkik/android/chat/vm/profile/gridvm/t;->i(Lkik/android/chat/vm/profile/gridvm/t;Lcom/kik/core/domain/users/a/c;Lcom/kik/core/domain/a/a/c;)V
 
     return-void
 .end method

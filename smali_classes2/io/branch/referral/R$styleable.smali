@@ -58,17 +58,17 @@
     .line 80
     :array_0
     .array-data 4
-        0x7f01019a
-        0x7f01019b
-        0x7f01019c
+        0x7f0101a4
+        0x7f0101a5
+        0x7f0101a6
     .end array-data
 
     .line 84
     :array_1
     .array-data 4
-        0x7f0101f9
-        0x7f0101fa
-        0x7f0101fb
+        0x7f010203
+        0x7f010204
+        0x7f010205
     .end array-data
 .end method
 

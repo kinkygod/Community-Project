@@ -230,7 +230,7 @@
     iput-object p1, p0, Lkik/android/gallery/vm/k;->f:Landroid/database/Cursor;
 
     .line 80
-    invoke-virtual {p0}, Lkik/android/gallery/vm/k;->K_()V
+    invoke-virtual {p0}, Lkik/android/gallery/vm/k;->aF_()V
 
     .line 81
     iget-object v1, p0, Lkik/android/gallery/vm/k;->j:Lrx/subjects/a;
@@ -297,20 +297,20 @@
 
     .line 92
     :cond_0
-    invoke-virtual {p0}, Lkik/android/gallery/vm/k;->B_()Lkik/android/chat/vm/aw;
+    invoke-virtual {p0}, Lkik/android/gallery/vm/k;->F_()Lkik/android/chat/vm/ay;
 
     move-result-object v0
 
     iget-object v1, p1, Lkik/android/gallery/vm/a$a;->b:Ljava/lang/String;
 
-    invoke-interface {v0, v1}, Lkik/android/chat/vm/aw;->b(Ljava/lang/String;)V
+    invoke-interface {v0, v1}, Lkik/android/chat/vm/ay;->b(Ljava/lang/String;)V
 
     goto :goto_0
 .end method
 
 
 # virtual methods
-.method public final synthetic a(I)Lkik/android/chat/vm/ar;
+.method public final synthetic a(I)Lkik/android/chat/vm/at;
     .locals 8
 
     .prologue
@@ -423,11 +423,11 @@
     .line 217
     iget-object v0, p0, Lkik/android/gallery/vm/k;->g:Lkik/android/gallery/IGalleryCursorLoader;
 
-    invoke-virtual {p0}, Lkik/android/gallery/vm/k;->B_()Lkik/android/chat/vm/aw;
+    invoke-virtual {p0}, Lkik/android/gallery/vm/k;->F_()Lkik/android/chat/vm/ay;
 
     move-result-object v1
 
-    invoke-interface {v0, p1, p2, v1}, Lkik/android/gallery/IGalleryCursorLoader;->a(Landroid/content/Intent;ILkik/android/chat/vm/aw;)Lkik/android/gallery/a;
+    invoke-interface {v0, p1, p2, v1}, Lkik/android/gallery/IGalleryCursorLoader;->a(Landroid/content/Intent;ILkik/android/chat/vm/ay;)Lkik/android/gallery/a;
 
     move-result-object v0
 
@@ -446,11 +446,11 @@
 
     move-result-object v2
 
-    invoke-virtual {p0}, Lkik/android/gallery/vm/k;->B_()Lkik/android/chat/vm/aw;
+    invoke-virtual {p0}, Lkik/android/gallery/vm/k;->F_()Lkik/android/chat/vm/ay;
 
     move-result-object v3
 
-    invoke-virtual {v1, v2, v3}, Lkik/android/gallery/vm/a;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    invoke-virtual {v1, v2, v3}, Lkik/android/gallery/vm/a;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 222
     invoke-virtual {v1}, Lkik/android/gallery/vm/a;->l()V
@@ -491,7 +491,7 @@
     return-void
 .end method
 
-.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
     .locals 3
 
     .prologue
@@ -499,10 +499,10 @@
     invoke-interface {p1, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/gallery/vm/k;)V
 
     .line 73
-    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/c;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/c;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 75
-    invoke-virtual {p0}, Lkik/android/gallery/vm/k;->ab_()Lrx/f/b;
+    invoke-virtual {p0}, Lkik/android/gallery/vm/k;->ad_()Lrx/f/b;
 
     move-result-object v0
 
@@ -534,7 +534,7 @@
     invoke-virtual {v0, v1}, Lrx/f/b;->a(Lrx/k;)V
 
     .line 84
-    invoke-virtual {p0}, Lkik/android/gallery/vm/k;->ab_()Lrx/f/b;
+    invoke-virtual {p0}, Lkik/android/gallery/vm/k;->ad_()Lrx/f/b;
 
     move-result-object v0
 
@@ -604,7 +604,7 @@
     goto :goto_0
 .end method
 
-.method public final aj_()V
+.method public final ak_()V
     .locals 1
 
     .prologue
@@ -620,7 +620,7 @@
     iput-object v0, p0, Lkik/android/gallery/vm/k;->h:Lkik/android/chat/fragment/KikChatFragment$b;
 
     .line 104
-    invoke-super {p0}, Lkik/android/chat/vm/c;->aj_()V
+    invoke-super {p0}, Lkik/android/chat/vm/c;->ak_()V
 
     .line 105
     return-void
@@ -867,7 +867,7 @@
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
 
     .line 210
-    invoke-virtual {p0}, Lkik/android/gallery/vm/k;->B_()Lkik/android/chat/vm/aw;
+    invoke-virtual {p0}, Lkik/android/gallery/vm/k;->F_()Lkik/android/chat/vm/ay;
 
     move-result-object v0
 
@@ -875,7 +875,7 @@
 
     invoke-direct {v1, p0}, Lkik/android/gallery/vm/k$1;-><init>(Lkik/android/gallery/vm/k;)V
 
-    invoke-interface {v0}, Lkik/android/chat/vm/aw;->b()V
+    invoke-interface {v0}, Lkik/android/chat/vm/ay;->b()V
 
     .line 213
     return-void

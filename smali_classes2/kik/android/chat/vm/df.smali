@@ -1,43 +1,81 @@
-.class final synthetic Lkik/android/chat/vm/df;
+.class public final Lkik/android/chat/vm/df;
 .super Ljava/lang/Object;
+.source "SourceFile"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Lkik/android/chat/vm/bc;
 
 
 # instance fields
-.field private final a:Lkik/android/chat/vm/ReportDialogViewModel;
+.field private final a:Ljava/lang/String;
+
+.field private final b:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList",
+            "<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method private constructor <init>(Lkik/android/chat/vm/ReportDialogViewModel;)V
+.method public constructor <init>(Ljava/lang/String;Ljava/util/ArrayList;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Ljava/util/ArrayList",
+            "<",
+            "Ljava/lang/String;",
+            ">;)V"
+        }
+    .end annotation
 
+    .prologue
+    .line 15
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lkik/android/chat/vm/df;->a:Lkik/android/chat/vm/ReportDialogViewModel;
+    .line 16
+    iput-object p1, p0, Lkik/android/chat/vm/df;->a:Ljava/lang/String;
 
+    .line 17
+    iput-object p2, p0, Lkik/android/chat/vm/df;->b:Ljava/util/ArrayList;
+
+    .line 18
     return-void
-.end method
-
-.method public static a(Lkik/android/chat/vm/ReportDialogViewModel;)Ljava/lang/Runnable;
-    .locals 1
-
-    new-instance v0, Lkik/android/chat/vm/df;
-
-    invoke-direct {v0, p0}, Lkik/android/chat/vm/df;-><init>(Lkik/android/chat/vm/ReportDialogViewModel;)V
-
-    return-object v0
 .end method
 
 
 # virtual methods
-.method public final run()V
+.method public final a()Ljava/util/ArrayList;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/ArrayList",
+            "<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+
+    .prologue
+    .line 24
+    iget-object v0, p0, Lkik/android/chat/vm/df;->b:Ljava/util/ArrayList;
+
+    return-object v0
+.end method
+
+.method public final b()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lkik/android/chat/vm/df;->a:Lkik/android/chat/vm/ReportDialogViewModel;
+    .prologue
+    .line 30
+    iget-object v0, p0, Lkik/android/chat/vm/df;->a:Ljava/lang/String;
 
-    invoke-static {v0}, Lkik/android/chat/vm/ReportDialogViewModel;->c(Lkik/android/chat/vm/ReportDialogViewModel;)V
-
-    return-void
+    return-object v0
 .end method

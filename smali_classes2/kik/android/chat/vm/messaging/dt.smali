@@ -41,15 +41,11 @@
 
 # virtual methods
 .method public final call(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
+    .locals 1
 
-    check-cast p1, Lkik/core/chat/profile/e;
+    check-cast p1, Lkik/core/datatypes/l;
 
-    invoke-virtual {p1}, Lkik/core/chat/profile/e;->a()J
-
-    move-result-wide v0
-
-    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    invoke-virtual {p1}, Lkik/core/datatypes/l;->b()Ljava/lang/String;
 
     move-result-object v0
 

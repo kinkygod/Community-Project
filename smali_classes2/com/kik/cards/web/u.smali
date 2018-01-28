@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private final a:Lcom/kik/storage/p;
+.field private final a:Lcom/kik/storage/s;
 
 .field private final b:Landroid/support/v4/util/LruCache;
     .annotation system Ldalvik/annotation/Signature;
@@ -20,7 +20,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/kik/storage/p;Landroid/content/Context;)V
+.method public constructor <init>(Lcom/kik/storage/s;Landroid/content/Context;)V
     .locals 2
 
     .prologue
@@ -28,7 +28,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 22
-    iput-object p1, p0, Lcom/kik/cards/web/u;->a:Lcom/kik/storage/p;
+    iput-object p1, p0, Lcom/kik/cards/web/u;->a:Lcom/kik/storage/s;
 
     .line 1063
     invoke-static {p2}, Lkik/android/util/DeviceUtils;->f(Landroid/content/Context;)I
@@ -69,9 +69,9 @@
     invoke-virtual {v0, p2, p1}, Landroid/support/v4/util/LruCache;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 52
-    iget-object v0, p0, Lcom/kik/cards/web/u;->a:Lcom/kik/storage/p;
+    iget-object v0, p0, Lcom/kik/cards/web/u;->a:Lcom/kik/storage/s;
 
-    invoke-interface {v0, p1, p2}, Lcom/kik/storage/p;->c(Landroid/graphics/Bitmap;Ljava/lang/String;)V
+    invoke-interface {v0, p1, p2}, Lcom/kik/storage/s;->c(Landroid/graphics/Bitmap;Ljava/lang/String;)V
 
     goto :goto_0
 .end method

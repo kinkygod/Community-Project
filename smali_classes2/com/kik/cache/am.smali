@@ -2,7 +2,7 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lcom/kik/events/p;
+.implements Lrx/functions/g;
 
 
 # static fields
@@ -30,7 +30,7 @@
     return-void
 .end method
 
-.method public static a()Lcom/kik/events/p;
+.method public static a()Lrx/functions/g;
     .locals 1
 
     sget-object v0, Lcom/kik/cache/am;->a:Lcom/kik/cache/am;
@@ -40,14 +40,29 @@
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final call(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
+    .prologue
+    .line 0
     check-cast p1, Landroid/graphics/Bitmap;
 
-    invoke-static {p1}, Lkik/android/util/h;->b(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
+    .line 1096
+    if-eqz p1, :cond_0
+
+    const/4 v0, 0x1
+
+    :goto_0
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v0
 
+    .line 0
     return-object v0
+
+    .line 1096
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_0
 .end method

@@ -55,9 +55,9 @@
 
     iget-object v3, p0, Lcom/kik/cache/z;->d:Landroid/graphics/Bitmap;
 
-    check-cast p1, Lkik/core/datatypes/ac;
+    check-cast p1, Lkik/core/datatypes/ab;
 
-    invoke-static {v0, v1, v2, v3, p1}, Lcom/kik/cache/y;->a(Lcom/kik/cache/y;IILandroid/graphics/Bitmap;Lkik/core/datatypes/ac;)Lrx/d;
+    invoke-static {v0, v1, v2, v3, p1}, Lcom/kik/cache/y;->a(Lcom/kik/cache/y;IILandroid/graphics/Bitmap;Lkik/core/datatypes/ab;)Lrx/d;
 
     move-result-object v0
 

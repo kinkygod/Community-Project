@@ -10,7 +10,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<ItemViewModel::",
-        "Lkik/android/chat/vm/ar;",
+        "Lkik/android/chat/vm/at;",
         ">",
         "Ljava/lang/Object;",
         "Lkik/android/chat/vm/IListViewModel",

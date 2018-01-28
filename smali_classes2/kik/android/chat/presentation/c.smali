@@ -37,7 +37,7 @@
 .method public abstract a(Lkik/android/util/KeyboardManipulator;)V
 .end method
 
-.method public abstract a(Lkik/core/interfaces/aj;)V
+.method public abstract a(Lkik/core/interfaces/ai;)V
 .end method
 
 .method public abstract a(Z)V

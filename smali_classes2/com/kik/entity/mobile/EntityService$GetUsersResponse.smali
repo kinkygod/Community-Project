@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/kik/entity/mobile/EntityService$i;
+.implements Lcom/kik/entity/mobile/EntityService$j;
 
 
 # annotations
@@ -356,7 +356,7 @@
     iget-object v0, p0, Lcom/kik/entity/mobile/EntityService$GetUsersResponse;->users_:Ljava/util/List;
 
     .line 1027
-    invoke-static {}, Lcom/kik/entity/model/EntityCommon$EntityUser;->l()Lcom/google/protobuf/Parser;
+    invoke-static {}, Lcom/kik/entity/model/EntityCommon$EntityUser;->n()Lcom/google/protobuf/Parser;
 
     move-result-object v3
 
@@ -825,7 +825,7 @@
     return-object v0
 .end method
 
-.method public static h()Lcom/kik/entity/mobile/EntityService$GetUsersResponse;
+.method public static i()Lcom/kik/entity/mobile/EntityService$GetUsersResponse;
     .locals 1
 
     .prologue
@@ -835,7 +835,7 @@
     return-object v0
 .end method
 
-.method public static i()Lcom/google/protobuf/Parser;
+.method public static j()Lcom/google/protobuf/Parser;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -852,16 +852,6 @@
     sget-object v0, Lcom/kik/entity/mobile/EntityService$GetUsersResponse;->b:Lcom/google/protobuf/Parser;
 
     return-object v0
-.end method
-
-.method static synthetic j()Z
-    .locals 1
-
-    .prologue
-    .line 974
-    sget-boolean v0, Lcom/kik/entity/mobile/EntityService$GetUsersResponse;->alwaysUseFieldBuilders:Z
-
-    return v0
 .end method
 
 .method static synthetic k()Z
@@ -904,7 +894,17 @@
     return v0
 .end method
 
-.method static synthetic o()Lcom/google/protobuf/Parser;
+.method static synthetic o()Z
+    .locals 1
+
+    .prologue
+    .line 974
+    sget-boolean v0, Lcom/kik/entity/mobile/EntityService$GetUsersResponse;->alwaysUseFieldBuilders:Z
+
+    return v0
+.end method
+
+.method static synthetic p()Lcom/google/protobuf/Parser;
     .locals 1
 
     .prologue
@@ -914,7 +914,7 @@
     return-object v0
 .end method
 
-.method private p()Lcom/kik/entity/mobile/EntityService$GetUsersResponse$a;
+.method private q()Lcom/kik/entity/mobile/EntityService$GetUsersResponse$a;
     .locals 2
 
     .prologue
@@ -957,7 +957,26 @@
     return v0
 .end method
 
-.method public final c()I
+.method public final c()Ljava/util/List;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List",
+            "<",
+            "Lcom/kik/entity/model/EntityCommon$EntityUser;",
+            ">;"
+        }
+    .end annotation
+
+    .prologue
+    .line 1226
+    iget-object v0, p0, Lcom/kik/entity/mobile/EntityService$GetUsersResponse;->users_:Ljava/util/List;
+
+    return-object v0
+.end method
+
+.method public final d()I
     .locals 1
 
     .prologue
@@ -971,36 +990,23 @@
     return v0
 .end method
 
-.method public final d()Lcom/kik/entity/model/EntityCommon$EntityUser;
-    .locals 2
+.method public final e()Ljava/util/List;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List",
+            "<",
+            "Lcom/kik/ximodel/XiBareUserJid;",
+            ">;"
+        }
+    .end annotation
 
     .prologue
-    .line 1260
-    iget-object v0, p0, Lcom/kik/entity/mobile/EntityService$GetUsersResponse;->users_:Ljava/util/List;
-
-    const/4 v1, 0x0
-
-    invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/kik/entity/model/EntityCommon$EntityUser;
+    .line 1360
+    iget-object v0, p0, Lcom/kik/entity/mobile/EntityService$GetUsersResponse;->failedIds_:Ljava/util/List;
 
     return-object v0
-.end method
-
-.method public final e()I
-    .locals 1
-
-    .prologue
-    .line 1318
-    iget-object v0, p0, Lcom/kik/entity/mobile/EntityService$GetUsersResponse;->retriableIds_:Ljava/util/List;
-
-    invoke-interface {v0}, Ljava/util/List;->size()I
-
-    move-result v0
-
-    return v0
 .end method
 
 .method public final equals(Ljava/lang/Object;)Z
@@ -1164,25 +1170,30 @@
     return v0
 .end method
 
-.method public final g()I
+.method public final g()Ljava/util/List;
     .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List",
+            "<",
+            "Lcom/kik/ximodel/XiBareUserJid;",
+            ">;"
+        }
+    .end annotation
 
     .prologue
-    .line 1439
+    .line 1416
     iget-object v0, p0, Lcom/kik/entity/mobile/EntityService$GetUsersResponse;->notFoundIds_:Ljava/util/List;
 
-    invoke-interface {v0}, Ljava/util/List;->size()I
-
-    move-result v0
-
-    return v0
+    return-object v0
 .end method
 
 .method public final bridge synthetic getDefaultInstanceForType()Lcom/google/protobuf/Message;
     .locals 1
 
     .prologue
-    .line 13400
+    .line 14400
     sget-object v0, Lcom/kik/entity/mobile/EntityService$GetUsersResponse;->a:Lcom/kik/entity/mobile/EntityService$GetUsersResponse;
 
     .line 974
@@ -1193,7 +1204,7 @@
     .locals 1
 
     .prologue
-    .line 12400
+    .line 13400
     sget-object v0, Lcom/kik/entity/mobile/EntityService$GetUsersResponse;->a:Lcom/kik/entity/mobile/EntityService$GetUsersResponse;
 
     .line 974
@@ -1435,6 +1446,20 @@
     return-object v0
 .end method
 
+.method public final h()I
+    .locals 1
+
+    .prologue
+    .line 1439
+    iget-object v0, p0, Lcom/kik/entity/mobile/EntityService$GetUsersResponse;->notFoundIds_:Ljava/util/List;
+
+    invoke-interface {v0}, Ljava/util/List;->size()I
+
+    move-result v0
+
+    return v0
+.end method
+
 .method public final hashCode()I
     .locals 2
 
@@ -1476,7 +1501,7 @@
     add-int/2addr v0, v1
 
     .line 1556
-    invoke-virtual {p0}, Lcom/kik/entity/mobile/EntityService$GetUsersResponse;->c()I
+    invoke-virtual {p0}, Lcom/kik/entity/mobile/EntityService$GetUsersResponse;->d()I
 
     move-result v1
 
@@ -1500,12 +1525,15 @@
 
     add-int/2addr v0, v1
 
-    .line 1560
+    .line 9318
     :cond_1
-    invoke-virtual {p0}, Lcom/kik/entity/mobile/EntityService$GetUsersResponse;->e()I
+    iget-object v1, p0, Lcom/kik/entity/mobile/EntityService$GetUsersResponse;->retriableIds_:Ljava/util/List;
+
+    invoke-interface {v1}, Ljava/util/List;->size()I
 
     move-result v1
 
+    .line 1560
     if-lez v1, :cond_2
 
     .line 1561
@@ -1516,7 +1544,7 @@
     .line 1562
     mul-int/lit8 v0, v0, 0x35
 
-    .line 9289
+    .line 10289
     iget-object v1, p0, Lcom/kik/entity/mobile/EntityService$GetUsersResponse;->retriableIds_:Ljava/util/List;
 
     .line 1562
@@ -1542,7 +1570,7 @@
     .line 1566
     mul-int/lit8 v0, v0, 0x35
 
-    .line 9360
+    .line 10360
     iget-object v1, p0, Lcom/kik/entity/mobile/EntityService$GetUsersResponse;->failedIds_:Ljava/util/List;
 
     .line 1566
@@ -1554,7 +1582,7 @@
 
     .line 1568
     :cond_3
-    invoke-virtual {p0}, Lcom/kik/entity/mobile/EntityService$GetUsersResponse;->g()I
+    invoke-virtual {p0}, Lcom/kik/entity/mobile/EntityService$GetUsersResponse;->h()I
 
     move-result v1
 
@@ -1568,7 +1596,7 @@
     .line 1570
     mul-int/lit8 v0, v0, 0x35
 
-    .line 9416
+    .line 10416
     iget-object v1, p0, Lcom/kik/entity/mobile/EntityService$GetUsersResponse;->notFoundIds_:Ljava/util/List;
 
     .line 1570
@@ -1653,10 +1681,10 @@
     .locals 1
 
     .prologue
-    .line 10638
+    .line 11638
     sget-object v0, Lcom/kik/entity/mobile/EntityService$GetUsersResponse;->a:Lcom/kik/entity/mobile/EntityService$GetUsersResponse;
 
-    invoke-direct {v0}, Lcom/kik/entity/mobile/EntityService$GetUsersResponse;->p()Lcom/kik/entity/mobile/EntityService$GetUsersResponse$a;
+    invoke-direct {v0}, Lcom/kik/entity/mobile/EntityService$GetUsersResponse;->q()Lcom/kik/entity/mobile/EntityService$GetUsersResponse$a;
 
     move-result-object v0
 
@@ -1668,7 +1696,7 @@
     .locals 2
 
     .prologue
-    .line 9651
+    .line 10651
     new-instance v0, Lcom/kik/entity/mobile/EntityService$GetUsersResponse$a;
 
     const/4 v1, 0x0
@@ -1683,10 +1711,10 @@
     .locals 1
 
     .prologue
-    .line 11638
+    .line 12638
     sget-object v0, Lcom/kik/entity/mobile/EntityService$GetUsersResponse;->a:Lcom/kik/entity/mobile/EntityService$GetUsersResponse;
 
-    invoke-direct {v0}, Lcom/kik/entity/mobile/EntityService$GetUsersResponse;->p()Lcom/kik/entity/mobile/EntityService$GetUsersResponse$a;
+    invoke-direct {v0}, Lcom/kik/entity/mobile/EntityService$GetUsersResponse;->q()Lcom/kik/entity/mobile/EntityService$GetUsersResponse$a;
 
     move-result-object v0
 
@@ -1699,7 +1727,7 @@
 
     .prologue
     .line 974
-    invoke-direct {p0}, Lcom/kik/entity/mobile/EntityService$GetUsersResponse;->p()Lcom/kik/entity/mobile/EntityService$GetUsersResponse$a;
+    invoke-direct {p0}, Lcom/kik/entity/mobile/EntityService$GetUsersResponse;->q()Lcom/kik/entity/mobile/EntityService$GetUsersResponse$a;
 
     move-result-object v0
 
@@ -1711,7 +1739,7 @@
 
     .prologue
     .line 974
-    invoke-direct {p0}, Lcom/kik/entity/mobile/EntityService$GetUsersResponse;->p()Lcom/kik/entity/mobile/EntityService$GetUsersResponse$a;
+    invoke-direct {p0}, Lcom/kik/entity/mobile/EntityService$GetUsersResponse;->q()Lcom/kik/entity/mobile/EntityService$GetUsersResponse$a;
 
     move-result-object v0
 

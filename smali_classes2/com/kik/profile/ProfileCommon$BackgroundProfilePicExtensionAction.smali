@@ -192,7 +192,7 @@
     .line 1612
     iget-object v0, p0, Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;->backgroundProfilePicExtension_:Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement;
 
-    invoke-virtual {v0}, Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement;->d()Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement$a;
+    invoke-virtual {v0}, Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement;->c()Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement$a;
 
     move-result-object v0
 
@@ -200,7 +200,7 @@
 
     .line 1614
     :goto_1
-    invoke-static {}, Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement;->f()Lcom/google/protobuf/Parser;
+    invoke-static {}, Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement;->e()Lcom/google/protobuf/Parser;
 
     move-result-object v0
 
@@ -221,7 +221,7 @@
     invoke-virtual {v1, v0}, Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement$a;->a(Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement;)Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement$a;
 
     .line 1617
-    invoke-virtual {v1}, Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement$a;->b()Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement;
+    invoke-virtual {v1}, Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement$a;->a()Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement;
 
     move-result-object v0
 
@@ -360,7 +360,7 @@
     .line 1920
     sget-object v0, Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;->a:Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;
 
-    invoke-virtual {v0}, Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;->f()Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction$a;
+    invoke-virtual {v0}, Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;->e()Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction$a;
 
     move-result-object v0
 
@@ -381,21 +381,7 @@
     return v0
 .end method
 
-.method public static e()Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction$a;
-    .locals 1
-
-    .prologue
-    .line 1917
-    sget-object v0, Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;->a:Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;
-
-    invoke-virtual {v0}, Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;->f()Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction$a;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public static g()Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;
+.method public static f()Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;
     .locals 1
 
     .prologue
@@ -405,7 +391,7 @@
     return-object v0
 .end method
 
-.method public static h()Lcom/google/protobuf/Parser;
+.method public static g()Lcom/google/protobuf/Parser;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -424,7 +410,7 @@
     return-object v0
 .end method
 
-.method static synthetic i()Z
+.method static synthetic h()Z
     .locals 1
 
     .prologue
@@ -434,7 +420,7 @@
     return v0
 .end method
 
-.method static synthetic j()Lcom/google/protobuf/Parser;
+.method static synthetic i()Lcom/google/protobuf/Parser;
     .locals 1
 
     .prologue
@@ -485,7 +471,7 @@
 
     if-nez v0, :cond_0
 
-    invoke-static {}, Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement;->e()Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement;
+    invoke-static {}, Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement;->d()Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement;
 
     move-result-object v0
 
@@ -494,6 +480,37 @@
 
     :cond_0
     iget-object v0, p0, Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;->backgroundProfilePicExtension_:Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement;
+
+    goto :goto_0
+.end method
+
+.method public final e()Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction$a;
+    .locals 2
+
+    .prologue
+    const/4 v1, 0x0
+
+    .line 1923
+    sget-object v0, Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;->a:Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;
+
+    if-ne p0, v0, :cond_0
+
+    new-instance v0, Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction$a;
+
+    invoke-direct {v0, v1}, Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction$a;-><init>(B)V
+
+    :goto_0
+    return-object v0
+
+    :cond_0
+    new-instance v0, Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction$a;
+
+    invoke-direct {v0, v1}, Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction$a;-><init>(B)V
+
+    .line 1924
+    invoke-virtual {v0, p0}, Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction$a;->a(Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;)Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction$a;
+
+    move-result-object v0
 
     goto :goto_0
 .end method
@@ -601,37 +618,6 @@
 
     :cond_6
     move v1, v0
-
-    goto :goto_0
-.end method
-
-.method public final f()Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction$a;
-    .locals 2
-
-    .prologue
-    const/4 v1, 0x0
-
-    .line 1923
-    sget-object v0, Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;->a:Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;
-
-    if-ne p0, v0, :cond_0
-
-    new-instance v0, Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction$a;
-
-    invoke-direct {v0, v1}, Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction$a;-><init>(B)V
-
-    :goto_0
-    return-object v0
-
-    :cond_0
-    new-instance v0, Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction$a;
-
-    invoke-direct {v0, v1}, Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction$a;-><init>(B)V
-
-    .line 1924
-    invoke-virtual {v0, p0}, Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction$a;->a(Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;)Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction$a;
-
-    move-result-object v0
 
     goto :goto_0
 .end method
@@ -902,7 +888,7 @@
     .line 3917
     sget-object v0, Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;->a:Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;
 
-    invoke-virtual {v0}, Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;->f()Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction$a;
+    invoke-virtual {v0}, Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;->e()Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction$a;
 
     move-result-object v0
 
@@ -932,7 +918,7 @@
     .line 4917
     sget-object v0, Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;->a:Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;
 
-    invoke-virtual {v0}, Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;->f()Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction$a;
+    invoke-virtual {v0}, Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;->e()Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction$a;
 
     move-result-object v0
 
@@ -945,7 +931,7 @@
 
     .prologue
     .line 1566
-    invoke-virtual {p0}, Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;->f()Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction$a;
+    invoke-virtual {p0}, Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;->e()Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction$a;
 
     move-result-object v0
 
@@ -957,7 +943,7 @@
 
     .prologue
     .line 1566
-    invoke-virtual {p0}, Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;->f()Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction$a;
+    invoke-virtual {p0}, Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction;->e()Lcom/kik/profile/ProfileCommon$BackgroundProfilePicExtensionAction$a;
 
     move-result-object v0
 

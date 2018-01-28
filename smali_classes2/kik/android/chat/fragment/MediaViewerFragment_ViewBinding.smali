@@ -67,7 +67,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/MediaViewerFragment;->_saveButton:Landroid/widget/ImageButton;
 
     .line 26
-    const v0, 0x7f100378
+    const v0, 0x7f100374
 
     const-string v1, "field \'_mediaViewPager\'"
 

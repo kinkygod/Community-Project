@@ -3,8 +3,8 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/vm/ar;
-.implements Lkik/android/chat/vm/be;
+.implements Lkik/android/chat/vm/at;
+.implements Lkik/android/chat/vm/bg;
 
 
 # annotations
@@ -16,7 +16,7 @@
 
 
 # virtual methods
-.method public abstract W_()Lkik/android/chat/vm/chats/search/IChatsSearchResultViewModel$LayoutType;
+.method public abstract Y_()Lkik/android/chat/vm/chats/search/IChatsSearchResultViewModel$LayoutType;
 .end method
 
 .method public abstract h()Lrx/d;

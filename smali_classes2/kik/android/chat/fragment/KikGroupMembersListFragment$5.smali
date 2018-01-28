@@ -32,7 +32,7 @@
     .locals 0
 
     .prologue
-    .line 194
+    .line 197
     iput-object p1, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$5;->a:Lkik/android/chat/fragment/KikGroupMembersListFragment;
 
     invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
@@ -46,13 +46,13 @@
     .locals 1
 
     .prologue
-    .line 194
-    .line 1198
+    .line 197
+    .line 1201
     iget-object v0, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$5;->a:Lkik/android/chat/fragment/KikGroupMembersListFragment;
 
     invoke-virtual {v0}, Lkik/android/chat/fragment/KikGroupMembersListFragment;->resignWaitDialog()V
 
-    .line 194
+    .line 197
     return-void
 .end method
 
@@ -64,46 +64,46 @@
 
     const v4, 0x7f0903fc
 
-    .line 204
+    .line 207
     iget-object v0, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$5;->a:Lkik/android/chat/fragment/KikGroupMembersListFragment;
 
     invoke-virtual {v0}, Lkik/android/chat/fragment/KikGroupMembersListFragment;->resignWaitDialog()V
 
-    .line 206
+    .line 209
     const/16 v0, 0x64
 
-    .line 209
+    .line 212
     instance-of v2, p1, Lkik/core/net/StanzaException;
 
     if-eqz v2, :cond_3
 
-    .line 210
+    .line 213
     check-cast p1, Lkik/core/net/StanzaException;
 
-    .line 212
+    .line 215
     invoke-virtual {p1}, Lkik/core/net/StanzaException;->b()I
 
     move-result v2
 
-    .line 213
+    .line 216
     invoke-virtual {p1}, Lkik/core/net/StanzaException;->c()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 216
+    .line 219
     :goto_0
     sparse-switch v2, :sswitch_data_0
 
-    .line 247
+    .line 250
     iget-object v0, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$5;->a:Lkik/android/chat/fragment/KikGroupMembersListFragment;
 
     invoke-virtual {v0, v2}, Lkik/android/chat/fragment/KikGroupMembersListFragment;->displayGenericIqError(I)V
 
-    .line 250
+    .line 253
     :goto_1
     return-void
 
-    .line 218
+    .line 221
     :sswitch_0
     iget-object v0, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$5;->a:Lkik/android/chat/fragment/KikGroupMembersListFragment;
 
@@ -125,7 +125,7 @@
 
     goto :goto_1
 
-    .line 221
+    .line 224
     :sswitch_1
     iget-object v0, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$5;->a:Lkik/android/chat/fragment/KikGroupMembersListFragment;
 
@@ -147,14 +147,14 @@
 
     goto :goto_1
 
-    .line 224
+    .line 227
     :sswitch_2
     check-cast v0, Ljava/lang/String;
 
-    .line 225
+    .line 228
     if-nez v0, :cond_0
 
-    .line 226
+    .line 229
     iget-object v0, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$5;->a:Lkik/android/chat/fragment/KikGroupMembersListFragment;
 
     const v1, 0x7f09031b
@@ -163,7 +163,7 @@
 
     move-result-object v0
 
-    .line 228
+    .line 231
     :cond_0
     iget-object v1, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$5;->a:Lkik/android/chat/fragment/KikGroupMembersListFragment;
 
@@ -193,7 +193,7 @@
 
     goto :goto_1
 
-    .line 231
+    .line 234
     :sswitch_3
     iget-object v1, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$5;->a:Lkik/android/chat/fragment/KikGroupMembersListFragment;
 
@@ -207,7 +207,7 @@
 
     goto :goto_1
 
-    .line 234
+    .line 237
     :sswitch_4
     iget-object v3, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$5;->a:Lkik/android/chat/fragment/KikGroupMembersListFragment;
 
@@ -227,23 +227,23 @@
 
     move-result-object v1
 
-    .line 236
+    .line 239
     :cond_1
     if-eqz v1, :cond_2
 
     if-eqz v0, :cond_2
 
-    .line 237
+    .line 240
     check-cast v0, Ljava/util/List;
 
-    .line 238
+    .line 241
     iget-object v1, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$5;->a:Lkik/android/chat/fragment/KikGroupMembersListFragment;
 
-    iget-object v1, v1, Lkik/android/chat/fragment/KikGroupMembersListFragment;->a:Lkik/core/interfaces/w;
+    iget-object v1, v1, Lkik/android/chat/fragment/KikGroupMembersListFragment;->a:Lkik/core/interfaces/v;
 
-    invoke-static {v0, v1}, Lkik/android/util/bs;->a(Ljava/util/List;Lkik/core/interfaces/w;)Ljava/lang/String;
+    invoke-static {v0, v1}, Lkik/android/util/bs;->a(Ljava/util/List;Lkik/core/interfaces/v;)Ljava/lang/String;
 
-    .line 240
+    .line 243
     iget-object v0, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$5;->a:Lkik/android/chat/fragment/KikGroupMembersListFragment;
 
     iget-object v1, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$5;->a:Lkik/android/chat/fragment/KikGroupMembersListFragment;
@@ -264,7 +264,7 @@
 
     goto/16 :goto_1
 
-    .line 243
+    .line 246
     :cond_2
     iget-object v0, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$5;->a:Lkik/android/chat/fragment/KikGroupMembersListFragment;
 
@@ -279,7 +279,7 @@
 
     goto/16 :goto_0
 
-    .line 216
+    .line 219
     :sswitch_data_0
     .sparse-switch
         0x68 -> :sswitch_3

@@ -22,7 +22,7 @@
     iput-object p1, p0, Lkik/android/chat/fragment/KikLoginFragmentAbstract_ViewBinding;->a:Lkik/android/chat/fragment/KikLoginFragmentAbstract;
 
     .line 22
-    const v0, 0x7f100350
+    const v0, 0x7f10034c
 
     const-string v1, "field \'_userEmailField\'"
 
@@ -37,7 +37,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/KikLoginFragmentAbstract;->_userEmailField:Lkik/android/chat/view/ValidateableInputView;
 
     .line 23
-    const v0, 0x7f100351
+    const v0, 0x7f10034d
 
     const-string v1, "field \'_passwordField\'"
 
@@ -63,7 +63,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/KikLoginFragmentAbstract;->_backButton:Landroid/view/View;
 
     .line 25
-    const v0, 0x7f100353
+    const v0, 0x7f10034f
 
     const-string v1, "field \'_loginButton\'"
 
@@ -74,7 +74,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/KikLoginFragmentAbstract;->_loginButton:Landroid/view/View;
 
     .line 26
-    const v0, 0x7f10034f
+    const v0, 0x7f10034b
 
     const-string v1, "field \'_loginScrollView\'"
 
@@ -89,7 +89,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/KikLoginFragmentAbstract;->_loginScrollView:Lcom/github/ksoichiro/android/observablescrollview/ObservableScrollView;
 
     .line 27
-    const v0, 0x7f100354
+    const v0, 0x7f100350
 
     const-string v1, "field \'_appBarShadow\'"
 

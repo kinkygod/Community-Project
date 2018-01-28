@@ -62,7 +62,7 @@
 
 .field private m:Z
 
-.field private n:Lcom/kik/storage/p;
+.field private n:Lcom/kik/storage/s;
 
 
 # direct methods
@@ -86,7 +86,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Landroid/content/Context;Lcom/kik/storage/p;)V
+.method public constructor <init>(Landroid/content/Context;Lcom/kik/storage/s;)V
     .locals 3
 
     .prologue
@@ -152,7 +152,7 @@
     iput-object p1, p0, Lkik/android/voice/VoiceMessageGenerator;->c:Landroid/content/Context;
 
     .line 105
-    iput-object p2, p0, Lkik/android/voice/VoiceMessageGenerator;->n:Lcom/kik/storage/p;
+    iput-object p2, p0, Lkik/android/voice/VoiceMessageGenerator;->n:Lcom/kik/storage/s;
 
     .line 106
     invoke-direct {p0}, Lkik/android/voice/VoiceMessageGenerator;->a()V
@@ -808,9 +808,9 @@
     if-lez v0, :cond_17
 
     .line 238
-    iget-object v0, p0, Lkik/android/voice/VoiceMessageGenerator;->n:Lcom/kik/storage/p;
+    iget-object v0, p0, Lkik/android/voice/VoiceMessageGenerator;->n:Lcom/kik/storage/s;
 
-    invoke-interface {v0, p1, p3}, Lcom/kik/storage/p;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-interface {v0, p1, p3}, Lcom/kik/storage/s;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 239
     const/4 v0, 0x4
@@ -1816,16 +1816,16 @@
 
     .prologue
     .line 137
-    iget-object v0, p0, Lkik/android/voice/VoiceMessageGenerator;->n:Lcom/kik/storage/p;
+    iget-object v0, p0, Lkik/android/voice/VoiceMessageGenerator;->n:Lcom/kik/storage/s;
 
-    invoke-interface {v0, p1}, Lcom/kik/storage/p;->c(Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {v0, p1}, Lcom/kik/storage/s;->c(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
     .line 138
-    iget-object v1, p0, Lkik/android/voice/VoiceMessageGenerator;->n:Lcom/kik/storage/p;
+    iget-object v1, p0, Lkik/android/voice/VoiceMessageGenerator;->n:Lcom/kik/storage/s;
 
-    invoke-interface {v1, p1}, Lcom/kik/storage/p;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {v1, p1}, Lcom/kik/storage/s;->b(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 

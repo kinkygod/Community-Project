@@ -2,67 +2,62 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lrx/functions/g;
+.implements Lrx/functions/b;
 
 
-# static fields
-.field private static final a:Lcom/kik/cache/al;
+# instance fields
+.field private final a:Lcom/kik/cache/aj;
+
+.field private final b:Lcom/kik/cache/UserByteImageRequest;
+
+.field private final c:I
+
+.field private final d:I
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lcom/kik/cache/al;
-
-    invoke-direct {v0}, Lcom/kik/cache/al;-><init>()V
-
-    sput-object v0, Lcom/kik/cache/al;->a:Lcom/kik/cache/al;
-
-    return-void
-.end method
-
-.method private constructor <init>()V
+.method private constructor <init>(Lcom/kik/cache/aj;Lcom/kik/cache/UserByteImageRequest;II)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    iput-object p1, p0, Lcom/kik/cache/al;->a:Lcom/kik/cache/aj;
+
+    iput-object p2, p0, Lcom/kik/cache/al;->b:Lcom/kik/cache/UserByteImageRequest;
+
+    iput p3, p0, Lcom/kik/cache/al;->c:I
+
+    iput p4, p0, Lcom/kik/cache/al;->d:I
+
     return-void
 .end method
 
-.method public static a()Lrx/functions/g;
+.method public static a(Lcom/kik/cache/aj;Lcom/kik/cache/UserByteImageRequest;II)Lrx/functions/b;
     .locals 1
 
-    sget-object v0, Lcom/kik/cache/al;->a:Lcom/kik/cache/al;
+    new-instance v0, Lcom/kik/cache/al;
+
+    invoke-direct {v0, p0, p1, p2, p3}, Lcom/kik/cache/al;-><init>(Lcom/kik/cache/aj;Lcom/kik/cache/UserByteImageRequest;II)V
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public final call(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.method public final call(Ljava/lang/Object;)V
+    .locals 4
 
-    .prologue
-    .line 0
-    check-cast p1, Landroid/graphics/Bitmap;
+    iget-object v0, p0, Lcom/kik/cache/al;->a:Lcom/kik/cache/aj;
 
-    .line 1089
-    if-eqz p1, :cond_0
+    iget-object v1, p0, Lcom/kik/cache/al;->b:Lcom/kik/cache/UserByteImageRequest;
 
-    const/4 v0, 0x1
+    iget v2, p0, Lcom/kik/cache/al;->c:I
 
-    :goto_0
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    iget v3, p0, Lcom/kik/cache/al;->d:I
 
-    move-result-object v0
+    check-cast p1, Lrx/Emitter;
 
-    .line 0
-    return-object v0
+    invoke-static {v0, v1, v2, v3, p1}, Lcom/kik/cache/aj;->a(Lcom/kik/cache/aj;Lcom/kik/cache/UserByteImageRequest;IILrx/Emitter;)V
 
-    .line 1089
-    :cond_0
-    const/4 v0, 0x0
-
-    goto :goto_0
+    return-void
 .end method

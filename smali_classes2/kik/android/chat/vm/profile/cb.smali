@@ -2,7 +2,7 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lrx/functions/g;
+.implements Lrx/functions/h;
 
 
 # static fields
@@ -30,7 +30,7 @@
     return-void
 .end method
 
-.method public static a()Lrx/functions/g;
+.method public static a()Lrx/functions/h;
     .locals 1
 
     sget-object v0, Lkik/android/chat/vm/profile/cb;->a:Lkik/android/chat/vm/profile/cb;
@@ -40,18 +40,72 @@
 
 
 # virtual methods
-.method public final call(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.method public final a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
 
-    check-cast p1, Lcom/kik/core/domain/a/a/c;
+    .prologue
+    .line 0
+    check-cast p1, Lcom/kik/core/domain/users/a/c;
 
-    invoke-interface {p1}, Lcom/kik/core/domain/a/a/c;->m()Z
+    check-cast p2, Lcom/kik/core/domain/users/a/c;
 
-    move-result v0
+    .line 1107
+    if-ne p1, p2, :cond_0
 
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    .line 1108
+    const/4 v0, 0x0
+
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v0
 
+    .line 1116
+    :goto_0
     return-object v0
+
+    .line 1111
+    :cond_0
+    if-nez p1, :cond_1
+
+    .line 1112
+    const/4 v0, 0x1
+
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    .line 1115
+    :cond_1
+    if-nez p2, :cond_2
+
+    .line 1116
+    const/4 v0, -0x1
+
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    .line 1118
+    :cond_2
+    invoke-interface {p1}, Lcom/kik/core/domain/users/a/c;->b()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-interface {p2}, Lcom/kik/core/domain/users/a/c;->b()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->compareTo(Ljava/lang/String;)I
+
+    move-result v0
+
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    goto :goto_0
 .end method

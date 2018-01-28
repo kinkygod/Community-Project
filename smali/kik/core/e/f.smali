@@ -46,13 +46,13 @@
             "(",
             "Ljava/util/List",
             "<",
-            "Lkik/core/datatypes/ad;",
+            "Lkik/core/datatypes/ac;",
             ">;)",
             "Lcom/kik/events/Promise",
             "<",
             "Ljava/util/List",
             "<",
-            "Lkik/core/datatypes/ad;",
+            "Lkik/core/datatypes/ac;",
             ">;>;"
         }
     .end annotation
@@ -64,7 +64,7 @@
             "(",
             "Ljava/util/List",
             "<",
-            "Lkik/core/datatypes/ad;",
+            "Lkik/core/datatypes/ac;",
             ">;",
             "Ljava/lang/Long;",
             ")",
@@ -72,7 +72,7 @@
             "<",
             "Ljava/util/List",
             "<",
-            "Lkik/core/datatypes/ad;",
+            "Lkik/core/datatypes/ac;",
             ">;>;"
         }
     .end annotation
@@ -84,14 +84,14 @@
             "(",
             "Ljava/util/List",
             "<",
-            "Lkik/core/datatypes/ad;",
+            "Lkik/core/datatypes/ac;",
             ">;",
             "Ljava/util/Map",
             "<",
             "Ljava/lang/String;",
             "Ljava/util/List",
             "<",
-            "Lkik/core/datatypes/ad;",
+            "Lkik/core/datatypes/ac;",
             ">;>;)V"
         }
     .end annotation
@@ -122,7 +122,7 @@
             "TT;)",
             "Lcom/kik/events/Promise",
             "<",
-            "Lkik/core/datatypes/ad;",
+            "Lkik/core/datatypes/ac;",
             ">;"
         }
     .end annotation
@@ -141,7 +141,7 @@
             ")",
             "Lcom/kik/events/Promise",
             "<",
-            "Lkik/core/datatypes/ad;",
+            "Lkik/core/datatypes/ac;",
             ">;"
         }
     .end annotation
@@ -153,7 +153,7 @@
             "(",
             "Ljava/util/List",
             "<",
-            "Lkik/core/datatypes/ad;",
+            "Lkik/core/datatypes/ac;",
             ">;)",
             "Ljava/util/List",
             "<",
@@ -161,7 +161,7 @@
             "<",
             "Ljava/util/List",
             "<",
-            "Lkik/core/datatypes/ad;",
+            "Lkik/core/datatypes/ac;",
             ">;>;>;"
         }
     .end annotation

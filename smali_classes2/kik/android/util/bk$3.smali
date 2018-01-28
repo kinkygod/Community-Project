@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/kik/view/adapters/x;
+.field final synthetic a:Lcom/kik/view/adapters/y;
 
 .field final synthetic b:Ljava/lang/String;
 
@@ -30,14 +30,14 @@
 
 
 # direct methods
-.method constructor <init>(Lkik/android/util/bk;Lcom/kik/view/adapters/x;Ljava/lang/String;Landroid/net/Uri;Lkik/android/util/bp;)V
+.method constructor <init>(Lkik/android/util/bk;Lcom/kik/view/adapters/y;Ljava/lang/String;Landroid/net/Uri;Lkik/android/util/bp;)V
     .locals 0
 
     .prologue
     .line 415
     iput-object p1, p0, Lkik/android/util/bk$3;->e:Lkik/android/util/bk;
 
-    iput-object p2, p0, Lkik/android/util/bk$3;->a:Lcom/kik/view/adapters/x;
+    iput-object p2, p0, Lkik/android/util/bk$3;->a:Lcom/kik/view/adapters/y;
 
     iput-object p3, p0, Lkik/android/util/bk$3;->b:Ljava/lang/String;
 
@@ -57,9 +57,9 @@
 
     .prologue
     .line 419
-    iget-object v0, p0, Lkik/android/util/bk$3;->a:Lcom/kik/view/adapters/x;
+    iget-object v0, p0, Lkik/android/util/bk$3;->a:Lcom/kik/view/adapters/y;
 
-    invoke-virtual {v0, p2}, Lcom/kik/view/adapters/x;->getItem(I)Ljava/lang/Object;
+    invoke-virtual {v0, p2}, Lcom/kik/view/adapters/y;->getItem(I)Ljava/lang/Object;
 
     move-result-object v0
 

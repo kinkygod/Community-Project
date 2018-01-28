@@ -3,16 +3,16 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/a/b;
+.implements Ldagger/internal/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/a/b",
+        "Ldagger/internal/b",
         "<",
-        "Lkik/android/challenge/f;",
+        "Lkik/core/e/e;",
         ">;"
     }
 .end annotation
@@ -57,10 +57,10 @@
     .locals 1
 
     .prologue
-    .line 17
+    .line 16
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 18
+    .line 17
     sget-boolean v0, Lcom/kik/f/ds;->a:Z
 
     if-nez v0, :cond_0
@@ -73,30 +73,30 @@
 
     throw v0
 
-    .line 19
+    .line 18
     :cond_0
     iput-object p1, p0, Lcom/kik/f/ds;->b:Lcom/kik/f/dr;
 
-    .line 20
+    .line 19
     return-void
 .end method
 
-.method public static a(Lcom/kik/f/dr;)La/a/b;
+.method public static a(Lcom/kik/f/dr;)Ldagger/internal/b;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lcom/kik/f/dr;",
             ")",
-            "La/a/b",
+            "Ldagger/internal/b",
             "<",
-            "Lkik/android/challenge/f;",
+            "Lkik/core/e/e;",
             ">;"
         }
     .end annotation
 
     .prologue
-    .line 30
+    .line 29
     new-instance v0, Lcom/kik/f/ds;
 
     invoke-direct {v0, p0}, Lcom/kik/f/ds;-><init>(Lcom/kik/f/dr;)V
@@ -111,22 +111,22 @@
 
     .prologue
     .line 8
-    .line 1024
+    .line 1023
     iget-object v0, p0, Lcom/kik/f/ds;->b:Lcom/kik/f/dr;
 
-    .line 1025
-    invoke-virtual {v0}, Lcom/kik/f/dr;->a()Lkik/android/challenge/f;
+    .line 1024
+    invoke-virtual {v0}, Lcom/kik/f/dr;->a()Lkik/core/e/e;
 
     move-result-object v0
 
     const-string v1, "Cannot return null from a non-@Nullable @Provides method"
 
-    .line 1024
-    invoke-static {v0, v1}, La/a/c;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    .line 1023
+    invoke-static {v0, v1}, Ldagger/internal/c;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lkik/android/challenge/f;
+    check-cast v0, Lkik/core/e/e;
 
     .line 8
     return-object v0

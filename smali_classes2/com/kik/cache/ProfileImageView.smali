@@ -644,14 +644,14 @@
     return-object v0
 .end method
 
-.method protected final a(Landroid/graphics/Bitmap;Ljava/lang/String;)Lkik/android/widget/be;
+.method protected final a(Landroid/graphics/Bitmap;Ljava/lang/String;)Lkik/android/widget/bq;
     .locals 1
 
     .prologue
     .line 166
-    new-instance v0, Lkik/android/widget/co;
+    new-instance v0, Lkik/android/widget/de;
 
-    invoke-direct {v0, p1, p2}, Lkik/android/widget/co;-><init>(Landroid/graphics/Bitmap;Ljava/lang/String;)V
+    invoke-direct {v0, p1, p2}, Lkik/android/widget/de;-><init>(Landroid/graphics/Bitmap;Ljava/lang/String;)V
 
     return-object v0
 .end method
@@ -685,12 +685,12 @@
     return-void
 .end method
 
-.method public final a(Lkik/core/datatypes/ac;Lcom/kik/cache/KikVolleyImageLoader;Lcom/kik/android/Mixpanel;Lcom/android/volley/h$b;Lcom/kik/cache/KikVolleyImageLoader$d;)V
+.method public final a(Lkik/core/datatypes/ab;Lcom/kik/cache/KikVolleyImageLoader;Lcom/kik/android/Mixpanel;Lcom/android/volley/h$b;Lcom/kik/cache/KikVolleyImageLoader$d;)V
     .locals 8
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkik/core/datatypes/ac;",
+            "Lkik/core/datatypes/ab;",
             "Lcom/kik/cache/KikVolleyImageLoader;",
             "Lcom/kik/android/Mixpanel;",
             "Lcom/android/volley/h$b",
@@ -720,7 +720,7 @@
 
     move-object v7, p3
 
-    invoke-static/range {v0 .. v7}, Lcom/kik/cache/MyPicImageRequest;->getProfileRequest(Lkik/core/datatypes/ac;Lcom/android/volley/h$b;IILcom/android/volley/h$a;ZZLcom/kik/android/Mixpanel;)Lcom/kik/cache/MyPicImageRequest;
+    invoke-static/range {v0 .. v7}, Lcom/kik/cache/MyPicImageRequest;->getProfileRequest(Lkik/core/datatypes/ab;Lcom/android/volley/h$b;IILcom/android/volley/h$a;ZZLcom/kik/android/Mixpanel;)Lcom/kik/cache/MyPicImageRequest;
 
     move-result-object v0
 

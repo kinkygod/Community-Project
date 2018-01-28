@@ -22,7 +22,7 @@
     .locals 0
 
     .prologue
-    .line 556
+    .line 555
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -34,10 +34,10 @@
     .locals 1
 
     .prologue
-    .line 559
+    .line 558
     invoke-static {p1}, Lcom/kik/messagepath/model/TextMarkdown;->a(Lcom/google/protobuf/Descriptors$FileDescriptor;)Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    .line 560
+    .line 559
     const/4 v0, 0x0
 
     return-object v0

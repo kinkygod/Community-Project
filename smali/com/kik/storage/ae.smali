@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/kik/core/a/g;
+.implements Lcom/kik/core/a/h;
 
 
 # annotations
@@ -26,7 +26,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lkik/core/interfaces/ae;Landroid/content/Context;)V
+.method public constructor <init>(Lkik/core/interfaces/ad;Landroid/content/Context;)V
     .locals 2
 
     .prologue
@@ -61,7 +61,7 @@
     .line 39
     new-instance v0, Lcom/kik/storage/ae$b;
 
-    invoke-interface {p1}, Lkik/core/interfaces/ae;->q()Ljava/lang/String;
+    invoke-interface {p1}, Lkik/core/interfaces/ad;->q()Ljava/lang/String;
 
     move-result-object v1
 
@@ -151,18 +151,18 @@
     aput-object v10, v8, v9
 
     .line 98
-    invoke-static {v2, v0, v6, v7, v8}, Lcom/kik/storage/l;->a(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lcom/kik/storage/l;
+    invoke-static {v2, v0, v6, v7, v8}, Lcom/kik/storage/o;->a(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lcom/kik/storage/o;
 
     move-result-object v0
 
     check-cast v0, Lcom/kik/storage/ae$a;
 
     .line 100
-    invoke-static {v3, v4, v5}, Lcom/kik/storage/af;->a(Ljava/util/List;Ljava/util/List;Lcom/kik/core/network/xmpp/jid/a;)Lcom/kik/storage/l$a;
+    invoke-static {v3, v4, v5}, Lcom/kik/storage/af;->a(Ljava/util/List;Ljava/util/List;Lcom/kik/core/network/xmpp/jid/a;)Lcom/kik/storage/o$a;
 
     move-result-object v5
 
-    invoke-virtual {v0, v5}, Lcom/kik/storage/ae$a;->a(Lcom/kik/storage/l$a;)V
+    invoke-virtual {v0, v5}, Lcom/kik/storage/ae$a;->a(Lcom/kik/storage/o$a;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

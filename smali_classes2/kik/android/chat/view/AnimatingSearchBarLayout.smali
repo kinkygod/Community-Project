@@ -656,7 +656,7 @@
     iget-object v0, v0, Lkik/android/chat/view/SearchBarViewImpl;->_searchIconView:Landroid/widget/ImageView;
 
     .line 404
-    const v2, 0x7f0201da
+    const v2, 0x7f0201c2
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -755,7 +755,7 @@
     iget-object v0, v0, Lkik/android/chat/view/SearchBarViewImpl;->_searchIconView:Landroid/widget/ImageView;
 
     .line 5480
-    const v4, 0x7f02023c
+    const v4, 0x7f020225
 
     invoke-static {v0, v4}, Lkik/android/chat/view/g;->a(Landroid/widget/ImageView;I)Landroid/animation/Animator;
 
@@ -775,7 +775,7 @@
 
     aput v7, v5, v1
 
-    invoke-static {v4, v5}, Lkik/android/chat/view/g;->a(Landroid/view/View;[F)Landroid/animation/Animator;
+    invoke-static {v4, v5}, Lkik/android/chat/view/g;->b(Landroid/view/View;[F)Landroid/animation/Animator;
 
     move-result-object v4
 
@@ -790,7 +790,7 @@
     aput v7, v5, v1
 
     .line 5482
-    invoke-static {v4, v5}, Lkik/android/chat/view/g;->b(Landroid/view/View;[F)Landroid/animation/Animator;
+    invoke-static {v4, v5}, Lkik/android/chat/view/g;->c(Landroid/view/View;[F)Landroid/animation/Animator;
 
     move-result-object v4
 
@@ -805,7 +805,7 @@
     aput v7, v5, v1
 
     .line 5483
-    invoke-static {v4, v5}, Lkik/android/chat/view/g;->b(Landroid/view/View;[F)Landroid/animation/Animator;
+    invoke-static {v4, v5}, Lkik/android/chat/view/g;->c(Landroid/view/View;[F)Landroid/animation/Animator;
 
     move-result-object v4
 
@@ -820,7 +820,7 @@
     aput v8, v5, v1
 
     .line 5484
-    invoke-static {v4, v5}, Lkik/android/chat/view/g;->c(Landroid/view/View;[F)Landroid/animation/Animator;
+    invoke-static {v4, v5}, Lkik/android/chat/view/g;->d(Landroid/view/View;[F)Landroid/animation/Animator;
 
     move-result-object v4
 
@@ -835,7 +835,7 @@
     aput v8, v5, v1
 
     .line 5485
-    invoke-static {v4, v5}, Lkik/android/chat/view/g;->d(Landroid/view/View;[F)Landroid/animation/Animator;
+    invoke-static {v4, v5}, Lkik/android/chat/view/g;->e(Landroid/view/View;[F)Landroid/animation/Animator;
 
     move-result-object v1
 
@@ -878,7 +878,7 @@
     :cond_5
     iget-object v0, p0, Lkik/android/chat/view/AnimatingSearchBarLayout;->o:Lkik/android/chat/view/AnimatingSearchBarLayout$b;
 
-    invoke-interface {v0}, Lkik/android/chat/view/AnimatingSearchBarLayout$b;->R_()Ljava/util/EnumSet;
+    invoke-interface {v0}, Lkik/android/chat/view/AnimatingSearchBarLayout$b;->T_()Ljava/util/EnumSet;
 
     move-result-object v0
 
@@ -1051,7 +1051,7 @@
     iget-object v0, v0, Lkik/android/chat/view/SearchBarViewImpl;->_searchIconView:Landroid/widget/ImageView;
 
     .line 367
-    const v2, 0x7f02023c
+    const v2, 0x7f020225
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -1251,7 +1251,7 @@
     iget-object v0, v0, Lkik/android/chat/view/SearchBarViewImpl;->_searchIconView:Landroid/widget/ImageView;
 
     .line 2467
-    const v7, 0x7f0201da
+    const v7, 0x7f0201c2
 
     invoke-static {v0, v7}, Lkik/android/chat/view/g;->a(Landroid/widget/ImageView;I)Landroid/animation/Animator;
 
@@ -1271,7 +1271,7 @@
 
     aput v6, v7, v10
 
-    invoke-static {v0, v7}, Lkik/android/chat/view/g;->a(Landroid/view/View;[F)Landroid/animation/Animator;
+    invoke-static {v0, v7}, Lkik/android/chat/view/g;->b(Landroid/view/View;[F)Landroid/animation/Animator;
 
     move-result-object v0
 
@@ -1288,7 +1288,7 @@
     aput v3, v7, v10
 
     .line 2469
-    invoke-static {v6, v7}, Lkik/android/chat/view/g;->b(Landroid/view/View;[F)Landroid/animation/Animator;
+    invoke-static {v6, v7}, Lkik/android/chat/view/g;->c(Landroid/view/View;[F)Landroid/animation/Animator;
 
     move-result-object v6
 
@@ -1305,7 +1305,7 @@
     aput v3, v7, v10
 
     .line 2470
-    invoke-static {v6, v7}, Lkik/android/chat/view/g;->b(Landroid/view/View;[F)Landroid/animation/Animator;
+    invoke-static {v6, v7}, Lkik/android/chat/view/g;->c(Landroid/view/View;[F)Landroid/animation/Animator;
 
     move-result-object v3
 
@@ -1322,7 +1322,7 @@
     aput v8, v6, v10
 
     .line 2471
-    invoke-static {v3, v6}, Lkik/android/chat/view/g;->c(Landroid/view/View;[F)Landroid/animation/Animator;
+    invoke-static {v3, v6}, Lkik/android/chat/view/g;->d(Landroid/view/View;[F)Landroid/animation/Animator;
 
     move-result-object v3
 
@@ -1339,7 +1339,7 @@
     aput v5, v6, v10
 
     .line 2472
-    invoke-static {v3, v6}, Lkik/android/chat/view/g;->d(Landroid/view/View;[F)Landroid/animation/Animator;
+    invoke-static {v3, v6}, Lkik/android/chat/view/g;->e(Landroid/view/View;[F)Landroid/animation/Animator;
 
     move-result-object v1
 
@@ -1450,7 +1450,7 @@
     invoke-direct {v1, v0}, Landroid/view/View;-><init>(Landroid/content/Context;)V
 
     .line 1320
-    const v0, 0x7f0201b2
+    const v0, 0x7f02019a
 
     invoke-virtual {v1, v0}, Landroid/view/View;->setBackgroundResource(I)V
 

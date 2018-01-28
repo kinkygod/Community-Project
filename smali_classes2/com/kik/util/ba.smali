@@ -33,17 +33,29 @@
 
 # virtual methods
 .method public final call(Ljava/lang/Object;)V
-    .locals 2
+    .locals 3
 
+    .prologue
+    .line 0
     iget-object v0, p0, Lcom/kik/util/ba;->a:Landroid/view/View;
 
-    check-cast p1, Ljava/lang/Boolean;
+    check-cast p1, Ljava/lang/Integer;
 
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+    .line 1100
+    invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
-    move-result v1
+    move-result-object v1
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setLongClickable(Z)V
+    .line 1102
+    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
 
+    move-result v2
+
+    iput v2, v1, Landroid/view/ViewGroup$LayoutParams;->height:I
+
+    .line 1104
+    invoke-virtual {v0, v1}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+
+    .line 0
     return-void
 .end method

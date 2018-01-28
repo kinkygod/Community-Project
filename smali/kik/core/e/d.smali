@@ -37,7 +37,7 @@
             "TT;)",
             "Lcom/kik/events/Promise",
             "<",
-            "Lkik/core/datatypes/ad;",
+            "Lkik/core/datatypes/ac;",
             ">;"
         }
     .end annotation
@@ -56,7 +56,7 @@
             ")",
             "Lcom/kik/events/Promise",
             "<",
-            "Lkik/core/datatypes/ad;",
+            "Lkik/core/datatypes/ac;",
             ">;"
         }
     .end annotation

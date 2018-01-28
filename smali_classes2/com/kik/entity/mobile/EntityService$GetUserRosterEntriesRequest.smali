@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/kik/entity/mobile/EntityService$f;
+.implements Lcom/kik/entity/mobile/EntityService$g;
 
 
 # annotations

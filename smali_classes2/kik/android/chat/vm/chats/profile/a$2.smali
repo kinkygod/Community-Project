@@ -24,7 +24,7 @@
 
     .prologue
     .line 155
-    invoke-static {}, Lkik/android/chat/vm/chats/profile/IBioEditorViewModel$ErrorType;->values()[Lkik/android/chat/vm/chats/profile/IBioEditorViewModel$ErrorType;
+    invoke-static {}, Lkik/android/chat/vm/chats/profile/IValidateableInputEditorViewModel$ErrorType;->values()[Lkik/android/chat/vm/chats/profile/IValidateableInputEditorViewModel$ErrorType;
 
     move-result-object v0
 
@@ -37,9 +37,9 @@
     :try_start_0
     sget-object v0, Lkik/android/chat/vm/chats/profile/a$2;->a:[I
 
-    sget-object v1, Lkik/android/chat/vm/chats/profile/IBioEditorViewModel$ErrorType;->TOO_LONG:Lkik/android/chat/vm/chats/profile/IBioEditorViewModel$ErrorType;
+    sget-object v1, Lkik/android/chat/vm/chats/profile/IValidateableInputEditorViewModel$ErrorType;->TOO_LONG:Lkik/android/chat/vm/chats/profile/IValidateableInputEditorViewModel$ErrorType;
 
-    invoke-virtual {v1}, Lkik/android/chat/vm/chats/profile/IBioEditorViewModel$ErrorType;->ordinal()I
+    invoke-virtual {v1}, Lkik/android/chat/vm/chats/profile/IValidateableInputEditorViewModel$ErrorType;->ordinal()I
 
     move-result v1
 
@@ -53,9 +53,9 @@
     :try_start_1
     sget-object v0, Lkik/android/chat/vm/chats/profile/a$2;->a:[I
 
-    sget-object v1, Lkik/android/chat/vm/chats/profile/IBioEditorViewModel$ErrorType;->CONTAINS_LINK:Lkik/android/chat/vm/chats/profile/IBioEditorViewModel$ErrorType;
+    sget-object v1, Lkik/android/chat/vm/chats/profile/IValidateableInputEditorViewModel$ErrorType;->CONTAINS_LINK:Lkik/android/chat/vm/chats/profile/IValidateableInputEditorViewModel$ErrorType;
 
-    invoke-virtual {v1}, Lkik/android/chat/vm/chats/profile/IBioEditorViewModel$ErrorType;->ordinal()I
+    invoke-virtual {v1}, Lkik/android/chat/vm/chats/profile/IValidateableInputEditorViewModel$ErrorType;->ordinal()I
 
     move-result v1
 
@@ -69,9 +69,9 @@
     :try_start_2
     sget-object v0, Lkik/android/chat/vm/chats/profile/a$2;->a:[I
 
-    sget-object v1, Lkik/android/chat/vm/chats/profile/IBioEditorViewModel$ErrorType;->SERVER_ERROR_BAD_WORD:Lkik/android/chat/vm/chats/profile/IBioEditorViewModel$ErrorType;
+    sget-object v1, Lkik/android/chat/vm/chats/profile/IValidateableInputEditorViewModel$ErrorType;->SERVER_ERROR_BAD_WORD:Lkik/android/chat/vm/chats/profile/IValidateableInputEditorViewModel$ErrorType;
 
-    invoke-virtual {v1}, Lkik/android/chat/vm/chats/profile/IBioEditorViewModel$ErrorType;->ordinal()I
+    invoke-virtual {v1}, Lkik/android/chat/vm/chats/profile/IValidateableInputEditorViewModel$ErrorType;->ordinal()I
 
     move-result v1
 
@@ -85,9 +85,9 @@
     :try_start_3
     sget-object v0, Lkik/android/chat/vm/chats/profile/a$2;->a:[I
 
-    sget-object v1, Lkik/android/chat/vm/chats/profile/IBioEditorViewModel$ErrorType;->SERVER_ERROR_UNKNOWN:Lkik/android/chat/vm/chats/profile/IBioEditorViewModel$ErrorType;
+    sget-object v1, Lkik/android/chat/vm/chats/profile/IValidateableInputEditorViewModel$ErrorType;->SERVER_ERROR_UNKNOWN:Lkik/android/chat/vm/chats/profile/IValidateableInputEditorViewModel$ErrorType;
 
-    invoke-virtual {v1}, Lkik/android/chat/vm/chats/profile/IBioEditorViewModel$ErrorType;->ordinal()I
+    invoke-virtual {v1}, Lkik/android/chat/vm/chats/profile/IValidateableInputEditorViewModel$ErrorType;->ordinal()I
 
     move-result v1
 
@@ -101,9 +101,9 @@
     :try_start_4
     sget-object v0, Lkik/android/chat/vm/chats/profile/a$2;->a:[I
 
-    sget-object v1, Lkik/android/chat/vm/chats/profile/IBioEditorViewModel$ErrorType;->NETWORK_ERROR:Lkik/android/chat/vm/chats/profile/IBioEditorViewModel$ErrorType;
+    sget-object v1, Lkik/android/chat/vm/chats/profile/IValidateableInputEditorViewModel$ErrorType;->NETWORK_ERROR:Lkik/android/chat/vm/chats/profile/IValidateableInputEditorViewModel$ErrorType;
 
-    invoke-virtual {v1}, Lkik/android/chat/vm/chats/profile/IBioEditorViewModel$ErrorType;->ordinal()I
+    invoke-virtual {v1}, Lkik/android/chat/vm/chats/profile/IValidateableInputEditorViewModel$ErrorType;->ordinal()I
 
     move-result v1
 
@@ -117,9 +117,9 @@
     :try_start_5
     sget-object v0, Lkik/android/chat/vm/chats/profile/a$2;->a:[I
 
-    sget-object v1, Lkik/android/chat/vm/chats/profile/IBioEditorViewModel$ErrorType;->NONE:Lkik/android/chat/vm/chats/profile/IBioEditorViewModel$ErrorType;
+    sget-object v1, Lkik/android/chat/vm/chats/profile/IValidateableInputEditorViewModel$ErrorType;->NONE:Lkik/android/chat/vm/chats/profile/IValidateableInputEditorViewModel$ErrorType;
 
-    invoke-virtual {v1}, Lkik/android/chat/vm/chats/profile/IBioEditorViewModel$ErrorType;->ordinal()I
+    invoke-virtual {v1}, Lkik/android/chat/vm/chats/profile/IValidateableInputEditorViewModel$ErrorType;->ordinal()I
 
     move-result v1
 

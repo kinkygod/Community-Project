@@ -3,16 +3,16 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/b;
+.implements Ldagger/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/b",
+        "Ldagger/b",
         "<",
-        "Lkik/android/chat/vm/o;",
+        "Lkik/android/chat/vm/q;",
         ">;"
     }
 .end annotation
@@ -28,7 +28,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/w;",
+            "Lkik/core/interfaces/v;",
             ">;"
         }
     .end annotation
@@ -64,12 +64,12 @@
 
 
 # virtual methods
-.method public final synthetic a(Ljava/lang/Object;)V
+.method public final synthetic injectMembers(Ljava/lang/Object;)V
     .locals 2
 
     .prologue
     .line 8
-    check-cast p1, Lkik/android/chat/vm/o;
+    check-cast p1, Lkik/android/chat/vm/q;
 
     .line 1028
     if-nez p1, :cond_0
@@ -91,9 +91,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/interfaces/w;
+    check-cast v0, Lkik/core/interfaces/v;
 
-    iput-object v0, p1, Lkik/android/chat/vm/o;->a:Lkik/core/interfaces/w;
+    iput-object v0, p1, Lkik/android/chat/vm/q;->a:Lkik/core/interfaces/v;
 
     .line 8
     return-void

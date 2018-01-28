@@ -2,7 +2,7 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lrx/functions/h;
+.implements Lrx/functions/g;
 
 
 # static fields
@@ -30,7 +30,7 @@
     return-void
 .end method
 
-.method public static a()Lrx/functions/h;
+.method public static a()Lrx/functions/g;
     .locals 1
 
     sget-object v0, Lkik/android/chat/view/ap;->a:Lkik/android/chat/view/ap;
@@ -40,14 +40,12 @@
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final call(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    check-cast p1, Landroid/support/v4/util/Pair;
+    check-cast p1, Ljava/lang/String;
 
-    check-cast p2, Ljava/lang/String;
-
-    invoke-static {p1, p2}, Lkik/android/chat/view/ValidateableInputView;->a(Landroid/support/v4/util/Pair;Ljava/lang/String;)Lkik/android/chat/view/ValidateableInputView$TextValidityState;
+    invoke-static {p1}, Lkik/android/util/bs;->c(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

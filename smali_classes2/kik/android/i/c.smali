@@ -600,45 +600,6 @@
     return-void
 .end method
 
-.method protected static d(Landroid/database/Cursor;Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;)V
-    .locals 3
-
-    .prologue
-    .line 168
-    invoke-interface {p0, p3}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
-
-    move-result v0
-
-    const/4 v1, -0x1
-
-    if-ne v0, v1, :cond_0
-
-    .line 169
-    const-string v0, "ALTER TABLE %s ADD COLUMN %s INT"
-
-    const/4 v1, 0x2
-
-    new-array v1, v1, [Ljava/lang/Object;
-
-    const/4 v2, 0x0
-
-    aput-object p2, v1, v2
-
-    const/4 v2, 0x1
-
-    aput-object p3, v1, v2
-
-    invoke-static {v0, v1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
-
-    .line 171
-    :cond_0
-    return-void
-.end method
-
 
 # virtual methods
 .method public final a()V

@@ -67,13 +67,13 @@
 
     iget-object v2, p0, Lcom/kik/cards/web/iap/b$2;->a:Lcom/kik/cards/web/iap/b;
 
-    invoke-static {v2}, Lcom/kik/cards/web/iap/b;->c(Lcom/kik/cards/web/iap/b;)Lkik/core/interfaces/ae;
+    invoke-static {v2}, Lcom/kik/cards/web/iap/b;->c(Lcom/kik/cards/web/iap/b;)Lkik/core/interfaces/ad;
 
     move-result-object v2
 
     const-string v3, "kik.iap.next_sku_check"
 
-    invoke-interface {v2, v3}, Lkik/core/interfaces/ae;->v(Ljava/lang/String;)Ljava/lang/Long;
+    invoke-interface {v2, v3}, Lkik/core/interfaces/ad;->v(Ljava/lang/String;)Ljava/lang/Long;
 
     move-result-object v2
 
@@ -88,7 +88,7 @@
     .line 1094
     iget-object v0, p0, Lcom/kik/cards/web/iap/b$2;->a:Lcom/kik/cards/web/iap/b;
 
-    invoke-static {v0}, Lcom/kik/cards/web/iap/b;->c(Lcom/kik/cards/web/iap/b;)Lkik/core/interfaces/ae;
+    invoke-static {v0}, Lcom/kik/cards/web/iap/b;->c(Lcom/kik/cards/web/iap/b;)Lkik/core/interfaces/ad;
 
     move-result-object v0
 
@@ -106,7 +106,7 @@
 
     move-result-object v2
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;Ljava/lang/Long;)Z
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Long;)Z
 
     .line 1095
     iget-object v0, p0, Lcom/kik/cards/web/iap/b$2;->a:Lcom/kik/cards/web/iap/b;

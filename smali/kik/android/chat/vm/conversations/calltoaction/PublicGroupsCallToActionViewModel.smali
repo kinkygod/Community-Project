@@ -20,7 +20,7 @@
     .end annotation
 .end field
 
-.field c:Lkik/core/interfaces/ae;
+.field c:Lkik/core/interfaces/ad;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -53,12 +53,12 @@
     return-void
 .end method
 
-.method static synthetic a(Lkik/android/chat/vm/conversations/calltoaction/PublicGroupsCallToActionViewModel;)Lkik/android/chat/vm/aw;
+.method static synthetic a(Lkik/android/chat/vm/conversations/calltoaction/PublicGroupsCallToActionViewModel;)Lkik/android/chat/vm/ay;
     .locals 1
 
     .prologue
     .line 26
-    invoke-virtual {p0}, Lkik/android/chat/vm/conversations/calltoaction/PublicGroupsCallToActionViewModel;->B_()Lkik/android/chat/vm/aw;
+    invoke-virtual {p0}, Lkik/android/chat/vm/conversations/calltoaction/PublicGroupsCallToActionViewModel;->F_()Lkik/android/chat/vm/ay;
 
     move-result-object v0
 
@@ -158,7 +158,7 @@
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
 
     .line 60
-    iget-object v0, p0, Lkik/android/chat/vm/conversations/calltoaction/PublicGroupsCallToActionViewModel;->c:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/chat/vm/conversations/calltoaction/PublicGroupsCallToActionViewModel;->c:Lkik/core/interfaces/ad;
 
     const-string v1, "kik.publicgroup.helper"
 
@@ -168,7 +168,7 @@
 
     move-result-object v2
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;Ljava/lang/Boolean;)Z
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Boolean;)Z
 
     .line 61
     iget-object v0, p0, Lkik/android/chat/vm/conversations/calltoaction/PublicGroupsCallToActionViewModel;->a:Lkik/android/chat/vm/conversations/calltoaction/a$a;
@@ -179,12 +179,12 @@
     return-void
 .end method
 
-.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
     .locals 0
 
     .prologue
     .line 50
-    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/conversations/calltoaction/a;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/conversations/calltoaction/a;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 51
     invoke-interface {p1, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/chat/vm/conversations/calltoaction/PublicGroupsCallToActionViewModel;)V
@@ -251,14 +251,14 @@
     packed-switch v0, :pswitch_data_0
 
     .line 108
-    const v0, 0x7f0200a8
+    const v0, 0x7f020090
 
     :goto_0
     return v0
 
     .line 106
     :pswitch_0
-    const v0, 0x7f0200a9
+    const v0, 0x7f020091
 
     goto :goto_0
 
@@ -291,20 +291,20 @@
     packed-switch v0, :pswitch_data_0
 
     .line 123
-    const v0, 0x7f020277
+    const v0, 0x7f02025f
 
     :goto_0
     return v0
 
     .line 118
     :pswitch_0
-    const v0, 0x7f020315
+    const v0, 0x7f0202f8
 
     goto :goto_0
 
     .line 120
     :pswitch_1
-    const v0, 0x7f020278
+    const v0, 0x7f020260
 
     goto :goto_0
 
@@ -338,14 +338,14 @@
     packed-switch v0, :pswitch_data_0
 
     .line 135
-    const v0, 0x7f0201f6
+    const v0, 0x7f0201dd
 
     :goto_0
     return v0
 
     .line 133
     :pswitch_0
-    const v0, 0x7f0201f8
+    const v0, 0x7f0201df
 
     goto :goto_0
 
@@ -484,7 +484,7 @@
     .line 170
     iget-object v0, p0, Lkik/android/chat/vm/conversations/calltoaction/PublicGroupsCallToActionViewModel;->f:Landroid/content/res/Resources;
 
-    const v1, 0x7f090607
+    const v1, 0x7f09060f
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -497,7 +497,7 @@
     :pswitch_0
     iget-object v0, p0, Lkik/android/chat/vm/conversations/calltoaction/PublicGroupsCallToActionViewModel;->f:Landroid/content/res/Resources;
 
-    const v1, 0x7f0905df
+    const v1, 0x7f0905e6
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -536,7 +536,7 @@
     .line 181
     iget-object v0, p0, Lkik/android/chat/vm/conversations/calltoaction/PublicGroupsCallToActionViewModel;->f:Landroid/content/res/Resources;
 
-    const v1, 0x7f090606
+    const v1, 0x7f09060e
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -549,7 +549,7 @@
     :pswitch_0
     iget-object v0, p0, Lkik/android/chat/vm/conversations/calltoaction/PublicGroupsCallToActionViewModel;->f:Landroid/content/res/Resources;
 
-    const v1, 0x7f0905de
+    const v1, 0x7f0905e5
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

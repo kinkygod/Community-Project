@@ -54,13 +54,13 @@
     .line 1060
     iget-object v0, p0, Lkik/android/net/communicator/RegistrationIntentService$1;->b:Lkik/android/net/communicator/RegistrationIntentService;
 
-    iget-object v0, v0, Lkik/android/net/communicator/RegistrationIntentService;->b:Lkik/core/interfaces/ae;
+    iget-object v0, v0, Lkik/android/net/communicator/RegistrationIntentService;->b:Lkik/core/interfaces/ad;
 
     const-string v1, "GCM_PUSH_TOKEN"
 
     iget-object v2, p0, Lkik/android/net/communicator/RegistrationIntentService$1;->a:Ljava/lang/String;
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ae;->c(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->c(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 56
     return-void

@@ -2,46 +2,50 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lrx/functions/h;
+.implements Lrx/functions/g;
 
 
-# instance fields
-.field private final a:Lkik/android/chat/vm/messaging/dq;
+# static fields
+.field private static final a:Lkik/android/chat/vm/messaging/dv;
 
 
 # direct methods
-.method private constructor <init>(Lkik/android/chat/vm/messaging/dq;)V
-    .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lkik/android/chat/vm/messaging/dv;->a:Lkik/android/chat/vm/messaging/dq;
-
-    return-void
-.end method
-
-.method public static a(Lkik/android/chat/vm/messaging/dq;)Lrx/functions/h;
+.method static constructor <clinit>()V
     .locals 1
 
     new-instance v0, Lkik/android/chat/vm/messaging/dv;
 
-    invoke-direct {v0, p0}, Lkik/android/chat/vm/messaging/dv;-><init>(Lkik/android/chat/vm/messaging/dq;)V
+    invoke-direct {v0}, Lkik/android/chat/vm/messaging/dv;-><init>()V
+
+    sput-object v0, Lkik/android/chat/vm/messaging/dv;->a:Lkik/android/chat/vm/messaging/dv;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static a()Lrx/functions/g;
+    .locals 1
+
+    sget-object v0, Lkik/android/chat/vm/messaging/dv;->a:Lkik/android/chat/vm/messaging/dv;
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final call(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    iget-object v0, p0, Lkik/android/chat/vm/messaging/dv;->a:Lkik/android/chat/vm/messaging/dq;
+    check-cast p1, Lkik/core/chat/profile/a;
 
-    check-cast p1, Ljava/lang/Long;
-
-    check-cast p2, Ljava/lang/Boolean;
-
-    invoke-static {v0, p1, p2}, Lkik/android/chat/vm/messaging/dq;->a(Lkik/android/chat/vm/messaging/dq;Ljava/lang/Long;Ljava/lang/Boolean;)Ljava/lang/Boolean;
+    invoke-static {p1}, Lkik/android/chat/vm/messaging/dq;->a(Lkik/core/chat/profile/a;)Ljava/lang/String;
 
     move-result-object v0
 

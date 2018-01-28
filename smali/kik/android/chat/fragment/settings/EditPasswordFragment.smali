@@ -14,34 +14,34 @@
 # instance fields
 .field protected _existingPasswordField:Lkik/android/chat/view/ValidateableInputView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1001f7
+        value = 0x7f1001f8
     .end annotation
 .end field
 
 .field protected _newPasswordField:Lkik/android/chat/view/ValidateableInputView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1001f8
+        value = 0x7f1001f9
     .end annotation
 .end field
 
 .field protected _retypePasswordField:Lkik/android/chat/view/ValidateableInputView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1001f9
+        value = 0x7f1001fa
     .end annotation
 .end field
 
 .field protected _saveButton:Landroid/view/View;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1001f6
+        value = 0x7f1001f7
     .end annotation
 .end field
 
-.field protected a:Lkik/core/interfaces/ah;
+.field protected a:Lkik/core/interfaces/ag;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field protected b:Lkik/core/interfaces/ae;
+.field protected b:Lkik/core/interfaces/ad;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -298,7 +298,7 @@
 
     .prologue
     .line 74
-    const v0, 0x7f040086
+    const v0, 0x7f040088
 
     const/4 v1, 0x0
 
@@ -391,12 +391,12 @@
     .locals 7
     .annotation build Lbutterknife/OnClick;
         value = {
-            0x7f1001f6
+            0x7f1001f7
         }
     .end annotation
 
     .prologue
-    const v6, 0x7f0905d7
+    const v6, 0x7f0905de
 
     .line 110
     iget-object v0, p0, Lkik/android/chat/fragment/settings/EditPasswordFragment;->_existingPasswordField:Lkik/android/chat/view/ValidateableInputView;
@@ -459,9 +459,9 @@
 
     .line 125
     :goto_0
-    iget-object v4, p0, Lkik/android/chat/fragment/settings/EditPasswordFragment;->b:Lkik/core/interfaces/ae;
+    iget-object v4, p0, Lkik/android/chat/fragment/settings/EditPasswordFragment;->b:Lkik/core/interfaces/ad;
 
-    invoke-static {v4}, Lkik/core/z;->b(Lkik/core/interfaces/ae;)Lkik/core/z;
+    invoke-static {v4}, Lkik/core/z;->b(Lkik/core/interfaces/ad;)Lkik/core/z;
 
     move-result-object v4
 
@@ -615,9 +615,9 @@
     invoke-virtual {p0, v0}, Lkik/android/chat/fragment/settings/EditPasswordFragment;->replaceDialog(Lkik/android/chat/fragment/KikDialogFragment;)V
 
     .line 2163
-    iget-object v0, p0, Lkik/android/chat/fragment/settings/EditPasswordFragment;->a:Lkik/core/interfaces/ah;
+    iget-object v0, p0, Lkik/android/chat/fragment/settings/EditPasswordFragment;->a:Lkik/core/interfaces/ag;
 
-    invoke-interface {v0, v2}, Lkik/core/interfaces/ah;->b(Ljava/lang/String;)Lcom/kik/events/Promise;
+    invoke-interface {v0, v2}, Lkik/core/interfaces/ag;->b(Ljava/lang/String;)Lcom/kik/events/Promise;
 
     move-result-object v0
 
@@ -640,7 +640,7 @@
     goto/16 :goto_0
 .end method
 
-.method protected screenOpenedEvent()Lcom/kik/metrics/b/s;
+.method protected screenOpenedEvent()Lcom/kik/metrics/b/t;
     .locals 1
 
     .prologue

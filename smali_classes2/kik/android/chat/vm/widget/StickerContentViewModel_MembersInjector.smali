@@ -3,16 +3,16 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/b;
+.implements Ldagger/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/b",
+        "Ldagger/b",
         "<",
-        "Lkik/android/chat/vm/widget/ba;",
+        "Lkik/android/chat/vm/widget/bb;",
         ">;"
     }
 .end annotation
@@ -99,7 +99,7 @@
     return-void
 .end method
 
-.method public static a(Ljavax/inject/Provider;)La/b;
+.method public static a(Ljavax/inject/Provider;)Ldagger/b;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -108,9 +108,9 @@
             "<",
             "Lcom/kik/cache/KikVolleyImageLoader;",
             ">;)",
-            "La/b",
+            "Ldagger/b",
             "<",
-            "Lkik/android/chat/vm/widget/ba;",
+            "Lkik/android/chat/vm/widget/bb;",
             ">;"
         }
     .end annotation
@@ -126,12 +126,12 @@
 
 
 # virtual methods
-.method public final synthetic a(Ljava/lang/Object;)V
+.method public final synthetic injectMembers(Ljava/lang/Object;)V
     .locals 2
 
     .prologue
     .line 8
-    check-cast p1, Lkik/android/chat/vm/widget/ba;
+    check-cast p1, Lkik/android/chat/vm/widget/bb;
 
     .line 1029
     if-nez p1, :cond_0
@@ -155,7 +155,7 @@
 
     check-cast v0, Lcom/kik/cache/KikVolleyImageLoader;
 
-    iput-object v0, p1, Lkik/android/chat/vm/widget/ba;->a:Lcom/kik/cache/KikVolleyImageLoader;
+    iput-object v0, p1, Lkik/android/chat/vm/widget/bb;->a:Lcom/kik/cache/KikVolleyImageLoader;
 
     .line 8
     return-void

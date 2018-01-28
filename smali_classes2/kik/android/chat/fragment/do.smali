@@ -37,7 +37,7 @@
 
     iget-object v0, p0, Lkik/android/chat/fragment/do;->a:Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;
 
-    invoke-virtual {v0}, Lkik/android/chat/fragment/KikFragmentBase;->hideKeyboard()V
+    invoke-static {v0}, Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;->e(Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;)V
 
     return-void
 .end method

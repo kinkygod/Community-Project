@@ -2,7 +2,7 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lrx/functions/g;
+.implements Lrx/functions/h;
 
 
 # static fields
@@ -30,7 +30,7 @@
     return-void
 .end method
 
-.method public static a()Lrx/functions/g;
+.method public static a()Lrx/functions/h;
     .locals 1
 
     sget-object v0, Lkik/android/chat/vm/profile/p;->a:Lkik/android/chat/vm/profile/p;
@@ -40,15 +40,27 @@
 
 
 # virtual methods
-.method public final call(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     .prologue
     .line 0
-    check-cast p1, Lcom/kik/core/domain/users/a/c;
+    check-cast p1, Ljava/lang/Boolean;
 
-    .line 1430
-    if-nez p1, :cond_0
+    check-cast p2, Ljava/lang/Boolean;
+
+    .line 1063
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
 
     const/4 v0, 0x1
 
@@ -60,7 +72,7 @@
     .line 0
     return-object v0
 
-    .line 1430
+    .line 1063
     :cond_0
     const/4 v0, 0x0
 

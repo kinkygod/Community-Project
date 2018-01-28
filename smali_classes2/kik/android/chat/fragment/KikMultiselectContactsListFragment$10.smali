@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/view/View$OnClickListener;
+.implements Ljava/lang/Runnable;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/android/chat/fragment/KikMultiselectContactsListFragment;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+    value = Lkik/android/chat/fragment/KikMultiselectContactsListFragment;->b(Ljava/lang/String;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 229
+    .line 353
     iput-object p1, p0, Lkik/android/chat/fragment/KikMultiselectContactsListFragment$10;->a:Lkik/android/chat/fragment/KikMultiselectContactsListFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -36,15 +36,15 @@
 
 
 # virtual methods
-.method public final onClick(Landroid/view/View;)V
+.method public final run()V
     .locals 1
 
     .prologue
-    .line 233
+    .line 358
     iget-object v0, p0, Lkik/android/chat/fragment/KikMultiselectContactsListFragment$10;->a:Lkik/android/chat/fragment/KikMultiselectContactsListFragment;
 
-    invoke-virtual {v0}, Lkik/android/chat/fragment/KikMultiselectContactsListFragment;->J()V
+    invoke-virtual {v0}, Lkik/android/chat/fragment/KikMultiselectContactsListFragment;->F()V
 
-    .line 234
+    .line 359
     return-void
 .end method

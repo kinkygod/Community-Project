@@ -39,7 +39,7 @@
     .locals 0
 
     .prologue
-    .line 800
+    .line 811
     iput-object p1, p0, Lkik/core/profile/GroupManager$13;->b:Lkik/core/profile/GroupManager;
 
     iput-object p2, p0, Lkik/core/profile/GroupManager$13;->a:Ljava/lang/String;
@@ -55,8 +55,8 @@
     .locals 3
 
     .prologue
-    .line 800
-    .line 1804
+    .line 811
+    .line 1815
     iget-object v0, p0, Lkik/core/profile/GroupManager$13;->b:Lkik/core/profile/GroupManager;
 
     iget-object v1, p0, Lkik/core/profile/GroupManager$13;->a:Ljava/lang/String;
@@ -67,6 +67,6 @@
 
     move-result-object v0
 
-    .line 800
+    .line 811
     return-object v0
 .end method

@@ -34,7 +34,7 @@
     .locals 6
 
     .prologue
-    .line 1608
+    .line 1610
     iput-object p1, p0, Lkik/android/chat/KikApplication$22;->b:Lkik/android/chat/KikApplication;
 
     iput-object p6, p0, Lkik/android/chat/KikApplication$22;->a:Landroid/content/Context;
@@ -62,7 +62,7 @@
     .locals 1
 
     .prologue
-    .line 1612
+    .line 1614
     sget-object v0, Lkik/android/config/Configuration$Type;->Boolean:Lkik/android/config/Configuration$Type;
 
     return-object v0
@@ -72,7 +72,7 @@
     .locals 0
 
     .prologue
-    .line 1646
+    .line 1648
     return-void
 .end method
 
@@ -80,8 +80,8 @@
     .locals 2
 
     .prologue
-    .line 1608
-    .line 2624
+    .line 1610
+    .line 2626
     new-instance v0, Landroid/os/Handler;
 
     iget-object v1, p0, Lkik/android/chat/KikApplication$22;->a:Landroid/content/Context;
@@ -92,18 +92,18 @@
 
     invoke-direct {v0, v1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    .line 2625
+    .line 2627
     new-instance v1, Lkik/android/chat/KikApplication$22$1;
 
     invoke-direct {v1, p0}, Lkik/android/chat/KikApplication$22$1;-><init>(Lkik/android/chat/KikApplication$22;)V
 
-    .line 2633
+    .line 2635
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
-    .line 2634
+    .line 2636
     const/4 v0, 0x1
 
-    .line 1608
+    .line 1610
     return v0
 .end method
 
@@ -111,14 +111,14 @@
     .locals 1
 
     .prologue
-    .line 3618
+    .line 3620
     const/4 v0, 0x0
 
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v0
 
-    .line 1608
+    .line 1610
     return-object v0
 .end method
 
@@ -126,13 +126,13 @@
     .locals 1
 
     .prologue
-    .line 2640
+    .line 2642
     const/4 v0, 0x0
 
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v0
 
-    .line 1608
+    .line 1610
     return-object v0
 .end method

@@ -67,7 +67,7 @@
 
     aput-object v1, v0, v3
 
-    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
     .line 41
     new-array v0, v4, [Landroid/view/View;
@@ -76,7 +76,7 @@
 
     aput-object v1, v0, v3
 
-    invoke-static {v0}, Lkik/android/util/ca;->g([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->g([Landroid/view/View;)V
 
     .line 48
     :goto_0
@@ -105,7 +105,7 @@
 
     aput-object v1, v0, v3
 
-    invoke-static {v0}, Lkik/android/util/ca;->g([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->g([Landroid/view/View;)V
 
     .line 46
     new-array v0, v4, [Landroid/view/View;
@@ -114,7 +114,7 @@
 
     aput-object v1, v0, v3
 
-    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
     goto :goto_0
 .end method

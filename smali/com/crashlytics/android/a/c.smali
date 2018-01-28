@@ -442,7 +442,17 @@
     return-object v0
 .end method
 
-.method protected final a_()Z
+.method public final b()Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 128
+    const-string v0, "com.crashlytics.sdk.android:beta"
+
+    return-object v0
+.end method
+
+.method protected final b_()Z
     .locals 3
     .annotation build Landroid/annotation/TargetApi;
         value = 0xe
@@ -503,16 +513,6 @@
     invoke-direct {v0}, Lcom/crashlytics/android/a/i;-><init>()V
 
     goto :goto_0
-.end method
-
-.method public final b()Ljava/lang/String;
-    .locals 1
-
-    .prologue
-    .line 128
-    const-string v0, "com.crashlytics.sdk.android:beta"
-
-    return-object v0
 .end method
 
 .method public final c()Ljava/util/Map;

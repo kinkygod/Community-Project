@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/b;
+.implements Ldagger/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/b",
+        "Ldagger/b",
         "<",
         "Lkik/android/chat/vm/chats/publicgroups/t;",
         ">;"
@@ -50,7 +50,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ag",
+            "Lkik/core/interfaces/af",
             "<",
             "Landroid/graphics/Bitmap;",
             ">;>;"
@@ -112,7 +112,7 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ag",
+            "Lkik/core/interfaces/af",
             "<",
             "Landroid/graphics/Bitmap;",
             ">;>;",
@@ -199,7 +199,7 @@
     return-void
 .end method
 
-.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)La/b;
+.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -214,7 +214,7 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ag",
+            "Lkik/core/interfaces/af",
             "<",
             "Landroid/graphics/Bitmap;",
             ">;>;",
@@ -222,7 +222,7 @@
             "<",
             "Lcom/kik/android/Mixpanel;",
             ">;)",
-            "La/b",
+            "Ldagger/b",
             "<",
             "Lkik/android/chat/vm/chats/publicgroups/t;",
             ">;"
@@ -240,7 +240,7 @@
 
 
 # virtual methods
-.method public final synthetic a(Ljava/lang/Object;)V
+.method public final synthetic injectMembers(Ljava/lang/Object;)V
     .locals 2
 
     .prologue
@@ -289,9 +289,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/interfaces/ag;
+    check-cast v0, Lkik/core/interfaces/af;
 
-    iput-object v0, p1, Lkik/android/chat/vm/chats/publicgroups/t;->c:Lkik/core/interfaces/ag;
+    iput-object v0, p1, Lkik/android/chat/vm/chats/publicgroups/t;->c:Lkik/core/interfaces/af;
 
     .line 1058
     iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/PublicGroupSearchingItemViewModel_MembersInjector;->e:Ljavax/inject/Provider;

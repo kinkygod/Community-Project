@@ -20,10 +20,10 @@
     .end annotation
 .end field
 
-.field c:Lkik/core/interfaces/ag;
+.field c:Lkik/core/interfaces/af;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lkik/core/interfaces/ag",
+            "Lkik/core/interfaces/af",
             "<",
             "Landroid/graphics/Bitmap;",
             ">;"
@@ -405,7 +405,7 @@
 
 
 # virtual methods
-.method public final L_()Lkik/android/chat/vm/chats/publicgroups/IPublicGroupItemViewModel$LayoutType;
+.method public final N_()Lkik/android/chat/vm/chats/publicgroups/IPublicGroupItemViewModel$LayoutType;
     .locals 1
 
     .prologue
@@ -415,7 +415,7 @@
     return-object v0
 .end method
 
-.method public final S_()Lrx/d;
+.method public final U_()Lrx/d;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -448,7 +448,7 @@
     return-object v0
 .end method
 
-.method public final T_()Lrx/d;
+.method public final V_()Lrx/d;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -479,12 +479,12 @@
     return-object v0
 .end method
 
-.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
     .locals 0
 
     .prologue
     .line 102
-    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/chats/publicgroups/a;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/chats/publicgroups/a;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 103
     invoke-interface {p1, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/chat/vm/chats/publicgroups/t;)V
@@ -583,12 +583,12 @@
     goto :goto_0
 .end method
 
-.method public final aj_()V
+.method public final ak_()V
     .locals 2
 
     .prologue
     .line 109
-    invoke-super {p0}, Lkik/android/chat/vm/chats/publicgroups/a;->aj_()V
+    invoke-super {p0}, Lkik/android/chat/vm/chats/publicgroups/a;->ak_()V
 
     .line 110
     iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/t;->f:Lcom/kik/events/Promise;
@@ -607,7 +607,7 @@
     return-void
 .end method
 
-.method public final g()V
+.method public final h()V
     .locals 6
 
     .prologue
@@ -655,7 +655,7 @@
     const-string v2, "Total Results"
 
     .line 222
-    invoke-virtual {p0}, Lkik/android/chat/vm/chats/publicgroups/t;->e()I
+    invoke-virtual {p0}, Lkik/android/chat/vm/chats/publicgroups/t;->g()I
 
     move-result v3
 
@@ -668,7 +668,7 @@
     const-string v2, "Tapped Position"
 
     .line 223
-    invoke-virtual {p0}, Lkik/android/chat/vm/chats/publicgroups/t;->d()I
+    invoke-virtual {p0}, Lkik/android/chat/vm/chats/publicgroups/t;->e()I
 
     move-result v3
 
@@ -696,7 +696,7 @@
     return-void
 .end method
 
-.method public final h()Lrx/d;
+.method public final i()Lrx/d;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -729,7 +729,7 @@
     return-object v0
 .end method
 
-.method public final i()Ljava/lang/String;
+.method public final j()Ljava/lang/String;
     .locals 5
 
     .prologue
@@ -766,7 +766,7 @@
     .line 211
     iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/t;->b:Landroid/content/res/Resources;
 
-    const v1, 0x7f0905c8
+    const v1, 0x7f0905ce
 
     const/4 v2, 0x1
 
@@ -930,17 +930,17 @@
 
     .prologue
     .line 242
-    invoke-virtual {p0}, Lkik/android/chat/vm/chats/publicgroups/t;->B_()Lkik/android/chat/vm/aw;
+    invoke-virtual {p0}, Lkik/android/chat/vm/chats/publicgroups/t;->F_()Lkik/android/chat/vm/ay;
 
     move-result-object v0
 
-    new-instance v1, Lkik/android/chat/vm/dm;
+    new-instance v1, Lkik/android/chat/vm/du;
 
     iget-object v2, p0, Lkik/android/chat/vm/chats/publicgroups/t;->e:Ljava/lang/String;
 
-    invoke-direct {v1, v2}, Lkik/android/chat/vm/dm;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v2}, Lkik/android/chat/vm/du;-><init>(Ljava/lang/String;)V
 
-    invoke-interface {v0, v1}, Lkik/android/chat/vm/aw;->a(Lkik/android/chat/vm/bh;)V
+    invoke-interface {v0, v1}, Lkik/android/chat/vm/ay;->a(Lkik/android/chat/vm/bk;)V
 
     .line 243
     return-void

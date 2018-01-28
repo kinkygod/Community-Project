@@ -36,7 +36,7 @@
     .locals 0
 
     .prologue
-    .line 298
+    .line 308
     iput-object p1, p0, Lcom/kik/cards/web/CardsWebViewFragment$23;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -50,42 +50,42 @@
     .locals 3
 
     .prologue
-    .line 303
+    .line 313
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$23;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
     invoke-virtual {v0}, Lcom/kik/cards/web/CardsWebViewFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v0
 
-    .line 305
+    .line 315
     iget-object v1, p0, Lcom/kik/cards/web/CardsWebViewFragment$23;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
     invoke-virtual {v1}, Lcom/kik/cards/web/CardsWebViewFragment;->c()Lcom/kik/cards/web/PicardWebView;
 
     move-result-object v1
 
-    .line 307
+    .line 317
     invoke-virtual {v1}, Lcom/kik/cards/web/PicardWebView;->canGoBack()Z
 
     move-result v2
 
     if-eqz v2, :cond_1
 
-    .line 308
+    .line 318
     invoke-virtual {v1}, Lcom/kik/cards/web/PicardWebView;->goBack()V
 
-    .line 319
+    .line 329
     :cond_0
     :goto_0
     return-void
 
-    .line 310
+    .line 320
     :cond_1
     instance-of v1, v0, Lkik/android/chat/activity/FragmentWrapperActivity;
 
     if-eqz v1, :cond_2
 
-    .line 311
+    .line 321
     check-cast v0, Lkik/android/chat/activity/FragmentWrapperActivity;
 
     const/4 v1, 0x1
@@ -96,12 +96,12 @@
 
     if-nez v0, :cond_0
 
-    .line 312
+    .line 322
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$23;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
     invoke-virtual {v0}, Lcom/kik/cards/web/CardsWebViewFragment;->finish()V
 
-    .line 313
+    .line 323
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$23;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
     const/4 v1, 0x0
@@ -110,7 +110,7 @@
 
     goto :goto_0
 
-    .line 317
+    .line 327
     :cond_2
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$23;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 

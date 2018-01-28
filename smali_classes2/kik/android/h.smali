@@ -50,7 +50,7 @@
             "Ljava/lang/String;",
             "Ljava/util/List",
             "<",
-            "Lkik/core/interfaces/y;",
+            "Lkik/core/interfaces/x;",
             ">;>;"
         }
     .end annotation
@@ -560,7 +560,7 @@
     return-void
 .end method
 
-.method public final a(Lkik/core/interfaces/y;Ljava/lang/String;)V
+.method public final a(Lkik/core/interfaces/x;Ljava/lang/String;)V
     .locals 2
 
     .prologue

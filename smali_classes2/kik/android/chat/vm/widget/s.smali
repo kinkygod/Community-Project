@@ -3,11 +3,11 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/vm/bn;
+.implements Lkik/android/chat/vm/bo;
 
 
 # virtual methods
-.method public abstract a()Lkik/android/chat/vm/widget/ad;
+.method public abstract a()Lkik/android/chat/vm/widget/ae;
 .end method
 
 .method public abstract b()Lrx/d;

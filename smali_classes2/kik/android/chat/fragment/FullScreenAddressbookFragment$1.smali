@@ -75,7 +75,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lkik/android/chat/fragment/FullScreenAddressbookFragment$a;->g_()Ljava/lang/String;
+    invoke-virtual {v1}, Lkik/android/chat/fragment/FullScreenAddressbookFragment$a;->h_()Ljava/lang/String;
 
     move-result-object v1
 
@@ -101,7 +101,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lkik/android/chat/fragment/FullScreenAddressbookFragment$a;->g_()Ljava/lang/String;
+    invoke-virtual {v2}, Lkik/android/chat/fragment/FullScreenAddressbookFragment$a;->h_()Ljava/lang/String;
 
     move-result-object v2
 
@@ -169,7 +169,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lkik/android/chat/fragment/FullScreenAddressbookFragment$a;->g_()Ljava/lang/String;
+    invoke-virtual {v2}, Lkik/android/chat/fragment/FullScreenAddressbookFragment$a;->h_()Ljava/lang/String;
 
     move-result-object v2
 
@@ -212,7 +212,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f04017b
+    const v2, 0x7f04017e
 
     const-wide/16 v4, 0x3e8
 

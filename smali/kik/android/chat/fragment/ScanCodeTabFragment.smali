@@ -29,25 +29,25 @@
 
 .field _cameraIcon:Landroid/widget/ImageView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f100317
+        value = 0x7f100312
     .end annotation
 .end field
 
 .field _codeIcon:Landroid/widget/ImageView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f100318
+        value = 0x7f100313
     .end annotation
 .end field
 
 .field _scanToggle:Landroid/widget/SeekBar;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1003de
+        value = 0x7f1003da
     .end annotation
 .end field
 
 .field _toggleHolder:Landroid/widget/LinearLayout;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f100316
+        value = 0x7f100311
     .end annotation
 .end field
 
@@ -59,7 +59,7 @@
 
 .field _viewPager:Lkik/android/widget/VelocityControlledViewPager;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f100315
+        value = 0x7f100310
     .end annotation
 .end field
 
@@ -560,7 +560,7 @@
     invoke-virtual {v3, v0}, Lkik/android/chat/fragment/ScanCodeTabFragment$a;->a(Landroid/os/Bundle;)V
 
     .line 251
-    const v0, 0x7f0400eb
+    const v0, 0x7f0400ed
 
     invoke-virtual {p1, v0, p2, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
@@ -626,11 +626,11 @@
     .line 272
     iget-object v3, p0, Lkik/android/chat/fragment/ScanCodeTabFragment;->_topBar:Landroid/view/View;
 
-    invoke-static {v3}, Lkik/android/util/ca;->a(Landroid/view/View;)Lkik/android/util/ca$b;
+    invoke-static {v3}, Lkik/android/util/cb;->a(Landroid/view/View;)Lkik/android/util/cb$b;
 
     move-result-object v3
 
-    invoke-virtual {v3, v0}, Lkik/android/util/ca$b;->a(I)Lkik/android/util/ca$b;
+    invoke-virtual {v3, v0}, Lkik/android/util/cb$b;->a(I)Lkik/android/util/cb$b;
 
     .line 274
     :cond_1
@@ -783,7 +783,7 @@
 
     aput-object v1, v0, v2
 
-    invoke-static {v0}, Lkik/android/util/ca;->g([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->g([Landroid/view/View;)V
 
     .line 4440
     :cond_3

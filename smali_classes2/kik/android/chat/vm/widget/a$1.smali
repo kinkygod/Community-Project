@@ -71,7 +71,7 @@
 
     iget-object v1, p0, Lkik/android/chat/vm/widget/a$1;->b:Lkik/android/chat/vm/widget/a;
 
-    invoke-virtual {v1}, Lkik/android/chat/vm/widget/a;->aE_()Lkik/android/internal/platform/PlatformHelper$StickerSource;
+    invoke-virtual {v1}, Lkik/android/chat/vm/widget/a;->d()Lkik/android/internal/platform/PlatformHelper$StickerSource;
 
     move-result-object v1
 

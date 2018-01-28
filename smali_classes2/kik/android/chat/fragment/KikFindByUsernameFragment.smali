@@ -14,7 +14,7 @@
 # instance fields
 .field _emptyTextView:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f10030b
+        value = 0x7f100306
     .end annotation
 .end field
 
@@ -72,7 +72,7 @@
 
     .prologue
     .line 116
-    const v0, 0x7f090651
+    const v0, 0x7f090659
 
     return v0
 .end method
@@ -91,7 +91,7 @@
     .locals 7
     .annotation build Lbutterknife/OnClick;
         value = {
-            0x7f10030b
+            0x7f100306
         }
     .end annotation
 
@@ -99,10 +99,10 @@
     .line 66
     const-string v1, "Find By Username"
 
-    iget-object v0, p0, Lkik/android/chat/fragment/KikFindByUsernameFragment;->E:Lkik/core/interfaces/ah;
+    iget-object v0, p0, Lkik/android/chat/fragment/KikFindByUsernameFragment;->F:Lkik/core/interfaces/ag;
 
     .line 69
-    invoke-interface {v0}, Lkik/core/interfaces/ah;->d()Lkik/core/datatypes/ac;
+    invoke-interface {v0}, Lkik/core/interfaces/ag;->d()Lkik/core/datatypes/ab;
 
     move-result-object v2
 
@@ -111,16 +111,16 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Lkik/android/chat/fragment/KikFindByUsernameFragment;->D:Lcom/kik/android/Mixpanel;
+    iget-object v4, p0, Lkik/android/chat/fragment/KikFindByUsernameFragment;->E:Lcom/kik/android/Mixpanel;
 
     iget-object v5, p0, Lkik/android/chat/fragment/KikFindByUsernameFragment;->w:Lkik/core/interfaces/b;
 
-    iget-object v6, p0, Lkik/android/chat/fragment/KikFindByUsernameFragment;->G:Lcom/kik/cache/KikVolleyImageLoader;
+    iget-object v6, p0, Lkik/android/chat/fragment/KikFindByUsernameFragment;->H:Lcom/kik/cache/KikVolleyImageLoader;
 
     move-object v0, p0
 
     .line 66
-    invoke-static/range {v0 .. v6}, Lkik/android/util/bk;->a(Lkik/android/chat/fragment/KikScopedDialogFragment;Ljava/lang/String;Lkik/core/datatypes/ac;Landroid/content/Context;Lcom/kik/android/Mixpanel;Lkik/core/interfaces/b;Lcom/kik/cache/KikVolleyImageLoader;)V
+    invoke-static/range {v0 .. v6}, Lkik/android/util/bk;->a(Lkik/android/chat/fragment/KikScopedDialogFragment;Ljava/lang/String;Lkik/core/datatypes/ab;Landroid/content/Context;Lcom/kik/android/Mixpanel;Lkik/core/interfaces/b;Lcom/kik/cache/KikVolleyImageLoader;)V
 
     .line 74
     return-void
@@ -130,7 +130,7 @@
     .locals 9
 
     .prologue
-    const v8, 0x7f09057e
+    const v8, 0x7f090584
 
     const/4 v7, 0x0
 
@@ -160,14 +160,14 @@
     invoke-virtual {v1, v2}, Lkik/android/chat/view/SearchBarViewImpl;->b(Ljava/lang/String;)V
 
     .line 41
-    iget-object v1, p0, Lkik/android/chat/fragment/KikFindByUsernameFragment;->E:Lkik/core/interfaces/ah;
+    iget-object v1, p0, Lkik/android/chat/fragment/KikFindByUsernameFragment;->F:Lkik/core/interfaces/ag;
 
-    invoke-interface {v1}, Lkik/core/interfaces/ah;->d()Lkik/core/datatypes/ac;
+    invoke-interface {v1}, Lkik/core/interfaces/ag;->d()Lkik/core/datatypes/ab;
 
     move-result-object v1
 
     .line 42
-    iget-object v1, v1, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
+    iget-object v1, v1, Lkik/core/datatypes/ab;->c:Ljava/lang/String;
 
     .line 43
     invoke-virtual {p0}, Lkik/android/chat/fragment/KikFindByUsernameFragment;->getResources()Landroid/content/res/Resources;
@@ -255,16 +255,16 @@
     return v0
 .end method
 
-.method protected screenOpenedEvent()Lcom/kik/metrics/b/s;
+.method protected screenOpenedEvent()Lcom/kik/metrics/b/t;
     .locals 1
 
     .prologue
     .line 80
-    invoke-static {}, Lcom/kik/metrics/b/t;->b()Lcom/kik/metrics/b/t$a;
+    invoke-static {}, Lcom/kik/metrics/b/u;->b()Lcom/kik/metrics/b/u$a;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/kik/metrics/b/t$a;->a()Lcom/kik/metrics/b/t;
+    invoke-virtual {v0}, Lcom/kik/metrics/b/u$a;->a()Lcom/kik/metrics/b/u;
 
     move-result-object v0
 

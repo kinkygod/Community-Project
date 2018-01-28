@@ -22,11 +22,9 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 7
+    .locals 6
 
     .prologue
-    const/4 v6, 0x2
-
     const/4 v5, 0x1
 
     const/4 v4, 0x0
@@ -34,39 +32,32 @@
     .line 900
     new-array v0, v5, [Ljava/lang/String;
 
-    const-string v1, "\n#messagepath/v1/adaptive_cards.proto\u0012\u0015common.messagepath.v1\u001a\u0012common_model.proto\u001a\u0019protobuf_validation.proto\"f\n\u0016AdaptiveCardAttachment\u0012\u001b\n\u0007card_id\u0018\u0001 \u0001(\tB\u0008\u00ca\u009d%\u0004(\u00010@H\u0000\u0012$\n\u000fcard_definition\u0018\u0002 \u0001(\tB\t\u00ca\u009d%\u0005(\u00020\u0090NH\u0000B\t\n\u0007contentBw\n\u0019com.kik.messagepath.modelZSgithub.com/kikinteractive/xiphias-model-common/generated/go/messagepath;messagepath\u00a2\u0002\u0004MPTHb\u0006proto3"
+    const-string v1, "\n#messagepath/v1/adaptive_cards.proto\u0012\u0015common.messagepath.v1\u001a\u0019protobuf_validation.proto\"f\n\u0016AdaptiveCardAttachment\u0012\u001b\n\u0007card_id\u0018\u0001 \u0001(\tB\u0008\u00ca\u009d%\u0004(\u00010@H\u0000\u0012$\n\u000fcard_definition\u0018\u0002 \u0001(\tB\t\u00ca\u009d%\u0005(\u00020\u0090NH\u0000B\t\n\u0007contentBw\n\u0019com.kik.messagepath.modelZSgithub.com/kikinteractive/xiphias-model-common/generated/go/messagepath;messagepath\u00a2\u0002\u0004MPTHb\u0006proto3"
 
     aput-object v1, v0, v4
 
-    .line 911
+    .line 910
     new-instance v1, Lcom/kik/messagepath/model/AdaptiveCards$1;
 
     invoke-direct {v1}, Lcom/kik/messagepath/model/AdaptiveCards$1;-><init>()V
 
-    .line 919
-    new-array v2, v6, [Lcom/google/protobuf/Descriptors$FileDescriptor;
+    .line 918
+    new-array v2, v5, [Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    .line 922
-    invoke-static {}, Lcom/kik/ximodel/CommonModelProto;->getDescriptor()Lcom/google/protobuf/Descriptors$FileDescriptor;
+    .line 921
+    invoke-static {}, Lcom/kik/protovalidation/ProtobufValidation;->a()Lcom/google/protobuf/Descriptors$FileDescriptor;
 
     move-result-object v3
 
     aput-object v3, v2, v4
 
-    .line 923
-    invoke-static {}, Lcom/kik/protovalidation/ProtobufValidation;->a()Lcom/google/protobuf/Descriptors$FileDescriptor;
-
-    move-result-object v3
-
-    aput-object v3, v2, v5
-
-    .line 920
+    .line 919
     invoke-static {v0, v2, v1}, Lcom/google/protobuf/Descriptors$FileDescriptor;->internalBuildGeneratedFileFrom([Ljava/lang/String;[Lcom/google/protobuf/Descriptors$FileDescriptor;Lcom/google/protobuf/Descriptors$FileDescriptor$InternalDescriptorAssigner;)V
 
     .line 1895
     sget-object v0, Lcom/kik/messagepath/model/AdaptiveCards;->c:Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    .line 926
+    .line 924
     invoke-virtual {v0}, Lcom/google/protobuf/Descriptors$FileDescriptor;->getMessageTypes()Ljava/util/List;
 
     move-result-object v0
@@ -79,7 +70,7 @@
 
     sput-object v0, Lcom/kik/messagepath/model/AdaptiveCards;->a:Lcom/google/protobuf/Descriptors$Descriptor;
 
-    .line 927
+    .line 925
     new-instance v0, Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
     sget-object v1, Lcom/kik/messagepath/model/AdaptiveCards;->a:Lcom/google/protobuf/Descriptors$Descriptor;
@@ -96,37 +87,36 @@
 
     aput-object v3, v2, v5
 
-    const-string v3, "Content"
+    const/4 v3, 0x2
 
-    aput-object v3, v2, v6
+    const-string v4, "Content"
+
+    aput-object v4, v2, v3
 
     invoke-direct {v0, v1, v2}, Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;-><init>(Lcom/google/protobuf/Descriptors$Descriptor;[Ljava/lang/String;)V
 
     sput-object v0, Lcom/kik/messagepath/model/AdaptiveCards;->b:Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
-    .line 932
+    .line 930
     invoke-static {}, Lcom/google/protobuf/ExtensionRegistry;->newInstance()Lcom/google/protobuf/ExtensionRegistry;
 
     move-result-object v0
 
-    .line 933
+    .line 931
     sget-object v1, Lcom/kik/protovalidation/ProtobufValidation;->a:Lcom/google/protobuf/GeneratedMessage$GeneratedExtension;
 
     invoke-virtual {v0, v1}, Lcom/google/protobuf/ExtensionRegistry;->add(Lcom/google/protobuf/GeneratedMessage$GeneratedExtension;)V
 
-    .line 934
+    .line 932
     sget-object v1, Lcom/kik/messagepath/model/AdaptiveCards;->c:Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    .line 935
+    .line 933
     invoke-static {v1, v0}, Lcom/google/protobuf/Descriptors$FileDescriptor;->internalUpdateFileDescriptor(Lcom/google/protobuf/Descriptors$FileDescriptor;Lcom/google/protobuf/ExtensionRegistry;)V
 
-    .line 936
-    invoke-static {}, Lcom/kik/ximodel/CommonModelProto;->getDescriptor()Lcom/google/protobuf/Descriptors$FileDescriptor;
-
-    .line 937
+    .line 934
     invoke-static {}, Lcom/kik/protovalidation/ProtobufValidation;->a()Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    .line 938
+    .line 935
     return-void
 .end method
 

@@ -332,7 +332,7 @@
     return-void
 .end method
 
-.method protected static varargs f_()V
+.method protected static varargs g_()V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -472,7 +472,7 @@
     .end annotation
 .end method
 
-.method public final e_()Lio/fabric/sdk/android/services/concurrency/AsyncTask$Status;
+.method public final f_()Lio/fabric/sdk/android/services/concurrency/AsyncTask$Status;
     .locals 1
 
     .prologue

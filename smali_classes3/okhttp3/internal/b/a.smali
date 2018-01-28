@@ -78,7 +78,7 @@
     invoke-virtual {v0}, Lokio/t;->f()Lokio/t;
 
     .line 262
-    invoke-virtual {v0}, Lokio/t;->aU_()Lokio/t;
+    invoke-virtual {v0}, Lokio/t;->aQ_()Lokio/t;
 
     .line 263
     return-void

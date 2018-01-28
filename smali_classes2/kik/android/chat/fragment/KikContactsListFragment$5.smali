@@ -28,12 +28,12 @@
     .locals 1
 
     .prologue
-    .line 338
+    .line 341
     iput-object p1, p0, Lkik/android/chat/fragment/KikContactsListFragment$5;->a:Lkik/android/chat/fragment/KikContactsListFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 339
+    .line 342
     const/4 v0, 0x0
 
     iput v0, p0, Lkik/android/chat/fragment/KikContactsListFragment$5;->b:I
@@ -47,7 +47,7 @@
     .locals 0
 
     .prologue
-    .line 355
+    .line 358
     return-void
 .end method
 
@@ -55,14 +55,14 @@
     .locals 3
 
     .prologue
-    .line 344
+    .line 347
     iget v0, p0, Lkik/android/chat/fragment/KikContactsListFragment$5;->b:I
 
     if-nez v0, :cond_0
 
     if-eqz p2, :cond_0
 
-    .line 345
+    .line 348
     iget-object v0, p0, Lkik/android/chat/fragment/KikContactsListFragment$5;->a:Lkik/android/chat/fragment/KikContactsListFragment;
 
     invoke-virtual {v0}, Lkik/android/chat/fragment/KikContactsListFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
@@ -77,7 +77,7 @@
 
     check-cast v0, Landroid/view/inputmethod/InputMethodManager;
 
-    .line 346
+    .line 349
     iget-object v1, p0, Lkik/android/chat/fragment/KikContactsListFragment$5;->a:Lkik/android/chat/fragment/KikContactsListFragment;
 
     iget-object v1, v1, Lkik/android/chat/fragment/KikContactsListFragment;->j:Lkik/android/chat/view/SearchBarViewImpl;
@@ -94,7 +94,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/view/inputmethod/InputMethodManager;->hideSoftInputFromWindow(Landroid/os/IBinder;I)Z
 
-    .line 347
+    .line 350
     iget-object v0, p0, Lkik/android/chat/fragment/KikContactsListFragment$5;->a:Lkik/android/chat/fragment/KikContactsListFragment;
 
     iget-object v0, v0, Lkik/android/chat/fragment/KikContactsListFragment;->j:Lkik/android/chat/view/SearchBarViewImpl;
@@ -105,10 +105,10 @@
 
     invoke-virtual {v0}, Lkik/android/widget/RobotoEditText;->clearFocus()V
 
-    .line 349
+    .line 352
     :cond_0
     iput p2, p0, Lkik/android/chat/fragment/KikContactsListFragment$5;->b:I
 
-    .line 350
+    .line 353
     return-void
 .end method

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/f/g;
+.implements Lkik/android/f/f;
 
 
 # annotations
@@ -15,11 +15,13 @@
 
 
 # static fields
-.field private static aa:I
+.field private static T:Z
+
+.field private static ac:I
 
 
 # instance fields
-.field protected J:Lcom/kik/cache/KikVolleyImageLoader;
+.field protected K:Lcom/kik/cache/KikVolleyImageLoader;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 
@@ -28,47 +30,47 @@
     .end annotation
 .end field
 
-.field K:Lkik/core/interfaces/w;
+.field L:Lkik/core/interfaces/v;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field L:Lkik/core/interfaces/l;
+.field M:Lkik/core/interfaces/l;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field M:Lkik/core/interfaces/ah;
+.field N:Lkik/core/interfaces/ag;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field N:Lkik/core/interfaces/ae;
+.field O:Lkik/core/interfaces/ad;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field O:Lcom/kik/android/Mixpanel;
+.field P:Lcom/kik/android/Mixpanel;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field P:Lkik/core/net/e;
+.field Q:Lkik/core/net/e;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field Q:Lkik/core/interfaces/n;
+.field R:Lkik/core/interfaces/n;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field R:Lkik/core/a/e;
+.field S:Lkik/core/a/e;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field private S:Ljava/util/Set;
+.field private U:Ljava/util/Set;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set",
@@ -79,19 +81,15 @@
     .end annotation
 .end field
 
-.field private T:Ljava/lang/String;
+.field private V:Ljava/lang/String;
 
-.field private U:Ljava/lang/String;
-
-.field private V:Z
-
-.field private W:Z
+.field private W:Ljava/lang/String;
 
 .field private X:Z
 
-.field private Y:Ljava/lang/String;
+.field private Y:Z
 
-.field private Z:Lkik/core/profile/GroupManager$HashtagAvailabilityState;
+.field private Z:Z
 
 .field _editTextLayouts:Landroid/widget/LinearLayout;
     .annotation build Lbutterknife/BindView;
@@ -129,17 +127,21 @@
     .end annotation
 .end field
 
-.field private ab:I
+.field private aa:Ljava/lang/String;
 
-.field private ac:Lkik/android/chat/fragment/KikStartGroupFragment$a;
+.field private ab:Lkik/core/profile/GroupManager$HashtagAvailabilityState;
 
-.field private ad:Ljava/lang/String;
+.field private ad:I
 
-.field private ae:Landroid/view/View;
+.field private ae:Lkik/android/chat/fragment/KikStartGroupFragment$a;
 
-.field private af:Lkik/core/datatypes/p;
+.field private af:Ljava/lang/String;
 
-.field private ag:Z
+.field private ag:Landroid/view/View;
+
+.field private ah:Lkik/core/datatypes/p;
+
+.field private ai:Z
 
 
 # direct methods
@@ -147,10 +149,15 @@
     .locals 1
 
     .prologue
-    .line 111
+    .line 80
+    const/4 v0, 0x0
+
+    sput-boolean v0, Lkik/android/chat/fragment/KikStartGroupFragment;->T:Z
+
+    .line 112
     const/16 v0, 0x1f4
 
-    sput v0, Lkik/android/chat/fragment/KikStartGroupFragment;->aa:I
+    sput v0, Lkik/android/chat/fragment/KikStartGroupFragment;->ac:I
 
     return-void
 .end method
@@ -166,48 +173,48 @@
     .line 78
     invoke-direct {p0}, Lkik/android/chat/fragment/KikPickUsersFragment;-><init>()V
 
-    .line 100
+    .line 102
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    iput-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->S:Ljava/util/Set;
-
-    .line 105
-    iput-object v2, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->U:Ljava/lang/String;
+    iput-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->U:Ljava/util/Set;
 
     .line 106
-    iput-boolean v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->V:Z
+    iput-object v2, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->W:Ljava/lang/String;
 
     .line 107
-    iput-boolean v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->W:Z
-
-    .line 108
     iput-boolean v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->X:Z
 
+    .line 108
+    iput-boolean v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->Y:Z
+
     .line 109
-    iput-object v2, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->Y:Ljava/lang/String;
+    iput-boolean v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->Z:Z
 
     .line 110
+    iput-object v2, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->aa:Ljava/lang/String;
+
+    .line 111
     sget-object v0, Lkik/core/profile/GroupManager$HashtagAvailabilityState;->UNAVAILABLE:Lkik/core/profile/GroupManager$HashtagAvailabilityState;
 
-    iput-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->Z:Lkik/core/profile/GroupManager$HashtagAvailabilityState;
-
-    .line 112
-    iput v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ab:I
+    iput-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ab:Lkik/core/profile/GroupManager$HashtagAvailabilityState;
 
     .line 113
+    iput v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ad:I
+
+    .line 114
     new-instance v0, Lkik/android/chat/fragment/KikStartGroupFragment$a;
 
     invoke-direct {v0}, Lkik/android/chat/fragment/KikStartGroupFragment$a;-><init>()V
 
-    iput-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ac:Lkik/android/chat/fragment/KikStartGroupFragment$a;
+    iput-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ae:Lkik/android/chat/fragment/KikStartGroupFragment$a;
 
-    .line 114
-    iput-object v2, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ad:Ljava/lang/String;
+    .line 116
+    iput-object v2, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->af:Ljava/lang/String;
 
-    .line 119
-    iput-boolean v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ag:Z
+    .line 120
+    iput-boolean v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ai:Z
 
     return-void
 .end method
@@ -216,8 +223,8 @@
     .locals 1
 
     .prologue
-    .line 356
-    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->S:Ljava/util/Set;
+    .line 357
+    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->U:Ljava/util/Set;
 
     invoke-interface {v0}, Ljava/util/Set;->size()I
 
@@ -242,10 +249,10 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 303
-    iput-object p1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->Z:Lkik/core/profile/GroupManager$HashtagAvailabilityState;
-
     .line 304
+    iput-object p1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ab:Lkik/core/profile/GroupManager$HashtagAvailabilityState;
+
+    .line 305
     sget-object v0, Lkik/android/chat/fragment/KikStartGroupFragment$5;->a:[I
 
     invoke-virtual {p1}, Lkik/core/profile/GroupManager$HashtagAvailabilityState;->ordinal()I
@@ -256,7 +263,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    .line 314
+    .line 315
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v0
@@ -264,7 +271,7 @@
     :goto_0
     return-object v0
 
-    .line 306
+    .line 307
     :pswitch_0
     const/4 v0, 0x1
 
@@ -274,37 +281,37 @@
 
     goto :goto_0
 
-    .line 308
+    .line 309
     :pswitch_1
     iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->_groupHashtagEditText:Lkik/android/chat/view/ValidateableInputView;
 
-    const v1, 0x7f090556
+    const v1, 0x7f09055c
 
     invoke-virtual {v0, v1}, Lkik/android/chat/view/ValidateableInputView;->b(I)V
 
-    .line 309
+    .line 310
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v0
 
     goto :goto_0
 
-    .line 311
+    .line 312
     :pswitch_2
     iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->_groupHashtagEditText:Lkik/android/chat/view/ValidateableInputView;
 
-    const v1, 0x7f090558
+    const v1, 0x7f09055e
 
     invoke-virtual {v0, v1}, Lkik/android/chat/view/ValidateableInputView;->b(I)V
 
-    .line 312
+    .line 313
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v0
 
     goto :goto_0
 
-    .line 304
+    .line 305
     nop
 
     :pswitch_data_0
@@ -319,7 +326,7 @@
     .locals 2
 
     .prologue
-    .line 220
+    .line 221
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
     move-result v0
@@ -328,19 +335,19 @@
 
     if-le v0, v1, :cond_1
 
-    .line 221
+    .line 222
     sget-object v0, Lkik/core/profile/GroupManager$HashtagAvailabilityState;->FETCHING:Lkik/core/profile/GroupManager$HashtagAvailabilityState;
 
-    iput-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->Z:Lkik/core/profile/GroupManager$HashtagAvailabilityState;
-
-    .line 226
-    :goto_0
-    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ad:Ljava/lang/String;
+    iput-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ab:Lkik/core/profile/GroupManager$HashtagAvailabilityState;
 
     .line 227
-    iput-object p1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ad:Ljava/lang/String;
+    :goto_0
+    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->af:Ljava/lang/String;
 
-    .line 229
+    .line 228
+    iput-object p1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->af:Ljava/lang/String;
+
+    .line 230
     const-string v1, "#"
 
     invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -355,7 +362,7 @@
 
     if-nez v1, :cond_0
 
-    .line 230
+    .line 231
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v0
@@ -364,18 +371,18 @@
 
     if-le v0, v1, :cond_0
 
-    .line 231
+    .line 232
     const-string p1, ""
 
-    .line 234
+    .line 235
     :cond_0
     return-object p1
 
-    .line 224
+    .line 225
     :cond_1
     sget-object v0, Lkik/core/profile/GroupManager$HashtagAvailabilityState;->INVALID:Lkik/core/profile/GroupManager$HashtagAvailabilityState;
 
-    iput-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->Z:Lkik/core/profile/GroupManager$HashtagAvailabilityState;
+    iput-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ab:Lkik/core/profile/GroupManager$HashtagAvailabilityState;
 
     goto :goto_0
 .end method
@@ -385,7 +392,7 @@
 
     .prologue
     .line 78
-    iput-object p1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->af:Lkik/core/datatypes/p;
+    iput-object p1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ah:Lkik/core/datatypes/p;
 
     return-object p1
 .end method
@@ -396,42 +403,19 @@
     .prologue
     const/4 v5, 0x1
 
-    .line 240
+    .line 241
     invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
 
     move-result v0
 
     if-gt v0, v5, :cond_0
 
-    .line 241
+    .line 242
     sget-object v0, Lkik/core/profile/GroupManager$HashtagAvailabilityState;->EMPTYTAG:Lkik/core/profile/GroupManager$HashtagAvailabilityState;
 
-    iput-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->Z:Lkik/core/profile/GroupManager$HashtagAvailabilityState;
+    iput-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ab:Lkik/core/profile/GroupManager$HashtagAvailabilityState;
 
-    .line 242
-    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->_groupHashtagEditText:Lkik/android/chat/view/ValidateableInputView;
-
-    invoke-static {p0}, Lkik/android/chat/fragment/ee;->a(Lkik/android/chat/fragment/KikStartGroupFragment;)Ljava/lang/Runnable;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lkik/android/chat/view/ValidateableInputView;->post(Ljava/lang/Runnable;)Z
-
-    .line 244
-    invoke-static {v5}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lrx/d;->b(Ljava/lang/Object;)Lrx/d;
-
-    move-result-object v0
-
-    .line 257
-    :goto_0
-    return-object v0
-
-    .line 247
-    :cond_0
+    .line 243
     iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->_groupHashtagEditText:Lkik/android/chat/view/ValidateableInputView;
 
     invoke-static {p0}, Lkik/android/chat/fragment/ef;->a(Lkik/android/chat/fragment/KikStartGroupFragment;)Ljava/lang/Runnable;
@@ -440,7 +424,30 @@
 
     invoke-virtual {v0, v1}, Lkik/android/chat/view/ValidateableInputView;->post(Ljava/lang/Runnable;)Z
 
-    .line 251
+    .line 245
+    invoke-static {v5}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lrx/d;->b(Ljava/lang/Object;)Lrx/d;
+
+    move-result-object v0
+
+    .line 258
+    :goto_0
+    return-object v0
+
+    .line 248
+    :cond_0
+    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->_groupHashtagEditText:Lkik/android/chat/view/ValidateableInputView;
+
+    invoke-static {p0}, Lkik/android/chat/fragment/eg;->a(Lkik/android/chat/fragment/KikStartGroupFragment;)Ljava/lang/Runnable;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lkik/android/chat/view/ValidateableInputView;->post(Ljava/lang/Runnable;)Z
+
+    .line 252
     invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object v0
@@ -451,19 +458,19 @@
 
     if-nez v0, :cond_1
 
-    .line 252
+    .line 253
     sget-object v0, Lkik/core/profile/GroupManager$HashtagAvailabilityState;->INVALID:Lkik/core/profile/GroupManager$HashtagAvailabilityState;
 
-    iput-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->Z:Lkik/core/profile/GroupManager$HashtagAvailabilityState;
+    iput-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ab:Lkik/core/profile/GroupManager$HashtagAvailabilityState;
 
-    .line 253
+    .line 254
     iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->_groupHashtagEditText:Lkik/android/chat/view/ValidateableInputView;
 
-    const v1, 0x7f090556
+    const v1, 0x7f09055c
 
     invoke-virtual {v0, v1}, Lkik/android/chat/view/ValidateableInputView;->b(I)V
 
-    .line 254
+    .line 255
     const/4 v0, 0x0
 
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -476,21 +483,21 @@
 
     goto :goto_0
 
-    .line 257
+    .line 258
     :cond_1
     invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 10296
-    iget v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ab:I
+    .line 10297
+    iget v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ad:I
 
     add-int/lit8 v1, v1, 0x1
 
-    iput v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ab:I
+    iput v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ad:I
 
-    .line 10297
-    iget-object v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->L:Lkik/core/interfaces/l;
+    .line 10298
+    iget-object v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->M:Lkik/core/interfaces/l;
 
     invoke-interface {v1, v0}, Lkik/core/interfaces/l;->c(Ljava/lang/String;)Lcom/kik/events/Promise;
 
@@ -504,32 +511,32 @@
 
     move-result-object v0
 
-    .line 10299
+    .line 10300
     invoke-static {v0}, Lkik/core/b/a;->a(Lcom/kik/events/Promise;)Lrx/d;
 
     move-result-object v0
 
-    sget v1, Lkik/android/chat/fragment/KikStartGroupFragment;->aa:I
+    sget v1, Lkik/android/chat/fragment/KikStartGroupFragment;->ac:I
 
     int-to-long v2, v1
 
     sget-object v1, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
 
-    .line 10300
+    .line 10301
     invoke-virtual {v0, v2, v3, v1}, Lrx/d;->d(JLjava/util/concurrent/TimeUnit;)Lrx/d;
 
     move-result-object v0
 
-    invoke-static {p0}, Lkik/android/chat/fragment/eb;->a(Lkik/android/chat/fragment/KikStartGroupFragment;)Lrx/functions/g;
+    invoke-static {p0}, Lkik/android/chat/fragment/ec;->a(Lkik/android/chat/fragment/KikStartGroupFragment;)Lrx/functions/g;
 
     move-result-object v1
 
-    .line 10301
+    .line 10302
     invoke-virtual {v0, v1}, Lrx/d;->e(Lrx/functions/g;)Lrx/d;
 
     move-result-object v0
 
-    invoke-static {p0}, Lkik/android/chat/fragment/ec;->a(Lkik/android/chat/fragment/KikStartGroupFragment;)Lrx/functions/b;
+    invoke-static {p0}, Lkik/android/chat/fragment/ed;->a(Lkik/android/chat/fragment/KikStartGroupFragment;)Lrx/functions/b;
 
     move-result-object v1
 
@@ -557,7 +564,7 @@
 
     move-result-object v0
 
-    .line 10324
+    .line 10325
     invoke-static {v5}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v1
@@ -579,19 +586,19 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 812
+    .line 818
     iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->_groupNamingContainerView:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getHeight()I
 
     move-result v0
 
-    .line 813
+    .line 819
     iget-object v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->c:Landroid/widget/ListView;
 
-    invoke-static {v1, v2, v0, v2, v2}, Lkik/android/util/ca;->a(Landroid/view/View;IIII)V
+    invoke-static {v1, v2, v0, v2, v2}, Lkik/android/util/cb;->a(Landroid/view/View;IIII)V
 
-    .line 814
+    .line 820
     return-void
 .end method
 
@@ -599,7 +606,7 @@
     .locals 1
 
     .prologue
-    .line 710
+    .line 716
     new-instance v0, Lkik/android/chat/fragment/KikChatFragment$a;
 
     invoke-direct {v0}, Lkik/android/chat/fragment/KikChatFragment$a;-><init>()V
@@ -610,7 +617,7 @@
 
     invoke-virtual {p0, v0}, Lkik/android/chat/fragment/KikStartGroupFragment;->startFragmentForResult(Lkik/android/util/ad;)Lcom/kik/events/Promise;
 
-    .line 711
+    .line 717
     return-void
 .end method
 
@@ -618,19 +625,19 @@
     .locals 2
 
     .prologue
-    .line 319
+    .line 320
     sget-object v0, Lkik/core/profile/GroupManager$HashtagAvailabilityState;->AVAILABLE:Lkik/core/profile/GroupManager$HashtagAvailabilityState;
 
-    iput-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->Z:Lkik/core/profile/GroupManager$HashtagAvailabilityState;
+    iput-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ab:Lkik/core/profile/GroupManager$HashtagAvailabilityState;
 
-    .line 320
+    .line 321
     iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->_groupHashtagEditText:Lkik/android/chat/view/ValidateableInputView;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lkik/android/chat/view/ValidateableInputView;->b(Landroid/graphics/drawable/Drawable;)V
 
-    .line 323
+    .line 324
     return-void
 .end method
 
@@ -648,37 +655,37 @@
     .locals 3
 
     .prologue
-    .line 283
-    iget-boolean v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ag:Z
+    .line 284
+    iget-boolean v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ai:Z
 
     if-eqz v0, :cond_0
 
-    .line 284
+    .line 285
     iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->_groupNameEditText:Lkik/android/chat/view/ValidateableInputView;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, p0, v1}, Lkik/android/chat/view/ValidateableInputView;->a(Lkik/android/util/KeyboardManipulator;Z)V
 
-    .line 285
+    .line 286
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ag:Z
+    iput-boolean v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ai:Z
 
-    .line 287
+    .line 288
     :cond_0
     iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->c:Landroid/widget/ListView;
 
     if-eqz v0, :cond_1
 
-    .line 288
+    .line 289
     iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->c:Landroid/widget/ListView;
 
     invoke-virtual {v0}, Landroid/widget/ListView;->getPaddingTop()I
 
     move-result v0
 
-    .line 289
+    .line 290
     iget-object v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->c:Landroid/widget/ListView;
 
     iget-object v2, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->c:Landroid/widget/ListView;
@@ -689,7 +696,7 @@
 
     invoke-virtual {v1, v2, v0}, Landroid/widget/ListView;->setSelectionFromTop(II)V
 
-    .line 291
+    .line 292
     :cond_1
     return-void
 .end method
@@ -698,7 +705,7 @@
     .locals 3
 
     .prologue
-    .line 273
+    .line 274
     iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->c:Landroid/widget/ListView;
 
     const/4 v1, 0x0
@@ -711,7 +718,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/widget/ListView;->setSelectionFromTop(II)V
 
-    .line 274
+    .line 275
     return-void
 .end method
 
@@ -719,15 +726,15 @@
     .locals 3
 
     .prologue
-    .line 247
+    .line 248
     iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->_groupHashtagEditText:Lkik/android/chat/view/ValidateableInputView;
 
-    .line 11388
+    .line 11437
     invoke-virtual {v0}, Lkik/android/chat/view/ValidateableInputView;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
-    const v2, 0x7f0201f3
+    const v2, 0x7f0201da
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -735,7 +742,7 @@
 
     invoke-virtual {v0, v1}, Lkik/android/chat/view/ValidateableInputView;->b(Landroid/graphics/drawable/Drawable;)V
 
-    .line 247
+    .line 248
     return-void
 .end method
 
@@ -743,7 +750,7 @@
     .locals 2
 
     .prologue
-    .line 242
+    .line 243
     iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->_groupHashtagEditText:Lkik/android/chat/view/ValidateableInputView;
 
     const/4 v1, 0x0
@@ -758,7 +765,7 @@
 
     .prologue
     .line 78
-    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->S:Ljava/util/Set;
+    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->U:Ljava/util/Set;
 
     return-object v0
 .end method
@@ -768,7 +775,7 @@
 
     .prologue
     .line 78
-    iget-boolean v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->V:Z
+    iget-boolean v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->X:Z
 
     return v0
 .end method
@@ -780,7 +787,7 @@
     .line 78
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->W:Z
+    iput-boolean v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->Y:Z
 
     return v0
 .end method
@@ -790,7 +797,7 @@
 
     .prologue
     .line 78
-    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->af:Lkik/core/datatypes/p;
+    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ah:Lkik/core/datatypes/p;
 
     return-object v0
 .end method
@@ -801,7 +808,7 @@
     .locals 1
 
     .prologue
-    .line 742
+    .line 748
     const/4 v0, 0x0
 
     return v0
@@ -811,7 +818,7 @@
     .locals 1
 
     .prologue
-    .line 736
+    .line 742
     const/4 v0, 0x0
 
     return v0
@@ -831,7 +838,7 @@
 
     const/4 v6, 0x0
 
-    .line 452
+    .line 454
     iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->_groupNameEditText:Lkik/android/chat/view/ValidateableInputView;
 
     invoke-virtual {v0}, Lkik/android/chat/view/ValidateableInputView;->f()Landroid/text/Editable;
@@ -842,7 +849,7 @@
 
     move-result-object v7
 
-    .line 453
+    .line 455
     iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->_groupHashtagEditText:Lkik/android/chat/view/ValidateableInputView;
 
     invoke-virtual {v0}, Lkik/android/chat/view/ValidateableInputView;->f()Landroid/text/Editable;
@@ -853,13 +860,13 @@
 
     move-result-object v8
 
-    .line 455
-    iget-boolean v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->X:Z
+    .line 457
+    iget-boolean v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->Z:Z
 
     if-eqz v0, :cond_4
 
-    .line 8833
-    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->O:Lcom/kik/android/Mixpanel;
+    .line 8839
+    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->P:Lcom/kik/android/Mixpanel;
 
     const-string v1, "Public Group Create Attempt"
 
@@ -873,7 +880,7 @@
 
     move-wide v0, v2
 
-    .line 8834
+    .line 8840
     :goto_0
     invoke-virtual {v9, v10, v0, v1}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;J)Lcom/kik/android/Mixpanel$d;
 
@@ -881,9 +888,9 @@
 
     const-string v1, "Has Profile Pic"
 
-    iget-boolean v9, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->V:Z
+    iget-boolean v9, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->X:Z
 
-    .line 8835
+    .line 8841
     invoke-virtual {v0, v1, v9}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Z)Lcom/kik/android/Mixpanel$d;
 
     move-result-object v0
@@ -892,7 +899,7 @@
 
     if-nez v8, :cond_3
 
-    .line 8836
+    .line 8842
     :goto_1
     invoke-virtual {v0, v1, v2, v3}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;J)Lcom/kik/android/Mixpanel$d;
 
@@ -900,9 +907,9 @@
 
     const-string v1, "Participants Count"
 
-    iget-object v2, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->S:Ljava/util/Set;
+    iget-object v2, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->U:Ljava/util/Set;
 
-    .line 8838
+    .line 8844
     invoke-interface {v2}, Ljava/util/Set;->size()I
 
     move-result v2
@@ -917,29 +924,29 @@
 
     const-string v1, "Tag Lookup Attempts"
 
-    iget v2, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ab:I
+    iget v2, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ad:I
 
     int-to-long v2, v2
 
-    .line 8839
+    .line 8845
     invoke-virtual {v0, v1, v2, v3}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;J)Lcom/kik/android/Mixpanel$d;
 
     move-result-object v0
 
-    .line 8840
+    .line 8846
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->g()Lcom/kik/android/Mixpanel$d;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
 
-    .line 462
+    .line 464
     :goto_2
-    iget-boolean v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->X:Z
+    iget-boolean v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->Z:Z
 
     if-eqz v0, :cond_a
 
-    .line 463
+    .line 465
     invoke-static {v8}, Lkik/android/util/bs;->d(Ljava/lang/String;)Z
 
     move-result v0
@@ -954,30 +961,30 @@
 
     if-eqz v0, :cond_6
 
-    .line 464
+    .line 466
     :cond_0
-    const v0, 0x7f090532
+    const v0, 0x7f090538
 
     invoke-virtual {p0, v0}, Lkik/android/chat/fragment/KikStartGroupFragment;->getStringFromResource(I)Ljava/lang/String;
 
     move-result-object v0
 
-    const v1, 0x7f090530
+    const v1, 0x7f090536
 
-    .line 465
+    .line 467
     invoke-virtual {p0, v1}, Lkik/android/chat/fragment/KikStartGroupFragment;->getStringFromResource(I)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 464
+    .line 466
     invoke-virtual {p0, v0, v1}, Lkik/android/chat/fragment/KikStartGroupFragment;->displayErrorDialog(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 657
+    .line 659
     :cond_1
     :goto_3
     return-void
 
-    .line 8834
+    .line 8840
     :cond_2
     invoke-virtual {v7}, Ljava/lang/String;->length()I
 
@@ -987,13 +994,13 @@
 
     goto :goto_0
 
-    .line 8835
+    .line 8841
     :cond_3
     const-string v2, "#"
 
     const-string v3, ""
 
-    .line 8837
+    .line 8843
     invoke-virtual {v8, v2, v3}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
 
     move-result-object v2
@@ -1006,9 +1013,9 @@
 
     goto :goto_1
 
-    .line 8845
+    .line 8851
     :cond_4
-    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->O:Lcom/kik/android/Mixpanel;
+    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->P:Lcom/kik/android/Mixpanel;
 
     const-string v1, "Group Create Attempt"
 
@@ -1020,7 +1027,7 @@
 
     if-nez v7, :cond_5
 
-    .line 8846
+    .line 8852
     :goto_4
     invoke-virtual {v0, v1, v2, v3}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;J)Lcom/kik/android/Mixpanel$d;
 
@@ -1028,18 +1035,18 @@
 
     const-string v1, "Has Picture"
 
-    iget-boolean v2, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->V:Z
+    iget-boolean v2, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->X:Z
 
-    .line 8847
+    .line 8853
     invoke-virtual {v0, v1, v2}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Z)Lcom/kik/android/Mixpanel$d;
 
     move-result-object v0
 
     const-string v1, "Participants Count"
 
-    iget-object v2, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->S:Ljava/util/Set;
+    iget-object v2, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->U:Ljava/util/Set;
 
-    .line 8848
+    .line 8854
     invoke-interface {v2}, Ljava/util/Set;->size()I
 
     move-result v2
@@ -1056,7 +1063,7 @@
 
     goto :goto_2
 
-    .line 8846
+    .line 8852
     :cond_5
     invoke-virtual {v7}, Ljava/lang/String;->length()I
 
@@ -1066,16 +1073,16 @@
 
     goto :goto_4
 
-    .line 468
+    .line 470
     :cond_6
-    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->Z:Lkik/core/profile/GroupManager$HashtagAvailabilityState;
+    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ab:Lkik/core/profile/GroupManager$HashtagAvailabilityState;
 
     sget-object v1, Lkik/core/profile/GroupManager$HashtagAvailabilityState;->UNAVAILABLE:Lkik/core/profile/GroupManager$HashtagAvailabilityState;
 
     if-ne v0, v1, :cond_7
 
-    .line 469
-    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->O:Lcom/kik/android/Mixpanel;
+    .line 471
+    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->P:Lcom/kik/android/Mixpanel;
 
     const-string v1, "Group Already Exists Prompt"
 
@@ -1083,15 +1090,15 @@
 
     move-result-object v0
 
-    .line 470
+    .line 472
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->g()Lcom/kik/android/Mixpanel$d;
 
     move-result-object v0
 
-    .line 471
+    .line 473
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
 
-    .line 472
+    .line 474
     const v0, 0x7f0901ac
 
     invoke-virtual {p0, v0}, Lkik/android/chat/fragment/KikStartGroupFragment;->getStringFromResource(I)Ljava/lang/String;
@@ -1100,7 +1107,7 @@
 
     const v1, 0x7f090106
 
-    .line 473
+    .line 475
     invoke-virtual {p0, v1}, Lkik/android/chat/fragment/KikStartGroupFragment;->getStringFromResource(I)Ljava/lang/String;
 
     move-result-object v1
@@ -1113,20 +1120,20 @@
 
     move-result-object v1
 
-    .line 472
+    .line 474
     invoke-virtual {p0, v0, v1}, Lkik/android/chat/fragment/KikStartGroupFragment;->displayErrorDialog(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_3
 
-    .line 477
+    .line 479
     :cond_7
-    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->Z:Lkik/core/profile/GroupManager$HashtagAvailabilityState;
+    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ab:Lkik/core/profile/GroupManager$HashtagAvailabilityState;
 
     sget-object v1, Lkik/core/profile/GroupManager$HashtagAvailabilityState;->INVALID:Lkik/core/profile/GroupManager$HashtagAvailabilityState;
 
     if-ne v0, v1, :cond_9
 
-    .line 479
+    .line 481
     invoke-virtual {v8}, Ljava/lang/String;->length()I
 
     move-result v0
@@ -1135,8 +1142,8 @@
 
     if-le v0, v1, :cond_8
 
-    .line 480
-    const v0, 0x7f09059e
+    .line 482
+    const v0, 0x7f0905a4
 
     invoke-virtual {p0, v0}, Lkik/android/chat/fragment/KikStartGroupFragment;->getStringFromResource(I)Ljava/lang/String;
 
@@ -1150,9 +1157,9 @@
 
     move-result-object v0
 
-    .line 486
+    .line 488
     :goto_5
-    const v1, 0x7f09059f
+    const v1, 0x7f0905a5
 
     invoke-virtual {p0, v1}, Lkik/android/chat/fragment/KikStartGroupFragment;->getStringFromResource(I)Ljava/lang/String;
 
@@ -1162,9 +1169,9 @@
 
     goto/16 :goto_3
 
-    .line 484
+    .line 486
     :cond_8
-    const v0, 0x7f0905a0
+    const v0, 0x7f0905a6
 
     invoke-virtual {p0, v0}, Lkik/android/chat/fragment/KikStartGroupFragment;->getStringFromResource(I)Ljava/lang/String;
 
@@ -1172,37 +1179,37 @@
 
     goto :goto_5
 
-    .line 489
+    .line 491
     :cond_9
-    iget-boolean v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->V:Z
+    iget-boolean v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->X:Z
 
     if-nez v0, :cond_c
 
-    .line 490
+    .line 492
     invoke-virtual {p0, v11}, Lkik/android/chat/fragment/KikStartGroupFragment;->getStringFromResource(I)Ljava/lang/String;
 
     move-result-object v0
 
-    const v1, 0x7f0905f8
+    const v1, 0x7f0905ff
 
-    .line 491
+    .line 493
     invoke-virtual {p0, v1}, Lkik/android/chat/fragment/KikStartGroupFragment;->getStringFromResource(I)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 490
+    .line 492
     invoke-virtual {p0, v0, v1}, Lkik/android/chat/fragment/KikStartGroupFragment;->displayErrorDialog(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 492
+    .line 494
     iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->_groupContactView:Landroid/widget/ImageView;
 
-    const v1, 0x7f020241
+    const v1, 0x7f02022a
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
     goto/16 :goto_3
 
-    .line 496
+    .line 498
     :cond_a
     invoke-direct {p0}, Lkik/android/chat/fragment/KikStartGroupFragment;->M()Z
 
@@ -1210,37 +1217,37 @@
 
     if-nez v0, :cond_b
 
-    .line 497
+    .line 499
     invoke-virtual {p0, v11}, Lkik/android/chat/fragment/KikStartGroupFragment;->getStringFromResource(I)Ljava/lang/String;
 
     move-result-object v0
 
     const v1, 0x7f0902cc
 
-    .line 498
+    .line 500
     invoke-virtual {p0, v1}, Lkik/android/chat/fragment/KikStartGroupFragment;->getStringFromResource(I)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 497
+    .line 499
     invoke-virtual {p0, v0, v1}, Lkik/android/chat/fragment/KikStartGroupFragment;->displayErrorDialog(Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_3
 
-    .line 502
+    .line 504
     :cond_b
-    iget-boolean v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->W:Z
+    iget-boolean v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->Y:Z
 
     if-nez v0, :cond_1
 
-    .line 505
+    .line 507
     :cond_c
-    iput-boolean v5, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->W:Z
-
-    .line 506
-    invoke-virtual {p0, v6}, Lkik/android/chat/fragment/KikStartGroupFragment;->c(Z)V
+    iput-boolean v5, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->Y:Z
 
     .line 508
+    invoke-virtual {p0, v6}, Lkik/android/chat/fragment/KikStartGroupFragment;->c(Z)V
+
+    .line 510
     const v0, 0x7f090209
 
     invoke-virtual {p0, v0}, Lkik/android/chat/fragment/KikStartGroupFragment;->getStringFromResource(I)Ljava/lang/String;
@@ -1249,27 +1256,27 @@
 
     invoke-virtual {p0, v0, v6}, Lkik/android/chat/fragment/KikStartGroupFragment;->showWaitDialog(Ljava/lang/String;Z)Lkik/android/chat/fragment/KikDialogFragment;
 
-    .line 509
+    .line 511
     iput-boolean v6, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->r:Z
 
-    .line 513
-    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->U:Ljava/lang/String;
+    .line 515
+    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->W:Ljava/lang/String;
 
     if-eqz v0, :cond_12
 
-    .line 514
-    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->K:Lkik/core/interfaces/w;
+    .line 516
+    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->L:Lkik/core/interfaces/v;
 
-    iget-object v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->U:Ljava/lang/String;
+    iget-object v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->W:Ljava/lang/String;
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/w;->a(Ljava/lang/String;)Lkik/core/datatypes/l;
+    invoke-interface {v0, v1}, Lkik/core/interfaces/v;->a(Ljava/lang/String;)Lkik/core/datatypes/l;
 
     move-result-object v0
 
-    .line 9661
+    .line 9663
     if-eqz v0, :cond_f
 
-    iget-object v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->S:Ljava/util/Set;
+    iget-object v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->U:Ljava/util/Set;
 
     invoke-interface {v1, v0}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
 
@@ -1279,32 +1286,32 @@
 
     move v1, v5
 
-    .line 515
+    .line 517
     :goto_6
     if-eqz v1, :cond_d
 
     move-object v0, v4
 
-    .line 519
+    .line 521
     :cond_d
     if-eqz v0, :cond_e
 
-    .line 520
-    iget-object v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->S:Ljava/util/Set;
+    .line 522
+    iget-object v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->U:Ljava/util/Set;
 
     invoke-interface {v1, v0}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
 
     :cond_e
     move-object v1, v0
 
-    .line 524
+    .line 526
     :goto_7
     new-instance v2, Ljava/util/HashSet;
 
     invoke-direct {v2}, Ljava/util/HashSet;-><init>()V
 
-    .line 526
-    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->S:Ljava/util/Set;
+    .line 528
+    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->U:Ljava/util/Set;
 
     invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
@@ -1323,7 +1330,7 @@
 
     check-cast v0, Lkik/core/datatypes/l;
 
-    .line 527
+    .line 529
     invoke-virtual {v0}, Lkik/core/datatypes/l;->a()Lcom/kik/core/network/xmpp/jid/a;
 
     move-result-object v0
@@ -1335,16 +1342,16 @@
     :cond_f
     move v1, v6
 
-    .line 9661
+    .line 9663
     goto :goto_6
 
-    .line 531
+    .line 533
     :cond_10
     if-nez v1, :cond_11
 
-    .line 533
+    .line 535
     :goto_9
-    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->L:Lkik/core/interfaces/l;
+    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->M:Lkik/core/interfaces/l;
 
     invoke-static {v4}, Lcom/kik/core/network/xmpp/jid/a;->a(Lkik/core/datatypes/k;)Lcom/kik/core/network/xmpp/jid/a;
 
@@ -1358,12 +1365,12 @@
 
     invoke-direct {v1, p0, v7, v2, p0}, Lkik/android/chat/fragment/KikStartGroupFragment$2;-><init>(Lkik/android/chat/fragment/KikStartGroupFragment;Ljava/lang/String;Ljava/util/Set;Lkik/android/chat/fragment/KikStartGroupFragment;)V
 
-    .line 534
+    .line 536
     invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
 
     goto/16 :goto_3
 
-    .line 531
+    .line 533
     :cond_11
     invoke-virtual {v1}, Lkik/core/datatypes/l;->j()Lkik/core/datatypes/k;
 
@@ -1381,7 +1388,7 @@
     .locals 1
 
     .prologue
-    .line 730
+    .line 736
     const/4 v0, 0x0
 
     return-object v0
@@ -1391,14 +1398,14 @@
     .locals 1
 
     .prologue
-    .line 362
+    .line 363
     invoke-direct {p0}, Lkik/android/chat/fragment/KikStartGroupFragment;->M()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    iget-boolean v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->X:Z
+    iget-boolean v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->Z:Z
 
     if-eqz v0, :cond_1
 
@@ -1418,25 +1425,25 @@
     .locals 2
 
     .prologue
-    .line 343
+    .line 344
     invoke-super {p0, p1}, Lkik/android/chat/fragment/KikPickUsersFragment;->a(I)V
 
-    .line 345
+    .line 346
     if-gtz p1, :cond_0
 
-    .line 346
+    .line 347
     const/4 v0, 0x0
 
-    .line 351
+    .line 352
     :goto_0
     iget-object v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->_groupNamingContainerView:Landroid/view/View;
 
     invoke-virtual {v1, v0}, Landroid/view/View;->setTranslationY(F)V
 
-    .line 352
+    .line 353
     return-void
 
-    .line 349
+    .line 350
     :cond_0
     iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->_groupNamingContainerView:Landroid/view/View;
 
@@ -1459,62 +1466,94 @@
     .locals 1
 
     .prologue
-    .line 332
+    .line 333
     invoke-super {p0, p1, p2, p3}, Lkik/android/chat/fragment/KikPickUsersFragment;->a(IZZ)V
 
-    .line 333
+    .line 334
     if-eqz p3, :cond_0
 
-    .line 334
+    .line 335
     iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->_groupNameEditText:Lkik/android/chat/view/ValidateableInputView;
 
     invoke-virtual {v0}, Lkik/android/chat/view/ValidateableInputView;->clearFocus()V
 
-    .line 335
-    iget-boolean v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->X:Z
+    .line 336
+    iget-boolean v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->Z:Z
 
     if-eqz v0, :cond_0
 
-    .line 336
+    .line 337
     iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->_groupHashtagEditText:Lkik/android/chat/view/ValidateableInputView;
 
     invoke-virtual {v0}, Lkik/android/chat/view/ValidateableInputView;->clearFocus()V
 
-    .line 339
+    .line 340
     :cond_0
     return-void
 .end method
 
 .method public final a([B)V
-    .locals 2
+    .locals 3
 
     .prologue
-    .line 672
-    const/4 v0, 0x1
-
-    iput-boolean v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->r:Z
+    const/4 v2, 0x1
 
     .line 674
-    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->N:Lkik/core/interfaces/ae;
-
-    iget-object v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->af:Lkik/core/datatypes/p;
-
-    invoke-interface {v0, p1, v1}, Lkik/core/interfaces/ae;->a([BLkik/core/datatypes/p;)V
+    iput-boolean v2, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->r:Z
 
     .line 675
-    invoke-virtual {p0}, Lkik/android/chat/fragment/KikStartGroupFragment;->resignWaitDialog()V
+    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->P:Lcom/kik/android/Mixpanel;
+
+    const-string v1, "Group Photo Changed"
+
+    invoke-virtual {v0, v1}, Lcom/kik/android/Mixpanel;->b(Ljava/lang/String;)Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v0
+
+    const-string v1, "Was Empty"
 
     .line 676
-    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->af:Lkik/core/datatypes/p;
+    invoke-virtual {v0, v1, v2}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Z)Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v0
+
+    const-string v1, "From Camera"
+
+    sget-boolean v2, Lkik/android/chat/fragment/KikStartGroupFragment;->T:Z
+
+    .line 677
+    invoke-virtual {v0, v1, v2}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Z)Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v0
+
+    .line 678
+    invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->g()Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
+
+    .line 680
+    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->O:Lkik/core/interfaces/ad;
+
+    iget-object v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ah:Lkik/core/datatypes/p;
+
+    invoke-interface {v0, p1, v1}, Lkik/core/interfaces/ad;->a([BLkik/core/datatypes/p;)V
+
+    .line 681
+    invoke-virtual {p0}, Lkik/android/chat/fragment/KikStartGroupFragment;->resignWaitDialog()V
+
+    .line 682
+    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ah:Lkik/core/datatypes/p;
 
     invoke-direct {p0, v0}, Lkik/android/chat/fragment/KikStartGroupFragment;->a(Lkik/core/datatypes/p;)V
 
-    .line 678
-    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->K:Lkik/core/interfaces/w;
+    .line 684
+    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->L:Lkik/core/interfaces/v;
 
-    invoke-interface {v0}, Lkik/core/interfaces/w;->q()V
+    invoke-interface {v0}, Lkik/core/interfaces/v;->p()V
 
-    .line 679
+    .line 685
     return-void
 .end method
 
@@ -1531,7 +1570,7 @@
     .end annotation
 
     .prologue
-    .line 785
+    .line 791
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -1549,38 +1588,38 @@
 
     check-cast v0, Ljava/lang/String;
 
-    .line 786
-    iget-object v2, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->K:Lkik/core/interfaces/w;
+    .line 792
+    iget-object v2, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->L:Lkik/core/interfaces/v;
 
-    invoke-interface {v2, v0}, Lkik/core/interfaces/w;->a(Ljava/lang/String;)Lkik/core/datatypes/l;
+    invoke-interface {v2, v0}, Lkik/core/interfaces/v;->a(Ljava/lang/String;)Lkik/core/datatypes/l;
 
     move-result-object v2
 
-    .line 787
+    .line 793
     if-eqz v2, :cond_0
 
-    .line 788
-    iget-object v3, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->H:Ljava/util/List;
+    .line 794
+    iget-object v3, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->I:Ljava/util/List;
 
     invoke-interface {v3, v0}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
-    .line 789
+    .line 795
     invoke-virtual {p0, v2}, Lkik/android/chat/fragment/KikStartGroupFragment;->e(Lkik/core/datatypes/l;)V
 
     goto :goto_0
 
-    .line 792
+    .line 798
     :cond_0
     invoke-virtual {p0, v0}, Lkik/android/chat/fragment/KikStartGroupFragment;->h(Ljava/lang/String;)V
 
-    .line 793
-    iget-object v2, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->K:Lkik/core/interfaces/w;
+    .line 799
+    iget-object v2, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->L:Lkik/core/interfaces/v;
 
-    invoke-interface {v2, v0}, Lkik/core/interfaces/w;->e(Ljava/lang/String;)Lcom/kik/events/Promise;
+    invoke-interface {v2, v0}, Lkik/core/interfaces/v;->e(Ljava/lang/String;)Lcom/kik/events/Promise;
 
     move-result-object v2
 
-    .line 794
+    .line 800
     new-instance v3, Lkik/android/chat/fragment/KikStartGroupFragment$4;
 
     invoke-direct {v3, p0, v0}, Lkik/android/chat/fragment/KikStartGroupFragment$4;-><init>(Lkik/android/chat/fragment/KikStartGroupFragment;Ljava/lang/String;)V
@@ -1589,7 +1628,7 @@
 
     goto :goto_0
 
-    .line 804
+    .line 810
     :cond_1
     return-void
 .end method
@@ -1598,15 +1637,15 @@
     .locals 1
 
     .prologue
-    .line 716
-    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->S:Ljava/util/Set;
+    .line 722
+    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->U:Ljava/util/Set;
 
     invoke-interface {v0, p1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
-    .line 717
+    .line 723
     invoke-super {p0, p1}, Lkik/android/chat/fragment/KikPickUsersFragment;->b(Lkik/core/datatypes/l;)V
 
-    .line 718
+    .line 724
     return-void
 .end method
 
@@ -1614,15 +1653,15 @@
     .locals 1
 
     .prologue
-    .line 723
-    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->S:Ljava/util/Set;
+    .line 729
+    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->U:Ljava/util/Set;
 
     invoke-interface {v0, p1}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
 
-    .line 724
+    .line 730
     invoke-super {p0, p1}, Lkik/android/chat/fragment/KikPickUsersFragment;->c(Lkik/core/datatypes/l;)V
 
-    .line 725
+    .line 731
     return-void
 .end method
 
@@ -1630,15 +1669,15 @@
     .locals 1
 
     .prologue
-    .line 428
-    iget-boolean v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->X:Z
+    .line 430
+    iget-boolean v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->Z:Z
 
     if-eqz v0, :cond_0
 
-    .line 429
-    const v0, 0x7f09063f
-
     .line 431
+    const v0, 0x7f090647
+
+    .line 433
     :goto_0
     return v0
 
@@ -1654,14 +1693,14 @@
     .prologue
     const-wide/16 v2, 0x0
 
-    .line 437
+    .line 439
     invoke-static {}, Lkik/android/util/g;->a()Lkik/android/util/g;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lkik/android/util/g;->h()V
 
-    .line 438
+    .line 440
     iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->_groupNameEditText:Lkik/android/chat/view/ValidateableInputView;
 
     invoke-virtual {v0}, Lkik/android/chat/view/ValidateableInputView;->f()Landroid/text/Editable;
@@ -1672,15 +1711,15 @@
 
     move-result-object v4
 
-    .line 439
+    .line 441
     const-string v0, ""
 
-    .line 440
-    iget-boolean v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->X:Z
+    .line 442
+    iget-boolean v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->Z:Z
 
     if-eqz v1, :cond_0
 
-    .line 441
+    .line 443
     iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->_groupHashtagEditText:Lkik/android/chat/view/ValidateableInputView;
 
     invoke-virtual {v0}, Lkik/android/chat/view/ValidateableInputView;->f()Landroid/text/Editable;
@@ -1691,14 +1730,14 @@
 
     move-result-object v0
 
-    .line 7854
+    .line 7860
     :cond_0
-    iget-boolean v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->X:Z
+    iget-boolean v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->Z:Z
 
     if-eqz v1, :cond_2
 
-    .line 7855
-    iget-object v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->O:Lcom/kik/android/Mixpanel;
+    .line 7861
+    iget-object v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->P:Lcom/kik/android/Mixpanel;
 
     const-string v5, "Start Public Group Cancelled"
 
@@ -1708,11 +1747,11 @@
 
     const-string v5, "Tag Lookup Attempts"
 
-    iget v6, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ab:I
+    iget v6, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ad:I
 
     int-to-long v6, v6
 
-    .line 7856
+    .line 7862
     invoke-virtual {v1, v5, v6, v7}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;J)Lcom/kik/android/Mixpanel$d;
 
     move-result-object v5
@@ -1723,13 +1762,13 @@
 
     move-wide v0, v2
 
-    .line 7857
+    .line 7863
     :goto_0
     invoke-virtual {v5, v6, v0, v1}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;J)Lcom/kik/android/Mixpanel$d;
 
     move-result-object v0
 
-    .line 7862
+    .line 7868
     :goto_1
     const-string v1, "Name Length"
 
@@ -1742,18 +1781,18 @@
 
     const-string v1, "Has Picture"
 
-    iget-boolean v2, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->V:Z
+    iget-boolean v2, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->X:Z
 
-    .line 7863
+    .line 7869
     invoke-virtual {v0, v1, v2}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Z)Lcom/kik/android/Mixpanel$d;
 
     move-result-object v0
 
     const-string v1, "Participants Count"
 
-    iget-object v2, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->S:Ljava/util/Set;
+    iget-object v2, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->U:Ljava/util/Set;
 
-    .line 7864
+    .line 7870
     invoke-interface {v2}, Ljava/util/Set;->size()I
 
     move-result v2
@@ -1766,22 +1805,22 @@
 
     move-result-object v0
 
-    .line 7865
+    .line 7871
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->g()Lcom/kik/android/Mixpanel$d;
 
     move-result-object v0
 
-    .line 7866
+    .line 7872
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
 
-    .line 446
+    .line 448
     invoke-super {p0}, Lkik/android/chat/fragment/KikPickUsersFragment;->handleBackPress()Z
 
     move-result v0
 
     return v0
 
-    .line 7857
+    .line 7863
     :cond_1
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
@@ -1791,9 +1830,9 @@
 
     goto :goto_0
 
-    .line 7860
+    .line 7866
     :cond_2
-    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->O:Lcom/kik/android/Mixpanel;
+    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->P:Lcom/kik/android/Mixpanel;
 
     const-string v1, "Start a Group Cancelled"
 
@@ -1803,7 +1842,7 @@
 
     goto :goto_1
 
-    .line 7862
+    .line 7868
     :cond_3
     invoke-virtual {v4}, Ljava/lang/String;->length()I
 
@@ -1818,7 +1857,7 @@
     .locals 1
 
     .prologue
-    .line 754
+    .line 760
     const v0, 0x7f090145
 
     invoke-static {v0}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
@@ -1828,25 +1867,25 @@
     return-object v0
 .end method
 
-.method public final j_()V
+.method public final l_()V
     .locals 3
 
     .prologue
     const/4 v2, 0x1
 
-    .line 684
+    .line 690
     iput-boolean v2, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->r:Z
 
-    .line 685
+    .line 691
     iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->_rootLayout:Landroid/view/ViewGroup;
 
     if-nez v0, :cond_0
 
-    .line 706
+    .line 712
     :goto_0
     return-void
 
-    .line 688
+    .line 694
     :cond_0
     new-instance v0, Lkik/android/chat/fragment/KikDialogFragment$a;
 
@@ -1854,7 +1893,7 @@
 
     const v1, 0x7f09049b
 
-    .line 689
+    .line 695
     invoke-virtual {p0, v1}, Lkik/android/chat/fragment/KikStartGroupFragment;->getStringFromResource(I)Ljava/lang/String;
 
     move-result-object v1
@@ -1865,7 +1904,7 @@
 
     const v1, 0x7f09005c
 
-    .line 690
+    .line 696
     invoke-virtual {p0, v1}, Lkik/android/chat/fragment/KikStartGroupFragment;->getStringFromResource(I)Ljava/lang/String;
 
     move-result-object v1
@@ -1874,7 +1913,7 @@
 
     move-result-object v0
 
-    .line 691
+    .line 697
     invoke-virtual {v0, v2}, Lkik/android/chat/fragment/KikDialogFragment$a;->b(Z)Lkik/android/chat/fragment/KikDialogFragment$a;
 
     move-result-object v0
@@ -1885,12 +1924,12 @@
 
     invoke-direct {v2, p0}, Lkik/android/chat/fragment/KikStartGroupFragment$3;-><init>(Lkik/android/chat/fragment/KikStartGroupFragment;)V
 
-    .line 692
+    .line 698
     invoke-virtual {v0, v1, v2}, Lkik/android/chat/fragment/KikDialogFragment$a;->a(ILandroid/content/DialogInterface$OnClickListener;)Lkik/android/chat/fragment/KikDialogFragment$a;
 
     move-result-object v0
 
-    .line 703
+    .line 709
     invoke-virtual {v0}, Lkik/android/chat/fragment/KikDialogFragment$a;->a()Lkik/android/chat/fragment/KikDialogFragment;
 
     move-result-object v0
@@ -1901,12 +1940,16 @@
 
     invoke-virtual {p0, v0, v1, v2}, Lkik/android/chat/fragment/KikStartGroupFragment;->show(Lkik/android/chat/fragment/KikDialogFragment;Lkik/android/chat/fragment/KikScopedDialogFragment$DialogScope;Ljava/lang/String;)V
 
-    .line 705
-    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->O:Lcom/kik/android/Mixpanel;
+    .line 711
+    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->P:Lcom/kik/android/Mixpanel;
 
     const-string v1, "Group Photo Change Error"
 
     invoke-virtual {v0, v1}, Lcom/kik/android/Mixpanel;->b(Ljava/lang/String;)Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->g()Lcom/kik/android/Mixpanel$d;
 
     move-result-object v0
 
@@ -1919,7 +1962,7 @@
     .locals 1
 
     .prologue
-    .line 748
+    .line 754
     iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->p:Lcom/kik/view/adapters/ContactsCursorAdapter;
 
     if-eqz v0, :cond_0
@@ -1947,31 +1990,39 @@
     .locals 6
 
     .prologue
-    const/4 v1, -0x1
+    const/16 v3, 0x285e
 
-    .line 388
-    const/16 v0, 0x285e
+    const/4 v0, 0x1
 
-    if-eq p1, v0, :cond_0
-
-    const/16 v0, 0x285f
-
-    if-ne p1, v0, :cond_2
-
-    :cond_0
-    if-ne p2, v1, :cond_2
+    const/4 v2, -0x1
 
     .line 389
+    if-eq p1, v3, :cond_0
+
+    const/16 v1, 0x285f
+
+    if-ne p1, v1, :cond_3
+
+    :cond_0
+    if-ne p2, v2, :cond_3
+
+    .line 390
+    if-ne p1, v3, :cond_2
+
+    :goto_0
+    sput-boolean v0, Lkik/android/chat/fragment/KikStartGroupFragment;->T:Z
+
+    .line 391
     invoke-static {}, Lkik/android/util/g;->a()Lkik/android/util/g;
 
     move-result-object v0
 
-    .line 391
+    .line 393
     invoke-virtual {p0}, Lkik/android/chat/fragment/KikStartGroupFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v2
 
-    iget-object v5, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->Q:Lkik/core/interfaces/n;
+    iget-object v5, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->R:Lkik/core/interfaces/n;
 
     move-object v1, p0
 
@@ -1979,38 +2030,44 @@
 
     move-object v4, p3
 
-    .line 390
+    .line 392
     invoke-virtual/range {v0 .. v5}, Lkik/android/util/g;->a(Landroid/support/v4/app/Fragment;Landroid/content/Context;ILandroid/content/Intent;Lkik/core/interfaces/n;)Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    .line 395
+    .line 397
     invoke-static {}, Lkik/android/util/g;->a()Lkik/android/util/g;
 
     const/4 v0, -0x4
 
     invoke-virtual {p0, v0}, Lkik/android/chat/fragment/KikStartGroupFragment;->displayGenericIqError(I)V
 
-    .line 415
+    .line 417
     :cond_1
-    :goto_0
+    :goto_1
     return-void
 
-    .line 399
+    .line 390
     :cond_2
+    const/4 v0, 0x0
+
+    goto :goto_0
+
+    .line 401
+    :cond_3
     const/16 v0, 0x2860
 
-    if-ne p1, v0, :cond_3
+    if-ne p1, v0, :cond_4
 
-    if-ne p2, v1, :cond_3
+    if-ne p2, v2, :cond_4
 
-    .line 402
+    .line 404
     :try_start_0
-    new-instance v0, Lkik/android/widget/ad;
+    new-instance v0, Lkik/android/widget/af;
 
-    .line 403
+    .line 405
     invoke-static {}, Lkik/android/util/g;->a()Lkik/android/util/g;
 
     move-result-object v1
@@ -2019,28 +2076,28 @@
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lkik/android/widget/ad;-><init>(Landroid/graphics/Bitmap;)V
+    invoke-direct {v0, v1}, Lkik/android/widget/af;-><init>(Landroid/graphics/Bitmap;)V
 
-    .line 404
+    .line 406
     iget-object v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->_groupContactView:Landroid/widget/ImageView;
 
     invoke-virtual {v1, v0}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 405
+    .line 407
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->V:Z
+    iput-boolean v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->X:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 408
+    .line 410
     invoke-static {}, Lkik/android/util/g;->a()Lkik/android/util/g;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lkik/android/util/g;->g()V
 
-    goto :goto_0
+    goto :goto_1
 
     :catchall_0
     move-exception v0
@@ -2053,40 +2110,40 @@
 
     throw v0
 
-    .line 413
-    :cond_3
+    .line 415
+    :cond_4
     invoke-static {}, Lkik/android/util/g;->a()Lkik/android/util/g;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lkik/android/util/g;->g()V
 
-    goto :goto_0
+    goto :goto_1
 .end method
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 1
 
     .prologue
-    .line 378
+    .line 379
     iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->j:Lkik/android/chat/view/SearchBarViewImpl;
 
     invoke-virtual {v0}, Lkik/android/chat/view/SearchBarViewImpl;->clearFocus()V
 
-    .line 380
+    .line 381
     invoke-virtual {p0}, Lkik/android/chat/fragment/KikStartGroupFragment;->hideKeyboard()V
 
-    .line 381
+    .line 382
     invoke-super {p0, p1}, Lkik/android/chat/fragment/KikPickUsersFragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
-    .line 382
+    .line 383
     invoke-virtual {p0}, Lkik/android/chat/fragment/KikStartGroupFragment;->L()Z
 
     move-result v0
 
     invoke-virtual {p0, v0}, Lkik/android/chat/fragment/KikStartGroupFragment;->c(Z)V
 
-    .line 383
+    .line 384
     return-void
 .end method
 
@@ -2094,8 +2151,8 @@
     .locals 4
 
     .prologue
-    .line 124
-    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ac:Lkik/android/chat/fragment/KikStartGroupFragment$a;
+    .line 125
+    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ae:Lkik/android/chat/fragment/KikStartGroupFragment$a;
 
     invoke-virtual {p0}, Lkik/android/chat/fragment/KikStartGroupFragment;->getArguments()Landroid/os/Bundle;
 
@@ -2103,48 +2160,48 @@
 
     invoke-virtual {v0, v1}, Lkik/android/chat/fragment/KikStartGroupFragment$a;->a(Landroid/os/Bundle;)V
 
-    .line 125
-    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ac:Lkik/android/chat/fragment/KikStartGroupFragment$a;
+    .line 126
+    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ae:Lkik/android/chat/fragment/KikStartGroupFragment$a;
 
     invoke-virtual {v0}, Lkik/android/chat/fragment/KikStartGroupFragment$a;->h()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->U:Ljava/lang/String;
+    iput-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->W:Ljava/lang/String;
 
-    .line 126
-    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ac:Lkik/android/chat/fragment/KikStartGroupFragment$a;
+    .line 127
+    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ae:Lkik/android/chat/fragment/KikStartGroupFragment$a;
 
     invoke-virtual {v0}, Lkik/android/chat/fragment/KikStartGroupFragment$a;->j()Z
 
     move-result v0
 
-    iput-boolean v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->X:Z
+    iput-boolean v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->Z:Z
 
-    .line 127
+    .line 128
     invoke-virtual {p0}, Lkik/android/chat/fragment/KikStartGroupFragment;->getCoreComponent()Lcom/kik/components/CoreComponent;
 
     move-result-object v0
 
     invoke-interface {v0, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/chat/fragment/KikStartGroupFragment;)V
 
-    .line 128
+    .line 129
     invoke-super {p0, p1}, Lkik/android/chat/fragment/KikPickUsersFragment;->onCreate(Landroid/os/Bundle;)V
 
-    .line 129
-    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ac:Lkik/android/chat/fragment/KikStartGroupFragment$a;
+    .line 130
+    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ae:Lkik/android/chat/fragment/KikStartGroupFragment$a;
 
-    .line 5896
+    .line 5902
     const-string v1, "kik.android.chat.fragment.StartGroupFragment.PreselectedUsers"
 
     invoke-virtual {v0, v1}, Lkik/android/chat/fragment/KikStartGroupFragment$a;->k(Ljava/lang/String;)Ljava/util/ArrayList;
 
     move-result-object v0
 
-    .line 130
+    .line 131
     if-eqz v0, :cond_0
 
-    .line 131
+    .line 132
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -2162,29 +2219,29 @@
 
     check-cast v0, Ljava/lang/String;
 
-    .line 132
-    iget-object v2, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->K:Lkik/core/interfaces/w;
+    .line 133
+    iget-object v2, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->L:Lkik/core/interfaces/v;
 
     const/4 v3, 0x1
 
-    invoke-interface {v2, v0, v3}, Lkik/core/interfaces/w;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
+    invoke-interface {v2, v0, v3}, Lkik/core/interfaces/v;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
 
     move-result-object v0
 
-    .line 133
-    iget-object v2, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->S:Ljava/util/Set;
+    .line 134
+    iget-object v2, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->U:Ljava/util/Set;
 
     invoke-interface {v2, v0}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 136
+    .line 137
     :cond_0
-    iget-object v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ac:Lkik/android/chat/fragment/KikStartGroupFragment$a;
+    iget-object v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ae:Lkik/android/chat/fragment/KikStartGroupFragment$a;
 
-    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->S:Ljava/util/Set;
+    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->U:Ljava/util/Set;
 
-    .line 5912
+    .line 5918
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-interface {v0}, Ljava/util/Collection;->size()I
@@ -2193,7 +2250,7 @@
 
     invoke-direct {v2, v3}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 5913
+    .line 5919
     invoke-interface {v0}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
     move-result-object v3
@@ -2211,7 +2268,7 @@
 
     check-cast v0, Lkik/core/datatypes/l;
 
-    .line 5914
+    .line 5920
     invoke-virtual {v0}, Lkik/core/datatypes/l;->l()Ljava/lang/String;
 
     move-result-object v0
@@ -2220,20 +2277,20 @@
 
     goto :goto_1
 
-    .line 5917
+    .line 5923
     :cond_1
     const-string v0, "KikPickUsersFragment.EXTRA_PRESELECTED_USERS"
 
     invoke-virtual {v1, v0, v2}, Lkik/android/chat/fragment/KikStartGroupFragment$a;->a(Ljava/lang/String;Ljava/util/ArrayList;)V
 
-    .line 136
+    .line 137
     const/16 v0, 0x31
 
-    .line 137
+    .line 138
     invoke-virtual {v1, v0}, Lkik/android/chat/fragment/KikStartGroupFragment$a;->b(I)Lkik/android/chat/fragment/KikPickUsersFragment$a;
 
-    .line 138
-    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ac:Lkik/android/chat/fragment/KikStartGroupFragment$a;
+    .line 139
+    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ae:Lkik/android/chat/fragment/KikStartGroupFragment$a;
 
     invoke-virtual {v0}, Lkik/android/chat/fragment/KikStartGroupFragment$a;->k()Ljava/lang/String;
 
@@ -2245,17 +2302,17 @@
 
     if-nez v0, :cond_2
 
-    .line 139
-    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ac:Lkik/android/chat/fragment/KikStartGroupFragment$a;
+    .line 140
+    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ae:Lkik/android/chat/fragment/KikStartGroupFragment$a;
 
     invoke-virtual {v0}, Lkik/android/chat/fragment/KikStartGroupFragment$a;->k()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->Y:Ljava/lang/String;
+    iput-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->aa:Ljava/lang/String;
 
-    .line 140
-    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->Y:Ljava/lang/String;
+    .line 141
+    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->aa:Ljava/lang/String;
 
     const-string v1, "#"
 
@@ -2265,14 +2322,14 @@
 
     if-nez v0, :cond_2
 
-    .line 141
+    .line 142
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "#"
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-object v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->Y:Ljava/lang/String;
+    iget-object v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->aa:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2282,16 +2339,16 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->Y:Ljava/lang/String;
+    iput-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->aa:Ljava/lang/String;
 
-    .line 144
+    .line 145
     :cond_2
-    iget-boolean v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->X:Z
+    iget-boolean v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->Z:Z
 
     if-eqz v0, :cond_3
 
-    .line 6826
-    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->O:Lcom/kik/android/Mixpanel;
+    .line 6832
+    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->P:Lcom/kik/android/Mixpanel;
 
     const-string v1, "Start Public Group Screen Visited"
 
@@ -2299,20 +2356,20 @@
 
     move-result-object v0
 
-    .line 6827
+    .line 6833
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->g()Lcom/kik/android/Mixpanel$d;
 
     move-result-object v0
 
-    .line 6828
+    .line 6834
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
 
-    .line 146
+    .line 147
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->a:Z
 
-    .line 148
+    .line 149
     :cond_3
     return-void
 .end method
@@ -2327,39 +2384,39 @@
 
     const/4 v4, 0x0
 
-    .line 165
+    .line 166
     invoke-super {p0, p1, p2, p3}, Lkik/android/chat/fragment/KikPickUsersFragment;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
 
     move-result-object v0
 
-    .line 166
-    iput-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ae:Landroid/view/View;
+    .line 167
+    iput-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ag:Landroid/view/View;
 
-    .line 168
+    .line 169
     invoke-static {p0, v0}, Lbutterknife/ButterKnife;->bind(Ljava/lang/Object;Landroid/view/View;)Lbutterknife/Unbinder;
 
-    .line 7808
-    iget-boolean v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->X:Z
+    .line 7814
+    iget-boolean v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->Z:Z
 
     if-eqz v1, :cond_4
 
-    .line 7811
-    iget-object v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ae:Landroid/view/View;
+    .line 7817
+    iget-object v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ag:Landroid/view/View;
 
-    invoke-static {p0}, Lkik/android/chat/fragment/ed;->a(Lkik/android/chat/fragment/KikStartGroupFragment;)Ljava/lang/Runnable;
+    invoke-static {p0}, Lkik/android/chat/fragment/ee;->a(Lkik/android/chat/fragment/KikStartGroupFragment;)Ljava/lang/Runnable;
 
     move-result-object v2
 
     invoke-virtual {v1, v2}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
 
-    .line 173
+    .line 174
     :goto_0
     iget-object v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->_groupNameEditText:Lkik/android/chat/view/ValidateableInputView;
 
     invoke-virtual {p0, v1}, Lkik/android/chat/fragment/KikStartGroupFragment;->registerForContextMenu(Landroid/view/View;)V
 
-    .line 175
-    iget-object v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->T:Ljava/lang/String;
+    .line 176
+    iget-object v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->V:Ljava/lang/String;
 
     invoke-static {v1}, Lkik/android/util/bs;->d(Ljava/lang/String;)Z
 
@@ -2367,25 +2424,25 @@
 
     if-nez v1, :cond_0
 
-    .line 176
+    .line 177
     iget-object v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->_groupNameEditText:Lkik/android/chat/view/ValidateableInputView;
 
-    iget-object v2, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->T:Ljava/lang/String;
+    iget-object v2, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->V:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Lkik/android/chat/view/ValidateableInputView;->e(Ljava/lang/CharSequence;)V
 
-    .line 179
+    .line 180
     :cond_0
-    iget-object v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->F:Landroid/widget/TextView;
+    iget-object v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->G:Landroid/widget/TextView;
 
     const v2, 0x7f090462
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
-    .line 180
+    .line 181
     new-array v1, v3, [Landroid/view/View;
 
-    iget-object v2, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->F:Landroid/widget/TextView;
+    iget-object v2, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->G:Landroid/widget/TextView;
 
     aput-object v2, v1, v4
 
@@ -2393,9 +2450,9 @@
 
     aput-object v2, v1, v5
 
-    invoke-static {v1}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v1}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
-    .line 182
+    .line 183
     iget-object v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->j:Lkik/android/chat/view/SearchBarViewImpl;
 
     invoke-virtual {v1}, Lkik/android/chat/view/SearchBarViewImpl;->b()Lkik/android/widget/RobotoEditText;
@@ -2408,7 +2465,7 @@
 
     invoke-virtual {v1, v2}, Lkik/android/widget/RobotoEditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
-    .line 201
+    .line 202
     invoke-static {}, Lkik/android/util/g;->a()Lkik/android/util/g;
 
     move-result-object v1
@@ -2417,36 +2474,36 @@
 
     move-result-object v1
 
-    .line 202
-    iget-boolean v2, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->V:Z
+    .line 203
+    iget-boolean v2, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->X:Z
 
     if-eqz v2, :cond_1
 
     if-eqz v1, :cond_1
 
-    .line 203
-    new-instance v2, Lkik/android/widget/ad;
-
-    invoke-direct {v2, v1}, Lkik/android/widget/ad;-><init>(Landroid/graphics/Bitmap;)V
-
     .line 204
+    new-instance v2, Lkik/android/widget/af;
+
+    invoke-direct {v2, v1}, Lkik/android/widget/af;-><init>(Landroid/graphics/Bitmap;)V
+
+    .line 205
     iget-object v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->_groupContactView:Landroid/widget/ImageView;
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 207
+    .line 208
     :cond_1
     iget-object v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->_groupNameEditText:Lkik/android/chat/view/ValidateableInputView;
 
     invoke-virtual {p0, v1, v3}, Lkik/android/chat/fragment/KikStartGroupFragment;->setKeyboardMode(Landroid/view/View;I)V
 
-    .line 209
-    iget-boolean v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->X:Z
+    .line 210
+    iget-boolean v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->Z:Z
 
     if-eqz v1, :cond_3
 
-    .line 210
-    iget-object v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->Y:Ljava/lang/String;
+    .line 211
+    iget-object v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->aa:Ljava/lang/String;
 
     invoke-static {v1}, Lkik/android/util/bs;->d(Ljava/lang/String;)Z
 
@@ -2454,14 +2511,14 @@
 
     if-nez v1, :cond_2
 
-    .line 211
+    .line 212
     iget-object v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->_groupHashtagEditText:Lkik/android/chat/view/ValidateableInputView;
 
-    iget-object v2, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->Y:Ljava/lang/String;
+    iget-object v2, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->aa:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Lkik/android/chat/view/ValidateableInputView;->e(Ljava/lang/CharSequence;)V
 
-    .line 213
+    .line 214
     :cond_2
     new-array v1, v5, [Landroid/view/View;
 
@@ -2469,12 +2526,12 @@
 
     aput-object v2, v1, v4
 
-    invoke-static {v1}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v1}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
-    .line 214
+    .line 215
     iget-object v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->_groupNameEditText:Lkik/android/chat/view/ValidateableInputView;
 
-    const v2, 0x7f090559
+    const v2, 0x7f09055f
 
     invoke-static {v2}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
 
@@ -2482,7 +2539,7 @@
 
     invoke-virtual {v1, v2}, Lkik/android/chat/view/ValidateableInputView;->f(Ljava/lang/CharSequence;)V
 
-    .line 215
+    .line 216
     iget-object v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->_groupHashtagEditText:Lkik/android/chat/view/ValidateableInputView;
 
     new-array v2, v3, [Landroid/text/InputFilter;
@@ -2503,44 +2560,44 @@
 
     invoke-virtual {v1, v2}, Lkik/android/chat/view/ValidateableInputView;->a([Landroid/text/InputFilter;)V
 
-    .line 217
+    .line 218
     iget-object v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->_groupHashtagEditText:Lkik/android/chat/view/ValidateableInputView;
 
-    invoke-static {p0}, Lkik/android/chat/fragment/dx;->a(Lkik/android/chat/fragment/KikStartGroupFragment;)Lkik/android/chat/view/ValidateableInputView$a;
+    invoke-static {p0}, Lkik/android/chat/fragment/dy;->a(Lkik/android/chat/fragment/KikStartGroupFragment;)Lkik/android/chat/view/ValidateableInputView$a;
 
     move-result-object v2
 
     invoke-virtual {v1, v2}, Lkik/android/chat/view/ValidateableInputView;->a(Lkik/android/chat/view/ValidateableInputView$a;)V
 
-    .line 238
+    .line 239
     iget-object v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->_groupHashtagEditText:Lkik/android/chat/view/ValidateableInputView;
 
-    invoke-static {p0}, Lkik/android/chat/fragment/dy;->a(Lkik/android/chat/fragment/KikStartGroupFragment;)Lkik/android/chat/view/ValidateableInputView$b;
+    invoke-static {p0}, Lkik/android/chat/fragment/dz;->a(Lkik/android/chat/fragment/KikStartGroupFragment;)Lkik/android/chat/view/ValidateableInputView$b;
 
     move-result-object v2
 
     invoke-virtual {v1, v2}, Lkik/android/chat/view/ValidateableInputView;->a(Lkik/android/chat/view/ValidateableInputView$b;)V
 
-    .line 260
+    .line 261
     iget-object v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->_groupHashtagEditText:Lkik/android/chat/view/ValidateableInputView;
 
     invoke-virtual {p0, v1}, Lkik/android/chat/fragment/KikStartGroupFragment;->registerForContextMenu(Landroid/view/View;)V
 
-    .line 262
-    iput-boolean v5, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ag:Z
+    .line 263
+    iput-boolean v5, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ai:Z
 
-    .line 272
+    .line 273
     :cond_3
-    invoke-static {p0}, Lkik/android/chat/fragment/dz;->a(Lkik/android/chat/fragment/KikStartGroupFragment;)Ljava/lang/Runnable;
+    invoke-static {p0}, Lkik/android/chat/fragment/ea;->a(Lkik/android/chat/fragment/KikStartGroupFragment;)Ljava/lang/Runnable;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
 
-    .line 275
+    .line 276
     return-object v0
 
-    .line 7818
+    .line 7824
     :cond_4
     invoke-virtual {p0}, Lkik/android/chat/fragment/KikStartGroupFragment;->getResources()Landroid/content/res/Resources;
 
@@ -2552,10 +2609,10 @@
 
     move-result v1
 
-    .line 7819
+    .line 7825
     iget-object v2, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->c:Landroid/widget/ListView;
 
-    invoke-static {v2, v4, v1, v4, v4}, Lkik/android/util/ca;->a(Landroid/view/View;IIII)V
+    invoke-static {v2, v4, v1, v4, v4}, Lkik/android/util/cb;->a(Landroid/view/View;IIII)V
 
     goto/16 :goto_0
 .end method
@@ -2564,10 +2621,10 @@
     .locals 1
 
     .prologue
-    .line 368
+    .line 369
     invoke-super {p0}, Lkik/android/chat/fragment/KikPickUsersFragment;->onDestroyView()V
 
-    .line 369
+    .line 370
     iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->_groupNameEditText:Lkik/android/chat/view/ValidateableInputView;
 
     invoke-virtual {v0}, Lkik/android/chat/view/ValidateableInputView;->f()Landroid/text/Editable;
@@ -2578,9 +2635,9 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->T:Ljava/lang/String;
+    iput-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->V:Ljava/lang/String;
 
-    .line 370
+    .line 371
     return-void
 .end method
 
@@ -2588,50 +2645,50 @@
     .locals 2
 
     .prologue
-    .line 281
+    .line 282
     invoke-super {p0}, Lkik/android/chat/fragment/KikPickUsersFragment;->onResume()V
 
-    .line 282
-    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ae:Landroid/view/View;
+    .line 283
+    iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->ag:Landroid/view/View;
 
-    invoke-static {p0}, Lkik/android/chat/fragment/ea;->a(Lkik/android/chat/fragment/KikStartGroupFragment;)Ljava/lang/Runnable;
+    invoke-static {p0}, Lkik/android/chat/fragment/eb;->a(Lkik/android/chat/fragment/KikStartGroupFragment;)Ljava/lang/Runnable;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
 
-    .line 292
+    .line 293
     return-void
 .end method
 
-.method protected screenOpenedEvent()Lcom/kik/metrics/b/s;
+.method protected screenOpenedEvent()Lcom/kik/metrics/b/t;
     .locals 1
 
     .prologue
-    .line 154
-    iget-boolean v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->X:Z
+    .line 155
+    iget-boolean v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->Z:Z
 
     if-eqz v0, :cond_0
 
-    .line 155
-    invoke-static {}, Lcom/kik/metrics/b/bb;->b()Lcom/kik/metrics/b/bb$a;
+    .line 156
+    invoke-static {}, Lcom/kik/metrics/b/bj;->b()Lcom/kik/metrics/b/bj$a;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/kik/metrics/b/bb$a;->a()Lcom/kik/metrics/b/bb;
+    invoke-virtual {v0}, Lcom/kik/metrics/b/bj$a;->a()Lcom/kik/metrics/b/bj;
 
     move-result-object v0
 
-    .line 158
+    .line 159
     :goto_0
     return-object v0
 
     :cond_0
-    invoke-static {}, Lcom/kik/metrics/b/ba;->b()Lcom/kik/metrics/b/ba$a;
+    invoke-static {}, Lcom/kik/metrics/b/bi;->b()Lcom/kik/metrics/b/bi$a;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/kik/metrics/b/ba$a;->a()Lcom/kik/metrics/b/ba;
+    invoke-virtual {v0}, Lcom/kik/metrics/b/bi$a;->a()Lcom/kik/metrics/b/bi;
 
     move-result-object v0
 
@@ -2647,19 +2704,19 @@
     .end annotation
 
     .prologue
-    .line 420
+    .line 422
     invoke-virtual {p0}, Lkik/android/chat/fragment/KikStartGroupFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v0
 
-    .line 421
+    .line 423
     invoke-static {}, Lkik/android/util/g;->a()Lkik/android/util/g;
 
     move-result-object v1
 
     invoke-virtual {v1, p0, v0}, Lkik/android/util/g;->a(Lkik/android/chat/fragment/KikScopedDialogFragment;Landroid/content/Context;)V
 
-    .line 422
+    .line 424
     iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->_metricsService:Lcom/kik/metrics/c/d;
 
     invoke-static {}, Lcom/kik/metrics/b/j;->b()Lcom/kik/metrics/b/j$a;
@@ -2670,9 +2727,9 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/kik/metrics/c/d;->a(Lcom/kik/metrics/b/s;)V
+    invoke-virtual {v0, v1}, Lcom/kik/metrics/c/d;->a(Lcom/kik/metrics/b/t;)V
 
-    .line 423
+    .line 425
     return-void
 .end method
 
@@ -2682,34 +2739,34 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 763
-    .line 9775
+    .line 769
+    .line 9781
     iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->b:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
-    .line 9776
+    .line 9782
     const-string v0, ""
 
     iput-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->b:Ljava/lang/String;
 
-    .line 9777
+    .line 9783
     iput-boolean v2, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->n:Z
 
-    .line 9778
+    .line 9784
     iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->j:Lkik/android/chat/view/SearchBarViewImpl;
 
     const-string v1, ""
 
     invoke-virtual {v0, v1}, Lkik/android/chat/view/SearchBarViewImpl;->a(Ljava/lang/String;)V
 
-    .line 764
+    .line 770
     :cond_0
     iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->b:Ljava/lang/String;
 
     invoke-virtual {p0, v0, v2}, Lkik/android/chat/fragment/KikStartGroupFragment;->a(Ljava/lang/String;Z)V
 
-    .line 765
+    .line 771
     iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->j:Lkik/android/chat/view/SearchBarViewImpl;
 
     invoke-virtual {v0}, Lkik/android/chat/view/SearchBarViewImpl;->b()Lkik/android/widget/RobotoEditText;
@@ -2718,12 +2775,12 @@
 
     invoke-virtual {v0}, Lkik/android/widget/RobotoEditText;->requestFocus()Z
 
-    .line 766
+    .line 772
     iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->c:Landroid/widget/ListView;
 
     if-eqz v0, :cond_1
 
-    .line 767
+    .line 773
     iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->j:Lkik/android/chat/view/SearchBarViewImpl;
 
     invoke-virtual {v0}, Lkik/android/chat/view/SearchBarViewImpl;->getMeasuredHeight()I
@@ -2738,7 +2795,7 @@
 
     sub-int/2addr v0, v1
 
-    .line 768
+    .line 774
     iget-object v1, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->c:Landroid/widget/ListView;
 
     iget-object v2, p0, Lkik/android/chat/fragment/KikStartGroupFragment;->c:Landroid/widget/ListView;
@@ -2749,7 +2806,7 @@
 
     invoke-virtual {v1, v2, v0}, Landroid/widget/ListView;->setSelectionFromTop(II)V
 
-    .line 771
+    .line 777
     :cond_1
     return-void
 .end method

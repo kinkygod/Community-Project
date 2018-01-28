@@ -45,10 +45,14 @@
 
     .prologue
     .line 0
-    check-cast p1, Lcom/kik/core/domain/a/a/a;
+    check-cast p1, Lcom/kik/core/domain/users/a/c;
 
-    .line 1274
-    if-nez p1, :cond_0
+    .line 1236
+    invoke-interface {p1}, Lcom/kik/core/domain/users/a/c;->h()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
 
     const/4 v0, 0x1
 
@@ -60,7 +64,7 @@
     .line 0
     return-object v0
 
-    .line 1274
+    .line 1236
     :cond_0
     const/4 v0, 0x0
 

@@ -6,7 +6,7 @@
 # instance fields
 .field public a:Ljava/lang/String;
 
-.field private b:Lkik/core/interfaces/v;
+.field private b:Lkik/core/interfaces/u;
 
 
 # direct methods
@@ -44,11 +44,11 @@
     invoke-direct {v0}, Lcom/kik/events/Promise;-><init>()V
 
     .line 54
-    iget-object v1, p0, Lkik/core/net/challenge/d;->b:Lkik/core/interfaces/v;
+    iget-object v1, p0, Lkik/core/net/challenge/d;->b:Lkik/core/interfaces/u;
 
     iget-object v2, p0, Lkik/core/net/challenge/d;->a:Ljava/lang/String;
 
-    invoke-interface {v1, v2}, Lkik/core/interfaces/v;->a(Ljava/lang/String;)Lcom/kik/events/Promise;
+    invoke-interface {v1, v2}, Lkik/core/interfaces/u;->a(Ljava/lang/String;)Lcom/kik/events/Promise;
 
     move-result-object v1
 
@@ -72,12 +72,12 @@
     return-object v0
 .end method
 
-.method public final a(Lkik/core/interfaces/v;)V
+.method public final a(Lkik/core/interfaces/u;)V
     .locals 0
 
     .prologue
     .line 36
-    iput-object p1, p0, Lkik/core/net/challenge/d;->b:Lkik/core/interfaces/v;
+    iput-object p1, p0, Lkik/core/net/challenge/d;->b:Lkik/core/interfaces/u;
 
     .line 37
     return-void
@@ -105,7 +105,7 @@
     return-void
 .end method
 
-.method public final aQ_()V
+.method public final aM_()V
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {

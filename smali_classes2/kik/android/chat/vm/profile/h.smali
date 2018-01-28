@@ -44,12 +44,12 @@
     .locals 4
 
     .prologue
-    .line 1368
+    .line 1370
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
-    .line 1369
+    .line 1371
     const/4 v0, 0x0
 
     move v1, v0
@@ -59,22 +59,22 @@
 
     if-ge v1, v0, :cond_1
 
-    .line 1370
+    .line 1372
     aget-object v0, p1, v1
 
-    .line 1371
+    .line 1373
     if-eqz v0, :cond_0
 
     instance-of v3, v0, Lcom/kik/core/domain/users/a/c;
 
     if-eqz v3, :cond_0
 
-    .line 1372
+    .line 1374
     check-cast v0, Lcom/kik/core/domain/users/a/c;
 
     invoke-interface {v2, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1369
+    .line 1371
     :cond_0
     add-int/lit8 v0, v1, 0x1
 

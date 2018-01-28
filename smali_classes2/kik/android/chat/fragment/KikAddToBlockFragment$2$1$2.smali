@@ -57,7 +57,7 @@
 
     iget-object v2, p0, Lkik/android/chat/fragment/KikAddToBlockFragment$2$1$2;->a:Ljava/lang/Throwable;
 
-    invoke-static {v2}, Lkik/android/util/ce;->a(Ljava/lang/Throwable;)Ljava/lang/String;
+    invoke-static {v2}, Lkik/android/util/cf;->a(Ljava/lang/Throwable;)Ljava/lang/String;
 
     move-result-object v2
 

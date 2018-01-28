@@ -3,16 +3,72 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/vm/IListViewModel;
+.implements Lkik/android/chat/vm/at;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lkik/android/chat/vm/IListViewModel",
-        "<",
-        "Lkik/android/chat/vm/widget/ISmileyPopupItemViewModel;",
-        ">;"
-    }
-.end annotation
+# virtual methods
+.method public abstract a(Z)V
+.end method
+
+.method public abstract aD_()Lrx/d;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<",
+            "Landroid/graphics/drawable/Drawable;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public abstract d()Lrx/d;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<",
+            "Ljava/lang/Integer;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public abstract e()Lrx/d;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public abstract f()Lrx/d;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public abstract g()V
+.end method
+
+.method public abstract h()V
+.end method
+
+.method public abstract i()V
+.end method
+
+.method public abstract j()Lkik/android/chat/presentation/MediaTrayPresenterImpl$b;
+.end method
+
+.method public abstract k()Lcom/kik/android/b/f;
+.end method

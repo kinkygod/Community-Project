@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android">
+<FrameLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
     <ProgressBar android:layout_gravity="bottom|center" android:id="@id/scan_spinner" android:layout_width="50.0dip" android:layout_height="fill_parent" android:layout_marginBottom="200.0dip" android:indeterminate="true" android:indeterminateDrawable="@drawable/spinner_loading" android:indeterminateDuration="1000" />
     <ImageView android:layout_gravity="bottom|center" android:id="@id/scan_load_error_image" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginBottom="200.0dip" android:src="@drawable/error" />
     <LinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/code_info_holder" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_marginTop="20.0dip">

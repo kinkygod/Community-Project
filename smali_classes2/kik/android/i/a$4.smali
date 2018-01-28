@@ -17,7 +17,7 @@
     value = {
         "Lcom/kik/events/k",
         "<",
-        "Lkik/core/datatypes/ad;",
+        "Lkik/core/datatypes/ac;",
         ">;"
     }
 .end annotation

@@ -122,7 +122,7 @@
 
     .prologue
     .line 27
-    invoke-virtual {p0}, Lkik/android/gifs/vm/p;->K_()V
+    invoke-virtual {p0}, Lkik/android/gifs/vm/p;->aF_()V
 
     return-void
 .end method
@@ -223,7 +223,7 @@
 
 
 # virtual methods
-.method public final synthetic a(I)Lkik/android/chat/vm/ar;
+.method public final synthetic a(I)Lkik/android/chat/vm/at;
     .locals 5
 
     .prologue
@@ -265,7 +265,7 @@
     return-object v2
 .end method
 
-.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
     .locals 0
 
     .prologue
@@ -273,13 +273,13 @@
     invoke-interface {p1, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/gifs/vm/p;)V
 
     .line 46
-    invoke-super {p0, p1, p2}, Lkik/android/gifs/vm/c;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    invoke-super {p0, p1, p2}, Lkik/android/gifs/vm/c;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 47
     return-void
 .end method
 
-.method public final aj_()V
+.method public final ak_()V
     .locals 1
 
     .prologue
@@ -289,7 +289,7 @@
     iput-object v0, p0, Lkik/android/gifs/vm/p;->l:Lrx/functions/b;
 
     .line 53
-    invoke-super {p0}, Lkik/android/gifs/vm/c;->aj_()V
+    invoke-super {p0}, Lkik/android/gifs/vm/c;->ak_()V
 
     .line 54
     return-void
@@ -412,7 +412,7 @@
     invoke-interface {v0}, Ljava/util/Map;->clear()V
 
     .line 95
-    invoke-virtual {p0}, Lkik/android/gifs/vm/p;->K_()V
+    invoke-virtual {p0}, Lkik/android/gifs/vm/p;->aF_()V
 
     .line 97
     iget-object v0, p0, Lkik/android/gifs/vm/p;->f:Lkik/android/gifs/api/GifApiProvider;

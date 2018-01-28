@@ -1,81 +1,47 @@
-.class public final Lkik/android/chat/vm/dd;
+.class final synthetic Lkik/android/chat/vm/dd;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/vm/ba;
+.implements Ljava/lang/Runnable;
 
 
-# instance fields
-.field private final a:Ljava/lang/String;
-
-.field private final b:Ljava/util/ArrayList;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/ArrayList",
-            "<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
+# static fields
+.field private static final a:Lkik/android/chat/vm/dd;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/util/ArrayList;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            "Ljava/util/ArrayList",
-            "<",
-            "Ljava/lang/String;",
-            ">;)V"
-        }
-    .end annotation
+.method static constructor <clinit>()V
+    .locals 1
 
-    .prologue
-    .line 15
+    new-instance v0, Lkik/android/chat/vm/dd;
+
+    invoke-direct {v0}, Lkik/android/chat/vm/dd;-><init>()V
+
+    sput-object v0, Lkik/android/chat/vm/dd;->a:Lkik/android/chat/vm/dd;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 16
-    iput-object p1, p0, Lkik/android/chat/vm/dd;->a:Ljava/lang/String;
-
-    .line 17
-    iput-object p2, p0, Lkik/android/chat/vm/dd;->b:Ljava/util/ArrayList;
-
-    .line 18
     return-void
+.end method
+
+.method public static a()Ljava/lang/Runnable;
+    .locals 1
+
+    sget-object v0, Lkik/android/chat/vm/dd;->a:Lkik/android/chat/vm/dd;
+
+    return-object v0
 .end method
 
 
 # virtual methods
-.method public final a()Ljava/util/ArrayList;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/ArrayList",
-            "<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
+.method public final run()V
+    .locals 0
 
-    .prologue
-    .line 24
-    iget-object v0, p0, Lkik/android/chat/vm/dd;->b:Ljava/util/ArrayList;
-
-    return-object v0
-.end method
-
-.method public final b()Ljava/lang/String;
-    .locals 1
-
-    .prologue
-    .line 30
-    iget-object v0, p0, Lkik/android/chat/vm/dd;->a:Ljava/lang/String;
-
-    return-object v0
+    return-void
 .end method

@@ -3,21 +3,21 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/vm/ar;
+.implements Lkik/android/chat/vm/widget/ah;
 
 
 # virtual methods
-.method public abstract d()Lrx/d;
+.method public abstract b()Lrx/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
             "Lrx/d",
             "<",
-            "Landroid/graphics/Bitmap;",
+            "Ljava/lang/Integer;",
             ">;"
         }
     .end annotation
 .end method
 
-.method public abstract e()V
+.method public abstract d()V
 .end method

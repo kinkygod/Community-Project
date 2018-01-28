@@ -1,45 +1,65 @@
-.class final synthetic Lkik/android/chat/vm/de;
+.class public final Lkik/android/chat/vm/de;
 .super Ljava/lang/Object;
-
-# interfaces
-.implements Lkik/core/util/a;
+.source "SourceFile"
 
 
 # instance fields
-.field private final a:Lkik/android/chat/vm/ReportDialogViewModel;
+.field private final a:Z
+
+.field private final b:I
+
+.field private final c:Z
 
 
 # direct methods
-.method private constructor <init>(Lkik/android/chat/vm/ReportDialogViewModel;)V
+.method public constructor <init>(ZIZ)V
     .locals 0
 
+    .prologue
+    .line 14
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lkik/android/chat/vm/de;->a:Lkik/android/chat/vm/ReportDialogViewModel;
+    .line 15
+    iput-boolean p1, p0, Lkik/android/chat/vm/de;->a:Z
 
+    .line 16
+    iput p2, p0, Lkik/android/chat/vm/de;->b:I
+
+    .line 17
+    iput-boolean p3, p0, Lkik/android/chat/vm/de;->c:Z
+
+    .line 18
     return-void
-.end method
-
-.method public static a(Lkik/android/chat/vm/ReportDialogViewModel;)Lkik/core/util/a;
-    .locals 1
-
-    new-instance v0, Lkik/android/chat/vm/de;
-
-    invoke-direct {v0, p0}, Lkik/android/chat/vm/de;-><init>(Lkik/android/chat/vm/ReportDialogViewModel;)V
-
-    return-object v0
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)V
+.method public final a()Z
     .locals 1
 
-    iget-object v0, p0, Lkik/android/chat/vm/de;->a:Lkik/android/chat/vm/ReportDialogViewModel;
+    .prologue
+    .line 22
+    iget-boolean v0, p0, Lkik/android/chat/vm/de;->a:Z
 
-    check-cast p1, Ljava/lang/String;
+    return v0
+.end method
 
-    invoke-static {v0, p1}, Lkik/android/chat/vm/ReportDialogViewModel;->a(Lkik/android/chat/vm/ReportDialogViewModel;Ljava/lang/String;)V
+.method public final b()I
+    .locals 1
 
-    return-void
+    .prologue
+    .line 27
+    iget v0, p0, Lkik/android/chat/vm/de;->b:I
+
+    return v0
+.end method
+
+.method public final c()Z
+    .locals 1
+
+    .prologue
+    .line 32
+    iget-boolean v0, p0, Lkik/android/chat/vm/de;->c:Z
+
+    return v0
 .end method

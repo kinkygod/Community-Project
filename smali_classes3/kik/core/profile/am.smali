@@ -2,44 +2,58 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lrx/functions/b;
+.implements Lrx/functions/g;
 
 
-# instance fields
-.field private final a:Lkik/core/profile/aj;
+# static fields
+.field private static final a:Lkik/core/profile/am;
 
 
 # direct methods
-.method private constructor <init>(Lkik/core/profile/aj;)V
-    .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lkik/core/profile/am;->a:Lkik/core/profile/aj;
-
-    return-void
-.end method
-
-.method public static a(Lkik/core/profile/aj;)Lrx/functions/b;
+.method static constructor <clinit>()V
     .locals 1
 
     new-instance v0, Lkik/core/profile/am;
 
-    invoke-direct {v0, p0}, Lkik/core/profile/am;-><init>(Lkik/core/profile/aj;)V
+    invoke-direct {v0}, Lkik/core/profile/am;-><init>()V
+
+    sput-object v0, Lkik/core/profile/am;->a:Lkik/core/profile/am;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static a()Lrx/functions/g;
+    .locals 1
+
+    sget-object v0, Lkik/core/profile/am;->a:Lkik/core/profile/am;
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public final call(Ljava/lang/Object;)V
+.method public final call(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    iget-object v0, p0, Lkik/core/profile/am;->a:Lkik/core/profile/aj;
+    check-cast p1, Lkik/core/datatypes/s;
 
-    check-cast p1, Lcom/kik/core/a/a;
+    check-cast p1, Lkik/core/datatypes/l;
 
-    invoke-static {v0, p1}, Lkik/core/profile/aj;->a(Lkik/core/profile/aj;Lcom/kik/core/a/a;)V
+    invoke-virtual {p1}, Lkik/core/datatypes/l;->h()Z
 
-    return-void
+    move-result v0
+
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v0
+
+    return-object v0
 .end method

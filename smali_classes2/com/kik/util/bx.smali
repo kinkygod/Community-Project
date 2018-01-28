@@ -5,35 +5,31 @@
 .implements Lrx/functions/g;
 
 
-# static fields
-.field private static final a:Lcom/kik/util/bx;
+# instance fields
+.field private final a:Landroid/graphics/drawable/Drawable;
+
+.field private final b:Landroid/graphics/drawable/Drawable;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lcom/kik/util/bx;
-
-    invoke-direct {v0}, Lcom/kik/util/bx;-><init>()V
-
-    sput-object v0, Lcom/kik/util/bx;->a:Lcom/kik/util/bx;
-
-    return-void
-.end method
-
-.method private constructor <init>()V
+.method private constructor <init>(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    iput-object p1, p0, Lcom/kik/util/bx;->a:Landroid/graphics/drawable/Drawable;
+
+    iput-object p2, p0, Lcom/kik/util/bx;->b:Landroid/graphics/drawable/Drawable;
+
     return-void
 .end method
 
-.method public static a()Lrx/functions/g;
+.method public static a(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)Lrx/functions/g;
     .locals 1
 
-    sget-object v0, Lcom/kik/util/bx;->a:Lcom/kik/util/bx;
+    new-instance v0, Lcom/kik/util/bx;
+
+    invoke-direct {v0, p0, p1}, Lcom/kik/util/bx;-><init>(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
     return-object v0
 .end method
@@ -41,11 +37,15 @@
 
 # virtual methods
 .method public final call(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+    .locals 2
 
-    check-cast p1, Ljava/lang/Long;
+    iget-object v0, p0, Lcom/kik/util/bx;->a:Landroid/graphics/drawable/Drawable;
 
-    invoke-static {p1}, Lcom/kik/util/bq;->a(Ljava/lang/Long;)Ljava/lang/String;
+    iget-object v1, p0, Lcom/kik/util/bx;->b:Landroid/graphics/drawable/Drawable;
+
+    check-cast p1, Ljava/lang/Boolean;
+
+    invoke-static {v0, v1, p1}, Lcom/kik/util/bt;->a(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Ljava/lang/Boolean;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 

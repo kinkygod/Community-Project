@@ -18,11 +18,11 @@
 # instance fields
 .field private A:Lkik/core/interfaces/n;
 
-.field private B:Lkik/core/interfaces/ae;
+.field private B:Lkik/core/interfaces/ad;
 
 .field private C:Lkik/core/interfaces/IConversation;
 
-.field private D:Lkik/core/interfaces/aa;
+.field private D:Lkik/core/interfaces/z;
 
 .field private E:Lcom/kik/events/Promise;
 
@@ -101,7 +101,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Lkik/core/datatypes/messageExtensions/ContentMessage;Ljava/lang/String;Ljava/lang/String;Lcom/kik/android/Mixpanel;Lkik/core/net/e;Lkik/core/interfaces/n;Lkik/core/interfaces/ae;Lkik/core/interfaces/IConversation;Lkik/core/interfaces/aa;)V
+.method public constructor <init>(Lkik/core/datatypes/messageExtensions/ContentMessage;Ljava/lang/String;Ljava/lang/String;Lcom/kik/android/Mixpanel;Lkik/core/net/e;Lkik/core/interfaces/n;Lkik/core/interfaces/ad;Lkik/core/interfaces/IConversation;Lkik/core/interfaces/z;)V
     .locals 4
 
     .prologue
@@ -179,10 +179,10 @@
     iput-object p5, p0, Lkik/android/net/http/ContentUploadItem;->z:Lkik/core/net/e;
 
     .line 102
-    iput-object p7, p0, Lkik/android/net/http/ContentUploadItem;->B:Lkik/core/interfaces/ae;
+    iput-object p7, p0, Lkik/android/net/http/ContentUploadItem;->B:Lkik/core/interfaces/ad;
 
     .line 103
-    iput-object p9, p0, Lkik/android/net/http/ContentUploadItem;->D:Lkik/core/interfaces/aa;
+    iput-object p9, p0, Lkik/android/net/http/ContentUploadItem;->D:Lkik/core/interfaces/z;
 
     .line 104
     iput-object p8, p0, Lkik/android/net/http/ContentUploadItem;->C:Lkik/core/interfaces/IConversation;
@@ -416,9 +416,9 @@
     if-eqz v0, :cond_0
 
     .line 2676
-    iget-object v1, p0, Lkik/android/net/http/ContentUploadItem;->B:Lkik/core/interfaces/ae;
+    iget-object v1, p0, Lkik/android/net/http/ContentUploadItem;->B:Lkik/core/interfaces/ad;
 
-    invoke-interface {v1, v0}, Lkik/core/interfaces/ae;->c(Lkik/core/datatypes/Message;)Z
+    invoke-interface {v1, v0}, Lkik/core/interfaces/ad;->c(Lkik/core/datatypes/Message;)Z
 
     .line 2677
     const/4 v0, 0x1
@@ -498,9 +498,9 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Lkik/android/net/http/ContentUploadItem;->B:Lkik/core/interfaces/ae;
+    iget-object v4, p0, Lkik/android/net/http/ContentUploadItem;->B:Lkik/core/interfaces/ad;
 
-    invoke-virtual {v0, v1, v2, v3, v4}, Lkik/core/datatypes/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkik/core/interfaces/ae;)Z
+    invoke-virtual {v0, v1, v2, v3, v4}, Lkik/core/datatypes/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkik/core/interfaces/ad;)Z
 
     move-result v0
 
@@ -1244,9 +1244,9 @@
     :try_start_1
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Lkik/android/net/http/ContentUploadItem;->B:Lkik/core/interfaces/ae;
+    iget-object v5, v0, Lkik/android/net/http/ContentUploadItem;->B:Lkik/core/interfaces/ad;
 
-    invoke-static {v5}, Lkik/core/z;->b(Lkik/core/interfaces/ae;)Lkik/core/z;
+    invoke-static {v5}, Lkik/core/z;->b(Lkik/core/interfaces/ad;)Lkik/core/z;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
@@ -1392,7 +1392,7 @@
     :try_start_4
     move-object/from16 v0, p0
 
-    iget-object v9, v0, Lkik/android/net/http/ContentUploadItem;->D:Lkik/core/interfaces/aa;
+    iget-object v9, v0, Lkik/android/net/http/ContentUploadItem;->D:Lkik/core/interfaces/z;
 
     new-instance v12, Ljava/lang/StringBuilder;
 
@@ -1420,7 +1420,7 @@
 
     move-result-object v12
 
-    invoke-interface {v9, v12}, Lkik/core/interfaces/aa;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {v9, v12}, Lkik/core/interfaces/z;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v9
 

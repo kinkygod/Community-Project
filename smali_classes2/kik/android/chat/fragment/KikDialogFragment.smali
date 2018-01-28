@@ -204,7 +204,7 @@
     .line 342
     iget-object v0, p0, Lkik/android/chat/fragment/KikDialogFragment;->b:Ljava/lang/String;
 
-    invoke-static {p1, v0}, Lkik/android/chat/view/text/c;->a(Landroid/widget/TextView;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkik/android/chat/view/text/d;->a(Landroid/widget/TextView;Ljava/lang/String;)V
 
     .line 343
     :cond_0
@@ -221,7 +221,7 @@
     invoke-static {p1, v0}, Landroid/text/util/Linkify;->addLinks(Landroid/widget/TextView;I)Z
 
     .line 1025
-    invoke-static {p1}, Lkik/android/chat/view/text/c;->a(Landroid/widget/TextView;)V
+    invoke-static {p1}, Lkik/android/chat/view/text/d;->a(Landroid/widget/TextView;)V
 
     goto :goto_0
 

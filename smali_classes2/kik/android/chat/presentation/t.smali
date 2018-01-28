@@ -9,13 +9,13 @@
 # instance fields
 .field private final a:Lkik/core/interfaces/b;
 
-.field private final b:Lkik/core/manager/z;
+.field private final b:Lkik/core/manager/y;
 
 .field private final c:Lkik/android/chat/view/z;
 
 .field private final d:Lcom/kik/android/Mixpanel;
 
-.field private final e:Lkik/core/interfaces/w;
+.field private final e:Lkik/core/interfaces/v;
 
 .field private f:Ljava/lang/String;
 
@@ -39,7 +39,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lkik/core/manager/z;Lkik/android/chat/view/z;Lkik/core/interfaces/b;Lcom/kik/android/Mixpanel;Lkik/core/interfaces/w;Ljava/lang/String;)V
+.method public constructor <init>(Lkik/core/manager/y;Lkik/android/chat/view/z;Lkik/core/interfaces/b;Lcom/kik/android/Mixpanel;Lkik/core/interfaces/v;Ljava/lang/String;)V
     .locals 3
 
     .prologue
@@ -84,7 +84,7 @@
     iput-object v0, p0, Lkik/android/chat/presentation/t;->o:Lrx/k;
 
     .line 61
-    iput-object p1, p0, Lkik/android/chat/presentation/t;->b:Lkik/core/manager/z;
+    iput-object p1, p0, Lkik/android/chat/presentation/t;->b:Lkik/core/manager/y;
 
     .line 62
     iput-object p2, p0, Lkik/android/chat/presentation/t;->c:Lkik/android/chat/view/z;
@@ -96,7 +96,7 @@
     iput-object p4, p0, Lkik/android/chat/presentation/t;->d:Lcom/kik/android/Mixpanel;
 
     .line 65
-    iput-object p5, p0, Lkik/android/chat/presentation/t;->e:Lkik/core/interfaces/w;
+    iput-object p5, p0, Lkik/android/chat/presentation/t;->e:Lkik/core/interfaces/v;
 
     .line 66
     iput-object p6, p0, Lkik/android/chat/presentation/t;->f:Ljava/lang/String;
@@ -167,9 +167,9 @@
 
     .line 429
     :cond_1
-    iget-object v0, p0, Lkik/android/chat/presentation/t;->b:Lkik/core/manager/z;
+    iget-object v0, p0, Lkik/android/chat/presentation/t;->b:Lkik/core/manager/y;
 
-    invoke-interface {v0}, Lkik/core/manager/z;->b()Ljava/util/List;
+    invoke-interface {v0}, Lkik/core/manager/y;->b()Ljava/util/List;
 
     move-result-object v0
 
@@ -221,9 +221,9 @@
 
     .prologue
     .line 301
-    iget-object v0, p0, Lkik/android/chat/presentation/t;->e:Lkik/core/interfaces/w;
+    iget-object v0, p0, Lkik/android/chat/presentation/t;->e:Lkik/core/interfaces/v;
 
-    invoke-static {p1, v0}, Lkik/core/util/i;->b(Ljava/util/List;Lkik/core/interfaces/w;)Ljava/util/List;
+    invoke-static {p1, v0}, Lkik/core/util/i;->b(Ljava/util/List;Lkik/core/interfaces/v;)Ljava/util/List;
 
     move-result-object v0
 
@@ -248,9 +248,9 @@
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lkik/android/chat/presentation/t;->b:Lkik/core/manager/z;
+    iget-object v0, p0, Lkik/android/chat/presentation/t;->b:Lkik/core/manager/y;
 
-    invoke-interface {v0}, Lkik/core/manager/z;->a()Ljava/util/List;
+    invoke-interface {v0}, Lkik/core/manager/y;->a()Ljava/util/List;
 
     move-result-object v0
 
@@ -309,9 +309,9 @@
 
     .line 247
     :cond_2
-    iget-object v0, p0, Lkik/android/chat/presentation/t;->b:Lkik/core/manager/z;
+    iget-object v0, p0, Lkik/android/chat/presentation/t;->b:Lkik/core/manager/y;
 
-    invoke-interface {v0}, Lkik/core/manager/z;->c()Z
+    invoke-interface {v0}, Lkik/core/manager/y;->c()Z
 
     move-result v0
 
@@ -371,9 +371,9 @@
     iput-object p1, p0, Lkik/android/chat/presentation/t;->k:Ljava/lang/String;
 
     .line 15298
-    iget-object v0, p0, Lkik/android/chat/presentation/t;->b:Lkik/core/manager/z;
+    iget-object v0, p0, Lkik/android/chat/presentation/t;->b:Lkik/core/manager/y;
 
-    invoke-interface {v0, p1}, Lkik/core/manager/z;->a(Ljava/lang/String;)Lrx/d;
+    invoke-interface {v0, p1}, Lkik/core/manager/y;->a(Ljava/lang/String;)Lrx/d;
 
     move-result-object v0
 
@@ -702,9 +702,9 @@
 
     .prologue
     .line 420
-    iget-object v0, p0, Lkik/android/chat/presentation/t;->b:Lkik/core/manager/z;
+    iget-object v0, p0, Lkik/android/chat/presentation/t;->b:Lkik/core/manager/y;
 
-    invoke-interface {v0}, Lkik/core/manager/z;->a()Ljava/util/List;
+    invoke-interface {v0}, Lkik/core/manager/y;->a()Ljava/util/List;
 
     move-result-object v0
 
@@ -712,9 +712,9 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lkik/android/chat/presentation/t;->e:Lkik/core/interfaces/w;
+    iget-object v1, p0, Lkik/android/chat/presentation/t;->e:Lkik/core/interfaces/v;
 
-    invoke-static {v0, v1}, Lkik/core/util/i;->b(Ljava/util/List;Lkik/core/interfaces/w;)Ljava/util/List;
+    invoke-static {v0, v1}, Lkik/core/util/i;->b(Ljava/util/List;Lkik/core/interfaces/v;)Ljava/util/List;
 
     move-result-object v0
 
@@ -918,13 +918,13 @@
 
     .prologue
     .line 443
-    iget-object v0, p0, Lkik/android/chat/presentation/t;->e:Lkik/core/interfaces/w;
+    iget-object v0, p0, Lkik/android/chat/presentation/t;->e:Lkik/core/interfaces/v;
 
     iget-object v1, p0, Lkik/android/chat/presentation/t;->f:Ljava/lang/String;
 
     const/4 v2, 0x0
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/w;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/v;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
 
     move-result-object v0
 
@@ -1101,9 +1101,9 @@
     invoke-direct {p0}, Lkik/android/chat/presentation/t;->k()V
 
     .line 102
-    iget-object v1, p0, Lkik/android/chat/presentation/t;->b:Lkik/core/manager/z;
+    iget-object v1, p0, Lkik/android/chat/presentation/t;->b:Lkik/core/manager/y;
 
-    invoke-interface {v1, v0}, Lkik/core/manager/z;->b(Ljava/lang/String;)Lrx/d;
+    invoke-interface {v1, v0}, Lkik/core/manager/y;->b(Ljava/lang/String;)Lrx/d;
 
     move-result-object v1
 
@@ -1298,9 +1298,9 @@
 
     .line 186
     :cond_0
-    iget-object v0, p0, Lkik/android/chat/presentation/t;->b:Lkik/core/manager/z;
+    iget-object v0, p0, Lkik/android/chat/presentation/t;->b:Lkik/core/manager/y;
 
-    invoke-interface {v0, p1}, Lkik/core/manager/z;->a(Lkik/core/datatypes/Message;)Lkik/core/datatypes/l;
+    invoke-interface {v0, p1}, Lkik/core/manager/y;->a(Lkik/core/datatypes/Message;)Lkik/core/datatypes/l;
 
     move-result-object v0
 
@@ -1432,13 +1432,13 @@
     iput-boolean v0, p0, Lkik/android/chat/presentation/t;->l:Z
 
     .line 143
-    iget-object v0, p0, Lkik/android/chat/presentation/t;->b:Lkik/core/manager/z;
+    iget-object v0, p0, Lkik/android/chat/presentation/t;->b:Lkik/core/manager/y;
 
     invoke-virtual {p1}, Lkik/core/datatypes/l;->l()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-interface {v0, v1}, Lkik/core/manager/z;->b(Ljava/lang/String;)Lrx/d;
+    invoke-interface {v0, v1}, Lkik/core/manager/y;->b(Ljava/lang/String;)Lrx/d;
 
     move-result-object v0
 
@@ -1697,7 +1697,7 @@
     return-void
 .end method
 
-.method public final k_()V
+.method public final m_()V
     .locals 1
 
     .prologue

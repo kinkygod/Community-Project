@@ -18,7 +18,7 @@
 .method public abstract a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 .end method
 
-.method public abstract am_()Lrx/d;
+.method public abstract an_()Lrx/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -57,19 +57,7 @@
     .end annotation
 .end method
 
-.method public abstract k()Lrx/d;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/d",
-            "<",
-            "Ljava/lang/Integer;",
-            ">;"
-        }
-    .end annotation
-.end method
-
-.method public abstract o()Lrx/d;
+.method public abstract l()Lrx/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -93,8 +81,20 @@
     .end annotation
 .end method
 
-.method public abstract q()Lcom/kik/message/model/attachments/RenderInstructionSet;
+.method public abstract q()Lrx/d;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<",
+            "Ljava/lang/Integer;",
+            ">;"
+        }
+    .end annotation
 .end method
 
-.method public abstract r()V
+.method public abstract r()Lcom/kik/message/model/attachments/RenderInstructionSet;
+.end method
+
+.method public abstract s()V
 .end method

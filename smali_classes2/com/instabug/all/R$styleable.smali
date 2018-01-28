@@ -77,7 +77,7 @@
 
     const/4 v1, 0x0
 
-    const v2, 0x7f010114
+    const v2, 0x7f010117
 
     aput v2, v0, v1
 
@@ -104,26 +104,16 @@
     .line 496
     :array_0
     .array-data 4
-        0x7f0100f4
-        0x7f0100f5
-        0x7f0100f6
         0x7f0100f7
+        0x7f0100f8
+        0x7f0100f9
+        0x7f0100fa
     .end array-data
 
     .line 503
     :array_1
     .array-data 4
-        0x7f01003f
-        0x7f010136
-        0x7f010137
-        0x7f010138
-        0x7f010139
-        0x7f01013a
-        0x7f01013b
-        0x7f01013c
-        0x7f01013d
-        0x7f01013e
-        0x7f01013f
+        0x7f010041
         0x7f010140
         0x7f010141
         0x7f010142
@@ -146,8 +136,18 @@
         0x7f010153
         0x7f010154
         0x7f010155
-        0x7f010253
-        0x7f010254
+        0x7f010156
+        0x7f010157
+        0x7f010158
+        0x7f010159
+        0x7f01015a
+        0x7f01015b
+        0x7f01015c
+        0x7f01015d
+        0x7f01015e
+        0x7f01015f
+        0x7f01025d
+        0x7f01025e
     .end array-data
 
     .line 511
@@ -156,7 +156,7 @@
         0x1010095
         0x1010098
         0x10100d5
-        0x7f01018e
+        0x7f010198
     .end array-data
 .end method
 

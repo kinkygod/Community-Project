@@ -287,7 +287,7 @@
 
     .prologue
     .line 54
-    const v0, 0x7f04016c
+    const v0, 0x7f040172
 
     const/4 v1, 0x0
 
@@ -304,11 +304,11 @@
 
     move-result-object v2
 
-    invoke-virtual {p0}, Lkik/android/widget/StickerWidget;->getNavigator()Lkik/android/chat/vm/aw;
+    invoke-virtual {p0}, Lkik/android/widget/StickerWidget;->getNavigator()Lkik/android/chat/vm/ay;
 
     move-result-object v3
 
-    invoke-virtual {v1, v2, v3}, Lkik/android/chat/vm/widget/StickerWidgetViewModel;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    invoke-virtual {v1, v2, v3}, Lkik/android/chat/vm/widget/StickerWidgetViewModel;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 58
     const/16 v1, 0xe
@@ -320,13 +320,13 @@
     invoke-virtual {v0, v1, v2}, Landroid/databinding/ViewDataBinding;->setVariable(ILjava/lang/Object;)Z
 
     .line 59
-    const/16 v1, 0x15
+    const/16 v1, 0x16
 
     invoke-direct {p0}, Lkik/android/widget/StickerWidget;->d()Lkik/android/chat/vm/widget/StickerWidgetViewModel;
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lkik/android/chat/vm/widget/StickerWidgetViewModel;->j()Lkik/android/chat/vm/widget/bp;
+    invoke-virtual {v2}, Lkik/android/chat/vm/widget/StickerWidgetViewModel;->j()Lkik/android/chat/vm/widget/bq;
 
     move-result-object v2
 
@@ -370,7 +370,7 @@
     .line 71
     iget-object v0, p0, Lkik/android/widget/StickerWidget;->e:Lkik/android/chat/vm/widget/StickerWidgetViewModel;
 
-    invoke-virtual {v0}, Lkik/android/chat/vm/widget/StickerWidgetViewModel;->aj_()V
+    invoke-virtual {v0}, Lkik/android/chat/vm/widget/StickerWidgetViewModel;->ak_()V
 
     .line 72
     const/4 v0, 0x0

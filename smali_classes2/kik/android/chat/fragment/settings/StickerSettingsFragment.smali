@@ -12,7 +12,7 @@
 
 
 # instance fields
-.field private a:Lkik/android/chat/vm/widget/bl;
+.field private a:Lkik/android/chat/vm/widget/bm;
 
 
 # direct methods
@@ -26,25 +26,25 @@
     return-void
 .end method
 
-.method private a()Lkik/android/chat/vm/widget/bl;
+.method private a()Lkik/android/chat/vm/widget/bm;
     .locals 1
 
     .prologue
     .line 64
-    iget-object v0, p0, Lkik/android/chat/fragment/settings/StickerSettingsFragment;->a:Lkik/android/chat/vm/widget/bl;
+    iget-object v0, p0, Lkik/android/chat/fragment/settings/StickerSettingsFragment;->a:Lkik/android/chat/vm/widget/bm;
 
     if-nez v0, :cond_0
 
     .line 65
-    new-instance v0, Lkik/android/chat/vm/widget/bl;
+    new-instance v0, Lkik/android/chat/vm/widget/bm;
 
-    invoke-direct {v0}, Lkik/android/chat/vm/widget/bl;-><init>()V
+    invoke-direct {v0}, Lkik/android/chat/vm/widget/bm;-><init>()V
 
-    iput-object v0, p0, Lkik/android/chat/fragment/settings/StickerSettingsFragment;->a:Lkik/android/chat/vm/widget/bl;
+    iput-object v0, p0, Lkik/android/chat/fragment/settings/StickerSettingsFragment;->a:Lkik/android/chat/vm/widget/bm;
 
     .line 68
     :cond_0
-    iget-object v0, p0, Lkik/android/chat/fragment/settings/StickerSettingsFragment;->a:Lkik/android/chat/vm/widget/bl;
+    iget-object v0, p0, Lkik/android/chat/fragment/settings/StickerSettingsFragment;->a:Lkik/android/chat/vm/widget/bm;
 
     return-object v0
 .end method
@@ -74,7 +74,7 @@
 
     .prologue
     .line 37
-    const v0, 0x7f040166
+    const v0, 0x7f04016c
 
     const/4 v1, 0x0
 
@@ -83,7 +83,7 @@
     move-result-object v0
 
     .line 39
-    invoke-direct {p0}, Lkik/android/chat/fragment/settings/StickerSettingsFragment;->a()Lkik/android/chat/vm/widget/bl;
+    invoke-direct {p0}, Lkik/android/chat/fragment/settings/StickerSettingsFragment;->a()Lkik/android/chat/vm/widget/bm;
 
     move-result-object v1
 
@@ -91,16 +91,16 @@
 
     move-result-object v2
 
-    invoke-virtual {p0}, Lkik/android/chat/fragment/settings/StickerSettingsFragment;->getNavigator()Lkik/android/chat/vm/aw;
+    invoke-virtual {p0}, Lkik/android/chat/fragment/settings/StickerSettingsFragment;->getNavigator()Lkik/android/chat/vm/ay;
 
     move-result-object v3
 
-    invoke-virtual {v1, v2, v3}, Lkik/android/chat/vm/widget/bl;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    invoke-virtual {v1, v2, v3}, Lkik/android/chat/vm/widget/bm;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 41
     const/16 v1, 0xe
 
-    invoke-direct {p0}, Lkik/android/chat/fragment/settings/StickerSettingsFragment;->a()Lkik/android/chat/vm/widget/bl;
+    invoke-direct {p0}, Lkik/android/chat/fragment/settings/StickerSettingsFragment;->a()Lkik/android/chat/vm/widget/bm;
 
     move-result-object v2
 
@@ -119,11 +119,11 @@
 
     .prologue
     .line 57
-    invoke-direct {p0}, Lkik/android/chat/fragment/settings/StickerSettingsFragment;->a()Lkik/android/chat/vm/widget/bl;
+    invoke-direct {p0}, Lkik/android/chat/fragment/settings/StickerSettingsFragment;->a()Lkik/android/chat/vm/widget/bm;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lkik/android/chat/vm/widget/bl;->aj_()V
+    invoke-virtual {v0}, Lkik/android/chat/vm/widget/bm;->ak_()V
 
     .line 59
     invoke-super {p0}, Lkik/android/chat/fragment/KikScopedDialogFragment;->onDestroyView()V
@@ -132,7 +132,7 @@
     return-void
 .end method
 
-.method protected screenOpenedEvent()Lcom/kik/metrics/b/s;
+.method protected screenOpenedEvent()Lcom/kik/metrics/b/t;
     .locals 1
 
     .prologue

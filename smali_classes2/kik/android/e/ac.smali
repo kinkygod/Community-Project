@@ -3,180 +3,257 @@
 .source "SourceFile"
 
 
-# static fields
-.field private static final f:Landroid/databinding/ViewDataBinding$IncludedLayouts;
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lkik/android/e/ac$b;,
+        Lkik/android/e/ac$a;
+    }
+.end annotation
 
-.field private static final g:Landroid/util/SparseIntArray;
+
+# static fields
+.field private static final c:Landroid/databinding/ViewDataBinding$IncludedLayouts;
+
+.field private static final d:Landroid/util/SparseIntArray;
 
 
 # instance fields
-.field public final a:Lkik/android/e/dn;
+.field public final a:Landroid/widget/LinearLayout;
 
-.field public final b:Lkik/android/chat/view/TransitionableSearchBarViewImpl;
+.field public final b:Lcom/github/rahatarmanahmed/cpv/CircularProgressView;
 
-.field public final c:Landroid/view/View;
+.field private final e:Landroid/widget/LinearLayout;
 
-.field public final d:Lkik/android/chat/view/AnimatingSearchBarLayout;
+.field private final f:Lkik/android/e/au;
 
-.field public final e:Lkik/android/widget/PublicGroupSearchRecyclerView;
+.field private final g:Lkik/android/widget/RobotoTextView;
 
-.field private h:Lkik/android/chat/vm/chats/publicgroups/e;
+.field private final h:Lkik/android/widget/SelectedInterestsRecyclerView;
 
-.field private i:Lkik/android/chat/vm/chats/publicgroups/h;
+.field private final i:Landroid/widget/ScrollView;
 
-.field private j:Lkik/android/chat/vm/chats/publicgroups/c;
+.field private final j:Lkik/android/widget/SelecteableInterestsRecyclerView;
 
-.field private k:J
+.field private final k:Lkik/android/widget/RobotoTextView;
+
+.field private l:Lkik/android/chat/vm/bh;
+
+.field private m:Lkik/android/chat/vm/aq;
+
+.field private n:Lkik/android/e/ac$a;
+
+.field private o:Lkik/android/e/ac$b;
+
+.field private p:J
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 6
+    .locals 7
 
     .prologue
-    const/4 v4, 0x1
+    const/4 v6, 0x0
 
-    const/4 v5, 0x0
+    const/4 v5, 0x1
 
     .line 10
     new-instance v0, Landroid/databinding/ViewDataBinding$IncludedLayouts;
 
-    const/4 v1, 0x5
+    const/16 v1, 0x9
 
     invoke-direct {v0, v1}, Landroid/databinding/ViewDataBinding$IncludedLayouts;-><init>(I)V
 
     .line 11
-    sput-object v0, Lkik/android/e/ac;->f:Landroid/databinding/ViewDataBinding$IncludedLayouts;
+    sput-object v0, Lkik/android/e/ac;->c:Landroid/databinding/ViewDataBinding$IncludedLayouts;
 
-    new-array v1, v4, [Ljava/lang/String;
+    new-array v1, v5, [Ljava/lang/String;
 
-    const-string v2, "suggested_groups_empty_view"
+    const-string v2, "kik_back_button"
 
-    aput-object v2, v1, v5
+    aput-object v2, v1, v6
 
-    new-array v2, v4, [I
+    new-array v2, v5, [I
 
-    const/4 v3, 0x3
+    const/16 v3, 0x8
 
-    aput v3, v2, v5
+    aput v3, v2, v6
 
-    new-array v3, v4, [I
+    new-array v3, v5, [I
 
-    const v4, 0x7f04016f
+    const v4, 0x7f0400d7
 
-    aput v4, v3, v5
+    aput v4, v3, v6
 
     invoke-virtual {v0, v5, v1, v2, v3}, Landroid/databinding/ViewDataBinding$IncludedLayouts;->setIncludes(I[Ljava/lang/String;[I[I)V
 
     .line 15
     const/4 v0, 0x0
 
-    sput-object v0, Lkik/android/e/ac;->g:Landroid/util/SparseIntArray;
+    sput-object v0, Lkik/android/e/ac;->d:Landroid/util/SparseIntArray;
 
     .line 16
     return-void
 .end method
 
 .method private constructor <init>(Landroid/databinding/DataBindingComponent;Landroid/view/View;)V
-    .locals 6
+    .locals 5
 
     .prologue
-    const/4 v5, 0x1
-
     const/4 v4, 0x0
 
     const/4 v3, 0x0
 
-    .line 32
-    invoke-direct {p0, p1, p2, v5}, Landroid/databinding/ViewDataBinding;-><init>(Landroid/databinding/DataBindingComponent;Landroid/view/View;I)V
+    .line 37
+    invoke-direct {p0, p1, p2, v4}, Landroid/databinding/ViewDataBinding;-><init>(Landroid/databinding/DataBindingComponent;Landroid/view/View;I)V
 
-    .line 192
+    .line 220
     const-wide/16 v0, -0x1
 
-    iput-wide v0, p0, Lkik/android/e/ac;->k:J
+    iput-wide v0, p0, Lkik/android/e/ac;->p:J
 
-    .line 33
-    const/4 v0, 0x4
+    .line 38
+    const/16 v0, 0x9
 
-    sget-object v1, Lkik/android/e/ac;->f:Landroid/databinding/ViewDataBinding$IncludedLayouts;
+    sget-object v1, Lkik/android/e/ac;->c:Landroid/databinding/ViewDataBinding$IncludedLayouts;
 
-    sget-object v2, Lkik/android/e/ac;->g:Landroid/util/SparseIntArray;
+    sget-object v2, Lkik/android/e/ac;->d:Landroid/util/SparseIntArray;
 
     invoke-static {p1, p2, v0, v1, v2}, Lkik/android/e/ac;->mapBindings(Landroid/databinding/DataBindingComponent;Landroid/view/View;ILandroid/databinding/ViewDataBinding$IncludedLayouts;Landroid/util/SparseIntArray;)[Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 34
-    const/4 v0, 0x3
+    .line 39
+    aget-object v0, v1, v4
+
+    check-cast v0, Landroid/widget/LinearLayout;
+
+    iput-object v0, p0, Lkik/android/e/ac;->e:Landroid/widget/LinearLayout;
+
+    .line 40
+    iget-object v0, p0, Lkik/android/e/ac;->e:Landroid/widget/LinearLayout;
+
+    invoke-virtual {v0, v3}, Landroid/widget/LinearLayout;->setTag(Ljava/lang/Object;)V
+
+    .line 41
+    const/16 v0, 0x8
 
     aget-object v0, v1, v0
 
-    check-cast v0, Lkik/android/e/dn;
+    check-cast v0, Lkik/android/e/au;
 
-    iput-object v0, p0, Lkik/android/e/ac;->a:Lkik/android/e/dn;
+    iput-object v0, p0, Lkik/android/e/ac;->f:Lkik/android/e/au;
 
-    .line 35
-    iget-object v0, p0, Lkik/android/e/ac;->a:Lkik/android/e/dn;
+    .line 42
+    iget-object v0, p0, Lkik/android/e/ac;->f:Lkik/android/e/au;
 
     invoke-virtual {p0, v0}, Lkik/android/e/ac;->setContainedBinding(Landroid/databinding/ViewDataBinding;)V
 
-    .line 36
+    .line 43
     const/4 v0, 0x2
 
     aget-object v0, v1, v0
 
-    check-cast v0, Lkik/android/chat/view/TransitionableSearchBarViewImpl;
+    check-cast v0, Lkik/android/widget/RobotoTextView;
 
-    iput-object v0, p0, Lkik/android/e/ac;->b:Lkik/android/chat/view/TransitionableSearchBarViewImpl;
-
-    .line 37
-    iget-object v0, p0, Lkik/android/e/ac;->b:Lkik/android/chat/view/TransitionableSearchBarViewImpl;
-
-    invoke-virtual {v0, v3}, Lkik/android/chat/view/TransitionableSearchBarViewImpl;->setTag(Ljava/lang/Object;)V
-
-    .line 38
-    aget-object v0, v1, v4
-
-    check-cast v0, Landroid/view/View;
-
-    iput-object v0, p0, Lkik/android/e/ac;->c:Landroid/view/View;
-
-    .line 39
-    iget-object v0, p0, Lkik/android/e/ac;->c:Landroid/view/View;
-
-    invoke-virtual {v0, v3}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
-
-    .line 40
-    aget-object v0, v1, v4
-
-    check-cast v0, Lkik/android/chat/view/AnimatingSearchBarLayout;
-
-    iput-object v0, p0, Lkik/android/e/ac;->d:Lkik/android/chat/view/AnimatingSearchBarLayout;
-
-    .line 41
-    iget-object v0, p0, Lkik/android/e/ac;->d:Lkik/android/chat/view/AnimatingSearchBarLayout;
-
-    invoke-virtual {v0, v3}, Lkik/android/chat/view/AnimatingSearchBarLayout;->setTag(Ljava/lang/Object;)V
-
-    .line 42
-    aget-object v0, v1, v5
-
-    check-cast v0, Lkik/android/widget/PublicGroupSearchRecyclerView;
-
-    iput-object v0, p0, Lkik/android/e/ac;->e:Lkik/android/widget/PublicGroupSearchRecyclerView;
-
-    .line 43
-    iget-object v0, p0, Lkik/android/e/ac;->e:Lkik/android/widget/PublicGroupSearchRecyclerView;
-
-    invoke-virtual {v0, v3}, Lkik/android/widget/PublicGroupSearchRecyclerView;->setTag(Ljava/lang/Object;)V
+    iput-object v0, p0, Lkik/android/e/ac;->g:Lkik/android/widget/RobotoTextView;
 
     .line 44
-    invoke-virtual {p0, p2}, Lkik/android/e/ac;->setRootTag(Landroid/view/View;)V
+    iget-object v0, p0, Lkik/android/e/ac;->g:Lkik/android/widget/RobotoTextView;
+
+    invoke-virtual {v0, v3}, Lkik/android/widget/RobotoTextView;->setTag(Ljava/lang/Object;)V
+
+    .line 45
+    const/4 v0, 0x3
+
+    aget-object v0, v1, v0
+
+    check-cast v0, Lkik/android/widget/SelectedInterestsRecyclerView;
+
+    iput-object v0, p0, Lkik/android/e/ac;->h:Lkik/android/widget/SelectedInterestsRecyclerView;
 
     .line 46
-    invoke-virtual {p0}, Lkik/android/e/ac;->invalidateAll()V
+    iget-object v0, p0, Lkik/android/e/ac;->h:Lkik/android/widget/SelectedInterestsRecyclerView;
+
+    invoke-virtual {v0, v3}, Lkik/android/widget/SelectedInterestsRecyclerView;->setTag(Ljava/lang/Object;)V
 
     .line 47
+    const/4 v0, 0x5
+
+    aget-object v0, v1, v0
+
+    check-cast v0, Landroid/widget/ScrollView;
+
+    iput-object v0, p0, Lkik/android/e/ac;->i:Landroid/widget/ScrollView;
+
+    .line 48
+    iget-object v0, p0, Lkik/android/e/ac;->i:Landroid/widget/ScrollView;
+
+    invoke-virtual {v0, v3}, Landroid/widget/ScrollView;->setTag(Ljava/lang/Object;)V
+
+    .line 49
+    const/4 v0, 0x6
+
+    aget-object v0, v1, v0
+
+    check-cast v0, Lkik/android/widget/SelecteableInterestsRecyclerView;
+
+    iput-object v0, p0, Lkik/android/e/ac;->j:Lkik/android/widget/SelecteableInterestsRecyclerView;
+
+    .line 50
+    iget-object v0, p0, Lkik/android/e/ac;->j:Lkik/android/widget/SelecteableInterestsRecyclerView;
+
+    invoke-virtual {v0, v3}, Lkik/android/widget/SelecteableInterestsRecyclerView;->setTag(Ljava/lang/Object;)V
+
+    .line 51
+    const/4 v0, 0x7
+
+    aget-object v0, v1, v0
+
+    check-cast v0, Lkik/android/widget/RobotoTextView;
+
+    iput-object v0, p0, Lkik/android/e/ac;->k:Lkik/android/widget/RobotoTextView;
+
+    .line 52
+    iget-object v0, p0, Lkik/android/e/ac;->k:Lkik/android/widget/RobotoTextView;
+
+    invoke-virtual {v0, v3}, Lkik/android/widget/RobotoTextView;->setTag(Ljava/lang/Object;)V
+
+    .line 53
+    const/4 v0, 0x1
+
+    aget-object v0, v1, v0
+
+    check-cast v0, Landroid/widget/LinearLayout;
+
+    iput-object v0, p0, Lkik/android/e/ac;->a:Landroid/widget/LinearLayout;
+
+    .line 54
+    iget-object v0, p0, Lkik/android/e/ac;->a:Landroid/widget/LinearLayout;
+
+    invoke-virtual {v0, v3}, Landroid/widget/LinearLayout;->setTag(Ljava/lang/Object;)V
+
+    .line 55
+    const/4 v0, 0x4
+
+    aget-object v0, v1, v0
+
+    check-cast v0, Lcom/github/rahatarmanahmed/cpv/CircularProgressView;
+
+    iput-object v0, p0, Lkik/android/e/ac;->b:Lcom/github/rahatarmanahmed/cpv/CircularProgressView;
+
+    .line 56
+    iget-object v0, p0, Lkik/android/e/ac;->b:Lcom/github/rahatarmanahmed/cpv/CircularProgressView;
+
+    invoke-virtual {v0, v3}, Lcom/github/rahatarmanahmed/cpv/CircularProgressView;->setTag(Ljava/lang/Object;)V
+
+    .line 57
+    invoke-virtual {p0, p2}, Lkik/android/e/ac;->setRootTag(Landroid/view/View;)V
+
+    .line 59
+    invoke-virtual {p0}, Lkik/android/e/ac;->invalidateAll()V
+
+    .line 60
     return-void
 .end method
 
@@ -184,8 +261,8 @@
     .locals 3
 
     .prologue
-    .line 210
-    const-string v0, "layout/fragment_public_group_search_0"
+    .line 238
+    const-string v0, "layout/fragment_interests_picker_0"
 
     invoke-virtual {p0}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -197,7 +274,7 @@
 
     if-nez v0, :cond_0
 
-    .line 211
+    .line 239
     new-instance v0, Ljava/lang/RuntimeException;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -222,7 +299,7 @@
 
     throw v0
 
-    .line 213
+    .line 241
     :cond_0
     new-instance v0, Lkik/android/e/ac;
 
@@ -231,147 +308,45 @@
     return-object v0
 .end method
 
-.method private a(I)Z
-    .locals 4
-
-    .prologue
-    .line 129
-    packed-switch p1, :pswitch_data_0
-
-    .line 137
-    const/4 v0, 0x0
-
-    :goto_0
-    return v0
-
-    .line 131
-    :pswitch_0
-    monitor-enter p0
-
-    .line 132
-    :try_start_0
-    iget-wide v0, p0, Lkik/android/e/ac;->k:J
-
-    const-wide/16 v2, 0x1
-
-    or-long/2addr v0, v2
-
-    iput-wide v0, p0, Lkik/android/e/ac;->k:J
-
-    .line 133
-    monitor-exit p0
-
-    .line 134
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    .line 133
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw v0
-
-    .line 129
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-.end method
-
 
 # virtual methods
-.method public final a(Lkik/android/chat/vm/chats/publicgroups/c;)V
+.method public final a(Lkik/android/chat/vm/aq;)V
     .locals 4
 
     .prologue
+    .line 108
+    iput-object p1, p0, Lkik/android/e/ac;->m:Lkik/android/chat/vm/aq;
+
     .line 109
-    iput-object p1, p0, Lkik/android/e/ac;->j:Lkik/android/chat/vm/chats/publicgroups/c;
+    monitor-enter p0
 
     .line 110
-    monitor-enter p0
-
-    .line 111
     :try_start_0
-    iget-wide v0, p0, Lkik/android/e/ac;->k:J
-
-    const-wide/16 v2, 0x8
-
-    or-long/2addr v0, v2
-
-    iput-wide v0, p0, Lkik/android/e/ac;->k:J
-
-    .line 112
-    monitor-exit p0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 113
-    const/4 v0, 0x7
-
-    invoke-virtual {p0, v0}, Lkik/android/e/ac;->notifyPropertyChanged(I)V
-
-    .line 114
-    invoke-super {p0}, Landroid/databinding/ViewDataBinding;->requestRebind()V
-
-    .line 115
-    return-void
-
-    .line 112
-    :catchall_0
-    move-exception v0
-
-    :try_start_1
-    monitor-exit p0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    throw v0
-.end method
-
-.method public final a(Lkik/android/chat/vm/chats/publicgroups/e;)V
-    .locals 4
-
-    .prologue
-    .line 87
-    iput-object p1, p0, Lkik/android/e/ac;->h:Lkik/android/chat/vm/chats/publicgroups/e;
-
-    .line 88
-    monitor-enter p0
-
-    .line 89
-    :try_start_0
-    iget-wide v0, p0, Lkik/android/e/ac;->k:J
+    iget-wide v0, p0, Lkik/android/e/ac;->p:J
 
     const-wide/16 v2, 0x2
 
     or-long/2addr v0, v2
 
-    iput-wide v0, p0, Lkik/android/e/ac;->k:J
+    iput-wide v0, p0, Lkik/android/e/ac;->p:J
 
-    .line 90
+    .line 111
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 91
-    const/16 v0, 0x11
+    .line 112
+    const/16 v0, 0xe
 
     invoke-virtual {p0, v0}, Lkik/android/e/ac;->notifyPropertyChanged(I)V
 
-    .line 92
+    .line 113
     invoke-super {p0}, Landroid/databinding/ViewDataBinding;->requestRebind()V
 
-    .line 93
+    .line 114
     return-void
 
-    .line 90
+    .line 111
     :catchall_0
     move-exception v0
 
@@ -383,43 +358,43 @@
     throw v0
 .end method
 
-.method public final a(Lkik/android/chat/vm/chats/publicgroups/h;)V
+.method public final a(Lkik/android/chat/vm/bh;)V
     .locals 4
 
     .prologue
-    .line 98
-    iput-object p1, p0, Lkik/android/e/ac;->i:Lkik/android/chat/vm/chats/publicgroups/h;
+    .line 97
+    iput-object p1, p0, Lkik/android/e/ac;->l:Lkik/android/chat/vm/bh;
 
-    .line 99
+    .line 98
     monitor-enter p0
 
-    .line 100
+    .line 99
     :try_start_0
-    iget-wide v0, p0, Lkik/android/e/ac;->k:J
+    iget-wide v0, p0, Lkik/android/e/ac;->p:J
 
-    const-wide/16 v2, 0x4
+    const-wide/16 v2, 0x1
 
     or-long/2addr v0, v2
 
-    iput-wide v0, p0, Lkik/android/e/ac;->k:J
+    iput-wide v0, p0, Lkik/android/e/ac;->p:J
 
-    .line 101
+    .line 100
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 102
-    const/16 v0, 0x10
+    .line 101
+    const/16 v0, 0x12
 
     invoke-virtual {p0, v0}, Lkik/android/e/ac;->notifyPropertyChanged(I)V
 
-    .line 103
+    .line 102
     invoke-super {p0}, Landroid/databinding/ViewDataBinding;->requestRebind()V
 
-    .line 104
+    .line 103
     return-void
 
-    .line 101
+    .line 100
     :catchall_0
     move-exception v0
 
@@ -432,129 +407,315 @@
 .end method
 
 .method protected final executeBindings()V
-    .locals 12
+    .locals 19
 
     .prologue
-    const-wide/16 v10, 0x18
-
-    const/4 v0, 0x0
-
-    const-wide/16 v8, 0x0
-
-    .line 143
+    .line 129
     monitor-enter p0
 
-    .line 144
+    .line 130
     :try_start_0
-    iget-wide v2, p0, Lkik/android/e/ac;->k:J
+    move-object/from16 v0, p0
 
-    .line 145
-    const-wide/16 v4, 0x0
+    iget-wide v10, v0, Lkik/android/e/ac;->p:J
 
-    iput-wide v4, p0, Lkik/android/e/ac;->k:J
+    .line 131
+    const-wide/16 v2, 0x0
 
-    .line 146
+    move-object/from16 v0, p0
+
+    iput-wide v2, v0, Lkik/android/e/ac;->p:J
+
+    .line 132
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 133
+    const/4 v6, 0x0
+
+    .line 134
+    const/4 v2, 0x0
+
+    .line 135
+    const/4 v7, 0x0
+
+    .line 136
+    const/4 v8, 0x0
+
+    .line 137
+    const/4 v5, 0x0
+
+    .line 138
+    move-object/from16 v0, p0
+
+    iget-object v9, v0, Lkik/android/e/ac;->l:Lkik/android/chat/vm/bh;
+
+    .line 139
+    move-object/from16 v0, p0
+
+    iget-object v12, v0, Lkik/android/e/ac;->m:Lkik/android/chat/vm/aq;
+
+    .line 140
+    const/4 v4, 0x0
+
+    .line 141
+    const/4 v3, 0x0
+
+    .line 143
+    const-wide/16 v14, 0x5
+
+    and-long/2addr v14, v10
+
+    const-wide/16 v16, 0x0
+
+    cmp-long v13, v14, v16
+
+    if-eqz v13, :cond_1
+
     .line 147
-    iget-object v1, p0, Lkik/android/e/ac;->h:Lkik/android/chat/vm/chats/publicgroups/e;
+    if-eqz v9, :cond_0
 
-    .line 148
-    iget-object v4, p0, Lkik/android/e/ac;->i:Lkik/android/chat/vm/chats/publicgroups/h;
+    .line 149
+    invoke-interface {v9}, Lkik/android/chat/vm/bh;->I_()Lrx/d;
 
-    .line 151
-    iget-object v5, p0, Lkik/android/e/ac;->j:Lkik/android/chat/vm/chats/publicgroups/c;
+    move-result-object v2
 
-    .line 157
-    and-long v6, v2, v10
+    .line 154
+    :cond_0
+    const/4 v8, 0x0
 
-    cmp-long v6, v6, v8
+    const/16 v13, 0x18
 
-    if-eqz v6, :cond_1
+    invoke-static {v2, v8, v13}, Lcom/kik/util/bt;->a(Lrx/d;II)Lrx/d;
 
-    .line 161
-    if-eqz v5, :cond_0
+    move-result-object v2
 
-    .line 163
-    invoke-interface {v5}, Lkik/android/chat/vm/chats/publicgroups/c;->b()Lrx/d;
+    move-object v8, v2
 
-    move-result-object v0
+    .line 156
+    :cond_1
+    const-wide/16 v14, 0x6
+
+    and-long/2addr v14, v10
+
+    const-wide/16 v16, 0x0
+
+    cmp-long v2, v14, v16
+
+    if-eqz v2, :cond_7
+
+    .line 160
+    if-eqz v12, :cond_6
+
+    .line 162
+    invoke-interface {v12}, Lkik/android/chat/vm/aq;->d()Lrx/d;
+
+    move-result-object v5
+
+    .line 164
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lkik/android/e/ac;->n:Lkik/android/e/ac$a;
+
+    if-nez v2, :cond_4
+
+    new-instance v2, Lkik/android/e/ac$a;
+
+    invoke-direct {v2}, Lkik/android/e/ac$a;-><init>()V
+
+    move-object/from16 v0, p0
+
+    iput-object v2, v0, Lkik/android/e/ac;->n:Lkik/android/e/ac$a;
+
+    :goto_0
+    invoke-virtual {v2, v12}, Lkik/android/e/ac$a;->a(Lkik/android/chat/vm/aq;)Lkik/android/e/ac$a;
+
+    move-result-object v4
+
+    .line 166
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lkik/android/e/ac;->o:Lkik/android/e/ac$b;
+
+    if-nez v2, :cond_5
+
+    new-instance v2, Lkik/android/e/ac$b;
+
+    invoke-direct {v2}, Lkik/android/e/ac$b;-><init>()V
+
+    move-object/from16 v0, p0
+
+    iput-object v2, v0, Lkik/android/e/ac;->o:Lkik/android/e/ac$b;
+
+    :goto_1
+    invoke-virtual {v2, v12}, Lkik/android/e/ac$b;->a(Lkik/android/chat/vm/aq;)Lkik/android/e/ac$b;
+
+    move-result-object v3
 
     .line 168
-    :cond_0
-    invoke-static {v0}, Lcom/kik/util/bq;->b(Lrx/d;)Lrx/d;
+    invoke-interface {v12}, Lkik/android/chat/vm/aq;->n_()Lrx/d;
 
-    move-result-object v0
+    move-result-object v2
 
-    .line 171
-    :cond_1
-    and-long v6, v2, v10
+    .line 173
+    :goto_2
+    invoke-static {v5}, Lcom/kik/util/bt;->b(Lrx/d;)Lrx/d;
 
-    cmp-long v6, v6, v8
+    move-result-object v6
 
-    if-eqz v6, :cond_2
+    move-object/from16 v18, v6
 
-    .line 174
-    iget-object v6, p0, Lkik/android/e/ac;->a:Lkik/android/e/dn;
+    move-object v6, v5
 
-    invoke-virtual {v6, v5}, Lkik/android/e/dn;->a(Lkik/android/chat/vm/chats/publicgroups/c;)V
+    move-object/from16 v5, v18
 
-    .line 175
-    iget-object v5, p0, Lkik/android/e/ac;->e:Lkik/android/widget/PublicGroupSearchRecyclerView;
+    .line 176
+    :goto_3
+    const-wide/16 v14, 0x6
 
-    invoke-static {v5, v0}, Lcom/kik/util/j;->j(Landroid/view/View;Lrx/d;)V
+    and-long/2addr v14, v10
 
-    .line 177
-    :cond_2
-    const-wide/16 v6, 0x14
+    const-wide/16 v16, 0x0
 
-    and-long/2addr v6, v2
+    cmp-long v7, v14, v16
 
-    cmp-long v0, v6, v8
+    if-eqz v7, :cond_2
 
-    if-eqz v0, :cond_3
+    .line 179
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lkik/android/e/ac;->g:Lkik/android/widget/RobotoTextView;
+
+    invoke-static {v7, v2}, Lcom/kik/util/j;->k(Landroid/view/View;Lrx/d;)V
 
     .line 180
-    iget-object v0, p0, Lkik/android/e/ac;->b:Lkik/android/chat/view/TransitionableSearchBarViewImpl;
+    move-object/from16 v0, p0
 
-    invoke-static {v0, v4}, Lkik/android/chat/vm/chats/publicgroups/q;->a(Lkik/android/chat/view/TransitionableSearchBarViewImpl;Lkik/android/chat/vm/chats/publicgroups/h;)V
+    iget-object v2, v0, Lkik/android/e/ac;->g:Lkik/android/widget/RobotoTextView;
+
+    invoke-static {v2, v4}, Lcom/kik/util/j;->a(Landroid/view/View;Ljava/lang/Runnable;)V
+
+    .line 181
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lkik/android/e/ac;->h:Lkik/android/widget/SelectedInterestsRecyclerView;
+
+    invoke-static {v2, v5}, Lcom/kik/util/j;->j(Landroid/view/View;Lrx/d;)V
 
     .line 182
-    :cond_3
-    const-wide/16 v4, 0x12
+    move-object/from16 v0, p0
 
-    and-long/2addr v2, v4
+    iget-object v2, v0, Lkik/android/e/ac;->i:Landroid/widget/ScrollView;
 
-    cmp-long v0, v2, v8
+    invoke-static {v2, v5}, Lcom/kik/util/j;->j(Landroid/view/View;Lrx/d;)V
 
-    if-eqz v0, :cond_4
+    .line 183
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lkik/android/e/ac;->j:Lkik/android/widget/SelecteableInterestsRecyclerView;
+
+    invoke-static {v2, v12}, Lcom/kik/util/j;->a(Landroid/support/v7/widget/RecyclerView;Lkik/android/chat/vm/IListViewModel;)V
+
+    .line 184
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lkik/android/e/ac;->k:Lkik/android/widget/RobotoTextView;
+
+    invoke-static {v2, v3}, Lcom/kik/util/j;->a(Landroid/view/View;Ljava/lang/Runnable;)V
 
     .line 185
-    iget-object v0, p0, Lkik/android/e/ac;->e:Lkik/android/widget/PublicGroupSearchRecyclerView;
+    move-object/from16 v0, p0
 
-    invoke-static {v0, v1}, Lcom/kik/util/j;->a(Landroid/support/v7/widget/RecyclerView;Lkik/android/chat/vm/IListViewModel;)V
+    iget-object v2, v0, Lkik/android/e/ac;->b:Lcom/github/rahatarmanahmed/cpv/CircularProgressView;
+
+    invoke-static {v2, v6}, Lcom/kik/util/j;->j(Landroid/view/View;Lrx/d;)V
 
     .line 187
-    :cond_4
-    iget-object v0, p0, Lkik/android/e/ac;->a:Lkik/android/e/dn;
+    :cond_2
+    const-wide/16 v2, 0x5
 
-    invoke-static {v0}, Lkik/android/e/ac;->executeBindingsOn(Landroid/databinding/ViewDataBinding;)V
+    and-long/2addr v2, v10
 
-    .line 188
+    const-wide/16 v4, 0x0
+
+    cmp-long v2, v2, v4
+
+    if-eqz v2, :cond_3
+
+    .line 190
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lkik/android/e/ac;->h:Lkik/android/widget/SelectedInterestsRecyclerView;
+
+    invoke-static {v2, v8}, Lcom/kik/util/j;->r(Landroid/view/View;Lrx/d;)V
+
+    .line 191
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lkik/android/e/ac;->h:Lkik/android/widget/SelectedInterestsRecyclerView;
+
+    invoke-static {v2, v9}, Lcom/kik/util/j;->a(Landroid/support/v7/widget/RecyclerView;Lkik/android/chat/vm/IListViewModel;)V
+
+    .line 193
+    :cond_3
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lkik/android/e/ac;->f:Lkik/android/e/au;
+
+    invoke-static {v2}, Lkik/android/e/ac;->executeBindingsOn(Landroid/databinding/ViewDataBinding;)V
+
+    .line 194
     return-void
 
-    .line 146
+    .line 132
     :catchall_0
-    move-exception v0
+    move-exception v2
 
     :try_start_1
     monitor-exit p0
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    throw v0
+    throw v2
+
+    .line 164
+    :cond_4
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lkik/android/e/ac;->n:Lkik/android/e/ac$a;
+
+    goto/16 :goto_0
+
+    .line 166
+    :cond_5
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lkik/android/e/ac;->o:Lkik/android/e/ac$b;
+
+    goto :goto_1
+
+    :cond_6
+    move-object v2, v3
+
+    move-object v3, v4
+
+    move-object v4, v5
+
+    move-object v5, v6
+
+    goto :goto_2
+
+    :cond_7
+    move-object v2, v3
+
+    move-object v3, v4
+
+    move-object v4, v5
+
+    move-object v5, v7
+
+    goto :goto_3
 .end method
 
 .method public final hasPendingBindings()Z
@@ -563,12 +724,12 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 60
+    .line 73
     monitor-enter p0
 
-    .line 61
+    .line 74
     :try_start_0
-    iget-wide v2, p0, Lkik/android/e/ac;->k:J
+    iget-wide v2, p0, Lkik/android/e/ac;->p:J
 
     const-wide/16 v4, 0x0
 
@@ -576,35 +737,35 @@
 
     if-eqz v1, :cond_1
 
-    .line 62
+    .line 75
     monitor-exit p0
 
-    .line 68
+    .line 81
     :cond_0
     :goto_0
     return v0
 
-    .line 64
+    .line 77
     :cond_1
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 65
-    iget-object v1, p0, Lkik/android/e/ac;->a:Lkik/android/e/dn;
+    .line 78
+    iget-object v1, p0, Lkik/android/e/ac;->f:Lkik/android/e/au;
 
-    invoke-virtual {v1}, Lkik/android/e/dn;->hasPendingBindings()Z
+    invoke-virtual {v1}, Lkik/android/e/au;->hasPendingBindings()Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    .line 68
+    .line 81
     const/4 v0, 0x0
 
     goto :goto_0
 
-    .line 64
+    .line 77
     :catchall_0
     move-exception v0
 
@@ -620,32 +781,32 @@
     .locals 2
 
     .prologue
-    .line 51
+    .line 64
     monitor-enter p0
 
-    .line 52
-    const-wide/16 v0, 0x10
+    .line 65
+    const-wide/16 v0, 0x4
 
     :try_start_0
-    iput-wide v0, p0, Lkik/android/e/ac;->k:J
+    iput-wide v0, p0, Lkik/android/e/ac;->p:J
 
-    .line 53
+    .line 66
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 54
-    iget-object v0, p0, Lkik/android/e/ac;->a:Lkik/android/e/dn;
+    .line 67
+    iget-object v0, p0, Lkik/android/e/ac;->f:Lkik/android/e/au;
 
-    invoke-virtual {v0}, Lkik/android/e/dn;->invalidateAll()V
+    invoke-virtual {v0}, Lkik/android/e/au;->invalidateAll()V
 
-    .line 55
+    .line 68
     invoke-virtual {p0}, Lkik/android/e/ac;->requestRebind()V
 
-    .line 56
+    .line 69
     return-void
 
-    .line 53
+    .line 66
     :catchall_0
     move-exception v0
 
@@ -661,28 +822,10 @@
     .locals 1
 
     .prologue
-    .line 122
-    packed-switch p1, :pswitch_data_0
-
-    .line 126
+    .line 123
     const/4 v0, 0x0
 
-    :goto_0
     return v0
-
-    .line 124
-    :pswitch_0
-    invoke-direct {p0, p3}, Lkik/android/e/ac;->a(I)Z
-
-    move-result v0
-
-    goto :goto_0
-
-    .line 122
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
 .end method
 
 .method public final setVariable(ILjava/lang/Object;)Z
@@ -691,44 +834,35 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 72
+    .line 85
     sparse-switch p1, :sswitch_data_0
 
-    .line 83
+    .line 93
     const/4 v0, 0x0
 
     :goto_0
     return v0
 
-    .line 74
+    .line 87
     :sswitch_0
-    check-cast p2, Lkik/android/chat/vm/chats/publicgroups/e;
+    check-cast p2, Lkik/android/chat/vm/bh;
 
-    invoke-virtual {p0, p2}, Lkik/android/e/ac;->a(Lkik/android/chat/vm/chats/publicgroups/e;)V
+    invoke-virtual {p0, p2}, Lkik/android/e/ac;->a(Lkik/android/chat/vm/bh;)V
 
     goto :goto_0
 
-    .line 77
+    .line 90
     :sswitch_1
-    check-cast p2, Lkik/android/chat/vm/chats/publicgroups/h;
+    check-cast p2, Lkik/android/chat/vm/aq;
 
-    invoke-virtual {p0, p2}, Lkik/android/e/ac;->a(Lkik/android/chat/vm/chats/publicgroups/h;)V
-
-    goto :goto_0
-
-    .line 80
-    :sswitch_2
-    check-cast p2, Lkik/android/chat/vm/chats/publicgroups/c;
-
-    invoke-virtual {p0, p2}, Lkik/android/e/ac;->a(Lkik/android/chat/vm/chats/publicgroups/c;)V
+    invoke-virtual {p0, p2}, Lkik/android/e/ac;->a(Lkik/android/chat/vm/aq;)V
 
     goto :goto_0
 
-    .line 72
+    .line 85
     :sswitch_data_0
     .sparse-switch
-        0x7 -> :sswitch_2
-        0x10 -> :sswitch_1
-        0x11 -> :sswitch_0
+        0xe -> :sswitch_1
+        0x12 -> :sswitch_0
     .end sparse-switch
 .end method

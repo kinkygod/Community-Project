@@ -10,7 +10,7 @@
 
 .field private final c:Lkik/core/interfaces/ICommunication;
 
-.field private final d:Lkik/core/interfaces/w;
+.field private final d:Lkik/core/interfaces/v;
 
 .field private final e:Lcom/kik/events/d;
 
@@ -42,7 +42,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lkik/core/e/f;Lkik/core/net/e;Lcom/kik/events/Promise;Lkik/core/interfaces/ICommunication;Lcom/kik/events/c;Lkik/core/interfaces/w;)V
+.method public constructor <init>(Lkik/core/e/f;Lkik/core/net/e;Lcom/kik/events/Promise;Lkik/core/interfaces/ICommunication;Lcom/kik/events/c;Lkik/core/interfaces/v;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -58,7 +58,7 @@
             "<",
             "Lkik/core/datatypes/Message;",
             ">;",
-            "Lkik/core/interfaces/w;",
+            "Lkik/core/interfaces/v;",
             ")V"
         }
     .end annotation
@@ -107,7 +107,7 @@
     iput-object p4, p0, Lkik/android/scan/c;->c:Lkik/core/interfaces/ICommunication;
 
     .line 77
-    iput-object p6, p0, Lkik/android/scan/c;->d:Lkik/core/interfaces/w;
+    iput-object p6, p0, Lkik/android/scan/c;->d:Lkik/core/interfaces/v;
 
     .line 78
     new-instance v0, Lkik/android/scan/c$1;
@@ -386,9 +386,9 @@
     invoke-virtual {v1, v2}, Lcom/kik/events/g;->a(Ljava/lang/Object;)V
 
     .line 3120
-    iget-object v1, p0, Lkik/android/scan/c;->d:Lkik/core/interfaces/w;
+    iget-object v1, p0, Lkik/android/scan/c;->d:Lkik/core/interfaces/v;
 
-    invoke-interface {v1, v0}, Lkik/core/interfaces/w;->a(Lkik/core/datatypes/k;)Lcom/kik/events/Promise;
+    invoke-interface {v1, v0}, Lkik/core/interfaces/v;->a(Lkik/core/datatypes/k;)Lcom/kik/events/Promise;
 
     .line 58
     :cond_0
@@ -531,12 +531,12 @@
     goto :goto_0
 .end method
 
-.method static synthetic b(Lkik/core/datatypes/ac;I)Lorg/json/JSONObject;
+.method static synthetic b(Lkik/core/datatypes/ab;I)Lorg/json/JSONObject;
     .locals 1
 
     .prologue
     .line 58
-    invoke-static {p0, p1}, Lkik/android/scan/c;->c(Lkik/core/datatypes/ac;I)Lorg/json/JSONObject;
+    invoke-static {p0, p1}, Lkik/android/scan/c;->c(Lkik/core/datatypes/ab;I)Lorg/json/JSONObject;
 
     move-result-object v0
 
@@ -592,7 +592,7 @@
     return-object v0
 .end method
 
-.method private static c(Lkik/core/datatypes/ac;I)Lorg/json/JSONObject;
+.method private static c(Lkik/core/datatypes/ab;I)Lorg/json/JSONObject;
     .locals 5
 
     .prologue
@@ -604,7 +604,7 @@
     .line 409
     if-eqz p0, :cond_0
 
-    iget-object v1, p0, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
+    iget-object v1, p0, Lkik/core/datatypes/ab;->c:Ljava/lang/String;
 
     if-nez v1, :cond_1
 
@@ -631,7 +631,7 @@
 
     const-string v3, "username"
 
-    iget-object v4, p0, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
+    iget-object v4, p0, Lkik/core/datatypes/ab;->c:Ljava/lang/String;
 
     invoke-virtual {v2, v3, v4}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
@@ -693,12 +693,12 @@
     return-object v0
 .end method
 
-.method public final a(Lkik/core/datatypes/ac;I)Lcom/kik/events/Promise;
+.method public final a(Lkik/core/datatypes/ab;I)Lcom/kik/events/Promise;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkik/core/datatypes/ac;",
+            "Lkik/core/datatypes/ab;",
             "I)",
             "Lcom/kik/events/Promise",
             "<[B>;"
@@ -716,7 +716,7 @@
 
     new-instance v2, Lkik/android/scan/c$5;
 
-    invoke-direct {v2, p0, p1, p2, v0}, Lkik/android/scan/c$5;-><init>(Lkik/android/scan/c;Lkik/core/datatypes/ac;ILcom/kik/events/Promise;)V
+    invoke-direct {v2, p0, p1, p2, v0}, Lkik/android/scan/c$5;-><init>(Lkik/android/scan/c;Lkik/core/datatypes/ab;ILcom/kik/events/Promise;)V
 
     invoke-interface {v1, v2}, Ljava/util/concurrent/ExecutorService;->submit(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
 

@@ -6,26 +6,26 @@
 
 
 # instance fields
-.field private final a:Lkik/android/chat/vm/widget/bg;
+.field private final a:Lkik/android/chat/vm/widget/bh;
 
 
 # direct methods
-.method private constructor <init>(Lkik/android/chat/vm/widget/bg;)V
+.method private constructor <init>(Lkik/android/chat/vm/widget/bh;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lkik/android/chat/vm/widget/bj;->a:Lkik/android/chat/vm/widget/bg;
+    iput-object p1, p0, Lkik/android/chat/vm/widget/bj;->a:Lkik/android/chat/vm/widget/bh;
 
     return-void
 .end method
 
-.method public static a(Lkik/android/chat/vm/widget/bg;)Ljava/lang/Runnable;
+.method public static a(Lkik/android/chat/vm/widget/bh;)Ljava/lang/Runnable;
     .locals 1
 
     new-instance v0, Lkik/android/chat/vm/widget/bj;
 
-    invoke-direct {v0, p0}, Lkik/android/chat/vm/widget/bj;-><init>(Lkik/android/chat/vm/widget/bg;)V
+    invoke-direct {v0, p0}, Lkik/android/chat/vm/widget/bj;-><init>(Lkik/android/chat/vm/widget/bh;)V
 
     return-object v0
 .end method
@@ -35,9 +35,9 @@
 .method public final run()V
     .locals 1
 
-    iget-object v0, p0, Lkik/android/chat/vm/widget/bj;->a:Lkik/android/chat/vm/widget/bg;
+    iget-object v0, p0, Lkik/android/chat/vm/widget/bj;->a:Lkik/android/chat/vm/widget/bh;
 
-    invoke-static {v0}, Lkik/android/chat/vm/widget/bg;->c(Lkik/android/chat/vm/widget/bg;)V
+    invoke-static {v0}, Lkik/android/chat/vm/widget/bh;->a(Lkik/android/chat/vm/widget/bh;)V
 
     return-void
 .end method

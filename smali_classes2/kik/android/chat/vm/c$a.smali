@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field a:Lkik/android/chat/vm/ar;
+.field a:Lkik/android/chat/vm/at;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "TItemViewModel;"
@@ -29,7 +29,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lkik/android/chat/vm/c;Lkik/android/chat/vm/ar;Z)V
+.method public constructor <init>(Lkik/android/chat/vm/c;Lkik/android/chat/vm/at;Z)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -44,7 +44,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 38
-    iput-object p2, p0, Lkik/android/chat/vm/c$a;->a:Lkik/android/chat/vm/ar;
+    iput-object p2, p0, Lkik/android/chat/vm/c$a;->a:Lkik/android/chat/vm/at;
 
     .line 39
     iput-boolean p3, p0, Lkik/android/chat/vm/c$a;->b:Z

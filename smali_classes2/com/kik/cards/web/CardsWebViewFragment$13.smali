@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/kik/cards/web/CardsWebViewFragment;->a(Ljava/lang/String;Landroid/content/Context;Lkik/core/interfaces/t;)Lcom/kik/events/Promise;
+    value = Lcom/kik/cards/web/CardsWebViewFragment;->a(Ljava/lang/String;Landroid/content/Context;Lkik/core/interfaces/s;)Lcom/kik/events/Promise;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -36,7 +36,7 @@
     .locals 0
 
     .prologue
-    .line 634
+    .line 664
     iput-object p1, p0, Lcom/kik/cards/web/CardsWebViewFragment$13;->a:Lcom/kik/events/Promise;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -50,13 +50,13 @@
     .locals 2
 
     .prologue
-    .line 638
+    .line 668
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$13;->a:Lcom/kik/events/Promise;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Ljava/lang/Object;)V
 
-    .line 639
+    .line 669
     return-void
 .end method

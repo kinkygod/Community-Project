@@ -152,7 +152,7 @@
 
     .prologue
     .line 73
-    const v0, 0x7f0100df
+    const v0, 0x7f0100e1
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -166,7 +166,7 @@
 
     move-result-object v2
 
-    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bq;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
+    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bt;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
 
     .line 74
     return-void
@@ -230,7 +230,7 @@
 
     .prologue
     .line 79
-    const v0, 0x7f0100e2
+    const v0, 0x7f0100e4
 
     invoke-static {p0}, Lkik/android/widget/s;->a(Lkik/android/widget/AutoScrollingRecyclerView;)Lrx/functions/b;
 
@@ -242,7 +242,7 @@
 
     move-result-object v2
 
-    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bq;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
+    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bt;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
 
     .line 80
     return-void
@@ -269,7 +269,7 @@
 
     .prologue
     .line 85
-    const v0, 0x7f0100e1
+    const v0, 0x7f0100e3
 
     invoke-static {p0}, Lkik/android/widget/t;->a(Lkik/android/widget/AutoScrollingRecyclerView;)Lrx/functions/b;
 
@@ -281,7 +281,7 @@
 
     move-result-object v2
 
-    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bq;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
+    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bt;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
 
     .line 86
     return-void

@@ -7,7 +7,7 @@
 
 
 # virtual methods
-.method public abstract X_()Lrx/d;
+.method public abstract Z_()Lrx/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -17,4 +17,7 @@
             ">;"
         }
     .end annotation
+.end method
+
+.method public abstract g()Lkik/android/chat/vm/IBadgeViewModel;
 .end method

@@ -168,7 +168,7 @@
     .line 167
     iget-object v0, p0, Lkik/android/chat/fragment/ChatBubbleSelectionFragment$a;->b:Landroid/view/LayoutInflater;
 
-    const v3, 0x7f0400f4
+    const v3, 0x7f0400f8
 
     invoke-virtual {v0, v3, p3, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 

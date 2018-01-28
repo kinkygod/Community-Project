@@ -2,7 +2,7 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lrx/functions/g;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
@@ -20,7 +20,7 @@
     return-void
 .end method
 
-.method public static a(Lkik/android/chat/fragment/KikStartGroupFragment;)Lrx/functions/g;
+.method public static a(Lkik/android/chat/fragment/KikStartGroupFragment;)Ljava/lang/Runnable;
     .locals 1
 
     new-instance v0, Lkik/android/chat/fragment/eb;
@@ -32,16 +32,12 @@
 
 
 # virtual methods
-.method public final call(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final run()V
     .locals 1
 
     iget-object v0, p0, Lkik/android/chat/fragment/eb;->a:Lkik/android/chat/fragment/KikStartGroupFragment;
 
-    check-cast p1, Lkik/core/profile/GroupManager$HashtagAvailabilityState;
+    invoke-static {v0}, Lkik/android/chat/fragment/KikStartGroupFragment;->c(Lkik/android/chat/fragment/KikStartGroupFragment;)V
 
-    invoke-static {v0, p1}, Lkik/android/chat/fragment/KikStartGroupFragment;->a(Lkik/android/chat/fragment/KikStartGroupFragment;Lkik/core/profile/GroupManager$HashtagAvailabilityState;)Ljava/lang/Boolean;
-
-    move-result-object v0
-
-    return-object v0
+    return-void
 .end method

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
     <kik.android.widget.VelocityControlledViewPager android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
     <include android:id="@id/top_bar" layout="@layout/kik_back_button" />
     <LinearLayout android:layout_gravity="bottom|center" android:id="@id/scan_toggle_holder" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip">

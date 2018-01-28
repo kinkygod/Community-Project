@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/kik/android/b/g;-><init>(Landroid/content/Context;Lkik/core/e/f;Lkik/core/interfaces/ae;Lcom/kik/events/Promise;Lkik/core/interfaces/ah;Lkik/core/interfaces/aa;Lkik/android/util/ai;Lkik/core/interfaces/t;)V
+    value = Lcom/kik/android/b/g;-><init>(Landroid/content/Context;Lkik/core/e/f;Lkik/core/interfaces/ad;Lcom/kik/events/Promise;Lkik/core/interfaces/ag;Lkik/core/interfaces/z;Lkik/android/util/ai;Lkik/core/interfaces/s;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -34,7 +34,7 @@
     .locals 0
 
     .prologue
-    .line 409
+    .line 417
     iput-object p1, p0, Lcom/kik/android/b/g$2;->b:Lcom/kik/android/b/g;
 
     iput-object p2, p0, Lcom/kik/android/b/g$2;->a:Landroid/content/Context;
@@ -50,10 +50,10 @@
     .locals 2
 
     .prologue
-    .line 413
+    .line 421
     invoke-super {p0, p1}, Lcom/kik/events/k;->a(Ljava/lang/Object;)V
 
-    .line 414
+    .line 422
     iget-object v0, p0, Lcom/kik/android/b/g$2;->b:Lcom/kik/android/b/g;
 
     invoke-static {v0}, Lcom/kik/android/b/g;->a(Lcom/kik/android/b/g;)Lcom/kik/android/b/l;
@@ -67,13 +67,13 @@
 
     invoke-static {v0}, Lcom/kik/events/Promise;->a(Lcom/kik/events/Promise$a;)Lcom/kik/events/Promise;
 
-    .line 415
+    .line 423
     iget-object v0, p0, Lcom/kik/android/b/g$2;->b:Lcom/kik/android/b/g;
 
     iget-object v1, p0, Lcom/kik/android/b/g$2;->a:Landroid/content/Context;
 
     invoke-static {v0, v1}, Lcom/kik/android/b/g;->a(Lcom/kik/android/b/g;Landroid/content/Context;)V
 
-    .line 416
+    .line 424
     return-void
 .end method

@@ -96,7 +96,7 @@
 
     iget-object v1, p0, Lkik/android/chat/fragment/KikIqFragmentBase$1$2;->a:Ljava/lang/Throwable;
 
-    invoke-static {v1}, Lkik/android/util/ce;->a(Ljava/lang/Throwable;)Ljava/lang/String;
+    invoke-static {v1}, Lkik/android/util/cf;->a(Ljava/lang/Throwable;)Ljava/lang/String;
 
     move-result-object v1
 

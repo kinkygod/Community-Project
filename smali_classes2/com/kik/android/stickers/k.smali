@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/core/interfaces/ad;
+.implements Lkik/core/interfaces/ac;
 
 
 # instance fields
@@ -20,7 +20,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lkik/core/interfaces/b;Lkik/core/interfaces/ae;)V
+.method public constructor <init>(Lkik/core/interfaces/b;Lkik/core/interfaces/ad;)V
     .locals 7
 
     .prologue
@@ -104,7 +104,7 @@
     .line 39
     const-string v0, "Sticker Randomizer Seed"
 
-    invoke-interface {p2, v0}, Lkik/core/interfaces/ae;->D(Ljava/lang/String;)Z
+    invoke-interface {p2, v0}, Lkik/core/interfaces/ad;->D(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -126,7 +126,7 @@
 
     move-result-object v2
 
-    invoke-interface {p2, v1, v2}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;Ljava/lang/Integer;)Z
+    invoke-interface {p2, v1, v2}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Integer;)Z
 
     .line 47
     :goto_0
@@ -148,7 +148,7 @@
     :cond_1
     const-string v0, "Sticker Randomizer Seed"
 
-    invoke-interface {p2, v0}, Lkik/core/interfaces/ae;->u(Ljava/lang/String;)Ljava/lang/Integer;
+    invoke-interface {p2, v0}, Lkik/core/interfaces/ad;->u(Ljava/lang/String;)Ljava/lang/Integer;
 
     move-result-object v0
 

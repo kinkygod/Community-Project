@@ -2,7 +2,7 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lrx/functions/g;
+.implements Lrx/functions/h;
 
 
 # static fields
@@ -30,7 +30,7 @@
     return-void
 .end method
 
-.method public static a()Lrx/functions/g;
+.method public static a()Lrx/functions/h;
     .locals 1
 
     sget-object v0, Lkik/core/profile/ar;->a:Lkik/core/profile/ar;
@@ -40,65 +40,38 @@
 
 
 # virtual methods
-.method public final call(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 12
+.method public final a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
     .prologue
     .line 0
     check-cast p1, Lkik/core/datatypes/s;
 
-    check-cast p1, Lcom/kik/core/domain/users/a/c;
+    check-cast p2, Lcom/google/common/base/Optional;
 
-    .line 1040
-    new-instance v1, Lcom/kik/core/domain/users/a/a;
+    .line 1073
+    if-eqz p1, :cond_0
 
-    .line 1041
-    invoke-interface {p1}, Lcom/kik/core/domain/users/a/c;->a()Lcom/kik/core/network/xmpp/jid/a;
+    invoke-virtual {p2}, Lcom/google/common/base/Optional;->isPresent()Z
 
-    move-result-object v2
+    move-result v0
 
-    .line 1042
-    invoke-interface {p1}, Lcom/kik/core/domain/users/a/c;->b()Ljava/lang/String;
+    if-eqz v0, :cond_0
 
-    move-result-object v3
+    .line 1074
+    invoke-virtual {p2}, Lcom/google/common/base/Optional;->get()Ljava/lang/Object;
 
-    .line 1043
-    invoke-interface {p1}, Lcom/kik/core/domain/users/a/c;->c()Ljava/lang/String;
+    move-result-object v0
 
-    move-result-object v4
+    check-cast v0, Lcom/kik/core/domain/users/a/d;
 
-    .line 1044
-    invoke-interface {p1}, Lcom/kik/core/domain/users/a/c;->d()Ljava/lang/String;
+    invoke-interface {v0}, Lcom/kik/core/domain/users/a/d;->a()Lkik/core/chat/profile/EmojiStatus;
 
-    move-result-object v5
+    move-result-object v0
 
-    .line 1045
-    invoke-interface {p1}, Lcom/kik/core/domain/users/a/c;->e()Lkik/core/chat/profile/EmojiStatus;
-
-    move-result-object v6
-
-    .line 1046
-    invoke-interface {p1}, Lcom/kik/core/domain/users/a/c;->f()Z
-
-    move-result v7
-
-    .line 1047
-    invoke-interface {p1}, Lcom/kik/core/domain/users/a/c;->g()J
-
-    move-result-wide v8
-
-    .line 1048
-    invoke-interface {p1}, Lcom/kik/core/domain/users/a/c;->h()Z
-
-    move-result v10
-
-    .line 1049
-    invoke-interface {p1}, Lcom/kik/core/domain/users/a/c;->i()Z
-
-    move-result v11
-
-    invoke-direct/range {v1 .. v11}, Lcom/kik/core/domain/users/a/a;-><init>(Lcom/kik/core/network/xmpp/jid/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkik/core/chat/profile/EmojiStatus;ZJZZ)V
+    invoke-virtual {p1, v0}, Lkik/core/datatypes/s;->a(Lkik/core/chat/profile/EmojiStatus;)V
 
     .line 0
-    return-object v1
+    :cond_0
+    return-object p1
 .end method

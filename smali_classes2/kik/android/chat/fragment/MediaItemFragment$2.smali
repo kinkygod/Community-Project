@@ -48,11 +48,11 @@
     .line 237
     iget-object v1, p0, Lkik/android/chat/fragment/MediaItemFragment$2;->a:Lkik/android/chat/fragment/MediaItemFragment;
 
-    invoke-static {v1}, Lkik/android/chat/fragment/MediaItemFragment;->a(Lkik/android/chat/fragment/MediaItemFragment;)Lkik/android/util/ca$c;
+    invoke-static {v1}, Lkik/android/chat/fragment/MediaItemFragment;->a(Lkik/android/chat/fragment/MediaItemFragment;)Lkik/android/util/cb$c;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lkik/android/util/ca$c;->a()Lcom/kik/contentlink/model/attachments/ContentUri;
+    invoke-virtual {v1}, Lkik/android/util/cb$c;->a()Lcom/kik/contentlink/model/attachments/ContentUri;
 
     move-result-object v1
 

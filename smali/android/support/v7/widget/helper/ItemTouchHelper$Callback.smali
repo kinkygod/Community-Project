@@ -578,7 +578,7 @@
 
     .line 1920
     :cond_1
-    invoke-virtual {v0}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->f()Z
+    invoke-virtual {v0}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->e()Z
 
     move-result v1
 
@@ -587,7 +587,7 @@
     .line 1921
     iget-object v1, p2, Landroid/support/v7/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
-    invoke-static {v1}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->i(Landroid/view/View;)I
+    invoke-static {v1}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->l(Landroid/view/View;)I
 
     move-result v1
 
@@ -605,7 +605,7 @@
     :cond_2
     iget-object v1, p2, Landroid/support/v7/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
-    invoke-static {v1}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->k(Landroid/view/View;)I
+    invoke-static {v1}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->n(Landroid/view/View;)I
 
     move-result v1
 
@@ -627,7 +627,7 @@
 
     .line 1931
     :cond_3
-    invoke-virtual {v0}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->g()Z
+    invoke-virtual {v0}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->f()Z
 
     move-result v0
 
@@ -636,7 +636,7 @@
     .line 1932
     iget-object v0, p2, Landroid/support/v7/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
-    invoke-static {v0}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->j(Landroid/view/View;)I
+    invoke-static {v0}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->m(Landroid/view/View;)I
 
     move-result v0
 
@@ -654,7 +654,7 @@
     :cond_4
     iget-object v0, p2, Landroid/support/v7/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
-    invoke-static {v0}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->l(Landroid/view/View;)I
+    invoke-static {v0}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->o(Landroid/view/View;)I
 
     move-result v0
 

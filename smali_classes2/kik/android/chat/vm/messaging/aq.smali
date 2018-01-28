@@ -43,7 +43,7 @@
 
     iget-object v1, p0, Lkik/android/chat/vm/messaging/aq;->b:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->f(Lkik/android/chat/vm/messaging/AbstractMessageViewModel;Ljava/lang/String;)Lkik/core/datatypes/l;
+    invoke-static {v0, v1}, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->g(Lkik/android/chat/vm/messaging/AbstractMessageViewModel;Ljava/lang/String;)Lkik/core/datatypes/l;
 
     move-result-object v0
 

@@ -78,7 +78,7 @@
 
     .prologue
     .line 31
-    const v0, 0x7f010189
+    const v0, 0x7f010193
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -88,7 +88,7 @@
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bq;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
+    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bt;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
 
     .line 32
     return-void
@@ -96,14 +96,14 @@
 
 
 # virtual methods
-.method protected final a(Landroid/graphics/Bitmap;Ljava/lang/String;)Lkik/android/widget/be;
+.method protected final a(Landroid/graphics/Bitmap;Ljava/lang/String;)Lkik/android/widget/bq;
     .locals 1
 
     .prologue
     .line 67
-    new-instance v0, Lkik/android/widget/co;
+    new-instance v0, Lkik/android/widget/de;
 
-    invoke-direct {v0, p1, p2}, Lkik/android/widget/co;-><init>(Landroid/graphics/Bitmap;Ljava/lang/String;)V
+    invoke-direct {v0, p1, p2}, Lkik/android/widget/de;-><init>(Landroid/graphics/Bitmap;Ljava/lang/String;)V
 
     return-object v0
 .end method

@@ -23,7 +23,7 @@
     .locals 0
 
     .prologue
-    .line 946
+    .line 948
     iput-object p1, p0, Lkik/android/chat/fragment/KikConversationsFragment$12;->a:Lkik/android/chat/fragment/KikConversationsFragment;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
@@ -37,16 +37,16 @@
     .locals 2
 
     .prologue
-    .line 951
+    .line 953
     iget-object v0, p0, Lkik/android/chat/fragment/KikConversationsFragment$12;->a:Lkik/android/chat/fragment/KikConversationsFragment;
 
     invoke-static {v0}, Lkik/android/chat/fragment/KikConversationsFragment;->w(Lkik/android/chat/fragment/KikConversationsFragment;)Landroid/view/View;
 
     move-result-object v0
 
-    invoke-static {v0}, Lkik/android/util/ca;->d(Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->d(Landroid/view/View;)V
 
-    .line 952
+    .line 954
     iget-object v0, p0, Lkik/android/chat/fragment/KikConversationsFragment$12;->a:Lkik/android/chat/fragment/KikConversationsFragment;
 
     iget-object v0, v0, Lkik/android/chat/fragment/KikConversationsFragment;->_conversationList:Landroid/widget/ListView;
@@ -59,6 +59,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->removeFooterView(Landroid/view/View;)Z
 
-    .line 953
+    .line 955
     return-void
 .end method

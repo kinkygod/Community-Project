@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private a:Lkik/android/chat/vm/profile/cs;
+.field private a:Lkik/android/chat/vm/profile/dd;
 
 .field private b:Landroid/graphics/drawable/Drawable;
 
-.field private c:Lkik/android/e/ci;
+.field private c:Lkik/android/e/co;
 
 
 # direct methods
@@ -79,11 +79,11 @@
 
     move-result-object v0
 
-    invoke-static {v0, p0}, Lkik/android/e/ci;->a(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;)Lkik/android/e/ci;
+    invoke-static {v0, p0}, Lkik/android/e/co;->a(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;)Lkik/android/e/co;
 
     move-result-object v0
 
-    iput-object v0, p0, Lkik/android/widget/ActionItemFrameLayout;->c:Lkik/android/e/ci;
+    iput-object v0, p0, Lkik/android/widget/ActionItemFrameLayout;->c:Lkik/android/e/co;
 
     .line 55
     sget-object v0, Lkik/android/R$styleable;->ActionItemFrameLayout:[I
@@ -105,11 +105,11 @@
     invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
 
     .line 59
-    iget-object v0, p0, Lkik/android/widget/ActionItemFrameLayout;->c:Lkik/android/e/ci;
+    iget-object v0, p0, Lkik/android/widget/ActionItemFrameLayout;->c:Lkik/android/e/co;
 
     iget-object v1, p0, Lkik/android/widget/ActionItemFrameLayout;->b:Landroid/graphics/drawable/Drawable;
 
-    invoke-virtual {v0, v1}, Lkik/android/e/ci;->a(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {v0, v1}, Lkik/android/e/co;->a(Landroid/graphics/drawable/Drawable;)V
 
     .line 60
     return-void
@@ -117,19 +117,19 @@
 
 
 # virtual methods
-.method public final a(Lkik/android/chat/vm/profile/cs;)V
+.method public final a(Lkik/android/chat/vm/profile/dd;)V
     .locals 2
 
     .prologue
     .line 64
-    iput-object p1, p0, Lkik/android/widget/ActionItemFrameLayout;->a:Lkik/android/chat/vm/profile/cs;
+    iput-object p1, p0, Lkik/android/widget/ActionItemFrameLayout;->a:Lkik/android/chat/vm/profile/dd;
 
     .line 65
-    iget-object v0, p0, Lkik/android/widget/ActionItemFrameLayout;->c:Lkik/android/e/ci;
+    iget-object v0, p0, Lkik/android/widget/ActionItemFrameLayout;->c:Lkik/android/e/co;
 
-    iget-object v1, p0, Lkik/android/widget/ActionItemFrameLayout;->a:Lkik/android/chat/vm/profile/cs;
+    iget-object v1, p0, Lkik/android/widget/ActionItemFrameLayout;->a:Lkik/android/chat/vm/profile/dd;
 
-    invoke-virtual {v0, v1}, Lkik/android/e/ci;->a(Lkik/android/chat/vm/profile/cs;)V
+    invoke-virtual {v0, v1}, Lkik/android/e/co;->a(Lkik/android/chat/vm/profile/dd;)V
 
     .line 66
     return-void

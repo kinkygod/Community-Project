@@ -227,22 +227,22 @@
     if-eqz v6, :cond_2
 
     .line 103
-    invoke-interface {v6}, Lkik/android/chat/vm/messaging/IMessageViewModel;->X()Lrx/d;
+    invoke-interface {v6}, Lkik/android/chat/vm/messaging/IMessageViewModel;->Y()Lrx/d;
 
     move-result-object v3
 
     .line 105
-    invoke-interface {v6}, Lkik/android/chat/vm/messaging/IMessageViewModel;->an()Z
+    invoke-interface {v6}, Lkik/android/chat/vm/messaging/IMessageViewModel;->ao()Z
 
     move-result v2
 
     .line 107
-    invoke-interface {v6}, Lkik/android/chat/vm/messaging/IMessageViewModel;->R()Lrx/d;
+    invoke-interface {v6}, Lkik/android/chat/vm/messaging/IMessageViewModel;->S()Lrx/d;
 
     move-result-object v1
 
     .line 109
-    invoke-interface {v6}, Lkik/android/chat/vm/messaging/IMessageViewModel;->b()Lrx/d;
+    invoke-interface {v6}, Lkik/android/chat/vm/messaging/IMessageViewModel;->k()Lrx/d;
 
     move-result-object v0
 

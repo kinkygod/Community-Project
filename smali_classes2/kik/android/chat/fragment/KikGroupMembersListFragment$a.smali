@@ -19,7 +19,7 @@
     .locals 0
 
     .prologue
-    .line 799
+    .line 807
     invoke-direct {p0}, Lkik/android/util/ad;-><init>()V
 
     return-void
@@ -31,12 +31,12 @@
     .locals 1
 
     .prologue
-    .line 805
+    .line 813
     const-string v0, "KikGroupMembersListFragment.groupJid"
 
     invoke-virtual {p0, v0, p1}, Lkik/android/chat/fragment/KikGroupMembersListFragment$a;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 806
+    .line 814
     return-object p0
 .end method
 
@@ -44,7 +44,7 @@
     .locals 1
 
     .prologue
-    .line 811
+    .line 819
     const-string v0, "KikGroupMembersListFragment.groupJid"
 
     invoke-virtual {p0, v0}, Lkik/android/chat/fragment/KikGroupMembersListFragment$a;->h(Ljava/lang/String;)Ljava/lang/String;

@@ -2,7 +2,7 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lrx/functions/g;
+.implements Lrx/functions/k;
 
 
 # static fields
@@ -30,7 +30,7 @@
     return-void
 .end method
 
-.method public static a()Lrx/functions/g;
+.method public static a()Lrx/functions/k;
     .locals 1
 
     sget-object v0, Lcom/kik/util/by;->a:Lcom/kik/util/by;
@@ -40,12 +40,10 @@
 
 
 # virtual methods
-.method public final call(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final a([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    check-cast p1, Ljava/lang/String;
-
-    invoke-static {p1}, Lcom/kik/util/bq;->a(Ljava/lang/String;)Ljava/lang/Boolean;
+    invoke-static {p1}, Lcom/kik/util/bt;->a([Ljava/lang/Object;)Ljava/lang/Boolean;
 
     move-result-object v0
 

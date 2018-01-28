@@ -32,7 +32,7 @@
     .locals 0
 
     .prologue
-    .line 235
+    .line 224
     iput-object p1, p0, Lkik/android/KikNotificationHandler$6$1;->a:Lkik/android/KikNotificationHandler$6;
 
     invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
@@ -46,7 +46,7 @@
     .locals 3
 
     .prologue
-    .line 239
+    .line 228
     iget-object v0, p0, Lkik/android/KikNotificationHandler$6$1;->a:Lkik/android/KikNotificationHandler$6;
 
     iget-object v0, v0, Lkik/android/KikNotificationHandler$6;->a:Lkik/android/KikNotificationHandler;
@@ -57,7 +57,7 @@
 
     monitor-enter v1
 
-    .line 240
+    .line 229
     :try_start_0
     iget-object v0, p0, Lkik/android/KikNotificationHandler$6$1;->a:Lkik/android/KikNotificationHandler$6;
 
@@ -67,7 +67,7 @@
 
     invoke-static {v0, v2}, Lkik/android/KikNotificationHandler;->a(Lkik/android/KikNotificationHandler;Lcom/kik/events/Promise;)Lcom/kik/events/Promise;
 
-    .line 241
+    .line 230
     monitor-exit v1
 
     return-void

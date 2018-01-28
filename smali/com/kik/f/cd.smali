@@ -4,36 +4,44 @@
 
 
 # instance fields
-.field private final a:Lkik/core/interfaces/t;
+.field private final a:Lkik/android/chat/KikApplication;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/io/File;Ljava/io/File;Ljava/io/File;)V
-    .locals 1
+.method public constructor <init>(Lkik/android/chat/KikApplication;)V
+    .locals 0
 
     .prologue
-    .line 19
+    .line 22
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 20
-    new-instance v0, Lkik/core/ac;
+    .line 23
+    iput-object p1, p0, Lcom/kik/f/cd;->a:Lkik/android/chat/KikApplication;
 
-    invoke-direct {v0, p1, p2, p3, p4}, Lkik/core/ac;-><init>(Ljava/lang/String;Ljava/io/File;Ljava/io/File;Ljava/io/File;)V
-
-    iput-object v0, p0, Lcom/kik/f/cd;->a:Lkik/core/interfaces/t;
-
-    .line 21
+    .line 24
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Lkik/core/interfaces/t;
-    .locals 1
+.method final a(Lkik/core/interfaces/ICommunication;Lkik/core/interfaces/IConversation;Lkik/core/interfaces/ad;Lkik/core/interfaces/k;)Lkik/android/challenge/a;
+    .locals 6
 
     .prologue
-    .line 26
-    iget-object v0, p0, Lcom/kik/f/cd;->a:Lkik/core/interfaces/t;
+    .line 29
+    new-instance v0, Lkik/android/challenge/a;
+
+    iget-object v3, p0, Lcom/kik/f/cd;->a:Lkik/android/chat/KikApplication;
+
+    move-object v1, p1
+
+    move-object v2, p2
+
+    move-object v4, p3
+
+    move-object v5, p4
+
+    invoke-direct/range {v0 .. v5}, Lkik/android/challenge/a;-><init>(Lkik/core/interfaces/ICommunication;Lkik/core/interfaces/IConversation;Lkik/android/chat/KikApplication;Lkik/core/interfaces/ad;Lkik/core/interfaces/k;)V
 
     return-object v0
 .end method

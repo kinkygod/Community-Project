@@ -141,7 +141,7 @@
     const-string v4, "Is Landscape"
 
     .line 5162
-    invoke-virtual {p0}, Lkik/android/gallery/vm/i;->d()Z
+    invoke-virtual {p0}, Lkik/android/gallery/vm/i;->e()Z
 
     move-result v5
 
@@ -192,7 +192,7 @@
     if-eqz v0, :cond_2
 
     .line 103
-    invoke-virtual {p0}, Lkik/android/gallery/vm/i;->B_()Lkik/android/chat/vm/aw;
+    invoke-virtual {p0}, Lkik/android/gallery/vm/i;->F_()Lkik/android/chat/vm/ay;
 
     move-result-object v0
 
@@ -204,7 +204,7 @@
 
     move-result-object v1
 
-    invoke-interface {v0, v1}, Lkik/android/chat/vm/aw;->b(Ljava/lang/String;)V
+    invoke-interface {v0, v1}, Lkik/android/chat/vm/ay;->b(Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -220,7 +220,7 @@
 
     .prologue
     .line 114
-    invoke-virtual {p0}, Lkik/android/gallery/vm/i;->B_()Lkik/android/chat/vm/aw;
+    invoke-virtual {p0}, Lkik/android/gallery/vm/i;->F_()Lkik/android/chat/vm/ay;
 
     move-result-object v0
 
@@ -228,7 +228,7 @@
 
     invoke-direct {v1, p0, p1}, Lkik/android/gallery/vm/i$1;-><init>(Lkik/android/gallery/vm/i;Lkik/android/gallery/a;)V
 
-    invoke-interface {v0, v1}, Lkik/android/chat/vm/aw;->a(Lkik/android/gallery/vm/r;)Lrx/d;
+    invoke-interface {v0, v1}, Lkik/android/chat/vm/ay;->a(Lkik/android/gallery/vm/r;)Lrx/d;
 
     move-result-object v0
 
@@ -300,7 +300,7 @@
     const-string v4, "Is Landscape"
 
     .line 6176
-    invoke-virtual {p0}, Lkik/android/gallery/vm/i;->d()Z
+    invoke-virtual {p0}, Lkik/android/gallery/vm/i;->e()Z
 
     move-result v5
 
@@ -432,7 +432,7 @@
     :catch_0
     move-exception v0
 
-    invoke-virtual {p0}, Lkik/android/gallery/vm/i;->B_()Lkik/android/chat/vm/aw;
+    invoke-virtual {p0}, Lkik/android/gallery/vm/i;->F_()Lkik/android/chat/vm/ay;
 
     move-result-object v0
 
@@ -444,7 +444,7 @@
 
     move-result-object v1
 
-    invoke-interface {v0, v1}, Lkik/android/chat/vm/aw;->b(Ljava/lang/String;)V
+    invoke-interface {v0, v1}, Lkik/android/chat/vm/ay;->b(Ljava/lang/String;)V
 
     goto :goto_0
 .end method
@@ -476,9 +476,9 @@
 
     int-to-long v2, v2
 
-    iget-object v5, p0, Lkik/android/gallery/vm/i;->d:Lcom/kik/storage/p;
+    iget-object v5, p0, Lkik/android/gallery/vm/i;->d:Lcom/kik/storage/s;
 
-    invoke-virtual/range {v0 .. v5}, Lkik/android/internal/platform/PlatformHelper;->a(Ljava/lang/String;JZLcom/kik/storage/p;)Lkik/core/datatypes/messageExtensions/ContentMessage;
+    invoke-virtual/range {v0 .. v5}, Lkik/android/internal/platform/PlatformHelper;->a(Ljava/lang/String;JZLcom/kik/storage/s;)Lkik/core/datatypes/messageExtensions/ContentMessage;
 
     move-result-object v0
 

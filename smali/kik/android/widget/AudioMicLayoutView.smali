@@ -838,7 +838,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f090588
+    const v1, 0x7f09058e
 
     .line 1348
     invoke-static {v1}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;

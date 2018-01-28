@@ -75,8 +75,8 @@
     .locals 1
 
     .prologue
-    .line 37
-    sget-object v0, Landroid/view/View;->TRANSLATION_X:Landroid/util/Property;
+    .line 32
+    sget-object v0, Landroid/view/View;->ALPHA:Landroid/util/Property;
 
     invoke-static {p0, v0, p1}, Lkik/android/chat/view/g;->a(Landroid/view/View;Landroid/util/Property;[F)Landroid/animation/Animator;
 
@@ -98,7 +98,7 @@
 
     fill-array-data v0, :array_0
 
-    invoke-static {p0, v0}, Lkik/android/chat/view/g;->e(Landroid/view/View;[F)Landroid/animation/Animator;
+    invoke-static {p0, v0}, Lkik/android/chat/view/g;->a(Landroid/view/View;[F)Landroid/animation/Animator;
 
     move-result-object v0
 
@@ -124,7 +124,7 @@
 
     fill-array-data v1, :array_1
 
-    invoke-static {p0, v1}, Lkik/android/chat/view/g;->e(Landroid/view/View;[F)Landroid/animation/Animator;
+    invoke-static {p0, v1}, Lkik/android/chat/view/g;->a(Landroid/view/View;[F)Landroid/animation/Animator;
 
     move-result-object v1
 
@@ -191,6 +191,20 @@
     .locals 1
 
     .prologue
+    .line 37
+    sget-object v0, Landroid/view/View;->TRANSLATION_X:Landroid/util/Property;
+
+    invoke-static {p0, v0, p1}, Lkik/android/chat/view/g;->a(Landroid/view/View;Landroid/util/Property;[F)Landroid/animation/Animator;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static varargs c(Landroid/view/View;[F)Landroid/animation/Animator;
+    .locals 1
+
+    .prologue
     .line 42
     sget-object v0, Landroid/view/View;->TRANSLATION_Y:Landroid/util/Property;
 
@@ -201,7 +215,7 @@
     return-object v0
 .end method
 
-.method public static varargs c(Landroid/view/View;[F)Landroid/animation/Animator;
+.method public static varargs d(Landroid/view/View;[F)Landroid/animation/Animator;
     .locals 1
 
     .prologue
@@ -215,26 +229,12 @@
     return-object v0
 .end method
 
-.method public static varargs d(Landroid/view/View;[F)Landroid/animation/Animator;
+.method public static varargs e(Landroid/view/View;[F)Landroid/animation/Animator;
     .locals 1
 
     .prologue
     .line 52
     sget-object v0, Landroid/view/View;->SCALE_Y:Landroid/util/Property;
-
-    invoke-static {p0, v0, p1}, Lkik/android/chat/view/g;->a(Landroid/view/View;Landroid/util/Property;[F)Landroid/animation/Animator;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method private static varargs e(Landroid/view/View;[F)Landroid/animation/Animator;
-    .locals 1
-
-    .prologue
-    .line 32
-    sget-object v0, Landroid/view/View;->ALPHA:Landroid/util/Property;
 
     invoke-static {p0, v0, p1}, Lkik/android/chat/view/g;->a(Landroid/view/View;Landroid/util/Property;[F)Landroid/animation/Animator;
 

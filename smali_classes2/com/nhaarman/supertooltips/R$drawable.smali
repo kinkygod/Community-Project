@@ -15,17 +15,17 @@
 
 
 # static fields
-.field public static final quickcontact_drop_shadow:I = 0x7f020325
+.field public static final quickcontact_drop_shadow:I = 0x7f020308
 
-.field public static final shadow:I = 0x7f020353
+.field public static final shadow:I = 0x7f020337
 
-.field public static final tooltip_arrow_down:I = 0x7f0203a6
+.field public static final tooltip_arrow_down:I = 0x7f02038a
 
-.field public static final tooltip_arrow_up:I = 0x7f0203a7
+.field public static final tooltip_arrow_up:I = 0x7f02038b
 
-.field public static final tooltip_bottom_frame:I = 0x7f0203a8
+.field public static final tooltip_bottom_frame:I = 0x7f02038c
 
-.field public static final tooltip_top_frame:I = 0x7f0203a9
+.field public static final tooltip_top_frame:I = 0x7f02038d
 
 
 # direct methods

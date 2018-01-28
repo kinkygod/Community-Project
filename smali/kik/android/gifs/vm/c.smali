@@ -7,7 +7,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<ItemViewModel::",
-        "Lkik/android/chat/vm/ar;",
+        "Lkik/android/chat/vm/at;",
         "DataType:",
         "Ljava/lang/Object;",
         ">",
@@ -168,7 +168,7 @@
     goto :goto_0
 .end method
 
-.method public aj_()V
+.method public ak_()V
     .locals 1
 
     .prologue
@@ -187,7 +187,7 @@
     iput-object v0, p0, Lkik/android/gifs/vm/c;->i:Ljava/lang/Runnable;
 
     .line 55
-    invoke-super {p0}, Lkik/android/chat/vm/c;->aj_()V
+    invoke-super {p0}, Lkik/android/chat/vm/c;->ak_()V
 
     .line 56
     return-void

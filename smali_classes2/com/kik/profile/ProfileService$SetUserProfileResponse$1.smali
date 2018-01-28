@@ -28,7 +28,7 @@
     .locals 0
 
     .prologue
-    .line 2257
+    .line 2556
     invoke-direct {p0}, Lcom/google/protobuf/AbstractParser;-><init>()V
 
     return-void
@@ -45,13 +45,13 @@
     .end annotation
 
     .prologue
-    .line 3262
+    .line 3561
     new-instance v0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;
 
     const/4 v1, 0x0
 
     invoke-direct {v0, p1, p2, v1}, Lcom/kik/profile/ProfileService$SetUserProfileResponse;-><init>(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;B)V
 
-    .line 2257
+    .line 2556
     return-object v0
 .end method

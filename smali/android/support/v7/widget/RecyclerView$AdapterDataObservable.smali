@@ -182,7 +182,7 @@
 
     check-cast v0, Landroid/support/v7/widget/RecyclerView$AdapterDataObserver;
 
-    invoke-virtual {v0, p1, p2}, Landroid/support/v7/widget/RecyclerView$AdapterDataObserver;->a(II)V
+    invoke-virtual {v0, p1, p2}, Landroid/support/v7/widget/RecyclerView$AdapterDataObserver;->a_(II)V
 
     .line 11380
     add-int/lit8 v0, v1, -0x1

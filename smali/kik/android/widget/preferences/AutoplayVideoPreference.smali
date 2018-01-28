@@ -9,7 +9,7 @@
     .end annotation
 .end field
 
-.field protected b:Lkik/core/interfaces/ae;
+.field protected b:Lkik/core/interfaces/ad;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -42,11 +42,11 @@
     invoke-interface {p1, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/widget/preferences/AutoplayVideoPreference;)V
 
     .line 38
-    iget-object v0, p0, Lkik/android/widget/preferences/AutoplayVideoPreference;->b:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/widget/preferences/AutoplayVideoPreference;->b:Lkik/core/interfaces/ad;
 
     const-string v1, "kik.chat.video.autoplay"
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ae;->s(Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {v0, v1}, Lkik/core/interfaces/ad;->s(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -92,7 +92,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/kik/metrics/c/d;->a(Lcom/kik/metrics/b/s;)V
+    invoke-virtual {v0, v1}, Lcom/kik/metrics/c/d;->a(Lcom/kik/metrics/b/t;)V
 
     .line 72
     return-void

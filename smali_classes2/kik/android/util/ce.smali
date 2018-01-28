@@ -1,97 +1,60 @@
 .class public final Lkik/android/util/ce;
-.super Ljava/lang/Object;
+.super Lkik/android/util/bu;
 .source "SourceFile"
 
 
+# static fields
+.field private static a:Lkik/android/util/ce;
+
+
 # direct methods
-.method public static a(I)Ljava/lang/String;
+.method static constructor <clinit>()V
     .locals 1
 
     .prologue
-    .line 19
-    packed-switch p0, :pswitch_data_0
+    .line 16
+    new-instance v0, Lkik/android/util/ce;
 
-    .line 31
-    const v0, 0x7f0900fd
+    invoke-direct {v0}, Lkik/android/util/ce;-><init>()V
 
-    invoke-static {v0}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
+    sput-object v0, Lkik/android/util/ce;->a:Lkik/android/util/ce;
 
-    move-result-object v0
-
-    :goto_0
-    return-object v0
-
-    .line 21
-    :pswitch_0
-    const v0, 0x7f0900fe
-
-    invoke-static {v0}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_0
-
-    .line 19
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x65
-        :pswitch_0
-    .end packed-switch
+    return-void
 .end method
 
-.method public static a(Ljava/lang/Throwable;)Ljava/lang/String;
-    .locals 2
+.method private constructor <init>()V
+    .locals 0
 
     .prologue
-    .line 37
-    const/16 v0, 0x67
+    .line 25
+    invoke-direct {p0}, Lkik/android/util/bu;-><init>()V
 
-    invoke-static {v0}, Lkik/android/util/ce;->a(I)Ljava/lang/String;
+    .line 26
+    return-void
+.end method
 
-    move-result-object v0
+.method public static a()Landroid/text/method/MovementMethod;
+    .locals 1
 
-    .line 38
-    instance-of v1, p0, Lkik/core/net/StanzaException;
+    .prologue
+    .line 20
+    sget-object v0, Lkik/android/util/ce;->a:Lkik/android/util/ce;
 
-    if-eqz v1, :cond_0
+    return-object v0
+.end method
 
-    .line 39
-    check-cast p0, Lkik/core/net/StanzaException;
 
-    .line 40
-    invoke-virtual {p0}, Lkik/core/net/StanzaException;->b()I
+# virtual methods
+.method public final onTouchEvent(Landroid/widget/TextView;Landroid/text/Spannable;Landroid/view/MotionEvent;)Z
+    .locals 1
+
+    .prologue
+    .line 31
+    const-class v0, Landroid/text/style/ClickableSpan;
+
+    invoke-static {p1, p2, p3, v0}, Lkik/android/util/ce;->a(Landroid/widget/TextView;Landroid/text/Spannable;Landroid/view/MotionEvent;Ljava/lang/Class;)Z
 
     move-result v0
 
-    .line 41
-    packed-switch v0, :pswitch_data_0
-
-    .line 46
-    invoke-static {v0}, Lkik/android/util/ce;->a(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 50
-    :cond_0
-    :goto_0
-    return-object v0
-
-    .line 43
-    :pswitch_0
-    invoke-virtual {p0}, Lkik/core/net/StanzaException;->c()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/String;
-
-    goto :goto_0
-
-    .line 41
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x68
-        :pswitch_0
-    .end packed-switch
+    return v0
 .end method

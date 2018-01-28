@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/vm/profile/cu;
+.implements Lkik/android/chat/vm/profile/dh;
 
 
 # instance fields
@@ -27,10 +27,10 @@
     .end annotation
 .end field
 
-.field h:Lkik/core/interfaces/x;
+.field h:Lkik/core/interfaces/w;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lkik/core/interfaces/x",
+            "Lkik/core/interfaces/w",
             "<",
             "Landroid/graphics/Bitmap;",
             ">;"
@@ -46,7 +46,7 @@
     .end annotation
 .end field
 
-.field j:Lkik/android/chat/vm/profile/bm;
+.field j:Lkik/android/chat/vm/profile/by;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -61,7 +61,12 @@
     .end annotation
 .end field
 
-.field private final m:Lrx/d;
+.field m:Lkik/core/chat/profile/IContactProfileRepository;
+    .annotation runtime Ljavax/inject/Inject;
+    .end annotation
+.end field
+
+.field private final n:Lrx/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lrx/d",
@@ -72,7 +77,7 @@
     .end annotation
 .end field
 
-.field private final n:Lrx/functions/c;
+.field private final o:Lrx/functions/c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lrx/functions/c",
@@ -84,9 +89,9 @@
     .end annotation
 .end field
 
-.field private final o:Lcom/kik/core/network/xmpp/jid/a;
+.field private final p:Lcom/kik/core/network/xmpp/jid/a;
 
-.field private p:Lrx/d;
+.field private q:Lrx/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lrx/d",
@@ -118,19 +123,19 @@
     .end annotation
 
     .prologue
-    .line 65
+    .line 68
     invoke-direct {p0}, Lkik/android/chat/vm/profile/gridvm/a;-><init>()V
 
-    .line 66
-    iput-object p2, p0, Lkik/android/chat/vm/profile/gridvm/t;->m:Lrx/d;
-
-    .line 67
-    iput-object p1, p0, Lkik/android/chat/vm/profile/gridvm/t;->o:Lcom/kik/core/network/xmpp/jid/a;
-
-    .line 68
-    iput-object p3, p0, Lkik/android/chat/vm/profile/gridvm/t;->n:Lrx/functions/c;
-
     .line 69
+    iput-object p2, p0, Lkik/android/chat/vm/profile/gridvm/t;->n:Lrx/d;
+
+    .line 70
+    iput-object p1, p0, Lkik/android/chat/vm/profile/gridvm/t;->p:Lcom/kik/core/network/xmpp/jid/a;
+
+    .line 71
+    iput-object p3, p0, Lkik/android/chat/vm/profile/gridvm/t;->o:Lrx/functions/c;
+
+    .line 72
     return-void
 .end method
 
@@ -140,12 +145,12 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 109
+    .line 127
     invoke-interface {p1}, Lcom/kik/core/domain/a/a/c;->k()Lkik/core/datatypes/MemberPermissions;
 
     move-result-object v0
 
-    .line 110
+    .line 128
     iget-object v2, p0, Lkik/android/chat/vm/profile/gridvm/t;->i:Lcom/kik/android/Mixpanel;
 
     const-string v3, "User Option Menu Shown"
@@ -158,7 +163,7 @@
 
     const-string v4, "Group Info User"
 
-    .line 111
+    .line 129
     invoke-virtual {v2, v3, v4}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
 
     move-result-object v2
@@ -167,7 +172,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 112
+    .line 130
     invoke-virtual {v0}, Lkik/core/datatypes/MemberPermissions;->a()Z
 
     move-result v0
@@ -183,20 +188,20 @@
 
     const-string v2, "Target Is Member"
 
-    .line 113
+    .line 131
     invoke-virtual {v0, v2, v1}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Z)Lcom/kik/android/Mixpanel$d;
 
     move-result-object v0
 
-    .line 114
+    .line 132
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->g()Lcom/kik/android/Mixpanel$d;
 
     move-result-object v0
 
-    .line 110
+    .line 128
     return-object v0
 
-    .line 112
+    .line 130
     :cond_0
     const/4 v0, 0x0
 
@@ -207,7 +212,7 @@
     .locals 1
 
     .prologue
-    .line 83
+    .line 86
     invoke-interface {p0}, Lcom/kik/core/domain/users/a/c;->b()Ljava/lang/String;
 
     move-result-object v0
@@ -219,12 +224,12 @@
     return-object v0
 .end method
 
-.method static synthetic a(Lkik/android/chat/vm/profile/gridvm/t;)Lkik/android/chat/vm/aw;
+.method static synthetic a(Lkik/android/chat/vm/profile/gridvm/t;)Lkik/android/chat/vm/ay;
     .locals 1
 
     .prologue
-    .line 46
-    invoke-virtual {p0}, Lkik/android/chat/vm/profile/gridvm/t;->B_()Lkik/android/chat/vm/aw;
+    .line 48
+    invoke-virtual {p0}, Lkik/android/chat/vm/profile/gridvm/t;->F_()Lkik/android/chat/vm/ay;
 
     move-result-object v0
 
@@ -237,55 +242,55 @@
     .prologue
     const/4 v4, 0x1
 
-    .line 46
-    .line 7371
+    .line 48
+    .line 18405
     const v0, 0x7f0903fc
 
     invoke-virtual {p0, v0}, Lkik/android/chat/vm/profile/gridvm/t;->a(I)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 7373
+    .line 18407
     sparse-switch p1, :sswitch_data_0
 
-    .line 7399
-    iget-object v0, p0, Lkik/android/chat/vm/profile/gridvm/t;->j:Lkik/android/chat/vm/profile/bm;
+    .line 18433
+    iget-object v0, p0, Lkik/android/chat/vm/profile/gridvm/t;->j:Lkik/android/chat/vm/profile/by;
 
-    invoke-virtual {v0}, Lkik/android/chat/vm/profile/bm;->a()Ljava/lang/String;
+    invoke-virtual {v0}, Lkik/android/chat/vm/profile/by;->a()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 7400
-    iget-object v1, p0, Lkik/android/chat/vm/profile/gridvm/t;->j:Lkik/android/chat/vm/profile/bm;
+    .line 18434
+    iget-object v1, p0, Lkik/android/chat/vm/profile/gridvm/t;->j:Lkik/android/chat/vm/profile/by;
 
-    invoke-virtual {v1, p1}, Lkik/android/chat/vm/profile/bm;->a(I)Ljava/lang/String;
+    invoke-virtual {v1, p1}, Lkik/android/chat/vm/profile/by;->a(I)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 7404
+    .line 18438
     :goto_0
     new-instance v2, Lkik/android/chat/vm/DialogViewModel$b;
 
     invoke-direct {v2}, Lkik/android/chat/vm/DialogViewModel$b;-><init>()V
 
-    .line 7405
+    .line 18439
     invoke-virtual {v2, v0}, Lkik/android/chat/vm/DialogViewModel$b;->a(Ljava/lang/String;)Lkik/android/chat/vm/DialogViewModel$b;
 
     move-result-object v0
 
-    .line 7406
+    .line 18440
     invoke-virtual {v0, v1}, Lkik/android/chat/vm/DialogViewModel$b;->b(Ljava/lang/String;)Lkik/android/chat/vm/DialogViewModel$b;
 
     move-result-object v0
 
-    .line 7407
+    .line 18441
     invoke-virtual {v0, v4}, Lkik/android/chat/vm/DialogViewModel$b;->a(Z)Lkik/android/chat/vm/DialogViewModel$b;
 
     move-result-object v0
 
     const v1, 0x7f09027d
 
-    .line 7408
+    .line 18442
     invoke-virtual {p0, v1}, Lkik/android/chat/vm/profile/gridvm/t;->a(I)Ljava/lang/String;
 
     move-result-object v1
@@ -296,22 +301,22 @@
 
     move-result-object v0
 
-    .line 7409
+    .line 18443
     invoke-virtual {v0}, Lkik/android/chat/vm/DialogViewModel$b;->a()Lkik/android/chat/vm/DialogViewModel;
 
     move-result-object v0
 
-    .line 7411
-    invoke-virtual {p0}, Lkik/android/chat/vm/profile/gridvm/t;->B_()Lkik/android/chat/vm/aw;
+    .line 18445
+    invoke-virtual {p0}, Lkik/android/chat/vm/profile/gridvm/t;->F_()Lkik/android/chat/vm/ay;
 
     move-result-object v1
 
-    invoke-interface {v1, v0}, Lkik/android/chat/vm/aw;->a(Lkik/android/chat/vm/DialogViewModel;)V
+    invoke-interface {v1, v0}, Lkik/android/chat/vm/ay;->a(Lkik/android/chat/vm/DialogViewModel;)V
 
-    .line 46
+    .line 48
     return-void
 
-    .line 7375
+    .line 18409
     :sswitch_0
     invoke-static {p2}, Lkik/android/util/bs;->d(Ljava/lang/String;)Z
 
@@ -319,7 +324,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-static {p1}, Lkik/android/util/ce;->a(I)Ljava/lang/String;
+    invoke-static {p1}, Lkik/android/util/cf;->a(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -330,10 +335,10 @@
 
     move-object v0, v5
 
-    .line 7376
+    .line 18410
     goto :goto_0
 
-    .line 7375
+    .line 18409
     :cond_0
     const v0, 0x7f090093
 
@@ -349,7 +354,7 @@
 
     goto :goto_1
 
-    .line 7378
+    .line 18412
     :sswitch_1
     const v0, 0x7f090261
 
@@ -363,10 +368,10 @@
 
     move-object v0, v5
 
-    .line 7379
+    .line 18413
     goto :goto_0
 
-    .line 7381
+    .line 18415
     :sswitch_2
     const v0, 0x7f090264
 
@@ -380,10 +385,10 @@
 
     move-object v0, v5
 
-    .line 7382
+    .line 18416
     goto :goto_0
 
-    .line 7384
+    .line 18418
     :sswitch_3
     const v0, 0x7f090265
 
@@ -397,10 +402,10 @@
 
     move-object v0, v5
 
-    .line 7385
+    .line 18419
     goto :goto_0
 
-    .line 7387
+    .line 18421
     :sswitch_4
     const v0, 0x7f0904ba
 
@@ -414,10 +419,10 @@
 
     move-object v0, v5
 
-    .line 7388
+    .line 18422
     goto :goto_0
 
-    .line 7390
+    .line 18424
     :sswitch_5
     const v0, 0x7f0904bb
 
@@ -431,10 +436,10 @@
 
     move-object v0, v5
 
-    .line 7391
+    .line 18425
     goto :goto_0
 
-    .line 7393
+    .line 18427
     :sswitch_6
     const v0, 0x7f090267
 
@@ -448,10 +453,10 @@
 
     move-object v0, v5
 
-    .line 7394
+    .line 18428
     goto/16 :goto_0
 
-    .line 7396
+    .line 18430
     :sswitch_7
     const v0, 0x7f090266
 
@@ -465,10 +470,10 @@
 
     move-object v0, v5
 
-    .line 7397
+    .line 18431
     goto/16 :goto_0
 
-    .line 7373
+    .line 18407
     :sswitch_data_0
     .sparse-switch
         0x191 -> :sswitch_6
@@ -486,7 +491,7 @@
     .locals 2
 
     .prologue
-    .line 197
+    .line 231
     iget-object v0, p0, Lkik/android/chat/vm/profile/gridvm/t;->e:Lcom/kik/core/domain/users/UserController;
 
     invoke-interface {p1}, Lcom/kik/core/domain/users/a/c;->a()Lcom/kik/core/network/xmpp/jid/a;
@@ -502,14 +507,14 @@
     .locals 3
 
     .prologue
-    .line 271
-    invoke-virtual {p0}, Lkik/android/chat/vm/profile/gridvm/t;->B_()Lkik/android/chat/vm/aw;
+    .line 305
+    invoke-virtual {p0}, Lkik/android/chat/vm/profile/gridvm/t;->F_()Lkik/android/chat/vm/ay;
 
     move-result-object v0
 
-    invoke-interface {v0}, Lkik/android/chat/vm/aw;->g()V
+    invoke-interface {v0}, Lkik/android/chat/vm/ay;->f()V
 
-    .line 272
+    .line 306
     iget-object v0, p0, Lkik/android/chat/vm/profile/gridvm/t;->g:Lcom/kik/core/domain/a/b;
 
     invoke-interface {p1}, Lcom/kik/core/domain/users/a/c;->a()Lcom/kik/core/network/xmpp/jid/a;
@@ -524,13 +529,13 @@
 
     move-result-object v0
 
-    new-instance v1, Lkik/android/chat/vm/profile/gridvm/t$1;
+    new-instance v1, Lkik/android/chat/vm/profile/gridvm/t$2;
 
-    invoke-direct {v1, p0, p2}, Lkik/android/chat/vm/profile/gridvm/t$1;-><init>(Lkik/android/chat/vm/profile/gridvm/t;Lcom/kik/core/domain/a/a/c;)V
+    invoke-direct {v1, p0, p2}, Lkik/android/chat/vm/profile/gridvm/t$2;-><init>(Lkik/android/chat/vm/profile/gridvm/t;Lcom/kik/core/domain/a/a/c;)V
 
     invoke-virtual {v0, v1}, Lrx/b;->b(Lrx/c;)V
 
-    .line 300
+    .line 334
     return-void
 .end method
 
@@ -538,28 +543,28 @@
     .locals 2
 
     .prologue
-    .line 327
-    invoke-virtual {p0}, Lkik/android/chat/vm/profile/gridvm/t;->B_()Lkik/android/chat/vm/aw;
+    .line 361
+    invoke-virtual {p0}, Lkik/android/chat/vm/profile/gridvm/t;->F_()Lkik/android/chat/vm/ay;
 
     move-result-object v0
 
-    invoke-interface {v0}, Lkik/android/chat/vm/aw;->g()V
+    invoke-interface {v0}, Lkik/android/chat/vm/ay;->f()V
 
-    .line 328
+    .line 362
     iget-object v0, p0, Lkik/android/chat/vm/profile/gridvm/t;->g:Lcom/kik/core/domain/a/b;
 
     invoke-interface {v0, p1, p2, p3}, Lcom/kik/core/domain/a/b;->a(Lcom/kik/core/domain/users/a/c;Lcom/kik/core/domain/a/a/c;Z)Lrx/b;
 
     move-result-object v0
 
-    new-instance v1, Lkik/android/chat/vm/profile/gridvm/t$2;
+    new-instance v1, Lkik/android/chat/vm/profile/gridvm/t$3;
 
-    invoke-direct {v1, p0, p2, p3}, Lkik/android/chat/vm/profile/gridvm/t$2;-><init>(Lkik/android/chat/vm/profile/gridvm/t;Lcom/kik/core/domain/a/a/c;Z)V
+    invoke-direct {v1, p0, p2, p3}, Lkik/android/chat/vm/profile/gridvm/t$3;-><init>(Lkik/android/chat/vm/profile/gridvm/t;Lcom/kik/core/domain/a/a/c;Z)V
 
-    .line 329
+    .line 363
     invoke-virtual {v0, v1}, Lrx/b;->b(Lrx/c;)V
 
-    .line 362
+    .line 396
     return-void
 .end method
 
@@ -567,7 +572,7 @@
     .locals 3
 
     .prologue
-    .line 227
+    .line 261
     iget-object v0, p0, Lkik/android/chat/vm/profile/gridvm/t;->i:Lcom/kik/android/Mixpanel;
 
     const-string v1, "Report Cancelled"
@@ -578,14 +583,14 @@
 
     const-string v1, "Screen"
 
-    .line 228
+    .line 262
     invoke-virtual {v0, v1, p1}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
 
     move-result-object v0
 
     const-string v1, "Target"
 
-    .line 229
+    .line 263
     invoke-virtual {p2}, Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;->toTitleString()Ljava/lang/String;
 
     move-result-object v2
@@ -596,7 +601,7 @@
 
     const-string v1, "Chat"
 
-    .line 230
+    .line 264
     invoke-interface {p3}, Lcom/kik/core/domain/a/a/c;->a()Lcom/kik/core/network/xmpp/jid/a;
 
     move-result-object v2
@@ -609,14 +614,14 @@
 
     move-result-object v0
 
-    .line 231
+    .line 265
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->g()Lcom/kik/android/Mixpanel$d;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
 
-    .line 227
+    .line 261
     return-void
 .end method
 
@@ -628,10 +633,10 @@
 
     const/4 v4, 0x1
 
-    .line 141
+    .line 162
     if-eqz p1, :cond_0
 
-    .line 7192
+    .line 17226
     invoke-interface {p2}, Lcom/kik/core/domain/users/a/c;->b()Ljava/lang/String;
 
     move-result-object v0
@@ -640,7 +645,7 @@
 
     move-result-object v0
 
-    .line 7193
+    .line 17227
     new-instance v1, Lkik/android/chat/vm/DialogViewModel$b;
 
     invoke-direct {v1}, Lkik/android/chat/vm/DialogViewModel$b;-><init>()V
@@ -651,7 +656,7 @@
 
     aput-object v0, v3, v5
 
-    .line 7194
+    .line 17228
     invoke-virtual {p0, v2, v3}, Lkik/android/chat/vm/profile/gridvm/t;->a(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v2
@@ -660,13 +665,13 @@
 
     move-result-object v1
 
-    const v2, 0x7f09062e
+    const v2, 0x7f090636
 
     new-array v3, v4, [Ljava/lang/Object;
 
     aput-object v0, v3, v5
 
-    .line 7195
+    .line 17229
     invoke-virtual {p0, v2, v3}, Lkik/android/chat/vm/profile/gridvm/t;->a(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
@@ -677,12 +682,12 @@
 
     const v1, 0x7f090471
 
-    .line 7196
+    .line 17230
     invoke-virtual {p0, v1}, Lkik/android/chat/vm/profile/gridvm/t;->a(I)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-static {p0, p2}, Lkik/android/chat/vm/profile/gridvm/al;->a(Lkik/android/chat/vm/profile/gridvm/t;Lcom/kik/core/domain/users/a/c;)Ljava/lang/Runnable;
+    invoke-static {p0, p2}, Lkik/android/chat/vm/profile/gridvm/an;->a(Lkik/android/chat/vm/profile/gridvm/t;Lcom/kik/core/domain/users/a/c;)Ljava/lang/Runnable;
 
     move-result-object v2
 
@@ -692,7 +697,7 @@
 
     const v1, 0x7f0903d7
 
-    .line 7198
+    .line 17232
     invoke-virtual {p0, v1}, Lkik/android/chat/vm/profile/gridvm/t;->a(I)Ljava/lang/String;
 
     move-result-object v1
@@ -703,28 +708,28 @@
 
     move-result-object v0
 
-    .line 7199
+    .line 17233
     invoke-virtual {v0, v4}, Lkik/android/chat/vm/DialogViewModel$b;->a(Z)Lkik/android/chat/vm/DialogViewModel$b;
 
     move-result-object v0
 
-    .line 7200
+    .line 17234
     invoke-virtual {v0}, Lkik/android/chat/vm/DialogViewModel$b;->a()Lkik/android/chat/vm/DialogViewModel;
 
     move-result-object v0
 
-    .line 7202
-    invoke-virtual {p0}, Lkik/android/chat/vm/profile/gridvm/t;->B_()Lkik/android/chat/vm/aw;
+    .line 17236
+    invoke-virtual {p0}, Lkik/android/chat/vm/profile/gridvm/t;->F_()Lkik/android/chat/vm/ay;
 
     move-result-object v1
 
-    invoke-interface {v1, v0}, Lkik/android/chat/vm/aw;->a(Lkik/android/chat/vm/DialogViewModel;)V
+    invoke-interface {v1, v0}, Lkik/android/chat/vm/ay;->a(Lkik/android/chat/vm/DialogViewModel;)V
 
-    .line 154
+    .line 175
     :goto_0
     return-void
 
-    .line 145
+    .line 166
     :cond_0
     iget-object v0, p0, Lkik/android/chat/vm/profile/gridvm/t;->i:Lcom/kik/android/Mixpanel;
 
@@ -738,35 +743,35 @@
 
     const-string v2, "Group Info User"
 
-    .line 146
+    .line 167
     invoke-virtual {v0, v1, v2}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
 
     move-result-object v0
 
     const-string v1, "Clicked By Admin"
 
-    .line 147
+    .line 168
     invoke-virtual {v0, v1, p3}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Z)Lcom/kik/android/Mixpanel$d;
 
     move-result-object v0
 
     const-string v1, "Target Is Member"
 
-    .line 148
+    .line 169
     invoke-virtual {v0, v1, p4}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Z)Lcom/kik/android/Mixpanel$d;
 
     move-result-object v0
 
-    .line 149
+    .line 170
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->g()Lcom/kik/android/Mixpanel$d;
 
     move-result-object v0
 
-    .line 150
+    .line 171
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
 
-    .line 152
-    iget-object v0, p0, Lkik/android/chat/vm/profile/gridvm/t;->n:Lrx/functions/c;
+    .line 173
+    iget-object v0, p0, Lkik/android/chat/vm/profile/gridvm/t;->o:Lrx/functions/c;
 
     invoke-interface {v0, p2, p5}, Lrx/functions/c;->a(Ljava/lang/Object;Ljava/lang/Object;)V
 
@@ -781,7 +786,7 @@
 
     const/4 v4, 0x1
 
-    .line 320
+    .line 354
     invoke-interface {p2}, Lcom/kik/core/domain/users/a/c;->b()Ljava/lang/String;
 
     move-result-object v0
@@ -790,7 +795,7 @@
 
     move-result-object v1
 
-    .line 321
+    .line 355
     new-instance v2, Lkik/android/chat/vm/DialogViewModel$b;
 
     invoke-direct {v2}, Lkik/android/chat/vm/DialogViewModel$b;-><init>()V
@@ -804,7 +809,7 @@
 
     aput-object v1, v3, v5
 
-    .line 322
+    .line 356
     invoke-virtual {p0, v0, v3}, Lkik/android/chat/vm/profile/gridvm/t;->a(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
@@ -822,7 +827,7 @@
 
     aput-object v1, v3, v5
 
-    .line 323
+    .line 357
     invoke-virtual {p0, v0, v3}, Lkik/android/chat/vm/profile/gridvm/t;->a(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
@@ -831,7 +836,7 @@
 
     move-result-object v0
 
-    .line 324
+    .line 358
     invoke-virtual {v0, v4}, Lkik/android/chat/vm/DialogViewModel$b;->a(Z)Lkik/android/chat/vm/DialogViewModel$b;
 
     move-result-object v1
@@ -840,13 +845,13 @@
 
     const v0, 0x7f0903d1
 
-    .line 325
+    .line 359
     :goto_2
     invoke-virtual {p0, v0}, Lkik/android/chat/vm/profile/gridvm/t;->a(I)Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-static {p0, p2, p3, p1}, Lkik/android/chat/vm/profile/gridvm/x;->a(Lkik/android/chat/vm/profile/gridvm/t;Lcom/kik/core/domain/users/a/c;Lcom/kik/core/domain/a/a/c;Z)Ljava/lang/Runnable;
+    invoke-static {p0, p2, p3, p1}, Lkik/android/chat/vm/profile/gridvm/y;->a(Lkik/android/chat/vm/profile/gridvm/t;Lcom/kik/core/domain/users/a/c;Lcom/kik/core/domain/a/a/c;Z)Ljava/lang/Runnable;
 
     move-result-object v2
 
@@ -856,7 +861,7 @@
 
     const v1, 0x7f0903d7
 
-    .line 363
+    .line 397
     invoke-virtual {p0, v1}, Lkik/android/chat/vm/profile/gridvm/t;->a(I)Ljava/lang/String;
 
     move-result-object v1
@@ -867,34 +872,34 @@
 
     move-result-object v0
 
-    .line 364
+    .line 398
     invoke-virtual {v0}, Lkik/android/chat/vm/DialogViewModel$b;->a()Lkik/android/chat/vm/DialogViewModel;
 
     move-result-object v0
 
-    .line 366
-    invoke-virtual {p0}, Lkik/android/chat/vm/profile/gridvm/t;->B_()Lkik/android/chat/vm/aw;
+    .line 400
+    invoke-virtual {p0}, Lkik/android/chat/vm/profile/gridvm/t;->F_()Lkik/android/chat/vm/ay;
 
     move-result-object v1
 
-    invoke-interface {v1, v0}, Lkik/android/chat/vm/aw;->a(Lkik/android/chat/vm/DialogViewModel;)V
+    invoke-interface {v1, v0}, Lkik/android/chat/vm/ay;->a(Lkik/android/chat/vm/DialogViewModel;)V
 
-    .line 367
+    .line 401
     return-void
 
-    .line 321
+    .line 355
     :cond_0
     const v0, 0x7f090448
 
     goto :goto_0
 
-    .line 322
+    .line 356
     :cond_1
     const v0, 0x7f090075
 
     goto :goto_1
 
-    .line 324
+    .line 358
     :cond_2
     const v0, 0x7f090447
 
@@ -905,12 +910,12 @@
     .locals 2
 
     .prologue
-    .line 95
+    .line 98
     invoke-interface {p1}, Lcom/kik/core/domain/a/a/c;->j()Ljava/util/Set;
 
     move-result-object v0
 
-    iget-object v1, p0, Lkik/android/chat/vm/profile/gridvm/t;->o:Lcom/kik/core/network/xmpp/jid/a;
+    iget-object v1, p0, Lkik/android/chat/vm/profile/gridvm/t;->p:Lcom/kik/core/network/xmpp/jid/a;
 
     invoke-interface {v0, v1}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
 
@@ -923,12 +928,12 @@
     return-object v0
 .end method
 
-.method static synthetic b(Lkik/android/chat/vm/profile/gridvm/t;)Lkik/android/chat/vm/aw;
+.method static synthetic b(Lkik/android/chat/vm/profile/gridvm/t;)Lkik/android/chat/vm/ay;
     .locals 1
 
     .prologue
-    .line 46
-    invoke-virtual {p0}, Lkik/android/chat/vm/profile/gridvm/t;->B_()Lkik/android/chat/vm/aw;
+    .line 48
+    invoke-virtual {p0}, Lkik/android/chat/vm/profile/gridvm/t;->F_()Lkik/android/chat/vm/ay;
 
     move-result-object v0
 
@@ -939,46 +944,46 @@
     .locals 4
 
     .prologue
-    .line 207
+    .line 241
     const-string v0, "User Option Report Clicked"
 
     invoke-virtual {p0, v0, p1, p2}, Lkik/android/chat/vm/profile/gridvm/t;->a(Ljava/lang/String;Lcom/kik/core/domain/users/a/c;Lcom/kik/core/domain/a/a/c;)V
 
-    .line 208
+    .line 242
     sget-object v1, Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;->USERINGROUP:Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;
 
-    .line 1215
+    .line 11249
     sget-object v0, Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;->USERINGROUP:Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;
 
     if-ne v1, v0, :cond_1
 
-    .line 1216
+    .line 11250
     const-string v0, "Group Info User"
 
-    .line 1222
+    .line 11256
     :goto_0
     new-instance v2, Lkik/android/chat/vm/ReportDialogViewModel$a;
 
     invoke-direct {v2}, Lkik/android/chat/vm/ReportDialogViewModel$a;-><init>()V
 
-    .line 1223
+    .line 11257
     invoke-virtual {v2, v0}, Lkik/android/chat/vm/ReportDialogViewModel$a;->c(Ljava/lang/String;)Lkik/android/chat/vm/ReportDialogViewModel$a;
 
     move-result-object v2
 
-    .line 1224
+    .line 11258
     invoke-virtual {v2, v1}, Lkik/android/chat/vm/ReportDialogViewModel$a;->a(Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;)Lkik/android/chat/vm/ReportDialogViewModel$a;
 
     move-result-object v2
 
     const v3, 0x7f0903d7
 
-    .line 1225
+    .line 11259
     invoke-virtual {p0, v3}, Lkik/android/chat/vm/profile/gridvm/t;->a(I)Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-static {p0, v0, v1, p2}, Lkik/android/chat/vm/profile/gridvm/am;->a(Lkik/android/chat/vm/profile/gridvm/t;Ljava/lang/String;Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;Lcom/kik/core/domain/a/a/c;)Ljava/lang/Runnable;
+    invoke-static {p0, v0, v1, p2}, Lkik/android/chat/vm/profile/gridvm/ao;->a(Lkik/android/chat/vm/profile/gridvm/t;Ljava/lang/String;Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;Lcom/kik/core/domain/a/a/c;)Ljava/lang/Runnable;
 
     move-result-object v0
 
@@ -988,7 +993,7 @@
 
     check-cast v0, Lkik/android/chat/vm/ReportDialogViewModel$a;
 
-    .line 1233
+    .line 11267
     invoke-static {v1}, Lkik/android/chat/vm/ReportDialogViewModel;->a(Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;)I
 
     move-result v2
@@ -1003,12 +1008,12 @@
 
     check-cast v0, Lkik/android/chat/vm/ReportDialogViewModel$a;
 
-    .line 1234
+    .line 11268
     invoke-interface {p1}, Lcom/kik/core/domain/users/a/c;->a()Lcom/kik/core/network/xmpp/jid/a;
 
     move-result-object v2
 
-    .line 2142
+    .line 12142
     invoke-virtual {v2}, Lcom/kik/core/network/xmpp/jid/a;->toString()Ljava/lang/String;
 
     move-result-object v2
@@ -1017,17 +1022,17 @@
 
     move-result-object v2
 
-    .line 1234
+    .line 11268
     invoke-virtual {v0, v2}, Lkik/android/chat/vm/ReportDialogViewModel$a;->a(Lkik/core/datatypes/k;)Lkik/android/chat/vm/ReportDialogViewModel$a;
 
     move-result-object v0
 
-    .line 1235
+    .line 11269
     invoke-interface {p2}, Lcom/kik/core/domain/a/a/c;->a()Lcom/kik/core/network/xmpp/jid/a;
 
     move-result-object v2
 
-    .line 3142
+    .line 13142
     invoke-virtual {v2}, Lcom/kik/core/network/xmpp/jid/a;->toString()Ljava/lang/String;
 
     move-result-object v2
@@ -1036,62 +1041,98 @@
 
     move-result-object v2
 
-    .line 1235
+    .line 11269
     invoke-virtual {v0, v2}, Lkik/android/chat/vm/ReportDialogViewModel$a;->b(Lkik/core/datatypes/k;)Lkik/android/chat/vm/ReportDialogViewModel$a;
 
     move-result-object v0
 
     const/4 v2, 0x0
 
-    .line 1236
+    .line 11270
     invoke-virtual {v0, v2}, Lkik/android/chat/vm/ReportDialogViewModel$a;->b(Z)Lkik/android/chat/vm/ReportDialogViewModel$a;
 
     move-result-object v0
 
-    .line 1237
+    .line 11271
     invoke-virtual {v0}, Lkik/android/chat/vm/ReportDialogViewModel$a;->b()Lkik/android/chat/vm/ReportDialogViewModel;
 
     move-result-object v0
 
-    .line 1239
-    invoke-virtual {p0}, Lkik/android/chat/vm/profile/gridvm/t;->B_()Lkik/android/chat/vm/aw;
+    .line 11273
+    invoke-virtual {p0}, Lkik/android/chat/vm/profile/gridvm/t;->F_()Lkik/android/chat/vm/ay;
 
     move-result-object v2
 
-    invoke-interface {v2, v0}, Lkik/android/chat/vm/aw;->a(Lkik/android/chat/vm/bc;)V
+    invoke-interface {v2, v0}, Lkik/android/chat/vm/ay;->a(Lkik/android/chat/vm/be;)V
 
-    .line 1240
+    .line 11274
     iget-object v0, p0, Lkik/android/chat/vm/profile/gridvm/t;->l:Lcom/kik/metrics/c/d;
 
-    invoke-static {}, Lcom/kik/metrics/b/as;->b()Lcom/kik/metrics/b/as$a;
+    invoke-static {}, Lcom/kik/metrics/b/av;->b()Lcom/kik/metrics/b/av$a;
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lcom/kik/metrics/b/as$a;->a()Lcom/kik/metrics/b/as;
+    invoke-virtual {v2}, Lcom/kik/metrics/b/av$a;->a()Lcom/kik/metrics/b/av;
 
     move-result-object v2
 
-    invoke-virtual {v0, v2}, Lcom/kik/metrics/c/d;->a(Lcom/kik/metrics/b/s;)V
+    invoke-virtual {v0, v2}, Lcom/kik/metrics/c/d;->a(Lcom/kik/metrics/b/t;)V
 
-    .line 1242
+    .line 11276
     sget-object v0, Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;->USER:Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;
 
     if-ne v1, v0, :cond_0
 
-    .line 1243
+    .line 11277
     iget-object v0, p0, Lkik/android/chat/vm/profile/gridvm/t;->k:Lkik/android/videochat/c;
 
     sget-object v1, Lcom/rounds/kik/conference/LeaveReason;->USER_BLOCKED:Lcom/rounds/kik/conference/LeaveReason;
 
     invoke-interface {v0, v1}, Lkik/android/videochat/c;->a(Lcom/rounds/kik/conference/LeaveReason;)V
 
-    .line 209
+    .line 243
     :cond_0
     return-void
 
-    .line 1219
+    .line 11253
     :cond_1
     const-string v0, "Group Info Options"
+
+    goto :goto_0
+.end method
+
+.method static synthetic b(Lkik/android/chat/vm/profile/gridvm/t;Lcom/kik/core/domain/users/a/c;)V
+    .locals 2
+
+    .prologue
+    .line 18214
+    invoke-interface {p1}, Lcom/kik/core/domain/users/a/c;->i()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 18216
+    iget-object v0, p0, Lkik/android/chat/vm/profile/gridvm/t;->m:Lkik/core/chat/profile/IContactProfileRepository;
+
+    invoke-interface {p1}, Lcom/kik/core/domain/users/a/c;->a()Lcom/kik/core/network/xmpp/jid/a;
+
+    move-result-object v1
+
+    invoke-interface {v0, v1}, Lkik/core/chat/profile/IContactProfileRepository;->c(Lcom/kik/core/network/xmpp/jid/a;)V
+
+    :goto_0
+    return-void
+
+    .line 18220
+    :cond_0
+    iget-object v0, p0, Lkik/android/chat/vm/profile/gridvm/t;->m:Lkik/core/chat/profile/IContactProfileRepository;
+
+    invoke-interface {p1}, Lcom/kik/core/domain/users/a/c;->a()Lcom/kik/core/network/xmpp/jid/a;
+
+    move-result-object v1
+
+    invoke-interface {v0, v1}, Lkik/core/chat/profile/IContactProfileRepository;->a(Lcom/kik/core/network/xmpp/jid/a;)Lrx/d;
 
     goto :goto_0
 .end method
@@ -1100,7 +1141,7 @@
     .locals 3
 
     .prologue
-    .line 254
+    .line 288
     iget-object v0, p0, Lkik/android/chat/vm/profile/gridvm/t;->g:Lcom/kik/core/domain/a/b;
 
     invoke-interface {p1}, Lcom/kik/core/domain/users/a/c;->a()Lcom/kik/core/network/xmpp/jid/a;
@@ -1120,12 +1161,12 @@
     .locals 2
 
     .prologue
-    .line 89
+    .line 92
     invoke-interface {p1}, Lcom/kik/core/domain/a/a/c;->i()Ljava/util/Set;
 
     move-result-object v0
 
-    iget-object v1, p0, Lkik/android/chat/vm/profile/gridvm/t;->o:Lcom/kik/core/network/xmpp/jid/a;
+    iget-object v1, p0, Lkik/android/chat/vm/profile/gridvm/t;->p:Lcom/kik/core/network/xmpp/jid/a;
 
     invoke-interface {v0, v1}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
 
@@ -1142,7 +1183,7 @@
     .locals 1
 
     .prologue
-    .line 46
+    .line 48
     const v0, 0x7f09027d
 
     invoke-virtual {p0, v0}, Lkik/android/chat/vm/profile/gridvm/t;->a(I)Ljava/lang/String;
@@ -1152,11 +1193,11 @@
     return-object v0
 .end method
 
-.method static synthetic c(Lkik/android/chat/vm/profile/gridvm/t;Lcom/kik/core/domain/users/a/c;Lcom/kik/core/domain/a/a/c;)Lkik/android/chat/vm/cq;
+.method static synthetic c(Lkik/android/chat/vm/profile/gridvm/t;Lcom/kik/core/domain/users/a/c;Lcom/kik/core/domain/a/a/c;)Lkik/android/chat/vm/cs;
     .locals 12
 
     .prologue
-    .line 126
+    .line 147
     invoke-interface {p1}, Lcom/kik/core/domain/users/a/c;->b()Ljava/lang/String;
 
     move-result-object v0
@@ -1165,17 +1206,17 @@
 
     move-result-object v2
 
-    .line 127
+    .line 148
     invoke-interface {p1}, Lcom/kik/core/domain/users/a/c;->h()Z
 
     move-result v1
 
-    .line 128
+    .line 149
     invoke-interface {p2}, Lcom/kik/core/domain/a/a/c;->k()Lkik/core/datatypes/MemberPermissions;
 
     move-result-object v0
 
-    .line 130
+    .line 151
     sget-object v3, Lkik/core/datatypes/MemberPermissions$Type;->REGULAR_ADMIN:Lkik/core/datatypes/MemberPermissions$Type;
 
     invoke-virtual {v0}, Lkik/core/datatypes/MemberPermissions;->b()Lkik/core/datatypes/MemberPermissions$Type;
@@ -1186,7 +1227,7 @@
 
     move-result v6
 
-    .line 131
+    .line 152
     sget-object v3, Lkik/core/datatypes/MemberPermissions$Type;->SUPER_ADMIN:Lkik/core/datatypes/MemberPermissions$Type;
 
     invoke-virtual {v0}, Lkik/core/datatypes/MemberPermissions;->b()Lkik/core/datatypes/MemberPermissions$Type;
@@ -1197,12 +1238,12 @@
 
     move-result v7
 
-    .line 132
+    .line 153
     invoke-virtual {v0}, Lkik/core/datatypes/MemberPermissions;->a()Z
 
     move-result v3
 
-    .line 134
+    .line 155
     invoke-interface {p2}, Lcom/kik/core/domain/a/a/c;->i()Ljava/util/Set;
 
     move-result-object v0
@@ -1215,7 +1256,7 @@
 
     move-result v8
 
-    .line 135
+    .line 156
     invoke-interface {p2}, Lcom/kik/core/domain/a/a/c;->j()Ljava/util/Set;
 
     move-result-object v0
@@ -1228,7 +1269,7 @@
 
     move-result v9
 
-    .line 136
+    .line 157
     invoke-interface {p2}, Lcom/kik/core/domain/a/a/c;->g()Ljava/util/Set;
 
     move-result-object v0
@@ -1250,13 +1291,13 @@
     :cond_0
     const/4 v4, 0x1
 
-    .line 138
+    .line 159
     :goto_0
-    new-instance v10, Lkik/android/chat/vm/cq;
+    new-instance v10, Lkik/android/chat/vm/cs;
 
-    invoke-direct {v10}, Lkik/android/chat/vm/cq;-><init>()V
+    invoke-direct {v10}, Lkik/android/chat/vm/cs;-><init>()V
 
-    .line 139
+    .line 160
     if-eqz v1, :cond_5
 
     const v0, 0x7f090471
@@ -1280,26 +1321,26 @@
 
     move-object v5, p2
 
-    invoke-static/range {v0 .. v5}, Lkik/android/chat/vm/profile/gridvm/y;->a(Lkik/android/chat/vm/profile/gridvm/t;ZLcom/kik/core/domain/users/a/c;ZZLcom/kik/core/domain/a/a/c;)Ljava/lang/Runnable;
+    invoke-static/range {v0 .. v5}, Lkik/android/chat/vm/profile/gridvm/z;->a(Lkik/android/chat/vm/profile/gridvm/t;ZLcom/kik/core/domain/users/a/c;ZZLcom/kik/core/domain/a/a/c;)Ljava/lang/Runnable;
 
     move-result-object v0
 
-    invoke-virtual {v10, v11, v0}, Lkik/android/chat/vm/cq;->a(Ljava/lang/String;Ljava/lang/Runnable;)V
+    invoke-virtual {v10, v11, v0}, Lkik/android/chat/vm/cs;->a(Ljava/lang/String;Ljava/lang/Runnable;)V
 
-    .line 156
-    const v0, 0x7f09068c
+    .line 177
+    const v0, 0x7f090694
 
     invoke-virtual {p0, v0}, Lkik/android/chat/vm/profile/gridvm/t;->a(I)Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-static {p0, p1, p2}, Lkik/android/chat/vm/profile/gridvm/z;->a(Lkik/android/chat/vm/profile/gridvm/t;Lcom/kik/core/domain/users/a/c;Lcom/kik/core/domain/a/a/c;)Ljava/lang/Runnable;
+    invoke-static {p0, p1, p2}, Lkik/android/chat/vm/profile/gridvm/aa;->a(Lkik/android/chat/vm/profile/gridvm/t;Lcom/kik/core/domain/users/a/c;Lcom/kik/core/domain/a/a/c;)Ljava/lang/Runnable;
 
     move-result-object v1
 
-    invoke-virtual {v10, v0, v1}, Lkik/android/chat/vm/cq;->a(Ljava/lang/String;Ljava/lang/Runnable;)V
+    invoke-virtual {v10, v0, v1}, Lkik/android/chat/vm/cs;->a(Ljava/lang/String;Ljava/lang/Runnable;)V
 
-    .line 158
+    .line 179
     if-eqz v6, :cond_6
 
     if-nez v8, :cond_1
@@ -1311,7 +1352,7 @@
 
     move v1, v0
 
-    .line 159
+    .line 180
     :goto_2
     if-eqz v7, :cond_7
 
@@ -1319,7 +1360,7 @@
 
     const/4 v0, 0x1
 
-    .line 161
+    .line 182
     :goto_3
     if-eqz v3, :cond_2
 
@@ -1327,7 +1368,7 @@
 
     if-eqz v0, :cond_8
 
-    .line 162
+    .line 183
     :cond_2
     invoke-interface {p1}, Lcom/kik/core/domain/users/a/c;->h()Z
 
@@ -1335,59 +1376,8 @@
 
     if-nez v0, :cond_3
 
-    .line 163
-    const v0, 0x7f09067b
-
-    invoke-virtual {p0, v0}, Lkik/android/chat/vm/profile/gridvm/t;->a(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {p0, p1, p2}, Lkik/android/chat/vm/profile/gridvm/aa;->a(Lkik/android/chat/vm/profile/gridvm/t;Lcom/kik/core/domain/users/a/c;Lcom/kik/core/domain/a/a/c;)Ljava/lang/Runnable;
-
-    move-result-object v1
-
-    invoke-virtual {v10, v0, v1}, Lkik/android/chat/vm/cq;->a(Ljava/lang/String;Ljava/lang/Runnable;)V
-
-    .line 186
-    :cond_3
-    :goto_4
-    return-object v10
-
-    .line 136
-    :cond_4
-    const/4 v4, 0x0
-
-    goto :goto_0
-
-    .line 139
-    :cond_5
-    const v0, 0x7f090547
-
-    goto :goto_1
-
-    .line 158
-    :cond_6
-    const/4 v0, 0x0
-
-    move v1, v0
-
-    goto :goto_2
-
-    .line 159
-    :cond_7
-    const/4 v0, 0x0
-
-    goto :goto_3
-
-    .line 167
-    :cond_8
-    if-eqz v4, :cond_9
-
-    .line 168
-    if-eqz v8, :cond_b
-
-    .line 169
-    const v0, 0x7f090622
+    .line 184
+    const v0, 0x7f090683
 
     invoke-virtual {p0, v0}, Lkik/android/chat/vm/profile/gridvm/t;->a(I)Ljava/lang/String;
 
@@ -1397,9 +1387,60 @@
 
     move-result-object v1
 
-    invoke-virtual {v10, v0, v1}, Lkik/android/chat/vm/cq;->a(Ljava/lang/String;Ljava/lang/Runnable;)V
+    invoke-virtual {v10, v0, v1}, Lkik/android/chat/vm/cs;->a(Ljava/lang/String;Ljava/lang/Runnable;)V
 
-    .line 175
+    .line 207
+    :cond_3
+    :goto_4
+    return-object v10
+
+    .line 157
+    :cond_4
+    const/4 v4, 0x0
+
+    goto :goto_0
+
+    .line 160
+    :cond_5
+    const v0, 0x7f09054d
+
+    goto :goto_1
+
+    .line 179
+    :cond_6
+    const/4 v0, 0x0
+
+    move v1, v0
+
+    goto :goto_2
+
+    .line 180
+    :cond_7
+    const/4 v0, 0x0
+
+    goto :goto_3
+
+    .line 188
+    :cond_8
+    if-eqz v4, :cond_9
+
+    .line 189
+    if-eqz v8, :cond_b
+
+    .line 190
+    const v0, 0x7f09062a
+
+    invoke-virtual {p0, v0}, Lkik/android/chat/vm/profile/gridvm/t;->a(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {p0, p1, p2}, Lkik/android/chat/vm/profile/gridvm/ac;->a(Lkik/android/chat/vm/profile/gridvm/t;Lcom/kik/core/domain/users/a/c;Lcom/kik/core/domain/a/a/c;)Ljava/lang/Runnable;
+
+    move-result-object v1
+
+    invoke-virtual {v10, v0, v1}, Lkik/android/chat/vm/cs;->a(Ljava/lang/String;Ljava/lang/Runnable;)V
+
+    .line 196
     :goto_5
     const v0, 0x7f090305
 
@@ -1407,13 +1448,13 @@
 
     move-result-object v0
 
-    invoke-static {p0, p1, p2}, Lkik/android/chat/vm/profile/gridvm/ad;->a(Lkik/android/chat/vm/profile/gridvm/t;Lcom/kik/core/domain/users/a/c;Lcom/kik/core/domain/a/a/c;)Ljava/lang/Runnable;
+    invoke-static {p0, p1, p2}, Lkik/android/chat/vm/profile/gridvm/ae;->a(Lkik/android/chat/vm/profile/gridvm/t;Lcom/kik/core/domain/users/a/c;Lcom/kik/core/domain/a/a/c;)Ljava/lang/Runnable;
 
     move-result-object v1
 
-    invoke-virtual {v10, v0, v1}, Lkik/android/chat/vm/cq;->a(Ljava/lang/String;Ljava/lang/Runnable;)V
+    invoke-virtual {v10, v0, v1}, Lkik/android/chat/vm/cs;->a(Ljava/lang/String;Ljava/lang/Runnable;)V
 
-    .line 178
+    .line 199
     :cond_9
     invoke-interface {p2}, Lcom/kik/core/domain/a/a/c;->h()Ljava/util/Set;
 
@@ -1429,29 +1470,8 @@
 
     if-nez v0, :cond_a
 
-    .line 179
+    .line 200
     const v0, 0x7f090092
-
-    invoke-virtual {p0, v0}, Lkik/android/chat/vm/profile/gridvm/t;->a(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {p0, p1, p2}, Lkik/android/chat/vm/profile/gridvm/ae;->a(Lkik/android/chat/vm/profile/gridvm/t;Lcom/kik/core/domain/users/a/c;Lcom/kik/core/domain/a/a/c;)Ljava/lang/Runnable;
-
-    move-result-object v1
-
-    invoke-virtual {v10, v0, v1}, Lkik/android/chat/vm/cq;->a(Ljava/lang/String;Ljava/lang/Runnable;)V
-
-    .line 182
-    :cond_a
-    invoke-interface {p1}, Lcom/kik/core/domain/users/a/c;->h()Z
-
-    move-result v0
-
-    if-nez v0, :cond_3
-
-    .line 183
-    const v0, 0x7f09067b
 
     invoke-virtual {p0, v0}, Lkik/android/chat/vm/profile/gridvm/t;->a(I)Ljava/lang/String;
 
@@ -1461,11 +1481,32 @@
 
     move-result-object v1
 
-    invoke-virtual {v10, v0, v1}, Lkik/android/chat/vm/cq;->a(Ljava/lang/String;Ljava/lang/Runnable;)V
+    invoke-virtual {v10, v0, v1}, Lkik/android/chat/vm/cs;->a(Ljava/lang/String;Ljava/lang/Runnable;)V
+
+    .line 203
+    :cond_a
+    invoke-interface {p1}, Lcom/kik/core/domain/users/a/c;->h()Z
+
+    move-result v0
+
+    if-nez v0, :cond_3
+
+    .line 204
+    const v0, 0x7f090683
+
+    invoke-virtual {p0, v0}, Lkik/android/chat/vm/profile/gridvm/t;->a(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {p0, p1, p2}, Lkik/android/chat/vm/profile/gridvm/ah;->a(Lkik/android/chat/vm/profile/gridvm/t;Lcom/kik/core/domain/users/a/c;Lcom/kik/core/domain/a/a/c;)Ljava/lang/Runnable;
+
+    move-result-object v1
+
+    invoke-virtual {v10, v0, v1}, Lkik/android/chat/vm/cs;->a(Ljava/lang/String;Ljava/lang/Runnable;)V
 
     goto :goto_4
 
-    .line 172
+    .line 193
     :cond_b
     const v0, 0x7f0902d7
 
@@ -1473,11 +1514,11 @@
 
     move-result-object v0
 
-    invoke-static {p0, p1, p2}, Lkik/android/chat/vm/profile/gridvm/ac;->a(Lkik/android/chat/vm/profile/gridvm/t;Lcom/kik/core/domain/users/a/c;Lcom/kik/core/domain/a/a/c;)Ljava/lang/Runnable;
+    invoke-static {p0, p1, p2}, Lkik/android/chat/vm/profile/gridvm/ad;->a(Lkik/android/chat/vm/profile/gridvm/t;Lcom/kik/core/domain/users/a/c;Lcom/kik/core/domain/a/a/c;)Ljava/lang/Runnable;
 
     move-result-object v1
 
-    invoke-virtual {v10, v0, v1}, Lkik/android/chat/vm/cq;->a(Ljava/lang/String;Ljava/lang/Runnable;)V
+    invoke-virtual {v10, v0, v1}, Lkik/android/chat/vm/cs;->a(Ljava/lang/String;Ljava/lang/Runnable;)V
 
     goto :goto_5
 .end method
@@ -1486,7 +1527,7 @@
     .locals 1
 
     .prologue
-    .line 46
+    .line 48
     const v0, 0x7f0904ff
 
     invoke-virtual {p0, v0}, Lkik/android/chat/vm/profile/gridvm/t;->a(I)Ljava/lang/String;
@@ -1500,7 +1541,7 @@
     .locals 0
 
     .prologue
-    .line 183
+    .line 204
     invoke-direct {p0, p1, p2}, Lkik/android/chat/vm/profile/gridvm/t;->b(Lcom/kik/core/domain/users/a/c;Lcom/kik/core/domain/a/a/c;)V
 
     return-void
@@ -1510,7 +1551,7 @@
     .locals 1
 
     .prologue
-    .line 46
+    .line 48
     const v0, 0x7f0903fc
 
     invoke-virtual {p0, v0}, Lkik/android/chat/vm/profile/gridvm/t;->a(I)Ljava/lang/String;
@@ -1524,27 +1565,27 @@
     .locals 1
 
     .prologue
-    .line 179
-    .line 3314
+    .line 200
+    .line 13348
     const-string v0, "User Option Ban Clicked"
 
     invoke-virtual {p0, v0, p1, p2}, Lkik/android/chat/vm/profile/gridvm/t;->a(Ljava/lang/String;Lcom/kik/core/domain/users/a/c;Lcom/kik/core/domain/a/a/c;)V
 
-    .line 3315
+    .line 13349
     const/4 v0, 0x1
 
     invoke-direct {p0, v0, p1, p2}, Lkik/android/chat/vm/profile/gridvm/t;->a(ZLcom/kik/core/domain/users/a/c;Lcom/kik/core/domain/a/a/c;)V
 
-    .line 179
+    .line 200
     return-void
 .end method
 
-.method static synthetic f(Lkik/android/chat/vm/profile/gridvm/t;)Lkik/android/chat/vm/aw;
+.method static synthetic f(Lkik/android/chat/vm/profile/gridvm/t;)Lkik/android/chat/vm/ay;
     .locals 1
 
     .prologue
-    .line 46
-    invoke-virtual {p0}, Lkik/android/chat/vm/profile/gridvm/t;->B_()Lkik/android/chat/vm/aw;
+    .line 48
+    invoke-virtual {p0}, Lkik/android/chat/vm/profile/gridvm/t;->F_()Lkik/android/chat/vm/ay;
 
     move-result-object v0
 
@@ -1555,18 +1596,18 @@
     .locals 1
 
     .prologue
-    .line 175
-    .line 4308
+    .line 196
+    .line 14342
     const-string v0, "User Option Remove Clicked"
 
     invoke-virtual {p0, v0, p1, p2}, Lkik/android/chat/vm/profile/gridvm/t;->a(Ljava/lang/String;Lcom/kik/core/domain/users/a/c;Lcom/kik/core/domain/a/a/c;)V
 
-    .line 4309
+    .line 14343
     const/4 v0, 0x0
 
     invoke-direct {p0, v0, p1, p2}, Lkik/android/chat/vm/profile/gridvm/t;->a(ZLcom/kik/core/domain/users/a/c;Lcom/kik/core/domain/a/a/c;)V
 
-    .line 175
+    .line 196
     return-void
 .end method
 
@@ -1575,7 +1616,7 @@
 
     .prologue
     .line 0
-    .line 7421
+    .line 18455
     iget-object v0, p0, Lkik/android/chat/vm/profile/gridvm/t;->i:Lcom/kik/android/Mixpanel;
 
     const-string v1, "Demote Admin Prompt Canceled"
@@ -1602,13 +1643,13 @@
 
     const/4 v4, 0x0
 
-    .line 172
-    .line 5265
+    .line 193
+    .line 15299
     const-string v0, "User Option Promote Clicked"
 
     invoke-virtual {p0, v0, p1, p2}, Lkik/android/chat/vm/profile/gridvm/t;->a(Ljava/lang/String;Lcom/kik/core/domain/users/a/c;Lcom/kik/core/domain/a/a/c;)V
 
-    .line 5266
+    .line 15300
     invoke-interface {p1}, Lcom/kik/core/domain/users/a/c;->b()Ljava/lang/String;
 
     move-result-object v0
@@ -1617,7 +1658,7 @@
 
     move-result-object v0
 
-    .line 5267
+    .line 15301
     new-instance v1, Lkik/android/chat/vm/DialogViewModel$b;
 
     invoke-direct {v1}, Lkik/android/chat/vm/DialogViewModel$b;-><init>()V
@@ -1628,7 +1669,7 @@
 
     aput-object v0, v3, v4
 
-    .line 5268
+    .line 15302
     invoke-virtual {p0, v2, v3}, Lkik/android/chat/vm/profile/gridvm/t;->a(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v2
@@ -1643,7 +1684,7 @@
 
     aput-object v0, v3, v4
 
-    .line 5269
+    .line 15303
     invoke-virtual {p0, v2, v3}, Lkik/android/chat/vm/profile/gridvm/t;->a(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
@@ -1654,12 +1695,12 @@
 
     const v1, 0x7f090441
 
-    .line 5270
+    .line 15304
     invoke-virtual {p0, v1}, Lkik/android/chat/vm/profile/gridvm/t;->a(I)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-static {p0, p1, p2}, Lkik/android/chat/vm/profile/gridvm/w;->a(Lkik/android/chat/vm/profile/gridvm/t;Lcom/kik/core/domain/users/a/c;Lcom/kik/core/domain/a/a/c;)Ljava/lang/Runnable;
+    invoke-static {p0, p1, p2}, Lkik/android/chat/vm/profile/gridvm/x;->a(Lkik/android/chat/vm/profile/gridvm/t;Lcom/kik/core/domain/users/a/c;Lcom/kik/core/domain/a/a/c;)Ljava/lang/Runnable;
 
     move-result-object v2
 
@@ -1669,7 +1710,7 @@
 
     const v1, 0x7f0903d7
 
-    .line 5301
+    .line 15335
     invoke-virtual {p0, v1}, Lkik/android/chat/vm/profile/gridvm/t;->a(I)Ljava/lang/String;
 
     move-result-object v1
@@ -1680,19 +1721,19 @@
 
     move-result-object v0
 
-    .line 5302
+    .line 15336
     invoke-virtual {v0}, Lkik/android/chat/vm/DialogViewModel$b;->a()Lkik/android/chat/vm/DialogViewModel;
 
     move-result-object v0
 
-    .line 5303
-    invoke-virtual {p0}, Lkik/android/chat/vm/profile/gridvm/t;->B_()Lkik/android/chat/vm/aw;
+    .line 15337
+    invoke-virtual {p0}, Lkik/android/chat/vm/profile/gridvm/t;->F_()Lkik/android/chat/vm/ay;
 
     move-result-object v1
 
-    invoke-interface {v1, v0}, Lkik/android/chat/vm/aw;->a(Lkik/android/chat/vm/DialogViewModel;)V
+    invoke-interface {v1, v0}, Lkik/android/chat/vm/ay;->a(Lkik/android/chat/vm/DialogViewModel;)V
 
-    .line 172
+    .line 193
     return-void
 .end method
 
@@ -1704,13 +1745,13 @@
 
     const/4 v4, 0x1
 
-    .line 169
-    .line 6249
+    .line 190
+    .line 16283
     const-string v0, "User Option Demote Clicked"
 
     invoke-virtual {p0, v0, p1, p2}, Lkik/android/chat/vm/profile/gridvm/t;->a(Ljava/lang/String;Lcom/kik/core/domain/users/a/c;Lcom/kik/core/domain/a/a/c;)V
 
-    .line 6250
+    .line 16284
     invoke-interface {p1}, Lcom/kik/core/domain/users/a/c;->b()Ljava/lang/String;
 
     move-result-object v0
@@ -1719,18 +1760,18 @@
 
     move-result-object v0
 
-    .line 6251
+    .line 16285
     new-instance v1, Lkik/android/chat/vm/DialogViewModel$b;
 
     invoke-direct {v1}, Lkik/android/chat/vm/DialogViewModel$b;-><init>()V
 
-    const v2, 0x7f090675
+    const v2, 0x7f09067d
 
     new-array v3, v4, [Ljava/lang/Object;
 
     aput-object v0, v3, v5
 
-    .line 6252
+    .line 16286
     invoke-virtual {p0, v2, v3}, Lkik/android/chat/vm/profile/gridvm/t;->a(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v2
@@ -1745,7 +1786,7 @@
 
     aput-object v0, v3, v5
 
-    .line 6253
+    .line 16287
     invoke-virtual {p0, v2, v3}, Lkik/android/chat/vm/profile/gridvm/t;->a(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
@@ -1756,12 +1797,12 @@
 
     const v1, 0x7f090447
 
-    .line 6254
+    .line 16288
     invoke-virtual {p0, v1}, Lkik/android/chat/vm/profile/gridvm/t;->a(I)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-static {p0, p1, p2}, Lkik/android/chat/vm/profile/gridvm/an;->a(Lkik/android/chat/vm/profile/gridvm/t;Lcom/kik/core/domain/users/a/c;Lcom/kik/core/domain/a/a/c;)Ljava/lang/Runnable;
+    invoke-static {p0, p1, p2}, Lkik/android/chat/vm/profile/gridvm/v;->a(Lkik/android/chat/vm/profile/gridvm/t;Lcom/kik/core/domain/users/a/c;Lcom/kik/core/domain/a/a/c;)Ljava/lang/Runnable;
 
     move-result-object v2
 
@@ -1771,12 +1812,12 @@
 
     const v1, 0x7f0903d7
 
-    .line 6255
+    .line 16289
     invoke-virtual {p0, v1}, Lkik/android/chat/vm/profile/gridvm/t;->a(I)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-static {p0}, Lkik/android/chat/vm/profile/gridvm/v;->a(Lkik/android/chat/vm/profile/gridvm/t;)Ljava/lang/Runnable;
+    invoke-static {p0}, Lkik/android/chat/vm/profile/gridvm/w;->a(Lkik/android/chat/vm/profile/gridvm/t;)Ljava/lang/Runnable;
 
     move-result-object v2
 
@@ -1784,24 +1825,24 @@
 
     move-result-object v0
 
-    .line 6256
+    .line 16290
     invoke-virtual {v0, v4}, Lkik/android/chat/vm/DialogViewModel$b;->a(Z)Lkik/android/chat/vm/DialogViewModel$b;
 
     move-result-object v0
 
-    .line 6257
+    .line 16291
     invoke-virtual {v0}, Lkik/android/chat/vm/DialogViewModel$b;->a()Lkik/android/chat/vm/DialogViewModel;
 
     move-result-object v0
 
-    .line 6259
-    invoke-virtual {p0}, Lkik/android/chat/vm/profile/gridvm/t;->B_()Lkik/android/chat/vm/aw;
+    .line 16293
+    invoke-virtual {p0}, Lkik/android/chat/vm/profile/gridvm/t;->F_()Lkik/android/chat/vm/ay;
 
     move-result-object v1
 
-    invoke-interface {v1, v0}, Lkik/android/chat/vm/aw;->a(Lkik/android/chat/vm/DialogViewModel;)V
+    invoke-interface {v1, v0}, Lkik/android/chat/vm/ay;->a(Lkik/android/chat/vm/DialogViewModel;)V
 
-    .line 6416
+    .line 16450
     iget-object v0, p0, Lkik/android/chat/vm/profile/gridvm/t;->i:Lcom/kik/android/Mixpanel;
 
     const-string v1, "Demote Admin Prompt Shown"
@@ -1816,7 +1857,7 @@
 
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
 
-    .line 169
+    .line 190
     return-void
 .end method
 
@@ -1824,7 +1865,7 @@
     .locals 0
 
     .prologue
-    .line 163
+    .line 184
     invoke-direct {p0, p1, p2}, Lkik/android/chat/vm/profile/gridvm/t;->b(Lcom/kik/core/domain/users/a/c;Lcom/kik/core/domain/a/a/c;)V
 
     return-void
@@ -1834,7 +1875,7 @@
     .locals 0
 
     .prologue
-    .line 156
+    .line 177
     invoke-virtual {p0, p1, p2}, Lkik/android/chat/vm/profile/gridvm/t;->a(Lcom/kik/core/domain/users/a/c;Lcom/kik/core/domain/a/a/c;)V
 
     return-void
@@ -1842,32 +1883,125 @@
 
 
 # virtual methods
-.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
     .locals 2
 
     .prologue
-    .line 74
+    .line 77
     invoke-interface {p1, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/chat/vm/profile/gridvm/t;)V
 
-    .line 75
-    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/profile/gridvm/a;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    .line 78
+    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/profile/gridvm/a;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
-    .line 77
+    .line 80
     iget-object v0, p0, Lkik/android/chat/vm/profile/gridvm/t;->d:Lcom/kik/core/domain/users/a;
 
-    iget-object v1, p0, Lkik/android/chat/vm/profile/gridvm/t;->o:Lcom/kik/core/network/xmpp/jid/a;
+    iget-object v1, p0, Lkik/android/chat/vm/profile/gridvm/t;->p:Lcom/kik/core/network/xmpp/jid/a;
 
     invoke-interface {v0, v1}, Lcom/kik/core/domain/users/a;->a(Lcom/kik/core/network/xmpp/jid/a;)Lrx/d;
 
     move-result-object v0
 
-    iput-object v0, p0, Lkik/android/chat/vm/profile/gridvm/t;->p:Lrx/d;
+    iput-object v0, p0, Lkik/android/chat/vm/profile/gridvm/t;->q:Lrx/d;
 
-    .line 78
+    .line 81
     return-void
 .end method
 
-.method public final aB_()Lrx/d;
+.method public final ai_()Lrx/d;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<",
+            "Lkik/android/chat/vm/cs;",
+            ">;"
+        }
+    .end annotation
+
+    .prologue
+    .line 143
+    iget-object v0, p0, Lkik/android/chat/vm/profile/gridvm/t;->q:Lrx/d;
+
+    invoke-virtual {v0}, Lrx/d;->g()Lrx/d;
+
+    move-result-object v0
+
+    invoke-static {p0}, Lkik/android/chat/vm/profile/gridvm/al;->a(Lkik/android/chat/vm/profile/gridvm/t;)Lrx/functions/b;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lrx/d;->b(Lrx/functions/b;)Lrx/k;
+
+    .line 145
+    iget-object v0, p0, Lkik/android/chat/vm/profile/gridvm/t;->q:Lrx/d;
+
+    iget-object v1, p0, Lkik/android/chat/vm/profile/gridvm/t;->n:Lrx/d;
+
+    invoke-static {p0}, Lkik/android/chat/vm/profile/gridvm/am;->a(Lkik/android/chat/vm/profile/gridvm/t;)Lrx/functions/h;
+
+    move-result-object v2
+
+    invoke-static {v0, v1, v2}, Lrx/d;->b(Lrx/d;Lrx/d;Lrx/functions/h;)Lrx/d;
+
+    move-result-object v0
+
+    .line 208
+    invoke-virtual {v0}, Lrx/d;->g()Lrx/d;
+
+    move-result-object v0
+
+    .line 145
+    return-object v0
+.end method
+
+.method public final aj_()V
+    .locals 4
+
+    .prologue
+    .line 125
+    invoke-virtual {p0}, Lkik/android/chat/vm/profile/gridvm/t;->ad_()Lrx/f/b;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lkik/android/chat/vm/profile/gridvm/t;->n:Lrx/d;
+
+    invoke-virtual {v1}, Lrx/d;->g()Lrx/d;
+
+    move-result-object v1
+
+    iget-object v2, p0, Lkik/android/chat/vm/profile/gridvm/t;->q:Lrx/d;
+
+    invoke-virtual {v2}, Lrx/d;->g()Lrx/d;
+
+    move-result-object v2
+
+    invoke-static {p0}, Lkik/android/chat/vm/profile/gridvm/aj;->a(Lkik/android/chat/vm/profile/gridvm/t;)Lrx/functions/h;
+
+    move-result-object v3
+
+    invoke-static {v1, v2, v3}, Lrx/d;->b(Lrx/d;Lrx/d;Lrx/functions/h;)Lrx/d;
+
+    move-result-object v1
+
+    invoke-static {}, Lkik/android/chat/vm/profile/gridvm/ak;->a()Lrx/functions/b;
+
+    move-result-object v2
+
+    .line 133
+    invoke-virtual {v1, v2}, Lrx/d;->b(Lrx/functions/b;)Lrx/k;
+
+    move-result-object v1
+
+    .line 125
+    invoke-virtual {v0, v1}, Lrx/f/b;->a(Lrx/k;)V
+
+    .line 134
+    return-void
+.end method
+
+.method public final h()Lrx/d;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1880,8 +2014,8 @@
     .end annotation
 
     .prologue
-    .line 83
-    iget-object v0, p0, Lkik/android/chat/vm/profile/gridvm/t;->p:Lrx/d;
+    .line 86
+    iget-object v0, p0, Lkik/android/chat/vm/profile/gridvm/t;->q:Lrx/d;
 
     invoke-static {}, Lkik/android/chat/vm/profile/gridvm/u;->a()Lrx/functions/g;
 
@@ -1894,114 +2028,7 @@
     return-object v0
 .end method
 
-.method public final aD_()Lrx/d;
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/d",
-            "<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
-
-    .prologue
-    .line 95
-    iget-object v0, p0, Lkik/android/chat/vm/profile/gridvm/t;->m:Lrx/d;
-
-    invoke-static {p0}, Lkik/android/chat/vm/profile/gridvm/ah;->a(Lkik/android/chat/vm/profile/gridvm/t;)Lrx/functions/g;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lrx/d;->e(Lrx/functions/g;)Lrx/d;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final ah_()Lrx/d;
-    .locals 3
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/d",
-            "<",
-            "Lkik/android/chat/vm/cq;",
-            ">;"
-        }
-    .end annotation
-
-    .prologue
-    .line 124
-    iget-object v0, p0, Lkik/android/chat/vm/profile/gridvm/t;->p:Lrx/d;
-
-    iget-object v1, p0, Lkik/android/chat/vm/profile/gridvm/t;->m:Lrx/d;
-
-    invoke-static {p0}, Lkik/android/chat/vm/profile/gridvm/ak;->a(Lkik/android/chat/vm/profile/gridvm/t;)Lrx/functions/h;
-
-    move-result-object v2
-
-    invoke-static {v0, v1, v2}, Lrx/d;->b(Lrx/d;Lrx/d;Lrx/functions/h;)Lrx/d;
-
-    move-result-object v0
-
-    .line 187
-    invoke-virtual {v0}, Lrx/d;->g()Lrx/d;
-
-    move-result-object v0
-
-    .line 124
-    return-object v0
-.end method
-
-.method public final ai_()V
-    .locals 4
-
-    .prologue
-    .line 107
-    invoke-virtual {p0}, Lkik/android/chat/vm/profile/gridvm/t;->ab_()Lrx/f/b;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lkik/android/chat/vm/profile/gridvm/t;->m:Lrx/d;
-
-    invoke-virtual {v1}, Lrx/d;->g()Lrx/d;
-
-    move-result-object v1
-
-    iget-object v2, p0, Lkik/android/chat/vm/profile/gridvm/t;->p:Lrx/d;
-
-    invoke-virtual {v2}, Lrx/d;->g()Lrx/d;
-
-    move-result-object v2
-
-    invoke-static {p0}, Lkik/android/chat/vm/profile/gridvm/ai;->a(Lkik/android/chat/vm/profile/gridvm/t;)Lrx/functions/h;
-
-    move-result-object v3
-
-    invoke-static {v1, v2, v3}, Lrx/d;->b(Lrx/d;Lrx/d;Lrx/functions/h;)Lrx/d;
-
-    move-result-object v1
-
-    invoke-static {}, Lkik/android/chat/vm/profile/gridvm/aj;->a()Lrx/functions/b;
-
-    move-result-object v2
-
-    .line 115
-    invoke-virtual {v1, v2}, Lrx/d;->b(Lrx/functions/b;)Lrx/k;
-
-    move-result-object v1
-
-    .line 107
-    invoke-virtual {v0, v1}, Lrx/f/b;->a(Lrx/k;)V
-
-    .line 116
-    return-void
-.end method
-
-.method public final h()Lrx/d;
+.method public final i()Lrx/d;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -2016,19 +2043,34 @@
     .end annotation
 
     .prologue
-    .line 101
-    iget-object v0, p0, Lkik/android/chat/vm/profile/gridvm/t;->h:Lkik/core/interfaces/x;
+    .line 104
+    iget-object v0, p0, Lkik/android/chat/vm/profile/gridvm/t;->h:Lkik/core/interfaces/w;
 
-    iget-object v1, p0, Lkik/android/chat/vm/profile/gridvm/t;->p:Lrx/d;
+    iget-object v1, p0, Lkik/android/chat/vm/profile/gridvm/t;->q:Lrx/d;
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/x;->a(Lrx/d;)Lrx/d;
+    invoke-interface {v0, v1}, Lkik/core/interfaces/w;->a(Lrx/d;)Lrx/d;
 
     move-result-object v0
 
+    new-instance v1, Lkik/android/chat/vm/profile/gridvm/t$1;
+
+    invoke-direct {v1, p0}, Lkik/android/chat/vm/profile/gridvm/t$1;-><init>(Lkik/android/chat/vm/profile/gridvm/t;)V
+
+    .line 105
+    invoke-static {v1}, Lrx/d;->b(Ljava/lang/Object;)Lrx/d;
+
+    move-result-object v1
+
+    .line 10758
+    invoke-static {v1, v0}, Lrx/d;->a(Lrx/d;Lrx/d;)Lrx/d;
+
+    move-result-object v0
+
+    .line 104
     return-object v0
 .end method
 
-.method public final i()Lrx/d;
+.method public final k()Lrx/d;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -2041,10 +2083,37 @@
     .end annotation
 
     .prologue
-    .line 89
-    iget-object v0, p0, Lkik/android/chat/vm/profile/gridvm/t;->m:Lrx/d;
+    .line 92
+    iget-object v0, p0, Lkik/android/chat/vm/profile/gridvm/t;->n:Lrx/d;
 
     invoke-static {p0}, Lkik/android/chat/vm/profile/gridvm/af;->a(Lkik/android/chat/vm/profile/gridvm/t;)Lrx/functions/g;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lrx/d;->e(Lrx/functions/g;)Lrx/d;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final n()Lrx/d;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+
+    .prologue
+    .line 98
+    iget-object v0, p0, Lkik/android/chat/vm/profile/gridvm/t;->n:Lrx/d;
+
+    invoke-static {p0}, Lkik/android/chat/vm/profile/gridvm/ai;->a(Lkik/android/chat/vm/profile/gridvm/t;)Lrx/functions/g;
 
     move-result-object v1
 

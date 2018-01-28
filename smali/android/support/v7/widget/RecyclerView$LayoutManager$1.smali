@@ -43,7 +43,7 @@
     .line 6886
     iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$LayoutManager$1;->a:Landroid/support/v7/widget/RecyclerView$LayoutManager;
 
-    invoke-virtual {v0}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->w()I
+    invoke-virtual {v0}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->y()I
 
     move-result v0
 
@@ -63,7 +63,7 @@
     check-cast v0, Landroid/support/v7/widget/RecyclerView$LayoutParams;
 
     .line 6898
-    invoke-static {p1}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->i(Landroid/view/View;)I
+    invoke-static {p1}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->l(Landroid/view/View;)I
 
     move-result v1
 
@@ -95,13 +95,13 @@
     .line 6891
     iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$LayoutManager$1;->a:Landroid/support/v7/widget/RecyclerView$LayoutManager;
 
-    invoke-virtual {v0}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->u()I
+    invoke-virtual {v0}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->w()I
 
     move-result v0
 
     iget-object v1, p0, Landroid/support/v7/widget/RecyclerView$LayoutManager$1;->a:Landroid/support/v7/widget/RecyclerView$LayoutManager;
 
-    invoke-virtual {v1}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->y()I
+    invoke-virtual {v1}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->A()I
 
     move-result v1
 
@@ -123,7 +123,7 @@
     check-cast v0, Landroid/support/v7/widget/RecyclerView$LayoutParams;
 
     .line 6905
-    invoke-static {p1}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->k(Landroid/view/View;)I
+    invoke-static {p1}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->n(Landroid/view/View;)I
 
     move-result v1
 

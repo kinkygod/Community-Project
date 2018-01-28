@@ -45,44 +45,37 @@
 
     .prologue
     .line 0
-    check-cast p1, Lkik/core/chat/profile/EmojiStatus;
+    check-cast p1, Ljava/lang/Boolean;
 
-    check-cast p2, Lcom/kik/core/domain/users/a/c;
+    check-cast p2, Ljava/lang/Boolean;
 
-    .line 1444
-    if-eqz p1, :cond_0
-
-    invoke-virtual {p1}, Lkik/core/chat/profile/EmojiStatus;->b()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    invoke-interface {p2}, Lcom/kik/core/domain/users/a/c;->h()Z
+    .line 1058
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    invoke-interface {p2}, Lcom/kik/core/domain/users/a/c;->i()Z
+    .line 1059
+    sget-object v0, Lkik/android/chat/vm/IBadgeViewModel$BadgeType;->BADGE_TYPE_NONE:Lkik/android/chat/vm/IBadgeViewModel$BadgeType;
+
+    .line 1061
+    :goto_0
+    return-object v0
+
+    :cond_0
+    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_1
 
-    const/4 v0, 0x1
+    sget-object v0, Lkik/android/chat/vm/IBadgeViewModel$BadgeType;->BADGE_TYPE_TRUSTED_BOT:Lkik/android/chat/vm/IBadgeViewModel$BadgeType;
 
-    :goto_0
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    goto :goto_0
 
-    move-result-object v0
-
-    .line 0
-    return-object v0
-
-    .line 1444
-    :cond_0
-    const/4 v0, 0x0
+    :cond_1
+    sget-object v0, Lkik/android/chat/vm/IBadgeViewModel$BadgeType;->BADGE_TYPE_ANY_BOT:Lkik/android/chat/vm/IBadgeViewModel$BadgeType;
 
     goto :goto_0
 .end method

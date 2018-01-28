@@ -17,7 +17,7 @@
     value = {
         "Lcom/kik/events/k",
         "<",
-        "Lkik/core/datatypes/ac;",
+        "Lkik/core/datatypes/ab;",
         ">;"
     }
 .end annotation
@@ -47,16 +47,16 @@
 
     .prologue
     .line 152
-    check-cast p1, Lkik/core/datatypes/ac;
+    check-cast p1, Lkik/core/datatypes/ab;
 
     .line 1156
     iget-object v0, p0, Lkik/android/chat/fragment/settings/EditNameFragment$1;->a:Lkik/android/chat/fragment/settings/EditNameFragment;
 
-    iget-object v0, v0, Lkik/android/chat/fragment/settings/EditNameFragment;->b:Lkik/core/interfaces/w;
+    iget-object v0, v0, Lkik/android/chat/fragment/settings/EditNameFragment;->b:Lkik/core/interfaces/v;
 
-    iget-object v1, p1, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
+    iget-object v1, p1, Lkik/core/datatypes/ab;->c:Ljava/lang/String;
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/w;->a(Ljava/lang/String;)Lkik/core/datatypes/l;
+    invoke-interface {v0, v1}, Lkik/core/interfaces/v;->a(Ljava/lang/String;)Lkik/core/datatypes/l;
 
     move-result-object v2
 
@@ -64,19 +64,19 @@
     if-eqz v2, :cond_0
 
     .line 1158
-    iget-object v0, p1, Lkik/core/datatypes/ac;->d:Ljava/lang/String;
+    iget-object v0, p1, Lkik/core/datatypes/ab;->d:Ljava/lang/String;
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p1, Lkik/core/datatypes/ac;->d:Ljava/lang/String;
+    iget-object v0, p1, Lkik/core/datatypes/ab;->d:Ljava/lang/String;
 
     .line 1159
     :goto_0
-    iget-object v1, p1, Lkik/core/datatypes/ac;->e:Ljava/lang/String;
+    iget-object v1, p1, Lkik/core/datatypes/ab;->e:Ljava/lang/String;
 
     if-eqz v1, :cond_2
 
-    iget-object v1, p1, Lkik/core/datatypes/ac;->e:Ljava/lang/String;
+    iget-object v1, p1, Lkik/core/datatypes/ab;->e:Ljava/lang/String;
 
     .line 1160
     :goto_1
@@ -112,9 +112,9 @@
     .line 1162
     iget-object v0, p0, Lkik/android/chat/fragment/settings/EditNameFragment$1;->a:Lkik/android/chat/fragment/settings/EditNameFragment;
 
-    iget-object v0, v0, Lkik/android/chat/fragment/settings/EditNameFragment;->b:Lkik/core/interfaces/w;
+    iget-object v0, v0, Lkik/android/chat/fragment/settings/EditNameFragment;->b:Lkik/core/interfaces/v;
 
-    invoke-interface {v0, v2}, Lkik/core/interfaces/w;->a(Lkik/core/datatypes/l;)V
+    invoke-interface {v0, v2}, Lkik/core/interfaces/v;->a(Lkik/core/datatypes/l;)V
 
     .line 1164
     :cond_0
@@ -126,7 +126,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f04017b
+    const v2, 0x7f04017e
 
     const-wide/16 v4, 0x3e8
 

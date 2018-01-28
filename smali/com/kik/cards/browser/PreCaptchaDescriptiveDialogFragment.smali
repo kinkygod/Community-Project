@@ -174,7 +174,7 @@
 
     .prologue
     .line 67
-    const v0, 0x7f02026d
+    const v0, 0x7f020255
 
     return v0
 .end method
@@ -255,7 +255,7 @@
     iget-object v2, p0, Lcom/kik/cards/browser/PreCaptchaDescriptiveDialogFragment;->b:Lcom/kik/cards/browser/PreCaptchaDescriptiveDialogFragment$a;
 
     .line 47
-    invoke-virtual {v2}, Lcom/kik/cards/browser/PreCaptchaDescriptiveDialogFragment$a;->c_()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/kik/cards/browser/PreCaptchaDescriptiveDialogFragment$a;->d_()Ljava/lang/String;
 
     move-result-object v2
 

@@ -181,29 +181,29 @@
 
 .field public static final abc_vector_test:I = 0x7f020052
 
-.field public static final notification_action_background:I = 0x7f020306
+.field public static final notification_action_background:I = 0x7f0202e9
 
-.field public static final notification_bg:I = 0x7f020307
+.field public static final notification_bg:I = 0x7f0202ea
 
-.field public static final notification_bg_low:I = 0x7f020308
+.field public static final notification_bg_low:I = 0x7f0202eb
 
-.field public static final notification_bg_low_normal:I = 0x7f020309
+.field public static final notification_bg_low_normal:I = 0x7f0202ec
 
-.field public static final notification_bg_low_pressed:I = 0x7f02030a
+.field public static final notification_bg_low_pressed:I = 0x7f0202ed
 
-.field public static final notification_bg_normal:I = 0x7f02030b
+.field public static final notification_bg_normal:I = 0x7f0202ee
 
-.field public static final notification_bg_normal_pressed:I = 0x7f02030c
+.field public static final notification_bg_normal_pressed:I = 0x7f0202ef
 
-.field public static final notification_icon_background:I = 0x7f02030d
+.field public static final notification_icon_background:I = 0x7f0202f0
 
-.field public static final notification_template_icon_bg:I = 0x7f0203cd
+.field public static final notification_template_icon_bg:I = 0x7f0203b4
 
-.field public static final notification_template_icon_low_bg:I = 0x7f0203ce
+.field public static final notification_template_icon_low_bg:I = 0x7f0203b5
 
-.field public static final notification_tile_bg:I = 0x7f02030e
+.field public static final notification_tile_bg:I = 0x7f0202f1
 
-.field public static final notify_panel_notification_icon_bg:I = 0x7f02030f
+.field public static final notify_panel_notification_icon_bg:I = 0x7f0202f2
 
 
 # direct methods

@@ -36,7 +36,7 @@
     .locals 0
 
     .prologue
-    .line 342
+    .line 354
     iput-object p1, p0, Lcom/kik/cards/web/CardsWebViewFragment$42;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -50,13 +50,13 @@
     .locals 3
 
     .prologue
-    .line 342
+    .line 354
     check-cast p2, Landroid/os/Message;
 
-    .line 1346
+    .line 1358
     sput-object p2, Lcom/kik/cards/web/CardsWebViewFragment;->c:Landroid/os/Message;
 
-    .line 1348
+    .line 1360
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$42;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
     new-instance v1, Lcom/kik/cards/web/CardsWebViewFragment$a;
@@ -65,7 +65,7 @@
 
     iget-object v2, p0, Lcom/kik/cards/web/CardsWebViewFragment$42;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
-    .line 1349
+    .line 1361
     invoke-virtual {v2}, Lcom/kik/cards/web/CardsWebViewFragment;->getUrl()Ljava/lang/String;
 
     move-result-object v2
@@ -74,9 +74,9 @@
 
     move-result-object v1
 
-    .line 1348
+    .line 1360
     invoke-virtual {v0, v1}, Lcom/kik/cards/web/CardsWebViewFragment;->startFragmentForResult(Lkik/android/util/ad;)Lcom/kik/events/Promise;
 
-    .line 342
+    .line 354
     return-void
 .end method

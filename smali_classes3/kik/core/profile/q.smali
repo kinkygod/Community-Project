@@ -53,3 +53,22 @@
     .line 15
     return-object v0
 .end method
+
+.method public final a(IILjava/lang/Object;)Lrx/d;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(IITI;)",
+            "Lrx/d",
+            "<TI;>;"
+        }
+    .end annotation
+
+    .prologue
+    .line 21
+    invoke-static {p3}, Lrx/d;->b(Ljava/lang/Object;)Lrx/d;
+
+    move-result-object v0
+
+    return-object v0
+.end method

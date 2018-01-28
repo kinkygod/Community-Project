@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/kik/entity/model/ElementCommon$o;
+.implements Lcom/kik/entity/model/ElementCommon$q;
 
 
 # annotations
@@ -22,7 +22,7 @@
         "<",
         "Lcom/kik/entity/model/ElementCommon$UsernameElement$a;",
         ">;",
-        "Lcom/kik/entity/model/ElementCommon$o;"
+        "Lcom/kik/entity/model/ElementCommon$q;"
     }
 .end annotation
 

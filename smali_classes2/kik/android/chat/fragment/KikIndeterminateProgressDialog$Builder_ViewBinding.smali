@@ -22,7 +22,7 @@
     iput-object p1, p0, Lkik/android/chat/fragment/KikIndeterminateProgressDialog$Builder_ViewBinding;->a:Lkik/android/chat/fragment/KikIndeterminateProgressDialog$Builder;
 
     .line 23
-    const v0, 0x7f1001c0
+    const v0, 0x7f1001c1
 
     const-string v1, "field \'_progressView\'"
 
@@ -37,7 +37,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/KikIndeterminateProgressDialog$Builder;->_progressView:Lcom/github/rahatarmanahmed/cpv/CircularProgressView;
 
     .line 24
-    const v0, 0x7f1001c1
+    const v0, 0x7f1001c2
 
     const-string v1, "field \'_text\'"
 

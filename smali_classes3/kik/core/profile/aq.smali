@@ -2,7 +2,7 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lrx/functions/h;
+.implements Lrx/functions/g;
 
 
 # static fields
@@ -30,7 +30,7 @@
     return-void
 .end method
 
-.method public static a()Lrx/functions/h;
+.method public static a()Lrx/functions/g;
     .locals 1
 
     sget-object v0, Lkik/core/profile/aq;->a:Lkik/core/profile/aq;
@@ -40,38 +40,15 @@
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final call(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     .prologue
-    .line 0
-    check-cast p1, Lkik/core/datatypes/s;
-
-    check-cast p2, Lcom/google/common/base/Optional;
-
-    .line 1074
-    if-eqz p1, :cond_0
-
-    invoke-virtual {p2}, Lcom/google/common/base/Optional;->isPresent()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 1075
-    invoke-virtual {p2}, Lcom/google/common/base/Optional;->get()Ljava/lang/Object;
+    .line 1071
+    invoke-static {}, Lcom/google/common/base/Optional;->absent()Lcom/google/common/base/Optional;
 
     move-result-object v0
 
-    check-cast v0, Lcom/kik/core/domain/users/a/d;
-
-    invoke-interface {v0}, Lcom/kik/core/domain/users/a/d;->a()Lkik/core/chat/profile/EmojiStatus;
-
-    move-result-object v0
-
-    invoke-virtual {p1, v0}, Lkik/core/datatypes/s;->a(Lkik/core/chat/profile/EmojiStatus;)V
-
     .line 0
-    :cond_0
-    return-object p1
+    return-object v0
 .end method

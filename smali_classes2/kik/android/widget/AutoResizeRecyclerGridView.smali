@@ -89,7 +89,7 @@
     :array_0
     .array-data 4
         0x1010117
-        0x7f0100dd
+        0x7f0100df
     .end array-data
 .end method
 

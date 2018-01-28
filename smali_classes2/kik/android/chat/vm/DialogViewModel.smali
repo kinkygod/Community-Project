@@ -190,7 +190,7 @@
 
 
 # virtual methods
-.method public final A_()Lkik/android/chat/vm/DialogViewModel$DialogStyle;
+.method public final E_()Lkik/android/chat/vm/DialogViewModel$DialogStyle;
     .locals 1
 
     .prologue
@@ -200,7 +200,7 @@
     return-object v0
 .end method
 
-.method public D_()Ljava/lang/String;
+.method public H_()Ljava/lang/String;
     .locals 1
 
     .prologue

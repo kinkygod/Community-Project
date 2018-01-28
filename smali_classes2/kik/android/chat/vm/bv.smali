@@ -2,50 +2,42 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lrx/h$a;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field private final a:Lkik/android/chat/vm/bu;
-
-.field private final b:Lkik/android/chat/vm/IShareUsernameViewModel;
+.field private final a:Lkik/android/chat/vm/bt;
 
 
 # direct methods
-.method private constructor <init>(Lkik/android/chat/vm/bu;Lkik/android/chat/vm/IShareUsernameViewModel;)V
+.method private constructor <init>(Lkik/android/chat/vm/bt;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lkik/android/chat/vm/bv;->a:Lkik/android/chat/vm/bu;
-
-    iput-object p2, p0, Lkik/android/chat/vm/bv;->b:Lkik/android/chat/vm/IShareUsernameViewModel;
+    iput-object p1, p0, Lkik/android/chat/vm/bv;->a:Lkik/android/chat/vm/bt;
 
     return-void
 .end method
 
-.method public static a(Lkik/android/chat/vm/bu;Lkik/android/chat/vm/IShareUsernameViewModel;)Lrx/h$a;
+.method public static a(Lkik/android/chat/vm/bt;)Ljava/lang/Runnable;
     .locals 1
 
     new-instance v0, Lkik/android/chat/vm/bv;
 
-    invoke-direct {v0, p0, p1}, Lkik/android/chat/vm/bv;-><init>(Lkik/android/chat/vm/bu;Lkik/android/chat/vm/IShareUsernameViewModel;)V
+    invoke-direct {v0, p0}, Lkik/android/chat/vm/bv;-><init>(Lkik/android/chat/vm/bt;)V
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public final call(Ljava/lang/Object;)V
-    .locals 2
+.method public final run()V
+    .locals 1
 
-    iget-object v0, p0, Lkik/android/chat/vm/bv;->a:Lkik/android/chat/vm/bu;
+    iget-object v0, p0, Lkik/android/chat/vm/bv;->a:Lkik/android/chat/vm/bt;
 
-    iget-object v1, p0, Lkik/android/chat/vm/bv;->b:Lkik/android/chat/vm/IShareUsernameViewModel;
-
-    check-cast p1, Lrx/i;
-
-    invoke-static {v0, v1, p1}, Lkik/android/chat/vm/bu;->a(Lkik/android/chat/vm/bu;Lkik/android/chat/vm/IShareUsernameViewModel;Lrx/i;)V
+    invoke-static {v0}, Lkik/android/chat/vm/bt;->a(Lkik/android/chat/vm/bt;)V
 
     return-void
 .end method

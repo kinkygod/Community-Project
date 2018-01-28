@@ -37,7 +37,7 @@
     .locals 0
 
     .prologue
-    .line 823
+    .line 810
     iput-object p1, p0, Lkik/core/profile/v$16;->a:Lkik/core/profile/v;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -51,14 +51,14 @@
     .locals 1
 
     .prologue
-    .line 823
+    .line 810
     check-cast p1, Lkik/core/net/outgoing/GetContactInfoRequest;
 
-    .line 1827
+    .line 1814
     invoke-virtual {p1}, Lkik/core/net/outgoing/GetContactInfoRequest;->getContact()Lkik/core/datatypes/l;
 
     move-result-object v0
 
-    .line 823
+    .line 810
     return-object v0
 .end method

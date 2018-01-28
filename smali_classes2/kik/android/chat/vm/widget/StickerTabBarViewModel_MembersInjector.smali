@@ -3,16 +3,16 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/b;
+.implements Ldagger/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/b",
+        "Ldagger/b",
         "<",
-        "Lkik/android/chat/vm/widget/bp;",
+        "Lkik/android/chat/vm/widget/bq;",
         ">;"
     }
 .end annotation
@@ -28,7 +28,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ac;",
+            "Lkik/core/interfaces/ab;",
             ">;"
         }
     .end annotation
@@ -69,7 +69,7 @@
             "(",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ac;",
+            "Lkik/core/interfaces/ab;",
             ">;)V"
         }
     .end annotation
@@ -99,18 +99,18 @@
     return-void
 .end method
 
-.method public static a(Ljavax/inject/Provider;)La/b;
+.method public static a(Ljavax/inject/Provider;)Ldagger/b;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ac;",
+            "Lkik/core/interfaces/ab;",
             ">;)",
-            "La/b",
+            "Ldagger/b",
             "<",
-            "Lkik/android/chat/vm/widget/bp;",
+            "Lkik/android/chat/vm/widget/bq;",
             ">;"
         }
     .end annotation
@@ -126,12 +126,12 @@
 
 
 # virtual methods
-.method public final synthetic a(Ljava/lang/Object;)V
+.method public final synthetic injectMembers(Ljava/lang/Object;)V
     .locals 2
 
     .prologue
     .line 8
-    check-cast p1, Lkik/android/chat/vm/widget/bp;
+    check-cast p1, Lkik/android/chat/vm/widget/bq;
 
     .line 1028
     if-nez p1, :cond_0
@@ -153,9 +153,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/interfaces/ac;
+    check-cast v0, Lkik/core/interfaces/ab;
 
-    iput-object v0, p1, Lkik/android/chat/vm/widget/bp;->a:Lkik/core/interfaces/ac;
+    iput-object v0, p1, Lkik/android/chat/vm/widget/bq;->a:Lkik/core/interfaces/ab;
 
     .line 8
     return-void

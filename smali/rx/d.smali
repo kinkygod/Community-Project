@@ -930,7 +930,7 @@
 
     .line 10336
     :cond_1
-    invoke-virtual {p0}, Lrx/j;->aV_()V
+    invoke-virtual {p0}, Lrx/j;->aR_()V
 
     .line 10343
     instance-of v0, p0, Lrx/c/c;
@@ -1918,7 +1918,7 @@
     .prologue
     .line 10254
     :try_start_0
-    invoke-virtual {p1}, Lrx/j;->aV_()V
+    invoke-virtual {p1}, Lrx/j;->aR_()V
 
     .line 10256
     iget-object v0, p0, Lrx/d;->a:Lrx/d$a;

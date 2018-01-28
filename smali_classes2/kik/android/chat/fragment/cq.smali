@@ -2,7 +2,7 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Lkik/android/widget/ContactSearchView$a;
 
 
 # instance fields
@@ -20,7 +20,7 @@
     return-void
 .end method
 
-.method public static a(Lkik/android/chat/fragment/KikMultiselectContactsListFragment;)Ljava/lang/Runnable;
+.method public static a(Lkik/android/chat/fragment/KikMultiselectContactsListFragment;)Lkik/android/widget/ContactSearchView$a;
     .locals 1
 
     new-instance v0, Lkik/android/chat/fragment/cq;
@@ -32,12 +32,12 @@
 
 
 # virtual methods
-.method public final run()V
+.method public final a(Lkik/core/datatypes/l;)V
     .locals 1
 
     iget-object v0, p0, Lkik/android/chat/fragment/cq;->a:Lkik/android/chat/fragment/KikMultiselectContactsListFragment;
 
-    invoke-static {v0}, Lkik/android/chat/fragment/KikMultiselectContactsListFragment;->a(Lkik/android/chat/fragment/KikMultiselectContactsListFragment;)V
+    invoke-static {v0, p1}, Lkik/android/chat/fragment/KikMultiselectContactsListFragment;->b(Lkik/android/chat/fragment/KikMultiselectContactsListFragment;Lkik/core/datatypes/l;)V
 
     return-void
 .end method

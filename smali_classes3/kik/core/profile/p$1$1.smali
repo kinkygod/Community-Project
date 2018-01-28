@@ -53,7 +53,7 @@
     .line 46
     iget-object v0, p0, Lkik/core/profile/p$1$1;->b:Lkik/core/profile/p$1;
 
-    iget-object v1, v0, Lkik/core/profile/p$1;->a:Lkik/core/interfaces/ak;
+    iget-object v1, v0, Lkik/core/profile/p$1;->a:Lkik/core/interfaces/aj;
 
     iget-object v0, p0, Lkik/core/profile/p$1$1;->a:Lkik/core/net/outgoing/PreloginReregistrationRequest;
 
@@ -63,7 +63,7 @@
 
     iget-object v0, p0, Lkik/core/profile/p$1$1;->a:Lkik/core/net/outgoing/PreloginReregistrationRequest;
 
-    invoke-virtual {v0}, Lkik/core/net/outgoing/PreloginReregistrationRequest;->getUserProfile()Lkik/core/datatypes/ac;
+    invoke-virtual {v0}, Lkik/core/net/outgoing/PreloginReregistrationRequest;->getUserProfile()Lkik/core/datatypes/ab;
 
     move-result-object v3
 
@@ -88,7 +88,7 @@
 
     move-result-object v4
 
-    invoke-interface {v1, v2, v3, v0, v4}, Lkik/core/interfaces/ak;->a(Ljava/lang/String;Lkik/core/datatypes/ac;ZLcom/kik/abtesting/rpc/AbService$GetExperimentsResponse;)V
+    invoke-interface {v1, v2, v3, v0, v4}, Lkik/core/interfaces/aj;->a(Ljava/lang/String;Lkik/core/datatypes/ab;ZLcom/kik/abtesting/rpc/AbService$GetExperimentsResponse;)V
 
     .line 47
     return-void

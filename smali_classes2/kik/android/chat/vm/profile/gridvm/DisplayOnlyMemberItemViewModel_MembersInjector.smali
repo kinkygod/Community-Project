@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/b;
+.implements Ldagger/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/b",
+        "Ldagger/b",
         "<",
         "Lkik/android/chat/vm/profile/gridvm/n;",
         ">;"
@@ -61,7 +61,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/x",
+            "Lkik/core/interfaces/w",
             "<",
             "Landroid/graphics/Bitmap;",
             ">;>;"
@@ -116,7 +116,7 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/x",
+            "Lkik/core/interfaces/w",
             "<",
             "Landroid/graphics/Bitmap;",
             ">;>;)V"
@@ -199,7 +199,7 @@
     return-void
 .end method
 
-.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)La/b;
+.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -218,11 +218,11 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/x",
+            "Lkik/core/interfaces/w",
             "<",
             "Landroid/graphics/Bitmap;",
             ">;>;)",
-            "La/b",
+            "Ldagger/b",
             "<",
             "Lkik/android/chat/vm/profile/gridvm/n;",
             ">;"
@@ -240,7 +240,7 @@
 
 
 # virtual methods
-.method public final synthetic a(Ljava/lang/Object;)V
+.method public final synthetic injectMembers(Ljava/lang/Object;)V
     .locals 2
 
     .prologue
@@ -305,9 +305,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/interfaces/x;
+    check-cast v0, Lkik/core/interfaces/w;
 
-    iput-object v0, p1, Lkik/android/chat/vm/profile/gridvm/n;->e:Lkik/core/interfaces/x;
+    iput-object v0, p1, Lkik/android/chat/vm/profile/gridvm/n;->e:Lkik/core/interfaces/w;
 
     .line 1061
     iget-object v0, p0, Lkik/android/chat/vm/profile/gridvm/DisplayOnlyMemberItemViewModel_MembersInjector;->c:Ljavax/inject/Provider;

@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 132
+    .line 357
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -38,10 +38,10 @@
     .locals 0
 
     .prologue
-    .line 135
+    .line 360
     iput-object p1, p0, Lkik/android/e/ba$b;->a:Lkik/android/chat/vm/messaging/IContentMessageViewModel;
 
-    .line 136
+    .line 361
     if-nez p1, :cond_0
 
     const/4 p0, 0x0
@@ -54,11 +54,11 @@
     .locals 1
 
     .prologue
-    .line 140
+    .line 365
     iget-object v0, p0, Lkik/android/e/ba$b;->a:Lkik/android/chat/vm/messaging/IContentMessageViewModel;
 
-    invoke-interface {v0}, Lkik/android/chat/vm/messaging/IContentMessageViewModel;->aO()V
+    invoke-interface {v0}, Lkik/android/chat/vm/messaging/IContentMessageViewModel;->aY()V
 
-    .line 141
+    .line 366
     return-void
 .end method

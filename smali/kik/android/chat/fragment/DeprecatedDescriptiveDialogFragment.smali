@@ -67,7 +67,7 @@
     .line 56
     iget-object v0, p0, Lkik/android/chat/fragment/DeprecatedDescriptiveDialogFragment;->b:Lkik/android/chat/fragment/DeprecatedDescriptiveDialogFragment$a;
 
-    invoke-virtual {v0}, Lkik/android/chat/fragment/DeprecatedDescriptiveDialogFragment$a;->h_()Ljava/lang/String;
+    invoke-virtual {v0}, Lkik/android/chat/fragment/DeprecatedDescriptiveDialogFragment$a;->i_()Ljava/lang/String;
 
     move-result-object v0
 
@@ -79,7 +79,7 @@
 
     .prologue
     .line 62
-    const v0, 0x7f02026f
+    const v0, 0x7f020257
 
     return v0
 .end method

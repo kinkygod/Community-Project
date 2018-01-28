@@ -46,7 +46,7 @@
     throw v0
 .end method
 
-.method public final a(Lkik/android/chat/vm/aw;)Lkik/android/chat/fragment/KikGranReportDialogFragment$a;
+.method public final a(Lkik/android/chat/vm/ay;)Lkik/android/chat/fragment/KikGranReportDialogFragment$a;
     .locals 1
 
     .prologue
@@ -55,13 +55,13 @@
 
     check-cast v0, Lkik/android/chat/fragment/KikGranReportDialogFragment;
 
-    invoke-static {v0, p1}, Lkik/android/chat/fragment/KikGranReportDialogFragment;->a(Lkik/android/chat/fragment/KikGranReportDialogFragment;Lkik/android/chat/vm/aw;)Lkik/android/chat/vm/aw;
+    invoke-static {v0, p1}, Lkik/android/chat/fragment/KikGranReportDialogFragment;->a(Lkik/android/chat/fragment/KikGranReportDialogFragment;Lkik/android/chat/vm/ay;)Lkik/android/chat/vm/ay;
 
     .line 131
     return-object p0
 .end method
 
-.method public final a(Lkik/android/chat/vm/bc;)Lkik/android/chat/fragment/KikGranReportDialogFragment$a;
+.method public final a(Lkik/android/chat/vm/be;)Lkik/android/chat/fragment/KikGranReportDialogFragment$a;
     .locals 1
 
     .prologue
@@ -71,7 +71,7 @@
     check-cast v0, Lkik/android/chat/fragment/KikGranReportDialogFragment;
 
     .line 124
-    invoke-static {v0, p1}, Lkik/android/chat/fragment/KikGranReportDialogFragment;->a(Lkik/android/chat/fragment/KikGranReportDialogFragment;Lkik/android/chat/vm/bc;)Lkik/android/chat/vm/bc;
+    invoke-static {v0, p1}, Lkik/android/chat/fragment/KikGranReportDialogFragment;->a(Lkik/android/chat/fragment/KikGranReportDialogFragment;Lkik/android/chat/vm/be;)Lkik/android/chat/vm/be;
 
     .line 125
     return-object p0

@@ -181,15 +181,15 @@
 
     iget-object v0, v0, Lkik/android/chat/fragment/ScanCodeTabFragment;->_metricsService:Lcom/kik/metrics/c/d;
 
-    invoke-static {}, Lcom/kik/metrics/b/ab;->b()Lcom/kik/metrics/b/ab$a;
+    invoke-static {}, Lcom/kik/metrics/b/ad;->b()Lcom/kik/metrics/b/ad$a;
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lcom/kik/metrics/b/ab$a;->a()Lcom/kik/metrics/b/ab;
+    invoke-virtual {v2}, Lcom/kik/metrics/b/ad$a;->a()Lcom/kik/metrics/b/ad;
 
     move-result-object v2
 
-    invoke-virtual {v0, v2}, Lcom/kik/metrics/c/d;->a(Lcom/kik/metrics/b/s;)V
+    invoke-virtual {v0, v2}, Lcom/kik/metrics/c/d;->a(Lcom/kik/metrics/b/t;)V
 
     .line 1213
     iget-object v0, p0, Lkik/android/chat/fragment/ScanCodeTabFragment$CustomOnPageChangeListener;->c:Lkik/android/chat/fragment/ScanCodeTabFragment;
@@ -343,15 +343,15 @@
 
     iget-object v2, v2, Lkik/android/chat/fragment/ScanCodeTabFragment;->_metricsService:Lcom/kik/metrics/c/d;
 
-    invoke-static {}, Lcom/kik/metrics/b/ac;->b()Lcom/kik/metrics/b/ac$a;
+    invoke-static {}, Lcom/kik/metrics/b/ae;->b()Lcom/kik/metrics/b/ae$a;
 
     move-result-object v3
 
-    invoke-virtual {v3}, Lcom/kik/metrics/b/ac$a;->a()Lcom/kik/metrics/b/ac;
+    invoke-virtual {v3}, Lcom/kik/metrics/b/ae$a;->a()Lcom/kik/metrics/b/ae;
 
     move-result-object v3
 
-    invoke-virtual {v2, v3}, Lcom/kik/metrics/c/d;->a(Lcom/kik/metrics/b/s;)V
+    invoke-virtual {v2, v3}, Lcom/kik/metrics/c/d;->a(Lcom/kik/metrics/b/t;)V
 
     .line 2195
     :cond_7

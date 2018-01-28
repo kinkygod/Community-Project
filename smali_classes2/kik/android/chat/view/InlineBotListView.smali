@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private a:Lcom/kik/view/adapters/p;
+.field private a:Lcom/kik/view/adapters/r;
 
 .field private b:Z
 
@@ -19,14 +19,14 @@
     .locals 2
 
     .prologue
-    .line 30
+    .line 31
     const/4 v0, 0x0
 
     const/4 v1, 0x0
 
     invoke-direct {p0, p1, v0, v1}, Lkik/android/chat/view/InlineBotListView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 31
+    .line 32
     return-void
 .end method
 
@@ -34,12 +34,12 @@
     .locals 1
 
     .prologue
-    .line 35
+    .line 36
     const/4 v0, 0x0
 
     invoke-direct {p0, p1, p2, v0}, Lkik/android/chat/view/InlineBotListView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 36
+    .line 37
     return-void
 .end method
 
@@ -47,10 +47,10 @@
     .locals 0
 
     .prologue
-    .line 40
+    .line 41
     invoke-direct {p0, p1, p2, p3}, Lkik/android/widget/TransparentListView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 41
+    .line 42
     return-void
 .end method
 
@@ -60,20 +60,20 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 148
+    .line 149
     invoke-direct {p0, p1}, Lkik/android/chat/view/InlineBotListView;->b(I)I
 
     move-result v1
 
-    .line 149
+    .line 150
     invoke-virtual {p0}, Lkik/android/chat/view/InlineBotListView;->getMeasuredHeight()I
 
     move-result v0
 
-    .line 150
+    .line 151
     if-le v1, v0, :cond_1
 
-    .line 151
+    .line 152
     const-wide/16 v4, 0x64
 
     const-wide/16 v6, 0x0
@@ -82,23 +82,23 @@
 
     move-object v3, v2
 
-    invoke-static/range {v0 .. v7}, Lkik/android/util/ca;->a(Landroid/view/View;ILandroid/animation/ValueAnimator$AnimatorUpdateListener;Landroid/animation/Animator$AnimatorListener;JJ)Landroid/animation/Animator;
+    invoke-static/range {v0 .. v7}, Lkik/android/util/cb;->a(Landroid/view/View;ILandroid/animation/ValueAnimator$AnimatorUpdateListener;Landroid/animation/Animator$AnimatorListener;JJ)Landroid/animation/Animator;
 
     move-result-object v0
 
     invoke-virtual {v0}, Landroid/animation/Animator;->start()V
 
-    .line 156
+    .line 157
     :cond_0
     :goto_0
     return-void
 
-    .line 153
+    .line 154
     :cond_1
     if-ge v1, v0, :cond_0
 
-    .line 154
-    invoke-static {p0, v1, v2}, Lkik/android/util/ca;->a(Landroid/view/View;ILandroid/animation/AnimatorListenerAdapter;)Landroid/animation/ValueAnimator;
+    .line 155
+    invoke-static {p0, v1, v2}, Lkik/android/util/cb;->a(Landroid/view/View;ILandroid/animation/AnimatorListenerAdapter;)Landroid/animation/ValueAnimator;
 
     move-result-object v0
 
@@ -107,44 +107,44 @@
     goto :goto_0
 .end method
 
-.method private a(Lcom/kik/view/adapters/BotsAdapter$State;)V
+.method private a(Lcom/kik/view/adapters/AbstractBotsAdapter$State;)V
     .locals 1
 
     .prologue
-    .line 128
+    .line 129
     const/high16 v0, 0x3f800000    # 1.0f
 
     invoke-virtual {p0, v0}, Lkik/android/chat/view/InlineBotListView;->setAlpha(F)V
 
-    .line 129
-    invoke-static {p0, p1}, Lkik/android/chat/view/y;->a(Lkik/android/chat/view/InlineBotListView;Lcom/kik/view/adapters/BotsAdapter$State;)Ljava/lang/Runnable;
+    .line 130
+    invoke-static {p0, p1}, Lkik/android/chat/view/y;->a(Lkik/android/chat/view/InlineBotListView;Lcom/kik/view/adapters/AbstractBotsAdapter$State;)Ljava/lang/Runnable;
 
     move-result-object v0
 
     invoke-virtual {p0, v0}, Lkik/android/chat/view/InlineBotListView;->post(Ljava/lang/Runnable;)Z
 
-    .line 133
+    .line 134
     invoke-direct {p0}, Lkik/android/chat/view/InlineBotListView;->h()V
 
-    .line 134
+    .line 135
     return-void
 .end method
 
-.method static synthetic a(Lkik/android/chat/view/InlineBotListView;Lcom/kik/view/adapters/BotsAdapter$State;)V
+.method static synthetic a(Lkik/android/chat/view/InlineBotListView;Lcom/kik/view/adapters/AbstractBotsAdapter$State;)V
     .locals 1
 
     .prologue
-    .line 130
-    iget-object v0, p0, Lkik/android/chat/view/InlineBotListView;->a:Lcom/kik/view/adapters/p;
-
-    invoke-virtual {v0, p1}, Lcom/kik/view/adapters/p;->a(Lcom/kik/view/adapters/BotsAdapter$State;)V
-
     .line 131
+    iget-object v0, p0, Lkik/android/chat/view/InlineBotListView;->a:Lcom/kik/view/adapters/r;
+
+    invoke-virtual {v0, p1}, Lcom/kik/view/adapters/r;->a(Lcom/kik/view/adapters/AbstractBotsAdapter$State;)V
+
+    .line 132
     const/4 v0, 0x1
 
     invoke-direct {p0, v0}, Lkik/android/chat/view/InlineBotListView;->a(I)V
 
-    .line 132
+    .line 133
     return-void
 .end method
 
@@ -152,7 +152,7 @@
     .locals 1
 
     .prologue
-    .line 22
+    .line 23
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lkik/android/chat/view/InlineBotListView;->b:Z
@@ -166,14 +166,14 @@
     .prologue
     const v2, 0x7f0a0077
 
-    .line 160
+    .line 161
     iget-boolean v0, p0, Lkik/android/chat/view/InlineBotListView;->c:Z
 
     if-eqz v0, :cond_0
 
     const/high16 v0, 0x3f800000    # 1.0f
 
-    .line 161
+    .line 162
     :goto_0
     invoke-static {}, Lkik/android/chat/KikApplication;->m()Z
 
@@ -191,7 +191,7 @@
 
     float-to-int v0, v0
 
-    .line 162
+    .line 163
     :goto_1
     invoke-static {v2}, Lkik/android/chat/KikApplication;->c(I)I
 
@@ -205,13 +205,13 @@
 
     return v0
 
-    .line 160
+    .line 161
     :cond_0
     const/high16 v0, 0x3fc00000    # 1.5f
 
     goto :goto_0
 
-    .line 161
+    .line 162
     :cond_1
     const v0, 0x7f0a00c0
 
@@ -226,26 +226,26 @@
     .locals 3
 
     .prologue
-    .line 94
-    invoke-static {p0}, Lkik/android/util/ca;->b(Landroid/view/View;)Z
+    .line 95
+    invoke-static {p0}, Lkik/android/util/cb;->b(Landroid/view/View;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 1138
-    iget-object v0, p0, Lkik/android/chat/view/InlineBotListView;->a:Lcom/kik/view/adapters/p;
+    .line 1139
+    iget-object v0, p0, Lkik/android/chat/view/InlineBotListView;->a:Lcom/kik/view/adapters/r;
 
-    invoke-virtual {v0}, Lcom/kik/view/adapters/p;->getCount()I
+    invoke-virtual {v0}, Lcom/kik/view/adapters/r;->getCount()I
 
     move-result v0
 
-    .line 1139
+    .line 1140
     invoke-direct {p0, v0}, Lkik/android/chat/view/InlineBotListView;->b(I)I
 
     move-result v0
 
-    .line 1141
+    .line 1142
     const/4 v1, 0x1
 
     new-array v1, v1, [Landroid/view/View;
@@ -254,34 +254,34 @@
 
     aput-object p0, v1, v2
 
-    invoke-static {v1}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v1}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
-    .line 1143
-    invoke-static {p0, v0}, Lkik/android/util/ca;->f(Landroid/view/View;I)V
+    .line 1144
+    invoke-static {p0, v0}, Lkik/android/util/cb;->f(Landroid/view/View;I)V
 
-    .line 97
+    .line 98
     :cond_0
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Lcom/kik/view/adapters/p;)V
+.method public final a(Lcom/kik/view/adapters/r;)V
     .locals 0
 
     .prologue
-    .line 46
+    .line 47
     invoke-virtual {p0, p1}, Lkik/android/chat/view/InlineBotListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
-    .line 47
-    iput-object p1, p0, Lkik/android/chat/view/InlineBotListView;->a:Lcom/kik/view/adapters/p;
-
     .line 48
+    iput-object p1, p0, Lkik/android/chat/view/InlineBotListView;->a:Lcom/kik/view/adapters/r;
+
+    .line 49
     return-void
 .end method
 
 .method public final a(Ljava/util/List;)V
-    .locals 1
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -293,34 +293,38 @@
     .end annotation
 
     .prologue
-    .line 53
-    iget-object v0, p0, Lkik/android/chat/view/InlineBotListView;->a:Lcom/kik/view/adapters/p;
-
-    invoke-virtual {v0, p1}, Lcom/kik/view/adapters/p;->a(Ljava/util/List;)V
-
     .line 54
-    invoke-direct {p0}, Lkik/android/chat/view/InlineBotListView;->h()V
+    iget-object v0, p0, Lkik/android/chat/view/InlineBotListView;->a:Lcom/kik/view/adapters/r;
+
+    new-instance v1, Lkik/android/chat/vm/a/b;
+
+    invoke-direct {v1, p1}, Lkik/android/chat/vm/a/b;-><init>(Ljava/util/List;)V
+
+    invoke-virtual {v0, v1}, Lcom/kik/view/adapters/r;->a(Lkik/android/chat/vm/IListViewModel;)V
 
     .line 55
+    invoke-direct {p0}, Lkik/android/chat/view/InlineBotListView;->h()V
+
+    .line 56
     const/high16 v0, 0x3f800000    # 1.0f
 
     invoke-virtual {p0, v0}, Lkik/android/chat/view/InlineBotListView;->setAlpha(F)V
 
-    .line 56
+    .line 57
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result v0
 
     invoke-direct {p0, v0}, Lkik/android/chat/view/InlineBotListView;->a(I)V
 
-    .line 57
+    .line 58
     invoke-static {p0}, Lkik/android/chat/view/x;->a(Lkik/android/chat/view/InlineBotListView;)Ljava/lang/Runnable;
 
     move-result-object v0
 
     invoke-virtual {p0, v0}, Lkik/android/chat/view/InlineBotListView;->post(Ljava/lang/Runnable;)Z
 
-    .line 58
+    .line 59
     return-void
 .end method
 
@@ -328,24 +332,24 @@
     .locals 1
 
     .prologue
-    .line 120
+    .line 121
     iput-boolean p1, p0, Lkik/android/chat/view/InlineBotListView;->c:Z
 
-    .line 121
+    .line 122
     iget-boolean v0, p0, Lkik/android/chat/view/InlineBotListView;->b:Z
 
     if-nez v0, :cond_0
 
-    .line 122
-    iget-object v0, p0, Lkik/android/chat/view/InlineBotListView;->a:Lcom/kik/view/adapters/p;
+    .line 123
+    iget-object v0, p0, Lkik/android/chat/view/InlineBotListView;->a:Lcom/kik/view/adapters/r;
 
-    invoke-virtual {v0}, Lcom/kik/view/adapters/p;->getCount()I
+    invoke-virtual {v0}, Lcom/kik/view/adapters/r;->getCount()I
 
     move-result v0
 
     invoke-direct {p0, v0}, Lkik/android/chat/view/InlineBotListView;->a(I)V
 
-    .line 124
+    .line 125
     :cond_0
     return-void
 .end method
@@ -354,8 +358,8 @@
     .locals 1
 
     .prologue
-    .line 63
-    invoke-static {p0}, Lkik/android/util/ca;->b(Landroid/view/View;)Z
+    .line 64
+    invoke-static {p0}, Lkik/android/util/cb;->b(Landroid/view/View;)Z
 
     move-result v0
 
@@ -366,26 +370,26 @@
     .locals 1
 
     .prologue
-    .line 69
-    invoke-static {p0}, Lkik/android/util/ca;->b(Landroid/view/View;)Z
+    .line 70
+    invoke-static {p0}, Lkik/android/util/cb;->b(Landroid/view/View;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 70
+    .line 71
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lkik/android/chat/view/InlineBotListView;->b:Z
 
-    .line 71
+    .line 72
     new-instance v0, Lkik/android/chat/view/InlineBotListView$1;
 
     invoke-direct {v0, p0}, Lkik/android/chat/view/InlineBotListView$1;-><init>(Lkik/android/chat/view/InlineBotListView;)V
 
-    invoke-static {p0, v0}, Lkik/android/util/ca;->a(Landroid/view/View;Landroid/animation/AnimatorListenerAdapter;)V
+    invoke-static {p0, v0}, Lkik/android/util/cb;->a(Landroid/view/View;Landroid/animation/AnimatorListenerAdapter;)V
 
-    .line 79
+    .line 80
     :cond_0
     return-void
 .end method
@@ -394,37 +398,37 @@
     .locals 1
 
     .prologue
-    .line 84
-    .line 1063
-    invoke-static {p0}, Lkik/android/util/ca;->b(Landroid/view/View;)Z
+    .line 85
+    .line 1064
+    invoke-static {p0}, Lkik/android/util/cb;->b(Landroid/view/View;)Z
 
     move-result v0
 
-    .line 84
+    .line 85
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lkik/android/chat/view/InlineBotListView;->a:Lcom/kik/view/adapters/p;
+    iget-object v0, p0, Lkik/android/chat/view/InlineBotListView;->a:Lcom/kik/view/adapters/r;
 
-    invoke-virtual {v0}, Lcom/kik/view/adapters/p;->isEmpty()Z
+    invoke-virtual {v0}, Lcom/kik/view/adapters/r;->isEmpty()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 85
+    .line 86
     const v0, 0x3f19999a    # 0.6f
 
     invoke-virtual {p0, v0}, Lkik/android/chat/view/InlineBotListView;->setAlpha(F)V
 
-    .line 90
+    .line 91
     :goto_0
     return-void
 
-    .line 88
+    .line 89
     :cond_0
-    sget-object v0, Lcom/kik/view/adapters/BotsAdapter$State;->LOADING:Lcom/kik/view/adapters/BotsAdapter$State;
+    sget-object v0, Lcom/kik/view/adapters/AbstractBotsAdapter$State;->LOADING:Lcom/kik/view/adapters/AbstractBotsAdapter$State;
 
-    invoke-direct {p0, v0}, Lkik/android/chat/view/InlineBotListView;->a(Lcom/kik/view/adapters/BotsAdapter$State;)V
+    invoke-direct {p0, v0}, Lkik/android/chat/view/InlineBotListView;->a(Lcom/kik/view/adapters/AbstractBotsAdapter$State;)V
 
     goto :goto_0
 .end method
@@ -433,12 +437,12 @@
     .locals 1
 
     .prologue
-    .line 102
-    sget-object v0, Lcom/kik/view/adapters/BotsAdapter$State;->ERROR:Lcom/kik/view/adapters/BotsAdapter$State;
-
-    invoke-direct {p0, v0}, Lkik/android/chat/view/InlineBotListView;->a(Lcom/kik/view/adapters/BotsAdapter$State;)V
-
     .line 103
+    sget-object v0, Lcom/kik/view/adapters/AbstractBotsAdapter$State;->ERROR:Lcom/kik/view/adapters/AbstractBotsAdapter$State;
+
+    invoke-direct {p0, v0}, Lkik/android/chat/view/InlineBotListView;->a(Lcom/kik/view/adapters/AbstractBotsAdapter$State;)V
+
+    .line 104
     return-void
 .end method
 
@@ -446,12 +450,12 @@
     .locals 1
 
     .prologue
-    .line 108
-    sget-object v0, Lcom/kik/view/adapters/BotsAdapter$State;->NO_RESULTS:Lcom/kik/view/adapters/BotsAdapter$State;
-
-    invoke-direct {p0, v0}, Lkik/android/chat/view/InlineBotListView;->a(Lcom/kik/view/adapters/BotsAdapter$State;)V
-
     .line 109
+    sget-object v0, Lcom/kik/view/adapters/AbstractBotsAdapter$State;->NO_RESULTS:Lcom/kik/view/adapters/AbstractBotsAdapter$State;
+
+    invoke-direct {p0, v0}, Lkik/android/chat/view/InlineBotListView;->a(Lcom/kik/view/adapters/AbstractBotsAdapter$State;)V
+
+    .line 110
     return-void
 .end method
 
@@ -459,16 +463,16 @@
     .locals 1
 
     .prologue
-    .line 114
-    iget-object v0, p0, Lkik/android/chat/view/InlineBotListView;->a:Lcom/kik/view/adapters/p;
+    .line 115
+    iget-object v0, p0, Lkik/android/chat/view/InlineBotListView;->a:Lcom/kik/view/adapters/r;
 
-    invoke-virtual {v0}, Lcom/kik/view/adapters/p;->getCount()I
+    invoke-virtual {v0}, Lcom/kik/view/adapters/r;->getCount()I
 
     move-result v0
 
     invoke-direct {p0, v0}, Lkik/android/chat/view/InlineBotListView;->a(I)V
 
-    .line 115
+    .line 116
     return-void
 .end method
 
@@ -476,7 +480,7 @@
     .locals 1
 
     .prologue
-    .line 167
+    .line 168
     iget-boolean v0, p0, Lkik/android/chat/view/InlineBotListView;->b:Z
 
     return v0

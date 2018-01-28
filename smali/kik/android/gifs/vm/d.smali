@@ -121,7 +121,7 @@
     invoke-interface {v1, p1}, Lkik/android/util/ah;->a(Ljava/util/List;)V
 
     .line 184
-    invoke-virtual {p0}, Lkik/android/gifs/vm/d;->K_()V
+    invoke-virtual {p0}, Lkik/android/gifs/vm/d;->aF_()V
 
     .line 187
     :cond_0
@@ -173,7 +173,7 @@
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
     .line 55
-    invoke-virtual {p0}, Lkik/android/gifs/vm/d;->K_()V
+    invoke-virtual {p0}, Lkik/android/gifs/vm/d;->aF_()V
 
     .line 56
     invoke-virtual {p0}, Lkik/android/gifs/vm/d;->l()V
@@ -252,7 +252,7 @@
 
 
 # virtual methods
-.method public final synthetic a(I)Lkik/android/chat/vm/ar;
+.method public final synthetic a(I)Lkik/android/chat/vm/at;
     .locals 4
 
     .prologue
@@ -351,7 +351,7 @@
     goto :goto_0
 .end method
 
-.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
     .locals 3
 
     .prologue
@@ -359,10 +359,10 @@
     invoke-interface {p1, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/gifs/vm/d;)V
 
     .line 48
-    invoke-super {p0, p1, p2}, Lkik/android/gifs/vm/c;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    invoke-super {p0, p1, p2}, Lkik/android/gifs/vm/c;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 50
-    invoke-virtual {p0}, Lkik/android/gifs/vm/d;->ab_()Lrx/f/b;
+    invoke-virtual {p0}, Lkik/android/gifs/vm/d;->ad_()Lrx/f/b;
 
     move-result-object v0
 
@@ -394,7 +394,7 @@
     invoke-virtual {v0, v1}, Lrx/f/b;->a(Lrx/k;)V
 
     .line 58
-    invoke-virtual {p0}, Lkik/android/gifs/vm/d;->ab_()Lrx/f/b;
+    invoke-virtual {p0}, Lkik/android/gifs/vm/d;->ad_()Lrx/f/b;
 
     move-result-object v0
 
@@ -426,7 +426,7 @@
     invoke-virtual {v0, v1}, Lrx/f/b;->a(Lrx/k;)V
 
     .line 67
-    invoke-virtual {p0}, Lkik/android/gifs/vm/d;->ab_()Lrx/f/b;
+    invoke-virtual {p0}, Lkik/android/gifs/vm/d;->ad_()Lrx/f/b;
 
     move-result-object v0
 
@@ -473,7 +473,7 @@
     .line 135
     iget-object v0, p0, Lkik/android/gifs/vm/d;->k:Lrx/functions/b;
 
-    invoke-interface {p1}, Lkik/android/gifs/vm/bk;->d()Ljava/lang/String;
+    invoke-interface {p1}, Lkik/android/gifs/vm/bk;->e()Ljava/lang/String;
 
     move-result-object v1
 
@@ -502,7 +502,7 @@
     const-string v1, "Search Query"
 
     .line 1196
-    invoke-interface {p1}, Lkik/android/gifs/vm/bk;->d()Ljava/lang/String;
+    invoke-interface {p1}, Lkik/android/gifs/vm/bk;->e()Ljava/lang/String;
 
     move-result-object v2
 
@@ -526,7 +526,7 @@
     const-string v1, "Is Custom Emoji"
 
     .line 1198
-    invoke-interface {p1}, Lkik/android/gifs/vm/bk;->b()Z
+    invoke-interface {p1}, Lkik/android/gifs/vm/bk;->d()Z
 
     move-result v2
 
@@ -537,7 +537,7 @@
     const-string v1, "Is Sponsored"
 
     .line 1199
-    invoke-interface {p1}, Lkik/android/gifs/vm/bk;->a()Z
+    invoke-interface {p1}, Lkik/android/gifs/vm/bk;->b()Z
 
     move-result v2
 
@@ -557,7 +557,7 @@
     return-void
 .end method
 
-.method public final aj_()V
+.method public final ak_()V
     .locals 1
 
     .prologue
@@ -573,7 +573,7 @@
     iput-object v0, p0, Lkik/android/gifs/vm/d;->k:Lrx/functions/b;
 
     .line 84
-    invoke-super {p0}, Lkik/android/gifs/vm/c;->aj_()V
+    invoke-super {p0}, Lkik/android/gifs/vm/c;->ak_()V
 
     .line 85
     return-void

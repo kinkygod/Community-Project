@@ -2304,7 +2304,7 @@
     const/16 v6, 0x3e7
 
     .line 4360
-    invoke-static {v1, v5, v6}, Lkik/android/util/ca;->a(III)I
+    invoke-static {v1, v5, v6}, Lkik/android/util/cb;->a(III)I
 
     move-result v1
 
@@ -2313,7 +2313,7 @@
     const/16 v6, 0x3e7
 
     .line 4361
-    invoke-static {v2, v5, v6}, Lkik/android/util/ca;->a(III)I
+    invoke-static {v2, v5, v6}, Lkik/android/util/cb;->a(III)I
 
     move-result v2
 
@@ -2322,7 +2322,7 @@
     const/16 v6, 0x3e7
 
     .line 4362
-    invoke-static {v3, v5, v6}, Lkik/android/util/ca;->a(III)I
+    invoke-static {v3, v5, v6}, Lkik/android/util/cb;->a(III)I
 
     move-result v3
 
@@ -2331,7 +2331,7 @@
     const/16 v6, 0x3e7
 
     .line 4363
-    invoke-static {v0, v5, v6}, Lkik/android/util/ca;->a(III)I
+    invoke-static {v0, v5, v6}, Lkik/android/util/cb;->a(III)I
 
     move-result v0
 
@@ -2875,7 +2875,7 @@
     goto/16 :goto_0
 .end method
 
-.method public final a(Ljava/lang/String;Ljava/lang/String;Lkik/core/interfaces/ae;)V
+.method public final a(Ljava/lang/String;Ljava/lang/String;Lkik/core/interfaces/ad;)V
     .locals 7
 
     .prologue
@@ -2895,7 +2895,7 @@
     invoke-direct {v1, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     .line 6142
-    invoke-interface {p3, v1}, Lkik/core/interfaces/ae;->b(Ljava/io/File;)V
+    invoke-interface {p3, v1}, Lkik/core/interfaces/ad;->b(Ljava/io/File;)V
 
     .line 1134
     invoke-static {}, Lkik/android/internal/platform/PlatformHelper;->a()Lkik/android/internal/platform/PlatformHelper;
@@ -2951,7 +2951,7 @@
     return-void
 .end method
 
-.method public final a(Lkik/core/interfaces/ae;Landroid/graphics/Bitmap;)V
+.method public final a(Lkik/core/interfaces/ad;Landroid/graphics/Bitmap;)V
     .locals 8
 
     .prologue
@@ -3041,11 +3041,11 @@
 
     const/16 v3, 0x64
 
-    invoke-static {p2, v2, v3}, Lcom/kik/util/co;->a(Landroid/graphics/Bitmap;Landroid/graphics/Bitmap$CompressFormat;I)[B
+    invoke-static {p2, v2, v3}, Lcom/kik/util/ct;->a(Landroid/graphics/Bitmap;Landroid/graphics/Bitmap$CompressFormat;I)[B
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2, p1}, Lkik/android/internal/platform/PlatformHelper;->a(Landroid/app/Activity;[BLkik/core/interfaces/ae;)Lkik/core/datatypes/messageExtensions/ContentMessage;
+    invoke-virtual {v0, v1, v2, p1}, Lkik/android/internal/platform/PlatformHelper;->a(Landroid/app/Activity;[BLkik/core/interfaces/ad;)Lkik/core/datatypes/messageExtensions/ContentMessage;
 
     move-result-object v0
 
@@ -3423,7 +3423,7 @@
 
     move-result v2
 
-    invoke-static {p1, v1, v2}, Lkik/android/util/ca;->a(III)I
+    invoke-static {p1, v1, v2}, Lkik/android/util/cb;->a(III)I
 
     move-result v1
 

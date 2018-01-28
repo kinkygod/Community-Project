@@ -1,5 +1,5 @@
 !!brut.androlib.meta.MetaInfo
-apkFileName: openkik.apk
+apkFileName: kinky.apk
 compressionType: false
 doNotCompress:
 - arsc
@@ -600,9 +600,12 @@ unknownFiles:
   groups/v1/groups_common.proto: '8'
   jsr305_annotations/Jsr305_annotations.gwt.xml: '8'
   messagepath/v1/adaptive_cards.proto: '8'
+  messagepath/v1/carousels.proto: '8'
   messagepath/v1/core_message.proto: '8'
+  messagepath/v1/core_message_common.proto: '8'
   messagepath/v1/core_message_options.proto: '8'
   messagepath/v1/keyboards.proto: '8'
+  messagepath/v1/link_message.proto: '8'
   messagepath/v1/mentions.proto: '8'
   messagepath/v1/text_markdown.proto: '8'
   messagepath/v1/visibility_rules.proto: '8'
@@ -745,5 +748,5 @@ usesFramework:
   tag: null
 version: 2.2.1
 versionInfo:
-  versionCode: '20000397'
-  versionName: 11.40.0.19272
+  versionCode: '20000404'
+  versionName: 12.2.0.19562

@@ -3,17 +3,19 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/a/b;
+.implements Ldagger/internal/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/a/b",
+        "Ldagger/internal/b",
         "<",
-        "Lcom/kik/cache/KikVolleyImageLoader;",
-        ">;"
+        "Lkik/core/interfaces/af",
+        "<",
+        "Landroid/graphics/Bitmap;",
+        ">;>;"
     }
 .end annotation
 
@@ -23,7 +25,18 @@
 
 
 # instance fields
-.field private final b:Lcom/kik/f/at;
+.field private final b:Lcom/kik/f/as;
+
+.field private final c:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lcom/kik/cache/KikVolleyImageLoader;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
@@ -31,7 +44,7 @@
     .locals 1
 
     .prologue
-    .line 8
+    .line 11
     const-class v0, Lcom/kik/f/be;
 
     invoke-virtual {v0}, Ljava/lang/Class;->desiredAssertionStatus()Z
@@ -53,14 +66,24 @@
     goto :goto_0
 .end method
 
-.method private constructor <init>(Lcom/kik/f/at;)V
+.method private constructor <init>(Lcom/kik/f/as;Ljavax/inject/Provider;)V
     .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/kik/f/as;",
+            "Ljavax/inject/Provider",
+            "<",
+            "Lcom/kik/cache/KikVolleyImageLoader;",
+            ">;)V"
+        }
+    .end annotation
 
     .prologue
-    .line 16
+    .line 22
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 17
+    .line 23
     sget-boolean v0, Lcom/kik/f/be;->a:Z
 
     if-nez v0, :cond_0
@@ -73,33 +96,55 @@
 
     throw v0
 
-    .line 18
+    .line 24
     :cond_0
-    iput-object p1, p0, Lcom/kik/f/be;->b:Lcom/kik/f/at;
+    iput-object p1, p0, Lcom/kik/f/be;->b:Lcom/kik/f/as;
 
-    .line 19
+    .line 25
+    sget-boolean v0, Lcom/kik/f/be;->a:Z
+
+    if-nez v0, :cond_1
+
+    if-nez p2, :cond_1
+
+    new-instance v0, Ljava/lang/AssertionError;
+
+    invoke-direct {v0}, Ljava/lang/AssertionError;-><init>()V
+
+    throw v0
+
+    .line 26
+    :cond_1
+    iput-object p2, p0, Lcom/kik/f/be;->c:Ljavax/inject/Provider;
+
+    .line 27
     return-void
 .end method
 
-.method public static a(Lcom/kik/f/at;)La/a/b;
+.method public static a(Lcom/kik/f/as;Ljavax/inject/Provider;)Ldagger/internal/b;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcom/kik/f/at;",
-            ")",
-            "La/a/b",
+            "Lcom/kik/f/as;",
+            "Ljavax/inject/Provider",
             "<",
             "Lcom/kik/cache/KikVolleyImageLoader;",
-            ">;"
+            ">;)",
+            "Ldagger/internal/b",
+            "<",
+            "Lkik/core/interfaces/af",
+            "<",
+            "Landroid/graphics/Bitmap;",
+            ">;>;"
         }
     .end annotation
 
     .prologue
-    .line 29
+    .line 38
     new-instance v0, Lcom/kik/f/be;
 
-    invoke-direct {v0, p0}, Lcom/kik/f/be;-><init>(Lcom/kik/f/at;)V
+    invoke-direct {v0, p0, p1}, Lcom/kik/f/be;-><init>(Lcom/kik/f/as;Ljavax/inject/Provider;)V
 
     return-object v0
 .end method
@@ -110,24 +155,30 @@
     .locals 2
 
     .prologue
-    .line 8
-    .line 1023
-    iget-object v0, p0, Lcom/kik/f/be;->b:Lcom/kik/f/at;
+    .line 11
+    .line 1031
+    iget-object v0, p0, Lcom/kik/f/be;->c:Ljavax/inject/Provider;
 
-    .line 1024
-    invoke-virtual {v0}, Lcom/kik/f/at;->b()Lcom/kik/cache/KikVolleyImageLoader;
-
-    move-result-object v0
-
-    const-string v1, "Cannot return null from a non-@Nullable @Provides method"
-
-    .line 1023
-    invoke-static {v0, v1}, La/a/c;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    .line 1032
+    invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Lcom/kik/cache/KikVolleyImageLoader;
 
-    .line 8
+    invoke-static {v0}, Lcom/kik/f/as;->a(Lcom/kik/cache/KikVolleyImageLoader;)Lkik/core/interfaces/af;
+
+    move-result-object v0
+
+    const-string v1, "Cannot return null from a non-@Nullable @Provides method"
+
+    .line 1031
+    invoke-static {v0, v1}, Ldagger/internal/c;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lkik/core/interfaces/af;
+
+    .line 11
     return-object v0
 .end method

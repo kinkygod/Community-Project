@@ -21,7 +21,7 @@
     .end annotation
 .end field
 
-.field protected c:Lkik/core/interfaces/ae;
+.field protected c:Lkik/core/interfaces/ad;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -136,9 +136,9 @@
 
     .line 1081
     :goto_1
-    iget-object v4, p0, Lkik/android/chat/vm/conversations/b;->c:Lkik/core/interfaces/ae;
+    iget-object v4, p0, Lkik/android/chat/vm/conversations/b;->c:Lkik/core/interfaces/ad;
 
-    invoke-interface {v4}, Lkik/core/interfaces/ae;->n()J
+    invoke-interface {v4}, Lkik/core/interfaces/ad;->n()J
 
     move-result-wide v4
 
@@ -147,11 +147,11 @@
     move-result-wide v4
 
     .line 1082
-    iget-object v6, p0, Lkik/android/chat/vm/conversations/b;->c:Lkik/core/interfaces/ae;
+    iget-object v6, p0, Lkik/android/chat/vm/conversations/b;->c:Lkik/core/interfaces/ad;
 
     const-string v7, "kik.upgradetime"
 
-    invoke-interface {v6, v7}, Lkik/core/interfaces/ae;->v(Ljava/lang/String;)Ljava/lang/Long;
+    invoke-interface {v6, v7}, Lkik/core/interfaces/ad;->v(Ljava/lang/String;)Ljava/lang/Long;
 
     move-result-object v6
 
@@ -288,7 +288,7 @@
 
 
 # virtual methods
-.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
     .locals 0
 
     .prologue
@@ -302,7 +302,7 @@
 .method protected abstract a()Z
 .end method
 
-.method public final aj_()V
+.method public final ak_()V
     .locals 0
 
     .prologue

@@ -240,7 +240,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Landroid/content/Context;Lkik/core/interfaces/t;)V
+.method public constructor <init>(Landroid/content/Context;Lkik/core/interfaces/s;)V
     .locals 8
 
     .prologue
@@ -549,7 +549,7 @@
     .line 149
     const-string v0, "appCache"
 
-    invoke-interface {p2, v0}, Lkik/core/interfaces/t;->a(Ljava/lang/String;)Ljava/io/File;
+    invoke-interface {p2, v0}, Lkik/core/interfaces/s;->a(Ljava/lang/String;)Ljava/io/File;
 
     move-result-object v0
 

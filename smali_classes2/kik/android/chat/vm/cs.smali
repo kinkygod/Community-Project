@@ -1,43 +1,110 @@
-.class final synthetic Lkik/android/chat/vm/cs;
+.class public final Lkik/android/chat/vm/cs;
 .super Ljava/lang/Object;
-
-# interfaces
-.implements Lrx/functions/b;
+.source "SourceFile"
 
 
 # instance fields
-.field private final a:Lkik/android/chat/vm/cr;
+.field private a:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List",
+            "<",
+            "Lkik/android/chat/vm/j$a;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method private constructor <init>(Lkik/android/chat/vm/cr;)V
-    .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lkik/android/chat/vm/cs;->a:Lkik/android/chat/vm/cr;
-
-    return-void
-.end method
-
-.method public static a(Lkik/android/chat/vm/cr;)Lrx/functions/b;
+.method public constructor <init>()V
     .locals 1
 
-    new-instance v0, Lkik/android/chat/vm/cs;
+    .prologue
+    .line 10
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    invoke-direct {v0, p0}, Lkik/android/chat/vm/cs;-><init>(Lkik/android/chat/vm/cr;)V
+    .line 12
+    new-instance v0, Ljava/util/ArrayList;
 
-    return-object v0
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v0, p0, Lkik/android/chat/vm/cs;->a:Ljava/util/List;
+
+    return-void
 .end method
 
 
 # virtual methods
-.method public final call(Ljava/lang/Object;)V
+.method public final a()Ljava/util/List;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List",
+            "<",
+            "Lkik/android/chat/vm/j$a;",
+            ">;"
+        }
+    .end annotation
+
+    .prologue
+    .line 16
+    iget-object v0, p0, Lkik/android/chat/vm/cs;->a:Ljava/util/List;
+
+    return-object v0
+.end method
+
+.method public final a(Ljava/lang/String;Ljava/lang/Runnable;)V
+    .locals 2
+
+    .prologue
+    .line 21
+    iget-object v0, p0, Lkik/android/chat/vm/cs;->a:Ljava/util/List;
+
+    new-instance v1, Lkik/android/chat/vm/j$a;
+
+    invoke-direct {v1, p1, p2}, Lkik/android/chat/vm/j$a;-><init>(Ljava/lang/String;Ljava/lang/Runnable;)V
+
+    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 22
+    return-void
+.end method
+
+.method public final a(I)Z
     .locals 1
 
-    iget-object v0, p0, Lkik/android/chat/vm/cs;->a:Lkik/android/chat/vm/cr;
+    .prologue
+    .line 26
+    iget-object v0, p0, Lkik/android/chat/vm/cs;->a:Ljava/util/List;
 
-    invoke-static {v0}, Lkik/android/chat/vm/cr;->a(Lkik/android/chat/vm/cr;)V
+    invoke-interface {v0}, Ljava/util/List;->size()I
 
-    return-void
+    move-result v0
+
+    if-ge p1, v0, :cond_0
+
+    .line 27
+    iget-object v0, p0, Lkik/android/chat/vm/cs;->a:Ljava/util/List;
+
+    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lkik/android/chat/vm/j$a;
+
+    invoke-virtual {v0}, Lkik/android/chat/vm/j$a;->c()V
+
+    .line 28
+    const/4 v0, 0x1
+
+    .line 30
+    :goto_0
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_0
 .end method

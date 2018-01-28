@@ -12,31 +12,31 @@
 
 .field _fullscreenCurrentTime:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f100236
+        value = 0x7f100232
     .end annotation
 .end field
 
 .field _fullscreenProgressBar:Landroid/widget/SeekBar;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f100237
+        value = 0x7f100233
     .end annotation
 .end field
 
 .field _fullscreenScrubber:Landroid/widget/RelativeLayout;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f100235
+        value = 0x7f100231
     .end annotation
 .end field
 
 .field _fullscreenTotalTime:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f100238
+        value = 0x7f100234
     .end annotation
 .end field
 
 .field _openButton:Landroid/view/ViewGroup;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f100239
+        value = 0x7f100235
     .end annotation
 .end field
 
@@ -54,13 +54,13 @@
 
 .field _textureView:Lkik/android/widget/KikTextureVideoView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f100232
+        value = 0x7f10022e
     .end annotation
 .end field
 
 .field _videoPauseIcon:Landroid/widget/ImageView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f100234
+        value = 0x7f100230
     .end annotation
 .end field
 
@@ -72,13 +72,13 @@
 
 .field _videoProgressBar:Lcom/github/rahatarmanahmed/cpv/CircularProgressView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f100233
+        value = 0x7f10022f
     .end annotation
 .end field
 
 .field _viewRoot:Landroid/widget/FrameLayout;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f100231
+        value = 0x7f10022d
     .end annotation
 .end field
 
@@ -108,17 +108,17 @@
     .end annotation
 .end field
 
-.field protected f:Lkik/core/interfaces/ae;
+.field protected f:Lkik/core/interfaces/ad;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field protected g:Lcom/kik/storage/p;
+.field protected g:Lcom/kik/storage/s;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field protected h:Lkik/android/f/f;
+.field protected h:Lkik/android/f/e;
 
 .field protected i:Ljava/lang/String;
 
@@ -138,7 +138,7 @@
 
 .field protected q:Lcom/android/volley/h$a;
 
-.field private r:Lkik/android/util/ca$c;
+.field private r:Lkik/android/util/cb$c;
 
 .field private s:Ljava/lang/String;
 
@@ -173,7 +173,7 @@
     .line 104
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lkik/android/chat/fragment/MediaItemFragment;->r:Lkik/android/util/ca$c;
+    iput-object v0, p0, Lkik/android/chat/fragment/MediaItemFragment;->r:Lkik/android/util/cb$c;
 
     .line 110
     iput-boolean v1, p0, Lkik/android/chat/fragment/MediaItemFragment;->k:Z
@@ -235,12 +235,12 @@
     return-object p0
 .end method
 
-.method static synthetic a(Lkik/android/chat/fragment/MediaItemFragment;)Lkik/android/util/ca$c;
+.method static synthetic a(Lkik/android/chat/fragment/MediaItemFragment;)Lkik/android/util/cb$c;
     .locals 1
 
     .prologue
     .line 65
-    iget-object v0, p0, Lkik/android/chat/fragment/MediaItemFragment;->r:Lkik/android/util/ca$c;
+    iget-object v0, p0, Lkik/android/chat/fragment/MediaItemFragment;->r:Lkik/android/util/cb$c;
 
     return-object v0
 .end method
@@ -282,9 +282,9 @@
     move-result-object v2
 
     .line 456
-    iget-object v0, p0, Lkik/android/chat/fragment/MediaItemFragment;->h:Lkik/android/f/f;
+    iget-object v0, p0, Lkik/android/chat/fragment/MediaItemFragment;->h:Lkik/android/f/e;
 
-    invoke-interface {v0}, Lkik/android/f/f;->c()I
+    invoke-interface {v0}, Lkik/android/f/e;->c()I
 
     move-result v3
 
@@ -878,11 +878,11 @@
 
     iget-object v2, p0, Lkik/android/chat/fragment/MediaItemFragment;->i:Ljava/lang/String;
 
-    invoke-static {v0, v1, v2}, Lkik/android/util/ca;->a(Lkik/core/datatypes/messageExtensions/ContentMessage;Landroid/content/Context;Ljava/lang/String;)Lkik/android/util/ca$c;
+    invoke-static {v0, v1, v2}, Lkik/android/util/cb;->a(Lkik/core/datatypes/messageExtensions/ContentMessage;Landroid/content/Context;Ljava/lang/String;)Lkik/android/util/cb$c;
 
     move-result-object v0
 
-    iput-object v0, p0, Lkik/android/chat/fragment/MediaItemFragment;->r:Lkik/android/util/ca$c;
+    iput-object v0, p0, Lkik/android/chat/fragment/MediaItemFragment;->r:Lkik/android/util/cb$c;
 
     .line 398
     iget-object v0, p0, Lkik/android/chat/fragment/MediaItemFragment;->j:Lkik/core/datatypes/messageExtensions/ContentMessage;
@@ -898,12 +898,12 @@
     return-void
 .end method
 
-.method public final a(Lkik/android/f/f;)V
+.method public final a(Lkik/android/f/e;)V
     .locals 0
 
     .prologue
     .line 131
-    iput-object p1, p0, Lkik/android/chat/fragment/MediaItemFragment;->h:Lkik/android/f/f;
+    iput-object p1, p0, Lkik/android/chat/fragment/MediaItemFragment;->h:Lkik/android/f/e;
 
     .line 132
     return-void
@@ -921,22 +921,22 @@
     const/4 v2, 0x0
 
     .line 157
-    iget-object v0, p0, Lkik/android/chat/fragment/MediaItemFragment;->h:Lkik/android/f/f;
+    iget-object v0, p0, Lkik/android/chat/fragment/MediaItemFragment;->h:Lkik/android/f/e;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lkik/android/chat/fragment/MediaItemFragment;->h:Lkik/android/f/f;
+    iget-object v0, p0, Lkik/android/chat/fragment/MediaItemFragment;->h:Lkik/android/f/e;
 
-    invoke-interface {v0}, Lkik/android/f/f;->b()Z
+    invoke-interface {v0}, Lkik/android/f/e;->b()Z
 
     move-result v0
 
     if-eq v0, p1, :cond_0
 
     .line 158
-    iget-object v0, p0, Lkik/android/chat/fragment/MediaItemFragment;->h:Lkik/android/f/f;
+    iget-object v0, p0, Lkik/android/chat/fragment/MediaItemFragment;->h:Lkik/android/f/e;
 
-    invoke-interface {v0, p1, p2}, Lkik/android/f/f;->a(ZZ)V
+    invoke-interface {v0, p1, p2}, Lkik/android/f/e;->a(ZZ)V
 
     .line 161
     :cond_0
@@ -980,7 +980,7 @@
 
     aput-object v1, v0, v2
 
-    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
     goto :goto_1
 
@@ -1003,7 +1003,7 @@
 
     aput-object v1, v0, v2
 
-    invoke-static {v0}, Lkik/android/util/ca;->g([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->g([Landroid/view/View;)V
 
     goto :goto_1
 .end method
@@ -1085,11 +1085,11 @@
     if-eqz v1, :cond_0
 
     .line 302
-    iget-object v1, p0, Lkik/android/chat/fragment/MediaItemFragment;->f:Lkik/core/interfaces/ae;
+    iget-object v1, p0, Lkik/android/chat/fragment/MediaItemFragment;->f:Lkik/core/interfaces/ad;
 
     iget-object v2, p0, Lkik/android/chat/fragment/MediaItemFragment;->s:Ljava/lang/String;
 
-    invoke-interface {v1, v2}, Lkik/core/interfaces/ae;->C(Ljava/lang/String;)[B
+    invoke-interface {v1, v2}, Lkik/core/interfaces/ad;->C(Ljava/lang/String;)[B
 
     move-result-object v1
 
@@ -1145,7 +1145,7 @@
 
     aput-object v3, v1, v2
 
-    invoke-static {v1}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v1}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
     goto :goto_0
 .end method
@@ -1203,7 +1203,7 @@
 
     .line 347
     :cond_2
-    iget-object v1, p0, Lkik/android/chat/fragment/MediaItemFragment;->h:Lkik/android/f/f;
+    iget-object v1, p0, Lkik/android/chat/fragment/MediaItemFragment;->h:Lkik/android/f/e;
 
     if-eqz v1, :cond_0
 
@@ -1213,9 +1213,9 @@
     if-eqz v1, :cond_3
 
     .line 351
-    iget-object v0, p0, Lkik/android/chat/fragment/MediaItemFragment;->h:Lkik/android/f/f;
+    iget-object v0, p0, Lkik/android/chat/fragment/MediaItemFragment;->h:Lkik/android/f/e;
 
-    invoke-interface {v0, v2}, Lkik/android/f/f;->a(Z)V
+    invoke-interface {v0, v2}, Lkik/android/f/e;->a(Z)V
 
     goto :goto_0
 
@@ -1232,16 +1232,16 @@
     if-eqz v1, :cond_4
 
     .line 354
-    iget-object v0, p0, Lkik/android/chat/fragment/MediaItemFragment;->h:Lkik/android/f/f;
+    iget-object v0, p0, Lkik/android/chat/fragment/MediaItemFragment;->h:Lkik/android/f/e;
 
-    const v1, 0x7f02034c
+    const v1, 0x7f02032f
 
-    invoke-interface {v0, v1}, Lkik/android/f/f;->b(I)V
+    invoke-interface {v0, v1}, Lkik/android/f/e;->b(I)V
 
     .line 355
-    iget-object v0, p0, Lkik/android/chat/fragment/MediaItemFragment;->h:Lkik/android/f/f;
+    iget-object v0, p0, Lkik/android/chat/fragment/MediaItemFragment;->h:Lkik/android/f/e;
 
-    invoke-interface {v0, v2}, Lkik/android/f/f;->b(Z)V
+    invoke-interface {v0, v2}, Lkik/android/f/e;->b(Z)V
 
     goto :goto_0
 
@@ -1312,7 +1312,7 @@
     const/4 v3, 0x0
 
     .line 195
-    const v0, 0x7f040097
+    const v0, 0x7f040096
 
     invoke-virtual {p1, v0, p2, v3}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
@@ -1423,7 +1423,7 @@
 
     .line 2230
     :cond_1
-    iget-object v0, p0, Lkik/android/chat/fragment/MediaItemFragment;->r:Lkik/android/util/ca$c;
+    iget-object v0, p0, Lkik/android/chat/fragment/MediaItemFragment;->r:Lkik/android/util/cb$c;
 
     if-eqz v0, :cond_5
 
@@ -1442,9 +1442,9 @@
     .line 2253
     iget-object v0, p0, Lkik/android/chat/fragment/MediaItemFragment;->_openText:Lkik/android/widget/EllipsizingTextView;
 
-    iget-object v2, p0, Lkik/android/chat/fragment/MediaItemFragment;->r:Lkik/android/util/ca$c;
+    iget-object v2, p0, Lkik/android/chat/fragment/MediaItemFragment;->r:Lkik/android/util/cb$c;
 
-    invoke-virtual {v2}, Lkik/android/util/ca$c;->d()Ljava/lang/String;
+    invoke-virtual {v2}, Lkik/android/util/cb$c;->d()Ljava/lang/String;
 
     move-result-object v2
 
@@ -1453,9 +1453,9 @@
     .line 2254
     iget-object v0, p0, Lkik/android/chat/fragment/MediaItemFragment;->_openIcon:Landroid/widget/ImageView;
 
-    iget-object v2, p0, Lkik/android/chat/fragment/MediaItemFragment;->r:Lkik/android/util/ca$c;
+    iget-object v2, p0, Lkik/android/chat/fragment/MediaItemFragment;->r:Lkik/android/util/cb$c;
 
-    invoke-virtual {v2}, Lkik/android/util/ca$c;->c()Landroid/graphics/Bitmap;
+    invoke-virtual {v2}, Lkik/android/util/cb$c;->c()Landroid/graphics/Bitmap;
 
     move-result-object v2
 

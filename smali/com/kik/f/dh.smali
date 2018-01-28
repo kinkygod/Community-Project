@@ -4,46 +4,67 @@
 
 
 # instance fields
-.field private final a:Lkik/android/util/SponsoredUsersManager;
+.field private a:Landroid/content/Context;
+
+.field private b:Lkik/core/interfaces/e;
+
+.field private c:Lkik/core/interfaces/ag;
+
+.field private d:Lkik/core/e/d;
 
 
 # direct methods
-.method public constructor <init>(Lkik/core/interfaces/ae;Lkik/core/interfaces/ah;Lkik/core/interfaces/l;Lkik/android/config/b;Lkik/android/util/ai;)V
-    .locals 6
+.method public constructor <init>(Landroid/content/Context;Lkik/core/interfaces/e;Lkik/core/interfaces/ag;Lkik/core/e/d;)V
+    .locals 0
 
     .prologue
-    .line 20
+    .line 30
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 21
-    new-instance v0, Lkik/android/util/SponsoredUsersManager;
+    .line 31
+    iput-object p1, p0, Lcom/kik/f/dh;->a:Landroid/content/Context;
 
-    move-object v1, p1
+    .line 32
+    iput-object p2, p0, Lcom/kik/f/dh;->b:Lkik/core/interfaces/e;
 
-    move-object v2, p2
+    .line 33
+    iput-object p3, p0, Lcom/kik/f/dh;->c:Lkik/core/interfaces/ag;
 
-    move-object v3, p3
+    .line 34
+    iput-object p4, p0, Lcom/kik/f/dh;->d:Lkik/core/e/d;
 
-    move-object v4, p4
-
-    move-object v5, p5
-
-    invoke-direct/range {v0 .. v5}, Lkik/android/util/SponsoredUsersManager;-><init>(Lkik/core/interfaces/ae;Lkik/core/interfaces/ah;Lkik/core/interfaces/l;Lkik/android/config/b;Lkik/android/util/ai;)V
-
-    iput-object v0, p0, Lcom/kik/f/dh;->a:Lkik/android/util/SponsoredUsersManager;
-
-    .line 22
+    .line 35
     return-void
 .end method
 
 
 # virtual methods
-.method final a()Lkik/android/util/SponsoredUsersManager;
-    .locals 1
+.method final a()Lkik/core/interfaces/ab;
+    .locals 6
+    .annotation runtime Ljavax/inject/Singleton;
+    .end annotation
 
     .prologue
-    .line 27
-    iget-object v0, p0, Lcom/kik/f/dh;->a:Lkik/android/util/SponsoredUsersManager;
+    .line 41
+    new-instance v0, Lcom/kik/android/stickers/c;
+
+    iget-object v1, p0, Lcom/kik/f/dh;->a:Landroid/content/Context;
+
+    iget-object v2, p0, Lcom/kik/f/dh;->b:Lkik/core/interfaces/e;
+
+    iget-object v3, p0, Lcom/kik/f/dh;->c:Lkik/core/interfaces/ag;
+
+    iget-object v4, p0, Lcom/kik/f/dh;->a:Landroid/content/Context;
+
+    .line 1084
+    invoke-static {v4}, Lcom/android/volley/toolbox/h;->a(Landroid/content/Context;)Lcom/android/volley/g;
+
+    move-result-object v4
+
+    .line 41
+    iget-object v5, p0, Lcom/kik/f/dh;->d:Lkik/core/e/d;
+
+    invoke-direct/range {v0 .. v5}, Lcom/kik/android/stickers/c;-><init>(Landroid/content/Context;Lkik/core/interfaces/e;Lkik/core/interfaces/ag;Lcom/android/volley/g;Lkik/core/e/d;)V
 
     return-object v0
 .end method

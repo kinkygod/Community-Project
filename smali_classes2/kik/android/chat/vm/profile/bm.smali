@@ -1,184 +1,107 @@
-.class public final Lkik/android/chat/vm/profile/bm;
+.class final synthetic Lkik/android/chat/vm/profile/bm;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
-
-# static fields
-.field private static final a:Ljava/util/Random;
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field private final b:Landroid/content/res/Resources;
+.field private final a:Lkik/android/chat/vm/profile/bi;
 
-.field private c:[Ljava/lang/String;
+.field private final b:Ljava/lang/String;
+
+.field private final c:Lcom/kik/core/domain/a/a/a;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method private constructor <init>(Lkik/android/chat/vm/profile/bi;Ljava/lang/String;Lcom/kik/core/domain/a/a/a;)V
+    .locals 0
 
-    .prologue
-    .line 17
-    new-instance v0, Ljava/util/Random;
-
-    invoke-direct {v0}, Ljava/util/Random;-><init>()V
-
-    sput-object v0, Lkik/android/chat/vm/profile/bm;->a:Ljava/util/Random;
-
-    return-void
-.end method
-
-.method public constructor <init>(Landroid/content/res/Resources;)V
-    .locals 3
-
-    .prologue
-    .line 22
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 23
-    iput-object p1, p0, Lkik/android/chat/vm/profile/bm;->b:Landroid/content/res/Resources;
+    iput-object p1, p0, Lkik/android/chat/vm/profile/bm;->a:Lkik/android/chat/vm/profile/bi;
 
-    .line 24
-    const/4 v0, 0x6
+    iput-object p2, p0, Lkik/android/chat/vm/profile/bm;->b:Ljava/lang/String;
 
-    new-array v0, v0, [Ljava/lang/String;
+    iput-object p3, p0, Lkik/android/chat/vm/profile/bm;->c:Lcom/kik/core/domain/a/a/a;
 
-    const/4 v1, 0x0
-
-    const v2, 0x7f0900f5
-
-    invoke-direct {p0, v2}, Lkik/android/chat/vm/profile/bm;->b(I)Ljava/lang/String;
-
-    move-result-object v2
-
-    aput-object v2, v0, v1
-
-    const/4 v1, 0x1
-
-    const v2, 0x7f0900f6
-
-    invoke-direct {p0, v2}, Lkik/android/chat/vm/profile/bm;->b(I)Ljava/lang/String;
-
-    move-result-object v2
-
-    aput-object v2, v0, v1
-
-    const/4 v1, 0x2
-
-    const v2, 0x7f0900f7
-
-    invoke-direct {p0, v2}, Lkik/android/chat/vm/profile/bm;->b(I)Ljava/lang/String;
-
-    move-result-object v2
-
-    aput-object v2, v0, v1
-
-    const/4 v1, 0x3
-
-    const v2, 0x7f0900f8
-
-    invoke-direct {p0, v2}, Lkik/android/chat/vm/profile/bm;->b(I)Ljava/lang/String;
-
-    move-result-object v2
-
-    aput-object v2, v0, v1
-
-    const/4 v1, 0x4
-
-    const v2, 0x7f0900f9
-
-    invoke-direct {p0, v2}, Lkik/android/chat/vm/profile/bm;->b(I)Ljava/lang/String;
-
-    move-result-object v2
-
-    aput-object v2, v0, v1
-
-    const/4 v1, 0x5
-
-    const v2, 0x7f0900fa
-
-    invoke-direct {p0, v2}, Lkik/android/chat/vm/profile/bm;->b(I)Ljava/lang/String;
-
-    move-result-object v2
-
-    aput-object v2, v0, v1
-
-    iput-object v0, p0, Lkik/android/chat/vm/profile/bm;->c:[Ljava/lang/String;
-
-    .line 25
     return-void
 .end method
 
-.method private b(I)Ljava/lang/String;
+.method public static a(Lkik/android/chat/vm/profile/bi;Ljava/lang/String;Lcom/kik/core/domain/a/a/a;)Ljava/lang/Runnable;
     .locals 1
 
-    .prologue
-    .line 52
-    iget-object v0, p0, Lkik/android/chat/vm/profile/bm;->b:Landroid/content/res/Resources;
+    new-instance v0, Lkik/android/chat/vm/profile/bm;
 
-    invoke-virtual {v0, p1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
+    invoke-direct {v0, p0, p1, p2}, Lkik/android/chat/vm/profile/bm;-><init>(Lkik/android/chat/vm/profile/bi;Ljava/lang/String;Lcom/kik/core/domain/a/a/a;)V
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public final a()Ljava/lang/String;
-    .locals 3
+.method public final run()V
+    .locals 4
 
     .prologue
-    .line 29
-    iget-object v0, p0, Lkik/android/chat/vm/profile/bm;->c:[Ljava/lang/String;
+    .line 0
+    iget-object v0, p0, Lkik/android/chat/vm/profile/bm;->a:Lkik/android/chat/vm/profile/bi;
 
-    sget-object v1, Lkik/android/chat/vm/profile/bm;->a:Ljava/util/Random;
+    iget-object v1, p0, Lkik/android/chat/vm/profile/bm;->b:Ljava/lang/String;
 
-    iget-object v2, p0, Lkik/android/chat/vm/profile/bm;->c:[Ljava/lang/String;
+    iget-object v2, p0, Lkik/android/chat/vm/profile/bm;->c:Lcom/kik/core/domain/a/a/a;
 
-    array-length v2, v2
+    .line 1339
+    iget-object v0, v0, Lkik/android/chat/vm/profile/bi;->k:Lcom/kik/android/Mixpanel;
 
-    invoke-virtual {v1, v2}, Ljava/util/Random;->nextInt(I)I
+    const-string v3, "Report Cancelled"
 
-    move-result v1
-
-    aget-object v0, v0, v1
-
-    return-object v0
-.end method
-
-.method public final a(I)Ljava/lang/String;
-    .locals 1
-
-    .prologue
-    .line 34
-    packed-switch p1, :pswitch_data_0
-
-    .line 46
-    const v0, 0x7f0900fd
-
-    invoke-direct {p0, v0}, Lkik/android/chat/vm/profile/bm;->b(I)Ljava/lang/String;
+    invoke-virtual {v0, v3}, Lcom/kik/android/Mixpanel;->b(Ljava/lang/String;)Lcom/kik/android/Mixpanel$d;
 
     move-result-object v0
 
-    :goto_0
-    return-object v0
+    const-string v3, "Screen"
 
-    .line 36
-    :pswitch_0
-    const v0, 0x7f0900fe
-
-    invoke-direct {p0, v0}, Lkik/android/chat/vm/profile/bm;->b(I)Ljava/lang/String;
+    .line 1340
+    invoke-virtual {v0, v3, v1}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
 
     move-result-object v0
 
-    goto :goto_0
+    const-string v1, "Target"
 
-    .line 34
-    nop
+    sget-object v3, Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;->GROUP:Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;
 
-    :pswitch_data_0
-    .packed-switch 0x65
-        :pswitch_0
-    .end packed-switch
+    .line 1341
+    invoke-virtual {v3}, Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;->toTitleString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v0, v1, v3}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v0
+
+    const-string v1, "Chat"
+
+    .line 1342
+    invoke-interface {v2}, Lcom/kik/core/domain/a/a/a;->a()Lcom/kik/core/network/xmpp/jid/a;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Lcom/kik/core/network/xmpp/jid/a;->a()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v1, v2}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v0
+
+    .line 1343
+    invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->g()Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
+
+    .line 0
+    return-void
 .end method

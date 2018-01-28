@@ -9,7 +9,7 @@
     .end annotation
 .end field
 
-.field protected b:Lkik/core/interfaces/ae;
+.field protected b:Lkik/core/interfaces/ad;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -97,9 +97,9 @@
     const/4 v3, 0x0
 
     .line 97
-    iget-object v0, p0, Lkik/android/chat/activity/IntroActivity;->b:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/chat/activity/IntroActivity;->b:Lkik/core/interfaces/ad;
 
-    invoke-static {v0}, Lkik/core/z;->a(Lkik/core/interfaces/ae;)Z
+    invoke-static {v0}, Lkik/core/z;->a(Lkik/core/interfaces/ad;)Z
 
     move-result v0
 

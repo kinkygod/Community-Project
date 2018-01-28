@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/widget/dm$a;
+.implements Lkik/android/widget/ea$a;
 
 
 # annotations
@@ -19,7 +19,7 @@
         "Lkik/android/gifs/vm/bn;",
         ">",
         "Landroid/support/v7/widget/RecyclerView;",
-        "Lkik/android/widget/dm$a",
+        "Lkik/android/widget/ea$a",
         "<TGifItemViewModel;",
         "Lkik/android/gifs/view/GifRecyclerView$a;",
         ">;"
@@ -111,9 +111,9 @@
     check-cast p1, Lkik/android/gifs/vm/c;
 
     .line 41
-    new-instance v0, Lkik/android/widget/dm;
+    new-instance v0, Lkik/android/widget/ea;
 
-    invoke-direct {v0, p0, p1}, Lkik/android/widget/dm;-><init>(Lkik/android/widget/dm$a;Lkik/android/chat/vm/IListViewModel;)V
+    invoke-direct {v0, p0, p1}, Lkik/android/widget/ea;-><init>(Lkik/android/widget/ea$a;Lkik/android/chat/vm/IListViewModel;)V
 
     .line 42
     invoke-virtual {p0, v0}, Lkik/android/gifs/view/GifRecyclerView;->setAdapter(Landroid/support/v7/widget/RecyclerView$Adapter;)V
@@ -169,9 +169,9 @@
     check-cast p1, Lkik/android/gifs/vm/c;
 
     .line 55
-    new-instance v0, Lkik/android/widget/dm;
+    new-instance v0, Lkik/android/widget/ea;
 
-    invoke-direct {v0, p0, p1}, Lkik/android/widget/dm;-><init>(Lkik/android/widget/dm$a;Lkik/android/chat/vm/IListViewModel;)V
+    invoke-direct {v0, p0, p1}, Lkik/android/widget/ea;-><init>(Lkik/android/widget/ea$a;Lkik/android/chat/vm/IListViewModel;)V
 
     .line 56
     invoke-virtual {p0, v0}, Lkik/android/gifs/view/GifRecyclerView;->setAdapter(Landroid/support/v7/widget/RecyclerView$Adapter;)V
@@ -220,7 +220,7 @@
 
     move-result v2
 
-    invoke-virtual {v0}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->h()[I
+    invoke-virtual {v0}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->g()[I
 
     move-result-object v0
 
@@ -255,7 +255,7 @@
 
     move-result v2
 
-    invoke-virtual {v0}, Landroid/support/v7/widget/GridLayoutManager;->l()I
+    invoke-virtual {v0}, Landroid/support/v7/widget/GridLayoutManager;->k()I
 
     move-result v0
 
@@ -291,7 +291,7 @@
     if-eqz v0, :cond_0
 
     .line 2094
-    const v0, 0x7f04009d
+    const v0, 0x7f04009c
 
     .line 2097
     :goto_0
@@ -304,7 +304,7 @@
     if-eqz v0, :cond_1
 
     .line 2097
-    const v0, 0x7f04009f
+    const v0, 0x7f04009e
 
     goto :goto_0
 

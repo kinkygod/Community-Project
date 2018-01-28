@@ -69,7 +69,7 @@
     .line 77
     iget-object v2, p0, Lkik/core/net/challenge/b$1;->a:Lkik/core/net/challenge/e;
 
-    invoke-virtual {v2}, Lkik/core/net/challenge/e;->aQ_()V
+    invoke-virtual {v2}, Lkik/core/net/challenge/e;->aM_()V
 
     .line 78
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J

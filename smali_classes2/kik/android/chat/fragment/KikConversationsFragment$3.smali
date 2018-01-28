@@ -23,7 +23,7 @@
     .locals 0
 
     .prologue
-    .line 1276
+    .line 1278
     iput-object p1, p0, Lkik/android/chat/fragment/KikConversationsFragment$3;->a:Lkik/android/chat/fragment/KikConversationsFragment;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
@@ -37,12 +37,12 @@
     .locals 1
 
     .prologue
-    .line 1287
+    .line 1289
     iget-object v0, p0, Lkik/android/chat/fragment/KikConversationsFragment$3;->a:Lkik/android/chat/fragment/KikConversationsFragment;
 
     invoke-static {v0}, Lkik/android/chat/fragment/KikConversationsFragment;->x(Lkik/android/chat/fragment/KikConversationsFragment;)V
 
-    .line 1293
+    .line 1295
     iget-object v0, p0, Lkik/android/chat/fragment/KikConversationsFragment$3;->a:Lkik/android/chat/fragment/KikConversationsFragment;
 
     invoke-virtual {v0}, Lkik/android/chat/fragment/KikConversationsFragment;->isResumed()Z
@@ -51,7 +51,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 1294
+    .line 1296
     iget-object v0, p0, Lkik/android/chat/fragment/KikConversationsFragment$3;->a:Lkik/android/chat/fragment/KikConversationsFragment;
 
     invoke-static {v0}, Lkik/android/chat/fragment/KikConversationsFragment;->y(Lkik/android/chat/fragment/KikConversationsFragment;)Lkik/android/chat/vm/conversations/d;
@@ -60,12 +60,12 @@
 
     invoke-interface {v0}, Lkik/android/chat/vm/conversations/d;->d()V
 
-    .line 1295
+    .line 1297
     iget-object v0, p0, Lkik/android/chat/fragment/KikConversationsFragment$3;->a:Lkik/android/chat/fragment/KikConversationsFragment;
 
     invoke-static {v0}, Lkik/android/chat/fragment/KikConversationsFragment;->z(Lkik/android/chat/fragment/KikConversationsFragment;)V
 
-    .line 1297
+    .line 1299
     :cond_0
     return-void
 .end method
@@ -74,7 +74,7 @@
     .locals 2
 
     .prologue
-    .line 1280
+    .line 1282
     iget-object v0, p0, Lkik/android/chat/fragment/KikConversationsFragment$3;->a:Lkik/android/chat/fragment/KikConversationsFragment;
 
     iget-object v1, p0, Lkik/android/chat/fragment/KikConversationsFragment$3;->a:Lkik/android/chat/fragment/KikConversationsFragment;
@@ -87,7 +87,7 @@
 
     invoke-virtual {v0, v1}, Lkik/android/chat/fragment/KikConversationsFragment;->hideKeyBoard(Landroid/view/View;)V
 
-    .line 1281
+    .line 1283
     iget-object v0, p0, Lkik/android/chat/fragment/KikConversationsFragment$3;->a:Lkik/android/chat/fragment/KikConversationsFragment;
 
     iget-object v0, v0, Lkik/android/chat/fragment/KikConversationsFragment;->_searchBarView:Lkik/android/chat/view/SearchBarViewImpl;
@@ -98,6 +98,6 @@
 
     invoke-virtual {v0}, Lkik/android/widget/RobotoEditText;->clearFocus()V
 
-    .line 1282
+    .line 1284
     return-void
 .end method

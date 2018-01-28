@@ -24,7 +24,7 @@
 
 .field private h:Lcom/kik/events/o;
 
-.field private i:Lkik/core/interfaces/ae;
+.field private i:Lkik/core/interfaces/ad;
 
 .field private k:Landroid/content/ServiceConnection;
 
@@ -151,12 +151,12 @@
     return-object v0
 .end method
 
-.method static synthetic c(Lcom/kik/cards/web/iap/b;)Lkik/core/interfaces/ae;
+.method static synthetic c(Lcom/kik/cards/web/iap/b;)Lkik/core/interfaces/ad;
     .locals 1
 
     .prologue
     .line 40
-    iget-object v0, p0, Lcom/kik/cards/web/iap/b;->i:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lcom/kik/cards/web/iap/b;->i:Lkik/core/interfaces/ad;
 
     return-object v0
 .end method
@@ -210,7 +210,7 @@
 
 
 # virtual methods
-.method public final a(Landroid/content/Context;Lkik/core/interfaces/ICommunication;Lkik/core/interfaces/ae;)V
+.method public final a(Landroid/content/Context;Lkik/core/interfaces/ICommunication;Lkik/core/interfaces/ad;)V
     .locals 1
 
     .prologue
@@ -221,7 +221,7 @@
     iput-object p2, p0, Lcom/kik/cards/web/iap/b;->c:Lkik/core/interfaces/ICommunication;
 
     .line 115
-    iput-object p3, p0, Lcom/kik/cards/web/iap/b;->i:Lkik/core/interfaces/ae;
+    iput-object p3, p0, Lcom/kik/cards/web/iap/b;->i:Lkik/core/interfaces/ad;
 
     .line 117
     invoke-virtual {p0}, Lcom/kik/cards/web/iap/b;->b()Lcom/kik/events/o;

@@ -22,7 +22,7 @@
     iput-object p1, p0, Lkik/android/chat/view/CameraIconBarViewImpl_ViewBinding;->a:Lkik/android/chat/view/CameraIconBarViewImpl;
 
     .line 29
-    const v0, 0x7f100178
+    const v0, 0x7f100179
 
     const-string v1, "field \'_shutterButton\'"
 
@@ -37,7 +37,7 @@
     iput-object v0, p1, Lkik/android/chat/view/CameraIconBarViewImpl;->_shutterButton:Lkik/android/widget/ArcImageView;
 
     .line 30
-    const v0, 0x7f100177
+    const v0, 0x7f100178
 
     const-string v1, "field \'_retakeButton\'"
 
@@ -48,7 +48,7 @@
     iput-object v0, p1, Lkik/android/chat/view/CameraIconBarViewImpl;->_retakeButton:Landroid/view/View;
 
     .line 31
-    const v0, 0x7f10017b
+    const v0, 0x7f10017c
 
     const-string v1, "field \'_swapCameraButton\'"
 
@@ -63,7 +63,7 @@
     iput-object v0, p1, Lkik/android/chat/view/CameraIconBarViewImpl;->_swapCameraButton:Landroid/widget/ImageView;
 
     .line 32
-    const v0, 0x7f10017a
+    const v0, 0x7f10017b
 
     const-string v1, "field \'_lightningButton\'"
 
@@ -78,7 +78,7 @@
     iput-object v0, p1, Lkik/android/chat/view/CameraIconBarViewImpl;->_lightningButton:Landroid/widget/ImageView;
 
     .line 33
-    const v0, 0x7f100179
+    const v0, 0x7f10017a
 
     const-string v1, "field \'_usePhotoButton\'"
 
@@ -93,7 +93,7 @@
     iput-object v0, p1, Lkik/android/chat/view/CameraIconBarViewImpl;->_usePhotoButton:Lkik/android/widget/RobotoTextView;
 
     .line 34
-    const v0, 0x7f10017c
+    const v0, 0x7f10017d
 
     const-string v1, "field \'_videoTime\'"
 

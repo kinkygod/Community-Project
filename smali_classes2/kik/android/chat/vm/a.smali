@@ -7,7 +7,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<ItemViewModel::",
-        "Lkik/android/chat/vm/ar;",
+        "Lkik/android/chat/vm/at;",
         ">",
         "Lkik/android/chat/vm/c",
         "<TItemViewModel;>;"
@@ -39,7 +39,7 @@
 
 
 # virtual methods
-.method protected final a(I)Lkik/android/chat/vm/ar;
+.method protected final a(I)Lkik/android/chat/vm/at;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -56,14 +56,14 @@
     move-result-object v0
 
     .line 16
-    invoke-virtual {p0, p1, v0}, Lkik/android/chat/vm/a;->a(ILrx/d;)Lkik/android/chat/vm/ar;
+    invoke-virtual {p0, p1, v0}, Lkik/android/chat/vm/a;->a(ILrx/d;)Lkik/android/chat/vm/at;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method protected abstract a(ILrx/d;)Lkik/android/chat/vm/ar;
+.method protected abstract a(ILrx/d;)Lkik/android/chat/vm/at;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",

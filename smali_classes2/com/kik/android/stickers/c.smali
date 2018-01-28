@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/core/interfaces/ac;
+.implements Lkik/core/interfaces/ab;
 
 
 # annotations
@@ -89,7 +89,7 @@
 
 .field private m:Lkik/core/interfaces/e;
 
-.field private n:Lkik/core/interfaces/ah;
+.field private n:Lkik/core/interfaces/ag;
 
 .field private o:Lcom/android/volley/g;
 
@@ -179,7 +179,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Landroid/content/Context;Lkik/core/interfaces/e;Lkik/core/interfaces/ah;Lcom/android/volley/g;Lkik/core/e/d;)V
+.method public constructor <init>(Landroid/content/Context;Lkik/core/interfaces/e;Lkik/core/interfaces/ag;Lcom/android/volley/g;Lkik/core/e/d;)V
     .locals 7
 
     .prologue
@@ -198,13 +198,13 @@
 
     move-object v5, p5
 
-    invoke-direct/range {v0 .. v6}, Lcom/kik/android/stickers/c;-><init>(Landroid/content/Context;Lkik/core/interfaces/e;Lkik/core/interfaces/ah;Lcom/android/volley/g;Lkik/core/e/d;Ljava/lang/String;)V
+    invoke-direct/range {v0 .. v6}, Lcom/kik/android/stickers/c;-><init>(Landroid/content/Context;Lkik/core/interfaces/e;Lkik/core/interfaces/ag;Lcom/android/volley/g;Lkik/core/e/d;Ljava/lang/String;)V
 
     .line 107
     return-void
 .end method
 
-.method private constructor <init>(Landroid/content/Context;Lkik/core/interfaces/e;Lkik/core/interfaces/ah;Lcom/android/volley/g;Lkik/core/e/d;Ljava/lang/String;)V
+.method private constructor <init>(Landroid/content/Context;Lkik/core/interfaces/e;Lkik/core/interfaces/ag;Lcom/android/volley/g;Lkik/core/e/d;Ljava/lang/String;)V
     .locals 4
 
     .prologue
@@ -321,7 +321,7 @@
     iput-object p2, p0, Lcom/kik/android/stickers/c;->m:Lkik/core/interfaces/e;
 
     .line 112
-    iput-object p3, p0, Lcom/kik/android/stickers/c;->n:Lkik/core/interfaces/ah;
+    iput-object p3, p0, Lcom/kik/android/stickers/c;->n:Lkik/core/interfaces/ag;
 
     .line 113
     iput-object p4, p0, Lcom/kik/android/stickers/c;->o:Lcom/android/volley/g;
@@ -878,11 +878,11 @@
 
     const/4 v3, 0x0
 
-    iget-object v6, p0, Lcom/kik/android/stickers/c;->n:Lkik/core/interfaces/ah;
+    iget-object v6, p0, Lcom/kik/android/stickers/c;->n:Lkik/core/interfaces/ag;
 
     iget-object v7, p0, Lcom/kik/android/stickers/c;->m:Lkik/core/interfaces/e;
 
-    invoke-direct/range {v0 .. v7}, Lcom/kik/cache/StickerPackRequest;-><init>(Ljava/lang/String;Ljava/lang/String;Lorg/json/JSONObject;Lcom/android/volley/h$b;Lcom/android/volley/h$a;Lkik/core/interfaces/ah;Lkik/core/interfaces/e;)V
+    invoke-direct/range {v0 .. v7}, Lcom/kik/cache/StickerPackRequest;-><init>(Ljava/lang/String;Ljava/lang/String;Lorg/json/JSONObject;Lcom/android/volley/h$b;Lcom/android/volley/h$a;Lkik/core/interfaces/ag;Lkik/core/interfaces/e;)V
 
     .line 14267
     iget-object v1, p0, Lcom/kik/android/stickers/c;->o:Lcom/android/volley/g;
@@ -1207,11 +1207,11 @@
 
     const-string v2, "/v1/packs/default"
 
-    iget-object v5, p0, Lcom/kik/android/stickers/c;->n:Lkik/core/interfaces/ah;
+    iget-object v5, p0, Lcom/kik/android/stickers/c;->n:Lkik/core/interfaces/ag;
 
     iget-object v6, p0, Lcom/kik/android/stickers/c;->m:Lkik/core/interfaces/e;
 
-    invoke-direct/range {v0 .. v6}, Lcom/kik/cache/DefaultStickersRequest;-><init>(Ljava/lang/String;Ljava/lang/String;Lcom/android/volley/h$b;Lcom/android/volley/h$a;Lkik/core/interfaces/ah;Lkik/core/interfaces/e;)V
+    invoke-direct/range {v0 .. v6}, Lcom/kik/cache/DefaultStickersRequest;-><init>(Ljava/lang/String;Ljava/lang/String;Lcom/android/volley/h$b;Lcom/android/volley/h$a;Lkik/core/interfaces/ag;Lkik/core/interfaces/e;)V
 
     .line 15208
     iget-object v1, p0, Lcom/kik/android/stickers/c;->o:Lcom/android/volley/g;
@@ -1712,7 +1712,7 @@
 
     move-result-object v0
 
-    invoke-static {v3, v4, v0}, Lkik/core/datatypes/ad;->a(Ljava/lang/String;Ljava/lang/String;Lcom/dyuproject/protostuff/p;)Lkik/core/datatypes/ad;
+    invoke-static {v3, v4, v0}, Lkik/core/datatypes/ac;->a(Ljava/lang/String;Ljava/lang/String;Lcom/dyuproject/protostuff/p;)Lkik/core/datatypes/ac;
 
     move-result-object v0
 
@@ -1881,13 +1881,13 @@
 
     .line 174
     :try_start_0
-    iget-object v1, p0, Lcom/kik/android/stickers/c;->n:Lkik/core/interfaces/ah;
+    iget-object v1, p0, Lcom/kik/android/stickers/c;->n:Lkik/core/interfaces/ag;
 
-    invoke-interface {v1}, Lkik/core/interfaces/ah;->d()Lkik/core/datatypes/ac;
+    invoke-interface {v1}, Lkik/core/interfaces/ag;->d()Lkik/core/datatypes/ab;
 
     move-result-object v1
 
-    iget-object v1, v1, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
+    iget-object v1, v1, Lkik/core/datatypes/ab;->c:Ljava/lang/String;
 
     .line 175
     new-instance v5, Lorg/json/JSONObject;
@@ -2057,7 +2057,7 @@
 
     .prologue
     .line 599
-    invoke-static {p1}, Lcom/kik/util/co;->a(Ljava/lang/String;)Z
+    invoke-static {p1}, Lcom/kik/util/ct;->a(Ljava/lang/String;)Z
 
     .line 600
     return-void

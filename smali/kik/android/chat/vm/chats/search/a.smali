@@ -55,20 +55,6 @@
     return-void
 .end method
 
-.method public final a()Z
-    .locals 2
-
-    .prologue
-    .line 48
-    new-instance v0, Ljava/lang/RuntimeException;
-
-    const-string v1, "isFirstInSection not implemented for Chats Search Results. Feel free to implement it."
-
-    invoke-direct {v0, v1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-.end method
-
 .method protected final aa_()Ljava/lang/String;
     .locals 3
 
@@ -114,6 +100,20 @@
 .end method
 
 .method public final b()Z
+    .locals 2
+
+    .prologue
+    .line 48
+    new-instance v0, Ljava/lang/RuntimeException;
+
+    const-string v1, "isFirstInSection not implemented for Chats Search Results. Feel free to implement it."
+
+    invoke-direct {v0, v1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+.end method
+
+.method public final d()Z
     .locals 1
 
     .prologue
@@ -123,7 +123,7 @@
     return v0
 .end method
 
-.method protected final d()Ljava/lang/String;
+.method protected final e()Ljava/lang/String;
     .locals 2
 
     .prologue
@@ -169,7 +169,7 @@
     goto :goto_0
 .end method
 
-.method protected final g()V
+.method protected final j()V
     .locals 6
 
     .prologue

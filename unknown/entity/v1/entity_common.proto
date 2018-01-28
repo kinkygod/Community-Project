@@ -10,6 +10,27 @@ import "protobuf_validation.proto";
 import "common_model.proto";
 import "entity/v1/element_common.proto";
 
+
+//**************************************************
+// Key used by Entity Warehouse, Subscription Service, etc
+// to explicitly identify entities
+//**************************************************
+message EntityKey {
+    EntityType type = 1;
+
+    enum EntityType {
+        USER = 0;
+        GROUP = 1;
+        USER_ROSTER_ENTRY = 2;
+        GROUP_ROSTER_ENTRY = 3;
+    }
+
+    oneof id {
+        common.XiBareUserJid user_jid = 2;
+        common.XiGroupJid group_jid = 3;
+    }
+}
+
 //**************************************************
 //
 // Contains a dictionary of all entities that are
@@ -50,6 +71,9 @@ message EntityUser {
 
     // Registration Element for user
     common.entity.v1.RegistrationElement registration_element = 103;
+
+    // User Interests Element 
+    common.entity.v1.InterestsElement interests_element = 104;
 }
 
 // Entity containing information of a single user that is broadcasted to his/her rosters.
@@ -109,4 +133,7 @@ message EntityBot {
 
     // Rating information for the bot
     common.entity.v1.RatingSummary rating_summary = 201;
+
+    // Is the bot trusted
+    common.entity.v1.TrustedElement trusted = 202;
 }

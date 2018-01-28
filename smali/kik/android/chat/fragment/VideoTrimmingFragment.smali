@@ -49,7 +49,7 @@
     .end annotation
 .end field
 
-.field a:Lcom/kik/storage/p;
+.field a:Lcom/kik/storage/s;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -966,7 +966,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0203af
+    const v4, 0x7f020394
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -979,7 +979,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0203b0
+    const v5, 0x7f020395
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -992,7 +992,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0203bf
+    const v6, 0x7f0203a6
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -1175,7 +1175,7 @@
 
     aput-object v5, v3, v4
 
-    invoke-static {v3}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v3}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
     .line 1435
     iget-object v3, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->_videoPlayIcon:Landroid/widget/ImageView;
@@ -1369,16 +1369,16 @@
     goto :goto_0
 .end method
 
-.method protected screenOpenedEvent()Lcom/kik/metrics/b/s;
+.method protected screenOpenedEvent()Lcom/kik/metrics/b/t;
     .locals 1
 
     .prologue
     .line 109
-    invoke-static {}, Lcom/kik/metrics/b/bd;->b()Lcom/kik/metrics/b/bd$a;
+    invoke-static {}, Lcom/kik/metrics/b/bl;->b()Lcom/kik/metrics/b/bl$a;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/kik/metrics/b/bd$a;->a()Lcom/kik/metrics/b/bd;
+    invoke-virtual {v0}, Lcom/kik/metrics/b/bl$a;->a()Lcom/kik/metrics/b/bl;
 
     move-result-object v0
 

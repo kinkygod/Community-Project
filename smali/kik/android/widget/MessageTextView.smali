@@ -44,15 +44,15 @@
     .locals 1
 
     .prologue
-    .line 66
+    .line 68
     const/4 v0, 0x0
 
     invoke-direct {p0, p1, v0}, Lkik/android/widget/MessageTextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 67
+    .line 69
     invoke-direct {p0}, Lkik/android/widget/MessageTextView;->a()V
 
-    .line 68
+    .line 70
     return-void
 .end method
 
@@ -60,15 +60,15 @@
     .locals 1
 
     .prologue
-    .line 72
+    .line 74
     const/4 v0, 0x0
 
     invoke-direct {p0, p1, p2, v0}, Lkik/android/widget/MessageTextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 73
+    .line 75
     invoke-direct {p0}, Lkik/android/widget/MessageTextView;->a()V
 
-    .line 74
+    .line 76
     return-void
 .end method
 
@@ -76,23 +76,23 @@
     .locals 1
 
     .prologue
-    .line 78
+    .line 80
     invoke-direct {p0, p1, p2, p3}, Lkik/android/widget/RobotoTextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 44
+    .line 46
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lkik/android/widget/MessageTextView;->f:Z
 
-    .line 60
+    .line 62
     const/4 v0, 0x0
 
     iput v0, p0, Lkik/android/widget/MessageTextView;->j:I
 
-    .line 79
+    .line 81
     invoke-direct {p0}, Lkik/android/widget/MessageTextView;->a()V
 
-    .line 80
+    .line 82
     return-void
 .end method
 
@@ -100,7 +100,7 @@
     .locals 1
 
     .prologue
-    .line 31
+    .line 33
     iget-object v0, p0, Lkik/android/widget/MessageTextView;->h:Lkik/android/widget/MessageTextView$a;
 
     return-object v0
@@ -110,7 +110,7 @@
     .locals 2
 
     .prologue
-    .line 84
+    .line 86
     invoke-virtual {p0}, Lkik/android/widget/MessageTextView;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -129,11 +129,11 @@
 
     move-result-object v0
 
-    .line 84
+    .line 86
     :goto_0
     invoke-interface {v0, p0}, Lkik/android/d/c;->a(Lkik/android/widget/MessageTextView;)V
 
-    .line 85
+    .line 87
     return-void
 
     .line 1033
@@ -150,6 +150,17 @@
     const/4 v0, 0x0
 
     goto :goto_0
+.end method
+
+.method static synthetic a(Lkik/android/widget/MessageTextView;Ljava/lang/String;)V
+    .locals 0
+
+    .prologue
+    .line 198
+    invoke-virtual {p0, p1}, Lkik/android/widget/MessageTextView;->c(Ljava/lang/String;)V
+
+    .line 199
+    return-void
 .end method
 
 .method public static a(Lkik/android/widget/MessageTextView;Lrx/d;)V
@@ -172,12 +183,12 @@
     .end annotation
 
     .prologue
-    .line 36
-    const v0, 0x7f0100ea
+    .line 38
+    const v0, 0x7f0100ed
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p0}, Lkik/android/widget/cm;->a(Lkik/android/widget/MessageTextView;)Lrx/functions/b;
+    invoke-static {p0}, Lkik/android/widget/da;->a(Lkik/android/widget/MessageTextView;)Lrx/functions/b;
 
     move-result-object v1
 
@@ -188,15 +199,15 @@
     :cond_0
     const/4 v2, 0x0
 
-    .line 37
+    .line 39
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v2
 
-    .line 36
-    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bq;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
-
     .line 38
+    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bt;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
+
+    .line 40
     return-void
 .end method
 
@@ -205,7 +216,7 @@
 
     .prologue
     .line 0
-    .line 2096
+    .line 2098
     iput-boolean p1, p0, Lkik/android/widget/MessageTextView;->f:Z
 
     .line 0
@@ -216,7 +227,7 @@
     .locals 1
 
     .prologue
-    .line 31
+    .line 33
     iget-object v0, p0, Lkik/android/widget/MessageTextView;->i:Lkik/android/widget/MessageTextView$b;
 
     return-object v0
@@ -228,16 +239,27 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 200
+    .line 212
     iput-boolean v0, p0, Lkik/android/widget/MessageTextView;->g:Z
 
-    .line 201
+    .line 213
     iput-boolean v0, p0, Lkik/android/widget/MessageTextView;->d:Z
 
-    .line 203
+    .line 215
     invoke-virtual {p0}, Lkik/android/widget/MessageTextView;->requestLayout()V
 
-    .line 204
+    .line 216
+    return-void
+.end method
+
+.method static synthetic b(Lkik/android/widget/MessageTextView;Ljava/lang/String;)V
+    .locals 0
+
+    .prologue
+    .line 194
+    invoke-virtual {p0, p1}, Lkik/android/widget/MessageTextView;->b(Ljava/lang/String;)V
+
+    .line 195
     return-void
 .end method
 
@@ -261,12 +283,12 @@
     .end annotation
 
     .prologue
-    .line 90
-    const v0, 0x7f0101c2
+    .line 92
+    const v0, 0x7f0101cc
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p0}, Lkik/android/widget/cn;->a(Lkik/android/widget/MessageTextView;)Lrx/functions/b;
+    invoke-static {p0}, Lkik/android/widget/db;->a(Lkik/android/widget/MessageTextView;)Lrx/functions/b;
 
     move-result-object v1
 
@@ -277,15 +299,15 @@
     :cond_0
     const/4 v2, 0x1
 
-    .line 91
+    .line 93
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v2
 
-    .line 90
-    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bq;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
-
     .line 92
+    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bt;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
+
+    .line 94
     return-void
 .end method
 
@@ -295,13 +317,13 @@
     .locals 0
 
     .prologue
-    .line 116
+    .line 118
     iput-object p1, p0, Lkik/android/widget/MessageTextView;->b:Lcom/kik/message/model/attachments/RenderInstructionSet;
 
-    .line 118
+    .line 120
     invoke-direct {p0}, Lkik/android/widget/MessageTextView;->b()V
 
-    .line 119
+    .line 121
     return-void
 .end method
 
@@ -309,10 +331,10 @@
     .locals 0
 
     .prologue
-    .line 208
+    .line 220
     iput-object p1, p0, Lkik/android/widget/MessageTextView;->h:Lkik/android/widget/MessageTextView$a;
 
-    .line 209
+    .line 221
     return-void
 .end method
 
@@ -320,10 +342,10 @@
     .locals 0
 
     .prologue
-    .line 213
+    .line 225
     iput-object p1, p0, Lkik/android/widget/MessageTextView;->i:Lkik/android/widget/MessageTextView$b;
 
-    .line 214
+    .line 226
     return-void
 .end method
 
@@ -331,13 +353,13 @@
     .locals 0
 
     .prologue
-    .line 101
+    .line 103
     iput-boolean p1, p0, Lkik/android/widget/MessageTextView;->k:Z
 
-    .line 103
+    .line 105
     invoke-direct {p0}, Lkik/android/widget/MessageTextView;->b()V
 
-    .line 104
+    .line 106
     return-void
 .end method
 
@@ -345,33 +367,33 @@
     .locals 0
 
     .prologue
-    .line 218
+    .line 230
     iput-boolean p1, p0, Lkik/android/widget/MessageTextView;->e:Z
 
-    .line 219
+    .line 231
     return-void
 .end method
 
 .method protected onMeasure(II)V
-    .locals 12
+    .locals 13
 
     .prologue
-    const/4 v4, 0x0
-
-    .line 226
+    .line 238
     invoke-virtual {p0}, Lkik/android/widget/MessageTextView;->getLayout()Landroid/text/Layout;
 
     move-result-object v7
 
-    .line 228
+    .line 240
     iget-boolean v0, p0, Lkik/android/widget/MessageTextView;->d:Z
 
     if-eqz v0, :cond_1
 
-    .line 1145
-    iput-boolean v4, p0, Lkik/android/widget/MessageTextView;->d:Z
-
     .line 1147
+    const/4 v0, 0x0
+
+    iput-boolean v0, p0, Lkik/android/widget/MessageTextView;->d:Z
+
+    .line 1149
     iget-object v0, p0, Lkik/android/widget/MessageTextView;->c:Ljava/lang/CharSequence;
 
     if-eqz v0, :cond_0
@@ -384,7 +406,7 @@
 
     if-nez v0, :cond_5
 
-    .line 1149
+    .line 1151
     :cond_0
     const/4 v0, 0x0
 
@@ -392,45 +414,45 @@
 
     invoke-super {p0, v0, v1}, Lkik/android/widget/RobotoTextView;->setText(Ljava/lang/CharSequence;Landroid/widget/TextView$BufferType;)V
 
-    .line 232
+    .line 244
     :cond_1
     :goto_0
     invoke-super {p0, p1, p2}, Lkik/android/widget/RobotoTextView;->onMeasure(II)V
 
-    .line 236
+    .line 248
     invoke-virtual {p0}, Lkik/android/widget/MessageTextView;->getLayout()Landroid/text/Layout;
 
-    move-result-object v2
+    move-result-object v4
 
-    .line 237
+    .line 249
     invoke-virtual {p0}, Lkik/android/widget/MessageTextView;->getMeasuredWidth()I
 
     move-result v1
 
-    .line 239
+    .line 251
     invoke-virtual {p0}, Lkik/android/widget/MessageTextView;->getPaddingLeft()I
-
-    move-result v3
-
-    .line 240
-    invoke-virtual {p0}, Lkik/android/widget/MessageTextView;->getPaddingRight()I
 
     move-result v5
 
-    .line 241
-    invoke-virtual {p0}, Lkik/android/widget/MessageTextView;->getPaddingTop()I
+    .line 252
+    invoke-virtual {p0}, Lkik/android/widget/MessageTextView;->getPaddingRight()I
 
     move-result v6
 
-    .line 242
-    invoke-virtual {p0}, Lkik/android/widget/MessageTextView;->getPaddingBottom()I
+    .line 253
+    invoke-virtual {p0}, Lkik/android/widget/MessageTextView;->getPaddingTop()I
 
     move-result v8
 
-    .line 246
-    if-eqz v2, :cond_4
+    .line 254
+    invoke-virtual {p0}, Lkik/android/widget/MessageTextView;->getPaddingBottom()I
 
-    .line 247
+    move-result v9
+
+    .line 258
+    if-eqz v4, :cond_4
+
+    .line 259
     if-eqz v7, :cond_7
 
     iget-boolean v0, p0, Lkik/android/widget/MessageTextView;->g:Z
@@ -439,76 +461,87 @@
 
     const/4 v0, 0x1
 
-    .line 249
+    .line 261
     :goto_1
-    iput-boolean v4, p0, Lkik/android/widget/MessageTextView;->g:Z
+    const/4 v2, 0x0
 
-    .line 251
+    iput-boolean v2, p0, Lkik/android/widget/MessageTextView;->g:Z
+
+    .line 263
     if-nez v0, :cond_3
 
-    .line 253
-    invoke-virtual {v2}, Landroid/text/Layout;->getLineCount()I
+    .line 264
+    const/4 v2, 0x0
+
+    .line 265
+    invoke-virtual {v4}, Landroid/text/Layout;->getLineCount()I
 
     move-result v7
 
-    move v0, v4
+    .line 268
+    const/4 v0, 0x0
 
-    .line 256
+    move v12, v0
+
+    move v0, v2
+
+    move v2, v12
+
     :goto_2
-    if-ge v4, v7, :cond_2
+    if-ge v2, v7, :cond_2
 
-    .line 257
-    invoke-virtual {v2, v4}, Landroid/text/Layout;->getLineWidth(I)F
+    .line 269
+    invoke-virtual {v4, v2}, Landroid/text/Layout;->getLineWidth(I)F
 
-    move-result v9
+    move-result v3
 
-    .line 259
-    float-to-double v10, v9
+    .line 271
+    float-to-double v10, v3
 
     invoke-static {v10, v11}, Ljava/lang/Math;->ceil(D)D
 
     move-result-wide v10
 
-    double-to-int v9, v10
+    double-to-int v3, v10
 
-    invoke-static {v9, v0}, Ljava/lang/Math;->max(II)I
+    invoke-static {v3, v0}, Ljava/lang/Math;->max(II)I
 
-    move-result v0
+    move-result v3
 
-    .line 263
-    if-lt v0, v1, :cond_8
+    .line 275
+    if-lt v3, v1, :cond_8
 
     move v0, v1
 
-    .line 270
+    .line 282
     :cond_2
     iput v0, p0, Lkik/android/widget/MessageTextView;->j:I
 
-    .line 274
+    .line 286
     :cond_3
     iget v0, p0, Lkik/android/widget/MessageTextView;->j:I
 
-    add-int/2addr v0, v3
-
     add-int/2addr v0, v5
 
-    .line 276
-    invoke-virtual {v2}, Landroid/text/Layout;->getHeight()I
+    add-int/2addr v0, v6
+
+    .line 288
+    invoke-virtual {v4}, Landroid/text/Layout;->getHeight()I
 
     move-result v1
 
-    add-int/2addr v1, v6
-
     add-int/2addr v1, v8
 
-    .line 274
+    add-int/2addr v1, v9
+
+    .line 286
     invoke-virtual {p0, v0, v1}, Lkik/android/widget/MessageTextView;->setMeasuredDimension(II)V
 
-    .line 278
+    .line 290
     :cond_4
     return-void
 
-    .line 1153
+    .line 1155
     :cond_5
     invoke-virtual {p0}, Lkik/android/widget/MessageTextView;->getResources()Landroid/content/res/Resources;
 
@@ -520,30 +553,30 @@
 
     iget v0, v0, Landroid/util/DisplayMetrics;->density:F
 
-    .line 1156
+    .line 1158
     const/4 v1, 0x0
 
     cmpl-float v1, v0, v1
 
     if-nez v1, :cond_9
 
-    .line 1157
+    .line 1159
     const/high16 v0, 0x3f800000    # 1.0f
 
     move v3, v0
 
-    .line 1160
+    .line 1162
     :goto_3
     iget-object v0, p0, Lkik/android/widget/MessageTextView;->c:Ljava/lang/CharSequence;
 
-    .line 1162
+    .line 1164
     invoke-virtual {p0}, Lkik/android/widget/MessageTextView;->isInEditMode()Z
 
     move-result v1
 
     if-nez v1, :cond_6
 
-    .line 1163
+    .line 1165
     invoke-virtual {p0}, Lkik/android/widget/MessageTextView;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -552,20 +585,22 @@
 
     iget-object v2, p0, Lkik/android/widget/MessageTextView;->b:Lcom/kik/message/model/attachments/RenderInstructionSet;
 
-    .line 1164
+    .line 1166
     invoke-virtual {p0}, Lkik/android/widget/MessageTextView;->getTextSize()F
 
-    move-result v5
+    move-result v4
 
-    div-float v3, v5, v3
+    div-float v3, v4, v3
 
-    float-to-double v8, v3
+    float-to-double v4, v3
 
-    const-wide v10, 0x3ff4cccccccccccdL    # 1.3
+    const-wide v8, 0x3ff4cccccccccccdL    # 1.3
 
-    mul-double/2addr v8, v10
+    mul-double/2addr v4, v8
 
-    double-to-int v3, v8
+    double-to-int v3, v4
+
+    const/4 v4, 0x0
 
     new-instance v5, Lkik/android/widget/MessageTextView$1;
 
@@ -573,45 +608,92 @@
 
     iget-boolean v6, p0, Lkik/android/widget/MessageTextView;->e:Z
 
-    .line 1163
-    invoke-static/range {v0 .. v6}, Lcom/kik/android/b/g;->a(Landroid/content/Context;Ljava/lang/CharSequence;Lcom/kik/message/model/attachments/RenderInstructionSet;IZLkik/android/f/j;Z)Ljava/lang/CharSequence;
+    .line 1165
+    invoke-static/range {v0 .. v6}, Lcom/kik/android/b/g;->a(Landroid/content/Context;Ljava/lang/CharSequence;Lcom/kik/message/model/attachments/RenderInstructionSet;IZLkik/android/f/i;Z)Ljava/lang/CharSequence;
 
     move-result-object v0
 
-    .line 1183
+    .line 1185
     iget-boolean v1, p0, Lkik/android/widget/MessageTextView;->k:Z
 
     if-eqz v1, :cond_6
 
-    .line 1195
+    .line 1207
     iget-object v1, p0, Lkik/android/widget/MessageTextView;->a:Lkik/android/d/f;
 
     invoke-interface {v1, v0}, Lkik/android/d/f;->a(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
 
     move-result-object v0
 
-    .line 1188
+    .line 1190
     :cond_6
     sget-object v1, Landroid/widget/TextView$BufferType;->SPANNABLE:Landroid/widget/TextView$BufferType;
 
     invoke-super {p0, v0, v1}, Lkik/android/widget/RobotoTextView;->setText(Ljava/lang/CharSequence;Landroid/widget/TextView$BufferType;)V
 
-    .line 1190
+    .line 1192
+    if-eqz v0, :cond_1
+
+    invoke-interface {v0}, Ljava/lang/CharSequence;->length()I
+
+    move-result v0
+
+    if-lez v0, :cond_1
+
+    .line 1193
+    invoke-static {}, Lkik/android/util/ao;->a()Ljava/util/regex/Pattern;
+
+    move-result-object v0
+
+    invoke-static {}, Lkik/android/util/ao;->b()[Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {p0}, Lkik/android/widget/dc;->a(Lkik/android/widget/MessageTextView;)Lkik/android/util/av$a;
+
+    move-result-object v2
+
+    invoke-static {p0, v0, v1, v2}, Lkik/android/util/l;->a(Landroid/widget/TextView;Ljava/util/regex/Pattern;[Ljava/lang/String;Lkik/android/util/av$a;)Z
+
+    .line 1197
+    sget-object v0, Lkik/android/util/bf;->f:Ljava/util/regex/Pattern;
+
+    const/4 v1, 0x1
+
+    new-array v1, v1, [Ljava/lang/String;
+
+    const/4 v2, 0x0
+
+    const-string v3, ""
+
+    aput-object v3, v1, v2
+
+    invoke-static {p0}, Lkik/android/widget/dd;->a(Lkik/android/widget/MessageTextView;)Lkik/android/util/av$a;
+
+    move-result-object v2
+
+    invoke-static {p0, v0, v1, v2}, Lkik/android/util/l;->a(Landroid/widget/TextView;Ljava/util/regex/Pattern;[Ljava/lang/String;Lkik/android/util/av$a;)Z
+
+    .line 1201
     invoke-static {p0}, Lkik/android/util/l;->a(Landroid/widget/TextView;)Z
 
     goto/16 :goto_0
 
+    .line 259
     :cond_7
-    move v0, v4
+    const/4 v0, 0x0
 
-    .line 247
-    goto :goto_1
+    goto/16 :goto_1
 
-    .line 256
+    .line 268
     :cond_8
-    add-int/lit8 v4, v4, 0x1
+    add-int/lit8 v0, v2, 0x1
 
-    goto :goto_2
+    move v2, v0
+
+    move v0, v3
+
+    goto/16 :goto_2
 
     :cond_9
     move v3, v0
@@ -625,8 +707,8 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 124
-    invoke-static {}, Lkik/android/util/cd;->a()Landroid/text/method/MovementMethod;
+    .line 126
+    invoke-static {}, Lkik/android/util/ce;->a()Landroid/text/method/MovementMethod;
 
     move-result-object v2
 
@@ -644,11 +726,11 @@
 
     move v0, v1
 
-    .line 131
+    .line 133
     :goto_0
     return v0
 
-    .line 127
+    .line 129
     :cond_0
     invoke-static {}, Lkik/android/util/br;->a()Landroid/text/method/MovementMethod;
 
@@ -673,10 +755,10 @@
     :cond_1
     move v0, v1
 
-    .line 128
+    .line 130
     goto :goto_0
 
-    .line 131
+    .line 133
     :cond_2
     iget-boolean v0, p0, Lkik/android/widget/MessageTextView;->f:Z
 
@@ -696,16 +778,16 @@
     .locals 0
 
     .prologue
-    .line 137
+    .line 139
     invoke-super {p0, p1, p2}, Lkik/android/widget/RobotoTextView;->setText(Ljava/lang/CharSequence;Landroid/widget/TextView$BufferType;)V
 
-    .line 138
+    .line 140
     iput-object p1, p0, Lkik/android/widget/MessageTextView;->c:Ljava/lang/CharSequence;
 
-    .line 140
+    .line 142
     invoke-direct {p0}, Lkik/android/widget/MessageTextView;->b()V
 
-    .line 141
+    .line 143
     return-void
 .end method
 
@@ -713,12 +795,12 @@
     .locals 0
 
     .prologue
-    .line 109
+    .line 111
     invoke-super {p0, p1, p2}, Lkik/android/widget/RobotoTextView;->setTextSize(IF)V
 
-    .line 111
+    .line 113
     invoke-direct {p0}, Lkik/android/widget/MessageTextView;->b()V
 
-    .line 112
+    .line 114
     return-void
 .end method

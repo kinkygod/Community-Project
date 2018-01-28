@@ -3,16 +3,16 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/a/b;
+.implements Ldagger/internal/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/a/b",
+        "Ldagger/internal/b",
         "<",
-        "Lkik/android/chat/presentation/bp;",
+        "Lkik/android/chat/presentation/bt;",
         ">;"
     }
 .end annotation
@@ -23,7 +23,7 @@
 
 
 # instance fields
-.field private final b:Lcom/kik/f/cl;
+.field private final b:Lcom/kik/f/cj;
 
 
 # direct methods
@@ -53,14 +53,14 @@
     goto :goto_0
 .end method
 
-.method private constructor <init>(Lcom/kik/f/cl;)V
+.method private constructor <init>(Lcom/kik/f/cj;)V
     .locals 1
 
     .prologue
-    .line 18
+    .line 17
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 19
+    .line 18
     sget-boolean v0, Lcom/kik/f/cm;->a:Z
 
     if-nez v0, :cond_0
@@ -73,33 +73,33 @@
 
     throw v0
 
-    .line 20
+    .line 19
     :cond_0
-    iput-object p1, p0, Lcom/kik/f/cm;->b:Lcom/kik/f/cl;
+    iput-object p1, p0, Lcom/kik/f/cm;->b:Lcom/kik/f/cj;
 
-    .line 21
+    .line 20
     return-void
 .end method
 
-.method public static a(Lcom/kik/f/cl;)La/a/b;
+.method public static a(Lcom/kik/f/cj;)Ldagger/internal/b;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcom/kik/f/cl;",
+            "Lcom/kik/f/cj;",
             ")",
-            "La/a/b",
+            "Ldagger/internal/b",
             "<",
-            "Lkik/android/chat/presentation/bp;",
+            "Lkik/android/chat/presentation/bt;",
             ">;"
         }
     .end annotation
 
     .prologue
-    .line 32
+    .line 31
     new-instance v0, Lcom/kik/f/cm;
 
-    invoke-direct {v0, p0}, Lcom/kik/f/cm;-><init>(Lcom/kik/f/cl;)V
+    invoke-direct {v0, p0}, Lcom/kik/f/cm;-><init>(Lcom/kik/f/cj;)V
 
     return-object v0
 .end method
@@ -110,20 +110,20 @@
     .locals 2
 
     .prologue
-    .line 1046
-    new-instance v0, Lkik/android/chat/presentation/bq;
+    .line 1034
+    new-instance v0, Lkik/android/chat/presentation/bu;
 
-    invoke-direct {v0}, Lkik/android/chat/presentation/bq;-><init>()V
-
-    .line 1026
-    const-string v1, "Cannot return null from a non-@Nullable @Provides method"
+    invoke-direct {v0}, Lkik/android/chat/presentation/bu;-><init>()V
 
     .line 1025
-    invoke-static {v0, v1}, La/a/c;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    const-string v1, "Cannot return null from a non-@Nullable @Provides method"
+
+    .line 1024
+    invoke-static {v0, v1}, Ldagger/internal/c;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lkik/android/chat/presentation/bp;
+    check-cast v0, Lkik/android/chat/presentation/bt;
 
     .line 8
     return-object v0

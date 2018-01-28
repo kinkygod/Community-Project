@@ -2,7 +2,7 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnClickListener;
+.implements Lkik/core/manager/n$a;
 
 
 # instance fields
@@ -20,7 +20,7 @@
     return-void
 .end method
 
-.method public static a(Lkik/android/chat/fragment/KikWelcomeFragment;)Landroid/content/DialogInterface$OnClickListener;
+.method public static a(Lkik/android/chat/fragment/KikWelcomeFragment;)Lkik/core/manager/n$a;
     .locals 1
 
     new-instance v0, Lkik/android/chat/fragment/ek;
@@ -32,12 +32,12 @@
 
 
 # virtual methods
-.method public final onClick(Landroid/content/DialogInterface;I)V
+.method public final a(Lkik/core/manager/n$c;)V
     .locals 1
 
     iget-object v0, p0, Lkik/android/chat/fragment/ek;->a:Lkik/android/chat/fragment/KikWelcomeFragment;
 
-    invoke-static {v0}, Lkik/android/chat/fragment/KikWelcomeFragment;->d(Lkik/android/chat/fragment/KikWelcomeFragment;)V
+    invoke-static {v0, p1}, Lkik/android/chat/fragment/KikWelcomeFragment;->a(Lkik/android/chat/fragment/KikWelcomeFragment;Lkik/core/manager/n$c;)V
 
     return-void
 .end method

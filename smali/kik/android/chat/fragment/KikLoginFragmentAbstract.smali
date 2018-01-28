@@ -6,7 +6,7 @@
 # instance fields
 .field protected _appBarShadow:Landroid/view/View;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f100354
+        value = 0x7f100350
     .end annotation
 .end field
 
@@ -18,25 +18,25 @@
 
 .field protected _loginButton:Landroid/view/View;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f100353
+        value = 0x7f10034f
     .end annotation
 .end field
 
 .field protected _loginScrollView:Lcom/github/ksoichiro/android/observablescrollview/ObservableScrollView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f10034f
+        value = 0x7f10034b
     .end annotation
 .end field
 
 .field protected _passwordField:Lkik/android/chat/view/ValidateableInputView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f100351
+        value = 0x7f10034d
     .end annotation
 .end field
 
 .field protected _userEmailField:Lkik/android/chat/view/ValidateableInputView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f100350
+        value = 0x7f10034c
     .end annotation
 .end field
 
@@ -45,12 +45,12 @@
     .end annotation
 .end field
 
-.field protected b:Lcom/kik/storage/p;
+.field protected b:Lcom/kik/storage/s;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field protected c:Lkik/core/interfaces/r;
+.field protected c:Lkik/core/interfaces/q;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -87,7 +87,7 @@
 
 .field private y:Lkik/android/util/t;
 
-.field private z:Lkik/core/interfaces/ak;
+.field private z:Lkik/core/interfaces/aj;
 
 
 # direct methods
@@ -122,7 +122,7 @@
 
     invoke-direct {v0, p0}, Lkik/android/chat/fragment/KikLoginFragmentAbstract$1;-><init>(Lkik/android/chat/fragment/KikLoginFragmentAbstract;)V
 
-    iput-object v0, p0, Lkik/android/chat/fragment/KikLoginFragmentAbstract;->z:Lkik/core/interfaces/ak;
+    iput-object v0, p0, Lkik/android/chat/fragment/KikLoginFragmentAbstract;->z:Lkik/core/interfaces/aj;
 
     return-void
 .end method
@@ -175,7 +175,7 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v3, v0}, Lkik/android/util/ca;->a(Z[Landroid/view/View;)V
+    invoke-static {v3, v0}, Lkik/android/util/cb;->a(Z[Landroid/view/View;)V
 
     return-void
 .end method
@@ -440,9 +440,9 @@
     invoke-virtual {p0, v2}, Lkik/android/chat/fragment/KikLoginFragmentAbstract;->a([Landroid/view/View;)V
 
     .line 233
-    iget-object v2, p0, Lkik/android/chat/fragment/KikLoginFragmentAbstract;->m:Lkik/core/interfaces/aa;
+    iget-object v2, p0, Lkik/android/chat/fragment/KikLoginFragmentAbstract;->m:Lkik/core/interfaces/z;
 
-    invoke-interface {v2, v0}, Lkik/core/interfaces/aa;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {v2, v0}, Lkik/core/interfaces/z;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -463,7 +463,7 @@
     move-result-object v4
 
     .line 236
-    iget-object v0, p0, Lkik/android/chat/fragment/KikLoginFragmentAbstract;->c:Lkik/core/interfaces/r;
+    iget-object v0, p0, Lkik/android/chat/fragment/KikLoginFragmentAbstract;->c:Lkik/core/interfaces/q;
 
     iget-object v2, p0, Lkik/android/chat/fragment/KikLoginFragmentAbstract;->w:Ljava/lang/String;
 
@@ -483,9 +483,9 @@
 
     move-result-object v5
 
-    iget-object v6, p0, Lkik/android/chat/fragment/KikLoginFragmentAbstract;->z:Lkik/core/interfaces/ak;
+    iget-object v6, p0, Lkik/android/chat/fragment/KikLoginFragmentAbstract;->z:Lkik/core/interfaces/aj;
 
-    invoke-interface/range {v0 .. v6}, Lkik/core/interfaces/r;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Hashtable;Lkik/core/interfaces/ak;)V
+    invoke-interface/range {v0 .. v6}, Lkik/core/interfaces/q;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Hashtable;Lkik/core/interfaces/aj;)V
 
     .line 237
     const v0, 0x7f090209
@@ -715,22 +715,22 @@
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
 
     .line 1531
-    iget-object v0, p0, Lkik/android/chat/fragment/KikLoginFragmentAbstract;->o:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/chat/fragment/KikLoginFragmentAbstract;->o:Lkik/core/interfaces/ad;
 
     const-string v1, "ProfileManager.rosterTimeStamp"
 
     const-string v2, "0"
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ae;->c(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->c(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 1532
-    iget-object v0, p0, Lkik/android/chat/fragment/KikLoginFragmentAbstract;->o:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/chat/fragment/KikLoginFragmentAbstract;->o:Lkik/core/interfaces/ad;
 
     const-string v1, "ProfileManager.rosterIsBatchedKey"
 
     const-string v2, "0"
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ae;->c(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->c(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 133
     return-void
@@ -777,13 +777,13 @@
     invoke-virtual {v0, v2}, Lkik/android/chat/view/ValidateableInputView;->a(Lkik/android/chat/view/ValidateableInputView$a;)V
 
     .line 143
-    new-instance v0, Lkik/android/widget/dg;
+    new-instance v0, Lkik/android/widget/du;
 
     invoke-virtual {p0}, Lkik/android/chat/fragment/KikLoginFragmentAbstract;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
-    invoke-direct {v0, v2}, Lkik/android/widget/dg;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v2}, Lkik/android/widget/du;-><init>(Landroid/content/Context;)V
 
     .line 144
     const v2, 0x7f090173
@@ -792,7 +792,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v2}, Lkik/android/widget/dg;->a(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v2}, Lkik/android/widget/du;->a(Ljava/lang/CharSequence;)V
 
     .line 145
     invoke-virtual {p0}, Lkik/android/chat/fragment/KikLoginFragmentAbstract;->getResources()Landroid/content/res/Resources;
@@ -805,10 +805,10 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v2}, Lkik/android/widget/dg;->a(Landroid/content/res/ColorStateList;)V
+    invoke-virtual {v0, v2}, Lkik/android/widget/du;->a(Landroid/content/res/ColorStateList;)V
 
     .line 2197
-    invoke-virtual {v0}, Lkik/android/widget/dg;->a()V
+    invoke-virtual {v0}, Lkik/android/widget/du;->a()V
 
     .line 147
     iget-object v2, p0, Lkik/android/chat/fragment/KikLoginFragmentAbstract;->_passwordField:Lkik/android/chat/view/ValidateableInputView;
@@ -902,7 +902,7 @@
     invoke-virtual {v0, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 181
-    const v0, 0x7f100213
+    const v0, 0x7f100215
 
     invoke-virtual {v1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -940,7 +940,7 @@
 
     move-result-object v2
 
-    invoke-static {v0, v2}, Lkik/android/chat/view/text/c;->a(Landroid/widget/TextView;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lkik/android/chat/view/text/d;->a(Landroid/widget/TextView;Ljava/lang/String;)V
 
     .line 190
     invoke-virtual {p0}, Lkik/android/chat/fragment/KikLoginFragmentAbstract;->toggleKeyboardVisibility()V

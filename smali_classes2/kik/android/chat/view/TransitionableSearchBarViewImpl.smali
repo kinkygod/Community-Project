@@ -149,7 +149,7 @@
     iput-boolean v0, p0, Lkik/android/chat/view/TransitionableSearchBarViewImpl;->a:Z
 
     .line 50
-    const v0, 0x7f0201b2
+    const v0, 0x7f02019a
 
     invoke-static {v0}, Lkik/android/chat/KikApplication;->f(I)Landroid/graphics/drawable/Drawable;
 

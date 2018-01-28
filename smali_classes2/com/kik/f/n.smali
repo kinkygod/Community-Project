@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/a/b;
+.implements Ldagger/internal/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/a/b",
+        "Ldagger/internal/b",
         "<",
         "Lkik/android/chat/presentation/n;",
         ">;"
@@ -41,7 +41,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ae;",
+            "Lkik/core/interfaces/ad;",
             ">;"
         }
     .end annotation
@@ -52,7 +52,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lcom/kik/storage/p;",
+            "Lcom/kik/storage/s;",
             ">;"
         }
     .end annotation
@@ -98,11 +98,11 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ae;",
+            "Lkik/core/interfaces/ad;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lcom/kik/storage/p;",
+            "Lcom/kik/storage/s;",
             ">;)V"
         }
     .end annotation
@@ -183,7 +183,7 @@
     return-void
 .end method
 
-.method public static a(Lcom/kik/f/m;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)La/a/b;
+.method public static a(Lcom/kik/f/m;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -195,13 +195,13 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ae;",
+            "Lkik/core/interfaces/ad;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lcom/kik/storage/p;",
+            "Lcom/kik/storage/s;",
             ">;)",
-            "La/a/b",
+            "Ldagger/internal/b",
             "<",
             "Lkik/android/chat/presentation/n;",
             ">;"
@@ -240,7 +240,7 @@
 
     move-result-object v1
 
-    check-cast v1, Lkik/core/interfaces/ae;
+    check-cast v1, Lkik/core/interfaces/ad;
 
     iget-object v2, p0, Lcom/kik/f/n;->e:Ljavax/inject/Provider;
 
@@ -248,18 +248,18 @@
 
     move-result-object v2
 
-    check-cast v2, Lcom/kik/storage/p;
+    check-cast v2, Lcom/kik/storage/s;
 
     .line 2023
     new-instance v3, Lkik/android/chat/presentation/CameraPresenterImpl;
 
-    invoke-direct {v3, v0, v1, v2}, Lkik/android/chat/presentation/CameraPresenterImpl;-><init>(Lcom/kik/android/Mixpanel;Lkik/core/interfaces/ae;Lcom/kik/storage/p;)V
+    invoke-direct {v3, v0, v1, v2}, Lkik/android/chat/presentation/CameraPresenterImpl;-><init>(Lcom/kik/android/Mixpanel;Lkik/core/interfaces/ad;Lcom/kik/storage/s;)V
 
     .line 1043
     const-string v0, "Cannot return null from a non-@Nullable @Provides method"
 
     .line 1042
-    invoke-static {v3, v0}, La/a/c;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {v3, v0}, Ldagger/internal/c;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 

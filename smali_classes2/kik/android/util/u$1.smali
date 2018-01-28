@@ -76,13 +76,13 @@
     .line 277
     iget-object v1, p0, Lkik/android/util/u$1;->d:Lkik/android/util/u;
 
-    invoke-static {v1}, Lkik/android/util/u;->a(Lkik/android/util/u;)Lcom/kik/storage/p;
+    invoke-static {v1}, Lkik/android/util/u;->a(Lkik/android/util/u;)Lcom/kik/storage/s;
 
     move-result-object v1
 
     iget-object v2, p0, Lkik/android/util/u$1;->a:Ljava/lang/String;
 
-    invoke-interface {v1, v2, v0}, Lcom/kik/storage/p;->a(Ljava/lang/String;Landroid/graphics/Bitmap;)Z
+    invoke-interface {v1, v2, v0}, Lcom/kik/storage/s;->a(Ljava/lang/String;Landroid/graphics/Bitmap;)Z
 
     .line 278
     iget-object v0, p0, Lkik/android/util/u$1;->b:Lrx/Emitter;

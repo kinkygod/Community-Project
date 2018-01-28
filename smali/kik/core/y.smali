@@ -483,10 +483,10 @@
     invoke-interface {v1, v2}, Lkik/core/interfaces/j;->b(Ljava/lang/String;)Z
 
     .line 1225
-    invoke-virtual {v0}, Lkik/core/a;->A()V
+    invoke-virtual {v0}, Lkik/core/a;->z()V
 
     .line 1226
-    invoke-virtual {v0}, Lkik/core/a;->g()V
+    invoke-virtual {v0}, Lkik/core/a;->f()V
 
     .line 188
     :cond_3

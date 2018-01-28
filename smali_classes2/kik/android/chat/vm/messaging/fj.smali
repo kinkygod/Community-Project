@@ -2,52 +2,44 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lrx/functions/g;
+.implements Lrx/functions/b;
 
 
 # instance fields
-.field private final a:Lkik/android/chat/vm/messaging/ez;
-
-.field private final b:Z
+.field private final a:Lkik/android/chat/vm/messaging/ev;
 
 
 # direct methods
-.method private constructor <init>(Lkik/android/chat/vm/messaging/ez;Z)V
+.method private constructor <init>(Lkik/android/chat/vm/messaging/ev;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lkik/android/chat/vm/messaging/fj;->a:Lkik/android/chat/vm/messaging/ez;
-
-    iput-boolean p2, p0, Lkik/android/chat/vm/messaging/fj;->b:Z
+    iput-object p1, p0, Lkik/android/chat/vm/messaging/fj;->a:Lkik/android/chat/vm/messaging/ev;
 
     return-void
 .end method
 
-.method public static a(Lkik/android/chat/vm/messaging/ez;Z)Lrx/functions/g;
+.method public static a(Lkik/android/chat/vm/messaging/ev;)Lrx/functions/b;
     .locals 1
 
     new-instance v0, Lkik/android/chat/vm/messaging/fj;
 
-    invoke-direct {v0, p0, p1}, Lkik/android/chat/vm/messaging/fj;-><init>(Lkik/android/chat/vm/messaging/ez;Z)V
+    invoke-direct {v0, p0}, Lkik/android/chat/vm/messaging/fj;-><init>(Lkik/android/chat/vm/messaging/ev;)V
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public final call(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
+.method public final call(Ljava/lang/Object;)V
+    .locals 1
 
-    iget-object v0, p0, Lkik/android/chat/vm/messaging/fj;->a:Lkik/android/chat/vm/messaging/ez;
+    iget-object v0, p0, Lkik/android/chat/vm/messaging/fj;->a:Lkik/android/chat/vm/messaging/ev;
 
-    iget-boolean v1, p0, Lkik/android/chat/vm/messaging/fj;->b:Z
+    check-cast p1, Lcom/kik/util/cy;
 
-    check-cast p1, Ljava/lang/Boolean;
+    invoke-static {v0, p1}, Lkik/android/chat/vm/messaging/ev;->a(Lkik/android/chat/vm/messaging/ev;Lcom/kik/util/cy;)V
 
-    invoke-static {v0, v1, p1}, Lkik/android/chat/vm/messaging/ez;->a(Lkik/android/chat/vm/messaging/ez;ZLjava/lang/Boolean;)Ljava/lang/Boolean;
-
-    move-result-object v0
-
-    return-object v0
+    return-void
 .end method

@@ -1,50 +1,43 @@
-.class public final Lkik/android/chat/fragment/fm;
-.super Lkik/android/chat/fragment/fn;
-.source "SourceFile"
+.class final synthetic Lkik/android/chat/fragment/fm;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# instance fields
+.field private final a:Lkik/android/chat/fragment/SuggestInterestDialogFragment;
 
 
 # direct methods
-.method public constructor <init>(Landroid/view/View;)V
+.method private constructor <init>(Lkik/android/chat/fragment/SuggestInterestDialogFragment;)V
     .locals 0
 
-    .prologue
-    .line 24
-    invoke-direct {p0, p1}, Lkik/android/chat/fragment/fn;-><init>(Landroid/view/View;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 25
+    iput-object p1, p0, Lkik/android/chat/fragment/fm;->a:Lkik/android/chat/fragment/SuggestInterestDialogFragment;
+
     return-void
 .end method
 
-.method public static a(Landroid/view/ViewGroup;)Landroid/view/View;
-    .locals 3
+.method public static a(Lkik/android/chat/fragment/SuggestInterestDialogFragment;)Landroid/view/View$OnClickListener;
+    .locals 1
 
-    .prologue
-    .line 19
-    invoke-virtual {p0}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+    new-instance v0, Lkik/android/chat/fragment/fm;
 
-    move-result-object v0
-
-    invoke-static {v0}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
-
-    move-result-object v0
-
-    const v1, 0x7f0400ef
-
-    const/4 v2, 0x0
-
-    invoke-virtual {v0, v1, p0, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
-
-    move-result-object v0
+    invoke-direct {v0, p0}, Lkik/android/chat/fragment/fm;-><init>(Lkik/android/chat/fragment/SuggestInterestDialogFragment;)V
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public final a(Lcom/kik/messagepath/model/Keyboards$SuggestedResponseItem;)V
-    .locals 0
+.method public final onClick(Landroid/view/View;)V
+    .locals 1
 
-    .prologue
-    .line 31
+    iget-object v0, p0, Lkik/android/chat/fragment/fm;->a:Lkik/android/chat/fragment/SuggestInterestDialogFragment;
+
+    invoke-static {v0}, Lkik/android/chat/fragment/SuggestInterestDialogFragment;->b(Lkik/android/chat/fragment/SuggestInterestDialogFragment;)V
+
     return-void
 .end method

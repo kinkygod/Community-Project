@@ -4,12 +4,12 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/graphics/drawable/Drawable;Ljava/lang/String;Ljava/lang/String;Lkik/android/f/j;IZZ)V
+.method public constructor <init>(Landroid/graphics/drawable/Drawable;Ljava/lang/String;Ljava/lang/String;Lkik/android/f/i;IZZ)V
     .locals 0
 
     .prologue
     .line 17
-    invoke-direct/range {p0 .. p7}, Lcom/kik/android/b/c;-><init>(Landroid/graphics/drawable/Drawable;Ljava/lang/String;Ljava/lang/String;Lkik/android/f/j;IZZ)V
+    invoke-direct/range {p0 .. p7}, Lcom/kik/android/b/c;-><init>(Landroid/graphics/drawable/Drawable;Ljava/lang/String;Ljava/lang/String;Lkik/android/f/i;IZZ)V
 
     .line 18
     return-void

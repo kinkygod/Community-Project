@@ -29,22 +29,22 @@
     .locals 0
 
     .prologue
-    .line 165
+    .line 168
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 166
+    .line 169
     iput-wide p2, p0, Lcom/kik/android/b/g$b;->d:J
 
-    .line 167
+    .line 170
     iput-object p1, p0, Lcom/kik/android/b/g$b;->a:Lcom/kik/android/b/f;
 
-    .line 168
+    .line 171
     iput-wide p4, p0, Lcom/kik/android/b/g$b;->b:J
 
-    .line 169
+    .line 172
     iput-wide p6, p0, Lcom/kik/android/b/g$b;->c:J
 
-    .line 170
+    .line 173
     return-void
 .end method
 
@@ -52,11 +52,11 @@
     .locals 1
 
     .prologue
-    .line 157
-    .line 1179
+    .line 160
+    .line 1182
     iput-wide p1, p0, Lcom/kik/android/b/g$b;->c:J
 
-    .line 157
+    .line 160
     return-void
 .end method
 
@@ -64,11 +64,11 @@
     .locals 0
 
     .prologue
-    .line 157
-    .line 1174
+    .line 160
+    .line 1177
     iput-object p1, p0, Lcom/kik/android/b/g$b;->a:Lcom/kik/android/b/f;
 
-    .line 157
+    .line 160
     return-void
 .end method
 
@@ -78,7 +78,7 @@
     .locals 2
 
     .prologue
-    .line 189
+    .line 192
     iget-wide v0, p0, Lcom/kik/android/b/g$b;->c:J
 
     return-wide v0
@@ -88,7 +88,7 @@
     .locals 1
 
     .prologue
-    .line 194
+    .line 197
     iget-object v0, p0, Lcom/kik/android/b/g$b;->a:Lcom/kik/android/b/f;
 
     return-object v0
@@ -98,7 +98,7 @@
     .locals 4
 
     .prologue
-    .line 199
+    .line 202
     iget-wide v0, p0, Lcom/kik/android/b/g$b;->c:J
 
     iget-wide v2, p0, Lcom/kik/android/b/g$b;->d:J
@@ -122,7 +122,7 @@
     .locals 4
 
     .prologue
-    .line 220
+    .line 223
     iget-wide v0, p0, Lcom/kik/android/b/g$b;->c:J
 
     iget-wide v2, p0, Lcom/kik/android/b/g$b;->b:J

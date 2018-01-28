@@ -56,7 +56,7 @@
     invoke-virtual {v1, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 37
-    const v0, 0x7f1001eb
+    const v0, 0x7f1001ec
 
     const-string v1, "field \'_anchor\'"
 
@@ -67,7 +67,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/AddressBookFindPeopleInviteFriendsFragment;->_anchor:Landroid/view/View;
 
     .line 38
-    const v0, 0x7f1001ec
+    const v0, 0x7f1001ed
 
     const-string v1, "field \'_friendsList\'"
 
@@ -82,7 +82,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/AddressBookFindPeopleInviteFriendsFragment;->_friendsList:Lcom/github/ksoichiro/android/observablescrollview/ObservableRecyclerView;
 
     .line 39
-    const v0, 0x7f1001ed
+    const v0, 0x7f1001ee
 
     const-string v1, "field \'_searchBarView\'"
 

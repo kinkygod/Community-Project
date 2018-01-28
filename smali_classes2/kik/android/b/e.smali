@@ -21,7 +21,7 @@
 
 .field private e:Lcom/kik/cards/web/h;
 
-.field private f:Lkik/core/datatypes/ac;
+.field private f:Lkik/core/datatypes/ab;
 
 
 # direct methods
@@ -37,7 +37,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Landroid/app/Activity;Lcom/kik/cards/web/b;Lcom/kik/cards/web/r;Lkik/android/b/g;Lcom/kik/cards/web/h;Lkik/core/datatypes/ac;)V
+.method public constructor <init>(Landroid/app/Activity;Lcom/kik/cards/web/b;Lcom/kik/cards/web/r;Lkik/android/b/g;Lcom/kik/cards/web/h;Lkik/core/datatypes/ab;)V
     .locals 2
 
     .prologue
@@ -60,7 +60,7 @@
     iput-object p5, p0, Lkik/android/b/e;->e:Lcom/kik/cards/web/h;
 
     .line 49
-    iput-object p6, p0, Lkik/android/b/e;->f:Lkik/core/datatypes/ac;
+    iput-object p6, p0, Lkik/android/b/e;->f:Lkik/core/datatypes/ab;
 
     .line 50
     const-wide/16 v0, 0x0
@@ -81,12 +81,12 @@
     return-wide p0
 .end method
 
-.method static synthetic a(Lkik/android/b/e;)Lkik/core/datatypes/ac;
+.method static synthetic a(Lkik/android/b/e;)Lkik/core/datatypes/ab;
     .locals 1
 
     .prologue
     .line 26
-    iget-object v0, p0, Lkik/android/b/e;->f:Lkik/core/datatypes/ac;
+    iget-object v0, p0, Lkik/android/b/e;->f:Lkik/core/datatypes/ab;
 
     return-object v0
 .end method

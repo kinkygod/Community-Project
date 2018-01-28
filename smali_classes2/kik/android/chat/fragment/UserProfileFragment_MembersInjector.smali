@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/b;
+.implements Ldagger/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/b",
+        "Ldagger/b",
         "<",
         "Lkik/android/chat/fragment/UserProfileFragment;",
         ">;"
@@ -28,7 +28,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ae;",
+            "Lkik/core/interfaces/ad;",
             ">;"
         }
     .end annotation
@@ -94,7 +94,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ah;",
+            "Lkik/core/interfaces/ag;",
             ">;"
         }
     .end annotation
@@ -105,7 +105,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/t;",
+            "Lkik/core/interfaces/s;",
             ">;"
         }
     .end annotation
@@ -157,7 +157,7 @@
             "(",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ae;",
+            "Lkik/core/interfaces/ad;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -181,11 +181,11 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ah;",
+            "Lkik/core/interfaces/ag;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/t;",
+            "Lkik/core/interfaces/s;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -355,14 +355,14 @@
     return-void
 .end method
 
-.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)La/b;
+.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
     .locals 10
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ae;",
+            "Lkik/core/interfaces/ad;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -386,17 +386,17 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ah;",
+            "Lkik/core/interfaces/ag;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/t;",
+            "Lkik/core/interfaces/s;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
             "Lkik/core/e/c;",
             ">;)",
-            "La/b",
+            "Ldagger/b",
             "<",
             "Lkik/android/chat/fragment/UserProfileFragment;",
             ">;"
@@ -432,7 +432,7 @@
 
 
 # virtual methods
-.method public final synthetic a(Ljava/lang/Object;)V
+.method public final synthetic injectMembers(Ljava/lang/Object;)V
     .locals 2
 
     .prologue
@@ -459,9 +459,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/interfaces/ae;
+    check-cast v0, Lkik/core/interfaces/ad;
 
-    iput-object v0, p1, Lkik/android/chat/fragment/KikScopedDialogFragment;->_storage:Lkik/core/interfaces/ae;
+    iput-object v0, p1, Lkik/android/chat/fragment/KikScopedDialogFragment;->_storage:Lkik/core/interfaces/ad;
 
     .line 1098
     iget-object v0, p0, Lkik/android/chat/fragment/UserProfileFragment_MembersInjector;->c:Ljavax/inject/Provider;
@@ -525,9 +525,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/interfaces/ah;
+    check-cast v0, Lkik/core/interfaces/ag;
 
-    iput-object v0, p1, Lkik/android/chat/fragment/UserProfileFragment;->e:Lkik/core/interfaces/ah;
+    iput-object v0, p1, Lkik/android/chat/fragment/UserProfileFragment;->e:Lkik/core/interfaces/ag;
 
     .line 1104
     iget-object v0, p0, Lkik/android/chat/fragment/UserProfileFragment_MembersInjector;->i:Ljavax/inject/Provider;
@@ -536,9 +536,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/interfaces/t;
+    check-cast v0, Lkik/core/interfaces/s;
 
-    iput-object v0, p1, Lkik/android/chat/fragment/UserProfileFragment;->f:Lkik/core/interfaces/t;
+    iput-object v0, p1, Lkik/android/chat/fragment/UserProfileFragment;->f:Lkik/core/interfaces/s;
 
     .line 1105
     iget-object v0, p0, Lkik/android/chat/fragment/UserProfileFragment_MembersInjector;->j:Ljavax/inject/Provider;

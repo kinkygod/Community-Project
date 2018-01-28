@@ -2,50 +2,48 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lrx/functions/k;
+.implements Ljava/lang/Runnable;
 
 
-# static fields
-.field private static final a:Lcom/kik/util/bs;
+# instance fields
+.field private final a:Landroid/view/View;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lcom/kik/util/bs;
-
-    invoke-direct {v0}, Lcom/kik/util/bs;-><init>()V
-
-    sput-object v0, Lcom/kik/util/bs;->a:Lcom/kik/util/bs;
-
-    return-void
-.end method
-
-.method private constructor <init>()V
+.method private constructor <init>(Landroid/view/View;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    iput-object p1, p0, Lcom/kik/util/bs;->a:Landroid/view/View;
+
     return-void
 .end method
 
-.method public static a()Lrx/functions/k;
+.method public static a(Landroid/view/View;)Ljava/lang/Runnable;
     .locals 1
 
-    sget-object v0, Lcom/kik/util/bs;->a:Lcom/kik/util/bs;
+    new-instance v0, Lcom/kik/util/bs;
+
+    invoke-direct {v0, p0}, Lcom/kik/util/bs;-><init>(Landroid/view/View;)V
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public final a([Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.method public final run()V
+    .locals 2
 
-    invoke-static {p1}, Lcom/kik/util/bq;->b([Ljava/lang/Object;)Ljava/lang/Boolean;
+    .prologue
+    .line 0
+    iget-object v0, p0, Lcom/kik/util/bs;->a:Landroid/view/View;
 
-    move-result-object v0
+    .line 1753
+    const/4 v1, 0x1
 
-    return-object v0
+    invoke-virtual {v0, v1}, Landroid/view/View;->setEnabled(Z)V
+
+    .line 0
+    return-void
 .end method

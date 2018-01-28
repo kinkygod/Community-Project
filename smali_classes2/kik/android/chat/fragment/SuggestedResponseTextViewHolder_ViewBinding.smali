@@ -22,7 +22,7 @@
     iput-object p1, p0, Lkik/android/chat/fragment/SuggestedResponseTextViewHolder_ViewBinding;->a:Lkik/android/chat/fragment/SuggestedResponseTextViewHolder;
 
     .line 22
-    const v0, 0x7f10031a
+    const v0, 0x7f100315
 
     const-string v1, "field \'_textView\'"
 

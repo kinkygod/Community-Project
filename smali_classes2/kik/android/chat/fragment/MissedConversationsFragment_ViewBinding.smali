@@ -30,7 +30,7 @@
     iput-object p1, p0, Lkik/android/chat/fragment/MissedConversationsFragment_ViewBinding;->a:Lkik/android/chat/fragment/MissedConversationsFragment;
 
     .line 32
-    const v0, 0x7f10020c
+    const v0, 0x7f10020e
 
     const-string v1, "field \'_clearButton\' and method \'onClearButtonClicked\'"
 
@@ -52,7 +52,7 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 41
-    const v0, 0x7f10020a
+    const v0, 0x7f10020c
 
     const-string v1, "field \'_muteButton\' and method \'onMuteButtonClicked\'"
 
@@ -74,7 +74,7 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 50
-    const v0, 0x7f10020b
+    const v0, 0x7f10020d
 
     const-string v1, "field \'_unmuteButton\' and method \'onUnMuteButtonClicked\'"
 

@@ -34,7 +34,7 @@
     .locals 0
 
     .prologue
-    .line 340
+    .line 351
     iput-object p1, p0, Lkik/core/profile/GroupManager$19;->b:Lkik/core/profile/GroupManager;
 
     iput-object p2, p0, Lkik/core/profile/GroupManager$19;->a:Lkik/core/profile/GroupManager$PermissionChange;
@@ -52,38 +52,38 @@
     .prologue
     const/4 v3, 0x1
 
-    .line 340
+    .line 351
     check-cast p1, Lkik/core/net/outgoing/ChangeMemberAdminStatusRequest;
 
-    .line 1344
+    .line 1355
     invoke-super {p0, p1}, Lcom/kik/events/k;->a(Ljava/lang/Object;)V
 
-    .line 1345
+    .line 1356
     invoke-virtual {p1}, Lkik/core/net/outgoing/ChangeMemberAdminStatusRequest;->getGroupJid()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 1346
+    .line 1357
     iget-object v1, p0, Lkik/core/profile/GroupManager$19;->b:Lkik/core/profile/GroupManager;
 
-    invoke-static {v1}, Lkik/core/profile/GroupManager;->b(Lkik/core/profile/GroupManager;)Lkik/core/interfaces/w;
+    invoke-static {v1}, Lkik/core/profile/GroupManager;->b(Lkik/core/profile/GroupManager;)Lkik/core/interfaces/v;
 
     move-result-object v1
 
     const/4 v2, 0x0
 
-    invoke-interface {v1, v0, v2}, Lkik/core/interfaces/w;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
+    invoke-interface {v1, v0, v2}, Lkik/core/interfaces/v;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
 
     move-result-object v1
 
-    .line 1347
+    .line 1358
     if-eqz v1, :cond_0
 
     instance-of v0, v1, Lkik/core/datatypes/p;
 
     if-eqz v0, :cond_0
 
-    .line 1348
+    .line 1359
     iget-object v0, p0, Lkik/core/profile/GroupManager$19;->a:Lkik/core/profile/GroupManager$PermissionChange;
 
     sget-object v2, Lkik/core/profile/GroupManager$PermissionChange;->PROMOTE:Lkik/core/profile/GroupManager$PermissionChange;
@@ -92,7 +92,7 @@
 
     move-object v0, v1
 
-    .line 1349
+    .line 1360
     check-cast v0, Lkik/core/datatypes/p;
 
     invoke-virtual {p1}, Lkik/core/net/outgoing/ChangeMemberAdminStatusRequest;->getContactJid()Ljava/lang/String;
@@ -101,33 +101,33 @@
 
     invoke-virtual {v0, v2}, Lkik/core/datatypes/p;->f(Ljava/lang/String;)V
 
-    .line 1356
+    .line 1367
     :goto_0
     iget-object v0, p0, Lkik/core/profile/GroupManager$19;->b:Lkik/core/profile/GroupManager;
 
-    invoke-static {v0}, Lkik/core/profile/GroupManager;->b(Lkik/core/profile/GroupManager;)Lkik/core/interfaces/w;
+    invoke-static {v0}, Lkik/core/profile/GroupManager;->b(Lkik/core/profile/GroupManager;)Lkik/core/interfaces/v;
 
     move-result-object v0
 
-    invoke-interface {v0, v1, v3, v3}, Lkik/core/interfaces/w;->a(Lkik/core/datatypes/l;ZZ)Z
+    invoke-interface {v0, v1, v3, v3}, Lkik/core/interfaces/v;->a(Lkik/core/datatypes/l;ZZ)Z
 
-    .line 1359
+    .line 1370
     :cond_0
     iget-object v0, p0, Lkik/core/profile/GroupManager$19;->b:Lkik/core/profile/GroupManager;
 
-    invoke-static {v0}, Lkik/core/profile/GroupManager;->b(Lkik/core/profile/GroupManager;)Lkik/core/interfaces/w;
+    invoke-static {v0}, Lkik/core/profile/GroupManager;->b(Lkik/core/profile/GroupManager;)Lkik/core/interfaces/v;
 
     move-result-object v0
 
-    invoke-interface {v0}, Lkik/core/interfaces/w;->q()V
+    invoke-interface {v0}, Lkik/core/interfaces/v;->p()V
 
-    .line 340
+    .line 351
     return-void
 
     :cond_1
     move-object v0, v1
 
-    .line 1352
+    .line 1363
     check-cast v0, Lkik/core/datatypes/p;
 
     invoke-virtual {p1}, Lkik/core/net/outgoing/ChangeMemberAdminStatusRequest;->getContactJid()Ljava/lang/String;

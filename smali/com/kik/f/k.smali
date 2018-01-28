@@ -8,7 +8,7 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lkik/android/chat/b/a;Lkik/core/interfaces/ae;)V
+.method public constructor <init>(Landroid/content/Context;Lkik/android/chat/b/a;Lkik/core/interfaces/ad;)V
     .locals 1
 
     .prologue
@@ -18,7 +18,7 @@
     .line 21
     new-instance v0, Lkik/android/chat/theming/ChatBubbleManager;
 
-    invoke-direct {v0, p1, p2, p3}, Lkik/android/chat/theming/ChatBubbleManager;-><init>(Landroid/content/Context;Lkik/android/chat/b/a;Lkik/core/interfaces/ae;)V
+    invoke-direct {v0, p1, p2, p3}, Lkik/android/chat/theming/ChatBubbleManager;-><init>(Landroid/content/Context;Lkik/android/chat/b/a;Lkik/core/interfaces/ad;)V
 
     iput-object v0, p0, Lcom/kik/f/k;->a:Lkik/android/chat/theming/ChatBubbleManager;
 

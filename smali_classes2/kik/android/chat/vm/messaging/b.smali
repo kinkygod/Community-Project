@@ -43,7 +43,7 @@
 .method public final call(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    invoke-static {}, Lkik/android/chat/vm/messaging/a;->o()Lcom/kik/core/domain/users/a/c;
+    invoke-static {}, Lkik/android/chat/vm/messaging/a;->p()Lcom/kik/core/domain/users/a/c;
 
     move-result-object v0
 

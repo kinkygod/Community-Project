@@ -2,7 +2,7 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lrx/functions/b;
+.implements Lrx/functions/g;
 
 
 # static fields
@@ -30,7 +30,7 @@
     return-void
 .end method
 
-.method public static a()Lrx/functions/b;
+.method public static a()Lrx/functions/g;
     .locals 1
 
     sget-object v0, Lkik/android/chat/vm/chats/profile/ac;->a:Lkik/android/chat/vm/chats/profile/ac;
@@ -40,12 +40,27 @@
 
 
 # virtual methods
-.method public final call(Ljava/lang/Object;)V
-    .locals 0
+.method public final call(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
-    check-cast p1, Lcom/kik/android/Mixpanel$d;
+    .prologue
+    .line 0
+    check-cast p1, Lkik/core/chat/profile/ah;
 
-    invoke-virtual {p1}, Lcom/kik/android/Mixpanel$d;->b()V
+    .line 1071
+    if-nez p1, :cond_0
 
-    return-void
+    .line 1072
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    :goto_0
+    return-object v0
+
+    .line 1075
+    :cond_0
+    iget-object v0, p1, Lkik/core/chat/profile/ah;->a:Ljava/util/List;
+
+    goto :goto_0
 .end method

@@ -32,18 +32,18 @@
     .end annotation
 
     .prologue
-    .line 681
-    const v0, 0x7f0100de
+    .line 701
+    const v0, 0x7f0100e0
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p0}, Lcom/kik/util/be;->a(Landroid/support/v4/view/ViewPager;)Lrx/functions/b;
+    invoke-static {p0}, Lcom/kik/util/bh;->a(Landroid/support/v4/view/ViewPager;)Lrx/functions/b;
 
     move-result-object v1
 
-    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bq;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
+    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bt;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
 
-    .line 682
+    .line 702
     return-void
 .end method
 
@@ -56,19 +56,19 @@
     .end annotation
 
     .prologue
-    .line 699
-    new-instance v1, Lkik/android/widget/dm;
+    .line 719
+    new-instance v1, Lkik/android/widget/ea;
 
     move-object v0, p0
 
-    check-cast v0, Lkik/android/widget/dm$a;
+    check-cast v0, Lkik/android/widget/ea$a;
 
-    invoke-direct {v1, v0, p1}, Lkik/android/widget/dm;-><init>(Lkik/android/widget/dm$a;Lkik/android/chat/vm/IListViewModel;)V
+    invoke-direct {v1, v0, p1}, Lkik/android/widget/ea;-><init>(Lkik/android/widget/ea$a;Lkik/android/chat/vm/IListViewModel;)V
 
-    .line 701
+    .line 721
     invoke-virtual {p0, v1}, Landroid/support/v7/widget/RecyclerView;->setAdapter(Landroid/support/v7/widget/RecyclerView$Adapter;)V
 
-    .line 702
+    .line 722
     return-void
 .end method
 
@@ -84,24 +84,24 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 244
+    .line 264
     if-nez p1, :cond_0
 
-    .line 245
+    .line 265
     invoke-virtual {p0, v1}, Landroid/support/v7/widget/RecyclerView;->setAdapter(Landroid/support/v7/widget/RecyclerView$Adapter;)V
 
-    .line 265
+    .line 285
     :goto_0
     return-void
 
-    .line 253
+    .line 273
     :cond_0
     :try_start_0
     invoke-static {p2}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object v0
 
-    .line 254
+    .line 274
     const/4 v2, 0x0
 
     new-array v2, v2, [Ljava/lang/Class;
@@ -110,7 +110,7 @@
 
     move-result-object v0
 
-    .line 256
+    .line 276
     const/4 v2, 0x0
 
     new-array v2, v2, [Ljava/lang/Object;
@@ -119,22 +119,22 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/android/widget/dm$a;
+    check-cast v0, Lkik/android/widget/ea$a;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 262
+    .line 282
     :goto_1
-    new-instance v1, Lkik/android/widget/dm;
+    new-instance v1, Lkik/android/widget/ea;
 
-    invoke-direct {v1, v0, p1}, Lkik/android/widget/dm;-><init>(Lkik/android/widget/dm$a;Lkik/android/chat/vm/IListViewModel;)V
+    invoke-direct {v1, v0, p1}, Lkik/android/widget/ea;-><init>(Lkik/android/widget/ea$a;Lkik/android/chat/vm/IListViewModel;)V
 
-    .line 264
+    .line 284
     invoke-virtual {p0, v1}, Landroid/support/v7/widget/RecyclerView;->setAdapter(Landroid/support/v7/widget/RecyclerView$Adapter;)V
 
     goto :goto_0
 
-    .line 259
+    .line 279
     :catch_0
     move-exception v0
 
@@ -165,18 +165,18 @@
     .end annotation
 
     .prologue
-    .line 687
-    const v0, 0x7f0100e2
+    .line 707
+    const v0, 0x7f0100e4
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p0}, Lcom/kik/util/bf;->a(Landroid/support/v7/widget/RecyclerView;)Lrx/functions/b;
+    invoke-static {p0}, Lcom/kik/util/bi;->a(Landroid/support/v7/widget/RecyclerView;)Lrx/functions/b;
 
     move-result-object v1
 
-    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bq;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
+    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bt;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
 
-    .line 688
+    .line 708
     return-void
 .end method
 
@@ -200,14 +200,14 @@
     .end annotation
 
     .prologue
-    .line 719
-    invoke-static {p1}, Lcom/kik/util/bj;->a(Lrx/functions/b;)Landroid/widget/CompoundButton$OnCheckedChangeListener;
+    .line 739
+    invoke-static {p1}, Lcom/kik/util/bn;->a(Lrx/functions/b;)Landroid/widget/CompoundButton$OnCheckedChangeListener;
 
     move-result-object v0
 
     invoke-virtual {p0, v0}, Landroid/support/v7/widget/SwitchCompat;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
-    .line 720
+    .line 740
     return-void
 .end method
 
@@ -220,14 +220,14 @@
     .end annotation
 
     .prologue
-    .line 539
-    invoke-static {p0}, Lcom/kik/util/at;->a(Landroid/view/View;)Lrx/functions/b;
+    .line 559
+    invoke-static {p0}, Lcom/kik/util/aw;->a(Landroid/view/View;)Lrx/functions/b;
 
     move-result-object v0
 
-    invoke-static {p0, v0, p1}, Lcom/kik/util/bq;->a(Landroid/view/View;Lrx/functions/b;I)V
+    invoke-static {p0, v0, p1}, Lcom/kik/util/bt;->a(Landroid/view/View;Lrx/functions/b;I)V
 
-    .line 547
+    .line 567
     return-void
 .end method
 
@@ -240,14 +240,14 @@
     .end annotation
 
     .prologue
-    .line 502
-    invoke-static {p1}, Lcom/kik/util/aq;->a(Ljava/lang/Runnable;)Landroid/view/View$OnClickListener;
+    .line 522
+    invoke-static {p1}, Lcom/kik/util/au;->a(Ljava/lang/Runnable;)Landroid/view/View$OnClickListener;
 
     move-result-object v0
 
     invoke-virtual {p0, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 503
+    .line 523
     return-void
 .end method
 
@@ -278,7 +278,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bq;->b(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
+    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bt;->b(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
 
     .line 88
     return-void
@@ -305,10 +305,10 @@
     .end annotation
 
     .prologue
-    .line 320
+    .line 340
     invoke-static {p0, p1, p2, p2}, Lcom/kik/util/j;->a(Landroid/view/View;Lrx/d;II)V
 
-    .line 321
+    .line 341
     return-void
 .end method
 
@@ -335,18 +335,18 @@
     .end annotation
 
     .prologue
-    .line 338
+    .line 358
     const v0, 0x10100dc
 
-    invoke-static {p0, p2, p3}, Lcom/kik/util/ab;->a(Landroid/view/View;II)Lrx/functions/b;
+    invoke-static {p0, p2, p3}, Lcom/kik/util/ae;->a(Landroid/view/View;II)Lrx/functions/b;
 
     move-result-object v1
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bq;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
+    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bt;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
 
-    .line 401
+    .line 421
     return-void
 .end method
 
@@ -359,19 +359,19 @@
     .end annotation
 
     .prologue
-    .line 643
+    .line 663
     if-eqz p1, :cond_0
 
-    .line 644
+    .line 664
     const/4 v0, 0x0
 
     invoke-virtual {p0, v0}, Landroid/view/View;->setVisibility(I)V
 
-    .line 649
+    .line 669
     :goto_0
     return-void
 
-    .line 647
+    .line 667
     :cond_0
     const/16 v0, 0x8
 
@@ -400,20 +400,20 @@
     .end annotation
 
     .prologue
-    .line 496
+    .line 516
     const v0, 0x1010106
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p0}, Lcom/kik/util/ap;->a(Landroid/widget/CompoundButton;)Lrx/functions/b;
+    invoke-static {p0}, Lcom/kik/util/at;->a(Landroid/widget/CompoundButton;)Lrx/functions/b;
 
     move-result-object v1
 
     sget-object v2, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
-    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bq;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
+    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bt;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
 
-    .line 497
+    .line 517
     return-void
 .end method
 
@@ -446,7 +446,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bq;->e(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
+    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bt;->e(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
 
     .line 67
     return-void
@@ -464,14 +464,116 @@
     .line 72
     const v0, 0x1010199
 
-    invoke-static {p0}, Lcom/kik/util/z;->a(Landroid/widget/ImageView;)Lrx/functions/b;
+    invoke-static {p0}, Lcom/kik/util/ab;->a(Landroid/widget/ImageView;)Lrx/functions/b;
 
     move-result-object v1
 
-    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bq;->e(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
+    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bt;->e(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
 
     .line 76
     return-void
+.end method
+
+.method public static a(Landroid/widget/ImageView;Lrx/d;Landroid/graphics/drawable/Drawable;)V
+    .locals 7
+    .annotation build Landroid/databinding/BindingAdapter;
+        value = {
+            "android:src",
+            "nullBackground"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/widget/ImageView;",
+            "Lrx/d",
+            "<",
+            "Lkik/core/interfaces/o",
+            "<",
+            "Landroid/graphics/Bitmap;",
+            ">;>;",
+            "Landroid/graphics/drawable/Drawable;",
+            ")V"
+        }
+    .end annotation
+
+    .prologue
+    const/4 v2, -0x2
+
+    .line 214
+    check-cast p2, Landroid/graphics/drawable/BitmapDrawable;
+
+    .line 215
+    invoke-virtual {p0}, Landroid/widget/ImageView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
+    move-result-object v0
+
+    .line 216
+    iget v1, v0, Landroid/view/ViewGroup$LayoutParams;->width:I
+
+    if-eq v1, v2, :cond_0
+
+    iget v0, v0, Landroid/view/ViewGroup$LayoutParams;->height:I
+
+    if-ne v0, v2, :cond_1
+
+    .line 217
+    :cond_0
+    new-instance v0, Ljava/lang/IllegalArgumentException;
+
+    const-string v1, "You cannot bind an ImageRequester against an ImageView with height or width set to WRAP_CONTENT. See binding adapter documentation for more details."
+
+    invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    .line 220
+    :cond_1
+    const v0, 0x1010119
+
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    invoke-static {p0}, Lcom/kik/util/w;->a(Landroid/widget/ImageView;)Lrx/functions/b;
+
+    move-result-object v1
+
+    if-nez p1, :cond_2
+
+    const/4 v3, 0x0
+
+    .line 226
+    :goto_0
+    invoke-virtual {p2}, Landroid/graphics/drawable/BitmapDrawable;->getBitmap()Landroid/graphics/Bitmap;
+
+    move-result-object v4
+
+    invoke-static {p0, p2}, Lcom/kik/util/y;->a(Landroid/widget/ImageView;Landroid/graphics/drawable/BitmapDrawable;)Ljava/lang/Runnable;
+
+    move-result-object v5
+
+    const/4 v6, 0x1
+
+    move-object v2, p0
+
+    .line 220
+    invoke-static/range {v0 .. v6}, Lcom/kik/util/bt;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;Ljava/lang/Runnable;Z)V
+
+    .line 229
+    return-void
+
+    .line 220
+    :cond_2
+    invoke-static {p0, p2}, Lcom/kik/util/x;->a(Landroid/widget/ImageView;Landroid/graphics/drawable/BitmapDrawable;)Lrx/functions/g;
+
+    move-result-object v2
+
+    .line 223
+    invoke-virtual {p1, v2}, Lrx/d;->d(Lrx/functions/g;)Lrx/d;
+
+    move-result-object v3
+
+    goto :goto_0
 .end method
 
 .method public static a(Landroid/widget/RatingBar;Lrx/d;)V
@@ -494,18 +596,18 @@
     .end annotation
 
     .prologue
-    .line 769
+    .line 789
     const v0, 0x1010145
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p0}, Lcom/kik/util/bn;->a(Landroid/widget/RatingBar;)Lrx/functions/b;
+    invoke-static {p0}, Lcom/kik/util/bq;->a(Landroid/widget/RatingBar;)Lrx/functions/b;
 
     move-result-object v1
 
-    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bq;->c(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
+    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bt;->c(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
 
-    .line 770
+    .line 790
     return-void
 .end method
 
@@ -538,7 +640,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bq;->e(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
+    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bt;->e(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
 
     .line 61
     return-void
@@ -564,18 +666,18 @@
     .end annotation
 
     .prologue
-    .line 693
-    const v0, 0x7f0100e1
+    .line 713
+    const v0, 0x7f0100e3
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p0}, Lcom/kik/util/bg;->a(Landroid/support/v7/widget/RecyclerView;)Lrx/functions/b;
+    invoke-static {p0}, Lcom/kik/util/bj;->a(Landroid/support/v7/widget/RecyclerView;)Lrx/functions/b;
 
     move-result-object v1
 
-    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bq;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
+    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bt;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
 
-    .line 694
+    .line 714
     return-void
 .end method
 
@@ -588,14 +690,14 @@
     .end annotation
 
     .prologue
-    .line 591
-    invoke-static {p0}, Lcom/kik/util/aw;->a(Landroid/view/View;)Lrx/functions/b;
+    .line 611
+    invoke-static {p0}, Lcom/kik/util/az;->a(Landroid/view/View;)Lrx/functions/b;
 
     move-result-object v0
 
-    invoke-static {p0, v0, p1}, Lcom/kik/util/bq;->a(Landroid/view/View;Lrx/functions/b;I)V
+    invoke-static {p0, v0, p1}, Lcom/kik/util/bt;->a(Landroid/view/View;Lrx/functions/b;I)V
 
-    .line 599
+    .line 619
     return-void
 .end method
 
@@ -608,14 +710,14 @@
     .end annotation
 
     .prologue
-    .line 508
-    invoke-static {p1}, Lcom/kik/util/as;->a(Ljava/lang/Runnable;)Landroid/view/View$OnLongClickListener;
+    .line 528
+    invoke-static {p1}, Lcom/kik/util/av;->a(Ljava/lang/Runnable;)Landroid/view/View$OnLongClickListener;
 
     move-result-object v0
 
     invoke-virtual {p0, v0}, Landroid/view/View;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
 
-    .line 515
+    .line 535
     return-void
 .end method
 
@@ -644,18 +746,18 @@
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p0}, Lcom/kik/util/ar;->a(Landroid/view/View;)Lrx/functions/b;
+    invoke-static {p0}, Lcom/kik/util/as;->a(Landroid/view/View;)Lrx/functions/b;
 
     move-result-object v1
 
-    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bq;->b(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
+    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bt;->b(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
 
     .line 94
     return-void
 .end method
 
 .method public static b(Landroid/widget/ImageView;Lrx/d;)V
-    .locals 3
+    .locals 6
     .annotation build Landroid/databinding/BindingAdapter;
         value = {
             "android:src"
@@ -683,11 +785,17 @@
 
     move-result-object v1
 
-    const/4 v2, 0x0
+    const/4 v4, 0x0
 
     invoke-static {p0}, Lcom/kik/util/n;->a(Landroid/widget/ImageView;)Ljava/lang/Runnable;
 
-    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bq;->b(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
+    move-result-object v5
+
+    move-object v2, p0
+
+    move-object v3, p1
+
+    invoke-static/range {v0 .. v5}, Lcom/kik/util/bt;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;Ljava/lang/Runnable;)V
 
     .line 149
     return-void
@@ -722,7 +830,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bq;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
+    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bt;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
 
     .line 112
     return-void
@@ -738,14 +846,14 @@
     .end annotation
 
     .prologue
-    .line 731
-    invoke-static {p0, p1}, Lcom/kik/util/bm;->a(Landroid/view/View;Ljava/lang/Runnable;)Landroid/view/View$OnClickListener;
+    .line 751
+    invoke-static {p0, p1}, Lcom/kik/util/bp;->a(Landroid/view/View;Ljava/lang/Runnable;)Landroid/view/View$OnClickListener;
 
     move-result-object v0
 
     invoke-virtual {p0, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 736
+    .line 756
     return-void
 .end method
 
@@ -772,18 +880,18 @@
     .line 99
     const v0, 0x10100f5
 
-    invoke-static {p0}, Lcom/kik/util/az;->a(Landroid/view/View;)Lrx/functions/b;
+    invoke-static {p0}, Lcom/kik/util/ba;->a(Landroid/view/View;)Lrx/functions/b;
 
     move-result-object v1
 
-    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bq;->b(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
+    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bt;->b(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
 
     .line 106
     return-void
 .end method
 
 .method public static c(Landroid/widget/ImageView;Lrx/d;)V
-    .locals 3
+    .locals 6
     .annotation build Landroid/databinding/BindingAdapter;
         value = {
             "android:src"
@@ -811,11 +919,17 @@
 
     move-result-object v1
 
-    const/4 v2, 0x0
+    const/4 v4, 0x0
 
     invoke-static {p0}, Lcom/kik/util/p;->a(Landroid/widget/ImageView;)Ljava/lang/Runnable;
 
-    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bq;->b(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
+    move-result-object v5
+
+    move-object v2, p0
+
+    move-object v3, p1
+
+    invoke-static/range {v0 .. v5}, Lcom/kik/util/bt;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;Ljava/lang/Runnable;)V
 
     .line 155
     return-void
@@ -848,7 +962,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bq;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
+    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bt;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
 
     .line 137
     return-void
@@ -879,18 +993,18 @@
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p0}, Lcom/kik/util/bp;->a(Landroid/view/View;)Lrx/functions/b;
+    invoke-static {p0}, Lcom/kik/util/br;->a(Landroid/view/View;)Lrx/functions/b;
 
     move-result-object v1
 
-    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bq;->c(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
+    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bt;->c(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
 
     .line 118
     return-void
 .end method
 
 .method public static d(Landroid/widget/ImageView;Lrx/d;)V
-    .locals 3
+    .locals 6
     .annotation build Landroid/databinding/BindingAdapter;
         value = {
             "android:src"
@@ -922,11 +1036,17 @@
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v2
+    move-result-object v4
 
     invoke-static {p0}, Lcom/kik/util/r;->a(Landroid/widget/ImageView;)Ljava/lang/Runnable;
 
-    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bq;->b(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
+    move-result-object v5
+
+    move-object v2, p0
+
+    move-object v3, p1
+
+    invoke-static/range {v0 .. v5}, Lcom/kik/util/bt;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;Ljava/lang/Runnable;)V
 
     .line 161
     return-void
@@ -952,18 +1072,18 @@
     .end annotation
 
     .prologue
-    .line 220
+    .line 240
     const v0, 0x101009b
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p0}, Lcom/kik/util/w;->a(Landroid/widget/TextView;)Lrx/functions/b;
+    invoke-static {p0}, Lcom/kik/util/z;->a(Landroid/widget/TextView;)Lrx/functions/b;
 
     move-result-object v1
 
-    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bq;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
+    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bt;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
 
-    .line 221
+    .line 241
     return-void
 .end method
 
@@ -987,18 +1107,18 @@
     .end annotation
 
     .prologue
-    .line 226
+    .line 246
     const v0, 0x10100d4
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p0}, Lcom/kik/util/x;->a(Landroid/view/View;)Lrx/functions/b;
+    invoke-static {p0}, Lcom/kik/util/aa;->a(Landroid/view/View;)Lrx/functions/b;
 
     move-result-object v1
 
-    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bq;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
+    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bt;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
 
-    .line 227
+    .line 247
     return-void
 .end method
 
@@ -1077,7 +1197,7 @@
     move-object v2, p0
 
     .line 185
-    invoke-static/range {v0 .. v6}, Lcom/kik/util/bq;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;Ljava/lang/Runnable;Z)V
+    invoke-static/range {v0 .. v6}, Lcom/kik/util/bt;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;Ljava/lang/Runnable;Z)V
 
     .line 194
     return-void
@@ -1116,7 +1236,7 @@
     .end annotation
 
     .prologue
-    .line 667
+    .line 687
     const/16 v0, 0x15
 
     invoke-static {v0}, Lcom/kik/sdkutils/c;->a(I)Z
@@ -1125,18 +1245,18 @@
 
     if-eqz v0, :cond_0
 
-    .line 668
+    .line 688
     const v0, 0x10104b6
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p0}, Lcom/kik/util/bc;->a(Landroid/widget/TextView;)Lrx/functions/b;
+    invoke-static {p0}, Lcom/kik/util/bf;->a(Landroid/widget/TextView;)Lrx/functions/b;
 
     move-result-object v1
 
-    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bq;->c(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
+    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bt;->c(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
 
-    .line 670
+    .line 690
     :cond_0
     return-void
 .end method
@@ -1161,18 +1281,18 @@
     .end annotation
 
     .prologue
-    .line 271
+    .line 291
     const v0, 0x7f010001
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p0}, Lcom/kik/util/y;->a(Landroid/view/View;)Lrx/functions/b;
+    invoke-static {p0}, Lcom/kik/util/ac;->a(Landroid/view/View;)Lrx/functions/b;
 
     move-result-object v1
 
-    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bq;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
+    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bt;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
 
-    .line 272
+    .line 292
     return-void
 .end method
 
@@ -1196,18 +1316,18 @@
     .end annotation
 
     .prologue
-    .line 725
-    const v0, 0x7f010041
+    .line 745
+    const v0, 0x7f010043
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p0}, Lcom/kik/util/bl;->a(Landroid/widget/ImageView;)Lrx/functions/b;
+    invoke-static {p0}, Lcom/kik/util/bo;->a(Landroid/widget/ImageView;)Lrx/functions/b;
 
     move-result-object v1
 
-    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bq;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
+    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bt;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
 
-    .line 726
+    .line 746
     return-void
 .end method
 
@@ -1231,18 +1351,18 @@
     .end annotation
 
     .prologue
-    .line 675
+    .line 695
     const v0, 0x10100af
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p0}, Lcom/kik/util/bd;->a(Landroid/widget/TextView;)Lrx/functions/b;
+    invoke-static {p0}, Lcom/kik/util/bg;->a(Landroid/widget/TextView;)Lrx/functions/b;
 
     move-result-object v1
 
-    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bq;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
+    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bt;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
 
-    .line 676
+    .line 696
     return-void
 .end method
 
@@ -1267,18 +1387,18 @@
     .end annotation
 
     .prologue
-    .line 277
+    .line 297
     const v0, 0x10100dc
 
-    invoke-static {p0}, Lcom/kik/util/aa;->a(Landroid/view/View;)Lrx/functions/b;
+    invoke-static {p0}, Lcom/kik/util/ad;->a(Landroid/view/View;)Lrx/functions/b;
 
     move-result-object v1
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bq;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
+    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bt;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
 
-    .line 314
+    .line 334
     return-void
 .end method
 
@@ -1304,14 +1424,14 @@
     .end annotation
 
     .prologue
-    .line 326
+    .line 346
     const/16 v0, 0x190
 
     const/4 v1, 0x0
 
     invoke-static {p0, p1, v0, v1}, Lcom/kik/util/j;->a(Landroid/view/View;Lrx/d;II)V
 
-    .line 327
+    .line 347
     return-void
 .end method
 
@@ -1335,12 +1455,12 @@
     .end annotation
 
     .prologue
-    .line 406
+    .line 426
     const v1, 0x10100dc
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p0}, Lcom/kik/util/ac;->a(Landroid/view/View;)Lrx/functions/b;
+    invoke-static {p0}, Lcom/kik/util/af;->a(Landroid/view/View;)Lrx/functions/b;
 
     move-result-object v2
 
@@ -1348,7 +1468,7 @@
 
     const/4 v0, 0x0
 
-    .line 407
+    .line 427
     :goto_0
     const/4 v3, 0x4
 
@@ -1356,19 +1476,19 @@
 
     move-result-object v3
 
-    .line 406
-    invoke-static {v1, v2, p0, v0, v3}, Lcom/kik/util/bq;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
+    .line 426
+    invoke-static {v1, v2, p0, v0, v3}, Lcom/kik/util/bt;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
 
-    .line 408
+    .line 428
     return-void
 
-    .line 406
+    .line 426
     :cond_0
-    invoke-static {}, Lcom/kik/util/ad;->a()Lrx/functions/g;
+    invoke-static {}, Lcom/kik/util/ag;->a()Lrx/functions/g;
 
     move-result-object v0
 
-    .line 407
+    .line 427
     invoke-virtual {p1, v0}, Lrx/d;->e(Lrx/functions/g;)Lrx/d;
 
     move-result-object v0
@@ -1396,12 +1516,12 @@
     .end annotation
 
     .prologue
-    .line 413
+    .line 433
     const v1, 0x10100dc
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p0}, Lcom/kik/util/ae;->a(Landroid/view/View;)Lrx/functions/b;
+    invoke-static {p0}, Lcom/kik/util/ah;->a(Landroid/view/View;)Lrx/functions/b;
 
     move-result-object v2
 
@@ -1409,7 +1529,7 @@
 
     const/4 v0, 0x0
 
-    .line 414
+    .line 434
     :goto_0
     const/16 v3, 0x8
 
@@ -1417,19 +1537,19 @@
 
     move-result-object v3
 
-    .line 413
-    invoke-static {v1, v2, p0, v0, v3}, Lcom/kik/util/bq;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
+    .line 433
+    invoke-static {v1, v2, p0, v0, v3}, Lcom/kik/util/bt;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
 
-    .line 415
+    .line 435
     return-void
 
-    .line 413
+    .line 433
     :cond_0
-    invoke-static {}, Lcom/kik/util/af;->a()Lrx/functions/g;
+    invoke-static {}, Lcom/kik/util/ai;->a()Lrx/functions/g;
 
     move-result-object v0
 
-    .line 414
+    .line 434
     invoke-virtual {p1, v0}, Lrx/d;->e(Lrx/functions/g;)Lrx/d;
 
     move-result-object v0
@@ -1457,18 +1577,18 @@
     .end annotation
 
     .prologue
-    .line 420
+    .line 440
     const v0, 0x101000e
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p0}, Lcom/kik/util/ag;->a(Landroid/view/View;)Lrx/functions/b;
+    invoke-static {p0}, Lcom/kik/util/aj;->a(Landroid/view/View;)Lrx/functions/b;
 
     move-result-object v1
 
-    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bq;->e(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
+    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bt;->e(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
 
-    .line 421
+    .line 441
     return-void
 .end method
 
@@ -1492,24 +1612,24 @@
     .end annotation
 
     .prologue
-    .line 426
+    .line 446
     const v0, 0x101018b
 
-    invoke-static {p0}, Lcom/kik/util/ah;->a(Landroid/view/View;)Lrx/functions/b;
+    invoke-static {p0}, Lcom/kik/util/al;->a(Landroid/view/View;)Lrx/functions/b;
 
     move-result-object v1
 
     const/4 v2, 0x0
 
-    .line 437
+    .line 457
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v2
 
-    .line 426
-    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bq;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
+    .line 446
+    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bt;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
 
-    .line 438
+    .line 458
     return-void
 .end method
 
@@ -1533,24 +1653,24 @@
     .end annotation
 
     .prologue
-    .line 443
+    .line 463
     const v0, 0x101018d
 
-    invoke-static {p0}, Lcom/kik/util/ai;->a(Landroid/view/View;)Lrx/functions/b;
+    invoke-static {p0}, Lcom/kik/util/am;->a(Landroid/view/View;)Lrx/functions/b;
 
     move-result-object v1
 
     const/4 v2, 0x0
 
-    .line 454
+    .line 474
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v2
 
-    .line 443
-    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bq;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
+    .line 463
+    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bt;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
 
-    .line 455
+    .line 475
     return-void
 .end method
 
@@ -1574,12 +1694,12 @@
     .end annotation
 
     .prologue
-    .line 460
+    .line 480
     const v1, 0x10100dc
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p0}, Lcom/kik/util/aj;->a(Landroid/view/View;)Lrx/functions/b;
+    invoke-static {p0}, Lcom/kik/util/an;->a(Landroid/view/View;)Lrx/functions/b;
 
     move-result-object v2
 
@@ -1587,7 +1707,7 @@
 
     const/4 v0, 0x0
 
-    .line 463
+    .line 483
     :goto_0
     const/16 v3, 0x8
 
@@ -1595,28 +1715,28 @@
 
     move-result-object v3
 
-    .line 460
-    invoke-static {v1, v2, p0, v0, v3}, Lcom/kik/util/bq;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
+    .line 480
+    invoke-static {v1, v2, p0, v0, v3}, Lcom/kik/util/bt;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
 
-    .line 464
+    .line 484
     return-void
 
-    .line 460
+    .line 480
     :cond_0
-    invoke-static {}, Lcom/kik/util/al;->a()Lrx/functions/g;
+    invoke-static {}, Lcom/kik/util/ao;->a()Lrx/functions/g;
 
     move-result-object v0
 
-    .line 462
+    .line 482
     invoke-virtual {p1, v0}, Lrx/d;->e(Lrx/functions/g;)Lrx/d;
 
     move-result-object v0
 
-    invoke-static {}, Lcom/kik/util/am;->a()Lrx/functions/g;
+    invoke-static {}, Lcom/kik/util/ap;->a()Lrx/functions/g;
 
     move-result-object v3
 
-    .line 463
+    .line 483
     invoke-virtual {v0, v3}, Lrx/d;->e(Lrx/functions/g;)Lrx/d;
 
     move-result-object v0
@@ -1646,18 +1766,18 @@
     .prologue
     const/16 v3, 0x8
 
-    .line 469
+    .line 489
     const v1, 0x10100dc
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p0}, Lcom/kik/util/an;->a(Landroid/view/View;)Lrx/functions/b;
+    invoke-static {p0}, Lcom/kik/util/aq;->a(Landroid/view/View;)Lrx/functions/b;
 
     move-result-object v2
 
     if-nez p1, :cond_0
 
-    .line 471
+    .line 491
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v0
@@ -1666,25 +1786,25 @@
 
     move-result-object v0
 
-    .line 472
+    .line 492
     :goto_0
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v3
 
-    .line 469
-    invoke-static {v1, v2, p0, v0, v3}, Lcom/kik/util/bq;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
+    .line 489
+    invoke-static {v1, v2, p0, v0, v3}, Lcom/kik/util/bt;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
 
-    .line 473
+    .line 493
     return-void
 
-    .line 471
+    .line 491
     :cond_0
-    invoke-static {}, Lcom/kik/util/ao;->a()Lrx/functions/g;
+    invoke-static {}, Lcom/kik/util/ar;->a()Lrx/functions/g;
 
     move-result-object v0
 
-    .line 472
+    .line 492
     invoke-virtual {p1, v0}, Lrx/d;->e(Lrx/functions/g;)Lrx/d;
 
     move-result-object v0
@@ -1712,16 +1832,16 @@
     .end annotation
 
     .prologue
-    .line 552
+    .line 572
     const v0, 0x10100d7
 
-    invoke-static {p0}, Lcom/kik/util/au;->a(Landroid/view/View;)Lrx/functions/b;
+    invoke-static {p0}, Lcom/kik/util/ax;->a(Landroid/view/View;)Lrx/functions/b;
 
     move-result-object v1
 
-    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bq;->b(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
+    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bt;->b(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
 
-    .line 560
+    .line 580
     return-void
 .end method
 
@@ -1745,16 +1865,16 @@
     .end annotation
 
     .prologue
-    .line 578
+    .line 598
     const v0, 0x10100d6
 
-    invoke-static {p0}, Lcom/kik/util/av;->a(Landroid/view/View;)Lrx/functions/b;
+    invoke-static {p0}, Lcom/kik/util/ay;->a(Landroid/view/View;)Lrx/functions/b;
 
     move-result-object v1
 
-    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bq;->b(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
+    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bt;->b(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
 
-    .line 586
+    .line 606
     return-void
 .end method
 
@@ -1778,16 +1898,16 @@
     .end annotation
 
     .prologue
-    .line 604
+    .line 624
     const v0, 0x10100d9
 
-    invoke-static {p0}, Lcom/kik/util/ax;->a(Landroid/view/View;)Lrx/functions/b;
+    invoke-static {p0}, Lcom/kik/util/bb;->a(Landroid/view/View;)Lrx/functions/b;
 
     move-result-object v1
 
-    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bq;->b(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
+    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bt;->b(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
 
-    .line 612
+    .line 632
     return-void
 .end method
 
@@ -1811,16 +1931,16 @@
     .end annotation
 
     .prologue
-    .line 630
+    .line 650
     const v0, 0x10100d8
 
-    invoke-static {p0}, Lcom/kik/util/ay;->a(Landroid/view/View;)Lrx/functions/b;
+    invoke-static {p0}, Lcom/kik/util/bc;->a(Landroid/view/View;)Lrx/functions/b;
 
     move-result-object v1
 
-    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bq;->b(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
+    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bt;->b(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
 
-    .line 638
+    .line 658
     return-void
 .end method
 
@@ -1844,12 +1964,12 @@
     .end annotation
 
     .prologue
-    .line 654
+    .line 674
     const v0, 0x10100e6
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p0}, Lcom/kik/util/ba;->a(Landroid/view/View;)Lrx/functions/b;
+    invoke-static {p0}, Lcom/kik/util/bd;->a(Landroid/view/View;)Lrx/functions/b;
 
     move-result-object v1
 
@@ -1859,9 +1979,9 @@
 
     move-result-object v2
 
-    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bq;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
+    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bt;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
 
-    .line 655
+    .line 675
     return-void
 .end method
 
@@ -1885,12 +2005,12 @@
     .end annotation
 
     .prologue
-    .line 660
+    .line 680
     const v0, 0x10100e5
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p0}, Lcom/kik/util/bb;->a(Landroid/view/View;)Lrx/functions/b;
+    invoke-static {p0}, Lcom/kik/util/be;->a(Landroid/view/View;)Lrx/functions/b;
 
     move-result-object v1
 
@@ -1900,9 +2020,9 @@
 
     move-result-object v2
 
-    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bq;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
+    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bt;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
 
-    .line 661
+    .line 681
     return-void
 .end method
 
@@ -1926,16 +2046,16 @@
     .end annotation
 
     .prologue
-    .line 707
-    const v0, 0x7f01003f
+    .line 727
+    const v0, 0x7f010041
 
-    invoke-static {p0}, Lcom/kik/util/bh;->a(Landroid/view/View;)Lrx/functions/b;
+    invoke-static {p0}, Lcom/kik/util/bl;->a(Landroid/view/View;)Lrx/functions/b;
 
     move-result-object v1
 
-    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bq;->c(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
+    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bt;->c(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
 
-    .line 708
+    .line 728
     return-void
 .end method
 
@@ -1959,17 +2079,17 @@
     .end annotation
 
     .prologue
-    .line 713
-    const v0, 0x7f0101bb
+    .line 733
+    const v0, 0x7f0101c5
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p0}, Lcom/kik/util/bi;->a(Landroid/view/View;)Lrx/functions/b;
+    invoke-static {p0}, Lcom/kik/util/bm;->a(Landroid/view/View;)Lrx/functions/b;
 
     move-result-object v1
 
-    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bq;->e(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
+    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bt;->e(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
 
-    .line 714
+    .line 734
     return-void
 .end method

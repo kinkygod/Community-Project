@@ -1,219 +1,87 @@
-.class final Lcom/kik/storage/g;
-.super Lcom/kik/storage/l;
-.source "SourceFile"
+.class final synthetic Lcom/kik/storage/g;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lcom/kik/storage/o$a;
+
+
+# instance fields
+.field private final a:Ljava/util/List;
+
+.field private final b:Ljava/util/List;
+
+.field private final c:Lcom/kik/core/network/xmpp/jid/a;
 
 
 # direct methods
-.method public constructor <init>(Landroid/database/Cursor;)V
+.method private constructor <init>(Ljava/util/List;Ljava/util/List;Lcom/kik/core/network/xmpp/jid/a;)V
     .locals 0
 
-    .prologue
-    .line 27
-    invoke-direct {p0, p1}, Lcom/kik/storage/l;-><init>(Landroid/database/Cursor;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 28
+    iput-object p1, p0, Lcom/kik/storage/g;->a:Ljava/util/List;
+
+    iput-object p2, p0, Lcom/kik/storage/g;->b:Ljava/util/List;
+
+    iput-object p3, p0, Lcom/kik/storage/g;->c:Lcom/kik/core/network/xmpp/jid/a;
+
     return-void
 .end method
 
-.method public static a(Lkik/core/datatypes/messageExtensions/ContentMessage;)Ljava/util/ArrayList;
-    .locals 9
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lkik/core/datatypes/messageExtensions/ContentMessage;",
-            ")",
-            "Ljava/util/ArrayList",
-            "<",
-            "Landroid/content/ContentValues;",
-            ">;"
-        }
-    .end annotation
+.method public static a(Ljava/util/List;Ljava/util/List;Lcom/kik/core/network/xmpp/jid/a;)Lcom/kik/storage/o$a;
+    .locals 1
+
+    new-instance v0, Lcom/kik/storage/g;
+
+    invoke-direct {v0, p0, p1, p2}, Lcom/kik/storage/g;-><init>(Ljava/util/List;Ljava/util/List;Lcom/kik/core/network/xmpp/jid/a;)V
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public final a(Ljava/lang/Object;)V
+    .locals 4
 
     .prologue
-    .line 52
-    invoke-virtual {p0}, Lkik/core/datatypes/messageExtensions/ContentMessage;->q()Ljava/util/Map;
+    .line 0
+    iget-object v0, p0, Lcom/kik/storage/g;->a:Ljava/util/List;
 
-    move-result-object v0
+    iget-object v1, p0, Lcom/kik/storage/g;->b:Ljava/util/List;
 
-    .line 53
-    invoke-virtual {p0}, Lkik/core/datatypes/messageExtensions/ContentMessage;->r()Ljava/util/Map;
+    iget-object v2, p0, Lcom/kik/storage/g;->c:Lcom/kik/core/network/xmpp/jid/a;
 
-    move-result-object v1
+    check-cast p1, Lcom/kik/storage/f$a;
 
-    .line 54
-    invoke-virtual {p0}, Lkik/core/datatypes/messageExtensions/ContentMessage;->t()Ljava/util/Map;
+    .line 1261
+    :try_start_0
+    const-string v3, "proto_bytes"
 
-    move-result-object v2
+    invoke-virtual {p1, v3}, Lcom/kik/storage/f$a;->b(Ljava/lang/String;)[B
 
-    .line 55
-    new-instance v3, Ljava/util/ArrayList;
+    move-result-object v3
 
-    invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
+    .line 1105
+    invoke-static {v3}, Lcom/kik/entity/model/EntityCommon$EntityUser;->a([B)Lcom/kik/entity/model/EntityCommon$EntityUser;
 
-    .line 57
-    new-instance v4, Ljava/util/HashMap;
+    move-result-object v3
 
-    invoke-direct {v4}, Ljava/util/HashMap;-><init>()V
+    invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    :try_end_0
+    .catch Lcom/google/protobuf/InvalidProtocolBufferException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 59
-    const/4 v5, 0x2
-
-    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v5
-
-    invoke-virtual {v4, v5, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 60
-    const/4 v1, 0x4
-
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v1
-
-    invoke-virtual {v4, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 61
-    const/4 v0, 0x5
-
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v0
-
-    invoke-virtual {v4, v0, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 63
-    invoke-virtual {v4}, Ljava/util/HashMap;->entrySet()Ljava/util/Set;
-
-    move-result-object v0
-
-    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
-
-    move-result-object v2
-
-    .line 65
-    :cond_0
-    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_2
-
-    .line 66
-    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/util/Map$Entry;
-
-    .line 67
-    invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Ljava/util/Map;
-
-    invoke-interface {v1}, Ljava/util/Map;->entrySet()Ljava/util/Set;
-
-    move-result-object v1
-
-    invoke-interface {v1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
-
-    move-result-object v4
-
-    .line 68
-    invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/Integer;
-
-    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
-
-    move-result v5
-
-    .line 70
-    :cond_1
+    .line 1111
     :goto_0
-    invoke-interface {v4}, Ljava/util/Iterator;->hasNext()Z
+    return-void
 
-    move-result v0
+    .line 1109
+    :catch_0
+    move-exception v0
 
-    if-eqz v0, :cond_0
+    invoke-static {v0}, Lkik/android/util/aw;->d(Ljava/lang/Throwable;)V
 
-    .line 71
-    new-instance v6, Landroid/content/ContentValues;
-
-    invoke-direct {v6}, Landroid/content/ContentValues;-><init>()V
-
-    .line 72
-    invoke-interface {v4}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/util/Map$Entry;
-
-    .line 73
-    invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Ljava/lang/String;
-
-    .line 74
-    invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/String;
-
-    .line 76
-    invoke-static {v1}, Lkik/core/util/u;->a(Ljava/lang/CharSequence;)Z
-
-    move-result v7
-
-    if-nez v7, :cond_1
-
-    invoke-static {v0}, Lkik/core/util/u;->a(Ljava/lang/CharSequence;)Z
-
-    move-result v7
-
-    if-nez v7, :cond_1
-
-    .line 77
-    const-string v7, "content_id"
-
-    invoke-virtual {p0}, Lkik/core/datatypes/messageExtensions/ContentMessage;->n()Ljava/lang/String;
-
-    move-result-object v8
-
-    invoke-virtual {v6, v7, v8}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 78
-    const-string v7, "content_type"
-
-    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v8
-
-    invoke-virtual {v6, v7, v8}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
-
-    .line 79
-    const-string v7, "content_name"
-
-    invoke-virtual {v6, v7, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 80
-    const-string v1, "content_string"
-
-    invoke-virtual {v6, v1, v0}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 81
-    invoke-virtual {v3, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    .line 1110
+    invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
-
-    .line 86
-    :cond_2
-    return-object v3
 .end method

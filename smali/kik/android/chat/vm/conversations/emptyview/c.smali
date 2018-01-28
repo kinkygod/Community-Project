@@ -29,12 +29,12 @@
     return-void
 .end method
 
-.method static synthetic a(Lkik/android/chat/vm/conversations/emptyview/c;)Lkik/android/chat/vm/aw;
+.method static synthetic a(Lkik/android/chat/vm/conversations/emptyview/c;)Lkik/android/chat/vm/ay;
     .locals 1
 
     .prologue
     .line 18
-    invoke-virtual {p0}, Lkik/android/chat/vm/conversations/emptyview/c;->B_()Lkik/android/chat/vm/aw;
+    invoke-virtual {p0}, Lkik/android/chat/vm/conversations/emptyview/c;->F_()Lkik/android/chat/vm/ay;
 
     move-result-object v0
 
@@ -81,12 +81,12 @@
     return-void
 .end method
 
-.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
     .locals 0
 
     .prologue
     .line 26
-    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/e;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/e;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 27
     invoke-interface {p1, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/chat/vm/conversations/emptyview/c;)V

@@ -9,12 +9,12 @@
     .end annotation
 .end field
 
-.field protected b:Lkik/core/interfaces/ae;
+.field protected b:Lkik/core/interfaces/ad;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field protected c:Lcom/kik/storage/p;
+.field protected c:Lcom/kik/storage/s;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -271,11 +271,11 @@
     invoke-interface {v0, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/chat/activity/KikPlatformLanding;)V
 
     .line 63
-    iget-object v0, p0, Lkik/android/chat/activity/KikPlatformLanding;->b:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/chat/activity/KikPlatformLanding;->b:Lkik/core/interfaces/ad;
 
     const-string v2, "temporary.ban.manager.exists"
 
-    invoke-interface {v0, v2}, Lkik/core/interfaces/ae;->w(Ljava/lang/String;)Ljava/lang/Boolean;
+    invoke-interface {v0, v2}, Lkik/core/interfaces/ad;->w(Ljava/lang/String;)Ljava/lang/Boolean;
 
     move-result-object v0
 
@@ -572,7 +572,7 @@
 
     new-instance v2, Lkik/core/datatypes/b;
 
-    const v3, 0x7f02021d
+    const v3, 0x7f020206
 
     invoke-static {v3}, Lkik/android/chat/KikApplication;->b(I)Landroid/graphics/Bitmap;
 
@@ -608,9 +608,9 @@
     iput-object v0, p0, Lkik/android/chat/activity/KikPlatformLanding;->e:Lkik/android/internal/platform/PlatformHelper;
 
     .line 69
-    iget-object v0, p0, Lkik/android/chat/activity/KikPlatformLanding;->b:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/chat/activity/KikPlatformLanding;->b:Lkik/core/interfaces/ad;
 
-    invoke-static {v0}, Lkik/core/z;->a(Lkik/core/interfaces/ae;)Z
+    invoke-static {v0}, Lkik/core/z;->a(Lkik/core/interfaces/ad;)Z
 
     move-result v0
 
@@ -931,7 +931,7 @@
 
     const-string v3, "com.kik.ext.gallery"
 
-    iget-object v6, p0, Lkik/android/chat/activity/KikPlatformLanding;->b:Lkik/core/interfaces/ae;
+    iget-object v6, p0, Lkik/android/chat/activity/KikPlatformLanding;->b:Lkik/core/interfaces/ad;
 
     move-object v1, p0
 
@@ -939,7 +939,7 @@
 
     move v5, v11
 
-    invoke-virtual/range {v0 .. v6}, Lkik/android/internal/platform/PlatformHelper;->a(Landroid/app/Activity;Ljava/io/File;Ljava/lang/String;Ljava/lang/String;ZLkik/core/interfaces/ae;)V
+    invoke-virtual/range {v0 .. v6}, Lkik/android/internal/platform/PlatformHelper;->a(Landroid/app/Activity;Ljava/io/File;Ljava/lang/String;Ljava/lang/String;ZLkik/core/interfaces/ad;)V
 
     goto :goto_6
 

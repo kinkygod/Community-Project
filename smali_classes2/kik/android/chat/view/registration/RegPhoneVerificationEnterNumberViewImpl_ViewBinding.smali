@@ -21,7 +21,7 @@
     .locals 4
 
     .prologue
-    const v3, 0x7f1003cc
+    const v3, 0x7f1003c8
 
     .line 32
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -30,7 +30,7 @@
     iput-object p1, p0, Lkik/android/chat/view/registration/RegPhoneVerificationEnterNumberViewImpl_ViewBinding;->a:Lkik/android/chat/view/registration/RegPhoneVerificationEnterNumberViewImpl;
 
     .line 36
-    const v0, 0x7f1003ca
+    const v0, 0x7f1003c6
 
     const-string v1, "field \'_phoneEditText\'"
 
@@ -45,7 +45,7 @@
     iput-object v0, p1, Lkik/android/chat/view/registration/RegPhoneVerificationEnterNumberViewImpl;->_phoneEditText:Landroid/widget/EditText;
 
     .line 37
-    const v0, 0x7f1003cb
+    const v0, 0x7f1003c7
 
     const-string v1, "field \'_phoneEditTextError\'"
 
@@ -90,7 +90,7 @@
     invoke-virtual {v1, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 47
-    const v0, 0x7f1003cd
+    const v0, 0x7f1003c9
 
     const-string v1, "method \'onVerifyClick\'"
 
@@ -109,7 +109,7 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 55
-    const v0, 0x7f1003ce
+    const v0, 0x7f1003ca
 
     const-string v1, "method \'onWhyNeededClick\'"
 

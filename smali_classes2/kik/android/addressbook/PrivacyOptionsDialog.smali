@@ -167,7 +167,7 @@
     :cond_0
     iget-object v1, p0, Lkik/android/addressbook/PrivacyOptionsDialog;->a:Landroid/content/Context;
 
-    const v2, 0x7f04013d
+    const v2, 0x7f040141
 
     const/4 v3, 0x0
 

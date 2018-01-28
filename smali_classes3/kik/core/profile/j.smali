@@ -9,11 +9,11 @@
 # instance fields
 .field private final a:Lkik/core/interfaces/l;
 
-.field private final b:Lkik/core/interfaces/ae;
+.field private final b:Lkik/core/interfaces/ad;
 
 
 # direct methods
-.method public constructor <init>(Lkik/core/interfaces/l;Lkik/core/interfaces/ae;)V
+.method public constructor <init>(Lkik/core/interfaces/l;Lkik/core/interfaces/ad;)V
     .locals 0
 
     .prologue
@@ -24,7 +24,7 @@
     iput-object p1, p0, Lkik/core/profile/j;->a:Lkik/core/interfaces/l;
 
     .line 28
-    iput-object p2, p0, Lkik/core/profile/j;->b:Lkik/core/interfaces/ae;
+    iput-object p2, p0, Lkik/core/profile/j;->b:Lkik/core/interfaces/ad;
 
     .line 29
     return-void
@@ -236,9 +236,9 @@
 
     .line 105
     :cond_0
-    iget-object v1, p0, Lkik/core/profile/j;->b:Lkik/core/interfaces/ae;
+    iget-object v1, p0, Lkik/core/profile/j;->b:Lkik/core/interfaces/ad;
 
-    invoke-interface {v1, p2, v0}, Lkik/core/interfaces/ae;->a([BLkik/core/datatypes/p;)V
+    invoke-interface {v1, p2, v0}, Lkik/core/interfaces/ad;->a([BLkik/core/datatypes/p;)V
 
     .line 106
     invoke-static {}, Lrx/b;->a()Lrx/b;

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@id/start_group_root" android:background="#ff1f1f1f" layout_width="fill_parent" android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kik="http://schemas.android.com/apk/res-auto">
+<RelativeLayout android:id="@id/start_group_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kik="http://schemas.android.com/apk/res-auto">
     <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/floating_search_bar" layout="@layout/contact_list_empty_view" />
     <kik.android.widget.ResizeEventList android:id="@id/compose_list" android:paddingTop="@dimen/search_bar_minimum_height" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/multi_compose_navbar" android:smoothScrollbar="true" style="@style/KikListView" />
     <LinearLayout android:orientation="vertical" android:id="@id/start_group_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/multi_compose_navbar">

@@ -3,16 +3,16 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/a/b;
+.implements Ldagger/internal/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/a/b",
+        "Ldagger/internal/b",
         "<",
-        "Lkik/android/chat/vm/profile/bm;",
+        "Lkik/core/xiphias/b;",
         ">;"
     }
 .end annotation
@@ -30,7 +30,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Landroid/content/res/Resources;",
+            "Lkik/core/interfaces/ICommunication;",
             ">;"
         }
     .end annotation
@@ -72,7 +72,7 @@
             "Lcom/kik/f/ae;",
             "Ljavax/inject/Provider",
             "<",
-            "Landroid/content/res/Resources;",
+            "Lkik/core/interfaces/ICommunication;",
             ">;)V"
         }
     .end annotation
@@ -119,7 +119,7 @@
     return-void
 .end method
 
-.method public static a(Lcom/kik/f/ae;Ljavax/inject/Provider;)La/a/b;
+.method public static a(Lcom/kik/f/ae;Ljavax/inject/Provider;)Ldagger/internal/b;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -127,11 +127,11 @@
             "Lcom/kik/f/ae;",
             "Ljavax/inject/Provider",
             "<",
-            "Landroid/content/res/Resources;",
+            "Lkik/core/interfaces/ICommunication;",
             ">;)",
-            "La/a/b",
+            "Ldagger/internal/b",
             "<",
-            "Lkik/android/chat/vm/profile/bm;",
+            "Lkik/core/xiphias/b;",
             ">;"
         }
     .end annotation
@@ -160,22 +160,22 @@
 
     move-result-object v0
 
-    check-cast v0, Landroid/content/res/Resources;
+    check-cast v0, Lkik/core/interfaces/ICommunication;
 
     .line 2023
-    new-instance v1, Lkik/android/chat/vm/profile/bm;
+    new-instance v1, Lkik/core/xiphias/s;
 
-    invoke-direct {v1, v0}, Lkik/android/chat/vm/profile/bm;-><init>(Landroid/content/res/Resources;)V
+    invoke-direct {v1, v0}, Lkik/core/xiphias/s;-><init>(Lkik/core/interfaces/ICommunication;)V
 
     .line 1031
     const-string v0, "Cannot return null from a non-@Nullable @Provides method"
 
     .line 1030
-    invoke-static {v1, v0}, La/a/c;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {v1, v0}, Ldagger/internal/c;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lkik/android/chat/vm/profile/bm;
+    check-cast v0, Lkik/core/xiphias/b;
 
     .line 10
     return-object v0

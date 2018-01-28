@@ -88,10 +88,10 @@
 
 .field private _waitDialog:Lcom/kik/cards/web/usermedia/e;
 
-.field private _workerThread:Lcom/kik/util/cu;
+.field private _workerThread:Lcom/kik/util/cz;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/kik/util/cu",
+            "Lcom/kik/util/cz",
             "<",
             "Lorg/json/JSONArray;",
             ">;"
@@ -187,11 +187,11 @@
     iput-object p6, p0, Lcom/kik/cards/web/usermedia/PhotoPlugin;->_ctx:Landroid/content/Context;
 
     .line 268
-    new-instance v0, Lcom/kik/util/cu;
+    new-instance v0, Lcom/kik/util/cz;
 
-    invoke-direct {v0}, Lcom/kik/util/cu;-><init>()V
+    invoke-direct {v0}, Lcom/kik/util/cz;-><init>()V
 
-    iput-object v0, p0, Lcom/kik/cards/web/usermedia/PhotoPlugin;->_workerThread:Lcom/kik/util/cu;
+    iput-object v0, p0, Lcom/kik/cards/web/usermedia/PhotoPlugin;->_workerThread:Lcom/kik/util/cz;
 
     .line 269
     iput-object p8, p0, Lcom/kik/cards/web/usermedia/PhotoPlugin;->_browser:Lcom/kik/cards/web/browser/BrowserPlugin$a;
@@ -222,12 +222,12 @@
     return-object v0
 .end method
 
-.method static synthetic access$300(Lcom/kik/cards/web/usermedia/PhotoPlugin;)Lcom/kik/util/cu;
+.method static synthetic access$300(Lcom/kik/cards/web/usermedia/PhotoPlugin;)Lcom/kik/util/cz;
     .locals 1
 
     .prologue
     .line 50
-    iget-object v0, p0, Lcom/kik/cards/web/usermedia/PhotoPlugin;->_workerThread:Lcom/kik/util/cu;
+    iget-object v0, p0, Lcom/kik/cards/web/usermedia/PhotoPlugin;->_workerThread:Lcom/kik/util/cz;
 
     return-object v0
 .end method
@@ -351,7 +351,7 @@
     .line 573
     move/from16 v0, p6
 
-    invoke-static {v1, v0, p5}, Lcom/kik/util/co;->a(Landroid/graphics/BitmapFactory$Options;II)I
+    invoke-static {v1, v0, p5}, Lcom/kik/util/ct;->a(Landroid/graphics/BitmapFactory$Options;II)I
 
     move-result v1
 
@@ -368,7 +368,7 @@
     .line 579
     move/from16 v0, p6
 
-    invoke-static {v2, v0, p5}, Lcom/kik/util/co;->a(Landroid/graphics/Bitmap;II)Landroid/graphics/Bitmap;
+    invoke-static {v2, v0, p5}, Lcom/kik/util/ct;->a(Landroid/graphics/Bitmap;II)Landroid/graphics/Bitmap;
 
     move-result-object v1
 

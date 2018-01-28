@@ -37,7 +37,7 @@
 
     iget-object v0, p0, Lkik/android/chat/fragment/ey;->a:Lkik/android/chat/fragment/ProfileEditBioDialogFragment;
 
-    invoke-static {v0}, Lkik/android/chat/fragment/ProfileEditBioDialogFragment;->a(Lkik/android/chat/fragment/ProfileEditBioDialogFragment;)V
+    invoke-static {v0}, Lkik/android/chat/fragment/ProfileEditBioDialogFragment;->b(Lkik/android/chat/fragment/ProfileEditBioDialogFragment;)V
 
     return-void
 .end method

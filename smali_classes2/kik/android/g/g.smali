@@ -45,10 +45,10 @@
 
     .prologue
     .line 0
-    check-cast p1, Lkik/core/xiphias/ab;
+    check-cast p1, Lkik/core/xiphias/ag;
 
     .line 1039
-    invoke-virtual {p1}, Lkik/core/xiphias/ab;->a()Ljava/lang/Object;
+    invoke-virtual {p1}, Lkik/core/xiphias/ag;->a()Ljava/lang/Object;
 
     move-result-object v0
 

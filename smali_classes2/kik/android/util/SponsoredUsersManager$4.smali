@@ -47,13 +47,13 @@
     .line 210
     iget-object v0, p0, Lkik/android/util/SponsoredUsersManager$4;->b:Lkik/android/util/SponsoredUsersManager;
 
-    invoke-static {v0}, Lkik/android/util/SponsoredUsersManager;->c(Lkik/android/util/SponsoredUsersManager;)Lkik/core/interfaces/ae;
+    invoke-static {v0}, Lkik/android/util/SponsoredUsersManager;->c(Lkik/android/util/SponsoredUsersManager;)Lkik/core/interfaces/ad;
 
     move-result-object v0
 
     iget-object v1, p0, Lkik/android/util/SponsoredUsersManager$4;->a:Lkik/android/util/SponsoredUsersManager$a;
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ae;->a(Ljava/lang/Object;)V
+    invoke-interface {v0, v1}, Lkik/core/interfaces/ad;->a(Ljava/lang/Object;)V
 
     .line 211
     return-void

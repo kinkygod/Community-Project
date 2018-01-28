@@ -2,78 +2,71 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lrx/functions/b;
+.implements Lrx/functions/g;
 
 
-# instance fields
-.field private final a:Landroid/view/View;
+# static fields
+.field private static final a:Lcom/kik/util/ai;
 
 
 # direct methods
-.method private constructor <init>(Landroid/view/View;)V
-    .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lcom/kik/util/ai;->a:Landroid/view/View;
-
-    return-void
-.end method
-
-.method public static a(Landroid/view/View;)Lrx/functions/b;
+.method static constructor <clinit>()V
     .locals 1
 
     new-instance v0, Lcom/kik/util/ai;
 
-    invoke-direct {v0, p0}, Lcom/kik/util/ai;-><init>(Landroid/view/View;)V
+    invoke-direct {v0}, Lcom/kik/util/ai;-><init>()V
+
+    sput-object v0, Lcom/kik/util/ai;->a:Lcom/kik/util/ai;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static a()Lrx/functions/g;
+    .locals 1
+
+    sget-object v0, Lcom/kik/util/ai;->a:Lcom/kik/util/ai;
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public final call(Ljava/lang/Object;)V
-    .locals 4
+.method public final call(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
     .prologue
-    const/16 v3, 0xb
-
     .line 0
-    iget-object v1, p0, Lcom/kik/util/ai;->a:Landroid/view/View;
-
     check-cast p1, Ljava/lang/Boolean;
 
-    .line 1444
-    invoke-virtual {v1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    .line 1434
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x0
+
+    :goto_0
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v0
 
-    check-cast v0, Landroid/widget/RelativeLayout$LayoutParams;
-
-    .line 1446
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_0
-
-    .line 1447
-    const/4 v2, -0x1
-
-    invoke-virtual {v0, v3, v2}, Landroid/widget/RelativeLayout$LayoutParams;->addRule(II)V
-
-    .line 1453
-    :goto_0
-    invoke-virtual {v1, v0}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
-
     .line 0
-    return-void
+    return-object v0
 
-    .line 1450
+    .line 1434
     :cond_0
-    const/4 v2, 0x0
-
-    invoke-virtual {v0, v3, v2}, Landroid/widget/RelativeLayout$LayoutParams;->addRule(II)V
+    const/16 v0, 0x8
 
     goto :goto_0
 .end method

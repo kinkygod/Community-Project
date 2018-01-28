@@ -990,7 +990,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lokio/t;->aT_()Z
+    invoke-virtual {v0}, Lokio/t;->aP_()Z
 
     move-result v0
 

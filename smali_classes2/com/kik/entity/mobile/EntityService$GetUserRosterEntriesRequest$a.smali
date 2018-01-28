@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/kik/entity/mobile/EntityService$f;
+.implements Lcom/kik/entity/mobile/EntityService$g;
 
 
 # annotations
@@ -22,7 +22,7 @@
         "<",
         "Lcom/kik/entity/mobile/EntityService$GetUserRosterEntriesRequest$a;",
         ">;",
-        "Lcom/kik/entity/mobile/EntityService$f;"
+        "Lcom/kik/entity/mobile/EntityService$g;"
     }
 .end annotation
 

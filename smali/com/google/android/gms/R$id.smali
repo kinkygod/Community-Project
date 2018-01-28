@@ -37,9 +37,9 @@
 
 .field public static final standard:I = 0x7f10007a
 
-.field public static final text:I = 0x7f10039b
+.field public static final text:I = 0x7f100397
 
-.field public static final text2:I = 0x7f100399
+.field public static final text2:I = 0x7f100395
 
 .field public static final title_view:I = 0x7f10011b
 

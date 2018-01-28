@@ -45,7 +45,7 @@
 
     .prologue
     .line 0
-    .line 1195
+    .line 1201
     invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
 
     move-result v0
@@ -74,7 +74,7 @@
     .line 0
     return-object v0
 
-    .line 1195
+    .line 1201
     :cond_0
     const/4 v0, 0x0
 

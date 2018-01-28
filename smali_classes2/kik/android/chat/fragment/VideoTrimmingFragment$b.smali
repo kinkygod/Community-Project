@@ -70,7 +70,7 @@
 
     iget-object v1, p0, Lkik/android/chat/fragment/VideoTrimmingFragment$b;->a:Lkik/android/chat/fragment/VideoTrimmingFragment;
 
-    iget-object v1, v1, Lkik/android/chat/fragment/VideoTrimmingFragment;->a:Lcom/kik/storage/p;
+    iget-object v1, v1, Lkik/android/chat/fragment/VideoTrimmingFragment;->a:Lcom/kik/storage/s;
 
     invoke-static {}, Ljava/util/UUID;->randomUUID()Ljava/util/UUID;
 
@@ -80,7 +80,7 @@
 
     move-result-object v2
 
-    invoke-interface {v1, v2}, Lcom/kik/storage/p;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {v1, v2}, Lcom/kik/storage/s;->b(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 

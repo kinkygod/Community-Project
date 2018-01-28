@@ -134,7 +134,21 @@ message GroupNameElement {
     string name = 1 [(kik.validation.field_validation) = { max_byte_length: 1000 }];
 }
 
-// Eventually this element will contain fields such as KinVerified
+message TrustedElement {
+    bool is_trusted = 1;
+}
+
+// Eventually this element will contain fields such as isTrusted and other attributes
 // Even while empty, the presence of this Element in a UserRosterEntry indicates that that User is a bot
 message BotExtensionElement {
+    TrustedElement trusted_element = 1;
 }
+
+message InterestsElement {
+    repeated InterestItem interests_element = 1 [(kik.validation.field_validation) = { max_repetitions: 20 }];
+    message InterestItem {
+        string id = 1 [(kik.validation.field_validation) = { mandatory: true }];
+        string localized_verbiage = 2; 
+    }
+}
+

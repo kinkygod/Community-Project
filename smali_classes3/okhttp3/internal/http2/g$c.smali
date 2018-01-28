@@ -80,7 +80,7 @@
 
     .prologue
     .line 601
-    invoke-virtual {p0}, Lokhttp3/internal/http2/g$c;->aR_()Z
+    invoke-virtual {p0}, Lokhttp3/internal/http2/g$c;->aN_()Z
 
     move-result v0
 

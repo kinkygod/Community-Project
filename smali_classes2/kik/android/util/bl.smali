@@ -8,7 +8,7 @@
 # instance fields
 .field private final a:Lkik/android/chat/fragment/KikScopedDialogFragment;
 
-.field private final b:Lkik/core/datatypes/ac;
+.field private final b:Lkik/core/datatypes/ab;
 
 .field private final c:Lcom/kik/android/Mixpanel;
 
@@ -22,14 +22,14 @@
 
 
 # direct methods
-.method private constructor <init>(Lkik/android/chat/fragment/KikScopedDialogFragment;Lkik/core/datatypes/ac;Lcom/kik/android/Mixpanel;Ljava/lang/String;Landroid/content/Context;Lkik/core/interfaces/b;Lcom/kik/cache/KikVolleyImageLoader;)V
+.method private constructor <init>(Lkik/android/chat/fragment/KikScopedDialogFragment;Lkik/core/datatypes/ab;Lcom/kik/android/Mixpanel;Ljava/lang/String;Landroid/content/Context;Lkik/core/interfaces/b;Lcom/kik/cache/KikVolleyImageLoader;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lkik/android/util/bl;->a:Lkik/android/chat/fragment/KikScopedDialogFragment;
 
-    iput-object p2, p0, Lkik/android/util/bl;->b:Lkik/core/datatypes/ac;
+    iput-object p2, p0, Lkik/android/util/bl;->b:Lkik/core/datatypes/ab;
 
     iput-object p3, p0, Lkik/android/util/bl;->c:Lcom/kik/android/Mixpanel;
 
@@ -44,7 +44,7 @@
     return-void
 .end method
 
-.method public static a(Lkik/android/chat/fragment/KikScopedDialogFragment;Lkik/core/datatypes/ac;Lcom/kik/android/Mixpanel;Ljava/lang/String;Landroid/content/Context;Lkik/core/interfaces/b;Lcom/kik/cache/KikVolleyImageLoader;)Landroid/content/DialogInterface$OnClickListener;
+.method public static a(Lkik/android/chat/fragment/KikScopedDialogFragment;Lkik/core/datatypes/ab;Lcom/kik/android/Mixpanel;Ljava/lang/String;Landroid/content/Context;Lkik/core/interfaces/b;Lcom/kik/cache/KikVolleyImageLoader;)Landroid/content/DialogInterface$OnClickListener;
     .locals 8
 
     new-instance v0, Lkik/android/util/bl;
@@ -63,7 +63,7 @@
 
     move-object v7, p6
 
-    invoke-direct/range {v0 .. v7}, Lkik/android/util/bl;-><init>(Lkik/android/chat/fragment/KikScopedDialogFragment;Lkik/core/datatypes/ac;Lcom/kik/android/Mixpanel;Ljava/lang/String;Landroid/content/Context;Lkik/core/interfaces/b;Lcom/kik/cache/KikVolleyImageLoader;)V
+    invoke-direct/range {v0 .. v7}, Lkik/android/util/bl;-><init>(Lkik/android/chat/fragment/KikScopedDialogFragment;Lkik/core/datatypes/ab;Lcom/kik/android/Mixpanel;Ljava/lang/String;Landroid/content/Context;Lkik/core/interfaces/b;Lcom/kik/cache/KikVolleyImageLoader;)V
 
     return-object v0
 .end method
@@ -75,7 +75,7 @@
 
     iget-object v0, p0, Lkik/android/util/bl;->a:Lkik/android/chat/fragment/KikScopedDialogFragment;
 
-    iget-object v1, p0, Lkik/android/util/bl;->b:Lkik/core/datatypes/ac;
+    iget-object v1, p0, Lkik/android/util/bl;->b:Lkik/core/datatypes/ab;
 
     iget-object v2, p0, Lkik/android/util/bl;->c:Lcom/kik/android/Mixpanel;
 
@@ -89,7 +89,7 @@
 
     move v7, p2
 
-    invoke-static/range {v0 .. v7}, Lkik/android/util/bk;->a(Lkik/android/chat/fragment/KikScopedDialogFragment;Lkik/core/datatypes/ac;Lcom/kik/android/Mixpanel;Ljava/lang/String;Landroid/content/Context;Lkik/core/interfaces/b;Lcom/kik/cache/KikVolleyImageLoader;I)V
+    invoke-static/range {v0 .. v7}, Lkik/android/util/bk;->a(Lkik/android/chat/fragment/KikScopedDialogFragment;Lkik/core/datatypes/ab;Lcom/kik/android/Mixpanel;Ljava/lang/String;Landroid/content/Context;Lkik/core/interfaces/b;Lcom/kik/cache/KikVolleyImageLoader;I)V
 
     return-void
 .end method

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/core/interfaces/w$a;
+.implements Lkik/core/interfaces/v$a;
 
 
 # annotations
@@ -28,7 +28,7 @@
     .locals 0
 
     .prologue
-    .line 1218
+    .line 1206
     iput-object p1, p0, Lkik/core/profile/v$2$1;->b:Lkik/core/profile/v$2;
 
     iput-object p2, p0, Lkik/core/profile/v$2$1;->a:Lkik/core/net/outgoing/AddContactByJidRequest;
@@ -44,31 +44,31 @@
     .locals 2
 
     .prologue
-    .line 1222
+    .line 1210
     iget-object v0, p0, Lkik/core/profile/v$2$1;->a:Lkik/core/net/outgoing/AddContactByJidRequest;
 
     invoke-virtual {v0}, Lkik/core/net/outgoing/AddContactByJidRequest;->getContact()Lkik/core/datatypes/l;
 
     move-result-object v0
 
-    .line 1225
+    .line 1213
     invoke-virtual {v0, p1}, Lkik/core/datatypes/l;->a(Lkik/core/datatypes/l;)V
 
-    .line 1226
+    .line 1214
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lkik/core/datatypes/l;->d(Z)V
 
-    .line 1228
+    .line 1216
     invoke-virtual {p1}, Lkik/core/datatypes/l;->p()Z
 
     move-result v1
 
     invoke-virtual {v0, v1}, Lkik/core/datatypes/l;->a(Z)V
 
-    .line 1230
+    .line 1218
     invoke-virtual {p1, v0}, Lkik/core/datatypes/l;->b(Lkik/core/datatypes/l;)V
 
-    .line 1231
+    .line 1219
     return-void
 .end method

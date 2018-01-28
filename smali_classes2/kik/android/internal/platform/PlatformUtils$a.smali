@@ -189,7 +189,7 @@
     move-result-object v0
 
     .line 364
-    invoke-static {v0}, Lcom/kik/util/co;->a([B)[B
+    invoke-static {v0}, Lcom/kik/util/ct;->a([B)[B
 
     move-result-object v0
 
@@ -319,7 +319,7 @@
 
     sget-object v2, Landroid/graphics/Bitmap$CompressFormat;->JPEG:Landroid/graphics/Bitmap$CompressFormat;
 
-    invoke-static {v0, v2}, Lcom/kik/util/co;->a(Ljava/lang/String;Landroid/graphics/Bitmap$CompressFormat;)[B
+    invoke-static {v0, v2}, Lcom/kik/util/ct;->a(Ljava/lang/String;Landroid/graphics/Bitmap$CompressFormat;)[B
 
     move-result-object v0
 
@@ -331,7 +331,7 @@
     if-eqz p4, :cond_7
 
     .line 403
-    invoke-static {v0}, Lcom/kik/util/co;->a([B)[B
+    invoke-static {v0}, Lcom/kik/util/ct;->a([B)[B
 
     move-result-object v0
 
@@ -386,7 +386,7 @@
     if-eqz p3, :cond_1
 
     .line 410
-    invoke-static {p3}, Lcom/kik/util/co;->b(Ljava/lang/String;)[B
+    invoke-static {p3}, Lcom/kik/util/ct;->b(Ljava/lang/String;)[B
 
     move-result-object v0
 
@@ -414,7 +414,7 @@
     if-eqz p4, :cond_c
 
     .line 422
-    invoke-static {v0}, Lcom/kik/util/co;->a([B)[B
+    invoke-static {v0}, Lcom/kik/util/ct;->a([B)[B
 
     move-result-object v0
 
@@ -1194,7 +1194,7 @@
 
     .prologue
     .line 619
-    const v0, 0x7f0200ef
+    const v0, 0x7f0200d7
 
     invoke-static {v0}, Lkik/android/chat/KikApplication;->b(I)Landroid/graphics/Bitmap;
 
@@ -1205,7 +1205,7 @@
 
     const-wide/16 v2, 0x1388
 
-    invoke-static {v0, v1, v2, v3}, Lcom/kik/util/co;->a(Landroid/graphics/Bitmap;Landroid/graphics/Bitmap$CompressFormat;J)[B
+    invoke-static {v0, v1, v2, v3}, Lcom/kik/util/ct;->a(Landroid/graphics/Bitmap;Landroid/graphics/Bitmap$CompressFormat;J)[B
 
     move-result-object v0
 

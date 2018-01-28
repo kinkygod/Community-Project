@@ -298,10 +298,10 @@
 
     .line 317
     :cond_3
-    invoke-static {v3}, Lcom/kik/util/cm;->a(Ljava/io/Closeable;)V
+    invoke-static {v3}, Lcom/kik/util/cr;->a(Ljava/io/Closeable;)V
 
     .line 318
-    invoke-static {v2}, Lcom/kik/util/cm;->a(Ljava/io/Closeable;)V
+    invoke-static {v2}, Lcom/kik/util/cr;->a(Ljava/io/Closeable;)V
 
     .line 321
     :goto_4
@@ -504,10 +504,10 @@
 
     .line 317
     :cond_9
-    invoke-static {v3}, Lcom/kik/util/cm;->a(Ljava/io/Closeable;)V
+    invoke-static {v3}, Lcom/kik/util/cr;->a(Ljava/io/Closeable;)V
 
     .line 318
-    invoke-static {v2}, Lcom/kik/util/cm;->a(Ljava/io/Closeable;)V
+    invoke-static {v2}, Lcom/kik/util/cr;->a(Ljava/io/Closeable;)V
 
     .line 283
     const/4 v2, 0x0
@@ -623,10 +623,10 @@
 
     .line 317
     :cond_c
-    invoke-static {v3}, Lcom/kik/util/cm;->a(Ljava/io/Closeable;)V
+    invoke-static {v3}, Lcom/kik/util/cr;->a(Ljava/io/Closeable;)V
 
     .line 318
-    invoke-static {v2}, Lcom/kik/util/cm;->a(Ljava/io/Closeable;)V
+    invoke-static {v2}, Lcom/kik/util/cr;->a(Ljava/io/Closeable;)V
 
     goto/16 :goto_4
 
@@ -664,10 +664,10 @@
 
     .line 317
     :cond_d
-    invoke-static {v3}, Lcom/kik/util/cm;->a(Ljava/io/Closeable;)V
+    invoke-static {v3}, Lcom/kik/util/cr;->a(Ljava/io/Closeable;)V
 
     .line 318
-    invoke-static {v4}, Lcom/kik/util/cm;->a(Ljava/io/Closeable;)V
+    invoke-static {v4}, Lcom/kik/util/cr;->a(Ljava/io/Closeable;)V
 
     goto/16 :goto_4
 
@@ -690,10 +690,10 @@
 
     .line 317
     :cond_e
-    invoke-static {v3}, Lcom/kik/util/cm;->a(Ljava/io/Closeable;)V
+    invoke-static {v3}, Lcom/kik/util/cr;->a(Ljava/io/Closeable;)V
 
     .line 318
-    invoke-static {v4}, Lcom/kik/util/cm;->a(Ljava/io/Closeable;)V
+    invoke-static {v4}, Lcom/kik/util/cr;->a(Ljava/io/Closeable;)V
 
     throw v2
 
@@ -968,7 +968,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/interfaces/y;
+    check-cast v0, Lkik/core/interfaces/x;
 
     .line 1200
     const/4 v2, 0x0
@@ -979,7 +979,7 @@
 
     move-result v2
 
-    invoke-interface {v0, v2}, Lkik/core/interfaces/y;->a(I)V
+    invoke-interface {v0, v2}, Lkik/core/interfaces/x;->a(I)V
 
     goto :goto_0
 

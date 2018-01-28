@@ -43,7 +43,7 @@
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Landroid/view/View;->setBackgroundColor(I)V
 
     return-void
 .end method

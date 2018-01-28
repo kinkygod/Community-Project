@@ -34,13 +34,13 @@
 
 .field private final c:Landroid/content/res/Resources;
 
-.field private final d:Lkik/core/interfaces/w;
+.field private final d:Lkik/core/interfaces/v;
 
 .field private final e:Lcom/kik/android/Mixpanel;
 
 
 # direct methods
-.method public constructor <init>(Lrx/d;Lcom/kik/cache/KikVolleyImageLoader;Landroid/content/res/Resources;Lkik/core/interfaces/w;Lcom/kik/android/Mixpanel;)V
+.method public constructor <init>(Lrx/d;Lcom/kik/cache/KikVolleyImageLoader;Landroid/content/res/Resources;Lkik/core/interfaces/v;Lcom/kik/android/Mixpanel;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -51,7 +51,7 @@
             ">;",
             "Lcom/kik/cache/KikVolleyImageLoader;",
             "Landroid/content/res/Resources;",
-            "Lkik/core/interfaces/w;",
+            "Lkik/core/interfaces/v;",
             "Lcom/kik/android/Mixpanel;",
             ")V"
         }
@@ -71,7 +71,7 @@
     iput-object p3, p0, Lcom/kik/cache/s;->c:Landroid/content/res/Resources;
 
     .line 38
-    iput-object p4, p0, Lcom/kik/cache/s;->d:Lkik/core/interfaces/w;
+    iput-object p4, p0, Lcom/kik/cache/s;->d:Lkik/core/interfaces/v;
 
     .line 39
     iput-object p5, p0, Lcom/kik/cache/s;->e:Lcom/kik/android/Mixpanel;
@@ -135,7 +135,7 @@
     .line 129
     iget-object v0, p0, Lcom/kik/cache/s;->c:Landroid/content/res/Resources;
 
-    const v1, 0x7f020276
+    const v1, 0x7f02025e
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -155,7 +155,7 @@
     :cond_1
     iget-object v0, p0, Lcom/kik/cache/s;->c:Landroid/content/res/Resources;
 
-    const v1, 0x7f020275
+    const v1, 0x7f02025d
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -288,7 +288,7 @@
 
     sget-object v10, Lcom/kik/cache/KikImageRequest;->EMPTY_ERROR_LISTENER:Lcom/android/volley/h$a;
 
-    iget-object v6, p0, Lcom/kik/cache/s;->d:Lkik/core/interfaces/w;
+    iget-object v6, p0, Lcom/kik/cache/s;->d:Lkik/core/interfaces/v;
 
     .line 1144
     iget-object v0, p0, Lcom/kik/cache/s;->c:Landroid/content/res/Resources;
@@ -322,7 +322,7 @@
     move-object v5, v10
 
     .line 67
-    invoke-static/range {v0 .. v9}, Lcom/kik/cache/GroupImageRequest;->makeGroupImageRequest(Lkik/core/datatypes/p;Lcom/android/volley/h$b;IILandroid/graphics/Bitmap$Config;Lcom/android/volley/h$a;Lkik/core/interfaces/w;ZLcom/kik/cache/KikVolleyImageLoader;Lcom/kik/android/Mixpanel;)Lcom/kik/cache/GroupImageRequest;
+    invoke-static/range {v0 .. v9}, Lcom/kik/cache/GroupImageRequest;->makeGroupImageRequest(Lkik/core/datatypes/p;Lcom/android/volley/h$b;IILandroid/graphics/Bitmap$Config;Lcom/android/volley/h$a;Lkik/core/interfaces/v;ZLcom/kik/cache/KikVolleyImageLoader;Lcom/kik/android/Mixpanel;)Lcom/kik/cache/GroupImageRequest;
 
     move-result-object v0
 
@@ -375,9 +375,7 @@
     return-void
 .end method
 
-
-# virtual methods
-.method public final a(II)Lrx/d;
+.method private b(II)Lrx/d;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -390,8 +388,7 @@
     .end annotation
 
     .prologue
-    .line 45
-    .line 1051
+    .line 51
     iget-object v0, p0, Lcom/kik/cache/s;->a:Lrx/d;
 
     invoke-static {p0, p1, p2}, Lcom/kik/cache/t;->a(Lcom/kik/cache/s;II)Lrx/functions/g;
@@ -402,6 +399,40 @@
 
     move-result-object v0
 
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public final a(II)Lrx/d;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(II)",
+            "Lrx/d",
+            "<",
+            "Landroid/graphics/Bitmap;",
+            ">;"
+        }
+    .end annotation
+
+    .prologue
     .line 45
+    invoke-direct {p0, p1, p2}, Lcom/kik/cache/s;->b(II)Lrx/d;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final synthetic a(IILjava/lang/Object;)Lrx/d;
+    .locals 1
+
+    .prologue
+    .line 25
+    invoke-direct {p0, p1, p2}, Lcom/kik/cache/s;->b(II)Lrx/d;
+
+    move-result-object v0
+
     return-object v0
 .end method

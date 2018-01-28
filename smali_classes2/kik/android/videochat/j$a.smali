@@ -122,13 +122,13 @@
     .line 2102
     iget-object v3, p0, Lkik/android/videochat/j$a;->d:Lkik/android/videochat/c;
 
-    invoke-interface {v3}, Lkik/android/videochat/c;->f()Lkik/core/interfaces/ae;
+    invoke-interface {v3}, Lkik/android/videochat/c;->f()Lkik/core/interfaces/ad;
 
     move-result-object v3
 
     const-string v6, "vc_last_seen_toggle_tooltip_timeStamp"
 
-    invoke-interface {v3, v6}, Lkik/core/interfaces/ae;->v(Ljava/lang/String;)Ljava/lang/Long;
+    invoke-interface {v3, v6}, Lkik/core/interfaces/ad;->v(Ljava/lang/String;)Ljava/lang/Long;
 
     move-result-object v3
 

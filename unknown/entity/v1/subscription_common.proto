@@ -7,7 +7,6 @@ option objc_class_prefix = "SUBS";
 option go_package = "github.com/kikinteractive/xiphias-model-common/generated/go/entity/v1;entity";
 
 import "protobuf_validation.proto";
-import "common_model.proto";
 import "entity/v1/entity_common.proto";
 
 //**************************************************

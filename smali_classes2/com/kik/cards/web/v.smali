@@ -22,7 +22,7 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lcom/kik/util/a;Lcom/kik/cards/web/l;Lkik/core/net/e;Lkik/core/interfaces/t;Lcom/kik/cards/web/u;)V
+.method public constructor <init>(Landroid/content/Context;Lcom/kik/util/a;Lcom/kik/cards/web/l;Lkik/core/net/e;Lkik/core/interfaces/s;Lcom/kik/cards/web/u;)V
     .locals 9
 
     .prologue
@@ -45,7 +45,7 @@
 
     move-object v6, p5
 
-    invoke-direct/range {v0 .. v6}, Lcom/kik/cards/web/d;-><init>(Landroid/content/Context;Lcom/kik/cards/web/g;Lcom/kik/util/a;Lcom/kik/cards/web/l;Lkik/core/net/e;Lkik/core/interfaces/t;)V
+    invoke-direct/range {v0 .. v6}, Lcom/kik/cards/web/d;-><init>(Landroid/content/Context;Lcom/kik/cards/web/g;Lcom/kik/util/a;Lcom/kik/cards/web/l;Lkik/core/net/e;Lkik/core/interfaces/s;)V
 
     .line 50
     iput-object v2, p0, Lcom/kik/cards/web/v;->f:Lcom/kik/cards/web/t;

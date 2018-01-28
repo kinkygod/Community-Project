@@ -36,7 +36,7 @@
     .locals 0
 
     .prologue
-    .line 246
+    .line 252
     iput-object p1, p0, Lcom/kik/cards/web/CardsWebViewFragment$12;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -50,14 +50,14 @@
     .locals 2
 
     .prologue
-    .line 250
+    .line 256
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$12;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
     const/16 v1, 0x64
 
     invoke-static {v0, v1}, Lcom/kik/cards/web/CardsWebViewFragment;->a(Lcom/kik/cards/web/CardsWebViewFragment;I)V
 
-    .line 253
+    .line 259
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$12;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
     invoke-static {v0}, Lcom/kik/cards/web/CardsWebViewFragment;->c(Lcom/kik/cards/web/CardsWebViewFragment;)Lcom/kik/cards/web/c;
@@ -70,18 +70,18 @@
 
     if-nez v0, :cond_0
 
-    .line 254
+    .line 260
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$12;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
     invoke-virtual {v0}, Lcom/kik/cards/web/CardsWebViewFragment;->h()V
 
-    .line 256
+    .line 262
     :cond_0
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$12;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
     invoke-static {v0}, Lcom/kik/cards/web/CardsWebViewFragment;->d(Lcom/kik/cards/web/CardsWebViewFragment;)V
 
-    .line 258
+    .line 264
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$12;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
     invoke-static {v0}, Lcom/kik/cards/web/CardsWebViewFragment;->f(Lcom/kik/cards/web/CardsWebViewFragment;)Lcom/kik/cards/web/WebViewBrowserMetadataPlugin;
@@ -98,6 +98,6 @@
 
     invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
 
-    .line 290
+    .line 299
     return-void
 .end method

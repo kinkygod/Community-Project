@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/kik/entity/mobile/EntityService$j;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
 # interfaces
 .implements Lcom/google/protobuf/MessageOrBuilder;

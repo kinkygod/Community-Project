@@ -36,7 +36,7 @@
     .locals 0
 
     .prologue
-    .line 780
+    .line 781
     iput-object p1, p0, Lkik/android/chat/KikApplication$7;->a:Lkik/android/chat/KikApplication;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -50,10 +50,10 @@
     .locals 3
 
     .prologue
-    .line 780
+    .line 781
     check-cast p2, Ljava/lang/Boolean;
 
-    .line 1784
+    .line 1785
     iget-object v0, p0, Lkik/android/chat/KikApplication$7;->a:Lkik/android/chat/KikApplication;
 
     iget-object v0, v0, Lkik/android/chat/KikApplication;->a:Lcom/kik/android/Mixpanel;
@@ -66,6 +66,6 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/kik/android/Mixpanel;->b(Ljava/lang/String;Z)Lcom/kik/android/Mixpanel;
 
-    .line 780
+    .line 781
     return-void
 .end method

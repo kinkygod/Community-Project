@@ -4,48 +4,36 @@
 
 
 # instance fields
-.field private final a:Lkik/android/challenge/f;
+.field private a:Lkik/core/e/f;
 
 
 # direct methods
-.method public constructor <init>(Lkik/core/interfaces/ICommunication;Lkik/android/f/d;Lkik/core/interfaces/ae;Lkik/core/interfaces/k;Lkik/core/interfaces/IConversation;Lkik/core/interfaces/w;)V
-    .locals 7
+.method public constructor <init>(Lkik/core/e/f;)V
+    .locals 0
 
     .prologue
-    .line 24
+    .line 19
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 25
-    new-instance v0, Lkik/android/challenge/f;
+    .line 20
+    iput-object p1, p0, Lcom/kik/f/dr;->a:Lkik/core/e/f;
 
-    move-object v1, p1
-
-    move-object v2, p2
-
-    move-object v3, p3
-
-    move-object v4, p4
-
-    move-object v5, p5
-
-    move-object v6, p6
-
-    invoke-direct/range {v0 .. v6}, Lkik/android/challenge/f;-><init>(Lkik/core/interfaces/ICommunication;Lkik/android/f/d;Lkik/core/interfaces/ae;Lkik/core/interfaces/k;Lkik/core/interfaces/IConversation;Lkik/core/interfaces/w;)V
-
-    iput-object v0, p0, Lcom/kik/f/dr;->a:Lkik/android/challenge/f;
-
-    .line 26
+    .line 21
     return-void
 .end method
 
 
 # virtual methods
-.method final a()Lkik/android/challenge/f;
-    .locals 1
+.method final a()Lkik/core/e/e;
+    .locals 2
 
     .prologue
-    .line 31
-    iget-object v0, p0, Lcom/kik/f/dr;->a:Lkik/android/challenge/f;
+    .line 26
+    new-instance v0, Lkik/core/e/u;
+
+    iget-object v1, p0, Lcom/kik/f/dr;->a:Lkik/core/e/f;
+
+    invoke-direct {v0, v1}, Lkik/core/e/u;-><init>(Lkik/core/e/f;)V
 
     return-object v0
 .end method

@@ -561,7 +561,7 @@
     iput-object v0, p0, Lcom/kik/storage/ContentImageCache;->_localQueue:Lcom/kik/cache/ad;
 
     .line 88
-    invoke-static {}, Lcom/kik/util/co;->a()Lcom/kik/cache/SimpleLruBitmapCache;
+    invoke-static {}, Lcom/kik/util/ct;->a()Lcom/kik/cache/SimpleLruBitmapCache;
 
     move-result-object v0
 

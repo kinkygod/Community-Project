@@ -61,7 +61,17 @@
     return-object v0
 .end method
 
-.method protected final a_()Z
+.method public final b()Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 28
+    const-string v0, "com.crashlytics.sdk.android.crashlytics-ndk"
+
+    return-object v0
+.end method
+
+.method protected final b_()Z
     .locals 5
 
     .prologue
@@ -141,16 +151,6 @@
     .line 55
     :cond_1
     return v1
-.end method
-
-.method public final b()Ljava/lang/String;
-    .locals 1
-
-    .prologue
-    .line 28
-    const-string v0, "com.crashlytics.sdk.android.crashlytics-ndk"
-
-    return-object v0
 .end method
 
 .method public final c()Lcom/crashlytics/android/core/a/a/d;

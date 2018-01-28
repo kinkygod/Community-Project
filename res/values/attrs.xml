@@ -30,6 +30,8 @@
     <attr name="instabug_theme_tinting_color" format="reference|color" />
     <attr name="instabug_unread_message_background_color" format="color" />
     <attr name="interestsList" format="reference" />
+    <attr name="interestsListEditable" format="reference" />
+    <attr name="interestsModel" format="reference" />
     <attr name="isLightTheme" format="boolean" />
     <attr name="muted" format="boolean" />
     <attr name="playing" format="boolean" />
@@ -275,6 +277,7 @@
     </attr>
     <attr name="shouldScale" format="boolean" />
     <attr name="shouldSlide" format="boolean" />
+    <attr name="showEdit" format="reference" />
     <attr name="behavior_peekHeight" format="dimension">
         <enum name="auto" value="-1" />
     </attr>
@@ -427,6 +430,13 @@
     </attr>
     <attr name="shouldAnimateEmojiTransition" format="boolean" />
     <attr name="showDefaultDrawable" format="reference" />
+    <attr name="isExpanded" format="boolean" />
+    <attr name="fullText" format="string" />
+    <attr name="showAction" format="boolean" />
+    <attr name="action" format="reference" />
+    <attr name="ellipsisText" format="string" />
+    <attr name="actionText" format="string" />
+    <attr name="expandableTextViewListener" format="reference" />
     <attr name="rippleColor" format="color" />
     <attr name="fabSize">
         <enum name="normal" value="0" />
@@ -842,8 +852,4 @@
     <attr name="controls_color" format="integer" />
     <attr name="webAppCount" format="integer" />
     <attr name="onTouch" format="reference" />
-    <attr name="KinkyBackground" format="color" />
-    <attr name="KinkySecondaryBackground" format="color" />
-    <attr name="KinkyTheme" format="color" />
-    <attr name="KinkySecondaryTheme" format="color" />
 </resources>

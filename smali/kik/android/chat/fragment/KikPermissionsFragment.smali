@@ -12,7 +12,7 @@
 
 
 # instance fields
-.field a:Lkik/core/interfaces/ah;
+.field a:Lkik/core/interfaces/ag;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -85,7 +85,7 @@
     .locals 12
 
     .prologue
-    const v11, 0x7f100210
+    const v11, 0x7f100212
 
     const v10, 0x7f090499
 
@@ -96,7 +96,7 @@
     const/4 v8, 0x0
 
     .line 46
-    const v0, 0x7f04008b
+    const v0, 0x7f04008d
 
     invoke-virtual {p1, v0, p2, v6}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
@@ -112,7 +112,7 @@
     invoke-virtual {v0, v1}, Lkik/android/chat/fragment/KikPermissionsFragment$a;->a(Landroid/os/Bundle;)V
 
     .line 50
-    const v0, 0x7f1001fc
+    const v0, 0x7f1001fd
 
     invoke-virtual {v2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -121,9 +121,9 @@
     check-cast v0, Lcom/kik/cache/ContactImageView;
 
     .line 52
-    iget-object v1, p0, Lkik/android/chat/fragment/KikPermissionsFragment;->a:Lkik/core/interfaces/ah;
+    iget-object v1, p0, Lkik/android/chat/fragment/KikPermissionsFragment;->a:Lkik/core/interfaces/ag;
 
-    invoke-interface {v1}, Lkik/core/interfaces/ah;->d()Lkik/core/datatypes/ac;
+    invoke-interface {v1}, Lkik/core/interfaces/ag;->d()Lkik/core/datatypes/ab;
 
     move-result-object v3
 
@@ -132,10 +132,10 @@
 
     iget-object v4, p0, Lkik/android/chat/fragment/KikPermissionsFragment;->d:Lcom/kik/android/Mixpanel;
 
-    invoke-virtual {v0, v3, v1, v4}, Lcom/kik/cache/ContactImageView;->a(Lkik/core/datatypes/ac;Lcom/kik/cache/KikVolleyImageLoader;Lcom/kik/android/Mixpanel;)V
+    invoke-virtual {v0, v3, v1, v4}, Lcom/kik/cache/ContactImageView;->a(Lkik/core/datatypes/ab;Lcom/kik/cache/KikVolleyImageLoader;Lcom/kik/android/Mixpanel;)V
 
     .line 55
-    const v0, 0x7f100211
+    const v0, 0x7f100213
 
     invoke-virtual {v2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -147,7 +147,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v4, v3, Lkik/core/datatypes/ac;->d:Ljava/lang/String;
+    iget-object v4, v3, Lkik/core/datatypes/ab;->d:Ljava/lang/String;
 
     invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -159,7 +159,7 @@
 
     move-result-object v1
 
-    iget-object v4, v3, Lkik/core/datatypes/ac;->e:Ljava/lang/String;
+    iget-object v4, v3, Lkik/core/datatypes/ab;->e:Ljava/lang/String;
 
     invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -172,7 +172,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 56
-    const v0, 0x7f100212
+    const v0, 0x7f100214
 
     invoke-virtual {v2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -180,12 +180,12 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iget-object v1, v3, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
+    iget-object v1, v3, Lkik/core/datatypes/ab;->c:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 58
-    const v0, 0x7f10020e
+    const v0, 0x7f100210
 
     invoke-virtual {v2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -225,7 +225,7 @@
     move-result-object v1
 
     .line 63
-    const v0, 0x7f10020f
+    const v0, 0x7f100211
 
     invoke-virtual {v2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -257,7 +257,7 @@
     invoke-virtual {v0, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 65
-    const v0, 0x7f10020d
+    const v0, 0x7f10020f
 
     invoke-virtual {v2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -280,7 +280,7 @@
     invoke-virtual {v0, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 67
-    const v0, 0x7f100213
+    const v0, 0x7f100215
 
     invoke-virtual {v2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -433,7 +433,7 @@
 
     .line 83
     :goto_0
-    invoke-static {v0, v1}, Lkik/android/chat/view/text/c;->a(Landroid/widget/TextView;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lkik/android/chat/view/text/d;->a(Landroid/widget/TextView;Ljava/lang/String;)V
 
     .line 86
     :cond_1
@@ -468,7 +468,7 @@
 
     new-instance v1, Lkik/android/chat/fragment/KikPermissionsFragment$1;
 
-    invoke-direct {v1, p0, v3}, Lkik/android/chat/fragment/KikPermissionsFragment$1;-><init>(Lkik/android/chat/fragment/KikPermissionsFragment;Lkik/core/datatypes/ac;)V
+    invoke-direct {v1, p0, v3}, Lkik/android/chat/fragment/KikPermissionsFragment$1;-><init>(Lkik/android/chat/fragment/KikPermissionsFragment;Lkik/core/datatypes/ab;)V
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 

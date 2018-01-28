@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field private a:Lkik/android/chat/vm/messaging/er;
+.field private a:Lkik/android/chat/vm/messaging/en;
 
 
 # direct methods
@@ -34,12 +34,12 @@
 
 
 # virtual methods
-.method public final a(Lkik/android/chat/vm/messaging/er;)Lkik/android/e/b$a;
+.method public final a(Lkik/android/chat/vm/messaging/en;)Lkik/android/e/b$a;
     .locals 0
 
     .prologue
     .line 398
-    iput-object p1, p0, Lkik/android/e/b$a;->a:Lkik/android/chat/vm/messaging/er;
+    iput-object p1, p0, Lkik/android/e/b$a;->a:Lkik/android/chat/vm/messaging/en;
 
     .line 399
     if-nez p1, :cond_0
@@ -58,13 +58,13 @@
     check-cast p1, Ljava/lang/Boolean;
 
     .line 1403
-    iget-object v0, p0, Lkik/android/e/b$a;->a:Lkik/android/chat/vm/messaging/er;
+    iget-object v0, p0, Lkik/android/e/b$a;->a:Lkik/android/chat/vm/messaging/en;
 
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result v1
 
-    invoke-interface {v0, v1}, Lkik/android/chat/vm/messaging/er;->a(Z)V
+    invoke-interface {v0, v1}, Lkik/android/chat/vm/messaging/en;->a(Z)V
 
     .line 395
     return-void

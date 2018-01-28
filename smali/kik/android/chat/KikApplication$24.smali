@@ -23,7 +23,7 @@
     .locals 0
 
     .prologue
-    .line 1703
+    .line 1705
     iput-object p1, p0, Lkik/android/chat/KikApplication$24;->a:Lkik/android/chat/KikApplication;
 
     invoke-direct {p0}, Ljava/util/TimerTask;-><init>()V
@@ -37,12 +37,12 @@
     .locals 2
 
     .prologue
-    .line 1707
+    .line 1709
     iget-object v0, p0, Lkik/android/chat/KikApplication$24;->a:Lkik/android/chat/KikApplication;
 
     invoke-virtual {v0}, Lkik/android/chat/KikApplication;->q()V
 
-    .line 1708
+    .line 1710
     iget-object v0, p0, Lkik/android/chat/KikApplication$24;->a:Lkik/android/chat/KikApplication;
 
     invoke-static {v0}, Lkik/android/chat/KikApplication;->K(Lkik/android/chat/KikApplication;)Lcom/kik/events/g;
@@ -53,12 +53,12 @@
 
     invoke-virtual {v0, v1}, Lcom/kik/events/g;->a(Ljava/lang/Object;)V
 
-    .line 1709
+    .line 1711
     iget-object v0, p0, Lkik/android/chat/KikApplication$24;->a:Lkik/android/chat/KikApplication;
 
     invoke-static {v0}, Lkik/android/chat/KikApplication;->L(Lkik/android/chat/KikApplication;)Z
 
-    .line 1710
+    .line 1712
     iget-object v0, p0, Lkik/android/chat/KikApplication$24;->a:Lkik/android/chat/KikApplication;
 
     invoke-static {v0}, Lkik/android/chat/KikApplication;->f(Lkik/android/chat/KikApplication;)Lkik/android/a/b;
@@ -71,18 +71,18 @@
 
     invoke-virtual {v0}, Lcom/kik/clientmetrics/f;->b()V
 
-    .line 1711
+    .line 1713
     iget-object v0, p0, Lkik/android/chat/KikApplication$24;->a:Lkik/android/chat/KikApplication;
 
     iget-object v0, v0, Lkik/android/chat/KikApplication;->a:Lcom/kik/android/Mixpanel;
 
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel;->b()Lcom/kik/android/Mixpanel;
 
-    .line 1713
+    .line 1715
     iget-object v0, p0, Lkik/android/chat/KikApplication$24;->a:Lkik/android/chat/KikApplication;
 
     invoke-static {v0}, Lkik/android/chat/KikApplication;->M(Lkik/android/chat/KikApplication;)V
 
-    .line 1714
+    .line 1716
     return-void
 .end method

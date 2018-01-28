@@ -7,8 +7,8 @@
 .method public abstract a(Lkik/core/datatypes/y;)V
 .end method
 
-.method public abstract aE_()Lkik/android/internal/platform/PlatformHelper$StickerSource;
+.method public abstract b(Lkik/core/datatypes/y;)V
 .end method
 
-.method public abstract b(Lkik/core/datatypes/y;)V
+.method public abstract d()Lkik/android/internal/platform/PlatformHelper$StickerSource;
 .end method

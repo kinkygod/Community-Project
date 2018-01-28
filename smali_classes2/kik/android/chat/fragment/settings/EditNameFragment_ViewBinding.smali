@@ -24,7 +24,7 @@
     iput-object p1, p0, Lkik/android/chat/fragment/settings/EditNameFragment_ViewBinding;->a:Lkik/android/chat/fragment/settings/EditNameFragment;
 
     .line 25
-    const v0, 0x7f1001f4
+    const v0, 0x7f1001f5
 
     const-string v1, "field \'_firstNameInput\'"
 
@@ -39,7 +39,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/settings/EditNameFragment;->_firstNameInput:Lkik/android/chat/view/ValidateableInputView;
 
     .line 26
-    const v0, 0x7f1001f5
+    const v0, 0x7f1001f6
 
     const-string v1, "field \'_lastNameInput\'"
 
@@ -54,7 +54,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/settings/EditNameFragment;->_lastNameInput:Lkik/android/chat/view/ValidateableInputView;
 
     .line 27
-    const v0, 0x7f1001f3
+    const v0, 0x7f1001f4
 
     const-string v1, "field \'_saveButton\' and method \'onSaveClick\'"
 

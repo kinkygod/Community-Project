@@ -19,7 +19,7 @@
 
 
 # instance fields
-.field a:Lkik/android/chat/l;
+.field a:Lkik/android/chat/m;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -173,14 +173,14 @@
 
     .line 50
     :cond_3
-    invoke-virtual {p0}, Lkik/android/chat/vm/chats/e;->K_()V
+    invoke-virtual {p0}, Lkik/android/chat/vm/chats/e;->aF_()V
 
     goto :goto_1
 .end method
 
 
 # virtual methods
-.method public final H_()Lrx/d;
+.method public final L_()Lrx/d;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -199,7 +199,7 @@
     return-object v0
 .end method
 
-.method protected final synthetic a(I)Lkik/android/chat/vm/ar;
+.method protected final synthetic a(I)Lkik/android/chat/vm/at;
     .locals 2
 
     .prologue
@@ -221,7 +221,7 @@
     return-object v1
 .end method
 
-.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
     .locals 3
 
     .prologue
@@ -229,16 +229,16 @@
     invoke-interface {p1, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/chat/vm/chats/e;)V
 
     .line 37
-    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/c;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/c;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 38
-    invoke-virtual {p0}, Lkik/android/chat/vm/chats/e;->ab_()Lrx/f/b;
+    invoke-virtual {p0}, Lkik/android/chat/vm/chats/e;->ad_()Lrx/f/b;
 
     move-result-object v0
 
-    iget-object v1, p0, Lkik/android/chat/vm/chats/e;->a:Lkik/android/chat/l;
+    iget-object v1, p0, Lkik/android/chat/vm/chats/e;->a:Lkik/android/chat/m;
 
-    invoke-virtual {v1}, Lkik/android/chat/l;->b()Lrx/d;
+    invoke-virtual {v1}, Lkik/android/chat/m;->b()Lrx/d;
 
     move-result-object v1
 
@@ -280,9 +280,9 @@
     iput v0, p0, Lkik/android/chat/vm/chats/e;->c:I
 
     .line 85
-    iget-object v0, p0, Lkik/android/chat/vm/chats/e;->a:Lkik/android/chat/l;
+    iget-object v0, p0, Lkik/android/chat/vm/chats/e;->a:Lkik/android/chat/m;
 
-    invoke-virtual {v0, p1}, Lkik/android/chat/l;->a(Ljava/lang/String;)V
+    invoke-virtual {v0, p1}, Lkik/android/chat/m;->a(Ljava/lang/String;)V
 
     .line 86
     return-void

@@ -32,7 +32,7 @@
     .locals 0
 
     .prologue
-    .line 172
+    .line 175
     iput-object p1, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$4;->a:Lkik/android/chat/fragment/KikGroupMembersListFragment;
 
     invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
@@ -46,14 +46,14 @@
     .locals 1
 
     .prologue
-    .line 172
+    .line 175
     check-cast p1, Landroid/os/Bundle;
 
-    .line 1176
+    .line 1179
     iget-object v0, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$4;->a:Lkik/android/chat/fragment/KikGroupMembersListFragment;
 
     invoke-static {v0, p1}, Lkik/android/chat/fragment/KikGroupMembersListFragment;->a(Lkik/android/chat/fragment/KikGroupMembersListFragment;Landroid/os/Bundle;)V
 
-    .line 172
+    .line 175
     return-void
 .end method

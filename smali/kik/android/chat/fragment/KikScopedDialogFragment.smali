@@ -21,7 +21,7 @@
         value = {
             "Ljava/util/List",
             "<",
-            "Lkik/android/chat/vm/bn;",
+            "Lkik/android/chat/vm/bo;",
             ">;"
         }
     .end annotation
@@ -36,7 +36,7 @@
     .end annotation
 .end field
 
-.field private _navigator:Lkik/android/chat/vm/aw;
+.field private _navigator:Lkik/android/chat/vm/ay;
 
 .field private _pendingDialog:Lkik/android/chat/fragment/KikDialogFragment;
 
@@ -44,7 +44,7 @@
 
 .field private _showingDialog:Lkik/android/chat/fragment/KikDialogFragment;
 
-.field protected _storage:Lkik/core/interfaces/ae;
+.field protected _storage:Lkik/core/interfaces/ad;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -173,10 +173,10 @@
     .locals 2
 
     .prologue
-    .line 1042
+    .line 1043
     const/4 v0, 0x0
 
-    invoke-static {v0}, Lcom/kik/util/cy;->a(Ljava/lang/String;)V
+    invoke-static {v0}, Lcom/kik/util/dd;->a(Ljava/lang/String;)V
 
     .line 550
     iget-object v0, p0, Lkik/android/chat/fragment/KikScopedDialogFragment;->_attachedVms:Ljava/util/List;
@@ -196,10 +196,10 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/android/chat/vm/bn;
+    check-cast v0, Lkik/android/chat/vm/bo;
 
     .line 551
-    invoke-interface {v0}, Lkik/android/chat/vm/bn;->aj_()V
+    invoke-interface {v0}, Lkik/android/chat/vm/bo;->ak_()V
 
     goto :goto_0
 
@@ -346,12 +346,12 @@
 
 
 # virtual methods
-.method public attachVm(Lkik/android/chat/vm/bn;)Lkik/android/chat/vm/bn;
+.method public attachVm(Lkik/android/chat/vm/bo;)Lkik/android/chat/vm/bo;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T::",
-            "Lkik/android/chat/vm/bn;",
+            "Lkik/android/chat/vm/bo;",
             ">(TT;)TT;"
         }
     .end annotation
@@ -360,7 +360,7 @@
     .line 537
     const-string v0, "You must attach view models from the main thread"
 
-    invoke-static {v0}, Lcom/kik/util/cy;->a(Ljava/lang/String;)V
+    invoke-static {v0}, Lcom/kik/util/dd;->a(Ljava/lang/String;)V
 
     .line 539
     if-nez p1, :cond_0
@@ -375,11 +375,11 @@
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lkik/android/chat/fragment/KikScopedDialogFragment;->getNavigator()Lkik/android/chat/vm/aw;
+    invoke-virtual {p0}, Lkik/android/chat/fragment/KikScopedDialogFragment;->getNavigator()Lkik/android/chat/vm/ay;
 
     move-result-object v1
 
-    invoke-interface {p1, v0, v1}, Lkik/android/chat/vm/bn;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    invoke-interface {p1, v0, v1}, Lkik/android/chat/vm/bo;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 543
     iget-object v0, p0, Lkik/android/chat/fragment/KikScopedDialogFragment;->_attachedVms:Ljava/util/List;
@@ -584,7 +584,7 @@
     if-eq v1, v2, :cond_1
 
     .line 503
-    invoke-static {p0, p1, p2, p3}, Lkik/android/chat/fragment/dv;->a(Lkik/android/chat/fragment/KikScopedDialogFragment;Lkik/android/chat/fragment/KikDialogFragment$a;Landroid/content/DialogInterface$OnClickListener;Ljava/lang/String;)Ljava/lang/Runnable;
+    invoke-static {p0, p1, p2, p3}, Lkik/android/chat/fragment/dw;->a(Lkik/android/chat/fragment/KikScopedDialogFragment;Lkik/android/chat/fragment/KikDialogFragment$a;Landroid/content/DialogInterface$OnClickListener;Ljava/lang/String;)Ljava/lang/Runnable;
 
     move-result-object v1
 
@@ -601,7 +601,7 @@
     .line 508
     if-nez p2, :cond_2
 
-    invoke-static {}, Lkik/android/chat/fragment/dw;->a()Landroid/content/DialogInterface$OnClickListener;
+    invoke-static {}, Lkik/android/chat/fragment/dx;->a()Landroid/content/DialogInterface$OnClickListener;
 
     move-result-object p2
 
@@ -703,25 +703,25 @@
     return-void
 .end method
 
-.method public getNavigator()Lkik/android/chat/vm/aw;
+.method public getNavigator()Lkik/android/chat/vm/ay;
     .locals 1
 
     .prologue
     .line 521
-    iget-object v0, p0, Lkik/android/chat/fragment/KikScopedDialogFragment;->_navigator:Lkik/android/chat/vm/aw;
+    iget-object v0, p0, Lkik/android/chat/fragment/KikScopedDialogFragment;->_navigator:Lkik/android/chat/vm/ay;
 
     if-nez v0, :cond_0
 
     .line 522
-    new-instance v0, Lkik/android/chat/vm/bu;
+    new-instance v0, Lkik/android/chat/vm/bw;
 
-    invoke-direct {v0, p0}, Lkik/android/chat/vm/bu;-><init>(Lkik/android/chat/fragment/KikScopedDialogFragment;)V
+    invoke-direct {v0, p0}, Lkik/android/chat/vm/bw;-><init>(Lkik/android/chat/fragment/KikScopedDialogFragment;)V
 
-    iput-object v0, p0, Lkik/android/chat/fragment/KikScopedDialogFragment;->_navigator:Lkik/android/chat/vm/aw;
+    iput-object v0, p0, Lkik/android/chat/fragment/KikScopedDialogFragment;->_navigator:Lkik/android/chat/vm/ay;
 
     .line 524
     :cond_0
-    iget-object v0, p0, Lkik/android/chat/fragment/KikScopedDialogFragment;->_navigator:Lkik/android/chat/vm/aw;
+    iget-object v0, p0, Lkik/android/chat/fragment/KikScopedDialogFragment;->_navigator:Lkik/android/chat/vm/ay;
 
     return-object v0
 .end method
@@ -774,7 +774,7 @@
     invoke-interface {v0, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/chat/fragment/KikScopedDialogFragment;)V
 
     .line 84
-    invoke-virtual {p0}, Lkik/android/chat/fragment/KikScopedDialogFragment;->screenOpenedEvent()Lcom/kik/metrics/b/s;
+    invoke-virtual {p0}, Lkik/android/chat/fragment/KikScopedDialogFragment;->screenOpenedEvent()Lcom/kik/metrics/b/t;
 
     move-result-object v0
 
@@ -784,7 +784,7 @@
     .line 86
     iget-object v1, p0, Lkik/android/chat/fragment/KikScopedDialogFragment;->_metricsService:Lcom/kik/metrics/c/d;
 
-    invoke-virtual {v1, v0}, Lcom/kik/metrics/c/d;->a(Lcom/kik/metrics/b/s;)V
+    invoke-virtual {v1, v0}, Lcom/kik/metrics/c/d;->a(Lcom/kik/metrics/b/t;)V
 
     .line 88
     :cond_0
@@ -899,7 +899,7 @@
 
     .prologue
     .line 221
-    invoke-static {}, Lkik/android/widget/bz;->a()V
+    invoke-static {}, Lkik/android/widget/cl;->a()V
 
     .line 223
     invoke-super {p0}, Lkik/android/chat/fragment/KikFragmentBase;->onPause()V
@@ -947,7 +947,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, p0}, Lkik/android/widget/bz;->a(Landroid/content/Context;Lkik/android/chat/fragment/KikScopedDialogFragment;)V
+    invoke-static {v0, p0}, Lkik/android/widget/cl;->a(Landroid/content/Context;Lkik/android/chat/fragment/KikScopedDialogFragment;)V
 
     .line 216
     return-void
@@ -1106,7 +1106,7 @@
     goto :goto_1
 .end method
 
-.method protected screenOpenedEvent()Lcom/kik/metrics/b/s;
+.method protected screenOpenedEvent()Lcom/kik/metrics/b/t;
     .locals 1
 
     .prologue

@@ -67,7 +67,7 @@
 
     check-cast v0, Lcom/kik/messagepath/model/Keyboards$SuggestedResponseItem;
 
-    invoke-static {v0}, Lcom/kik/util/cw;->a(Lcom/kik/messagepath/model/Keyboards$SuggestedResponseItem;)Z
+    invoke-static {v0}, Lcom/kik/util/db;->a(Lcom/kik/messagepath/model/Keyboards$SuggestedResponseItem;)Z
 
     move-result v0
 

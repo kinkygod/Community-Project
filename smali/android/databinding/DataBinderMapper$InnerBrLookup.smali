@@ -23,7 +23,7 @@
     .locals 3
 
     .prologue
-    .line 1063
+    .line 1111
     const/16 v0, 0x19
 
     new-array v0, v0, [Ljava/lang/String;
@@ -102,7 +102,7 @@
 
     const/16 v1, 0xc
 
-    const-string v2, "listModel"
+    const-string v2, "interestsModel"
 
     aput-object v2, v0, v1
 
@@ -138,31 +138,31 @@
 
     const/16 v1, 0x12
 
-    const-string v2, "stickerModel"
+    const-string v2, "selectedInterestsModel"
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x13
 
-    const-string v2, "suggestionsModel"
+    const-string v2, "stickerModel"
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x14
 
-    const-string v2, "tabBarModel"
+    const-string v2, "suggestionsModel"
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x15
 
-    const-string v2, "tabModel"
+    const-string v2, "tabBarModel"
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x16
 
-    const-string v2, "themeModel"
+    const-string v2, "tabModel"
 
     aput-object v2, v0, v1
 
@@ -187,7 +187,7 @@
     .locals 0
 
     .prologue
-    .line 1062
+    .line 1110
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

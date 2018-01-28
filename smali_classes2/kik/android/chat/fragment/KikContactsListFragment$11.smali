@@ -36,7 +36,7 @@
     .locals 0
 
     .prologue
-    .line 1016
+    .line 1021
     iput-object p1, p0, Lkik/android/chat/fragment/KikContactsListFragment$11;->a:Lkik/android/chat/fragment/KikContactsListFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -50,7 +50,7 @@
     .locals 1
 
     .prologue
-    .line 1022
+    .line 1027
     iget-object v0, p0, Lkik/android/chat/fragment/KikContactsListFragment$11;->a:Lkik/android/chat/fragment/KikContactsListFragment;
 
     invoke-static {v0}, Lkik/android/chat/fragment/KikContactsListFragment;->s(Lkik/android/chat/fragment/KikContactsListFragment;)Z
@@ -75,12 +75,12 @@
 
     if-eqz v0, :cond_1
 
-    .line 1026
+    .line 1031
     :cond_0
     :goto_0
     return-void
 
-    .line 1025
+    .line 1030
     :cond_1
     iget-object v0, p0, Lkik/android/chat/fragment/KikContactsListFragment$11;->a:Lkik/android/chat/fragment/KikContactsListFragment;
 

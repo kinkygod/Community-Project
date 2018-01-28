@@ -68,7 +68,7 @@
 
 .field private n:Landroid/content/res/Resources;
 
-.field private o:Lcom/kik/storage/p;
+.field private o:Lcom/kik/storage/s;
 
 .field private p:Landroid/content/SharedPreferences;
 
@@ -78,7 +78,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/kik/cache/KikVolleyImageLoader;Landroid/content/res/Resources;Lcom/kik/storage/p;Lkik/android/util/ai;)V
+.method public constructor <init>(Lcom/kik/cache/KikVolleyImageLoader;Landroid/content/res/Resources;Lcom/kik/storage/s;Lkik/android/util/ai;)V
     .locals 2
 
     .prologue
@@ -165,7 +165,7 @@
     iput-object p2, p0, Lkik/android/util/u;->n:Landroid/content/res/Resources;
 
     .line 79
-    iput-object p3, p0, Lkik/android/util/u;->o:Lcom/kik/storage/p;
+    iput-object p3, p0, Lkik/android/util/u;->o:Lcom/kik/storage/s;
 
     .line 81
     const-string v0, "kik.gifs"
@@ -200,7 +200,7 @@
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setTextAlign(Landroid/graphics/Paint$Align;)V
 
     .line 87
-    invoke-static {}, Lcom/kik/util/co;->a()Lcom/kik/cache/SimpleLruBitmapCache;
+    invoke-static {}, Lcom/kik/util/ct;->a()Lcom/kik/cache/SimpleLruBitmapCache;
 
     move-result-object v0
 
@@ -224,12 +224,12 @@
     return-void
 .end method
 
-.method static synthetic a(Lkik/android/util/u;)Lcom/kik/storage/p;
+.method static synthetic a(Lkik/android/util/u;)Lcom/kik/storage/s;
     .locals 1
 
     .prologue
     .line 47
-    iget-object v0, p0, Lkik/android/util/u;->o:Lcom/kik/storage/p;
+    iget-object v0, p0, Lkik/android/util/u;->o:Lcom/kik/storage/s;
 
     return-object v0
 .end method
@@ -615,9 +615,9 @@
     if-nez v1, :cond_6
 
     .line 1404
-    iget-object v0, p0, Lkik/android/util/u;->o:Lcom/kik/storage/p;
+    iget-object v0, p0, Lkik/android/util/u;->o:Lcom/kik/storage/s;
 
-    invoke-interface {v0, v3}, Lcom/kik/storage/p;->j(Ljava/lang/String;)Landroid/graphics/Bitmap;
+    invoke-interface {v0, v3}, Lcom/kik/storage/s;->j(Ljava/lang/String;)Landroid/graphics/Bitmap;
 
     move-result-object v0
 
@@ -1035,14 +1035,14 @@
 
     if-eqz v1, :cond_1
 
-    iget-object v1, p0, Lkik/android/util/u;->o:Lcom/kik/storage/p;
+    iget-object v1, p0, Lkik/android/util/u;->o:Lcom/kik/storage/s;
 
     .line 145
     invoke-virtual {v0}, Lkik/android/gifs/api/a;->a()Ljava/lang/String;
 
     move-result-object v6
 
-    invoke-interface {v1, v6}, Lcom/kik/storage/p;->e(Ljava/lang/String;)Z
+    invoke-interface {v1, v6}, Lcom/kik/storage/s;->e(Ljava/lang/String;)Z
 
     move-result v1
 

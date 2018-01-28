@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/core/interfaces/v;
+.implements Lkik/core/interfaces/u;
 
 
 # instance fields
@@ -22,9 +22,11 @@
 
 .field private c:Lkik/core/interfaces/ICommunication;
 
-.field private d:Lkik/core/interfaces/ae;
+.field private d:Lkik/core/interfaces/ad;
 
-.field private e:Lcom/kik/events/Promise;
+.field private final e:Lkik/core/interfaces/IConversation;
+
+.field private f:Lcom/kik/events/Promise;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/kik/events/Promise",
@@ -35,51 +37,51 @@
     .end annotation
 .end field
 
-.field private f:Lcom/kik/events/d;
+.field private g:Lcom/kik/events/d;
 
 
 # direct methods
-.method public constructor <init>(Lkik/core/interfaces/ICommunication;Lkik/android/chat/KikApplication;Lkik/core/interfaces/ae;Lkik/core/interfaces/k;)V
+.method public constructor <init>(Lkik/core/interfaces/ICommunication;Lkik/core/interfaces/IConversation;Lkik/android/chat/KikApplication;Lkik/core/interfaces/ad;Lkik/core/interfaces/k;)V
     .locals 3
 
     .prologue
-    .line 40
+    .line 43
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 35
+    .line 38
     new-instance v0, Lcom/kik/events/Promise;
 
     invoke-direct {v0}, Lcom/kik/events/Promise;-><init>()V
 
-    iput-object v0, p0, Lkik/android/challenge/a;->e:Lcom/kik/events/Promise;
+    iput-object v0, p0, Lkik/android/challenge/a;->f:Lcom/kik/events/Promise;
 
-    .line 37
+    .line 40
     new-instance v0, Lcom/kik/events/d;
 
     invoke-direct {v0}, Lcom/kik/events/d;-><init>()V
 
-    iput-object v0, p0, Lkik/android/challenge/a;->f:Lcom/kik/events/d;
+    iput-object v0, p0, Lkik/android/challenge/a;->g:Lcom/kik/events/d;
 
-    .line 49
+    .line 53
     new-instance v0, Lkik/android/challenge/a$1;
 
     invoke-direct {v0, p0}, Lkik/android/challenge/a$1;-><init>(Lkik/android/challenge/a;)V
 
     iput-object v0, p0, Lkik/android/challenge/a;->a:Lcom/kik/events/e;
 
-    .line 41
-    iput-object p2, p0, Lkik/android/challenge/a;->b:Lkik/android/chat/KikApplication;
+    .line 44
+    iput-object p3, p0, Lkik/android/challenge/a;->b:Lkik/android/chat/KikApplication;
 
-    .line 42
+    .line 45
     iput-object p1, p0, Lkik/android/challenge/a;->c:Lkik/core/interfaces/ICommunication;
 
-    .line 43
-    iput-object p3, p0, Lkik/android/challenge/a;->d:Lkik/core/interfaces/ae;
+    .line 46
+    iput-object p4, p0, Lkik/android/challenge/a;->d:Lkik/core/interfaces/ad;
 
-    .line 44
-    iget-object v0, p0, Lkik/android/challenge/a;->f:Lcom/kik/events/d;
+    .line 47
+    iget-object v0, p0, Lkik/android/challenge/a;->g:Lcom/kik/events/d;
 
-    invoke-interface {p4}, Lkik/core/interfaces/k;->a()Lcom/kik/events/c;
+    invoke-interface {p5}, Lkik/core/interfaces/k;->a()Lcom/kik/events/c;
 
     move-result-object v1
 
@@ -87,7 +89,10 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/kik/events/d;->a(Lcom/kik/events/c;Lcom/kik/events/e;)Lcom/kik/events/e;
 
-    .line 45
+    .line 48
+    iput-object p2, p0, Lkik/android/challenge/a;->e:Lkik/core/interfaces/IConversation;
+
+    .line 49
     return-void
 .end method
 
@@ -95,7 +100,7 @@
     .locals 1
 
     .prologue
-    .line 26
+    .line 28
     invoke-direct {p0, p1}, Lkik/android/challenge/a;->b(Ljava/lang/String;)Lcom/kik/events/Promise;
 
     move-result-object v0
@@ -103,12 +108,12 @@
     return-object v0
 .end method
 
-.method static synthetic a(Lkik/android/challenge/a;)Lkik/core/interfaces/ae;
+.method static synthetic a(Lkik/android/challenge/a;)Lkik/core/interfaces/ad;
     .locals 1
 
     .prologue
-    .line 26
-    iget-object v0, p0, Lkik/android/challenge/a;->d:Lkik/core/interfaces/ae;
+    .line 28
+    iget-object v0, p0, Lkik/android/challenge/a;->d:Lkik/core/interfaces/ad;
 
     return-object v0
 .end method
@@ -117,7 +122,7 @@
     .locals 1
 
     .prologue
-    .line 112
+    .line 119
     iget-object v0, p0, Lkik/android/challenge/a;->c:Lkik/core/interfaces/ICommunication;
 
     invoke-interface {v0}, Lkik/core/interfaces/ICommunication;->l()Z
@@ -170,12 +175,12 @@
     .end annotation
 
     .prologue
-    .line 62
+    .line 67
     new-instance v1, Lcom/kik/events/Promise;
 
     invoke-direct {v1}, Lcom/kik/events/Promise;-><init>()V
 
-    .line 63
+    .line 68
     iget-object v0, p0, Lkik/android/challenge/a;->b:Lkik/android/chat/KikApplication;
 
     invoke-virtual {v0}, Lkik/android/chat/KikApplication;->r()Landroid/app/Activity;
@@ -184,7 +189,7 @@
 
     check-cast v0, Lkik/android/chat/activity/FragmentWrapperActivity;
 
-    .line 64
+    .line 69
     invoke-virtual {v0}, Lkik/android/chat/activity/FragmentWrapperActivity;->d()Landroid/support/v4/app/Fragment;
 
     move-result-object v2
@@ -197,12 +202,12 @@
 
     move-result-object v2
 
-    .line 65
+    .line 70
     new-instance v3, Lcom/kik/cards/browser/PreCaptchaDescriptiveDialogFragment;
 
     invoke-direct {v3}, Lcom/kik/cards/browser/PreCaptchaDescriptiveDialogFragment;-><init>()V
 
-    .line 66
+    .line 71
     new-instance v4, Lcom/kik/cards/browser/PreCaptchaDescriptiveDialogFragment$a;
 
     invoke-direct {v4}, Lcom/kik/cards/browser/PreCaptchaDescriptiveDialogFragment$a;-><init>()V
@@ -221,7 +226,7 @@
 
     invoke-virtual {v3, v2}, Lcom/kik/cards/browser/PreCaptchaDescriptiveDialogFragment;->setArguments(Landroid/os/Bundle;)V
 
-    .line 67
+    .line 72
     invoke-virtual {v0}, Lkik/android/chat/activity/FragmentWrapperActivity;->getSupportFragmentManager()Landroid/support/v4/app/FragmentManager;
 
     move-result-object v0
@@ -230,15 +235,15 @@
 
     move-result-object v0
 
-    .line 68
+    .line 73
     const-string v2, "challenge.precaptchadialog"
 
     invoke-virtual {v0, v3, v2}, Landroid/support/v4/app/FragmentTransaction;->add(Landroid/support/v4/app/Fragment;Ljava/lang/String;)Landroid/support/v4/app/FragmentTransaction;
 
-    .line 69
+    .line 74
     invoke-virtual {v0}, Landroid/support/v4/app/FragmentTransaction;->commitAllowingStateLoss()I
 
-    .line 71
+    .line 76
     invoke-virtual {v3}, Lcom/kik/cards/browser/PreCaptchaDescriptiveDialogFragment;->f()Lcom/kik/events/Promise;
 
     move-result-object v0
@@ -249,7 +254,7 @@
 
     invoke-virtual {v0, v2}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
 
-    .line 88
+    .line 95
     return-object v1
 .end method
 
@@ -257,7 +262,7 @@
     .locals 1
 
     .prologue
-    .line 26
+    .line 28
     invoke-direct {p0}, Lkik/android/challenge/a;->a()Z
 
     move-result v0
@@ -269,8 +274,28 @@
     .locals 1
 
     .prologue
-    .line 26
-    iget-object v0, p0, Lkik/android/challenge/a;->e:Lcom/kik/events/Promise;
+    .line 28
+    iget-object v0, p0, Lkik/android/challenge/a;->f:Lcom/kik/events/Promise;
+
+    return-object v0
+.end method
+
+.method static synthetic d(Lkik/android/challenge/a;)Lkik/core/interfaces/IConversation;
+    .locals 1
+
+    .prologue
+    .line 28
+    iget-object v0, p0, Lkik/android/challenge/a;->e:Lkik/core/interfaces/IConversation;
+
+    return-object v0
+.end method
+
+.method static synthetic e(Lkik/android/challenge/a;)Lkik/core/interfaces/ICommunication;
+    .locals 1
+
+    .prologue
+    .line 28
+    iget-object v0, p0, Lkik/android/challenge/a;->c:Lkik/core/interfaces/ICommunication;
 
     return-object v0
 .end method
@@ -292,7 +317,7 @@
     .end annotation
 
     .prologue
-    .line 97
+    .line 104
     iget-object v0, p0, Lkik/android/challenge/a;->c:Lkik/core/interfaces/ICommunication;
 
     invoke-interface {v0}, Lkik/core/interfaces/ICommunication;->l()Z
@@ -319,22 +344,22 @@
 
     if-eqz v0, :cond_1
 
-    .line 98
+    .line 105
     :cond_0
-    iget-object v0, p0, Lkik/android/challenge/a;->d:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/challenge/a;->d:Lkik/core/interfaces/ad;
 
     const-string v1, "challenge.on.demand.manager.url"
 
-    invoke-interface {v0, v1, p1}, Lkik/core/interfaces/ae;->c(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-interface {v0, v1, p1}, Lkik/core/interfaces/ad;->c(Ljava/lang/String;Ljava/lang/String;)Z
 
-    .line 99
-    iget-object v0, p0, Lkik/android/challenge/a;->e:Lcom/kik/events/Promise;
+    .line 106
+    iget-object v0, p0, Lkik/android/challenge/a;->f:Lcom/kik/events/Promise;
 
-    .line 107
+    .line 114
     :goto_0
     return-object v0
 
-    .line 103
+    .line 110
     :cond_1
     invoke-direct {p0}, Lkik/android/challenge/a;->a()Z
 
@@ -342,8 +367,8 @@
 
     if-eqz v0, :cond_2
 
-    .line 104
-    iget-object v0, p0, Lkik/android/challenge/a;->d:Lkik/core/interfaces/ae;
+    .line 111
+    iget-object v0, p0, Lkik/android/challenge/a;->d:Lkik/core/interfaces/ad;
 
     const-string v1, "challenge.OnDemandCaptchaManager.shown"
 
@@ -353,16 +378,16 @@
 
     move-result-object v2
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;Ljava/lang/Boolean;)Z
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Boolean;)Z
 
-    .line 105
+    .line 112
     invoke-direct {p0, p1}, Lkik/android/challenge/a;->b(Ljava/lang/String;)Lcom/kik/events/Promise;
 
     move-result-object v0
 
     goto :goto_0
 
-    .line 107
+    .line 114
     :cond_2
     new-instance v0, Ljava/lang/IllegalStateException;
 

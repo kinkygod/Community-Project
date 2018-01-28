@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/kik/entity/model/ElementCommon$l;
+.implements Lcom/kik/entity/model/ElementCommon$m;
 
 
 # annotations
@@ -402,7 +402,7 @@
     .line 3350
     sget-object v0, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;->a:Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;
 
-    invoke-virtual {v0}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;->e()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;
+    invoke-virtual {v0}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;->d()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;
 
     move-result-object v0
 
@@ -423,21 +423,7 @@
     return-object p1
 .end method
 
-.method public static d()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;
-    .locals 1
-
-    .prologue
-    .line 3347
-    sget-object v0, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;->a:Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;
-
-    invoke-virtual {v0}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;->e()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public static f()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;
+.method public static e()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;
     .locals 1
 
     .prologue
@@ -447,7 +433,7 @@
     return-object v0
 .end method
 
-.method public static g()Lcom/google/protobuf/Parser;
+.method public static f()Lcom/google/protobuf/Parser;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -466,7 +452,7 @@
     return-object v0
 .end method
 
-.method static synthetic h()Z
+.method static synthetic g()Z
     .locals 1
 
     .prologue
@@ -476,7 +462,7 @@
     return v0
 .end method
 
-.method static synthetic i()Lcom/google/protobuf/Parser;
+.method static synthetic h()Lcom/google/protobuf/Parser;
     .locals 1
 
     .prologue
@@ -558,7 +544,7 @@
     goto :goto_0
 .end method
 
-.method public final e()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;
+.method public final d()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;
     .locals 2
 
     .prologue
@@ -1006,7 +992,7 @@
     .line 6347
     sget-object v0, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;->a:Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;
 
-    invoke-virtual {v0}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;->e()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;
+    invoke-virtual {v0}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;->d()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;
 
     move-result-object v0
 
@@ -1036,7 +1022,7 @@
     .line 7347
     sget-object v0, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;->a:Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;
 
-    invoke-virtual {v0}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;->e()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;
+    invoke-virtual {v0}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;->d()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;
 
     move-result-object v0
 
@@ -1049,7 +1035,7 @@
 
     .prologue
     .line 3014
-    invoke-virtual {p0}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;->e()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;
+    invoke-virtual {p0}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;->d()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;
 
     move-result-object v0
 
@@ -1061,7 +1047,7 @@
 
     .prologue
     .line 3014
-    invoke-virtual {p0}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;->e()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;
+    invoke-virtual {p0}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;->d()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;
 
     move-result-object v0
 

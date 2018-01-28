@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/a/b;
+.implements Ldagger/internal/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/a/b",
+        "Ldagger/internal/b",
         "<",
         "Lcom/kik/cache/KikVolleyImageLoader;",
         ">;"
@@ -23,7 +23,7 @@
 
 
 # instance fields
-.field private final b:Lcom/kik/f/at;
+.field private final b:Lcom/kik/f/as;
 
 
 # direct methods
@@ -53,7 +53,7 @@
     goto :goto_0
 .end method
 
-.method private constructor <init>(Lcom/kik/f/at;)V
+.method private constructor <init>(Lcom/kik/f/as;)V
     .locals 1
 
     .prologue
@@ -75,20 +75,20 @@
 
     .line 18
     :cond_0
-    iput-object p1, p0, Lcom/kik/f/bd;->b:Lcom/kik/f/at;
+    iput-object p1, p0, Lcom/kik/f/bd;->b:Lcom/kik/f/as;
 
     .line 19
     return-void
 .end method
 
-.method public static a(Lcom/kik/f/at;)La/a/b;
+.method public static a(Lcom/kik/f/as;)Ldagger/internal/b;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcom/kik/f/at;",
+            "Lcom/kik/f/as;",
             ")",
-            "La/a/b",
+            "Ldagger/internal/b",
             "<",
             "Lcom/kik/cache/KikVolleyImageLoader;",
             ">;"
@@ -99,7 +99,7 @@
     .line 29
     new-instance v0, Lcom/kik/f/bd;
 
-    invoke-direct {v0, p0}, Lcom/kik/f/bd;-><init>(Lcom/kik/f/at;)V
+    invoke-direct {v0, p0}, Lcom/kik/f/bd;-><init>(Lcom/kik/f/as;)V
 
     return-object v0
 .end method
@@ -112,17 +112,17 @@
     .prologue
     .line 8
     .line 1023
-    iget-object v0, p0, Lcom/kik/f/bd;->b:Lcom/kik/f/at;
+    iget-object v0, p0, Lcom/kik/f/bd;->b:Lcom/kik/f/as;
 
     .line 1024
-    invoke-virtual {v0}, Lcom/kik/f/at;->a()Lcom/kik/cache/KikVolleyImageLoader;
+    invoke-virtual {v0}, Lcom/kik/f/as;->b()Lcom/kik/cache/KikVolleyImageLoader;
 
     move-result-object v0
 
     const-string v1, "Cannot return null from a non-@Nullable @Provides method"
 
     .line 1023
-    invoke-static {v0, v1}, La/a/c;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {v0, v1}, Ldagger/internal/c;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 

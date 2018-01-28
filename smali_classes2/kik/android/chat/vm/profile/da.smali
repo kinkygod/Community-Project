@@ -2,48 +2,50 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Lrx/functions/k;
 
 
-# instance fields
-.field private final a:Lkik/android/chat/vm/profile/cz;
-
-.field private final b:Lcom/kik/events/k;
+# static fields
+.field private static final a:Lkik/android/chat/vm/profile/da;
 
 
 # direct methods
-.method private constructor <init>(Lkik/android/chat/vm/profile/cz;Lcom/kik/events/k;)V
-    .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lkik/android/chat/vm/profile/da;->a:Lkik/android/chat/vm/profile/cz;
-
-    iput-object p2, p0, Lkik/android/chat/vm/profile/da;->b:Lcom/kik/events/k;
-
-    return-void
-.end method
-
-.method public static a(Lkik/android/chat/vm/profile/cz;Lcom/kik/events/k;)Ljava/lang/Runnable;
+.method static constructor <clinit>()V
     .locals 1
 
     new-instance v0, Lkik/android/chat/vm/profile/da;
 
-    invoke-direct {v0, p0, p1}, Lkik/android/chat/vm/profile/da;-><init>(Lkik/android/chat/vm/profile/cz;Lcom/kik/events/k;)V
+    invoke-direct {v0}, Lkik/android/chat/vm/profile/da;-><init>()V
+
+    sput-object v0, Lkik/android/chat/vm/profile/da;->a:Lkik/android/chat/vm/profile/da;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static a()Lrx/functions/k;
+    .locals 1
+
+    sget-object v0, Lkik/android/chat/vm/profile/da;->a:Lkik/android/chat/vm/profile/da;
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 2
+.method public final a([Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
-    iget-object v0, p0, Lkik/android/chat/vm/profile/da;->a:Lkik/android/chat/vm/profile/cz;
+    invoke-static {p1}, Lkik/android/chat/vm/profile/cy;->a([Ljava/lang/Object;)Ljava/lang/String;
 
-    iget-object v1, p0, Lkik/android/chat/vm/profile/da;->b:Lcom/kik/events/k;
+    move-result-object v0
 
-    invoke-static {v0, v1}, Lkik/android/chat/vm/profile/cz;->b(Lkik/android/chat/vm/profile/cz;Lcom/kik/events/k;)V
-
-    return-void
+    return-object v0
 .end method

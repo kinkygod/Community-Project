@@ -2,69 +2,44 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lrx/functions/g;
+.implements Lkik/android/chat/vm/ar;
 
 
-# static fields
-.field private static final a:Lkik/android/chat/vm/chats/profile/as;
+# instance fields
+.field private final a:Lkik/android/chat/vm/chats/profile/an;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lkik/android/chat/vm/chats/profile/as;
-
-    invoke-direct {v0}, Lkik/android/chat/vm/chats/profile/as;-><init>()V
-
-    sput-object v0, Lkik/android/chat/vm/chats/profile/as;->a:Lkik/android/chat/vm/chats/profile/as;
-
-    return-void
-.end method
-
-.method private constructor <init>()V
+.method private constructor <init>(Lkik/android/chat/vm/chats/profile/an;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    iput-object p1, p0, Lkik/android/chat/vm/chats/profile/as;->a:Lkik/android/chat/vm/chats/profile/an;
+
     return-void
 .end method
 
-.method public static a()Lrx/functions/g;
+.method public static a(Lkik/android/chat/vm/chats/profile/an;)Lkik/android/chat/vm/ar;
     .locals 1
 
-    sget-object v0, Lkik/android/chat/vm/chats/profile/as;->a:Lkik/android/chat/vm/chats/profile/as;
+    new-instance v0, Lkik/android/chat/vm/chats/profile/as;
+
+    invoke-direct {v0, p0}, Lkik/android/chat/vm/chats/profile/as;-><init>(Lkik/android/chat/vm/chats/profile/an;)V
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public final call(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final a()Ljava/util/List;
     .locals 1
 
-    .prologue
-    .line 0
-    check-cast p1, Lkik/core/chat/profile/e;
+    iget-object v0, p0, Lkik/android/chat/vm/chats/profile/as;->a:Lkik/android/chat/vm/chats/profile/an;
 
-    .line 1139
-    iget-object v0, p1, Lkik/core/chat/profile/e;->d:Lkik/core/chat/profile/Theme;
-
-    if-eqz v0, :cond_0
-
-    const/4 v0, 0x1
-
-    :goto_0
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    invoke-static {v0}, Lkik/android/chat/vm/chats/profile/an;->a(Lkik/android/chat/vm/chats/profile/an;)Ljava/util/List;
 
     move-result-object v0
 
-    .line 0
     return-object v0
-
-    .line 1139
-    :cond_0
-    const/4 v0, 0x0
-
-    goto :goto_0
 .end method

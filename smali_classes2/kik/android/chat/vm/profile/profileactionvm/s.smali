@@ -2,42 +2,46 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lrx/functions/a;
+.implements Ljava/lang/Runnable;
 
 
-# instance fields
-.field private final a:Lkik/android/chat/vm/profile/profileactionvm/r;
+# static fields
+.field private static final a:Lkik/android/chat/vm/profile/profileactionvm/s;
 
 
 # direct methods
-.method private constructor <init>(Lkik/android/chat/vm/profile/profileactionvm/r;)V
-    .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lkik/android/chat/vm/profile/profileactionvm/s;->a:Lkik/android/chat/vm/profile/profileactionvm/r;
-
-    return-void
-.end method
-
-.method public static a(Lkik/android/chat/vm/profile/profileactionvm/r;)Lrx/functions/a;
+.method static constructor <clinit>()V
     .locals 1
 
     new-instance v0, Lkik/android/chat/vm/profile/profileactionvm/s;
 
-    invoke-direct {v0, p0}, Lkik/android/chat/vm/profile/profileactionvm/s;-><init>(Lkik/android/chat/vm/profile/profileactionvm/r;)V
+    invoke-direct {v0}, Lkik/android/chat/vm/profile/profileactionvm/s;-><init>()V
+
+    sput-object v0, Lkik/android/chat/vm/profile/profileactionvm/s;->a:Lkik/android/chat/vm/profile/profileactionvm/s;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static a()Ljava/lang/Runnable;
+    .locals 1
+
+    sget-object v0, Lkik/android/chat/vm/profile/profileactionvm/s;->a:Lkik/android/chat/vm/profile/profileactionvm/s;
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public final a()V
-    .locals 1
-
-    iget-object v0, p0, Lkik/android/chat/vm/profile/profileactionvm/s;->a:Lkik/android/chat/vm/profile/profileactionvm/r;
-
-    invoke-static {v0}, Lkik/android/chat/vm/profile/profileactionvm/r;->a(Lkik/android/chat/vm/profile/profileactionvm/r;)V
+.method public final run()V
+    .locals 0
 
     return-void
 .end method

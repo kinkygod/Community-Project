@@ -10,7 +10,7 @@
 # instance fields
 .field private final a:Lcom/kik/cache/KikVolleyImageLoader;
 
-.field private final b:Lkik/core/interfaces/w;
+.field private final b:Lkik/core/interfaces/v;
 
 .field private final c:Lcom/kik/android/Mixpanel;
 
@@ -20,7 +20,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/kik/cache/KikVolleyImageLoader;Lkik/core/interfaces/w;Lcom/kik/android/Mixpanel;)V
+.method public constructor <init>(Lcom/kik/cache/KikVolleyImageLoader;Lkik/core/interfaces/v;Lcom/kik/android/Mixpanel;)V
     .locals 0
 
     .prologue
@@ -31,7 +31,7 @@
     iput-object p1, p0, Lkik/android/chat/presentation/b;->a:Lcom/kik/cache/KikVolleyImageLoader;
 
     .line 32
-    iput-object p2, p0, Lkik/android/chat/presentation/b;->b:Lkik/core/interfaces/w;
+    iput-object p2, p0, Lkik/android/chat/presentation/b;->b:Lkik/core/interfaces/v;
 
     .line 33
     iput-object p3, p0, Lkik/android/chat/presentation/b;->c:Lcom/kik/android/Mixpanel;
@@ -244,11 +244,11 @@
 
     iget-object v4, p0, Lkik/android/chat/presentation/b;->a:Lcom/kik/cache/KikVolleyImageLoader;
 
-    iget-object v5, p0, Lkik/android/chat/presentation/b;->b:Lkik/core/interfaces/w;
+    iget-object v5, p0, Lkik/android/chat/presentation/b;->b:Lkik/core/interfaces/v;
 
     iget-object v6, p0, Lkik/android/chat/presentation/b;->c:Lcom/kik/android/Mixpanel;
 
-    invoke-interface {v0, v1, v4, v5, v6}, Lkik/android/chat/view/a;->a(Lkik/core/datatypes/l;Lcom/kik/cache/KikVolleyImageLoader;Lkik/core/interfaces/w;Lcom/kik/android/Mixpanel;)V
+    invoke-interface {v0, v1, v4, v5, v6}, Lkik/android/chat/view/a;->a(Lkik/core/datatypes/l;Lcom/kik/cache/KikVolleyImageLoader;Lkik/core/interfaces/v;Lcom/kik/android/Mixpanel;)V
 
     .line 1112
     iget-object v0, p0, Lkik/android/chat/presentation/b;->d:Lkik/android/chat/view/a;
@@ -321,11 +321,11 @@
 
     iget-object v5, p0, Lkik/android/chat/presentation/b;->a:Lcom/kik/cache/KikVolleyImageLoader;
 
-    iget-object v6, p0, Lkik/android/chat/presentation/b;->b:Lkik/core/interfaces/w;
+    iget-object v6, p0, Lkik/android/chat/presentation/b;->b:Lkik/core/interfaces/v;
 
     iget-object v7, p0, Lkik/android/chat/presentation/b;->c:Lcom/kik/android/Mixpanel;
 
-    invoke-interface {v0, v1, v5, v6, v7}, Lkik/android/chat/view/a;->a(Lkik/core/datatypes/l;Lcom/kik/cache/KikVolleyImageLoader;Lkik/core/interfaces/w;Lcom/kik/android/Mixpanel;)V
+    invoke-interface {v0, v1, v5, v6, v7}, Lkik/android/chat/view/a;->a(Lkik/core/datatypes/l;Lcom/kik/cache/KikVolleyImageLoader;Lkik/core/interfaces/v;Lcom/kik/android/Mixpanel;)V
 
     .line 1118
     iget-object v0, p0, Lkik/android/chat/presentation/b;->d:Lkik/android/chat/view/a;
@@ -339,11 +339,11 @@
 
     iget-object v4, p0, Lkik/android/chat/presentation/b;->a:Lcom/kik/cache/KikVolleyImageLoader;
 
-    iget-object v5, p0, Lkik/android/chat/presentation/b;->b:Lkik/core/interfaces/w;
+    iget-object v5, p0, Lkik/android/chat/presentation/b;->b:Lkik/core/interfaces/v;
 
     iget-object v6, p0, Lkik/android/chat/presentation/b;->c:Lcom/kik/android/Mixpanel;
 
-    invoke-interface {v0, v1, v4, v5, v6}, Lkik/android/chat/view/a;->b(Lkik/core/datatypes/l;Lcom/kik/cache/KikVolleyImageLoader;Lkik/core/interfaces/w;Lcom/kik/android/Mixpanel;)V
+    invoke-interface {v0, v1, v4, v5, v6}, Lkik/android/chat/view/a;->b(Lkik/core/datatypes/l;Lcom/kik/cache/KikVolleyImageLoader;Lkik/core/interfaces/v;Lcom/kik/android/Mixpanel;)V
 
     .line 1120
     iget-object v0, p0, Lkik/android/chat/presentation/b;->d:Lkik/android/chat/view/a;
@@ -365,11 +365,11 @@
 
     iget-object v5, p0, Lkik/android/chat/presentation/b;->a:Lcom/kik/cache/KikVolleyImageLoader;
 
-    iget-object v6, p0, Lkik/android/chat/presentation/b;->b:Lkik/core/interfaces/w;
+    iget-object v6, p0, Lkik/android/chat/presentation/b;->b:Lkik/core/interfaces/v;
 
     iget-object v7, p0, Lkik/android/chat/presentation/b;->c:Lcom/kik/android/Mixpanel;
 
-    invoke-interface {v0, v1, v5, v6, v7}, Lkik/android/chat/view/a;->a(Lkik/core/datatypes/l;Lcom/kik/cache/KikVolleyImageLoader;Lkik/core/interfaces/w;Lcom/kik/android/Mixpanel;)V
+    invoke-interface {v0, v1, v5, v6, v7}, Lkik/android/chat/view/a;->a(Lkik/core/datatypes/l;Lcom/kik/cache/KikVolleyImageLoader;Lkik/core/interfaces/v;Lcom/kik/android/Mixpanel;)V
 
     .line 1125
     iget-object v0, p0, Lkik/android/chat/presentation/b;->d:Lkik/android/chat/view/a;
@@ -383,11 +383,11 @@
 
     iget-object v5, p0, Lkik/android/chat/presentation/b;->a:Lcom/kik/cache/KikVolleyImageLoader;
 
-    iget-object v6, p0, Lkik/android/chat/presentation/b;->b:Lkik/core/interfaces/w;
+    iget-object v6, p0, Lkik/android/chat/presentation/b;->b:Lkik/core/interfaces/v;
 
     iget-object v7, p0, Lkik/android/chat/presentation/b;->c:Lcom/kik/android/Mixpanel;
 
-    invoke-interface {v0, v1, v5, v6, v7}, Lkik/android/chat/view/a;->b(Lkik/core/datatypes/l;Lcom/kik/cache/KikVolleyImageLoader;Lkik/core/interfaces/w;Lcom/kik/android/Mixpanel;)V
+    invoke-interface {v0, v1, v5, v6, v7}, Lkik/android/chat/view/a;->b(Lkik/core/datatypes/l;Lcom/kik/cache/KikVolleyImageLoader;Lkik/core/interfaces/v;Lcom/kik/android/Mixpanel;)V
 
     .line 1127
     iget-object v0, p0, Lkik/android/chat/presentation/b;->d:Lkik/android/chat/view/a;
@@ -401,11 +401,11 @@
 
     iget-object v4, p0, Lkik/android/chat/presentation/b;->a:Lcom/kik/cache/KikVolleyImageLoader;
 
-    iget-object v5, p0, Lkik/android/chat/presentation/b;->b:Lkik/core/interfaces/w;
+    iget-object v5, p0, Lkik/android/chat/presentation/b;->b:Lkik/core/interfaces/v;
 
     iget-object v6, p0, Lkik/android/chat/presentation/b;->c:Lcom/kik/android/Mixpanel;
 
-    invoke-interface {v0, v1, v4, v5, v6}, Lkik/android/chat/view/a;->c(Lkik/core/datatypes/l;Lcom/kik/cache/KikVolleyImageLoader;Lkik/core/interfaces/w;Lcom/kik/android/Mixpanel;)V
+    invoke-interface {v0, v1, v4, v5, v6}, Lkik/android/chat/view/a;->c(Lkik/core/datatypes/l;Lcom/kik/cache/KikVolleyImageLoader;Lkik/core/interfaces/v;Lcom/kik/android/Mixpanel;)V
 
     .line 1129
     iget-object v0, p0, Lkik/android/chat/presentation/b;->d:Lkik/android/chat/view/a;
@@ -475,7 +475,7 @@
     return-void
 .end method
 
-.method public final k_()V
+.method public final m_()V
     .locals 1
 
     .prologue

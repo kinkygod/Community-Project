@@ -24,7 +24,7 @@
     iput-object p1, p0, Lkik/android/chat/view/SearchBarViewImpl_ViewBinding;->a:Lkik/android/chat/view/SearchBarViewImpl;
 
     .line 31
-    const v0, 0x7f1003dd
+    const v0, 0x7f1003d9
 
     const-string v1, "field \'_clearSearch\' and method \'clearSearch\'"
 
@@ -46,7 +46,7 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 40
-    const v0, 0x7f1003dc
+    const v0, 0x7f1003d8
 
     const-string v1, "field \'_searchField\'"
 
@@ -61,7 +61,7 @@
     iput-object v0, p1, Lkik/android/chat/view/SearchBarViewImpl;->_searchField:Lkik/android/widget/RobotoEditText;
 
     .line 41
-    const v0, 0x7f1003db
+    const v0, 0x7f1003d7
 
     const-string v1, "field \'_searchIconView\'"
 

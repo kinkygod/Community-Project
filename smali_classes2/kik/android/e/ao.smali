@@ -18,19 +18,17 @@
 
 
 # instance fields
-.field public final a:Lkik/android/gifs/view/AbsoluteSizeGifView;
+.field public final a:Landroid/widget/ImageView;
 
-.field public final b:Lkik/android/widget/RobotoTextView;
+.field public final b:Lkik/android/widget/GifSearchImeEditText;
 
-.field public final c:Landroid/widget/ImageView;
+.field public final c:Landroid/widget/FrameLayout;
 
-.field private final f:Lkik/android/widget/MaskedFramelayout;
+.field private f:Lkik/android/gifs/vm/br;
 
-.field private g:Lkik/android/gifs/vm/bt;
+.field private g:Lkik/android/e/ao$a;
 
-.field private h:Lkik/android/e/ao$a;
-
-.field private i:J
+.field private h:J
 
 
 # direct methods
@@ -58,16 +56,16 @@
 
     const/4 v3, 0x0
 
-    .line 26
+    .line 25
     invoke-direct {p0, p1, p2, v4}, Landroid/databinding/ViewDataBinding;-><init>(Landroid/databinding/DataBindingComponent;Landroid/view/View;I)V
 
-    .line 143
+    .line 145
     const-wide/16 v0, -0x1
 
-    iput-wide v0, p0, Lkik/android/e/ao;->i:J
+    iput-wide v0, p0, Lkik/android/e/ao;->h:J
 
-    .line 27
-    const/4 v0, 0x4
+    .line 26
+    const/4 v0, 0x3
 
     sget-object v1, Lkik/android/e/ao;->d:Landroid/databinding/ViewDataBinding$IncludedLayouts;
 
@@ -77,67 +75,53 @@
 
     move-result-object v1
 
-    .line 28
-    const/4 v0, 0x1
-
-    aget-object v0, v1, v0
-
-    check-cast v0, Lkik/android/gifs/view/AbsoluteSizeGifView;
-
-    iput-object v0, p0, Lkik/android/e/ao;->a:Lkik/android/gifs/view/AbsoluteSizeGifView;
-
-    .line 29
-    iget-object v0, p0, Lkik/android/e/ao;->a:Lkik/android/gifs/view/AbsoluteSizeGifView;
-
-    invoke-virtual {v0, v3}, Lkik/android/gifs/view/AbsoluteSizeGifView;->setTag(Ljava/lang/Object;)V
-
-    .line 30
+    .line 27
     const/4 v0, 0x2
-
-    aget-object v0, v1, v0
-
-    check-cast v0, Lkik/android/widget/RobotoTextView;
-
-    iput-object v0, p0, Lkik/android/e/ao;->b:Lkik/android/widget/RobotoTextView;
-
-    .line 31
-    iget-object v0, p0, Lkik/android/e/ao;->b:Lkik/android/widget/RobotoTextView;
-
-    invoke-virtual {v0, v3}, Lkik/android/widget/RobotoTextView;->setTag(Ljava/lang/Object;)V
-
-    .line 32
-    aget-object v0, v1, v4
-
-    check-cast v0, Lkik/android/widget/MaskedFramelayout;
-
-    iput-object v0, p0, Lkik/android/e/ao;->f:Lkik/android/widget/MaskedFramelayout;
-
-    .line 33
-    iget-object v0, p0, Lkik/android/e/ao;->f:Lkik/android/widget/MaskedFramelayout;
-
-    invoke-virtual {v0, v3}, Lkik/android/widget/MaskedFramelayout;->setTag(Ljava/lang/Object;)V
-
-    .line 34
-    const/4 v0, 0x3
 
     aget-object v0, v1, v0
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lkik/android/e/ao;->c:Landroid/widget/ImageView;
+    iput-object v0, p0, Lkik/android/e/ao;->a:Landroid/widget/ImageView;
 
-    .line 35
-    iget-object v0, p0, Lkik/android/e/ao;->c:Landroid/widget/ImageView;
+    .line 28
+    iget-object v0, p0, Lkik/android/e/ao;->a:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setTag(Ljava/lang/Object;)V
 
-    .line 36
+    .line 29
+    const/4 v0, 0x1
+
+    aget-object v0, v1, v0
+
+    check-cast v0, Lkik/android/widget/GifSearchImeEditText;
+
+    iput-object v0, p0, Lkik/android/e/ao;->b:Lkik/android/widget/GifSearchImeEditText;
+
+    .line 30
+    iget-object v0, p0, Lkik/android/e/ao;->b:Lkik/android/widget/GifSearchImeEditText;
+
+    invoke-virtual {v0, v3}, Lkik/android/widget/GifSearchImeEditText;->setTag(Ljava/lang/Object;)V
+
+    .line 31
+    aget-object v0, v1, v4
+
+    check-cast v0, Landroid/widget/FrameLayout;
+
+    iput-object v0, p0, Lkik/android/e/ao;->c:Landroid/widget/FrameLayout;
+
+    .line 32
+    iget-object v0, p0, Lkik/android/e/ao;->c:Landroid/widget/FrameLayout;
+
+    invoke-virtual {v0, v3}, Landroid/widget/FrameLayout;->setTag(Ljava/lang/Object;)V
+
+    .line 33
     invoke-virtual {p0, p2}, Lkik/android/e/ao;->setRootTag(Landroid/view/View;)V
 
-    .line 38
+    .line 35
     invoke-virtual {p0}, Lkik/android/e/ao;->invalidateAll()V
 
-    .line 39
+    .line 36
     return-void
 .end method
 
@@ -145,8 +129,8 @@
     .locals 3
 
     .prologue
-    .line 161
-    const-string v0, "layout/gif_set_list_item_0"
+    .line 163
+    const-string v0, "layout/gif_widget_search_bar_0"
 
     invoke-virtual {p0}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -158,7 +142,7 @@
 
     if-nez v0, :cond_0
 
-    .line 162
+    .line 164
     new-instance v0, Ljava/lang/RuntimeException;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -183,7 +167,7 @@
 
     throw v0
 
-    .line 164
+    .line 166
     :cond_0
     new-instance v0, Lkik/android/e/ao;
 
@@ -194,71 +178,96 @@
 
 
 # virtual methods
-.method protected final executeBindings()V
-    .locals 12
+.method public final a(Lkik/android/gifs/vm/br;)V
+    .locals 4
 
     .prologue
-    const-wide/16 v10, 0x3
+    .line 66
+    iput-object p1, p0, Lkik/android/e/ao;->f:Lkik/android/gifs/vm/br;
 
-    const-wide/16 v8, 0x0
-
-    const/4 v0, 0x0
-
-    .line 90
+    .line 67
     monitor-enter p0
 
-    .line 91
+    .line 68
     :try_start_0
-    iget-wide v6, p0, Lkik/android/e/ao;->i:J
+    iget-wide v0, p0, Lkik/android/e/ao;->h:J
 
-    .line 92
-    const-wide/16 v2, 0x0
+    const-wide/16 v2, 0x1
 
-    iput-wide v2, p0, Lkik/android/e/ao;->i:J
+    or-long/2addr v0, v2
 
-    .line 93
+    iput-wide v0, p0, Lkik/android/e/ao;->h:J
+
+    .line 69
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 97
-    iget-object v5, p0, Lkik/android/e/ao;->g:Lkik/android/gifs/vm/bt;
+    .line 70
+    const/16 v0, 0x10
 
-    .line 98
-    const/4 v1, 0x0
+    invoke-virtual {p0, v0}, Lkik/android/e/ao;->notifyPropertyChanged(I)V
 
-    .line 101
-    and-long v2, v6, v10
+    .line 71
+    invoke-super {p0}, Landroid/databinding/ViewDataBinding;->requestRebind()V
 
-    cmp-long v2, v2, v8
+    .line 72
+    return-void
 
-    if-eqz v2, :cond_2
+    .line 69
+    :catchall_0
+    move-exception v0
+
+    :try_start_1
+    monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    throw v0
+.end method
+
+.method protected final executeBindings()V
+    .locals 14
+
+    .prologue
+    const-wide/16 v12, 0x3
+
+    const-wide/16 v10, 0x0
+
+    const/4 v0, 0x0
+
+    .line 87
+    monitor-enter p0
+
+    .line 88
+    :try_start_0
+    iget-wide v6, p0, Lkik/android/e/ao;->h:J
+
+    .line 89
+    const-wide/16 v2, 0x0
+
+    iput-wide v2, p0, Lkik/android/e/ao;->h:J
+
+    .line 90
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 96
+    iget-object v8, p0, Lkik/android/e/ao;->f:Lkik/android/gifs/vm/br;
+
+    .line 99
+    and-long v2, v6, v12
+
+    cmp-long v1, v2, v10
+
+    if-eqz v1, :cond_2
+
+    .line 103
+    if-eqz v8, :cond_2
 
     .line 105
-    if-eqz v5, :cond_2
-
-    .line 107
-    invoke-interface {v5}, Lkik/android/gifs/vm/bt;->l()Ljava/lang/String;
-
-    move-result-object v4
-
-    .line 109
-    invoke-interface {v5}, Lkik/android/gifs/vm/bt;->b()Lrx/d;
-
-    move-result-object v3
-
-    .line 111
-    invoke-interface {v5}, Lkik/android/gifs/vm/bt;->a()Landroid/graphics/drawable/Drawable;
-
-    move-result-object v2
-
-    .line 113
-    invoke-interface {v5}, Lkik/android/gifs/vm/bt;->k()Z
-
-    move-result v1
-
-    .line 115
-    iget-object v0, p0, Lkik/android/e/ao;->h:Lkik/android/e/ao$a;
+    iget-object v0, p0, Lkik/android/e/ao;->g:Lkik/android/e/ao$a;
 
     if-nez v0, :cond_1
 
@@ -266,51 +275,86 @@
 
     invoke-direct {v0}, Lkik/android/e/ao$a;-><init>()V
 
-    iput-object v0, p0, Lkik/android/e/ao;->h:Lkik/android/e/ao$a;
+    iput-object v0, p0, Lkik/android/e/ao;->g:Lkik/android/e/ao$a;
 
     :goto_0
-    invoke-virtual {v0, v5}, Lkik/android/e/ao$a;->a(Lkik/android/gifs/vm/bt;)Lkik/android/e/ao$a;
+    invoke-virtual {v0, v8}, Lkik/android/e/ao$a;->a(Lkik/android/gifs/vm/br;)Lkik/android/e/ao$a;
+
+    move-result-object v5
+
+    .line 107
+    invoke-interface {v8}, Lkik/android/gifs/vm/br;->b()Lrx/d;
+
+    move-result-object v4
+
+    .line 109
+    invoke-interface {v8}, Lkik/android/gifs/vm/br;->m()Lrx/d;
+
+    move-result-object v3
+
+    .line 111
+    invoke-interface {v8}, Lkik/android/gifs/vm/br;->a()Lrx/d;
+
+    move-result-object v2
+
+    .line 113
+    invoke-interface {v8}, Lkik/android/gifs/vm/br;->d()Lrx/d;
+
+    move-result-object v1
+
+    .line 115
+    invoke-interface {v8}, Lkik/android/gifs/vm/br;->n()Lrx/d;
 
     move-result-object v0
 
     .line 119
     :goto_1
-    and-long/2addr v6, v10
+    and-long/2addr v6, v12
 
-    cmp-long v5, v6, v8
+    cmp-long v6, v6, v10
 
-    if-eqz v5, :cond_0
+    if-eqz v6, :cond_0
 
     .line 122
-    iget-object v5, p0, Lkik/android/e/ao;->a:Lkik/android/gifs/view/AbsoluteSizeGifView;
+    iget-object v6, p0, Lkik/android/e/ao;->a:Landroid/widget/ImageView;
 
-    invoke-static {v5, v2}, Lkik/android/gifs/view/GifView;->a(Lkik/android/gifs/view/GifView;Landroid/graphics/drawable/Drawable;)V
+    invoke-static {v6, v5}, Lcom/kik/util/j;->a(Landroid/view/View;Ljava/lang/Runnable;)V
 
     .line 123
-    iget-object v2, p0, Lkik/android/e/ao;->a:Lkik/android/gifs/view/AbsoluteSizeGifView;
+    iget-object v5, p0, Lkik/android/e/ao;->a:Landroid/widget/ImageView;
 
-    invoke-static {v2, v3}, Lkik/android/gifs/view/GifView;->a(Lkik/android/gifs/view/GifView;Lrx/d;)V
+    invoke-static {v5, v1}, Lcom/kik/util/j;->n(Landroid/view/View;Lrx/d;)V
 
     .line 124
-    iget-object v2, p0, Lkik/android/e/ao;->b:Lkik/android/widget/RobotoTextView;
+    iget-object v1, p0, Lkik/android/e/ao;->b:Lkik/android/widget/GifSearchImeEditText;
 
-    invoke-static {v2, v4}, Landroid/databinding/adapters/TextViewBindingAdapter;->setText(Landroid/widget/TextView;Ljava/lang/CharSequence;)V
+    invoke-static {v1, v8}, Lkik/android/widget/GifSearchImeEditText;->a(Lkik/android/widget/GifSearchImeEditText;Lkik/android/gifs/vm/br;)V
 
     .line 125
-    iget-object v2, p0, Lkik/android/e/ao;->f:Lkik/android/widget/MaskedFramelayout;
+    iget-object v1, p0, Lkik/android/e/ao;->b:Lkik/android/widget/GifSearchImeEditText;
 
-    invoke-static {v2, v0}, Lcom/kik/util/j;->a(Landroid/view/View;Ljava/lang/Runnable;)V
+    invoke-static {v1, v2}, Lcom/kik/util/j;->a(Landroid/widget/EditText;Lrx/d;)V
 
     .line 126
-    iget-object v0, p0, Lkik/android/e/ao;->c:Landroid/widget/ImageView;
+    iget-object v1, p0, Lkik/android/e/ao;->b:Lkik/android/widget/GifSearchImeEditText;
 
-    invoke-static {v0, v1}, Lcom/kik/util/j;->a(Landroid/view/View;Z)V
+    invoke-static {v1, v4}, Lcom/kik/util/j;->a(Landroid/widget/TextView;Lrx/d;)V
+
+    .line 127
+    iget-object v1, p0, Lkik/android/e/ao;->b:Lkik/android/widget/GifSearchImeEditText;
+
+    invoke-static {v1, v3}, Lkik/android/widget/RobotoEditText;->a(Lkik/android/widget/RobotoEditText;Lrx/d;)V
 
     .line 128
+    iget-object v1, p0, Lkik/android/e/ao;->b:Lkik/android/widget/GifSearchImeEditText;
+
+    invoke-static {v1, v0}, Lkik/android/widget/RobotoEditText;->b(Lkik/android/widget/RobotoEditText;Lrx/d;)V
+
+    .line 130
     :cond_0
     return-void
 
-    .line 93
+    .line 90
     :catchall_0
     move-exception v0
 
@@ -321,18 +365,22 @@
 
     throw v0
 
-    .line 115
+    .line 105
     :cond_1
-    iget-object v0, p0, Lkik/android/e/ao;->h:Lkik/android/e/ao$a;
+    iget-object v0, p0, Lkik/android/e/ao;->g:Lkik/android/e/ao$a;
 
     goto :goto_0
 
     :cond_2
+    move-object v1, v0
+
     move-object v2, v0
 
     move-object v3, v0
 
     move-object v4, v0
+
+    move-object v5, v0
 
     goto :goto_1
 .end method
@@ -341,12 +389,12 @@
     .locals 4
 
     .prologue
-    .line 51
+    .line 48
     monitor-enter p0
 
-    .line 52
+    .line 49
     :try_start_0
-    iget-wide v0, p0, Lkik/android/e/ao;->i:J
+    iget-wide v0, p0, Lkik/android/e/ao;->h:J
 
     const-wide/16 v2, 0x0
 
@@ -354,25 +402,25 @@
 
     if-eqz v0, :cond_0
 
-    .line 53
+    .line 50
     const/4 v0, 0x1
 
     monitor-exit p0
 
-    .line 56
+    .line 53
     :goto_0
     return v0
 
-    .line 55
+    .line 52
     :cond_0
     monitor-exit p0
 
-    .line 56
+    .line 53
     const/4 v0, 0x0
 
     goto :goto_0
 
-    .line 55
+    .line 52
     :catchall_0
     move-exception v0
 
@@ -387,27 +435,27 @@
     .locals 2
 
     .prologue
-    .line 43
+    .line 40
     monitor-enter p0
 
-    .line 44
+    .line 41
     const-wide/16 v0, 0x2
 
     :try_start_0
-    iput-wide v0, p0, Lkik/android/e/ao;->i:J
+    iput-wide v0, p0, Lkik/android/e/ao;->h:J
 
-    .line 45
+    .line 42
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 46
+    .line 43
     invoke-virtual {p0}, Lkik/android/e/ao;->requestRebind()V
 
-    .line 47
+    .line 44
     return-void
 
-    .line 45
+    .line 42
     :catchall_0
     move-exception v0
 
@@ -423,79 +471,39 @@
     .locals 1
 
     .prologue
-    .line 84
+    .line 81
     const/4 v0, 0x0
 
     return v0
 .end method
 
 .method public final setVariable(ILjava/lang/Object;)Z
-    .locals 4
+    .locals 1
 
     .prologue
-    .line 60
+    .line 57
     packed-switch p1, :pswitch_data_0
 
-    .line 65
+    .line 62
     const/4 v0, 0x0
 
     :goto_0
     return v0
 
-    .line 62
+    .line 59
     :pswitch_0
-    check-cast p2, Lkik/android/gifs/vm/bt;
+    check-cast p2, Lkik/android/gifs/vm/br;
 
-    .line 1069
-    iput-object p2, p0, Lkik/android/e/ao;->g:Lkik/android/gifs/vm/bt;
+    invoke-virtual {p0, p2}, Lkik/android/e/ao;->a(Lkik/android/gifs/vm/br;)V
 
-    .line 1070
-    monitor-enter p0
-
-    .line 1071
-    :try_start_0
-    iget-wide v0, p0, Lkik/android/e/ao;->i:J
-
-    const-wide/16 v2, 0x1
-
-    or-long/2addr v0, v2
-
-    iput-wide v0, p0, Lkik/android/e/ao;->i:J
-
-    .line 1072
-    monitor-exit p0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 1073
-    const/16 v0, 0xe
-
-    invoke-virtual {p0, v0}, Lkik/android/e/ao;->notifyPropertyChanged(I)V
-
-    .line 1074
-    invoke-super {p0}, Landroid/databinding/ViewDataBinding;->requestRebind()V
-
-    .line 63
+    .line 60
     const/4 v0, 0x1
 
     goto :goto_0
 
-    .line 1072
-    :catchall_0
-    move-exception v0
-
-    :try_start_1
-    monitor-exit p0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    throw v0
-
-    .line 60
-    nop
-
+    .line 57
     :pswitch_data_0
-    .packed-switch 0xe
+    .packed-switch 0x10
         :pswitch_0
     .end packed-switch
 .end method

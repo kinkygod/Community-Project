@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/core/profile/v;->v()V
+    value = Lkik/core/profile/v;->u()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -32,7 +32,7 @@
     .locals 0
 
     .prologue
-    .line 607
+    .line 600
     iput-object p1, p0, Lkik/core/profile/v$14;->a:Lkik/core/profile/v;
 
     invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
@@ -46,10 +46,10 @@
     .locals 9
 
     .prologue
-    .line 607
+    .line 600
     check-cast p1, Lkik/core/net/outgoing/o;
 
-    .line 1611
+    .line 1604
     iget-object v1, p0, Lkik/core/profile/v$14;->a:Lkik/core/profile/v;
 
     invoke-virtual {p1}, Lkik/core/net/outgoing/o;->a()Ljava/util/List;
@@ -78,7 +78,7 @@
 
     invoke-static/range {v1 .. v8}, Lkik/core/profile/v;->a(Lkik/core/profile/v;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;JZ)V
 
-    .line 607
+    .line 600
     return-void
 .end method
 
@@ -86,15 +86,15 @@
     .locals 2
 
     .prologue
-    .line 617
+    .line 610
     instance-of v0, p1, Lkik/core/net/StanzaException;
 
     if-eqz v0, :cond_0
 
-    .line 618
+    .line 611
     check-cast p1, Lkik/core/net/StanzaException;
 
-    .line 619
+    .line 612
     invoke-virtual {p1}, Lkik/core/net/StanzaException;->b()I
 
     move-result v0
@@ -103,7 +103,7 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 620
+    .line 613
     iget-object v0, p0, Lkik/core/profile/v$14;->a:Lkik/core/profile/v;
 
     invoke-static {v0}, Lkik/core/profile/v;->f(Lkik/core/profile/v;)Lcom/kik/events/g;
@@ -114,7 +114,7 @@
 
     invoke-virtual {v0, v1}, Lcom/kik/events/g;->a(Ljava/lang/Object;)V
 
-    .line 623
+    .line 616
     :cond_0
     return-void
 .end method

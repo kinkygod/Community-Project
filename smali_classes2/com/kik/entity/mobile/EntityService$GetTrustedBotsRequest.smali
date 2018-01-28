@@ -771,7 +771,7 @@
     goto :goto_0
 .end method
 
-.method public final getPageTokenOrBuilder()Lcom/kik/entity/mobile/EntityService$j;
+.method public final getPageTokenOrBuilder()Lcom/kik/entity/mobile/EntityService$k;
     .locals 1
 
     .prologue

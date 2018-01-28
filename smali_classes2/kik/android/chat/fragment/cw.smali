@@ -2,7 +2,7 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnCancelListener;
+.implements Landroid/content/DialogInterface$OnClickListener;
 
 
 # instance fields
@@ -20,7 +20,7 @@
     return-void
 .end method
 
-.method public static a(Lkik/android/chat/fragment/KikPreregistrationFragmentBase;)Landroid/content/DialogInterface$OnCancelListener;
+.method public static a(Lkik/android/chat/fragment/KikPreregistrationFragmentBase;)Landroid/content/DialogInterface$OnClickListener;
     .locals 1
 
     new-instance v0, Lkik/android/chat/fragment/cw;
@@ -32,12 +32,12 @@
 
 
 # virtual methods
-.method public final onCancel(Landroid/content/DialogInterface;)V
+.method public final onClick(Landroid/content/DialogInterface;I)V
     .locals 1
 
     iget-object v0, p0, Lkik/android/chat/fragment/cw;->a:Lkik/android/chat/fragment/KikPreregistrationFragmentBase;
 
-    invoke-static {v0}, Lkik/android/chat/fragment/KikPreregistrationFragmentBase;->b(Lkik/android/chat/fragment/KikPreregistrationFragmentBase;)V
+    invoke-static {v0}, Lkik/android/chat/fragment/KikPreregistrationFragmentBase;->c(Lkik/android/chat/fragment/KikPreregistrationFragmentBase;)V
 
     return-void
 .end method

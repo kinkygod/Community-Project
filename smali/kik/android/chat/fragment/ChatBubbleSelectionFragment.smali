@@ -41,7 +41,7 @@
 
 .field private e:Lkik/android/chat/fragment/ChatBubbleSelectionFragment$a;
 
-.field private f:Lcom/kik/view/adapters/w;
+.field private f:Lcom/kik/view/adapters/x;
 
 .field private g:Lkik/android/a/b;
 
@@ -117,9 +117,9 @@
     if-eqz v1, :cond_2
 
     .line 122
-    iget-object v0, p0, Lkik/android/chat/fragment/ChatBubbleSelectionFragment;->f:Lcom/kik/view/adapters/w;
+    iget-object v0, p0, Lkik/android/chat/fragment/ChatBubbleSelectionFragment;->f:Lcom/kik/view/adapters/x;
 
-    invoke-virtual {v0}, Lcom/kik/view/adapters/w;->notifyDataSetChanged()V
+    invoke-virtual {v0}, Lcom/kik/view/adapters/x;->notifyDataSetChanged()V
 
     .line 124
     :cond_2
@@ -188,15 +188,15 @@
     invoke-interface {v1, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/chat/fragment/ChatBubbleSelectionFragment;)V
 
     .line 64
-    new-instance v1, Lcom/kik/view/adapters/w;
+    new-instance v1, Lcom/kik/view/adapters/x;
 
     invoke-virtual {p0}, Lkik/android/chat/fragment/ChatBubbleSelectionFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v2
 
-    invoke-direct {v1, v2}, Lcom/kik/view/adapters/w;-><init>(Landroid/content/Context;)V
+    invoke-direct {v1, v2}, Lcom/kik/view/adapters/x;-><init>(Landroid/content/Context;)V
 
-    iput-object v1, p0, Lkik/android/chat/fragment/ChatBubbleSelectionFragment;->f:Lcom/kik/view/adapters/w;
+    iput-object v1, p0, Lkik/android/chat/fragment/ChatBubbleSelectionFragment;->f:Lcom/kik/view/adapters/x;
 
     .line 65
     new-instance v1, Lkik/android/chat/fragment/ChatBubbleSelectionFragment$a;
@@ -256,7 +256,7 @@
     iput-object v1, p0, Lkik/android/chat/fragment/ChatBubbleSelectionFragment;->e:Lkik/android/chat/fragment/ChatBubbleSelectionFragment$a;
 
     .line 69
-    iget-object v1, p0, Lkik/android/chat/fragment/ChatBubbleSelectionFragment;->f:Lcom/kik/view/adapters/w;
+    iget-object v1, p0, Lkik/android/chat/fragment/ChatBubbleSelectionFragment;->f:Lcom/kik/view/adapters/x;
 
     const v2, 0x7f0900d2
 
@@ -266,12 +266,12 @@
 
     iget-object v3, p0, Lkik/android/chat/fragment/ChatBubbleSelectionFragment;->c:Lkik/android/chat/fragment/ChatBubbleSelectionFragment$a;
 
-    invoke-virtual {v1, v2, v3}, Lcom/kik/view/adapters/w;->d(Ljava/lang/String;Landroid/widget/Adapter;)V
+    invoke-virtual {v1, v2, v3}, Lcom/kik/view/adapters/x;->d(Ljava/lang/String;Landroid/widget/Adapter;)V
 
     .line 70
-    iget-object v1, p0, Lkik/android/chat/fragment/ChatBubbleSelectionFragment;->f:Lcom/kik/view/adapters/w;
+    iget-object v1, p0, Lkik/android/chat/fragment/ChatBubbleSelectionFragment;->f:Lcom/kik/view/adapters/x;
 
-    const v2, 0x7f090542
+    const v2, 0x7f090548
 
     invoke-static {v2}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
 
@@ -279,10 +279,10 @@
 
     iget-object v3, p0, Lkik/android/chat/fragment/ChatBubbleSelectionFragment;->d:Lkik/android/chat/fragment/ChatBubbleSelectionFragment$a;
 
-    invoke-virtual {v1, v2, v3}, Lcom/kik/view/adapters/w;->d(Ljava/lang/String;Landroid/widget/Adapter;)V
+    invoke-virtual {v1, v2, v3}, Lcom/kik/view/adapters/x;->d(Ljava/lang/String;Landroid/widget/Adapter;)V
 
     .line 71
-    iget-object v1, p0, Lkik/android/chat/fragment/ChatBubbleSelectionFragment;->f:Lcom/kik/view/adapters/w;
+    iget-object v1, p0, Lkik/android/chat/fragment/ChatBubbleSelectionFragment;->f:Lcom/kik/view/adapters/x;
 
     const v2, 0x7f0900d3
 
@@ -292,12 +292,12 @@
 
     iget-object v3, p0, Lkik/android/chat/fragment/ChatBubbleSelectionFragment;->e:Lkik/android/chat/fragment/ChatBubbleSelectionFragment$a;
 
-    invoke-virtual {v1, v2, v3}, Lcom/kik/view/adapters/w;->d(Ljava/lang/String;Landroid/widget/Adapter;)V
+    invoke-virtual {v1, v2, v3}, Lcom/kik/view/adapters/x;->d(Ljava/lang/String;Landroid/widget/Adapter;)V
 
     .line 72
     iget-object v1, p0, Lkik/android/chat/fragment/ChatBubbleSelectionFragment;->_bubbleList:Landroid/widget/ListView;
 
-    iget-object v2, p0, Lkik/android/chat/fragment/ChatBubbleSelectionFragment;->f:Lcom/kik/view/adapters/w;
+    iget-object v2, p0, Lkik/android/chat/fragment/ChatBubbleSelectionFragment;->f:Lcom/kik/view/adapters/x;
 
     invoke-virtual {v1, v2}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
@@ -446,7 +446,7 @@
     goto :goto_0
 .end method
 
-.method protected screenOpenedEvent()Lcom/kik/metrics/b/s;
+.method protected screenOpenedEvent()Lcom/kik/metrics/b/t;
     .locals 1
 
     .prologue

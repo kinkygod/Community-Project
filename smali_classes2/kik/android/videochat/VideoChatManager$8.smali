@@ -96,7 +96,7 @@
     .line 844
     iget-object v0, p0, Lkik/android/videochat/VideoChatManager$8;->b:Lkik/android/videochat/VideoChatManager;
 
-    invoke-static {v0}, Lkik/android/videochat/VideoChatManager;->i(Lkik/android/videochat/VideoChatManager;)Lkik/core/interfaces/ae;
+    invoke-static {v0}, Lkik/android/videochat/VideoChatManager;->i(Lkik/android/videochat/VideoChatManager;)Lkik/core/interfaces/ad;
 
     move-result-object v0
 
@@ -104,7 +104,7 @@
 
     const/4 v2, 0x1
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;I)Ljava/lang/Integer;
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;I)Ljava/lang/Integer;
 
     move-result-object v0
 
@@ -117,7 +117,7 @@
     .line 845
     iget-object v1, p0, Lkik/android/videochat/VideoChatManager$8;->b:Lkik/android/videochat/VideoChatManager;
 
-    invoke-static {v1}, Lkik/android/videochat/VideoChatManager;->i(Lkik/android/videochat/VideoChatManager;)Lkik/core/interfaces/ae;
+    invoke-static {v1}, Lkik/android/videochat/VideoChatManager;->i(Lkik/android/videochat/VideoChatManager;)Lkik/core/interfaces/ad;
 
     move-result-object v1
 
@@ -127,7 +127,7 @@
 
     move-result-object v0
 
-    invoke-interface {v1, v2, v0}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;Ljava/lang/Integer;)Z
+    invoke-interface {v1, v2, v0}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Integer;)Z
 
     .line 846
     return-void

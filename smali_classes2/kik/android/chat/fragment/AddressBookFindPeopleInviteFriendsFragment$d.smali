@@ -113,7 +113,7 @@
 
     iget-object v1, p0, Lkik/android/chat/fragment/AddressBookFindPeopleInviteFriendsFragment$d;->b:Landroid/view/View;
 
-    invoke-static {v1}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->l(Landroid/view/View;)I
+    invoke-static {v1}, Landroid/support/v7/widget/RecyclerView$LayoutManager;->o(Landroid/view/View;)I
 
     move-result v1
 

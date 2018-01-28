@@ -27,18 +27,40 @@
 .end annotation
 
 
+# instance fields
+.field private a:Lcom/kik/entity/model/ElementCommon$TrustedElement;
+
+.field private b:Lcom/google/protobuf/SingleFieldBuilderV3;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/google/protobuf/SingleFieldBuilderV3",
+            "<",
+            "Lcom/kik/entity/model/ElementCommon$TrustedElement;",
+            "Lcom/kik/entity/model/ElementCommon$TrustedElement$a;",
+            "Lcom/kik/entity/model/ElementCommon$p;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
 # direct methods
 .method private constructor <init>()V
-    .locals 0
+    .locals 1
 
     .prologue
-    .line 11576
+    .line 12070
     invoke-direct {p0}, Lcom/google/protobuf/GeneratedMessageV3$Builder;-><init>()V
 
-    .line 12587
-    invoke-static {}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement;->d()Z
+    .line 12189
+    const/4 v0, 0x0
 
-    .line 11578
+    iput-object v0, p0, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;->a:Lcom/kik/entity/model/ElementCommon$TrustedElement;
+
+    .line 13081
+    invoke-static {}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement;->f()Z
+
+    .line 12072
     return-void
 .end method
 
@@ -46,23 +68,28 @@
     .locals 0
 
     .prologue
-    .line 11559
+    .line 12053
     invoke-direct {p0}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;-><init>()V
 
     return-void
 .end method
 
 .method private constructor <init>(Lcom/google/protobuf/GeneratedMessageV3$BuilderParent;)V
-    .locals 0
+    .locals 1
 
     .prologue
-    .line 11582
+    .line 12076
     invoke-direct {p0, p1}, Lcom/google/protobuf/GeneratedMessageV3$Builder;-><init>(Lcom/google/protobuf/GeneratedMessageV3$BuilderParent;)V
 
-    .line 13587
-    invoke-static {}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement;->d()Z
+    .line 12189
+    const/4 v0, 0x0
 
-    .line 11584
+    iput-object v0, p0, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;->a:Lcom/kik/entity/model/ElementCommon$TrustedElement;
+
+    .line 14081
+    invoke-static {}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement;->f()Z
+
+    .line 12078
     return-void
 .end method
 
@@ -70,7 +97,7 @@
     .locals 0
 
     .prologue
-    .line 11559
+    .line 12053
     invoke-direct {p0, p1}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;-><init>(Lcom/google/protobuf/GeneratedMessageV3$BuilderParent;)V
 
     return-void
@@ -85,12 +112,12 @@
     .end annotation
 
     .prologue
-    .line 11667
+    .line 12175
     const/4 v2, 0x0
 
-    .line 11669
+    .line 12177
     :try_start_0
-    invoke-static {}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement;->e()Lcom/google/protobuf/Parser;
+    invoke-static {}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement;->g()Lcom/google/protobuf/Parser;
 
     move-result-object v0
 
@@ -103,23 +130,23 @@
     .catch Lcom/google/protobuf/InvalidProtocolBufferException; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 11674
+    .line 12182
     if-eqz v0, :cond_0
 
-    .line 11675
+    .line 12183
     invoke-virtual {p0, v0}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;->a(Lcom/kik/entity/model/ElementCommon$BotExtensionElement;)Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;
 
-    .line 11678
+    .line 12186
     :cond_0
     return-object p0
 
-    .line 11670
+    .line 12178
     :catch_0
     move-exception v0
 
     move-object v1, v0
 
-    .line 11671
+    .line 12179
     :try_start_1
     invoke-virtual {v1}, Lcom/google/protobuf/InvalidProtocolBufferException;->getUnfinishedMessage()Lcom/google/protobuf/MessageLite;
 
@@ -129,7 +156,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 11672
+    .line 12180
     :try_start_2
     invoke-virtual {v1}, Lcom/google/protobuf/InvalidProtocolBufferException;->unwrapIOException()Ljava/io/IOException;
 
@@ -139,7 +166,7 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 11674
+    .line 12182
     :catchall_0
     move-exception v1
 
@@ -152,13 +179,13 @@
     :goto_0
     if-eqz v1, :cond_1
 
-    .line 11675
+    .line 12183
     invoke-virtual {p0, v1}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;->a(Lcom/kik/entity/model/ElementCommon$BotExtensionElement;)Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;
 
     :cond_1
     throw v0
 
-    .line 11674
+    .line 12182
     :catchall_1
     move-exception v0
 
@@ -171,7 +198,7 @@
     .locals 1
 
     .prologue
-    .line 11628
+    .line 12133
     invoke-super {p0, p1}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->clearField(Lcom/google/protobuf/Descriptors$FieldDescriptor;)Lcom/google/protobuf/GeneratedMessageV3$Builder;
 
     move-result-object v0
@@ -185,7 +212,7 @@
     .locals 1
 
     .prologue
-    .line 11637
+    .line 12142
     invoke-super {p0, p1, p2, p3}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->setRepeatedField(Lcom/google/protobuf/Descriptors$FieldDescriptor;ILjava/lang/Object;)Lcom/google/protobuf/GeneratedMessageV3$Builder;
 
     move-result-object v0
@@ -199,7 +226,7 @@
     .locals 1
 
     .prologue
-    .line 11624
+    .line 12129
     invoke-super {p0, p1, p2}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->setField(Lcom/google/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lcom/google/protobuf/GeneratedMessageV3$Builder;
 
     move-result-object v0
@@ -213,7 +240,7 @@
     .locals 1
 
     .prologue
-    .line 11632
+    .line 12137
     invoke-super {p0, p1}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->clearOneof(Lcom/google/protobuf/Descriptors$OneofDescriptor;)Lcom/google/protobuf/GeneratedMessageV3$Builder;
 
     move-result-object v0
@@ -227,25 +254,56 @@
     .locals 1
 
     .prologue
-    .line 11645
+    .line 12150
     instance-of v0, p1, Lcom/kik/entity/model/ElementCommon$BotExtensionElement;
 
     if-eqz v0, :cond_0
 
-    .line 11646
+    .line 12151
     check-cast p1, Lcom/kik/entity/model/ElementCommon$BotExtensionElement;
 
     invoke-virtual {p0, p1}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;->a(Lcom/kik/entity/model/ElementCommon$BotExtensionElement;)Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;
 
     move-result-object p0
 
-    .line 11649
+    .line 12154
     :goto_0
     return-object p0
 
-    .line 11648
+    .line 12153
     :cond_0
     invoke-super {p0, p1}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->mergeFrom(Lcom/google/protobuf/Message;)Lcom/google/protobuf/AbstractMessage$Builder;
+
+    goto :goto_0
+.end method
+
+.method private b()Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;
+    .locals 2
+
+    .prologue
+    const/4 v1, 0x0
+
+    .line 12085
+    invoke-super {p0}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->clear()Lcom/google/protobuf/GeneratedMessageV3$Builder;
+
+    .line 12086
+    iget-object v0, p0, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;->b:Lcom/google/protobuf/SingleFieldBuilderV3;
+
+    if-nez v0, :cond_0
+
+    .line 12087
+    iput-object v1, p0, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;->a:Lcom/kik/entity/model/ElementCommon$TrustedElement;
+
+    .line 12092
+    :goto_0
+    return-object p0
+
+    .line 12089
+    :cond_0
+    iput-object v1, p0, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;->a:Lcom/kik/entity/model/ElementCommon$TrustedElement;
+
+    .line 12090
+    iput-object v1, p0, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;->b:Lcom/google/protobuf/SingleFieldBuilderV3;
 
     goto :goto_0
 .end method
@@ -254,7 +312,7 @@
     .locals 1
 
     .prologue
-    .line 11642
+    .line 12147
     invoke-super {p0, p1, p2}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->addRepeatedField(Lcom/google/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lcom/google/protobuf/GeneratedMessageV3$Builder;
 
     move-result-object v0
@@ -264,30 +322,30 @@
     return-object v0
 .end method
 
-.method private b()Lcom/kik/entity/model/ElementCommon$BotExtensionElement;
+.method private c()Lcom/kik/entity/model/ElementCommon$BotExtensionElement;
     .locals 2
 
     .prologue
-    .line 11605
+    .line 12105
     invoke-virtual {p0}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;->a()Lcom/kik/entity/model/ElementCommon$BotExtensionElement;
 
     move-result-object v0
 
-    .line 11606
+    .line 12106
     invoke-virtual {v0}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement;->isInitialized()Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    .line 11607
+    .line 12107
     invoke-static {v0}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;->newUninitializedMessageException(Lcom/google/protobuf/Message;)Lcom/google/protobuf/UninitializedMessageException;
 
     move-result-object v0
 
     throw v0
 
-    .line 11609
+    .line 12109
     :cond_0
     return-object v0
 .end method
@@ -295,50 +353,135 @@
 
 # virtual methods
 .method public final a(Lcom/kik/entity/model/ElementCommon$BotExtensionElement;)Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;
-    .locals 1
+    .locals 2
 
     .prologue
-    .line 11654
-    invoke-static {}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement;->b()Lcom/kik/entity/model/ElementCommon$BotExtensionElement;
+    .line 12159
+    invoke-static {}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement;->d()Lcom/kik/entity/model/ElementCommon$BotExtensionElement;
 
     move-result-object v0
 
     if-ne p1, v0, :cond_0
 
-    .line 11656
+    .line 12164
     :goto_0
     return-object p0
 
-    .line 11655
+    .line 12160
     :cond_0
+    invoke-virtual {p1}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement;->a()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    .line 12161
+    invoke-virtual {p1}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement;->b()Lcom/kik/entity/model/ElementCommon$TrustedElement;
+
+    move-result-object v0
+
+    .line 14242
+    iget-object v1, p0, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;->b:Lcom/google/protobuf/SingleFieldBuilderV3;
+
+    if-nez v1, :cond_3
+
+    .line 14243
+    iget-object v1, p0, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;->a:Lcom/kik/entity/model/ElementCommon$TrustedElement;
+
+    if-eqz v1, :cond_2
+
+    .line 14244
+    iget-object v1, p0, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;->a:Lcom/kik/entity/model/ElementCommon$TrustedElement;
+
+    .line 14245
+    invoke-static {v1}, Lcom/kik/entity/model/ElementCommon$TrustedElement;->a(Lcom/kik/entity/model/ElementCommon$TrustedElement;)Lcom/kik/entity/model/ElementCommon$TrustedElement$a;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v0}, Lcom/kik/entity/model/ElementCommon$TrustedElement$a;->a(Lcom/kik/entity/model/ElementCommon$TrustedElement;)Lcom/kik/entity/model/ElementCommon$TrustedElement$a;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/kik/entity/model/ElementCommon$TrustedElement$a;->a()Lcom/kik/entity/model/ElementCommon$TrustedElement;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;->a:Lcom/kik/entity/model/ElementCommon$TrustedElement;
+
+    .line 14249
+    :goto_1
+    invoke-virtual {p0}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;->onChanged()V
+
+    .line 12163
+    :cond_1
+    :goto_2
     invoke-virtual {p0}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;->onChanged()V
 
     goto :goto_0
+
+    .line 14247
+    :cond_2
+    iput-object v0, p0, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;->a:Lcom/kik/entity/model/ElementCommon$TrustedElement;
+
+    goto :goto_1
+
+    .line 14251
+    :cond_3
+    iget-object v1, p0, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;->b:Lcom/google/protobuf/SingleFieldBuilderV3;
+
+    invoke-virtual {v1, v0}, Lcom/google/protobuf/SingleFieldBuilderV3;->mergeFrom(Lcom/google/protobuf/AbstractMessage;)Lcom/google/protobuf/SingleFieldBuilderV3;
+
+    goto :goto_2
 .end method
 
 .method public final a()Lcom/kik/entity/model/ElementCommon$BotExtensionElement;
     .locals 2
 
     .prologue
-    .line 11613
-    new-instance v0, Lcom/kik/entity/model/ElementCommon$BotExtensionElement;
+    .line 12113
+    new-instance v1, Lcom/kik/entity/model/ElementCommon$BotExtensionElement;
 
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
-    invoke-direct {v0, p0, v1}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement;-><init>(Lcom/google/protobuf/GeneratedMessageV3$Builder;B)V
+    invoke-direct {v1, p0, v0}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement;-><init>(Lcom/google/protobuf/GeneratedMessageV3$Builder;B)V
 
-    .line 11614
+    .line 12114
+    iget-object v0, p0, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;->b:Lcom/google/protobuf/SingleFieldBuilderV3;
+
+    if-nez v0, :cond_0
+
+    .line 12115
+    iget-object v0, p0, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;->a:Lcom/kik/entity/model/ElementCommon$TrustedElement;
+
+    invoke-static {v1, v0}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement;->a(Lcom/kik/entity/model/ElementCommon$BotExtensionElement;Lcom/kik/entity/model/ElementCommon$TrustedElement;)Lcom/kik/entity/model/ElementCommon$TrustedElement;
+
+    .line 12119
+    :goto_0
     invoke-virtual {p0}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;->onBuilt()V
 
-    .line 11615
-    return-object v0
+    .line 12120
+    return-object v1
+
+    .line 12117
+    :cond_0
+    iget-object v0, p0, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;->b:Lcom/google/protobuf/SingleFieldBuilderV3;
+
+    invoke-virtual {v0}, Lcom/google/protobuf/SingleFieldBuilderV3;->build()Lcom/google/protobuf/AbstractMessage;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/kik/entity/model/ElementCommon$TrustedElement;
+
+    invoke-static {v1, v0}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement;->a(Lcom/kik/entity/model/ElementCommon$BotExtensionElement;Lcom/kik/entity/model/ElementCommon$TrustedElement;)Lcom/kik/entity/model/ElementCommon$TrustedElement;
+
+    goto :goto_0
 .end method
 
 .method public final synthetic addRepeatedField(Lcom/google/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lcom/google/protobuf/GeneratedMessageV3$Builder;
     .locals 1
 
     .prologue
-    .line 11559
+    .line 12053
     invoke-direct {p0, p1, p2}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;->b(Lcom/google/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;
 
     move-result-object v0
@@ -350,7 +493,7 @@
     .locals 1
 
     .prologue
-    .line 11559
+    .line 12053
     invoke-direct {p0, p1, p2}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;->b(Lcom/google/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;
 
     move-result-object v0
@@ -362,8 +505,8 @@
     .locals 1
 
     .prologue
-    .line 11559
-    invoke-direct {p0}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;->b()Lcom/kik/entity/model/ElementCommon$BotExtensionElement;
+    .line 12053
+    invoke-direct {p0}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;->c()Lcom/kik/entity/model/ElementCommon$BotExtensionElement;
 
     move-result-object v0
 
@@ -374,8 +517,8 @@
     .locals 1
 
     .prologue
-    .line 11559
-    invoke-direct {p0}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;->b()Lcom/kik/entity/model/ElementCommon$BotExtensionElement;
+    .line 12053
+    invoke-direct {p0}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;->c()Lcom/kik/entity/model/ElementCommon$BotExtensionElement;
 
     move-result-object v0
 
@@ -386,7 +529,7 @@
     .locals 1
 
     .prologue
-    .line 11559
+    .line 12053
     invoke-virtual {p0}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;->a()Lcom/kik/entity/model/ElementCommon$BotExtensionElement;
 
     move-result-object v0
@@ -398,7 +541,7 @@
     .locals 1
 
     .prologue
-    .line 11559
+    .line 12053
     invoke-virtual {p0}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;->a()Lcom/kik/entity/model/ElementCommon$BotExtensionElement;
 
     move-result-object v0
@@ -406,59 +549,59 @@
     return-object v0
 .end method
 
-.method public final bridge synthetic clear()Lcom/google/protobuf/AbstractMessage$Builder;
-    .locals 0
+.method public final synthetic clear()Lcom/google/protobuf/AbstractMessage$Builder;
+    .locals 1
 
     .prologue
-    .line 11559
-    .line 16591
-    invoke-super {p0}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->clear()Lcom/google/protobuf/GeneratedMessageV3$Builder;
+    .line 12053
+    invoke-direct {p0}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;->b()Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;
 
-    .line 11559
-    return-object p0
+    move-result-object v0
+
+    return-object v0
 .end method
 
-.method public final bridge synthetic clear()Lcom/google/protobuf/GeneratedMessageV3$Builder;
-    .locals 0
+.method public final synthetic clear()Lcom/google/protobuf/GeneratedMessageV3$Builder;
+    .locals 1
 
     .prologue
-    .line 11559
-    .line 15591
-    invoke-super {p0}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->clear()Lcom/google/protobuf/GeneratedMessageV3$Builder;
+    .line 12053
+    invoke-direct {p0}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;->b()Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;
 
-    .line 11559
-    return-object p0
+    move-result-object v0
+
+    return-object v0
 .end method
 
-.method public final bridge synthetic clear()Lcom/google/protobuf/Message$Builder;
-    .locals 0
+.method public final synthetic clear()Lcom/google/protobuf/Message$Builder;
+    .locals 1
 
     .prologue
-    .line 11559
-    .line 19591
-    invoke-super {p0}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->clear()Lcom/google/protobuf/GeneratedMessageV3$Builder;
+    .line 12053
+    invoke-direct {p0}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;->b()Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;
 
-    .line 11559
-    return-object p0
+    move-result-object v0
+
+    return-object v0
 .end method
 
-.method public final bridge synthetic clear()Lcom/google/protobuf/MessageLite$Builder;
-    .locals 0
+.method public final synthetic clear()Lcom/google/protobuf/MessageLite$Builder;
+    .locals 1
 
     .prologue
-    .line 11559
-    .line 20591
-    invoke-super {p0}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->clear()Lcom/google/protobuf/GeneratedMessageV3$Builder;
+    .line 12053
+    invoke-direct {p0}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;->b()Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;
 
-    .line 11559
-    return-object p0
+    move-result-object v0
+
+    return-object v0
 .end method
 
 .method public final synthetic clearField(Lcom/google/protobuf/Descriptors$FieldDescriptor;)Lcom/google/protobuf/GeneratedMessageV3$Builder;
     .locals 1
 
     .prologue
-    .line 11559
+    .line 12053
     invoke-direct {p0, p1}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;->a(Lcom/google/protobuf/Descriptors$FieldDescriptor;)Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;
 
     move-result-object v0
@@ -470,7 +613,7 @@
     .locals 1
 
     .prologue
-    .line 11559
+    .line 12053
     invoke-direct {p0, p1}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;->a(Lcom/google/protobuf/Descriptors$FieldDescriptor;)Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;
 
     move-result-object v0
@@ -482,7 +625,7 @@
     .locals 1
 
     .prologue
-    .line 11559
+    .line 12053
     invoke-direct {p0, p1}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;->a(Lcom/google/protobuf/Descriptors$OneofDescriptor;)Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;
 
     move-result-object v0
@@ -494,7 +637,7 @@
     .locals 1
 
     .prologue
-    .line 11559
+    .line 12053
     invoke-direct {p0, p1}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;->a(Lcom/google/protobuf/Descriptors$OneofDescriptor;)Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;
 
     move-result-object v0
@@ -506,7 +649,7 @@
     .locals 1
 
     .prologue
-    .line 11559
+    .line 12053
     invoke-direct {p0, p1}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;->a(Lcom/google/protobuf/Descriptors$OneofDescriptor;)Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;
 
     move-result-object v0
@@ -518,15 +661,15 @@
     .locals 1
 
     .prologue
-    .line 11559
-    .line 16619
+    .line 12053
+    .line 17124
     invoke-super {p0}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->clone()Lcom/google/protobuf/GeneratedMessageV3$Builder;
 
     move-result-object v0
 
     check-cast v0, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;
 
-    .line 11559
+    .line 12053
     return-object v0
 .end method
 
@@ -534,15 +677,15 @@
     .locals 1
 
     .prologue
-    .line 11559
-    .line 21619
+    .line 12053
+    .line 22124
     invoke-super {p0}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->clone()Lcom/google/protobuf/GeneratedMessageV3$Builder;
 
     move-result-object v0
 
     check-cast v0, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;
 
-    .line 11559
+    .line 12053
     return-object v0
 .end method
 
@@ -550,15 +693,15 @@
     .locals 1
 
     .prologue
-    .line 11559
-    .line 15619
+    .line 12053
+    .line 16124
     invoke-super {p0}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->clone()Lcom/google/protobuf/GeneratedMessageV3$Builder;
 
     move-result-object v0
 
     check-cast v0, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;
 
-    .line 11559
+    .line 12053
     return-object v0
 .end method
 
@@ -566,15 +709,15 @@
     .locals 1
 
     .prologue
-    .line 11559
-    .line 18619
+    .line 12053
+    .line 19124
     invoke-super {p0}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->clone()Lcom/google/protobuf/GeneratedMessageV3$Builder;
 
     move-result-object v0
 
     check-cast v0, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;
 
-    .line 11559
+    .line 12053
     return-object v0
 .end method
 
@@ -582,15 +725,15 @@
     .locals 1
 
     .prologue
-    .line 11559
-    .line 19619
+    .line 12053
+    .line 20124
     invoke-super {p0}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->clone()Lcom/google/protobuf/GeneratedMessageV3$Builder;
 
     move-result-object v0
 
     check-cast v0, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;
 
-    .line 11559
+    .line 12053
     return-object v0
 .end method
 
@@ -603,15 +746,15 @@
     .end annotation
 
     .prologue
-    .line 11559
-    .line 22619
+    .line 12053
+    .line 23124
     invoke-super {p0}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->clone()Lcom/google/protobuf/GeneratedMessageV3$Builder;
 
     move-result-object v0
 
     check-cast v0, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;
 
-    .line 11559
+    .line 12053
     return-object v0
 .end method
 
@@ -619,12 +762,12 @@
     .locals 1
 
     .prologue
-    .line 21601
-    invoke-static {}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement;->b()Lcom/kik/entity/model/ElementCommon$BotExtensionElement;
+    .line 22101
+    invoke-static {}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement;->d()Lcom/kik/entity/model/ElementCommon$BotExtensionElement;
 
     move-result-object v0
 
-    .line 11559
+    .line 12053
     return-object v0
 .end method
 
@@ -632,12 +775,12 @@
     .locals 1
 
     .prologue
-    .line 20601
-    invoke-static {}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement;->b()Lcom/kik/entity/model/ElementCommon$BotExtensionElement;
+    .line 21101
+    invoke-static {}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement;->d()Lcom/kik/entity/model/ElementCommon$BotExtensionElement;
 
     move-result-object v0
 
-    .line 11559
+    .line 12053
     return-object v0
 .end method
 
@@ -645,8 +788,8 @@
     .locals 1
 
     .prologue
-    .line 11597
-    invoke-static {}, Lcom/kik/entity/model/ElementCommon;->D()Lcom/google/protobuf/Descriptors$Descriptor;
+    .line 12097
+    invoke-static {}, Lcom/kik/entity/model/ElementCommon;->F()Lcom/google/protobuf/Descriptors$Descriptor;
 
     move-result-object v0
 
@@ -657,8 +800,8 @@
     .locals 3
 
     .prologue
-    .line 11570
-    invoke-static {}, Lcom/kik/entity/model/ElementCommon;->E()Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
+    .line 12064
+    invoke-static {}, Lcom/kik/entity/model/ElementCommon;->G()Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
     move-result-object v0
 
@@ -666,12 +809,12 @@
 
     const-class v2, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;
 
-    .line 11571
+    .line 12065
     invoke-virtual {v0, v1, v2}, Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;->ensureFieldAccessorsInitialized(Ljava/lang/Class;Ljava/lang/Class;)Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
     move-result-object v0
 
-    .line 11570
+    .line 12064
     return-object v0
 .end method
 
@@ -679,7 +822,7 @@
     .locals 1
 
     .prologue
-    .line 11660
+    .line 12168
     const/4 v0, 0x1
 
     return v0
@@ -694,7 +837,7 @@
     .end annotation
 
     .prologue
-    .line 11559
+    .line 12053
     invoke-direct {p0, p1, p2}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;->a(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;
 
     move-result-object v0
@@ -706,7 +849,7 @@
     .locals 1
 
     .prologue
-    .line 11559
+    .line 12053
     invoke-direct {p0, p1}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;->a(Lcom/google/protobuf/Message;)Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;
 
     move-result-object v0
@@ -723,7 +866,7 @@
     .end annotation
 
     .prologue
-    .line 11559
+    .line 12053
     invoke-direct {p0, p1, p2}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;->a(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;
 
     move-result-object v0
@@ -740,7 +883,7 @@
     .end annotation
 
     .prologue
-    .line 11559
+    .line 12053
     invoke-direct {p0, p1, p2}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;->a(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;
 
     move-result-object v0
@@ -752,7 +895,7 @@
     .locals 1
 
     .prologue
-    .line 11559
+    .line 12053
     invoke-direct {p0, p1}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;->a(Lcom/google/protobuf/Message;)Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;
 
     move-result-object v0
@@ -769,7 +912,7 @@
     .end annotation
 
     .prologue
-    .line 11559
+    .line 12053
     invoke-direct {p0, p1, p2}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;->a(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;
 
     move-result-object v0
@@ -781,7 +924,7 @@
     .locals 0
 
     .prologue
-    .line 11559
+    .line 12053
     return-object p0
 .end method
 
@@ -789,7 +932,7 @@
     .locals 0
 
     .prologue
-    .line 11559
+    .line 12053
     return-object p0
 .end method
 
@@ -797,7 +940,7 @@
     .locals 0
 
     .prologue
-    .line 11559
+    .line 12053
     return-object p0
 .end method
 
@@ -805,7 +948,7 @@
     .locals 1
 
     .prologue
-    .line 11559
+    .line 12053
     invoke-direct {p0, p1, p2}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;->a(Lcom/google/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;
 
     move-result-object v0
@@ -817,7 +960,7 @@
     .locals 1
 
     .prologue
-    .line 11559
+    .line 12053
     invoke-direct {p0, p1, p2}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;->a(Lcom/google/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;
 
     move-result-object v0
@@ -829,7 +972,7 @@
     .locals 1
 
     .prologue
-    .line 11559
+    .line 12053
     invoke-direct {p0, p1, p2, p3}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;->a(Lcom/google/protobuf/Descriptors$FieldDescriptor;ILjava/lang/Object;)Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;
 
     move-result-object v0
@@ -841,7 +984,7 @@
     .locals 1
 
     .prologue
-    .line 11559
+    .line 12053
     invoke-direct {p0, p1, p2, p3}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;->a(Lcom/google/protobuf/Descriptors$FieldDescriptor;ILjava/lang/Object;)Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;
 
     move-result-object v0
@@ -853,7 +996,7 @@
     .locals 0
 
     .prologue
-    .line 11559
+    .line 12053
     return-object p0
 .end method
 
@@ -861,6 +1004,6 @@
     .locals 0
 
     .prologue
-    .line 11559
+    .line 12053
     return-object p0
 .end method

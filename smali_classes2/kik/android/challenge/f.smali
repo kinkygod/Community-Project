@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/core/interfaces/af;
+.implements Lkik/core/interfaces/ae;
 
 
 # static fields
@@ -83,7 +83,7 @@
 
 .field private g:Lkik/android/f/d;
 
-.field private h:Lkik/core/interfaces/ae;
+.field private h:Lkik/core/interfaces/ad;
 
 .field private i:Lcom/kik/events/d;
 
@@ -126,7 +126,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Lkik/core/interfaces/ICommunication;Lkik/android/f/d;Lkik/core/interfaces/ae;Lkik/core/interfaces/k;Lkik/core/interfaces/IConversation;Lkik/core/interfaces/w;)V
+.method public constructor <init>(Lkik/core/interfaces/ICommunication;Lkik/android/f/d;Lkik/core/interfaces/ad;Lkik/core/interfaces/k;Lkik/core/interfaces/IConversation;Lkik/core/interfaces/v;)V
     .locals 3
 
     .prologue
@@ -204,7 +204,7 @@
     iput-object p2, p0, Lkik/android/challenge/f;->g:Lkik/android/f/d;
 
     .line 131
-    iput-object p3, p0, Lkik/android/challenge/f;->h:Lkik/core/interfaces/ae;
+    iput-object p3, p0, Lkik/android/challenge/f;->h:Lkik/core/interfaces/ad;
 
     .line 132
     iget-object v0, p0, Lkik/android/challenge/f;->i:Lcom/kik/events/d;
@@ -220,7 +220,7 @@
     .line 133
     iget-object v0, p0, Lkik/android/challenge/f;->i:Lcom/kik/events/d;
 
-    invoke-interface {p5}, Lkik/core/interfaces/IConversation;->z()Lcom/kik/events/c;
+    invoke-interface {p5}, Lkik/core/interfaces/IConversation;->y()Lcom/kik/events/c;
 
     move-result-object v1
 
@@ -231,7 +231,7 @@
     .line 134
     iget-object v0, p0, Lkik/android/challenge/f;->i:Lcom/kik/events/d;
 
-    invoke-interface {p6}, Lkik/core/interfaces/w;->i()Lcom/kik/events/c;
+    invoke-interface {p6}, Lkik/core/interfaces/v;->j()Lcom/kik/events/c;
 
     move-result-object v1
 
@@ -240,7 +240,7 @@
     invoke-virtual {v0, v1, v2}, Lcom/kik/events/d;->a(Lcom/kik/events/c;Lcom/kik/events/e;)Lcom/kik/events/e;
 
     .line 135
-    invoke-static {}, Lkik/android/widget/bz;->d()Lcom/kik/events/Promise;
+    invoke-static {}, Lkik/android/widget/cl;->d()Lcom/kik/events/Promise;
 
     move-result-object v0
 
@@ -374,53 +374,53 @@
     .prologue
     .line 28
     .line 2250
-    iget-object v0, p0, Lkik/android/challenge/f;->h:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/challenge/f;->h:Lkik/core/interfaces/ad;
 
     const-string v1, "temporary.ban.manager.title"
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ae;->x(Ljava/lang/String;)Z
+    invoke-interface {v0, v1}, Lkik/core/interfaces/ad;->x(Ljava/lang/String;)Z
 
     .line 2251
-    iget-object v0, p0, Lkik/android/challenge/f;->h:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/challenge/f;->h:Lkik/core/interfaces/ad;
 
     const-string v1, "temporary.ban.manager.body"
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ae;->x(Ljava/lang/String;)Z
+    invoke-interface {v0, v1}, Lkik/core/interfaces/ad;->x(Ljava/lang/String;)Z
 
     .line 2252
-    iget-object v0, p0, Lkik/android/challenge/f;->h:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/challenge/f;->h:Lkik/core/interfaces/ad;
 
     const-string v1, "temporary.ban.manager.timer.text"
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ae;->x(Ljava/lang/String;)Z
+    invoke-interface {v0, v1}, Lkik/core/interfaces/ad;->x(Ljava/lang/String;)Z
 
     .line 2253
-    iget-object v0, p0, Lkik/android/challenge/f;->h:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/challenge/f;->h:Lkik/core/interfaces/ad;
 
     const-string v1, "temporary.ban.manager.ban.end"
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ae;->x(Ljava/lang/String;)Z
+    invoke-interface {v0, v1}, Lkik/core/interfaces/ad;->x(Ljava/lang/String;)Z
 
     .line 2254
-    iget-object v0, p0, Lkik/android/challenge/f;->h:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/challenge/f;->h:Lkik/core/interfaces/ad;
 
     const-string v1, "temporary.ban.manager.btn.text.ban"
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ae;->x(Ljava/lang/String;)Z
+    invoke-interface {v0, v1}, Lkik/core/interfaces/ad;->x(Ljava/lang/String;)Z
 
     .line 2255
-    iget-object v0, p0, Lkik/android/challenge/f;->h:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/challenge/f;->h:Lkik/core/interfaces/ad;
 
     const-string v1, "temporary.ban.manager.btn.text.expire"
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ae;->x(Ljava/lang/String;)Z
+    invoke-interface {v0, v1}, Lkik/core/interfaces/ad;->x(Ljava/lang/String;)Z
 
     .line 2256
-    iget-object v0, p0, Lkik/android/challenge/f;->h:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/challenge/f;->h:Lkik/core/interfaces/ad;
 
     const-string v1, "temporary.ban.manager.exists"
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ae;->x(Ljava/lang/String;)Z
+    invoke-interface {v0, v1}, Lkik/core/interfaces/ad;->x(Ljava/lang/String;)Z
 
     .line 28
     return-void
@@ -464,11 +464,11 @@
     .prologue
     .line 28
     .line 2267
-    iget-object v0, p0, Lkik/android/challenge/f;->h:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/challenge/f;->h:Lkik/core/interfaces/ad;
 
     const-string v1, "temporary.ban.manager.exists"
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ae;->w(Ljava/lang/String;)Ljava/lang/Boolean;
+    invoke-interface {v0, v1}, Lkik/core/interfaces/ad;->w(Ljava/lang/String;)Ljava/lang/Boolean;
 
     move-result-object v0
 
@@ -512,7 +512,7 @@
 
     .line 28
     .line 3108
-    iget-object v0, p0, Lkik/android/challenge/f;->h:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/challenge/f;->h:Lkik/core/interfaces/ad;
 
     const-string v1, "temporary.ban.manager.ban.end"
 
@@ -522,7 +522,7 @@
 
     move-result-object v2
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;Ljava/lang/Long;)Z
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Long;)Z
 
     .line 3109
     iget-object v0, p0, Lkik/android/challenge/f;->k:Lkik/android/chat/fragment/TemporaryBanDialog;
@@ -611,44 +611,44 @@
     invoke-direct {v0}, Lkik/core/net/outgoing/p;-><init>()V
 
     .line 184
-    iget-object v1, p0, Lkik/android/challenge/f;->h:Lkik/core/interfaces/ae;
+    iget-object v1, p0, Lkik/android/challenge/f;->h:Lkik/core/interfaces/ad;
 
     const-string v2, "temporary.ban.manager.title"
 
-    invoke-interface {v1, v2}, Lkik/core/interfaces/ae;->s(Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {v1, v2}, Lkik/core/interfaces/ad;->s(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Lkik/core/net/outgoing/p;->a(Ljava/lang/String;)V
 
     .line 185
-    iget-object v1, p0, Lkik/android/challenge/f;->h:Lkik/core/interfaces/ae;
+    iget-object v1, p0, Lkik/android/challenge/f;->h:Lkik/core/interfaces/ad;
 
     const-string v2, "temporary.ban.manager.body"
 
-    invoke-interface {v1, v2}, Lkik/core/interfaces/ae;->s(Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {v1, v2}, Lkik/core/interfaces/ad;->s(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Lkik/core/net/outgoing/p;->b(Ljava/lang/String;)V
 
     .line 186
-    iget-object v1, p0, Lkik/android/challenge/f;->h:Lkik/core/interfaces/ae;
+    iget-object v1, p0, Lkik/android/challenge/f;->h:Lkik/core/interfaces/ad;
 
     const-string v2, "temporary.ban.manager.timer.text"
 
-    invoke-interface {v1, v2}, Lkik/core/interfaces/ae;->s(Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {v1, v2}, Lkik/core/interfaces/ad;->s(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Lkik/core/net/outgoing/p;->f(Ljava/lang/String;)V
 
     .line 187
-    iget-object v1, p0, Lkik/android/challenge/f;->h:Lkik/core/interfaces/ae;
+    iget-object v1, p0, Lkik/android/challenge/f;->h:Lkik/core/interfaces/ad;
 
     const-string v2, "temporary.ban.manager.ban.end"
 
-    invoke-interface {v1, v2}, Lkik/core/interfaces/ae;->v(Ljava/lang/String;)Ljava/lang/Long;
+    invoke-interface {v1, v2}, Lkik/core/interfaces/ad;->v(Ljava/lang/String;)Ljava/lang/Long;
 
     move-result-object v1
 
@@ -659,22 +659,22 @@
     invoke-virtual {v0, v2, v3}, Lkik/core/net/outgoing/p;->a(J)V
 
     .line 188
-    iget-object v1, p0, Lkik/android/challenge/f;->h:Lkik/core/interfaces/ae;
+    iget-object v1, p0, Lkik/android/challenge/f;->h:Lkik/core/interfaces/ad;
 
     const-string v2, "temporary.ban.manager.btn.text.ban"
 
-    invoke-interface {v1, v2}, Lkik/core/interfaces/ae;->s(Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {v1, v2}, Lkik/core/interfaces/ad;->s(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Lkik/core/net/outgoing/p;->c(Ljava/lang/String;)V
 
     .line 189
-    iget-object v1, p0, Lkik/android/challenge/f;->h:Lkik/core/interfaces/ae;
+    iget-object v1, p0, Lkik/android/challenge/f;->h:Lkik/core/interfaces/ad;
 
     const-string v2, "temporary.ban.manager.btn.text.expire"
 
-    invoke-interface {v1, v2}, Lkik/core/interfaces/ae;->s(Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {v1, v2}, Lkik/core/interfaces/ad;->s(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -708,7 +708,7 @@
     if-eqz v0, :cond_0
 
     .line 262
-    invoke-static {}, Lkik/android/widget/bz;->b()Z
+    invoke-static {}, Lkik/android/widget/cl;->b()Z
 
     move-result v0
 
@@ -806,7 +806,7 @@
 
     .line 2172
     :cond_2
-    iget-object v0, p0, Lkik/android/challenge/f;->h:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/challenge/f;->h:Lkik/core/interfaces/ad;
 
     const-string v2, "temporary.ban.manager.exists"
 
@@ -814,10 +814,10 @@
 
     move-result-object v1
 
-    invoke-interface {v0, v2, v1}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;Ljava/lang/Boolean;)Z
+    invoke-interface {v0, v2, v1}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Boolean;)Z
 
     .line 2173
-    iget-object v0, p0, Lkik/android/challenge/f;->h:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/challenge/f;->h:Lkik/core/interfaces/ad;
 
     const-string v1, "temporary.ban.manager.title"
 
@@ -825,10 +825,10 @@
 
     move-result-object v2
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ae;->c(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->c(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 2174
-    iget-object v0, p0, Lkik/android/challenge/f;->h:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/challenge/f;->h:Lkik/core/interfaces/ad;
 
     const-string v1, "temporary.ban.manager.body"
 
@@ -836,10 +836,10 @@
 
     move-result-object v2
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ae;->c(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->c(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 2175
-    iget-object v0, p0, Lkik/android/challenge/f;->h:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/challenge/f;->h:Lkik/core/interfaces/ad;
 
     const-string v1, "temporary.ban.manager.timer.text"
 
@@ -847,10 +847,10 @@
 
     move-result-object v2
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ae;->c(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->c(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 2176
-    iget-object v0, p0, Lkik/android/challenge/f;->h:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/challenge/f;->h:Lkik/core/interfaces/ad;
 
     const-string v1, "temporary.ban.manager.ban.end"
 
@@ -862,10 +862,10 @@
 
     move-result-object v2
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;Ljava/lang/Long;)Z
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Long;)Z
 
     .line 2177
-    iget-object v0, p0, Lkik/android/challenge/f;->h:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/challenge/f;->h:Lkik/core/interfaces/ad;
 
     const-string v1, "temporary.ban.manager.btn.text.ban"
 
@@ -873,10 +873,10 @@
 
     move-result-object v2
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ae;->c(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->c(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 2178
-    iget-object v0, p0, Lkik/android/challenge/f;->h:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/challenge/f;->h:Lkik/core/interfaces/ad;
 
     const-string v1, "temporary.ban.manager.btn.text.expire"
 
@@ -884,7 +884,7 @@
 
     move-result-object v2
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ae;->c(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->c(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 200
     invoke-virtual {p1}, Lkik/core/net/outgoing/p;->g()J

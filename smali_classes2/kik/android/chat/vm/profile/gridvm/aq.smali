@@ -45,7 +45,7 @@
 
     check-cast p1, Lcom/kik/core/domain/a/a/c;
 
-    invoke-static {p1}, Lkik/android/chat/vm/profile/gridvm/ao;->a(Lcom/kik/core/domain/a/a/c;)Ljava/lang/Boolean;
+    invoke-static {p1}, Lkik/android/chat/vm/profile/gridvm/ap;->b(Lcom/kik/core/domain/a/a/c;)Ljava/lang/Boolean;
 
     move-result-object v0
 

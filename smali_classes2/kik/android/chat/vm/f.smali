@@ -7,7 +7,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<ViewPagerItemViewModel::",
-        "Lkik/android/chat/vm/bo;",
+        "Lkik/android/chat/vm/bp;",
         ">",
         "Lkik/android/chat/vm/c",
         "<TViewPagerItemViewModel;>;"
@@ -115,7 +115,7 @@
 
     move-result-object v1
 
-    check-cast v1, Lkik/android/chat/vm/bo;
+    check-cast v1, Lkik/android/chat/vm/bp;
 
     .line 29
     if-eqz v1, :cond_0
@@ -131,7 +131,7 @@
 
     move-object v2, v0
 
-    invoke-virtual {v2}, Lkik/android/chat/vm/e;->C_()Z
+    invoke-virtual {v2}, Lkik/android/chat/vm/e;->G_()Z
 
     move-result v2
 
@@ -146,7 +146,7 @@
 
     const/4 v4, 0x0
 
-    invoke-direct {v2, p0, v1, v4}, Lkik/android/chat/vm/c$a;-><init>(Lkik/android/chat/vm/c;Lkik/android/chat/vm/ar;Z)V
+    invoke-direct {v2, p0, v1, v4}, Lkik/android/chat/vm/c$a;-><init>(Lkik/android/chat/vm/c;Lkik/android/chat/vm/at;Z)V
 
     monitor-exit v3
 
@@ -158,14 +158,14 @@
 
     .line 37
     :cond_1
-    invoke-virtual {p0, p2}, Lkik/android/chat/vm/f;->e(I)Lkik/android/chat/vm/ar;
+    invoke-virtual {p0, p2}, Lkik/android/chat/vm/f;->e(I)Lkik/android/chat/vm/at;
 
     move-result-object v1
 
-    check-cast v1, Lkik/android/chat/vm/bo;
+    check-cast v1, Lkik/android/chat/vm/bp;
 
     .line 39
-    invoke-interface {v1}, Lkik/android/chat/vm/bo;->aJ_()Lrx/b;
+    invoke-interface {v1}, Lkik/android/chat/vm/bp;->aG_()Lrx/b;
 
     move-result-object v2
 
@@ -190,7 +190,7 @@
 
     const/4 v3, 0x1
 
-    invoke-direct {v2, p0, v1, v3}, Lkik/android/chat/vm/c$a;-><init>(Lkik/android/chat/vm/c;Lkik/android/chat/vm/ar;Z)V
+    invoke-direct {v2, p0, v1, v3}, Lkik/android/chat/vm/c$a;-><init>(Lkik/android/chat/vm/c;Lkik/android/chat/vm/at;Z)V
 
     move-object v1, v2
 
@@ -208,7 +208,7 @@
     throw v1
 .end method
 
-.method public aj_()V
+.method public ak_()V
     .locals 2
 
     .prologue
@@ -219,7 +219,7 @@
 
     .line 65
     :try_start_0
-    invoke-super {p0}, Lkik/android/chat/vm/c;->aj_()V
+    invoke-super {p0}, Lkik/android/chat/vm/c;->ak_()V
 
     .line 66
     monitor-exit v1
@@ -236,7 +236,7 @@
     throw v0
 .end method
 
-.method protected final d()Ljava/util/List;
+.method protected final q_()Ljava/util/List;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {

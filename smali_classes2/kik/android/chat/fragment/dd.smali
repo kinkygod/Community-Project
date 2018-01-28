@@ -2,7 +2,7 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Landroid/view/View$OnFocusChangeListener;
+.implements Landroid/widget/TextView$OnEditorActionListener;
 
 
 # instance fields
@@ -20,7 +20,7 @@
     return-void
 .end method
 
-.method public static a(Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;)Landroid/view/View$OnFocusChangeListener;
+.method public static a(Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;)Landroid/widget/TextView$OnEditorActionListener;
     .locals 1
 
     new-instance v0, Lkik/android/chat/fragment/dd;
@@ -32,12 +32,14 @@
 
 
 # virtual methods
-.method public final onFocusChange(Landroid/view/View;Z)V
+.method public final onEditorAction(Landroid/widget/TextView;ILandroid/view/KeyEvent;)Z
     .locals 1
 
     iget-object v0, p0, Lkik/android/chat/fragment/dd;->a:Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;
 
-    invoke-static {v0, p2}, Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;->b(Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;Z)V
+    invoke-static {v0, p2, p3}, Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;->a(Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;ILandroid/view/KeyEvent;)Z
 
-    return-void
+    move-result v0
+
+    return v0
 .end method

@@ -1094,7 +1094,7 @@
     goto/16 :goto_3
 .end method
 
-.method public static a(Landroid/content/Context;Ljava/lang/String;Lkik/core/interfaces/IConversation;Lkik/core/interfaces/ae;)Z
+.method public static a(Landroid/content/Context;Ljava/lang/String;Lkik/core/interfaces/IConversation;Lkik/core/interfaces/ad;)Z
     .locals 5
 
     .prologue
@@ -1178,7 +1178,7 @@
     .line 499
     const-string v4, "kik.chat.video.prefetch"
 
-    invoke-interface {p3, v4, v3}, Lkik/core/interfaces/ae;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {p3, v4, v3}, Lkik/core/interfaces/ad;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 

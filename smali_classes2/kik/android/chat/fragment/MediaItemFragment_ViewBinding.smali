@@ -37,7 +37,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/MediaItemFragment;->_contentImageView:Lcom/kik/cache/ContentImageView;
 
     .line 31
-    const v0, 0x7f100232
+    const v0, 0x7f10022e
 
     const-string v1, "field \'_textureView\'"
 
@@ -67,7 +67,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/MediaItemFragment;->_videoPlayIcon:Landroid/widget/ImageView;
 
     .line 33
-    const v0, 0x7f100234
+    const v0, 0x7f100230
 
     const-string v1, "field \'_videoPauseIcon\'"
 
@@ -82,7 +82,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/MediaItemFragment;->_videoPauseIcon:Landroid/widget/ImageView;
 
     .line 34
-    const v0, 0x7f100239
+    const v0, 0x7f100235
 
     const-string v1, "field \'_openButton\'"
 
@@ -97,7 +97,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/MediaItemFragment;->_openButton:Landroid/view/ViewGroup;
 
     .line 35
-    const v0, 0x7f100233
+    const v0, 0x7f10022f
 
     const-string v1, "field \'_videoProgressBar\'"
 
@@ -112,7 +112,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/MediaItemFragment;->_videoProgressBar:Lcom/github/rahatarmanahmed/cpv/CircularProgressView;
 
     .line 36
-    const v0, 0x7f100235
+    const v0, 0x7f100231
 
     const-string v1, "field \'_fullscreenScrubber\'"
 
@@ -127,7 +127,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/MediaItemFragment;->_fullscreenScrubber:Landroid/widget/RelativeLayout;
 
     .line 37
-    const v0, 0x7f100236
+    const v0, 0x7f100232
 
     const-string v1, "field \'_fullscreenCurrentTime\'"
 
@@ -142,7 +142,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/MediaItemFragment;->_fullscreenCurrentTime:Landroid/widget/TextView;
 
     .line 38
-    const v0, 0x7f100238
+    const v0, 0x7f100234
 
     const-string v1, "field \'_fullscreenTotalTime\'"
 
@@ -157,7 +157,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/MediaItemFragment;->_fullscreenTotalTime:Landroid/widget/TextView;
 
     .line 39
-    const v0, 0x7f100237
+    const v0, 0x7f100233
 
     const-string v1, "field \'_fullscreenProgressBar\'"
 
@@ -172,7 +172,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/MediaItemFragment;->_fullscreenProgressBar:Landroid/widget/SeekBar;
 
     .line 40
-    const v0, 0x7f100231
+    const v0, 0x7f10022d
 
     const-string v1, "field \'_viewRoot\'"
 

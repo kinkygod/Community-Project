@@ -125,7 +125,7 @@
     .end annotation
 .end method
 
-.method public abstract f()Lkik/core/interfaces/ae;
+.method public abstract f()Lkik/core/interfaces/ad;
 .end method
 
 .method public abstract g()Lcom/rounds/kik/analytics/IReporterProxy;

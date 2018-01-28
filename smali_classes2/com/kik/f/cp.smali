@@ -3,16 +3,16 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/a/b;
+.implements Ldagger/internal/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/a/b",
+        "Ldagger/internal/b",
         "<",
-        "Lkik/android/challenge/PhoneVerificationNetworkProvider;",
+        "Lkik/core/a/e;",
         ">;"
     }
 .end annotation
@@ -23,18 +23,7 @@
 
 
 # instance fields
-.field private final b:Lcom/kik/f/cl;
-
-.field private final c:Ljavax/inject/Provider;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljavax/inject/Provider",
-            "<",
-            "Lkik/core/interfaces/ICommunication;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field private final b:Lcom/kik/f/co;
 
 
 # direct methods
@@ -42,7 +31,7 @@
     .locals 1
 
     .prologue
-    .line 10
+    .line 8
     const-class v0, Lcom/kik/f/cp;
 
     invoke-virtual {v0}, Ljava/lang/Class;->desiredAssertionStatus()Z
@@ -64,24 +53,14 @@
     goto :goto_0
 .end method
 
-.method private constructor <init>(Lcom/kik/f/cl;Ljavax/inject/Provider;)V
+.method private constructor <init>(Lcom/kik/f/co;)V
     .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/kik/f/cl;",
-            "Ljavax/inject/Provider",
-            "<",
-            "Lkik/core/interfaces/ICommunication;",
-            ">;)V"
-        }
-    .end annotation
 
     .prologue
-    .line 21
+    .line 17
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 22
+    .line 18
     sget-boolean v0, Lcom/kik/f/cp;->a:Z
 
     if-nez v0, :cond_0
@@ -94,53 +73,33 @@
 
     throw v0
 
-    .line 23
+    .line 19
     :cond_0
-    iput-object p1, p0, Lcom/kik/f/cp;->b:Lcom/kik/f/cl;
+    iput-object p1, p0, Lcom/kik/f/cp;->b:Lcom/kik/f/co;
 
-    .line 24
-    sget-boolean v0, Lcom/kik/f/cp;->a:Z
-
-    if-nez v0, :cond_1
-
-    if-nez p2, :cond_1
-
-    new-instance v0, Ljava/lang/AssertionError;
-
-    invoke-direct {v0}, Ljava/lang/AssertionError;-><init>()V
-
-    throw v0
-
-    .line 25
-    :cond_1
-    iput-object p2, p0, Lcom/kik/f/cp;->c:Ljavax/inject/Provider;
-
-    .line 26
+    .line 20
     return-void
 .end method
 
-.method public static a(Lcom/kik/f/cl;Ljavax/inject/Provider;)La/a/b;
+.method public static a(Lcom/kik/f/co;)Ldagger/internal/b;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcom/kik/f/cl;",
-            "Ljavax/inject/Provider",
+            "Lcom/kik/f/co;",
+            ")",
+            "Ldagger/internal/b",
             "<",
-            "Lkik/core/interfaces/ICommunication;",
-            ">;)",
-            "La/a/b",
-            "<",
-            "Lkik/android/challenge/PhoneVerificationNetworkProvider;",
+            "Lkik/core/a/e;",
             ">;"
         }
     .end annotation
 
     .prologue
-    .line 37
+    .line 30
     new-instance v0, Lcom/kik/f/cp;
 
-    invoke-direct {v0, p0, p1}, Lcom/kik/f/cp;-><init>(Lcom/kik/f/cl;Ljavax/inject/Provider;)V
+    invoke-direct {v0, p0}, Lcom/kik/f/cp;-><init>(Lcom/kik/f/co;)V
 
     return-object v0
 .end method
@@ -148,39 +107,27 @@
 
 # virtual methods
 .method public final synthetic get()Ljava/lang/Object;
-    .locals 3
+    .locals 2
 
     .prologue
-    .line 10
-    .line 1030
-    iget-object v0, p0, Lcom/kik/f/cp;->c:Ljavax/inject/Provider;
+    .line 8
+    .line 1024
+    iget-object v0, p0, Lcom/kik/f/cp;->b:Lcom/kik/f/co;
 
-    .line 1031
-    invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lkik/core/interfaces/ICommunication;
-
-    .line 2028
-    new-instance v1, Lkik/android/challenge/b;
-
-    invoke-static {}, Lkik/android/chat/KikApplication;->c()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-direct {v1, v0, v2}, Lkik/android/challenge/b;-><init>(Lkik/core/interfaces/ICommunication;Ljava/lang/String;)V
-
-    .line 1031
-    const-string v0, "Cannot return null from a non-@Nullable @Provides method"
-
-    .line 1030
-    invoke-static {v1, v0}, La/a/c;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    .line 1025
+    invoke-virtual {v0}, Lcom/kik/f/co;->a()Lkik/core/a/e;
 
     move-result-object v0
 
-    check-cast v0, Lkik/android/challenge/PhoneVerificationNetworkProvider;
+    const-string v1, "Cannot return null from a non-@Nullable @Provides method"
 
-    .line 10
+    .line 1024
+    invoke-static {v0, v1}, Ldagger/internal/c;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lkik/core/a/e;
+
+    .line 8
     return-object v0
 .end method

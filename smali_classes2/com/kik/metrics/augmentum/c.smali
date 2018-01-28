@@ -207,12 +207,12 @@
     move-result-object v0
 
     .line 122
-    instance-of v1, v0, Lcom/kik/metrics/b/au;
+    instance-of v1, v0, Lcom/kik/metrics/b/ax;
 
     if-eqz v1, :cond_4
 
     .line 123
-    check-cast v0, Lcom/kik/metrics/b/au;
+    check-cast v0, Lcom/kik/metrics/b/ax;
 
     .line 125
     new-instance v1, Lorg/json/JSONObject;
@@ -220,7 +220,7 @@
     invoke-direct {v1}, Lorg/json/JSONObject;-><init>()V
 
     .line 126
-    invoke-interface {v0}, Lcom/kik/metrics/b/au;->a()Ljava/util/List;
+    invoke-interface {v0}, Lcom/kik/metrics/b/ax;->a()Ljava/util/List;
 
     move-result-object v0
 
@@ -379,7 +379,7 @@
     return-void
 .end method
 
-.method static synthetic a(Lorg/json/JSONObject;Ljava/lang/String;Lcom/kik/metrics/b/s;)V
+.method static synthetic a(Lorg/json/JSONObject;Ljava/lang/String;Lcom/kik/metrics/b/t;)V
     .locals 4
 
     .prologue
@@ -398,14 +398,14 @@
     .line 3156
     const-string v0, "event:name"
 
-    invoke-interface {p2}, Lcom/kik/metrics/b/s;->c()Ljava/lang/String;
+    invoke-interface {p2}, Lcom/kik/metrics/b/t;->c()Ljava/lang/String;
 
     move-result-object v2
 
     invoke-virtual {p0, v0, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     .line 3158
-    invoke-interface {p2}, Lcom/kik/metrics/b/s;->a()Ljava/util/List;
+    invoke-interface {p2}, Lcom/kik/metrics/b/t;->a()Ljava/util/List;
 
     move-result-object v0
 
@@ -506,7 +506,7 @@
 
 
 # virtual methods
-.method public final a(Lcom/kik/metrics/b/s;Lcom/kik/metrics/a/d;)V
+.method public final a(Lcom/kik/metrics/b/t;Lcom/kik/metrics/a/d;)V
     .locals 2
 
     .prologue
@@ -515,7 +515,7 @@
 
     new-instance v1, Lcom/kik/metrics/augmentum/c$b;
 
-    invoke-direct {v1, p0, p1, p2}, Lcom/kik/metrics/augmentum/c$b;-><init>(Lcom/kik/metrics/augmentum/c;Lcom/kik/metrics/b/s;Lcom/kik/metrics/a/d;)V
+    invoke-direct {v1, p0, p1, p2}, Lcom/kik/metrics/augmentum/c$b;-><init>(Lcom/kik/metrics/augmentum/c;Lcom/kik/metrics/b/t;Lcom/kik/metrics/a/d;)V
 
     invoke-interface {v0, v1}, Ljava/util/concurrent/ExecutorService;->submit(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
 

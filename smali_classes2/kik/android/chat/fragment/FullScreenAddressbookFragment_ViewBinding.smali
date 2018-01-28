@@ -26,7 +26,7 @@
     iput-object p1, p0, Lkik/android/chat/fragment/FullScreenAddressbookFragment_ViewBinding;->a:Lkik/android/chat/fragment/FullScreenAddressbookFragment;
 
     .line 30
-    const v0, 0x7f1001e7
+    const v0, 0x7f1001e8
 
     const-string v1, "field \'_abmImage\'"
 
@@ -41,7 +41,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/FullScreenAddressbookFragment;->_abmImage:Landroid/widget/ImageView;
 
     .line 31
-    const v0, 0x7f1001ea
+    const v0, 0x7f1001eb
 
     const-string v1, "field \'_abmPhoneNumberField\'"
 
@@ -101,7 +101,7 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 42
-    const v0, 0x7f1001e6
+    const v0, 0x7f1001e7
 
     const-string v1, "method \'onNotNowButtonClick\'"
 

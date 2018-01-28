@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Lkik/android/widget/RobotoTextView$a;
 
 
 # annotations
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field private a:Lkik/android/chat/vm/messaging/IMessageViewModel;
+.field private a:Lkik/android/chat/vm/messaging/er;
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 217
+    .line 116
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -34,14 +34,14 @@
 
 
 # virtual methods
-.method public final a(Lkik/android/chat/vm/messaging/IMessageViewModel;)Lkik/android/e/cg$a;
+.method public final a(Lkik/android/chat/vm/messaging/er;)Lkik/android/e/cg$a;
     .locals 0
 
     .prologue
-    .line 220
-    iput-object p1, p0, Lkik/android/e/cg$a;->a:Lkik/android/chat/vm/messaging/IMessageViewModel;
+    .line 119
+    iput-object p1, p0, Lkik/android/e/cg$a;->a:Lkik/android/chat/vm/messaging/er;
 
-    .line 221
+    .line 120
     if-nez p1, :cond_0
 
     const/4 p0, 0x0
@@ -50,15 +50,15 @@
     return-object p0
 .end method
 
-.method public final run()V
+.method public final a(Ljava/lang/String;)V
     .locals 1
 
     .prologue
-    .line 225
-    iget-object v0, p0, Lkik/android/e/cg$a;->a:Lkik/android/chat/vm/messaging/IMessageViewModel;
+    .line 124
+    iget-object v0, p0, Lkik/android/e/cg$a;->a:Lkik/android/chat/vm/messaging/er;
 
-    invoke-interface {v0}, Lkik/android/chat/vm/messaging/IMessageViewModel;->n()V
+    invoke-interface {v0, p1}, Lkik/android/chat/vm/messaging/er;->c(Ljava/lang/String;)V
 
-    .line 226
+    .line 125
     return-void
 .end method

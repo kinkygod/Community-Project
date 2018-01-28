@@ -60,7 +60,7 @@
 
     .line 676
     :pswitch_1
-    invoke-static {}, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->f_()V
+    invoke-static {}, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->g_()V
 
     goto :goto_0
 

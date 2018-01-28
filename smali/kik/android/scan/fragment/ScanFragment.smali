@@ -18,79 +18,79 @@
 
 .field protected _animationContainer:Landroid/view/View;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1002c7
+        value = 0x7f1002c3
     .end annotation
 .end field
 
 .field protected _callToActionTextView:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1003d4
+        value = 0x7f1003d0
     .end annotation
 .end field
 
 .field protected _cameraBlurView:Landroid/widget/ImageView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1003d1
+        value = 0x7f1003cd
     .end annotation
 .end field
 
 .field protected _cameraErrorCover:Landroid/view/View;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f100175
+        value = 0x7f100176
     .end annotation
 .end field
 
 .field protected _errorImage:Landroid/view/View;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1003d7
+        value = 0x7f1003d3
     .end annotation
 .end field
 
 .field protected _errorRetryButton:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1003da
+        value = 0x7f1003d6
     .end annotation
 .end field
 
 .field protected _errorText:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1003d9
+        value = 0x7f1003d5
     .end annotation
 .end field
 
 .field protected _errorTitle:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1003d8
+        value = 0x7f1003d4
     .end annotation
 .end field
 
 .field protected _loadingContainer:Landroid/view/View;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1003d5
+        value = 0x7f1003d1
     .end annotation
 .end field
 
 .field protected _progress:Landroid/widget/ProgressBar;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1003d6
+        value = 0x7f1003d2
     .end annotation
 .end field
 
 .field protected _resultImageView:Landroid/widget/ImageView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1003d2
+        value = 0x7f1003ce
     .end annotation
 .end field
 
 .field protected _scanContainer:Landroid/view/ViewGroup;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1003d0
+        value = 0x7f1003cc
     .end annotation
 .end field
 
 .field protected _scanFinder:Lkik/android/scan/widget/ScannerViewFinder;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1003d3
+        value = 0x7f1003cf
     .end annotation
 .end field
 
@@ -104,7 +104,7 @@
     .end annotation
 .end field
 
-.field c:Lkik/core/interfaces/w;
+.field c:Lkik/core/interfaces/v;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -665,7 +665,7 @@
 
     iget-object v1, p0, Lkik/android/scan/fragment/ScanFragment;->_errorRetryButton:Landroid/widget/TextView;
 
-    invoke-static {v0, v1}, Lkik/android/util/ca;->a(Ljava/lang/CharSequence;Landroid/widget/TextView;)V
+    invoke-static {v0, v1}, Lkik/android/util/cb;->a(Ljava/lang/CharSequence;Landroid/widget/TextView;)V
 
     .line 436
     iget-object v0, p0, Lkik/android/scan/fragment/ScanFragment;->_errorRetryButton:Landroid/widget/TextView;
@@ -783,16 +783,16 @@
     return-void
 .end method
 
-.method static synthetic a(Lkik/android/scan/fragment/ScanFragment;Lkik/android/chat/vm/n;)V
+.method static synthetic a(Lkik/android/scan/fragment/ScanFragment;Lkik/android/chat/vm/p;)V
     .locals 1
 
     .prologue
     .line 548
-    invoke-virtual {p0}, Lkik/android/scan/fragment/ScanFragment;->getNavigator()Lkik/android/chat/vm/aw;
+    invoke-virtual {p0}, Lkik/android/scan/fragment/ScanFragment;->getNavigator()Lkik/android/chat/vm/ay;
 
     move-result-object v0
 
-    invoke-interface {v0, p1}, Lkik/android/chat/vm/aw;->a(Lkik/android/chat/vm/ad;)V
+    invoke-interface {v0, p1}, Lkik/android/chat/vm/ay;->a(Lkik/android/chat/vm/ae;)V
 
     .line 549
     invoke-virtual {p0}, Lkik/android/scan/fragment/ScanFragment;->finish()V
@@ -801,16 +801,16 @@
     return-void
 .end method
 
-.method static synthetic a(Lkik/android/scan/fragment/ScanFragment;Lkik/android/chat/vm/profile/cv;)V
+.method static synthetic a(Lkik/android/scan/fragment/ScanFragment;Lkik/android/chat/vm/profile/di;)V
     .locals 2
 
     .prologue
     .line 537
-    invoke-virtual {p0}, Lkik/android/scan/fragment/ScanFragment;->getNavigator()Lkik/android/chat/vm/aw;
+    invoke-virtual {p0}, Lkik/android/scan/fragment/ScanFragment;->getNavigator()Lkik/android/chat/vm/ay;
 
     move-result-object v0
 
-    invoke-interface {v0, p1}, Lkik/android/chat/vm/aw;->a(Lkik/android/chat/vm/profile/cv;)Lrx/d;
+    invoke-interface {v0, p1}, Lkik/android/chat/vm/ay;->a(Lkik/android/chat/vm/profile/di;)Lrx/d;
 
     move-result-object v0
 
@@ -854,9 +854,9 @@
     move-result-object v1
 
     .line 8303
-    iget-object v2, p0, Lkik/android/scan/fragment/ScanFragment;->c:Lkik/core/interfaces/w;
+    iget-object v2, p0, Lkik/android/scan/fragment/ScanFragment;->c:Lkik/core/interfaces/v;
 
-    invoke-interface {v2, v0}, Lkik/core/interfaces/w;->a(Ljava/lang/String;)Lkik/core/datatypes/l;
+    invoke-interface {v2, v0}, Lkik/core/interfaces/v;->a(Ljava/lang/String;)Lkik/core/datatypes/l;
 
     move-result-object v2
 
@@ -882,9 +882,9 @@
 
     .line 8309
     :cond_1
-    iget-object v2, p0, Lkik/android/scan/fragment/ScanFragment;->c:Lkik/core/interfaces/w;
+    iget-object v2, p0, Lkik/android/scan/fragment/ScanFragment;->c:Lkik/core/interfaces/v;
 
-    invoke-interface {v2, v0}, Lkik/core/interfaces/w;->e(Ljava/lang/String;)Lcom/kik/events/Promise;
+    invoke-interface {v2, v0}, Lkik/core/interfaces/v;->e(Ljava/lang/String;)Lcom/kik/events/Promise;
 
     move-result-object v0
 
@@ -1014,17 +1014,17 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Lkik/android/chat/vm/profile/dc;->a(Lcom/kik/core/network/xmpp/jid/a;)Lkik/android/chat/vm/profile/dc;
+    invoke-static {v1}, Lkik/android/chat/vm/profile/dp;->a(Lcom/kik/core/network/xmpp/jid/a;)Lkik/android/chat/vm/profile/dp;
 
     move-result-object v1
 
     .line 531
-    invoke-virtual {v1, v0}, Lkik/android/chat/vm/profile/dc;->a(Lkik/core/datatypes/MemberPermissions;)Lkik/android/chat/vm/profile/dc;
+    invoke-virtual {v1, v0}, Lkik/android/chat/vm/profile/dp;->a(Lkik/core/datatypes/MemberPermissions;)Lkik/android/chat/vm/profile/dp;
 
     move-result-object v0
 
     .line 532
-    invoke-virtual {v0, p2}, Lkik/android/chat/vm/profile/dc;->a(Lkik/android/scan/a/c;)Lkik/android/chat/vm/profile/dc;
+    invoke-virtual {v0, p2}, Lkik/android/chat/vm/profile/dp;->a(Lkik/android/scan/a/c;)Lkik/android/chat/vm/profile/dp;
 
     move-result-object v0
 
@@ -1033,19 +1033,19 @@
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Lkik/android/chat/vm/profile/dc;->a(Z)Lkik/android/chat/vm/profile/dc;
+    invoke-virtual {v0, v1}, Lkik/android/chat/vm/profile/dp;->a(Z)Lkik/android/chat/vm/profile/dp;
 
     move-result-object v0
 
     .line 534
-    invoke-virtual {v0}, Lkik/android/chat/vm/profile/dc;->b()Lkik/android/chat/vm/profile/cv;
+    invoke-virtual {v0}, Lkik/android/chat/vm/profile/dp;->b()Lkik/android/chat/vm/profile/di;
 
     move-result-object v0
 
     .line 536
     iget-object v1, p0, Lkik/android/scan/fragment/ScanFragment;->_animationContainer:Landroid/view/View;
 
-    invoke-static {p0, v0}, Lkik/android/scan/fragment/a;->a(Lkik/android/scan/fragment/ScanFragment;Lkik/android/chat/vm/profile/cv;)Ljava/lang/Runnable;
+    invoke-static {p0, v0}, Lkik/android/scan/fragment/a;->a(Lkik/android/scan/fragment/ScanFragment;Lkik/android/chat/vm/profile/di;)Ljava/lang/Runnable;
 
     move-result-object v0
 
@@ -1081,7 +1081,7 @@
     if-nez v0, :cond_5
 
     .line 1581
-    iget-object v0, p0, Lkik/android/scan/fragment/ScanFragment;->c:Lkik/core/interfaces/w;
+    iget-object v0, p0, Lkik/android/scan/fragment/ScanFragment;->c:Lkik/core/interfaces/v;
 
     invoke-virtual {p1}, Lkik/core/datatypes/l;->j()Lkik/core/datatypes/k;
 
@@ -1154,22 +1154,22 @@
 
     .line 1581
     :cond_4
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/w;->a(Lkik/core/datatypes/k;Ljava/util/HashMap;)Lcom/kik/events/Promise;
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/v;->a(Lkik/core/datatypes/k;Ljava/util/HashMap;)Lcom/kik/events/Promise;
 
     .line 546
     :cond_5
-    new-instance v0, Lkik/android/chat/vm/n;
+    new-instance v0, Lkik/android/chat/vm/p;
 
     invoke-virtual {p1}, Lkik/core/datatypes/l;->k()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lkik/android/chat/vm/n;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Lkik/android/chat/vm/p;-><init>(Ljava/lang/String;)V
 
     .line 547
     iget-object v1, p0, Lkik/android/scan/fragment/ScanFragment;->_animationContainer:Landroid/view/View;
 
-    invoke-static {p0, v0}, Lkik/android/scan/fragment/b;->a(Lkik/android/scan/fragment/ScanFragment;Lkik/android/chat/vm/n;)Ljava/lang/Runnable;
+    invoke-static {p0, v0}, Lkik/android/scan/fragment/b;->a(Lkik/android/scan/fragment/ScanFragment;Lkik/android/chat/vm/p;)Ljava/lang/Runnable;
 
     move-result-object v0
 
@@ -1359,9 +1359,9 @@
     move-result-object v0
 
     .line 7263
-    iget-object v1, p0, Lkik/android/scan/fragment/ScanFragment;->c:Lkik/core/interfaces/w;
+    iget-object v1, p0, Lkik/android/scan/fragment/ScanFragment;->c:Lkik/core/interfaces/v;
 
-    invoke-interface {v1, v0}, Lkik/core/interfaces/w;->a(Ljava/lang/String;)Lkik/core/datatypes/l;
+    invoke-interface {v1, v0}, Lkik/core/interfaces/v;->a(Ljava/lang/String;)Lkik/core/datatypes/l;
 
     move-result-object v1
 
@@ -1385,9 +1385,9 @@
 
     .line 7269
     :cond_7
-    iget-object v1, p0, Lkik/android/scan/fragment/ScanFragment;->c:Lkik/core/interfaces/w;
+    iget-object v1, p0, Lkik/android/scan/fragment/ScanFragment;->c:Lkik/core/interfaces/v;
 
-    invoke-interface {v1, v0}, Lkik/core/interfaces/w;->e(Ljava/lang/String;)Lcom/kik/events/Promise;
+    invoke-interface {v1, v0}, Lkik/core/interfaces/v;->e(Ljava/lang/String;)Lcom/kik/events/Promise;
 
     move-result-object v0
 
@@ -1812,7 +1812,7 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
     .line 828
     :cond_0
@@ -1962,7 +1962,7 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ca;->g([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->g([Landroid/view/View;)V
 
     .line 924
     :cond_0
@@ -2452,7 +2452,7 @@
     const/4 v4, -0x1
 
     .line 228
-    const v0, 0x7f040157
+    const v0, 0x7f04015c
 
     invoke-virtual {p1, v0, p2, v5}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
@@ -2552,7 +2552,7 @@
 
     aput-object v3, v1, v2
 
-    invoke-static {v1}, Lkik/android/util/ca;->g([Landroid/view/View;)V
+    invoke-static {v1}, Lkik/android/util/cb;->g([Landroid/view/View;)V
 
     .line 248
     return-object v0
@@ -2676,7 +2676,7 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
     .line 916
     :goto_0

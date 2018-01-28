@@ -1,41 +1,43 @@
-.class public abstract Lkik/android/chat/fragment/fn;
-.super Landroid/support/v7/widget/RecyclerView$ViewHolder;
-.source "SourceFile"
+.class final synthetic Lkik/android/chat/fragment/fn;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
 
 
-# static fields
-.field public static final a:I
+# instance fields
+.field private final a:Lkik/android/chat/fragment/SuggestInterestDialogFragment;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method private constructor <init>(Lkik/android/chat/fragment/SuggestInterestDialogFragment;)V
+    .locals 0
 
-    .prologue
-    .line 16
-    const/high16 v0, 0x41200000    # 10.0f
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    invoke-static {v0}, Lkik/android/chat/KikApplication;->a(F)I
-
-    move-result v0
-
-    sput v0, Lkik/android/chat/fragment/fn;->a:I
+    iput-object p1, p0, Lkik/android/chat/fragment/fn;->a:Lkik/android/chat/fragment/SuggestInterestDialogFragment;
 
     return-void
 .end method
 
-.method public constructor <init>(Landroid/view/View;)V
-    .locals 0
+.method public static a(Lkik/android/chat/fragment/SuggestInterestDialogFragment;)Landroid/view/View$OnClickListener;
+    .locals 1
 
-    .prologue
-    .line 19
-    invoke-direct {p0, p1}, Landroid/support/v7/widget/RecyclerView$ViewHolder;-><init>(Landroid/view/View;)V
+    new-instance v0, Lkik/android/chat/fragment/fn;
 
-    .line 20
-    return-void
+    invoke-direct {v0, p0}, Lkik/android/chat/fragment/fn;-><init>(Lkik/android/chat/fragment/SuggestInterestDialogFragment;)V
+
+    return-object v0
 .end method
 
 
 # virtual methods
-.method public abstract a(Lcom/kik/messagepath/model/Keyboards$SuggestedResponseItem;)V
+.method public final onClick(Landroid/view/View;)V
+    .locals 1
+
+    iget-object v0, p0, Lkik/android/chat/fragment/fn;->a:Lkik/android/chat/fragment/SuggestInterestDialogFragment;
+
+    invoke-static {v0}, Lkik/android/chat/fragment/SuggestInterestDialogFragment;->a(Lkik/android/chat/fragment/SuggestInterestDialogFragment;)V
+
+    return-void
 .end method

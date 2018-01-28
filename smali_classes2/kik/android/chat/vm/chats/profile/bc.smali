@@ -1,38 +1,45 @@
-.class public interface abstract Lkik/android/chat/vm/chats/profile/bc;
+.class final synthetic Lkik/android/chat/vm/chats/profile/bc;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/vm/IListViewModel;
+.implements Lrx/functions/g;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lkik/android/chat/vm/IListViewModel",
-        "<",
-        "Lkik/android/chat/vm/chats/profile/bb;",
-        ">;"
-    }
-.end annotation
+# instance fields
+.field private final a:Lkik/android/chat/vm/chats/profile/au;
+
+
+# direct methods
+.method private constructor <init>(Lkik/android/chat/vm/chats/profile/au;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lkik/android/chat/vm/chats/profile/bc;->a:Lkik/android/chat/vm/chats/profile/au;
+
+    return-void
+.end method
+
+.method public static a(Lkik/android/chat/vm/chats/profile/au;)Lrx/functions/g;
+    .locals 1
+
+    new-instance v0, Lkik/android/chat/vm/chats/profile/bc;
+
+    invoke-direct {v0, p0}, Lkik/android/chat/vm/chats/profile/bc;-><init>(Lkik/android/chat/vm/chats/profile/au;)V
+
+    return-object v0
+.end method
 
 
 # virtual methods
-.method public abstract I_()Lrx/d;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/d",
-            "<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
-.end method
+.method public final call(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
-.method public abstract J_()V
-.end method
+    iget-object v0, p0, Lkik/android/chat/vm/chats/profile/bc;->a:Lkik/android/chat/vm/chats/profile/au;
 
-.method public abstract e()V
+    invoke-static {v0}, Lkik/android/chat/vm/chats/profile/au;->a(Lkik/android/chat/vm/chats/profile/au;)Lkik/core/datatypes/ab;
+
+    move-result-object v0
+
+    return-object v0
 .end method

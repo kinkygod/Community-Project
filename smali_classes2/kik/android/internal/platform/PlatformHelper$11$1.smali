@@ -86,9 +86,9 @@
 
     iget-object v7, p0, Lkik/android/internal/platform/PlatformHelper$11$1;->b:Lkik/android/internal/platform/PlatformHelper$11;
 
-    iget-object v7, v7, Lkik/android/internal/platform/PlatformHelper$11;->c:Lkik/core/interfaces/ae;
+    iget-object v7, v7, Lkik/android/internal/platform/PlatformHelper$11;->c:Lkik/core/interfaces/ad;
 
-    invoke-static {v3, v1, v4, v6, v7}, Lkik/android/internal/platform/PlatformHelper;->a(Lkik/android/internal/platform/PlatformHelper;Ljava/lang/String;Lkik/core/datatypes/messageExtensions/ContentMessage;Landroid/content/Context;Lkik/core/interfaces/ae;)Z
+    invoke-static {v3, v1, v4, v6, v7}, Lkik/android/internal/platform/PlatformHelper;->a(Lkik/android/internal/platform/PlatformHelper;Ljava/lang/String;Lkik/core/datatypes/messageExtensions/ContentMessage;Landroid/content/Context;Lkik/core/interfaces/ad;)Z
 
     move-result v1
 
@@ -143,11 +143,11 @@
 
     iget-object v4, p0, Lkik/android/internal/platform/PlatformHelper$11$1;->b:Lkik/android/internal/platform/PlatformHelper$11;
 
-    iget-object v4, v4, Lkik/android/internal/platform/PlatformHelper$11;->f:Lkik/core/interfaces/w;
+    iget-object v4, v4, Lkik/android/internal/platform/PlatformHelper$11;->f:Lkik/core/interfaces/v;
 
     move-object v6, v5
 
-    invoke-static/range {v0 .. v6}, Lkik/android/internal/platform/PlatformHelper;->a(Ljava/lang/String;Landroid/app/Activity;Lcom/kik/ui/fragment/FragmentBase$FragmentBundle$StackType;ZLkik/core/interfaces/w;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static/range {v0 .. v6}, Lkik/android/internal/platform/PlatformHelper;->a(Ljava/lang/String;Landroid/app/Activity;Lcom/kik/ui/fragment/FragmentBase$FragmentBundle$StackType;ZLkik/core/interfaces/v;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2288
     iget-object v0, p0, Lkik/android/internal/platform/PlatformHelper$11$1;->b:Lkik/android/internal/platform/PlatformHelper$11;

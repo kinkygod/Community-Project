@@ -7,7 +7,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<T::",
-        "Lcom/kik/metrics/b/s;",
+        "Lcom/kik/metrics/b/t;",
         ">",
         "Ljava/lang/Object;"
     }
@@ -15,11 +15,11 @@
 
 
 # virtual methods
-.method public abstract a()Lcom/kik/metrics/b/s;
+.method public abstract a()Lcom/kik/metrics/b/t;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lcom/kik/metrics/b/s;"
+            "Lcom/kik/metrics/b/t;"
         }
     .end annotation
 .end method

@@ -2,7 +2,7 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lcom/kik/events/p;
+.implements Landroid/content/DialogInterface$OnClickListener;
 
 
 # instance fields
@@ -20,7 +20,7 @@
     return-void
 .end method
 
-.method public static a(Lkik/android/chat/fragment/MissedConversationsFragment;)Lcom/kik/events/p;
+.method public static a(Lkik/android/chat/fragment/MissedConversationsFragment;)Landroid/content/DialogInterface$OnClickListener;
     .locals 1
 
     new-instance v0, Lkik/android/chat/fragment/es;
@@ -32,16 +32,12 @@
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final onClick(Landroid/content/DialogInterface;I)V
     .locals 1
 
     iget-object v0, p0, Lkik/android/chat/fragment/es;->a:Lkik/android/chat/fragment/MissedConversationsFragment;
 
-    check-cast p1, Ljava/lang/Boolean;
+    invoke-static {v0}, Lkik/android/chat/fragment/MissedConversationsFragment;->a(Lkik/android/chat/fragment/MissedConversationsFragment;)V
 
-    invoke-static {v0, p1}, Lkik/android/chat/fragment/MissedConversationsFragment;->a(Lkik/android/chat/fragment/MissedConversationsFragment;Ljava/lang/Boolean;)Ljava/lang/Boolean;
-
-    move-result-object v0
-
-    return-object v0
+    return-void
 .end method

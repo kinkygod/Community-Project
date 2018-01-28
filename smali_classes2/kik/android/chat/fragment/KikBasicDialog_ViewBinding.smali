@@ -22,7 +22,7 @@
     iput-object p1, p0, Lkik/android/chat/fragment/KikBasicDialog_ViewBinding;->a:Lkik/android/chat/fragment/KikBasicDialog;
 
     .line 23
-    const v0, 0x7f1001d0
+    const v0, 0x7f1001d1
 
     const-string v1, "field \'_dialogImage\'"
 
@@ -37,7 +37,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/KikBasicDialog;->_dialogImage:Landroid/widget/ImageView;
 
     .line 24
-    const v0, 0x7f1001d1
+    const v0, 0x7f1001d2
 
     const-string v1, "field \'_title\'"
 
@@ -52,7 +52,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/KikBasicDialog;->_title:Lkik/android/widget/RobotoTextView;
 
     .line 25
-    const v0, 0x7f1001d2
+    const v0, 0x7f1001d3
 
     const-string v1, "field \'_body\'"
 
@@ -67,7 +67,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/KikBasicDialog;->_body:Lkik/android/widget/RobotoTextView;
 
     .line 26
-    const v0, 0x7f1001d3
+    const v0, 0x7f1001d4
 
     const-string v1, "field \'_positiveButton\'"
 
@@ -82,7 +82,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/KikBasicDialog;->_positiveButton:Landroid/widget/Button;
 
     .line 27
-    const v0, 0x7f1001d4
+    const v0, 0x7f1001d5
 
     const-string v1, "field \'_negativeButton\'"
 

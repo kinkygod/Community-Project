@@ -4,32 +4,48 @@
 
 
 # instance fields
-.field private final a:Landroid/content/res/Resources;
+.field private final a:Lcom/kik/core/a/h;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/res/Resources;)V
+.method public constructor <init>(Lcom/kik/core/a/h;)V
     .locals 0
 
     .prologue
-    .line 18
+    .line 24
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 19
-    iput-object p1, p0, Lcom/kik/f/cw;->a:Landroid/content/res/Resources;
+    .line 25
+    iput-object p1, p0, Lcom/kik/f/cw;->a:Lcom/kik/core/a/h;
 
-    .line 20
+    .line 26
     return-void
+.end method
+
+.method public static a(Lkik/core/interfaces/ICommunication;)Lkik/core/xiphias/n;
+    .locals 1
+    .annotation runtime Ljavax/inject/Singleton;
+    .end annotation
+
+    .prologue
+    .line 39
+    new-instance v0, Lkik/core/xiphias/u;
+
+    invoke-direct {v0, p0}, Lkik/core/xiphias/u;-><init>(Lkik/core/interfaces/ICommunication;)V
+
+    return-object v0
 .end method
 
 
 # virtual methods
-.method final a()Landroid/content/res/Resources;
+.method final a()Lcom/kik/core/a/h;
     .locals 1
+    .annotation runtime Ljavax/inject/Singleton;
+    .end annotation
 
     .prologue
-    .line 25
-    iget-object v0, p0, Lcom/kik/f/cw;->a:Landroid/content/res/Resources;
+    .line 32
+    iget-object v0, p0, Lcom/kik/f/cw;->a:Lcom/kik/core/a/h;
 
     return-object v0
 .end method

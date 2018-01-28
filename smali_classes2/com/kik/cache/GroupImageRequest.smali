@@ -29,11 +29,11 @@
 
 .field private final _mixpanel:Lcom/kik/android/Mixpanel;
 
-.field private final _profile:Lkik/core/interfaces/w;
+.field private final _profile:Lkik/core/interfaces/v;
 
 
 # direct methods
-.method protected constructor <init>(Lkik/core/datatypes/p;Ljava/lang/String;Lcom/android/volley/h$b;IILandroid/graphics/Bitmap$Config;Lcom/android/volley/h$a;Lkik/core/interfaces/w;ZLcom/kik/cache/KikVolleyImageLoader;Lcom/kik/android/Mixpanel;)V
+.method protected constructor <init>(Lkik/core/datatypes/p;Ljava/lang/String;Lcom/android/volley/h$b;IILandroid/graphics/Bitmap$Config;Lcom/android/volley/h$a;Lkik/core/interfaces/v;ZLcom/kik/cache/KikVolleyImageLoader;Lcom/kik/android/Mixpanel;)V
     .locals 1
 
     .prologue
@@ -48,7 +48,7 @@
     iput-object v0, p0, Lcom/kik/cache/GroupImageRequest;->_decodeLock:Ljava/lang/Object;
 
     .line 45
-    iput-object p8, p0, Lcom/kik/cache/GroupImageRequest;->_profile:Lkik/core/interfaces/w;
+    iput-object p8, p0, Lcom/kik/cache/GroupImageRequest;->_profile:Lkik/core/interfaces/v;
 
     .line 46
     iput-boolean p9, p0, Lcom/kik/cache/GroupImageRequest;->_largeGroupFlowerPic:Z
@@ -399,7 +399,7 @@
     goto :goto_0
 .end method
 
-.method public static makeGroupImageRequest(Lkik/core/datatypes/p;Lcom/android/volley/h$b;IILandroid/graphics/Bitmap$Config;Lcom/android/volley/h$a;Lkik/core/interfaces/w;ZLcom/kik/cache/KikVolleyImageLoader;Lcom/kik/android/Mixpanel;)Lcom/kik/cache/GroupImageRequest;
+.method public static makeGroupImageRequest(Lkik/core/datatypes/p;Lcom/android/volley/h$b;IILandroid/graphics/Bitmap$Config;Lcom/android/volley/h$a;Lkik/core/interfaces/v;ZLcom/kik/cache/KikVolleyImageLoader;Lcom/kik/android/Mixpanel;)Lcom/kik/cache/GroupImageRequest;
     .locals 12
 
     .prologue
@@ -431,7 +431,7 @@
 
     move-object/from16 v11, p9
 
-    invoke-direct/range {v0 .. v11}, Lcom/kik/cache/GroupImageRequest;-><init>(Lkik/core/datatypes/p;Ljava/lang/String;Lcom/android/volley/h$b;IILandroid/graphics/Bitmap$Config;Lcom/android/volley/h$a;Lkik/core/interfaces/w;ZLcom/kik/cache/KikVolleyImageLoader;Lcom/kik/android/Mixpanel;)V
+    invoke-direct/range {v0 .. v11}, Lcom/kik/cache/GroupImageRequest;-><init>(Lkik/core/datatypes/p;Ljava/lang/String;Lcom/android/volley/h$b;IILandroid/graphics/Bitmap$Config;Lcom/android/volley/h$a;Lkik/core/interfaces/v;ZLcom/kik/cache/KikVolleyImageLoader;Lcom/kik/android/Mixpanel;)V
 
     return-object v0
 .end method
@@ -470,11 +470,11 @@
     check-cast v0, Ljava/lang/String;
 
     .line 133
-    iget-object v3, p0, Lcom/kik/cache/GroupImageRequest;->_profile:Lkik/core/interfaces/w;
+    iget-object v3, p0, Lcom/kik/cache/GroupImageRequest;->_profile:Lkik/core/interfaces/v;
 
     const/4 v4, 0x1
 
-    invoke-interface {v3, v0, v4}, Lkik/core/interfaces/w;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
+    invoke-interface {v3, v0, v4}, Lkik/core/interfaces/v;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
 
     move-result-object v0
 

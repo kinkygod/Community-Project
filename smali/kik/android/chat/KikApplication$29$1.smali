@@ -20,22 +20,22 @@
 # instance fields
 .field final synthetic a:J
 
-.field final synthetic b:Lkik/core/chat/profile/i$c;
+.field final synthetic b:Lkik/core/chat/profile/n$c;
 
 .field final synthetic c:Lkik/android/chat/KikApplication$29;
 
 
 # direct methods
-.method constructor <init>(Lkik/android/chat/KikApplication$29;JLkik/core/chat/profile/i$c;)V
+.method constructor <init>(Lkik/android/chat/KikApplication$29;JLkik/core/chat/profile/n$c;)V
     .locals 0
 
     .prologue
-    .line 442
+    .line 444
     iput-object p1, p0, Lkik/android/chat/KikApplication$29$1;->c:Lkik/android/chat/KikApplication$29;
 
     iput-wide p2, p0, Lkik/android/chat/KikApplication$29$1;->a:J
 
-    iput-object p4, p0, Lkik/android/chat/KikApplication$29$1;->b:Lkik/core/chat/profile/i$c;
+    iput-object p4, p0, Lkik/android/chat/KikApplication$29$1;->b:Lkik/core/chat/profile/n$c;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -50,7 +50,7 @@
     .prologue
     const/high16 v9, 0x447a0000    # 1000.0f
 
-    .line 446
+    .line 448
     invoke-static {}, Lkik/core/util/v;->b()J
 
     move-result-wide v0
@@ -59,7 +59,7 @@
 
     move-result-object v8
 
-    .line 447
+    .line 449
     invoke-static {}, Lkik/core/util/v;->d()J
 
     move-result-wide v0
@@ -68,16 +68,16 @@
 
     move-result-object v0
 
-    .line 448
+    .line 450
     iget-wide v2, p0, Lkik/android/chat/KikApplication$29$1;->a:J
 
-    iget-object v1, p0, Lkik/android/chat/KikApplication$29$1;->b:Lkik/core/chat/profile/i$c;
+    iget-object v1, p0, Lkik/android/chat/KikApplication$29$1;->b:Lkik/core/chat/profile/n$c;
 
-    iget-wide v4, v1, Lkik/core/chat/profile/i$c;->b:J
+    iget-wide v4, v1, Lkik/core/chat/profile/n$c;->b:J
 
     sub-long v4, v2, v4
 
-    .line 450
+    .line 452
     invoke-virtual {v0}, Ljava/lang/Long;->longValue()J
 
     move-result-wide v0
@@ -88,7 +88,7 @@
 
     if-nez v0, :cond_0
 
-    .line 451
+    .line 453
     iget-object v0, p0, Lkik/android/chat/KikApplication$29$1;->c:Lkik/android/chat/KikApplication$29;
 
     iget-object v0, v0, Lkik/android/chat/KikApplication$29;->a:Lkik/android/chat/KikApplication;
@@ -103,9 +103,9 @@
 
     sget-object v1, Lcom/kik/clientmetrics/model/Clientmetrics$ClientPacketEventType;->MESSAGE_SENT_CONFIRMED:Lcom/kik/clientmetrics/model/Clientmetrics$ClientPacketEventType;
 
-    iget-object v2, p0, Lkik/android/chat/KikApplication$29$1;->b:Lkik/core/chat/profile/i$c;
+    iget-object v2, p0, Lkik/android/chat/KikApplication$29$1;->b:Lkik/core/chat/profile/n$c;
 
-    iget-object v2, v2, Lkik/core/chat/profile/i$c;->a:Ljava/lang/String;
+    iget-object v2, v2, Lkik/core/chat/profile/n$c;->a:Ljava/lang/String;
 
     const-string v3, "t"
 
@@ -113,18 +113,18 @@
 
     const-string v7, "true"
 
-    .line 452
+    .line 454
     invoke-virtual {v8}, Ljava/lang/Long;->longValue()J
 
     move-result-wide v8
 
     invoke-virtual/range {v0 .. v9}, Lcom/kik/clientmetrics/f;->a(Lcom/kik/clientmetrics/model/Clientmetrics$ClientPacketEventType;Ljava/lang/String;Ljava/lang/String;JLjava/lang/String;Ljava/lang/String;J)V
 
-    .line 462
+    .line 464
     :goto_0
     return-void
 
-    .line 455
+    .line 457
     :cond_0
     iget-object v0, p0, Lkik/android/chat/KikApplication$29$1;->c:Lkik/android/chat/KikApplication$29;
 
@@ -140,21 +140,21 @@
 
     sget-object v1, Lcom/kik/clientmetrics/model/Clientmetrics$ClientPacketEventType;->MESSAGE_SENT_CONFIRMED:Lcom/kik/clientmetrics/model/Clientmetrics$ClientPacketEventType;
 
-    iget-object v2, p0, Lkik/android/chat/KikApplication$29$1;->b:Lkik/core/chat/profile/i$c;
+    iget-object v2, p0, Lkik/android/chat/KikApplication$29$1;->b:Lkik/core/chat/profile/n$c;
 
-    iget-object v2, v2, Lkik/core/chat/profile/i$c;->a:Ljava/lang/String;
+    iget-object v2, v2, Lkik/core/chat/profile/n$c;->a:Ljava/lang/String;
 
     const-string v3, "t"
 
-    .line 457
+    .line 459
     invoke-static {}, Lkik/core/util/v;->b()J
 
     move-result-wide v6
 
-    .line 456
+    .line 458
     invoke-virtual/range {v0 .. v7}, Lcom/kik/clientmetrics/f;->a(Lcom/kik/clientmetrics/model/Clientmetrics$ClientPacketEventType;Ljava/lang/String;Ljava/lang/String;JJ)V
 
-    .line 459
+    .line 461
     iget-object v0, p0, Lkik/android/chat/KikApplication$29$1;->c:Lkik/android/chat/KikApplication$29;
 
     iget-object v0, v0, Lkik/android/chat/KikApplication$29;->a:Lkik/android/chat/KikApplication;
@@ -171,7 +171,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/kik/android/Mixpanel;->a(Ljava/lang/String;FF)Lcom/kik/android/Mixpanel;
 
-    .line 460
+    .line 462
     iget-object v0, p0, Lkik/android/chat/KikApplication$29$1;->c:Lkik/android/chat/KikApplication$29;
 
     iget-object v0, v0, Lkik/android/chat/KikApplication$29;->a:Lkik/android/chat/KikApplication;

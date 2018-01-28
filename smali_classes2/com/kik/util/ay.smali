@@ -41,27 +41,27 @@
 
     check-cast p1, Ljava/lang/Integer;
 
-    .line 1633
-    invoke-virtual {v0}, Landroid/view/View;->getPaddingLeft()I
+    .line 1601
+    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
 
     move-result v1
 
-    .line 1634
+    .line 1602
     invoke-virtual {v0}, Landroid/view/View;->getPaddingTop()I
 
     move-result v2
 
-    .line 1635
-    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
+    .line 1603
+    invoke-virtual {v0}, Landroid/view/View;->getPaddingRight()I
 
     move-result v3
 
-    .line 1636
+    .line 1604
     invoke-virtual {v0}, Landroid/view/View;->getPaddingBottom()I
 
     move-result v4
 
-    .line 1632
+    .line 1600
     invoke-virtual {v0, v1, v2, v3, v4}, Landroid/view/View;->setPadding(IIII)V
 
     .line 0

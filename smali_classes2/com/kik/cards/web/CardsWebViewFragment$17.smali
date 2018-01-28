@@ -28,7 +28,7 @@
     .locals 0
 
     .prologue
-    .line 812
+    .line 846
     iput-object p1, p0, Lcom/kik/cards/web/CardsWebViewFragment$17;->b:Lcom/kik/cards/web/CardsWebViewFragment;
 
     iput-object p2, p0, Lcom/kik/cards/web/CardsWebViewFragment$17;->a:Ljava/lang/String;
@@ -44,7 +44,7 @@
     .locals 4
 
     .prologue
-    .line 816
+    .line 850
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$17;->b:Lcom/kik/cards/web/CardsWebViewFragment;
 
     new-instance v1, Lkik/android/chat/fragment/ProgressDialogFragment;
@@ -57,7 +57,7 @@
 
     invoke-static {v0, v1}, Lcom/kik/cards/web/CardsWebViewFragment;->a(Lcom/kik/cards/web/CardsWebViewFragment;Lkik/android/chat/fragment/ProgressDialogFragment;)Lkik/android/chat/fragment/ProgressDialogFragment;
 
-    .line 817
+    .line 851
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$17;->b:Lcom/kik/cards/web/CardsWebViewFragment;
 
     iget-object v1, p0, Lcom/kik/cards/web/CardsWebViewFragment$17;->b:Lcom/kik/cards/web/CardsWebViewFragment;
@@ -68,6 +68,6 @@
 
     invoke-virtual {v0, v1}, Lcom/kik/cards/web/CardsWebViewFragment;->replaceDialog(Lkik/android/chat/fragment/KikDialogFragment;)V
 
-    .line 818
+    .line 852
     return-void
 .end method

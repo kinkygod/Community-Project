@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/a/b;
+.implements Ldagger/internal/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/a/b",
+        "Ldagger/internal/b",
         "<",
         "Lkik/android/chat/presentation/a;",
         ">;"
@@ -41,7 +41,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/w;",
+            "Lkik/core/interfaces/v;",
             ">;"
         }
     .end annotation
@@ -98,7 +98,7 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/w;",
+            "Lkik/core/interfaces/v;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -183,7 +183,7 @@
     return-void
 .end method
 
-.method public static a(Lcom/kik/f/a/a;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)La/a/b;
+.method public static a(Lcom/kik/f/a/a;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -195,13 +195,13 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/w;",
+            "Lkik/core/interfaces/v;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
             "Lcom/kik/android/Mixpanel;",
             ">;)",
-            "La/a/b",
+            "Ldagger/internal/b",
             "<",
             "Lkik/android/chat/presentation/a;",
             ">;"
@@ -240,7 +240,7 @@
 
     move-result-object v1
 
-    check-cast v1, Lkik/core/interfaces/w;
+    check-cast v1, Lkik/core/interfaces/v;
 
     iget-object v2, p0, Lcom/kik/f/a/c;->e:Ljavax/inject/Provider;
 
@@ -253,13 +253,13 @@
     .line 2030
     new-instance v3, Lkik/android/chat/presentation/b;
 
-    invoke-direct {v3, v0, v1, v2}, Lkik/android/chat/presentation/b;-><init>(Lcom/kik/cache/KikVolleyImageLoader;Lkik/core/interfaces/w;Lcom/kik/android/Mixpanel;)V
+    invoke-direct {v3, v0, v1, v2}, Lkik/android/chat/presentation/b;-><init>(Lcom/kik/cache/KikVolleyImageLoader;Lkik/core/interfaces/v;Lcom/kik/android/Mixpanel;)V
 
     .line 1044
     const-string v0, "Cannot return null from a non-@Nullable @Provides method"
 
     .line 1043
-    invoke-static {v3, v0}, La/a/c;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {v3, v0}, Ldagger/internal/c;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 

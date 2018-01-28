@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/vm/messaging/en;
+.implements Lkik/android/chat/vm/messaging/ej;
 
 
 # instance fields
@@ -58,10 +58,10 @@
     .end annotation
 
     .prologue
-    .line 59
+    .line 57
     invoke-direct/range {p0 .. p7}, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;-><init>(Lkik/core/datatypes/Message;Ljava/lang/String;Lrx/d;Lrx/d;Lrx/d;Lrx/d;Lrx/d;)V
 
-    .line 61
+    .line 59
     const-class v0, Lkik/core/datatypes/messageExtensions/FriendAttributeMessageAttachment;
 
     invoke-static {p1, v0}, Lkik/core/datatypes/messageExtensions/MessageAttachment;->getAttachment(Lkik/core/datatypes/Message;Ljava/lang/Class;)Lkik/core/datatypes/messageExtensions/MessageAttachment;
@@ -72,7 +72,7 @@
 
     iput-object v0, p0, Lkik/android/chat/vm/messaging/dq;->b:Lkik/core/datatypes/messageExtensions/FriendAttributeMessageAttachment;
 
-    .line 62
+    .line 60
     return-void
 .end method
 
@@ -82,18 +82,18 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 252
-    iget-object v1, p0, Lkik/android/chat/vm/messaging/dq;->i:Lkik/core/interfaces/w;
+    .line 221
+    iget-object v1, p0, Lkik/android/chat/vm/messaging/dq;->i:Lkik/core/interfaces/v;
 
-    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/dq;->z()Ljava/lang/String;
+    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/dq;->A()Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-interface {v1, v2, v0}, Lkik/core/interfaces/w;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
+    invoke-interface {v1, v2, v0}, Lkik/core/interfaces/v;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
 
     move-result-object v1
 
-    .line 253
+    .line 222
     invoke-virtual {p1}, Ljava/lang/Long;->longValue()J
 
     move-result-wide v2
@@ -129,31 +129,11 @@
     goto :goto_0
 .end method
 
-.method static synthetic a(Lkik/core/chat/profile/e;Lkik/core/chat/profile/e;)Ljava/lang/Boolean;
-    .locals 2
-
-    .prologue
-    .line 225
-    iget-object v0, p0, Lkik/core/chat/profile/e;->b:Lkik/core/chat/profile/a;
-
-    iget-object v1, p1, Lkik/core/chat/profile/e;->b:Lkik/core/chat/profile/a;
-
-    invoke-static {v0, v1}, Lkik/core/chat/profile/a;->a(Lkik/core/chat/profile/a;Lkik/core/chat/profile/a;)Z
-
-    move-result v0
-
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
 .method static synthetic a(Lkik/core/chat/profile/a;)Ljava/lang/String;
     .locals 1
 
     .prologue
-    .line 178
+    .line 166
     if-nez p0, :cond_0
 
     const-string v0, ""
@@ -171,165 +151,17 @@
     .locals 1
 
     .prologue
-    .line 177
+    .line 165
     iget-object v0, p0, Lkik/core/chat/profile/e;->b:Lkik/core/chat/profile/a;
 
     return-object v0
-.end method
-
-.method static synthetic a(Lkik/android/chat/vm/messaging/dq;Ljava/lang/Boolean;)V
-    .locals 3
-
-    .prologue
-    const/4 v0, 0x0
-
-    .line 227
-    iget-object v1, p0, Lkik/android/chat/vm/messaging/dq;->i:Lkik/core/interfaces/w;
-
-    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/dq;->u()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-interface {v1, v2, v0}, Lkik/core/interfaces/w;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
-
-    move-result-object v1
-
-    .line 228
-    if-eqz v1, :cond_0
-
-    invoke-virtual {v1}, Lkik/core/datatypes/l;->u()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    const/4 v0, 0x1
-
-    .line 229
-    :cond_0
-    iget-object v1, p0, Lkik/android/chat/vm/messaging/dq;->q:Lcom/kik/android/Mixpanel;
-
-    const-string v2, "chat_interests_viewed"
-
-    invoke-virtual {v1, v2}, Lcom/kik/android/Mixpanel;->b(Ljava/lang/String;)Lcom/kik/android/Mixpanel$d;
-
-    move-result-object v1
-
-    const-string v2, "matching_interest"
-
-    .line 230
-    invoke-virtual {v1, v2, p1}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
-
-    move-result-object v1
-
-    const-string v2, "in_roster"
-
-    .line 231
-    invoke-virtual {v1, v2, v0}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Z)Lcom/kik/android/Mixpanel$d;
-
-    move-result-object v0
-
-    .line 232
-    invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->g()Lcom/kik/android/Mixpanel$d;
-
-    move-result-object v0
-
-    .line 233
-    invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
-
-    .line 234
-    return-void
-.end method
-
-.method static synthetic a(Lkik/android/chat/vm/messaging/dq;Lkik/core/chat/profile/e;)V
-    .locals 4
-
-    .prologue
-    .line 78
-    iget-object v0, p1, Lkik/core/chat/profile/e;->b:Lkik/core/chat/profile/a;
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p1, Lkik/core/chat/profile/e;->b:Lkik/core/chat/profile/a;
-
-    iget-object v0, v0, Lkik/core/chat/profile/a;->a:Ljava/lang/String;
-
-    invoke-static {v0}, Lkik/core/chat/profile/a;->a(Ljava/lang/String;)Ljava/util/Queue;
-
-    move-result-object v0
-
-    invoke-interface {v0}, Ljava/util/Queue;->size()I
-
-    move-result v0
-
-    if-lez v0, :cond_0
-
-    .line 1222
-    iget-object v0, p0, Lkik/android/chat/vm/messaging/dq;->l:Lkik/core/interfaces/ae;
-
-    invoke-static {v0}, Lkik/core/z;->b(Lkik/core/interfaces/ae;)Lkik/core/z;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lkik/core/z;->a()Lkik/core/datatypes/k;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lcom/kik/core/network/xmpp/jid/a;->a(Lkik/core/datatypes/k;)Lcom/kik/core/network/xmpp/jid/a;
-
-    move-result-object v0
-
-    .line 1224
-    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/dq;->ab_()Lrx/f/b;
-
-    move-result-object v1
-
-    iget-object v2, p0, Lkik/android/chat/vm/messaging/dq;->c:Lrx/d;
-
-    iget-object v3, p0, Lkik/android/chat/vm/messaging/dq;->a:Lkik/core/chat/profile/IContactProfileRepository;
-
-    invoke-interface {v3, v0}, Lkik/core/chat/profile/IContactProfileRepository;->a(Lcom/kik/core/network/xmpp/jid/a;)Lrx/d;
-
-    move-result-object v0
-
-    invoke-static {}, Lkik/android/chat/vm/messaging/ec;->a()Lrx/functions/h;
-
-    move-result-object v3
-
-    invoke-static {v2, v0, v3}, Lrx/d;->b(Lrx/d;Lrx/d;Lrx/functions/h;)Lrx/d;
-
-    move-result-object v0
-
-    .line 1226
-    invoke-virtual {v0}, Lrx/d;->g()Lrx/d;
-
-    move-result-object v0
-
-    invoke-static {p0}, Lkik/android/chat/vm/messaging/ed;->a(Lkik/android/chat/vm/messaging/dq;)Lrx/functions/b;
-
-    move-result-object v2
-
-    invoke-static {}, Lkik/android/chat/vm/messaging/ds;->a()Lrx/functions/b;
-
-    move-result-object v3
-
-    invoke-virtual {v0, v2, v3}, Lrx/d;->a(Lrx/functions/b;Lrx/functions/b;)Lrx/k;
-
-    move-result-object v0
-
-    .line 1224
-    invoke-virtual {v1, v0}, Lrx/f/b;->a(Lrx/k;)V
-
-    .line 81
-    :cond_0
-    return-void
 .end method
 
 .method static synthetic b(Lkik/core/datatypes/l;)Lkik/core/chat/profile/e;
     .locals 1
 
     .prologue
-    .line 73
+    .line 70
     invoke-virtual {p0}, Lkik/core/datatypes/l;->a()Lcom/kik/core/network/xmpp/jid/a;
 
     move-result-object v0
@@ -345,7 +177,7 @@
     .locals 1
 
     .prologue
-    .line 38
+    .line 36
     const-class v0, Lkik/core/datatypes/messageExtensions/FriendAttributeMessageAttachment;
 
     invoke-static {p0, v0}, Lkik/core/datatypes/messageExtensions/MessageAttachment;->getAttachment(Lkik/core/datatypes/Message;Ljava/lang/Class;)Lkik/core/datatypes/messageExtensions/MessageAttachment;
@@ -365,11 +197,11 @@
     goto :goto_0
 .end method
 
-.method static synthetic q()Ljava/lang/Long;
+.method static synthetic r()Ljava/lang/Long;
     .locals 2
 
     .prologue
-    .line 243
+    .line 212
     const-wide/16 v0, -0x1
 
     invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
@@ -379,19 +211,11 @@
     return-object v0
 .end method
 
-.method static synthetic r()V
-    .locals 0
-
-    .prologue
-    .line 234
-    return-void
-.end method
-
 .method static synthetic s()Ljava/lang/String;
     .locals 1
 
     .prologue
-    .line 179
+    .line 167
     const-string v0, ""
 
     return-object v0
@@ -399,7 +223,7 @@
 
 
 # virtual methods
-.method public final D()Lrx/d;
+.method public final E()Lrx/d;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -412,7 +236,7 @@
     .end annotation
 
     .prologue
-    .line 115
+    .line 104
     const/4 v0, 0x1
 
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -426,7 +250,7 @@
     return-object v0
 .end method
 
-.method public final L()Lrx/d;
+.method public final M()Lrx/d;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -439,35 +263,8 @@
     .end annotation
 
     .prologue
-    .line 144
+    .line 133
     const/4 v0, 0x0
-
-    invoke-static {v0}, Lrx/d;->b(Ljava/lang/Object;)Lrx/d;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final T()Lrx/d;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/d",
-            "<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
-
-    .prologue
-    .line 168
-    const/4 v0, 0x0
-
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v0
 
     invoke-static {v0}, Lrx/d;->b(Ljava/lang/Object;)Lrx/d;
 
@@ -489,7 +286,34 @@
     .end annotation
 
     .prologue
-    .line 150
+    .line 157
+    const/4 v0, 0x0
+
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lrx/d;->b(Ljava/lang/Object;)Lrx/d;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final V()Lrx/d;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+
+    .prologue
+    .line 139
     const/4 v0, 0x1
 
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -503,7 +327,7 @@
     return-object v0
 .end method
 
-.method protected final Y()Ljava/util/List;
+.method protected final Z()Ljava/util/List;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -516,75 +340,10 @@
     .end annotation
 
     .prologue
-    .line 162
+    .line 151
     const/4 v0, 0x0
 
     return-object v0
-.end method
-
-.method public final Z()V
-    .locals 3
-
-    .prologue
-    .line 88
-    iget-object v0, p0, Lkik/android/chat/vm/messaging/dq;->i:Lkik/core/interfaces/w;
-
-    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/dq;->u()Ljava/lang/String;
-
-    move-result-object v1
-
-    const/4 v2, 0x0
-
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/w;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
-
-    move-result-object v0
-
-    .line 90
-    if-eqz v0, :cond_0
-
-    invoke-virtual {v0}, Lkik/core/datatypes/l;->z()Ljava/lang/String;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_0
-
-    invoke-virtual {v0}, Lkik/core/datatypes/l;->h()Z
-
-    move-result v1
-
-    if-nez v1, :cond_0
-
-    .line 91
-    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/dq;->B_()Lkik/android/chat/vm/aw;
-
-    move-result-object v1
-
-    new-instance v2, Lkik/android/chat/vm/messaging/dq$1;
-
-    invoke-direct {v2, p0, v0}, Lkik/android/chat/vm/messaging/dq$1;-><init>(Lkik/android/chat/vm/messaging/dq;Lkik/core/datatypes/l;)V
-
-    invoke-interface {v1, v2}, Lkik/android/chat/vm/aw;->a(Lkik/android/chat/vm/am;)V
-
-    .line 107
-    :cond_0
-    iget-object v0, p0, Lkik/android/chat/vm/messaging/dq;->q:Lcom/kik/android/Mixpanel;
-
-    const-string v1, "Profile Header Photo Tapped"
-
-    invoke-virtual {v0, v1}, Lcom/kik/android/Mixpanel;->b(Ljava/lang/String;)Lcom/kik/android/Mixpanel$d;
-
-    move-result-object v0
-
-    .line 108
-    invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->g()Lcom/kik/android/Mixpanel$d;
-
-    move-result-object v0
-
-    .line 109
-    invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
-
-    .line 110
-    return-void
 .end method
 
 .method public final a()Lrx/d;
@@ -600,7 +359,7 @@
     .end annotation
 
     .prologue
-    .line 174
+    .line 163
     iget-object v0, p0, Lkik/android/chat/vm/messaging/dq;->r:Lkik/core/interfaces/b;
 
     const-string v1, "profile-bios"
@@ -611,53 +370,43 @@
 
     move-result v0
 
-    if-nez v0, :cond_0
+    if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lkik/android/chat/vm/messaging/dq;->r:Lkik/core/interfaces/b;
-
-    .line 175
-    invoke-static {v0}, Lkik/android/util/a;->d(Lkik/core/interfaces/b;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    .line 176
-    :cond_0
+    .line 164
     iget-object v0, p0, Lkik/android/chat/vm/messaging/dq;->c:Lrx/d;
 
-    invoke-static {}, Lkik/android/chat/vm/messaging/dz;->a()Lrx/functions/g;
+    invoke-static {}, Lkik/android/chat/vm/messaging/du;->a()Lrx/functions/g;
 
     move-result-object v1
 
-    .line 177
+    .line 165
     invoke-virtual {v0, v1}, Lrx/d;->e(Lrx/functions/g;)Lrx/d;
 
     move-result-object v0
 
-    invoke-static {}, Lkik/android/chat/vm/messaging/ea;->a()Lrx/functions/g;
+    invoke-static {}, Lkik/android/chat/vm/messaging/dv;->a()Lrx/functions/g;
 
     move-result-object v1
 
-    .line 178
+    .line 166
     invoke-virtual {v0, v1}, Lrx/d;->e(Lrx/functions/g;)Lrx/d;
 
     move-result-object v0
 
-    invoke-static {}, Lkik/android/chat/vm/messaging/eb;->a()Lrx/functions/g;
+    invoke-static {}, Lkik/android/chat/vm/messaging/dw;->a()Lrx/functions/g;
 
     move-result-object v1
 
-    .line 179
+    .line 167
     invoke-virtual {v0, v1}, Lrx/d;->g(Lrx/functions/g;)Lrx/d;
 
     move-result-object v0
 
-    .line 181
+    .line 169
     :goto_0
     return-object v0
 
-    :cond_1
+    :cond_0
     const-string v0, ""
 
     invoke-static {v0}, Lrx/d;->b(Ljava/lang/Object;)Lrx/d;
@@ -667,17 +416,17 @@
     goto :goto_0
 .end method
 
-.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
     .locals 3
 
     .prologue
-    .line 67
-    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    .line 65
+    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
-    .line 68
+    .line 66
     invoke-interface {p1, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/chat/vm/messaging/dq;)V
 
-    .line 69
+    .line 67
     iget-object v0, p0, Lkik/android/chat/vm/messaging/dq;->r:Lkik/core/interfaces/b;
 
     const-string v1, "profile-bios"
@@ -692,37 +441,28 @@
 
     iget-object v0, p0, Lkik/android/chat/vm/messaging/dq;->r:Lkik/core/interfaces/b;
 
-    .line 70
-    invoke-static {v0}, Lkik/android/util/a;->d(Lkik/core/interfaces/b;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    iget-object v0, p0, Lkik/android/chat/vm/messaging/dq;->r:Lkik/core/interfaces/b;
-
-    .line 71
-    invoke-static {v0}, Lkik/android/util/a;->e(Lkik/core/interfaces/b;)Z
+    .line 68
+    invoke-static {v0}, Lkik/android/util/a;->c(Lkik/core/interfaces/b;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 72
+    .line 69
     :cond_0
-    iget-object v0, p0, Lkik/android/chat/vm/messaging/dq;->i:Lkik/core/interfaces/w;
+    iget-object v0, p0, Lkik/android/chat/vm/messaging/dq;->i:Lkik/core/interfaces/v;
 
-    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/dq;->z()Ljava/lang/String;
+    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/dq;->A()Ljava/lang/String;
 
     move-result-object v1
 
     const/4 v2, 0x1
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/w;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/v;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
 
     move-result-object v0
 
-    .line 73
+    .line 70
     iget-object v1, p0, Lkik/android/chat/vm/messaging/dq;->a:Lkik/core/chat/profile/IContactProfileRepository;
 
     invoke-interface {v1, v0}, Lkik/core/chat/profile/IContactProfileRepository;->a(Lkik/core/datatypes/l;)Lrx/d;
@@ -739,39 +479,8 @@
 
     iput-object v0, p0, Lkik/android/chat/vm/messaging/dq;->c:Lrx/d;
 
-    .line 76
+    .line 72
     :cond_1
-    iget-object v0, p0, Lkik/android/chat/vm/messaging/dq;->r:Lkik/core/interfaces/b;
-
-    invoke-static {v0}, Lkik/android/util/a;->d(Lkik/core/interfaces/b;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_2
-
-    .line 77
-    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/dq;->ab_()Lrx/f/b;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lkik/android/chat/vm/messaging/dq;->c:Lrx/d;
-
-    invoke-virtual {v1}, Lrx/d;->g()Lrx/d;
-
-    move-result-object v1
-
-    invoke-static {p0}, Lkik/android/chat/vm/messaging/dw;->a(Lkik/android/chat/vm/messaging/dq;)Lrx/functions/b;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Lrx/d;->b(Lrx/functions/b;)Lrx/k;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lrx/f/b;->a(Lrx/k;)V
-
-    .line 83
-    :cond_2
     return-void
 .end method
 
@@ -779,97 +488,74 @@
     .locals 1
 
     .prologue
-    .line 48
+    .line 46
     const/4 v0, 0x0
 
     return v0
 .end method
 
-.method public final ac_()Lrx/d;
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/d",
-            "<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
-
-    .prologue
-    .line 217
-    iget-object v0, p0, Lkik/android/chat/vm/messaging/dq;->w:Lcom/kik/core/domain/users/a;
-
-    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/dq;->z()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lcom/kik/core/network/xmpp/jid/a;->a(Ljava/lang/String;)Lcom/kik/core/network/xmpp/jid/a;
-
-    move-result-object v1
-
-    invoke-interface {v0, v1}, Lcom/kik/core/domain/users/a;->b(Lcom/kik/core/network/xmpp/jid/a;)Lrx/d;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final ad_()V
+.method public final aa()V
     .locals 3
 
     .prologue
-    const/4 v0, 0x0
+    .line 77
+    iget-object v0, p0, Lkik/android/chat/vm/messaging/dq;->i:Lkik/core/interfaces/v;
 
-    .line 187
-    iget-object v1, p0, Lkik/android/chat/vm/messaging/dq;->i:Lkik/core/interfaces/w;
-
-    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/dq;->u()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-interface {v1, v2, v0}, Lkik/core/interfaces/w;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
+    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/dq;->v()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 188
-    if-eqz v1, :cond_0
+    const/4 v2, 0x0
 
-    invoke-virtual {v1}, Lkik/core/datatypes/l;->u()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    const/4 v0, 0x1
-
-    .line 189
-    :cond_0
-    iget-object v1, p0, Lkik/android/chat/vm/messaging/dq;->q:Lcom/kik/android/Mixpanel;
-
-    const-string v2, "chat_bioseemore_tapped"
-
-    invoke-virtual {v1, v2}, Lcom/kik/android/Mixpanel;->b(Ljava/lang/String;)Lcom/kik/android/Mixpanel$d;
-
-    move-result-object v1
-
-    const-string v2, "in_roster"
-
-    .line 190
-    invoke-virtual {v1, v2, v0}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Z)Lcom/kik/android/Mixpanel$d;
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/v;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
 
     move-result-object v0
 
-    .line 191
+    .line 79
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Lkik/core/datatypes/l;->z()Ljava/lang/String;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_0
+
+    invoke-virtual {v0}, Lkik/core/datatypes/l;->h()Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    .line 80
+    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/dq;->F_()Lkik/android/chat/vm/ay;
+
+    move-result-object v1
+
+    new-instance v2, Lkik/android/chat/vm/messaging/dq$1;
+
+    invoke-direct {v2, p0, v0}, Lkik/android/chat/vm/messaging/dq$1;-><init>(Lkik/android/chat/vm/messaging/dq;Lkik/core/datatypes/l;)V
+
+    invoke-interface {v1, v2}, Lkik/android/chat/vm/ay;->a(Lkik/android/chat/vm/ao;)V
+
+    .line 96
+    :cond_0
+    iget-object v0, p0, Lkik/android/chat/vm/messaging/dq;->q:Lcom/kik/android/Mixpanel;
+
+    const-string v1, "Profile Header Photo Tapped"
+
+    invoke-virtual {v0, v1}, Lcom/kik/android/Mixpanel;->b(Ljava/lang/String;)Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v0
+
+    .line 97
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->g()Lcom/kik/android/Mixpanel$d;
 
     move-result-object v0
 
-    .line 192
+    .line 98
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
 
-    .line 193
+    .line 99
     return-void
 .end method
 
@@ -886,19 +572,19 @@
     .end annotation
 
     .prologue
-    .line 241
+    .line 210
     iget-object v0, p0, Lkik/android/chat/vm/messaging/dq;->r:Lkik/core/interfaces/b;
 
-    invoke-static {v0}, Lkik/android/util/a;->e(Lkik/core/interfaces/b;)Z
+    invoke-static {v0}, Lkik/android/util/a;->c(Lkik/core/interfaces/b;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 242
+    .line 211
     iget-object v0, p0, Lkik/android/chat/vm/messaging/dq;->c:Lrx/d;
 
-    invoke-static {}, Lkik/android/chat/vm/messaging/dt;->a()Lrx/functions/g;
+    invoke-static {}, Lkik/android/chat/vm/messaging/dx;->a()Lrx/functions/g;
 
     move-result-object v1
 
@@ -906,16 +592,16 @@
 
     move-result-object v0
 
-    invoke-static {}, Lkik/android/chat/vm/messaging/du;->a()Lrx/functions/g;
+    invoke-static {}, Lkik/android/chat/vm/messaging/dy;->a()Lrx/functions/g;
 
     move-result-object v1
 
-    .line 243
+    .line 212
     invoke-virtual {v0, v1}, Lrx/d;->g(Lrx/functions/g;)Lrx/d;
 
     move-result-object v0
 
-    .line 245
+    .line 214
     :goto_0
     return-object v0
 
@@ -946,16 +632,16 @@
     .end annotation
 
     .prologue
-    .line 251
+    .line 220
     invoke-virtual {p0}, Lkik/android/chat/vm/messaging/dq;->ae_()Lrx/d;
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/dq;->ac_()Lrx/d;
+    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/dq;->j()Lrx/d;
 
     move-result-object v1
 
-    invoke-static {p0}, Lkik/android/chat/vm/messaging/dv;->a(Lkik/android/chat/vm/messaging/dq;)Lrx/functions/h;
+    invoke-static {p0}, Lkik/android/chat/vm/messaging/dz;->a(Lkik/android/chat/vm/messaging/dq;)Lrx/functions/h;
 
     move-result-object v2
 
@@ -966,81 +652,87 @@
     return-object v0
 .end method
 
-.method public final ao()Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;
+.method public final aq()Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;
     .locals 1
 
     .prologue
-    .line 121
+    .line 110
     sget-object v0, Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;->Attribution:Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;
 
     return-object v0
 .end method
 
-.method public final b()Lrx/d;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/d",
-            "<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
+.method public final b()V
+    .locals 3
 
     .prologue
-    .line 156
     const/4 v0, 0x0
 
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    .line 175
+    iget-object v1, p0, Lkik/android/chat/vm/messaging/dq;->i:Lkik/core/interfaces/v;
+
+    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/dq;->v()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-interface {v1, v2, v0}, Lkik/core/interfaces/v;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
+
+    move-result-object v1
+
+    .line 176
+    if-eqz v1, :cond_0
+
+    invoke-virtual {v1}, Lkik/core/datatypes/l;->u()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    const/4 v0, 0x1
+
+    .line 177
+    :cond_0
+    iget-object v1, p0, Lkik/android/chat/vm/messaging/dq;->q:Lcom/kik/android/Mixpanel;
+
+    const-string v2, "chat_bioseemore_tapped"
+
+    invoke-virtual {v1, v2}, Lcom/kik/android/Mixpanel;->b(Ljava/lang/String;)Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v1
+
+    const-string v2, "in_roster"
+
+    .line 178
+    invoke-virtual {v1, v2, v0}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Z)Lcom/kik/android/Mixpanel$d;
 
     move-result-object v0
 
-    invoke-static {v0}, Lrx/d;->b(Ljava/lang/Object;)Lrx/d;
+    .line 179
+    invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->g()Lcom/kik/android/Mixpanel$d;
 
     move-result-object v0
 
-    return-object v0
+    .line 180
+    invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
+
+    .line 181
+    return-void
 .end method
 
 .method public final d()V
     .locals 0
 
     .prologue
-    .line 199
+    .line 187
     return-void
 .end method
 
-.method public final e()Lrx/d;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/d",
-            "<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
+.method public final e()V
+    .locals 0
 
     .prologue
-    .line 204
-    iget-object v0, p0, Lkik/android/chat/vm/messaging/dq;->r:Lkik/core/interfaces/b;
-
-    invoke-static {v0}, Lkik/android/util/a;->d(Lkik/core/interfaces/b;)Z
-
-    move-result v0
-
-    .line 205
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lrx/d;->b(Ljava/lang/Object;)Lrx/d;
-
-    move-result-object v0
-
-    return-object v0
+    .line 193
+    return-void
 .end method
 
 .method public final g()Lrx/d;
@@ -1056,7 +748,7 @@
     .end annotation
 
     .prologue
-    .line 211
+    .line 198
     iget-object v0, p0, Lkik/android/chat/vm/messaging/dq;->r:Lkik/core/interfaces/b;
 
     const-string v1, "profile-bios"
@@ -1078,7 +770,65 @@
     return-object v0
 .end method
 
+.method public final j()Lrx/d;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+
+    .prologue
+    .line 204
+    iget-object v0, p0, Lkik/android/chat/vm/messaging/dq;->w:Lcom/kik/core/domain/users/a;
+
+    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/dq;->A()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lcom/kik/core/network/xmpp/jid/a;->a(Ljava/lang/String;)Lcom/kik/core/network/xmpp/jid/a;
+
+    move-result-object v1
+
+    invoke-interface {v0, v1}, Lcom/kik/core/domain/users/a;->c(Lcom/kik/core/network/xmpp/jid/a;)Lrx/d;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
 .method public final k()Lrx/d;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+
+    .prologue
+    .line 145
+    const/4 v0, 0x0
+
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lrx/d;->b(Ljava/lang/Object;)Lrx/d;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final l()Lrx/d;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1091,7 +841,7 @@
     .end annotation
 
     .prologue
-    .line 127
+    .line 116
     iget-object v0, p0, Lkik/android/chat/vm/messaging/dq;->b:Lkik/core/datatypes/messageExtensions/FriendAttributeMessageAttachment;
 
     invoke-virtual {v0}, Lkik/core/datatypes/messageExtensions/FriendAttributeMessageAttachment;->getBody()Ljava/lang/String;
@@ -1099,35 +849,6 @@
     move-result-object v0
 
     invoke-static {v0}, Lrx/d;->b(Ljava/lang/Object;)Lrx/d;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final o()Lrx/d;
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/d",
-            "<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-
-    .prologue
-    .line 133
-    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/dq;->y()Lrx/d;
-
-    move-result-object v0
-
-    invoke-static {}, Lkik/android/chat/vm/messaging/dx;->a()Lrx/functions/g;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lrx/d;->e(Lrx/functions/g;)Lrx/d;
 
     move-result-object v0
 
@@ -1147,12 +868,41 @@
     .end annotation
 
     .prologue
-    .line 139
-    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/dq;->y()Lrx/d;
+    .line 122
+    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/dq;->z()Lrx/d;
 
     move-result-object v0
 
-    invoke-static {}, Lkik/android/chat/vm/messaging/dy;->a()Lrx/functions/g;
+    invoke-static {}, Lkik/android/chat/vm/messaging/ds;->a()Lrx/functions/g;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lrx/d;->e(Lrx/functions/g;)Lrx/d;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final q()Lrx/d;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+
+    .prologue
+    .line 128
+    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/dq;->z()Lrx/d;
+
+    move-result-object v0
+
+    invoke-static {}, Lkik/android/chat/vm/messaging/dt;->a()Lrx/functions/g;
 
     move-result-object v1
 

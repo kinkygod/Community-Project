@@ -88,11 +88,11 @@
 
 .field private c:Landroid/app/Activity;
 
-.field private final d:Lkik/core/interfaces/ae;
+.field private final d:Lkik/core/interfaces/ad;
 
-.field private final e:Lcom/kik/storage/p;
+.field private final e:Lcom/kik/storage/s;
 
-.field private final f:Lkik/core/interfaces/w;
+.field private final f:Lkik/core/interfaces/v;
 
 .field private final g:Lkik/core/c/a;
 
@@ -235,7 +235,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Lkik/core/interfaces/ae;Lcom/kik/storage/p;Lkik/core/interfaces/w;Lkik/core/c/a;Lkik/core/interfaces/IConversation;Lkik/core/interfaces/b;Lkik/android/chat/b/a;Lkik/core/interfaces/l;Lkik/android/f/d;Landroid/content/Context;)V
+.method public constructor <init>(Lkik/core/interfaces/ad;Lcom/kik/storage/s;Lkik/core/interfaces/v;Lkik/core/c/a;Lkik/core/interfaces/IConversation;Lkik/core/interfaces/b;Lkik/android/chat/b/a;Lkik/core/interfaces/l;Lkik/android/f/d;Landroid/content/Context;)V
     .locals 12
 
     .prologue
@@ -268,13 +268,13 @@
 
     move-object/from16 v10, p10
 
-    invoke-direct/range {v0 .. v11}, Lkik/android/videochat/VideoChatManager;-><init>(Lkik/core/interfaces/ae;Lcom/kik/storage/p;Lkik/core/interfaces/w;Lkik/core/c/a;Lkik/core/interfaces/IConversation;Lkik/core/interfaces/b;Lkik/android/chat/b/a;Lkik/core/interfaces/l;Lkik/android/f/d;Landroid/content/Context;Lcom/crashlytics/android/core/h;)V
+    invoke-direct/range {v0 .. v11}, Lkik/android/videochat/VideoChatManager;-><init>(Lkik/core/interfaces/ad;Lcom/kik/storage/s;Lkik/core/interfaces/v;Lkik/core/c/a;Lkik/core/interfaces/IConversation;Lkik/core/interfaces/b;Lkik/android/chat/b/a;Lkik/core/interfaces/l;Lkik/android/f/d;Landroid/content/Context;Lcom/crashlytics/android/core/h;)V
 
     .line 149
     return-void
 .end method
 
-.method private constructor <init>(Lkik/core/interfaces/ae;Lcom/kik/storage/p;Lkik/core/interfaces/w;Lkik/core/c/a;Lkik/core/interfaces/IConversation;Lkik/core/interfaces/b;Lkik/android/chat/b/a;Lkik/core/interfaces/l;Lkik/android/f/d;Landroid/content/Context;Lcom/crashlytics/android/core/h;)V
+.method private constructor <init>(Lkik/core/interfaces/ad;Lcom/kik/storage/s;Lkik/core/interfaces/v;Lkik/core/c/a;Lkik/core/interfaces/IConversation;Lkik/core/interfaces/b;Lkik/android/chat/b/a;Lkik/core/interfaces/l;Lkik/android/f/d;Landroid/content/Context;Lcom/crashlytics/android/core/h;)V
     .locals 4
 
     .prologue
@@ -462,13 +462,13 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 174
-    iput-object p1, p0, Lkik/android/videochat/VideoChatManager;->d:Lkik/core/interfaces/ae;
+    iput-object p1, p0, Lkik/android/videochat/VideoChatManager;->d:Lkik/core/interfaces/ad;
 
     .line 175
-    iput-object p2, p0, Lkik/android/videochat/VideoChatManager;->e:Lcom/kik/storage/p;
+    iput-object p2, p0, Lkik/android/videochat/VideoChatManager;->e:Lcom/kik/storage/s;
 
     .line 176
-    iput-object p3, p0, Lkik/android/videochat/VideoChatManager;->f:Lkik/core/interfaces/w;
+    iput-object p3, p0, Lkik/android/videochat/VideoChatManager;->f:Lkik/core/interfaces/v;
 
     .line 177
     iput-object p4, p0, Lkik/android/videochat/VideoChatManager;->g:Lkik/core/c/a;
@@ -1040,7 +1040,7 @@
 
     move-result-object v2
 
-    .line 9066
+    .line 9068
     if-nez v2, :cond_4
 
     move-object v0, v1
@@ -1056,11 +1056,11 @@
     if-eqz v0, :cond_2
 
     .line 8781
-    iget-object v1, p0, Lkik/android/videochat/VideoChatManager;->f:Lkik/core/interfaces/w;
+    iget-object v1, p0, Lkik/android/videochat/VideoChatManager;->f:Lkik/core/interfaces/v;
 
     const/4 v2, 0x1
 
-    invoke-interface {v1, v0, v2}, Lkik/core/interfaces/w;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
+    invoke-interface {v1, v0, v2}, Lkik/core/interfaces/v;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
 
     move-result-object v1
 
@@ -1107,7 +1107,7 @@
 
     goto :goto_0
 
-    .line 9069
+    .line 9071
     :cond_4
     new-instance v0, Lkik/core/datatypes/k;
 
@@ -1180,7 +1180,7 @@
     if-nez v3, :cond_6
 
     .line 8774
-    invoke-static {v0}, Lkik/core/xiphias/aa;->a(Lcom/kik/ximodel/XiBareUserJid;)Lkik/core/datatypes/k;
+    invoke-static {v0}, Lkik/core/xiphias/af;->a(Lcom/kik/ximodel/XiBareUserJid;)Lkik/core/datatypes/k;
 
     move-result-object v0
 
@@ -1410,7 +1410,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lkik/core/xiphias/aa;->a(Lcom/kik/ximodel/XiBareUserJid;)Lkik/core/datatypes/k;
+    invoke-static {v0}, Lkik/core/xiphias/af;->a(Lcom/kik/ximodel/XiBareUserJid;)Lkik/core/datatypes/k;
 
     move-result-object v0
 
@@ -1426,7 +1426,7 @@
     if-nez v3, :cond_2
 
     .line 435
-    iget-object v3, p0, Lkik/android/videochat/VideoChatManager;->f:Lkik/core/interfaces/w;
+    iget-object v3, p0, Lkik/android/videochat/VideoChatManager;->f:Lkik/core/interfaces/v;
 
     invoke-virtual {v0}, Lkik/core/datatypes/k;->a()Ljava/lang/String;
 
@@ -1434,7 +1434,7 @@
 
     const/4 v4, 0x1
 
-    invoke-interface {v3, v0, v4}, Lkik/core/interfaces/w;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
+    invoke-interface {v3, v0, v4}, Lkik/core/interfaces/v;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
 
     move-result-object v0
 
@@ -2008,12 +2008,12 @@
     return-object v0
 .end method
 
-.method static synthetic i(Lkik/android/videochat/VideoChatManager;)Lkik/core/interfaces/ae;
+.method static synthetic i(Lkik/android/videochat/VideoChatManager;)Lkik/core/interfaces/ad;
     .locals 1
 
     .prologue
     .line 89
-    iget-object v0, p0, Lkik/android/videochat/VideoChatManager;->d:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/videochat/VideoChatManager;->d:Lkik/core/interfaces/ad;
 
     return-object v0
 .end method
@@ -2066,9 +2066,9 @@
     if-nez v1, :cond_0
 
     .line 266
-    iget-object v1, p0, Lkik/android/videochat/VideoChatManager;->d:Lkik/core/interfaces/ae;
+    iget-object v1, p0, Lkik/android/videochat/VideoChatManager;->d:Lkik/core/interfaces/ad;
 
-    invoke-static {v1}, Lkik/core/z;->b(Lkik/core/interfaces/ae;)Lkik/core/z;
+    invoke-static {v1}, Lkik/core/z;->b(Lkik/core/interfaces/ad;)Lkik/core/z;
 
     move-result-object v1
 
@@ -2162,14 +2162,14 @@
     .line 405
     iget-object v1, p0, Lkik/android/videochat/VideoChatManager;->h:Lkik/core/interfaces/IConversation;
 
-    invoke-interface {v1}, Lkik/core/interfaces/IConversation;->F()Ljava/util/List;
+    invoke-interface {v1}, Lkik/core/interfaces/IConversation;->E()Ljava/util/List;
 
     move-result-object v1
 
     .line 406
     iget-object v2, p0, Lkik/android/videochat/VideoChatManager;->h:Lkik/core/interfaces/IConversation;
 
-    invoke-interface {v2}, Lkik/core/interfaces/IConversation;->H()Ljava/util/List;
+    invoke-interface {v2}, Lkik/core/interfaces/IConversation;->G()Ljava/util/List;
 
     move-result-object v2
 
@@ -2252,11 +2252,11 @@
     invoke-interface {v2, v0}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     .line 417
-    iget-object v4, p0, Lkik/android/videochat/VideoChatManager;->f:Lkik/core/interfaces/w;
+    iget-object v4, p0, Lkik/android/videochat/VideoChatManager;->f:Lkik/core/interfaces/v;
 
     const/4 v5, 0x1
 
-    invoke-interface {v4, v0, v5}, Lkik/core/interfaces/w;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
+    invoke-interface {v4, v0, v5}, Lkik/core/interfaces/v;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
 
     move-result-object v0
 
@@ -2607,11 +2607,11 @@
 
     .line 818
     :cond_2
-    iget-object v2, p0, Lkik/android/videochat/VideoChatManager;->d:Lkik/core/interfaces/ae;
+    iget-object v2, p0, Lkik/android/videochat/VideoChatManager;->d:Lkik/core/interfaces/ad;
 
     const-string v3, "vc_number_real_chats"
 
-    invoke-interface {v2, v3, v1}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;I)Ljava/lang/Integer;
+    invoke-interface {v2, v3, v1}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;I)Ljava/lang/Integer;
 
     move-result-object v2
 
@@ -2622,7 +2622,7 @@
     add-int/lit8 v2, v2, 0x1
 
     .line 819
-    iget-object v3, p0, Lkik/android/videochat/VideoChatManager;->d:Lkik/core/interfaces/ae;
+    iget-object v3, p0, Lkik/android/videochat/VideoChatManager;->d:Lkik/core/interfaces/ad;
 
     const-string v4, "vc_number_real_chats"
 
@@ -2630,7 +2630,7 @@
 
     move-result-object v5
 
-    invoke-interface {v3, v4, v5}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;Ljava/lang/Integer;)Z
+    invoke-interface {v3, v4, v5}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Integer;)Z
 
     .line 6860
     rem-int/lit8 v3, v2, 0x5
@@ -2672,7 +2672,7 @@
     add-int/lit8 v0, v2, -0x1
 
     .line 852
-    iget-object v1, p0, Lkik/android/videochat/VideoChatManager;->d:Lkik/core/interfaces/ae;
+    iget-object v1, p0, Lkik/android/videochat/VideoChatManager;->d:Lkik/core/interfaces/ad;
 
     const-string v2, "vc_number_real_chats"
 
@@ -2680,7 +2680,7 @@
 
     move-result-object v0
 
-    invoke-interface {v1, v2, v0}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;Ljava/lang/Integer;)Z
+    invoke-interface {v1, v2, v0}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Integer;)Z
 
     goto :goto_1
 .end method
@@ -2765,9 +2765,9 @@
     .line 336
     iget-object v4, p0, Lkik/android/videochat/VideoChatManager;->x:Ljava/util/Set;
 
-    iget-object v5, p0, Lkik/android/videochat/VideoChatManager;->f:Lkik/core/interfaces/w;
+    iget-object v5, p0, Lkik/android/videochat/VideoChatManager;->f:Lkik/core/interfaces/v;
 
-    invoke-interface {v5, v3, v1}, Lkik/core/interfaces/w;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
+    invoke-interface {v5, v3, v1}, Lkik/core/interfaces/v;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
 
     move-result-object v3
 
@@ -2882,7 +2882,7 @@
     move-result-object v2
 
     .line 5030
-    const v3, 0x7f090681
+    const v3, 0x7f090689
 
     invoke-static {v2}, Lkik/android/videochat/b;->a(Landroid/content/DialogInterface$OnCancelListener;)Landroid/content/DialogInterface$OnClickListener;
 
@@ -3118,7 +3118,7 @@
 
     .prologue
     .line 874
-    iget-object v0, p0, Lkik/android/videochat/VideoChatManager;->d:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/videochat/VideoChatManager;->d:Lkik/core/interfaces/ad;
 
     const-string v1, "vc_has_seen_toggle_tooltip"
 
@@ -3128,7 +3128,7 @@
 
     move-result-object v2
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;Ljava/lang/Boolean;)Z
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Boolean;)Z
 
     .line 6899
     iget-object v0, p0, Lkik/android/videochat/VideoChatManager;->n:Lkik/android/videochat/h;
@@ -3167,12 +3167,12 @@
     return-object v0
 .end method
 
-.method public final f()Lkik/core/interfaces/ae;
+.method public final f()Lkik/core/interfaces/ad;
     .locals 1
 
     .prologue
     .line 881
-    iget-object v0, p0, Lkik/android/videochat/VideoChatManager;->d:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/videochat/VideoChatManager;->d:Lkik/core/interfaces/ad;
 
     return-object v0
 .end method
@@ -3211,7 +3211,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f02031e
+    const v1, 0x7f020301
 
     invoke-static {v0, v1}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
 
@@ -3258,7 +3258,7 @@
     move-result-object v0
 
     .line 537
-    invoke-static {v0}, Lkik/core/xiphias/aa;->a(Lcom/kik/ximodel/XiBareUserJid;)Lkik/core/datatypes/k;
+    invoke-static {v0}, Lkik/core/xiphias/af;->a(Lcom/kik/ximodel/XiBareUserJid;)Lkik/core/datatypes/k;
 
     move-result-object v0
 
@@ -3267,9 +3267,9 @@
     move-result-object v0
 
     .line 538
-    iget-object v1, p0, Lkik/android/videochat/VideoChatManager;->f:Lkik/core/interfaces/w;
+    iget-object v1, p0, Lkik/android/videochat/VideoChatManager;->f:Lkik/core/interfaces/v;
 
-    invoke-interface {v1, v0, v2}, Lkik/core/interfaces/w;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
+    invoke-interface {v1, v0, v2}, Lkik/core/interfaces/v;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
 
     move-result-object v0
 
@@ -3292,9 +3292,9 @@
     if-eqz v4, :cond_0
 
     .line 543
-    iget-object v0, p0, Lkik/android/videochat/VideoChatManager;->e:Lcom/kik/storage/p;
+    iget-object v0, p0, Lkik/android/videochat/VideoChatManager;->e:Lcom/kik/storage/s;
 
-    invoke-interface {v0}, Lcom/kik/storage/p;->a()Lcom/kik/cache/KikVolleyImageLoader;
+    invoke-interface {v0}, Lcom/kik/storage/s;->a()Lcom/kik/cache/KikVolleyImageLoader;
 
     move-result-object v3
 

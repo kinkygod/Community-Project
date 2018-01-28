@@ -32,7 +32,7 @@
     .locals 0
 
     .prologue
-    .line 1079
+    .line 1084
     iput-object p1, p0, Lkik/android/chat/fragment/KikChatFragment$4;->a:Lkik/android/chat/fragment/KikChatFragment;
 
     invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
@@ -46,10 +46,10 @@
     .locals 2
 
     .prologue
-    .line 1079
+    .line 1084
     check-cast p1, Ljava/lang/Boolean;
 
-    .line 2083
+    .line 2088
     iget-object v0, p0, Lkik/android/chat/fragment/KikChatFragment$4;->a:Lkik/android/chat/fragment/KikChatFragment;
 
     invoke-static {v0}, Lkik/android/chat/fragment/KikChatFragment;->r(Lkik/android/chat/fragment/KikChatFragment;)Z
@@ -64,7 +64,7 @@
 
     if-nez v0, :cond_0
 
-    .line 2084
+    .line 2089
     iget-object v0, p0, Lkik/android/chat/fragment/KikChatFragment$4;->a:Lkik/android/chat/fragment/KikChatFragment;
 
     new-instance v1, Lkik/android/chat/fragment/PublicGroupIntroFragment$a;
@@ -73,7 +73,7 @@
 
     invoke-virtual {v0, v1}, Lkik/android/chat/fragment/KikChatFragment;->startFragmentForResult(Lkik/android/util/ad;)Lcom/kik/events/Promise;
 
-    .line 1079
+    .line 1084
     :cond_0
     return-void
 .end method

@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 401
+    .line 416
     iput-object p1, p0, Lcom/kik/cards/web/CardsWebViewFragment$45;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,34 +40,34 @@
     .locals 3
 
     .prologue
-    .line 406
+    .line 421
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$45;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
     invoke-virtual {v0}, Lcom/kik/cards/web/CardsWebViewFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v0
 
-    .line 407
+    .line 422
     if-eqz v0, :cond_0
 
-    .line 408
+    .line 423
     new-instance v1, Landroid/content/Intent;
 
     const-string v2, "android.intent.action.VIEW"
 
     invoke-direct {v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 409
+    .line 424
     invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v2
 
     invoke-virtual {v1, v2}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
 
-    .line 410
+    .line 425
     invoke-virtual {v0, v1}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
 
-    .line 412
+    .line 427
     :cond_0
     return-void
 .end method

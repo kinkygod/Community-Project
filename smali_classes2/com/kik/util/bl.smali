@@ -6,26 +6,26 @@
 
 
 # instance fields
-.field private final a:Landroid/widget/ImageView;
+.field private final a:Landroid/view/View;
 
 
 # direct methods
-.method private constructor <init>(Landroid/widget/ImageView;)V
+.method private constructor <init>(Landroid/view/View;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/kik/util/bl;->a:Landroid/widget/ImageView;
+    iput-object p1, p0, Lcom/kik/util/bl;->a:Landroid/view/View;
 
     return-void
 .end method
 
-.method public static a(Landroid/widget/ImageView;)Lrx/functions/b;
+.method public static a(Landroid/view/View;)Lrx/functions/b;
     .locals 1
 
     new-instance v0, Lcom/kik/util/bl;
 
-    invoke-direct {v0, p0}, Lcom/kik/util/bl;-><init>(Landroid/widget/ImageView;)V
+    invoke-direct {v0, p0}, Lcom/kik/util/bl;-><init>(Landroid/view/View;)V
 
     return-object v0
 .end method
@@ -35,15 +35,19 @@
 .method public final call(Ljava/lang/Object;)V
     .locals 2
 
-    iget-object v0, p0, Lcom/kik/util/bl;->a:Landroid/widget/ImageView;
+    .prologue
+    .line 0
+    iget-object v0, p0, Lcom/kik/util/bl;->a:Landroid/view/View;
 
-    check-cast p1, Ljava/lang/Integer;
+    check-cast p1, Ljava/lang/Float;
 
-    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
+    .line 1727
+    invoke-virtual {p1}, Ljava/lang/Float;->floatValue()F
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageLevel(I)V
+    invoke-static {v0, v1}, Landroid/support/v4/view/ViewCompat;->setElevation(Landroid/view/View;F)V
 
+    .line 0
     return-void
 .end method

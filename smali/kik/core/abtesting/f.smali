@@ -11,13 +11,13 @@
 
 .field private final b:Lkik/core/e/d;
 
-.field private final c:Lkik/core/interfaces/ae;
+.field private final c:Lkik/core/interfaces/ad;
 
 .field private final d:Lorg/slf4j/b;
 
 
 # direct methods
-.method public constructor <init>(Lkik/core/interfaces/ICommunication;Lkik/core/e/d;Lkik/core/interfaces/ae;)V
+.method public constructor <init>(Lkik/core/interfaces/ICommunication;Lkik/core/e/d;Lkik/core/interfaces/ad;)V
     .locals 1
 
     .prologue
@@ -40,7 +40,7 @@
     iput-object p2, p0, Lkik/core/abtesting/f;->b:Lkik/core/e/d;
 
     .line 39
-    iput-object p3, p0, Lkik/core/abtesting/f;->c:Lkik/core/interfaces/ae;
+    iput-object p3, p0, Lkik/core/abtesting/f;->c:Lkik/core/interfaces/ad;
 
     .line 40
     return-void
@@ -71,9 +71,9 @@
     invoke-direct {v1}, Lcom/kik/events/Promise;-><init>()V
 
     .line 65
-    iget-object v0, p0, Lkik/core/abtesting/f;->c:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/core/abtesting/f;->c:Lkik/core/interfaces/ad;
 
-    invoke-static {v0}, Lkik/core/z;->b(Lkik/core/interfaces/ae;)Lkik/core/z;
+    invoke-static {v0}, Lkik/core/z;->b(Lkik/core/interfaces/ad;)Lkik/core/z;
 
     move-result-object v0
 
@@ -156,7 +156,7 @@
     move-result-object v0
 
     .line 68
-    invoke-static {v2}, Lkik/core/xiphias/aa;->a(Lkik/core/datatypes/k;)Lcom/kik/ximodel/XiBareUserJid;
+    invoke-static {v2}, Lkik/core/xiphias/af;->a(Lkik/core/datatypes/k;)Lcom/kik/ximodel/XiBareUserJid;
 
     move-result-object v2
 

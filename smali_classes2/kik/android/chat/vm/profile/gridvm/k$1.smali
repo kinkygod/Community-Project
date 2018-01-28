@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/android/chat/vm/profile/gridvm/k;->h()Lrx/d;
+    value = Lkik/android/chat/vm/profile/gridvm/k;->i()Lrx/d;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -44,6 +44,40 @@
     return-void
 .end method
 
+.method private a()Lrx/d;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<",
+            "Landroid/graphics/Bitmap;",
+            ">;"
+        }
+    .end annotation
+
+    .prologue
+    .line 72
+    iget-object v0, p0, Lkik/android/chat/vm/profile/gridvm/k$1;->a:Lkik/android/chat/vm/profile/gridvm/k;
+
+    invoke-static {v0}, Lkik/android/chat/vm/profile/gridvm/k;->a(Lkik/android/chat/vm/profile/gridvm/k;)Landroid/graphics/drawable/Drawable;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/graphics/drawable/BitmapDrawable;
+
+    .line 73
+    invoke-virtual {v0}, Landroid/graphics/drawable/BitmapDrawable;->getBitmap()Landroid/graphics/Bitmap;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lrx/d;->b(Ljava/lang/Object;)Lrx/d;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
 
 # virtual methods
 .method public final a(II)Lrx/d;
@@ -60,24 +94,21 @@
 
     .prologue
     .line 66
-    .line 1072
-    iget-object v0, p0, Lkik/android/chat/vm/profile/gridvm/k$1;->a:Lkik/android/chat/vm/profile/gridvm/k;
-
-    invoke-static {v0}, Lkik/android/chat/vm/profile/gridvm/k;->a(Lkik/android/chat/vm/profile/gridvm/k;)Landroid/graphics/drawable/Drawable;
+    invoke-direct {p0}, Lkik/android/chat/vm/profile/gridvm/k$1;->a()Lrx/d;
 
     move-result-object v0
 
-    check-cast v0, Landroid/graphics/drawable/BitmapDrawable;
+    return-object v0
+.end method
 
-    .line 1073
-    invoke-virtual {v0}, Landroid/graphics/drawable/BitmapDrawable;->getBitmap()Landroid/graphics/Bitmap;
+.method public final bridge synthetic a(IILjava/lang/Object;)Lrx/d;
+    .locals 1
+
+    .prologue
+    .line 62
+    invoke-direct {p0}, Lkik/android/chat/vm/profile/gridvm/k$1;->a()Lrx/d;
 
     move-result-object v0
 
-    invoke-static {v0}, Lrx/d;->b(Ljava/lang/Object;)Lrx/d;
-
-    move-result-object v0
-
-    .line 66
     return-object v0
 .end method

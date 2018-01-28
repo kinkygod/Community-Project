@@ -37,7 +37,7 @@
     .locals 0
 
     .prologue
-    .line 606
+    .line 617
     iput-object p1, p0, Lkik/core/profile/GroupManager$3;->a:Lkik/core/profile/GroupManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -51,14 +51,14 @@
     .locals 1
 
     .prologue
-    .line 606
+    .line 617
     check-cast p1, Lkik/core/net/outgoing/GetGroupDataFromInviteCodeRequest;
 
-    .line 1610
+    .line 1621
     invoke-virtual {p1}, Lkik/core/net/outgoing/GetGroupDataFromInviteCodeRequest;->getGroup()Lkik/core/datatypes/n;
 
     move-result-object v0
 
-    .line 606
+    .line 617
     return-object v0
 .end method

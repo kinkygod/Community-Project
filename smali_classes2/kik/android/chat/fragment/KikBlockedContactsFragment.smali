@@ -30,7 +30,7 @@
     .prologue
     .line 67
     .line 1126
-    invoke-virtual {p0}, Lkik/android/chat/fragment/KikBlockedContactsFragment;->getNavigator()Lkik/android/chat/vm/aw;
+    invoke-virtual {p0}, Lkik/android/chat/fragment/KikBlockedContactsFragment;->getNavigator()Lkik/android/chat/vm/ay;
 
     move-result-object v0
 
@@ -38,27 +38,27 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Lkik/android/chat/vm/profile/dc;->a(Lcom/kik/core/network/xmpp/jid/a;)Lkik/android/chat/vm/profile/dc;
+    invoke-static {v1}, Lkik/android/chat/vm/profile/dp;->a(Lcom/kik/core/network/xmpp/jid/a;)Lkik/android/chat/vm/profile/dp;
 
     move-result-object v1
 
     .line 1127
-    invoke-virtual {v1}, Lkik/android/chat/vm/profile/dc;->a()Lkik/android/chat/vm/profile/dc;
+    invoke-virtual {v1}, Lkik/android/chat/vm/profile/dp;->a()Lkik/android/chat/vm/profile/dp;
 
     move-result-object v1
 
     .line 1128
-    invoke-virtual {v1, p3}, Lkik/android/chat/vm/profile/dc;->a(Z)Lkik/android/chat/vm/profile/dc;
+    invoke-virtual {v1, p3}, Lkik/android/chat/vm/profile/dp;->a(Z)Lkik/android/chat/vm/profile/dp;
 
     move-result-object v1
 
     .line 1129
-    invoke-virtual {v1}, Lkik/android/chat/vm/profile/dc;->b()Lkik/android/chat/vm/profile/cv;
+    invoke-virtual {v1}, Lkik/android/chat/vm/profile/dp;->b()Lkik/android/chat/vm/profile/di;
 
     move-result-object v1
 
     .line 1126
-    invoke-interface {v0, v1}, Lkik/android/chat/vm/aw;->a(Lkik/android/chat/vm/profile/cv;)Lrx/d;
+    invoke-interface {v0, v1}, Lkik/android/chat/vm/ay;->a(Lkik/android/chat/vm/profile/di;)Lrx/d;
 
     .line 68
     return-void
@@ -211,7 +211,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0201d3
+    const v1, 0x7f0201bb
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -250,7 +250,7 @@
     return-object v0
 .end method
 
-.method protected screenOpenedEvent()Lcom/kik/metrics/b/s;
+.method protected screenOpenedEvent()Lcom/kik/metrics/b/t;
     .locals 1
 
     .prologue

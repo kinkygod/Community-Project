@@ -1,380 +1,112 @@
-.class abstract Lkik/core/xiphias/s;
-.super Ljava/lang/Object;
+.class public final Lkik/core/xiphias/s;
+.super Lkik/core/xiphias/v;
 .source "SourceFile"
 
-
-# instance fields
-.field private final a:Ljava/util/concurrent/ScheduledExecutorService;
-
-.field private final b:Lkik/core/interfaces/ICommunication;
-
-.field private final c:Ljava/lang/Object;
-
-.field private final d:Ljava/util/Map;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Map",
-            "<",
-            "Lkik/core/xiphias/XiphiasRequest;",
-            "Ljava/util/concurrent/Future;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private final e:Ljava/util/Random;
+# interfaces
+.implements Lkik/core/xiphias/b;
 
 
 # direct methods
-.method constructor <init>(Lkik/core/interfaces/ICommunication;)V
-    .locals 1
+.method public constructor <init>(Lkik/core/interfaces/ICommunication;)V
+    .locals 0
 
     .prologue
-    .line 59
-    invoke-static {}, Ljava/util/concurrent/Executors;->newSingleThreadScheduledExecutor()Ljava/util/concurrent/ScheduledExecutorService;
+    .line 19
+    invoke-direct {p0, p1}, Lkik/core/xiphias/v;-><init>(Lkik/core/interfaces/ICommunication;)V
 
-    move-result-object v0
-
-    invoke-direct {p0, p1, v0}, Lkik/core/xiphias/s;-><init>(Lkik/core/interfaces/ICommunication;Ljava/util/concurrent/ScheduledExecutorService;)V
-
-    .line 60
+    .line 20
     return-void
 .end method
 
-.method private constructor <init>(Lkik/core/interfaces/ICommunication;Ljava/util/concurrent/ScheduledExecutorService;)V
-    .locals 1
-
-    .prologue
-    .line 63
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 48
-    new-instance v0, Ljava/lang/Object;
-
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    iput-object v0, p0, Lkik/core/xiphias/s;->c:Ljava/lang/Object;
-
-    .line 49
-    new-instance v0, Ljava/util/HashMap;
-
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
-
-    iput-object v0, p0, Lkik/core/xiphias/s;->d:Ljava/util/Map;
-
-    .line 50
-    new-instance v0, Ljava/util/Random;
-
-    invoke-direct {v0}, Ljava/util/Random;-><init>()V
-
-    iput-object v0, p0, Lkik/core/xiphias/s;->e:Ljava/util/Random;
-
-    .line 64
-    iput-object p1, p0, Lkik/core/xiphias/s;->b:Lkik/core/interfaces/ICommunication;
-
-    .line 65
-    iput-object p2, p0, Lkik/core/xiphias/s;->a:Ljava/util/concurrent/ScheduledExecutorService;
-
-    .line 66
-    return-void
-.end method
-
-.method static synthetic a(Lkik/core/xiphias/s;)Ljava/util/Random;
-    .locals 1
-
-    .prologue
-    .line 27
-    iget-object v0, p0, Lkik/core/xiphias/s;->e:Ljava/util/Random;
-
-    return-object v0
-.end method
-
-.method private a(Lkik/core/xiphias/XiphiasRequest;JIZ)Lrx/h;
-    .locals 2
+.method private static c()Lkik/core/xiphias/XiphiasRequest;
+    .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "<T:",
-            "Ljava/lang/Object;",
-            ">(",
+            "()",
             "Lkik/core/xiphias/XiphiasRequest",
-            "<TT;>;JIZ)",
-            "Lrx/h",
             "<",
-            "Lkik/core/xiphias/ab",
-            "<TT;>;>;"
+            "Lcom/kik/featureconfig/rpc/FeatureConfigService$GetFeatureConfigsResponse;",
+            ">;"
         }
     .end annotation
 
     .prologue
-    .line 93
-    invoke-static/range {p0 .. p5}, Lkik/core/xiphias/x;->a(Lkik/core/xiphias/s;Lkik/core/xiphias/XiphiasRequest;JIZ)Lrx/h$a;
+    .line 38
+    invoke-static {}, Lcom/kik/featureconfig/rpc/FeatureConfigService$GetFeatureConfigsRequest;->newBuilder()Lcom/kik/featureconfig/rpc/FeatureConfigService$GetFeatureConfigsRequest$a;
 
     move-result-object v0
 
-    invoke-static {v0}, Lrx/h;->a(Lrx/h$a;)Lrx/h;
+    .line 39
+    new-instance v1, Lkik/core/xiphias/XiphiasRequest;
+
+    const-string v2, "mobile.config.v1.FeatureConfig"
+
+    const-string v3, "GetFeatureConfigs"
+
+    .line 41
+    invoke-virtual {v0}, Lcom/kik/featureconfig/rpc/FeatureConfigService$GetFeatureConfigsRequest$a;->a()Lcom/kik/featureconfig/rpc/FeatureConfigService$GetFeatureConfigsRequest;
 
     move-result-object v0
 
-    return-object v0
-.end method
+    .line 42
+    invoke-static {}, Lcom/kik/featureconfig/rpc/FeatureConfigService$GetFeatureConfigsResponse;->i()Lcom/google/protobuf/Parser;
 
-.method static synthetic a(Lkik/core/xiphias/s;Lkik/core/xiphias/XiphiasRequest;JI)Lrx/h;
-    .locals 6
+    move-result-object v4
 
-    .prologue
-    .line 27
-    const/4 v5, 0x1
+    invoke-direct {v1, v2, v3, v0, v4}, Lkik/core/xiphias/XiphiasRequest;-><init>(Ljava/lang/String;Ljava/lang/String;Lcom/google/protobuf/AbstractMessage;Lcom/google/protobuf/Parser;)V
 
-    move-object v0, p0
-
-    move-object v1, p1
-
-    move-wide v2, p2
-
-    move v4, p4
-
-    invoke-direct/range {v0 .. v5}, Lkik/core/xiphias/s;->a(Lkik/core/xiphias/XiphiasRequest;JIZ)Lrx/h;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method static synthetic a(Lkik/core/xiphias/s;Lkik/core/xiphias/XiphiasRequest;)V
-    .locals 0
-
-    .prologue
-    .line 85
-    invoke-direct {p0, p1}, Lkik/core/xiphias/s;->c(Lkik/core/xiphias/XiphiasRequest;)V
-
-    return-void
-.end method
-
-.method static synthetic a(Lkik/core/xiphias/s;Lkik/core/xiphias/XiphiasRequest;JIZLrx/i;)V
-    .locals 4
-
-    .prologue
-    .line 94
-    iget-object v0, p0, Lkik/core/xiphias/s;->a:Ljava/util/concurrent/ScheduledExecutorService;
-
-    invoke-static/range {p0 .. p6}, Lkik/core/xiphias/z;->a(Lkik/core/xiphias/s;Lkik/core/xiphias/XiphiasRequest;JIZLrx/i;)Ljava/lang/Runnable;
-
-    move-result-object v1
-
-    sget-object v2, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
-
-    invoke-interface {v0, v1, p2, p3, v2}, Ljava/util/concurrent/ScheduledExecutorService;->schedule(Ljava/lang/Runnable;JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;
-
-    move-result-object v0
-
-    .line 96
-    iget-object v1, p0, Lkik/core/xiphias/s;->c:Ljava/lang/Object;
-
-    monitor-enter v1
-
-    .line 97
-    :try_start_0
-    iget-object v2, p0, Lkik/core/xiphias/s;->d:Ljava/util/Map;
-
-    invoke-interface {v2, p1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 98
-    monitor-exit v1
-
-    return-void
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit v1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw v0
-.end method
-
-.method static synthetic a(Lkik/core/xiphias/s;Lkik/core/xiphias/XiphiasRequest;ZIJLrx/i;)V
-    .locals 10
-
-    .prologue
-    .line 121
-    iget-object v0, p0, Lkik/core/xiphias/s;->b:Lkik/core/interfaces/ICommunication;
-
-    invoke-virtual {p1, v0}, Lkik/core/xiphias/XiphiasRequest;->send(Lkik/core/interfaces/ICommunication;)Lcom/kik/events/Promise;
-
-    move-result-object v0
-
-    .line 122
-    new-instance v1, Lkik/core/xiphias/s$1;
-
-    move-object v2, p0
-
-    move-object/from16 v3, p6
-
-    move v4, p2
-
-    move v5, p3
-
-    move-wide v6, p4
-
-    move-object v8, p1
-
-    invoke-direct/range {v1 .. v8}, Lkik/core/xiphias/s$1;-><init>(Lkik/core/xiphias/s;Lrx/i;ZIJLkik/core/xiphias/XiphiasRequest;)V
-
-    .line 164
-    invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
-
-    .line 165
-    return-void
-.end method
-
-.method static synthetic b(Lkik/core/xiphias/s;Lkik/core/xiphias/XiphiasRequest;)V
-    .locals 0
-
-    .prologue
-    .line 74
-    invoke-direct {p0, p1}, Lkik/core/xiphias/s;->c(Lkik/core/xiphias/XiphiasRequest;)V
-
-    return-void
-.end method
-
-.method private c(Lkik/core/xiphias/XiphiasRequest;)V
-    .locals 3
-
-    .prologue
-    .line 170
-    iget-object v1, p0, Lkik/core/xiphias/s;->c:Ljava/lang/Object;
-
-    monitor-enter v1
-
-    .line 171
-    :try_start_0
-    iget-object v0, p0, Lkik/core/xiphias/s;->d:Ljava/util/Map;
-
-    invoke-interface {v0, p1}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/util/concurrent/Future;
-
-    .line 172
-    if-eqz v0, :cond_0
-
-    .line 173
-    const/4 v2, 0x1
-
-    invoke-interface {v0, v2}, Ljava/util/concurrent/Future;->cancel(Z)Z
-
-    .line 175
-    :cond_0
-    monitor-exit v1
-
-    return-void
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit v1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw v0
+    .line 39
+    return-object v1
 .end method
 
 
 # virtual methods
-.method final a(Lkik/core/xiphias/XiphiasRequest;)Lrx/h;
-    .locals 6
+.method public final a()Lrx/h;
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "<T:",
-            "Ljava/lang/Object;",
-            ">(",
-            "Lkik/core/xiphias/XiphiasRequest",
-            "<TT;>;)",
+            "()",
             "Lrx/h",
-            "<TT;>;"
+            "<",
+            "Lcom/kik/featureconfig/rpc/FeatureConfigService$GetFeatureConfigsResponse;",
+            ">;"
         }
     .end annotation
 
     .prologue
-    .line 74
-    const-wide/16 v2, 0x0
-
-    const/4 v4, 0x0
-
-    const/4 v5, 0x1
-
-    move-object v0, p0
-
-    move-object v1, p1
-
-    invoke-direct/range {v0 .. v5}, Lkik/core/xiphias/s;->a(Lkik/core/xiphias/XiphiasRequest;JIZ)Lrx/h;
+    .line 25
+    invoke-static {}, Lkik/core/xiphias/s;->c()Lkik/core/xiphias/XiphiasRequest;
 
     move-result-object v0
 
-    invoke-static {}, Lkik/core/xiphias/t;->a()Lrx/functions/g;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lrx/h;->c(Lrx/functions/g;)Lrx/h;
-
-    move-result-object v0
-
-    invoke-static {p0, p1}, Lkik/core/xiphias/u;->a(Lkik/core/xiphias/s;Lkik/core/xiphias/XiphiasRequest;)Lrx/functions/a;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lrx/h;->a(Lrx/functions/a;)Lrx/h;
+    .line 26
+    invoke-virtual {p0, v0}, Lkik/core/xiphias/s;->a(Lkik/core/xiphias/XiphiasRequest;)Lrx/h;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method final b(Lkik/core/xiphias/XiphiasRequest;)Lrx/h;
-    .locals 6
+.method public final b()Lrx/h;
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "<T:",
-            "Ljava/lang/Object;",
-            ">(",
-            "Lkik/core/xiphias/XiphiasRequest",
-            "<TT;>;)",
+            "()",
             "Lrx/h",
-            "<TT;>;"
+            "<",
+            "Lcom/kik/featureconfig/rpc/FeatureConfigService$GetFeatureConfigsResponse;",
+            ">;"
         }
     .end annotation
 
     .prologue
-    const/4 v4, 0x0
-
-    .line 85
-    const-wide/16 v2, 0x0
-
-    move-object v0, p0
-
-    move-object v1, p1
-
-    move v5, v4
-
-    invoke-direct/range {v0 .. v5}, Lkik/core/xiphias/s;->a(Lkik/core/xiphias/XiphiasRequest;JIZ)Lrx/h;
+    .line 32
+    invoke-static {}, Lkik/core/xiphias/s;->c()Lkik/core/xiphias/XiphiasRequest;
 
     move-result-object v0
 
-    invoke-static {}, Lkik/core/xiphias/v;->a()Lrx/functions/g;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lrx/h;->c(Lrx/functions/g;)Lrx/h;
-
-    move-result-object v0
-
-    invoke-static {p0, p1}, Lkik/core/xiphias/w;->a(Lkik/core/xiphias/s;Lkik/core/xiphias/XiphiasRequest;)Lrx/functions/a;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lrx/h;->a(Lrx/functions/a;)Lrx/h;
+    .line 33
+    invoke-virtual {p0, v0}, Lkik/core/xiphias/s;->b(Lkik/core/xiphias/XiphiasRequest;)Lrx/h;
 
     move-result-object v0
 

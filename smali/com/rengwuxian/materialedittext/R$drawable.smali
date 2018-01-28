@@ -101,9 +101,9 @@
 
 .field public static final abc_textfield_search_material:I = 0x7f020051
 
-.field public static final met_ic_clear:I = 0x7f0202e5
+.field public static final met_ic_clear:I = 0x7f0202c8
 
-.field public static final met_ic_close:I = 0x7f0202e6
+.field public static final met_ic_close:I = 0x7f0202c9
 
 
 # direct methods

@@ -4,13 +4,13 @@
 
 
 # direct methods
-.method public static a(Lkik/core/datatypes/d;Lkik/core/interfaces/w;)Ljava/util/List;
+.method public static a(Lkik/core/datatypes/d;Lkik/core/interfaces/v;)Ljava/util/List;
     .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lkik/core/datatypes/d;",
-            "Lkik/core/interfaces/w;",
+            "Lkik/core/interfaces/v;",
             ")",
             "Ljava/util/List",
             "<",
@@ -46,7 +46,7 @@
     if-eqz v4, :cond_0
 
     .line 26
-    invoke-static {v4, p1}, Lkik/android/util/i;->a(Lkik/core/datatypes/c;Lkik/core/interfaces/w;)Lkik/core/datatypes/l;
+    invoke-static {v4, p1}, Lkik/android/util/i;->a(Lkik/core/datatypes/c;Lkik/core/interfaces/v;)Lkik/core/datatypes/l;
 
     move-result-object v4
 
@@ -64,7 +64,7 @@
     return-object v1
 .end method
 
-.method public static a(Lkik/core/datatypes/c;Lkik/core/interfaces/w;)Lkik/core/datatypes/l;
+.method public static a(Lkik/core/datatypes/c;Lkik/core/interfaces/v;)Lkik/core/datatypes/l;
     .locals 19
 
     .prologue
@@ -76,7 +76,7 @@
     .line 38
     move-object/from16 v0, p1
 
-    invoke-interface {v0, v3}, Lkik/core/interfaces/w;->b(Ljava/lang/String;)Z
+    invoke-interface {v0, v3}, Lkik/core/interfaces/v;->b(Ljava/lang/String;)Z
 
     move-result v6
 

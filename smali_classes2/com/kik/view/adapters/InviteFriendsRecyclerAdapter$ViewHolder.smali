@@ -25,13 +25,13 @@
 
 .field contactName:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f100320
+        value = 0x7f10031c
     .end annotation
 .end field
 
 .field phoneNumberOrEmail:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f100321
+        value = 0x7f10031d
     .end annotation
 .end field
 
@@ -152,7 +152,7 @@
     .locals 2
     .annotation build Lbutterknife/OnClick;
         value = {
-            0x7f10031e
+            0x7f10031a
         }
     .end annotation
 

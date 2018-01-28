@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field private a:Lkik/core/interfaces/ah;
+.field private a:Lkik/core/interfaces/ag;
 
-.field private b:Lkik/core/interfaces/ae;
+.field private b:Lkik/core/interfaces/ad;
 
 .field private c:Lkik/android/chat/view/ab;
 
-.field private d:Lkik/core/interfaces/w;
+.field private d:Lkik/core/interfaces/v;
 
 .field private e:Lkik/core/interfaces/IAddressBookIntegration;
 
@@ -21,7 +21,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lkik/core/interfaces/b;Lkik/core/interfaces/w;Lkik/core/interfaces/IAddressBookIntegration;Lkik/core/interfaces/ah;Lkik/core/interfaces/ae;)V
+.method public constructor <init>(Lkik/core/interfaces/b;Lkik/core/interfaces/v;Lkik/core/interfaces/IAddressBookIntegration;Lkik/core/interfaces/ag;Lkik/core/interfaces/ad;)V
     .locals 0
 
     .prologue
@@ -29,16 +29,16 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 29
-    iput-object p4, p0, Lkik/android/chat/presentation/af;->a:Lkik/core/interfaces/ah;
+    iput-object p4, p0, Lkik/android/chat/presentation/af;->a:Lkik/core/interfaces/ag;
 
     .line 30
-    iput-object p5, p0, Lkik/android/chat/presentation/af;->b:Lkik/core/interfaces/ae;
+    iput-object p5, p0, Lkik/android/chat/presentation/af;->b:Lkik/core/interfaces/ad;
 
     .line 31
-    iput-object p2, p0, Lkik/android/chat/presentation/af;->d:Lkik/core/interfaces/w;
+    iput-object p2, p0, Lkik/android/chat/presentation/af;->d:Lkik/core/interfaces/v;
 
     .line 32
-    iput-object p5, p0, Lkik/android/chat/presentation/af;->b:Lkik/core/interfaces/ae;
+    iput-object p5, p0, Lkik/android/chat/presentation/af;->b:Lkik/core/interfaces/ad;
 
     .line 33
     iput-object p3, p0, Lkik/android/chat/presentation/af;->e:Lkik/core/interfaces/IAddressBookIntegration;
@@ -71,9 +71,9 @@
     if-eqz v2, :cond_7
 
     .line 1098
-    iget-object v2, p0, Lkik/android/chat/presentation/af;->d:Lkik/core/interfaces/w;
+    iget-object v2, p0, Lkik/android/chat/presentation/af;->d:Lkik/core/interfaces/v;
 
-    invoke-interface {v2}, Lkik/core/interfaces/w;->o()Ljava/util/List;
+    invoke-interface {v2}, Lkik/core/interfaces/v;->n()Ljava/util/List;
 
     move-result-object v2
 
@@ -93,11 +93,11 @@
     if-nez v2, :cond_0
 
     .line 1104
-    iget-object v2, p0, Lkik/android/chat/presentation/af;->b:Lkik/core/interfaces/ae;
+    iget-object v2, p0, Lkik/android/chat/presentation/af;->b:Lkik/core/interfaces/ad;
 
     const-string v3, "kik.abm_reminder_seen"
 
-    invoke-interface {v2, v3}, Lkik/core/interfaces/ae;->w(Ljava/lang/String;)Ljava/lang/Boolean;
+    invoke-interface {v2, v3}, Lkik/core/interfaces/ad;->w(Ljava/lang/String;)Ljava/lang/Boolean;
 
     move-result-object v2
 
@@ -147,9 +147,9 @@
     move-result v2
 
     .line 1075
-    iget-object v3, p0, Lkik/android/chat/presentation/af;->b:Lkik/core/interfaces/ae;
+    iget-object v3, p0, Lkik/android/chat/presentation/af;->b:Lkik/core/interfaces/ad;
 
-    invoke-interface {v3}, Lkik/core/interfaces/ae;->n()J
+    invoke-interface {v3}, Lkik/core/interfaces/ad;->n()J
 
     move-result-wide v4
 
@@ -176,9 +176,9 @@
 
     .line 1080
     :cond_6
-    iget-object v3, p0, Lkik/android/chat/presentation/af;->b:Lkik/core/interfaces/ae;
+    iget-object v3, p0, Lkik/android/chat/presentation/af;->b:Lkik/core/interfaces/ad;
 
-    invoke-static {v3}, Lkik/android/util/b;->b(Lkik/core/interfaces/ae;)J
+    invoke-static {v3}, Lkik/android/util/b;->b(Lkik/core/interfaces/ad;)J
 
     move-result-wide v6
 
@@ -223,7 +223,7 @@
     return-void
 .end method
 
-.method public final k_()V
+.method public final m_()V
     .locals 1
 
     .prologue

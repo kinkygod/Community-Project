@@ -98,18 +98,18 @@
     .line 684
     if-eqz v0, :cond_0
 
-    .line 13345
-    invoke-virtual {v0}, Landroid/support/v7/widget/RecyclerView$ItemAnimator;->b()Z
+    const/4 v2, 0x0
+
+    invoke-virtual {v0, v2}, Landroid/support/v7/widget/RecyclerView$ItemAnimator;->a(Landroid/support/v7/widget/RecyclerView$ItemAnimator$ItemAnimatorFinishedListener;)Z
 
     move-result v0
 
-    .line 684
     if-nez v0, :cond_4
 
     :cond_0
     iget-object v3, p0, Landroid/support/v7/widget/helper/ItemTouchHelper$4;->c:Landroid/support/v7/widget/helper/ItemTouchHelper;
 
-    .line 13696
+    .line 1696
     iget-object v0, v3, Landroid/support/v7/widget/helper/ItemTouchHelper;->o:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -118,11 +118,11 @@
 
     move v2, v1
 
-    .line 13697
+    .line 1697
     :goto_0
     if-ge v2, v4, :cond_3
 
-    .line 13698
+    .line 1698
     iget-object v0, v3, Landroid/support/v7/widget/helper/ItemTouchHelper;->o:Ljava/util/List;
 
     invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -135,7 +135,7 @@
 
     if-nez v0, :cond_2
 
-    .line 13699
+    .line 1699
     const/4 v0, 0x1
 
     .line 685
@@ -154,7 +154,7 @@
     :goto_2
     return-void
 
-    .line 13697
+    .line 1697
     :cond_2
     add-int/lit8 v0, v2, 0x1
 
@@ -165,7 +165,7 @@
     :cond_3
     move v0, v1
 
-    .line 13702
+    .line 1702
     goto :goto_1
 
     .line 688

@@ -17,7 +17,7 @@
     value = {
         "Lcom/kik/events/k",
         "<",
-        "Lkik/core/xiphias/ab",
+        "Lkik/core/xiphias/ag",
         "<",
         "Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultResponse;",
         ">;>;"
@@ -49,12 +49,12 @@
 
     .prologue
     .line 147
-    check-cast p1, Lkik/core/xiphias/ab;
+    check-cast p1, Lkik/core/xiphias/ag;
 
     .line 1151
     sget-object v1, Lkik/android/challenge/SafetyNetValidator$3;->a:[I
 
-    invoke-virtual {p1}, Lkik/core/xiphias/ab;->a()Ljava/lang/Object;
+    invoke-virtual {p1}, Lkik/core/xiphias/ag;->a()Ljava/lang/Object;
 
     move-result-object v0
 

@@ -14,13 +14,13 @@
 # instance fields
 .field protected _abmImage:Landroid/widget/ImageView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1001e7
+        value = 0x7f1001e8
     .end annotation
 .end field
 
 .field protected _abmPhoneNumberField:Lkik/android/chat/view/ValidateableInputView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1001ea
+        value = 0x7f1001eb
     .end annotation
 .end field
 
@@ -111,7 +111,7 @@
 
     iget-object v4, p0, Lkik/android/chat/fragment/FullScreenAddressbookFragment;->b:Lkik/android/chat/fragment/FullScreenAddressbookFragment$a;
 
-    invoke-virtual {v4}, Lkik/android/chat/fragment/FullScreenAddressbookFragment$a;->g_()Ljava/lang/String;
+    invoke-virtual {v4}, Lkik/android/chat/fragment/FullScreenAddressbookFragment$a;->h_()Ljava/lang/String;
 
     move-result-object v4
 
@@ -126,7 +126,7 @@
 
     iget-object v4, p0, Lkik/android/chat/fragment/FullScreenAddressbookFragment;->b:Lkik/android/chat/fragment/FullScreenAddressbookFragment$a;
 
-    invoke-virtual {v4}, Lkik/android/chat/fragment/FullScreenAddressbookFragment$a;->g_()Ljava/lang/String;
+    invoke-virtual {v4}, Lkik/android/chat/fragment/FullScreenAddressbookFragment$a;->h_()Ljava/lang/String;
 
     move-result-object v4
 
@@ -154,9 +154,9 @@
     .line 239
     const-string v0, "Day"
 
-    iget-object v4, p0, Lkik/android/chat/fragment/FullScreenAddressbookFragment;->_storage:Lkik/core/interfaces/ae;
+    iget-object v4, p0, Lkik/android/chat/fragment/FullScreenAddressbookFragment;->_storage:Lkik/core/interfaces/ad;
 
-    invoke-static {v4}, Lkik/android/util/b;->a(Lkik/core/interfaces/ae;)I
+    invoke-static {v4}, Lkik/android/util/b;->a(Lkik/core/interfaces/ad;)I
 
     move-result v4
 
@@ -289,7 +289,7 @@
 
     iget-object v3, p0, Lkik/android/chat/fragment/FullScreenAddressbookFragment;->b:Lkik/android/chat/fragment/FullScreenAddressbookFragment$a;
 
-    invoke-virtual {v3}, Lkik/android/chat/fragment/FullScreenAddressbookFragment$a;->g_()Ljava/lang/String;
+    invoke-virtual {v3}, Lkik/android/chat/fragment/FullScreenAddressbookFragment$a;->h_()Ljava/lang/String;
 
     move-result-object v3
 
@@ -317,9 +317,9 @@
     .line 197
     const-string v2, "Day"
 
-    iget-object v3, p0, Lkik/android/chat/fragment/FullScreenAddressbookFragment;->_storage:Lkik/core/interfaces/ae;
+    iget-object v3, p0, Lkik/android/chat/fragment/FullScreenAddressbookFragment;->_storage:Lkik/core/interfaces/ad;
 
-    invoke-static {v3}, Lkik/android/util/b;->a(Lkik/core/interfaces/ae;)I
+    invoke-static {v3}, Lkik/android/util/b;->a(Lkik/core/interfaces/ad;)I
 
     move-result v3
 
@@ -350,7 +350,7 @@
     .line 3207
     iget-object v0, p0, Lkik/android/chat/fragment/FullScreenAddressbookFragment;->b:Lkik/android/chat/fragment/FullScreenAddressbookFragment$a;
 
-    invoke-virtual {v0}, Lkik/android/chat/fragment/FullScreenAddressbookFragment$a;->g_()Ljava/lang/String;
+    invoke-virtual {v0}, Lkik/android/chat/fragment/FullScreenAddressbookFragment$a;->h_()Ljava/lang/String;
 
     move-result-object v0
 
@@ -364,7 +364,7 @@
     if-eqz v1, :cond_0
 
     .line 3209
-    iget-object v1, p0, Lkik/android/chat/fragment/FullScreenAddressbookFragment;->_storage:Lkik/core/interfaces/ae;
+    iget-object v1, p0, Lkik/android/chat/fragment/FullScreenAddressbookFragment;->_storage:Lkik/core/interfaces/ad;
 
     const-string v2, "kik.abm_reminder_seen"
 
@@ -374,7 +374,7 @@
 
     move-result-object v3
 
-    invoke-interface {v1, v2, v3}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;Ljava/lang/Boolean;)Z
+    invoke-interface {v1, v2, v3}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Boolean;)Z
 
     .line 3211
     :cond_0
@@ -400,7 +400,7 @@
 
     invoke-direct {v0}, Lkik/android/chat/fragment/KikConversationsFragment$a;-><init>()V
 
-    .line 3718
+    .line 3720
     const-string v1, "registration"
 
     invoke-virtual {v0, v1}, Lkik/android/chat/fragment/KikConversationsFragment$a;->c(Ljava/lang/String;)Lkik/android/chat/fragment/KikConversationsFragment$a;
@@ -442,7 +442,7 @@
     iget-object v2, p0, Lkik/android/chat/fragment/FullScreenAddressbookFragment;->b:Lkik/android/chat/fragment/FullScreenAddressbookFragment$a;
 
     .line 4227
-    invoke-virtual {v2}, Lkik/android/chat/fragment/FullScreenAddressbookFragment$a;->g_()Ljava/lang/String;
+    invoke-virtual {v2}, Lkik/android/chat/fragment/FullScreenAddressbookFragment$a;->h_()Ljava/lang/String;
 
     move-result-object v2
 
@@ -483,7 +483,7 @@
 
     .prologue
     .line 221
-    const v0, 0x7f040082
+    const v0, 0x7f040084
 
     return v0
 .end method
@@ -505,7 +505,7 @@
     .line 260
     iget-object v0, p0, Lkik/android/chat/fragment/FullScreenAddressbookFragment;->b:Lkik/android/chat/fragment/FullScreenAddressbookFragment$a;
 
-    invoke-virtual {v0}, Lkik/android/chat/fragment/FullScreenAddressbookFragment$a;->g_()Ljava/lang/String;
+    invoke-virtual {v0}, Lkik/android/chat/fragment/FullScreenAddressbookFragment$a;->h_()Ljava/lang/String;
 
     move-result-object v0
 
@@ -610,7 +610,7 @@
 
     iget-object v3, p0, Lkik/android/chat/fragment/FullScreenAddressbookFragment;->b:Lkik/android/chat/fragment/FullScreenAddressbookFragment$a;
 
-    invoke-virtual {v3}, Lkik/android/chat/fragment/FullScreenAddressbookFragment$a;->g_()Ljava/lang/String;
+    invoke-virtual {v3}, Lkik/android/chat/fragment/FullScreenAddressbookFragment$a;->h_()Ljava/lang/String;
 
     move-result-object v3
 
@@ -630,7 +630,7 @@
 
     iget-object v2, p0, Lkik/android/chat/fragment/FullScreenAddressbookFragment;->b:Lkik/android/chat/fragment/FullScreenAddressbookFragment$a;
 
-    invoke-virtual {v2}, Lkik/android/chat/fragment/FullScreenAddressbookFragment$a;->g_()Ljava/lang/String;
+    invoke-virtual {v2}, Lkik/android/chat/fragment/FullScreenAddressbookFragment$a;->h_()Ljava/lang/String;
 
     move-result-object v2
 
@@ -658,9 +658,9 @@
     .line 107
     const-string v0, "Day"
 
-    iget-object v2, p0, Lkik/android/chat/fragment/FullScreenAddressbookFragment;->_storage:Lkik/core/interfaces/ae;
+    iget-object v2, p0, Lkik/android/chat/fragment/FullScreenAddressbookFragment;->_storage:Lkik/core/interfaces/ad;
 
-    invoke-static {v2}, Lkik/android/util/b;->a(Lkik/core/interfaces/ae;)I
+    invoke-static {v2}, Lkik/android/util/b;->a(Lkik/core/interfaces/ad;)I
 
     move-result v2
 
@@ -681,7 +681,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f040160
+    const v1, 0x7f040166
 
     const-wide/16 v2, 0x3e8
 
@@ -770,7 +770,7 @@
 
     iget-object v2, p0, Lkik/android/chat/fragment/FullScreenAddressbookFragment;->b:Lkik/android/chat/fragment/FullScreenAddressbookFragment$a;
 
-    invoke-virtual {v2}, Lkik/android/chat/fragment/FullScreenAddressbookFragment$a;->g_()Ljava/lang/String;
+    invoke-virtual {v2}, Lkik/android/chat/fragment/FullScreenAddressbookFragment$a;->h_()Ljava/lang/String;
 
     move-result-object v2
 
@@ -805,7 +805,7 @@
 
     aput-object v2, v1, v4
 
-    invoke-static {v1}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v1}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
     .line 2250
     new-array v1, v3, [Landroid/view/View;
@@ -814,7 +814,7 @@
 
     aput-object v2, v1, v4
 
-    invoke-static {v1}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v1}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
     .line 2251
     new-array v1, v3, [Landroid/view/View;
@@ -823,7 +823,7 @@
 
     aput-object v2, v1, v4
 
-    invoke-static {v1}, Lkik/android/util/ca;->g([Landroid/view/View;)V
+    invoke-static {v1}, Lkik/android/util/cb;->g([Landroid/view/View;)V
 
     .line 2253
     iget-object v1, p0, Lkik/android/chat/fragment/FullScreenAddressbookFragment;->_abmPhoneNumberField:Lkik/android/chat/view/ValidateableInputView;
@@ -854,7 +854,7 @@
     .locals 0
     .annotation build Lbutterknife/OnClick;
         value = {
-            0x7f1001e6
+            0x7f1001e7
         }
     .end annotation
 
@@ -866,16 +866,16 @@
     return-void
 .end method
 
-.method protected screenOpenedEvent()Lcom/kik/metrics/b/s;
+.method protected screenOpenedEvent()Lcom/kik/metrics/b/t;
     .locals 1
 
     .prologue
     .line 174
-    invoke-static {}, Lcom/kik/metrics/b/ak;->b()Lcom/kik/metrics/b/ak$a;
+    invoke-static {}, Lcom/kik/metrics/b/am;->b()Lcom/kik/metrics/b/am$a;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/kik/metrics/b/ak$a;->a()Lcom/kik/metrics/b/ak;
+    invoke-virtual {v0}, Lcom/kik/metrics/b/am$a;->a()Lcom/kik/metrics/b/am;
 
     move-result-object v0
 

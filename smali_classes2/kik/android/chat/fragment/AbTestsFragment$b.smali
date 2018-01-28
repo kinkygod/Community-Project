@@ -130,7 +130,7 @@
     .line 261
     iget-object v0, p0, Lkik/android/chat/fragment/AbTestsFragment$b;->b:Landroid/view/LayoutInflater;
 
-    const v1, 0x7f04013b
+    const v1, 0x7f04013f
 
     invoke-virtual {v0, v1, p3, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 

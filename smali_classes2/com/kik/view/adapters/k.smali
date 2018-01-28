@@ -43,9 +43,9 @@
 .method public final call(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    check-cast p1, Lkik/core/chat/profile/EmojiStatus;
+    check-cast p1, Lcom/kik/core/domain/users/a/c;
 
-    invoke-static {p1}, Lcom/kik/view/adapters/i;->a(Lkik/core/chat/profile/EmojiStatus;)Ljava/lang/Boolean;
+    invoke-interface {p1}, Lcom/kik/core/domain/users/a/c;->e()Lkik/core/chat/profile/EmojiStatus;
 
     move-result-object v0
 

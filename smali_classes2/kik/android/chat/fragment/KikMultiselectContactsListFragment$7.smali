@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/kik/events/e;
+.implements Landroid/widget/TextView$OnEditorActionListener;
 
 
 # annotations
@@ -16,16 +16,6 @@
     name = null
 .end annotation
 
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lcom/kik/events/e",
-        "<",
-        "Lkik/core/datatypes/l;",
-        ">;"
-    }
-.end annotation
-
 
 # instance fields
 .field final synthetic a:Lkik/android/chat/fragment/KikMultiselectContactsListFragment;
@@ -36,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 175
+    .line 202
     iput-object p1, p0, Lkik/android/chat/fragment/KikMultiselectContactsListFragment$7;->a:Lkik/android/chat/fragment/KikMultiselectContactsListFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,22 +36,58 @@
 
 
 # virtual methods
-.method public final bridge synthetic a(Ljava/lang/Object;Ljava/lang/Object;)V
+.method public final onEditorAction(Landroid/widget/TextView;ILandroid/view/KeyEvent;)Z
     .locals 3
 
     .prologue
-    const/4 v2, 0x0
+    const/4 v0, 0x0
 
-    .line 175
-    check-cast p2, Lkik/core/datatypes/l;
+    .line 207
+    const/4 v1, 0x2
 
-    .line 1179
+    if-eq p2, v1, :cond_0
+
+    const/4 v1, 0x6
+
+    if-eq p2, v1, :cond_0
+
+    if-eqz p3, :cond_1
+
+    invoke-virtual {p3}, Landroid/view/KeyEvent;->getKeyCode()I
+
+    move-result v1
+
+    const/16 v2, 0x42
+
+    if-ne v1, v2, :cond_1
+
+    iget-object v1, p0, Lkik/android/chat/fragment/KikMultiselectContactsListFragment$7;->a:Lkik/android/chat/fragment/KikMultiselectContactsListFragment;
+
+    iget-boolean v1, v1, Lkik/android/chat/fragment/KikMultiselectContactsListFragment;->H:Z
+
+    if-nez v1, :cond_1
+
+    .line 208
+    :cond_0
     iget-object v0, p0, Lkik/android/chat/fragment/KikMultiselectContactsListFragment$7;->a:Lkik/android/chat/fragment/KikMultiselectContactsListFragment;
 
-    const/4 v1, 0x0
+    invoke-virtual {v0, p1}, Lkik/android/chat/fragment/KikMultiselectContactsListFragment;->hideKeyBoard(Landroid/view/View;)V
 
-    invoke-virtual {v0, p2, v2, v2, v1}, Lkik/android/chat/fragment/KikMultiselectContactsListFragment;->a(Lkik/core/datatypes/l;Lcom/kik/view/adapters/e;Landroid/database/Cursor;I)V
+    .line 209
+    invoke-virtual {p1}, Landroid/widget/TextView;->clearFocus()V
 
-    .line 175
-    return-void
+    .line 210
+    const/4 v0, 0x1
+
+    .line 214
+    :goto_0
+    return v0
+
+    .line 213
+    :cond_1
+    iget-object v1, p0, Lkik/android/chat/fragment/KikMultiselectContactsListFragment$7;->a:Lkik/android/chat/fragment/KikMultiselectContactsListFragment;
+
+    iput-boolean v0, v1, Lkik/android/chat/fragment/KikMultiselectContactsListFragment;->H:Z
+
+    goto :goto_0
 .end method

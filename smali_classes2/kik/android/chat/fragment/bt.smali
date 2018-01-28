@@ -2,7 +2,7 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Landroid/view/View$OnClickListener;
+.implements Lkik/android/widget/ContactSearchView$a;
 
 
 # instance fields
@@ -20,7 +20,7 @@
     return-void
 .end method
 
-.method public static a(Lkik/android/chat/fragment/KikDefaultContactsListFragment;)Landroid/view/View$OnClickListener;
+.method public static a(Lkik/android/chat/fragment/KikDefaultContactsListFragment;)Lkik/android/widget/ContactSearchView$a;
     .locals 1
 
     new-instance v0, Lkik/android/chat/fragment/bt;
@@ -32,12 +32,12 @@
 
 
 # virtual methods
-.method public final onClick(Landroid/view/View;)V
+.method public final a(Lkik/core/datatypes/l;)V
     .locals 1
 
     iget-object v0, p0, Lkik/android/chat/fragment/bt;->a:Lkik/android/chat/fragment/KikDefaultContactsListFragment;
 
-    invoke-static {v0, p1}, Lkik/android/chat/fragment/KikDefaultContactsListFragment;->a(Lkik/android/chat/fragment/KikDefaultContactsListFragment;Landroid/view/View;)V
+    invoke-virtual {v0, p1}, Lkik/android/chat/fragment/KikDefaultContactsListFragment;->a(Lkik/core/datatypes/l;)V
 
     return-void
 .end method

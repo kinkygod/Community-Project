@@ -52,11 +52,11 @@
     .line 128
     iget-object v0, p0, Lkik/android/chat/fragment/AbTestsFragment$2;->a:Lkik/android/chat/fragment/AbTestsFragment;
 
-    invoke-static {v0}, Lkik/android/chat/fragment/AbTestsFragment;->b(Lkik/android/chat/fragment/AbTestsFragment;)Lcom/kik/view/adapters/w;
+    invoke-static {v0}, Lkik/android/chat/fragment/AbTestsFragment;->b(Lkik/android/chat/fragment/AbTestsFragment;)Lcom/kik/view/adapters/x;
 
     move-result-object v0
 
-    invoke-virtual {v0, p3}, Lcom/kik/view/adapters/w;->a(I)Landroid/widget/Adapter;
+    invoke-virtual {v0, p3}, Lcom/kik/view/adapters/x;->a(I)Landroid/widget/Adapter;
 
     move-result-object v0
 
@@ -68,11 +68,11 @@
     .line 131
     iget-object v0, p0, Lkik/android/chat/fragment/AbTestsFragment$2;->a:Lkik/android/chat/fragment/AbTestsFragment;
 
-    invoke-static {v0}, Lkik/android/chat/fragment/AbTestsFragment;->b(Lkik/android/chat/fragment/AbTestsFragment;)Lcom/kik/view/adapters/w;
+    invoke-static {v0}, Lkik/android/chat/fragment/AbTestsFragment;->b(Lkik/android/chat/fragment/AbTestsFragment;)Lcom/kik/view/adapters/x;
 
     move-result-object v0
 
-    invoke-virtual {v0, p3}, Lcom/kik/view/adapters/w;->getItem(I)Ljava/lang/Object;
+    invoke-virtual {v0, p3}, Lcom/kik/view/adapters/x;->getItem(I)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -103,11 +103,11 @@
     .line 136
     iget-object v0, p0, Lkik/android/chat/fragment/AbTestsFragment$2;->a:Lkik/android/chat/fragment/AbTestsFragment;
 
-    invoke-static {v0}, Lkik/android/chat/fragment/AbTestsFragment;->b(Lkik/android/chat/fragment/AbTestsFragment;)Lcom/kik/view/adapters/w;
+    invoke-static {v0}, Lkik/android/chat/fragment/AbTestsFragment;->b(Lkik/android/chat/fragment/AbTestsFragment;)Lcom/kik/view/adapters/x;
 
     move-result-object v0
 
-    invoke-virtual {v0, p3}, Lcom/kik/view/adapters/w;->getItem(I)Ljava/lang/Object;
+    invoke-virtual {v0, p3}, Lcom/kik/view/adapters/x;->getItem(I)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -165,11 +165,11 @@
     .line 153
     iget-object v0, p0, Lkik/android/chat/fragment/AbTestsFragment$2;->a:Lkik/android/chat/fragment/AbTestsFragment;
 
-    invoke-static {v0}, Lkik/android/chat/fragment/AbTestsFragment;->b(Lkik/android/chat/fragment/AbTestsFragment;)Lcom/kik/view/adapters/w;
+    invoke-static {v0}, Lkik/android/chat/fragment/AbTestsFragment;->b(Lkik/android/chat/fragment/AbTestsFragment;)Lcom/kik/view/adapters/x;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/kik/view/adapters/w;->notifyDataSetChanged()V
+    invoke-virtual {v0}, Lcom/kik/view/adapters/x;->notifyDataSetChanged()V
 
     goto :goto_0
 .end method

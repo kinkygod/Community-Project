@@ -14,7 +14,7 @@
 # instance fields
 .field private final a:Lkik/core/e/d;
 
-.field private final b:Lkik/core/interfaces/ae;
+.field private final b:Lkik/core/interfaces/ad;
 
 .field private final c:Lkik/core/d/b;
 
@@ -46,7 +46,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lkik/core/e/d;Lkik/core/interfaces/ae;Lkik/core/d/b;)V
+.method public constructor <init>(Lkik/core/e/d;Lkik/core/interfaces/ad;Lkik/core/d/b;)V
     .locals 2
 
     .prologue
@@ -71,7 +71,7 @@
     iput-object p1, p0, Lkik/android/b/a;->a:Lkik/core/e/d;
 
     .line 71
-    iput-object p2, p0, Lkik/android/b/a;->b:Lkik/core/interfaces/ae;
+    iput-object p2, p0, Lkik/android/b/a;->b:Lkik/core/interfaces/ad;
 
     .line 72
     iput-object p3, p0, Lkik/android/b/a;->c:Lkik/core/d/b;
@@ -152,12 +152,12 @@
     goto :goto_0
 .end method
 
-.method static synthetic b(Lkik/android/b/a;)Lkik/core/interfaces/ae;
+.method static synthetic b(Lkik/android/b/a;)Lkik/core/interfaces/ad;
     .locals 1
 
     .prologue
     .line 32
-    iget-object v0, p0, Lkik/android/b/a;->b:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/b/a;->b:Lkik/core/interfaces/ad;
 
     return-object v0
 .end method
@@ -167,11 +167,11 @@
 
     .prologue
     .line 88
-    iget-object v0, p0, Lkik/android/b/a;->b:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/b/a;->b:Lkik/core/interfaces/ad;
 
     const-string v1, "XDATA_CARD_HISTORY_MIGRATED"
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ae;->w(Ljava/lang/String;)Ljava/lang/Boolean;
+    invoke-interface {v0, v1}, Lkik/core/interfaces/ad;->w(Ljava/lang/String;)Ljava/lang/Boolean;
 
     move-result-object v0
 
@@ -197,11 +197,11 @@
 
     .prologue
     .line 93
-    iget-object v0, p0, Lkik/android/b/a;->b:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/b/a;->b:Lkik/core/interfaces/ad;
 
     const-string v1, "XDATA_CARD_PERMISSIONS_MIGRATED"
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ae;->w(Ljava/lang/String;)Ljava/lang/Boolean;
+    invoke-interface {v0, v1}, Lkik/core/interfaces/ad;->w(Ljava/lang/String;)Ljava/lang/Boolean;
 
     move-result-object v0
 

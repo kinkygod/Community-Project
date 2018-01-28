@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:tag="layout/fragment_emoji_status_picker_0" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout android:tag="layout/fragment_emoji_status_picker_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <LinearLayout android:orientation="horizontal" android:id="@id/navbar" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content">
         <include layout="@layout/kik_back_button" />
         <FrameLayout android:layout_width="0.0dip" android:layout_height="@dimen/native_topbar_height" android:layout_weight="1.0" />

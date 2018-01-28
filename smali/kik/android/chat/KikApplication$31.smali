@@ -21,7 +21,7 @@
         "Ljava/lang/Object;",
         "Lcom/kik/events/e",
         "<",
-        "Lkik/core/chat/profile/i$d;",
+        "Lkik/core/chat/profile/n$d;",
         ">;"
     }
 .end annotation
@@ -36,7 +36,7 @@
     .locals 0
 
     .prologue
-    .line 499
+    .line 501
     iput-object p1, p0, Lkik/android/chat/KikApplication$31;->a:Lkik/android/chat/KikApplication;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -50,10 +50,10 @@
     .locals 2
 
     .prologue
-    .line 499
-    check-cast p2, Lkik/core/chat/profile/i$d;
+    .line 501
+    check-cast p2, Lkik/core/chat/profile/n$d;
 
-    .line 1502
+    .line 1504
     iget-object v0, p0, Lkik/android/chat/KikApplication$31;->a:Lkik/android/chat/KikApplication;
 
     invoke-static {v0}, Lkik/android/chat/KikApplication;->g(Lkik/android/chat/KikApplication;)Landroid/os/Handler;
@@ -62,10 +62,10 @@
 
     new-instance v1, Lkik/android/chat/KikApplication$31$1;
 
-    invoke-direct {v1, p0, p2}, Lkik/android/chat/KikApplication$31$1;-><init>(Lkik/android/chat/KikApplication$31;Lkik/core/chat/profile/i$d;)V
+    invoke-direct {v1, p0, p2}, Lkik/android/chat/KikApplication$31$1;-><init>(Lkik/android/chat/KikApplication$31;Lkik/core/chat/profile/n$d;)V
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
-    .line 499
+    .line 501
     return-void
 .end method

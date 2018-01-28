@@ -27,8 +27,6 @@
 
 .field public static final sticker_cell_animator:I = 0x7f060005
 
-.field public static final theme_picker_button_press:I = 0x7f060006
-
 
 # direct methods
 .method public constructor <init>()V

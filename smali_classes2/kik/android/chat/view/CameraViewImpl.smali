@@ -15,25 +15,25 @@
 # instance fields
 .field protected _cameraCover:Landroid/view/View;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f100182
+        value = 0x7f100183
     .end annotation
 .end field
 
 .field protected _clipFrame:Landroid/widget/FrameLayout;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f100180
+        value = 0x7f100181
     .end annotation
 .end field
 
 .field protected _touchFocusImage:Landroid/widget/FrameLayout;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f10017f
+        value = 0x7f100180
     .end annotation
 .end field
 
 .field protected _videoInstructionText:Lkik/android/widget/RotatableTextView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f100181
+        value = 0x7f100182
     .end annotation
 .end field
 
@@ -159,7 +159,7 @@
     const/4 v5, 0x0
 
     .line 86
-    const v0, 0x7f040045
+    const v0, 0x7f040046
 
     invoke-static {p1, v0, p0}, Lkik/android/chat/view/CameraViewImpl;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -185,7 +185,7 @@
     if-eqz v1, :cond_1
 
     .line 94
-    const v1, 0x7f0400a6
+    const v1, 0x7f0400a5
 
     iget-object v2, p0, Lkik/android/chat/view/CameraViewImpl;->_clipFrame:Landroid/widget/FrameLayout;
 
@@ -291,7 +291,7 @@
 
     .line 103
     :cond_1
-    const v1, 0x7f040043
+    const v1, 0x7f040044
 
     iget-object v2, p0, Lkik/android/chat/view/CameraViewImpl;->_clipFrame:Landroid/widget/FrameLayout;
 
@@ -417,7 +417,7 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
     .line 244
     return-void
@@ -494,7 +494,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0203ae
+    const v2, 0x7f020392
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -577,7 +577,7 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
     .line 269
     return-void
@@ -794,14 +794,14 @@
 
     aput-object v1, v0, v2
 
-    invoke-static {v0}, Lkik/android/util/ca;->g([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->g([Landroid/view/View;)V
 
     .line 219
     new-array v0, v3, [Landroid/view/View;
 
     aput-object p0, v0, v2
 
-    invoke-static {v0}, Lkik/android/util/ca;->f([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->f([Landroid/view/View;)V
 
     .line 220
     return-void
@@ -820,7 +820,7 @@
 
     aput-object p0, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
     .line 213
     return-void
@@ -854,7 +854,7 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ca;->g([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->g([Landroid/view/View;)V
 
     .line 232
     return-void
@@ -865,7 +865,7 @@
 
     .prologue
     .line 237
-    const v0, 0x7f090568
+    const v0, 0x7f09056e
 
     invoke-direct {p0, v0}, Lkik/android/chat/view/CameraViewImpl;->b(I)V
 
@@ -880,7 +880,7 @@
     .line 274
     iget-object v0, p0, Lkik/android/chat/view/CameraViewImpl;->_touchFocusImage:Landroid/widget/FrameLayout;
 
-    invoke-static {v0}, Lkik/android/util/ca;->b(Landroid/view/View;)Z
+    invoke-static {v0}, Lkik/android/util/cb;->b(Landroid/view/View;)Z
 
     move-result v0
 

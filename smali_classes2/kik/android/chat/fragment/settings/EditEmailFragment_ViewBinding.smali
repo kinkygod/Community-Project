@@ -26,7 +26,7 @@
     iput-object p1, p0, Lkik/android/chat/fragment/settings/EditEmailFragment_ViewBinding;->a:Lkik/android/chat/fragment/settings/EditEmailFragment;
 
     .line 28
-    const v0, 0x7f1001f0
+    const v0, 0x7f1001f1
 
     const-string v1, "field \'_emailInput\'"
 
@@ -41,7 +41,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/settings/EditEmailFragment;->_emailInput:Lkik/android/chat/view/ValidateableInputView;
 
     .line 29
-    const v0, 0x7f1001f2
+    const v0, 0x7f1001f3
 
     const-string v1, "field \'_emailStatus\'"
 
@@ -56,7 +56,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/settings/EditEmailFragment;->_emailStatus:Landroid/widget/TextView;
 
     .line 30
-    const v0, 0x7f1001ef
+    const v0, 0x7f1001f0
 
     const-string v1, "field \'_saveButton\' and method \'onSaveClick\'"
 
@@ -78,7 +78,7 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 39
-    const v0, 0x7f1001f1
+    const v0, 0x7f1001f2
 
     const-string v1, "method \'onEmailStatusClick\'"
 

@@ -6,6 +6,7 @@ option java_package = "com.kik.featureconfig.rpc";
 option go_package = "github.com/kikinteractive/xiphias-api-mobile/generated/go/config/v1;config";
 
 import "protobuf_validation.proto";
+import "google/protobuf/duration.proto";
 
 // FeatureConfig is a service that provides global configuration settings for
 // various 'features' at Kik. The term 'feature' here is somewhat loose, but
@@ -25,6 +26,10 @@ service FeatureConfig {
     // GetFeatureConfigs returns the entire set of feature configurations that
     // _may_ be tailored based on the caller.
     rpc GetFeatureConfigs(GetFeatureConfigsRequest) returns (GetFeatureConfigsResponse) {}
+
+    // GetAllUserInterestList returns a list of user interests current or ever existed
+    // This is likely only to be used internally for validating if an id is valid. 
+    rpc GetAllUserInterestIds(GetAllUserInterestIdsRequest) returns (GetAllUserInterestIdsResponse) {}
 }
 
 // GetFeatureConfigRequest is an empty request, that may contain fields in the
@@ -64,4 +69,44 @@ message GetFeatureConfigsResponse {
     // which we know will be obsolete after Harmony 3 is in place and is_trusted
     // is supported properly via harmony roster subscription sync
     bool entity_service_get_trusted_bots_enabled = 12;
+
+    // When the entity_service_get_trusted_bots_enabled is enabled, this is the duration to  
+    // lapse before the client should invoke another call to EntityService.getTrustedBots
+    google.protobuf.Duration min_duration_between_pull_entity_service_get_trusted_bots = 13 [(kik.validation.field_validation) = {
+        mandatory: true 
+        }];
+
+    // The max number of interests an user can select
+    uint32 max_user_interests = 14;
+
+    // The following is the current list of user interests that will be offered to the user 
+    // for selection. 
+    // Verbiage returned is localized using the connecting device locale. 
+    // Before locale is fully supported, English is returned. 
+    repeated UserInterestListItem current_user_interest_list = 15 [(kik.validation.field_validation) = {
+        mandatory: true
+        min_repetitions: 1
+        max_repetitions: 100 }];
+}
+
+message UserInterestListItem {
+    string id = 1;
+    string localized_verbiage = 2; 
+}
+
+// GetAllUserInterestIdsRequest is empty for now, but might include fields in the future
+message GetAllUserInterestIdsRequest {
+}
+
+// This list includes the current interests that an user can pick if he is to update this profile
+// This also include all the interests we ever had offered to the client
+//
+// Don't see the need to return page tokens, when do will add it to the request object and will
+// return the page token here
+message GetAllUserInterestIdsResponse {
+    repeated string ids = 1 [(kik.validation.field_validation) = {
+        mandatory: true
+        min_repetitions: 1
+        max_repetitions: 100 
+    }];
 }

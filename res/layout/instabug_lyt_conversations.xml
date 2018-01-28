@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:clickable="true" android:layout_height="fill_parent" style="@style/InstabugBaseContainer" xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout android:orientation="vertical" android:clickable="true" android:layout_height="fill_parent" style="@style/InstabugBaseContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
     <include layout="@layout/instabug_lyt_toolbar" />
     <FrameLayout android:padding="0.0dip" style="@style/InstabugBaseContainer">
         <ListView android:id="@id/instabug_lst_conversations" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="true" android:divider="?instabug_divider_color" android:dividerHeight="1.0dip" />

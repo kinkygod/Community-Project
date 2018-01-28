@@ -160,14 +160,14 @@
     .locals 4
 
     .prologue
-    .line 287
+    .line 283
     invoke-virtual {p1}, Ljava/io/File;->isDirectory()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 288
+    .line 284
     invoke-virtual {p1}, Ljava/io/File;->listFiles()[Ljava/io/File;
 
     move-result-object v1
@@ -181,19 +181,19 @@
 
     aget-object v3, v1, v0
 
-    .line 289
+    .line 285
     invoke-direct {p0, v3}, Lkin/sdk/core/d;->a(Ljava/io/File;)V
 
-    .line 288
+    .line 284
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 292
+    .line 288
     :cond_0
     invoke-virtual {p1}, Ljava/io/File;->delete()Z
 
-    .line 293
+    .line 289
     return-void
 .end method
 
@@ -343,62 +343,62 @@
     .end annotation
 
     .prologue
-    .line 225
+    .line 221
     :try_start_0
     invoke-static {}, Lorg/ethereum/geth/Geth;->newInterface()Lorg/ethereum/geth/Interface;
 
     move-result-object v0
 
-    .line 226
+    .line 222
     invoke-virtual {p1}, Lorg/ethereum/geth/Account;->getAddress()Lorg/ethereum/geth/Address;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Lorg/ethereum/geth/Interface;->setAddress(Lorg/ethereum/geth/Address;)V
 
-    .line 228
+    .line 224
     const-wide/16 v2, 0x1
 
     invoke-static {v2, v3}, Lorg/ethereum/geth/Geth;->newInterfaces(J)Lorg/ethereum/geth/Interfaces;
 
     move-result-object v1
 
-    .line 229
+    .line 225
     const-wide/16 v2, 0x0
 
     invoke-virtual {v1, v2, v3, v0}, Lorg/ethereum/geth/Interfaces;->set(JLorg/ethereum/geth/Interface;)V
 
-    .line 231
+    .line 227
     invoke-static {}, Lorg/ethereum/geth/Geth;->newInterface()Lorg/ethereum/geth/Interface;
 
     move-result-object v0
 
-    .line 232
+    .line 228
     invoke-virtual {v0}, Lorg/ethereum/geth/Interface;->setDefaultBigInt()V
 
-    .line 234
+    .line 230
     const-wide/16 v2, 0x1
 
     invoke-static {v2, v3}, Lorg/ethereum/geth/Geth;->newInterfaces(J)Lorg/ethereum/geth/Interfaces;
 
     move-result-object v2
 
-    .line 235
+    .line 231
     const-wide/16 v4, 0x0
 
     invoke-virtual {v2, v4, v5, v0}, Lorg/ethereum/geth/Interfaces;->set(JLorg/ethereum/geth/Interface;)V
 
-    .line 237
+    .line 233
     invoke-static {}, Lorg/ethereum/geth/Geth;->newCallOpts()Lorg/ethereum/geth/CallOpts;
 
     move-result-object v3
 
-    .line 238
+    .line 234
     iget-object v4, p0, Lkin/sdk/core/d;->a:Lorg/ethereum/geth/Context;
 
     invoke-virtual {v3, v4}, Lorg/ethereum/geth/CallOpts;->setContext(Lorg/ethereum/geth/Context;)V
 
-    .line 241
+    .line 237
     iget-object v4, p0, Lkin/sdk/core/d;->d:Lorg/ethereum/geth/BoundContract;
 
     const-string v5, "balanceOf"
@@ -407,14 +407,14 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 247
+    .line 243
     invoke-virtual {v0}, Lorg/ethereum/geth/Interface;->getBigInt()Lorg/ethereum/geth/BigInt;
 
     move-result-object v1
 
     if-eqz v1, :cond_0
 
-    .line 248
+    .line 244
     invoke-virtual {v0}, Lorg/ethereum/geth/Interface;->getBigInt()Lorg/ethereum/geth/BigInt;
 
     move-result-object v0
@@ -423,25 +423,25 @@
 
     move-result-object v0
 
-    .line 249
+    .line 245
     new-instance v1, Lkin/sdk/core/c;
 
     invoke-direct {v1, v0}, Lkin/sdk/core/c;-><init>(Ljava/math/BigDecimal;)V
 
     return-object v1
 
-    .line 242
+    .line 238
     :catch_0
     move-exception v0
 
-    .line 243
+    .line 239
     new-instance v1, Lkin/sdk/core/exception/OperationFailedException;
 
     invoke-direct {v1, v0}, Lkin/sdk/core/exception/OperationFailedException;-><init>(Ljava/lang/Throwable;)V
 
     throw v1
 
-    .line 251
+    .line 247
     :cond_0
     new-instance v0, Lkin/sdk/core/exception/OperationFailedException;
 
@@ -489,51 +489,23 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    move-result-object v1
+    move-result-object v0
 
     .line 168
     invoke-virtual {p4}, Ljava/math/BigDecimal;->signum()I
 
-    move-result v0
+    move-result v1
 
     const/4 v2, -0x1
 
-    if-eq v0, v2, :cond_4
-
-    .line 1281
-    invoke-virtual {p0, p1}, Lkin/sdk/core/d;->a(Lorg/ethereum/geth/Account;)Lkin/sdk/core/b;
-
-    move-result-object v0
-
-    .line 1283
-    invoke-interface {v0}, Lkin/sdk/core/b;->a()Ljava/math/BigDecimal;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p4}, Ljava/math/BigDecimal;->subtract(Ljava/math/BigDecimal;)Ljava/math/BigDecimal;
-
-    move-result-object v0
-
-    sget-object v2, Ljava/math/BigDecimal;->ZERO:Ljava/math/BigDecimal;
-
-    invoke-virtual {v0, v2}, Ljava/math/BigDecimal;->compareTo(Ljava/math/BigDecimal;)I
-
-    move-result v0
-
-    if-ltz v0, :cond_2
-
-    const/4 v0, 0x1
+    if-eq v1, v2, :cond_2
 
     .line 169
-    :goto_0
-    if-eqz v0, :cond_3
-
-    .line 170
     invoke-static {p4}, Lkin/sdk/core/b/a;->a(Ljava/math/BigDecimal;)Lorg/ethereum/geth/BigInt;
 
-    move-result-object v0
+    move-result-object v1
 
-    .line 179
+    .line 175
     :try_start_1
     iget-object v2, p0, Lkin/sdk/core/d;->c:Lorg/ethereum/geth/EthereumClient;
 
@@ -549,7 +521,7 @@
 
     iput-wide v2, p0, Lkin/sdk/core/d;->h:J
 
-    .line 180
+    .line 176
     iget-object v2, p0, Lkin/sdk/core/d;->c:Lorg/ethereum/geth/EthereumClient;
 
     iget-object v3, p0, Lkin/sdk/core/d;->a:Lorg/ethereum/geth/Context;
@@ -562,17 +534,17 @@
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 186
+    .line 182
     new-instance v2, Lorg/ethereum/geth/TransactOpts;
 
     invoke-direct {v2}, Lorg/ethereum/geth/TransactOpts;-><init>()V
 
-    .line 187
+    .line 183
     iget-object v3, p0, Lkin/sdk/core/d;->a:Lorg/ethereum/geth/Context;
 
     invoke-virtual {v2, v3}, Lorg/ethereum/geth/TransactOpts;->setContext(Lorg/ethereum/geth/Context;)V
 
-    .line 188
+    .line 184
     iget-object v3, p0, Lkin/sdk/core/d;->f:Lkin/sdk/core/j;
 
     .line 2018
@@ -582,33 +554,33 @@
 
     iget-wide v4, v3, Lkin/sdk/core/KinConsts$NetworkConstants;->transferKinGasLimit:J
 
-    .line 188
+    .line 184
     invoke-virtual {v2, v4, v5}, Lorg/ethereum/geth/TransactOpts;->setGasLimit(J)V
 
-    .line 189
+    .line 185
     iget-object v3, p0, Lkin/sdk/core/d;->i:Lorg/ethereum/geth/BigInt;
 
     invoke-virtual {v2, v3}, Lorg/ethereum/geth/TransactOpts;->setGasPrice(Lorg/ethereum/geth/BigInt;)V
 
-    .line 190
+    .line 186
     iget-wide v4, p0, Lkin/sdk/core/d;->h:J
 
     invoke-virtual {v2, v4, v5}, Lorg/ethereum/geth/TransactOpts;->setNonce(J)V
 
-    .line 191
+    .line 187
     invoke-virtual {p1}, Lorg/ethereum/geth/Account;->getAddress()Lorg/ethereum/geth/Address;
 
     move-result-object v3
 
     invoke-virtual {v2, v3}, Lorg/ethereum/geth/TransactOpts;->setFrom(Lorg/ethereum/geth/Address;)V
 
-    .line 192
+    .line 188
     new-instance v3, Lkin/sdk/core/h;
 
     .line 2135
     iget-object v4, p0, Lkin/sdk/core/d;->e:Lorg/ethereum/geth/KeyStore;
 
-    .line 192
+    .line 188
     iget-object v5, p0, Lkin/sdk/core/d;->f:Lkin/sdk/core/j;
 
     invoke-virtual {v5}, Lkin/sdk/core/j;->b()I
@@ -619,53 +591,53 @@
 
     invoke-virtual {v2, v3}, Lorg/ethereum/geth/TransactOpts;->setSigner(Lorg/ethereum/geth/Signer;)V
 
-    .line 194
+    .line 190
     invoke-static {}, Lorg/ethereum/geth/Geth;->newInterface()Lorg/ethereum/geth/Interface;
 
     move-result-object v3
 
-    .line 195
-    invoke-virtual {v3, v1}, Lorg/ethereum/geth/Interface;->setAddress(Lorg/ethereum/geth/Address;)V
+    .line 191
+    invoke-virtual {v3, v0}, Lorg/ethereum/geth/Interface;->setAddress(Lorg/ethereum/geth/Address;)V
 
-    .line 197
+    .line 193
     invoke-static {}, Lorg/ethereum/geth/Geth;->newInterface()Lorg/ethereum/geth/Interface;
 
-    move-result-object v1
+    move-result-object v0
 
-    .line 198
-    invoke-virtual {v1, v0}, Lorg/ethereum/geth/Interface;->setBigInt(Lorg/ethereum/geth/BigInt;)V
+    .line 194
+    invoke-virtual {v0, v1}, Lorg/ethereum/geth/Interface;->setBigInt(Lorg/ethereum/geth/BigInt;)V
 
-    .line 199
+    .line 195
     const-wide/16 v4, 0x2
 
     invoke-static {v4, v5}, Lorg/ethereum/geth/Geth;->newInterfaces(J)Lorg/ethereum/geth/Interfaces;
 
-    move-result-object v0
+    move-result-object v1
 
-    .line 201
+    .line 197
     const-wide/16 v4, 0x0
 
     :try_start_2
-    invoke-virtual {v0, v4, v5, v3}, Lorg/ethereum/geth/Interfaces;->set(JLorg/ethereum/geth/Interface;)V
+    invoke-virtual {v1, v4, v5, v3}, Lorg/ethereum/geth/Interfaces;->set(JLorg/ethereum/geth/Interface;)V
 
-    .line 202
+    .line 198
     const-wide/16 v4, 0x1
 
-    invoke-virtual {v0, v4, v5, v1}, Lorg/ethereum/geth/Interfaces;->set(JLorg/ethereum/geth/Interface;)V
+    invoke-virtual {v1, v4, v5, v0}, Lorg/ethereum/geth/Interfaces;->set(JLorg/ethereum/geth/Interface;)V
 
-    .line 204
-    iget-object v1, p0, Lkin/sdk/core/d;->d:Lorg/ethereum/geth/BoundContract;
+    .line 200
+    iget-object v0, p0, Lkin/sdk/core/d;->d:Lorg/ethereum/geth/BoundContract;
 
     const-string v3, "transfer"
 
-    invoke-virtual {v1, v2, v3, v0}, Lorg/ethereum/geth/BoundContract;->transact(Lorg/ethereum/geth/TransactOpts;Ljava/lang/String;Lorg/ethereum/geth/Interfaces;)Lorg/ethereum/geth/Transaction;
+    invoke-virtual {v0, v2, v3, v1}, Lorg/ethereum/geth/BoundContract;->transact(Lorg/ethereum/geth/TransactOpts;Ljava/lang/String;Lorg/ethereum/geth/Interfaces;)Lorg/ethereum/geth/Transaction;
     :try_end_2
     .catch Lkin/sdk/core/exception/PassphraseException; {:try_start_2 .. :try_end_2} :catch_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_3
 
     move-result-object v0
 
-    .line 212
+    .line 208
     new-instance v1, Lkin/sdk/core/l;
 
     invoke-virtual {v0}, Lorg/ethereum/geth/Transaction;->getHash()Lorg/ethereum/geth/Hash;
@@ -691,22 +663,8 @@
 
     throw v1
 
-    .line 1283
+    .line 171
     :cond_2
-    const/4 v0, 0x0
-
-    goto/16 :goto_0
-
-    .line 172
-    :cond_3
-    new-instance v0, Lkin/sdk/core/exception/InsufficientBalanceException;
-
-    invoke-direct {v0}, Lkin/sdk/core/exception/InsufficientBalanceException;-><init>()V
-
-    throw v0
-
-    .line 175
-    :cond_4
     new-instance v0, Lkin/sdk/core/exception/OperationFailedException;
 
     const-string v1, "Amount can\'t be negative"
@@ -715,28 +673,28 @@
 
     throw v0
 
-    .line 181
+    .line 177
     :catch_1
     move-exception v0
 
-    .line 182
+    .line 178
     new-instance v1, Lkin/sdk/core/exception/OperationFailedException;
 
     invoke-direct {v1, v0}, Lkin/sdk/core/exception/OperationFailedException;-><init>(Ljava/lang/Throwable;)V
 
     throw v1
 
-    .line 206
+    .line 202
     :catch_2
     move-exception v0
 
     throw v0
 
-    .line 207
+    .line 203
     :catch_3
     move-exception v0
 
-    .line 209
+    .line 205
     new-instance v1, Lkin/sdk/core/exception/OperationFailedException;
 
     invoke-direct {v1, v0}, Lkin/sdk/core/exception/OperationFailedException;-><init>(Ljava/lang/Throwable;)V
@@ -789,12 +747,12 @@
     .end annotation
 
     .prologue
-    .line 256
+    .line 252
     invoke-virtual {p0, p1}, Lkin/sdk/core/d;->a(Lorg/ethereum/geth/Account;)Lkin/sdk/core/b;
 
     move-result-object v0
 
-    .line 257
+    .line 253
     iget-object v1, p0, Lkin/sdk/core/d;->j:Lkin/sdk/core/i;
 
     invoke-virtual {v1, p1, v0}, Lkin/sdk/core/i;->a(Lorg/ethereum/geth/Account;Lkin/sdk/core/b;)Lkin/sdk/core/b;

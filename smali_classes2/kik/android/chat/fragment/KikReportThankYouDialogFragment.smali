@@ -14,7 +14,7 @@
 # instance fields
 .field _thankYouMessage:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1001d5
+        value = 0x7f1001d6
     .end annotation
 .end field
 
@@ -60,14 +60,14 @@
 
     .line 45
     :cond_1
-    const v0, 0x7f1001d7
+    const v0, 0x7f1001d8
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     .line 46
-    const v1, 0x7f1001d8
+    const v1, 0x7f1001d9
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -85,14 +85,14 @@
 
     aput-object v0, v2, v3
 
-    invoke-static {v2}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v2}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
     .line 49
     new-array v2, v4, [Landroid/view/View;
 
     aput-object v1, v2, v3
 
-    invoke-static {v2}, Lkik/android/util/ca;->g([Landroid/view/View;)V
+    invoke-static {v2}, Lkik/android/util/cb;->g([Landroid/view/View;)V
 
     .line 58
     :goto_1
@@ -120,14 +120,14 @@
 
     aput-object v1, v2, v3
 
-    invoke-static {v2}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v2}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
     .line 54
     new-array v2, v4, [Landroid/view/View;
 
     aput-object v0, v2, v3
 
-    invoke-static {v2}, Lkik/android/util/ca;->g([Landroid/view/View;)V
+    invoke-static {v2}, Lkik/android/util/cb;->g([Landroid/view/View;)V
 
     move-object v0, v1
 

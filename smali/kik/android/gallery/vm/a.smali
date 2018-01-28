@@ -29,12 +29,12 @@
     .end annotation
 .end field
 
-.field protected c:Lkik/core/interfaces/ae;
+.field protected c:Lkik/core/interfaces/ad;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field protected d:Lcom/kik/storage/p;
+.field protected d:Lcom/kik/storage/s;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -235,58 +235,7 @@
 
 
 # virtual methods
-.method public final a()Lrx/d;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/d",
-            "<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-
-    .prologue
-    .line 110
-    iget-object v0, p0, Lkik/android/gallery/vm/a;->k:Lkik/android/gallery/a;
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lkik/android/gallery/vm/a;->k:Lkik/android/gallery/a;
-
-    iget-boolean v0, v0, Lkik/android/gallery/a;->d:Z
-
-    if-eqz v0, :cond_0
-
-    .line 111
-    iget-object v0, p0, Lkik/android/gallery/vm/a;->k:Lkik/android/gallery/a;
-
-    iget v0, v0, Lkik/android/gallery/a;->e:I
-
-    invoke-static {v0}, Lkik/android/util/bx;->a(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lrx/d;->b(Ljava/lang/Object;)Lrx/d;
-
-    move-result-object v0
-
-    .line 113
-    :goto_0
-    return-object v0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    invoke-static {v0}, Lrx/d;->b(Ljava/lang/Object;)Lrx/d;
-
-    move-result-object v0
-
-    goto :goto_0
-.end method
-
-.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
     .locals 0
 
     .prologue
@@ -294,7 +243,7 @@
     invoke-interface {p1, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/gallery/vm/a;)V
 
     .line 86
-    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/e;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/e;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 87
     return-void
@@ -363,7 +312,45 @@
     return-void
 .end method
 
-.method public final aj_()V
+.method public final ag_()J
+    .locals 2
+
+    .prologue
+    .line 104
+    iget-object v0, p0, Lkik/android/gallery/vm/a;->k:Lkik/android/gallery/a;
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lkik/android/gallery/vm/a;->k:Lkik/android/gallery/a;
+
+    iget-object v0, v0, Lkik/android/gallery/a;->a:Ljava/lang/String;
+
+    invoke-static {v0}, Lkik/android/util/bs;->d(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    iget-object v0, p0, Lkik/android/gallery/vm/a;->k:Lkik/android/gallery/a;
+
+    iget-object v0, v0, Lkik/android/gallery/a;->a:Ljava/lang/String;
+
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+
+    move-result v0
+
+    int-to-long v0, v0
+
+    :goto_0
+    return-wide v0
+
+    :cond_0
+    const-wide/16 v0, 0x0
+
+    goto :goto_0
+.end method
+
+.method public final ak_()V
     .locals 2
 
     .prologue
@@ -387,7 +374,7 @@
     iput-object v1, p0, Lkik/android/gallery/vm/a;->n:Landroid/graphics/BitmapFactory$Options;
 
     .line 98
-    invoke-super {p0}, Lkik/android/chat/vm/e;->aj_()V
+    invoke-super {p0}, Lkik/android/chat/vm/e;->ak_()V
 
     .line 99
     return-void
@@ -397,6 +384,57 @@
 .end method
 
 .method public final b()Lrx/d;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+
+    .prologue
+    .line 110
+    iget-object v0, p0, Lkik/android/gallery/vm/a;->k:Lkik/android/gallery/a;
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lkik/android/gallery/vm/a;->k:Lkik/android/gallery/a;
+
+    iget-boolean v0, v0, Lkik/android/gallery/a;->d:Z
+
+    if-eqz v0, :cond_0
+
+    .line 111
+    iget-object v0, p0, Lkik/android/gallery/vm/a;->k:Lkik/android/gallery/a;
+
+    iget v0, v0, Lkik/android/gallery/a;->e:I
+
+    invoke-static {v0}, Lkik/android/util/bx;->a(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lrx/d;->b(Ljava/lang/Object;)Lrx/d;
+
+    move-result-object v0
+
+    .line 113
+    :goto_0
+    return-object v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    invoke-static {v0}, Lrx/d;->b(Ljava/lang/Object;)Lrx/d;
+
+    move-result-object v0
+
+    goto :goto_0
+.end method
+
+.method public final d()Lrx/d;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -458,7 +496,7 @@
     goto :goto_0
 .end method
 
-.method protected final d()Z
+.method protected final e()Z
     .locals 2
 
     .prologue
@@ -486,7 +524,7 @@
     goto :goto_0
 .end method
 
-.method public final e()Ljava/lang/Boolean;
+.method public final g()Ljava/lang/Boolean;
     .locals 2
 
     .prologue
@@ -494,7 +532,7 @@
     .line 1248
     iget-object v0, p0, Lkik/android/gallery/vm/a;->f:Lkik/core/interfaces/b;
 
-    invoke-static {v0}, Lkik/android/util/a;->c(Lkik/core/interfaces/b;)Z
+    invoke-static {v0}, Lkik/android/util/a;->b(Lkik/core/interfaces/b;)Z
 
     move-result v0
 
@@ -530,7 +568,7 @@
     goto :goto_0
 .end method
 
-.method public final g()Ljava/lang/Boolean;
+.method public final j()Ljava/lang/Boolean;
     .locals 3
 
     .prologue
@@ -540,7 +578,7 @@
     .line 2248
     iget-object v1, p0, Lkik/android/gallery/vm/a;->f:Lkik/core/interfaces/b;
 
-    invoke-static {v1}, Lkik/android/util/a;->c(Lkik/core/interfaces/b;)Z
+    invoke-static {v1}, Lkik/android/util/a;->b(Lkik/core/interfaces/b;)Z
 
     move-result v1
 
@@ -605,44 +643,6 @@
     goto :goto_0
 .end method
 
-.method public final j()J
-    .locals 2
-
-    .prologue
-    .line 104
-    iget-object v0, p0, Lkik/android/gallery/vm/a;->k:Lkik/android/gallery/a;
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lkik/android/gallery/vm/a;->k:Lkik/android/gallery/a;
-
-    iget-object v0, v0, Lkik/android/gallery/a;->a:Ljava/lang/String;
-
-    invoke-static {v0}, Lkik/android/util/bs;->d(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    iget-object v0, p0, Lkik/android/gallery/vm/a;->k:Lkik/android/gallery/a;
-
-    iget-object v0, v0, Lkik/android/gallery/a;->a:Ljava/lang/String;
-
-    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
-
-    move-result v0
-
-    int-to-long v0, v0
-
-    :goto_0
-    return-wide v0
-
-    :cond_0
-    const-wide/16 v0, 0x0
-
-    goto :goto_0
-.end method
-
 .method public final k()Ljava/lang/String;
     .locals 2
 
@@ -651,7 +651,7 @@
     .line 3248
     iget-object v0, p0, Lkik/android/gallery/vm/a;->f:Lkik/core/interfaces/b;
 
-    invoke-static {v0}, Lkik/android/util/a;->c(Lkik/core/interfaces/b;)Z
+    invoke-static {v0}, Lkik/android/util/a;->b(Lkik/core/interfaces/b;)Z
 
     move-result v0
 

@@ -36,7 +36,7 @@
     .locals 0
 
     .prologue
-    .line 650
+    .line 652
     iput-object p1, p0, Lkik/android/chat/KikApplication$2;->a:Lkik/android/chat/KikApplication;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -50,8 +50,8 @@
     .locals 2
 
     .prologue
-    .line 1656
-    invoke-static {}, Lkik/android/chat/KikApplication;->A()Lkik/android/KikNotificationHandler;
+    .line 1658
+    invoke-static {}, Lkik/android/chat/KikApplication;->z()Lkik/android/KikNotificationHandler;
 
     move-result-object v0
 
@@ -59,6 +59,6 @@
 
     invoke-virtual {v0, v1}, Lkik/android/KikNotificationHandler;->a(Z)V
 
-    .line 650
+    .line 652
     return-void
 .end method

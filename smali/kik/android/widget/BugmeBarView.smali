@@ -3,13 +3,13 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/f/g;
+.implements Lkik/android/f/f;
 
 
 # instance fields
 .field _textView:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f100172
+        value = 0x7f100173
     .end annotation
 .end field
 
@@ -17,7 +17,7 @@
 
 .field b:Lkik/android/chat/fragment/ProgressDialogFragment;
 
-.field c:Lkik/core/interfaces/ah;
+.field c:Lkik/core/interfaces/ag;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -27,7 +27,7 @@
     .end annotation
 .end field
 
-.field e:Lkik/core/interfaces/ae;
+.field e:Lkik/core/interfaces/ad;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -107,7 +107,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f04003f
+    const v1, 0x7f040040
 
     invoke-virtual {v0, v1, p0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -269,7 +269,7 @@
 
     float-to-int v0, v0
 
-    invoke-static {p0, v0}, Lkik/android/util/ca;->e(Landroid/view/View;I)V
+    invoke-static {p0, v0}, Lkik/android/util/cb;->e(Landroid/view/View;I)V
 
     .line 216
     const/4 v0, 0x1
@@ -349,17 +349,17 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lkik/android/widget/BugmeBarView;->c:Lkik/core/interfaces/ah;
+    iget-object v0, p0, Lkik/android/widget/BugmeBarView;->c:Lkik/core/interfaces/ag;
 
-    invoke-interface {v0}, Lkik/core/interfaces/ah;->k()Z
+    invoke-interface {v0}, Lkik/core/interfaces/ag;->k()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lkik/android/widget/BugmeBarView;->c:Lkik/core/interfaces/ah;
+    iget-object v0, p0, Lkik/android/widget/BugmeBarView;->c:Lkik/core/interfaces/ag;
 
-    invoke-interface {v0}, Lkik/core/interfaces/ah;->j()Z
+    invoke-interface {v0}, Lkik/core/interfaces/ag;->j()Z
 
     move-result v0
 
@@ -389,14 +389,14 @@
 
     iget-object v2, p0, Lkik/android/widget/BugmeBarView;->d:Lkik/core/interfaces/n;
 
-    iget-object v3, p0, Lkik/android/widget/BugmeBarView;->c:Lkik/core/interfaces/ah;
+    iget-object v3, p0, Lkik/android/widget/BugmeBarView;->c:Lkik/core/interfaces/ag;
 
-    iget-object v4, p0, Lkik/android/widget/BugmeBarView;->e:Lkik/core/interfaces/ae;
+    iget-object v4, p0, Lkik/android/widget/BugmeBarView;->e:Lkik/core/interfaces/ad;
 
-    invoke-direct {v0, v1, v2, v3, v4}, Lkik/android/util/g$a;-><init>(Lkik/core/net/e;Lkik/core/interfaces/n;Lkik/core/interfaces/ah;Lkik/core/interfaces/ae;)V
+    invoke-direct {v0, v1, v2, v3, v4}, Lkik/android/util/g$a;-><init>(Lkik/core/net/e;Lkik/core/interfaces/n;Lkik/core/interfaces/ag;Lkik/core/interfaces/ad;)V
 
     .line 192
-    new-array v1, v5, [Lkik/android/f/g;
+    new-array v1, v5, [Lkik/android/f/f;
 
     const/4 v2, 0x0
 
@@ -766,9 +766,9 @@
 
     .line 340
     :cond_0
-    iget-object v0, p0, Lkik/android/widget/BugmeBarView;->c:Lkik/core/interfaces/ah;
+    iget-object v0, p0, Lkik/android/widget/BugmeBarView;->c:Lkik/core/interfaces/ag;
 
-    invoke-interface {v0, p1, p1}, Lkik/core/interfaces/ah;->a([B[B)V
+    invoke-interface {v0, p1, p1}, Lkik/core/interfaces/ag;->a([B[B)V
 
     .line 342
     const/16 v0, 0x39
@@ -855,7 +855,7 @@
     return-void
 .end method
 
-.method public final j_()V
+.method public final l_()V
     .locals 3
 
     .prologue

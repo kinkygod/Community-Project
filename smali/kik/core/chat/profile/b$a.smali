@@ -27,15 +27,12 @@
     .end annotation
 .end field
 
-.field private d:Lkik/core/chat/profile/Theme;
+.field private d:Lkik/core/chat/profile/ak;
     .annotation runtime Ljavax/annotation/Nullable;
     .end annotation
 .end field
 
-.field private e:Lkik/core/chat/profile/q;
-    .annotation runtime Ljavax/annotation/Nullable;
-    .end annotation
-.end field
+.field private e:Z
 
 
 # direct methods
@@ -43,14 +40,14 @@
     .locals 1
 
     .prologue
-    .line 132
+    .line 134
     invoke-static {p1}, Lkik/core/chat/profile/b;->a(Lcom/kik/core/network/xmpp/jid/a;)Lkik/core/chat/profile/b;
 
     move-result-object v0
 
     invoke-direct {p0, v0}, Lkik/core/chat/profile/b$a;-><init>(Lkik/core/chat/profile/b;)V
 
-    .line 133
+    .line 135
     return-void
 .end method
 
@@ -62,30 +59,25 @@
     .end param
 
     .prologue
-    .line 136
+    .line 138
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 137
+    .line 139
     iget-object v0, p1, Lkik/core/chat/profile/b;->a:Lcom/kik/core/network/xmpp/jid/a;
 
     iput-object v0, p0, Lkik/core/chat/profile/b$a;->a:Lcom/kik/core/network/xmpp/jid/a;
 
-    .line 138
+    .line 140
     iget-object v0, p1, Lkik/core/chat/profile/b;->b:Lkik/core/chat/profile/a;
 
     iput-object v0, p0, Lkik/core/chat/profile/b$a;->b:Lkik/core/chat/profile/a;
 
-    .line 139
+    .line 141
     iget-object v0, p1, Lkik/core/chat/profile/b;->c:Ljava/util/Date;
 
     iput-object v0, p0, Lkik/core/chat/profile/b$a;->c:Ljava/util/Date;
 
-    .line 140
-    iget-object v0, p1, Lkik/core/chat/profile/b;->d:Lkik/core/chat/profile/Theme;
-
-    iput-object v0, p0, Lkik/core/chat/profile/b$a;->d:Lkik/core/chat/profile/Theme;
-
-    .line 141
+    .line 142
     return-void
 .end method
 
@@ -99,25 +91,10 @@
     .end param
 
     .prologue
-    .line 151
+    .line 152
     iput-object p1, p0, Lkik/core/chat/profile/b$a;->c:Ljava/util/Date;
 
-    .line 152
-    return-object p0
-.end method
-
-.method public final a(Lkik/core/chat/profile/Theme;)Lkik/core/chat/profile/b$a;
-    .locals 0
-    .param p1    # Lkik/core/chat/profile/Theme;
-        .annotation runtime Ljavax/annotation/Nullable;
-        .end annotation
-    .end param
-
-    .prologue
-    .line 157
-    iput-object p1, p0, Lkik/core/chat/profile/b$a;->d:Lkik/core/chat/profile/Theme;
-
-    .line 158
+    .line 153
     return-object p0
 .end method
 
@@ -129,21 +106,32 @@
     .end param
 
     .prologue
-    .line 145
+    .line 146
     iput-object p1, p0, Lkik/core/chat/profile/b$a;->b:Lkik/core/chat/profile/a;
 
-    .line 146
+    .line 147
     return-object p0
 .end method
 
-.method public final a(Lkik/core/chat/profile/q;)Lkik/core/chat/profile/b$a;
+.method public final a(Lkik/core/chat/profile/ak;)Lkik/core/chat/profile/b$a;
     .locals 0
 
     .prologue
-    .line 163
-    iput-object p1, p0, Lkik/core/chat/profile/b$a;->e:Lkik/core/chat/profile/q;
+    .line 158
+    iput-object p1, p0, Lkik/core/chat/profile/b$a;->d:Lkik/core/chat/profile/ak;
 
+    .line 159
+    return-object p0
+.end method
+
+.method public final a(Z)Lkik/core/chat/profile/b$a;
+    .locals 0
+
+    .prologue
     .line 164
+    iput-boolean p1, p0, Lkik/core/chat/profile/b$a;->e:Z
+
+    .line 165
     return-object p0
 .end method
 
@@ -151,7 +139,7 @@
     .locals 7
 
     .prologue
-    .line 169
+    .line 170
     new-instance v0, Lkik/core/chat/profile/b;
 
     iget-object v1, p0, Lkik/core/chat/profile/b$a;->a:Lcom/kik/core/network/xmpp/jid/a;
@@ -160,13 +148,13 @@
 
     iget-object v3, p0, Lkik/core/chat/profile/b$a;->c:Ljava/util/Date;
 
-    iget-object v4, p0, Lkik/core/chat/profile/b$a;->d:Lkik/core/chat/profile/Theme;
+    iget-object v4, p0, Lkik/core/chat/profile/b$a;->d:Lkik/core/chat/profile/ak;
 
-    iget-object v5, p0, Lkik/core/chat/profile/b$a;->e:Lkik/core/chat/profile/q;
+    iget-boolean v5, p0, Lkik/core/chat/profile/b$a;->e:Z
 
     const/4 v6, 0x0
 
-    invoke-direct/range {v0 .. v6}, Lkik/core/chat/profile/b;-><init>(Lcom/kik/core/network/xmpp/jid/a;Lkik/core/chat/profile/a;Ljava/util/Date;Lkik/core/chat/profile/Theme;Lkik/core/chat/profile/q;B)V
+    invoke-direct/range {v0 .. v6}, Lkik/core/chat/profile/b;-><init>(Lcom/kik/core/network/xmpp/jid/a;Lkik/core/chat/profile/a;Ljava/util/Date;Lkik/core/chat/profile/ak;ZB)V
 
     return-object v0
 .end method

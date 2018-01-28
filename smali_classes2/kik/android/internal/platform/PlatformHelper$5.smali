@@ -149,7 +149,7 @@
 
     move-result v2
 
-    invoke-static {v0, v1, v2}, Lcom/kik/util/ci;->a([BII)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Lcom/kik/util/ck;->a([BII)Ljava/lang/String;
 
     move-result-object v0
 

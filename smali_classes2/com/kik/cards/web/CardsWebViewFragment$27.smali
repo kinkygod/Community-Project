@@ -34,7 +34,7 @@
     .locals 0
 
     .prologue
-    .line 1661
+    .line 1711
     iput-object p1, p0, Lcom/kik/cards/web/CardsWebViewFragment$27;->b:Lcom/kik/cards/web/CardsWebViewFragment;
 
     iput-object p2, p0, Lcom/kik/cards/web/CardsWebViewFragment$27;->a:Lcom/kik/events/Promise;
@@ -50,20 +50,20 @@
     .locals 3
 
     .prologue
-    .line 1661
+    .line 1711
     check-cast p1, Landroid/content/Intent;
 
-    .line 2665
+    .line 2715
     const-string v0, "extra.resultUrl"
 
     invoke-virtual {p1, v0}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 2666
+    .line 2716
     if-eqz v0, :cond_0
 
-    .line 2667
+    .line 2717
     iget-object v1, p0, Lcom/kik/cards/web/CardsWebViewFragment$27;->a:Lcom/kik/events/Promise;
 
     invoke-virtual {v1, v0}, Lcom/kik/events/Promise;->a(Ljava/lang/Object;)V
@@ -71,7 +71,7 @@
     :goto_0
     return-void
 
-    .line 2670
+    .line 2720
     :cond_0
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$27;->a:Lcom/kik/events/Promise;
 
@@ -90,12 +90,12 @@
     .locals 1
 
     .prologue
-    .line 1683
+    .line 1733
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$27;->a:Lcom/kik/events/Promise;
 
     invoke-virtual {v0, p1}, Lcom/kik/events/Promise;->a(Ljava/lang/Throwable;)V
 
-    .line 1684
+    .line 1734
     return-void
 .end method
 
@@ -103,11 +103,11 @@
     .locals 1
 
     .prologue
-    .line 1677
+    .line 1727
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$27;->a:Lcom/kik/events/Promise;
 
     invoke-virtual {v0}, Lcom/kik/events/Promise;->f()V
 
-    .line 1678
+    .line 1728
     return-void
 .end method

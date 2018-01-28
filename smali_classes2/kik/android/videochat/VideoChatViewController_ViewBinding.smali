@@ -93,7 +93,7 @@
     iput-object v0, p1, Lkik/android/videochat/VideoChatViewController;->_chatScreenToolTipRelativeLayout:Lcom/nhaarman/supertooltips/ToolTipRelativeLayout;
 
     .line 28
-    const v0, 0x7f100373
+    const v0, 0x7f10036f
 
     const-string v1, "field \'_mediaBarView\'"
 

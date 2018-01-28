@@ -2,23 +2,18 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lkik/android/chat/vm/messaging/IContentMessageViewModel;
+
 
 # virtual methods
-.method public abstract a()V
+.method public abstract a(I)V
 .end method
 
-.method public abstract a(Lcom/kik/components/CoreComponent;)V
-.end method
-
-.method public abstract a(Lkik/core/datatypes/Message;)V
-.end method
-
-.method public abstract b(Lkik/core/datatypes/Message;)Lrx/d;
+.method public abstract ao_()Lrx/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(",
-            "Lkik/core/datatypes/Message;",
-            ")",
+            "()",
             "Lrx/d",
             "<",
             "Ljava/lang/Boolean;",
@@ -27,5 +22,104 @@
     .end annotation
 .end method
 
-.method public abstract c(Lkik/core/datatypes/Message;)V
+.method public abstract ap_()Lrx/d;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public abstract aq_()Lrx/d;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<",
+            "Ljava/lang/Integer;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public abstract ar_()Lrx/d;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public abstract as_()Lrx/d;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public abstract at_()V
+.end method
+
+.method public abstract au_()V
+.end method
+
+.method public abstract av_()V
+.end method
+
+.method public abstract aw_()V
+.end method
+
+.method public abstract ax_()V
+.end method
+
+.method public abstract h()Lrx/d;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<",
+            "Ljava/io/File;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public abstract i()Lrx/d;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public abstract r()Lrx/d;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public abstract x()V
 .end method

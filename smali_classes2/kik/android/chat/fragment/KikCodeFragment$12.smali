@@ -1,5 +1,5 @@
 .class final Lkik/android/chat/fragment/KikCodeFragment$12;
-.super Lkik/android/util/ca$a;
+.super Lkik/android/util/cb$a;
 .source "SourceFile"
 
 
@@ -26,7 +26,7 @@
     .line 194
     iput-object p1, p0, Lkik/android/chat/fragment/KikCodeFragment$12;->a:Lkik/android/chat/fragment/KikCodeFragment;
 
-    invoke-direct {p0}, Lkik/android/util/ca$a;-><init>()V
+    invoke-direct {p0}, Lkik/android/util/cb$a;-><init>()V
 
     return-void
 .end method
@@ -129,9 +129,9 @@
     .line 207
     iget-object v0, p0, Lkik/android/chat/fragment/KikCodeFragment$12;->a:Lkik/android/chat/fragment/KikCodeFragment;
 
-    iget-object v0, v0, Lkik/android/chat/fragment/KikCodeFragment;->f:Lkik/core/interfaces/ah;
+    iget-object v0, v0, Lkik/android/chat/fragment/KikCodeFragment;->f:Lkik/core/interfaces/ag;
 
-    invoke-interface {v0}, Lkik/core/interfaces/ah;->d()Lkik/core/datatypes/ac;
+    invoke-interface {v0}, Lkik/core/interfaces/ag;->d()Lkik/core/datatypes/ab;
 
     .line 212
     iget-object v0, p0, Lkik/android/chat/fragment/KikCodeFragment$12;->a:Lkik/android/chat/fragment/KikCodeFragment;
@@ -145,9 +145,9 @@
     .line 213
     iget-object v0, p0, Lkik/android/chat/fragment/KikCodeFragment$12;->a:Lkik/android/chat/fragment/KikCodeFragment;
 
-    iget-object v0, v0, Lkik/android/chat/fragment/KikCodeFragment;->f:Lkik/core/interfaces/ah;
+    iget-object v0, v0, Lkik/android/chat/fragment/KikCodeFragment;->f:Lkik/core/interfaces/ag;
 
-    invoke-interface {v0}, Lkik/core/interfaces/ah;->d()Lkik/core/datatypes/ac;
+    invoke-interface {v0}, Lkik/core/interfaces/ag;->d()Lkik/core/datatypes/ab;
 
     move-result-object v0
 
@@ -177,7 +177,7 @@
     move-result-object v5
 
     .line 213
-    invoke-static/range {v0 .. v5}, Lkik/android/util/bk;->a(Lkik/core/datatypes/ac;Landroid/content/Context;Lcom/kik/android/Mixpanel;Lkik/core/interfaces/b;Landroid/graphics/Bitmap;Ljava/lang/String;)V
+    invoke-static/range {v0 .. v5}, Lkik/android/util/bk;->a(Lkik/core/datatypes/ab;Landroid/content/Context;Lcom/kik/android/Mixpanel;Lkik/core/interfaces/b;Landroid/graphics/Bitmap;Ljava/lang/String;)V
 
     .line 220
     :goto_0
@@ -187,9 +187,9 @@
     :cond_0
     iget-object v0, p0, Lkik/android/chat/fragment/KikCodeFragment$12;->a:Lkik/android/chat/fragment/KikCodeFragment;
 
-    iget-object v0, v0, Lkik/android/chat/fragment/KikCodeFragment;->f:Lkik/core/interfaces/ah;
+    iget-object v0, v0, Lkik/android/chat/fragment/KikCodeFragment;->f:Lkik/core/interfaces/ag;
 
-    invoke-interface {v0}, Lkik/core/interfaces/ah;->d()Lkik/core/datatypes/ac;
+    invoke-interface {v0}, Lkik/core/interfaces/ag;->d()Lkik/core/datatypes/ab;
 
     move-result-object v0
 
@@ -219,7 +219,7 @@
     move-result-object v5
 
     .line 217
-    invoke-static/range {v0 .. v5}, Lkik/android/util/bk;->b(Lkik/core/datatypes/ac;Landroid/content/Context;Lcom/kik/android/Mixpanel;Lkik/core/interfaces/b;Landroid/graphics/Bitmap;Ljava/lang/String;)V
+    invoke-static/range {v0 .. v5}, Lkik/android/util/bk;->b(Lkik/core/datatypes/ab;Landroid/content/Context;Lcom/kik/android/Mixpanel;Lkik/core/interfaces/b;Landroid/graphics/Bitmap;Ljava/lang/String;)V
 
     goto :goto_0
 .end method

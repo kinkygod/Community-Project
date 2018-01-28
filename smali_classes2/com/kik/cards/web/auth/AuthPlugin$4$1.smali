@@ -17,7 +17,7 @@
     value = {
         "Lcom/kik/events/k",
         "<",
-        "Lcom/kik/util/ct",
+        "Lcom/kik/util/cy",
         "<",
         "Ljava/lang/String;",
         "[B>;>;"
@@ -51,15 +51,15 @@
     const/16 v6, 0x1f4
 
     .line 185
-    check-cast p1, Lcom/kik/util/ct;
+    check-cast p1, Lcom/kik/util/cy;
 
     .line 1189
-    iget-object v1, p1, Lcom/kik/util/ct;->a:Ljava/lang/Object;
+    iget-object v1, p1, Lcom/kik/util/cy;->a:Ljava/lang/Object;
 
     check-cast v1, Ljava/lang/String;
 
     .line 1190
-    iget-object v5, p1, Lcom/kik/util/ct;->b:Ljava/lang/Object;
+    iget-object v5, p1, Lcom/kik/util/cy;->b:Ljava/lang/Object;
 
     check-cast v5, [B
 

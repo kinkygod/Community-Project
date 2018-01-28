@@ -3,19 +3,17 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/a/b;
+.implements Ldagger/internal/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/a/b",
+        "Ldagger/internal/b",
         "<",
-        "Lkik/core/interfaces/x",
-        "<",
-        "Landroid/graphics/Bitmap;",
-        ">;>;"
+        "Lkik/android/chat/JoinGifTrayHelper;",
+        ">;"
     }
 .end annotation
 
@@ -25,47 +23,14 @@
 
 
 # instance fields
-.field private final b:Lcom/kik/f/at;
+.field private final b:Lcom/kik/f/bg;
 
 .field private final c:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lcom/kik/cache/KikVolleyImageLoader;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private final d:Ljavax/inject/Provider;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljavax/inject/Provider",
-            "<",
-            "Landroid/content/res/Resources;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private final e:Ljavax/inject/Provider;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljavax/inject/Provider",
-            "<",
-            "Lkik/core/interfaces/w;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private final f:Ljavax/inject/Provider;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljavax/inject/Provider",
-            "<",
-            "Lcom/kik/android/Mixpanel;",
+            "Lkik/core/interfaces/b;",
             ">;"
         }
     .end annotation
@@ -77,7 +42,7 @@
     .locals 1
 
     .prologue
-    .line 14
+    .line 10
     const-class v0, Lcom/kik/f/bh;
 
     invoke-virtual {v0}, Ljava/lang/Class;->desiredAssertionStatus()Z
@@ -99,36 +64,24 @@
     goto :goto_0
 .end method
 
-.method private constructor <init>(Lcom/kik/f/at;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)V
+.method private constructor <init>(Lcom/kik/f/bg;Ljavax/inject/Provider;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcom/kik/f/at;",
+            "Lcom/kik/f/bg;",
             "Ljavax/inject/Provider",
             "<",
-            "Lcom/kik/cache/KikVolleyImageLoader;",
-            ">;",
-            "Ljavax/inject/Provider",
-            "<",
-            "Landroid/content/res/Resources;",
-            ">;",
-            "Ljavax/inject/Provider",
-            "<",
-            "Lkik/core/interfaces/w;",
-            ">;",
-            "Ljavax/inject/Provider",
-            "<",
-            "Lcom/kik/android/Mixpanel;",
+            "Lkik/core/interfaces/b;",
             ">;)V"
         }
     .end annotation
 
     .prologue
-    .line 35
+    .line 21
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 36
+    .line 22
     sget-boolean v0, Lcom/kik/f/bh;->a:Z
 
     if-nez v0, :cond_0
@@ -141,11 +94,11 @@
 
     throw v0
 
-    .line 37
+    .line 23
     :cond_0
-    iput-object p1, p0, Lcom/kik/f/bh;->b:Lcom/kik/f/at;
+    iput-object p1, p0, Lcom/kik/f/bh;->b:Lcom/kik/f/bg;
 
-    .line 38
+    .line 24
     sget-boolean v0, Lcom/kik/f/bh;->a:Z
 
     if-nez v0, :cond_1
@@ -158,111 +111,36 @@
 
     throw v0
 
-    .line 39
+    .line 25
     :cond_1
     iput-object p2, p0, Lcom/kik/f/bh;->c:Ljavax/inject/Provider;
 
-    .line 40
-    sget-boolean v0, Lcom/kik/f/bh;->a:Z
-
-    if-nez v0, :cond_2
-
-    if-nez p3, :cond_2
-
-    new-instance v0, Ljava/lang/AssertionError;
-
-    invoke-direct {v0}, Ljava/lang/AssertionError;-><init>()V
-
-    throw v0
-
-    .line 41
-    :cond_2
-    iput-object p3, p0, Lcom/kik/f/bh;->d:Ljavax/inject/Provider;
-
-    .line 42
-    sget-boolean v0, Lcom/kik/f/bh;->a:Z
-
-    if-nez v0, :cond_3
-
-    if-nez p4, :cond_3
-
-    new-instance v0, Ljava/lang/AssertionError;
-
-    invoke-direct {v0}, Ljava/lang/AssertionError;-><init>()V
-
-    throw v0
-
-    .line 43
-    :cond_3
-    iput-object p4, p0, Lcom/kik/f/bh;->e:Ljavax/inject/Provider;
-
-    .line 44
-    sget-boolean v0, Lcom/kik/f/bh;->a:Z
-
-    if-nez v0, :cond_4
-
-    if-nez p5, :cond_4
-
-    new-instance v0, Ljava/lang/AssertionError;
-
-    invoke-direct {v0}, Ljava/lang/AssertionError;-><init>()V
-
-    throw v0
-
-    .line 45
-    :cond_4
-    iput-object p5, p0, Lcom/kik/f/bh;->f:Ljavax/inject/Provider;
-
-    .line 46
+    .line 26
     return-void
 .end method
 
-.method public static a(Lcom/kik/f/at;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)La/a/b;
-    .locals 6
+.method public static a(Lcom/kik/f/bg;Ljavax/inject/Provider;)Ldagger/internal/b;
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcom/kik/f/at;",
+            "Lcom/kik/f/bg;",
             "Ljavax/inject/Provider",
             "<",
-            "Lcom/kik/cache/KikVolleyImageLoader;",
-            ">;",
-            "Ljavax/inject/Provider",
-            "<",
-            "Landroid/content/res/Resources;",
-            ">;",
-            "Ljavax/inject/Provider",
-            "<",
-            "Lkik/core/interfaces/w;",
-            ">;",
-            "Ljavax/inject/Provider",
-            "<",
-            "Lcom/kik/android/Mixpanel;",
+            "Lkik/core/interfaces/b;",
             ">;)",
-            "La/a/b",
+            "Ldagger/internal/b",
             "<",
-            "Lkik/core/interfaces/x",
-            "<",
-            "Landroid/graphics/Bitmap;",
-            ">;>;"
+            "Lkik/android/chat/JoinGifTrayHelper;",
+            ">;"
         }
     .end annotation
 
     .prologue
-    .line 65
+    .line 37
     new-instance v0, Lcom/kik/f/bh;
 
-    move-object v1, p0
-
-    move-object v2, p1
-
-    move-object v3, p2
-
-    move-object v4, p3
-
-    move-object v5, p4
-
-    invoke-direct/range {v0 .. v5}, Lcom/kik/f/bh;-><init>(Lcom/kik/f/at;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)V
+    invoke-direct {v0, p0, p1}, Lcom/kik/f/bh;-><init>(Lcom/kik/f/bg;Ljavax/inject/Provider;)V
 
     return-object v0
 .end method
@@ -270,57 +148,35 @@
 
 # virtual methods
 .method public final synthetic get()Ljava/lang/Object;
-    .locals 4
+    .locals 2
 
     .prologue
-    .line 14
-    .line 1050
+    .line 10
+    .line 1030
     iget-object v0, p0, Lcom/kik/f/bh;->c:Ljavax/inject/Provider;
 
-    .line 1052
+    .line 1031
     invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/kik/cache/KikVolleyImageLoader;
+    check-cast v0, Lkik/core/interfaces/b;
 
-    iget-object v1, p0, Lcom/kik/f/bh;->d:Ljavax/inject/Provider;
+    .line 2017
+    new-instance v1, Lkik/android/chat/JoinGifTrayHelper;
 
-    .line 1053
-    invoke-interface {v1}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
+    invoke-direct {v1, v0}, Lkik/android/chat/JoinGifTrayHelper;-><init>(Lkik/core/interfaces/b;)V
 
-    move-result-object v1
+    .line 1031
+    const-string v0, "Cannot return null from a non-@Nullable @Provides method"
 
-    check-cast v1, Landroid/content/res/Resources;
-
-    iget-object v2, p0, Lcom/kik/f/bh;->e:Ljavax/inject/Provider;
-
-    .line 1054
-    invoke-interface {v2}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Lkik/core/interfaces/w;
-
-    iget-object v3, p0, Lcom/kik/f/bh;->f:Ljavax/inject/Provider;
-
-    .line 1055
-    invoke-interface {v3}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
-
-    .line 1051
-    invoke-static {v0, v1, v2}, Lcom/kik/f/at;->a(Lcom/kik/cache/KikVolleyImageLoader;Landroid/content/res/Resources;Lkik/core/interfaces/w;)Lkik/core/interfaces/x;
+    .line 1030
+    invoke-static {v1, v0}, Ldagger/internal/c;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
-    const-string v1, "Cannot return null from a non-@Nullable @Provides method"
+    check-cast v0, Lkik/android/chat/JoinGifTrayHelper;
 
-    .line 1050
-    invoke-static {v0, v1}, La/a/c;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lkik/core/interfaces/x;
-
-    .line 14
+    .line 10
     return-object v0
 .end method

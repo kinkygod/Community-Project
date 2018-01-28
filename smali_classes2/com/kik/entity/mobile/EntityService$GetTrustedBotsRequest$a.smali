@@ -37,7 +37,7 @@
             "<",
             "Lcom/kik/entity/mobile/EntityService$PageToken;",
             "Lcom/kik/entity/mobile/EntityService$PageToken$a;",
-            "Lcom/kik/entity/mobile/EntityService$j;",
+            "Lcom/kik/entity/mobile/EntityService$k;",
             ">;"
         }
     .end annotation
@@ -103,37 +103,6 @@
     invoke-direct {p0, p1}, Lcom/kik/entity/mobile/EntityService$GetTrustedBotsRequest$a;-><init>(Lcom/google/protobuf/GeneratedMessageV3$BuilderParent;)V
 
     return-void
-.end method
-
-.method private a()Lcom/kik/entity/mobile/EntityService$GetTrustedBotsRequest$a;
-    .locals 2
-
-    .prologue
-    const/4 v1, 0x0
-
-    .line 13908
-    invoke-super {p0}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->clear()Lcom/google/protobuf/GeneratedMessageV3$Builder;
-
-    .line 13909
-    iget-object v0, p0, Lcom/kik/entity/mobile/EntityService$GetTrustedBotsRequest$a;->b:Lcom/google/protobuf/SingleFieldBuilderV3;
-
-    if-nez v0, :cond_0
-
-    .line 13910
-    iput-object v1, p0, Lcom/kik/entity/mobile/EntityService$GetTrustedBotsRequest$a;->a:Lcom/kik/entity/mobile/EntityService$PageToken;
-
-    .line 13915
-    :goto_0
-    return-object p0
-
-    .line 13912
-    :cond_0
-    iput-object v1, p0, Lcom/kik/entity/mobile/EntityService$GetTrustedBotsRequest$a;->a:Lcom/kik/entity/mobile/EntityService$PageToken;
-
-    .line 13913
-    iput-object v1, p0, Lcom/kik/entity/mobile/EntityService$GetTrustedBotsRequest$a;->b:Lcom/google/protobuf/SingleFieldBuilderV3;
-
-    goto :goto_0
 .end method
 
 .method private a(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/kik/entity/mobile/EntityService$GetTrustedBotsRequest$a;
@@ -311,6 +280,37 @@
     goto :goto_0
 .end method
 
+.method private b()Lcom/kik/entity/mobile/EntityService$GetTrustedBotsRequest$a;
+    .locals 2
+
+    .prologue
+    const/4 v1, 0x0
+
+    .line 13908
+    invoke-super {p0}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->clear()Lcom/google/protobuf/GeneratedMessageV3$Builder;
+
+    .line 13909
+    iget-object v0, p0, Lcom/kik/entity/mobile/EntityService$GetTrustedBotsRequest$a;->b:Lcom/google/protobuf/SingleFieldBuilderV3;
+
+    if-nez v0, :cond_0
+
+    .line 13910
+    iput-object v1, p0, Lcom/kik/entity/mobile/EntityService$GetTrustedBotsRequest$a;->a:Lcom/kik/entity/mobile/EntityService$PageToken;
+
+    .line 13915
+    :goto_0
+    return-object p0
+
+    .line 13912
+    :cond_0
+    iput-object v1, p0, Lcom/kik/entity/mobile/EntityService$GetTrustedBotsRequest$a;->a:Lcom/kik/entity/mobile/EntityService$PageToken;
+
+    .line 13913
+    iput-object v1, p0, Lcom/kik/entity/mobile/EntityService$GetTrustedBotsRequest$a;->b:Lcom/google/protobuf/SingleFieldBuilderV3;
+
+    goto :goto_0
+.end method
+
 .method private b(Lcom/google/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lcom/kik/entity/mobile/EntityService$GetTrustedBotsRequest$a;
     .locals 1
 
@@ -322,34 +322,6 @@
 
     check-cast v0, Lcom/kik/entity/mobile/EntityService$GetTrustedBotsRequest$a;
 
-    return-object v0
-.end method
-
-.method private b()Lcom/kik/entity/mobile/EntityService$GetTrustedBotsRequest;
-    .locals 2
-
-    .prologue
-    .line 13928
-    invoke-direct {p0}, Lcom/kik/entity/mobile/EntityService$GetTrustedBotsRequest$a;->c()Lcom/kik/entity/mobile/EntityService$GetTrustedBotsRequest;
-
-    move-result-object v0
-
-    .line 13929
-    invoke-virtual {v0}, Lcom/kik/entity/mobile/EntityService$GetTrustedBotsRequest;->isInitialized()Z
-
-    move-result v1
-
-    if-nez v1, :cond_0
-
-    .line 13930
-    invoke-static {v0}, Lcom/kik/entity/mobile/EntityService$GetTrustedBotsRequest$a;->newUninitializedMessageException(Lcom/google/protobuf/Message;)Lcom/google/protobuf/UninitializedMessageException;
-
-    move-result-object v0
-
-    throw v0
-
-    .line 13932
-    :cond_0
     return-object v0
 .end method
 
@@ -482,6 +454,34 @@
     goto :goto_2
 .end method
 
+.method public final a()Lcom/kik/entity/mobile/EntityService$GetTrustedBotsRequest;
+    .locals 2
+
+    .prologue
+    .line 13928
+    invoke-direct {p0}, Lcom/kik/entity/mobile/EntityService$GetTrustedBotsRequest$a;->c()Lcom/kik/entity/mobile/EntityService$GetTrustedBotsRequest;
+
+    move-result-object v0
+
+    .line 13929
+    invoke-virtual {v0}, Lcom/kik/entity/mobile/EntityService$GetTrustedBotsRequest;->isInitialized()Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    .line 13930
+    invoke-static {v0}, Lcom/kik/entity/mobile/EntityService$GetTrustedBotsRequest$a;->newUninitializedMessageException(Lcom/google/protobuf/Message;)Lcom/google/protobuf/UninitializedMessageException;
+
+    move-result-object v0
+
+    throw v0
+
+    .line 13932
+    :cond_0
+    return-object v0
+.end method
+
 .method public final synthetic addRepeatedField(Lcom/google/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lcom/google/protobuf/GeneratedMessageV3$Builder;
     .locals 1
 
@@ -511,7 +511,7 @@
 
     .prologue
     .line 13876
-    invoke-direct {p0}, Lcom/kik/entity/mobile/EntityService$GetTrustedBotsRequest$a;->b()Lcom/kik/entity/mobile/EntityService$GetTrustedBotsRequest;
+    invoke-virtual {p0}, Lcom/kik/entity/mobile/EntityService$GetTrustedBotsRequest$a;->a()Lcom/kik/entity/mobile/EntityService$GetTrustedBotsRequest;
 
     move-result-object v0
 
@@ -523,7 +523,7 @@
 
     .prologue
     .line 13876
-    invoke-direct {p0}, Lcom/kik/entity/mobile/EntityService$GetTrustedBotsRequest$a;->b()Lcom/kik/entity/mobile/EntityService$GetTrustedBotsRequest;
+    invoke-virtual {p0}, Lcom/kik/entity/mobile/EntityService$GetTrustedBotsRequest$a;->a()Lcom/kik/entity/mobile/EntityService$GetTrustedBotsRequest;
 
     move-result-object v0
 
@@ -559,7 +559,7 @@
 
     .prologue
     .line 13876
-    invoke-direct {p0}, Lcom/kik/entity/mobile/EntityService$GetTrustedBotsRequest$a;->a()Lcom/kik/entity/mobile/EntityService$GetTrustedBotsRequest$a;
+    invoke-direct {p0}, Lcom/kik/entity/mobile/EntityService$GetTrustedBotsRequest$a;->b()Lcom/kik/entity/mobile/EntityService$GetTrustedBotsRequest$a;
 
     move-result-object v0
 
@@ -571,7 +571,7 @@
 
     .prologue
     .line 13876
-    invoke-direct {p0}, Lcom/kik/entity/mobile/EntityService$GetTrustedBotsRequest$a;->a()Lcom/kik/entity/mobile/EntityService$GetTrustedBotsRequest$a;
+    invoke-direct {p0}, Lcom/kik/entity/mobile/EntityService$GetTrustedBotsRequest$a;->b()Lcom/kik/entity/mobile/EntityService$GetTrustedBotsRequest$a;
 
     move-result-object v0
 
@@ -583,7 +583,7 @@
 
     .prologue
     .line 13876
-    invoke-direct {p0}, Lcom/kik/entity/mobile/EntityService$GetTrustedBotsRequest$a;->a()Lcom/kik/entity/mobile/EntityService$GetTrustedBotsRequest$a;
+    invoke-direct {p0}, Lcom/kik/entity/mobile/EntityService$GetTrustedBotsRequest$a;->b()Lcom/kik/entity/mobile/EntityService$GetTrustedBotsRequest$a;
 
     move-result-object v0
 
@@ -595,7 +595,7 @@
 
     .prologue
     .line 13876
-    invoke-direct {p0}, Lcom/kik/entity/mobile/EntityService$GetTrustedBotsRequest$a;->a()Lcom/kik/entity/mobile/EntityService$GetTrustedBotsRequest$a;
+    invoke-direct {p0}, Lcom/kik/entity/mobile/EntityService$GetTrustedBotsRequest$a;->b()Lcom/kik/entity/mobile/EntityService$GetTrustedBotsRequest$a;
 
     move-result-object v0
 

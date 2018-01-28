@@ -32,7 +32,7 @@
     .locals 0
 
     .prologue
-    .line 1974
+    .line 1988
     iput-object p1, p0, Lkik/android/chat/KikApplication$26;->a:Lkik/android/chat/KikApplication;
 
     invoke-direct {p0}, Lrx/i;-><init>()V
@@ -46,26 +46,26 @@
     .locals 4
 
     .prologue
-    .line 1974
+    .line 1988
     check-cast p1, Lcom/kik/featureconfig/rpc/FeatureConfigService$GetFeatureConfigsResponse;
 
-    .line 2978
+    .line 2992
     iget-object v0, p0, Lkik/android/chat/KikApplication$26;->a:Lkik/android/chat/KikApplication;
 
-    iget-object v0, v0, Lkik/android/chat/KikApplication;->r:La/a;
+    iget-object v0, v0, Lkik/android/chat/KikApplication;->q:Ldagger/a;
 
-    invoke-interface {v0}, La/a;->get()Ljava/lang/Object;
+    invoke-interface {v0}, Ldagger/a;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/kik/core/a/b;
+    check-cast v0, Lcom/kik/core/a/c;
 
-    invoke-interface {v0, p1}, Lcom/kik/core/a/b;->a(Lcom/kik/featureconfig/rpc/FeatureConfigService$GetFeatureConfigsResponse;)V
+    invoke-interface {v0, p1}, Lcom/kik/core/a/c;->a(Lcom/kik/featureconfig/rpc/FeatureConfigService$GetFeatureConfigsResponse;)V
 
-    .line 2979
+    .line 2993
     iget-object v0, p0, Lkik/android/chat/KikApplication$26;->a:Lkik/android/chat/KikApplication;
 
-    invoke-static {v0}, Lkik/android/chat/KikApplication;->p(Lkik/android/chat/KikApplication;)Lkik/core/interfaces/ae;
+    invoke-static {v0}, Lkik/android/chat/KikApplication;->p(Lkik/android/chat/KikApplication;)Lkik/core/interfaces/ad;
 
     move-result-object v0
 
@@ -79,9 +79,9 @@
 
     move-result-object v2
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;Ljava/lang/Long;)Z
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Long;)Z
 
-    .line 1974
+    .line 1988
     return-void
 .end method
 
@@ -89,9 +89,9 @@
     .locals 0
 
     .prologue
-    .line 1985
+    .line 1999
     invoke-static {p1}, Lkik/android/util/aw;->e(Ljava/lang/Throwable;)V
 
-    .line 1986
+    .line 2000
     return-void
 .end method

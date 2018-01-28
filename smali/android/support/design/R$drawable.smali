@@ -183,57 +183,57 @@
 
 .field public static final avd_hide_password:I = 0x7f020067
 
-.field public static final avd_hide_password_1:I = 0x7f0203d2
+.field public static final avd_hide_password_1:I = 0x7f0203ba
 
-.field public static final avd_hide_password_2:I = 0x7f0203d3
+.field public static final avd_hide_password_2:I = 0x7f0203bb
 
-.field public static final avd_hide_password_3:I = 0x7f0203d4
+.field public static final avd_hide_password_3:I = 0x7f0203bc
 
 .field public static final avd_show_password:I = 0x7f020068
 
-.field public static final avd_show_password_1:I = 0x7f0203d5
+.field public static final avd_show_password_1:I = 0x7f0203bd
 
-.field public static final avd_show_password_2:I = 0x7f0203d6
+.field public static final avd_show_password_2:I = 0x7f0203be
 
-.field public static final avd_show_password_3:I = 0x7f0203d7
+.field public static final avd_show_password_3:I = 0x7f0203bf
 
-.field public static final design_bottom_navigation_item_background:I = 0x7f0200f3
+.field public static final design_bottom_navigation_item_background:I = 0x7f0200db
 
-.field public static final design_fab_background:I = 0x7f0200f4
+.field public static final design_fab_background:I = 0x7f0200dc
 
-.field public static final design_ic_visibility:I = 0x7f0200f5
+.field public static final design_ic_visibility:I = 0x7f0200dd
 
-.field public static final design_ic_visibility_off:I = 0x7f0200f6
+.field public static final design_ic_visibility_off:I = 0x7f0200de
 
-.field public static final design_password_eye:I = 0x7f0200f7
+.field public static final design_password_eye:I = 0x7f0200df
 
-.field public static final design_snackbar_background:I = 0x7f0200f8
+.field public static final design_snackbar_background:I = 0x7f0200e0
 
-.field public static final navigation_empty_icon:I = 0x7f0202fd
+.field public static final navigation_empty_icon:I = 0x7f0202e0
 
-.field public static final notification_action_background:I = 0x7f020306
+.field public static final notification_action_background:I = 0x7f0202e9
 
-.field public static final notification_bg:I = 0x7f020307
+.field public static final notification_bg:I = 0x7f0202ea
 
-.field public static final notification_bg_low:I = 0x7f020308
+.field public static final notification_bg_low:I = 0x7f0202eb
 
-.field public static final notification_bg_low_normal:I = 0x7f020309
+.field public static final notification_bg_low_normal:I = 0x7f0202ec
 
-.field public static final notification_bg_low_pressed:I = 0x7f02030a
+.field public static final notification_bg_low_pressed:I = 0x7f0202ed
 
-.field public static final notification_bg_normal:I = 0x7f02030b
+.field public static final notification_bg_normal:I = 0x7f0202ee
 
-.field public static final notification_bg_normal_pressed:I = 0x7f02030c
+.field public static final notification_bg_normal_pressed:I = 0x7f0202ef
 
-.field public static final notification_icon_background:I = 0x7f02030d
+.field public static final notification_icon_background:I = 0x7f0202f0
 
-.field public static final notification_template_icon_bg:I = 0x7f0203cd
+.field public static final notification_template_icon_bg:I = 0x7f0203b4
 
-.field public static final notification_template_icon_low_bg:I = 0x7f0203ce
+.field public static final notification_template_icon_low_bg:I = 0x7f0203b5
 
-.field public static final notification_tile_bg:I = 0x7f02030e
+.field public static final notification_tile_bg:I = 0x7f0202f1
 
-.field public static final notify_panel_notification_icon_bg:I = 0x7f02030f
+.field public static final notify_panel_notification_icon_bg:I = 0x7f0202f2
 
 
 # direct methods

@@ -36,7 +36,7 @@
     .locals 0
 
     .prologue
-    .line 194
+    .line 195
     iput-object p1, p0, Lkik/android/chat/fragment/ConversationsBaseFragment$6;->a:Lkik/android/chat/fragment/ConversationsBaseFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -50,8 +50,8 @@
     .locals 3
 
     .prologue
-    .line 194
-    .line 1198
+    .line 195
+    .line 1199
     iget-object v0, p0, Lkik/android/chat/fragment/ConversationsBaseFragment$6;->a:Lkik/android/chat/fragment/ConversationsBaseFragment;
 
     iget-object v1, p0, Lkik/android/chat/fragment/ConversationsBaseFragment$6;->a:Lkik/android/chat/fragment/ConversationsBaseFragment;
@@ -72,6 +72,6 @@
 
     invoke-virtual {v0, v1, v2}, Lkik/android/chat/fragment/ConversationsBaseFragment;->showWaitDialog(Ljava/lang/String;Z)Lkik/android/chat/fragment/KikDialogFragment;
 
-    .line 194
+    .line 195
     return-void
 .end method

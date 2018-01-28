@@ -37,9 +37,9 @@
 
     iget-object v0, p0, Lkik/android/chat/vm/widget/ao;->a:Lkik/android/chat/vm/widget/SmileyItemViewModel;
 
-    check-cast p1, Lcom/kik/android/b/g$b;
+    check-cast p1, Lcom/kik/android/b/f;
 
-    invoke-static {v0, p1}, Lkik/android/chat/vm/widget/SmileyItemViewModel;->b(Lkik/android/chat/vm/widget/SmileyItemViewModel;Lcom/kik/android/b/g$b;)V
+    invoke-static {v0, p1}, Lkik/android/chat/vm/widget/SmileyItemViewModel;->a(Lkik/android/chat/vm/widget/SmileyItemViewModel;Lcom/kik/android/b/f;)V
 
     return-void
 .end method

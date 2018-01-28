@@ -57,9 +57,9 @@
     .line 169
     iget-object v0, p0, Lkik/android/chat/activity/KikApiLandingActivity$11;->b:Lkik/android/chat/activity/KikApiLandingActivity;
 
-    iget-object v0, v0, Lkik/android/chat/activity/KikApiLandingActivity;->g:Lkik/core/interfaces/ae;
+    iget-object v0, v0, Lkik/android/chat/activity/KikApiLandingActivity;->g:Lkik/core/interfaces/ad;
 
-    invoke-static {v0}, Lkik/core/z;->a(Lkik/core/interfaces/ae;)Z
+    invoke-static {v0}, Lkik/core/z;->a(Lkik/core/interfaces/ad;)Z
 
     move-result v0
 

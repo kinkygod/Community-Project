@@ -51,7 +51,7 @@
 
     iget-object v1, v1, Lkik/android/scan/fragment/ScanFragment;->_errorRetryButton:Landroid/widget/TextView;
 
-    invoke-static {v0, v1}, Lkik/android/util/ca;->a(Ljava/lang/CharSequence;Landroid/widget/TextView;)V
+    invoke-static {v0, v1}, Lkik/android/util/cb;->a(Ljava/lang/CharSequence;Landroid/widget/TextView;)V
 
     .line 456
     iget-object v0, p0, Lkik/android/scan/fragment/ScanFragment$16;->a:Lkik/android/scan/fragment/ScanFragment;

@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/b;
+.implements Ldagger/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/b",
+        "Ldagger/b",
         "<",
         "Lcom/kik/cards/web/CardsWebViewFragment;",
         ">;"
@@ -28,7 +28,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ae;",
+            "Lkik/core/interfaces/ad;",
             ">;"
         }
     .end annotation
@@ -72,7 +72,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/w;",
+            "Lkik/core/interfaces/v;",
             ">;"
         }
     .end annotation
@@ -116,7 +116,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lcom/kik/storage/p;",
+            "Lcom/kik/storage/s;",
             ">;"
         }
     .end annotation
@@ -127,7 +127,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ah;",
+            "Lkik/core/interfaces/ag;",
             ">;"
         }
     .end annotation
@@ -149,7 +149,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/t;",
+            "Lkik/core/interfaces/s;",
             ">;"
         }
     .end annotation
@@ -182,7 +182,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ac;",
+            "Lkik/core/interfaces/ab;",
             ">;"
         }
     .end annotation
@@ -234,7 +234,7 @@
             "(",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ae;",
+            "Lkik/core/interfaces/ad;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -250,7 +250,7 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/w;",
+            "Lkik/core/interfaces/v;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -266,11 +266,11 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lcom/kik/storage/p;",
+            "Lcom/kik/storage/s;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ah;",
+            "Lkik/core/interfaces/ag;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -278,7 +278,7 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/t;",
+            "Lkik/core/interfaces/s;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -290,7 +290,7 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ac;",
+            "Lkik/core/interfaces/ab;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -585,14 +585,14 @@
     return-void
 .end method
 
-.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)La/b;
+.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
     .locals 17
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ae;",
+            "Lkik/core/interfaces/ad;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -608,7 +608,7 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/w;",
+            "Lkik/core/interfaces/v;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -624,11 +624,11 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lcom/kik/storage/p;",
+            "Lcom/kik/storage/s;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ah;",
+            "Lkik/core/interfaces/ag;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -636,7 +636,7 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/t;",
+            "Lkik/core/interfaces/s;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -648,13 +648,13 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ac;",
+            "Lkik/core/interfaces/ab;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
             "Lkik/core/e/b;",
             ">;)",
-            "La/b",
+            "Ldagger/b",
             "<",
             "Lcom/kik/cards/web/CardsWebViewFragment;",
             ">;"
@@ -704,7 +704,7 @@
 
 
 # virtual methods
-.method public final synthetic a(Ljava/lang/Object;)V
+.method public final synthetic injectMembers(Ljava/lang/Object;)V
     .locals 2
 
     .prologue
@@ -763,9 +763,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/interfaces/w;
+    check-cast v0, Lkik/core/interfaces/v;
 
-    iput-object v0, p1, Lcom/kik/cards/web/CardsWebViewFragment;->f:Lkik/core/interfaces/w;
+    iput-object v0, p1, Lcom/kik/cards/web/CardsWebViewFragment;->f:Lkik/core/interfaces/v;
 
     .line 1160
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment_MembersInjector;->g:Ljavax/inject/Provider;
@@ -807,9 +807,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/interfaces/ae;
+    check-cast v0, Lkik/core/interfaces/ad;
 
-    iput-object v0, p1, Lcom/kik/cards/web/CardsWebViewFragment;->j:Lkik/core/interfaces/ae;
+    iput-object v0, p1, Lcom/kik/cards/web/CardsWebViewFragment;->j:Lkik/core/interfaces/ad;
 
     .line 1164
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment_MembersInjector;->j:Ljavax/inject/Provider;
@@ -818,9 +818,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/kik/storage/p;
+    check-cast v0, Lcom/kik/storage/s;
 
-    iput-object v0, p1, Lcom/kik/cards/web/CardsWebViewFragment;->k:Lcom/kik/storage/p;
+    iput-object v0, p1, Lcom/kik/cards/web/CardsWebViewFragment;->k:Lcom/kik/storage/s;
 
     .line 1165
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment_MembersInjector;->k:Ljavax/inject/Provider;
@@ -829,9 +829,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/interfaces/ah;
+    check-cast v0, Lkik/core/interfaces/ag;
 
-    iput-object v0, p1, Lcom/kik/cards/web/CardsWebViewFragment;->l:Lkik/core/interfaces/ah;
+    iput-object v0, p1, Lcom/kik/cards/web/CardsWebViewFragment;->l:Lkik/core/interfaces/ag;
 
     .line 1166
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment_MembersInjector;->l:Ljavax/inject/Provider;
@@ -851,9 +851,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/interfaces/t;
+    check-cast v0, Lkik/core/interfaces/s;
 
-    iput-object v0, p1, Lcom/kik/cards/web/CardsWebViewFragment;->n:Lkik/core/interfaces/t;
+    iput-object v0, p1, Lcom/kik/cards/web/CardsWebViewFragment;->n:Lkik/core/interfaces/s;
 
     .line 1168
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment_MembersInjector;->n:Ljavax/inject/Provider;
@@ -884,9 +884,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/interfaces/ac;
+    check-cast v0, Lkik/core/interfaces/ab;
 
-    iput-object v0, p1, Lcom/kik/cards/web/CardsWebViewFragment;->q:Lkik/core/interfaces/ac;
+    iput-object v0, p1, Lcom/kik/cards/web/CardsWebViewFragment;->q:Lkik/core/interfaces/ab;
 
     .line 1171
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment_MembersInjector;->q:Ljavax/inject/Provider;

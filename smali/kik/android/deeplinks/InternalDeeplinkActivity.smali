@@ -50,7 +50,7 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ca;->g([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->g([Landroid/view/View;)V
 
     .line 64
     invoke-virtual {p0}, Lkik/android/deeplinks/InternalDeeplinkActivity;->finish()V
@@ -84,7 +84,7 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ca;->g([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->g([Landroid/view/View;)V
 
     .line 82
     if-nez p1, :cond_0
@@ -175,7 +175,7 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
     return-void
 .end method
@@ -195,7 +195,7 @@
     invoke-virtual {p0, v0}, Lkik/android/deeplinks/InternalDeeplinkActivity;->setContentView(I)V
 
     .line 42
-    const v0, 0x7f1002f8
+    const v0, 0x7f1002f5
 
     invoke-virtual {p0, v0}, Lkik/android/deeplinks/InternalDeeplinkActivity;->findViewById(I)Landroid/view/View;
 

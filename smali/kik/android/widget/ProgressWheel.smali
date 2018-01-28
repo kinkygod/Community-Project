@@ -717,11 +717,11 @@
     .line 445
     const v0, 0x1010137
 
-    invoke-static {p0}, Lkik/android/widget/cp;->a(Lkik/android/widget/ProgressWheel;)Lrx/functions/b;
+    invoke-static {p0}, Lkik/android/widget/df;->a(Lkik/android/widget/ProgressWheel;)Lrx/functions/b;
 
     move-result-object v1
 
-    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bq;->c(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
+    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bt;->c(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
 
     .line 453
     return-void

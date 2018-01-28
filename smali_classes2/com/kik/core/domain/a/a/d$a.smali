@@ -143,7 +143,7 @@
 
     move-result-object v3
 
-    .line 2096
+    .line 2107
     if-nez v3, :cond_0
 
     .line 2168
@@ -207,7 +207,7 @@
     .line 255
     return-object v0
 
-    .line 2099
+    .line 2110
     :cond_0
     new-instance v4, Lkik/core/datatypes/k;
 

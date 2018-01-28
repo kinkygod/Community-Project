@@ -45,7 +45,7 @@
 
     check-cast p1, Lkik/core/net/outgoing/UserProfileRequest;
 
-    invoke-static {v0, v1, p1}, Lkik/core/profile/ae;->a(Lkik/core/profile/ae;ZLkik/core/net/outgoing/UserProfileRequest;)Lkik/core/datatypes/ac;
+    invoke-static {v0, v1, p1}, Lkik/core/profile/ae;->a(Lkik/core/profile/ae;ZLkik/core/net/outgoing/UserProfileRequest;)Lkik/core/datatypes/ab;
 
     move-result-object v0
 

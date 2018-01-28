@@ -2,48 +2,42 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lcom/kik/events/Promise$a;
+.implements Lkik/core/interfaces/h;
 
 
-# static fields
-.field private static final a:Lkik/android/chat/vm/widget/bo;
+# instance fields
+.field private final a:Lkik/android/chat/vm/widget/bn;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lkik/android/chat/vm/widget/bo;
-
-    invoke-direct {v0}, Lkik/android/chat/vm/widget/bo;-><init>()V
-
-    sput-object v0, Lkik/android/chat/vm/widget/bo;->a:Lkik/android/chat/vm/widget/bo;
-
-    return-void
-.end method
-
-.method private constructor <init>()V
+.method private constructor <init>(Lkik/android/chat/vm/widget/bn;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    iput-object p1, p0, Lkik/android/chat/vm/widget/bo;->a:Lkik/android/chat/vm/widget/bn;
+
     return-void
 .end method
 
-.method public static a()Lcom/kik/events/Promise$a;
+.method public static a(Lkik/android/chat/vm/widget/bn;)Lkik/core/interfaces/h;
     .locals 1
 
-    sget-object v0, Lkik/android/chat/vm/widget/bo;->a:Lkik/android/chat/vm/widget/bo;
+    new-instance v0, Lkik/android/chat/vm/widget/bo;
+
+    invoke-direct {v0, p0}, Lkik/android/chat/vm/widget/bo;-><init>(Lkik/android/chat/vm/widget/bn;)V
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public final a(Lcom/kik/events/Promise;)V
-    .locals 0
+.method public final a(Lkik/core/datatypes/messageExtensions/ContentMessage;)V
+    .locals 1
 
-    invoke-static {}, Lkik/android/chat/vm/widget/bm;->j()V
+    iget-object v0, p0, Lkik/android/chat/vm/widget/bo;->a:Lkik/android/chat/vm/widget/bn;
+
+    invoke-static {v0, p1}, Lkik/android/chat/vm/widget/bn;->a(Lkik/android/chat/vm/widget/bn;Lkik/core/datatypes/messageExtensions/ContentMessage;)V
 
     return-void
 .end method

@@ -3,16 +3,16 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/b;
+.implements Ldagger/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/b",
+        "Ldagger/b",
         "<",
-        "Lkik/android/chat/vm/profile/profileactionvm/b;",
+        "Lkik/android/chat/vm/profile/profileactionvm/f;",
         ">;"
     }
 .end annotation
@@ -39,7 +39,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/android/chat/vm/profile/bm;",
+            "Lkik/android/chat/vm/profile/by;",
             ">;"
         }
     .end annotation
@@ -72,7 +72,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ah;",
+            "Lkik/core/interfaces/ag;",
             ">;"
         }
     .end annotation
@@ -83,7 +83,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/w;",
+            "Lkik/core/interfaces/v;",
             ">;"
         }
     .end annotation
@@ -94,7 +94,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ae;",
+            "Lkik/core/interfaces/ad;",
             ">;"
         }
     .end annotation
@@ -105,13 +105,35 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lcom/kik/core/domain/a/b;",
+            "Lcom/kik/core/domain/a/c;",
             ">;"
         }
     .end annotation
 .end field
 
 .field private final j:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lcom/kik/core/domain/a/b;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final k:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lcom/kik/android/Mixpanel;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final l:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljavax/inject/Provider",
@@ -128,7 +150,7 @@
     .locals 1
 
     .prologue
-    .line 16
+    .line 18
     const-class v0, Lkik/android/chat/vm/profile/profileactionvm/ChangeGroupPhotoActionItemViewModel_MembersInjector;
 
     invoke-virtual {v0}, Ljava/lang/Class;->desiredAssertionStatus()Z
@@ -150,7 +172,7 @@
     goto :goto_0
 .end method
 
-.method private constructor <init>(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)V
+.method private constructor <init>(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -161,7 +183,7 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/android/chat/vm/profile/bm;",
+            "Lkik/android/chat/vm/profile/by;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -173,19 +195,27 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ah;",
+            "Lkik/core/interfaces/ag;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/w;",
+            "Lkik/core/interfaces/v;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ae;",
+            "Lkik/core/interfaces/ad;",
+            ">;",
+            "Ljavax/inject/Provider",
+            "<",
+            "Lcom/kik/core/domain/a/c;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
             "Lcom/kik/core/domain/a/b;",
+            ">;",
+            "Ljavax/inject/Provider",
+            "<",
+            "Lcom/kik/android/Mixpanel;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -195,10 +225,10 @@
     .end annotation
 
     .prologue
-    .line 49
+    .line 57
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 50
+    .line 58
     sget-boolean v0, Lkik/android/chat/vm/profile/profileactionvm/ChangeGroupPhotoActionItemViewModel_MembersInjector;->a:Z
 
     if-nez v0, :cond_0
@@ -211,11 +241,11 @@
 
     throw v0
 
-    .line 51
+    .line 59
     :cond_0
     iput-object p1, p0, Lkik/android/chat/vm/profile/profileactionvm/ChangeGroupPhotoActionItemViewModel_MembersInjector;->b:Ljavax/inject/Provider;
 
-    .line 52
+    .line 60
     sget-boolean v0, Lkik/android/chat/vm/profile/profileactionvm/ChangeGroupPhotoActionItemViewModel_MembersInjector;->a:Z
 
     if-nez v0, :cond_1
@@ -228,11 +258,11 @@
 
     throw v0
 
-    .line 53
+    .line 61
     :cond_1
     iput-object p2, p0, Lkik/android/chat/vm/profile/profileactionvm/ChangeGroupPhotoActionItemViewModel_MembersInjector;->c:Ljavax/inject/Provider;
 
-    .line 54
+    .line 62
     sget-boolean v0, Lkik/android/chat/vm/profile/profileactionvm/ChangeGroupPhotoActionItemViewModel_MembersInjector;->a:Z
 
     if-nez v0, :cond_2
@@ -245,11 +275,11 @@
 
     throw v0
 
-    .line 55
+    .line 63
     :cond_2
     iput-object p3, p0, Lkik/android/chat/vm/profile/profileactionvm/ChangeGroupPhotoActionItemViewModel_MembersInjector;->d:Ljavax/inject/Provider;
 
-    .line 56
+    .line 64
     sget-boolean v0, Lkik/android/chat/vm/profile/profileactionvm/ChangeGroupPhotoActionItemViewModel_MembersInjector;->a:Z
 
     if-nez v0, :cond_3
@@ -262,11 +292,11 @@
 
     throw v0
 
-    .line 57
+    .line 65
     :cond_3
     iput-object p4, p0, Lkik/android/chat/vm/profile/profileactionvm/ChangeGroupPhotoActionItemViewModel_MembersInjector;->e:Ljavax/inject/Provider;
 
-    .line 58
+    .line 66
     sget-boolean v0, Lkik/android/chat/vm/profile/profileactionvm/ChangeGroupPhotoActionItemViewModel_MembersInjector;->a:Z
 
     if-nez v0, :cond_4
@@ -279,11 +309,11 @@
 
     throw v0
 
-    .line 59
+    .line 67
     :cond_4
     iput-object p5, p0, Lkik/android/chat/vm/profile/profileactionvm/ChangeGroupPhotoActionItemViewModel_MembersInjector;->f:Ljavax/inject/Provider;
 
-    .line 60
+    .line 68
     sget-boolean v0, Lkik/android/chat/vm/profile/profileactionvm/ChangeGroupPhotoActionItemViewModel_MembersInjector;->a:Z
 
     if-nez v0, :cond_5
@@ -296,11 +326,11 @@
 
     throw v0
 
-    .line 61
+    .line 69
     :cond_5
     iput-object p6, p0, Lkik/android/chat/vm/profile/profileactionvm/ChangeGroupPhotoActionItemViewModel_MembersInjector;->g:Ljavax/inject/Provider;
 
-    .line 62
+    .line 70
     sget-boolean v0, Lkik/android/chat/vm/profile/profileactionvm/ChangeGroupPhotoActionItemViewModel_MembersInjector;->a:Z
 
     if-nez v0, :cond_6
@@ -313,11 +343,11 @@
 
     throw v0
 
-    .line 63
+    .line 71
     :cond_6
     iput-object p7, p0, Lkik/android/chat/vm/profile/profileactionvm/ChangeGroupPhotoActionItemViewModel_MembersInjector;->h:Ljavax/inject/Provider;
 
-    .line 64
+    .line 72
     sget-boolean v0, Lkik/android/chat/vm/profile/profileactionvm/ChangeGroupPhotoActionItemViewModel_MembersInjector;->a:Z
 
     if-nez v0, :cond_7
@@ -330,11 +360,11 @@
 
     throw v0
 
-    .line 65
+    .line 73
     :cond_7
     iput-object p8, p0, Lkik/android/chat/vm/profile/profileactionvm/ChangeGroupPhotoActionItemViewModel_MembersInjector;->i:Ljavax/inject/Provider;
 
-    .line 66
+    .line 74
     sget-boolean v0, Lkik/android/chat/vm/profile/profileactionvm/ChangeGroupPhotoActionItemViewModel_MembersInjector;->a:Z
 
     if-nez v0, :cond_8
@@ -347,16 +377,50 @@
 
     throw v0
 
-    .line 67
+    .line 75
     :cond_8
     iput-object p9, p0, Lkik/android/chat/vm/profile/profileactionvm/ChangeGroupPhotoActionItemViewModel_MembersInjector;->j:Ljavax/inject/Provider;
 
-    .line 68
+    .line 76
+    sget-boolean v0, Lkik/android/chat/vm/profile/profileactionvm/ChangeGroupPhotoActionItemViewModel_MembersInjector;->a:Z
+
+    if-nez v0, :cond_9
+
+    if-nez p10, :cond_9
+
+    new-instance v0, Ljava/lang/AssertionError;
+
+    invoke-direct {v0}, Ljava/lang/AssertionError;-><init>()V
+
+    throw v0
+
+    .line 77
+    :cond_9
+    iput-object p10, p0, Lkik/android/chat/vm/profile/profileactionvm/ChangeGroupPhotoActionItemViewModel_MembersInjector;->k:Ljavax/inject/Provider;
+
+    .line 78
+    sget-boolean v0, Lkik/android/chat/vm/profile/profileactionvm/ChangeGroupPhotoActionItemViewModel_MembersInjector;->a:Z
+
+    if-nez v0, :cond_a
+
+    if-nez p11, :cond_a
+
+    new-instance v0, Ljava/lang/AssertionError;
+
+    invoke-direct {v0}, Ljava/lang/AssertionError;-><init>()V
+
+    throw v0
+
+    .line 79
+    :cond_a
+    iput-object p11, p0, Lkik/android/chat/vm/profile/profileactionvm/ChangeGroupPhotoActionItemViewModel_MembersInjector;->l:Ljavax/inject/Provider;
+
+    .line 80
     return-void
 .end method
 
-.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)La/b;
-    .locals 10
+.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+    .locals 12
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -366,7 +430,7 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/android/chat/vm/profile/bm;",
+            "Lkik/android/chat/vm/profile/by;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -378,15 +442,19 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ah;",
+            "Lkik/core/interfaces/ag;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/w;",
+            "Lkik/core/interfaces/v;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ae;",
+            "Lkik/core/interfaces/ad;",
+            ">;",
+            "Ljavax/inject/Provider",
+            "<",
+            "Lcom/kik/core/domain/a/c;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -394,17 +462,21 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
+            "Lcom/kik/android/Mixpanel;",
+            ">;",
+            "Ljavax/inject/Provider",
+            "<",
             "Lcom/kik/metrics/c/d;",
             ">;)",
-            "La/b",
+            "Ldagger/b",
             "<",
-            "Lkik/android/chat/vm/profile/profileactionvm/b;",
+            "Lkik/android/chat/vm/profile/profileactionvm/f;",
             ">;"
         }
     .end annotation
 
     .prologue
-    .line 80
+    .line 94
     new-instance v0, Lkik/android/chat/vm/profile/profileactionvm/ChangeGroupPhotoActionItemViewModel_MembersInjector;
 
     move-object v1, p0
@@ -415,9 +487,9 @@
 
     move-object v4, p3
 
-    move-object v5, p4
+    move-object/from16 v5, p4
 
-    move-object v6, p5
+    move-object/from16 v6, p5
 
     move-object/from16 v7, p6
 
@@ -425,24 +497,28 @@
 
     move-object/from16 v9, p8
 
-    invoke-direct/range {v0 .. v9}, Lkik/android/chat/vm/profile/profileactionvm/ChangeGroupPhotoActionItemViewModel_MembersInjector;-><init>(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)V
+    move-object/from16 v10, p9
+
+    move-object/from16 v11, p10
+
+    invoke-direct/range {v0 .. v11}, Lkik/android/chat/vm/profile/profileactionvm/ChangeGroupPhotoActionItemViewModel_MembersInjector;-><init>(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)V
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public final synthetic a(Ljava/lang/Object;)V
+.method public final synthetic injectMembers(Ljava/lang/Object;)V
     .locals 2
 
     .prologue
-    .line 16
-    check-cast p1, Lkik/android/chat/vm/profile/profileactionvm/b;
+    .line 18
+    check-cast p1, Lkik/android/chat/vm/profile/profileactionvm/f;
 
-    .line 1094
+    .line 1110
     if-nez p1, :cond_0
 
-    .line 1095
+    .line 1111
     new-instance v0, Ljava/lang/NullPointerException;
 
     const-string v1, "Cannot inject members into a null reference"
@@ -451,24 +527,24 @@
 
     throw v0
 
-    .line 1097
+    .line 1113
     :cond_0
     iget-object v0, p0, Lkik/android/chat/vm/profile/profileactionvm/ChangeGroupPhotoActionItemViewModel_MembersInjector;->b:Ljavax/inject/Provider;
 
     invoke-static {p1, v0}, Lkik/android/chat/vm/AbstractResourceViewModel_MembersInjector;->a(Lkik/android/chat/vm/d;Ljavax/inject/Provider;)V
 
-    .line 1099
+    .line 1115
     iget-object v0, p0, Lkik/android/chat/vm/profile/profileactionvm/ChangeGroupPhotoActionItemViewModel_MembersInjector;->c:Ljavax/inject/Provider;
 
     invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lkik/android/chat/vm/profile/bm;
+    check-cast v0, Lkik/android/chat/vm/profile/by;
 
-    iput-object v0, p1, Lkik/android/chat/vm/profile/profileactionvm/b;->b:Lkik/android/chat/vm/profile/bm;
+    iput-object v0, p1, Lkik/android/chat/vm/profile/profileactionvm/f;->b:Lkik/android/chat/vm/profile/by;
 
-    .line 1100
+    .line 1116
     iget-object v0, p0, Lkik/android/chat/vm/profile/profileactionvm/ChangeGroupPhotoActionItemViewModel_MembersInjector;->d:Ljavax/inject/Provider;
 
     invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
@@ -477,9 +553,9 @@
 
     check-cast v0, Lkik/core/net/e;
 
-    iput-object v0, p1, Lkik/android/chat/vm/profile/profileactionvm/b;->c:Lkik/core/net/e;
+    iput-object v0, p1, Lkik/android/chat/vm/profile/profileactionvm/f;->c:Lkik/core/net/e;
 
-    .line 1101
+    .line 1117
     iget-object v0, p0, Lkik/android/chat/vm/profile/profileactionvm/ChangeGroupPhotoActionItemViewModel_MembersInjector;->e:Ljavax/inject/Provider;
 
     invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
@@ -488,43 +564,54 @@
 
     check-cast v0, Lkik/core/interfaces/n;
 
-    iput-object v0, p1, Lkik/android/chat/vm/profile/profileactionvm/b;->d:Lkik/core/interfaces/n;
+    iput-object v0, p1, Lkik/android/chat/vm/profile/profileactionvm/f;->d:Lkik/core/interfaces/n;
 
-    .line 1102
+    .line 1118
     iget-object v0, p0, Lkik/android/chat/vm/profile/profileactionvm/ChangeGroupPhotoActionItemViewModel_MembersInjector;->f:Ljavax/inject/Provider;
 
     invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/interfaces/ah;
+    check-cast v0, Lkik/core/interfaces/ag;
 
-    iput-object v0, p1, Lkik/android/chat/vm/profile/profileactionvm/b;->e:Lkik/core/interfaces/ah;
+    iput-object v0, p1, Lkik/android/chat/vm/profile/profileactionvm/f;->e:Lkik/core/interfaces/ag;
 
-    .line 1103
+    .line 1119
     iget-object v0, p0, Lkik/android/chat/vm/profile/profileactionvm/ChangeGroupPhotoActionItemViewModel_MembersInjector;->g:Ljavax/inject/Provider;
 
     invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/interfaces/w;
+    check-cast v0, Lkik/core/interfaces/v;
 
-    iput-object v0, p1, Lkik/android/chat/vm/profile/profileactionvm/b;->f:Lkik/core/interfaces/w;
+    iput-object v0, p1, Lkik/android/chat/vm/profile/profileactionvm/f;->f:Lkik/core/interfaces/v;
 
-    .line 1104
+    .line 1120
     iget-object v0, p0, Lkik/android/chat/vm/profile/profileactionvm/ChangeGroupPhotoActionItemViewModel_MembersInjector;->h:Ljavax/inject/Provider;
 
     invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/interfaces/ae;
+    check-cast v0, Lkik/core/interfaces/ad;
 
-    iput-object v0, p1, Lkik/android/chat/vm/profile/profileactionvm/b;->g:Lkik/core/interfaces/ae;
+    iput-object v0, p1, Lkik/android/chat/vm/profile/profileactionvm/f;->g:Lkik/core/interfaces/ad;
 
-    .line 1105
+    .line 1121
     iget-object v0, p0, Lkik/android/chat/vm/profile/profileactionvm/ChangeGroupPhotoActionItemViewModel_MembersInjector;->i:Ljavax/inject/Provider;
+
+    invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/kik/core/domain/a/c;
+
+    iput-object v0, p1, Lkik/android/chat/vm/profile/profileactionvm/f;->h:Lcom/kik/core/domain/a/c;
+
+    .line 1122
+    iget-object v0, p0, Lkik/android/chat/vm/profile/profileactionvm/ChangeGroupPhotoActionItemViewModel_MembersInjector;->j:Ljavax/inject/Provider;
 
     invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
 
@@ -532,10 +619,21 @@
 
     check-cast v0, Lcom/kik/core/domain/a/b;
 
-    iput-object v0, p1, Lkik/android/chat/vm/profile/profileactionvm/b;->h:Lcom/kik/core/domain/a/b;
+    iput-object v0, p1, Lkik/android/chat/vm/profile/profileactionvm/f;->i:Lcom/kik/core/domain/a/b;
 
-    .line 1106
-    iget-object v0, p0, Lkik/android/chat/vm/profile/profileactionvm/ChangeGroupPhotoActionItemViewModel_MembersInjector;->j:Ljavax/inject/Provider;
+    .line 1123
+    iget-object v0, p0, Lkik/android/chat/vm/profile/profileactionvm/ChangeGroupPhotoActionItemViewModel_MembersInjector;->k:Ljavax/inject/Provider;
+
+    invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/kik/android/Mixpanel;
+
+    iput-object v0, p1, Lkik/android/chat/vm/profile/profileactionvm/f;->j:Lcom/kik/android/Mixpanel;
+
+    .line 1124
+    iget-object v0, p0, Lkik/android/chat/vm/profile/profileactionvm/ChangeGroupPhotoActionItemViewModel_MembersInjector;->l:Ljavax/inject/Provider;
 
     invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
 
@@ -543,8 +641,8 @@
 
     check-cast v0, Lcom/kik/metrics/c/d;
 
-    iput-object v0, p1, Lkik/android/chat/vm/profile/profileactionvm/b;->i:Lcom/kik/metrics/c/d;
+    iput-object v0, p1, Lkik/android/chat/vm/profile/profileactionvm/f;->k:Lcom/kik/metrics/c/d;
 
-    .line 16
+    .line 18
     return-void
 .end method

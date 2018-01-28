@@ -2,19 +2,30 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lkik/android/chat/vm/messaging/IContentMessageViewModel;
-
 
 # virtual methods
-.method public abstract g()Lrx/d;
+.method public abstract a()V
+.end method
+
+.method public abstract a(Lcom/kik/components/CoreComponent;)V
+.end method
+
+.method public abstract a(Lkik/core/datatypes/Message;)V
+.end method
+
+.method public abstract b(Lkik/core/datatypes/Message;)Lrx/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "()",
+            "(",
+            "Lkik/core/datatypes/Message;",
+            ")",
             "Lrx/d",
             "<",
-            "Landroid/graphics/drawable/Drawable;",
+            "Ljava/lang/Boolean;",
             ">;"
         }
     .end annotation
+.end method
+
+.method public abstract c(Lkik/core/datatypes/Message;)V
 .end method

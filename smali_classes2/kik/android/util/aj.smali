@@ -95,9 +95,9 @@
     check-cast v1, Lrx/subjects/a;
 
     .line 48
-    new-instance v5, Lcom/kik/util/ct;
+    new-instance v5, Lcom/kik/util/cy;
 
-    invoke-direct {v5, v0, v1}, Lcom/kik/util/ct;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v5, v0, v1}, Lcom/kik/util/cy;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     invoke-interface {v2, v5}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
@@ -133,7 +133,7 @@
             "(",
             "Ljava/util/Collection",
             "<",
-            "Lcom/kik/util/ct",
+            "Lcom/kik/util/cy",
             "<",
             "Ljava/lang/Integer;",
             "Lrx/subjects/a",
@@ -161,15 +161,15 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/kik/util/ct;
+    check-cast v0, Lcom/kik/util/cy;
 
     .line 30
-    iget-object v1, v0, Lcom/kik/util/ct;->b:Ljava/lang/Object;
+    iget-object v1, v0, Lcom/kik/util/cy;->b:Ljava/lang/Object;
 
     check-cast v1, Lrx/subjects/a;
 
     .line 31
-    iget-object v0, v0, Lcom/kik/util/ct;->a:Ljava/lang/Object;
+    iget-object v0, v0, Lcom/kik/util/cy;->a:Ljava/lang/Object;
 
     check-cast v0, Ljava/lang/Integer;
 

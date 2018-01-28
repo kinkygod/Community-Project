@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/core/interfaces/ag;
+.implements Lkik/core/interfaces/af;
 
 
 # annotations
@@ -13,7 +13,7 @@
         "Ljava/lang/Object;",
         ">",
         "Ljava/lang/Object;",
-        "Lkik/core/interfaces/ag",
+        "Lkik/core/interfaces/af",
         "<TI;>;"
     }
 .end annotation

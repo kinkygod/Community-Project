@@ -32,7 +32,7 @@
     .locals 0
 
     .prologue
-    .line 698
+    .line 706
     iput-object p1, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$9;->a:Lkik/android/chat/fragment/KikGroupMembersListFragment;
 
     invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
@@ -46,17 +46,17 @@
     .locals 6
 
     .prologue
-    .line 698
+    .line 706
     check-cast p1, Lkik/core/net/outgoing/ChangeMemberAdminStatusRequest;
 
-    .line 1702
+    .line 1710
     iget-object v0, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$9;->a:Lkik/android/chat/fragment/KikGroupMembersListFragment;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lkik/android/chat/fragment/KikGroupMembersListFragment;->replaceDialog(Lkik/android/chat/fragment/KikDialogFragment;)V
 
-    .line 1703
+    .line 1711
     iget-object v0, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$9;->a:Lkik/android/chat/fragment/KikGroupMembersListFragment;
 
     invoke-static {v0}, Lkik/android/chat/fragment/KikGroupMembersListFragment;->e(Lkik/android/chat/fragment/KikGroupMembersListFragment;)Landroid/view/View;
@@ -69,10 +69,10 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
 
-    .line 1711
+    .line 1719
     iget-object v0, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$9;->a:Lkik/android/chat/fragment/KikGroupMembersListFragment;
 
-    iget-object v0, v0, Lkik/android/chat/fragment/KikGroupMembersListFragment;->a:Lkik/core/interfaces/w;
+    iget-object v0, v0, Lkik/android/chat/fragment/KikGroupMembersListFragment;->a:Lkik/core/interfaces/v;
 
     invoke-virtual {p1}, Lkik/core/net/outgoing/ChangeMemberAdminStatusRequest;->getGroupJid()Ljava/lang/String;
 
@@ -80,11 +80,11 @@
 
     const/4 v2, 0x0
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/w;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/v;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
 
     move-result-object v0
 
-    .line 1712
+    .line 1720
     if-eqz v0, :cond_0
 
     invoke-virtual {v0}, Lkik/core/datatypes/l;->B()Z
@@ -93,7 +93,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 1713
+    .line 1721
     iget-object v1, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$9;->a:Lkik/android/chat/fragment/KikGroupMembersListFragment;
 
     iget-object v1, v1, Lkik/android/chat/fragment/KikGroupMembersListFragment;->f:Lcom/kik/android/Mixpanel;
@@ -120,7 +120,7 @@
 
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
 
-    .line 698
+    .line 706
     :cond_0
     return-void
 .end method
@@ -129,19 +129,19 @@
     .locals 3
 
     .prologue
-    .line 720
+    .line 728
     iget-object v0, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$9;->a:Lkik/android/chat/fragment/KikGroupMembersListFragment;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lkik/android/chat/fragment/KikGroupMembersListFragment;->replaceDialog(Lkik/android/chat/fragment/KikDialogFragment;)V
 
-    .line 721
+    .line 729
     instance-of v0, p1, Lkik/core/net/StanzaException;
 
     if-eqz v0, :cond_0
 
-    .line 725
+    .line 733
     iget-object v0, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$9;->a:Lkik/android/chat/fragment/KikGroupMembersListFragment;
 
     iget-object v1, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$9;->a:Lkik/android/chat/fragment/KikGroupMembersListFragment;
@@ -154,7 +154,7 @@
 
     invoke-virtual {v0, v1, v2}, Lkik/android/chat/fragment/KikGroupMembersListFragment;->displayErrorDialog(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 727
+    .line 735
     :cond_0
     return-void
 .end method

@@ -9,7 +9,7 @@
 # instance fields
 .field private final a:Lkik/core/chat/profile/IBotProfileCache;
 
-.field private final b:Lkik/core/xiphias/d;
+.field private final b:Lkik/core/xiphias/j;
 
 .field private final c:Lcom/github/a/a/a;
     .annotation system Ldalvik/annotation/Signature;
@@ -25,7 +25,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lkik/core/xiphias/d;Lkik/core/chat/profile/IBotProfileCache;)V
+.method public constructor <init>(Lkik/core/xiphias/j;Lkik/core/chat/profile/IBotProfileCache;)V
     .locals 2
 
     .prologue
@@ -43,7 +43,7 @@
     iput-object p2, p0, Lkik/core/chat/profile/c;->a:Lkik/core/chat/profile/IBotProfileCache;
 
     .line 36
-    iput-object p1, p0, Lkik/core/chat/profile/c;->b:Lkik/core/xiphias/d;
+    iput-object p1, p0, Lkik/core/chat/profile/c;->b:Lkik/core/xiphias/j;
 
     .line 38
     iget-object v0, p0, Lkik/core/chat/profile/c;->c:Lcom/github/a/a/a;
@@ -87,7 +87,7 @@
 .end method
 
 .method static synthetic a(Lkik/core/chat/profile/c;Lcom/kik/core/network/xmpp/jid/a;Lcom/kik/entity/model/EntityCommon$EntityBot;)V
-    .locals 8
+    .locals 6
 
     .prologue
     const/4 v1, 0x0
@@ -125,137 +125,106 @@
 
     .line 2117
     :goto_0
-    invoke-virtual {p2}, Lcom/kik/entity/model/EntityCommon$EntityBot;->g()Z
+    invoke-virtual {p2}, Lcom/kik/entity/model/EntityCommon$EntityBot;->m()Z
 
     move-result v2
 
-    if-eqz v2, :cond_2
-
-    invoke-virtual {p2}, Lcom/kik/entity/model/EntityCommon$EntityBot;->h()Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement;->a()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_2
+    if-eqz v2, :cond_0
 
     .line 2118
-    invoke-virtual {p2}, Lcom/kik/entity/model/EntityCommon$EntityBot;->h()Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement;->b()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;->c()Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->a()Ljava/lang/String;
+    invoke-virtual {p2}, Lcom/kik/entity/model/EntityCommon$EntityBot;->n()Lcom/kik/entity/model/ElementCommon$RatingSummary;
 
     move-result-object v2
 
     .line 2119
-    invoke-static {v2}, Lkik/core/chat/profile/Theme$Name;->forKey(Ljava/lang/String;)Lkik/core/chat/profile/Theme$Name;
+    new-instance v1, Lkik/core/chat/profile/ak;
 
-    move-result-object v3
-
-    .line 2120
-    if-eqz v3, :cond_2
-
-    .line 2121
-    new-instance v2, Lkik/core/chat/profile/Theme;
-
-    invoke-direct {v2, v3}, Lkik/core/chat/profile/Theme;-><init>(Lkik/core/chat/profile/Theme$Name;)V
-
-    .line 2126
-    :goto_1
-    invoke-virtual {p2}, Lcom/kik/entity/model/EntityCommon$EntityBot;->m()Z
-
-    move-result v3
-
-    if-eqz v3, :cond_0
-
-    .line 2127
-    invoke-virtual {p2}, Lcom/kik/entity/model/EntityCommon$EntityBot;->n()Lcom/kik/entity/model/ElementCommon$RatingSummary;
-
-    move-result-object v3
-
-    .line 2128
-    new-instance v1, Lkik/core/chat/profile/q;
-
-    invoke-virtual {v3}, Lcom/kik/entity/model/ElementCommon$RatingSummary;->a()D
+    invoke-virtual {v2}, Lcom/kik/entity/model/ElementCommon$RatingSummary;->a()D
 
     move-result-wide v4
 
-    double-to-float v4, v4
+    double-to-float v3, v4
 
-    invoke-virtual {v3}, Lcom/kik/entity/model/ElementCommon$RatingSummary;->b()J
+    invoke-virtual {v2}, Lcom/kik/entity/model/ElementCommon$RatingSummary;->b()J
 
-    move-result-wide v6
+    move-result-wide v4
 
-    invoke-direct {v1, v4, v6, v7}, Lkik/core/chat/profile/q;-><init>(FJ)V
+    invoke-direct {v1, v3, v4, v5}, Lkik/core/chat/profile/ak;-><init>(FJ)V
 
-    .line 2131
+    .line 2122
     :cond_0
     invoke-virtual {p2}, Lcom/kik/entity/model/EntityCommon$EntityBot;->c()Z
 
-    move-result v3
+    move-result v2
 
-    if-eqz v3, :cond_1
+    if-eqz v2, :cond_1
 
-    new-instance v3, Lkik/core/chat/profile/a;
+    new-instance v2, Lkik/core/chat/profile/a;
 
     invoke-virtual {p2}, Lcom/kik/entity/model/EntityCommon$EntityBot;->d()Lcom/kik/entity/model/ElementCommon$BioElement;
 
-    move-result-object v4
+    move-result-object v3
 
-    invoke-virtual {v4}, Lcom/kik/entity/model/ElementCommon$BioElement;->a()Ljava/lang/String;
+    invoke-virtual {v3}, Lcom/kik/entity/model/ElementCommon$BioElement;->a()Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v3
 
-    invoke-direct {v3, v4}, Lkik/core/chat/profile/a;-><init>(Ljava/lang/String;)V
+    invoke-direct {v2, v3}, Lkik/core/chat/profile/a;-><init>(Ljava/lang/String;)V
 
-    .line 2132
+    .line 2124
+    :goto_1
+    invoke-virtual {p2}, Lcom/kik/entity/model/EntityCommon$EntityBot;->p()Lcom/kik/entity/model/ElementCommon$TrustedElement;
+
+    move-result-object v3
+
+    .line 2125
+    if-eqz v3, :cond_2
+
+    invoke-virtual {v3}, Lcom/kik/entity/model/ElementCommon$TrustedElement;->a()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_2
+
+    const/4 v3, 0x1
+
+    .line 2127
     :goto_2
     new-instance v4, Lkik/core/chat/profile/b$a;
 
     invoke-direct {v4, p1}, Lkik/core/chat/profile/b$a;-><init>(Lcom/kik/core/network/xmpp/jid/a;)V
 
-    .line 2133
-    invoke-virtual {v4, v3}, Lkik/core/chat/profile/b$a;->a(Lkik/core/chat/profile/a;)Lkik/core/chat/profile/b$a;
+    .line 2128
+    invoke-virtual {v4, v2}, Lkik/core/chat/profile/b$a;->a(Lkik/core/chat/profile/a;)Lkik/core/chat/profile/b$a;
 
-    move-result-object v3
+    move-result-object v2
 
-    .line 2134
-    invoke-virtual {v3, v0}, Lkik/core/chat/profile/b$a;->a(Ljava/util/Date;)Lkik/core/chat/profile/b$a;
-
-    move-result-object v0
-
-    .line 2135
-    invoke-virtual {v0, v2}, Lkik/core/chat/profile/b$a;->a(Lkik/core/chat/profile/Theme;)Lkik/core/chat/profile/b$a;
+    .line 2129
+    invoke-virtual {v2, v0}, Lkik/core/chat/profile/b$a;->a(Ljava/util/Date;)Lkik/core/chat/profile/b$a;
 
     move-result-object v0
 
-    .line 2136
-    invoke-virtual {v0, v1}, Lkik/core/chat/profile/b$a;->a(Lkik/core/chat/profile/q;)Lkik/core/chat/profile/b$a;
+    .line 2130
+    invoke-virtual {v0, v1}, Lkik/core/chat/profile/b$a;->a(Lkik/core/chat/profile/ak;)Lkik/core/chat/profile/b$a;
 
     move-result-object v0
 
-    .line 2137
+    .line 2131
+    invoke-virtual {v0, v3}, Lkik/core/chat/profile/b$a;->a(Z)Lkik/core/chat/profile/b$a;
+
+    move-result-object v0
+
+    .line 2132
     invoke-virtual {v0}, Lkik/core/chat/profile/b$a;->a()Lkik/core/chat/profile/b;
 
     move-result-object v0
 
-    .line 2154
+    .line 2149
     iget-object v1, p0, Lkik/core/chat/profile/c;->c:Lcom/github/a/a/a;
 
     invoke-virtual {v1, p1, v0}, Lcom/github/a/a/a;->a(Ljava/lang/Object;Ljava/lang/Object;)V
 
-    .line 2155
+    .line 2150
     iget-object v1, p0, Lkik/core/chat/profile/c;->a:Lkik/core/chat/profile/IBotProfileCache;
 
     invoke-interface {v1, p1, v0}, Lkik/core/chat/profile/IBotProfileCache;->storeProfile(Lcom/kik/core/network/xmpp/jid/a;Lkik/core/chat/profile/b;)V
@@ -263,25 +232,26 @@
     .line 26
     return-void
 
-    .line 2131
+    .line 2122
     :cond_1
-    new-instance v3, Lkik/core/chat/profile/a;
+    new-instance v2, Lkik/core/chat/profile/a;
 
-    const-string v4, ""
+    const-string v3, ""
 
-    invoke-direct {v3, v4}, Lkik/core/chat/profile/a;-><init>(Ljava/lang/String;)V
-
-    goto :goto_2
-
-    :cond_2
-    move-object v2, v1
+    invoke-direct {v2, v3}, Lkik/core/chat/profile/a;-><init>(Ljava/lang/String;)V
 
     goto :goto_1
+
+    .line 2125
+    :cond_2
+    const/4 v3, 0x0
+
+    goto :goto_2
 
     :cond_3
     move-object v0, v1
 
-    goto/16 :goto_0
+    goto :goto_0
 .end method
 
 .method static synthetic a(Lkik/core/chat/profile/c;Lcom/kik/core/network/xmpp/jid/a;Ljava/lang/Throwable;)V
@@ -320,7 +290,7 @@
 
     .prologue
     .line 26
-    .line 1147
+    .line 1142
     iget-object v0, p0, Lkik/core/chat/profile/c;->a:Lkik/core/chat/profile/IBotProfileCache;
 
     invoke-interface {v0, p1}, Lkik/core/chat/profile/IBotProfileCache;->profileForJid(Lcom/kik/core/network/xmpp/jid/a;)Lkik/core/chat/profile/b;
@@ -329,7 +299,7 @@
 
     if-nez v0, :cond_0
 
-    .line 1148
+    .line 1143
     iget-object v0, p0, Lkik/core/chat/profile/c;->c:Lcom/github/a/a/a;
 
     invoke-static {p1}, Lkik/core/chat/profile/b;->a(Lcom/kik/core/network/xmpp/jid/a;)Lkik/core/chat/profile/b;
@@ -375,9 +345,9 @@
     move-result-object v0
 
     .line 58
-    iget-object v1, p0, Lkik/core/chat/profile/c;->b:Lkik/core/xiphias/d;
+    iget-object v1, p0, Lkik/core/chat/profile/c;->b:Lkik/core/xiphias/j;
 
-    invoke-interface {v1, p1}, Lkik/core/xiphias/d;->a(Lcom/kik/core/network/xmpp/jid/a;)Lcom/kik/events/Promise;
+    invoke-interface {v1, p1}, Lkik/core/xiphias/j;->a(Lcom/kik/core/network/xmpp/jid/a;)Lcom/kik/events/Promise;
 
     move-result-object v1
 

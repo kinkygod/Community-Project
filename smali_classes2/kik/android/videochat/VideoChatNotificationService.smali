@@ -86,7 +86,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0906be
+    const v1, 0x7f0906ba
 
     .line 35
     invoke-virtual {p0, v1}, Lkik/android/videochat/VideoChatNotificationService;->getString(I)Ljava/lang/String;
@@ -97,7 +97,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f090653
+    const v1, 0x7f09065b
 
     .line 36
     invoke-virtual {p0, v1}, Lkik/android/videochat/VideoChatNotificationService;->getString(I)Ljava/lang/String;
@@ -108,7 +108,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f020224
+    const v1, 0x7f02020d
 
     .line 37
     invoke-virtual {v0, v1}, Landroid/support/v4/app/NotificationCompat$Builder;->setSmallIcon(I)Landroid/support/v4/app/NotificationCompat$Builder;

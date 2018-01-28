@@ -157,6 +157,7 @@
 
     .prologue
     .line 35010
+    # getter for: Lcom/google/protobuf/DescriptorProtos;->internal_static_google_protobuf_SourceCodeInfo_descriptor:Lcom/google/protobuf/Descriptors$Descriptor;
     invoke-static {}, Lcom/google/protobuf/DescriptorProtos;->access$24500()Lcom/google/protobuf/Descriptors$Descriptor;
 
     move-result-object v0
@@ -1037,6 +1038,7 @@
 
     .prologue
     .line 35049
+    # getter for: Lcom/google/protobuf/DescriptorProtos;->internal_static_google_protobuf_SourceCodeInfo_descriptor:Lcom/google/protobuf/Descriptors$Descriptor;
     invoke-static {}, Lcom/google/protobuf/DescriptorProtos;->access$24500()Lcom/google/protobuf/Descriptors$Descriptor;
 
     move-result-object v0
@@ -1268,6 +1270,7 @@
 
     .prologue
     .line 35015
+    # getter for: Lcom/google/protobuf/DescriptorProtos;->internal_static_google_protobuf_SourceCodeInfo_fieldAccessorTable:Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
     invoke-static {}, Lcom/google/protobuf/DescriptorProtos;->access$24600()Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
     move-result-object v0

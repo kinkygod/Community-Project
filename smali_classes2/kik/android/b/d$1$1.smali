@@ -109,7 +109,7 @@
 
     iget-object v0, v0, Lkik/android/b/d$1;->f:Lkik/android/b/d;
 
-    invoke-static {v0}, Lkik/android/b/d;->b(Lkik/android/b/d;)Lkik/core/interfaces/w;
+    invoke-static {v0}, Lkik/android/b/d;->b(Lkik/android/b/d;)Lkik/core/interfaces/v;
 
     move-result-object v0
 
@@ -119,7 +119,7 @@
 
     const/4 v2, 0x0
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/w;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/v;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
 
     move-result-object v0
 

@@ -84,11 +84,11 @@
     .line 1137
     iget-object v0, p0, Lkik/android/video/f$1;->i:Lkik/android/video/f;
 
-    iget-object v0, v0, Lkik/android/video/f;->a:Lcom/kik/storage/p;
+    iget-object v0, v0, Lkik/android/video/f;->a:Lcom/kik/storage/s;
 
     iget-object v1, p0, Lkik/android/video/f$1;->b:Ljava/lang/String;
 
-    invoke-interface {v0, v1}, Lcom/kik/storage/p;->g(Ljava/lang/String;)Z
+    invoke-interface {v0, v1}, Lcom/kik/storage/s;->g(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -117,7 +117,7 @@
     .line 1143
     iget-object v2, p0, Lkik/android/video/f$1;->i:Lkik/android/video/f;
 
-    iget-object v2, v2, Lkik/android/video/f;->a:Lcom/kik/storage/p;
+    iget-object v2, v2, Lkik/android/video/f;->a:Lcom/kik/storage/s;
 
     iget-object v3, p0, Lkik/android/video/f$1;->d:Ljava/lang/String;
 
@@ -125,7 +125,7 @@
 
     move-result-object v4
 
-    invoke-interface {v2, v3, v4}, Lcom/kik/storage/p;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-interface {v2, v3, v4}, Lcom/kik/storage/s;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 1145
     new-instance v2, Landroid/media/MediaMetadataRetriever;

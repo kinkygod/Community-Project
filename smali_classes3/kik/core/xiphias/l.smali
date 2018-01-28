@@ -1,53 +1,37 @@
-.class final synthetic Lkik/core/xiphias/l;
+.class public final Lkik/core/xiphias/l;
 .super Ljava/lang/Object;
-
-# interfaces
-.implements Lcom/kik/events/p;
-
-
-# static fields
-.field private static final a:Lkik/core/xiphias/l;
+.source "SourceFile"
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public static a(Lcom/kik/masksdata/rpc/MasksdataService$ListRequest;Ljava/lang/String;)Lkik/core/xiphias/XiphiasRequest;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/kik/masksdata/rpc/MasksdataService$ListRequest;",
+            "Ljava/lang/String;",
+            ")",
+            "Lkik/core/xiphias/XiphiasRequest",
+            "<",
+            "Lcom/kik/masksdata/rpc/MasksdataService$ListResponse;",
+            ">;"
+        }
+    .end annotation
 
-    new-instance v0, Lkik/core/xiphias/l;
+    .prologue
+    .line 15
+    new-instance v0, Lkik/core/xiphias/XiphiasRequest;
 
-    invoke-direct {v0}, Lkik/core/xiphias/l;-><init>()V
+    const-string v1, "mobile.masks.v1.MasksData"
 
-    sput-object v0, Lkik/core/xiphias/l;->a:Lkik/core/xiphias/l;
+    .line 18
+    invoke-static {}, Lcom/kik/masksdata/rpc/MasksdataService$ListResponse;->parser()Lcom/google/protobuf/Parser;
 
-    return-void
-.end method
+    move-result-object v2
 
-.method private constructor <init>()V
-    .locals 0
+    invoke-direct {v0, v1, p1, p0, v2}, Lkik/core/xiphias/XiphiasRequest;-><init>(Ljava/lang/String;Ljava/lang/String;Lcom/google/protobuf/AbstractMessage;Lcom/google/protobuf/Parser;)V
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-.method public static a()Lcom/kik/events/p;
-    .locals 1
-
-    sget-object v0, Lkik/core/xiphias/l;->a:Lkik/core/xiphias/l;
-
-    return-object v0
-.end method
-
-
-# virtual methods
-.method public final a(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
-
-    check-cast p1, Lkik/core/xiphias/ab;
-
-    invoke-virtual {p1}, Lkik/core/xiphias/ab;->a()Ljava/lang/Object;
-
-    move-result-object v0
-
+    .line 15
     return-object v0
 .end method

@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 520
+    .line 546
     iput-object p1, p0, Lcom/kik/cards/web/CardsWebViewFragment$10$1;->a:Lcom/kik/cards/web/CardsWebViewFragment$10;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,10 +42,10 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 524
+    .line 550
     if-nez p2, :cond_1
 
-    .line 525
+    .line 551
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$10$1;->a:Lcom/kik/cards/web/CardsWebViewFragment$10;
 
     iget-object v0, v0, Lcom/kik/cards/web/CardsWebViewFragment$10;->a:Lcom/kik/cards/web/CardsWebViewFragment;
@@ -64,7 +64,7 @@
 
     iget-object v2, v2, Lcom/kik/cards/web/CardsWebViewFragment$10;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
-    .line 526
+    .line 552
     invoke-static {v2}, Lcom/kik/cards/web/CardsWebViewFragment;->e(Lcom/kik/cards/web/CardsWebViewFragment;)Ljava/lang/String;
 
     move-result-object v2
@@ -79,7 +79,7 @@
 
     iget-object v2, v2, Lcom/kik/cards/web/CardsWebViewFragment$10;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
-    .line 527
+    .line 553
     invoke-static {v2}, Lcom/kik/cards/web/CardsWebViewFragment;->e(Lcom/kik/cards/web/CardsWebViewFragment;)Ljava/lang/String;
 
     move-result-object v2
@@ -98,7 +98,7 @@
 
     iget-object v2, v2, Lcom/kik/cards/web/CardsWebViewFragment$10;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
-    .line 528
+    .line 554
     invoke-static {v2}, Lcom/kik/cards/web/CardsWebViewFragment;->c(Lcom/kik/cards/web/CardsWebViewFragment;)Lcom/kik/cards/web/c;
 
     move-result-object v2
@@ -111,28 +111,28 @@
 
     move-result-object v0
 
-    .line 529
+    .line 555
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
 
-    .line 530
+    .line 556
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$10$1;->a:Lcom/kik/cards/web/CardsWebViewFragment$10;
 
     iget-object v0, v0, Lcom/kik/cards/web/CardsWebViewFragment$10;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
     invoke-static {v0}, Lcom/kik/cards/web/CardsWebViewFragment;->l(Lcom/kik/cards/web/CardsWebViewFragment;)V
 
-    .line 615
+    .line 643
     :cond_0
     :goto_0
     return-void
 
-    .line 532
+    .line 558
     :cond_1
     const/4 v0, 0x1
 
     if-ne p2, v0, :cond_2
 
-    .line 533
+    .line 559
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$10$1;->a:Lcom/kik/cards/web/CardsWebViewFragment$10;
 
     iget-object v0, v0, Lcom/kik/cards/web/CardsWebViewFragment$10;->a:Lcom/kik/cards/web/CardsWebViewFragment;
@@ -151,7 +151,7 @@
 
     iget-object v2, v2, Lcom/kik/cards/web/CardsWebViewFragment$10;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
-    .line 534
+    .line 560
     invoke-static {v2}, Lcom/kik/cards/web/CardsWebViewFragment;->e(Lcom/kik/cards/web/CardsWebViewFragment;)Ljava/lang/String;
 
     move-result-object v2
@@ -166,7 +166,7 @@
 
     iget-object v2, v2, Lcom/kik/cards/web/CardsWebViewFragment$10;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
-    .line 535
+    .line 561
     invoke-static {v2}, Lcom/kik/cards/web/CardsWebViewFragment;->e(Lcom/kik/cards/web/CardsWebViewFragment;)Ljava/lang/String;
 
     move-result-object v2
@@ -179,10 +179,10 @@
 
     move-result-object v0
 
-    .line 536
+    .line 562
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
 
-    .line 537
+    .line 563
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$10$1;->a:Lcom/kik/cards/web/CardsWebViewFragment$10;
 
     iget-object v0, v0, Lcom/kik/cards/web/CardsWebViewFragment$10;->a:Lcom/kik/cards/web/CardsWebViewFragment;
@@ -203,13 +203,13 @@
 
     goto :goto_0
 
-    .line 581
+    .line 609
     :cond_2
     const/4 v0, 0x2
 
     if-ne p2, v0, :cond_3
 
-    .line 582
+    .line 610
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$10$1;->a:Lcom/kik/cards/web/CardsWebViewFragment$10;
 
     iget-object v0, v0, Lcom/kik/cards/web/CardsWebViewFragment$10;->a:Lcom/kik/cards/web/CardsWebViewFragment;
@@ -228,7 +228,7 @@
 
     iget-object v2, v2, Lcom/kik/cards/web/CardsWebViewFragment$10;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
-    .line 583
+    .line 611
     invoke-static {v2}, Lcom/kik/cards/web/CardsWebViewFragment;->e(Lcom/kik/cards/web/CardsWebViewFragment;)Ljava/lang/String;
 
     move-result-object v2
@@ -243,7 +243,7 @@
 
     iget-object v2, v2, Lcom/kik/cards/web/CardsWebViewFragment$10;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
-    .line 584
+    .line 612
     invoke-static {v2}, Lcom/kik/cards/web/CardsWebViewFragment;->e(Lcom/kik/cards/web/CardsWebViewFragment;)Ljava/lang/String;
 
     move-result-object v2
@@ -256,17 +256,17 @@
 
     move-result-object v0
 
-    .line 585
+    .line 613
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
 
-    .line 586
+    .line 614
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "android.intent.action.VIEW"
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 588
+    .line 616
     iget-object v1, p0, Lcom/kik/cards/web/CardsWebViewFragment$10$1;->a:Lcom/kik/cards/web/CardsWebViewFragment$10;
 
     iget-object v1, v1, Lcom/kik/cards/web/CardsWebViewFragment$10;->a:Lcom/kik/cards/web/CardsWebViewFragment;
@@ -285,7 +285,7 @@
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
 
-    .line 590
+    .line 618
     iget-object v1, p0, Lcom/kik/cards/web/CardsWebViewFragment$10$1;->a:Lcom/kik/cards/web/CardsWebViewFragment$10;
 
     iget-object v1, v1, Lcom/kik/cards/web/CardsWebViewFragment$10;->a:Lcom/kik/cards/web/CardsWebViewFragment;
@@ -298,13 +298,13 @@
 
     goto/16 :goto_0
 
-    .line 592
+    .line 620
     :cond_3
     const/4 v0, 0x3
 
     if-ne p2, v0, :cond_5
 
-    .line 593
+    .line 621
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$10$1;->a:Lcom/kik/cards/web/CardsWebViewFragment$10;
 
     iget-object v0, v0, Lcom/kik/cards/web/CardsWebViewFragment$10;->a:Lcom/kik/cards/web/CardsWebViewFragment;
@@ -323,7 +323,7 @@
 
     iget-object v2, v2, Lcom/kik/cards/web/CardsWebViewFragment$10;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
-    .line 594
+    .line 622
     invoke-static {v2}, Lcom/kik/cards/web/CardsWebViewFragment;->e(Lcom/kik/cards/web/CardsWebViewFragment;)Ljava/lang/String;
 
     move-result-object v2
@@ -338,7 +338,7 @@
 
     iget-object v2, v2, Lcom/kik/cards/web/CardsWebViewFragment$10;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
-    .line 595
+    .line 623
     invoke-static {v2}, Lcom/kik/cards/web/CardsWebViewFragment;->e(Lcom/kik/cards/web/CardsWebViewFragment;)Ljava/lang/String;
 
     move-result-object v2
@@ -351,10 +351,10 @@
 
     move-result-object v0
 
-    .line 596
+    .line 624
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
 
-    .line 597
+    .line 625
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$10$1;->a:Lcom/kik/cards/web/CardsWebViewFragment$10;
 
     iget-object v0, v0, Lcom/kik/cards/web/CardsWebViewFragment$10;->a:Lcom/kik/cards/web/CardsWebViewFragment;
@@ -363,10 +363,10 @@
 
     move-result-object v0
 
-    .line 599
+    .line 627
     if-eqz v0, :cond_4
 
-    .line 600
+    .line 628
     iget-object v1, p0, Lcom/kik/cards/web/CardsWebViewFragment$10$1;->a:Lcom/kik/cards/web/CardsWebViewFragment$10;
 
     iget-object v1, v1, Lcom/kik/cards/web/CardsWebViewFragment$10;->a:Lcom/kik/cards/web/CardsWebViewFragment;
@@ -377,9 +377,9 @@
 
     const-string v2, ""
 
-    invoke-static {v1, v2, v0}, Lcom/kik/util/cj;->a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2, v0}, Lcom/kik/util/cl;->a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 602
+    .line 630
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$10$1;->a:Lcom/kik/cards/web/CardsWebViewFragment$10;
 
     iget-object v0, v0, Lcom/kik/cards/web/CardsWebViewFragment$10;->a:Lcom/kik/cards/web/CardsWebViewFragment;
@@ -398,7 +398,7 @@
 
     goto/16 :goto_0
 
-    .line 605
+    .line 633
     :cond_4
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$10$1;->a:Lcom/kik/cards/web/CardsWebViewFragment$10;
 
@@ -418,13 +418,13 @@
 
     goto/16 :goto_0
 
-    .line 608
+    .line 636
     :cond_5
     const/4 v0, 0x4
 
     if-ne p2, v0, :cond_0
 
-    .line 609
+    .line 637
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$10$1;->a:Lcom/kik/cards/web/CardsWebViewFragment$10;
 
     iget-object v0, v0, Lcom/kik/cards/web/CardsWebViewFragment$10;->a:Lcom/kik/cards/web/CardsWebViewFragment;
@@ -443,7 +443,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 610
+    .line 638
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$10$1;->a:Lcom/kik/cards/web/CardsWebViewFragment$10;
 
     iget-object v0, v0, Lcom/kik/cards/web/CardsWebViewFragment$10;->a:Lcom/kik/cards/web/CardsWebViewFragment;
@@ -464,7 +464,7 @@
 
     invoke-virtual {v0, v1}, Lkik/android/b/g;->f(Ljava/lang/String;)Lcom/kik/events/Promise;
 
-    .line 611
+    .line 639
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$10$1;->a:Lcom/kik/cards/web/CardsWebViewFragment$10;
 
     iget-object v0, v0, Lcom/kik/cards/web/CardsWebViewFragment$10;->a:Lcom/kik/cards/web/CardsWebViewFragment;
@@ -478,7 +478,7 @@
 
     invoke-virtual {v0, v1}, Lcom/kik/cards/web/ExtendedWebView;->loadUrl(Ljava/lang/String;)V
 
-    .line 612
+    .line 640
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$10$1;->a:Lcom/kik/cards/web/CardsWebViewFragment$10;
 
     iget-object v0, v0, Lcom/kik/cards/web/CardsWebViewFragment$10;->a:Lcom/kik/cards/web/CardsWebViewFragment;

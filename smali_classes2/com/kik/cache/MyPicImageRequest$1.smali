@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/kik/cache/MyPicImageRequest;->getKeyMatcher(Lkik/core/datatypes/ac;Z)Lcom/kik/cache/SimpleLruBitmapCache$a;
+    value = Lcom/kik/cache/MyPicImageRequest;->getKeyMatcher(Lkik/core/datatypes/ab;Z)Lcom/kik/cache/SimpleLruBitmapCache$a;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

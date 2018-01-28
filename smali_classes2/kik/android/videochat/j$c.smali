@@ -75,14 +75,14 @@
     .line 69
     iget-object v0, p0, Lkik/android/videochat/j$c;->d:Lkik/android/videochat/c;
 
-    invoke-interface {v0}, Lkik/android/videochat/c;->f()Lkik/core/interfaces/ae;
+    invoke-interface {v0}, Lkik/android/videochat/c;->f()Lkik/core/interfaces/ad;
 
     move-result-object v0
 
     .line 70
     const-string v1, "vc_seen_toggle_tooltip_count"
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ae;->u(Ljava/lang/String;)Ljava/lang/Integer;
+    invoke-interface {v0, v1}, Lkik/core/interfaces/ad;->u(Ljava/lang/String;)Ljava/lang/Integer;
 
     move-result-object v0
 
@@ -105,18 +105,18 @@
     .line 76
     iget-object v0, p0, Lkik/android/videochat/j$c;->d:Lkik/android/videochat/c;
 
-    invoke-interface {v0}, Lkik/android/videochat/c;->f()Lkik/core/interfaces/ae;
+    invoke-interface {v0}, Lkik/android/videochat/c;->f()Lkik/core/interfaces/ad;
 
     move-result-object v0
 
     const-string v1, "vc_seen_toggle_tooltip_count"
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ae;->y(Ljava/lang/String;)Z
+    invoke-interface {v0, v1}, Lkik/core/interfaces/ad;->y(Ljava/lang/String;)Z
 
     .line 77
     iget-object v0, p0, Lkik/android/videochat/j$c;->d:Lkik/android/videochat/c;
 
-    invoke-interface {v0}, Lkik/android/videochat/c;->f()Lkik/core/interfaces/ae;
+    invoke-interface {v0}, Lkik/android/videochat/c;->f()Lkik/core/interfaces/ad;
 
     move-result-object v0
 
@@ -130,7 +130,7 @@
 
     move-result-object v2
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;Ljava/lang/Long;)Z
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Long;)Z
 
     .line 78
     const/4 v0, 0x1

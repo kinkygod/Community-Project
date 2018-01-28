@@ -2,48 +2,60 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnClickListener;
+.implements Ljava/lang/Runnable;
 
 
-# static fields
-.field private static final a:Lkik/android/chat/fragment/dw;
+# instance fields
+.field private final a:Lkik/android/chat/fragment/KikScopedDialogFragment;
+
+.field private final b:Lkik/android/chat/fragment/KikDialogFragment$a;
+
+.field private final c:Landroid/content/DialogInterface$OnClickListener;
+
+.field private final d:Ljava/lang/String;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lkik/android/chat/fragment/dw;
-
-    invoke-direct {v0}, Lkik/android/chat/fragment/dw;-><init>()V
-
-    sput-object v0, Lkik/android/chat/fragment/dw;->a:Lkik/android/chat/fragment/dw;
-
-    return-void
-.end method
-
-.method private constructor <init>()V
+.method private constructor <init>(Lkik/android/chat/fragment/KikScopedDialogFragment;Lkik/android/chat/fragment/KikDialogFragment$a;Landroid/content/DialogInterface$OnClickListener;Ljava/lang/String;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    iput-object p1, p0, Lkik/android/chat/fragment/dw;->a:Lkik/android/chat/fragment/KikScopedDialogFragment;
+
+    iput-object p2, p0, Lkik/android/chat/fragment/dw;->b:Lkik/android/chat/fragment/KikDialogFragment$a;
+
+    iput-object p3, p0, Lkik/android/chat/fragment/dw;->c:Landroid/content/DialogInterface$OnClickListener;
+
+    iput-object p4, p0, Lkik/android/chat/fragment/dw;->d:Ljava/lang/String;
+
     return-void
 .end method
 
-.method public static a()Landroid/content/DialogInterface$OnClickListener;
+.method public static a(Lkik/android/chat/fragment/KikScopedDialogFragment;Lkik/android/chat/fragment/KikDialogFragment$a;Landroid/content/DialogInterface$OnClickListener;Ljava/lang/String;)Ljava/lang/Runnable;
     .locals 1
 
-    sget-object v0, Lkik/android/chat/fragment/dw;->a:Lkik/android/chat/fragment/dw;
+    new-instance v0, Lkik/android/chat/fragment/dw;
+
+    invoke-direct {v0, p0, p1, p2, p3}, Lkik/android/chat/fragment/dw;-><init>(Lkik/android/chat/fragment/KikScopedDialogFragment;Lkik/android/chat/fragment/KikDialogFragment$a;Landroid/content/DialogInterface$OnClickListener;Ljava/lang/String;)V
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public final onClick(Landroid/content/DialogInterface;I)V
-    .locals 0
+.method public final run()V
+    .locals 4
 
-    invoke-static {p1, p2}, Lkik/android/chat/fragment/KikScopedDialogFragment;->lambda$displayDialog$1(Landroid/content/DialogInterface;I)V
+    iget-object v0, p0, Lkik/android/chat/fragment/dw;->a:Lkik/android/chat/fragment/KikScopedDialogFragment;
+
+    iget-object v1, p0, Lkik/android/chat/fragment/dw;->b:Lkik/android/chat/fragment/KikDialogFragment$a;
+
+    iget-object v2, p0, Lkik/android/chat/fragment/dw;->c:Landroid/content/DialogInterface$OnClickListener;
+
+    iget-object v3, p0, Lkik/android/chat/fragment/dw;->d:Ljava/lang/String;
+
+    invoke-static {v0, v1, v2, v3}, Lkik/android/chat/fragment/KikScopedDialogFragment;->lambda$displayDialog$0(Lkik/android/chat/fragment/KikScopedDialogFragment;Lkik/android/chat/fragment/KikDialogFragment$a;Landroid/content/DialogInterface$OnClickListener;Ljava/lang/String;)V
 
     return-void
 .end method

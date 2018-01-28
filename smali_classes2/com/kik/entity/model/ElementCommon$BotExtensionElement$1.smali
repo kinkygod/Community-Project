@@ -28,7 +28,7 @@
     .locals 0
 
     .prologue
-    .line 11705
+    .line 12330
     invoke-direct {p0}, Lcom/google/protobuf/AbstractParser;-><init>()V
 
     return-void
@@ -45,13 +45,13 @@
     .end annotation
 
     .prologue
-    .line 12710
+    .line 13335
     new-instance v0, Lcom/kik/entity/model/ElementCommon$BotExtensionElement;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p1, v1}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement;-><init>(Lcom/google/protobuf/CodedInputStream;B)V
+    invoke-direct {v0, p1, p2, v1}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement;-><init>(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;B)V
 
-    .line 11705
+    .line 12330
     return-object v0
 .end method

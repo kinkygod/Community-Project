@@ -9,7 +9,7 @@
     .end annotation
 .end field
 
-.field protected b:Lkik/core/interfaces/ae;
+.field protected b:Lkik/core/interfaces/ad;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -37,11 +37,11 @@
     invoke-interface {p1, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/widget/preferences/KikVideoPrefetchPreference;)V
 
     .line 34
-    iget-object v0, p0, Lkik/android/widget/preferences/KikVideoPrefetchPreference;->b:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/widget/preferences/KikVideoPrefetchPreference;->b:Lkik/core/interfaces/ad;
 
     const-string v1, "kik.chat.video.prefetch"
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ae;->s(Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {v0, v1}, Lkik/core/interfaces/ad;->s(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

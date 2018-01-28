@@ -69,14 +69,14 @@
     .line 1715
     iget-object v0, p0, Lkik/android/chat/fragment/KikCodeFragment$7;->b:Lkik/android/chat/fragment/KikCodeFragment;
 
-    iget-object v0, v0, Lkik/android/chat/fragment/KikCodeFragment;->f:Lkik/core/interfaces/ah;
+    iget-object v0, v0, Lkik/android/chat/fragment/KikCodeFragment;->f:Lkik/core/interfaces/ag;
 
-    invoke-interface {v0}, Lkik/core/interfaces/ah;->d()Lkik/core/datatypes/ac;
+    invoke-interface {v0}, Lkik/core/interfaces/ag;->d()Lkik/core/datatypes/ab;
 
     move-result-object v0
 
     .line 1716
-    iget-object v1, v0, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
+    iget-object v1, v0, Lkik/core/datatypes/ab;->c:Ljava/lang/String;
 
     invoke-virtual {v1}, Ljava/lang/String;->length()I
 
@@ -95,7 +95,7 @@
 
     move-result v2
 
-    invoke-virtual {v1, v0, v2}, Lkik/android/scan/c;->a(Lkik/core/datatypes/ac;I)Lcom/kik/events/Promise;
+    invoke-virtual {v1, v0, v2}, Lkik/android/scan/c;->a(Lkik/core/datatypes/ab;I)Lcom/kik/events/Promise;
 
     move-result-object v0
 
@@ -112,7 +112,7 @@
     :cond_0
     new-instance v1, Lcom/kik/scan/UsernameKikCode;
 
-    iget-object v0, v0, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
+    iget-object v0, v0, Lkik/core/datatypes/ab;->c:Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
 

@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/b;
+.implements Ldagger/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/b",
+        "Ldagger/b",
         "<",
         "Lkik/android/chat/vm/profile/gridvm/k;",
         ">;"
@@ -39,7 +39,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ag",
+            "Lkik/core/interfaces/af",
             "<",
             "Landroid/graphics/Bitmap;",
             ">;>;"
@@ -86,7 +86,7 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ag",
+            "Lkik/core/interfaces/af",
             "<",
             "Landroid/graphics/Bitmap;",
             ">;>;)V"
@@ -135,7 +135,7 @@
     return-void
 .end method
 
-.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;)La/b;
+.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -146,11 +146,11 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ag",
+            "Lkik/core/interfaces/af",
             "<",
             "Landroid/graphics/Bitmap;",
             ">;>;)",
-            "La/b",
+            "Ldagger/b",
             "<",
             "Lkik/android/chat/vm/profile/gridvm/k;",
             ">;"
@@ -168,7 +168,7 @@
 
 
 # virtual methods
-.method public final synthetic a(Ljava/lang/Object;)V
+.method public final synthetic injectMembers(Ljava/lang/Object;)V
     .locals 2
 
     .prologue
@@ -200,9 +200,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/interfaces/ag;
+    check-cast v0, Lkik/core/interfaces/af;
 
-    iput-object v0, p1, Lkik/android/chat/vm/profile/gridvm/k;->b:Lkik/core/interfaces/ag;
+    iput-object v0, p1, Lkik/android/chat/vm/profile/gridvm/k;->b:Lkik/core/interfaces/af;
 
     .line 10
     return-void

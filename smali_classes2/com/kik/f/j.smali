@@ -3,16 +3,16 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/a/b;
+.implements Ldagger/internal/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/a/b",
+        "Ldagger/internal/b",
         "<",
-        "Lkik/core/xiphias/d;",
+        "Lkik/core/xiphias/j;",
         ">;"
     }
 .end annotation
@@ -119,7 +119,7 @@
     return-void
 .end method
 
-.method public static a(Lcom/kik/f/g;Ljavax/inject/Provider;)La/a/b;
+.method public static a(Lcom/kik/f/g;Ljavax/inject/Provider;)Ldagger/internal/b;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -129,9 +129,9 @@
             "<",
             "Lkik/core/interfaces/ICommunication;",
             ">;)",
-            "La/a/b",
+            "Ldagger/internal/b",
             "<",
-            "Lkik/core/xiphias/d;",
+            "Lkik/core/xiphias/j;",
             ">;"
         }
     .end annotation
@@ -163,19 +163,19 @@
     check-cast v0, Lkik/core/interfaces/ICommunication;
 
     .line 2031
-    new-instance v1, Lkik/core/xiphias/k;
+    new-instance v1, Lkik/core/xiphias/q;
 
-    invoke-direct {v1, v0}, Lkik/core/xiphias/k;-><init>(Lkik/core/interfaces/ICommunication;)V
+    invoke-direct {v1, v0}, Lkik/core/xiphias/q;-><init>(Lkik/core/interfaces/ICommunication;)V
 
     .line 1031
     const-string v0, "Cannot return null from a non-@Nullable @Provides method"
 
     .line 1030
-    invoke-static {v1, v0}, La/a/c;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {v1, v0}, Ldagger/internal/c;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/xiphias/d;
+    check-cast v0, Lkik/core/xiphias/j;
 
     .line 10
     return-object v0

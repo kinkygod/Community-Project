@@ -7,5 +7,20 @@
 .method public abstract a()Z
 .end method
 
-.method public abstract b()V
+.method public abstract b()Z
+.end method
+
+.method public abstract c()Ljava/lang/String;
+.end method
+
+.method public abstract d()Z
+.end method
+
+.method public abstract e()Z
+.end method
+
+.method public abstract f()Z
+.end method
+
+.method public abstract g()Ljava/lang/String;
 .end method

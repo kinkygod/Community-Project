@@ -39,7 +39,7 @@
 
     check-cast p1, Ljava/lang/String;
 
-    invoke-static {v0, p1}, Lkik/android/chat/view/ValidateableInputView;->a(Lkik/android/chat/view/ValidateableInputView;Ljava/lang/String;)Lrx/d;
+    invoke-static {v0, p1}, Lkik/android/chat/view/ValidateableInputView;->b(Lkik/android/chat/view/ValidateableInputView;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

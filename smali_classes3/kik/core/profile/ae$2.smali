@@ -32,7 +32,7 @@
     .locals 0
 
     .prologue
-    .line 108
+    .line 90
     iput-object p1, p0, Lkik/core/profile/ae$2;->a:Lkik/core/profile/ae;
 
     invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
@@ -46,23 +46,23 @@
     .locals 3
 
     .prologue
-    .line 108
+    .line 90
     check-cast p1, Lkik/core/net/outgoing/j;
 
-    .line 1112
+    .line 1094
     check-cast p1, Lkik/core/net/outgoing/UserProfileRequest;
 
-    .line 1113
+    .line 1095
     iget-object v0, p0, Lkik/core/profile/ae$2;->a:Lkik/core/profile/ae;
 
-    invoke-virtual {p1}, Lkik/core/net/outgoing/UserProfileRequest;->getUserData()Lkik/core/datatypes/ac;
+    invoke-virtual {p1}, Lkik/core/net/outgoing/UserProfileRequest;->getUserData()Lkik/core/datatypes/ab;
 
     move-result-object v1
 
     const-string v2, "Persisted to Server"
 
-    invoke-virtual {v0, v1, v2}, Lkik/core/profile/ae;->a(Lkik/core/datatypes/ac;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lkik/core/profile/ae;->a(Lkik/core/datatypes/ab;Ljava/lang/String;)V
 
-    .line 108
+    .line 90
     return-void
 .end method

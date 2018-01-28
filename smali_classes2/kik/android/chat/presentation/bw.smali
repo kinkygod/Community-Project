@@ -12,7 +12,7 @@
         "Ljava/lang/Object;",
         "Lkik/android/chat/presentation/bv",
         "<",
-        "Lkik/android/chat/view/text/d;",
+        "Lkik/android/chat/view/text/e;",
         ">;"
     }
 .end annotation

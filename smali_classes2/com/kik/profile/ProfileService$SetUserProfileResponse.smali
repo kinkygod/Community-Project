@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/kik/profile/ProfileService$d;
+.implements Lcom/kik/profile/ProfileService$e;
 
 
 # annotations
@@ -65,14 +65,14 @@
     .locals 1
 
     .prologue
-    .line 2249
+    .line 2548
     new-instance v0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;
 
     invoke-direct {v0}, Lcom/kik/profile/ProfileService$SetUserProfileResponse;-><init>()V
 
     sput-object v0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->a:Lcom/kik/profile/ProfileService$SetUserProfileResponse;
 
-    .line 2257
+    .line 2556
     new-instance v0, Lcom/kik/profile/ProfileService$SetUserProfileResponse$1;
 
     invoke-direct {v0}, Lcom/kik/profile/ProfileService$SetUserProfileResponse$1;-><init>()V
@@ -86,27 +86,27 @@
     .locals 1
 
     .prologue
-    .line 1401
+    .line 1700
     invoke-direct {p0}, Lcom/google/protobuf/GeneratedMessageV3;-><init>()V
 
-    .line 1622
+    .line 1921
     const/4 v0, -0x1
 
     iput-byte v0, p0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->memoizedIsInitialized:B
 
-    .line 1402
+    .line 1701
     const/4 v0, 0x0
 
     iput v0, p0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->result_:I
 
-    .line 1403
+    .line 1702
     invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->rejectionReasons_:Ljava/util/List;
 
-    .line 1404
+    .line 1703
     return-void
 .end method
 
@@ -125,26 +125,26 @@
 
     const/4 v5, 0x2
 
-    .line 1415
+    .line 1714
     invoke-direct {p0}, Lcom/kik/profile/ProfileService$SetUserProfileResponse;-><init>()V
 
     move v1, v0
 
-    .line 1419
+    .line 1718
     :cond_0
     :goto_0
     if-nez v1, :cond_3
 
-    .line 1420
+    .line 1719
     :try_start_0
     invoke-virtual {p1}, Lcom/google/protobuf/CodedInputStream;->readTag()I
 
     move-result v3
 
-    .line 1421
+    .line 1720
     sparse-switch v3, :sswitch_data_0
 
-    .line 1426
+    .line 1725
     invoke-virtual {p1, v3}, Lcom/google/protobuf/CodedInputStream;->skipField(I)Z
 
     move-result v3
@@ -153,22 +153,22 @@
 
     move v1, v2
 
-    .line 1427
+    .line 1726
     goto :goto_0
 
     :sswitch_0
     move v1, v2
 
-    .line 1424
+    .line 1723
     goto :goto_0
 
-    .line 1432
+    .line 1731
     :sswitch_1
     invoke-virtual {p1}, Lcom/google/protobuf/CodedInputStream;->readEnum()I
 
     move-result v3
 
-    .line 1434
+    .line 1733
     iput v3, p0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->result_:I
     :try_end_0
     .catch Lcom/google/protobuf/InvalidProtocolBufferException; {:try_start_0 .. :try_end_0} :catch_0
@@ -177,7 +177,7 @@
 
     goto :goto_0
 
-    .line 1449
+    .line 1748
     :catch_0
     move-exception v1
 
@@ -196,7 +196,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 1454
+    .line 1753
     :catchall_0
     move-exception v0
 
@@ -205,7 +205,7 @@
 
     if-ne v1, v5, :cond_1
 
-    .line 1455
+    .line 1754
     iget-object v1, p0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->rejectionReasons_:Ljava/util/List;
 
     invoke-static {v1}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
@@ -214,19 +214,19 @@
 
     iput-object v1, p0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->rejectionReasons_:Ljava/util/List;
 
-    .line 1457
+    .line 1756
     :cond_1
     invoke-virtual {p0}, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->makeExtensionsImmutable()V
 
     throw v0
 
-    .line 1438
+    .line 1737
     :sswitch_2
     and-int/lit8 v3, v0, 0x2
 
     if-eq v3, v5, :cond_2
 
-    .line 1439
+    .line 1738
     :try_start_2
     new-instance v3, Ljava/util/ArrayList;
 
@@ -234,14 +234,14 @@
 
     iput-object v3, p0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->rejectionReasons_:Ljava/util/List;
 
-    .line 1440
+    .line 1739
     or-int/lit8 v0, v0, 0x2
 
-    .line 1442
+    .line 1741
     :cond_2
     iget-object v3, p0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->rejectionReasons_:Ljava/util/List;
 
-    .line 1443
+    .line 1742
     invoke-static {}, Lcom/kik/profile/ProfileService$RejectionReason;->e()Lcom/google/protobuf/Parser;
 
     move-result-object v4
@@ -250,7 +250,7 @@
 
     move-result-object v4
 
-    .line 1442
+    .line 1741
     invoke-interface {v3, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
     :try_end_2
     .catch Lcom/google/protobuf/InvalidProtocolBufferException; {:try_start_2 .. :try_end_2} :catch_0
@@ -259,7 +259,7 @@
 
     goto :goto_0
 
-    .line 1450
+    .line 1749
     :catch_1
     move-exception v1
 
@@ -269,13 +269,13 @@
 
     move-object v0, v6
 
-    .line 1451
+    .line 1750
     :try_start_3
     new-instance v2, Lcom/google/protobuf/InvalidProtocolBufferException;
 
     invoke-direct {v2, v0}, Lcom/google/protobuf/InvalidProtocolBufferException;-><init>(Ljava/io/IOException;)V
 
-    .line 1452
+    .line 1751
     invoke-virtual {v2, p0}, Lcom/google/protobuf/InvalidProtocolBufferException;->setUnfinishedMessage(Lcom/google/protobuf/MessageLite;)Lcom/google/protobuf/InvalidProtocolBufferException;
 
     move-result-object v0
@@ -284,13 +284,13 @@
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    .line 1454
+    .line 1753
     :cond_3
     and-int/lit8 v0, v0, 0x2
 
     if-ne v0, v5, :cond_4
 
-    .line 1455
+    .line 1754
     iget-object v0, p0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->rejectionReasons_:Ljava/util/List;
 
     invoke-static {v0}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
@@ -299,14 +299,14 @@
 
     iput-object v0, p0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->rejectionReasons_:Ljava/util/List;
 
-    .line 1457
+    .line 1756
     :cond_4
     invoke-virtual {p0}, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->makeExtensionsImmutable()V
 
-    .line 1458
+    .line 1757
     return-void
 
-    .line 1454
+    .line 1753
     :catchall_1
     move-exception v1
 
@@ -318,7 +318,7 @@
 
     goto :goto_1
 
-    .line 1421
+    .line 1720
     nop
 
     :sswitch_data_0
@@ -338,7 +338,7 @@
     .end annotation
 
     .prologue
-    .line 1393
+    .line 1692
     invoke-direct {p0, p1, p2}, Lcom/kik/profile/ProfileService$SetUserProfileResponse;-><init>(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)V
 
     return-void
@@ -355,15 +355,15 @@
     .end annotation
 
     .prologue
-    .line 1399
+    .line 1698
     invoke-direct {p0, p1}, Lcom/google/protobuf/GeneratedMessageV3;-><init>(Lcom/google/protobuf/GeneratedMessageV3$Builder;)V
 
-    .line 1622
+    .line 1921
     const/4 v0, -0x1
 
     iput-byte v0, p0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->memoizedIsInitialized:B
 
-    .line 1400
+    .line 1699
     return-void
 .end method
 
@@ -371,7 +371,7 @@
     .locals 0
 
     .prologue
-    .line 1393
+    .line 1692
     invoke-direct {p0, p1}, Lcom/kik/profile/ProfileService$SetUserProfileResponse;-><init>(Lcom/google/protobuf/GeneratedMessageV3$Builder;)V
 
     return-void
@@ -381,7 +381,7 @@
     .locals 1
 
     .prologue
-    .line 1393
+    .line 1692
     const/4 v0, 0x0
 
     iput v0, p0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->bitField0_:I
@@ -393,7 +393,7 @@
     .locals 0
 
     .prologue
-    .line 1393
+    .line 1692
     iput p1, p0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->result_:I
 
     return p1
@@ -403,7 +403,7 @@
     .locals 1
 
     .prologue
-    .line 1462
+    .line 1761
     invoke-static {}, Lcom/kik/profile/ProfileService;->c()Lcom/google/protobuf/Descriptors$Descriptor;
 
     move-result-object v0
@@ -415,7 +415,7 @@
     .locals 0
 
     .prologue
-    .line 1393
+    .line 1692
     iput-object p1, p0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->rejectionReasons_:Ljava/util/List;
 
     return-object p1
@@ -425,7 +425,7 @@
     .locals 1
 
     .prologue
-    .line 1393
+    .line 1692
     iget v0, p0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->result_:I
 
     return v0
@@ -435,7 +435,7 @@
     .locals 1
 
     .prologue
-    .line 1393
+    .line 1692
     iget-object v0, p0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->rejectionReasons_:Ljava/util/List;
 
     return-object v0
@@ -445,7 +445,7 @@
     .locals 1
 
     .prologue
-    .line 2253
+    .line 2552
     sget-object v0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->a:Lcom/kik/profile/ProfileService$SetUserProfileResponse;
 
     return-object v0
@@ -464,7 +464,7 @@
     .end annotation
 
     .prologue
-    .line 2267
+    .line 2566
     sget-object v0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->b:Lcom/google/protobuf/Parser;
 
     return-object v0
@@ -474,7 +474,7 @@
     .locals 1
 
     .prologue
-    .line 1393
+    .line 1692
     sget-boolean v0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->alwaysUseFieldBuilders:Z
 
     return v0
@@ -484,7 +484,7 @@
     .locals 1
 
     .prologue
-    .line 1393
+    .line 1692
     sget-boolean v0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->alwaysUseFieldBuilders:Z
 
     return v0
@@ -494,7 +494,7 @@
     .locals 1
 
     .prologue
-    .line 1393
+    .line 1692
     sget-object v0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->b:Lcom/google/protobuf/Parser;
 
     return-object v0
@@ -506,7 +506,7 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 1762
+    .line 2061
     sget-object v0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->a:Lcom/kik/profile/ProfileService$SetUserProfileResponse;
 
     if-ne p0, v0, :cond_0
@@ -523,7 +523,7 @@
 
     invoke-direct {v0, v1}, Lcom/kik/profile/ProfileService$SetUserProfileResponse$a;-><init>(B)V
 
-    .line 1763
+    .line 2062
     invoke-virtual {v0, p0}, Lcom/kik/profile/ProfileService$SetUserProfileResponse$a;->a(Lcom/kik/profile/ProfileService$SetUserProfileResponse;)Lcom/kik/profile/ProfileService$SetUserProfileResponse$a;
 
     move-result-object v0
@@ -537,7 +537,7 @@
     .locals 1
 
     .prologue
-    .line 1577
+    .line 1876
     iget v0, p0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->result_:I
 
     return v0
@@ -547,14 +547,14 @@
     .locals 1
 
     .prologue
-    .line 1583
+    .line 1882
     iget v0, p0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->result_:I
 
     invoke-static {v0}, Lcom/kik/profile/ProfileService$SetUserProfileResponse$Result;->valueOf(I)Lcom/kik/profile/ProfileService$SetUserProfileResponse$Result;
 
     move-result-object v0
 
-    .line 1584
+    .line 1883
     if-nez v0, :cond_0
 
     sget-object v0, Lcom/kik/profile/ProfileService$SetUserProfileResponse$Result;->UNRECOGNIZED:Lcom/kik/profile/ProfileService$SetUserProfileResponse$Result;
@@ -576,7 +576,7 @@
     .end annotation
 
     .prologue
-    .line 1593
+    .line 1892
     iget-object v0, p0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->rejectionReasons_:Ljava/util/List;
 
     return-object v0
@@ -590,32 +590,32 @@
 
     const/4 v0, 0x1
 
-    .line 1662
+    .line 1961
     if-ne p1, p0, :cond_1
 
-    .line 1674
+    .line 1973
     :cond_0
     :goto_0
     return v0
 
-    .line 1665
+    .line 1964
     :cond_1
     instance-of v2, p1, Lcom/kik/profile/ProfileService$SetUserProfileResponse;
 
     if-nez v2, :cond_2
 
-    .line 1666
+    .line 1965
     invoke-super {p0, p1}, Lcom/google/protobuf/GeneratedMessageV3;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
     goto :goto_0
 
-    .line 1668
+    .line 1967
     :cond_2
     check-cast p1, Lcom/kik/profile/ProfileService$SetUserProfileResponse;
 
-    .line 1671
+    .line 1970
     iget v2, p0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->result_:I
 
     iget v3, p1, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->result_:I
@@ -624,17 +624,17 @@
 
     move v2, v0
 
-    .line 1672
+    .line 1971
     :goto_1
     if-eqz v2, :cond_3
 
-    .line 2593
+    .line 2892
     iget-object v2, p0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->rejectionReasons_:Ljava/util/List;
 
-    .line 3593
+    .line 3892
     iget-object v3, p1, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->rejectionReasons_:Ljava/util/List;
 
-    .line 1673
+    .line 1972
     invoke-interface {v2, v3}, Ljava/util/List;->equals(Ljava/lang/Object;)Z
 
     move-result v2
@@ -644,13 +644,13 @@
     :cond_3
     move v0, v1
 
-    .line 1674
+    .line 1973
     goto :goto_0
 
     :cond_4
     move v2, v1
 
-    .line 1671
+    .line 1970
     goto :goto_1
 .end method
 
@@ -658,10 +658,10 @@
     .locals 1
 
     .prologue
-    .line 8276
+    .line 8575
     sget-object v0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->a:Lcom/kik/profile/ProfileService$SetUserProfileResponse;
 
-    .line 1393
+    .line 1692
     return-object v0
 .end method
 
@@ -669,10 +669,10 @@
     .locals 1
 
     .prologue
-    .line 7276
+    .line 7575
     sget-object v0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->a:Lcom/kik/profile/ProfileService$SetUserProfileResponse;
 
-    .line 1393
+    .line 1692
     return-object v0
 .end method
 
@@ -689,7 +689,7 @@
     .end annotation
 
     .prologue
-    .line 2272
+    .line 2571
     sget-object v0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->b:Lcom/google/protobuf/Parser;
 
     return-object v0
@@ -701,19 +701,19 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 1643
+    .line 1942
     iget v2, p0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->memoizedSize:I
 
-    .line 1644
+    .line 1943
     const/4 v0, -0x1
 
     if-eq v2, v0, :cond_0
 
-    .line 1656
+    .line 1955
     :goto_0
     return v2
 
-    .line 1647
+    .line 1946
     :cond_0
     iget v0, p0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->result_:I
 
@@ -725,12 +725,12 @@
 
     if-eq v0, v2, :cond_2
 
-    .line 1648
+    .line 1947
     const/4 v0, 0x1
 
     iget v2, p0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->result_:I
 
-    .line 1649
+    .line 1948
     invoke-static {v0, v2}, Lcom/google/protobuf/CodedOutputStream;->computeEnumSize(II)I
 
     move-result v0
@@ -740,7 +740,7 @@
     :goto_1
     move v2, v0
 
-    .line 1651
+    .line 1950
     :goto_2
     iget-object v0, p0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->rejectionReasons_:Ljava/util/List;
 
@@ -750,12 +750,12 @@
 
     if-ge v1, v0, :cond_1
 
-    .line 1652
+    .line 1951
     const/4 v3, 0x2
 
     iget-object v0, p0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->rejectionReasons_:Ljava/util/List;
 
-    .line 1653
+    .line 1952
     invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
@@ -768,14 +768,14 @@
 
     add-int/2addr v0, v2
 
-    .line 1651
+    .line 1950
     add-int/lit8 v1, v1, 0x1
 
     move v2, v0
 
     goto :goto_2
 
-    .line 1655
+    .line 1954
     :cond_1
     iput v2, p0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->memoizedSize:I
 
@@ -791,7 +791,7 @@
     .locals 1
 
     .prologue
-    .line 1409
+    .line 1708
     invoke-static {}, Lcom/google/protobuf/UnknownFieldSet;->getDefaultInstance()Lcom/google/protobuf/UnknownFieldSet;
 
     move-result-object v0
@@ -803,19 +803,19 @@
     .locals 2
 
     .prologue
-    .line 1679
+    .line 1978
     iget v0, p0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->memoizedHashCode:I
 
     if-eqz v0, :cond_0
 
-    .line 1680
+    .line 1979
     iget v0, p0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->memoizedHashCode:I
 
-    .line 1692
+    .line 1991
     :goto_0
     return v0
 
-    .line 1683
+    .line 1982
     :cond_0
     invoke-virtual {p0}, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->getDescriptorForType()Lcom/google/protobuf/Descriptors$Descriptor;
 
@@ -827,47 +827,47 @@
 
     add-int/lit16 v0, v0, 0x30b
 
-    .line 1684
+    .line 1983
     mul-int/lit8 v0, v0, 0x25
 
     add-int/lit8 v0, v0, 0x1
 
-    .line 1685
+    .line 1984
     mul-int/lit8 v0, v0, 0x35
 
     iget v1, p0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->result_:I
 
     add-int/2addr v0, v1
 
-    .line 3606
+    .line 3905
     iget-object v1, p0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->rejectionReasons_:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->size()I
 
     move-result v1
 
-    .line 1686
+    .line 1985
     if-lez v1, :cond_1
 
-    .line 1687
+    .line 1986
     mul-int/lit8 v0, v0, 0x25
 
     add-int/lit8 v0, v0, 0x2
 
-    .line 1688
+    .line 1987
     mul-int/lit8 v0, v0, 0x35
 
-    .line 4593
+    .line 4892
     iget-object v1, p0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->rejectionReasons_:Ljava/util/List;
 
-    .line 1688
+    .line 1987
     invoke-interface {v1}, Ljava/util/List;->hashCode()I
 
     move-result v1
 
     add-int/2addr v0, v1
 
-    .line 1690
+    .line 1989
     :cond_1
     mul-int/lit8 v0, v0, 0x1d
 
@@ -879,7 +879,7 @@
 
     add-int/2addr v0, v1
 
-    .line 1691
+    .line 1990
     iput v0, p0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->memoizedHashCode:I
 
     goto :goto_0
@@ -889,7 +889,7 @@
     .locals 3
 
     .prologue
-    .line 1467
+    .line 1766
     invoke-static {}, Lcom/kik/profile/ProfileService;->d()Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
     move-result-object v0
@@ -898,12 +898,12 @@
 
     const-class v2, Lcom/kik/profile/ProfileService$SetUserProfileResponse$a;
 
-    .line 1468
+    .line 1767
     invoke-virtual {v0, v1, v2}, Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;->ensureFieldAccessorsInitialized(Ljava/lang/Class;Ljava/lang/Class;)Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
     move-result-object v0
 
-    .line 1467
+    .line 1766
     return-object v0
 .end method
 
@@ -913,17 +913,17 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 1624
+    .line 1923
     iget-byte v1, p0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->memoizedIsInitialized:B
 
-    .line 1625
+    .line 1924
     if-ne v1, v0, :cond_0
 
-    .line 1629
+    .line 1928
     :goto_0
     return v0
 
-    .line 1626
+    .line 1925
     :cond_0
     if-nez v1, :cond_1
 
@@ -931,7 +931,7 @@
 
     goto :goto_0
 
-    .line 1628
+    .line 1927
     :cond_1
     iput-byte v0, p0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->memoizedIsInitialized:B
 
@@ -942,14 +942,14 @@
     .locals 1
 
     .prologue
-    .line 5756
+    .line 6055
     sget-object v0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->a:Lcom/kik/profile/ProfileService$SetUserProfileResponse;
 
     invoke-direct {v0}, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->j()Lcom/kik/profile/ProfileService$SetUserProfileResponse$a;
 
     move-result-object v0
 
-    .line 1393
+    .line 1692
     return-object v0
 .end method
 
@@ -957,14 +957,14 @@
     .locals 2
 
     .prologue
-    .line 4769
+    .line 5068
     new-instance v0, Lcom/kik/profile/ProfileService$SetUserProfileResponse$a;
 
     const/4 v1, 0x0
 
     invoke-direct {v0, p1, v1}, Lcom/kik/profile/ProfileService$SetUserProfileResponse$a;-><init>(Lcom/google/protobuf/GeneratedMessageV3$BuilderParent;B)V
 
-    .line 1393
+    .line 1692
     return-object v0
 .end method
 
@@ -972,14 +972,14 @@
     .locals 1
 
     .prologue
-    .line 6756
+    .line 7055
     sget-object v0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->a:Lcom/kik/profile/ProfileService$SetUserProfileResponse;
 
     invoke-direct {v0}, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->j()Lcom/kik/profile/ProfileService$SetUserProfileResponse$a;
 
     move-result-object v0
 
-    .line 1393
+    .line 1692
     return-object v0
 .end method
 
@@ -987,7 +987,7 @@
     .locals 1
 
     .prologue
-    .line 1393
+    .line 1692
     invoke-direct {p0}, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->j()Lcom/kik/profile/ProfileService$SetUserProfileResponse$a;
 
     move-result-object v0
@@ -999,7 +999,7 @@
     .locals 1
 
     .prologue
-    .line 1393
+    .line 1692
     invoke-direct {p0}, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->j()Lcom/kik/profile/ProfileService$SetUserProfileResponse$a;
 
     move-result-object v0
@@ -1016,7 +1016,7 @@
     .end annotation
 
     .prologue
-    .line 1634
+    .line 1933
     iget v0, p0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->result_:I
 
     sget-object v1, Lcom/kik/profile/ProfileService$SetUserProfileResponse$Result;->OK:Lcom/kik/profile/ProfileService$SetUserProfileResponse$Result;
@@ -1027,14 +1027,14 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 1635
+    .line 1934
     const/4 v0, 0x1
 
     iget v1, p0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->result_:I
 
     invoke-virtual {p1, v0, v1}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 1637
+    .line 1936
     :cond_0
     const/4 v0, 0x0
 
@@ -1049,7 +1049,7 @@
 
     if-ge v1, v0, :cond_1
 
-    .line 1638
+    .line 1937
     const/4 v2, 0x2
 
     iget-object v0, p0, Lcom/kik/profile/ProfileService$SetUserProfileResponse;->rejectionReasons_:Ljava/util/List;
@@ -1062,14 +1062,14 @@
 
     invoke-virtual {p1, v2, v0}, Lcom/google/protobuf/CodedOutputStream;->writeMessage(ILcom/google/protobuf/MessageLite;)V
 
-    .line 1637
+    .line 1936
     add-int/lit8 v0, v1, 0x1
 
     move v1, v0
 
     goto :goto_0
 
-    .line 1640
+    .line 1939
     :cond_1
     return-void
 .end method

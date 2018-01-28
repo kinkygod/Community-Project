@@ -5,27 +5,35 @@
 .implements Lrx/functions/g;
 
 
-# instance fields
-.field private final a:Lkik/android/chat/vm/profile/bo;
+# static fields
+.field private static final a:Lkik/android/chat/vm/profile/ci;
 
 
 # direct methods
-.method private constructor <init>(Lkik/android/chat/vm/profile/bo;)V
-    .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lkik/android/chat/vm/profile/ci;->a:Lkik/android/chat/vm/profile/bo;
-
-    return-void
-.end method
-
-.method public static a(Lkik/android/chat/vm/profile/bo;)Lrx/functions/g;
+.method static constructor <clinit>()V
     .locals 1
 
     new-instance v0, Lkik/android/chat/vm/profile/ci;
 
-    invoke-direct {v0, p0}, Lkik/android/chat/vm/profile/ci;-><init>(Lkik/android/chat/vm/profile/bo;)V
+    invoke-direct {v0}, Lkik/android/chat/vm/profile/ci;-><init>()V
+
+    sput-object v0, Lkik/android/chat/vm/profile/ci;->a:Lkik/android/chat/vm/profile/ci;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static a()Lrx/functions/g;
+    .locals 1
+
+    sget-object v0, Lkik/android/chat/vm/profile/ci;->a:Lkik/android/chat/vm/profile/ci;
 
     return-object v0
 .end method
@@ -37,21 +45,28 @@
 
     .prologue
     .line 0
-    iget-object v0, p0, Lkik/android/chat/vm/profile/ci;->a:Lkik/android/chat/vm/profile/bo;
+    check-cast p1, Lcom/kik/core/domain/a/a/c;
 
-    check-cast p1, Lcom/kik/core/network/xmpp/jid/a;
+    .line 1328
+    invoke-interface {p1}, Lcom/kik/core/domain/a/a/c;->m()Z
 
-    .line 1236
-    iget-object v0, v0, Lkik/android/chat/vm/profile/bo;->l:Lcom/kik/core/domain/users/a;
+    move-result v0
 
-    invoke-interface {v0, p1}, Lcom/kik/core/domain/users/a;->a(Lcom/kik/core/network/xmpp/jid/a;)Lrx/d;
+    if-nez v0, :cond_0
 
-    move-result-object v0
+    const/4 v0, 0x1
 
-    invoke-virtual {v0}, Lrx/d;->g()Lrx/d;
+    :goto_0
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v0
 
     .line 0
     return-object v0
+
+    .line 1328
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_0
 .end method

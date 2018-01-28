@@ -32,7 +32,7 @@
     .locals 0
 
     .prologue
-    .line 270
+    .line 272
     iput-object p1, p0, Lkik/android/chat/fragment/KikConversationsFragment$1;->a:Lkik/android/chat/fragment/KikConversationsFragment;
 
     invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
@@ -46,12 +46,12 @@
     .locals 1
 
     .prologue
-    .line 270
-    .line 1274
+    .line 272
+    .line 1276
     iget-object v0, p0, Lkik/android/chat/fragment/KikConversationsFragment$1;->a:Lkik/android/chat/fragment/KikConversationsFragment;
 
     invoke-static {v0}, Lkik/android/chat/fragment/KikConversationsFragment;->m(Lkik/android/chat/fragment/KikConversationsFragment;)V
 
-    .line 270
+    .line 272
     return-void
 .end method

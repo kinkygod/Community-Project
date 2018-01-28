@@ -95,7 +95,7 @@
 
     .prologue
     .line 41
-    const v0, 0x7f040135
+    const v0, 0x7f040139
 
     const/4 v1, 0x0
 
@@ -103,10 +103,10 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/android/e/cf;
+    check-cast v0, Lkik/android/e/cl;
 
     .line 42
-    new-instance v1, Lkik/android/chat/vm/cr;
+    new-instance v1, Lkik/android/chat/vm/ct;
 
     iget-object v2, p0, Lkik/android/chat/fragment/NotificationsFragment;->a:Lkik/android/chat/fragment/NotificationsFragment$a;
 
@@ -114,29 +114,29 @@
 
     move-result-object v2
 
-    invoke-direct {v1, v2}, Lkik/android/chat/vm/cr;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v2}, Lkik/android/chat/vm/ct;-><init>(Ljava/lang/String;)V
 
     .line 43
-    invoke-virtual {v0, v1}, Lkik/android/e/cf;->a(Lkik/android/chat/vm/ax;)V
+    invoke-virtual {v0, v1}, Lkik/android/e/cl;->a(Lkik/android/chat/vm/az;)V
 
     .line 44
-    iget-object v2, v0, Lkik/android/e/cf;->a:Lkik/android/e/ax;
+    iget-object v2, v0, Lkik/android/e/cl;->a:Lkik/android/e/av;
 
-    invoke-virtual {v2, v1}, Lkik/android/e/ax;->a(Lkik/android/chat/vm/av;)V
+    invoke-virtual {v2, v1}, Lkik/android/e/av;->a(Lkik/android/chat/vm/ax;)V
 
     .line 45
     invoke-virtual {p0}, Lkik/android/chat/fragment/NotificationsFragment;->getCoreComponent()Lcom/kik/components/CoreComponent;
 
     move-result-object v2
 
-    invoke-virtual {p0}, Lkik/android/chat/fragment/NotificationsFragment;->getNavigator()Lkik/android/chat/vm/aw;
+    invoke-virtual {p0}, Lkik/android/chat/fragment/NotificationsFragment;->getNavigator()Lkik/android/chat/vm/ay;
 
     move-result-object v3
 
-    invoke-virtual {v1, v2, v3}, Lkik/android/chat/vm/cr;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    invoke-virtual {v1, v2, v3}, Lkik/android/chat/vm/ct;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 47
-    invoke-virtual {v0}, Lkik/android/e/cf;->getRoot()Landroid/view/View;
+    invoke-virtual {v0}, Lkik/android/e/cl;->getRoot()Landroid/view/View;
 
     move-result-object v0
 

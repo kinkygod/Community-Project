@@ -97,7 +97,7 @@
 
     iget-object v1, v1, Lkik/android/chat/fragment/ViewPictureFragment;->_saveButton:Landroid/widget/ImageButton;
 
-    const v2, 0x7f02034c
+    const v2, 0x7f02032f
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageButton;->setImageResource(I)V
 

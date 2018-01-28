@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 562
+    .line 564
     iput-object p1, p0, Lkik/android/chat/fragment/KikChatFragment$2;->a:Lkik/android/chat/fragment/KikChatFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,7 +40,7 @@
     .locals 3
 
     .prologue
-    .line 566
+    .line 568
     iget-object v0, p0, Lkik/android/chat/fragment/KikChatFragment$2;->a:Lkik/android/chat/fragment/KikChatFragment;
 
     iget-object v0, v0, Lkik/android/chat/fragment/KikChatFragment;->u:Lcom/kik/performance/metrics/c;
@@ -49,14 +49,14 @@
 
     invoke-virtual {v0, v1}, Lcom/kik/performance/metrics/c;->b(Ljava/lang/String;)Lcom/kik/performance/metrics/OverlordSession;
 
-    .line 568
+    .line 570
     iget-object v0, p0, Lkik/android/chat/fragment/KikChatFragment$2;->a:Lkik/android/chat/fragment/KikChatFragment;
 
     invoke-static {v0}, Lkik/android/chat/fragment/KikChatFragment;->p(Lkik/android/chat/fragment/KikChatFragment;)I
 
     move-result v0
 
-    .line 569
+    .line 571
     iget-object v1, p0, Lkik/android/chat/fragment/KikChatFragment$2;->a:Lkik/android/chat/fragment/KikChatFragment;
 
     invoke-static {v1}, Lkik/android/chat/fragment/KikChatFragment;->q(Lkik/android/chat/fragment/KikChatFragment;)I
@@ -67,7 +67,7 @@
 
     if-ne v1, v2, :cond_0
 
-    .line 570
+    .line 572
     const/high16 v1, 0x43480000    # 200.0f
 
     invoke-static {v1}, Lkik/android/chat/KikApplication;->a(F)I
@@ -76,14 +76,14 @@
 
     if-le v0, v1, :cond_0
 
-    .line 571
+    .line 573
     iget-object v1, p0, Lkik/android/chat/fragment/KikChatFragment$2;->a:Lkik/android/chat/fragment/KikChatFragment;
 
-    iget-object v1, v1, Lkik/android/chat/fragment/KikChatFragment;->v:Lkik/android/chat/presentation/MediaTrayPresenter;
+    iget-object v1, v1, Lkik/android/chat/fragment/KikChatFragment;->w:Lkik/android/chat/presentation/MediaTrayPresenter;
 
     invoke-interface {v1, v0}, Lkik/android/chat/presentation/MediaTrayPresenter;->a(I)V
 
-    .line 574
+    .line 576
     :cond_0
     return-void
 .end method

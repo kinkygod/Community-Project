@@ -95,7 +95,7 @@
 
     iget-object v1, p0, Lkik/android/gifs/vm/t$1;->a:Lkik/android/gifs/vm/bo;
 
-    invoke-interface {v1}, Lkik/android/gifs/vm/bo;->d()Ljava/lang/String;
+    invoke-interface {v1}, Lkik/android/gifs/vm/bo;->e()Ljava/lang/String;
 
     move-result-object v1
 
@@ -103,7 +103,7 @@
 
     iget-object v3, p0, Lkik/android/gifs/vm/t$1;->a:Lkik/android/gifs/vm/bo;
 
-    invoke-interface {v3}, Lkik/android/gifs/vm/bo;->e()Ljava/lang/String;
+    invoke-interface {v3}, Lkik/android/gifs/vm/bo;->g()Ljava/lang/String;
 
     move-result-object v3
 

@@ -1,11 +1,11 @@
 .class final Lkik/android/chat/fragment/MissedConversationsFragment$2;
-.super Lkik/android/util/aq;
+.super Lcom/kik/events/k;
 .source "SourceFile"
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lkik/android/chat/fragment/MissedConversationsFragment;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lkik/android/chat/fragment/MissedConversationsFragment;->a(Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,144 +15,163 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lkik/android/util/aq",
+        "Lcom/kik/events/k",
         "<",
-        "Ljava/lang/Void;",
-        "Ljava/lang/Void;",
-        "Ljava/lang/Void;",
+        "Lkik/core/datatypes/ab;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field final synthetic a:Lkik/android/chat/fragment/MissedConversationsFragment;
+.field final synthetic a:Z
+
+.field final synthetic b:Lkik/android/chat/fragment/KikDialogFragment;
+
+.field final synthetic c:Lkik/android/chat/fragment/MissedConversationsFragment;
 
 
 # direct methods
-.method constructor <init>(Lkik/android/chat/fragment/MissedConversationsFragment;)V
+.method constructor <init>(Lkik/android/chat/fragment/MissedConversationsFragment;ZLkik/android/chat/fragment/KikDialogFragment;)V
     .locals 0
 
     .prologue
-    .line 298
-    iput-object p1, p0, Lkik/android/chat/fragment/MissedConversationsFragment$2;->a:Lkik/android/chat/fragment/MissedConversationsFragment;
+    .line 321
+    iput-object p1, p0, Lkik/android/chat/fragment/MissedConversationsFragment$2;->c:Lkik/android/chat/fragment/MissedConversationsFragment;
 
-    invoke-direct {p0}, Lkik/android/util/aq;-><init>()V
+    iput-boolean p2, p0, Lkik/android/chat/fragment/MissedConversationsFragment$2;->a:Z
+
+    iput-object p3, p0, Lkik/android/chat/fragment/MissedConversationsFragment$2;->b:Lkik/android/chat/fragment/KikDialogFragment;
+
+    invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method protected final synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
+.method public final synthetic a(Ljava/lang/Object;)V
     .locals 3
 
     .prologue
-    .line 298
-    .line 2302
-    iget-object v0, p0, Lkik/android/chat/fragment/MissedConversationsFragment$2;->a:Lkik/android/chat/fragment/MissedConversationsFragment;
-
-    iget-object v0, v0, Lkik/android/chat/fragment/MissedConversationsFragment;->_convoManager:Lkik/core/interfaces/IConversation;
-
-    invoke-interface {v0}, Lkik/core/interfaces/IConversation;->H()Ljava/util/List;
-
-    move-result-object v0
-
-    .line 2303
-    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
-    move-result-object v1
-
-    :goto_0
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v0
+    .line 321
+    .line 1325
+    iget-boolean v0, p0, Lkik/android/chat/fragment/MissedConversationsFragment$2;->a:Z
 
     if-eqz v0, :cond_0
 
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    .line 1326
+    iget-object v0, p0, Lkik/android/chat/fragment/MissedConversationsFragment$2;->c:Lkik/android/chat/fragment/MissedConversationsFragment;
 
-    move-result-object v0
+    invoke-static {v0}, Lkik/android/chat/fragment/MissedConversationsFragment;->f(Lkik/android/chat/fragment/MissedConversationsFragment;)V
 
-    check-cast v0, Lkik/core/datatypes/f;
+    .line 1332
+    :goto_0
+    invoke-static {}, Lkik/android/chat/KikApplication;->i()V
 
-    .line 2304
-    iget-object v2, p0, Lkik/android/chat/fragment/MissedConversationsFragment$2;->a:Lkik/android/chat/fragment/MissedConversationsFragment;
+    .line 321
+    return-void
 
-    iget-object v2, v2, Lkik/android/chat/fragment/MissedConversationsFragment;->_convoManager:Lkik/core/interfaces/IConversation;
-
-    invoke-virtual {v0}, Lkik/core/datatypes/f;->g()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-interface {v2, v0}, Lkik/core/interfaces/IConversation;->b(Ljava/lang/String;)V
-
-    goto :goto_0
-
-    .line 2306
+    .line 1329
     :cond_0
-    iget-object v0, p0, Lkik/android/chat/fragment/MissedConversationsFragment$2;->a:Lkik/android/chat/fragment/MissedConversationsFragment;
+    iget-object v0, p0, Lkik/android/chat/fragment/MissedConversationsFragment$2;->c:Lkik/android/chat/fragment/MissedConversationsFragment;
 
-    iget-object v0, v0, Lkik/android/chat/fragment/MissedConversationsFragment;->_convoManager:Lkik/core/interfaces/IConversation;
+    invoke-static {v0}, Lkik/android/chat/fragment/MissedConversationsFragment;->g(Lkik/android/chat/fragment/MissedConversationsFragment;)V
 
-    invoke-interface {v0}, Lkik/core/interfaces/IConversation;->I()Ljava/util/List;
+    .line 1330
+    iget-object v0, p0, Lkik/android/chat/fragment/MissedConversationsFragment$2;->c:Lkik/android/chat/fragment/MissedConversationsFragment;
+
+    invoke-virtual {v0}, Lkik/android/chat/fragment/MissedConversationsFragment;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    .line 2307
-    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+    iget-object v1, p0, Lkik/android/chat/fragment/MissedConversationsFragment$2;->c:Lkik/android/chat/fragment/MissedConversationsFragment;
+
+    const v2, 0x7f0905c5
+
+    invoke-virtual {v1, v2}, Lkik/android/chat/fragment/MissedConversationsFragment;->getStringFromResource(I)Ljava/lang/String;
 
     move-result-object v1
 
-    :goto_1
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+    const/4 v2, 0x0
 
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-static {v0, v1, v2}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/datatypes/f;
+    invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 2308
-    iget-object v2, p0, Lkik/android/chat/fragment/MissedConversationsFragment$2;->a:Lkik/android/chat/fragment/MissedConversationsFragment;
-
-    iget-object v2, v2, Lkik/android/chat/fragment/MissedConversationsFragment;->_convoManager:Lkik/core/interfaces/IConversation;
-
-    invoke-virtual {v0}, Lkik/core/datatypes/f;->g()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-interface {v2, v0}, Lkik/core/interfaces/IConversation;->b(Ljava/lang/String;)V
-
-    goto :goto_1
-
-    .line 2310
-    :cond_1
-    const/4 v0, 0x0
-
-    .line 298
-    return-object v0
+    goto :goto_0
 .end method
 
-.method protected final synthetic onPostExecute(Ljava/lang/Object;)V
+.method public final a(Ljava/lang/Throwable;)V
+    .locals 3
+
+    .prologue
+    .line 338
+    iget-object v0, p0, Lkik/android/chat/fragment/MissedConversationsFragment$2;->c:Lkik/android/chat/fragment/MissedConversationsFragment;
+
+    invoke-virtual {v0}, Lkik/android/chat/fragment/MissedConversationsFragment;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lkik/android/chat/fragment/MissedConversationsFragment$2;->c:Lkik/android/chat/fragment/MissedConversationsFragment;
+
+    const v2, 0x7f090395
+
+    invoke-virtual {v1, v2}, Lkik/android/chat/fragment/MissedConversationsFragment;->getStringFromResource(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    invoke-static {v0, v1, v2}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/widget/Toast;->show()V
+
+    .line 340
+    iget-object v0, p0, Lkik/android/chat/fragment/MissedConversationsFragment$2;->c:Lkik/android/chat/fragment/MissedConversationsFragment;
+
+    iget-object v0, v0, Lkik/android/chat/fragment/MissedConversationsFragment;->_mixpanel:Lcom/kik/android/Mixpanel;
+
+    const-string v1, "Mute New Chats Timed Out"
+
+    invoke-virtual {v0, v1}, Lcom/kik/android/Mixpanel;->b(Ljava/lang/String;)Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v0
+
+    const-string v1, "Source"
+
+    const-string v2, "New Chats"
+
+    .line 341
+    invoke-virtual {v0, v1, v2}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v0
+
+    .line 342
+    invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->g()Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v0
+
+    .line 343
+    invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
+
+    .line 344
+    return-void
+.end method
+
+.method public final b()V
     .locals 1
 
     .prologue
-    .line 298
-    check-cast p1, Ljava/lang/Void;
+    .line 349
+    iget-object v0, p0, Lkik/android/chat/fragment/MissedConversationsFragment$2;->b:Lkik/android/chat/fragment/KikDialogFragment;
 
-    .line 1316
-    invoke-super {p0, p1}, Lkik/android/util/aq;->onPostExecute(Ljava/lang/Object;)V
+    invoke-virtual {v0}, Lkik/android/chat/fragment/KikDialogFragment;->dismiss()V
 
-    .line 1317
-    iget-object v0, p0, Lkik/android/chat/fragment/MissedConversationsFragment$2;->a:Lkik/android/chat/fragment/MissedConversationsFragment;
-
-    invoke-virtual {v0}, Lkik/android/chat/fragment/MissedConversationsFragment;->finish()V
-
-    .line 298
+    .line 350
     return-void
 .end method

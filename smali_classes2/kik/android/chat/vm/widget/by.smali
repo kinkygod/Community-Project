@@ -37,7 +37,7 @@
 
     iget-object v0, p0, Lkik/android/chat/vm/widget/by;->a:Lkik/android/chat/vm/widget/StickerWidgetViewModel;
 
-    invoke-static {v0}, Lkik/android/chat/vm/widget/StickerWidgetViewModel;->c(Lkik/android/chat/vm/widget/StickerWidgetViewModel;)V
+    invoke-static {v0}, Lkik/android/chat/vm/widget/StickerWidgetViewModel;->d(Lkik/android/chat/vm/widget/StickerWidgetViewModel;)V
 
     return-void
 .end method

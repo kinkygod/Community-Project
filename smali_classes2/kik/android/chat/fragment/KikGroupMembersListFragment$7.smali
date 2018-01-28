@@ -30,7 +30,7 @@
     .locals 0
 
     .prologue
-    .line 608
+    .line 616
     iput-object p1, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$7;->c:Lkik/android/chat/fragment/KikGroupMembersListFragment;
 
     iput-object p2, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$7;->a:Lkik/core/datatypes/l;
@@ -48,10 +48,10 @@
     .locals 3
 
     .prologue
-    .line 612
+    .line 620
     iget-object v0, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$7;->c:Lkik/android/chat/fragment/KikGroupMembersListFragment;
 
-    iget-object v0, v0, Lkik/android/chat/fragment/KikGroupMembersListFragment;->a:Lkik/core/interfaces/w;
+    iget-object v0, v0, Lkik/android/chat/fragment/KikGroupMembersListFragment;->a:Lkik/core/interfaces/v;
 
     iget-object v1, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$7;->a:Lkik/core/datatypes/l;
 
@@ -61,8 +61,8 @@
 
     iget-object v2, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$7;->b:Lkik/core/datatypes/f;
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/w;->a(Lkik/core/datatypes/k;Lkik/core/datatypes/f;)Lcom/kik/events/Promise;
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/v;->a(Lkik/core/datatypes/k;Lkik/core/datatypes/f;)Lcom/kik/events/Promise;
 
-    .line 613
+    .line 621
     return-void
 .end method

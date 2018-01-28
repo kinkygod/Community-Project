@@ -7,17 +7,17 @@
 
 
 # instance fields
-.field protected a:Lkik/core/interfaces/ae;
+.field protected a:Lkik/core/interfaces/ad;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field protected b:Lkik/core/interfaces/w;
+.field protected b:Lkik/core/interfaces/v;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field protected c:Lkik/core/interfaces/ah;
+.field protected c:Lkik/core/interfaces/ag;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -63,7 +63,7 @@
     .end annotation
 .end field
 
-.field private n:Lkik/android/chat/vm/widget/ad;
+.field private n:Lkik/android/chat/vm/widget/ae;
 
 
 # direct methods
@@ -190,7 +190,7 @@
 
     .prologue
     .line 163
-    iget-object v0, p0, Lkik/android/chat/vm/widget/c;->b:Lkik/core/interfaces/w;
+    iget-object v0, p0, Lkik/android/chat/vm/widget/c;->b:Lkik/core/interfaces/v;
 
     iget-object v1, p0, Lkik/android/chat/vm/widget/c;->j:Lkik/core/datatypes/l;
 
@@ -198,7 +198,7 @@
 
     move-result-object v1
 
-    invoke-interface {v0, v1, p1}, Lkik/core/interfaces/w;->a(Lkik/core/datatypes/k;Lkik/core/datatypes/f;)Lcom/kik/events/Promise;
+    invoke-interface {v0, v1, p1}, Lkik/core/interfaces/v;->a(Lkik/core/datatypes/k;Lkik/core/datatypes/f;)Lcom/kik/events/Promise;
 
     .line 164
     iget-object v0, p0, Lkik/android/chat/vm/widget/c;->d:Lcom/kik/android/Mixpanel;
@@ -234,7 +234,7 @@
 
     .prologue
     .line 305
-    iget-object v0, p0, Lkik/android/chat/vm/widget/c;->b:Lkik/core/interfaces/w;
+    iget-object v0, p0, Lkik/android/chat/vm/widget/c;->b:Lkik/core/interfaces/v;
 
     iget-object v1, p0, Lkik/android/chat/vm/widget/c;->j:Lkik/core/datatypes/l;
 
@@ -242,7 +242,7 @@
 
     move-result-object v1
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/w;->c(Lkik/core/datatypes/k;)Lcom/kik/events/Promise;
+    invoke-interface {v0, v1}, Lkik/core/interfaces/v;->c(Lkik/core/datatypes/k;)Lcom/kik/events/Promise;
 
     .line 306
     iget-object v0, p0, Lkik/android/chat/vm/widget/c;->e:Lkik/core/interfaces/IConversation;
@@ -397,11 +397,11 @@
     move-result-object v0
 
     .line 1294
-    invoke-virtual {p0}, Lkik/android/chat/vm/widget/c;->B_()Lkik/android/chat/vm/aw;
+    invoke-virtual {p0}, Lkik/android/chat/vm/widget/c;->F_()Lkik/android/chat/vm/ay;
 
     move-result-object v1
 
-    invoke-interface {v1, v0}, Lkik/android/chat/vm/aw;->a(Lkik/android/chat/vm/DialogViewModel;)V
+    invoke-interface {v1, v0}, Lkik/android/chat/vm/ay;->a(Lkik/android/chat/vm/DialogViewModel;)V
 
     .line 0
     return-void
@@ -547,11 +547,11 @@
     move-result-object v0
 
     .line 2319
-    invoke-virtual {p0}, Lkik/android/chat/vm/widget/c;->B_()Lkik/android/chat/vm/aw;
+    invoke-virtual {p0}, Lkik/android/chat/vm/widget/c;->F_()Lkik/android/chat/vm/ay;
 
     move-result-object v1
 
-    invoke-interface {v1, v0}, Lkik/android/chat/vm/aw;->a(Lkik/android/chat/vm/DialogViewModel;)V
+    invoke-interface {v1, v0}, Lkik/android/chat/vm/ay;->a(Lkik/android/chat/vm/DialogViewModel;)V
 
     .line 0
     return-void
@@ -714,24 +714,24 @@
     move-result-object v0
 
     .line 352
-    invoke-virtual {p0}, Lkik/android/chat/vm/widget/c;->B_()Lkik/android/chat/vm/aw;
+    invoke-virtual {p0}, Lkik/android/chat/vm/widget/c;->F_()Lkik/android/chat/vm/ay;
 
     move-result-object v1
 
-    invoke-interface {v1, v0}, Lkik/android/chat/vm/aw;->a(Lkik/android/chat/vm/bc;)V
+    invoke-interface {v1, v0}, Lkik/android/chat/vm/ay;->a(Lkik/android/chat/vm/be;)V
 
     .line 353
     iget-object v0, p0, Lkik/android/chat/vm/widget/c;->g:Lcom/kik/metrics/c/d;
 
-    invoke-static {}, Lcom/kik/metrics/b/as;->b()Lcom/kik/metrics/b/as$a;
+    invoke-static {}, Lcom/kik/metrics/b/av;->b()Lcom/kik/metrics/b/av$a;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/kik/metrics/b/as$a;->a()Lcom/kik/metrics/b/as;
+    invoke-virtual {v1}, Lcom/kik/metrics/b/av$a;->a()Lcom/kik/metrics/b/av;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/kik/metrics/c/d;->a(Lcom/kik/metrics/b/s;)V
+    invoke-virtual {v0, v1}, Lcom/kik/metrics/c/d;->a(Lcom/kik/metrics/b/t;)V
 
     .line 354
     return-void
@@ -747,17 +747,17 @@
 
 
 # virtual methods
-.method public final a()Lkik/android/chat/vm/widget/ad;
+.method public final a()Lkik/android/chat/vm/widget/ae;
     .locals 3
 
     .prologue
     .line 94
-    iget-object v0, p0, Lkik/android/chat/vm/widget/c;->n:Lkik/android/chat/vm/widget/ad;
+    iget-object v0, p0, Lkik/android/chat/vm/widget/c;->n:Lkik/android/chat/vm/widget/ae;
 
     if-eqz v0, :cond_0
 
     .line 95
-    iget-object v0, p0, Lkik/android/chat/vm/widget/c;->n:Lkik/android/chat/vm/widget/ad;
+    iget-object v0, p0, Lkik/android/chat/vm/widget/c;->n:Lkik/android/chat/vm/widget/ae;
 
     .line 109
     :goto_0
@@ -780,7 +780,7 @@
 
     .line 102
     :cond_1
-    invoke-virtual {p0}, Lkik/android/chat/vm/widget/c;->C_()Z
+    invoke-virtual {p0}, Lkik/android/chat/vm/widget/c;->G_()Z
 
     move-result v0
 
@@ -797,7 +797,7 @@
 
     .line 106
     :cond_2
-    new-instance v0, Lkik/android/chat/vm/widget/bm;
+    new-instance v0, Lkik/android/chat/vm/widget/bn;
 
     iget-object v1, p0, Lkik/android/chat/vm/widget/c;->h:Ljava/lang/String;
 
@@ -805,24 +805,24 @@
     iget-boolean v2, p0, Lkik/android/chat/vm/widget/c;->k:Z
 
     .line 106
-    invoke-direct {v0, v1, v2}, Lkik/android/chat/vm/widget/bm;-><init>(Ljava/lang/String;Z)V
+    invoke-direct {v0, v1, v2}, Lkik/android/chat/vm/widget/bn;-><init>(Ljava/lang/String;Z)V
 
-    iput-object v0, p0, Lkik/android/chat/vm/widget/c;->n:Lkik/android/chat/vm/widget/ad;
+    iput-object v0, p0, Lkik/android/chat/vm/widget/c;->n:Lkik/android/chat/vm/widget/ae;
 
     .line 107
-    iget-object v0, p0, Lkik/android/chat/vm/widget/c;->n:Lkik/android/chat/vm/widget/ad;
+    iget-object v0, p0, Lkik/android/chat/vm/widget/c;->n:Lkik/android/chat/vm/widget/ae;
 
     iget-object v1, p0, Lkik/android/chat/vm/widget/c;->i:Lkik/android/chat/presentation/MediaTrayPresenter;
 
-    invoke-interface {v0, v1}, Lkik/android/chat/vm/widget/ad;->a(Lkik/android/chat/presentation/MediaTrayPresenter;)V
+    invoke-interface {v0, v1}, Lkik/android/chat/vm/widget/ae;->a(Lkik/android/chat/presentation/MediaTrayPresenter;)V
 
     .line 109
-    iget-object v0, p0, Lkik/android/chat/vm/widget/c;->n:Lkik/android/chat/vm/widget/ad;
+    iget-object v0, p0, Lkik/android/chat/vm/widget/c;->n:Lkik/android/chat/vm/widget/ae;
 
     goto :goto_0
 .end method
 
-.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
     .locals 3
 
     .prologue
@@ -832,25 +832,25 @@
     invoke-interface {p1, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/chat/vm/widget/c;)V
 
     .line 75
-    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/e;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/e;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 77
-    iget-object v1, p0, Lkik/android/chat/vm/widget/c;->b:Lkik/core/interfaces/w;
+    iget-object v1, p0, Lkik/android/chat/vm/widget/c;->b:Lkik/core/interfaces/v;
 
     iget-object v2, p0, Lkik/android/chat/vm/widget/c;->h:Ljava/lang/String;
 
-    invoke-interface {v1, v2, v0}, Lkik/core/interfaces/w;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
+    invoke-interface {v1, v2, v0}, Lkik/core/interfaces/v;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
 
     move-result-object v1
 
     iput-object v1, p0, Lkik/android/chat/vm/widget/c;->j:Lkik/core/datatypes/l;
 
     .line 78
-    iget-object v1, p0, Lkik/android/chat/vm/widget/c;->a:Lkik/core/interfaces/ae;
+    iget-object v1, p0, Lkik/android/chat/vm/widget/c;->a:Lkik/core/interfaces/ad;
 
     const-string v2, "kik.chat.fragment.contacts.chatted.with"
 
-    invoke-interface {v1, v2}, Lkik/core/interfaces/ae;->t(Ljava/lang/String;)Ljava/util/Set;
+    invoke-interface {v1, v2}, Lkik/core/interfaces/ad;->t(Ljava/lang/String;)Ljava/util/Set;
 
     move-result-object v1
 
@@ -872,11 +872,11 @@
     iput-boolean v0, v1, Lkik/android/chat/vm/widget/c;->k:Z
 
     .line 88
-    invoke-virtual {p0}, Lkik/android/chat/vm/widget/c;->a()Lkik/android/chat/vm/widget/ad;
+    invoke-virtual {p0}, Lkik/android/chat/vm/widget/c;->a()Lkik/android/chat/vm/widget/ae;
 
     move-result-object v0
 
-    invoke-interface {v0, p1, p2}, Lkik/android/chat/vm/widget/ad;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    invoke-interface {v0, p1, p2}, Lkik/android/chat/vm/widget/ae;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 89
     return-void
@@ -909,7 +909,7 @@
     :cond_1
     iget-object v1, p0, Lkik/android/chat/vm/widget/c;->e:Lkik/core/interfaces/IConversation;
 
-    invoke-interface {v1}, Lkik/core/interfaces/IConversation;->C()Lkik/core/chat/c;
+    invoke-interface {v1}, Lkik/core/interfaces/IConversation;->B()Lkik/core/chat/c;
 
     move-result-object v1
 
@@ -934,12 +934,12 @@
     goto :goto_0
 .end method
 
-.method public final aj_()V
+.method public final ak_()V
     .locals 1
 
     .prologue
     .line 115
-    invoke-virtual {p0}, Lkik/android/chat/vm/widget/c;->a()Lkik/android/chat/vm/widget/ad;
+    invoke-virtual {p0}, Lkik/android/chat/vm/widget/c;->a()Lkik/android/chat/vm/widget/ae;
 
     move-result-object v0
 
@@ -947,11 +947,11 @@
     if-eqz v0, :cond_0
 
     .line 117
-    invoke-interface {v0}, Lkik/android/chat/vm/widget/ad;->aj_()V
+    invoke-interface {v0}, Lkik/android/chat/vm/widget/ae;->ak_()V
 
     .line 120
     :cond_0
-    invoke-super {p0}, Lkik/android/chat/vm/e;->aj_()V
+    invoke-super {p0}, Lkik/android/chat/vm/e;->ak_()V
 
     .line 121
     return-void
@@ -1010,13 +1010,9 @@
 
     .prologue
     .line 133
-    iget-object v0, p0, Lkik/android/chat/vm/widget/c;->b:Lkik/core/interfaces/w;
+    iget-object v0, p0, Lkik/android/chat/vm/widget/c;->b:Lkik/core/interfaces/v;
 
-    invoke-interface {v0}, Lkik/core/interfaces/w;->e()Lcom/kik/events/c;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lkik/core/b/a;->a(Lcom/kik/events/c;)Lrx/d;
+    invoke-interface {v0}, Lkik/core/interfaces/v;->f()Lrx/d;
 
     move-result-object v0
 
@@ -1075,13 +1071,9 @@
 
     .prologue
     .line 142
-    iget-object v0, p0, Lkik/android/chat/vm/widget/c;->b:Lkik/core/interfaces/w;
+    iget-object v0, p0, Lkik/android/chat/vm/widget/c;->b:Lkik/core/interfaces/v;
 
-    invoke-interface {v0}, Lkik/core/interfaces/w;->e()Lcom/kik/events/c;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lkik/core/b/a;->a(Lcom/kik/events/c;)Lrx/d;
+    invoke-interface {v0}, Lkik/core/interfaces/v;->f()Lrx/d;
 
     move-result-object v0
 
@@ -1204,7 +1196,7 @@
 
     iget-object v2, p0, Lkik/android/chat/vm/widget/c;->f:Landroid/content/res/Resources;
 
-    const v3, 0x7f09062e
+    const v3, 0x7f090636
 
     new-array v4, v6, [Ljava/lang/Object;
 
@@ -1225,11 +1217,11 @@
     move-result-object v0
 
     .line 173
-    invoke-virtual {p0}, Lkik/android/chat/vm/widget/c;->B_()Lkik/android/chat/vm/aw;
+    invoke-virtual {p0}, Lkik/android/chat/vm/widget/c;->F_()Lkik/android/chat/vm/ay;
 
     move-result-object v1
 
-    invoke-interface {v1, v0}, Lkik/android/chat/vm/aw;->a(Lkik/android/chat/vm/DialogViewModel;)V
+    invoke-interface {v1, v0}, Lkik/android/chat/vm/ay;->a(Lkik/android/chat/vm/DialogViewModel;)V
 
     .line 174
     return-void
@@ -1400,7 +1392,7 @@
     .line 231
     :cond_1
     :goto_1
-    invoke-virtual {p0}, Lkik/android/chat/vm/widget/c;->B_()Lkik/android/chat/vm/aw;
+    invoke-virtual {p0}, Lkik/android/chat/vm/widget/c;->F_()Lkik/android/chat/vm/ay;
 
     move-result-object v1
 
@@ -1408,7 +1400,7 @@
 
     move-result-object v0
 
-    invoke-interface {v1, v0}, Lkik/android/chat/vm/aw;->a(Lkik/android/chat/vm/DialogViewModel;)V
+    invoke-interface {v1, v0}, Lkik/android/chat/vm/ay;->a(Lkik/android/chat/vm/DialogViewModel;)V
 
     goto :goto_0
 
@@ -1431,9 +1423,9 @@
     invoke-virtual {v1}, Lcom/kik/android/Mixpanel$d;->b()V
 
     .line 221
-    iget-object v1, p0, Lkik/android/chat/vm/widget/c;->c:Lkik/core/interfaces/ah;
+    iget-object v1, p0, Lkik/android/chat/vm/widget/c;->c:Lkik/core/interfaces/ag;
 
-    invoke-interface {v1}, Lkik/core/interfaces/ah;->d()Lkik/core/datatypes/ac;
+    invoke-interface {v1}, Lkik/core/interfaces/ag;->d()Lkik/core/datatypes/ab;
 
     move-result-object v1
 
@@ -1444,7 +1436,7 @@
 
     move-result-object v2
 
-    iget-object v1, v1, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
+    iget-object v1, v1, Lkik/core/datatypes/ab;->c:Ljava/lang/String;
 
     invoke-virtual {v2, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1626,9 +1618,9 @@
     check-cast v0, Ljava/lang/String;
 
     .line 269
-    iget-object v3, p0, Lkik/android/chat/vm/widget/c;->b:Lkik/core/interfaces/w;
+    iget-object v3, p0, Lkik/android/chat/vm/widget/c;->b:Lkik/core/interfaces/v;
 
-    invoke-interface {v3, v0, v12}, Lkik/core/interfaces/w;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
+    invoke-interface {v3, v0, v12}, Lkik/core/interfaces/v;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
 
     move-result-object v0
 
@@ -1639,13 +1631,13 @@
     if-eqz v2, :cond_4
 
     .line 273
-    iget-object v3, p0, Lkik/android/chat/vm/widget/c;->b:Lkik/core/interfaces/w;
+    iget-object v3, p0, Lkik/android/chat/vm/widget/c;->b:Lkik/core/interfaces/v;
 
     invoke-virtual {v0}, Lkik/core/datatypes/l;->j()Lkik/core/datatypes/k;
 
     move-result-object v0
 
-    invoke-interface {v3, v2, v0}, Lkik/core/interfaces/w;->a(Lkik/core/datatypes/messageExtensions/FriendAttributeMessageAttachment;Lkik/core/datatypes/k;)Lcom/kik/events/Promise;
+    invoke-interface {v3, v2, v0}, Lkik/core/interfaces/v;->a(Lkik/core/datatypes/messageExtensions/FriendAttributeMessageAttachment;Lkik/core/datatypes/k;)Lcom/kik/events/Promise;
 
     goto :goto_2
 
@@ -1678,13 +1670,13 @@
 
     .line 276
     :cond_4
-    iget-object v3, p0, Lkik/android/chat/vm/widget/c;->b:Lkik/core/interfaces/w;
+    iget-object v3, p0, Lkik/android/chat/vm/widget/c;->b:Lkik/core/interfaces/v;
 
     invoke-virtual {v0}, Lkik/core/datatypes/l;->j()Lkik/core/datatypes/k;
 
     move-result-object v0
 
-    invoke-interface {v3, v0}, Lkik/core/interfaces/w;->a(Lkik/core/datatypes/k;)Lcom/kik/events/Promise;
+    invoke-interface {v3, v0}, Lkik/core/interfaces/v;->a(Lkik/core/datatypes/k;)Lcom/kik/events/Promise;
 
     goto :goto_2
 
@@ -1705,13 +1697,13 @@
     invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     .line 282
-    iget-object v0, p0, Lkik/android/chat/vm/widget/c;->a:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/chat/vm/widget/c;->a:Lkik/core/interfaces/ad;
 
     const-string v1, "kik.chat.fragment.contacts.chatted.with"
 
     iget-object v2, p0, Lkik/android/chat/vm/widget/c;->m:Ljava/util/Set;
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;Ljava/util/Set;)Z
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/util/Set;)Z
 
     goto/16 :goto_0
 .end method

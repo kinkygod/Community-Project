@@ -34,7 +34,7 @@
     .locals 0
 
     .prologue
-    .line 1509
+    .line 1556
     iput-object p1, p0, Lcom/kik/cards/web/CardsWebViewFragment$25;->b:Lcom/kik/cards/web/CardsWebViewFragment;
 
     iput-object p2, p0, Lcom/kik/cards/web/CardsWebViewFragment$25;->a:Lcom/kik/events/Promise;
@@ -50,18 +50,18 @@
     .locals 3
 
     .prologue
-    .line 1509
+    .line 1556
     check-cast p1, Landroid/os/Bundle;
 
-    .line 2513
+    .line 2560
     invoke-super {p0, p1}, Lcom/kik/events/k;->a(Ljava/lang/Object;)V
 
-    .line 2514
+    .line 2561
     new-instance v1, Lorg/json/JSONObject;
 
     invoke-direct {v1}, Lorg/json/JSONObject;-><init>()V
 
-    .line 2517
+    .line 2564
     :try_start_0
     new-instance v0, Lorg/json/JSONObject;
 
@@ -75,16 +75,16 @@
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 2522
+    .line 2569
     :goto_0
     iget-object v1, p0, Lcom/kik/cards/web/CardsWebViewFragment$25;->a:Lcom/kik/events/Promise;
 
     invoke-virtual {v1, v0}, Lcom/kik/events/Promise;->a(Ljava/lang/Object;)V
 
-    .line 1509
+    .line 1556
     return-void
 
-    .line 2520
+    .line 2567
     :catch_0
     move-exception v0
 
@@ -99,14 +99,14 @@
     .locals 1
 
     .prologue
-    .line 1528
+    .line 1575
     invoke-super {p0, p1}, Lcom/kik/events/k;->a(Ljava/lang/Throwable;)V
 
-    .line 1529
+    .line 1576
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$25;->a:Lcom/kik/events/Promise;
 
     invoke-virtual {v0}, Lcom/kik/events/Promise;->f()V
 
-    .line 1530
+    .line 1577
     return-void
 .end method

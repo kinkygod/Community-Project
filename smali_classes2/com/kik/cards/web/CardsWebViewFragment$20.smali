@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 979
+    .line 1016
     iput-object p1, p0, Lcom/kik/cards/web/CardsWebViewFragment$20;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,7 +40,7 @@
     .locals 4
 
     .prologue
-    .line 983
+    .line 1020
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$20;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
     new-instance v1, Landroid/content/Intent;
@@ -49,11 +49,11 @@
 
     iget-object v3, p0, Lcom/kik/cards/web/CardsWebViewFragment$20;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
-    invoke-static {v3}, Lcom/kik/cards/web/CardsWebViewFragment;->t(Lcom/kik/cards/web/CardsWebViewFragment;)Lkik/android/util/ca$c;
+    invoke-static {v3}, Lcom/kik/cards/web/CardsWebViewFragment;->t(Lcom/kik/cards/web/CardsWebViewFragment;)Lkik/android/util/cb$c;
 
     move-result-object v3
 
-    invoke-virtual {v3}, Lkik/android/util/ca$c;->b()Ljava/lang/String;
+    invoke-virtual {v3}, Lkik/android/util/cb$c;->b()Ljava/lang/String;
 
     move-result-object v3
 
@@ -65,6 +65,6 @@
 
     invoke-virtual {v0, v1}, Lcom/kik/cards/web/CardsWebViewFragment;->startActivity(Landroid/content/Intent;)V
 
-    .line 984
+    .line 1021
     return-void
 .end method

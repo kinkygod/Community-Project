@@ -7,7 +7,7 @@
 
 
 # virtual methods
-.method public abstract aM_()Lrx/d;
+.method public abstract aJ_()Lrx/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -19,7 +19,7 @@
     .end annotation
 .end method
 
-.method public abstract aN_()Lrx/d;
+.method public abstract aK_()Lrx/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -31,10 +31,10 @@
     .end annotation
 .end method
 
-.method public abstract aO_()V
+.method public abstract b_(I)V
 .end method
 
-.method public abstract b_(I)V
+.method public abstract d()V
 .end method
 
 .method public abstract e()V

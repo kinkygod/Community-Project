@@ -3,30 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/vm/ar;
+.implements Lkik/android/chat/vm/at;
 
 
 # virtual methods
-.method public abstract a()Ljava/lang/String;
+.method public abstract b()Lkik/core/datatypes/f;
 .end method
 
-.method public abstract b()Lrx/d;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/d",
-            "<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
-.end method
-
-.method public abstract d()V
-.end method
-
-.method public abstract e()V
-.end method
-
-.method public abstract g()Lkik/android/chat/vm/DialogViewModel$a;
+.method public abstract d()Lkik/android/chat/vm/IBadgeViewModel;
 .end method

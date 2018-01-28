@@ -8,28 +8,28 @@
 # instance fields
 .field private final a:Lkik/android/chat/fragment/settings/EditEmailFragment;
 
-.field private final b:Lkik/core/datatypes/ac;
+.field private final b:Lkik/core/datatypes/ab;
 
 
 # direct methods
-.method private constructor <init>(Lkik/android/chat/fragment/settings/EditEmailFragment;Lkik/core/datatypes/ac;)V
+.method private constructor <init>(Lkik/android/chat/fragment/settings/EditEmailFragment;Lkik/core/datatypes/ab;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lkik/android/chat/fragment/settings/d;->a:Lkik/android/chat/fragment/settings/EditEmailFragment;
 
-    iput-object p2, p0, Lkik/android/chat/fragment/settings/d;->b:Lkik/core/datatypes/ac;
+    iput-object p2, p0, Lkik/android/chat/fragment/settings/d;->b:Lkik/core/datatypes/ab;
 
     return-void
 .end method
 
-.method public static a(Lkik/android/chat/fragment/settings/EditEmailFragment;Lkik/core/datatypes/ac;)Landroid/content/DialogInterface$OnClickListener;
+.method public static a(Lkik/android/chat/fragment/settings/EditEmailFragment;Lkik/core/datatypes/ab;)Landroid/content/DialogInterface$OnClickListener;
     .locals 1
 
     new-instance v0, Lkik/android/chat/fragment/settings/d;
 
-    invoke-direct {v0, p0, p1}, Lkik/android/chat/fragment/settings/d;-><init>(Lkik/android/chat/fragment/settings/EditEmailFragment;Lkik/core/datatypes/ac;)V
+    invoke-direct {v0, p0, p1}, Lkik/android/chat/fragment/settings/d;-><init>(Lkik/android/chat/fragment/settings/EditEmailFragment;Lkik/core/datatypes/ab;)V
 
     return-object v0
 .end method
@@ -41,9 +41,9 @@
 
     iget-object v0, p0, Lkik/android/chat/fragment/settings/d;->a:Lkik/android/chat/fragment/settings/EditEmailFragment;
 
-    iget-object v1, p0, Lkik/android/chat/fragment/settings/d;->b:Lkik/core/datatypes/ac;
+    iget-object v1, p0, Lkik/android/chat/fragment/settings/d;->b:Lkik/core/datatypes/ab;
 
-    invoke-static {v0, v1, p1}, Lkik/android/chat/fragment/settings/EditEmailFragment;->a(Lkik/android/chat/fragment/settings/EditEmailFragment;Lkik/core/datatypes/ac;Landroid/content/DialogInterface;)V
+    invoke-static {v0, v1, p1}, Lkik/android/chat/fragment/settings/EditEmailFragment;->a(Lkik/android/chat/fragment/settings/EditEmailFragment;Lkik/core/datatypes/ab;Landroid/content/DialogInterface;)V
 
     return-void
 .end method

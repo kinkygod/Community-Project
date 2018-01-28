@@ -24,19 +24,16 @@
     .end annotation
 .end field
 
-.field public final d:Lkik/core/chat/profile/Theme;
+.field public final d:Lkik/core/chat/profile/ak;
     .annotation runtime Ljavax/annotation/Nullable;
     .end annotation
 .end field
 
-.field public final e:Lkik/core/chat/profile/q;
-    .annotation runtime Ljavax/annotation/Nullable;
-    .end annotation
-.end field
+.field public final e:Z
 
 
 # direct methods
-.method private constructor <init>(Lcom/kik/core/network/xmpp/jid/a;Lkik/core/chat/profile/a;Ljava/util/Date;Lkik/core/chat/profile/Theme;Lkik/core/chat/profile/q;)V
+.method private constructor <init>(Lcom/kik/core/network/xmpp/jid/a;Lkik/core/chat/profile/a;Ljava/util/Date;Lkik/core/chat/profile/ak;Z)V
     .locals 0
     .param p2    # Lkik/core/chat/profile/a;
         .annotation runtime Ljavax/annotation/Nullable;
@@ -46,11 +43,7 @@
         .annotation runtime Ljavax/annotation/Nullable;
         .end annotation
     .end param
-    .param p4    # Lkik/core/chat/profile/Theme;
-        .annotation runtime Ljavax/annotation/Nullable;
-        .end annotation
-    .end param
-    .param p5    # Lkik/core/chat/profile/q;
+    .param p4    # Lkik/core/chat/profile/ak;
         .annotation runtime Ljavax/annotation/Nullable;
         .end annotation
     .end param
@@ -69,21 +62,21 @@
     iput-object p3, p0, Lkik/core/chat/profile/b;->c:Ljava/util/Date;
 
     .line 55
-    iput-object p4, p0, Lkik/core/chat/profile/b;->d:Lkik/core/chat/profile/Theme;
+    iput-object p4, p0, Lkik/core/chat/profile/b;->d:Lkik/core/chat/profile/ak;
 
     .line 56
-    iput-object p5, p0, Lkik/core/chat/profile/b;->e:Lkik/core/chat/profile/q;
+    iput-boolean p5, p0, Lkik/core/chat/profile/b;->e:Z
 
     .line 57
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/kik/core/network/xmpp/jid/a;Lkik/core/chat/profile/a;Ljava/util/Date;Lkik/core/chat/profile/Theme;Lkik/core/chat/profile/q;B)V
+.method synthetic constructor <init>(Lcom/kik/core/network/xmpp/jid/a;Lkik/core/chat/profile/a;Ljava/util/Date;Lkik/core/chat/profile/ak;ZB)V
     .locals 0
 
     .prologue
     .line 16
-    invoke-direct/range {p0 .. p5}, Lkik/core/chat/profile/b;-><init>(Lcom/kik/core/network/xmpp/jid/a;Lkik/core/chat/profile/a;Ljava/util/Date;Lkik/core/chat/profile/Theme;Lkik/core/chat/profile/q;)V
+    invoke-direct/range {p0 .. p5}, Lkik/core/chat/profile/b;-><init>(Lcom/kik/core/network/xmpp/jid/a;Lkik/core/chat/profile/a;Ljava/util/Date;Lkik/core/chat/profile/ak;Z)V
 
     return-void
 .end method
@@ -92,8 +85,6 @@
     .locals 8
 
     .prologue
-    const/4 v3, 0x0
-
     .line 22
     new-instance v0, Lkik/core/chat/profile/b;
 
@@ -103,19 +94,21 @@
 
     invoke-direct {v2, v1}, Lkik/core/chat/profile/a;-><init>(Ljava/lang/String;)V
 
-    new-instance v5, Lkik/core/chat/profile/q;
+    const/4 v3, 0x0
+
+    new-instance v4, Lkik/core/chat/profile/ak;
 
     const/4 v1, 0x0
 
     const-wide/16 v6, 0x0
 
-    invoke-direct {v5, v1, v6, v7}, Lkik/core/chat/profile/q;-><init>(FJ)V
+    invoke-direct {v4, v1, v6, v7}, Lkik/core/chat/profile/ak;-><init>(FJ)V
+
+    const/4 v5, 0x0
 
     move-object v1, p0
 
-    move-object v4, v3
-
-    invoke-direct/range {v0 .. v5}, Lkik/core/chat/profile/b;-><init>(Lcom/kik/core/network/xmpp/jid/a;Lkik/core/chat/profile/a;Ljava/util/Date;Lkik/core/chat/profile/Theme;Lkik/core/chat/profile/q;)V
+    invoke-direct/range {v0 .. v5}, Lkik/core/chat/profile/b;-><init>(Lcom/kik/core/network/xmpp/jid/a;Lkik/core/chat/profile/a;Ljava/util/Date;Lkik/core/chat/profile/ak;Z)V
 
     return-object v0
 .end method
@@ -133,7 +126,7 @@
     .line 77
     if-ne p0, p1, :cond_1
 
-    .line 95
+    .line 98
     :cond_0
     :goto_0
     return v0
@@ -247,24 +240,24 @@
 
     .line 95
     :cond_c
-    iget-object v2, p0, Lkik/core/chat/profile/b;->d:Lkik/core/chat/profile/Theme;
+    iget-boolean v2, p0, Lkik/core/chat/profile/b;->e:Z
 
-    if-eqz v2, :cond_d
+    iget-boolean v3, p1, Lkik/core/chat/profile/b;->e:Z
 
-    iget-object v0, p0, Lkik/core/chat/profile/b;->d:Lkik/core/chat/profile/Theme;
+    if-eq v2, v3, :cond_d
 
-    iget-object v1, p1, Lkik/core/chat/profile/b;->d:Lkik/core/chat/profile/Theme;
+    move v0, v1
 
-    invoke-virtual {v0, v1}, Lkik/core/chat/profile/Theme;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
+    .line 96
     goto :goto_0
 
+    .line 98
     :cond_d
-    iget-object v2, p1, Lkik/core/chat/profile/b;->d:Lkik/core/chat/profile/Theme;
+    iget-boolean v2, p0, Lkik/core/chat/profile/b;->e:Z
 
-    if-eqz v2, :cond_0
+    iget-boolean v3, p1, Lkik/core/chat/profile/b;->e:Z
+
+    if-eq v2, v3, :cond_0
 
     move v0, v1
 
@@ -277,7 +270,7 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 102
+    .line 104
     iget-object v0, p0, Lkik/core/chat/profile/b;->a:Lcom/kik/core/network/xmpp/jid/a;
 
     if-eqz v0, :cond_1
@@ -288,7 +281,7 @@
 
     move-result v0
 
-    .line 103
+    .line 105
     :goto_0
     mul-int/lit8 v2, v0, 0x1f
 
@@ -305,7 +298,7 @@
     :goto_1
     add-int/2addr v0, v2
 
-    .line 104
+    .line 106
     mul-int/lit8 v2, v0, 0x1f
 
     iget-object v0, p0, Lkik/core/chat/profile/b;->c:Ljava/util/Date;
@@ -321,63 +314,59 @@
     :goto_2
     add-int/2addr v0, v2
 
-    .line 105
+    .line 107
     mul-int/lit8 v2, v0, 0x1f
 
-    iget-object v0, p0, Lkik/core/chat/profile/b;->d:Lkik/core/chat/profile/Theme;
+    iget-object v0, p0, Lkik/core/chat/profile/b;->d:Lkik/core/chat/profile/ak;
 
     if-eqz v0, :cond_4
 
-    iget-object v0, p0, Lkik/core/chat/profile/b;->d:Lkik/core/chat/profile/Theme;
+    iget-object v0, p0, Lkik/core/chat/profile/b;->d:Lkik/core/chat/profile/ak;
 
-    invoke-virtual {v0}, Lkik/core/chat/profile/Theme;->hashCode()I
+    invoke-virtual {v0}, Lkik/core/chat/profile/ak;->hashCode()I
 
     move-result v0
 
     :goto_3
     add-int/2addr v0, v2
 
-    .line 106
+    .line 108
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v2, p0, Lkik/core/chat/profile/b;->e:Lkik/core/chat/profile/q;
+    iget-boolean v2, p0, Lkik/core/chat/profile/b;->e:Z
 
     if-eqz v2, :cond_0
 
-    iget-object v1, p0, Lkik/core/chat/profile/b;->e:Lkik/core/chat/profile/q;
-
-    invoke-virtual {v1}, Lkik/core/chat/profile/q;->hashCode()I
-
-    move-result v1
+    const/4 v1, 0x1
 
     :cond_0
     add-int/2addr v0, v1
 
-    .line 107
+    .line 109
     return v0
 
     :cond_1
     move v0, v1
 
-    .line 102
+    .line 104
     goto :goto_0
 
     :cond_2
     move v0, v1
 
-    .line 103
+    .line 105
     goto :goto_1
 
     :cond_3
     move v0, v1
 
-    .line 104
+    .line 106
     goto :goto_2
 
     :cond_4
     move v0, v1
 
-    .line 105
+    .line 107
     goto :goto_3
 .end method
 
@@ -385,7 +374,7 @@
     .locals 2
 
     .prologue
-    .line 113
+    .line 115
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "BotProfile{jid="
@@ -422,27 +411,27 @@
 
     move-result-object v0
 
-    const-string v1, ", theme="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lkik/core/chat/profile/b;->d:Lkik/core/chat/profile/Theme;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
     const-string v1, ", rating="
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    iget-object v1, p0, Lkik/core/chat/profile/b;->e:Lkik/core/chat/profile/q;
+    iget-object v1, p0, Lkik/core/chat/profile/b;->d:Lkik/core/chat/profile/ak;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", isTrusted="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    iget-boolean v1, p0, Lkik/core/chat/profile/b;->e:Z
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
     move-result-object v0
 

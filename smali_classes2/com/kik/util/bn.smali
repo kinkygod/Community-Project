@@ -2,48 +2,50 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lrx/functions/b;
+.implements Landroid/widget/CompoundButton$OnCheckedChangeListener;
 
 
 # instance fields
-.field private final a:Landroid/widget/RatingBar;
+.field private final a:Lrx/functions/b;
 
 
 # direct methods
-.method private constructor <init>(Landroid/widget/RatingBar;)V
+.method private constructor <init>(Lrx/functions/b;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/kik/util/bn;->a:Landroid/widget/RatingBar;
+    iput-object p1, p0, Lcom/kik/util/bn;->a:Lrx/functions/b;
 
     return-void
 .end method
 
-.method public static a(Landroid/widget/RatingBar;)Lrx/functions/b;
+.method public static a(Lrx/functions/b;)Landroid/widget/CompoundButton$OnCheckedChangeListener;
     .locals 1
 
     new-instance v0, Lcom/kik/util/bn;
 
-    invoke-direct {v0, p0}, Lcom/kik/util/bn;-><init>(Landroid/widget/RatingBar;)V
+    invoke-direct {v0, p0}, Lcom/kik/util/bn;-><init>(Lrx/functions/b;)V
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public final call(Ljava/lang/Object;)V
+.method public final onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 2
 
-    iget-object v0, p0, Lcom/kik/util/bn;->a:Landroid/widget/RatingBar;
+    .prologue
+    .line 0
+    iget-object v0, p0, Lcom/kik/util/bn;->a:Lrx/functions/b;
 
-    check-cast p1, Ljava/lang/Float;
+    .line 1739
+    invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    invoke-virtual {p1}, Ljava/lang/Float;->floatValue()F
+    move-result-object v1
 
-    move-result v1
+    invoke-interface {v0, v1}, Lrx/functions/b;->call(Ljava/lang/Object;)V
 
-    invoke-virtual {v0, v1}, Landroid/widget/RatingBar;->setRating(F)V
-
+    .line 0
     return-void
 .end method

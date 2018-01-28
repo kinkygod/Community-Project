@@ -84,7 +84,7 @@
     check-cast v0, Landroid/support/v7/widget/LinearLayoutManager;
 
     .line 134
-    invoke-virtual {v0}, Landroid/support/v7/widget/LinearLayoutManager;->k()I
+    invoke-virtual {v0}, Landroid/support/v7/widget/LinearLayoutManager;->j()I
 
     move-result v0
 

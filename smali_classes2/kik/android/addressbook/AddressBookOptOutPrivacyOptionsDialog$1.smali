@@ -1,5 +1,5 @@
 .class final Lkik/android/addressbook/AddressBookOptOutPrivacyOptionsDialog$1;
-.super Lkik/android/chat/view/text/a;
+.super Lkik/android/chat/view/text/b;
 .source "SourceFile"
 
 
@@ -26,7 +26,7 @@
     .line 60
     iput-object p1, p0, Lkik/android/addressbook/AddressBookOptOutPrivacyOptionsDialog$1;->a:Lkik/android/addressbook/AddressBookOptOutPrivacyOptionsDialog;
 
-    invoke-direct {p0}, Lkik/android/chat/view/text/a;-><init>()V
+    invoke-direct {p0}, Lkik/android/chat/view/text/b;-><init>()V
 
     return-void
 .end method

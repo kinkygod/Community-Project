@@ -10,7 +10,7 @@
 .implements Lkik/android/chat/presentation/ac$a;
 .implements Lkik/android/chat/presentation/c$a;
 .implements Lkik/android/util/KeyboardManipulator;
-.implements Lkik/core/interfaces/aj;
+.implements Lkik/core/interfaces/ai;
 
 
 # annotations
@@ -29,13 +29,13 @@
 
 .field protected _anchor:Landroid/view/View;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1001eb
+        value = 0x7f1001ec
     .end annotation
 .end field
 
 .field protected _friendsList:Lcom/github/ksoichiro/android/observablescrollview/ObservableRecyclerView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1001ec
+        value = 0x7f1001ed
     .end annotation
 .end field
 
@@ -47,7 +47,7 @@
 
 .field protected _searchBarView:Lkik/android/chat/view/SearchBarViewImpl;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1001ed
+        value = 0x7f1001ee
     .end annotation
 .end field
 
@@ -76,12 +76,12 @@
     .end annotation
 .end field
 
-.field protected f:La/a;
+.field protected f:Ldagger/a;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "La/a",
+            "Ldagger/a",
             "<",
-            "Lkik/core/interfaces/w;",
+            "Lkik/core/interfaces/v;",
             ">;"
         }
     .end annotation
@@ -90,12 +90,12 @@
     .end annotation
 .end field
 
-.field protected g:La/a;
+.field protected g:Ldagger/a;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "La/a",
+            "Ldagger/a",
             "<",
-            "Lkik/core/interfaces/ah;",
+            "Lkik/core/interfaces/ag;",
             ">;"
         }
     .end annotation
@@ -104,10 +104,10 @@
     .end annotation
 .end field
 
-.field protected h:La/a;
+.field protected h:Ldagger/a;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "La/a",
+            "Ldagger/a",
             "<",
             "Lkik/core/interfaces/IConversation;",
             ">;"
@@ -413,7 +413,7 @@
 
     aput-object v1, v0, v3
 
-    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
     .line 724
     iget-object v0, p0, Lkik/android/chat/fragment/AddressBookFindPeopleInviteFriendsFragment;->q:Lcom/kik/view/adapters/AbmContactListRecyclerAdapter;
@@ -442,20 +442,20 @@
 
     aput-object v1, v0, v3
 
-    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
     .line 730
     iget-object v0, p0, Lkik/android/chat/fragment/AddressBookFindPeopleInviteFriendsFragment;->_metricsService:Lcom/kik/metrics/c/d;
 
-    invoke-static {}, Lcom/kik/metrics/b/be;->b()Lcom/kik/metrics/b/be$a;
+    invoke-static {}, Lcom/kik/metrics/b/bm;->b()Lcom/kik/metrics/b/bm$a;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/kik/metrics/b/be$a;->a()Lcom/kik/metrics/b/be;
+    invoke-virtual {v1}, Lcom/kik/metrics/b/bm$a;->a()Lcom/kik/metrics/b/bm;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/kik/metrics/c/d;->a(Lcom/kik/metrics/b/s;)V
+    invoke-virtual {v0, v1}, Lcom/kik/metrics/c/d;->a(Lcom/kik/metrics/b/t;)V
 
     .line 731
     return-void
@@ -740,20 +740,20 @@
 
     aput-object v1, v0, v3
 
-    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
     .line 743
     iget-object v0, p0, Lkik/android/chat/fragment/AddressBookFindPeopleInviteFriendsFragment;->_metricsService:Lcom/kik/metrics/c/d;
 
-    invoke-static {}, Lcom/kik/metrics/b/r;->b()Lcom/kik/metrics/b/r$a;
+    invoke-static {}, Lcom/kik/metrics/b/s;->b()Lcom/kik/metrics/b/s$a;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/kik/metrics/b/r$a;->a()Lcom/kik/metrics/b/r;
+    invoke-virtual {v1}, Lcom/kik/metrics/b/s$a;->a()Lcom/kik/metrics/b/s;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/kik/metrics/c/d;->a(Lcom/kik/metrics/b/s;)V
+    invoke-virtual {v0, v1}, Lcom/kik/metrics/c/d;->a(Lcom/kik/metrics/b/t;)V
 
     .line 744
     return-void
@@ -774,7 +774,7 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ca;->g([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->g([Landroid/view/View;)V
 
     .line 754
     return-void
@@ -789,9 +789,9 @@
 
     move-result-object v1
 
-    iget-object v0, p0, Lkik/android/chat/fragment/AddressBookFindPeopleInviteFriendsFragment;->h:La/a;
+    iget-object v0, p0, Lkik/android/chat/fragment/AddressBookFindPeopleInviteFriendsFragment;->h:Ldagger/a;
 
-    invoke-interface {v0}, La/a;->get()Ljava/lang/Object;
+    invoke-interface {v0}, Ldagger/a;->get()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -924,19 +924,19 @@
 
     .line 640
     :cond_1
-    iget-object v0, p0, Lkik/android/chat/fragment/AddressBookFindPeopleInviteFriendsFragment;->g:La/a;
+    iget-object v0, p0, Lkik/android/chat/fragment/AddressBookFindPeopleInviteFriendsFragment;->g:Ldagger/a;
 
-    invoke-interface {v0}, La/a;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lkik/core/interfaces/ah;
-
-    invoke-interface {v0}, Lkik/core/interfaces/ah;->d()Lkik/core/datatypes/ac;
+    invoke-interface {v0}, Ldagger/a;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    iget-object v0, v0, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
+    check-cast v0, Lkik/core/interfaces/ag;
+
+    invoke-interface {v0}, Lkik/core/interfaces/ag;->d()Lkik/core/datatypes/ab;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lkik/core/datatypes/ab;->c:Ljava/lang/String;
 
     .line 641
     sget-object v1, Lkik/android/chat/fragment/AddressBookFindPeopleInviteFriendsFragment$6;->a:[I
@@ -1179,7 +1179,7 @@
     .line 572
     iget-object v0, p0, Lkik/android/chat/fragment/AddressBookFindPeopleInviteFriendsFragment;->v:Landroid/support/v7/widget/LinearLayoutManager;
 
-    invoke-virtual {v0}, Landroid/support/v7/widget/LinearLayoutManager;->k()I
+    invoke-virtual {v0}, Landroid/support/v7/widget/LinearLayoutManager;->j()I
 
     move-result v0
 
@@ -1190,7 +1190,7 @@
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v2, v1}, Landroid/support/v7/widget/LinearLayoutManager;->d(II)V
+    invoke-virtual {v0, v2, v1}, Landroid/support/v7/widget/LinearLayoutManager;->a(II)V
 
     .line 575
     :cond_1
@@ -1329,7 +1329,7 @@
 
     .prologue
     .line 672
-    const v0, 0x7f040083
+    const v0, 0x7f040085
 
     return v0
 .end method
@@ -1399,9 +1399,9 @@
 
     move-result-object v2
 
-    iget-object v0, p0, Lkik/android/chat/fragment/AddressBookFindPeopleInviteFriendsFragment;->h:La/a;
+    iget-object v0, p0, Lkik/android/chat/fragment/AddressBookFindPeopleInviteFriendsFragment;->h:Ldagger/a;
 
-    invoke-interface {v0}, La/a;->get()Ljava/lang/Object;
+    invoke-interface {v0}, Ldagger/a;->get()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -1626,7 +1626,7 @@
 
     iget-object v4, p0, Lkik/android/chat/fragment/AddressBookFindPeopleInviteFriendsFragment;->m:Lkik/android/chat/fragment/AddressbookFragmentBase$a;
 
-    invoke-virtual {v4}, Lkik/android/chat/fragment/AddressbookFragmentBase$a;->g_()Ljava/lang/String;
+    invoke-virtual {v4}, Lkik/android/chat/fragment/AddressbookFragmentBase$a;->h_()Ljava/lang/String;
 
     move-result-object v4
 
@@ -1649,7 +1649,7 @@
     .line 457
     iget-object v0, p0, Lkik/android/chat/fragment/AddressBookFindPeopleInviteFriendsFragment;->d:Lkik/android/chat/presentation/c;
 
-    invoke-interface {v0, p0}, Lkik/android/chat/presentation/c;->a(Lkik/core/interfaces/aj;)V
+    invoke-interface {v0, p0}, Lkik/android/chat/presentation/c;->a(Lkik/core/interfaces/ai;)V
 
     .line 458
     const v0, 0x7f04001f

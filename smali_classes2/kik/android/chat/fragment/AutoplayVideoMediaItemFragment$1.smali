@@ -53,7 +53,7 @@
 
     aput-object v1, v0, v2
 
-    invoke-static {v0}, Lkik/android/util/ca;->g([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->g([Landroid/view/View;)V
 
     .line 36
     iget-object v0, p0, Lkik/android/chat/fragment/AutoplayVideoMediaItemFragment$1;->a:Lkik/android/chat/fragment/AutoplayVideoMediaItemFragment;
@@ -81,7 +81,7 @@
 
     aput-object v1, v0, v2
 
-    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
     .line 41
     iget-object v0, p0, Lkik/android/chat/fragment/AutoplayVideoMediaItemFragment$1;->a:Lkik/android/chat/fragment/AutoplayVideoMediaItemFragment;

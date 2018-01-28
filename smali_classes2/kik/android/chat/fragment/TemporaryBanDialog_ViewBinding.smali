@@ -22,7 +22,7 @@
     iput-object p1, p0, Lkik/android/chat/fragment/TemporaryBanDialog_ViewBinding;->a:Lkik/android/chat/fragment/TemporaryBanDialog;
 
     .line 23
-    const v0, 0x7f1003fe
+    const v0, 0x7f1003f9
 
     const-string v1, "field \'_title\'"
 
@@ -37,7 +37,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/TemporaryBanDialog;->_title:Lkik/android/widget/RobotoTextView;
 
     .line 24
-    const v0, 0x7f1003ff
+    const v0, 0x7f1003fa
 
     const-string v1, "field \'_body\'"
 
@@ -52,7 +52,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/TemporaryBanDialog;->_body:Lkik/android/widget/RobotoTextView;
 
     .line 25
-    const v0, 0x7f100401
+    const v0, 0x7f1003fc
 
     const-string v1, "field \'_timerText\'"
 
@@ -67,7 +67,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/TemporaryBanDialog;->_timerText:Lkik/android/widget/RobotoTextView;
 
     .line 26
-    const v0, 0x7f10040a
+    const v0, 0x7f100405
 
     const-string v1, "field \'_button\'"
 
@@ -82,7 +82,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/TemporaryBanDialog;->_button:Landroid/widget/Button;
 
     .line 27
-    const v0, 0x7f100402
+    const v0, 0x7f1003fd
 
     const-string v1, "field \'_dayCount\'"
 
@@ -97,7 +97,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/TemporaryBanDialog;->_dayCount:Lkik/android/widget/RobotoTextView;
 
     .line 28
-    const v0, 0x7f100403
+    const v0, 0x7f1003fe
 
     const-string v1, "field \'_dayLetter\'"
 
@@ -112,7 +112,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/TemporaryBanDialog;->_dayLetter:Lkik/android/widget/RobotoTextView;
 
     .line 29
-    const v0, 0x7f100404
+    const v0, 0x7f1003ff
 
     const-string v1, "field \'_hourCount\'"
 
@@ -127,7 +127,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/TemporaryBanDialog;->_hourCount:Lkik/android/widget/RobotoTextView;
 
     .line 30
-    const v0, 0x7f100406
+    const v0, 0x7f100401
 
     const-string v1, "field \'_minCount\'"
 
@@ -142,7 +142,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/TemporaryBanDialog;->_minCount:Lkik/android/widget/RobotoTextView;
 
     .line 31
-    const v0, 0x7f100408
+    const v0, 0x7f100403
 
     const-string v1, "field \'_secCount\'"
 
@@ -157,7 +157,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/TemporaryBanDialog;->_secCount:Lkik/android/widget/RobotoTextView;
 
     .line 32
-    const v0, 0x7f100400
+    const v0, 0x7f1003fb
 
     const-string v1, "field \'_countdownButtonLayout\'"
 

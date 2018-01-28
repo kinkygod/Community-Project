@@ -46,9 +46,9 @@ message GroupRosterEntry {
     repeated GroupMember members = 14 [(kik.validation.field_validation) = {
         mandatory: false
         min_repetitions: 0
-        // NOTE: Group sizes can be 50 or 75 at the present time, but MAY be subject to further increase beyond 
-        // 75 members in the future. Clients MUST NOT validate against this limit
-        max_repetitions: 90 // (Sanity bound; there are some rare cases where group size becomes larger than 75)
+        // NOTE: Group sizes can be 50 or 100 at the present time, but MAY be subject to further increase beyond 
+        // 100 members in the future. Clients MUST NOT validate against this limit
+        max_repetitions: 150 // (Sanity bound; there are some rare cases where group size becomes larger than 100)
     }];
 
     // Optional banned member list
@@ -125,6 +125,8 @@ message GroupMember {
     bool is_super_admin = 4;
 
     bool is_inactive = 5;
+
+    bool is_bot = 6;
 }
 
 //

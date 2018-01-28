@@ -49,7 +49,7 @@
 
 .field private f:Lkik/android/chat/presentation/e;
 
-.field private g:Lkik/android/chat/view/text/b;
+.field private g:Lkik/android/chat/view/text/c;
 
 
 # direct methods
@@ -65,7 +65,7 @@
 
     invoke-direct {v0, p0}, Lkik/android/addressbook/AddressBookOptOutPrivacyOptionsDialog$1;-><init>(Lkik/android/addressbook/AddressBookOptOutPrivacyOptionsDialog;)V
 
-    iput-object v0, p0, Lkik/android/addressbook/AddressBookOptOutPrivacyOptionsDialog;->g:Lkik/android/chat/view/text/b;
+    iput-object v0, p0, Lkik/android/addressbook/AddressBookOptOutPrivacyOptionsDialog;->g:Lkik/android/chat/view/text/c;
 
     .line 53
     iput-object p1, p0, Lkik/android/addressbook/AddressBookOptOutPrivacyOptionsDialog;->a:Landroid/content/Context;
@@ -129,7 +129,7 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
     .line 72
     iget-object v0, p0, Lkik/android/addressbook/AddressBookOptOutPrivacyOptionsDialog;->c:Lcom/kik/android/Mixpanel;
@@ -178,7 +178,7 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ca;->g([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->g([Landroid/view/View;)V
 
     .line 80
     return-void
@@ -223,7 +223,7 @@
     .line 98
     iget-object v0, p0, Lkik/android/addressbook/AddressBookOptOutPrivacyOptionsDialog;->_uploadContactInfoCheckboxContainer:Landroid/view/ViewGroup;
 
-    invoke-static {v0}, Lkik/android/util/ca;->b(Landroid/view/View;)Z
+    invoke-static {v0}, Lkik/android/util/cb;->b(Landroid/view/View;)Z
 
     move-result v0
 
@@ -432,7 +432,7 @@
     move-result v0
 
     .line 180
-    iget-object v3, p0, Lkik/android/addressbook/AddressBookOptOutPrivacyOptionsDialog;->g:Lkik/android/chat/view/text/b;
+    iget-object v3, p0, Lkik/android/addressbook/AddressBookOptOutPrivacyOptionsDialog;->g:Lkik/android/chat/view/text/c;
 
     const/16 v4, 0x21
 

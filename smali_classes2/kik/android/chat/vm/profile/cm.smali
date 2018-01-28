@@ -1,53 +1,57 @@
-.class public final Lkik/android/chat/vm/profile/cm;
+.class final synthetic Lkik/android/chat/vm/profile/cm;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/vm/profile/ct;
+.implements Lrx/functions/b;
 
 
 # instance fields
-.field private final a:Lkik/android/chat/fragment/ScanCodeTabFragment$OpenTypes;
-
-.field private b:Lcom/kik/core/network/xmpp/jid/a;
+.field private final a:Lkik/android/chat/vm/profile/ca;
 
 
 # direct methods
-.method public constructor <init>(Lcom/kik/core/network/xmpp/jid/a;Lkik/android/chat/fragment/ScanCodeTabFragment$OpenTypes;)V
+.method private constructor <init>(Lkik/android/chat/vm/profile/ca;)V
     .locals 0
 
-    .prologue
-    .line 17
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 18
-    iput-object p1, p0, Lkik/android/chat/vm/profile/cm;->b:Lcom/kik/core/network/xmpp/jid/a;
+    iput-object p1, p0, Lkik/android/chat/vm/profile/cm;->a:Lkik/android/chat/vm/profile/ca;
 
-    .line 19
-    iput-object p2, p0, Lkik/android/chat/vm/profile/cm;->a:Lkik/android/chat/fragment/ScanCodeTabFragment$OpenTypes;
-
-    .line 20
     return-void
+.end method
+
+.method public static a(Lkik/android/chat/vm/profile/ca;)Lrx/functions/b;
+    .locals 1
+
+    new-instance v0, Lkik/android/chat/vm/profile/cm;
+
+    invoke-direct {v0, p0}, Lkik/android/chat/vm/profile/cm;-><init>(Lkik/android/chat/vm/profile/ca;)V
+
+    return-object v0
 .end method
 
 
 # virtual methods
-.method public final a()Lcom/kik/core/network/xmpp/jid/a;
-    .locals 1
+.method public final call(Ljava/lang/Object;)V
+    .locals 3
 
     .prologue
-    .line 25
-    iget-object v0, p0, Lkik/android/chat/vm/profile/cm;->b:Lcom/kik/core/network/xmpp/jid/a;
+    .line 0
+    iget-object v0, p0, Lkik/android/chat/vm/profile/cm;->a:Lkik/android/chat/vm/profile/ca;
 
-    return-object v0
-.end method
+    check-cast p1, Lkik/core/chat/profile/ad;
 
-.method public final b()Lkik/android/chat/fragment/ScanCodeTabFragment$OpenTypes;
-    .locals 1
+    .line 1138
+    iget-object v1, v0, Lkik/android/chat/vm/profile/ca;->k:Lcom/kik/core/domain/a/b;
 
-    .prologue
-    .line 31
-    iget-object v0, p0, Lkik/android/chat/vm/profile/cm;->a:Lkik/android/chat/fragment/ScanCodeTabFragment$OpenTypes;
+    iget v2, p1, Lkik/core/chat/profile/ad;->b:I
 
-    return-object v0
+    invoke-virtual {v0}, Lkik/android/chat/vm/profile/ca;->o()Lcom/kik/core/network/xmpp/jid/a;
+
+    move-result-object v0
+
+    invoke-interface {v1, v2, v0}, Lcom/kik/core/domain/a/b;->a(ILcom/kik/core/network/xmpp/jid/a;)Lrx/b;
+
+    .line 0
+    return-void
 .end method

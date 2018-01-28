@@ -36,7 +36,7 @@
     .locals 0
 
     .prologue
-    .line 179
+    .line 168
     iput-object p1, p0, Lkik/android/KikNotificationHandler$2;->a:Lkik/android/KikNotificationHandler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -50,14 +50,14 @@
     .locals 2
 
     .prologue
-    .line 179
-    .line 1184
+    .line 168
+    .line 1173
     iget-object v0, p0, Lkik/android/KikNotificationHandler$2;->a:Lkik/android/KikNotificationHandler;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lkik/android/KikNotificationHandler;->a(Z)V
 
-    .line 179
+    .line 168
     return-void
 .end method

@@ -9,37 +9,37 @@
 # instance fields
 .field protected _lightningButton:Landroid/widget/ImageView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f10017a
+        value = 0x7f10017b
     .end annotation
 .end field
 
 .field protected _retakeButton:Landroid/view/View;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f100177
+        value = 0x7f100178
     .end annotation
 .end field
 
 .field protected _shutterButton:Lkik/android/widget/ArcImageView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f100178
+        value = 0x7f100179
     .end annotation
 .end field
 
 .field protected _swapCameraButton:Landroid/widget/ImageView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f10017b
+        value = 0x7f10017c
     .end annotation
 .end field
 
 .field protected _usePhotoButton:Lkik/android/widget/RobotoTextView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f100179
+        value = 0x7f10017a
     .end annotation
 .end field
 
 .field protected _videoTime:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f10017c
+        value = 0x7f10017d
     .end annotation
 .end field
 
@@ -146,7 +146,7 @@
     const/4 v2, 0x1
 
     .line 128
-    const v0, 0x7f040041
+    const v0, 0x7f040042
 
     invoke-static {p1, v0, p0}, Lkik/android/chat/view/CameraIconBarViewImpl;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -253,7 +253,7 @@
     const/4 v3, 0x1
 
     .line 134
-    const v0, 0x7f02035a
+    const v0, 0x7f02033e
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setBackgroundResource(I)V
 
@@ -303,7 +303,7 @@
     :cond_0
     iget-object v0, p0, Lkik/android/chat/view/CameraIconBarViewImpl;->_shutterButton:Lkik/android/widget/ArcImageView;
 
-    invoke-static {v0}, Lkik/android/util/ca;->b(Landroid/view/View;)Z
+    invoke-static {v0}, Lkik/android/util/cb;->b(Landroid/view/View;)Z
 
     move-result v0
 
@@ -421,7 +421,7 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
     .line 167
     return-void
@@ -623,7 +623,7 @@
     .line 175
     iget-object v0, p0, Lkik/android/chat/view/CameraIconBarViewImpl;->_lightningButton:Landroid/widget/ImageView;
 
-    const v1, 0x7f020208
+    const v1, 0x7f0201f0
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -644,7 +644,7 @@
     .line 178
     iget-object v0, p0, Lkik/android/chat/view/CameraIconBarViewImpl;->_lightningButton:Landroid/widget/ImageView;
 
-    const v1, 0x7f020209
+    const v1, 0x7f0201f1
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -663,7 +663,7 @@
     .line 181
     iget-object v0, p0, Lkik/android/chat/view/CameraIconBarViewImpl;->_lightningButton:Landroid/widget/ImageView;
 
-    const v1, 0x7f02020a
+    const v1, 0x7f0201f2
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -681,7 +681,7 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ca;->g([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->g([Landroid/view/View;)V
 
     goto :goto_0
 .end method
@@ -707,7 +707,7 @@
     .line 239
     iget-object v0, p0, Lkik/android/chat/view/CameraIconBarViewImpl;->_swapCameraButton:Landroid/widget/ImageView;
 
-    const v1, 0x7f0201e7
+    const v1, 0x7f0201cf
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -723,7 +723,7 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ca;->b([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->b([Landroid/view/View;)V
 
     .line 246
     return-void
@@ -732,7 +732,7 @@
     :cond_0
     iget-object v0, p0, Lkik/android/chat/view/CameraIconBarViewImpl;->_swapCameraButton:Landroid/widget/ImageView;
 
-    const v1, 0x7f0201e5
+    const v1, 0x7f0201cd
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -754,7 +754,7 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ca;->g([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->g([Landroid/view/View;)V
 
     .line 192
     return-void
@@ -775,7 +775,7 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
     .line 198
     return-void
@@ -796,7 +796,7 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ca;->g([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->g([Landroid/view/View;)V
 
     .line 204
     return-void
@@ -823,7 +823,7 @@
 
     aput-object v1, v0, v3
 
-    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
     .line 210
     const/4 v0, 0x4
@@ -848,7 +848,7 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ca;->g([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->g([Landroid/view/View;)V
 
     .line 211
     iget-object v0, p0, Lkik/android/chat/view/CameraIconBarViewImpl;->_shutterButton:Lkik/android/widget/ArcImageView;
@@ -883,7 +883,7 @@
 
     aput-object v1, v0, v2
 
-    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
     .line 219
     const/4 v0, 0x3
@@ -904,7 +904,7 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ca;->g([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->g([Landroid/view/View;)V
 
     .line 221
     return-void
@@ -931,7 +931,7 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ca;->a([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->a([Landroid/view/View;)V
 
     .line 227
     return-void
@@ -958,7 +958,7 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ca;->b([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->b([Landroid/view/View;)V
 
     .line 233
     return-void
@@ -979,7 +979,7 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ca;->a([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->a([Landroid/view/View;)V
 
     .line 252
     return-void
@@ -1000,7 +1000,7 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
     .line 280
     return-void
@@ -1034,7 +1034,7 @@
 
     aput-object p0, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ca;->g([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->g([Landroid/view/View;)V
 
     .line 299
     return-void

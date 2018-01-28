@@ -25,15 +25,15 @@
     .locals 1
 
     .prologue
-    .line 517
+    .line 513
     invoke-direct {p0}, Lcom/kik/ui/fragment/FragmentBase$FragmentBundle;-><init>()V
 
-    .line 519
+    .line 515
     const-string v0, "standAlone"
 
     iput-object v0, p0, Lkik/android/chat/fragment/UserProfileFragment$a;->a:Ljava/lang/String;
 
-    .line 520
+    .line 516
     const-string v0, "showEmojiStatusToolTip"
 
     iput-object v0, p0, Lkik/android/chat/fragment/UserProfileFragment$a;->b:Ljava/lang/String;
@@ -47,12 +47,12 @@
     .locals 1
 
     .prologue
-    .line 540
+    .line 536
     iget-object v0, p0, Lkik/android/chat/fragment/UserProfileFragment$a;->b:Ljava/lang/String;
 
     invoke-virtual {p0, v0, p1}, Lkik/android/chat/fragment/UserProfileFragment$a;->b(Ljava/lang/String;Z)V
 
-    .line 541
+    .line 537
     return-object p0
 .end method
 
@@ -60,14 +60,14 @@
     .locals 2
 
     .prologue
-    .line 524
+    .line 520
     iget-object v0, p0, Lkik/android/chat/fragment/UserProfileFragment$a;->a:Ljava/lang/String;
 
     const/4 v1, 0x1
 
     invoke-virtual {p0, v0, v1}, Lkik/android/chat/fragment/UserProfileFragment$a;->b(Ljava/lang/String;Z)V
 
-    .line 525
+    .line 521
     return-object p0
 .end method
 
@@ -75,7 +75,7 @@
     .locals 2
 
     .prologue
-    .line 530
+    .line 526
     iget-object v0, p0, Lkik/android/chat/fragment/UserProfileFragment$a;->a:Ljava/lang/String;
 
     const/4 v1, 0x0
@@ -95,7 +95,7 @@
     .locals 2
 
     .prologue
-    .line 546
+    .line 542
     iget-object v0, p0, Lkik/android/chat/fragment/UserProfileFragment$a;->b:Ljava/lang/String;
 
     const/4 v1, 0x0

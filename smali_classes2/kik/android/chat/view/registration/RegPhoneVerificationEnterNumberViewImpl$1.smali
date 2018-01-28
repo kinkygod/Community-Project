@@ -1,5 +1,5 @@
 .class final Lkik/android/chat/view/registration/RegPhoneVerificationEnterNumberViewImpl$1;
-.super Lcom/kik/util/cx;
+.super Lcom/kik/util/dc;
 .source "SourceFile"
 
 
@@ -26,7 +26,7 @@
     .line 40
     iput-object p1, p0, Lkik/android/chat/view/registration/RegPhoneVerificationEnterNumberViewImpl$1;->a:Lkik/android/chat/view/registration/RegPhoneVerificationEnterNumberViewImpl;
 
-    invoke-direct {p0}, Lcom/kik/util/cx;-><init>()V
+    invoke-direct {p0}, Lcom/kik/util/dc;-><init>()V
 
     return-void
 .end method

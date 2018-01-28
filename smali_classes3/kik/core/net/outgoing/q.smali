@@ -14,7 +14,7 @@
             ")",
             "Ljava/util/List",
             "<",
-            "Lkik/core/datatypes/ad;",
+            "Lkik/core/datatypes/ac;",
             ">;"
         }
     .end annotation
@@ -62,7 +62,7 @@
     move-result-object v1
 
     .line 26
-    invoke-static {p0, v1, p1}, Lkik/core/net/outgoing/q;->a(Ljava/lang/String;Ljava/lang/String;Lkik/core/net/g;)Lkik/core/datatypes/ad;
+    invoke-static {p0, v1, p1}, Lkik/core/net/outgoing/q;->a(Ljava/lang/String;Ljava/lang/String;Lkik/core/net/g;)Lkik/core/datatypes/ac;
 
     move-result-object v1
 
@@ -79,7 +79,7 @@
     return-object v0
 .end method
 
-.method public static a(Ljava/lang/String;Ljava/lang/String;Lkik/core/net/g;)Lkik/core/datatypes/ad;
+.method public static a(Ljava/lang/String;Ljava/lang/String;Lkik/core/net/g;)Lkik/core/datatypes/ac;
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -102,9 +102,9 @@
     move-result-object v0
 
     .line 38
-    new-instance v1, Lkik/core/datatypes/ad;
+    new-instance v1, Lkik/core/datatypes/ac;
 
-    invoke-direct {v1, p0, p1, v0}, Lkik/core/datatypes/ad;-><init>(Ljava/lang/String;Ljava/lang/String;[B)V
+    invoke-direct {v1, p0, p1, v0}, Lkik/core/datatypes/ac;-><init>(Ljava/lang/String;Ljava/lang/String;[B)V
 
     return-object v1
 .end method

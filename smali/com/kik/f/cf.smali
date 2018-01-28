@@ -4,36 +4,38 @@
 
 
 # instance fields
-.field private final a:Lkik/android/challenge/a;
+.field private a:Lkik/core/e/f;
 
 
 # direct methods
-.method public constructor <init>(Lkik/core/interfaces/ICommunication;Lkik/android/chat/KikApplication;Lkik/core/interfaces/ae;Lkik/core/interfaces/k;)V
-    .locals 1
+.method public constructor <init>(Lkik/core/e/f;)V
+    .locals 0
 
     .prologue
-    .line 20
+    .line 21
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 21
-    new-instance v0, Lkik/android/challenge/a;
-
-    invoke-direct {v0, p1, p2, p3, p4}, Lkik/android/challenge/a;-><init>(Lkik/core/interfaces/ICommunication;Lkik/android/chat/KikApplication;Lkik/core/interfaces/ae;Lkik/core/interfaces/k;)V
-
-    iput-object v0, p0, Lcom/kik/f/cf;->a:Lkik/android/challenge/a;
-
     .line 22
+    iput-object p1, p0, Lcom/kik/f/cf;->a:Lkik/core/e/f;
+
+    .line 23
     return-void
 .end method
 
 
 # virtual methods
-.method final a()Lkik/android/challenge/a;
-    .locals 1
+.method final a()Lkik/core/e/c;
+    .locals 2
+    .annotation runtime Ljavax/inject/Singleton;
+    .end annotation
 
     .prologue
-    .line 27
-    iget-object v0, p0, Lcom/kik/f/cf;->a:Lkik/android/challenge/a;
+    .line 29
+    new-instance v0, Lkik/core/e/h;
+
+    iget-object v1, p0, Lcom/kik/f/cf;->a:Lkik/core/e/f;
+
+    invoke-direct {v0, v1}, Lkik/core/e/h;-><init>(Lkik/core/e/f;)V
 
     return-object v0
 .end method

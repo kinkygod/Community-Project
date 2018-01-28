@@ -43,9 +43,9 @@
 .method public final call(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    check-cast p1, Lkik/android/f/h;
+    check-cast p1, Lkik/android/f/g;
 
-    invoke-interface {p1}, Lkik/android/f/h;->b()I
+    invoke-interface {p1}, Lkik/android/f/g;->b()I
 
     move-result v0
 

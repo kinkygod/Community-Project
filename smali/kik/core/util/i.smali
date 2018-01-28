@@ -127,7 +127,7 @@
     goto :goto_0
 .end method
 
-.method public static a(Ljava/util/List;Lkik/core/interfaces/w;)Ljava/util/List;
+.method public static a(Ljava/util/List;Lkik/core/interfaces/v;)Ljava/util/List;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -136,7 +136,7 @@
             "<",
             "Ljava/lang/String;",
             ">;",
-            "Lkik/core/interfaces/w;",
+            "Lkik/core/interfaces/v;",
             ")",
             "Ljava/util/List",
             "<",
@@ -159,7 +159,7 @@
     :cond_0
     new-instance v0, Lkik/core/util/i$1;
 
-    invoke-direct {v0, p1}, Lkik/core/util/i$1;-><init>(Lkik/core/interfaces/w;)V
+    invoke-direct {v0, p1}, Lkik/core/util/i$1;-><init>(Lkik/core/interfaces/v;)V
 
     invoke-static {p0, v0}, Lcom/google/common/collect/Lists;->a(Ljava/util/List;Lcom/google/common/base/Function;)Ljava/util/List;
 
@@ -355,7 +355,7 @@
     goto :goto_1
 .end method
 
-.method public static b(Ljava/util/List;Lkik/core/interfaces/w;)Ljava/util/List;
+.method public static b(Ljava/util/List;Lkik/core/interfaces/v;)Ljava/util/List;
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -364,7 +364,7 @@
             "<",
             "Lkik/core/datatypes/l;",
             ">;",
-            "Lkik/core/interfaces/w;",
+            "Lkik/core/interfaces/v;",
             ")",
             "Ljava/util/List",
             "<",
@@ -425,7 +425,7 @@
 
     move-result-object v3
 
-    invoke-interface {p1, v3}, Lkik/core/interfaces/w;->c(Ljava/lang/String;)Z
+    invoke-interface {p1, v3}, Lkik/core/interfaces/v;->c(Ljava/lang/String;)Z
 
     move-result v3
 

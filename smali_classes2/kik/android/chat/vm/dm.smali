@@ -1,68 +1,45 @@
-.class public final Lkik/android/chat/vm/dm;
+.class final synthetic Lkik/android/chat/vm/dm;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/vm/bh;
+.implements Lrx/functions/b;
 
 
 # instance fields
-.field private final a:Z
-
-.field private final b:Ljava/lang/String;
+.field private final a:Lkik/android/chat/vm/dl;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method private constructor <init>(Lkik/android/chat/vm/dl;)V
+    .locals 0
 
-    .prologue
-    .line 14
-    const/4 v0, 0x0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    invoke-direct {p0, v0}, Lkik/android/chat/vm/dm;-><init>(Ljava/lang/String;)V
+    iput-object p1, p0, Lkik/android/chat/vm/dm;->a:Lkik/android/chat/vm/dl;
 
-    .line 15
     return-void
 .end method
 
-.method public constructor <init>(Ljava/lang/String;)V
+.method public static a(Lkik/android/chat/vm/dl;)Lrx/functions/b;
     .locals 1
 
-    .prologue
-    .line 18
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Lkik/android/chat/vm/dm;
 
-    .line 19
-    const/4 v0, 0x1
+    invoke-direct {v0, p0}, Lkik/android/chat/vm/dm;-><init>(Lkik/android/chat/vm/dl;)V
 
-    iput-boolean v0, p0, Lkik/android/chat/vm/dm;->a:Z
-
-    .line 20
-    iput-object p1, p0, Lkik/android/chat/vm/dm;->b:Ljava/lang/String;
-
-    .line 21
-    return-void
+    return-object v0
 .end method
 
 
 # virtual methods
-.method public final a()Z
+.method public final call(Ljava/lang/Object;)V
     .locals 1
 
-    .prologue
-    .line 26
-    iget-boolean v0, p0, Lkik/android/chat/vm/dm;->a:Z
+    iget-object v0, p0, Lkik/android/chat/vm/dm;->a:Lkik/android/chat/vm/dl;
 
-    return v0
-.end method
+    check-cast p1, Lkik/core/chat/profile/ag;
 
-.method public final b()Ljava/lang/String;
-    .locals 1
+    invoke-static {v0, p1}, Lkik/android/chat/vm/dl;->a(Lkik/android/chat/vm/dl;Lkik/core/chat/profile/ag;)V
 
-    .prologue
-    .line 32
-    iget-object v0, p0, Lkik/android/chat/vm/dm;->b:Ljava/lang/String;
-
-    return-object v0
+    return-void
 .end method

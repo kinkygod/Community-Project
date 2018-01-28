@@ -16,21 +16,21 @@
 
 
 # instance fields
-.field private H:Z
-
 .field private I:Z
 
 .field private J:Z
 
 .field private K:Z
 
-.field private L:Lkik/core/datatypes/messageExtensions/ContentMessage;
+.field private L:Z
 
-.field private M:J
+.field private M:Lkik/core/datatypes/messageExtensions/ContentMessage;
 
-.field private N:Ljava/lang/String;
+.field private N:J
 
-.field private final O:Lkik/android/chat/fragment/KikComposeFragment$a;
+.field private O:Ljava/lang/String;
+
+.field private final P:Lkik/android/chat/fragment/KikComposeFragment$a;
 
 
 # direct methods
@@ -56,25 +56,25 @@
     invoke-direct {p0}, Lkik/android/chat/fragment/KikDefaultContactsListFragment;-><init>()V
 
     .line 31
-    iput-boolean v0, p0, Lkik/android/chat/fragment/KikComposeFragment;->H:Z
-
-    .line 32
     iput-boolean v0, p0, Lkik/android/chat/fragment/KikComposeFragment;->I:Z
 
-    .line 33
+    .line 32
     iput-boolean v0, p0, Lkik/android/chat/fragment/KikComposeFragment;->J:Z
+
+    .line 33
+    iput-boolean v0, p0, Lkik/android/chat/fragment/KikComposeFragment;->K:Z
 
     .line 41
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lkik/android/chat/fragment/KikComposeFragment;->K:Z
+    iput-boolean v0, p0, Lkik/android/chat/fragment/KikComposeFragment;->L:Z
 
     .line 46
     new-instance v0, Lkik/android/chat/fragment/KikComposeFragment$a;
 
     invoke-direct {v0}, Lkik/android/chat/fragment/KikComposeFragment$a;-><init>()V
 
-    iput-object v0, p0, Lkik/android/chat/fragment/KikComposeFragment;->O:Lkik/android/chat/fragment/KikComposeFragment$a;
+    iput-object v0, p0, Lkik/android/chat/fragment/KikComposeFragment;->P:Lkik/android/chat/fragment/KikComposeFragment$a;
 
     return-void
 .end method
@@ -84,11 +84,11 @@
 
     .prologue
     .line 217
-    iget-boolean v0, p0, Lkik/android/chat/fragment/KikComposeFragment;->H:Z
+    iget-boolean v0, p0, Lkik/android/chat/fragment/KikComposeFragment;->I:Z
 
     if-nez v0, :cond_0
 
-    iget-boolean v0, p0, Lkik/android/chat/fragment/KikComposeFragment;->I:Z
+    iget-boolean v0, p0, Lkik/android/chat/fragment/KikComposeFragment;->J:Z
 
     if-eqz v0, :cond_1
 
@@ -230,7 +230,7 @@
 
     .prologue
     .line 180
-    iget-boolean v0, p0, Lkik/android/chat/fragment/KikComposeFragment;->H:Z
+    iget-boolean v0, p0, Lkik/android/chat/fragment/KikComposeFragment;->I:Z
 
     if-eqz v0, :cond_0
 
@@ -252,7 +252,7 @@
 
     .prologue
     .line 164
-    iget-boolean v0, p0, Lkik/android/chat/fragment/KikComposeFragment;->H:Z
+    iget-boolean v0, p0, Lkik/android/chat/fragment/KikComposeFragment;->I:Z
 
     if-eqz v0, :cond_0
 
@@ -276,7 +276,7 @@
     .line 189
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lkik/android/chat/fragment/KikComposeFragment;->J:Z
+    iput-boolean v0, p0, Lkik/android/chat/fragment/KikComposeFragment;->K:Z
 
     .line 190
     invoke-super {p0}, Lkik/android/chat/fragment/KikDefaultContactsListFragment;->handleBackPress()Z
@@ -397,7 +397,7 @@
     invoke-super {p0, p1}, Lkik/android/chat/fragment/KikDefaultContactsListFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 1143
-    iget-object v0, p0, Lkik/android/chat/fragment/KikComposeFragment;->O:Lkik/android/chat/fragment/KikComposeFragment$a;
+    iget-object v0, p0, Lkik/android/chat/fragment/KikComposeFragment;->P:Lkik/android/chat/fragment/KikComposeFragment$a;
 
     invoke-virtual {p0}, Lkik/android/chat/fragment/KikComposeFragment;->getArguments()Landroid/os/Bundle;
 
@@ -406,22 +406,22 @@
     invoke-virtual {v0, v1}, Lkik/android/chat/fragment/KikComposeFragment$a;->a(Landroid/os/Bundle;)V
 
     .line 1145
-    iget-object v0, p0, Lkik/android/chat/fragment/KikComposeFragment;->O:Lkik/android/chat/fragment/KikComposeFragment$a;
+    iget-object v0, p0, Lkik/android/chat/fragment/KikComposeFragment;->P:Lkik/android/chat/fragment/KikComposeFragment$a;
 
     invoke-static {v0}, Lkik/android/chat/fragment/KikComposeFragment$a;->a(Lkik/android/chat/fragment/KikComposeFragment$a;)Z
 
     move-result v0
 
-    iput-boolean v0, p0, Lkik/android/chat/fragment/KikComposeFragment;->H:Z
+    iput-boolean v0, p0, Lkik/android/chat/fragment/KikComposeFragment;->I:Z
 
     .line 1146
-    iget-object v0, p0, Lkik/android/chat/fragment/KikComposeFragment;->O:Lkik/android/chat/fragment/KikComposeFragment$a;
+    iget-object v0, p0, Lkik/android/chat/fragment/KikComposeFragment;->P:Lkik/android/chat/fragment/KikComposeFragment$a;
 
     invoke-static {v0}, Lkik/android/chat/fragment/KikComposeFragment$a;->b(Lkik/android/chat/fragment/KikComposeFragment$a;)Z
 
     move-result v0
 
-    iput-boolean v0, p0, Lkik/android/chat/fragment/KikComposeFragment;->I:Z
+    iput-boolean v0, p0, Lkik/android/chat/fragment/KikComposeFragment;->J:Z
 
     .line 101
     return-void
@@ -437,7 +437,7 @@
     move-result-object v0
 
     .line 114
-    iget-boolean v1, p0, Lkik/android/chat/fragment/KikComposeFragment;->H:Z
+    iget-boolean v1, p0, Lkik/android/chat/fragment/KikComposeFragment;->I:Z
 
     if-eqz v1, :cond_0
 
@@ -461,7 +461,7 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lkik/android/chat/fragment/KikComposeFragment;->L:Lkik/core/datatypes/messageExtensions/ContentMessage;
+    iput-object v1, p0, Lkik/android/chat/fragment/KikComposeFragment;->M:Lkik/core/datatypes/messageExtensions/ContentMessage;
 
     .line 121
     invoke-static {}, Lkik/android/internal/platform/PlatformHelper;->a()Lkik/android/internal/platform/PlatformHelper;
@@ -472,7 +472,7 @@
 
     move-result-wide v2
 
-    iput-wide v2, p0, Lkik/android/chat/fragment/KikComposeFragment;->M:J
+    iput-wide v2, p0, Lkik/android/chat/fragment/KikComposeFragment;->N:J
 
     .line 122
     invoke-static {}, Lkik/android/internal/platform/PlatformHelper;->a()Lkik/android/internal/platform/PlatformHelper;
@@ -483,7 +483,7 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lkik/android/chat/fragment/KikComposeFragment;->N:Ljava/lang/String;
+    iput-object v1, p0, Lkik/android/chat/fragment/KikComposeFragment;->O:Ljava/lang/String;
 
     .line 123
     return-object v0
@@ -497,11 +497,11 @@
     invoke-super {p0}, Lkik/android/chat/fragment/KikDefaultContactsListFragment;->onDestroy()V
 
     .line 197
-    iget-boolean v0, p0, Lkik/android/chat/fragment/KikComposeFragment;->I:Z
+    iget-boolean v0, p0, Lkik/android/chat/fragment/KikComposeFragment;->J:Z
 
     if-eqz v0, :cond_0
 
-    iget-boolean v0, p0, Lkik/android/chat/fragment/KikComposeFragment;->J:Z
+    iget-boolean v0, p0, Lkik/android/chat/fragment/KikComposeFragment;->K:Z
 
     if-nez v0, :cond_0
 
@@ -510,9 +510,9 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lkik/android/chat/fragment/KikComposeFragment;->L:Lkik/core/datatypes/messageExtensions/ContentMessage;
+    iget-object v1, p0, Lkik/android/chat/fragment/KikComposeFragment;->M:Lkik/core/datatypes/messageExtensions/ContentMessage;
 
-    iget-wide v2, p0, Lkik/android/chat/fragment/KikComposeFragment;->M:J
+    iget-wide v2, p0, Lkik/android/chat/fragment/KikComposeFragment;->N:J
 
     invoke-virtual {v0, v1, v2, v3}, Lkik/android/internal/platform/PlatformHelper;->a(Lkik/core/datatypes/messageExtensions/ContentMessage;J)V
 
@@ -521,7 +521,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lkik/android/chat/fragment/KikComposeFragment;->N:Ljava/lang/String;
+    iget-object v1, p0, Lkik/android/chat/fragment/KikComposeFragment;->O:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Lkik/android/internal/platform/PlatformHelper;->b(Ljava/lang/String;)V
 
@@ -622,16 +622,16 @@
     goto :goto_0
 .end method
 
-.method protected screenOpenedEvent()Lcom/kik/metrics/b/s;
+.method protected screenOpenedEvent()Lcom/kik/metrics/b/t;
     .locals 1
 
     .prologue
     .line 107
-    invoke-static {}, Lcom/kik/metrics/b/u;->b()Lcom/kik/metrics/b/u$a;
+    invoke-static {}, Lcom/kik/metrics/b/v;->b()Lcom/kik/metrics/b/v$a;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/kik/metrics/b/u$a;->a()Lcom/kik/metrics/b/u;
+    invoke-virtual {v0}, Lcom/kik/metrics/b/v$a;->a()Lcom/kik/metrics/b/v;
 
     move-result-object v0
 

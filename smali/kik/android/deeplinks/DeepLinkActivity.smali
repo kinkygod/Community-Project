@@ -14,7 +14,7 @@
     .end annotation
 .end field
 
-.field protected c:Lkik/core/interfaces/ae;
+.field protected c:Lkik/core/interfaces/ad;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -174,9 +174,9 @@
 
     .line 76
     :cond_1
-    iget-object v0, p0, Lkik/android/deeplinks/DeepLinkActivity;->c:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/deeplinks/DeepLinkActivity;->c:Lkik/core/interfaces/ad;
 
-    invoke-static {v0}, Lkik/core/z;->a(Lkik/core/interfaces/ae;)Z
+    invoke-static {v0}, Lkik/core/z;->a(Lkik/core/interfaces/ad;)Z
 
     move-result v0
 

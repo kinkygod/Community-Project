@@ -3,16 +3,16 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/a/b;
+.implements Ldagger/internal/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/a/b",
+        "Ldagger/internal/b",
         "<",
-        "Lkik/core/manager/n;",
+        "Lkik/android/util/s;",
         ">;"
     }
 .end annotation
@@ -57,10 +57,10 @@
     .locals 1
 
     .prologue
-    .line 16
+    .line 17
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 17
+    .line 18
     sget-boolean v0, Lcom/kik/f/z;->a:Z
 
     if-nez v0, :cond_0
@@ -73,30 +73,30 @@
 
     throw v0
 
-    .line 18
+    .line 19
     :cond_0
     iput-object p1, p0, Lcom/kik/f/z;->b:Lcom/kik/f/y;
 
-    .line 19
+    .line 20
     return-void
 .end method
 
-.method public static a(Lcom/kik/f/y;)La/a/b;
+.method public static a(Lcom/kik/f/y;)Ldagger/internal/b;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lcom/kik/f/y;",
             ")",
-            "La/a/b",
+            "Ldagger/internal/b",
             "<",
-            "Lkik/core/manager/n;",
+            "Lkik/android/util/s;",
             ">;"
         }
     .end annotation
 
     .prologue
-    .line 29
+    .line 30
     new-instance v0, Lcom/kik/f/z;
 
     invoke-direct {v0, p0}, Lcom/kik/f/z;-><init>(Lcom/kik/f/y;)V
@@ -110,20 +110,23 @@
     .locals 2
 
     .prologue
-    .line 2018
-    new-instance v0, Lkik/core/manager/n;
-
-    invoke-direct {v0}, Lkik/core/manager/n;-><init>()V
-
+    .line 8
     .line 1024
-    const-string v1, "Cannot return null from a non-@Nullable @Provides method"
+    iget-object v0, p0, Lcom/kik/f/z;->b:Lcom/kik/f/y;
 
-    .line 1023
-    invoke-static {v0, v1}, La/a/c;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    .line 1025
+    invoke-virtual {v0}, Lcom/kik/f/y;->a()Lkik/android/util/s;
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/manager/n;
+    const-string v1, "Cannot return null from a non-@Nullable @Provides method"
+
+    .line 1024
+    invoke-static {v0, v1}, Ldagger/internal/c;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lkik/android/util/s;
 
     .line 8
     return-object v0

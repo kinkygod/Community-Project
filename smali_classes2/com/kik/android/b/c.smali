@@ -11,7 +11,7 @@
 
 .field private final b:Ljava/lang/String;
 
-.field private final c:Lkik/android/f/j;
+.field private final c:Lkik/android/f/i;
 
 .field private final d:Z
 
@@ -23,7 +23,7 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/graphics/drawable/Drawable;Ljava/lang/String;Ljava/lang/String;Lkik/android/f/j;IZZ)V
+.method public constructor <init>(Landroid/graphics/drawable/Drawable;Ljava/lang/String;Ljava/lang/String;Lkik/android/f/i;IZZ)V
     .locals 1
 
     .prologue
@@ -34,7 +34,7 @@
     iput-object p3, p0, Lcom/kik/android/b/c;->b:Ljava/lang/String;
 
     .line 34
-    iput-object p4, p0, Lcom/kik/android/b/c;->c:Lkik/android/f/j;
+    iput-object p4, p0, Lcom/kik/android/b/c;->c:Lkik/android/f/i;
 
     .line 35
     if-nez p6, :cond_0
@@ -70,7 +70,7 @@
 
     .prologue
     .line 54
-    iget-object v0, p0, Lcom/kik/android/b/c;->c:Lkik/android/f/j;
+    iget-object v0, p0, Lcom/kik/android/b/c;->c:Lkik/android/f/i;
 
     if-eqz v0, :cond_0
 
@@ -79,7 +79,7 @@
     if-eqz v0, :cond_0
 
     .line 57
-    iget-object v0, p0, Lcom/kik/android/b/c;->c:Lkik/android/f/j;
+    iget-object v0, p0, Lcom/kik/android/b/c;->c:Lkik/android/f/i;
 
     iget-object v1, p0, Lcom/kik/android/b/c;->f:Ljava/lang/String;
 
@@ -95,7 +95,7 @@
 
     invoke-direct {v4}, Landroid/os/Bundle;-><init>()V
 
-    invoke-interface {v0, v1, v2, v3}, Lkik/android/f/j;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-interface {v0, v1, v2, v3}, Lkik/android/f/i;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 59
     :cond_0
@@ -118,22 +118,22 @@
 
     .prologue
     .line 63
-    iget-object v0, p0, Lcom/kik/android/b/c;->c:Lkik/android/f/j;
+    iget-object v0, p0, Lcom/kik/android/b/c;->c:Lkik/android/f/i;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/kik/android/b/c;->c:Lkik/android/f/j;
+    iget-object v0, p0, Lcom/kik/android/b/c;->c:Lkik/android/f/i;
 
-    instance-of v0, v0, Lkik/android/f/k;
+    instance-of v0, v0, Lkik/android/f/j;
 
     if-eqz v0, :cond_0
 
     .line 64
-    iget-object v0, p0, Lcom/kik/android/b/c;->c:Lkik/android/f/j;
+    iget-object v0, p0, Lcom/kik/android/b/c;->c:Lkik/android/f/i;
 
-    check-cast v0, Lkik/android/f/k;
+    check-cast v0, Lkik/android/f/j;
 
-    invoke-interface {v0}, Lkik/android/f/k;->a()V
+    invoke-interface {v0}, Lkik/android/f/j;->a()V
 
     .line 66
     :cond_0

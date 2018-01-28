@@ -140,9 +140,9 @@
 
     iget-object v4, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl$1;->e:Lkik/android/chat/presentation/MediaTrayPresenterImpl;
 
-    iget-object v4, v4, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->i:Lkik/core/interfaces/w;
+    iget-object v4, v4, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->i:Lkik/core/interfaces/v;
 
-    invoke-static/range {v0 .. v5}, Lkik/core/datatypes/Message;->a(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Lkik/core/datatypes/Message$MessageSource;Lkik/core/interfaces/w;Ljava/lang/String;)Lkik/core/datatypes/Message;
+    invoke-static/range {v0 .. v5}, Lkik/core/datatypes/Message;->a(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Lkik/core/datatypes/Message$MessageSource;Lkik/core/interfaces/v;Ljava/lang/String;)Lkik/core/datatypes/Message;
 
     move-result-object v1
 

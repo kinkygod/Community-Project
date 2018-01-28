@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/android/chat/KikApplication;->C()V
+    value = Lkik/android/chat/KikApplication;->B()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -32,7 +32,7 @@
     .locals 0
 
     .prologue
-    .line 852
+    .line 853
     iput-object p1, p0, Lkik/android/chat/KikApplication$13;->a:Lkik/android/chat/KikApplication;
 
     invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
@@ -46,17 +46,17 @@
     .locals 1
 
     .prologue
-    .line 852
+    .line 853
     check-cast p1, Ljava/lang/Boolean;
 
-    .line 1856
+    .line 1857
     iget-object v0, p0, Lkik/android/chat/KikApplication$13;->a:Lkik/android/chat/KikApplication;
 
-    invoke-static {v0}, Lkik/android/chat/KikApplication;->p(Lkik/android/chat/KikApplication;)Lkik/core/interfaces/ae;
+    invoke-static {v0}, Lkik/android/chat/KikApplication;->p(Lkik/android/chat/KikApplication;)Lkik/core/interfaces/ad;
 
     move-result-object v0
 
-    invoke-static {v0}, Lkik/core/z;->a(Lkik/core/interfaces/ae;)Z
+    invoke-static {v0}, Lkik/core/z;->a(Lkik/core/interfaces/ad;)Z
 
     move-result v0
 
@@ -68,16 +68,16 @@
 
     if-eqz v0, :cond_0
 
-    .line 1857
+    .line 1858
     iget-object v0, p0, Lkik/android/chat/KikApplication$13;->a:Lkik/android/chat/KikApplication;
 
-    invoke-static {v0}, Lkik/android/chat/KikApplication;->p(Lkik/android/chat/KikApplication;)Lkik/core/interfaces/ae;
+    invoke-static {v0}, Lkik/android/chat/KikApplication;->p(Lkik/android/chat/KikApplication;)Lkik/core/interfaces/ad;
 
     move-result-object v0
 
-    invoke-static {v0}, Lkik/android/util/bg;->a(Lkik/core/interfaces/ae;)V
+    invoke-static {v0}, Lkik/android/util/bg;->a(Lkik/core/interfaces/ad;)V
 
-    .line 852
+    .line 853
     :cond_0
     return-void
 .end method

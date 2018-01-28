@@ -32,7 +32,7 @@
     .locals 0
 
     .prologue
-    .line 791
+    .line 802
     iput-object p1, p0, Lkik/core/profile/GroupManager$11;->a:Lkik/core/profile/GroupManager;
 
     invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
@@ -46,16 +46,16 @@
     .locals 1
 
     .prologue
-    .line 791
-    .line 1795
+    .line 802
+    .line 1806
     iget-object v0, p0, Lkik/core/profile/GroupManager$11;->a:Lkik/core/profile/GroupManager;
 
-    invoke-static {v0}, Lkik/core/profile/GroupManager;->b(Lkik/core/profile/GroupManager;)Lkik/core/interfaces/w;
+    invoke-static {v0}, Lkik/core/profile/GroupManager;->b(Lkik/core/profile/GroupManager;)Lkik/core/interfaces/v;
 
     move-result-object v0
 
-    invoke-interface {v0}, Lkik/core/interfaces/w;->q()V
+    invoke-interface {v0}, Lkik/core/interfaces/v;->p()V
 
-    .line 791
+    .line 802
     return-void
 .end method

@@ -354,7 +354,7 @@
     invoke-super {p0, p1, p2, p3}, Lkik/android/chat/fragment/KikScopedDialogFragment;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
 
     .line 60
-    const v0, 0x7f04009a
+    const v0, 0x7f040099
 
     const/4 v1, 0x0
 
@@ -386,11 +386,11 @@
 
     move-result-object v2
 
-    invoke-virtual {p0}, Lkik/android/widget/GalleryWidget;->getNavigator()Lkik/android/chat/vm/aw;
+    invoke-virtual {p0}, Lkik/android/widget/GalleryWidget;->getNavigator()Lkik/android/chat/vm/ay;
 
     move-result-object v3
 
-    invoke-virtual {v1, v2, v3}, Lkik/android/gallery/vm/k;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    invoke-virtual {v1, v2, v3}, Lkik/android/gallery/vm/k;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 65
     invoke-direct {p0}, Lkik/android/widget/GalleryWidget;->f()Lkik/android/gallery/vm/k;
@@ -455,7 +455,7 @@
     .line 126
     iget-object v0, p0, Lkik/android/widget/GalleryWidget;->d:Lkik/android/gallery/vm/k;
 
-    invoke-virtual {v0}, Lkik/android/gallery/vm/k;->aj_()V
+    invoke-virtual {v0}, Lkik/android/gallery/vm/k;->ak_()V
 
     .line 127
     iput-object v1, p0, Lkik/android/widget/GalleryWidget;->d:Lkik/android/gallery/vm/k;

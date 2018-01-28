@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/android/chat/vm/messaging/a;->m()Lrx/d;
+    value = Lkik/android/chat/vm/messaging/a;->n()Lrx/d;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -104,11 +104,11 @@
     if-eqz v1, :cond_1
 
     .line 1108
-    invoke-static {}, Lkik/android/chat/vm/messaging/a;->am()Lkik/android/util/bj;
+    invoke-static {}, Lkik/android/chat/vm/messaging/a;->an()Lkik/android/util/bj;
 
     move-result-object v1
 
-    const v2, 0x7f09052d
+    const v2, 0x7f090530
 
     new-array v3, v3, [Ljava/lang/Object;
 
@@ -127,11 +127,11 @@
     return-object v0
 
     :cond_1
-    invoke-static {}, Lkik/android/chat/vm/messaging/a;->am()Lkik/android/util/bj;
+    invoke-static {}, Lkik/android/chat/vm/messaging/a;->an()Lkik/android/util/bj;
 
     move-result-object v1
 
-    const v2, 0x7f09063c
+    const v2, 0x7f090644
 
     new-array v3, v3, [Ljava/lang/Object;
 

@@ -159,7 +159,7 @@
 
     .line 201
     :goto_1
-    invoke-static {v0}, Lcom/kik/util/co;->c(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/kik/util/ct;->c(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -247,7 +247,7 @@
 
     iget-object v2, p0, Lcom/kik/cards/web/usermedia/PhotoPlugin$a;->a:Ljava/io/File;
 
-    invoke-static {v0, v2}, Lkik/android/widget/cg;->a(Landroid/content/Context;Ljava/io/File;)V
+    invoke-static {v0, v2}, Lkik/android/widget/cu;->a(Landroid/content/Context;Ljava/io/File;)V
 
     .line 242
     :cond_5
@@ -365,7 +365,7 @@
     if-eqz v4, :cond_9
 
     .line 229
-    invoke-static {v4, v3, v2, v0}, Lcom/kik/util/co;->a(Ljava/lang/String;Ljava/io/File;Ljava/lang/String;Ljava/lang/String;)Ljava/io/File;
+    invoke-static {v4, v3, v2, v0}, Lcom/kik/util/ct;->a(Ljava/lang/String;Ljava/io/File;Ljava/lang/String;Ljava/lang/String;)Ljava/io/File;
 
     move-result-object v0
 

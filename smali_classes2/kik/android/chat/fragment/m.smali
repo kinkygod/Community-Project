@@ -45,14 +45,14 @@
 
     iget-object v1, p0, Lkik/android/chat/fragment/m;->b:Lkik/core/datatypes/f;
 
-    .line 1320
+    .line 1321
     iget-object v2, v0, Lkik/android/chat/fragment/ConversationsBaseFragment$2;->b:Lkik/android/chat/fragment/ConversationsBaseFragment;
 
     const/4 v3, 0x0
 
     invoke-virtual {v2, v3}, Lkik/android/chat/fragment/ConversationsBaseFragment;->updateConvoList(Z)V
 
-    .line 1321
+    .line 1322
     iget-object v0, v0, Lkik/android/chat/fragment/ConversationsBaseFragment$2;->b:Lkik/android/chat/fragment/ConversationsBaseFragment;
 
     invoke-virtual {v0, v1}, Lkik/android/chat/fragment/ConversationsBaseFragment;->scrollToConvo(Lkik/core/datatypes/f;)V

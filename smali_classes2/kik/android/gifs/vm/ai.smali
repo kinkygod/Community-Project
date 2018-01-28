@@ -52,7 +52,7 @@
 
     if-ne p1, v0, :cond_0
 
-    const v0, 0x7f0201bf
+    const v0, 0x7f0201a7
 
     :goto_0
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -64,7 +64,7 @@
 
     .line 1069
     :cond_0
-    const v0, 0x7f0201c0
+    const v0, 0x7f0201a8
 
     goto :goto_0
 .end method

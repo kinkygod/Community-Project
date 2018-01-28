@@ -480,7 +480,7 @@
 
     iget-object v2, p0, Lcom/kik/cards/browser/CaptchaWindowFragment;->g:Lcom/kik/cards/browser/CaptchaWindowFragment$c;
 
-    invoke-virtual {v2}, Lcom/kik/cards/browser/CaptchaWindowFragment$c;->b_()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/kik/cards/browser/CaptchaWindowFragment$c;->c_()Ljava/lang/String;
 
     move-result-object v2
 
@@ -546,7 +546,7 @@
 
     iget-object v2, p0, Lcom/kik/cards/browser/CaptchaWindowFragment;->g:Lcom/kik/cards/browser/CaptchaWindowFragment$c;
 
-    invoke-virtual {v2}, Lcom/kik/cards/browser/CaptchaWindowFragment$c;->b_()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/kik/cards/browser/CaptchaWindowFragment$c;->c_()Ljava/lang/String;
 
     move-result-object v2
 
@@ -578,7 +578,7 @@
 
     iget-object v2, p0, Lcom/kik/cards/browser/CaptchaWindowFragment;->g:Lcom/kik/cards/browser/CaptchaWindowFragment$c;
 
-    invoke-virtual {v2}, Lcom/kik/cards/browser/CaptchaWindowFragment$c;->b_()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/kik/cards/browser/CaptchaWindowFragment$c;->c_()Ljava/lang/String;
 
     move-result-object v2
 
@@ -621,7 +621,7 @@
     return-void
 .end method
 
-.method protected screenOpenedEvent()Lcom/kik/metrics/b/s;
+.method protected screenOpenedEvent()Lcom/kik/metrics/b/t;
     .locals 1
 
     .prologue

@@ -6,13 +6,13 @@
 # instance fields
 .field _profilePhotoImageView:Landroid/widget/ImageView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1003e0
+        value = 0x7f1003dc
     .end annotation
 .end field
 
 .field _setPhotoContentsContainer:Landroid/view/View;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1003df
+        value = 0x7f1003db
     .end annotation
 .end field
 
@@ -79,7 +79,7 @@
 
     .prologue
     .line 53
-    const v0, 0x7f04015f
+    const v0, 0x7f040165
 
     invoke-static {p1, v0, p0}, Lkik/android/chat/view/SetProfilePhotoView;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -87,7 +87,7 @@
     invoke-static {p0}, Lbutterknife/ButterKnife;->bind(Landroid/view/View;)Lbutterknife/Unbinder;
 
     .line 55
-    const v0, 0x7f0200c7
+    const v0, 0x7f0200af
 
     invoke-virtual {p0, v0}, Lkik/android/chat/view/SetProfilePhotoView;->setBackgroundResource(I)V
 
@@ -112,7 +112,7 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
     .line 66
     return-void
@@ -146,7 +146,7 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ca;->g([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->g([Landroid/view/View;)V
 
     .line 76
     return-void

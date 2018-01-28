@@ -39,7 +39,7 @@
     .line 0
     iget-object v0, p0, Lkik/android/chat/fragment/bs;->a:Lkik/android/chat/fragment/KikConversationsFragment$9;
 
-    .line 1400
+    .line 1402
     iget-object v0, v0, Lkik/android/chat/fragment/KikConversationsFragment$9;->a:Lkik/android/chat/fragment/KikConversationsFragment;
 
     invoke-static {v0}, Lkik/android/chat/fragment/KikConversationsFragment;->r(Lkik/android/chat/fragment/KikConversationsFragment;)Z

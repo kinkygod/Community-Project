@@ -81,7 +81,7 @@
     .line 124
     iget-object v0, p0, Lkik/android/chat/vm/messaging/e$1;->b:Lkik/android/chat/vm/messaging/e;
 
-    invoke-virtual {v0}, Lkik/android/chat/vm/messaging/e;->k()Lkik/core/datatypes/messageExtensions/ContentMessage;
+    invoke-virtual {v0}, Lkik/android/chat/vm/messaging/e;->l()Lkik/core/datatypes/messageExtensions/ContentMessage;
 
     move-result-object v0
 

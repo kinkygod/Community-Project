@@ -29,7 +29,7 @@
 
 .field protected g:Landroid/view/View;
 
-.field protected h:Lkik/core/interfaces/ae;
+.field protected h:Lkik/core/interfaces/ad;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -686,7 +686,7 @@
 
     .line 1214
     :cond_0
-    const v0, 0x7f040098
+    const v0, 0x7f040097
 
     invoke-virtual {p1, v0, v5}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -1197,7 +1197,7 @@
     goto :goto_0
 .end method
 
-.method protected screenOpenedEvent()Lcom/kik/metrics/b/s;
+.method protected screenOpenedEvent()Lcom/kik/metrics/b/t;
     .locals 1
 
     .prologue
@@ -1230,11 +1230,11 @@
 
     .line 131
     :pswitch_1
-    invoke-static {}, Lcom/kik/metrics/b/ai;->b()Lcom/kik/metrics/b/ai$a;
+    invoke-static {}, Lcom/kik/metrics/b/ak;->b()Lcom/kik/metrics/b/ak$a;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/kik/metrics/b/ai$a;->a()Lcom/kik/metrics/b/ai;
+    invoke-virtual {v0}, Lcom/kik/metrics/b/ak$a;->a()Lcom/kik/metrics/b/ak;
 
     move-result-object v0
 
@@ -1254,11 +1254,11 @@
 
     .line 135
     :pswitch_3
-    invoke-static {}, Lcom/kik/metrics/b/an;->b()Lcom/kik/metrics/b/an$a;
+    invoke-static {}, Lcom/kik/metrics/b/ap;->b()Lcom/kik/metrics/b/ap$a;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/kik/metrics/b/an$a;->a()Lcom/kik/metrics/b/an;
+    invoke-virtual {v0}, Lcom/kik/metrics/b/ap$a;->a()Lcom/kik/metrics/b/ap;
 
     move-result-object v0
 
@@ -1266,11 +1266,11 @@
 
     .line 137
     :pswitch_4
-    invoke-static {}, Lcom/kik/metrics/b/z;->b()Lcom/kik/metrics/b/z$a;
+    invoke-static {}, Lcom/kik/metrics/b/aa;->b()Lcom/kik/metrics/b/aa$a;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/kik/metrics/b/z$a;->a()Lcom/kik/metrics/b/z;
+    invoke-virtual {v0}, Lcom/kik/metrics/b/aa$a;->a()Lcom/kik/metrics/b/aa;
 
     move-result-object v0
 
@@ -1278,11 +1278,11 @@
 
     .line 139
     :pswitch_5
-    invoke-static {}, Lcom/kik/metrics/b/o;->b()Lcom/kik/metrics/b/o$a;
+    invoke-static {}, Lcom/kik/metrics/b/p;->b()Lcom/kik/metrics/b/p$a;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/kik/metrics/b/o$a;->a()Lcom/kik/metrics/b/o;
+    invoke-virtual {v0}, Lcom/kik/metrics/b/p$a;->a()Lcom/kik/metrics/b/p;
 
     move-result-object v0
 

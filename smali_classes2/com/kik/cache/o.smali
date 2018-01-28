@@ -34,11 +34,11 @@
 
 .field private final c:Landroid/content/res/Resources;
 
-.field private final d:Lkik/core/interfaces/w;
+.field private final d:Lkik/core/interfaces/v;
 
 
 # direct methods
-.method public constructor <init>(Lrx/d;Lcom/kik/cache/KikVolleyImageLoader;Landroid/content/res/Resources;Lkik/core/interfaces/w;)V
+.method public constructor <init>(Lrx/d;Lcom/kik/cache/KikVolleyImageLoader;Landroid/content/res/Resources;Lkik/core/interfaces/v;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -49,7 +49,7 @@
             ">;",
             "Lcom/kik/cache/KikVolleyImageLoader;",
             "Landroid/content/res/Resources;",
-            "Lkik/core/interfaces/w;",
+            "Lkik/core/interfaces/v;",
             ")V"
         }
     .end annotation
@@ -68,7 +68,7 @@
     iput-object p3, p0, Lcom/kik/cache/o;->c:Landroid/content/res/Resources;
 
     .line 38
-    iput-object p4, p0, Lcom/kik/cache/o;->d:Lkik/core/interfaces/w;
+    iput-object p4, p0, Lcom/kik/cache/o;->d:Lkik/core/interfaces/v;
 
     .line 39
     return-void
@@ -133,7 +133,7 @@
     .line 127
     iget-object v0, p0, Lcom/kik/cache/o;->c:Landroid/content/res/Resources;
 
-    const v1, 0x7f020276
+    const v1, 0x7f02025e
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -153,7 +153,7 @@
     :cond_1
     iget-object v0, p0, Lcom/kik/cache/o;->c:Landroid/content/res/Resources;
 
-    const v1, 0x7f020275
+    const v1, 0x7f02025d
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -284,7 +284,7 @@
 
     sget-object v9, Lcom/kik/cache/KikImageRequest;->EMPTY_ERROR_LISTENER:Lcom/android/volley/h$a;
 
-    iget-object v6, p0, Lcom/kik/cache/o;->d:Lkik/core/interfaces/w;
+    iget-object v6, p0, Lcom/kik/cache/o;->d:Lkik/core/interfaces/v;
 
     .line 1142
     iget-object v0, p0, Lcom/kik/cache/o;->c:Landroid/content/res/Resources;
@@ -316,7 +316,7 @@
     move-object v5, v9
 
     .line 63
-    invoke-static/range {v0 .. v8}, Lcom/kik/cache/n;->a(Lcom/kik/core/domain/a/a/c;Lcom/android/volley/h$b;IILandroid/graphics/Bitmap$Config;Lcom/android/volley/h$a;Lkik/core/interfaces/w;ZLcom/kik/cache/KikVolleyImageLoader;)Lcom/kik/cache/n;
+    invoke-static/range {v0 .. v8}, Lcom/kik/cache/n;->a(Lcom/kik/core/domain/a/a/c;Lcom/android/volley/h$b;IILandroid/graphics/Bitmap$Config;Lcom/android/volley/h$a;Lkik/core/interfaces/v;ZLcom/kik/cache/KikVolleyImageLoader;)Lcom/kik/cache/n;
 
     move-result-object v0
 
@@ -381,9 +381,7 @@
     return-void
 .end method
 
-
-# virtual methods
-.method public final a(II)Lrx/d;
+.method private b(II)Lrx/d;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -396,8 +394,7 @@
     .end annotation
 
     .prologue
-    .line 44
-    .line 1050
+    .line 50
     iget-object v0, p0, Lcom/kik/cache/o;->a:Lrx/d;
 
     invoke-static {p0, p1, p2}, Lcom/kik/cache/p;->a(Lcom/kik/cache/o;II)Lrx/functions/g;
@@ -408,6 +405,40 @@
 
     move-result-object v0
 
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public final a(II)Lrx/d;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(II)",
+            "Lrx/d",
+            "<",
+            "Landroid/graphics/Bitmap;",
+            ">;"
+        }
+    .end annotation
+
+    .prologue
     .line 44
+    invoke-direct {p0, p1, p2}, Lcom/kik/cache/o;->b(II)Lrx/d;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final synthetic a(IILjava/lang/Object;)Lrx/d;
+    .locals 1
+
+    .prologue
+    .line 26
+    invoke-direct {p0, p1, p2}, Lcom/kik/cache/o;->b(II)Lrx/d;
+
+    move-result-object v0
+
     return-object v0
 .end method

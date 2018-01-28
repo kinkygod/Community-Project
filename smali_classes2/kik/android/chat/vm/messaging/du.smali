@@ -43,7 +43,9 @@
 .method public final call(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    invoke-static {}, Lkik/android/chat/vm/messaging/dq;->q()Ljava/lang/Long;
+    check-cast p1, Lkik/core/chat/profile/e;
+
+    invoke-static {p1}, Lkik/android/chat/vm/messaging/dq;->a(Lkik/core/chat/profile/e;)Lkik/core/chat/profile/a;
 
     move-result-object v0
 

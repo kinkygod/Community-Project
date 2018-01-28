@@ -24,7 +24,7 @@
     iput-object p1, p0, Lkik/android/chat/view/PhoneVerificationCountryCodeSearchViewImpl_ViewBinding;->a:Lkik/android/chat/view/PhoneVerificationCountryCodeSearchViewImpl;
 
     .line 31
-    const v0, 0x7f1003ac
+    const v0, 0x7f1003a8
 
     const-string v1, "field \'_clearSearchButton\' and method \'onClearSearchClicked\'"
 
@@ -46,7 +46,7 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 40
-    const v0, 0x7f1003ad
+    const v0, 0x7f1003a9
 
     const-string v1, "field \'_searchField\'"
 

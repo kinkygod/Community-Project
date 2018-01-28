@@ -132,12 +132,12 @@
     .end packed-switch
 .end method
 
-.method public static a(Lkik/core/interfaces/ae;)I
+.method public static a(Lkik/core/interfaces/ad;)I
     .locals 4
 
     .prologue
     .line 40
-    invoke-interface {p0}, Lkik/core/interfaces/ae;->n()J
+    invoke-interface {p0}, Lkik/core/interfaces/ad;->n()J
 
     move-result-wide v0
 
@@ -161,7 +161,7 @@
 
     .line 45
     :cond_0
-    invoke-static {p0}, Lkik/android/util/b;->b(Lkik/core/interfaces/ae;)J
+    invoke-static {p0}, Lkik/android/util/b;->b(Lkik/core/interfaces/ad;)J
 
     move-result-wide v2
 
@@ -214,7 +214,7 @@
     goto :goto_0
 .end method
 
-.method public static b(Lkik/core/interfaces/ae;)J
+.method public static b(Lkik/core/interfaces/ad;)J
     .locals 4
 
     .prologue
@@ -229,7 +229,7 @@
 
     move-result-object v3
 
-    invoke-interface {p0, v2, v3}, Lkik/core/interfaces/ae;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {p0, v2, v3}, Lkik/core/interfaces/ad;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 

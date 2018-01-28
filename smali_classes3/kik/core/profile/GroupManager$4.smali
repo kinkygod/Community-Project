@@ -34,7 +34,7 @@
     .locals 0
 
     .prologue
-    .line 642
+    .line 653
     iput-object p1, p0, Lkik/core/profile/GroupManager$4;->b:Lkik/core/profile/GroupManager;
 
     iput-object p2, p0, Lkik/core/profile/GroupManager$4;->a:Lcom/kik/events/Promise;
@@ -50,15 +50,15 @@
     .locals 1
 
     .prologue
-    .line 642
+    .line 653
     check-cast p1, Lkik/core/net/outgoing/GetGroupDataFromInviteCodeRequest;
 
-    .line 1646
+    .line 1657
     iget-object v0, p0, Lkik/core/profile/GroupManager$4;->a:Lcom/kik/events/Promise;
 
     invoke-virtual {v0, p1}, Lcom/kik/events/Promise;->a(Ljava/lang/Object;)V
 
-    .line 642
+    .line 653
     return-void
 .end method
 
@@ -66,11 +66,11 @@
     .locals 1
 
     .prologue
-    .line 652
+    .line 663
     iget-object v0, p0, Lkik/core/profile/GroupManager$4;->a:Lcom/kik/events/Promise;
 
     invoke-virtual {v0, p1}, Lcom/kik/events/Promise;->a(Ljava/lang/Throwable;)V
 
-    .line 653
+    .line 664
     return-void
 .end method

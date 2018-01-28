@@ -1,71 +1,161 @@
-.class final synthetic Lkik/android/chat/vm/profile/di;
+.class public interface abstract Lkik/android/chat/vm/profile/di;
 .super Ljava/lang/Object;
+.source "SourceFile"
 
 # interfaces
-.implements Lrx/functions/g;
-
-
-# static fields
-.field private static final a:Lkik/android/chat/vm/profile/di;
-
-
-# direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lkik/android/chat/vm/profile/di;
-
-    invoke-direct {v0}, Lkik/android/chat/vm/profile/di;-><init>()V
-
-    sput-object v0, Lkik/android/chat/vm/profile/di;->a:Lkik/android/chat/vm/profile/di;
-
-    return-void
-.end method
-
-.method private constructor <init>()V
-    .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-.method public static a()Lrx/functions/g;
-    .locals 1
-
-    sget-object v0, Lkik/android/chat/vm/profile/di;->a:Lkik/android/chat/vm/profile/di;
-
-    return-object v0
-.end method
+.implements Lkik/android/chat/vm/ax;
+.implements Lkik/android/chat/vm/bo;
 
 
 # virtual methods
-.method public final call(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 4
+.method public abstract A()Lkik/android/chat/vm/profile/de;
+.end method
 
-    .prologue
-    .line 0
-    check-cast p1, Ljava/lang/Long;
+.method public abstract G()Lrx/d;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+.end method
 
-    .line 1064
-    invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
+.method public abstract H()Lrx/d;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<",
+            "Lkik/core/chat/profile/EmojiStatus;",
+            ">;"
+        }
+    .end annotation
+.end method
 
-    move-result-object v0
+.method public abstract I()Lrx/d;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+.end method
 
-    const-string v1, "(%d)"
+.method public abstract k()Lkik/android/chat/vm/IListViewModel;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lkik/android/chat/vm/IListViewModel",
+            "<",
+            "Lkik/android/chat/vm/profile/dd;",
+            ">;"
+        }
+    .end annotation
+.end method
 
-    const/4 v2, 0x1
+.method public abstract l()Lkik/android/chat/vm/IListViewModel;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lkik/android/chat/vm/IListViewModel",
+            "<",
+            "Lkik/android/chat/vm/profile/dd;",
+            ">;"
+        }
+    .end annotation
+.end method
 
-    new-array v2, v2, [Ljava/lang/Object;
+.method public abstract m()Lrx/d;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+.end method
 
-    const/4 v3, 0x0
+.method public abstract p()Lrx/d;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+.end method
 
-    aput-object p1, v2, v3
+.method public abstract q()Lrx/d;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<",
+            "Lkik/core/interfaces/o",
+            "<",
+            "Landroid/graphics/Bitmap;",
+            ">;>;"
+        }
+    .end annotation
+.end method
 
-    invoke-static {v0, v1, v2}, Ljava/lang/String;->format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+.method public abstract r()Lrx/d;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+.end method
 
-    move-result-object v0
+.method public abstract s()Lrx/d;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end method
 
-    .line 0
-    return-object v0
+.method public abstract t()Lrx/d;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public abstract u()V
+.end method
+
+.method public abstract w()Lkik/android/chat/vm/ah;
+.end method
+
+.method public abstract x()Lkik/android/chat/vm/profile/dj;
+.end method
+
+.method public abstract y()Lkik/android/chat/vm/chats/profile/co;
+.end method
+
+.method public abstract z()Lkik/android/chat/vm/IBadgeViewModel;
 .end method

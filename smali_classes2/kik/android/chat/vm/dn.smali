@@ -1,68 +1,103 @@
 .class public final Lkik/android/chat/vm/dn;
-.super Ljava/lang/Object;
+.super Lkik/android/chat/vm/e;
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/vm/bk;
+.implements Lkik/android/chat/vm/ap;
 
 
 # instance fields
-.field private final a:I
+.field private a:Lkik/core/chat/profile/ag;
 
-.field private final b:Ljava/lang/String;
-
-.field private final c:Ljava/lang/String;
+.field private b:Lkik/core/interfaces/p;
 
 
 # direct methods
-.method public constructor <init>(ILjava/lang/String;Ljava/lang/String;)V
+.method public constructor <init>(Lkik/core/chat/profile/ag;Lkik/core/interfaces/p;)V
     .locals 0
 
     .prologue
-    .line 16
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 17
-    iput p1, p0, Lkik/android/chat/vm/dn;->a:I
-
-    .line 18
-    iput-object p2, p0, Lkik/android/chat/vm/dn;->b:Ljava/lang/String;
-
     .line 19
-    iput-object p3, p0, Lkik/android/chat/vm/dn;->c:Ljava/lang/String;
+    invoke-direct {p0}, Lkik/android/chat/vm/e;-><init>()V
 
     .line 20
+    iput-object p1, p0, Lkik/android/chat/vm/dn;->a:Lkik/core/chat/profile/ag;
+
+    .line 21
+    iput-object p2, p0, Lkik/android/chat/vm/dn;->b:Lkik/core/interfaces/p;
+
+    .line 22
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Ljava/lang/String;
-    .locals 1
+.method public final ag_()J
+    .locals 2
 
     .prologue
-    .line 25
-    iget-object v0, p0, Lkik/android/chat/vm/dn;->b:Ljava/lang/String;
+    .line 27
+    invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
 
-    return-object v0
+    move-result v0
+
+    int-to-long v0, v0
+
+    return-wide v0
 .end method
 
 .method public final b()Ljava/lang/String;
     .locals 1
 
     .prologue
-    .line 31
-    iget-object v0, p0, Lkik/android/chat/vm/dn;->c:Ljava/lang/String;
+    .line 33
+    iget-object v0, p0, Lkik/android/chat/vm/dn;->a:Lkik/core/chat/profile/ag;
+
+    invoke-virtual {v0}, Lkik/core/chat/profile/ag;->b()Ljava/lang/String;
+
+    move-result-object v0
 
     return-object v0
 .end method
 
-.method public final c()I
-    .locals 1
+.method public final d()V
+    .locals 2
 
     .prologue
-    .line 37
-    iget v0, p0, Lkik/android/chat/vm/dn;->a:I
+    .line 39
+    iget-object v0, p0, Lkik/android/chat/vm/dn;->b:Lkik/core/interfaces/p;
 
-    return v0
+    iget-object v1, p0, Lkik/android/chat/vm/dn;->a:Lkik/core/chat/profile/ag;
+
+    invoke-interface {v0, v1}, Lkik/core/interfaces/p;->a(Lkik/core/chat/profile/ag;)Z
+
+    .line 40
+    return-void
+.end method
+
+.method public final e()Lrx/d;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+
+    .prologue
+    .line 45
+    const/4 v0, 0x0
+
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lrx/d;->b(Ljava/lang/Object;)Lrx/d;
+
+    move-result-object v0
+
+    return-object v0
 .end method

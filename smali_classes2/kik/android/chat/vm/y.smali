@@ -2,52 +2,42 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lcom/google/common/base/Predicate;
+.implements Lrx/functions/b;
 
 
-# static fields
-.field private static final a:Lkik/android/chat/vm/y;
+# instance fields
+.field private final a:Lkik/android/chat/vm/t;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lkik/android/chat/vm/y;
-
-    invoke-direct {v0}, Lkik/android/chat/vm/y;-><init>()V
-
-    sput-object v0, Lkik/android/chat/vm/y;->a:Lkik/android/chat/vm/y;
-
-    return-void
-.end method
-
-.method private constructor <init>()V
+.method private constructor <init>(Lkik/android/chat/vm/t;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    iput-object p1, p0, Lkik/android/chat/vm/y;->a:Lkik/android/chat/vm/t;
+
     return-void
 .end method
 
-.method public static a()Lcom/google/common/base/Predicate;
+.method public static a(Lkik/android/chat/vm/t;)Lrx/functions/b;
     .locals 1
 
-    sget-object v0, Lkik/android/chat/vm/y;->a:Lkik/android/chat/vm/y;
+    new-instance v0, Lkik/android/chat/vm/y;
+
+    invoke-direct {v0, p0}, Lkik/android/chat/vm/y;-><init>(Lkik/android/chat/vm/t;)V
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public final apply(Ljava/lang/Object;)Z
+.method public final call(Ljava/lang/Object;)V
     .locals 1
 
-    check-cast p1, Lkik/core/chat/profile/EmojiStatus$Name;
+    iget-object v0, p0, Lkik/android/chat/vm/y;->a:Lkik/android/chat/vm/t;
 
-    invoke-static {p1}, Lkik/android/chat/vm/r;->b(Lkik/core/chat/profile/EmojiStatus$Name;)Z
+    invoke-static {v0}, Lkik/android/chat/vm/t;->b(Lkik/android/chat/vm/t;)V
 
-    move-result v0
-
-    return v0
+    return-void
 .end method

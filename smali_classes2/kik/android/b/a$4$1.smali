@@ -284,7 +284,7 @@
 
     iget-object v0, v0, Lkik/android/b/a$4;->c:Lkik/android/b/a;
 
-    invoke-static {v0}, Lkik/android/b/a;->b(Lkik/android/b/a;)Lkik/core/interfaces/ae;
+    invoke-static {v0}, Lkik/android/b/a;->b(Lkik/android/b/a;)Lkik/core/interfaces/ad;
 
     move-result-object v0
 
@@ -294,7 +294,7 @@
 
     move-result-object v2
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;Ljava/lang/Boolean;)Z
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Boolean;)Z
 
     .line 158
     return-void

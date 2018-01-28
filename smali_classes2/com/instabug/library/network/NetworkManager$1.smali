@@ -59,7 +59,7 @@
 
     .line 1062
     :try_start_0
-    invoke-virtual {p1}, Lrx/j;->aV_()V
+    invoke-virtual {p1}, Lrx/j;->aR_()V
 
     .line 1063
     const-class v0, Lcom/instabug/library/network/NetworkManager;

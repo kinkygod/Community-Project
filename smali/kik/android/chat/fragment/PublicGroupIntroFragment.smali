@@ -14,7 +14,7 @@
 # instance fields
 .field _body:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f100217
+        value = 0x7f100219
     .end annotation
 .end field
 
@@ -117,7 +117,7 @@
 
     .prologue
     .line 48
-    const v0, 0x7f04008d
+    const v0, 0x7f04008f
 
     const/4 v1, 0x0
 
@@ -144,7 +144,7 @@
 
     invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    const v2, 0x7f09060a
+    const v2, 0x7f090612
 
     invoke-static {v2}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
 
@@ -211,7 +211,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f09060b
+    const v2, 0x7f090613
 
     invoke-static {v2}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
 
@@ -236,7 +236,7 @@
     .line 1100
     iget-object v2, p0, Lkik/android/chat/fragment/PublicGroupIntroFragment;->_body:Landroid/widget/TextView;
 
-    invoke-static {v2, v1}, Lkik/android/chat/view/text/c;->a(Landroid/widget/TextView;Ljava/lang/String;)V
+    invoke-static {v2, v1}, Lkik/android/chat/view/text/d;->a(Landroid/widget/TextView;Ljava/lang/String;)V
 
     .line 52
     return-object v0
@@ -276,7 +276,7 @@
     .locals 3
     .annotation build Lbutterknife/OnClick;
         value = {
-            0x7f100218
+            0x7f10021a
         }
     .end annotation
 

@@ -6,25 +6,25 @@
 .implements Landroid/text/TextWatcher;
 .implements Landroid/view/View$OnFocusChangeListener;
 .implements Lkik/android/chat/view/aj;
-.implements Lkik/core/interfaces/aj;
+.implements Lkik/core/interfaces/ai;
 
 
 # instance fields
 .field _clearSearch:Landroid/view/View;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1003dd
+        value = 0x7f1003d9
     .end annotation
 .end field
 
 .field _searchField:Lkik/android/widget/RobotoEditText;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1003dc
+        value = 0x7f1003d8
     .end annotation
 .end field
 
 .field _searchIconView:Landroid/widget/ImageView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1003db
+        value = 0x7f1003d7
     .end annotation
 .end field
 
@@ -226,7 +226,7 @@
     invoke-virtual {p0, v0}, Lkik/android/chat/view/SearchBarViewImpl;->setGravity(I)V
 
     .line 77
-    const v0, 0x7f0201b2
+    const v0, 0x7f02019a
 
     invoke-virtual {p0, v0}, Lkik/android/chat/view/SearchBarViewImpl;->setBackgroundResource(I)V
 
@@ -244,7 +244,7 @@
     invoke-virtual {p0, v0}, Lkik/android/chat/view/SearchBarViewImpl;->setMinimumHeight(I)V
 
     .line 79
-    const v0, 0x7f040159
+    const v0, 0x7f04015e
 
     invoke-static {p1, v0, p0}, Lkik/android/chat/view/SearchBarViewImpl;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -264,7 +264,7 @@
     .line 83
     iget-object v0, p0, Lkik/android/chat/view/SearchBarViewImpl;->_searchField:Lkik/android/widget/RobotoEditText;
 
-    invoke-virtual {v0, p0}, Lkik/android/widget/RobotoEditText;->a(Lkik/core/interfaces/aj;)V
+    invoke-virtual {v0, p0}, Lkik/android/widget/RobotoEditText;->a(Lkik/core/interfaces/ai;)V
 
     .line 84
     const/4 v0, 0x0
@@ -699,7 +699,7 @@
     .locals 2
     .annotation build Lbutterknife/OnClick;
         value = {
-            0x7f1003dd
+            0x7f1003d9
         }
     .end annotation
 

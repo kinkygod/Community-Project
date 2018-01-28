@@ -37,7 +37,7 @@
     invoke-direct {p0, p1, p2, p3}, Landroid/preference/Preference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 56
-    const v0, 0x7f04013b
+    const v0, 0x7f04013f
 
     invoke-virtual {p0, v0}, Lkik/android/widget/preferences/KikModalPreference;->setLayoutResource(I)V
 

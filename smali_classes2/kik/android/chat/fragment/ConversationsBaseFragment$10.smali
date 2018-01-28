@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 282
+    .line 283
     iput-object p1, p0, Lkik/android/chat/fragment/ConversationsBaseFragment$10;->a:Lkik/android/chat/fragment/ConversationsBaseFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,12 +40,12 @@
     .locals 1
 
     .prologue
-    .line 292
+    .line 293
     iget-object v0, p0, Lkik/android/chat/fragment/ConversationsBaseFragment$10;->a:Lkik/android/chat/fragment/ConversationsBaseFragment;
 
     invoke-virtual {v0, p1, p2, p3, p4}, Lkik/android/chat/fragment/ConversationsBaseFragment;->onConversationsScroll(Landroid/widget/AbsListView;III)V
 
-    .line 293
+    .line 294
     return-void
 .end method
 
@@ -53,11 +53,11 @@
     .locals 1
 
     .prologue
-    .line 286
+    .line 287
     iget-object v0, p0, Lkik/android/chat/fragment/ConversationsBaseFragment$10;->a:Lkik/android/chat/fragment/ConversationsBaseFragment;
 
     invoke-static {v0, p2}, Lkik/android/chat/fragment/ConversationsBaseFragment;->access$102(Lkik/android/chat/fragment/ConversationsBaseFragment;I)I
 
-    .line 287
+    .line 288
     return-void
 .end method

@@ -45,11 +45,11 @@
 
     iget-object v0, v0, Lkik/android/addressbook/a$4;->b:Lkik/android/addressbook/a;
 
-    invoke-static {v0}, Lkik/android/addressbook/a;->d(Lkik/android/addressbook/a;)Lkik/core/interfaces/ae;
+    invoke-static {v0}, Lkik/android/addressbook/a;->d(Lkik/android/addressbook/a;)Lkik/core/interfaces/ad;
 
     move-result-object v0
 
-    invoke-static {v0}, Lkik/core/z;->a(Lkik/core/interfaces/ae;)Z
+    invoke-static {v0}, Lkik/core/z;->a(Lkik/core/interfaces/ad;)Z
 
     move-result v0
 

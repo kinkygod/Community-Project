@@ -40,7 +40,7 @@
     .line 359
     iget-object v0, p0, Lkik/android/util/an$4;->a:[Landroid/view/View;
 
-    invoke-static {v0}, Lkik/android/util/ca;->g([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->g([Landroid/view/View;)V
 
     .line 360
     return-void

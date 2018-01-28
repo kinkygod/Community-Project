@@ -6,19 +6,19 @@
 .implements Landroid/text/TextWatcher;
 .implements Landroid/view/View$OnFocusChangeListener;
 .implements Lkik/android/chat/view/ac;
-.implements Lkik/core/interfaces/aj;
+.implements Lkik/core/interfaces/ai;
 
 
 # instance fields
 .field _clearSearchButton:Landroid/view/View;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1003ac
+        value = 0x7f1003a8
     .end annotation
 .end field
 
 .field _searchField:Lkik/android/widget/RobotoEditTextBackHandleable;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1003ad
+        value = 0x7f1003a9
     .end annotation
 .end field
 
@@ -87,7 +87,7 @@
 
     .prologue
     .line 57
-    const v0, 0x7f040150
+    const v0, 0x7f040155
 
     invoke-static {p1, v0, p0}, Lkik/android/chat/view/PhoneVerificationCountryCodeSearchViewImpl;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -97,7 +97,7 @@
     .line 59
     iget-object v0, p0, Lkik/android/chat/view/PhoneVerificationCountryCodeSearchViewImpl;->_searchField:Lkik/android/widget/RobotoEditTextBackHandleable;
 
-    invoke-virtual {v0, p0}, Lkik/android/widget/RobotoEditTextBackHandleable;->a(Lkik/core/interfaces/aj;)V
+    invoke-virtual {v0, p0}, Lkik/android/widget/RobotoEditTextBackHandleable;->a(Lkik/core/interfaces/ai;)V
 
     .line 60
     iget-object v0, p0, Lkik/android/chat/view/PhoneVerificationCountryCodeSearchViewImpl;->_searchField:Lkik/android/widget/RobotoEditTextBackHandleable;
@@ -223,7 +223,7 @@
     .locals 2
     .annotation build Lbutterknife/OnClick;
         value = {
-            0x7f1003ac
+            0x7f1003a8
         }
     .end annotation
 

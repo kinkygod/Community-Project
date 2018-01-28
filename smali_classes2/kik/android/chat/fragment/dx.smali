@@ -2,44 +2,48 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lkik/android/chat/view/ValidateableInputView$a;
+.implements Landroid/content/DialogInterface$OnClickListener;
 
 
-# instance fields
-.field private final a:Lkik/android/chat/fragment/KikStartGroupFragment;
+# static fields
+.field private static final a:Lkik/android/chat/fragment/dx;
 
 
 # direct methods
-.method private constructor <init>(Lkik/android/chat/fragment/KikStartGroupFragment;)V
-    .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lkik/android/chat/fragment/dx;->a:Lkik/android/chat/fragment/KikStartGroupFragment;
-
-    return-void
-.end method
-
-.method public static a(Lkik/android/chat/fragment/KikStartGroupFragment;)Lkik/android/chat/view/ValidateableInputView$a;
+.method static constructor <clinit>()V
     .locals 1
 
     new-instance v0, Lkik/android/chat/fragment/dx;
 
-    invoke-direct {v0, p0}, Lkik/android/chat/fragment/dx;-><init>(Lkik/android/chat/fragment/KikStartGroupFragment;)V
+    invoke-direct {v0}, Lkik/android/chat/fragment/dx;-><init>()V
+
+    sput-object v0, Lkik/android/chat/fragment/dx;->a:Lkik/android/chat/fragment/dx;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static a()Landroid/content/DialogInterface$OnClickListener;
+    .locals 1
+
+    sget-object v0, Lkik/android/chat/fragment/dx;->a:Lkik/android/chat/fragment/dx;
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/String;)Ljava/lang/String;
-    .locals 1
+.method public final onClick(Landroid/content/DialogInterface;I)V
+    .locals 0
 
-    iget-object v0, p0, Lkik/android/chat/fragment/dx;->a:Lkik/android/chat/fragment/KikStartGroupFragment;
+    invoke-static {p1, p2}, Lkik/android/chat/fragment/KikScopedDialogFragment;->lambda$displayDialog$1(Landroid/content/DialogInterface;I)V
 
-    invoke-static {v0, p1}, Lkik/android/chat/fragment/KikStartGroupFragment;->a(Lkik/android/chat/fragment/KikStartGroupFragment;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
+    return-void
 .end method

@@ -2,56 +2,42 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lrx/functions/g;
+.implements Ljava/lang/Runnable;
 
 
-# static fields
-.field private static final a:Lkik/android/chat/vm/profile/profileactionvm/i;
+# instance fields
+.field private final a:Lkik/android/chat/vm/profile/profileactionvm/f;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lkik/android/chat/vm/profile/profileactionvm/i;
-
-    invoke-direct {v0}, Lkik/android/chat/vm/profile/profileactionvm/i;-><init>()V
-
-    sput-object v0, Lkik/android/chat/vm/profile/profileactionvm/i;->a:Lkik/android/chat/vm/profile/profileactionvm/i;
-
-    return-void
-.end method
-
-.method private constructor <init>()V
+.method private constructor <init>(Lkik/android/chat/vm/profile/profileactionvm/f;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    iput-object p1, p0, Lkik/android/chat/vm/profile/profileactionvm/i;->a:Lkik/android/chat/vm/profile/profileactionvm/f;
+
     return-void
 .end method
 
-.method public static a()Lrx/functions/g;
+.method public static a(Lkik/android/chat/vm/profile/profileactionvm/f;)Ljava/lang/Runnable;
     .locals 1
 
-    sget-object v0, Lkik/android/chat/vm/profile/profileactionvm/i;->a:Lkik/android/chat/vm/profile/profileactionvm/i;
+    new-instance v0, Lkik/android/chat/vm/profile/profileactionvm/i;
+
+    invoke-direct {v0, p0}, Lkik/android/chat/vm/profile/profileactionvm/i;-><init>(Lkik/android/chat/vm/profile/profileactionvm/f;)V
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public final call(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final run()V
     .locals 1
 
-    check-cast p1, Lcom/kik/core/domain/users/a/c;
+    iget-object v0, p0, Lkik/android/chat/vm/profile/profileactionvm/i;->a:Lkik/android/chat/vm/profile/profileactionvm/f;
 
-    invoke-interface {p1}, Lcom/kik/core/domain/users/a/c;->i()Z
+    invoke-static {v0}, Lkik/android/chat/vm/profile/profileactionvm/f;->a(Lkik/android/chat/vm/profile/profileactionvm/f;)V
 
-    move-result v0
-
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v0
-
-    return-object v0
+    return-void
 .end method

@@ -16,6 +16,7 @@
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Landroid/support/v7/widget/RecyclerView$ItemAnimator$ItemHolderInfo;,
+        Landroid/support/v7/widget/RecyclerView$ItemAnimator$ItemAnimatorFinishedListener;,
         Landroid/support/v7/widget/RecyclerView$ItemAnimator$ItemAnimatorListener;
     }
 .end annotation
@@ -29,7 +30,7 @@
         value = {
             "Ljava/util/ArrayList",
             "<",
-            "Ljava/lang/Object;",
+            "Landroid/support/v7/widget/RecyclerView$ItemAnimator$ItemAnimatorFinishedListener;",
             ">;"
         }
     .end annotation
@@ -195,6 +196,38 @@
     return-void
 .end method
 
+.method public final a(Landroid/support/v7/widget/RecyclerView$ItemAnimator$ItemAnimatorFinishedListener;)Z
+    .locals 2
+
+    .prologue
+    .line 12345
+    invoke-virtual {p0}, Landroid/support/v7/widget/RecyclerView$ItemAnimator;->b()Z
+
+    move-result v0
+
+    .line 12346
+    if-eqz p1, :cond_0
+
+    .line 12347
+    if-nez v0, :cond_1
+
+    .line 12348
+    invoke-interface {p1}, Landroid/support/v7/widget/RecyclerView$ItemAnimator$ItemAnimatorFinishedListener;->a()V
+
+    .line 12353
+    :cond_0
+    :goto_0
+    return v0
+
+    .line 12350
+    :cond_1
+    iget-object v1, p0, Landroid/support/v7/widget/RecyclerView$ItemAnimator;->b:Ljava/util/ArrayList;
+
+    invoke-virtual {v1, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    goto :goto_0
+.end method
+
 .method public abstract a(Landroid/support/v7/widget/RecyclerView$ViewHolder;Landroid/support/v7/widget/RecyclerView$ItemAnimator$ItemHolderInfo;Landroid/support/v7/widget/RecyclerView$ItemAnimator$ItemHolderInfo;)Z
 .end method
 
@@ -316,21 +349,31 @@
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
-    move-result v1
+    move-result v2
 
     .line 12417
     const/4 v0, 0x0
 
+    move v1, v0
+
     :goto_0
-    if-ge v0, v1, :cond_0
+    if-ge v1, v2, :cond_0
 
     .line 12418
-    iget-object v2, p0, Landroid/support/v7/widget/RecyclerView$ItemAnimator;->b:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ItemAnimator;->b:Ljava/util/ArrayList;
 
-    invoke-virtual {v2, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/support/v7/widget/RecyclerView$ItemAnimator$ItemAnimatorFinishedListener;
+
+    invoke-interface {v0}, Landroid/support/v7/widget/RecyclerView$ItemAnimator$ItemAnimatorFinishedListener;->a()V
 
     .line 12417
-    add-int/lit8 v0, v0, 0x1
+    add-int/lit8 v0, v1, 0x1
+
+    move v1, v0
 
     goto :goto_0
 

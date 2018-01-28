@@ -32,7 +32,7 @@
     .locals 0
 
     .prologue
-    .line 1185
+    .line 1190
     iput-object p1, p0, Lkik/android/chat/fragment/KikContactsListFragment$3;->a:Lkik/android/chat/fragment/KikContactsListFragment;
 
     invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
@@ -46,7 +46,7 @@
     .locals 3
 
     .prologue
-    .line 1190
+    .line 1195
     iget-object v0, p0, Lkik/android/chat/fragment/KikContactsListFragment$3;->a:Lkik/android/chat/fragment/KikContactsListFragment;
 
     iget-object v1, p0, Lkik/android/chat/fragment/KikContactsListFragment$3;->a:Lkik/android/chat/fragment/KikContactsListFragment;
@@ -57,7 +57,7 @@
 
     invoke-virtual {v0, v1, v2}, Lkik/android/chat/fragment/KikContactsListFragment;->a(Ljava/lang/String;Z)V
 
-    .line 1191
+    .line 1196
     return-void
 .end method
 
@@ -65,7 +65,7 @@
     .locals 3
 
     .prologue
-    .line 1202
+    .line 1207
     iget-object v0, p0, Lkik/android/chat/fragment/KikContactsListFragment$3;->a:Lkik/android/chat/fragment/KikContactsListFragment;
 
     iget-object v1, p0, Lkik/android/chat/fragment/KikContactsListFragment$3;->a:Lkik/android/chat/fragment/KikContactsListFragment;
@@ -76,13 +76,13 @@
 
     move-result-object v1
 
-    invoke-static {p1}, Lkik/android/util/ce;->a(Ljava/lang/Throwable;)Ljava/lang/String;
+    invoke-static {p1}, Lkik/android/util/cf;->a(Ljava/lang/Throwable;)Ljava/lang/String;
 
     move-result-object v2
 
     invoke-virtual {v0, v1, v2}, Lkik/android/chat/fragment/KikContactsListFragment;->displayErrorDialog(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 1203
+    .line 1208
     return-void
 .end method
 
@@ -90,13 +90,13 @@
     .locals 2
 
     .prologue
-    .line 1196
+    .line 1201
     iget-object v0, p0, Lkik/android/chat/fragment/KikContactsListFragment$3;->a:Lkik/android/chat/fragment/KikContactsListFragment;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lkik/android/chat/fragment/KikContactsListFragment;->replaceDialog(Lkik/android/chat/fragment/KikDialogFragment;)V
 
-    .line 1197
+    .line 1202
     return-void
 .end method

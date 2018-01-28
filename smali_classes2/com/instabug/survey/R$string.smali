@@ -15,7 +15,7 @@
 
 
 # static fields
-.field public static final font_fontFamily_medium:I = 0x7f090582
+.field public static final font_fontFamily_medium:I = 0x7f090588
 
 .field public static final instabug_audio_recorder_permission_denied:I = 0x7f0901bd
 
@@ -53,7 +53,7 @@
 
 .field public static final instabug_str_email_hint:I = 0x7f0901ce
 
-.field public static final instabug_str_empty:I = 0x7f09058c
+.field public static final instabug_str_empty:I = 0x7f090592
 
 .field public static final instabug_str_error_survey_without_answer:I = 0x7f0901cf
 
@@ -81,9 +81,9 @@
 
 .field public static final instabug_str_please_wait:I = 0x7f0901db
 
-.field public static final instabug_str_plus:I = 0x7f09058d
+.field public static final instabug_str_plus:I = 0x7f090593
 
-.field public static final instabug_str_powered_by_instabug:I = 0x7f09058e
+.field public static final instabug_str_powered_by_instabug:I = 0x7f090594
 
 .field public static final instabug_str_record_audio:I = 0x7f0901dc
 

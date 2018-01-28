@@ -40,7 +40,7 @@
     .locals 0
 
     .prologue
-    .line 128
+    .line 131
     iput-object p1, p0, Lkik/android/chat/fragment/KikChangeGroupNameFragment$3;->b:Lkik/android/chat/fragment/KikChangeGroupNameFragment;
 
     iput-object p2, p0, Lkik/android/chat/fragment/KikChangeGroupNameFragment$3;->a:Ljava/lang/String;
@@ -61,8 +61,8 @@
     .end annotation
 
     .prologue
-    .line 128
-    .line 1132
+    .line 131
+    .line 1135
     iget-object v0, p0, Lkik/android/chat/fragment/KikChangeGroupNameFragment$3;->b:Lkik/android/chat/fragment/KikChangeGroupNameFragment;
 
     iget-object v0, v0, Lkik/android/chat/fragment/KikChangeGroupNameFragment;->c:Lkik/core/interfaces/l;
@@ -83,6 +83,6 @@
 
     move-result-object v0
 
-    .line 128
+    .line 131
     return-object v0
 .end method

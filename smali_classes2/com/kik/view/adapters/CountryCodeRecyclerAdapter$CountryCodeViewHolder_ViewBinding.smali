@@ -24,7 +24,7 @@
     iput-object p1, p0, Lcom/kik/view/adapters/CountryCodeRecyclerAdapter$CountryCodeViewHolder_ViewBinding;->a:Lcom/kik/view/adapters/CountryCodeRecyclerAdapter$CountryCodeViewHolder;
 
     .line 26
-    const v0, 0x7f10034d
+    const v0, 0x7f100349
 
     const-string v1, "field \'_countryDescription\'"
 
@@ -39,7 +39,7 @@
     iput-object v0, p1, Lcom/kik/view/adapters/CountryCodeRecyclerAdapter$CountryCodeViewHolder;->_countryDescription:Landroid/widget/TextView;
 
     .line 27
-    const v0, 0x7f10034e
+    const v0, 0x7f10034a
 
     const-string v1, "field \'_countryCode\'"
 
@@ -54,7 +54,7 @@
     iput-object v0, p1, Lcom/kik/view/adapters/CountryCodeRecyclerAdapter$CountryCodeViewHolder;->_countryCode:Landroid/widget/TextView;
 
     .line 28
-    const v0, 0x7f10034c
+    const v0, 0x7f100348
 
     const-string v1, "method \'onRowClicked\'"
 

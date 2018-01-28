@@ -7,5 +7,5 @@
 
 
 # virtual methods
-.method public abstract N_()Ljava/lang/String;
+.method public abstract P_()Ljava/lang/String;
 .end method

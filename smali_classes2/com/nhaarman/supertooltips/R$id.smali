@@ -15,15 +15,15 @@
 
 
 # static fields
-.field public static final tooltip_contentholder:I = 0x7f10040c
+.field public static final tooltip_contentholder:I = 0x7f100407
 
-.field public static final tooltip_contenttv:I = 0x7f10040e
+.field public static final tooltip_contenttv:I = 0x7f100409
 
-.field public static final tooltip_pointer_down:I = 0x7f10040f
+.field public static final tooltip_pointer_down:I = 0x7f10040a
 
-.field public static final tooltip_pointer_up:I = 0x7f10040d
+.field public static final tooltip_pointer_up:I = 0x7f100408
 
-.field public static final tooltip_shadow:I = 0x7f10040b
+.field public static final tooltip_shadow:I = 0x7f100406
 
 
 # direct methods

@@ -18,7 +18,7 @@
             "Ljava/util/Map",
             "<",
             "Ljava/lang/Integer;",
-            "Lkik/android/chat/vm/bn;",
+            "Lkik/android/chat/vm/bo;",
             ">;"
         }
     .end annotation
@@ -28,7 +28,7 @@
 
 
 # instance fields
-.field protected a:Lkik/android/chat/vm/bn;
+.field protected a:Lkik/android/chat/vm/bo;
 
 .field protected b:Landroid/view/View;
 
@@ -166,22 +166,22 @@
     iput-object p1, p0, Lkik/android/chat/fragment/MvvmFragment;->c:Landroid/view/LayoutInflater;
 
     .line 1123
-    iget-object v1, p0, Lkik/android/chat/fragment/MvvmFragment;->a:Lkik/android/chat/vm/bn;
+    iget-object v1, p0, Lkik/android/chat/fragment/MvvmFragment;->a:Lkik/android/chat/vm/bo;
 
     if-nez v1, :cond_0
 
     .line 1124
     iget-object v1, p0, Lkik/android/chat/fragment/MvvmFragment;->d:Lkik/android/chat/fragment/MvvmFragment$a;
 
-    invoke-static {v1}, Lkik/android/chat/fragment/MvvmFragment$a;->b(Lkik/android/chat/fragment/MvvmFragment$a;)Lkik/android/chat/vm/bn;
+    invoke-static {v1}, Lkik/android/chat/fragment/MvvmFragment$a;->b(Lkik/android/chat/fragment/MvvmFragment$a;)Lkik/android/chat/vm/bo;
 
     move-result-object v1
 
-    iput-object v1, p0, Lkik/android/chat/fragment/MvvmFragment;->a:Lkik/android/chat/vm/bn;
+    iput-object v1, p0, Lkik/android/chat/fragment/MvvmFragment;->a:Lkik/android/chat/vm/bo;
 
     .line 1127
     :cond_0
-    iget-object v1, p0, Lkik/android/chat/fragment/MvvmFragment;->a:Lkik/android/chat/vm/bn;
+    iget-object v1, p0, Lkik/android/chat/fragment/MvvmFragment;->a:Lkik/android/chat/vm/bo;
 
     .line 92
     if-nez v1, :cond_1
@@ -198,7 +198,7 @@
 
     .line 98
     :cond_1
-    invoke-virtual {p0, v1}, Lkik/android/chat/fragment/MvvmFragment;->attachVm(Lkik/android/chat/vm/bn;)Lkik/android/chat/vm/bn;
+    invoke-virtual {p0, v1}, Lkik/android/chat/fragment/MvvmFragment;->attachVm(Lkik/android/chat/vm/bo;)Lkik/android/chat/vm/bo;
 
     .line 99
     const/16 v2, 0xe

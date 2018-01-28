@@ -16,7 +16,7 @@
 
 
 # instance fields
-.field private a:Lkik/core/interfaces/ae;
+.field private a:Lkik/core/interfaces/ad;
 
 .field private b:Lkik/android/config/b;
 
@@ -24,7 +24,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lkik/core/interfaces/ae;Landroid/content/Context;Lkik/android/util/bq;)V
+.method public constructor <init>(Lkik/core/interfaces/ad;Landroid/content/Context;Lkik/android/util/bq;)V
     .locals 10
 
     .prologue
@@ -34,7 +34,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 45
-    iput-object p1, p0, Lcom/kik/storage/a;->a:Lkik/core/interfaces/ae;
+    iput-object p1, p0, Lcom/kik/storage/a;->a:Lkik/core/interfaces/ad;
 
     .line 46
     invoke-static {}, Lkik/android/config/c;->c()Lkik/android/config/b;
@@ -46,7 +46,7 @@
     .line 47
     new-instance v0, Lcom/kik/storage/a$b;
 
-    invoke-interface {p1}, Lkik/core/interfaces/ae;->q()Ljava/lang/String;
+    invoke-interface {p1}, Lkik/core/interfaces/ad;->q()Ljava/lang/String;
 
     move-result-object v1
 
@@ -171,7 +171,7 @@
 
     const-string v4, "abTestingTable"
 
-    invoke-static {v0, v3, v4}, Lcom/kik/storage/a$a;->a(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/Class;Ljava/lang/String;)Lcom/kik/storage/l;
+    invoke-static {v0, v3, v4}, Lcom/kik/storage/a$a;->a(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/Class;Ljava/lang/String;)Lcom/kik/storage/o;
 
     move-result-object v0
 
@@ -182,7 +182,7 @@
 
     invoke-direct {v3, p0, v1}, Lcom/kik/storage/a$1;-><init>(Lcom/kik/storage/a;Ljava/util/ArrayList;)V
 
-    invoke-virtual {v0, v3}, Lcom/kik/storage/a$a;->a(Lcom/kik/storage/l$a;)V
+    invoke-virtual {v0, v3}, Lcom/kik/storage/a$a;->a(Lcom/kik/storage/o$a;)V
 
     .line 83
     monitor-exit v2
@@ -206,7 +206,7 @@
 
     .prologue
     .line 201
-    iget-object v0, p0, Lcom/kik/storage/a;->a:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lcom/kik/storage/a;->a:Lkik/core/interfaces/ad;
 
     const-string v1, "abLastFetched"
 
@@ -214,7 +214,7 @@
 
     move-result-object v2
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;Ljava/lang/Long;)Z
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Long;)Z
 
     .line 202
     return-void
@@ -406,7 +406,7 @@
 
     const-string v4, "abTestingOverrideTable"
 
-    invoke-static {v0, v3, v4}, Lcom/kik/storage/a$a;->a(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/Class;Ljava/lang/String;)Lcom/kik/storage/l;
+    invoke-static {v0, v3, v4}, Lcom/kik/storage/a$a;->a(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/Class;Ljava/lang/String;)Lcom/kik/storage/o;
 
     move-result-object v0
 
@@ -417,7 +417,7 @@
 
     invoke-direct {v3, p0, v1}, Lcom/kik/storage/a$2;-><init>(Lcom/kik/storage/a;Ljava/util/ArrayList;)V
 
-    invoke-virtual {v0, v3}, Lcom/kik/storage/a$a;->a(Lcom/kik/storage/l$a;)V
+    invoke-virtual {v0, v3}, Lcom/kik/storage/a$a;->a(Lcom/kik/storage/o$a;)V
 
     .line 137
     monitor-exit v2
@@ -559,7 +559,7 @@
 
     .prologue
     .line 226
-    iget-object v0, p0, Lcom/kik/storage/a;->a:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lcom/kik/storage/a;->a:Lkik/core/interfaces/ad;
 
     const-string v1, "abUpgradeFetchTimestamp"
 
@@ -567,7 +567,7 @@
 
     move-result-object v2
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;Ljava/lang/Long;)Z
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Long;)Z
 
     .line 227
     return-void
@@ -638,11 +638,11 @@
 
     .prologue
     .line 206
-    iget-object v0, p0, Lcom/kik/storage/a;->a:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lcom/kik/storage/a;->a:Lkik/core/interfaces/ad;
 
     const-string v1, "abLastFetched"
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ae;->v(Ljava/lang/String;)Ljava/lang/Long;
+    invoke-interface {v0, v1}, Lkik/core/interfaces/ad;->v(Ljava/lang/String;)Ljava/lang/Long;
 
     move-result-object v0
 
@@ -658,11 +658,11 @@
 
     .prologue
     .line 232
-    iget-object v0, p0, Lcom/kik/storage/a;->a:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lcom/kik/storage/a;->a:Lkik/core/interfaces/ad;
 
     const-string v1, "abUpgradeFetchTimestamp"
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ae;->v(Ljava/lang/String;)Ljava/lang/Long;
+    invoke-interface {v0, v1}, Lkik/core/interfaces/ad;->v(Ljava/lang/String;)Ljava/lang/Long;
 
     move-result-object v0
 
@@ -687,9 +687,9 @@
 
     .prologue
     .line 238
-    iget-object v0, p0, Lcom/kik/storage/a;->a:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lcom/kik/storage/a;->a:Lkik/core/interfaces/ad;
 
-    invoke-interface {v0}, Lkik/core/interfaces/ae;->e()Lcom/kik/events/c;
+    invoke-interface {v0}, Lkik/core/interfaces/ad;->e()Lcom/kik/events/c;
 
     move-result-object v0
 

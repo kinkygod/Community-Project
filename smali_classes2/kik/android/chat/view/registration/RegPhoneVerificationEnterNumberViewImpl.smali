@@ -9,25 +9,25 @@
 # instance fields
 .field _areaCode:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1003cc
+        value = 0x7f1003c8
     .end annotation
 .end field
 
 .field _phoneEditText:Landroid/widget/EditText;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1003ca
+        value = 0x7f1003c6
     .end annotation
 .end field
 
 .field _phoneEditTextError:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1003cb
+        value = 0x7f1003c7
     .end annotation
 .end field
 
 .field private a:Lkik/android/chat/view/ae$a;
 
-.field private b:Lkik/android/widget/ar;
+.field private b:Lkik/android/widget/ba;
 
 .field private c:Landroid/graphics/drawable/Drawable;
 
@@ -136,7 +136,7 @@
 
     .prologue
     .line 77
-    const v0, 0x7f040155
+    const v0, 0x7f04015a
 
     invoke-static {p1, v0, p0}, Lkik/android/chat/view/registration/RegPhoneVerificationEnterNumberViewImpl;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -163,18 +163,18 @@
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     .line 83
-    new-instance v0, Lkik/android/widget/ar;
+    new-instance v0, Lkik/android/widget/ba;
 
     iget-object v1, p0, Lkik/android/chat/view/registration/RegPhoneVerificationEnterNumberViewImpl;->_phoneEditText:Landroid/widget/EditText;
 
     iget-object v2, p0, Lkik/android/chat/view/registration/RegPhoneVerificationEnterNumberViewImpl;->_phoneEditTextError:Landroid/widget/TextView;
 
-    invoke-direct {v0, v1, v2}, Lkik/android/widget/ar;-><init>(Landroid/widget/EditText;Landroid/widget/TextView;)V
+    invoke-direct {v0, v1, v2}, Lkik/android/widget/ba;-><init>(Landroid/widget/EditText;Landroid/widget/TextView;)V
 
-    iput-object v0, p0, Lkik/android/chat/view/registration/RegPhoneVerificationEnterNumberViewImpl;->b:Lkik/android/widget/ar;
+    iput-object v0, p0, Lkik/android/chat/view/registration/RegPhoneVerificationEnterNumberViewImpl;->b:Lkik/android/widget/ba;
 
     .line 84
-    const v0, 0x7f0200f0
+    const v0, 0x7f0200d8
 
     invoke-static {v0}, Lkik/android/chat/KikApplication;->f(I)Landroid/graphics/drawable/Drawable;
 
@@ -183,7 +183,7 @@
     iput-object v0, p0, Lkik/android/chat/view/registration/RegPhoneVerificationEnterNumberViewImpl;->c:Landroid/graphics/drawable/Drawable;
 
     .line 85
-    const v0, 0x7f0200f9
+    const v0, 0x7f0200e1
 
     invoke-static {v0}, Lkik/android/chat/KikApplication;->f(I)Landroid/graphics/drawable/Drawable;
 
@@ -201,9 +201,9 @@
 
     .prologue
     .line 140
-    iget-object v0, p0, Lkik/android/chat/view/registration/RegPhoneVerificationEnterNumberViewImpl;->b:Lkik/android/widget/ar;
+    iget-object v0, p0, Lkik/android/chat/view/registration/RegPhoneVerificationEnterNumberViewImpl;->b:Lkik/android/widget/ba;
 
-    invoke-virtual {v0}, Lkik/android/widget/ar;->a()V
+    invoke-virtual {v0}, Lkik/android/widget/ba;->a()V
 
     .line 141
     return-void
@@ -214,7 +214,7 @@
 
     .prologue
     .line 134
-    iget-object v0, p0, Lkik/android/chat/view/registration/RegPhoneVerificationEnterNumberViewImpl;->b:Lkik/android/widget/ar;
+    iget-object v0, p0, Lkik/android/chat/view/registration/RegPhoneVerificationEnterNumberViewImpl;->b:Lkik/android/widget/ba;
 
     iget-object v1, p0, Lkik/android/chat/view/registration/RegPhoneVerificationEnterNumberViewImpl;->c:Landroid/graphics/drawable/Drawable;
 
@@ -222,7 +222,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lkik/android/widget/ar;->a(Landroid/graphics/drawable/Drawable;Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v1, v2}, Lkik/android/widget/ba;->a(Landroid/graphics/drawable/Drawable;Ljava/lang/CharSequence;)V
 
     .line 135
     return-void
@@ -312,11 +312,11 @@
 
     .prologue
     .line 146
-    iget-object v0, p0, Lkik/android/chat/view/registration/RegPhoneVerificationEnterNumberViewImpl;->b:Lkik/android/widget/ar;
+    iget-object v0, p0, Lkik/android/chat/view/registration/RegPhoneVerificationEnterNumberViewImpl;->b:Lkik/android/widget/ba;
 
     iget-object v1, p0, Lkik/android/chat/view/registration/RegPhoneVerificationEnterNumberViewImpl;->d:Landroid/graphics/drawable/Drawable;
 
-    invoke-virtual {v0, v1}, Lkik/android/widget/ar;->a(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {v0, v1}, Lkik/android/widget/ba;->a(Landroid/graphics/drawable/Drawable;)V
 
     .line 147
     return-void
@@ -326,7 +326,7 @@
     .locals 1
     .annotation build Lbutterknife/OnClick;
         value = {
-            0x7f1003cc
+            0x7f1003c8
         }
     .end annotation
 
@@ -350,7 +350,7 @@
     .locals 1
     .annotation build Lbutterknife/OnClick;
         value = {
-            0x7f1003cd
+            0x7f1003c9
         }
     .end annotation
 
@@ -374,7 +374,7 @@
     .locals 1
     .annotation build Lbutterknife/OnClick;
         value = {
-            0x7f1003ce
+            0x7f1003ca
         }
     .end annotation
 

@@ -37,9 +37,9 @@
 
     iget-object v0, p0, Lkik/android/chat/vm/chats/profile/c;->a:Lkik/android/chat/vm/chats/profile/a;
 
-    check-cast p1, Lkik/android/chat/vm/chats/profile/IBioEditorViewModel$ErrorType;
+    check-cast p1, Lkik/android/chat/vm/chats/profile/IValidateableInputEditorViewModel$ErrorType;
 
-    invoke-static {v0, p1}, Lkik/android/chat/vm/chats/profile/a;->b(Lkik/android/chat/vm/chats/profile/a;Lkik/android/chat/vm/chats/profile/IBioEditorViewModel$ErrorType;)Ljava/lang/Boolean;
+    invoke-static {v0, p1}, Lkik/android/chat/vm/chats/profile/a;->b(Lkik/android/chat/vm/chats/profile/a;Lkik/android/chat/vm/chats/profile/IValidateableInputEditorViewModel$ErrorType;)Ljava/lang/Boolean;
 
     move-result-object v0
 

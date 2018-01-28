@@ -36,7 +36,7 @@
     .locals 0
 
     .prologue
-    .line 1401
+    .line 1403
     iput-object p1, p0, Lkik/android/chat/fragment/KikConversationsFragment$5;->c:Lkik/android/chat/fragment/KikConversationsFragment;
 
     iput-wide p2, p0, Lkik/android/chat/fragment/KikConversationsFragment$5;->a:J
@@ -56,17 +56,17 @@
     .prologue
     const/4 v8, 0x1
 
-    .line 1401
+    .line 1403
     check-cast p1, Landroid/os/Bundle;
 
-    .line 2405
+    .line 2407
     const-string v0, "photoUrl"
 
     invoke-virtual {p1, v0}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 2406
+    .line 2408
     iget-object v0, p0, Lkik/android/chat/fragment/KikConversationsFragment$5;->c:Lkik/android/chat/fragment/KikConversationsFragment;
 
     iget-object v0, v0, Lkik/android/chat/fragment/KikConversationsFragment;->_mixpanel:Lcom/kik/android/Mixpanel;
@@ -124,7 +124,7 @@
 
     move-result v4
 
-    .line 2409
+    .line 2411
     invoke-static {}, Lkik/android/internal/platform/PlatformHelper;->a()Lkik/android/internal/platform/PlatformHelper;
 
     move-result-object v0
@@ -133,25 +133,25 @@
 
     iget-object v5, p0, Lkik/android/chat/fragment/KikConversationsFragment$5;->c:Lkik/android/chat/fragment/KikConversationsFragment;
 
-    iget-object v5, v5, Lkik/android/chat/fragment/KikConversationsFragment;->f:Lcom/kik/storage/p;
+    iget-object v5, v5, Lkik/android/chat/fragment/KikConversationsFragment;->f:Lcom/kik/storage/s;
 
-    invoke-virtual/range {v0 .. v5}, Lkik/android/internal/platform/PlatformHelper;->a(Ljava/lang/String;JZLcom/kik/storage/p;)Lkik/core/datatypes/messageExtensions/ContentMessage;
+    invoke-virtual/range {v0 .. v5}, Lkik/android/internal/platform/PlatformHelper;->a(Ljava/lang/String;JZLcom/kik/storage/s;)Lkik/core/datatypes/messageExtensions/ContentMessage;
 
     move-result-object v0
 
-    .line 2411
+    .line 2413
     invoke-static {}, Lkik/android/internal/platform/PlatformHelper;->a()Lkik/android/internal/platform/PlatformHelper;
 
     move-result-object v1
 
     invoke-virtual {v1, v0, v8}, Lkik/android/internal/platform/PlatformHelper;->a(Lkik/core/datatypes/messageExtensions/ContentMessage;Z)V
 
-    .line 2412
+    .line 2414
     iget-object v0, p0, Lkik/android/chat/fragment/KikConversationsFragment$5;->c:Lkik/android/chat/fragment/KikConversationsFragment;
 
     invoke-static {v0}, Lkik/android/chat/fragment/KikConversationsFragment;->A(Lkik/android/chat/fragment/KikConversationsFragment;)V
 
-    .line 1401
+    .line 1403
     return-void
 .end method
 
@@ -159,7 +159,7 @@
     .locals 2
 
     .prologue
-    .line 1419
+    .line 1421
     iget-object v0, p0, Lkik/android/chat/fragment/KikConversationsFragment$5;->b:Ljava/lang/String;
 
     invoke-static {v0}, Lkik/android/KikFileProvider;->a(Ljava/lang/String;)Z
@@ -168,17 +168,17 @@
 
     if-eqz v0, :cond_0
 
-    .line 1420
+    .line 1422
     new-instance v0, Ljava/io/File;
 
     iget-object v1, p0, Lkik/android/chat/fragment/KikConversationsFragment$5;->b:Ljava/lang/String;
 
     invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 1421
+    .line 1423
     invoke-virtual {v0}, Ljava/io/File;->delete()Z
 
-    .line 1423
+    .line 1425
     :cond_0
     return-void
 .end method

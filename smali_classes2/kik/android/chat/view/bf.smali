@@ -37,9 +37,11 @@
 
     iget-object v0, p0, Lkik/android/chat/view/bf;->a:Lkik/android/chat/view/ValidateableInputView;
 
-    check-cast p1, Ljava/lang/Boolean;
+    check-cast p1, Ljava/lang/String;
 
-    invoke-static {v0, p1}, Lkik/android/chat/view/ValidateableInputView;->a(Lkik/android/chat/view/ValidateableInputView;Ljava/lang/Boolean;)V
+    check-cast p1, Ljava/lang/CharSequence;
+
+    invoke-virtual {v0, p1}, Lkik/android/chat/view/ValidateableInputView;->a(Ljava/lang/CharSequence;)V
 
     return-void
 .end method

@@ -1,41 +1,67 @@
 .class public final Lcom/kik/metrics/b/bb;
-.super Lcom/kik/metrics/b/av;
+.super Lcom/kik/metrics/b/ay;
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/kik/metrics/b/s;
+.implements Lcom/kik/metrics/b/t;
 
 
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/kik/metrics/b/bb$a;
+        Lcom/kik/metrics/b/bb$a;,
+        Lcom/kik/metrics/b/bb$b;
     }
 .end annotation
 
 
+# instance fields
+.field private b:Lcom/kik/metrics/a/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/kik/metrics/a/b",
+            "<",
+            "Lcom/kik/metrics/b/bb$b;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
 # direct methods
-.method private constructor <init>(Lcom/kik/metrics/b/at;)V
+.method private constructor <init>(Lcom/kik/metrics/b/aw;)V
     .locals 0
 
     .prologue
-    .line 20
-    invoke-direct {p0}, Lcom/kik/metrics/b/av;-><init>()V
+    .line 38
+    invoke-direct {p0}, Lcom/kik/metrics/b/ay;-><init>()V
 
-    .line 21
-    iput-object p1, p0, Lcom/kik/metrics/b/bb;->a:Lcom/kik/metrics/b/at;
+    .line 39
+    iput-object p1, p0, Lcom/kik/metrics/b/bb;->a:Lcom/kik/metrics/b/aw;
 
-    .line 22
+    .line 40
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/kik/metrics/b/at;B)V
+.method synthetic constructor <init>(Lcom/kik/metrics/b/aw;B)V
     .locals 0
 
     .prologue
     .line 12
-    invoke-direct {p0, p1}, Lcom/kik/metrics/b/bb;-><init>(Lcom/kik/metrics/b/at;)V
+    invoke-direct {p0, p1}, Lcom/kik/metrics/b/bb;-><init>(Lcom/kik/metrics/b/aw;)V
 
+    return-void
+.end method
+
+.method static synthetic a(Lcom/kik/metrics/b/bb;Lcom/kik/metrics/a/b;)V
+    .locals 0
+
+    .prologue
+    .line 12
+    .line 1025
+    iput-object p1, p0, Lcom/kik/metrics/b/bb;->b:Lcom/kik/metrics/a/b;
+
+    .line 12
     return-void
 .end method
 
@@ -43,7 +69,7 @@
     .locals 1
 
     .prologue
-    .line 29
+    .line 47
     new-instance v0, Lcom/kik/metrics/b/bb$a;
 
     invoke-direct {v0}, Lcom/kik/metrics/b/bb$a;-><init>()V
@@ -54,7 +80,7 @@
 
 # virtual methods
 .method public final a()Ljava/util/List;
-    .locals 1
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -66,11 +92,23 @@
     .end annotation
 
     .prologue
-    .line 17
-    invoke-super {p0}, Lcom/kik/metrics/b/av;->a()Ljava/util/List;
+    .line 30
+    invoke-super {p0}, Lcom/kik/metrics/b/ay;->a()Ljava/util/List;
 
     move-result-object v0
 
+    .line 31
+    iget-object v1, p0, Lcom/kik/metrics/b/bb;->b:Lcom/kik/metrics/a/b;
+
+    if-eqz v1, :cond_0
+
+    .line 32
+    iget-object v1, p0, Lcom/kik/metrics/b/bb;->b:Lcom/kik/metrics/a/b;
+
+    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 35
+    :cond_0
     return-object v0
 .end method
 
@@ -78,8 +116,8 @@
     .locals 1
 
     .prologue
-    .line 34
-    const-string v0, "startapublicgroup_screen_opened"
+    .line 52
+    const-string v0, "settings_interest_suggested"
 
     return-object v0
 .end method

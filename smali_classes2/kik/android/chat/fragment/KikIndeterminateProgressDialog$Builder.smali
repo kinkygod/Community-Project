@@ -17,13 +17,13 @@
 # instance fields
 .field _progressView:Lcom/github/rahatarmanahmed/cpv/CircularProgressView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1001c0
+        value = 0x7f1001c1
     .end annotation
 .end field
 
 .field _text:Landroid/widget/TextView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1001c1
+        value = 0x7f1001c2
     .end annotation
 .end field
 
@@ -46,7 +46,7 @@
     iput-object v0, p0, Lkik/android/chat/fragment/KikIndeterminateProgressDialog$Builder;->a:Lkik/android/chat/fragment/KikDialogFragment$a;
 
     .line 34
-    const v0, 0x7f040072
+    const v0, 0x7f040074
 
     const/4 v1, 0x0
 
@@ -122,7 +122,7 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
     .line 50
     return-object p0

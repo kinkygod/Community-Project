@@ -1,5 +1,5 @@
 .class public final Lcom/kik/metrics/a/d;
-.super Lcom/kik/metrics/b/av;
+.super Lcom/kik/metrics/b/ay;
 .source "SourceFile"
 
 
@@ -79,10 +79,10 @@
 
     .prologue
     .line 103
-    invoke-direct {p0}, Lcom/kik/metrics/b/av;-><init>()V
+    invoke-direct {p0}, Lcom/kik/metrics/b/ay;-><init>()V
 
     .line 104
-    iput-object p1, p0, Lcom/kik/metrics/a/d;->a:Lcom/kik/metrics/b/at;
+    iput-object p1, p0, Lcom/kik/metrics/a/d;->a:Lcom/kik/metrics/b/aw;
 
     .line 105
     return-void
@@ -178,7 +178,7 @@
 
     .prologue
     .line 84
-    invoke-super {p0}, Lcom/kik/metrics/b/av;->a()Ljava/util/List;
+    invoke-super {p0}, Lcom/kik/metrics/b/ay;->a()Ljava/util/List;
 
     move-result-object v0
 

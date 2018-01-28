@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/kik/profile/ProfileCommon$d;
+.implements Lcom/kik/profile/ProfileCommon$e;
 
 
 # annotations
@@ -22,7 +22,7 @@
         "<",
         "Lcom/kik/profile/ProfileCommon$OriginalProfilePicExtensionAction$a;",
         ">;",
-        "Lcom/kik/profile/ProfileCommon$d;"
+        "Lcom/kik/profile/ProfileCommon$e;"
     }
 .end annotation
 
@@ -39,7 +39,7 @@
             "<",
             "Lcom/kik/entity/model/ElementCommon$OriginalProfilePicExtensionElement;",
             "Lcom/kik/entity/model/ElementCommon$OriginalProfilePicExtensionElement$a;",
-            "Lcom/kik/entity/model/ElementCommon$j;",
+            "Lcom/kik/entity/model/ElementCommon$k;",
             ">;"
         }
     .end annotation

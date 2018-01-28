@@ -14,21 +14,21 @@
 # instance fields
 .field protected _landscapeView:Landroid/view/ViewGroup;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f100260
+        value = 0x7f10025c
     .end annotation
 .end field
 
 .field protected _portraitView:Landroid/view/ViewGroup;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f10025f
+        value = 0x7f10025b
     .end annotation
 .end field
 
-.field private g:Lkik/android/e/as;
+.field private g:Lkik/android/e/aq;
 
-.field private h:Lkik/android/chat/vm/bc;
+.field private h:Lkik/android/chat/vm/be;
 
-.field private i:Lkik/android/chat/vm/aw;
+.field private i:Lkik/android/chat/vm/ay;
 
 
 # direct methods
@@ -42,22 +42,22 @@
     return-void
 .end method
 
-.method static synthetic a(Lkik/android/chat/fragment/KikGranReportDialogFragment;Lkik/android/chat/vm/aw;)Lkik/android/chat/vm/aw;
+.method static synthetic a(Lkik/android/chat/fragment/KikGranReportDialogFragment;Lkik/android/chat/vm/ay;)Lkik/android/chat/vm/ay;
     .locals 0
 
     .prologue
     .line 23
-    iput-object p1, p0, Lkik/android/chat/fragment/KikGranReportDialogFragment;->i:Lkik/android/chat/vm/aw;
+    iput-object p1, p0, Lkik/android/chat/fragment/KikGranReportDialogFragment;->i:Lkik/android/chat/vm/ay;
 
     return-object p1
 .end method
 
-.method static synthetic a(Lkik/android/chat/fragment/KikGranReportDialogFragment;Lkik/android/chat/vm/bc;)Lkik/android/chat/vm/bc;
+.method static synthetic a(Lkik/android/chat/fragment/KikGranReportDialogFragment;Lkik/android/chat/vm/be;)Lkik/android/chat/vm/be;
     .locals 0
 
     .prologue
     .line 23
-    iput-object p1, p0, Lkik/android/chat/fragment/KikGranReportDialogFragment;->h:Lkik/android/chat/vm/bc;
+    iput-object p1, p0, Lkik/android/chat/fragment/KikGranReportDialogFragment;->h:Lkik/android/chat/vm/be;
 
     return-object p1
 .end method
@@ -67,9 +67,9 @@
 
     .prologue
     .line 55
-    iget-object v0, p0, Lkik/android/chat/fragment/KikGranReportDialogFragment;->h:Lkik/android/chat/vm/bc;
+    iget-object v0, p0, Lkik/android/chat/fragment/KikGranReportDialogFragment;->h:Lkik/android/chat/vm/be;
 
-    invoke-interface {v0}, Lkik/android/chat/vm/bc;->z_()V
+    invoke-interface {v0}, Lkik/android/chat/vm/be;->D_()V
 
     return-void
 .end method
@@ -105,7 +105,7 @@
 
     aput-object v1, v0, v2
 
-    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
     .line 96
     new-array v0, v3, [Landroid/view/View;
@@ -114,7 +114,7 @@
 
     aput-object v1, v0, v2
 
-    invoke-static {v0}, Lkik/android/util/ca;->g([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->g([Landroid/view/View;)V
 
     .line 103
     :goto_0
@@ -131,7 +131,7 @@
 
     aput-object v1, v0, v2
 
-    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
     .line 100
     new-array v0, v3, [Landroid/view/View;
@@ -140,7 +140,7 @@
 
     aput-object v1, v0, v2
 
-    invoke-static {v0}, Lkik/android/util/ca;->g([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->g([Landroid/view/View;)V
 
     goto :goto_0
 .end method
@@ -155,9 +155,9 @@
     invoke-super {p0, p1}, Lkik/android/chat/fragment/KikDialogFragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
     .line 1079
-    iget-object v0, p0, Lkik/android/chat/fragment/KikGranReportDialogFragment;->g:Lkik/android/e/as;
+    iget-object v0, p0, Lkik/android/chat/fragment/KikGranReportDialogFragment;->g:Lkik/android/e/aq;
 
-    invoke-virtual {v0}, Lkik/android/e/as;->getRoot()Landroid/view/View;
+    invoke-virtual {v0}, Lkik/android/e/aq;->getRoot()Landroid/view/View;
 
     move-result-object v0
 
@@ -186,7 +186,7 @@
     invoke-direct {v1, v0, v2}, Landroid/support/v7/app/AlertDialog$Builder;-><init>(Landroid/content/Context;I)V
 
     .line 36
-    iget-object v0, p0, Lkik/android/chat/fragment/KikGranReportDialogFragment;->i:Lkik/android/chat/vm/aw;
+    iget-object v0, p0, Lkik/android/chat/fragment/KikGranReportDialogFragment;->i:Lkik/android/chat/vm/ay;
 
     if-nez v0, :cond_0
 
@@ -201,7 +201,7 @@
 
     .line 39
     :cond_0
-    iget-object v0, p0, Lkik/android/chat/fragment/KikGranReportDialogFragment;->h:Lkik/android/chat/vm/bc;
+    iget-object v0, p0, Lkik/android/chat/fragment/KikGranReportDialogFragment;->h:Lkik/android/chat/vm/be;
 
     invoke-virtual {p0}, Lkik/android/chat/fragment/KikGranReportDialogFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
@@ -211,9 +211,9 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lkik/android/chat/fragment/KikGranReportDialogFragment;->i:Lkik/android/chat/vm/aw;
+    iget-object v3, p0, Lkik/android/chat/fragment/KikGranReportDialogFragment;->i:Lkik/android/chat/vm/ay;
 
-    invoke-interface {v0, v2, v3}, Lkik/android/chat/vm/bc;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    invoke-interface {v0, v2, v3}, Lkik/android/chat/vm/be;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 41
     invoke-virtual {p0}, Lkik/android/chat/fragment/KikGranReportDialogFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
@@ -224,7 +224,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f0400a3
+    const v2, 0x7f0400a2
 
     const/4 v3, 0x0
 
@@ -234,39 +234,39 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/android/e/as;
+    check-cast v0, Lkik/android/e/aq;
 
-    iput-object v0, p0, Lkik/android/chat/fragment/KikGranReportDialogFragment;->g:Lkik/android/e/as;
+    iput-object v0, p0, Lkik/android/chat/fragment/KikGranReportDialogFragment;->g:Lkik/android/e/aq;
 
     .line 42
-    iget-object v0, p0, Lkik/android/chat/fragment/KikGranReportDialogFragment;->g:Lkik/android/e/as;
+    iget-object v0, p0, Lkik/android/chat/fragment/KikGranReportDialogFragment;->g:Lkik/android/e/aq;
 
-    iget-object v2, p0, Lkik/android/chat/fragment/KikGranReportDialogFragment;->h:Lkik/android/chat/vm/bc;
+    iget-object v2, p0, Lkik/android/chat/fragment/KikGranReportDialogFragment;->h:Lkik/android/chat/vm/be;
 
-    invoke-virtual {v0, v2}, Lkik/android/e/as;->a(Lkik/android/chat/vm/bc;)V
+    invoke-virtual {v0, v2}, Lkik/android/e/aq;->a(Lkik/android/chat/vm/be;)V
 
     .line 43
-    iget-object v0, p0, Lkik/android/chat/fragment/KikGranReportDialogFragment;->g:Lkik/android/e/as;
+    iget-object v0, p0, Lkik/android/chat/fragment/KikGranReportDialogFragment;->g:Lkik/android/e/aq;
 
-    iget-object v0, v0, Lkik/android/e/as;->b:Lkik/android/e/w;
+    iget-object v0, v0, Lkik/android/e/aq;->b:Lkik/android/e/x;
 
-    iget-object v2, p0, Lkik/android/chat/fragment/KikGranReportDialogFragment;->h:Lkik/android/chat/vm/bc;
+    iget-object v2, p0, Lkik/android/chat/fragment/KikGranReportDialogFragment;->h:Lkik/android/chat/vm/be;
 
-    invoke-virtual {v0, v2}, Lkik/android/e/w;->a(Lkik/android/chat/vm/bc;)V
+    invoke-virtual {v0, v2}, Lkik/android/e/x;->a(Lkik/android/chat/vm/be;)V
 
     .line 44
-    iget-object v0, p0, Lkik/android/chat/fragment/KikGranReportDialogFragment;->g:Lkik/android/e/as;
+    iget-object v0, p0, Lkik/android/chat/fragment/KikGranReportDialogFragment;->g:Lkik/android/e/aq;
 
-    iget-object v0, v0, Lkik/android/e/as;->c:Lkik/android/e/v;
+    iget-object v0, v0, Lkik/android/e/aq;->c:Lkik/android/e/w;
 
-    iget-object v2, p0, Lkik/android/chat/fragment/KikGranReportDialogFragment;->h:Lkik/android/chat/vm/bc;
+    iget-object v2, p0, Lkik/android/chat/fragment/KikGranReportDialogFragment;->h:Lkik/android/chat/vm/be;
 
-    invoke-virtual {v0, v2}, Lkik/android/e/v;->a(Lkik/android/chat/vm/bc;)V
+    invoke-virtual {v0, v2}, Lkik/android/e/w;->a(Lkik/android/chat/vm/be;)V
 
     .line 46
-    iget-object v0, p0, Lkik/android/chat/fragment/KikGranReportDialogFragment;->g:Lkik/android/e/as;
+    iget-object v0, p0, Lkik/android/chat/fragment/KikGranReportDialogFragment;->g:Lkik/android/e/aq;
 
-    invoke-virtual {v0}, Lkik/android/e/as;->getRoot()Landroid/view/View;
+    invoke-virtual {v0}, Lkik/android/e/aq;->getRoot()Landroid/view/View;
 
     move-result-object v0
 
@@ -286,9 +286,9 @@
     invoke-virtual {p0, v5}, Lkik/android/chat/fragment/KikGranReportDialogFragment;->a(Z)V
 
     .line 55
-    iget-object v0, p0, Lkik/android/chat/fragment/KikGranReportDialogFragment;->h:Lkik/android/chat/vm/bc;
+    iget-object v0, p0, Lkik/android/chat/fragment/KikGranReportDialogFragment;->h:Lkik/android/chat/vm/be;
 
-    invoke-interface {v0}, Lkik/android/chat/vm/bc;->i()Ljava/lang/String;
+    invoke-interface {v0}, Lkik/android/chat/vm/be;->i()Ljava/lang/String;
 
     move-result-object v0
 
@@ -362,9 +362,9 @@
 
     .line 69
     :cond_3
-    iget-object v0, p0, Lkik/android/chat/fragment/KikGranReportDialogFragment;->h:Lkik/android/chat/vm/bc;
+    iget-object v0, p0, Lkik/android/chat/fragment/KikGranReportDialogFragment;->h:Lkik/android/chat/vm/be;
 
-    invoke-interface {v0}, Lkik/android/chat/vm/bc;->D_()Ljava/lang/String;
+    invoke-interface {v0}, Lkik/android/chat/vm/be;->H_()Ljava/lang/String;
 
     move-result-object v0
 

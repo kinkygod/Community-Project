@@ -37,7 +37,7 @@
 
     iget-object v0, p0, Lkik/android/chat/vm/messaging/dm;->a:Lkik/android/net/http/a;
 
-    invoke-static {v0}, Lkik/android/chat/vm/messaging/ct;->a(Lkik/android/net/http/a;)Lkik/android/f/h;
+    invoke-static {v0}, Lkik/android/chat/vm/messaging/ct;->a(Lkik/android/net/http/a;)Lkik/android/f/g;
 
     move-result-object v0
 

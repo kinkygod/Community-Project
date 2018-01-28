@@ -30,7 +30,7 @@
 
 .field private _notifyNewPeople:Ljava/lang/Boolean;
 
-.field private _upd:Lkik/core/datatypes/ac;
+.field private _upd:Lkik/core/datatypes/ab;
 
 .field private _usernamePasskey:Ljava/lang/String;
 
@@ -48,11 +48,11 @@
     invoke-direct {p0, p1, v0}, Lkik/core/net/outgoing/i;-><init>(Lkik/core/net/d;Ljava/lang/String;)V
 
     .line 22
-    new-instance v0, Lkik/core/datatypes/ac;
+    new-instance v0, Lkik/core/datatypes/ab;
 
-    invoke-direct {v0}, Lkik/core/datatypes/ac;-><init>()V
+    invoke-direct {v0}, Lkik/core/datatypes/ab;-><init>()V
 
-    iput-object v0, p0, Lkik/core/net/outgoing/UserProfileRequest;->_upd:Lkik/core/datatypes/ac;
+    iput-object v0, p0, Lkik/core/net/outgoing/UserProfileRequest;->_upd:Lkik/core/datatypes/ab;
 
     .line 38
     return-void
@@ -68,11 +68,11 @@
     invoke-direct {p0, p1, v0}, Lkik/core/net/outgoing/i;-><init>(Lkik/core/net/d;Ljava/lang/String;)V
 
     .line 22
-    new-instance v0, Lkik/core/datatypes/ac;
+    new-instance v0, Lkik/core/datatypes/ab;
 
-    invoke-direct {v0}, Lkik/core/datatypes/ac;-><init>()V
+    invoke-direct {v0}, Lkik/core/datatypes/ab;-><init>()V
 
-    iput-object v0, p0, Lkik/core/net/outgoing/UserProfileRequest;->_upd:Lkik/core/datatypes/ac;
+    iput-object v0, p0, Lkik/core/net/outgoing/UserProfileRequest;->_upd:Lkik/core/datatypes/ab;
 
     .line 53
     invoke-static {p2}, Lkik/core/util/u;->c(Ljava/lang/String;)Ljava/lang/String;
@@ -108,19 +108,19 @@
     iput-object p6, p0, Lkik/core/net/outgoing/UserProfileRequest;->_notifyNewPeople:Ljava/lang/Boolean;
 
     .line 61
-    iget-object v0, p0, Lkik/core/net/outgoing/UserProfileRequest;->_upd:Lkik/core/datatypes/ac;
+    iget-object v0, p0, Lkik/core/net/outgoing/UserProfileRequest;->_upd:Lkik/core/datatypes/ab;
 
-    iput-object p4, v0, Lkik/core/datatypes/ac;->a:Ljava/lang/String;
+    iput-object p4, v0, Lkik/core/datatypes/ab;->a:Ljava/lang/String;
 
     .line 62
-    iget-object v0, p0, Lkik/core/net/outgoing/UserProfileRequest;->_upd:Lkik/core/datatypes/ac;
+    iget-object v0, p0, Lkik/core/net/outgoing/UserProfileRequest;->_upd:Lkik/core/datatypes/ab;
 
-    iput-object p2, v0, Lkik/core/datatypes/ac;->d:Ljava/lang/String;
+    iput-object p2, v0, Lkik/core/datatypes/ab;->d:Ljava/lang/String;
 
     .line 63
-    iget-object v0, p0, Lkik/core/net/outgoing/UserProfileRequest;->_upd:Lkik/core/datatypes/ac;
+    iget-object v0, p0, Lkik/core/net/outgoing/UserProfileRequest;->_upd:Lkik/core/datatypes/ab;
 
-    iput-object p3, v0, Lkik/core/datatypes/ac;->e:Ljava/lang/String;
+    iput-object p3, v0, Lkik/core/datatypes/ab;->e:Ljava/lang/String;
 
     .line 64
     return-void
@@ -138,12 +138,12 @@
     return-object v0
 .end method
 
-.method public getUserData()Lkik/core/datatypes/ac;
+.method public getUserData()Lkik/core/datatypes/ab;
     .locals 1
 
     .prologue
     .line 159
-    iget-object v0, p0, Lkik/core/net/outgoing/UserProfileRequest;->_upd:Lkik/core/datatypes/ac;
+    iget-object v0, p0, Lkik/core/net/outgoing/UserProfileRequest;->_upd:Lkik/core/datatypes/ab;
 
     return-object v0
 .end method
@@ -283,13 +283,13 @@
     const/4 v4, 0x1
 
     .line 69
-    iget-object v0, p0, Lkik/core/net/outgoing/UserProfileRequest;->_upd:Lkik/core/datatypes/ac;
+    iget-object v0, p0, Lkik/core/net/outgoing/UserProfileRequest;->_upd:Lkik/core/datatypes/ab;
 
     invoke-static {v4}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v1
 
-    iput-object v1, v0, Lkik/core/datatypes/ac;->g:Ljava/lang/Boolean;
+    iput-object v1, v0, Lkik/core/datatypes/ab;->g:Ljava/lang/Boolean;
 
     .line 71
     const-string v0, "query"
@@ -347,7 +347,7 @@
     if-eqz v0, :cond_3
 
     .line 77
-    iget-object v0, p0, Lkik/core/net/outgoing/UserProfileRequest;->_upd:Lkik/core/datatypes/ac;
+    iget-object v0, p0, Lkik/core/net/outgoing/UserProfileRequest;->_upd:Lkik/core/datatypes/ab;
 
     new-instance v1, Ljava/lang/Boolean;
 
@@ -367,16 +367,16 @@
 
     invoke-direct {v1, v2}, Ljava/lang/Boolean;-><init>(Z)V
 
-    iput-object v1, v0, Lkik/core/datatypes/ac;->b:Ljava/lang/Boolean;
+    iput-object v1, v0, Lkik/core/datatypes/ab;->b:Ljava/lang/Boolean;
 
     .line 78
-    iget-object v0, p0, Lkik/core/net/outgoing/UserProfileRequest;->_upd:Lkik/core/datatypes/ac;
+    iget-object v0, p0, Lkik/core/net/outgoing/UserProfileRequest;->_upd:Lkik/core/datatypes/ab;
 
     invoke-virtual {p1}, Lkik/core/net/g;->nextText()Ljava/lang/String;
 
     move-result-object v1
 
-    iput-object v1, v0, Lkik/core/datatypes/ac;->a:Ljava/lang/String;
+    iput-object v1, v0, Lkik/core/datatypes/ab;->a:Ljava/lang/String;
 
     .line 98
     :cond_2
@@ -396,13 +396,13 @@
     if-eqz v0, :cond_4
 
     .line 81
-    iget-object v0, p0, Lkik/core/net/outgoing/UserProfileRequest;->_upd:Lkik/core/datatypes/ac;
+    iget-object v0, p0, Lkik/core/net/outgoing/UserProfileRequest;->_upd:Lkik/core/datatypes/ab;
 
     invoke-virtual {p1}, Lkik/core/net/g;->nextText()Ljava/lang/String;
 
     move-result-object v1
 
-    iput-object v1, v0, Lkik/core/datatypes/ac;->d:Ljava/lang/String;
+    iput-object v1, v0, Lkik/core/datatypes/ab;->d:Ljava/lang/String;
 
     goto :goto_1
 
@@ -417,13 +417,13 @@
     if-eqz v0, :cond_5
 
     .line 84
-    iget-object v0, p0, Lkik/core/net/outgoing/UserProfileRequest;->_upd:Lkik/core/datatypes/ac;
+    iget-object v0, p0, Lkik/core/net/outgoing/UserProfileRequest;->_upd:Lkik/core/datatypes/ab;
 
     invoke-virtual {p1}, Lkik/core/net/g;->nextText()Ljava/lang/String;
 
     move-result-object v1
 
-    iput-object v1, v0, Lkik/core/datatypes/ac;->e:Ljava/lang/String;
+    iput-object v1, v0, Lkik/core/datatypes/ab;->e:Ljava/lang/String;
 
     goto :goto_1
 
@@ -438,13 +438,13 @@
     if-eqz v0, :cond_6
 
     .line 87
-    iget-object v0, p0, Lkik/core/net/outgoing/UserProfileRequest;->_upd:Lkik/core/datatypes/ac;
+    iget-object v0, p0, Lkik/core/net/outgoing/UserProfileRequest;->_upd:Lkik/core/datatypes/ab;
 
     invoke-virtual {p1}, Lkik/core/net/g;->nextText()Ljava/lang/String;
 
     move-result-object v1
 
-    iput-object v1, v0, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
+    iput-object v1, v0, Lkik/core/datatypes/ab;->c:Ljava/lang/String;
 
     goto :goto_1
 
@@ -459,13 +459,13 @@
     if-eqz v0, :cond_7
 
     .line 90
-    iget-object v0, p0, Lkik/core/net/outgoing/UserProfileRequest;->_upd:Lkik/core/datatypes/ac;
+    iget-object v0, p0, Lkik/core/net/outgoing/UserProfileRequest;->_upd:Lkik/core/datatypes/ab;
 
     invoke-virtual {p1}, Lkik/core/net/g;->nextText()Ljava/lang/String;
 
     move-result-object v1
 
-    iput-object v1, v0, Lkik/core/datatypes/ac;->f:Ljava/lang/String;
+    iput-object v1, v0, Lkik/core/datatypes/ab;->f:Ljava/lang/String;
 
     goto :goto_1
 
@@ -480,7 +480,7 @@
     if-eqz v0, :cond_8
 
     .line 93
-    iget-object v0, p0, Lkik/core/net/outgoing/UserProfileRequest;->_upd:Lkik/core/datatypes/ac;
+    iget-object v0, p0, Lkik/core/net/outgoing/UserProfileRequest;->_upd:Lkik/core/datatypes/ab;
 
     new-instance v1, Ljava/lang/Boolean;
 
@@ -496,7 +496,7 @@
 
     invoke-direct {v1, v2}, Ljava/lang/Boolean;-><init>(Z)V
 
-    iput-object v1, v0, Lkik/core/datatypes/ac;->h:Ljava/lang/Boolean;
+    iput-object v1, v0, Lkik/core/datatypes/ab;->h:Ljava/lang/Boolean;
 
     goto :goto_1
 
@@ -511,13 +511,13 @@
     if-eqz v0, :cond_2
 
     .line 96
-    iget-object v0, p0, Lkik/core/net/outgoing/UserProfileRequest;->_upd:Lkik/core/datatypes/ac;
+    iget-object v0, p0, Lkik/core/net/outgoing/UserProfileRequest;->_upd:Lkik/core/datatypes/ab;
 
     invoke-static {v4}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v1
 
-    iput-object v1, v0, Lkik/core/datatypes/ac;->i:Ljava/lang/Boolean;
+    iput-object v1, v0, Lkik/core/datatypes/ab;->i:Ljava/lang/Boolean;
 
     goto :goto_1
 

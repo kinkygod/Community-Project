@@ -4,11 +4,11 @@
 
 # interfaces
 .implements Lkik/android/chat/activity/a;
-.implements Lkik/android/f/l;
+.implements Lkik/android/f/k;
 
 
 # instance fields
-.field protected a:Lkik/core/interfaces/ae;
+.field protected a:Lkik/core/interfaces/ad;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -909,9 +909,9 @@
     if-ne p2, v2, :cond_4
 
     .line 643
-    iget-object v0, p0, Lkik/android/chat/activity/FragmentWrapperActivity;->a:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/chat/activity/FragmentWrapperActivity;->a:Lkik/core/interfaces/ad;
 
-    invoke-interface {v0}, Lkik/core/interfaces/ae;->r()Lkik/core/interfaces/i;
+    invoke-interface {v0}, Lkik/core/interfaces/ad;->r()Lkik/core/interfaces/i;
 
     move-result-object v0
 
@@ -978,11 +978,11 @@
 
     move-result-object v4
 
-    iget-object v6, p0, Lkik/android/chat/activity/FragmentWrapperActivity;->a:Lkik/core/interfaces/ae;
+    iget-object v6, p0, Lkik/android/chat/activity/FragmentWrapperActivity;->a:Lkik/core/interfaces/ad;
 
     move-object v1, p0
 
-    invoke-virtual/range {v0 .. v6}, Lkik/android/internal/platform/PlatformHelper;->a(Landroid/app/Activity;Ljava/io/File;Ljava/lang/String;Ljava/lang/String;ZLkik/core/interfaces/ae;)V
+    invoke-virtual/range {v0 .. v6}, Lkik/android/internal/platform/PlatformHelper;->a(Landroid/app/Activity;Ljava/io/File;Ljava/lang/String;Ljava/lang/String;ZLkik/core/interfaces/ad;)V
 
     goto :goto_1
 
@@ -1000,9 +1000,9 @@
     move-result-object v0
 
     .line 655
-    iget-object v1, p0, Lkik/android/chat/activity/FragmentWrapperActivity;->a:Lkik/core/interfaces/ae;
+    iget-object v1, p0, Lkik/android/chat/activity/FragmentWrapperActivity;->a:Lkik/core/interfaces/ad;
 
-    invoke-interface {v1}, Lkik/core/interfaces/ae;->r()Lkik/core/interfaces/i;
+    invoke-interface {v1}, Lkik/core/interfaces/ad;->r()Lkik/core/interfaces/i;
 
     move-result-object v1
 
@@ -1036,11 +1036,11 @@
 
     const/4 v5, 0x0
 
-    iget-object v6, p0, Lkik/android/chat/activity/FragmentWrapperActivity;->a:Lkik/core/interfaces/ae;
+    iget-object v6, p0, Lkik/android/chat/activity/FragmentWrapperActivity;->a:Lkik/core/interfaces/ad;
 
     move-object v1, p0
 
-    invoke-virtual/range {v0 .. v6}, Lkik/android/internal/platform/PlatformHelper;->a(Landroid/app/Activity;Ljava/io/File;Ljava/lang/String;Ljava/lang/String;ZLkik/core/interfaces/ae;)V
+    invoke-virtual/range {v0 .. v6}, Lkik/android/internal/platform/PlatformHelper;->a(Landroid/app/Activity;Ljava/io/File;Ljava/lang/String;Ljava/lang/String;ZLkik/core/interfaces/ad;)V
 
     goto :goto_1
 
@@ -1231,9 +1231,9 @@
 
     move-result-object v0
 
-    new-instance v3, Lkik/android/widget/dw;
+    new-instance v3, Lkik/android/widget/ek;
 
-    invoke-direct {v3}, Lkik/android/widget/dw;-><init>()V
+    invoke-direct {v3}, Lkik/android/widget/ek;-><init>()V
 
     invoke-virtual {v0, v3}, Landroid/view/Window;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 

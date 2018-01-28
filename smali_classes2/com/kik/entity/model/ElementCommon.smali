@@ -6,18 +6,22 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Lcom/kik/entity/model/ElementCommon$InterestsElement;,
+        Lcom/kik/entity/model/ElementCommon$i;,
         Lcom/kik/entity/model/ElementCommon$BotExtensionElement;,
         Lcom/kik/entity/model/ElementCommon$c;,
+        Lcom/kik/entity/model/ElementCommon$TrustedElement;,
+        Lcom/kik/entity/model/ElementCommon$p;,
         Lcom/kik/entity/model/ElementCommon$ProfilePicElement;,
-        Lcom/kik/entity/model/ElementCommon$k;,
+        Lcom/kik/entity/model/ElementCommon$l;,
         Lcom/kik/entity/model/ElementCommon$DisplayNameElement;,
         Lcom/kik/entity/model/ElementCommon$e;,
         Lcom/kik/entity/model/ElementCommon$UsernameElement;,
-        Lcom/kik/entity/model/ElementCommon$o;,
+        Lcom/kik/entity/model/ElementCommon$q;,
         Lcom/kik/entity/model/ElementCommon$RatingSummary;,
-        Lcom/kik/entity/model/ElementCommon$m;,
+        Lcom/kik/entity/model/ElementCommon$n;,
         Lcom/kik/entity/model/ElementCommon$MaxGroupSizeElement;,
-        Lcom/kik/entity/model/ElementCommon$i;,
+        Lcom/kik/entity/model/ElementCommon$j;,
         Lcom/kik/entity/model/ElementCommon$EmojiStatusElement;,
         Lcom/kik/entity/model/ElementCommon$f;,
         Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;,
@@ -25,13 +29,13 @@
         Lcom/kik/entity/model/ElementCommon$InnerPicElement;,
         Lcom/kik/entity/model/ElementCommon$h;,
         Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;,
-        Lcom/kik/entity/model/ElementCommon$l;,
+        Lcom/kik/entity/model/ElementCommon$m;,
         Lcom/kik/entity/model/ElementCommon$BackgroundProfilePicExtensionElement;,
         Lcom/kik/entity/model/ElementCommon$a;,
         Lcom/kik/entity/model/ElementCommon$OriginalProfilePicExtensionElement;,
-        Lcom/kik/entity/model/ElementCommon$j;,
+        Lcom/kik/entity/model/ElementCommon$k;,
         Lcom/kik/entity/model/ElementCommon$RegistrationElement;,
-        Lcom/kik/entity/model/ElementCommon$n;,
+        Lcom/kik/entity/model/ElementCommon$o;,
         Lcom/kik/entity/model/ElementCommon$BylineElement;,
         Lcom/kik/entity/model/ElementCommon$d;,
         Lcom/kik/entity/model/ElementCommon$BioElement;,
@@ -69,7 +73,19 @@
 
 .field private static final N:Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
-.field private static O:Lcom/google/protobuf/Descriptors$FileDescriptor;
+.field private static final O:Lcom/google/protobuf/Descriptors$Descriptor;
+
+.field private static final P:Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
+
+.field private static final Q:Lcom/google/protobuf/Descriptors$Descriptor;
+
+.field private static final R:Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
+
+.field private static final S:Lcom/google/protobuf/Descriptors$Descriptor;
+
+.field private static final T:Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
+
+.field private static U:Lcom/google/protobuf/Descriptors$FileDescriptor;
 
 .field private static final a:Lcom/google/protobuf/Descriptors$Descriptor;
 
@@ -139,8 +155,8 @@
 
     const/4 v4, 0x0
 
-    .line 11837
-    const/4 v0, 0x5
+    .line 13852
+    const/4 v0, 0x6
 
     new-array v0, v0, [Ljava/lang/String;
 
@@ -160,46 +176,52 @@
 
     aput-object v1, v0, v7
 
-    const-string v1, "\u0004name\u0018\u0001 \u0001(\tB\u0007\u00ca\u009d%\u00030\u00e8\u0007\"\u0015\n\u0013BotExtensionElementBm\n\u0014com.kik.entity.modelZLgithub.com/kikinteractive/xiphias-model-common/generated/go/entity/v1;entity\u00a0\u0001\u0001\u00a2\u0002\u0003ENTb\u0006proto3"
+    const-string v1, "\u0004name\u0018\u0001 \u0001(\tB\u0007\u00ca\u009d%\u00030\u00e8\u0007\"$\n\u000eTrustedElement\u0012\u0012\n\nis_trusted\u0018\u0001 \u0001(\u0008\"P\n\u0013BotExtensionElement\u00129\n\u000ftrusted_element\u0018\u0001 \u0001(\u000b2 .common.entity.v1.TrustedElement\"\u00a7\u0001\n\u0010InterestsElement\u0012S\n\u0011interests_element\u0018\u0001 \u0003(\u000b2/.common.entity.v1.InterestsElement.InterestItemB\u0007\u00ca\u009d%\u0003\u0080\u0001\u0014\u001a>\n\u000cInterestItem\u0012\u0012\n\u0002id\u0018\u0001 \u0001(\tB\u0006\u00ca\u009d%\u0002\u0008\u0001\u0012\u001a\n\u0012localized_verbiage\u0018\u0002 \u0001(\tBm\n\u0014com.kik.entity.modelZLgithub.com/kikinteractive/xiphias-model-common/generated/go/enti"
 
     aput-object v1, v0, v8
 
-    .line 11884
+    const/4 v1, 0x5
+
+    const-string v2, "ty/v1;entity\u00a0\u0001\u0001\u00a2\u0002\u0003ENTb\u0006proto3"
+
+    aput-object v2, v0, v1
+
+    .line 13905
     new-instance v1, Lcom/kik/entity/model/ElementCommon$1;
 
     invoke-direct {v1}, Lcom/kik/entity/model/ElementCommon$1;-><init>()V
 
-    .line 11892
+    .line 13913
     new-array v2, v7, [Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    .line 11895
+    .line 13916
     invoke-static {}, Lcom/kik/protovalidation/ProtobufValidation;->a()Lcom/google/protobuf/Descriptors$FileDescriptor;
 
     move-result-object v3
 
     aput-object v3, v2, v4
 
-    .line 11896
+    .line 13917
     invoke-static {}, Lcom/kik/ximodel/CommonModelProto;->getDescriptor()Lcom/google/protobuf/Descriptors$FileDescriptor;
 
     move-result-object v3
 
     aput-object v3, v2, v5
 
-    .line 11897
+    .line 13918
     invoke-static {}, Lcom/google/protobuf/TimestampProto;->getDescriptor()Lcom/google/protobuf/Descriptors$FileDescriptor;
 
     move-result-object v3
 
     aput-object v3, v2, v6
 
-    .line 11893
+    .line 13914
     invoke-static {v0, v2, v1}, Lcom/google/protobuf/Descriptors$FileDescriptor;->internalBuildGeneratedFileFrom([Ljava/lang/String;[Lcom/google/protobuf/Descriptors$FileDescriptor;Lcom/google/protobuf/Descriptors$FileDescriptor$InternalDescriptorAssigner;)V
 
-    .line 12832
-    sget-object v0, Lcom/kik/entity/model/ElementCommon;->O:Lcom/google/protobuf/Descriptors$FileDescriptor;
+    .line 14847
+    sget-object v0, Lcom/kik/entity/model/ElementCommon;->U:Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    .line 11900
+    .line 13921
     invoke-virtual {v0}, Lcom/google/protobuf/Descriptors$FileDescriptor;->getMessageTypes()Ljava/util/List;
 
     move-result-object v0
@@ -212,7 +234,7 @@
 
     sput-object v0, Lcom/kik/entity/model/ElementCommon;->a:Lcom/google/protobuf/Descriptors$Descriptor;
 
-    .line 11901
+    .line 13922
     new-instance v0, Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
     sget-object v1, Lcom/kik/entity/model/ElementCommon;->a:Lcom/google/protobuf/Descriptors$Descriptor;
@@ -227,10 +249,10 @@
 
     sput-object v0, Lcom/kik/entity/model/ElementCommon;->b:Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
-    .line 13832
-    sget-object v0, Lcom/kik/entity/model/ElementCommon;->O:Lcom/google/protobuf/Descriptors$FileDescriptor;
+    .line 15847
+    sget-object v0, Lcom/kik/entity/model/ElementCommon;->U:Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    .line 11906
+    .line 13927
     invoke-virtual {v0}, Lcom/google/protobuf/Descriptors$FileDescriptor;->getMessageTypes()Ljava/util/List;
 
     move-result-object v0
@@ -243,7 +265,7 @@
 
     sput-object v0, Lcom/kik/entity/model/ElementCommon;->c:Lcom/google/protobuf/Descriptors$Descriptor;
 
-    .line 11907
+    .line 13928
     new-instance v0, Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
     sget-object v1, Lcom/kik/entity/model/ElementCommon;->c:Lcom/google/protobuf/Descriptors$Descriptor;
@@ -258,10 +280,10 @@
 
     sput-object v0, Lcom/kik/entity/model/ElementCommon;->d:Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
-    .line 14832
-    sget-object v0, Lcom/kik/entity/model/ElementCommon;->O:Lcom/google/protobuf/Descriptors$FileDescriptor;
+    .line 16847
+    sget-object v0, Lcom/kik/entity/model/ElementCommon;->U:Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    .line 11912
+    .line 13933
     invoke-virtual {v0}, Lcom/google/protobuf/Descriptors$FileDescriptor;->getMessageTypes()Ljava/util/List;
 
     move-result-object v0
@@ -274,7 +296,7 @@
 
     sput-object v0, Lcom/kik/entity/model/ElementCommon;->e:Lcom/google/protobuf/Descriptors$Descriptor;
 
-    .line 11913
+    .line 13934
     new-instance v0, Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
     sget-object v1, Lcom/kik/entity/model/ElementCommon;->e:Lcom/google/protobuf/Descriptors$Descriptor;
@@ -289,10 +311,10 @@
 
     sput-object v0, Lcom/kik/entity/model/ElementCommon;->f:Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
-    .line 15832
-    sget-object v0, Lcom/kik/entity/model/ElementCommon;->O:Lcom/google/protobuf/Descriptors$FileDescriptor;
+    .line 17847
+    sget-object v0, Lcom/kik/entity/model/ElementCommon;->U:Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    .line 11918
+    .line 13939
     invoke-virtual {v0}, Lcom/google/protobuf/Descriptors$FileDescriptor;->getMessageTypes()Ljava/util/List;
 
     move-result-object v0
@@ -305,7 +327,7 @@
 
     sput-object v0, Lcom/kik/entity/model/ElementCommon;->g:Lcom/google/protobuf/Descriptors$Descriptor;
 
-    .line 11919
+    .line 13940
     new-instance v0, Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
     sget-object v1, Lcom/kik/entity/model/ElementCommon;->g:Lcom/google/protobuf/Descriptors$Descriptor;
@@ -320,10 +342,10 @@
 
     sput-object v0, Lcom/kik/entity/model/ElementCommon;->h:Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
-    .line 16832
-    sget-object v0, Lcom/kik/entity/model/ElementCommon;->O:Lcom/google/protobuf/Descriptors$FileDescriptor;
+    .line 18847
+    sget-object v0, Lcom/kik/entity/model/ElementCommon;->U:Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    .line 11924
+    .line 13945
     invoke-virtual {v0}, Lcom/google/protobuf/Descriptors$FileDescriptor;->getMessageTypes()Ljava/util/List;
 
     move-result-object v0
@@ -336,7 +358,7 @@
 
     sput-object v0, Lcom/kik/entity/model/ElementCommon;->i:Lcom/google/protobuf/Descriptors$Descriptor;
 
-    .line 11925
+    .line 13946
     new-instance v0, Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
     sget-object v1, Lcom/kik/entity/model/ElementCommon;->i:Lcom/google/protobuf/Descriptors$Descriptor;
@@ -351,10 +373,10 @@
 
     sput-object v0, Lcom/kik/entity/model/ElementCommon;->j:Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
-    .line 17832
-    sget-object v0, Lcom/kik/entity/model/ElementCommon;->O:Lcom/google/protobuf/Descriptors$FileDescriptor;
+    .line 19847
+    sget-object v0, Lcom/kik/entity/model/ElementCommon;->U:Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    .line 11930
+    .line 13951
     invoke-virtual {v0}, Lcom/google/protobuf/Descriptors$FileDescriptor;->getMessageTypes()Ljava/util/List;
 
     move-result-object v0
@@ -369,7 +391,7 @@
 
     sput-object v0, Lcom/kik/entity/model/ElementCommon;->k:Lcom/google/protobuf/Descriptors$Descriptor;
 
-    .line 11931
+    .line 13952
     new-instance v0, Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
     sget-object v1, Lcom/kik/entity/model/ElementCommon;->k:Lcom/google/protobuf/Descriptors$Descriptor;
@@ -392,10 +414,10 @@
 
     sput-object v0, Lcom/kik/entity/model/ElementCommon;->l:Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
-    .line 18832
-    sget-object v0, Lcom/kik/entity/model/ElementCommon;->O:Lcom/google/protobuf/Descriptors$FileDescriptor;
+    .line 20847
+    sget-object v0, Lcom/kik/entity/model/ElementCommon;->U:Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    .line 11936
+    .line 13957
     invoke-virtual {v0}, Lcom/google/protobuf/Descriptors$FileDescriptor;->getMessageTypes()Ljava/util/List;
 
     move-result-object v0
@@ -410,7 +432,7 @@
 
     sput-object v0, Lcom/kik/entity/model/ElementCommon;->m:Lcom/google/protobuf/Descriptors$Descriptor;
 
-    .line 11937
+    .line 13958
     new-instance v0, Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
     sget-object v1, Lcom/kik/entity/model/ElementCommon;->m:Lcom/google/protobuf/Descriptors$Descriptor;
@@ -429,10 +451,10 @@
 
     sput-object v0, Lcom/kik/entity/model/ElementCommon;->n:Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
-    .line 19832
-    sget-object v0, Lcom/kik/entity/model/ElementCommon;->O:Lcom/google/protobuf/Descriptors$FileDescriptor;
+    .line 21847
+    sget-object v0, Lcom/kik/entity/model/ElementCommon;->U:Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    .line 11942
+    .line 13963
     invoke-virtual {v0}, Lcom/google/protobuf/Descriptors$FileDescriptor;->getMessageTypes()Ljava/util/List;
 
     move-result-object v0
@@ -447,7 +469,7 @@
 
     sput-object v0, Lcom/kik/entity/model/ElementCommon;->o:Lcom/google/protobuf/Descriptors$Descriptor;
 
-    .line 11943
+    .line 13964
     new-instance v0, Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
     sget-object v1, Lcom/kik/entity/model/ElementCommon;->o:Lcom/google/protobuf/Descriptors$Descriptor;
@@ -462,10 +484,10 @@
 
     sput-object v0, Lcom/kik/entity/model/ElementCommon;->p:Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
-    .line 20832
-    sget-object v0, Lcom/kik/entity/model/ElementCommon;->O:Lcom/google/protobuf/Descriptors$FileDescriptor;
+    .line 22847
+    sget-object v0, Lcom/kik/entity/model/ElementCommon;->U:Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    .line 11948
+    .line 13969
     invoke-virtual {v0}, Lcom/google/protobuf/Descriptors$FileDescriptor;->getMessageTypes()Ljava/util/List;
 
     move-result-object v0
@@ -480,7 +502,7 @@
 
     sput-object v0, Lcom/kik/entity/model/ElementCommon;->q:Lcom/google/protobuf/Descriptors$Descriptor;
 
-    .line 11949
+    .line 13970
     new-instance v0, Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
     sget-object v1, Lcom/kik/entity/model/ElementCommon;->q:Lcom/google/protobuf/Descriptors$Descriptor;
@@ -495,10 +517,10 @@
 
     sput-object v0, Lcom/kik/entity/model/ElementCommon;->r:Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
-    .line 21832
-    sget-object v0, Lcom/kik/entity/model/ElementCommon;->O:Lcom/google/protobuf/Descriptors$FileDescriptor;
+    .line 23847
+    sget-object v0, Lcom/kik/entity/model/ElementCommon;->U:Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    .line 11954
+    .line 13975
     invoke-virtual {v0}, Lcom/google/protobuf/Descriptors$FileDescriptor;->getMessageTypes()Ljava/util/List;
 
     move-result-object v0
@@ -513,7 +535,7 @@
 
     sput-object v0, Lcom/kik/entity/model/ElementCommon;->s:Lcom/google/protobuf/Descriptors$Descriptor;
 
-    .line 11955
+    .line 13976
     new-instance v0, Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
     sget-object v1, Lcom/kik/entity/model/ElementCommon;->s:Lcom/google/protobuf/Descriptors$Descriptor;
@@ -528,10 +550,10 @@
 
     sput-object v0, Lcom/kik/entity/model/ElementCommon;->t:Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
-    .line 22832
-    sget-object v0, Lcom/kik/entity/model/ElementCommon;->O:Lcom/google/protobuf/Descriptors$FileDescriptor;
+    .line 24847
+    sget-object v0, Lcom/kik/entity/model/ElementCommon;->U:Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    .line 11960
+    .line 13981
     invoke-virtual {v0}, Lcom/google/protobuf/Descriptors$FileDescriptor;->getMessageTypes()Ljava/util/List;
 
     move-result-object v0
@@ -546,7 +568,7 @@
 
     sput-object v0, Lcom/kik/entity/model/ElementCommon;->u:Lcom/google/protobuf/Descriptors$Descriptor;
 
-    .line 11961
+    .line 13982
     new-instance v0, Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
     sget-object v1, Lcom/kik/entity/model/ElementCommon;->u:Lcom/google/protobuf/Descriptors$Descriptor;
@@ -565,10 +587,10 @@
 
     sput-object v0, Lcom/kik/entity/model/ElementCommon;->v:Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
-    .line 23832
-    sget-object v0, Lcom/kik/entity/model/ElementCommon;->O:Lcom/google/protobuf/Descriptors$FileDescriptor;
+    .line 25847
+    sget-object v0, Lcom/kik/entity/model/ElementCommon;->U:Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    .line 11966
+    .line 13987
     invoke-virtual {v0}, Lcom/google/protobuf/Descriptors$FileDescriptor;->getMessageTypes()Ljava/util/List;
 
     move-result-object v0
@@ -583,7 +605,7 @@
 
     sput-object v0, Lcom/kik/entity/model/ElementCommon;->w:Lcom/google/protobuf/Descriptors$Descriptor;
 
-    .line 11967
+    .line 13988
     new-instance v0, Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
     sget-object v1, Lcom/kik/entity/model/ElementCommon;->w:Lcom/google/protobuf/Descriptors$Descriptor;
@@ -602,10 +624,10 @@
 
     sput-object v0, Lcom/kik/entity/model/ElementCommon;->x:Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
-    .line 24832
-    sget-object v0, Lcom/kik/entity/model/ElementCommon;->O:Lcom/google/protobuf/Descriptors$FileDescriptor;
+    .line 26847
+    sget-object v0, Lcom/kik/entity/model/ElementCommon;->U:Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    .line 11972
+    .line 13993
     invoke-virtual {v0}, Lcom/google/protobuf/Descriptors$FileDescriptor;->getMessageTypes()Ljava/util/List;
 
     move-result-object v0
@@ -620,7 +642,7 @@
 
     sput-object v0, Lcom/kik/entity/model/ElementCommon;->y:Lcom/google/protobuf/Descriptors$Descriptor;
 
-    .line 11973
+    .line 13994
     new-instance v0, Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
     sget-object v1, Lcom/kik/entity/model/ElementCommon;->y:Lcom/google/protobuf/Descriptors$Descriptor;
@@ -635,10 +657,10 @@
 
     sput-object v0, Lcom/kik/entity/model/ElementCommon;->z:Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
-    .line 25832
-    sget-object v0, Lcom/kik/entity/model/ElementCommon;->O:Lcom/google/protobuf/Descriptors$FileDescriptor;
+    .line 27847
+    sget-object v0, Lcom/kik/entity/model/ElementCommon;->U:Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    .line 11978
+    .line 13999
     invoke-virtual {v0}, Lcom/google/protobuf/Descriptors$FileDescriptor;->getMessageTypes()Ljava/util/List;
 
     move-result-object v0
@@ -653,7 +675,7 @@
 
     sput-object v0, Lcom/kik/entity/model/ElementCommon;->A:Lcom/google/protobuf/Descriptors$Descriptor;
 
-    .line 11979
+    .line 14000
     new-instance v0, Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
     sget-object v1, Lcom/kik/entity/model/ElementCommon;->A:Lcom/google/protobuf/Descriptors$Descriptor;
@@ -668,10 +690,10 @@
 
     sput-object v0, Lcom/kik/entity/model/ElementCommon;->B:Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
-    .line 26832
-    sget-object v0, Lcom/kik/entity/model/ElementCommon;->O:Lcom/google/protobuf/Descriptors$FileDescriptor;
+    .line 28847
+    sget-object v0, Lcom/kik/entity/model/ElementCommon;->U:Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    .line 11984
+    .line 14005
     invoke-virtual {v0}, Lcom/google/protobuf/Descriptors$FileDescriptor;->getMessageTypes()Ljava/util/List;
 
     move-result-object v0
@@ -686,7 +708,7 @@
 
     sput-object v0, Lcom/kik/entity/model/ElementCommon;->C:Lcom/google/protobuf/Descriptors$Descriptor;
 
-    .line 11985
+    .line 14006
     new-instance v0, Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
     sget-object v1, Lcom/kik/entity/model/ElementCommon;->C:Lcom/google/protobuf/Descriptors$Descriptor;
@@ -701,10 +723,10 @@
 
     sput-object v0, Lcom/kik/entity/model/ElementCommon;->D:Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
-    .line 27832
-    sget-object v0, Lcom/kik/entity/model/ElementCommon;->O:Lcom/google/protobuf/Descriptors$FileDescriptor;
+    .line 29847
+    sget-object v0, Lcom/kik/entity/model/ElementCommon;->U:Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    .line 11990
+    .line 14011
     invoke-virtual {v0}, Lcom/google/protobuf/Descriptors$FileDescriptor;->getMessageTypes()Ljava/util/List;
 
     move-result-object v0
@@ -719,7 +741,7 @@
 
     sput-object v0, Lcom/kik/entity/model/ElementCommon;->E:Lcom/google/protobuf/Descriptors$Descriptor;
 
-    .line 11991
+    .line 14012
     new-instance v0, Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
     sget-object v1, Lcom/kik/entity/model/ElementCommon;->E:Lcom/google/protobuf/Descriptors$Descriptor;
@@ -738,10 +760,10 @@
 
     sput-object v0, Lcom/kik/entity/model/ElementCommon;->F:Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
-    .line 28832
-    sget-object v0, Lcom/kik/entity/model/ElementCommon;->O:Lcom/google/protobuf/Descriptors$FileDescriptor;
+    .line 30847
+    sget-object v0, Lcom/kik/entity/model/ElementCommon;->U:Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    .line 11996
+    .line 14017
     invoke-virtual {v0}, Lcom/google/protobuf/Descriptors$FileDescriptor;->getMessageTypes()Ljava/util/List;
 
     move-result-object v0
@@ -756,7 +778,7 @@
 
     sput-object v0, Lcom/kik/entity/model/ElementCommon;->G:Lcom/google/protobuf/Descriptors$Descriptor;
 
-    .line 11997
+    .line 14018
     new-instance v0, Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
     sget-object v1, Lcom/kik/entity/model/ElementCommon;->G:Lcom/google/protobuf/Descriptors$Descriptor;
@@ -771,10 +793,10 @@
 
     sput-object v0, Lcom/kik/entity/model/ElementCommon;->H:Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
-    .line 29832
-    sget-object v0, Lcom/kik/entity/model/ElementCommon;->O:Lcom/google/protobuf/Descriptors$FileDescriptor;
+    .line 31847
+    sget-object v0, Lcom/kik/entity/model/ElementCommon;->U:Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    .line 12002
+    .line 14023
     invoke-virtual {v0}, Lcom/google/protobuf/Descriptors$FileDescriptor;->getMessageTypes()Ljava/util/List;
 
     move-result-object v0
@@ -789,7 +811,7 @@
 
     sput-object v0, Lcom/kik/entity/model/ElementCommon;->I:Lcom/google/protobuf/Descriptors$Descriptor;
 
-    .line 12003
+    .line 14024
     new-instance v0, Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
     sget-object v1, Lcom/kik/entity/model/ElementCommon;->I:Lcom/google/protobuf/Descriptors$Descriptor;
@@ -804,10 +826,10 @@
 
     sput-object v0, Lcom/kik/entity/model/ElementCommon;->J:Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
-    .line 30832
-    sget-object v0, Lcom/kik/entity/model/ElementCommon;->O:Lcom/google/protobuf/Descriptors$FileDescriptor;
+    .line 32847
+    sget-object v0, Lcom/kik/entity/model/ElementCommon;->U:Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    .line 12008
+    .line 14029
     invoke-virtual {v0}, Lcom/google/protobuf/Descriptors$FileDescriptor;->getMessageTypes()Ljava/util/List;
 
     move-result-object v0
@@ -822,7 +844,7 @@
 
     sput-object v0, Lcom/kik/entity/model/ElementCommon;->K:Lcom/google/protobuf/Descriptors$Descriptor;
 
-    .line 12009
+    .line 14030
     new-instance v0, Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
     sget-object v1, Lcom/kik/entity/model/ElementCommon;->K:Lcom/google/protobuf/Descriptors$Descriptor;
@@ -837,10 +859,10 @@
 
     sput-object v0, Lcom/kik/entity/model/ElementCommon;->L:Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
-    .line 31832
-    sget-object v0, Lcom/kik/entity/model/ElementCommon;->O:Lcom/google/protobuf/Descriptors$FileDescriptor;
+    .line 33847
+    sget-object v0, Lcom/kik/entity/model/ElementCommon;->U:Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    .line 12014
+    .line 14035
     invoke-virtual {v0}, Lcom/google/protobuf/Descriptors$FileDescriptor;->getMessageTypes()Ljava/util/List;
 
     move-result-object v0
@@ -855,43 +877,148 @@
 
     sput-object v0, Lcom/kik/entity/model/ElementCommon;->M:Lcom/google/protobuf/Descriptors$Descriptor;
 
-    .line 12015
+    .line 14036
     new-instance v0, Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
     sget-object v1, Lcom/kik/entity/model/ElementCommon;->M:Lcom/google/protobuf/Descriptors$Descriptor;
 
-    new-array v2, v4, [Ljava/lang/String;
+    new-array v2, v5, [Ljava/lang/String;
+
+    const-string v3, "IsTrusted"
+
+    aput-object v3, v2, v4
 
     invoke-direct {v0, v1, v2}, Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;-><init>(Lcom/google/protobuf/Descriptors$Descriptor;[Ljava/lang/String;)V
 
     sput-object v0, Lcom/kik/entity/model/ElementCommon;->N:Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
-    .line 12020
+    .line 34847
+    sget-object v0, Lcom/kik/entity/model/ElementCommon;->U:Lcom/google/protobuf/Descriptors$FileDescriptor;
+
+    .line 14041
+    invoke-virtual {v0}, Lcom/google/protobuf/Descriptors$FileDescriptor;->getMessageTypes()Ljava/util/List;
+
+    move-result-object v0
+
+    const/16 v1, 0x14
+
+    invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/google/protobuf/Descriptors$Descriptor;
+
+    sput-object v0, Lcom/kik/entity/model/ElementCommon;->O:Lcom/google/protobuf/Descriptors$Descriptor;
+
+    .line 14042
+    new-instance v0, Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
+
+    sget-object v1, Lcom/kik/entity/model/ElementCommon;->O:Lcom/google/protobuf/Descriptors$Descriptor;
+
+    new-array v2, v5, [Ljava/lang/String;
+
+    const-string v3, "TrustedElement"
+
+    aput-object v3, v2, v4
+
+    invoke-direct {v0, v1, v2}, Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;-><init>(Lcom/google/protobuf/Descriptors$Descriptor;[Ljava/lang/String;)V
+
+    sput-object v0, Lcom/kik/entity/model/ElementCommon;->P:Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
+
+    .line 35847
+    sget-object v0, Lcom/kik/entity/model/ElementCommon;->U:Lcom/google/protobuf/Descriptors$FileDescriptor;
+
+    .line 14047
+    invoke-virtual {v0}, Lcom/google/protobuf/Descriptors$FileDescriptor;->getMessageTypes()Ljava/util/List;
+
+    move-result-object v0
+
+    const/16 v1, 0x15
+
+    invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/google/protobuf/Descriptors$Descriptor;
+
+    sput-object v0, Lcom/kik/entity/model/ElementCommon;->Q:Lcom/google/protobuf/Descriptors$Descriptor;
+
+    .line 14048
+    new-instance v0, Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
+
+    sget-object v1, Lcom/kik/entity/model/ElementCommon;->Q:Lcom/google/protobuf/Descriptors$Descriptor;
+
+    new-array v2, v5, [Ljava/lang/String;
+
+    const-string v3, "InterestsElement"
+
+    aput-object v3, v2, v4
+
+    invoke-direct {v0, v1, v2}, Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;-><init>(Lcom/google/protobuf/Descriptors$Descriptor;[Ljava/lang/String;)V
+
+    sput-object v0, Lcom/kik/entity/model/ElementCommon;->R:Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
+
+    .line 14052
+    sget-object v0, Lcom/kik/entity/model/ElementCommon;->Q:Lcom/google/protobuf/Descriptors$Descriptor;
+
+    .line 14053
+    invoke-virtual {v0}, Lcom/google/protobuf/Descriptors$Descriptor;->getNestedTypes()Ljava/util/List;
+
+    move-result-object v0
+
+    invoke-interface {v0, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/google/protobuf/Descriptors$Descriptor;
+
+    sput-object v0, Lcom/kik/entity/model/ElementCommon;->S:Lcom/google/protobuf/Descriptors$Descriptor;
+
+    .line 14054
+    new-instance v0, Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
+
+    sget-object v1, Lcom/kik/entity/model/ElementCommon;->S:Lcom/google/protobuf/Descriptors$Descriptor;
+
+    new-array v2, v6, [Ljava/lang/String;
+
+    const-string v3, "Id"
+
+    aput-object v3, v2, v4
+
+    const-string v3, "LocalizedVerbiage"
+
+    aput-object v3, v2, v5
+
+    invoke-direct {v0, v1, v2}, Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;-><init>(Lcom/google/protobuf/Descriptors$Descriptor;[Ljava/lang/String;)V
+
+    sput-object v0, Lcom/kik/entity/model/ElementCommon;->T:Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
+
+    .line 14059
     invoke-static {}, Lcom/google/protobuf/ExtensionRegistry;->newInstance()Lcom/google/protobuf/ExtensionRegistry;
 
     move-result-object v0
 
-    .line 12021
+    .line 14060
     sget-object v1, Lcom/kik/protovalidation/ProtobufValidation;->a:Lcom/google/protobuf/GeneratedMessage$GeneratedExtension;
 
     invoke-virtual {v0, v1}, Lcom/google/protobuf/ExtensionRegistry;->add(Lcom/google/protobuf/GeneratedMessage$GeneratedExtension;)V
 
-    .line 12022
-    sget-object v1, Lcom/kik/entity/model/ElementCommon;->O:Lcom/google/protobuf/Descriptors$FileDescriptor;
+    .line 14061
+    sget-object v1, Lcom/kik/entity/model/ElementCommon;->U:Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    .line 12023
+    .line 14062
     invoke-static {v1, v0}, Lcom/google/protobuf/Descriptors$FileDescriptor;->internalUpdateFileDescriptor(Lcom/google/protobuf/Descriptors$FileDescriptor;Lcom/google/protobuf/ExtensionRegistry;)V
 
-    .line 12024
+    .line 14063
     invoke-static {}, Lcom/kik/protovalidation/ProtobufValidation;->a()Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    .line 12025
+    .line 14064
     invoke-static {}, Lcom/kik/ximodel/CommonModelProto;->getDescriptor()Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    .line 12026
+    .line 14065
     invoke-static {}, Lcom/google/protobuf/TimestampProto;->getDescriptor()Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    .line 12027
+    .line 14066
     return-void
 .end method
 
@@ -945,12 +1072,72 @@
     return-object v0
 .end method
 
+.method static synthetic F()Lcom/google/protobuf/Descriptors$Descriptor;
+    .locals 1
+
+    .prologue
+    .line 6
+    sget-object v0, Lcom/kik/entity/model/ElementCommon;->O:Lcom/google/protobuf/Descriptors$Descriptor;
+
+    return-object v0
+.end method
+
+.method static synthetic G()Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
+    .locals 1
+
+    .prologue
+    .line 6
+    sget-object v0, Lcom/kik/entity/model/ElementCommon;->P:Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
+
+    return-object v0
+.end method
+
+.method static synthetic H()Lcom/google/protobuf/Descriptors$Descriptor;
+    .locals 1
+
+    .prologue
+    .line 6
+    sget-object v0, Lcom/kik/entity/model/ElementCommon;->Q:Lcom/google/protobuf/Descriptors$Descriptor;
+
+    return-object v0
+.end method
+
+.method static synthetic I()Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
+    .locals 1
+
+    .prologue
+    .line 6
+    sget-object v0, Lcom/kik/entity/model/ElementCommon;->R:Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
+
+    return-object v0
+.end method
+
+.method static synthetic J()Lcom/google/protobuf/Descriptors$Descriptor;
+    .locals 1
+
+    .prologue
+    .line 6
+    sget-object v0, Lcom/kik/entity/model/ElementCommon;->S:Lcom/google/protobuf/Descriptors$Descriptor;
+
+    return-object v0
+.end method
+
+.method static synthetic K()Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
+    .locals 1
+
+    .prologue
+    .line 6
+    sget-object v0, Lcom/kik/entity/model/ElementCommon;->T:Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
+
+    return-object v0
+.end method
+
 .method public static a()Lcom/google/protobuf/Descriptors$FileDescriptor;
     .locals 1
 
     .prologue
-    .line 11832
-    sget-object v0, Lcom/kik/entity/model/ElementCommon;->O:Lcom/google/protobuf/Descriptors$FileDescriptor;
+    .line 13847
+    sget-object v0, Lcom/kik/entity/model/ElementCommon;->U:Lcom/google/protobuf/Descriptors$FileDescriptor;
 
     return-object v0
 .end method
@@ -960,7 +1147,7 @@
 
     .prologue
     .line 6
-    sput-object p0, Lcom/kik/entity/model/ElementCommon;->O:Lcom/google/protobuf/Descriptors$FileDescriptor;
+    sput-object p0, Lcom/kik/entity/model/ElementCommon;->U:Lcom/google/protobuf/Descriptors$FileDescriptor;
 
     return-object p0
 .end method

@@ -220,7 +220,7 @@
             ")",
             "Lcom/kik/events/Promise",
             "<",
-            "Lkik/core/xiphias/ab",
+            "Lkik/core/xiphias/ag",
             "<TT;>;>;"
         }
     .end annotation
@@ -246,7 +246,7 @@
 
     .line 79
     :cond_0
-    invoke-static {p0}, Lkik/core/xiphias/ab;->a(Lkik/core/xiphias/XiphiasRequest;)Lkik/core/xiphias/ab;
+    invoke-static {p0}, Lkik/core/xiphias/ag;->a(Lkik/core/xiphias/XiphiasRequest;)Lkik/core/xiphias/ag;
 
     move-result-object v0
 

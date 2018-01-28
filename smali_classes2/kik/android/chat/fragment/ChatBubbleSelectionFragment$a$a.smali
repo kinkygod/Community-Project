@@ -33,7 +33,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 193
-    const v0, 0x7f100324
+    const v0, 0x7f100320
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -44,7 +44,7 @@
     iput-object v0, p0, Lkik/android/chat/fragment/ChatBubbleSelectionFragment$a$a;->a:Landroid/widget/TextView;
 
     .line 194
-    const v0, 0x7f100323
+    const v0, 0x7f10031f
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -53,7 +53,7 @@
     iput-object v0, p0, Lkik/android/chat/fragment/ChatBubbleSelectionFragment$a$a;->b:Landroid/view/View;
 
     .line 195
-    const v0, 0x7f100325
+    const v0, 0x7f100321
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -64,7 +64,7 @@
     iput-object v0, p0, Lkik/android/chat/fragment/ChatBubbleSelectionFragment$a$a;->c:Landroid/widget/CompoundButton;
 
     .line 196
-    const v0, 0x7f100327
+    const v0, 0x7f100323
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -98,7 +98,7 @@
 
     aput-object v1, v0, v2
 
-    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->d([Landroid/view/View;)V
 
     .line 208
     :goto_0
@@ -112,7 +112,7 @@
 
     aput-object v1, v0, v2
 
-    invoke-static {v0}, Lkik/android/util/ca;->f([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->f([Landroid/view/View;)V
 
     goto :goto_0
 .end method

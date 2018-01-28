@@ -2,7 +2,7 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lkik/android/chat/view/ValidateableInputView$b;
+.implements Lkik/android/chat/view/ValidateableInputView$a;
 
 
 # instance fields
@@ -20,7 +20,7 @@
     return-void
 .end method
 
-.method public static a(Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;)Lkik/android/chat/view/ValidateableInputView$b;
+.method public static a(Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;)Lkik/android/chat/view/ValidateableInputView$a;
     .locals 1
 
     new-instance v0, Lkik/android/chat/fragment/dr;
@@ -32,12 +32,12 @@
 
 
 # virtual methods
-.method public final a(Ljava/lang/CharSequence;)Lrx/d;
+.method public final a(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
 
     iget-object v0, p0, Lkik/android/chat/fragment/dr;->a:Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;
 
-    invoke-static {v0, p1}, Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;->e(Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;Ljava/lang/CharSequence;)Lrx/d;
+    invoke-static {v0, p1}, Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;->a(Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

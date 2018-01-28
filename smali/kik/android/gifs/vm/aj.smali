@@ -29,7 +29,7 @@
     .end annotation
 .end field
 
-.field protected e:Lkik/core/interfaces/w;
+.field protected e:Lkik/core/interfaces/v;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -357,7 +357,7 @@
     .line 149
     iget-object v0, p0, Lkik/android/gifs/vm/aj;->b:Landroid/content/res/Resources;
 
-    const v1, 0x7f0905c7
+    const v1, 0x7f0905cd
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -491,11 +491,11 @@
 
     .line 8474
     :goto_0
-    iget-object v0, p0, Lkik/android/gifs/vm/aj;->e:Lkik/core/interfaces/w;
+    iget-object v0, p0, Lkik/android/gifs/vm/aj;->e:Lkik/core/interfaces/v;
 
     iget-object v3, p0, Lkik/android/gifs/vm/aj;->o:Ljava/lang/String;
 
-    invoke-interface {v0, v3, v1}, Lkik/core/interfaces/w;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
+    invoke-interface {v0, v3, v1}, Lkik/core/interfaces/v;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
 
     move-result-object v0
 
@@ -664,7 +664,7 @@
 
     move-result-object v0
 
-    invoke-interface {p1}, Lkik/android/gifs/vm/bo;->e()Ljava/lang/String;
+    invoke-interface {p1}, Lkik/android/gifs/vm/bo;->g()Ljava/lang/String;
 
     move-result-object v1
 
@@ -1120,7 +1120,7 @@
     return-void
 .end method
 
-.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
     .locals 5
 
     .prologue
@@ -1128,7 +1128,7 @@
     invoke-interface {p1, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/gifs/vm/aj;)V
 
     .line 89
-    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/e;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/e;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 91
     iget-object v0, p0, Lkik/android/gifs/vm/aj;->a:Lkik/android/util/ai;
@@ -1188,52 +1188,52 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, p1, p2}, Lkik/android/gifs/vm/z;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    invoke-virtual {v0, p1, p2}, Lkik/android/gifs/vm/z;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 98
     invoke-virtual {p0}, Lkik/android/gifs/vm/aj;->u()Lkik/android/gifs/vm/ab;
 
     move-result-object v0
 
-    invoke-virtual {v0, p1, p2}, Lkik/android/gifs/vm/ab;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    invoke-virtual {v0, p1, p2}, Lkik/android/gifs/vm/ab;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 99
     invoke-virtual {p0}, Lkik/android/gifs/vm/aj;->v()Lkik/android/gifs/vm/p;
 
     move-result-object v0
 
-    invoke-virtual {v0, p1, p2}, Lkik/android/gifs/vm/p;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    invoke-virtual {v0, p1, p2}, Lkik/android/gifs/vm/p;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 100
     invoke-virtual {p0}, Lkik/android/gifs/vm/aj;->w()Lkik/android/gifs/vm/d;
 
     move-result-object v0
 
-    invoke-virtual {v0, p1, p2}, Lkik/android/gifs/vm/d;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    invoke-virtual {v0, p1, p2}, Lkik/android/gifs/vm/d;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 101
     invoke-virtual {p0}, Lkik/android/gifs/vm/aj;->y()Lkik/android/gifs/vm/ae;
 
     move-result-object v0
 
-    invoke-virtual {v0, p1, p2}, Lkik/android/gifs/vm/ae;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    invoke-virtual {v0, p1, p2}, Lkik/android/gifs/vm/ae;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 102
     invoke-virtual {p0}, Lkik/android/gifs/vm/aj;->z()Lkik/android/gifs/vm/t;
 
     move-result-object v0
 
-    invoke-virtual {v0, p1, p2}, Lkik/android/gifs/vm/t;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    invoke-virtual {v0, p1, p2}, Lkik/android/gifs/vm/t;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 103
     invoke-virtual {p0}, Lkik/android/gifs/vm/aj;->x()Lkik/android/gifs/vm/l;
 
     move-result-object v0
 
-    invoke-virtual {v0, p1, p2}, Lkik/android/gifs/vm/l;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    invoke-virtual {v0, p1, p2}, Lkik/android/gifs/vm/l;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 105
-    invoke-virtual {p0}, Lkik/android/gifs/vm/aj;->ab_()Lrx/f/b;
+    invoke-virtual {p0}, Lkik/android/gifs/vm/aj;->ad_()Lrx/f/b;
 
     move-result-object v0
 
@@ -1295,7 +1295,7 @@
     invoke-virtual {v0, v1}, Lrx/f/b;->a(Lrx/k;)V
 
     .line 112
-    invoke-virtual {p0}, Lkik/android/gifs/vm/aj;->ab_()Lrx/f/b;
+    invoke-virtual {p0}, Lkik/android/gifs/vm/aj;->ad_()Lrx/f/b;
 
     move-result-object v0
 
@@ -1357,7 +1357,7 @@
     invoke-virtual {v0, v1}, Lrx/f/b;->a(Lrx/k;)V
 
     .line 119
-    invoke-virtual {p0}, Lkik/android/gifs/vm/aj;->ab_()Lrx/f/b;
+    invoke-virtual {p0}, Lkik/android/gifs/vm/aj;->ad_()Lrx/f/b;
 
     move-result-object v0
 
@@ -1384,7 +1384,7 @@
     invoke-virtual {v0, v1}, Lrx/f/b;->a(Lrx/k;)V
 
     .line 121
-    invoke-virtual {p0}, Lkik/android/gifs/vm/aj;->ab_()Lrx/f/b;
+    invoke-virtual {p0}, Lkik/android/gifs/vm/aj;->ad_()Lrx/f/b;
 
     move-result-object v0
 
@@ -1457,7 +1457,7 @@
     return-void
 .end method
 
-.method public final aj_()V
+.method public final ak_()V
     .locals 2
 
     .prologue
@@ -1471,7 +1471,7 @@
     .line 249
     iget-object v0, p0, Lkik/android/gifs/vm/aj;->A:Lkik/android/gifs/vm/t;
 
-    invoke-virtual {v0}, Lkik/android/gifs/vm/t;->aj_()V
+    invoke-virtual {v0}, Lkik/android/gifs/vm/t;->ak_()V
 
     .line 251
     :cond_0
@@ -1482,7 +1482,7 @@
     .line 252
     iget-object v0, p0, Lkik/android/gifs/vm/aj;->u:Lkik/android/gifs/vm/z;
 
-    invoke-virtual {v0}, Lkik/android/gifs/vm/z;->aj_()V
+    invoke-virtual {v0}, Lkik/android/gifs/vm/z;->ak_()V
 
     .line 254
     :cond_1
@@ -1493,7 +1493,7 @@
     .line 255
     iget-object v0, p0, Lkik/android/gifs/vm/aj;->v:Lkik/android/gifs/vm/ab;
 
-    invoke-virtual {v0}, Lkik/android/gifs/vm/ab;->aj_()V
+    invoke-virtual {v0}, Lkik/android/gifs/vm/ab;->ak_()V
 
     .line 257
     :cond_2
@@ -1504,7 +1504,7 @@
     .line 258
     iget-object v0, p0, Lkik/android/gifs/vm/aj;->w:Lkik/android/gifs/vm/p;
 
-    invoke-virtual {v0}, Lkik/android/gifs/vm/p;->aj_()V
+    invoke-virtual {v0}, Lkik/android/gifs/vm/p;->ak_()V
 
     .line 260
     :cond_3
@@ -1515,7 +1515,7 @@
     .line 261
     iget-object v0, p0, Lkik/android/gifs/vm/aj;->x:Lkik/android/gifs/vm/d;
 
-    invoke-virtual {v0}, Lkik/android/gifs/vm/d;->aj_()V
+    invoke-virtual {v0}, Lkik/android/gifs/vm/d;->ak_()V
 
     .line 263
     :cond_4
@@ -1526,7 +1526,7 @@
     .line 264
     iget-object v0, p0, Lkik/android/gifs/vm/aj;->z:Lkik/android/gifs/vm/ae;
 
-    invoke-virtual {v0}, Lkik/android/gifs/vm/ae;->aj_()V
+    invoke-virtual {v0}, Lkik/android/gifs/vm/ae;->ak_()V
 
     .line 266
     :cond_5
@@ -1537,7 +1537,7 @@
     .line 267
     iget-object v0, p0, Lkik/android/gifs/vm/aj;->y:Lkik/android/gifs/vm/l;
 
-    invoke-virtual {v0}, Lkik/android/gifs/vm/l;->aj_()V
+    invoke-virtual {v0}, Lkik/android/gifs/vm/l;->ak_()V
 
     .line 269
     :cond_6
@@ -1550,7 +1550,7 @@
     iput-object v1, p0, Lkik/android/gifs/vm/aj;->n:Lkik/android/util/by;
 
     .line 272
-    invoke-super {p0}, Lkik/android/chat/vm/e;->aj_()V
+    invoke-super {p0}, Lkik/android/chat/vm/e;->ak_()V
 
     .line 273
     return-void

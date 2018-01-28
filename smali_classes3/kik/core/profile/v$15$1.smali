@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/core/interfaces/w$a;
+.implements Lkik/core/interfaces/v$a;
 
 
 # annotations
@@ -28,7 +28,7 @@
     .locals 0
 
     .prologue
-    .line 807
+    .line 794
     iput-object p1, p0, Lkik/core/profile/v$15$1;->b:Lkik/core/profile/v$15;
 
     iput-object p2, p0, Lkik/core/profile/v$15$1;->a:Lkik/core/datatypes/l;
@@ -44,16 +44,16 @@
     .locals 1
 
     .prologue
-    .line 812
+    .line 799
     iget-object v0, p0, Lkik/core/profile/v$15$1;->a:Lkik/core/datatypes/l;
 
     invoke-virtual {v0, p1}, Lkik/core/datatypes/l;->a(Lkik/core/datatypes/l;)V
 
-    .line 813
+    .line 800
     iget-object v0, p0, Lkik/core/profile/v$15$1;->a:Lkik/core/datatypes/l;
 
     invoke-virtual {p1, v0}, Lkik/core/datatypes/l;->b(Lkik/core/datatypes/l;)V
 
-    .line 814
+    .line 801
     return-void
 .end method

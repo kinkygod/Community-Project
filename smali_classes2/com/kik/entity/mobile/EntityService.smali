@@ -7,7 +7,9 @@
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/kik/entity/mobile/EntityService$PageToken;,
-        Lcom/kik/entity/mobile/EntityService$j;,
+        Lcom/kik/entity/mobile/EntityService$k;,
+        Lcom/kik/entity/mobile/EntityService$GetTrustedBotsResponse;,
+        Lcom/kik/entity/mobile/EntityService$f;,
         Lcom/kik/entity/mobile/EntityService$GetTrustedBotsRequest;,
         Lcom/kik/entity/mobile/EntityService$e;,
         Lcom/kik/entity/mobile/EntityService$GetGroupsResponse;,
@@ -15,17 +17,17 @@
         Lcom/kik/entity/mobile/EntityService$GetGroupsRequest;,
         Lcom/kik/entity/mobile/EntityService$c;,
         Lcom/kik/entity/mobile/EntityService$GetUserRosterEntriesResponse;,
-        Lcom/kik/entity/mobile/EntityService$g;,
+        Lcom/kik/entity/mobile/EntityService$h;,
         Lcom/kik/entity/mobile/EntityService$GetUserRosterEntriesRequest;,
-        Lcom/kik/entity/mobile/EntityService$f;,
+        Lcom/kik/entity/mobile/EntityService$g;,
         Lcom/kik/entity/mobile/EntityService$GetBotsResponse;,
         Lcom/kik/entity/mobile/EntityService$b;,
         Lcom/kik/entity/mobile/EntityService$GetBotsRequest;,
         Lcom/kik/entity/mobile/EntityService$a;,
         Lcom/kik/entity/mobile/EntityService$GetUsersResponse;,
-        Lcom/kik/entity/mobile/EntityService$i;,
+        Lcom/kik/entity/mobile/EntityService$j;,
         Lcom/kik/entity/mobile/EntityService$GetUsersRequest;,
-        Lcom/kik/entity/mobile/EntityService$h;
+        Lcom/kik/entity/mobile/EntityService$i;
     }
 .end annotation
 
@@ -819,12 +821,32 @@
 
     .prologue
     .line 6
-    sget-object v0, Lcom/kik/entity/mobile/EntityService;->u:Lcom/google/protobuf/Descriptors$Descriptor;
+    sget-object v0, Lcom/kik/entity/mobile/EntityService;->s:Lcom/google/protobuf/Descriptors$Descriptor;
 
     return-object v0
 .end method
 
 .method static synthetic t()Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
+    .locals 1
+
+    .prologue
+    .line 6
+    sget-object v0, Lcom/kik/entity/mobile/EntityService;->t:Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
+
+    return-object v0
+.end method
+
+.method static synthetic u()Lcom/google/protobuf/Descriptors$Descriptor;
+    .locals 1
+
+    .prologue
+    .line 6
+    sget-object v0, Lcom/kik/entity/mobile/EntityService;->u:Lcom/google/protobuf/Descriptors$Descriptor;
+
+    return-object v0
+.end method
+
+.method static synthetic v()Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
     .locals 1
 
     .prologue

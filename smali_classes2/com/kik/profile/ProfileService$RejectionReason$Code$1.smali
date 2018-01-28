@@ -32,7 +32,7 @@
     .locals 0
 
     .prologue
-    .line 4507
+    .line 4806
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -44,12 +44,12 @@
     .locals 1
 
     .prologue
-    .line 4507
-    .line 5509
+    .line 4806
+    .line 5808
     invoke-static {p1}, Lcom/kik/profile/ProfileService$RejectionReason$Code;->forNumber(I)Lcom/kik/profile/ProfileService$RejectionReason$Code;
 
     move-result-object v0
 
-    .line 4507
+    .line 4806
     return-object v0
 .end method

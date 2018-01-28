@@ -43,7 +43,7 @@
     .locals 0
 
     .prologue
-    .line 2203
+    .line 2262
     iput-object p1, p0, Lcom/kik/cards/web/CardsWebViewFragment$37;->e:Lcom/kik/cards/web/CardsWebViewFragment;
 
     iput-object p2, p0, Lcom/kik/cards/web/CardsWebViewFragment$37;->a:Landroid/app/Activity;
@@ -65,8 +65,8 @@
     .locals 2
 
     .prologue
-    .line 2203
-    .line 3208
+    .line 2262
+    .line 3267
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$37;->a:Landroid/app/Activity;
 
     new-instance v1, Lcom/kik/cards/web/CardsWebViewFragment$37$1;
@@ -75,7 +75,7 @@
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
-    .line 2203
+    .line 2262
     return-void
 .end method
 
@@ -83,7 +83,7 @@
     .locals 2
 
     .prologue
-    .line 2233
+    .line 2293
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$37;->a:Landroid/app/Activity;
 
     new-instance v1, Lcom/kik/cards/web/CardsWebViewFragment$37$2;
@@ -92,6 +92,6 @@
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
-    .line 2250
+    .line 2311
     return-void
 .end method

@@ -289,7 +289,7 @@
 
     check-cast v0, Ljava/security/NoSuchAlgorithmException;
 
-    invoke-static {v0}, Lcom/kik/util/ck;->a(Ljava/security/NoSuchAlgorithmException;)V
+    invoke-static {v0}, Lcom/kik/util/cm;->a(Ljava/security/NoSuchAlgorithmException;)V
 
     .line 172
     :cond_0

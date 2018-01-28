@@ -18,11 +18,11 @@
 
 .field private g:Lkik/core/net/e;
 
-.field private h:Lkik/core/interfaces/ae;
+.field private h:Lkik/core/interfaces/ad;
 
 .field private i:Lkik/core/interfaces/IConversation;
 
-.field private j:Lkik/core/interfaces/aa;
+.field private j:Lkik/core/interfaces/z;
 
 .field private k:Lcom/kik/events/e;
     .annotation system Ldalvik/annotation/Signature;
@@ -48,7 +48,7 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lkik/core/interfaces/IConversation;Lkik/core/interfaces/ae;Lcom/kik/android/Mixpanel;Lkik/core/net/e;Lkik/core/interfaces/n;Lkik/core/interfaces/aa;Lkik/core/ab;)V
+.method public constructor <init>(Landroid/content/Context;Lkik/core/interfaces/IConversation;Lkik/core/interfaces/ad;Lcom/kik/android/Mixpanel;Lkik/core/net/e;Lkik/core/interfaces/n;Lkik/core/interfaces/z;Lkik/core/ab;)V
     .locals 8
 
     .prologue
@@ -103,13 +103,13 @@
     iput-object p6, p0, Lkik/android/util/at;->f:Lkik/core/interfaces/n;
 
     .line 48
-    iput-object p3, p0, Lkik/android/util/at;->h:Lkik/core/interfaces/ae;
+    iput-object p3, p0, Lkik/android/util/at;->h:Lkik/core/interfaces/ad;
 
     .line 49
     iput-object p2, p0, Lkik/android/util/at;->i:Lkik/core/interfaces/IConversation;
 
     .line 50
-    iput-object p7, p0, Lkik/android/util/at;->j:Lkik/core/interfaces/aa;
+    iput-object p7, p0, Lkik/android/util/at;->j:Lkik/core/interfaces/z;
 
     .line 51
     new-instance v0, Lkik/android/util/as;
@@ -132,7 +132,7 @@
 
     move-object v7, p7
 
-    invoke-direct/range {v0 .. v7}, Lkik/android/util/as;-><init>(Landroid/os/Looper;Lkik/core/interfaces/IConversation;Lkik/core/interfaces/ae;Lcom/kik/android/Mixpanel;Lkik/core/net/e;Lkik/core/interfaces/n;Lkik/core/interfaces/aa;)V
+    invoke-direct/range {v0 .. v7}, Lkik/android/util/as;-><init>(Landroid/os/Looper;Lkik/core/interfaces/IConversation;Lkik/core/interfaces/ad;Lcom/kik/android/Mixpanel;Lkik/core/net/e;Lkik/core/interfaces/n;Lkik/core/interfaces/z;)V
 
     iput-object v0, p0, Lkik/android/util/at;->b:Lkik/android/util/as;
 
@@ -161,7 +161,7 @@
     .line 54
     iget-object v0, p0, Lkik/android/util/at;->c:Lcom/kik/events/d;
 
-    invoke-interface {p2}, Lkik/core/interfaces/IConversation;->s()Lcom/kik/events/c;
+    invoke-interface {p2}, Lkik/core/interfaces/IConversation;->r()Lcom/kik/events/c;
 
     move-result-object v1
 
@@ -203,12 +203,12 @@
     return-object v0
 .end method
 
-.method static synthetic d(Lkik/android/util/at;)Lkik/core/interfaces/ae;
+.method static synthetic d(Lkik/android/util/at;)Lkik/core/interfaces/ad;
     .locals 1
 
     .prologue
     .line 27
-    iget-object v0, p0, Lkik/android/util/at;->h:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/util/at;->h:Lkik/core/interfaces/ad;
 
     return-object v0
 .end method
@@ -223,12 +223,12 @@
     return-object v0
 .end method
 
-.method static synthetic f(Lkik/android/util/at;)Lkik/core/interfaces/aa;
+.method static synthetic f(Lkik/android/util/at;)Lkik/core/interfaces/z;
     .locals 1
 
     .prologue
     .line 27
-    iget-object v0, p0, Lkik/android/util/at;->j:Lkik/core/interfaces/aa;
+    iget-object v0, p0, Lkik/android/util/at;->j:Lkik/core/interfaces/z;
 
     return-object v0
 .end method

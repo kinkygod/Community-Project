@@ -50,7 +50,7 @@
     return-void
 .end method
 
-.method public static a(Ljava/io/File;Ljava/io/File;ILjava/lang/String;Lkik/core/net/e;ZLkik/core/interfaces/ae;)Lkik/android/e$a;
+.method public static a(Ljava/io/File;Ljava/io/File;ILjava/lang/String;Lkik/core/net/e;ZLkik/core/interfaces/ad;)Lkik/android/e$a;
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -63,7 +63,7 @@
     .prologue
     .line 117
     .line 1157
-    invoke-static {p0, p1, p2, p4, p6}, Lkik/android/e;->b(Ljava/io/File;Ljava/io/File;ILkik/core/net/e;Lkik/core/interfaces/ae;)Lkik/android/net/http/e;
+    invoke-static {p0, p1, p2, p4, p6}, Lkik/android/e;->b(Ljava/io/File;Ljava/io/File;ILkik/core/net/e;Lkik/core/interfaces/ad;)Lkik/android/net/http/e;
 
     move-result-object v1
 
@@ -129,7 +129,7 @@
     goto :goto_0
 .end method
 
-.method public static a(Ljava/io/File;Ljava/io/File;ILkik/core/net/e;Lkik/core/interfaces/ae;)Lkik/android/e$a;
+.method public static a(Ljava/io/File;Ljava/io/File;ILkik/core/net/e;Lkik/core/interfaces/ad;)Lkik/android/e$a;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -142,7 +142,7 @@
     .prologue
     .line 123
     .line 2136
-    invoke-static {p0, p1, p2, p3, p4}, Lkik/android/e;->b(Ljava/io/File;Ljava/io/File;ILkik/core/net/e;Lkik/core/interfaces/ae;)Lkik/android/net/http/e;
+    invoke-static {p0, p1, p2, p3, p4}, Lkik/android/e;->b(Ljava/io/File;Ljava/io/File;ILkik/core/net/e;Lkik/core/interfaces/ad;)Lkik/android/net/http/e;
 
     move-result-object v0
 
@@ -285,7 +285,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/kik/util/cm;->a(Lorg/apache/http/HttpEntity;)[B
+    invoke-static {v0}, Lcom/kik/util/cr;->a(Lorg/apache/http/HttpEntity;)[B
 
     move-result-object v0
 
@@ -402,7 +402,7 @@
     return-object v0
 .end method
 
-.method private static b(Ljava/io/File;Ljava/io/File;ILkik/core/net/e;Lkik/core/interfaces/ae;)Lkik/android/net/http/e;
+.method private static b(Ljava/io/File;Ljava/io/File;ILkik/core/net/e;Lkik/core/interfaces/ad;)Lkik/android/net/http/e;
     .locals 5
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -439,7 +439,7 @@
     move-result-object v1
 
     .line 184
-    invoke-static {p4}, Lkik/core/z;->b(Lkik/core/interfaces/ae;)Lkik/core/z;
+    invoke-static {p4}, Lkik/core/z;->b(Lkik/core/interfaces/ad;)Lkik/core/z;
 
     move-result-object v2
 
@@ -468,7 +468,7 @@
 
     .line 201
     :cond_0
-    invoke-static {p1}, Lcom/kik/util/ci;->a(Ljava/io/File;)Ljava/lang/String;
+    invoke-static {p1}, Lcom/kik/util/ck;->a(Ljava/io/File;)Ljava/lang/String;
 
     move-result-object v0
 

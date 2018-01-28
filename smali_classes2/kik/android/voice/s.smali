@@ -13,7 +13,7 @@
 # instance fields
 .field a:Ljava/lang/Object;
 
-.field b:Lcom/kik/storage/p;
+.field b:Lcom/kik/storage/s;
 
 .field private d:Z
 
@@ -41,7 +41,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Lcom/kik/storage/p;)V
+.method public constructor <init>(Lcom/kik/storage/s;)V
     .locals 1
 
     .prologue
@@ -64,7 +64,7 @@
     iput-object v0, p0, Lkik/android/voice/s;->a:Ljava/lang/Object;
 
     .line 30
-    iput-object p1, p0, Lkik/android/voice/s;->b:Lcom/kik/storage/p;
+    iput-object p1, p0, Lkik/android/voice/s;->b:Lcom/kik/storage/s;
 
     .line 31
     return-void
@@ -95,9 +95,9 @@
     const-wide/16 v8, 0x0
 
     .line 44
-    iget-object v0, p0, Lkik/android/voice/s;->b:Lcom/kik/storage/p;
+    iget-object v0, p0, Lkik/android/voice/s;->b:Lcom/kik/storage/s;
 
-    invoke-interface {v0, p1}, Lcom/kik/storage/p;->c(Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {v0, p1}, Lcom/kik/storage/s;->c(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

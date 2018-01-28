@@ -2,7 +2,7 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lrx/functions/h;
+.implements Lrx/functions/g;
 
 
 # instance fields
@@ -20,7 +20,7 @@
     return-void
 .end method
 
-.method public static a(Lkik/android/chat/vm/profile/gridvm/t;)Lrx/functions/h;
+.method public static a(Lkik/android/chat/vm/profile/gridvm/t;)Lrx/functions/g;
     .locals 1
 
     new-instance v0, Lkik/android/chat/vm/profile/gridvm/ai;
@@ -32,14 +32,14 @@
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final call(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     iget-object v0, p0, Lkik/android/chat/vm/profile/gridvm/ai;->a:Lkik/android/chat/vm/profile/gridvm/t;
 
     check-cast p1, Lcom/kik/core/domain/a/a/c;
 
-    invoke-static {v0, p1}, Lkik/android/chat/vm/profile/gridvm/t;->a(Lkik/android/chat/vm/profile/gridvm/t;Lcom/kik/core/domain/a/a/c;)Lcom/kik/android/Mixpanel$d;
+    invoke-static {v0, p1}, Lkik/android/chat/vm/profile/gridvm/t;->b(Lkik/android/chat/vm/profile/gridvm/t;Lcom/kik/core/domain/a/a/c;)Ljava/lang/Boolean;
 
     move-result-object v0
 

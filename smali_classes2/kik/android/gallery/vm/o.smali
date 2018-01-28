@@ -40,7 +40,7 @@
     iget-object v0, p0, Lkik/android/gallery/vm/o;->a:Lkik/android/gallery/vm/a;
 
     .line 1224
-    invoke-virtual {v0}, Lkik/android/gallery/vm/a;->aj_()V
+    invoke-virtual {v0}, Lkik/android/gallery/vm/a;->ak_()V
 
     .line 0
     return-void

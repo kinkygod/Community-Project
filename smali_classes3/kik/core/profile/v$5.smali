@@ -32,7 +32,7 @@
     .locals 0
 
     .prologue
-    .line 1322
+    .line 1310
     iput-object p1, p0, Lkik/core/profile/v$5;->a:Lkik/core/profile/v;
 
     invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
@@ -46,10 +46,10 @@
     .locals 4
 
     .prologue
-    .line 1322
+    .line 1310
     check-cast p1, Lkik/core/net/outgoing/UnblockContactByJidRequest;
 
-    .line 2326
+    .line 2314
     invoke-virtual {p1}, Lkik/core/net/outgoing/UnblockContactByJidRequest;->getJid()Lkik/core/datatypes/k;
 
     move-result-object v0
@@ -58,18 +58,18 @@
 
     move-result-object v0
 
-    .line 2327
+    .line 2315
     iget-object v1, p0, Lkik/core/profile/v$5;->a:Lkik/core/profile/v;
 
     const/4 v2, 0x0
 
-    invoke-static {}, Lkik/core/profile/aa;->a()Lkik/core/interfaces/w$a;
+    invoke-static {}, Lkik/core/profile/aa;->a()Lkik/core/interfaces/v$a;
 
     move-result-object v3
 
-    invoke-virtual {v1, v0, v2, v3}, Lkik/core/profile/v;->a(Ljava/lang/String;ZLkik/core/interfaces/w$a;)Lkik/core/datatypes/l;
+    invoke-virtual {v1, v0, v2, v3}, Lkik/core/profile/v;->a(Ljava/lang/String;ZLkik/core/interfaces/v$a;)Lkik/core/datatypes/l;
 
-    .line 2328
+    .line 2316
     iget-object v1, p0, Lkik/core/profile/v$5;->a:Lkik/core/profile/v;
 
     invoke-static {v1}, Lkik/core/profile/v;->k(Lkik/core/profile/v;)Lcom/kik/events/g;
@@ -78,7 +78,7 @@
 
     invoke-virtual {v1, v0}, Lcom/kik/events/g;->a(Ljava/lang/Object;)V
 
-    .line 1322
+    .line 1310
     return-void
 .end method
 
@@ -86,7 +86,7 @@
     .locals 2
 
     .prologue
-    .line 1334
+    .line 1322
     iget-object v0, p0, Lkik/core/profile/v$5;->a:Lkik/core/profile/v;
 
     invoke-static {v0}, Lkik/core/profile/v;->f(Lkik/core/profile/v;)Lcom/kik/events/g;
@@ -97,6 +97,6 @@
 
     invoke-virtual {v0, v1}, Lcom/kik/events/g;->a(Ljava/lang/Object;)V
 
-    .line 1335
+    .line 1323
     return-void
 .end method

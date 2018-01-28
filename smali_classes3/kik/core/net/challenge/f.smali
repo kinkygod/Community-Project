@@ -6,7 +6,7 @@
 # instance fields
 .field private a:Lkik/core/net/outgoing/p;
 
-.field private b:Lkik/core/interfaces/af;
+.field private b:Lkik/core/interfaces/ae;
 
 
 # direct methods
@@ -23,12 +23,12 @@
 
 
 # virtual methods
-.method public final a(Lkik/core/interfaces/af;)V
+.method public final a(Lkik/core/interfaces/ae;)V
     .locals 0
 
     .prologue
     .line 45
-    iput-object p1, p0, Lkik/core/net/challenge/f;->b:Lkik/core/interfaces/af;
+    iput-object p1, p0, Lkik/core/net/challenge/f;->b:Lkik/core/interfaces/ae;
 
     .line 46
     return-void
@@ -228,7 +228,7 @@
     return-void
 .end method
 
-.method public final aQ_()V
+.method public final aM_()V
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -238,11 +238,11 @@
 
     .prologue
     .line 35
-    iget-object v0, p0, Lkik/core/net/challenge/f;->b:Lkik/core/interfaces/af;
+    iget-object v0, p0, Lkik/core/net/challenge/f;->b:Lkik/core/interfaces/ae;
 
     iget-object v1, p0, Lkik/core/net/challenge/f;->a:Lkik/core/net/outgoing/p;
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/af;->a(Lkik/core/net/outgoing/p;)V
+    invoke-interface {v0, v1}, Lkik/core/interfaces/ae;->a(Lkik/core/net/outgoing/p;)V
 
     .line 36
     return-void

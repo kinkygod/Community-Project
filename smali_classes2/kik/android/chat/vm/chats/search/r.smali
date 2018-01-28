@@ -47,7 +47,7 @@
     .line 0
     check-cast p1, Lcom/kik/core/domain/users/a/c;
 
-    .line 1176
+    .line 1193
     if-eqz p1, :cond_0
 
     invoke-interface {p1}, Lcom/kik/core/domain/users/a/c;->f()Z
@@ -66,7 +66,7 @@
     .line 0
     return-object v0
 
-    .line 1176
+    .line 1193
     :cond_0
     const/4 v0, 0x0
 

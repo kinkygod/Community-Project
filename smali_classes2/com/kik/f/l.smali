@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/a/b;
+.implements Ldagger/internal/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/a/b",
+        "Ldagger/internal/b",
         "<",
         "Lkik/android/chat/theming/ChatBubbleManager;",
         ">;"
@@ -81,14 +81,14 @@
     return-void
 .end method
 
-.method public static a(Lcom/kik/f/k;)La/a/b;
+.method public static a(Lcom/kik/f/k;)Ldagger/internal/b;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lcom/kik/f/k;",
             ")",
-            "La/a/b",
+            "Ldagger/internal/b",
             "<",
             "Lkik/android/chat/theming/ChatBubbleManager;",
             ">;"
@@ -122,7 +122,7 @@
     const-string v1, "Cannot return null from a non-@Nullable @Provides method"
 
     .line 1023
-    invoke-static {v0, v1}, La/a/c;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {v0, v1}, Ldagger/internal/c;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 

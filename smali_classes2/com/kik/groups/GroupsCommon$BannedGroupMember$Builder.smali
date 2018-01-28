@@ -49,18 +49,18 @@
     .locals 1
 
     .prologue
-    .line 5103
+    .line 5167
     invoke-direct {p0}, Lcom/google/protobuf/GeneratedMessageV3$Builder;-><init>()V
 
-    .line 5222
+    .line 5286
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->jid_:Lcom/kik/ximodel/XiBareUserJid;
 
-    .line 5104
+    .line 5168
     invoke-direct {p0}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->maybeForceBuilderInitialization()V
 
-    .line 5105
+    .line 5169
     return-void
 .end method
 
@@ -68,18 +68,18 @@
     .locals 1
 
     .prologue
-    .line 5109
+    .line 5173
     invoke-direct {p0, p1}, Lcom/google/protobuf/GeneratedMessageV3$Builder;-><init>(Lcom/google/protobuf/GeneratedMessageV3$BuilderParent;)V
 
-    .line 5222
+    .line 5286
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->jid_:Lcom/kik/ximodel/XiBareUserJid;
 
-    .line 5110
+    .line 5174
     invoke-direct {p0}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->maybeForceBuilderInitialization()V
 
-    .line 5111
+    .line 5175
     return-void
 .end method
 
@@ -87,7 +87,7 @@
     .locals 0
 
     .prologue
-    .line 5086
+    .line 5150
     invoke-direct {p0, p1}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;-><init>(Lcom/google/protobuf/GeneratedMessageV3$BuilderParent;)V
 
     return-void
@@ -97,7 +97,7 @@
     .locals 0
 
     .prologue
-    .line 5086
+    .line 5150
     invoke-direct {p0}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;-><init>()V
 
     return-void
@@ -107,9 +107,9 @@
     .locals 1
 
     .prologue
-    .line 5092
+    .line 5156
     # getter for: Lcom/kik/groups/GroupsCommon;->internal_static_common_groups_v1_BannedGroupMember_descriptor:Lcom/google/protobuf/Descriptors$Descriptor;
-    invoke-static {}, Lcom/kik/groups/GroupsCommon;->access$4800()Lcom/google/protobuf/Descriptors$Descriptor;
+    invoke-static {}, Lcom/kik/groups/GroupsCommon;->access$4900()Lcom/google/protobuf/Descriptors$Descriptor;
 
     move-result-object v0
 
@@ -131,25 +131,25 @@
     .end annotation
 
     .prologue
-    .line 5364
+    .line 5428
     iget-object v0, p0, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->jidBuilder_:Lcom/google/protobuf/SingleFieldBuilderV3;
 
     if-nez v0, :cond_0
 
-    .line 5365
+    .line 5429
     new-instance v0, Lcom/google/protobuf/SingleFieldBuilderV3;
 
-    .line 5367
+    .line 5431
     invoke-virtual {p0}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->getJid()Lcom/kik/ximodel/XiBareUserJid;
 
     move-result-object v1
 
-    .line 5368
+    .line 5432
     invoke-virtual {p0}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->getParentForChildren()Lcom/google/protobuf/GeneratedMessageV3$BuilderParent;
 
     move-result-object v2
 
-    .line 5369
+    .line 5433
     invoke-virtual {p0}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->isClean()Z
 
     move-result v3
@@ -158,12 +158,12 @@
 
     iput-object v0, p0, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->jidBuilder_:Lcom/google/protobuf/SingleFieldBuilderV3;
 
-    .line 5370
+    .line 5434
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->jid_:Lcom/kik/ximodel/XiBareUserJid;
 
-    .line 5372
+    .line 5436
     :cond_0
     iget-object v0, p0, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->jidBuilder_:Lcom/google/protobuf/SingleFieldBuilderV3;
 
@@ -174,11 +174,11 @@
     .locals 0
 
     .prologue
-    .line 5114
+    .line 5178
     # getter for: Lcom/kik/groups/GroupsCommon$BannedGroupMember;->alwaysUseFieldBuilders:Z
-    invoke-static {}, Lcom/kik/groups/GroupsCommon$BannedGroupMember;->access$5200()Z
+    invoke-static {}, Lcom/kik/groups/GroupsCommon$BannedGroupMember;->access$5300()Z
 
-    .line 5116
+    .line 5180
     return-void
 .end method
 
@@ -188,7 +188,7 @@
     .locals 1
 
     .prologue
-    .line 5086
+    .line 5150
     invoke-virtual {p0, p1, p2}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->addRepeatedField(Lcom/google/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;
 
     move-result-object v0
@@ -200,7 +200,7 @@
     .locals 1
 
     .prologue
-    .line 5086
+    .line 5150
     invoke-virtual {p0, p1, p2}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->addRepeatedField(Lcom/google/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;
 
     move-result-object v0
@@ -212,7 +212,7 @@
     .locals 1
 
     .prologue
-    .line 5180
+    .line 5244
     invoke-super {p0, p1, p2}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->addRepeatedField(Lcom/google/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lcom/google/protobuf/GeneratedMessageV3$Builder;
 
     move-result-object v0
@@ -226,7 +226,7 @@
     .locals 1
 
     .prologue
-    .line 5086
+    .line 5150
     invoke-virtual {p0}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->build()Lcom/kik/groups/GroupsCommon$BannedGroupMember;
 
     move-result-object v0
@@ -238,7 +238,7 @@
     .locals 1
 
     .prologue
-    .line 5086
+    .line 5150
     invoke-virtual {p0}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->build()Lcom/kik/groups/GroupsCommon$BannedGroupMember;
 
     move-result-object v0
@@ -250,26 +250,26 @@
     .locals 2
 
     .prologue
-    .line 5138
+    .line 5202
     invoke-virtual {p0}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->buildPartial()Lcom/kik/groups/GroupsCommon$BannedGroupMember;
 
     move-result-object v0
 
-    .line 5139
+    .line 5203
     invoke-virtual {v0}, Lcom/kik/groups/GroupsCommon$BannedGroupMember;->isInitialized()Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    .line 5140
+    .line 5204
     invoke-static {v0}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->newUninitializedMessageException(Lcom/google/protobuf/Message;)Lcom/google/protobuf/UninitializedMessageException;
 
     move-result-object v0
 
     throw v0
 
-    .line 5142
+    .line 5206
     :cond_0
     return-object v0
 .end method
@@ -278,7 +278,7 @@
     .locals 1
 
     .prologue
-    .line 5086
+    .line 5150
     invoke-virtual {p0}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->buildPartial()Lcom/kik/groups/GroupsCommon$BannedGroupMember;
 
     move-result-object v0
@@ -290,7 +290,7 @@
     .locals 1
 
     .prologue
-    .line 5086
+    .line 5150
     invoke-virtual {p0}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->buildPartial()Lcom/kik/groups/GroupsCommon$BannedGroupMember;
 
     move-result-object v0
@@ -302,32 +302,32 @@
     .locals 2
 
     .prologue
-    .line 5146
+    .line 5210
     new-instance v1, Lcom/kik/groups/GroupsCommon$BannedGroupMember;
 
     const/4 v0, 0x0
 
     invoke-direct {v1, p0, v0}, Lcom/kik/groups/GroupsCommon$BannedGroupMember;-><init>(Lcom/google/protobuf/GeneratedMessageV3$Builder;Lcom/kik/groups/GroupsCommon$1;)V
 
-    .line 5147
+    .line 5211
     iget-object v0, p0, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->jidBuilder_:Lcom/google/protobuf/SingleFieldBuilderV3;
 
     if-nez v0, :cond_0
 
-    .line 5148
+    .line 5212
     iget-object v0, p0, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->jid_:Lcom/kik/ximodel/XiBareUserJid;
 
     # setter for: Lcom/kik/groups/GroupsCommon$BannedGroupMember;->jid_:Lcom/kik/ximodel/XiBareUserJid;
-    invoke-static {v1, v0}, Lcom/kik/groups/GroupsCommon$BannedGroupMember;->access$5402(Lcom/kik/groups/GroupsCommon$BannedGroupMember;Lcom/kik/ximodel/XiBareUserJid;)Lcom/kik/ximodel/XiBareUserJid;
+    invoke-static {v1, v0}, Lcom/kik/groups/GroupsCommon$BannedGroupMember;->access$5502(Lcom/kik/groups/GroupsCommon$BannedGroupMember;Lcom/kik/ximodel/XiBareUserJid;)Lcom/kik/ximodel/XiBareUserJid;
 
-    .line 5152
+    .line 5216
     :goto_0
     invoke-virtual {p0}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->onBuilt()V
 
-    .line 5153
+    .line 5217
     return-object v1
 
-    .line 5150
+    .line 5214
     :cond_0
     iget-object v0, p0, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->jidBuilder_:Lcom/google/protobuf/SingleFieldBuilderV3;
 
@@ -338,7 +338,7 @@
     check-cast v0, Lcom/kik/ximodel/XiBareUserJid;
 
     # setter for: Lcom/kik/groups/GroupsCommon$BannedGroupMember;->jid_:Lcom/kik/ximodel/XiBareUserJid;
-    invoke-static {v1, v0}, Lcom/kik/groups/GroupsCommon$BannedGroupMember;->access$5402(Lcom/kik/groups/GroupsCommon$BannedGroupMember;Lcom/kik/ximodel/XiBareUserJid;)Lcom/kik/ximodel/XiBareUserJid;
+    invoke-static {v1, v0}, Lcom/kik/groups/GroupsCommon$BannedGroupMember;->access$5502(Lcom/kik/groups/GroupsCommon$BannedGroupMember;Lcom/kik/ximodel/XiBareUserJid;)Lcom/kik/ximodel/XiBareUserJid;
 
     goto :goto_0
 .end method
@@ -347,7 +347,7 @@
     .locals 1
 
     .prologue
-    .line 5086
+    .line 5150
     invoke-virtual {p0}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->clear()Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;
 
     move-result-object v0
@@ -359,7 +359,7 @@
     .locals 1
 
     .prologue
-    .line 5086
+    .line 5150
     invoke-virtual {p0}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->clear()Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;
 
     move-result-object v0
@@ -371,7 +371,7 @@
     .locals 1
 
     .prologue
-    .line 5086
+    .line 5150
     invoke-virtual {p0}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->clear()Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;
 
     move-result-object v0
@@ -383,7 +383,7 @@
     .locals 1
 
     .prologue
-    .line 5086
+    .line 5150
     invoke-virtual {p0}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->clear()Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;
 
     move-result-object v0
@@ -397,26 +397,26 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 5118
+    .line 5182
     invoke-super {p0}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->clear()Lcom/google/protobuf/GeneratedMessageV3$Builder;
 
-    .line 5119
+    .line 5183
     iget-object v0, p0, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->jidBuilder_:Lcom/google/protobuf/SingleFieldBuilderV3;
 
     if-nez v0, :cond_0
 
-    .line 5120
+    .line 5184
     iput-object v1, p0, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->jid_:Lcom/kik/ximodel/XiBareUserJid;
 
-    .line 5125
+    .line 5189
     :goto_0
     return-object p0
 
-    .line 5122
+    .line 5186
     :cond_0
     iput-object v1, p0, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->jid_:Lcom/kik/ximodel/XiBareUserJid;
 
-    .line 5123
+    .line 5187
     iput-object v1, p0, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->jidBuilder_:Lcom/google/protobuf/SingleFieldBuilderV3;
 
     goto :goto_0
@@ -426,7 +426,7 @@
     .locals 1
 
     .prologue
-    .line 5086
+    .line 5150
     invoke-virtual {p0, p1}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->clearField(Lcom/google/protobuf/Descriptors$FieldDescriptor;)Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;
 
     move-result-object v0
@@ -438,7 +438,7 @@
     .locals 1
 
     .prologue
-    .line 5086
+    .line 5150
     invoke-virtual {p0, p1}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->clearField(Lcom/google/protobuf/Descriptors$FieldDescriptor;)Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;
 
     move-result-object v0
@@ -450,7 +450,7 @@
     .locals 1
 
     .prologue
-    .line 5166
+    .line 5230
     invoke-super {p0, p1}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->clearField(Lcom/google/protobuf/Descriptors$FieldDescriptor;)Lcom/google/protobuf/GeneratedMessageV3$Builder;
 
     move-result-object v0
@@ -466,26 +466,26 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 5317
+    .line 5381
     iget-object v0, p0, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->jidBuilder_:Lcom/google/protobuf/SingleFieldBuilderV3;
 
     if-nez v0, :cond_0
 
-    .line 5318
+    .line 5382
     iput-object v1, p0, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->jid_:Lcom/kik/ximodel/XiBareUserJid;
 
-    .line 5319
+    .line 5383
     invoke-virtual {p0}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->onChanged()V
 
-    .line 5325
+    .line 5389
     :goto_0
     return-object p0
 
-    .line 5321
+    .line 5385
     :cond_0
     iput-object v1, p0, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->jid_:Lcom/kik/ximodel/XiBareUserJid;
 
-    .line 5322
+    .line 5386
     iput-object v1, p0, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->jidBuilder_:Lcom/google/protobuf/SingleFieldBuilderV3;
 
     goto :goto_0
@@ -495,7 +495,7 @@
     .locals 1
 
     .prologue
-    .line 5086
+    .line 5150
     invoke-virtual {p0, p1}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->clearOneof(Lcom/google/protobuf/Descriptors$OneofDescriptor;)Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;
 
     move-result-object v0
@@ -507,7 +507,7 @@
     .locals 1
 
     .prologue
-    .line 5086
+    .line 5150
     invoke-virtual {p0, p1}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->clearOneof(Lcom/google/protobuf/Descriptors$OneofDescriptor;)Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;
 
     move-result-object v0
@@ -519,7 +519,7 @@
     .locals 1
 
     .prologue
-    .line 5086
+    .line 5150
     invoke-virtual {p0, p1}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->clearOneof(Lcom/google/protobuf/Descriptors$OneofDescriptor;)Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;
 
     move-result-object v0
@@ -531,7 +531,7 @@
     .locals 1
 
     .prologue
-    .line 5170
+    .line 5234
     invoke-super {p0, p1}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->clearOneof(Lcom/google/protobuf/Descriptors$OneofDescriptor;)Lcom/google/protobuf/GeneratedMessageV3$Builder;
 
     move-result-object v0
@@ -545,7 +545,7 @@
     .locals 1
 
     .prologue
-    .line 5086
+    .line 5150
     invoke-virtual {p0}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->clone()Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;
 
     move-result-object v0
@@ -557,7 +557,7 @@
     .locals 1
 
     .prologue
-    .line 5086
+    .line 5150
     invoke-virtual {p0}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->clone()Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;
 
     move-result-object v0
@@ -569,7 +569,7 @@
     .locals 1
 
     .prologue
-    .line 5086
+    .line 5150
     invoke-virtual {p0}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->clone()Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;
 
     move-result-object v0
@@ -581,7 +581,7 @@
     .locals 1
 
     .prologue
-    .line 5086
+    .line 5150
     invoke-virtual {p0}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->clone()Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;
 
     move-result-object v0
@@ -593,7 +593,7 @@
     .locals 1
 
     .prologue
-    .line 5086
+    .line 5150
     invoke-virtual {p0}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->clone()Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;
 
     move-result-object v0
@@ -605,7 +605,7 @@
     .locals 1
 
     .prologue
-    .line 5157
+    .line 5221
     invoke-super {p0}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->clone()Lcom/google/protobuf/GeneratedMessageV3$Builder;
 
     move-result-object v0
@@ -624,7 +624,7 @@
     .end annotation
 
     .prologue
-    .line 5086
+    .line 5150
     invoke-virtual {p0}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->clone()Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;
 
     move-result-object v0
@@ -636,7 +636,7 @@
     .locals 1
 
     .prologue
-    .line 5086
+    .line 5150
     invoke-virtual {p0}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->getDefaultInstanceForType()Lcom/kik/groups/GroupsCommon$BannedGroupMember;
 
     move-result-object v0
@@ -648,7 +648,7 @@
     .locals 1
 
     .prologue
-    .line 5086
+    .line 5150
     invoke-virtual {p0}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->getDefaultInstanceForType()Lcom/kik/groups/GroupsCommon$BannedGroupMember;
 
     move-result-object v0
@@ -660,7 +660,7 @@
     .locals 1
 
     .prologue
-    .line 5134
+    .line 5198
     invoke-static {}, Lcom/kik/groups/GroupsCommon$BannedGroupMember;->getDefaultInstance()Lcom/kik/groups/GroupsCommon$BannedGroupMember;
 
     move-result-object v0
@@ -672,9 +672,9 @@
     .locals 1
 
     .prologue
-    .line 5130
+    .line 5194
     # getter for: Lcom/kik/groups/GroupsCommon;->internal_static_common_groups_v1_BannedGroupMember_descriptor:Lcom/google/protobuf/Descriptors$Descriptor;
-    invoke-static {}, Lcom/kik/groups/GroupsCommon;->access$4800()Lcom/google/protobuf/Descriptors$Descriptor;
+    invoke-static {}, Lcom/kik/groups/GroupsCommon;->access$4900()Lcom/google/protobuf/Descriptors$Descriptor;
 
     move-result-object v0
 
@@ -685,12 +685,12 @@
     .locals 1
 
     .prologue
-    .line 5243
+    .line 5307
     iget-object v0, p0, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->jidBuilder_:Lcom/google/protobuf/SingleFieldBuilderV3;
 
     if-nez v0, :cond_1
 
-    .line 5244
+    .line 5308
     iget-object v0, p0, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->jid_:Lcom/kik/ximodel/XiBareUserJid;
 
     if-nez v0, :cond_0
@@ -699,17 +699,17 @@
 
     move-result-object v0
 
-    .line 5246
+    .line 5310
     :goto_0
     return-object v0
 
-    .line 5244
+    .line 5308
     :cond_0
     iget-object v0, p0, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->jid_:Lcom/kik/ximodel/XiBareUserJid;
 
     goto :goto_0
 
-    .line 5246
+    .line 5310
     :cond_1
     iget-object v0, p0, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->jidBuilder_:Lcom/google/protobuf/SingleFieldBuilderV3;
 
@@ -726,10 +726,10 @@
     .locals 1
 
     .prologue
-    .line 5336
+    .line 5400
     invoke-virtual {p0}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->onChanged()V
 
-    .line 5337
+    .line 5401
     invoke-direct {p0}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->getJidFieldBuilder()Lcom/google/protobuf/SingleFieldBuilderV3;
 
     move-result-object v0
@@ -747,12 +747,12 @@
     .locals 1
 
     .prologue
-    .line 5347
+    .line 5411
     iget-object v0, p0, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->jidBuilder_:Lcom/google/protobuf/SingleFieldBuilderV3;
 
     if-eqz v0, :cond_0
 
-    .line 5348
+    .line 5412
     iget-object v0, p0, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->jidBuilder_:Lcom/google/protobuf/SingleFieldBuilderV3;
 
     invoke-virtual {v0}, Lcom/google/protobuf/SingleFieldBuilderV3;->getMessageOrBuilder()Lcom/google/protobuf/MessageOrBuilder;
@@ -761,17 +761,17 @@
 
     check-cast v0, Lcom/kik/ximodel/XiBareUserJidOrBuilder;
 
-    .line 5351
+    .line 5415
     :goto_0
     return-object v0
 
-    .line 5350
+    .line 5414
     :cond_0
     iget-object v0, p0, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->jid_:Lcom/kik/ximodel/XiBareUserJid;
 
     if-nez v0, :cond_1
 
-    .line 5351
+    .line 5415
     invoke-static {}, Lcom/kik/ximodel/XiBareUserJid;->getDefaultInstance()Lcom/kik/ximodel/XiBareUserJid;
 
     move-result-object v0
@@ -788,7 +788,7 @@
     .locals 1
 
     .prologue
-    .line 5233
+    .line 5297
     iget-object v0, p0, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->jidBuilder_:Lcom/google/protobuf/SingleFieldBuilderV3;
 
     if-nez v0, :cond_0
@@ -813,9 +813,9 @@
     .locals 3
 
     .prologue
-    .line 5097
+    .line 5161
     # getter for: Lcom/kik/groups/GroupsCommon;->internal_static_common_groups_v1_BannedGroupMember_fieldAccessorTable:Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
-    invoke-static {}, Lcom/kik/groups/GroupsCommon;->access$4900()Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
+    invoke-static {}, Lcom/kik/groups/GroupsCommon;->access$5000()Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
     move-result-object v0
 
@@ -823,12 +823,12 @@
 
     const-class v2, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;
 
-    .line 5098
+    .line 5162
     invoke-virtual {v0, v1, v2}, Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;->ensureFieldAccessorsInitialized(Ljava/lang/Class;Ljava/lang/Class;)Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
     move-result-object v0
 
-    .line 5097
+    .line 5161
     return-object v0
 .end method
 
@@ -836,7 +836,7 @@
     .locals 1
 
     .prologue
-    .line 5201
+    .line 5265
     const/4 v0, 0x1
 
     return v0
@@ -851,7 +851,7 @@
     .end annotation
 
     .prologue
-    .line 5086
+    .line 5150
     invoke-virtual {p0, p1, p2}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->mergeFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;
 
     move-result-object v0
@@ -863,7 +863,7 @@
     .locals 1
 
     .prologue
-    .line 5086
+    .line 5150
     invoke-virtual {p0, p1}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->mergeFrom(Lcom/google/protobuf/Message;)Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;
 
     move-result-object v0
@@ -880,7 +880,7 @@
     .end annotation
 
     .prologue
-    .line 5086
+    .line 5150
     invoke-virtual {p0, p1, p2}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->mergeFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;
 
     move-result-object v0
@@ -897,7 +897,7 @@
     .end annotation
 
     .prologue
-    .line 5086
+    .line 5150
     invoke-virtual {p0, p1, p2}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->mergeFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;
 
     move-result-object v0
@@ -909,7 +909,7 @@
     .locals 1
 
     .prologue
-    .line 5086
+    .line 5150
     invoke-virtual {p0, p1}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->mergeFrom(Lcom/google/protobuf/Message;)Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;
 
     move-result-object v0
@@ -926,7 +926,7 @@
     .end annotation
 
     .prologue
-    .line 5086
+    .line 5150
     invoke-virtual {p0, p1, p2}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->mergeFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;
 
     move-result-object v0
@@ -943,13 +943,13 @@
     .end annotation
 
     .prologue
-    .line 5208
+    .line 5272
     const/4 v2, 0x0
 
-    .line 5210
+    .line 5274
     :try_start_0
     # getter for: Lcom/kik/groups/GroupsCommon$BannedGroupMember;->PARSER:Lcom/google/protobuf/Parser;
-    invoke-static {}, Lcom/kik/groups/GroupsCommon$BannedGroupMember;->access$5500()Lcom/google/protobuf/Parser;
+    invoke-static {}, Lcom/kik/groups/GroupsCommon$BannedGroupMember;->access$5600()Lcom/google/protobuf/Parser;
 
     move-result-object v0
 
@@ -962,23 +962,23 @@
     .catch Lcom/google/protobuf/InvalidProtocolBufferException; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 5215
+    .line 5279
     if-eqz v0, :cond_0
 
-    .line 5216
+    .line 5280
     invoke-virtual {p0, v0}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->mergeFrom(Lcom/kik/groups/GroupsCommon$BannedGroupMember;)Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;
 
-    .line 5219
+    .line 5283
     :cond_0
     return-object p0
 
-    .line 5211
+    .line 5275
     :catch_0
     move-exception v0
 
     move-object v1, v0
 
-    .line 5212
+    .line 5276
     :try_start_1
     invoke-virtual {v1}, Lcom/google/protobuf/InvalidProtocolBufferException;->getUnfinishedMessage()Lcom/google/protobuf/MessageLite;
 
@@ -988,7 +988,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 5213
+    .line 5277
     :try_start_2
     invoke-virtual {v1}, Lcom/google/protobuf/InvalidProtocolBufferException;->unwrapIOException()Ljava/io/IOException;
 
@@ -998,7 +998,7 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 5215
+    .line 5279
     :catchall_0
     move-exception v1
 
@@ -1011,13 +1011,13 @@
     :goto_0
     if-eqz v1, :cond_1
 
-    .line 5216
+    .line 5280
     invoke-virtual {p0, v1}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->mergeFrom(Lcom/kik/groups/GroupsCommon$BannedGroupMember;)Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;
 
     :cond_1
     throw v0
 
-    .line 5215
+    .line 5279
     :catchall_1
     move-exception v0
 
@@ -1030,23 +1030,23 @@
     .locals 1
 
     .prologue
-    .line 5183
+    .line 5247
     instance-of v0, p1, Lcom/kik/groups/GroupsCommon$BannedGroupMember;
 
     if-eqz v0, :cond_0
 
-    .line 5184
+    .line 5248
     check-cast p1, Lcom/kik/groups/GroupsCommon$BannedGroupMember;
 
     invoke-virtual {p0, p1}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->mergeFrom(Lcom/kik/groups/GroupsCommon$BannedGroupMember;)Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;
 
     move-result-object p0
 
-    .line 5187
+    .line 5251
     :goto_0
     return-object p0
 
-    .line 5186
+    .line 5250
     :cond_0
     invoke-super {p0, p1}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->mergeFrom(Lcom/google/protobuf/Message;)Lcom/google/protobuf/AbstractMessage$Builder;
 
@@ -1057,18 +1057,18 @@
     .locals 1
 
     .prologue
-    .line 5192
+    .line 5256
     invoke-static {}, Lcom/kik/groups/GroupsCommon$BannedGroupMember;->getDefaultInstance()Lcom/kik/groups/GroupsCommon$BannedGroupMember;
 
     move-result-object v0
 
     if-ne p1, v0, :cond_0
 
-    .line 5197
+    .line 5261
     :goto_0
     return-object p0
 
-    .line 5193
+    .line 5257
     :cond_0
     invoke-virtual {p1}, Lcom/kik/groups/GroupsCommon$BannedGroupMember;->hasJid()Z
 
@@ -1076,14 +1076,14 @@
 
     if-eqz v0, :cond_1
 
-    .line 5194
+    .line 5258
     invoke-virtual {p1}, Lcom/kik/groups/GroupsCommon$BannedGroupMember;->getJid()Lcom/kik/ximodel/XiBareUserJid;
 
     move-result-object v0
 
     invoke-virtual {p0, v0}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->mergeJid(Lcom/kik/ximodel/XiBareUserJid;)Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;
 
-    .line 5196
+    .line 5260
     :cond_1
     invoke-virtual {p0}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->onChanged()V
 
@@ -1094,20 +1094,20 @@
     .locals 1
 
     .prologue
-    .line 5295
+    .line 5359
     iget-object v0, p0, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->jidBuilder_:Lcom/google/protobuf/SingleFieldBuilderV3;
 
     if-nez v0, :cond_1
 
-    .line 5296
+    .line 5360
     iget-object v0, p0, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->jid_:Lcom/kik/ximodel/XiBareUserJid;
 
     if-eqz v0, :cond_0
 
-    .line 5297
+    .line 5361
     iget-object v0, p0, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->jid_:Lcom/kik/ximodel/XiBareUserJid;
 
-    .line 5298
+    .line 5362
     invoke-static {v0}, Lcom/kik/ximodel/XiBareUserJid;->newBuilder(Lcom/kik/ximodel/XiBareUserJid;)Lcom/kik/ximodel/XiBareUserJid$Builder;
 
     move-result-object v0
@@ -1122,21 +1122,21 @@
 
     iput-object v0, p0, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->jid_:Lcom/kik/ximodel/XiBareUserJid;
 
-    .line 5302
+    .line 5366
     :goto_0
     invoke-virtual {p0}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->onChanged()V
 
-    .line 5307
+    .line 5371
     :goto_1
     return-object p0
 
-    .line 5300
+    .line 5364
     :cond_0
     iput-object p1, p0, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->jid_:Lcom/kik/ximodel/XiBareUserJid;
 
     goto :goto_0
 
-    .line 5304
+    .line 5368
     :cond_1
     iget-object v0, p0, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->jidBuilder_:Lcom/google/protobuf/SingleFieldBuilderV3;
 
@@ -1149,7 +1149,7 @@
     .locals 1
 
     .prologue
-    .line 5086
+    .line 5150
     invoke-virtual {p0, p1}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->mergeUnknownFields(Lcom/google/protobuf/UnknownFieldSet;)Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;
 
     move-result-object v0
@@ -1161,7 +1161,7 @@
     .locals 1
 
     .prologue
-    .line 5086
+    .line 5150
     invoke-virtual {p0, p1}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->mergeUnknownFields(Lcom/google/protobuf/UnknownFieldSet;)Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;
 
     move-result-object v0
@@ -1173,7 +1173,7 @@
     .locals 1
 
     .prologue
-    .line 5086
+    .line 5150
     invoke-virtual {p0, p1}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->mergeUnknownFields(Lcom/google/protobuf/UnknownFieldSet;)Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;
 
     move-result-object v0
@@ -1185,7 +1185,7 @@
     .locals 0
 
     .prologue
-    .line 5381
+    .line 5445
     return-object p0
 .end method
 
@@ -1193,7 +1193,7 @@
     .locals 1
 
     .prologue
-    .line 5086
+    .line 5150
     invoke-virtual {p0, p1, p2}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->setField(Lcom/google/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;
 
     move-result-object v0
@@ -1205,7 +1205,7 @@
     .locals 1
 
     .prologue
-    .line 5086
+    .line 5150
     invoke-virtual {p0, p1, p2}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->setField(Lcom/google/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;
 
     move-result-object v0
@@ -1217,7 +1217,7 @@
     .locals 1
 
     .prologue
-    .line 5162
+    .line 5226
     invoke-super {p0, p1, p2}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->setField(Lcom/google/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lcom/google/protobuf/GeneratedMessageV3$Builder;
 
     move-result-object v0
@@ -1231,26 +1231,26 @@
     .locals 2
 
     .prologue
-    .line 5278
+    .line 5342
     iget-object v0, p0, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->jidBuilder_:Lcom/google/protobuf/SingleFieldBuilderV3;
 
     if-nez v0, :cond_0
 
-    .line 5279
+    .line 5343
     invoke-virtual {p1}, Lcom/kik/ximodel/XiBareUserJid$Builder;->build()Lcom/kik/ximodel/XiBareUserJid;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->jid_:Lcom/kik/ximodel/XiBareUserJid;
 
-    .line 5280
+    .line 5344
     invoke-virtual {p0}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->onChanged()V
 
-    .line 5285
+    .line 5349
     :goto_0
     return-object p0
 
-    .line 5282
+    .line 5346
     :cond_0
     iget-object v0, p0, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->jidBuilder_:Lcom/google/protobuf/SingleFieldBuilderV3;
 
@@ -1267,33 +1267,33 @@
     .locals 1
 
     .prologue
-    .line 5257
+    .line 5321
     iget-object v0, p0, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->jidBuilder_:Lcom/google/protobuf/SingleFieldBuilderV3;
 
     if-nez v0, :cond_1
 
-    .line 5258
+    .line 5322
     if-nez p1, :cond_0
 
-    .line 5259
+    .line 5323
     new-instance v0, Ljava/lang/NullPointerException;
 
     invoke-direct {v0}, Ljava/lang/NullPointerException;-><init>()V
 
     throw v0
 
-    .line 5261
+    .line 5325
     :cond_0
     iput-object p1, p0, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->jid_:Lcom/kik/ximodel/XiBareUserJid;
 
-    .line 5262
+    .line 5326
     invoke-virtual {p0}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->onChanged()V
 
-    .line 5267
+    .line 5331
     :goto_0
     return-object p0
 
-    .line 5264
+    .line 5328
     :cond_1
     iget-object v0, p0, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->jidBuilder_:Lcom/google/protobuf/SingleFieldBuilderV3;
 
@@ -1306,7 +1306,7 @@
     .locals 1
 
     .prologue
-    .line 5086
+    .line 5150
     invoke-virtual {p0, p1, p2, p3}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->setRepeatedField(Lcom/google/protobuf/Descriptors$FieldDescriptor;ILjava/lang/Object;)Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;
 
     move-result-object v0
@@ -1318,7 +1318,7 @@
     .locals 1
 
     .prologue
-    .line 5086
+    .line 5150
     invoke-virtual {p0, p1, p2, p3}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->setRepeatedField(Lcom/google/protobuf/Descriptors$FieldDescriptor;ILjava/lang/Object;)Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;
 
     move-result-object v0
@@ -1330,7 +1330,7 @@
     .locals 1
 
     .prologue
-    .line 5175
+    .line 5239
     invoke-super {p0, p1, p2, p3}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->setRepeatedField(Lcom/google/protobuf/Descriptors$FieldDescriptor;ILjava/lang/Object;)Lcom/google/protobuf/GeneratedMessageV3$Builder;
 
     move-result-object v0
@@ -1344,7 +1344,7 @@
     .locals 1
 
     .prologue
-    .line 5086
+    .line 5150
     invoke-virtual {p0, p1}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->setUnknownFields(Lcom/google/protobuf/UnknownFieldSet;)Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;
 
     move-result-object v0
@@ -1356,7 +1356,7 @@
     .locals 1
 
     .prologue
-    .line 5086
+    .line 5150
     invoke-virtual {p0, p1}, Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;->setUnknownFields(Lcom/google/protobuf/UnknownFieldSet;)Lcom/kik/groups/GroupsCommon$BannedGroupMember$Builder;
 
     move-result-object v0
@@ -1368,6 +1368,6 @@
     .locals 0
 
     .prologue
-    .line 5376
+    .line 5440
     return-object p0
 .end method

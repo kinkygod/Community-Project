@@ -140,97 +140,7 @@
     return-void
 .end method
 
-.method public final aj_()V
-    .locals 1
-
-    .prologue
-    const/4 v0, 0x0
-
-    .line 38
-    iput-object v0, p0, Lkik/android/gifs/vm/s;->c:Lkik/android/gifs/api/GifResponseData;
-
-    .line 39
-    iput-object v0, p0, Lkik/android/gifs/vm/s;->d:Lrx/functions/b;
-
-    .line 40
-    invoke-super {p0}, Lkik/android/gifs/vm/a;->aj_()V
-
-    .line 41
-    return-void
-.end method
-
-.method public final d()Ljava/lang/String;
-    .locals 1
-
-    .prologue
-    .line 78
-    invoke-direct {p0}, Lkik/android/gifs/vm/s;->p()Lkik/android/gifs/api/e;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_0
-
-    invoke-direct {p0}, Lkik/android/gifs/vm/s;->p()Lkik/android/gifs/api/e;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lkik/android/gifs/api/e;->a()Ljava/lang/String;
-
-    move-result-object v0
-
-    :goto_0
-    return-object v0
-
-    :cond_0
-    const-string v0, ""
-
-    goto :goto_0
-.end method
-
-.method public final e()Ljava/lang/String;
-    .locals 1
-
-    .prologue
-    .line 96
-    iget-object v0, p0, Lkik/android/gifs/vm/s;->c:Lkik/android/gifs/api/GifResponseData;
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lkik/android/gifs/vm/s;->c:Lkik/android/gifs/api/GifResponseData;
-
-    invoke-virtual {v0}, Lkik/android/gifs/api/GifResponseData;->g()Ljava/lang/String;
-
-    move-result-object v0
-
-    :goto_0
-    return-object v0
-
-    :cond_0
-    const-string v0, ""
-
-    goto :goto_0
-.end method
-
-.method public final g()V
-    .locals 1
-
-    .prologue
-    .line 46
-    iget-object v0, p0, Lkik/android/gifs/vm/s;->d:Lrx/functions/b;
-
-    if-eqz v0, :cond_0
-
-    .line 47
-    iget-object v0, p0, Lkik/android/gifs/vm/s;->d:Lrx/functions/b;
-
-    invoke-interface {v0, p0}, Lrx/functions/b;->call(Ljava/lang/Object;)V
-
-    .line 49
-    :cond_0
-    return-void
-.end method
-
-.method public final j()J
+.method public final ag_()J
     .locals 2
 
     .prologue
@@ -282,6 +192,96 @@
     int-to-long v0, v0
 
     goto :goto_0
+.end method
+
+.method public final ak_()V
+    .locals 1
+
+    .prologue
+    const/4 v0, 0x0
+
+    .line 38
+    iput-object v0, p0, Lkik/android/gifs/vm/s;->c:Lkik/android/gifs/api/GifResponseData;
+
+    .line 39
+    iput-object v0, p0, Lkik/android/gifs/vm/s;->d:Lrx/functions/b;
+
+    .line 40
+    invoke-super {p0}, Lkik/android/gifs/vm/a;->ak_()V
+
+    .line 41
+    return-void
+.end method
+
+.method public final e()Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 78
+    invoke-direct {p0}, Lkik/android/gifs/vm/s;->p()Lkik/android/gifs/api/e;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    invoke-direct {p0}, Lkik/android/gifs/vm/s;->p()Lkik/android/gifs/api/e;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lkik/android/gifs/api/e;->a()Ljava/lang/String;
+
+    move-result-object v0
+
+    :goto_0
+    return-object v0
+
+    :cond_0
+    const-string v0, ""
+
+    goto :goto_0
+.end method
+
+.method public final g()Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 96
+    iget-object v0, p0, Lkik/android/gifs/vm/s;->c:Lkik/android/gifs/api/GifResponseData;
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lkik/android/gifs/vm/s;->c:Lkik/android/gifs/api/GifResponseData;
+
+    invoke-virtual {v0}, Lkik/android/gifs/api/GifResponseData;->g()Ljava/lang/String;
+
+    move-result-object v0
+
+    :goto_0
+    return-object v0
+
+    :cond_0
+    const-string v0, ""
+
+    goto :goto_0
+.end method
+
+.method public final j()V
+    .locals 1
+
+    .prologue
+    .line 46
+    iget-object v0, p0, Lkik/android/gifs/vm/s;->d:Lrx/functions/b;
+
+    if-eqz v0, :cond_0
+
+    .line 47
+    iget-object v0, p0, Lkik/android/gifs/vm/s;->d:Lrx/functions/b;
+
+    invoke-interface {v0, p0}, Lrx/functions/b;->call(Ljava/lang/Object;)V
+
+    .line 49
+    :cond_0
+    return-void
 .end method
 
 .method public final k()Z

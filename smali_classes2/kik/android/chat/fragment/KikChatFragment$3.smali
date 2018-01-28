@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 887
+    .line 892
     iput-object p1, p0, Lkik/android/chat/fragment/KikChatFragment$3;->a:Lkik/android/chat/fragment/KikChatFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,21 +40,21 @@
     .locals 1
 
     .prologue
-    .line 891
+    .line 896
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
 
     move-result v0
 
     packed-switch v0, :pswitch_data_0
 
-    .line 900
+    .line 905
     :goto_0
     :pswitch_0
     const/4 v0, 0x0
 
     return v0
 
-    .line 893
+    .line 898
     :pswitch_1
     const v0, 0x3ecccccd    # 0.4f
 
@@ -62,7 +62,7 @@
 
     goto :goto_0
 
-    .line 897
+    .line 902
     :pswitch_2
     const/high16 v0, 0x3f800000    # 1.0f
 
@@ -70,7 +70,7 @@
 
     goto :goto_0
 
-    .line 891
+    .line 896
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_1

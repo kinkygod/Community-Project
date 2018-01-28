@@ -2,48 +2,44 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Lrx/functions/b;
 
 
 # instance fields
-.field private final a:Lkik/android/chat/vm/profile/aw;
-
-.field private final b:Lcom/kik/core/domain/a/a/a;
+.field private final a:Lkik/android/chat/vm/profile/au;
 
 
 # direct methods
-.method private constructor <init>(Lkik/android/chat/vm/profile/aw;Lcom/kik/core/domain/a/a/a;)V
+.method private constructor <init>(Lkik/android/chat/vm/profile/au;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lkik/android/chat/vm/profile/bb;->a:Lkik/android/chat/vm/profile/aw;
-
-    iput-object p2, p0, Lkik/android/chat/vm/profile/bb;->b:Lcom/kik/core/domain/a/a/a;
+    iput-object p1, p0, Lkik/android/chat/vm/profile/bb;->a:Lkik/android/chat/vm/profile/au;
 
     return-void
 .end method
 
-.method public static a(Lkik/android/chat/vm/profile/aw;Lcom/kik/core/domain/a/a/a;)Ljava/lang/Runnable;
+.method public static a(Lkik/android/chat/vm/profile/au;)Lrx/functions/b;
     .locals 1
 
     new-instance v0, Lkik/android/chat/vm/profile/bb;
 
-    invoke-direct {v0, p0, p1}, Lkik/android/chat/vm/profile/bb;-><init>(Lkik/android/chat/vm/profile/aw;Lcom/kik/core/domain/a/a/a;)V
+    invoke-direct {v0, p0}, Lkik/android/chat/vm/profile/bb;-><init>(Lkik/android/chat/vm/profile/au;)V
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 2
+.method public final call(Ljava/lang/Object;)V
+    .locals 1
 
-    iget-object v0, p0, Lkik/android/chat/vm/profile/bb;->a:Lkik/android/chat/vm/profile/aw;
+    iget-object v0, p0, Lkik/android/chat/vm/profile/bb;->a:Lkik/android/chat/vm/profile/au;
 
-    iget-object v1, p0, Lkik/android/chat/vm/profile/bb;->b:Lcom/kik/core/domain/a/a/a;
+    check-cast p1, Ljava/lang/Throwable;
 
-    invoke-static {v0, v1}, Lkik/android/chat/vm/profile/aw;->b(Lkik/android/chat/vm/profile/aw;Lcom/kik/core/domain/a/a/a;)V
+    invoke-static {v0, p1}, Lkik/android/chat/vm/profile/au;->a(Lkik/android/chat/vm/profile/au;Ljava/lang/Throwable;)V
 
     return-void
 .end method

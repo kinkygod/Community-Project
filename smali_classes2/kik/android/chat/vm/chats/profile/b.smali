@@ -39,10 +39,10 @@
     .line 0
     iget-object v0, p0, Lkik/android/chat/vm/chats/profile/b;->a:Lkik/android/chat/vm/chats/profile/a;
 
-    check-cast p1, Lkik/android/chat/vm/chats/profile/IBioEditorViewModel$ErrorType;
+    check-cast p1, Lkik/android/chat/vm/chats/profile/IValidateableInputEditorViewModel$ErrorType;
 
     .line 1061
-    sget-object v1, Lkik/android/chat/vm/chats/profile/IBioEditorViewModel$ErrorType;->CONTAINS_LINK:Lkik/android/chat/vm/chats/profile/IBioEditorViewModel$ErrorType;
+    sget-object v1, Lkik/android/chat/vm/chats/profile/IValidateableInputEditorViewModel$ErrorType;->CONTAINS_LINK:Lkik/android/chat/vm/chats/profile/IValidateableInputEditorViewModel$ErrorType;
 
     if-ne p1, v1, :cond_0
 

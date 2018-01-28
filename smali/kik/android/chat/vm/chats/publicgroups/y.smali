@@ -58,7 +58,7 @@
 
 
 # virtual methods
-.method public final L_()Lkik/android/chat/vm/chats/publicgroups/IPublicGroupItemViewModel$LayoutType;
+.method public final N_()Lkik/android/chat/vm/chats/publicgroups/IPublicGroupItemViewModel$LayoutType;
     .locals 1
 
     .prologue
@@ -68,7 +68,7 @@
     return-object v0
 .end method
 
-.method public final U_()Ljava/lang/String;
+.method public final W_()Ljava/lang/String;
     .locals 1
 
     .prologue
@@ -82,14 +82,14 @@
     return-object v0
 .end method
 
-.method public final V_()Ljava/lang/String;
+.method public final X_()Ljava/lang/String;
     .locals 2
 
     .prologue
     .line 60
     iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/y;->c:Landroid/content/res/Resources;
 
-    const v1, 0x7f090646
+    const v1, 0x7f09064e
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -98,12 +98,12 @@
     return-object v0
 .end method
 
-.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
     .locals 0
 
     .prologue
     .line 40
-    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/chats/publicgroups/a;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/chats/publicgroups/a;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 41
     invoke-interface {p1, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/chat/vm/chats/publicgroups/y;)V
@@ -112,7 +112,7 @@
     return-void
 .end method
 
-.method public final g()V
+.method public final h()V
     .locals 4
 
     .prologue
@@ -137,7 +137,7 @@
     const-string v1, "Total Results"
 
     .line 68
-    invoke-virtual {p0}, Lkik/android/chat/vm/chats/publicgroups/y;->e()I
+    invoke-virtual {p0}, Lkik/android/chat/vm/chats/publicgroups/y;->g()I
 
     move-result v2
 
@@ -150,7 +150,7 @@
     const-string v1, "Tapped Position"
 
     .line 69
-    invoke-virtual {p0}, Lkik/android/chat/vm/chats/publicgroups/y;->d()I
+    invoke-virtual {p0}, Lkik/android/chat/vm/chats/publicgroups/y;->e()I
 
     move-result v2
 
@@ -171,7 +171,7 @@
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
 
     .line 72
-    invoke-virtual {p0}, Lkik/android/chat/vm/chats/publicgroups/y;->B_()Lkik/android/chat/vm/aw;
+    invoke-virtual {p0}, Lkik/android/chat/vm/chats/publicgroups/y;->F_()Lkik/android/chat/vm/ay;
 
     move-result-object v0
 
@@ -179,7 +179,7 @@
 
     invoke-direct {v1, p0}, Lkik/android/chat/vm/chats/publicgroups/y$1;-><init>(Lkik/android/chat/vm/chats/publicgroups/y;)V
 
-    invoke-interface {v0, v1}, Lkik/android/chat/vm/aw;->a(Lkik/android/chat/vm/bb;)V
+    invoke-interface {v0, v1}, Lkik/android/chat/vm/ay;->a(Lkik/android/chat/vm/bd;)V
 
     .line 92
     return-void

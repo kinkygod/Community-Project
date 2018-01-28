@@ -37,7 +37,7 @@
 
     iget-object v0, p0, Lkik/android/chat/vm/messaging/at;->a:Lkik/android/chat/vm/messaging/AbstractMessageViewModel;
 
-    invoke-virtual {v0}, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->Z()V
+    invoke-virtual {v0}, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->aa()V
 
     return-void
 .end method

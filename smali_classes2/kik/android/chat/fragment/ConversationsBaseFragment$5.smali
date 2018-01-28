@@ -36,7 +36,7 @@
     .locals 0
 
     .prologue
-    .line 176
+    .line 177
     iput-object p1, p0, Lkik/android/chat/fragment/ConversationsBaseFragment$5;->a:Lkik/android/chat/fragment/ConversationsBaseFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -54,15 +54,15 @@
 
     const/4 v2, 0x0
 
-    .line 176
+    .line 177
     check-cast p2, Lkik/core/datatypes/Message;
 
-    .line 1181
+    .line 1182
     invoke-static {p2}, Lkik/core/datatypes/messageExtensions/MessageAttachment;->shouldNotify(Lkik/core/datatypes/Message;)Z
 
     move-result v4
 
-    .line 1182
+    .line 1183
     iget-object v0, p0, Lkik/android/chat/fragment/ConversationsBaseFragment$5;->a:Lkik/android/chat/fragment/ConversationsBaseFragment;
 
     invoke-static {v0}, Lkik/android/chat/fragment/ConversationsBaseFragment;->access$100(Lkik/android/chat/fragment/ConversationsBaseFragment;)I
@@ -73,11 +73,11 @@
 
     move v3, v1
 
-    .line 1184
+    .line 1185
     :goto_0
     if-eqz p2, :cond_4
 
-    .line 1185
+    .line 1186
     iget-object v0, p0, Lkik/android/chat/fragment/ConversationsBaseFragment$5;->a:Lkik/android/chat/fragment/ConversationsBaseFragment;
 
     iget-object v0, v0, Lkik/android/chat/fragment/ConversationsBaseFragment;->_convoManager:Lkik/core/interfaces/IConversation;
@@ -90,7 +90,7 @@
 
     move-result-object v0
 
-    .line 1186
+    .line 1187
     iget-object v5, p0, Lkik/android/chat/fragment/ConversationsBaseFragment$5;->a:Lkik/android/chat/fragment/ConversationsBaseFragment;
 
     iget-object v5, v5, Lkik/android/chat/fragment/ConversationsBaseFragment;->_convoManager:Lkik/core/interfaces/IConversation;
@@ -111,7 +111,7 @@
 
     move v0, v1
 
-    .line 1188
+    .line 1189
     :goto_1
     if-eqz v4, :cond_2
 
@@ -119,7 +119,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 1189
+    .line 1190
     :goto_2
     iget-object v0, p0, Lkik/android/chat/fragment/ConversationsBaseFragment$5;->a:Lkik/android/chat/fragment/ConversationsBaseFragment;
 
@@ -134,28 +134,28 @@
     :goto_3
     invoke-virtual {v2, v0}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
-    .line 176
+    .line 177
     return-void
 
     :cond_0
     move v3, v2
 
-    .line 1182
+    .line 1183
     goto :goto_0
 
     :cond_1
     move v0, v2
 
-    .line 1186
+    .line 1187
     goto :goto_1
 
     :cond_2
     move v1, v2
 
-    .line 1188
+    .line 1189
     goto :goto_2
 
-    .line 1189
+    .line 1190
     :cond_3
     const/4 v0, 0x3
 

@@ -34,7 +34,7 @@
 
 .field private final F:Ljava/util/Timer;
 
-.field private G:Lkik/core/interfaces/al;
+.field private G:Lkik/core/interfaces/ak;
 
 .field private H:Ljava/lang/String;
 
@@ -149,7 +149,7 @@
     .end annotation
 .end field
 
-.field private m:Lkik/core/interfaces/ab;
+.field private m:Lkik/core/interfaces/aa;
 
 .field private final n:Lcom/kik/metrics/c/a;
 
@@ -213,7 +213,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Lkik/core/interfaces/al;Lkik/android/util/ai;)V
+.method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Lkik/core/interfaces/ak;Lkik/android/util/ai;)V
     .locals 8
 
     .prologue
@@ -381,7 +381,7 @@
     iput-object v0, p0, Lkik/android/net/communicator/a;->L:Landroid/os/PowerManager;
 
     .line 229
-    iput-object p3, p0, Lkik/android/net/communicator/a;->G:Lkik/core/interfaces/al;
+    iput-object p3, p0, Lkik/android/net/communicator/a;->G:Lkik/core/interfaces/ak;
 
     .line 232
     invoke-static {}, Lkik/android/config/c;->c()Lkik/android/config/b;
@@ -895,22 +895,22 @@
     return v0
 .end method
 
-.method static synthetic n(Lkik/android/net/communicator/a;)Lkik/core/interfaces/ab;
+.method static synthetic n(Lkik/android/net/communicator/a;)Lkik/core/interfaces/aa;
     .locals 1
 
     .prologue
     .line 77
-    iget-object v0, p0, Lkik/android/net/communicator/a;->m:Lkik/core/interfaces/ab;
+    iget-object v0, p0, Lkik/android/net/communicator/a;->m:Lkik/core/interfaces/aa;
 
     return-object v0
 .end method
 
-.method static synthetic o(Lkik/android/net/communicator/a;)Lkik/core/interfaces/al;
+.method static synthetic o(Lkik/android/net/communicator/a;)Lkik/core/interfaces/ak;
     .locals 1
 
     .prologue
     .line 77
-    iget-object v0, p0, Lkik/android/net/communicator/a;->G:Lkik/core/interfaces/al;
+    iget-object v0, p0, Lkik/android/net/communicator/a;->G:Lkik/core/interfaces/ak;
 
     return-object v0
 .end method
@@ -1510,7 +1510,7 @@
     return-void
 .end method
 
-.method public final a(Ljava/util/concurrent/ExecutorService;Lkik/core/net/e;Lkik/core/interfaces/ab;)V
+.method public final a(Ljava/util/concurrent/ExecutorService;Lkik/core/net/e;Lkik/core/interfaces/aa;)V
     .locals 3
 
     .prologue
@@ -1546,7 +1546,7 @@
     iput-object p2, p0, Lkik/android/net/communicator/a;->o:Lkik/core/net/e;
 
     .line 927
-    iput-object p3, p0, Lkik/android/net/communicator/a;->m:Lkik/core/interfaces/ab;
+    iput-object p3, p0, Lkik/android/net/communicator/a;->m:Lkik/core/interfaces/aa;
 
     .line 928
     new-instance v0, Lcom/kik/events/a;

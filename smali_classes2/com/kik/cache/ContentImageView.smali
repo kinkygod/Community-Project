@@ -448,14 +448,14 @@
 
 
 # virtual methods
-.method protected final a(Landroid/graphics/Bitmap;Ljava/lang/String;)Lkik/android/widget/be;
+.method protected final a(Landroid/graphics/Bitmap;Ljava/lang/String;)Lkik/android/widget/bq;
     .locals 1
 
     .prologue
     .line 122
-    new-instance v0, Lkik/android/widget/co;
+    new-instance v0, Lkik/android/widget/de;
 
-    invoke-direct {v0, p1, p2}, Lkik/android/widget/co;-><init>(Landroid/graphics/Bitmap;Ljava/lang/String;)V
+    invoke-direct {v0, p1, p2}, Lkik/android/widget/de;-><init>(Landroid/graphics/Bitmap;Ljava/lang/String;)V
 
     return-object v0
 .end method

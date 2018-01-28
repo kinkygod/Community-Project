@@ -43,14 +43,14 @@
     .line 465
     iget-object v0, p0, Lkik/android/chat/fragment/KikCodeFragment$3;->a:Lkik/android/chat/fragment/KikCodeFragment;
 
-    iget-object v0, v0, Lkik/android/chat/fragment/KikCodeFragment;->f:Lkik/core/interfaces/ah;
+    iget-object v0, v0, Lkik/android/chat/fragment/KikCodeFragment;->f:Lkik/core/interfaces/ag;
 
-    invoke-interface {v0}, Lkik/core/interfaces/ah;->d()Lkik/core/datatypes/ac;
+    invoke-interface {v0}, Lkik/core/interfaces/ag;->d()Lkik/core/datatypes/ab;
 
     move-result-object v0
 
     .line 467
-    iget-object v1, v0, Lkik/core/datatypes/ac;->f:Ljava/lang/String;
+    iget-object v1, v0, Lkik/core/datatypes/ab;->f:Ljava/lang/String;
 
     if-eqz v1, :cond_0
 
@@ -62,9 +62,9 @@
     .line 469
     iget-object v1, p0, Lkik/android/chat/fragment/KikCodeFragment$3;->a:Lkik/android/chat/fragment/KikCodeFragment;
 
-    iget-object v1, v1, Lkik/android/chat/fragment/KikCodeFragment;->d:Lkik/core/interfaces/ae;
+    iget-object v1, v1, Lkik/android/chat/fragment/KikCodeFragment;->d:Lkik/core/interfaces/ad;
 
-    invoke-static {v1}, Lkik/core/z;->b(Lkik/core/interfaces/ae;)Lkik/core/z;
+    invoke-static {v1}, Lkik/core/z;->b(Lkik/core/interfaces/ad;)Lkik/core/z;
 
     move-result-object v1
 
@@ -86,7 +86,7 @@
 
     move-result-object v1
 
-    iget-object v0, v0, Lkik/core/datatypes/ac;->f:Ljava/lang/String;
+    iget-object v0, v0, Lkik/core/datatypes/ab;->f:Ljava/lang/String;
 
     .line 473
     invoke-virtual {v1, v0}, Lkik/android/chat/fragment/ViewPictureFragment$a;->c(Ljava/lang/String;)Lkik/android/chat/fragment/ViewPictureFragment$a;

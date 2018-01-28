@@ -68,9 +68,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/kik/view/adapters/m;
+    check-cast v0, Lcom/kik/view/adapters/n;
 
-    invoke-virtual {v0}, Lcom/kik/view/adapters/m;->a()I
+    invoke-virtual {v0}, Lcom/kik/view/adapters/n;->a()I
 
     move-result v0
 

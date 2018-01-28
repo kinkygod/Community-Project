@@ -5,35 +5,27 @@
 .implements Lrx/functions/g;
 
 
-# static fields
-.field private static final a:Lkik/android/chat/view/an;
+# instance fields
+.field private final a:Lkik/android/chat/view/ValidateableInputView;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lkik/android/chat/view/an;
-
-    invoke-direct {v0}, Lkik/android/chat/view/an;-><init>()V
-
-    sput-object v0, Lkik/android/chat/view/an;->a:Lkik/android/chat/view/an;
-
-    return-void
-.end method
-
-.method private constructor <init>()V
+.method private constructor <init>(Lkik/android/chat/view/ValidateableInputView;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    iput-object p1, p0, Lkik/android/chat/view/an;->a:Lkik/android/chat/view/ValidateableInputView;
+
     return-void
 .end method
 
-.method public static a()Lrx/functions/g;
+.method public static a(Lkik/android/chat/view/ValidateableInputView;)Lrx/functions/g;
     .locals 1
 
-    sget-object v0, Lkik/android/chat/view/an;->a:Lkik/android/chat/view/an;
+    new-instance v0, Lkik/android/chat/view/an;
+
+    invoke-direct {v0, p0}, Lkik/android/chat/view/an;-><init>(Lkik/android/chat/view/ValidateableInputView;)V
 
     return-object v0
 .end method
@@ -43,9 +35,11 @@
 .method public final call(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
+    iget-object v0, p0, Lkik/android/chat/view/an;->a:Lkik/android/chat/view/ValidateableInputView;
+
     check-cast p1, Ljava/lang/String;
 
-    invoke-static {p1}, Lkik/android/util/bs;->c(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p1}, Lkik/android/chat/view/ValidateableInputView;->c(Lkik/android/chat/view/ValidateableInputView;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

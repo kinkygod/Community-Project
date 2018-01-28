@@ -63,11 +63,11 @@
 
 
 # virtual methods
-.method protected final a()Landroid/graphics/drawable/Drawable;
+.method protected final M_()Landroid/graphics/drawable/Drawable;
     .locals 2
 
     .prologue
-    const v1, 0x7f02027b
+    const v1, 0x7f020263
 
     .line 32
     invoke-direct {p0, v1}, Lkik/android/chat/vm/d;->b(I)V
@@ -116,12 +116,12 @@
     return-object v0
 .end method
 
-.method public a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+.method public a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
     .locals 0
 
     .prologue
     .line 40
-    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/e;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/e;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 42
     invoke-interface {p1, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/chat/vm/d;)V

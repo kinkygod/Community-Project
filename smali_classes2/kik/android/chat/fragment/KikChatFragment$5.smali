@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 1741
+    .line 1747
     iput-object p1, p0, Lkik/android/chat/fragment/KikChatFragment$5;->a:Lkik/android/chat/fragment/KikChatFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,14 +40,14 @@
     .locals 2
 
     .prologue
-    .line 1746
+    .line 1752
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "android.intent.action.VIEW"
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 1747
+    .line 1753
     const-string v1, "market://details?id=kik.android"
 
     invoke-static {v1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
@@ -56,11 +56,11 @@
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
 
-    .line 1748
+    .line 1754
     iget-object v1, p0, Lkik/android/chat/fragment/KikChatFragment$5;->a:Lkik/android/chat/fragment/KikChatFragment;
 
     invoke-virtual {v1, v0}, Lkik/android/chat/fragment/KikChatFragment;->startActivity(Landroid/content/Intent;)V
 
-    .line 1749
+    .line 1755
     return-void
 .end method

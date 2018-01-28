@@ -3,16 +3,16 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/a/b;
+.implements Ldagger/internal/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/a/b",
+        "Ldagger/internal/b",
         "<",
-        "Lkik/android/gifs/c;",
+        "Lcom/kik/core/domain/a/a;",
         ">;"
     }
 .end annotation
@@ -30,18 +30,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lcom/kik/storage/p;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private final d:Ljavax/inject/Provider;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljavax/inject/Provider",
-            "<",
-            "Lcom/kik/android/Mixpanel;",
+            "Lkik/core/interfaces/l;",
             ">;"
         }
     .end annotation
@@ -53,7 +42,7 @@
     .locals 1
 
     .prologue
-    .line 11
+    .line 10
     const-class v0, Lcom/kik/f/am;
 
     invoke-virtual {v0}, Ljava/lang/Class;->desiredAssertionStatus()Z
@@ -75,7 +64,7 @@
     goto :goto_0
 .end method
 
-.method private constructor <init>(Lcom/kik/f/al;Ljavax/inject/Provider;Ljavax/inject/Provider;)V
+.method private constructor <init>(Lcom/kik/f/al;Ljavax/inject/Provider;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -83,20 +72,16 @@
             "Lcom/kik/f/al;",
             "Ljavax/inject/Provider",
             "<",
-            "Lcom/kik/storage/p;",
-            ">;",
-            "Ljavax/inject/Provider",
-            "<",
-            "Lcom/kik/android/Mixpanel;",
+            "Lkik/core/interfaces/l;",
             ">;)V"
         }
     .end annotation
 
     .prologue
-    .line 25
+    .line 21
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 26
+    .line 22
     sget-boolean v0, Lcom/kik/f/am;->a:Z
 
     if-nez v0, :cond_0
@@ -109,11 +94,11 @@
 
     throw v0
 
-    .line 27
+    .line 23
     :cond_0
     iput-object p1, p0, Lcom/kik/f/am;->b:Lcom/kik/f/al;
 
-    .line 28
+    .line 24
     sget-boolean v0, Lcom/kik/f/am;->a:Z
 
     if-nez v0, :cond_1
@@ -126,32 +111,15 @@
 
     throw v0
 
-    .line 29
+    .line 25
     :cond_1
     iput-object p2, p0, Lcom/kik/f/am;->c:Ljavax/inject/Provider;
 
-    .line 30
-    sget-boolean v0, Lcom/kik/f/am;->a:Z
-
-    if-nez v0, :cond_2
-
-    if-nez p3, :cond_2
-
-    new-instance v0, Ljava/lang/AssertionError;
-
-    invoke-direct {v0}, Ljava/lang/AssertionError;-><init>()V
-
-    throw v0
-
-    .line 31
-    :cond_2
-    iput-object p3, p0, Lcom/kik/f/am;->d:Ljavax/inject/Provider;
-
-    .line 32
+    .line 26
     return-void
 .end method
 
-.method public static a(Lcom/kik/f/al;Ljavax/inject/Provider;Ljavax/inject/Provider;)La/a/b;
+.method public static a(Lcom/kik/f/al;Ljavax/inject/Provider;)Ldagger/internal/b;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -159,24 +127,20 @@
             "Lcom/kik/f/al;",
             "Ljavax/inject/Provider",
             "<",
-            "Lcom/kik/storage/p;",
-            ">;",
-            "Ljavax/inject/Provider",
-            "<",
-            "Lcom/kik/android/Mixpanel;",
+            "Lkik/core/interfaces/l;",
             ">;)",
-            "La/a/b",
+            "Ldagger/internal/b",
             "<",
-            "Lkik/android/gifs/c;",
+            "Lcom/kik/core/domain/a/a;",
             ">;"
         }
     .end annotation
 
     .prologue
-    .line 45
+    .line 37
     new-instance v0, Lcom/kik/f/am;
 
-    invoke-direct {v0, p0, p1, p2}, Lcom/kik/f/am;-><init>(Lcom/kik/f/al;Ljavax/inject/Provider;Ljavax/inject/Provider;)V
+    invoke-direct {v0, p0, p1}, Lcom/kik/f/am;-><init>(Lcom/kik/f/al;Ljavax/inject/Provider;)V
 
     return-object v0
 .end method
@@ -184,43 +148,35 @@
 
 # virtual methods
 .method public final synthetic get()Ljava/lang/Object;
-    .locals 3
+    .locals 2
 
     .prologue
-    .line 11
-    .line 1036
-    iget-object v2, p0, Lcom/kik/f/am;->b:Lcom/kik/f/al;
-
+    .line 10
+    .line 1030
     iget-object v0, p0, Lcom/kik/f/am;->c:Ljavax/inject/Provider;
 
-    .line 1037
+    .line 1031
     invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/kik/storage/p;
+    check-cast v0, Lkik/core/interfaces/l;
 
-    iget-object v1, p0, Lcom/kik/f/am;->d:Ljavax/inject/Provider;
+    .line 1037
+    new-instance v1, Lkik/core/profile/g;
 
-    invoke-interface {v1}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
+    invoke-direct {v1, v0}, Lkik/core/profile/g;-><init>(Lkik/core/interfaces/l;)V
 
-    move-result-object v1
+    .line 1031
+    const-string v0, "Cannot return null from a non-@Nullable @Provides method"
 
-    check-cast v1, Lcom/kik/android/Mixpanel;
-
-    invoke-virtual {v2, v0, v1}, Lcom/kik/f/al;->a(Lcom/kik/storage/p;Lcom/kik/android/Mixpanel;)Lkik/android/gifs/c;
-
-    move-result-object v0
-
-    const-string v1, "Cannot return null from a non-@Nullable @Provides method"
-
-    .line 1036
-    invoke-static {v0, v1}, La/a/c;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    .line 1030
+    invoke-static {v1, v0}, Ldagger/internal/c;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lkik/android/gifs/c;
+    check-cast v0, Lcom/kik/core/domain/a/a;
 
-    .line 11
+    .line 10
     return-object v0
 .end method

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/core/interfaces/aa;
+.implements Lkik/core/interfaces/z;
 
 
 # instance fields
@@ -203,7 +203,7 @@
     move-exception v0
 
     :try_start_3
-    invoke-static {v0}, Lcom/kik/util/ck;->a(Ljava/security/NoSuchAlgorithmException;)V
+    invoke-static {v0}, Lcom/kik/util/cm;->a(Ljava/security/NoSuchAlgorithmException;)V
 
     goto :goto_0
 

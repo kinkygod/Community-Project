@@ -12,7 +12,7 @@
 
 
 # instance fields
-.field protected a:Lkik/core/interfaces/ah;
+.field protected a:Lkik/core/interfaces/ag;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -292,9 +292,9 @@
     .line 57
     iget-object v0, p0, Lkik/android/chat/fragment/settings/KikPreferenceFragment;->n:Lcom/kik/events/d;
 
-    iget-object v1, p0, Lkik/android/chat/fragment/settings/KikPreferenceFragment;->a:Lkik/core/interfaces/ah;
+    iget-object v1, p0, Lkik/android/chat/fragment/settings/KikPreferenceFragment;->a:Lkik/core/interfaces/ag;
 
-    invoke-interface {v1}, Lkik/core/interfaces/ah;->a()Lcom/kik/events/c;
+    invoke-interface {v1}, Lkik/core/interfaces/ag;->a()Lcom/kik/events/c;
 
     move-result-object v1
 

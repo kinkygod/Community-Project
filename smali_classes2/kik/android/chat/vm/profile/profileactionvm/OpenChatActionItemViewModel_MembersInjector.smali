@@ -3,16 +3,16 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/b;
+.implements Ldagger/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/b",
+        "Ldagger/b",
         "<",
-        "Lkik/android/chat/vm/profile/profileactionvm/am;",
+        "Lkik/android/chat/vm/profile/profileactionvm/ar;",
         ">;"
     }
 .end annotation
@@ -99,7 +99,7 @@
     return-void
 .end method
 
-.method public static a(Ljavax/inject/Provider;)La/b;
+.method public static a(Ljavax/inject/Provider;)Ldagger/b;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -108,9 +108,9 @@
             "<",
             "Landroid/content/res/Resources;",
             ">;)",
-            "La/b",
+            "Ldagger/b",
             "<",
-            "Lkik/android/chat/vm/profile/profileactionvm/am;",
+            "Lkik/android/chat/vm/profile/profileactionvm/ar;",
             ">;"
         }
     .end annotation
@@ -126,12 +126,12 @@
 
 
 # virtual methods
-.method public final synthetic a(Ljava/lang/Object;)V
+.method public final synthetic injectMembers(Ljava/lang/Object;)V
     .locals 2
 
     .prologue
     .line 8
-    check-cast p1, Lkik/android/chat/vm/profile/profileactionvm/am;
+    check-cast p1, Lkik/android/chat/vm/profile/profileactionvm/ar;
 
     .line 1028
     if-nez p1, :cond_0

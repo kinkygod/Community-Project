@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field private a:Lkik/android/widget/vm/IVoicePlayerViewModel;
+.field private a:Lkik/android/chat/vm/chats/a;
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 169
+    .line 163
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -34,14 +34,14 @@
 
 
 # virtual methods
-.method public final a(Lkik/android/widget/vm/IVoicePlayerViewModel;)Lkik/android/e/dt$b;
+.method public final a(Lkik/android/chat/vm/chats/a;)Lkik/android/e/dt$b;
     .locals 0
 
     .prologue
-    .line 172
-    iput-object p1, p0, Lkik/android/e/dt$b;->a:Lkik/android/widget/vm/IVoicePlayerViewModel;
+    .line 166
+    iput-object p1, p0, Lkik/android/e/dt$b;->a:Lkik/android/chat/vm/chats/a;
 
-    .line 173
+    .line 167
     if-nez p1, :cond_0
 
     const/4 p0, 0x0
@@ -54,11 +54,11 @@
     .locals 1
 
     .prologue
-    .line 177
-    iget-object v0, p0, Lkik/android/e/dt$b;->a:Lkik/android/widget/vm/IVoicePlayerViewModel;
+    .line 171
+    iget-object v0, p0, Lkik/android/e/dt$b;->a:Lkik/android/chat/vm/chats/a;
 
-    invoke-interface {v0}, Lkik/android/widget/vm/IVoicePlayerViewModel;->e()V
+    invoke-interface {v0}, Lkik/android/chat/vm/chats/a;->g()V
 
-    .line 178
+    .line 172
     return-void
 .end method

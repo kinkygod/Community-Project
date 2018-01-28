@@ -1,5 +1,5 @@
 .class final Lkik/android/chat/fragment/ScanCodeTabFragment$8;
-.super Lkik/android/util/ca$a;
+.super Lkik/android/util/cb$a;
 .source "SourceFile"
 
 
@@ -26,7 +26,7 @@
     .line 348
     iput-object p1, p0, Lkik/android/chat/fragment/ScanCodeTabFragment$8;->a:Lkik/android/chat/fragment/ScanCodeTabFragment;
 
-    invoke-direct {p0}, Lkik/android/util/ca$a;-><init>()V
+    invoke-direct {p0}, Lkik/android/util/cb$a;-><init>()V
 
     return-void
 .end method

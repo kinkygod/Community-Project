@@ -43,9 +43,9 @@
 .method public final call(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    check-cast p1, [B
+    check-cast p1, Ljava/lang/Boolean;
 
-    invoke-static {p1}, Lkik/android/chat/vm/messaging/fw;->a([B)Landroid/graphics/Bitmap;
+    invoke-static {p1}, Lkik/android/chat/vm/messaging/fv;->d(Ljava/lang/Boolean;)Ljava/lang/Float;
 
     move-result-object v0
 

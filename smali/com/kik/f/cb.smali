@@ -4,66 +4,36 @@
 
 
 # instance fields
-.field private final a:Ljava/io/File;
-
-.field private final b:Landroid/content/SharedPreferences;
+.field private final a:Lkik/core/interfaces/s;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/SharedPreferences;Lkik/android/chat/KikApplication;)V
-    .locals 2
+.method public constructor <init>(Ljava/lang/String;Ljava/io/File;Ljava/io/File;Ljava/io/File;)V
+    .locals 1
 
     .prologue
-    .line 34
+    .line 19
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 35
-    iput-object p1, p0, Lcom/kik/f/cb;->b:Landroid/content/SharedPreferences;
+    .line 20
+    new-instance v0, Lkik/core/ac;
 
-    .line 36
-    const-string v0, "augmentum-metrics"
+    invoke-direct {v0, p1, p2, p3, p4}, Lkik/core/ac;-><init>(Ljava/lang/String;Ljava/io/File;Ljava/io/File;Ljava/io/File;)V
 
-    const/4 v1, 0x0
+    iput-object v0, p0, Lcom/kik/f/cb;->a:Lkik/core/interfaces/s;
 
-    invoke-virtual {p2, v0, v1}, Lkik/android/chat/KikApplication;->getDir(Ljava/lang/String;I)Ljava/io/File;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/kik/f/cb;->a:Ljava/io/File;
-
-    .line 37
+    .line 21
     return-void
 .end method
 
 
 # virtual methods
-.method final a(Lkik/core/e/d;Lkik/core/interfaces/ICommunication;Lkik/core/interfaces/ae;Lkik/core/interfaces/ah;Lkik/core/interfaces/s;Lcom/kik/performance/metrics/c;)Lcom/kik/android/Mixpanel;
-    .locals 7
-    .annotation runtime Ljavax/inject/Singleton;
-    .end annotation
+.method public final a()Lkik/core/interfaces/s;
+    .locals 1
 
     .prologue
-    .line 43
-    new-instance v6, Lcom/kik/b/b;
-
-    iget-object v0, p0, Lcom/kik/f/cb;->a:Ljava/io/File;
-
-    invoke-direct {v6, p5, v0, p6}, Lcom/kik/b/b;-><init>(Lkik/core/interfaces/s;Ljava/io/File;Lcom/kik/performance/metrics/c;)V
-
-    .line 47
-    new-instance v0, Lcom/kik/android/Mixpanel;
-
-    iget-object v5, p0, Lcom/kik/f/cb;->b:Landroid/content/SharedPreferences;
-
-    move-object v1, p1
-
-    move-object v2, p2
-
-    move-object v3, p3
-
-    move-object v4, p4
-
-    invoke-direct/range {v0 .. v6}, Lcom/kik/android/Mixpanel;-><init>(Lkik/core/e/d;Lkik/core/interfaces/ICommunication;Lkik/core/interfaces/ae;Lkik/core/interfaces/ah;Landroid/content/SharedPreferences;Lcom/kik/b/b;)V
+    .line 26
+    iget-object v0, p0, Lcom/kik/f/cb;->a:Lkik/core/interfaces/s;
 
     return-object v0
 .end method

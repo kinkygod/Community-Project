@@ -45,7 +45,7 @@
 
     check-cast p1, Ljava/lang/Boolean;
 
-    invoke-static {p1}, Lkik/android/chat/vm/messaging/fz;->d(Ljava/lang/Boolean;)Ljava/lang/Float;
+    invoke-static {p1}, Lkik/android/chat/vm/messaging/fv;->a(Ljava/lang/Boolean;)Ljava/lang/Integer;
 
     move-result-object v0
 

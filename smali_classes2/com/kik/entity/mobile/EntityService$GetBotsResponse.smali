@@ -356,7 +356,7 @@
     iget-object v0, p0, Lcom/kik/entity/mobile/EntityService$GetBotsResponse;->bots_:Ljava/util/List;
 
     .line 4415
-    invoke-static {}, Lcom/kik/entity/model/EntityCommon$EntityBot;->p()Lcom/google/protobuf/Parser;
+    invoke-static {}, Lcom/kik/entity/model/EntityCommon$EntityBot;->r()Lcom/google/protobuf/Parser;
 
     move-result-object v3
 

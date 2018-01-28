@@ -36,7 +36,7 @@
     .locals 0
 
     .prologue
-    .line 726
+    .line 727
     iput-object p1, p0, Lkik/android/chat/KikApplication$4;->a:Lkik/android/chat/KikApplication;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -52,8 +52,8 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 726
-    .line 1731
+    .line 727
+    .line 1732
     new-instance v0, Landroid/content/Intent;
 
     iget-object v1, p0, Lkik/android/chat/KikApplication$4;->a:Lkik/android/chat/KikApplication;
@@ -66,12 +66,12 @@
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 1732
+    .line 1733
     const v1, 0x10008000
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    .line 1733
+    .line 1734
     iget-object v1, p0, Lkik/android/chat/KikApplication$4;->a:Lkik/android/chat/KikApplication;
 
     invoke-virtual {v1}, Lkik/android/chat/KikApplication;->getBaseContext()Landroid/content/Context;
@@ -84,19 +84,19 @@
 
     move-result-object v1
 
-    .line 1734
+    .line 1735
     invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
 
     move-result-object v2
 
-    .line 1735
+    .line 1736
     const/16 v0, 0xe
 
     const/16 v3, 0x1f4
 
     invoke-virtual {v2, v0, v3}, Ljava/util/Calendar;->add(II)V
 
-    .line 1736
+    .line 1737
     iget-object v0, p0, Lkik/android/chat/KikApplication$4;->a:Lkik/android/chat/KikApplication;
 
     const-string v3, "alarm"
@@ -107,7 +107,7 @@
 
     check-cast v0, Landroid/app/AlarmManager;
 
-    .line 1738
+    .line 1739
     iget-object v3, p0, Lkik/android/chat/KikApplication$4;->a:Lkik/android/chat/KikApplication;
 
     invoke-static {v3}, Lkik/android/chat/KikApplication;->w(Lkik/android/chat/KikApplication;)Lcom/kik/events/d;
@@ -116,7 +116,7 @@
 
     invoke-virtual {v3}, Lcom/kik/events/d;->a()V
 
-    .line 1739
+    .line 1740
     iget-object v3, p0, Lkik/android/chat/KikApplication$4;->a:Lkik/android/chat/KikApplication;
 
     invoke-static {v3}, Lkik/android/chat/KikApplication;->x(Lkik/android/chat/KikApplication;)Ljava/util/TimerTask;
@@ -125,7 +125,7 @@
 
     invoke-virtual {v3}, Ljava/util/TimerTask;->cancel()Z
 
-    .line 1740
+    .line 1741
     iget-object v3, p0, Lkik/android/chat/KikApplication$4;->a:Lkik/android/chat/KikApplication;
 
     invoke-static {v3}, Lkik/android/chat/KikApplication;->y(Lkik/android/chat/KikApplication;)Ljava/util/Timer;
@@ -134,23 +134,23 @@
 
     invoke-virtual {v3}, Ljava/util/Timer;->purge()I
 
-    .line 1744
+    .line 1745
     invoke-virtual {v2}, Ljava/util/Calendar;->getTimeInMillis()J
 
     move-result-wide v2
 
     invoke-virtual {v0, v4, v2, v3, v1}, Landroid/app/AlarmManager;->set(IJLandroid/app/PendingIntent;)V
 
-    .line 1746
+    .line 1747
     invoke-static {}, Ljava/lang/System;->runFinalization()V
 
-    .line 1747
+    .line 1748
     invoke-static {}, Landroid/os/Process;->myPid()I
 
     move-result v0
 
     invoke-static {v0}, Landroid/os/Process;->killProcess(I)V
 
-    .line 726
+    .line 727
     return-void
 .end method

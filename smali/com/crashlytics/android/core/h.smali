@@ -1209,23 +1209,6 @@
     goto :goto_0
 .end method
 
-.method protected final a_()Z
-    .locals 1
-
-    .prologue
-    .line 207
-    invoke-super {p0}, Lio/fabric/sdk/android/h;->m()Landroid/content/Context;
-
-    move-result-object v0
-
-    .line 208
-    invoke-direct {p0, v0}, Lcom/crashlytics/android/core/h;->a(Landroid/content/Context;)Z
-
-    move-result v0
-
-    return v0
-.end method
-
 .method public final b()Ljava/lang/String;
     .locals 1
 
@@ -1362,6 +1345,23 @@
     move-result-object v0
 
     goto :goto_1
+.end method
+
+.method protected final b_()Z
+    .locals 1
+
+    .prologue
+    .line 207
+    invoke-super {p0}, Lio/fabric/sdk/android/h;->m()Landroid/content/Context;
+
+    move-result-object v0
+
+    .line 208
+    invoke-direct {p0, v0}, Lcom/crashlytics/android/core/h;->a(Landroid/content/Context;)Z
+
+    move-result v0
+
+    return v0
 .end method
 
 .method protected final c()Ljava/lang/Void;

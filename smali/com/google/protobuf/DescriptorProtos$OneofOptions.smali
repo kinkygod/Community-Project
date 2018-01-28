@@ -417,7 +417,6 @@
 
     .prologue
     .line 24822
-    # getter for: Lcom/google/protobuf/DescriptorProtos;->internal_static_google_protobuf_OneofOptions_descriptor:Lcom/google/protobuf/Descriptors$Descriptor;
     invoke-static {}, Lcom/google/protobuf/DescriptorProtos;->access$17800()Lcom/google/protobuf/Descriptors$Descriptor;
 
     move-result-object v0
@@ -1114,7 +1113,6 @@
 
     .prologue
     .line 24827
-    # getter for: Lcom/google/protobuf/DescriptorProtos;->internal_static_google_protobuf_OneofOptions_fieldAccessorTable:Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
     invoke-static {}, Lcom/google/protobuf/DescriptorProtos;->access$17900()Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
     move-result-object v0

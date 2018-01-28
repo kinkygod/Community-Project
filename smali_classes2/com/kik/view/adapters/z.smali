@@ -1,30 +1,73 @@
 .class public final Lcom/kik/view/adapters/z;
-.super Ljava/lang/Object;
+.super Lcom/kik/view/adapters/h;
 .source "SourceFile"
-
-# interfaces
-.implements Lcom/kik/cards/web/browser/BrowserPlugin$a;
 
 
 # instance fields
-.field private final a:Landroid/content/Context;
-
-.field private final b:Landroid/webkit/WebView;
+.field private a:Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map",
+            "<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Landroid/webkit/WebView;)V
-    .locals 0
+.method public constructor <init>(Landroid/content/Context;Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
+    .locals 6
 
     .prologue
-    .line 29
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 24
+    invoke-static {}, Lkik/android/chat/vm/a/b;->j()Lkik/android/chat/vm/a/b;
 
+    move-result-object v2
+
+    new-instance v5, Ljava/util/LinkedHashMap;
+
+    invoke-direct {v5}, Ljava/util/LinkedHashMap;-><init>()V
+
+    move-object v0, p0
+
+    move-object v1, p1
+
+    move-object v3, p2
+
+    move-object v4, p3
+
+    invoke-direct/range {v0 .. v5}, Lcom/kik/view/adapters/z;-><init>(Landroid/content/Context;Lkik/android/chat/vm/a/b;Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;Ljava/util/Map;)V
+
+    .line 25
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;Lkik/android/chat/vm/a/b;Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;Ljava/util/Map;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/content/Context;",
+            "Lkik/android/chat/vm/a/b;",
+            "Lcom/kik/components/CoreComponent;",
+            "Lkik/android/chat/vm/ay;",
+            "Ljava/util/Map",
+            "<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;)V"
+        }
+    .end annotation
+
+    .prologue
     .line 30
-    iput-object p1, p0, Lcom/kik/view/adapters/z;->a:Landroid/content/Context;
+    invoke-direct {p0, p1, p2, p3, p4}, Lcom/kik/view/adapters/h;-><init>(Landroid/content/Context;Lkik/android/chat/vm/a/b;Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 31
-    iput-object p2, p0, Lcom/kik/view/adapters/z;->b:Landroid/webkit/WebView;
+    iput-object p5, p0, Lcom/kik/view/adapters/z;->a:Ljava/util/Map;
 
     .line 32
     return-void
@@ -32,191 +75,69 @@
 
 
 # virtual methods
-.method public final a(Ljava/lang/String;Lcom/kik/cards/web/picker/PickerRequest;)Lcom/kik/events/Promise;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            "Lcom/kik/cards/web/picker/PickerRequest;",
-            ")",
-            "Lcom/kik/events/Promise",
-            "<",
-            "Lorg/json/JSONObject;",
-            ">;"
-        }
-    .end annotation
-
-    .prologue
-    .line 56
-    const/4 v0, 0x0
-
-    return-object v0
-.end method
-
-.method public final a(Ljava/lang/String;Ljava/lang/String;)Lcom/kik/events/Promise;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            ")",
-            "Lcom/kik/events/Promise",
-            "<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-
-    .prologue
-    .line 68
-    const/4 v0, 0x0
-
-    return-object v0
-.end method
-
-.method public final a(I)V
-    .locals 0
-
-    .prologue
-    .line 81
-    return-void
-.end method
-
-.method public final a(Ljava/lang/String;Z)V
+.method protected final a(Lcom/kik/view/adapters/g;Lkik/core/datatypes/l;)V
     .locals 2
 
     .prologue
-    .line 37
-    if-eqz p2, :cond_0
-
     .line 38
-    new-instance v0, Lcom/kik/cards/web/CardsWebViewFragment$a;
+    invoke-virtual {p2}, Lkik/core/datatypes/l;->o()Z
 
-    invoke-direct {v0}, Lcom/kik/cards/web/CardsWebViewFragment$a;-><init>()V
+    move-result v0
+
+    if-eqz v0, :cond_0
 
     .line 39
-    invoke-virtual {v0, p1}, Lcom/kik/cards/web/CardsWebViewFragment$a;->a(Ljava/lang/String;)Lcom/kik/cards/web/CardsWebViewFragment$a;
-
-    .line 40
-    iget-object v1, p0, Lcom/kik/view/adapters/z;->a:Landroid/content/Context;
-
-    invoke-static {v0, v1}, Lkik/android/chat/activity/KActivityLauncher;->a(Lkik/android/util/ad;Landroid/content/Context;)Lkik/android/chat/activity/KActivityLauncher$ActivityLaunchDescriptor;
+    invoke-virtual {p0}, Lcom/kik/view/adapters/z;->a()Landroid/content/Context;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lkik/android/chat/activity/KActivityLauncher$ActivityLaunchDescriptor;->e()Lcom/kik/events/Promise;
+    const v1, 0x7f09031b
+
+    invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 44
+    :goto_0
+    iget-object v1, p1, Lcom/kik/view/adapters/g;->f:Landroid/widget/TextView;
+
+    invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 45
-    :goto_0
     return-void
 
-    .line 43
+    .line 42
     :cond_0
-    iget-object v0, p0, Lcom/kik/view/adapters/z;->b:Landroid/webkit/WebView;
+    iget-object v0, p0, Lcom/kik/view/adapters/z;->a:Ljava/util/Map;
 
-    invoke-virtual {v0, p1}, Landroid/webkit/WebView;->loadUrl(Ljava/lang/String;)V
+    invoke-virtual {p2}, Lkik/core/datatypes/l;->k()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-interface {v0, v1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Lcom/kik/view/adapters/z;->a:Ljava/util/Map;
+
+    invoke-virtual {p2}, Lkik/core/datatypes/l;->k()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-interface {v0, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/String;
 
     goto :goto_0
-.end method
 
-.method public final a(Lorg/json/JSONObject;)V
-    .locals 0
+    :cond_1
+    invoke-virtual {p2}, Lkik/core/datatypes/l;->l()Ljava/lang/String;
 
-    .prologue
-    .line 63
-    return-void
-.end method
+    move-result-object v0
 
-.method public final a(Z)V
-    .locals 0
-
-    .prologue
-    .line 123
-    return-void
-.end method
-
-.method public final b()Z
-    .locals 1
-
-    .prologue
-    .line 116
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public final d()I
-    .locals 1
-
-    .prologue
-    .line 86
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public final e()V
-    .locals 0
-
-    .prologue
-    .line 99
-    return-void
-.end method
-
-.method public final e(Ljava/lang/String;)V
-    .locals 0
-
-    .prologue
-    .line 75
-    return-void
-.end method
-
-.method public final f()Z
-    .locals 1
-
-    .prologue
-    .line 134
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public final g()V
-    .locals 0
-
-    .prologue
-    .line 93
-    return-void
-.end method
-
-.method public final getUrl()Ljava/lang/String;
-    .locals 1
-
-    .prologue
-    .line 104
-    const/4 v0, 0x0
-
-    return-object v0
-.end method
-
-.method public final l()Z
-    .locals 1
-
-    .prologue
-    .line 128
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public final m()Z
-    .locals 1
-
-    .prologue
-    .line 152
-    const/4 v0, 0x0
-
-    return v0
+    goto :goto_0
 .end method

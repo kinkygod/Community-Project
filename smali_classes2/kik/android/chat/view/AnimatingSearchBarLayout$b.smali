@@ -15,7 +15,7 @@
 
 
 # virtual methods
-.method public abstract R_()Ljava/util/EnumSet;
+.method public abstract T_()Ljava/util/EnumSet;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",

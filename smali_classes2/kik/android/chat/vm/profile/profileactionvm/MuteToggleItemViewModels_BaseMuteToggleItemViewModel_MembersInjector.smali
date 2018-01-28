@@ -3,16 +3,16 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/b;
+.implements Ldagger/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/b",
+        "Ldagger/b",
         "<",
-        "Lkik/android/chat/vm/profile/profileactionvm/ab$a;",
+        "Lkik/android/chat/vm/profile/profileactionvm/ag$a;",
         ">;"
     }
 .end annotation
@@ -163,7 +163,7 @@
     return-void
 .end method
 
-.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)La/b;
+.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -180,9 +180,9 @@
             "<",
             "Lkik/core/interfaces/IConversation;",
             ">;)",
-            "La/b",
+            "Ldagger/b",
             "<",
-            "Lkik/android/chat/vm/profile/profileactionvm/ab$a;",
+            "Lkik/android/chat/vm/profile/profileactionvm/ag$a;",
             ">;"
         }
     .end annotation
@@ -198,12 +198,12 @@
 
 
 # virtual methods
-.method public final synthetic a(Ljava/lang/Object;)V
+.method public final synthetic injectMembers(Ljava/lang/Object;)V
     .locals 2
 
     .prologue
     .line 10
-    check-cast p1, Lkik/android/chat/vm/profile/profileactionvm/ab$a;
+    check-cast p1, Lkik/android/chat/vm/profile/profileactionvm/ag$a;
 
     .line 1044
     if-nez p1, :cond_0
@@ -232,7 +232,7 @@
 
     check-cast v0, Lcom/kik/android/Mixpanel;
 
-    iput-object v0, p1, Lkik/android/chat/vm/profile/profileactionvm/ab$a;->b:Lcom/kik/android/Mixpanel;
+    iput-object v0, p1, Lkik/android/chat/vm/profile/profileactionvm/ag$a;->b:Lcom/kik/android/Mixpanel;
 
     .line 1050
     iget-object v0, p0, Lkik/android/chat/vm/profile/profileactionvm/MuteToggleItemViewModels_BaseMuteToggleItemViewModel_MembersInjector;->d:Ljavax/inject/Provider;
@@ -243,7 +243,7 @@
 
     check-cast v0, Lkik/core/interfaces/IConversation;
 
-    iput-object v0, p1, Lkik/android/chat/vm/profile/profileactionvm/ab$a;->c:Lkik/core/interfaces/IConversation;
+    iput-object v0, p1, Lkik/android/chat/vm/profile/profileactionvm/ag$a;->c:Lkik/core/interfaces/IConversation;
 
     .line 10
     return-void

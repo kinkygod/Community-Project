@@ -341,14 +341,14 @@
 
 
 # virtual methods
-.method public final M_()V
+.method public final O_()V
     .locals 1
 
     .prologue
     .line 89
     iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/k;->d:Lkik/android/chat/vm/chats/publicgroups/k$a;
 
-    invoke-interface {v0}, Lkik/android/chat/vm/chats/publicgroups/k$a;->O_()V
+    invoke-interface {v0}, Lkik/android/chat/vm/chats/publicgroups/k$a;->Q_()V
 
     .line 90
     return-void
@@ -373,12 +373,12 @@
     return-void
 .end method
 
-.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
     .locals 5
 
     .prologue
     .line 48
-    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/e;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/e;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 49
     iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/k;->e:Lrx/subjects/a;
@@ -427,12 +427,12 @@
     return-void
 .end method
 
-.method public final aj_()V
+.method public final ak_()V
     .locals 1
 
     .prologue
     .line 62
-    invoke-super {p0}, Lkik/android/chat/vm/e;->aj_()V
+    invoke-super {p0}, Lkik/android/chat/vm/e;->ak_()V
 
     .line 63
     iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/k;->i:Lrx/k;

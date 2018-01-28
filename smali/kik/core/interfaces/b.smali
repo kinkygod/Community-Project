@@ -16,20 +16,8 @@
 .method public abstract a(Ljava/lang/String;Ljava/lang/String;)Z
 .end method
 
-.method public abstract j()Lcom/kik/events/c;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lcom/kik/events/c",
-            "<",
-            "Ljava/lang/Void;",
-            ">;"
-        }
-    .end annotation
+.method public abstract j()V
 .end method
 
-.method public abstract k()V
-.end method
-
-.method public abstract l()Z
+.method public abstract k()Z
 .end method

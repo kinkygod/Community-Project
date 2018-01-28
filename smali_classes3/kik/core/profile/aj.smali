@@ -7,12 +7,12 @@
 
 
 # instance fields
-.field private final a:Lkik/core/interfaces/w;
+.field private final a:Lkik/core/interfaces/v;
 
-.field private final b:Lcom/kik/core/a/f;
+.field private final b:Lcom/kik/core/a/g;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/kik/core/a/f",
+            "Lcom/kik/core/a/g",
             "<",
             "Lcom/kik/core/network/xmpp/jid/a;",
             "Lcom/kik/core/domain/users/a/d;",
@@ -37,13 +37,13 @@
 
 
 # direct methods
-.method public constructor <init>(Lkik/core/interfaces/w;Lcom/kik/core/a/f;)V
+.method public constructor <init>(Lkik/core/interfaces/v;Lcom/kik/core/a/g;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkik/core/interfaces/w;",
-            "Lcom/kik/core/a/f",
+            "Lkik/core/interfaces/v;",
+            "Lcom/kik/core/a/g",
             "<",
             "Lcom/kik/core/network/xmpp/jid/a;",
             "Lcom/kik/core/domain/users/a/d;",
@@ -63,10 +63,10 @@
     iput-object v0, p0, Lkik/core/profile/aj;->c:Lcom/github/a/a/a;
 
     .line 33
-    iput-object p1, p0, Lkik/core/profile/aj;->a:Lkik/core/interfaces/w;
+    iput-object p1, p0, Lkik/core/profile/aj;->a:Lkik/core/interfaces/v;
 
     .line 34
-    iput-object p2, p0, Lkik/core/profile/aj;->b:Lcom/kik/core/a/f;
+    iput-object p2, p0, Lkik/core/profile/aj;->b:Lcom/kik/core/a/g;
 
     .line 35
     iget-object v0, p0, Lkik/core/profile/aj;->c:Lcom/github/a/a/a;
@@ -82,9 +82,9 @@
     invoke-virtual {v0, v1}, Lrx/d;->b(Lrx/functions/b;)Lrx/k;
 
     .line 52
-    iget-object v0, p0, Lkik/core/profile/aj;->b:Lcom/kik/core/a/f;
+    iget-object v0, p0, Lkik/core/profile/aj;->b:Lcom/kik/core/a/g;
 
-    invoke-interface {v0}, Lcom/kik/core/a/f;->a()Lrx/d;
+    invoke-interface {v0}, Lcom/kik/core/a/g;->a()Lrx/d;
 
     move-result-object v0
 
@@ -92,7 +92,7 @@
 
     move-result-object v0
 
-    invoke-static {p0}, Lkik/core/profile/am;->a(Lkik/core/profile/aj;)Lrx/functions/b;
+    invoke-static {p0}, Lkik/core/profile/an;->a(Lkik/core/profile/aj;)Lrx/functions/b;
 
     move-result-object v1
 
@@ -116,7 +116,7 @@
     .locals 2
 
     .prologue
-    .line 65
+    .line 64
     if-eqz p2, :cond_0
 
     invoke-virtual {p1, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -125,16 +125,16 @@
 
     if-eqz v0, :cond_0
 
-    .line 66
-    iget-object v0, p0, Lkik/core/profile/aj;->a:Lkik/core/interfaces/w;
+    .line 65
+    iget-object v0, p0, Lkik/core/profile/aj;->a:Lkik/core/interfaces/v;
 
     const/4 v1, 0x1
 
-    invoke-interface {v0, p1, v1}, Lkik/core/interfaces/w;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
+    invoke-interface {v0, p1, v1}, Lkik/core/interfaces/v;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
 
     move-result-object v0
 
-    .line 69
+    .line 68
     :goto_0
     return-object v0
 
@@ -175,9 +175,9 @@
     invoke-virtual {v0, p1, v1}, Lcom/github/a/a/a;->a(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 37
-    iget-object v0, p0, Lkik/core/profile/aj;->b:Lcom/kik/core/a/f;
+    iget-object v0, p0, Lkik/core/profile/aj;->b:Lcom/kik/core/a/g;
 
-    invoke-interface {v0, p1}, Lcom/kik/core/a/f;->a(Ljava/lang/Object;)Lrx/h;
+    invoke-interface {v0, p1}, Lcom/kik/core/a/g;->a(Ljava/lang/Object;)Lrx/h;
 
     move-result-object v0
 
@@ -191,7 +191,7 @@
     return-void
 .end method
 
-.method private c(Lcom/kik/core/network/xmpp/jid/a;)Lrx/d;
+.method private d(Lcom/kik/core/network/xmpp/jid/a;)Lrx/d;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -212,39 +212,34 @@
     move-result-object v0
 
     .line 61
-    iget-object v1, p0, Lkik/core/profile/aj;->a:Lkik/core/interfaces/w;
+    iget-object v1, p0, Lkik/core/profile/aj;->a:Lkik/core/interfaces/v;
+
+    invoke-interface {v1}, Lkik/core/interfaces/v;->f()Lrx/d;
+
+    move-result-object v1
 
     .line 62
-    invoke-interface {v1}, Lkik/core/interfaces/w;->e()Lcom/kik/events/c;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lkik/core/b/a;->a(Lcom/kik/events/c;)Lrx/d;
-
-    move-result-object v1
-
-    .line 63
     invoke-virtual {v1, v0}, Lrx/d;->c(Ljava/lang/Object;)Lrx/d;
 
     move-result-object v1
 
-    invoke-static {p0, v0}, Lkik/core/profile/an;->a(Lkik/core/profile/aj;Ljava/lang/String;)Lrx/functions/g;
+    invoke-static {p0, v0}, Lkik/core/profile/ao;->a(Lkik/core/profile/aj;Ljava/lang/String;)Lrx/functions/g;
 
     move-result-object v0
 
-    .line 64
+    .line 63
     invoke-virtual {v1, v0}, Lrx/d;->e(Lrx/functions/g;)Lrx/d;
 
     move-result-object v0
 
     const-class v1, Lkik/core/datatypes/s;
 
-    .line 70
+    .line 69
     invoke-virtual {v0, v1}, Lrx/d;->a(Ljava/lang/Class;)Lrx/d;
 
     move-result-object v0
 
-    invoke-static {}, Lkik/core/profile/ao;->a()Lrx/functions/g;
+    invoke-static {}, Lkik/core/profile/ap;->a()Lrx/functions/g;
 
     move-result-object v1
 
@@ -254,12 +249,12 @@
 
     iget-object v1, p0, Lkik/core/profile/aj;->c:Lcom/github/a/a/a;
 
-    .line 72
+    .line 71
     invoke-virtual {v1, p1}, Lcom/github/a/a/a;->a(Ljava/lang/Object;)Lrx/d;
 
     move-result-object v1
 
-    invoke-static {}, Lkik/core/profile/ap;->a()Lrx/functions/g;
+    invoke-static {}, Lkik/core/profile/aq;->a()Lrx/functions/g;
 
     move-result-object v2
 
@@ -267,7 +262,7 @@
 
     move-result-object v1
 
-    invoke-static {}, Lkik/core/profile/aq;->a()Lrx/functions/h;
+    invoke-static {}, Lkik/core/profile/ar;->a()Lrx/functions/h;
 
     move-result-object v2
 
@@ -296,23 +291,23 @@
     .end annotation
 
     .prologue
-    .line 85
-    invoke-direct {p0, p1}, Lkik/core/profile/aj;->c(Lcom/kik/core/network/xmpp/jid/a;)Lrx/d;
+    .line 84
+    invoke-direct {p0, p1}, Lkik/core/profile/aj;->d(Lcom/kik/core/network/xmpp/jid/a;)Lrx/d;
 
     move-result-object v0
 
     const-class v1, Lkik/core/datatypes/s;
 
-    .line 86
+    .line 85
     invoke-virtual {v0, v1}, Lrx/d;->a(Ljava/lang/Class;)Lrx/d;
 
     move-result-object v0
 
-    invoke-static {}, Lkik/core/profile/ar;->a()Lrx/functions/g;
+    invoke-static {}, Lkik/core/profile/as;->a()Lrx/functions/g;
 
     move-result-object v1
 
-    .line 87
+    .line 86
     invoke-virtual {v0, v1}, Lrx/d;->e(Lrx/functions/g;)Lrx/d;
 
     move-result-object v0
@@ -324,12 +319,12 @@
 
     move-result-object v0
 
-    .line 89
+    .line 88
     invoke-virtual {v0}, Lrx/b/b;->b()Lrx/d;
 
     move-result-object v0
 
-    .line 85
+    .line 84
     return-object v0
 .end method
 
@@ -348,10 +343,10 @@
     .end annotation
 
     .prologue
-    .line 95
-    iget-object v0, p0, Lkik/core/profile/aj;->a:Lkik/core/interfaces/w;
+    .line 94
+    iget-object v0, p0, Lkik/core/profile/aj;->a:Lkik/core/interfaces/v;
 
-    invoke-interface {v0, p1}, Lkik/core/interfaces/w;->e(Ljava/lang/String;)Lcom/kik/events/Promise;
+    invoke-interface {v0, p1}, Lkik/core/interfaces/v;->e(Ljava/lang/String;)Lcom/kik/events/Promise;
 
     move-result-object v0
 
@@ -359,20 +354,20 @@
 
     move-result-object v0
 
-    invoke-static {}, Lkik/core/profile/as;->a()Lrx/functions/g;
+    invoke-static {}, Lkik/core/profile/at;->a()Lrx/functions/g;
 
     move-result-object v1
 
-    .line 96
+    .line 95
     invoke-virtual {v0, v1}, Lrx/d;->e(Lrx/functions/g;)Lrx/d;
 
     move-result-object v0
 
-    invoke-static {p0}, Lkik/core/profile/at;->a(Lkik/core/profile/aj;)Lrx/functions/g;
+    invoke-static {p0}, Lkik/core/profile/au;->a(Lkik/core/profile/aj;)Lrx/functions/g;
 
     move-result-object v1
 
-    .line 97
+    .line 96
     invoke-virtual {v0, v1}, Lrx/d;->d(Lrx/functions/g;)Lrx/d;
 
     move-result-object v0
@@ -384,12 +379,12 @@
 
     move-result-object v0
 
-    .line 99
+    .line 98
     invoke-virtual {v0}, Lrx/b/b;->b()Lrx/d;
 
     move-result-object v0
 
-    .line 95
+    .line 94
     return-object v0
 .end method
 
@@ -406,12 +401,12 @@
     .end annotation
 
     .prologue
+    .line 123
+    iget-object v0, p0, Lkik/core/profile/aj;->b:Lcom/kik/core/a/g;
+
+    invoke-interface {v0, p1}, Lcom/kik/core/a/g;->a(Ljava/util/List;)V
+
     .line 124
-    iget-object v0, p0, Lkik/core/profile/aj;->b:Lcom/kik/core/a/f;
-
-    invoke-interface {v0, p1}, Lcom/kik/core/a/f;->a(Ljava/util/List;)V
-
-    .line 125
     return-void
 .end method
 
@@ -430,8 +425,8 @@
     .end annotation
 
     .prologue
-    .line 113
-    invoke-direct {p0, p1}, Lkik/core/profile/aj;->c(Lcom/kik/core/network/xmpp/jid/a;)Lrx/d;
+    .line 104
+    invoke-direct {p0, p1}, Lkik/core/profile/aj;->d(Lcom/kik/core/network/xmpp/jid/a;)Lrx/d;
 
     move-result-object v0
 
@@ -439,16 +434,54 @@
 
     move-result-object v1
 
-    .line 114
+    .line 105
     invoke-virtual {v0, v1}, Lrx/d;->e(Lrx/functions/g;)Lrx/d;
 
     move-result-object v0
 
-    .line 115
+    .line 106
     invoke-virtual {v0}, Lrx/d;->f()Lrx/d;
 
     move-result-object v0
 
+    .line 104
+    return-object v0
+.end method
+
+.method public final c(Lcom/kik/core/network/xmpp/jid/a;)Lrx/d;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/kik/core/network/xmpp/jid/a;",
+            ")",
+            "Lrx/d",
+            "<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+
+    .prologue
+    .line 112
+    invoke-direct {p0, p1}, Lkik/core/profile/aj;->d(Lcom/kik/core/network/xmpp/jid/a;)Lrx/d;
+
+    move-result-object v0
+
+    invoke-static {}, Lkik/core/profile/am;->a()Lrx/functions/g;
+
+    move-result-object v1
+
     .line 113
+    invoke-virtual {v0, v1}, Lrx/d;->e(Lrx/functions/g;)Lrx/d;
+
+    move-result-object v0
+
+    .line 114
+    invoke-virtual {v0}, Lrx/d;->f()Lrx/d;
+
+    move-result-object v0
+
+    .line 112
     return-object v0
 .end method

@@ -34,7 +34,7 @@
     .locals 0
 
     .prologue
-    .line 197
+    .line 218
     iput-object p1, p0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel$2;->b:Lkik/android/chat/vm/messaging/AbstractMessageViewModel;
 
     iput-object p2, p0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel$2;->a:Ljava/lang/String;
@@ -50,13 +50,13 @@
     .locals 2
 
     .prologue
-    .line 197
+    .line 218
     check-cast p1, Ljava/lang/Boolean;
 
-    .line 1201
+    .line 1222
     iget-object v0, p0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel$2;->b:Lkik/android/chat/vm/messaging/AbstractMessageViewModel;
 
-    invoke-static {v0}, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->f(Lkik/android/chat/vm/messaging/AbstractMessageViewModel;)Lkik/android/chat/vm/aw;
+    invoke-static {v0}, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->f(Lkik/android/chat/vm/messaging/AbstractMessageViewModel;)Lkik/android/chat/vm/ay;
 
     move-result-object v0
 
@@ -64,8 +64,8 @@
 
     invoke-direct {v1, p0, p1}, Lkik/android/chat/vm/messaging/AbstractMessageViewModel$2$1;-><init>(Lkik/android/chat/vm/messaging/AbstractMessageViewModel$2;Ljava/lang/Boolean;)V
 
-    invoke-interface {v0, v1}, Lkik/android/chat/vm/aw;->a(Lkik/android/chat/vm/bb;)V
+    invoke-interface {v0, v1}, Lkik/android/chat/vm/ay;->a(Lkik/android/chat/vm/bd;)V
 
-    .line 197
+    .line 218
     return-void
 .end method

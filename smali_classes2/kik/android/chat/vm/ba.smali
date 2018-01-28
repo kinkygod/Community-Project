@@ -3,18 +3,14 @@
 .source "SourceFile"
 
 
-# virtual methods
-.method public abstract a()Ljava/util/ArrayList;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/ArrayList",
-            "<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end method
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lkik/android/chat/vm/ba$a;
+    }
+.end annotation
 
-.method public abstract b()Ljava/lang/String;
+
+# virtual methods
+.method public abstract a(Lkik/android/chat/vm/ba$a;)V
 .end method

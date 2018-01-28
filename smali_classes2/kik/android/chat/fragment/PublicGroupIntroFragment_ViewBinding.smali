@@ -24,7 +24,7 @@
     iput-object p1, p0, Lkik/android/chat/fragment/PublicGroupIntroFragment_ViewBinding;->a:Lkik/android/chat/fragment/PublicGroupIntroFragment;
 
     .line 25
-    const v0, 0x7f100217
+    const v0, 0x7f100219
 
     const-string v1, "field \'_body\'"
 
@@ -39,7 +39,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/PublicGroupIntroFragment;->_body:Landroid/widget/TextView;
 
     .line 26
-    const v0, 0x7f100218
+    const v0, 0x7f10021a
 
     const-string v1, "method \'rulesAccepted\'"
 

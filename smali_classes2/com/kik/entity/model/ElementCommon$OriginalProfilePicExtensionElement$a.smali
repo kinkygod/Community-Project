@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/kik/entity/model/ElementCommon$j;
+.implements Lcom/kik/entity/model/ElementCommon$k;
 
 
 # annotations
@@ -22,7 +22,7 @@
         "<",
         "Lcom/kik/entity/model/ElementCommon$OriginalProfilePicExtensionElement$a;",
         ">;",
-        "Lcom/kik/entity/model/ElementCommon$j;"
+        "Lcom/kik/entity/model/ElementCommon$k;"
     }
 .end annotation
 
@@ -37,7 +37,7 @@
             "<",
             "Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;",
             "Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;",
-            "Lcom/kik/entity/model/ElementCommon$l;",
+            "Lcom/kik/entity/model/ElementCommon$m;",
             ">;"
         }
     .end annotation
@@ -402,7 +402,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;->b()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;
+    invoke-virtual {v0}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$a;->a()Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;
 
     move-result-object v0
 

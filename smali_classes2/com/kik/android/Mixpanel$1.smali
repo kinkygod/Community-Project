@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/kik/android/Mixpanel;-><init>(Lkik/core/e/d;Lkik/core/interfaces/ICommunication;Lkik/core/interfaces/ae;Lkik/core/interfaces/ah;Landroid/content/SharedPreferences;Lcom/kik/b/b;)V
+    value = Lcom/kik/android/Mixpanel;-><init>(Lkik/core/e/d;Lkik/core/interfaces/ICommunication;Lkik/core/interfaces/ad;Lkik/core/interfaces/ag;Landroid/content/SharedPreferences;Lcom/kik/b/b;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -36,7 +36,7 @@
     .locals 0
 
     .prologue
-    .line 1903
+    .line 1900
     iput-object p1, p0, Lcom/kik/android/Mixpanel$1;->a:Lcom/kik/android/Mixpanel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -50,12 +50,12 @@
     .locals 1
 
     .prologue
-    .line 1903
-    .line 2907
+    .line 1900
+    .line 2904
     iget-object v0, p0, Lcom/kik/android/Mixpanel$1;->a:Lcom/kik/android/Mixpanel;
 
     invoke-static {v0}, Lcom/kik/android/Mixpanel;->g(Lcom/kik/android/Mixpanel;)V
 
-    .line 1903
+    .line 1900
     return-void
 .end method

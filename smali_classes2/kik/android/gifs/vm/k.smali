@@ -75,7 +75,49 @@
 
 
 # virtual methods
-.method public final a()Z
+.method public final ag_()J
+    .locals 2
+
+    .prologue
+    .line 38
+    iget-object v0, p0, Lkik/android/gifs/vm/k;->c:Lkik/android/gifs/api/b;
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lkik/android/gifs/vm/k;->c:Lkik/android/gifs/api/b;
+
+    invoke-virtual {v0}, Lkik/android/gifs/api/b;->hashCode()I
+
+    move-result v0
+
+    int-to-long v0, v0
+
+    :goto_0
+    return-wide v0
+
+    :cond_0
+    const-wide/16 v0, 0x0
+
+    goto :goto_0
+.end method
+
+.method public final ak_()V
+    .locals 1
+
+    .prologue
+    .line 31
+    const/4 v0, 0x0
+
+    iput-object v0, p0, Lkik/android/gifs/vm/k;->c:Lkik/android/gifs/api/b;
+
+    .line 32
+    invoke-super {p0}, Lkik/android/chat/vm/e;->ak_()V
+
+    .line 33
+    return-void
+.end method
+
+.method public final b()Z
     .locals 1
 
     .prologue
@@ -103,23 +145,7 @@
     goto :goto_0
 .end method
 
-.method public final aj_()V
-    .locals 1
-
-    .prologue
-    .line 31
-    const/4 v0, 0x0
-
-    iput-object v0, p0, Lkik/android/gifs/vm/k;->c:Lkik/android/gifs/api/b;
-
-    .line 32
-    invoke-super {p0}, Lkik/android/chat/vm/e;->aj_()V
-
-    .line 33
-    return-void
-.end method
-
-.method public final b()Z
+.method public final d()Z
     .locals 1
 
     .prologue
@@ -145,7 +171,7 @@
     goto :goto_0
 .end method
 
-.method public final d()Ljava/lang/String;
+.method public final e()Ljava/lang/String;
     .locals 1
 
     .prologue
@@ -155,7 +181,7 @@
     if-eqz v0, :cond_1
 
     .line 57
-    invoke-virtual {p0}, Lkik/android/gifs/vm/k;->b()Z
+    invoke-virtual {p0}, Lkik/android/gifs/vm/k;->d()Z
 
     move-result v0
 
@@ -185,7 +211,7 @@
     goto :goto_0
 .end method
 
-.method public final e()V
+.method public final g()V
     .locals 1
 
     .prologue
@@ -204,7 +230,7 @@
     return-void
 .end method
 
-.method public final g()Lrx/d;
+.method public final j()Lrx/d;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -229,30 +255,4 @@
     check-cast v0, Lrx/d;
 
     return-object v0
-.end method
-
-.method public final j()J
-    .locals 2
-
-    .prologue
-    .line 38
-    iget-object v0, p0, Lkik/android/gifs/vm/k;->c:Lkik/android/gifs/api/b;
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lkik/android/gifs/vm/k;->c:Lkik/android/gifs/api/b;
-
-    invoke-virtual {v0}, Lkik/android/gifs/api/b;->hashCode()I
-
-    move-result v0
-
-    int-to-long v0, v0
-
-    :goto_0
-    return-wide v0
-
-    :cond_0
-    const-wide/16 v0, 0x0
-
-    goto :goto_0
 .end method

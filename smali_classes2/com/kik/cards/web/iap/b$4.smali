@@ -213,11 +213,11 @@
     .line 226
     iget-object v0, p0, Lcom/kik/cards/web/iap/b$4;->a:Lcom/kik/cards/web/iap/b;
 
-    invoke-static {v0}, Lcom/kik/cards/web/iap/b;->c(Lcom/kik/cards/web/iap/b;)Lkik/core/interfaces/ae;
+    invoke-static {v0}, Lcom/kik/cards/web/iap/b;->c(Lcom/kik/cards/web/iap/b;)Lkik/core/interfaces/ad;
 
     move-result-object v0
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ae;->a(Ljava/util/Vector;)Z
+    invoke-interface {v0, v1}, Lkik/core/interfaces/ad;->a(Ljava/util/Vector;)Z
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_1

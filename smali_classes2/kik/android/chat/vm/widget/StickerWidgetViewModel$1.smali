@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/widget/bn;
+.implements Lkik/android/widget/bz;
 
 
 # annotations

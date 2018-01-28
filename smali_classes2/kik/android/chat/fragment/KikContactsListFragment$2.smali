@@ -32,7 +32,7 @@
     .locals 0
 
     .prologue
-    .line 1052
+    .line 1057
     iput-object p1, p0, Lkik/android/chat/fragment/KikContactsListFragment$2;->a:Lkik/android/chat/fragment/KikContactsListFragment;
 
     invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
@@ -46,10 +46,10 @@
     .locals 2
 
     .prologue
-    .line 1056
+    .line 1061
     invoke-super {p0}, Lcom/kik/events/k;->b()V
 
-    .line 1058
+    .line 1063
     iget-object v0, p0, Lkik/android/chat/fragment/KikContactsListFragment$2;->a:Lkik/android/chat/fragment/KikContactsListFragment;
 
     new-instance v1, Landroid/os/Bundle;
@@ -58,11 +58,11 @@
 
     invoke-virtual {v0, v1}, Lkik/android/chat/fragment/KikContactsListFragment;->setResultData(Landroid/os/Bundle;)V
 
-    .line 1059
+    .line 1064
     iget-object v0, p0, Lkik/android/chat/fragment/KikContactsListFragment$2;->a:Lkik/android/chat/fragment/KikContactsListFragment;
 
     invoke-virtual {v0}, Lkik/android/chat/fragment/KikContactsListFragment;->finish()V
 
-    .line 1060
+    .line 1065
     return-void
 .end method

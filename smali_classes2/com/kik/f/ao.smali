@@ -3,16 +3,16 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/a/b;
+.implements Ldagger/internal/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/a/b",
+        "Ldagger/internal/b",
         "<",
-        "Lcom/kik/core/domain/a/a;",
+        "Lcom/kik/core/domain/a/c;",
         ">;"
     }
 .end annotation
@@ -23,7 +23,7 @@
 
 
 # instance fields
-.field private final b:Lcom/kik/f/an;
+.field private final b:Lcom/kik/f/al;
 
 .field private final c:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
@@ -64,12 +64,12 @@
     goto :goto_0
 .end method
 
-.method private constructor <init>(Lcom/kik/f/an;Ljavax/inject/Provider;)V
+.method private constructor <init>(Lcom/kik/f/al;Ljavax/inject/Provider;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcom/kik/f/an;",
+            "Lcom/kik/f/al;",
             "Ljavax/inject/Provider",
             "<",
             "Lkik/core/interfaces/l;",
@@ -96,7 +96,7 @@
 
     .line 23
     :cond_0
-    iput-object p1, p0, Lcom/kik/f/ao;->b:Lcom/kik/f/an;
+    iput-object p1, p0, Lcom/kik/f/ao;->b:Lcom/kik/f/al;
 
     .line 24
     sget-boolean v0, Lcom/kik/f/ao;->a:Z
@@ -119,19 +119,19 @@
     return-void
 .end method
 
-.method public static a(Lcom/kik/f/an;Ljavax/inject/Provider;)La/a/b;
+.method public static a(Lcom/kik/f/al;Ljavax/inject/Provider;)Ldagger/internal/b;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcom/kik/f/an;",
+            "Lcom/kik/f/al;",
             "Ljavax/inject/Provider",
             "<",
             "Lkik/core/interfaces/l;",
             ">;)",
-            "La/a/b",
+            "Ldagger/internal/b",
             "<",
-            "Lcom/kik/core/domain/a/a;",
+            "Lcom/kik/core/domain/a/c;",
             ">;"
         }
     .end annotation
@@ -140,7 +140,7 @@
     .line 37
     new-instance v0, Lcom/kik/f/ao;
 
-    invoke-direct {v0, p0, p1}, Lcom/kik/f/ao;-><init>(Lcom/kik/f/an;Ljavax/inject/Provider;)V
+    invoke-direct {v0, p0, p1}, Lcom/kik/f/ao;-><init>(Lcom/kik/f/al;Ljavax/inject/Provider;)V
 
     return-object v0
 .end method
@@ -162,20 +162,20 @@
 
     check-cast v0, Lkik/core/interfaces/l;
 
-    .line 1037
-    new-instance v1, Lkik/core/profile/g;
+    .line 2030
+    new-instance v1, Lkik/core/profile/l;
 
-    invoke-direct {v1, v0}, Lkik/core/profile/g;-><init>(Lkik/core/interfaces/l;)V
+    invoke-direct {v1, v0}, Lkik/core/profile/l;-><init>(Lkik/core/interfaces/l;)V
 
     .line 1031
     const-string v0, "Cannot return null from a non-@Nullable @Provides method"
 
     .line 1030
-    invoke-static {v1, v0}, La/a/c;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {v1, v0}, Ldagger/internal/c;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/kik/core/domain/a/a;
+    check-cast v0, Lcom/kik/core/domain/a/c;
 
     .line 10
     return-object v0

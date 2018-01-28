@@ -17,7 +17,7 @@
     value = {
         "Lcom/kik/events/k",
         "<",
-        "Lkik/core/datatypes/ac;",
+        "Lkik/core/datatypes/ab;",
         ">;"
     }
 .end annotation
@@ -51,14 +51,14 @@
 
     .prologue
     .line 168
-    check-cast p1, Lkik/core/datatypes/ac;
+    check-cast p1, Lkik/core/datatypes/ab;
 
     .line 1172
     iget-object v0, p0, Lkik/android/chat/fragment/settings/EditEmailFragment$3;->b:Lkik/android/chat/fragment/settings/EditEmailFragment;
 
     iget-object v0, v0, Lkik/android/chat/fragment/settings/EditEmailFragment;->_emailInput:Lkik/android/chat/view/ValidateableInputView;
 
-    iget-object v1, p1, Lkik/core/datatypes/ac;->a:Ljava/lang/String;
+    iget-object v1, p1, Lkik/core/datatypes/ab;->a:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Lkik/android/chat/view/ValidateableInputView;->e(Ljava/lang/CharSequence;)V
 
@@ -71,7 +71,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f04017b
+    const v2, 0x7f04017e
 
     const-wide/16 v4, 0x3e8
 
@@ -168,7 +168,7 @@
 
     new-array v3, v3, [Ljava/lang/Object;
 
-    invoke-static {p1}, Lkik/android/util/ce;->a(Ljava/lang/Throwable;)Ljava/lang/String;
+    invoke-static {p1}, Lkik/android/util/cf;->a(Ljava/lang/Throwable;)Ljava/lang/String;
 
     move-result-object v4
 

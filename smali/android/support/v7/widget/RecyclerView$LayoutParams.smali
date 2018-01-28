@@ -164,3 +164,47 @@
     .line 10793
     return-void
 .end method
+
+
+# virtual methods
+.method public final a()Z
+    .locals 1
+
+    .prologue
+    .line 10831
+    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$LayoutParams;->c:Landroid/support/v7/widget/RecyclerView$ViewHolder;
+
+    invoke-virtual {v0}, Landroid/support/v7/widget/RecyclerView$ViewHolder;->isRemoved()Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public final b()I
+    .locals 1
+
+    .prologue
+    .line 10860
+    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$LayoutParams;->c:Landroid/support/v7/widget/RecyclerView$ViewHolder;
+
+    invoke-virtual {v0}, Landroid/support/v7/widget/RecyclerView$ViewHolder;->getLayoutPosition()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public final c()I
+    .locals 1
+
+    .prologue
+    .line 10872
+    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$LayoutParams;->c:Landroid/support/v7/widget/RecyclerView$ViewHolder;
+
+    invoke-virtual {v0}, Landroid/support/v7/widget/RecyclerView$ViewHolder;->getAdapterPosition()I
+
+    move-result v0
+
+    return v0
+.end method

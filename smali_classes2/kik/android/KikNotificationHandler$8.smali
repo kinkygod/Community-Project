@@ -34,7 +34,7 @@
     .locals 0
 
     .prologue
-    .line 978
+    .line 903
     iput-object p1, p0, Lkik/android/KikNotificationHandler$8;->b:Lkik/android/KikNotificationHandler;
 
     iput p2, p0, Lkik/android/KikNotificationHandler$8;->a:I
@@ -52,23 +52,23 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 978
+    .line 903
     check-cast p1, Landroid/graphics/Bitmap;
 
-    .line 1982
+    .line 1907
     invoke-super {p0, p1}, Lcom/kik/events/k;->a(Ljava/lang/Object;)V
 
-    .line 1983
+    .line 1908
     if-eqz p1, :cond_0
 
-    .line 1984
+    .line 1909
     iget v0, p0, Lkik/android/KikNotificationHandler$8;->a:I
 
     const/16 v1, 0xa
 
     if-ne v0, v1, :cond_1
 
-    .line 1985
+    .line 1910
     iget-object v0, p0, Lkik/android/KikNotificationHandler$8;->b:Lkik/android/KikNotificationHandler;
 
     iget-object v0, v0, Lkik/android/KikNotificationHandler;->g:Lkik/android/videochat/c;
@@ -77,14 +77,14 @@
 
     move-result-object v0
 
-    .line 1986
+    .line 1911
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v1
 
     if-ne v1, v2, :cond_0
 
-    .line 1987
+    .line 1912
     iget-object v1, p0, Lkik/android/KikNotificationHandler$8;->b:Lkik/android/KikNotificationHandler;
 
     const/4 v2, 0x0
@@ -97,12 +97,12 @@
 
     invoke-virtual {v1, v0}, Lkik/android/KikNotificationHandler;->a(Lkik/core/datatypes/l;)V
 
-    .line 1989
+    .line 1914
     :cond_0
     :goto_0
     return-void
 
-    .line 1991
+    .line 1916
     :cond_1
     iget-object v0, p0, Lkik/android/KikNotificationHandler$8;->b:Lkik/android/KikNotificationHandler;
 

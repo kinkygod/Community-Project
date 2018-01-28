@@ -35,19 +35,19 @@
     return-void
 .end method
 
-.method public a(II)V
-    .locals 0
-
-    .prologue
-    .line 10897
-    return-void
-.end method
-
 .method public a(IILjava/lang/Object;)V
     .locals 0
 
     .prologue
     .line 10893
+    return-void
+.end method
+
+.method public a_(II)V
+    .locals 0
+
+    .prologue
+    .line 10897
     return-void
 .end method
 

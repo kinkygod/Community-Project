@@ -32,7 +32,7 @@
     .locals 0
 
     .prologue
-    .line 537
+    .line 564
     iput-object p1, p0, Lcom/kik/cards/web/CardsWebViewFragment$10$1$1;->a:Lcom/kik/cards/web/CardsWebViewFragment$10$1;
 
     invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
@@ -46,13 +46,13 @@
     .locals 21
 
     .prologue
-    .line 537
+    .line 564
     check-cast p1, Lcom/kik/cards/web/h$a;
 
-    .line 1542
+    .line 1569
     new-instance v1, Lcom/kik/cards/web/kik/KikMessageParcelable;
 
-    .line 1543
+    .line 1570
     invoke-virtual/range {p1 .. p1}, Lcom/kik/cards/web/h$a;->a()Ljava/lang/String;
 
     move-result-object v2
@@ -61,12 +61,12 @@
 
     move-result-object v3
 
-    .line 1544
+    .line 1571
     invoke-virtual/range {p1 .. p1}, Lcom/kik/cards/web/h$a;->c()Ljava/lang/String;
 
     move-result-object v4
 
-    .line 1545
+    .line 1572
     invoke-virtual/range {p1 .. p1}, Lcom/kik/cards/web/h$a;->g()Ljava/lang/String;
 
     move-result-object v5
@@ -79,7 +79,7 @@
 
     move-result-object v8
 
-    .line 1546
+    .line 1573
     invoke-virtual/range {p1 .. p1}, Lcom/kik/cards/web/h$a;->f()Ljava/lang/String;
 
     move-result-object v9
@@ -94,7 +94,7 @@
 
     const-string v12, "true"
 
-    .line 1547
+    .line 1574
     const/4 v13, 0x0
 
     const/4 v14, 0x0
@@ -113,7 +113,7 @@
 
     invoke-direct/range {v1 .. v20}, Lcom/kik/cards/web/kik/KikMessageParcelable;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 1551
+    .line 1578
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/kik/cards/web/CardsWebViewFragment$10$1$1;->a:Lcom/kik/cards/web/CardsWebViewFragment$10$1;
@@ -146,7 +146,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 1552
+    .line 1579
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/kik/cards/web/CardsWebViewFragment$10$1$1;->a:Lcom/kik/cards/web/CardsWebViewFragment$10$1;
@@ -172,7 +172,7 @@
     :goto_0
     return-void
 
-    .line 1570
+    .line 1598
     :cond_0
     invoke-static {}, Lkik/android/internal/platform/PlatformHelper;->a()Lkik/android/internal/platform/PlatformHelper;
 
@@ -218,11 +218,11 @@
 
     iget-object v3, v3, Lcom/kik/cards/web/CardsWebViewFragment$10;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
-    iget-object v7, v3, Lcom/kik/cards/web/CardsWebViewFragment;->f:Lkik/core/interfaces/w;
+    iget-object v7, v3, Lcom/kik/cards/web/CardsWebViewFragment;->f:Lkik/core/interfaces/v;
 
     move-object v3, v1
 
-    invoke-virtual/range {v2 .. v7}, Lkik/android/internal/platform/PlatformHelper;->a(Lcom/kik/cards/web/kik/KikMessageParcelable;Landroid/app/Activity;Lcom/kik/cards/web/f;Lcom/kik/ui/fragment/FragmentBase$FragmentBundle$StackType;Lkik/core/interfaces/w;)Lcom/kik/events/Promise;
+    invoke-virtual/range {v2 .. v7}, Lkik/android/internal/platform/PlatformHelper;->a(Lcom/kik/cards/web/kik/KikMessageParcelable;Landroid/app/Activity;Lcom/kik/cards/web/f;Lcom/kik/ui/fragment/FragmentBase$FragmentBundle$StackType;Lkik/core/interfaces/v;)Lcom/kik/events/Promise;
 
     goto :goto_0
 .end method
@@ -231,7 +231,7 @@
     .locals 3
 
     .prologue
-    .line 577
+    .line 605
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$10$1$1;->a:Lcom/kik/cards/web/CardsWebViewFragment$10$1;
 
     iget-object v0, v0, Lcom/kik/cards/web/CardsWebViewFragment$10$1;->a:Lcom/kik/cards/web/CardsWebViewFragment$10;
@@ -252,6 +252,6 @@
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 578
+    .line 606
     return-void
 .end method

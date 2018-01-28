@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/core/interfaces/x;
+.implements Lkik/core/interfaces/w;
 
 
 # annotations
@@ -13,7 +13,7 @@
         "Ljava/lang/Object;",
         ">",
         "Ljava/lang/Object;",
-        "Lkik/core/interfaces/x",
+        "Lkik/core/interfaces/w",
         "<TI;>;"
     }
 .end annotation
@@ -44,11 +44,11 @@
     .end annotation
 .end field
 
-.field private final c:Lkik/core/interfaces/w;
+.field private final c:Lkik/core/interfaces/v;
 
 
 # direct methods
-.method public constructor <init>(Lrx/d$c;Lrx/d$c;Lkik/core/interfaces/w;)V
+.method public constructor <init>(Lrx/d$c;Lrx/d$c;Lkik/core/interfaces/v;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -63,7 +63,7 @@
             "Lcom/kik/core/domain/a/a/c;",
             "Lkik/core/interfaces/o",
             "<TI;>;>;",
-            "Lkik/core/interfaces/w;",
+            "Lkik/core/interfaces/v;",
             ")V"
         }
     .end annotation
@@ -79,7 +79,7 @@
     iput-object p2, p0, Lkik/core/profile/r;->b:Lrx/d$c;
 
     .line 28
-    iput-object p3, p0, Lkik/core/profile/r;->c:Lkik/core/interfaces/w;
+    iput-object p3, p0, Lkik/core/profile/r;->c:Lkik/core/interfaces/v;
 
     .line 29
     return-void
@@ -144,7 +144,7 @@
     check-cast v0, Lcom/kik/core/network/xmpp/jid/a;
 
     .line 70
-    iget-object v3, p0, Lkik/core/profile/r;->c:Lkik/core/interfaces/w;
+    iget-object v3, p0, Lkik/core/profile/r;->c:Lkik/core/interfaces/v;
 
     invoke-virtual {v0}, Lcom/kik/core/network/xmpp/jid/a;->toString()Ljava/lang/String;
 
@@ -152,7 +152,7 @@
 
     const/4 v4, 0x0
 
-    invoke-interface {v3, v0, v4}, Lkik/core/interfaces/w;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
+    invoke-interface {v3, v0, v4}, Lkik/core/interfaces/v;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
 
     move-result-object v0
 

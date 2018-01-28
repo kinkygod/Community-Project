@@ -22,7 +22,7 @@
     iput-object p1, p0, Lkik/android/chat/view/CameraViewImpl_ViewBinding;->a:Lkik/android/chat/view/CameraViewImpl;
 
     .line 27
-    const v0, 0x7f10017f
+    const v0, 0x7f100180
 
     const-string v1, "field \'_touchFocusImage\'"
 
@@ -37,7 +37,7 @@
     iput-object v0, p1, Lkik/android/chat/view/CameraViewImpl;->_touchFocusImage:Landroid/widget/FrameLayout;
 
     .line 28
-    const v0, 0x7f100182
+    const v0, 0x7f100183
 
     const-string v1, "field \'_cameraCover\'"
 
@@ -48,7 +48,7 @@
     iput-object v0, p1, Lkik/android/chat/view/CameraViewImpl;->_cameraCover:Landroid/view/View;
 
     .line 29
-    const v0, 0x7f100180
+    const v0, 0x7f100181
 
     const-string v1, "field \'_clipFrame\'"
 
@@ -63,7 +63,7 @@
     iput-object v0, p1, Lkik/android/chat/view/CameraViewImpl;->_clipFrame:Landroid/widget/FrameLayout;
 
     .line 30
-    const v0, 0x7f100181
+    const v0, 0x7f100182
 
     const-string v1, "field \'_videoInstructionText\'"
 

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/vm/bb;
+.implements Lkik/android/chat/vm/bd;
 
 
 # annotations
@@ -28,7 +28,7 @@
     .locals 0
 
     .prologue
-    .line 202
+    .line 223
     iput-object p1, p0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel$2$1;->b:Lkik/android/chat/vm/messaging/AbstractMessageViewModel$2;
 
     iput-object p2, p0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel$2$1;->a:Ljava/lang/Boolean;
@@ -44,7 +44,7 @@
     .locals 1
 
     .prologue
-    .line 207
+    .line 228
     const-string v0, "Tag Link"
 
     return-object v0
@@ -54,7 +54,7 @@
     .locals 2
 
     .prologue
-    .line 213
+    .line 234
     iget-object v0, p0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel$2$1;->b:Lkik/android/chat/vm/messaging/AbstractMessageViewModel$2;
 
     iget-object v0, v0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel$2;->a:Ljava/lang/String;
@@ -72,7 +72,7 @@
     .locals 1
 
     .prologue
-    .line 219
+    .line 240
     iget-object v0, p0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel$2$1;->a:Ljava/lang/Boolean;
 
     invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z

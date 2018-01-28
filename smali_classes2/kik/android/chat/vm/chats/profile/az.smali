@@ -1,26 +1,45 @@
-.class public interface abstract Lkik/android/chat/vm/chats/profile/az;
+.class final synthetic Lkik/android/chat/vm/chats/profile/az;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/vm/ar;
+.implements Lrx/functions/b;
+
+
+# instance fields
+.field private final a:Lkik/android/chat/vm/chats/profile/au;
+
+
+# direct methods
+.method private constructor <init>(Lkik/android/chat/vm/chats/profile/au;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lkik/android/chat/vm/chats/profile/az;->a:Lkik/android/chat/vm/chats/profile/au;
+
+    return-void
+.end method
+
+.method public static a(Lkik/android/chat/vm/chats/profile/au;)Lrx/functions/b;
+    .locals 1
+
+    new-instance v0, Lkik/android/chat/vm/chats/profile/az;
+
+    invoke-direct {v0, p0}, Lkik/android/chat/vm/chats/profile/az;-><init>(Lkik/android/chat/vm/chats/profile/au;)V
+
+    return-object v0
+.end method
 
 
 # virtual methods
-.method public abstract a()V
-.end method
+.method public final call(Ljava/lang/Object;)V
+    .locals 1
 
-.method public abstract b()Lrx/d;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/d",
-            "<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
-.end method
+    iget-object v0, p0, Lkik/android/chat/vm/chats/profile/az;->a:Lkik/android/chat/vm/chats/profile/au;
 
-.method public abstract d()I
+    check-cast p1, Lkik/android/chat/vm/IShareUsernameViewModel$ShareResult;
+
+    invoke-static {v0, p1}, Lkik/android/chat/vm/chats/profile/au;->a(Lkik/android/chat/vm/chats/profile/au;Lkik/android/chat/vm/IShareUsernameViewModel$ShareResult;)V
+
+    return-void
 .end method

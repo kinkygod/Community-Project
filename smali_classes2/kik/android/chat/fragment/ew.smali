@@ -37,9 +37,9 @@
 
     iget-object v0, p0, Lkik/android/chat/fragment/ew;->a:Lkik/android/chat/fragment/ProfileEditBioDialogFragment;
 
-    check-cast p1, Lkik/android/chat/vm/chats/profile/IBioEditorViewModel$ErrorType;
+    check-cast p1, Ljava/lang/Boolean;
 
-    invoke-static {v0, p1}, Lkik/android/chat/fragment/ProfileEditBioDialogFragment;->a(Lkik/android/chat/fragment/ProfileEditBioDialogFragment;Lkik/android/chat/vm/chats/profile/IBioEditorViewModel$ErrorType;)V
+    invoke-static {v0, p1}, Lkik/android/chat/fragment/ProfileEditBioDialogFragment;->a(Lkik/android/chat/fragment/ProfileEditBioDialogFragment;Ljava/lang/Boolean;)V
 
     return-void
 .end method

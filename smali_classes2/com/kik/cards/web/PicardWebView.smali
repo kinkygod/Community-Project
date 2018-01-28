@@ -62,7 +62,7 @@
 
     move-object v6, v2
 
-    invoke-direct/range {v0 .. v6}, Lcom/kik/cards/web/PicardWebView;-><init>(Landroid/content/Context;Lcom/kik/cards/web/g;Lcom/kik/util/a;Lcom/kik/cards/web/l;Lkik/core/net/e;Lkik/core/interfaces/t;)V
+    invoke-direct/range {v0 .. v6}, Lcom/kik/cards/web/PicardWebView;-><init>(Landroid/content/Context;Lcom/kik/cards/web/g;Lcom/kik/util/a;Lcom/kik/cards/web/l;Lkik/core/net/e;Lkik/core/interfaces/s;)V
 
     .line 36
     return-void
@@ -79,12 +79,12 @@
     return-void
 .end method
 
-.method public constructor <init>(Landroid/content/Context;Lcom/kik/cards/web/g;Lcom/kik/util/a;Lcom/kik/cards/web/l;Lkik/core/net/e;Lkik/core/interfaces/t;)V
+.method public constructor <init>(Landroid/content/Context;Lcom/kik/cards/web/g;Lcom/kik/util/a;Lcom/kik/cards/web/l;Lkik/core/net/e;Lkik/core/interfaces/s;)V
     .locals 4
 
     .prologue
     .line 45
-    invoke-direct {p0, p1, p6}, Lcom/kik/cards/web/ExtendedWebView;-><init>(Landroid/content/Context;Lkik/core/interfaces/t;)V
+    invoke-direct {p0, p1, p6}, Lcom/kik/cards/web/ExtendedWebView;-><init>(Landroid/content/Context;Lkik/core/interfaces/s;)V
 
     .line 21
     new-instance v0, Lcom/kik/events/g;

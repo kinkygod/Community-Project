@@ -50,7 +50,7 @@
 
     iget-object v0, v0, Lkik/android/chat/fragment/AbTestsFragment;->e:Lkik/core/ab;
 
-    invoke-interface {v0}, Lkik/core/ab;->h()V
+    invoke-interface {v0}, Lkik/core/ab;->g()V
 
     .line 117
     return-void

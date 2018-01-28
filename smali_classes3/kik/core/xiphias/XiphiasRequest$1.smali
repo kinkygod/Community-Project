@@ -57,7 +57,7 @@
     :try_start_0
     iget-object v0, p0, Lkik/core/xiphias/XiphiasRequest$1;->a:Lcom/kik/events/Promise;
 
-    check-cast p1, Lkik/core/xiphias/ab;
+    check-cast p1, Lkik/core/xiphias/ag;
 
     invoke-virtual {v0, p1}, Lcom/kik/events/Promise;->a(Ljava/lang/Object;)V
     :try_end_0

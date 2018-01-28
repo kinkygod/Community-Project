@@ -36,7 +36,7 @@
     .locals 0
 
     .prologue
-    .line 216
+    .line 219
     iput-object p1, p0, Lkik/android/chat/fragment/SendToFragment$4;->a:Lkik/android/chat/fragment/SendToFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -50,12 +50,12 @@
     .locals 1
 
     .prologue
-    .line 216
-    .line 1220
+    .line 219
+    .line 1223
     iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment$4;->a:Lkik/android/chat/fragment/SendToFragment;
 
     invoke-static {v0}, Lkik/android/chat/fragment/SendToFragment;->e(Lkik/android/chat/fragment/SendToFragment;)V
 
-    .line 216
+    .line 219
     return-void
 .end method

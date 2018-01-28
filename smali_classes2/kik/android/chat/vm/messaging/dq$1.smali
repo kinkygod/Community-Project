@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/vm/am;
+.implements Lkik/android/chat/vm/ao;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/android/chat/vm/messaging/dq;->Z()V
+    value = Lkik/android/chat/vm/messaging/dq;->aa()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -28,7 +28,7 @@
     .locals 0
 
     .prologue
-    .line 92
+    .line 81
     iput-object p1, p0, Lkik/android/chat/vm/messaging/dq$1;->b:Lkik/android/chat/vm/messaging/dq;
 
     iput-object p2, p0, Lkik/android/chat/vm/messaging/dq$1;->a:Lkik/core/datatypes/l;
@@ -44,7 +44,7 @@
     .locals 1
 
     .prologue
-    .line 96
+    .line 85
     iget-object v0, p0, Lkik/android/chat/vm/messaging/dq$1;->a:Lkik/core/datatypes/l;
 
     invoke-virtual {v0}, Lkik/core/datatypes/l;->k()Ljava/lang/String;
@@ -58,7 +58,7 @@
     .locals 1
 
     .prologue
-    .line 102
+    .line 91
     iget-object v0, p0, Lkik/android/chat/vm/messaging/dq$1;->a:Lkik/core/datatypes/l;
 
     invoke-virtual {v0}, Lkik/core/datatypes/l;->z()Ljava/lang/String;

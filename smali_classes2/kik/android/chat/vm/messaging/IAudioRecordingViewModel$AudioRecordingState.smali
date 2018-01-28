@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/vm/br;
+.implements Lkik/android/chat/vm/bs;
 
 
 # annotations
@@ -22,7 +22,7 @@
         "<",
         "Lkik/android/chat/vm/messaging/IAudioRecordingViewModel$AudioRecordingState;",
         ">;",
-        "Lkik/android/chat/vm/br;"
+        "Lkik/android/chat/vm/bs;"
     }
 .end annotation
 

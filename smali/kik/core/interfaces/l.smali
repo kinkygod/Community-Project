@@ -289,5 +289,17 @@
     .end annotation
 .end method
 
-.method public abstract g()V
+.method public abstract g()Lrx/d;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public abstract h()V
 .end method

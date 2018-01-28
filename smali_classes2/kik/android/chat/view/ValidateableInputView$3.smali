@@ -23,7 +23,7 @@
     .locals 0
 
     .prologue
-    .line 976
+    .line 1031
     iput-object p1, p0, Lkik/android/chat/view/ValidateableInputView$3;->a:Lkik/android/chat/view/ValidateableInputView;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
@@ -37,7 +37,7 @@
     .locals 3
 
     .prologue
-    .line 980
+    .line 1035
     const/4 v0, 0x1
 
     new-array v0, v0, [Landroid/view/View;
@@ -50,9 +50,9 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ca;->f([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/cb;->f([Landroid/view/View;)V
 
-    .line 981
+    .line 1036
     const/16 v0, 0x15
 
     invoke-static {v0}, Lcom/kik/sdkutils/c;->a(I)Z
@@ -61,7 +61,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 985
+    .line 1040
     iget-object v0, p0, Lkik/android/chat/view/ValidateableInputView$3;->a:Lkik/android/chat/view/ValidateableInputView;
 
     iget-object v0, v0, Lkik/android/chat/view/ValidateableInputView;->_clearTextButton:Landroid/view/View;
@@ -72,7 +72,7 @@
 
     invoke-interface {v0}, Landroid/view/ViewParent;->requestLayout()V
 
-    .line 987
+    .line 1042
     :cond_0
     return-void
 .end method

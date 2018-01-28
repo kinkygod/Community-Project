@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field private a:Lkik/android/chat/vm/ao;
+.field private a:Lkik/android/chat/vm/chats/profile/cm;
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 131
+    .line 154
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -34,14 +34,14 @@
 
 
 # virtual methods
-.method public final a(Lkik/android/chat/vm/ao;)Lkik/android/e/ab$a;
+.method public final a(Lkik/android/chat/vm/chats/profile/cm;)Lkik/android/e/ab$a;
     .locals 0
 
     .prologue
-    .line 134
-    iput-object p1, p0, Lkik/android/e/ab$a;->a:Lkik/android/chat/vm/ao;
+    .line 157
+    iput-object p1, p0, Lkik/android/e/ab$a;->a:Lkik/android/chat/vm/chats/profile/cm;
 
-    .line 135
+    .line 158
     if-nez p1, :cond_0
 
     const/4 p0, 0x0
@@ -54,11 +54,11 @@
     .locals 1
 
     .prologue
-    .line 139
-    iget-object v0, p0, Lkik/android/e/ab$a;->a:Lkik/android/chat/vm/ao;
+    .line 162
+    iget-object v0, p0, Lkik/android/e/ab$a;->a:Lkik/android/chat/vm/chats/profile/cm;
 
-    invoke-interface {v0}, Lkik/android/chat/vm/ao;->m_()V
+    invoke-interface {v0}, Lkik/android/chat/vm/chats/profile/cm;->m()V
 
-    .line 140
+    .line 163
     return-void
 .end method

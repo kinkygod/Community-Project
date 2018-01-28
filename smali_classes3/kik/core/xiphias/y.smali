@@ -2,80 +2,52 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lrx/h$a;
+.implements Lrx/functions/g;
 
 
-# instance fields
-.field private final a:Lkik/core/xiphias/s;
-
-.field private final b:Lkik/core/xiphias/XiphiasRequest;
-
-.field private final c:Z
-
-.field private final d:I
-
-.field private final e:J
+# static fields
+.field private static final a:Lkik/core/xiphias/y;
 
 
 # direct methods
-.method private constructor <init>(Lkik/core/xiphias/s;Lkik/core/xiphias/XiphiasRequest;ZIJ)V
+.method static constructor <clinit>()V
     .locals 1
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Lkik/core/xiphias/y;
 
-    iput-object p1, p0, Lkik/core/xiphias/y;->a:Lkik/core/xiphias/s;
+    invoke-direct {v0}, Lkik/core/xiphias/y;-><init>()V
 
-    iput-object p2, p0, Lkik/core/xiphias/y;->b:Lkik/core/xiphias/XiphiasRequest;
-
-    iput-boolean p3, p0, Lkik/core/xiphias/y;->c:Z
-
-    iput p4, p0, Lkik/core/xiphias/y;->d:I
-
-    iput-wide p5, p0, Lkik/core/xiphias/y;->e:J
+    sput-object v0, Lkik/core/xiphias/y;->a:Lkik/core/xiphias/y;
 
     return-void
 .end method
 
-.method public static a(Lkik/core/xiphias/s;Lkik/core/xiphias/XiphiasRequest;ZIJ)Lrx/h$a;
-    .locals 8
+.method private constructor <init>()V
+    .locals 0
 
-    new-instance v1, Lkik/core/xiphias/y;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    move-object v2, p0
+    return-void
+.end method
 
-    move-object v3, p1
+.method public static a()Lrx/functions/g;
+    .locals 1
 
-    move v4, p2
+    sget-object v0, Lkik/core/xiphias/y;->a:Lkik/core/xiphias/y;
 
-    move v5, p3
-
-    move-wide v6, p4
-
-    invoke-direct/range {v1 .. v7}, Lkik/core/xiphias/y;-><init>(Lkik/core/xiphias/s;Lkik/core/xiphias/XiphiasRequest;ZIJ)V
-
-    return-object v1
+    return-object v0
 .end method
 
 
 # virtual methods
-.method public final call(Ljava/lang/Object;)V
-    .locals 7
+.method public final call(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
-    iget-object v0, p0, Lkik/core/xiphias/y;->a:Lkik/core/xiphias/s;
+    check-cast p1, Lkik/core/xiphias/ag;
 
-    iget-object v1, p0, Lkik/core/xiphias/y;->b:Lkik/core/xiphias/XiphiasRequest;
+    invoke-virtual {p1}, Lkik/core/xiphias/ag;->a()Ljava/lang/Object;
 
-    iget-boolean v2, p0, Lkik/core/xiphias/y;->c:Z
+    move-result-object v0
 
-    iget v3, p0, Lkik/core/xiphias/y;->d:I
-
-    iget-wide v4, p0, Lkik/core/xiphias/y;->e:J
-
-    move-object v6, p1
-
-    check-cast v6, Lrx/i;
-
-    invoke-static/range {v0 .. v6}, Lkik/core/xiphias/s;->a(Lkik/core/xiphias/s;Lkik/core/xiphias/XiphiasRequest;ZIJLrx/i;)V
-
-    return-void
+    return-object v0
 .end method

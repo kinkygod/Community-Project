@@ -93,7 +93,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/KikChatFragment;->rootLayout:Landroid/view/ViewGroup;
 
     .line 30
-    const v0, 0x7f100373
+    const v0, 0x7f10036f
 
     const-string v1, "field \'_mediaBarView\'"
 
@@ -123,7 +123,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/KikChatFragment;->_bugmeBar:Lkik/android/widget/BugmeBarView;
 
     .line 32
-    const v0, 0x7f100361
+    const v0, 0x7f10035d
 
     const-string v1, "field \'_botTooltipAnchor\'"
 

@@ -77,7 +77,7 @@
 
 .field private j:Landroid/view/ViewStub;
 
-.field private k:Lkik/android/chat/vm/messaging/em;
+.field private k:Lkik/android/chat/vm/messaging/ei;
 
 .field private final l:Landroid/animation/Animator$AnimatorListener;
 
@@ -584,9 +584,9 @@
     invoke-virtual {v0, v1}, Lcom/nhaarman/supertooltips/a;->a(Lcom/nhaarman/supertooltips/a$c;)V
 
     .line 2107
-    iget-object v0, p0, Lkik/android/widget/AudioEffectsLayoutView;->k:Lkik/android/chat/vm/messaging/em;
+    iget-object v0, p0, Lkik/android/widget/AudioEffectsLayoutView;->k:Lkik/android/chat/vm/messaging/ei;
 
-    invoke-interface {v0}, Lkik/android/chat/vm/messaging/em;->b()V
+    invoke-interface {v0}, Lkik/android/chat/vm/messaging/ei;->b()V
 
     .line 2109
     const-wide/16 v0, 0xbb8
@@ -644,12 +644,12 @@
     return-void
 .end method
 
-.method public final a(Lkik/android/chat/vm/messaging/em;)V
+.method public final a(Lkik/android/chat/vm/messaging/ei;)V
     .locals 0
 
     .prologue
     .line 64
-    iput-object p1, p0, Lkik/android/widget/AudioEffectsLayoutView;->k:Lkik/android/chat/vm/messaging/em;
+    iput-object p1, p0, Lkik/android/widget/AudioEffectsLayoutView;->k:Lkik/android/chat/vm/messaging/ei;
 
     .line 65
     return-void
@@ -696,10 +696,10 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setY(F)V
 
     .line 1201
-    iget-object v0, p0, Lkik/android/widget/AudioEffectsLayoutView;->k:Lkik/android/chat/vm/messaging/em;
+    iget-object v0, p0, Lkik/android/widget/AudioEffectsLayoutView;->k:Lkik/android/chat/vm/messaging/ei;
 
     .line 1202
-    invoke-interface {v0}, Lkik/android/chat/vm/messaging/em;->a()Z
+    invoke-interface {v0}, Lkik/android/chat/vm/messaging/ei;->a()Z
 
     move-result v0
 

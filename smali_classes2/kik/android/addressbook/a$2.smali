@@ -56,16 +56,16 @@
     .line 1121
     iget-object v0, p0, Lkik/android/addressbook/a$2;->a:Lkik/android/addressbook/a;
 
-    invoke-static {v0}, Lkik/android/addressbook/a;->b(Lkik/android/addressbook/a;)Lkik/core/interfaces/ah;
+    invoke-static {v0}, Lkik/android/addressbook/a;->b(Lkik/android/addressbook/a;)Lkik/core/interfaces/ag;
 
     move-result-object v0
 
-    invoke-interface {v0}, Lkik/core/interfaces/ah;->d()Lkik/core/datatypes/ac;
+    invoke-interface {v0}, Lkik/core/interfaces/ag;->d()Lkik/core/datatypes/ab;
 
     move-result-object v0
 
     .line 1156
-    iget-object v0, v0, Lkik/core/datatypes/ac;->a:Ljava/lang/String;
+    iget-object v0, v0, Lkik/core/datatypes/ab;->a:Ljava/lang/String;
 
     .line 1122
     if-eqz v0, :cond_0

@@ -34,7 +34,7 @@
     .locals 0
 
     .prologue
-    .line 1129
+    .line 1130
     iput-object p1, p0, Lkik/android/chat/KikApplication$18;->a:Lkik/android/chat/KikApplication;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
@@ -48,7 +48,7 @@
     .locals 1
 
     .prologue
-    .line 1129
+    .line 1130
     const/4 v0, 0x0
 
     return-object v0

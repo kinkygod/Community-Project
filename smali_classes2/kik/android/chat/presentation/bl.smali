@@ -37,9 +37,9 @@
 
     iget-object v0, p0, Lkik/android/chat/presentation/bl;->a:Lkik/android/chat/presentation/MediaTrayPresenterImpl;
 
-    check-cast p1, Lcom/kik/util/ct;
+    check-cast p1, Lcom/kik/util/cy;
 
-    invoke-static {v0, p1}, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->a(Lkik/android/chat/presentation/MediaTrayPresenterImpl;Lcom/kik/util/ct;)V
+    invoke-static {v0, p1}, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->a(Lkik/android/chat/presentation/MediaTrayPresenterImpl;Lcom/kik/util/cy;)V
 
     return-void
 .end method

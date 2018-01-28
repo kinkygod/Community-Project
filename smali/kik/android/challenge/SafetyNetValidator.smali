@@ -298,7 +298,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lkik/core/xiphias/i;->a(Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;)Lkik/core/xiphias/XiphiasRequest;
+    invoke-static {v0}, Lkik/core/xiphias/o;->a(Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;)Lkik/core/xiphias/XiphiasRequest;
 
     move-result-object v0
 
@@ -480,12 +480,12 @@
     goto :goto_0
 .end method
 
-.method static synthetic a(Lkik/core/xiphias/ab;)[B
+.method static synthetic a(Lkik/core/xiphias/ag;)[B
     .locals 1
 
     .prologue
     .line 176
-    invoke-virtual {p0}, Lkik/core/xiphias/ab;->a()Ljava/lang/Object;
+    invoke-virtual {p0}, Lkik/core/xiphias/ag;->a()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -544,7 +544,7 @@
 
     .line 1176
     :cond_1
-    invoke-static {}, Lkik/core/xiphias/i;->a()Lkik/core/xiphias/XiphiasRequest;
+    invoke-static {}, Lkik/core/xiphias/o;->a()Lkik/core/xiphias/XiphiasRequest;
 
     move-result-object v0
 

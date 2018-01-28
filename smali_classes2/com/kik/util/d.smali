@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/core/interfaces/u;
+.implements Lkik/core/interfaces/t;
 
 
 # instance fields

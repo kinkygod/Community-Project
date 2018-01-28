@@ -43,11 +43,11 @@
 .method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
 
-    check-cast p1, Lkik/core/datatypes/KikSectionedContact;
+    check-cast p1, Lkik/core/datatypes/GroupContactInfoHolder;
 
-    check-cast p2, Lkik/core/datatypes/KikSectionedContact;
+    check-cast p2, Lkik/core/datatypes/GroupContactInfoHolder;
 
-    invoke-static {p1, p2}, Lkik/android/chat/fragment/KikGroupMembersListFragment;->a(Lkik/core/datatypes/KikSectionedContact;Lkik/core/datatypes/KikSectionedContact;)I
+    invoke-static {p1, p2}, Lkik/android/chat/fragment/KikGroupMembersListFragment;->a(Lkik/core/datatypes/GroupContactInfoHolder;Lkik/core/datatypes/GroupContactInfoHolder;)I
 
     move-result v0
 

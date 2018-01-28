@@ -25,9 +25,9 @@
 
 .field private d:Landroid/app/Application;
 
-.field private e:Lkik/core/interfaces/ae;
+.field private e:Lkik/core/interfaces/ad;
 
-.field private f:Lcom/kik/storage/p;
+.field private f:Lcom/kik/storage/s;
 
 .field private g:Landroid/os/HandlerThread;
 
@@ -122,7 +122,7 @@
     return-void
 .end method
 
-.method private constructor <init>(Landroid/app/Application;Lkik/core/interfaces/ae;Lcom/kik/storage/p;Lkik/android/util/ai;)V
+.method private constructor <init>(Landroid/app/Application;Lkik/core/interfaces/ad;Lcom/kik/storage/s;Lkik/android/util/ai;)V
     .locals 2
 
     .prologue
@@ -199,7 +199,7 @@
     .line 97
     new-instance v0, Lkik/android/util/d$b;
 
-    invoke-interface {p2}, Lkik/core/interfaces/ae;->q()Ljava/lang/String;
+    invoke-interface {p2}, Lkik/core/interfaces/ad;->q()Ljava/lang/String;
 
     move-result-object v1
 
@@ -218,7 +218,7 @@
     iput-object p1, p0, Lkik/android/util/d;->d:Landroid/app/Application;
 
     .line 100
-    iput-object p2, p0, Lkik/android/util/d;->e:Lkik/core/interfaces/ae;
+    iput-object p2, p0, Lkik/android/util/d;->e:Lkik/core/interfaces/ad;
 
     .line 101
     const-string v0, "KikPrecachePrefs"
@@ -230,18 +230,18 @@
     iput-object v0, p0, Lkik/android/util/d;->c:Landroid/content/SharedPreferences;
 
     .line 102
-    iput-object p3, p0, Lkik/android/util/d;->f:Lcom/kik/storage/p;
+    iput-object p3, p0, Lkik/android/util/d;->f:Lcom/kik/storage/s;
 
     .line 103
     return-void
 .end method
 
-.method static synthetic a(Lkik/android/util/d;)Lcom/kik/storage/p;
+.method static synthetic a(Lkik/android/util/d;)Lcom/kik/storage/s;
     .locals 1
 
     .prologue
     .line 64
-    iget-object v0, p0, Lkik/android/util/d;->f:Lcom/kik/storage/p;
+    iget-object v0, p0, Lkik/android/util/d;->f:Lcom/kik/storage/s;
 
     return-object v0
 .end method
@@ -271,7 +271,7 @@
     return-object v0
 .end method
 
-.method public static a(Landroid/app/Application;Lkik/core/interfaces/ae;Lcom/kik/storage/p;Lkik/android/util/ai;)V
+.method public static a(Landroid/app/Application;Lkik/core/interfaces/ad;Lcom/kik/storage/s;Lkik/android/util/ai;)V
     .locals 1
 
     .prologue
@@ -283,7 +283,7 @@
     .line 81
     new-instance v0, Lkik/android/util/d;
 
-    invoke-direct {v0, p0, p1, p2, p3}, Lkik/android/util/d;-><init>(Landroid/app/Application;Lkik/core/interfaces/ae;Lcom/kik/storage/p;Lkik/android/util/ai;)V
+    invoke-direct {v0, p0, p1, p2, p3}, Lkik/android/util/d;-><init>(Landroid/app/Application;Lkik/core/interfaces/ad;Lcom/kik/storage/s;Lkik/android/util/ai;)V
 
     sput-object v0, Lkik/android/util/d;->b:Lkik/android/util/d;
 
@@ -491,9 +491,9 @@
     :try_start_3
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lkik/android/util/d;->e:Lkik/core/interfaces/ae;
+    iget-object v2, v0, Lkik/android/util/d;->e:Lkik/core/interfaces/ad;
 
-    invoke-static {v2}, Lkik/core/z;->b(Lkik/core/interfaces/ae;)Lkik/core/z;
+    invoke-static {v2}, Lkik/core/z;->b(Lkik/core/interfaces/ad;)Lkik/core/z;
 
     move-result-object v9
 
@@ -1466,7 +1466,7 @@
     return-void
 .end method
 
-.method public static a(Lkik/core/interfaces/ae;Lkik/core/datatypes/messageExtensions/ContentMessage;)Z
+.method public static a(Lkik/core/interfaces/ad;Lkik/core/datatypes/messageExtensions/ContentMessage;)Z
     .locals 2
 
     .prologue
@@ -1492,7 +1492,7 @@
 
     invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    invoke-interface {p0, v0}, Lkik/core/interfaces/ae;->c(Ljava/io/File;)Z
+    invoke-interface {p0, v0}, Lkik/core/interfaces/ad;->c(Ljava/io/File;)Z
 
     move-result v0
 
@@ -1560,9 +1560,9 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lkik/android/util/d;->e:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/util/d;->e:Lkik/core/interfaces/ad;
 
-    invoke-interface {v0, p2}, Lkik/core/interfaces/ae;->B(Ljava/lang/String;)Z
+    invoke-interface {v0, p2}, Lkik/core/interfaces/ad;->B(Ljava/lang/String;)Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -1580,9 +1580,9 @@
     .line 440
     :cond_1
     :try_start_1
-    iget-object v0, p0, Lkik/android/util/d;->e:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/util/d;->e:Lkik/core/interfaces/ad;
 
-    invoke-static {v0}, Lkik/core/z;->b(Lkik/core/interfaces/ae;)Lkik/core/z;
+    invoke-static {v0}, Lkik/core/z;->b(Lkik/core/interfaces/ad;)Lkik/core/z;
 
     move-result-object v0
 
@@ -1598,7 +1598,7 @@
     .line 443
     if-eqz v2, :cond_2
 
-    iget-object v0, p0, Lkik/android/util/d;->e:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/util/d;->e:Lkik/core/interfaces/ad;
 
     const/4 v3, 0x1
 
@@ -1608,7 +1608,7 @@
 
     move-object v1, p2
 
-    invoke-interface/range {v0 .. v5}, Lkik/core/interfaces/ae;->a(Ljava/lang/String;Ljava/lang/Object;ZZZ)Ljava/io/File;
+    invoke-interface/range {v0 .. v5}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Object;ZZZ)Ljava/io/File;
 
     move-result-object v0
 

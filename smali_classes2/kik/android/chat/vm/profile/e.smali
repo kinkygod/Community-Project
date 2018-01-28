@@ -41,7 +41,7 @@
 
     check-cast p1, Lcom/kik/core/domain/a/a/c;
 
-    .line 1359
+    .line 1361
     invoke-interface {p1}, Lcom/kik/core/domain/a/a/c;->g()Ljava/util/Set;
 
     move-result-object v0
@@ -50,17 +50,17 @@
 
     move-result-object v3
 
-    .line 1360
+    .line 1362
     const/4 v0, 0x0
 
-    .line 1362
+    .line 1364
     new-instance v4, Ljava/util/ArrayList;
 
     invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
 
     move v1, v0
 
-    .line 1363
+    .line 1365
     :goto_0
     invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
 
@@ -72,7 +72,7 @@
 
     if-ge v1, v0, :cond_0
 
-    .line 1364
+    .line 1366
     iget-object v5, v2, Lkik/android/chat/vm/profile/b;->g:Lcom/kik/core/domain/users/a;
 
     invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
@@ -91,14 +91,14 @@
 
     invoke-interface {v4, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1365
+    .line 1367
     add-int/lit8 v0, v1, 0x1
 
     move v1, v0
 
     goto :goto_0
 
-    .line 1367
+    .line 1369
     :cond_0
     invoke-static {}, Lkik/android/chat/vm/profile/h;->a()Lrx/functions/k;
 

@@ -26,7 +26,7 @@
 
 
 # instance fields
-.field private f:Lkik/core/interfaces/ah;
+.field private f:Lkik/core/interfaces/ag;
 
 
 # direct methods
@@ -396,19 +396,19 @@
     const-string v0, ""
 
     .line 113
-    iget-object v1, p0, Lkik/android/util/g;->f:Lkik/core/interfaces/ah;
+    iget-object v1, p0, Lkik/android/util/g;->f:Lkik/core/interfaces/ag;
 
-    invoke-interface {v1}, Lkik/core/interfaces/ah;->d()Lkik/core/datatypes/ac;
+    invoke-interface {v1}, Lkik/core/interfaces/ag;->d()Lkik/core/datatypes/ab;
 
     move-result-object v1
 
     .line 114
-    iget-object v2, v1, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
+    iget-object v2, v1, Lkik/core/datatypes/ab;->c:Ljava/lang/String;
 
     if-eqz v2, :cond_3
 
     .line 115
-    iget-object v0, v1, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
+    iget-object v0, v1, Lkik/core/datatypes/ab;->c:Ljava/lang/String;
 
     .line 117
     :cond_3
@@ -589,12 +589,12 @@
     goto :goto_0
 .end method
 
-.method public final a(Lkik/core/interfaces/ah;)V
+.method public final a(Lkik/core/interfaces/ag;)V
     .locals 0
 
     .prologue
     .line 80
-    iput-object p1, p0, Lkik/android/util/g;->f:Lkik/core/interfaces/ah;
+    iput-object p1, p0, Lkik/android/util/g;->f:Lkik/core/interfaces/ag;
 
     .line 81
     return-void

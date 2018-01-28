@@ -3,16 +3,16 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/b;
+.implements Ldagger/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/b",
+        "Ldagger/b",
         "<",
-        "Lkik/android/chat/vm/profile/profileactionvm/j;",
+        "Lkik/android/chat/vm/profile/profileactionvm/o;",
         ">;"
     }
 .end annotation
@@ -131,7 +131,7 @@
     return-void
 .end method
 
-.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;)La/b;
+.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -144,9 +144,9 @@
             "<",
             "Lcom/kik/android/Mixpanel;",
             ">;)",
-            "La/b",
+            "Ldagger/b",
             "<",
-            "Lkik/android/chat/vm/profile/profileactionvm/j;",
+            "Lkik/android/chat/vm/profile/profileactionvm/o;",
             ">;"
         }
     .end annotation
@@ -162,12 +162,12 @@
 
 
 # virtual methods
-.method public final synthetic a(Ljava/lang/Object;)V
+.method public final synthetic injectMembers(Ljava/lang/Object;)V
     .locals 2
 
     .prologue
     .line 9
-    check-cast p1, Lkik/android/chat/vm/profile/profileactionvm/j;
+    check-cast p1, Lkik/android/chat/vm/profile/profileactionvm/o;
 
     .line 1035
     if-nez p1, :cond_0
@@ -196,7 +196,7 @@
 
     check-cast v0, Lcom/kik/android/Mixpanel;
 
-    iput-object v0, p1, Lkik/android/chat/vm/profile/profileactionvm/j;->b:Lcom/kik/android/Mixpanel;
+    iput-object v0, p1, Lkik/android/chat/vm/profile/profileactionvm/o;->b:Lcom/kik/android/Mixpanel;
 
     .line 9
     return-void

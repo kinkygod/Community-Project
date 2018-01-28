@@ -22,7 +22,7 @@
     iput-object p1, p0, Lkik/android/chat/fragment/KikReportThankYouDialogFragment_ViewBinding;->a:Lkik/android/chat/fragment/KikReportThankYouDialogFragment;
 
     .line 22
-    const v0, 0x7f1001d5
+    const v0, 0x7f1001d6
 
     const-string v1, "field \'_thankYouMessage\'"
 

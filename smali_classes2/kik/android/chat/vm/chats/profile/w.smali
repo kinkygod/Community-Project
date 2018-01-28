@@ -2,44 +2,61 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lrx/functions/b;
+.implements Lrx/functions/g;
 
 
-# instance fields
-.field private final a:Lkik/android/chat/vm/chats/profile/s;
+# static fields
+.field private static final a:Lkik/android/chat/vm/chats/profile/w;
 
 
 # direct methods
-.method private constructor <init>(Lkik/android/chat/vm/chats/profile/s;)V
-    .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lkik/android/chat/vm/chats/profile/w;->a:Lkik/android/chat/vm/chats/profile/s;
-
-    return-void
-.end method
-
-.method public static a(Lkik/android/chat/vm/chats/profile/s;)Lrx/functions/b;
+.method static constructor <clinit>()V
     .locals 1
 
     new-instance v0, Lkik/android/chat/vm/chats/profile/w;
 
-    invoke-direct {v0, p0}, Lkik/android/chat/vm/chats/profile/w;-><init>(Lkik/android/chat/vm/chats/profile/s;)V
+    invoke-direct {v0}, Lkik/android/chat/vm/chats/profile/w;-><init>()V
+
+    sput-object v0, Lkik/android/chat/vm/chats/profile/w;->a:Lkik/android/chat/vm/chats/profile/w;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static a()Lrx/functions/g;
+    .locals 1
+
+    sget-object v0, Lkik/android/chat/vm/chats/profile/w;->a:Lkik/android/chat/vm/chats/profile/w;
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public final call(Ljava/lang/Object;)V
+.method public final call(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    iget-object v0, p0, Lkik/android/chat/vm/chats/profile/w;->a:Lkik/android/chat/vm/chats/profile/s;
+    .prologue
+    .line 0
+    check-cast p1, Lkik/core/chat/profile/a;
 
-    check-cast p1, Lkik/core/chat/profile/e;
+    .line 1056
+    if-nez p1, :cond_0
 
-    invoke-static {v0, p1}, Lkik/android/chat/vm/chats/profile/s;->a(Lkik/android/chat/vm/chats/profile/s;Lkik/core/chat/profile/e;)V
+    const-string v0, ""
 
-    return-void
+    :goto_0
+    return-object v0
+
+    :cond_0
+    iget-object v0, p1, Lkik/core/chat/profile/a;->a:Ljava/lang/String;
+
+    goto :goto_0
 .end method

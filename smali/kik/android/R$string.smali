@@ -307,6 +307,12 @@
 
 .field public static final back:I = 0x7f090091
 
+.field public static final background_photo_remove_description:I = 0x7f090528
+
+.field public static final background_photo_remove_title:I = 0x7f090529
+
+.field public static final background_photo_title:I = 0x7f09052a
+
 .field public static final ban_from_group:I = 0x7f090092
 
 .field public static final banlist_full_error:I = 0x7f090093
@@ -315,7 +321,7 @@
 
 .field public static final banned_error_message:I = 0x7f090095
 
-.field public static final bio_see_more:I = 0x7f090528
+.field public static final bio_see_more:I = 0x7f09052b
 
 .field public static final birthday_invalid_less_than_six:I = 0x7f090096
 
@@ -325,19 +331,19 @@
 
 .field public static final block_list_description:I = 0x7f090099
 
-.field public static final block_list_empty_state_title:I = 0x7f090529
+.field public static final block_list_empty_state_title:I = 0x7f09052c
 
 .field public static final block_name:I = 0x7f09009a
 
 .field public static final block_x_confirmation_message:I = 0x7f09009b
 
-.field public static final blocked_conversation:I = 0x7f09052a
+.field public static final blocked_conversation:I = 0x7f09052d
 
 .field public static final blocked_message_replacement_text:I = 0x7f09009c
 
 .field public static final body_confirm_download:I = 0x7f09009d
 
-.field public static final body_delete_sticker_pack:I = 0x7f09052b
+.field public static final body_delete_sticker_pack:I = 0x7f09052e
 
 .field public static final body_invalid_group_hashtag:I = 0x7f09009e
 
@@ -349,13 +355,13 @@
 
 .field public static final bot_shop_title_two_lines:I = 0x7f0900a2
 
-.field public static final bot_will_be_removed_for_new_one:I = 0x7f09052c
+.field public static final bot_will_be_removed_for_new_one:I = 0x7f09052f
 
-.field public static final botname_bot:I = 0x7f09052d
+.field public static final botname_bot:I = 0x7f090530
 
-.field public static final bots:I = 0x7f09052e
+.field public static final bots:I = 0x7f090531
 
-.field public static final bottom_sheet_behavior:I = 0x7f09052f
+.field public static final bottom_sheet_behavior:I = 0x7f090532
 
 .field public static final button_title_reload:I = 0x7f0900a3
 
@@ -383,15 +389,21 @@
 
 .field public static final camera_open_settings_title:I = 0x7f0900af
 
+.field public static final camera_permission_body:I = 0x7f090533
+
+.field public static final camera_permission_retry_button:I = 0x7f090534
+
+.field public static final camera_permission_title:I = 0x7f090535
+
 .field public static final cannot_select_bots:I = 0x7f0900b0
 
-.field public static final cant_create_group_hashtag_body:I = 0x7f090530
+.field public static final cant_create_group_hashtag_body:I = 0x7f090536
 
-.field public static final cant_create_group_members_body:I = 0x7f090531
+.field public static final cant_create_group_members_body:I = 0x7f090537
 
-.field public static final cant_create_group_title:I = 0x7f090532
+.field public static final cant_create_group_title:I = 0x7f090538
 
-.field public static final cant_create_group_too_many_groups_body:I = 0x7f090533
+.field public static final cant_create_group_too_many_groups_body:I = 0x7f090539
 
 .field public static final cant_join_this_group:I = 0x7f0900b1
 
@@ -407,7 +419,7 @@
 
 .field public static final change_chat_bubble_color_summary:I = 0x7f0900b7
 
-.field public static final change_group_description:I = 0x7f090534
+.field public static final change_group_description:I = 0x7f09053a
 
 .field public static final change_group_status:I = 0x7f0900b8
 
@@ -417,13 +429,13 @@
 
 .field public static final change_photo:I = 0x7f0900bb
 
-.field public static final character_counter_pattern:I = 0x7f090535
+.field public static final character_counter_pattern:I = 0x7f09053b
 
-.field public static final chat_bubble_color_army_green:I = 0x7f090536
+.field public static final chat_bubble_color_army_green:I = 0x7f09053c
 
-.field public static final chat_bubble_color_avocado:I = 0x7f090537
+.field public static final chat_bubble_color_avocado:I = 0x7f09053d
 
-.field public static final chat_bubble_color_black:I = 0x7f090538
+.field public static final chat_bubble_color_black:I = 0x7f09053e
 
 .field public static final chat_bubble_color_bright_blue:I = 0x7f0900bc
 
@@ -433,7 +445,7 @@
 
 .field public static final chat_bubble_color_bright_grey:I = 0x7f0900bf
 
-.field public static final chat_bubble_color_bright_kik_blue:I = 0x7f090539
+.field public static final chat_bubble_color_bright_kik_blue:I = 0x7f09053f
 
 .field public static final chat_bubble_color_bright_kik_green:I = 0x7f0900c0
 
@@ -449,11 +461,11 @@
 
 .field public static final chat_bubble_color_bright_yellow:I = 0x7f0900c6
 
-.field public static final chat_bubble_color_cherry_red:I = 0x7f09053a
+.field public static final chat_bubble_color_cherry_red:I = 0x7f090540
 
-.field public static final chat_bubble_color_dark_brown:I = 0x7f09053b
+.field public static final chat_bubble_color_dark_brown:I = 0x7f090541
 
-.field public static final chat_bubble_color_eggplant:I = 0x7f09053c
+.field public static final chat_bubble_color_eggplant:I = 0x7f090542
 
 .field public static final chat_bubble_color_light_aqua:I = 0x7f0900c7
 
@@ -477,19 +489,19 @@
 
 .field public static final chat_bubble_color_light_yellow:I = 0x7f0900d1
 
-.field public static final chat_bubble_color_mango:I = 0x7f09053d
+.field public static final chat_bubble_color_mango:I = 0x7f090543
 
-.field public static final chat_bubble_color_navy:I = 0x7f09053e
+.field public static final chat_bubble_color_navy:I = 0x7f090544
 
-.field public static final chat_bubble_color_plum:I = 0x7f09053f
+.field public static final chat_bubble_color_plum:I = 0x7f090545
 
-.field public static final chat_bubble_color_pumpkin:I = 0x7f090540
+.field public static final chat_bubble_color_pumpkin:I = 0x7f090546
 
-.field public static final chat_bubble_color_rose_pink:I = 0x7f090541
+.field public static final chat_bubble_color_rose_pink:I = 0x7f090547
 
 .field public static final chat_bubble_colors_bright:I = 0x7f0900d2
 
-.field public static final chat_bubble_colors_dark:I = 0x7f090542
+.field public static final chat_bubble_colors_dark:I = 0x7f090548
 
 .field public static final chat_bubble_colors_pastel:I = 0x7f0900d3
 
@@ -503,37 +515,37 @@
 
 .field public static final chat_on_your_terms:I = 0x7f0900d8
 
-.field public static final chat_wallpaper_remove_default:I = 0x7f090543
+.field public static final chat_wallpaper_remove_default:I = 0x7f090549
 
-.field public static final chat_wallpaper_remove_this_chat:I = 0x7f090544
+.field public static final chat_wallpaper_remove_this_chat:I = 0x7f09054a
 
-.field public static final chat_wallpaper_set_default:I = 0x7f090545
+.field public static final chat_wallpaper_set_default:I = 0x7f09054b
 
-.field public static final chat_wallpaper_set_this_chat:I = 0x7f090546
+.field public static final chat_wallpaper_set_this_chat:I = 0x7f09054c
 
-.field public static final chat_with:I = 0x7f090547
+.field public static final chat_with:I = 0x7f09054d
 
 .field public static final chat_with_friends:I = 0x7f0900d9
 
 .field public static final chat_with_user_will_be_deleted:I = 0x7f0900da
 
-.field public static final chatlist_recovery_message:I = 0x7f090548
+.field public static final chatlist_recovery_message:I = 0x7f09054e
 
-.field public static final chats_search_empty_text:I = 0x7f090549
+.field public static final chats_search_empty_text:I = 0x7f09054f
 
-.field public static final chats_search_hint:I = 0x7f09054a
+.field public static final chats_search_hint:I = 0x7f090550
 
-.field public static final chats_search_private_group_member_matches_all_plus_you:I = 0x7f09054b
+.field public static final chats_search_private_group_member_matches_all_plus_you:I = 0x7f090551
 
-.field public static final chats_search_private_group_member_matches_multiple_others:I = 0x7f09054c
+.field public static final chats_search_private_group_member_matches_multiple_others:I = 0x7f090552
 
-.field public static final chats_search_private_group_no_member_matches:I = 0x7f09054d
+.field public static final chats_search_private_group_no_member_matches:I = 0x7f090553
 
-.field public static final chats_search_private_group_no_member_matches_just_you:I = 0x7f09054e
+.field public static final chats_search_private_group_no_member_matches_just_you:I = 0x7f090554
 
-.field public static final check_out_my_group_groupname:I = 0x7f09054f
+.field public static final check_out_my_group_groupname:I = 0x7f090555
 
-.field public static final check_out_my_public_group_hashtag:I = 0x7f090550
+.field public static final check_out_my_public_group_hashtag:I = 0x7f090556
 
 .field public static final clear_conversations:I = 0x7f0900db
 
@@ -545,11 +557,11 @@
 
 .field public static final clear_saved_card_title:I = 0x7f0900df
 
-.field public static final close_kik:I = 0x7f090551
+.field public static final close_kik:I = 0x7f090557
 
 .field public static final code_download_website:I = 0x7f0900e0
 
-.field public static final com_crashlytics_android_build_id:I = 0x7f090552
+.field public static final com_crashlytics_android_build_id:I = 0x7f090558
 
 .field public static final common_google_play_services_enable_button:I = 0x7f090013
 
@@ -601,9 +613,9 @@
 
 .field public static final connection_failed_title:I = 0x7f0900e8
 
-.field public static final contact_list_empty_state_description:I = 0x7f090553
+.field public static final contact_list_empty_state_description:I = 0x7f090559
 
-.field public static final contact_list_empty_state_title:I = 0x7f090554
+.field public static final contact_list_empty_state_title:I = 0x7f09055a
 
 .field public static final convo_list_crashed_desc:I = 0x7f0900e9
 
@@ -625,15 +637,15 @@
 
 .field public static final create_group:I = 0x7f0900f2
 
-.field public static final create_group_hashtag_available:I = 0x7f090555
+.field public static final create_group_hashtag_available:I = 0x7f09055b
 
-.field public static final create_group_hashtag_invalid:I = 0x7f090556
+.field public static final create_group_hashtag_invalid:I = 0x7f09055c
 
-.field public static final create_group_hashtag_placeholder:I = 0x7f090557
+.field public static final create_group_hashtag_placeholder:I = 0x7f09055d
 
-.field public static final create_group_hashtag_unavailable:I = 0x7f090558
+.field public static final create_group_hashtag_unavailable:I = 0x7f09055e
 
-.field public static final create_group_title_placeholder:I = 0x7f090559
+.field public static final create_group_title_placeholder:I = 0x7f09055f
 
 .field public static final credit_card_error:I = 0x7f0900f3
 
@@ -653,33 +665,33 @@
 
 .field public static final cvv_hint_text:I = 0x7f0900fb
 
-.field public static final day_abbreviation:I = 0x7f09055a
+.field public static final day_abbreviation:I = 0x7f090560
 
 .field public static final day_at_time:I = 0x7f0900fc
 
-.field public static final days_on_kik:I = 0x7f09055b
+.field public static final days_on_kik:I = 0x7f090561
 
-.field public static final debug_app_name:I = 0x7f09055c
+.field public static final debug_app_name:I = 0x7f090562
 
-.field public static final deep_link_breadcrumb_dialog_text:I = 0x7f09055d
+.field public static final deep_link_breadcrumb_dialog_text:I = 0x7f090563
 
-.field public static final deep_link_breadcrumb_dialog_title:I = 0x7f09055e
+.field public static final deep_link_breadcrumb_dialog_title:I = 0x7f090564
 
-.field public static final deep_link_emoji_status_description:I = 0x7f09055f
+.field public static final deep_link_emoji_status_description:I = 0x7f090565
 
-.field public static final deep_link_explore:I = 0x7f090560
+.field public static final deep_link_explore:I = 0x7f090566
 
-.field public static final deep_link_public_groups_general:I = 0x7f090561
+.field public static final deep_link_public_groups_general:I = 0x7f090567
 
-.field public static final deep_link_public_groups_title:I = 0x7f090562
+.field public static final deep_link_public_groups_title:I = 0x7f090568
 
-.field public static final deep_link_public_groups_topic:I = 0x7f090563
+.field public static final deep_link_public_groups_topic:I = 0x7f090569
 
-.field public static final deep_link_user_profile_button:I = 0x7f090564
+.field public static final deep_link_user_profile_button:I = 0x7f09056a
 
-.field public static final deep_link_user_profile_general:I = 0x7f090565
+.field public static final deep_link_user_profile_general:I = 0x7f09056b
 
-.field public static final deep_link_user_profile_title:I = 0x7f090566
+.field public static final deep_link_user_profile_title:I = 0x7f09056c
 
 .field public static final default_stanza_error:I = 0x7f0900fd
 
@@ -705,7 +717,7 @@
 
 .field public static final desc_microphone_no_access_new:I = 0x7f090108
 
-.field public static final desc_microphone_no_access_new_new:I = 0x7f090567
+.field public static final desc_microphone_no_access_new_new:I = 0x7f09056d
 
 .field public static final desc_microphone_predialog:I = 0x7f090109
 
@@ -721,13 +733,13 @@
 
 .field public static final desc_video_tooltip:I = 0x7f09010f
 
-.field public static final desc_zoom_instruction:I = 0x7f090568
+.field public static final desc_zoom_instruction:I = 0x7f09056e
 
-.field public static final description_chat_persist_restored_tooltip:I = 0x7f090569
+.field public static final description_chat_persist_restored_tooltip:I = 0x7f09056f
 
-.field public static final description_clear_chat_history:I = 0x7f09056a
+.field public static final description_clear_chat_history:I = 0x7f090570
 
-.field public static final description_clear_chat_progress:I = 0x7f09056b
+.field public static final description_clear_chat_progress:I = 0x7f090571
 
 .field public static final description_enter_verification_code:I = 0x7f090110
 
@@ -735,9 +747,9 @@
 
 .field public static final description_invalid_phone_number:I = 0x7f090112
 
-.field public static final description_logged_out:I = 0x7f09056c
+.field public static final description_logged_out:I = 0x7f090572
 
-.field public static final description_mute_new_chats_preference:I = 0x7f09056d
+.field public static final description_mute_new_chats_preference:I = 0x7f090573
 
 .field public static final description_phone_verification_down:I = 0x7f090113
 
@@ -765,7 +777,7 @@
 
 .field public static final disable_debug:I = 0x7f09011f
 
-.field public static final discard_image_effects_message:I = 0x7f09056e
+.field public static final discard_image_effects_message:I = 0x7f090574
 
 .field public static final do_you_want_to_continue_:I = 0x7f090120
 
@@ -787,17 +799,17 @@
 
 .field public static final edit_button:I = 0x7f090129
 
-.field public static final edit_group_description:I = 0x7f09056f
+.field public static final edit_group_description:I = 0x7f090575
 
-.field public static final edit_group_description_cancel_are_you_sure:I = 0x7f090570
+.field public static final edit_group_description_cancel_are_you_sure:I = 0x7f090576
 
-.field public static final edit_group_description_error_blacklist:I = 0x7f090571
+.field public static final edit_group_description_error_blacklist:I = 0x7f090577
 
-.field public static final edit_group_description_error_link:I = 0x7f090572
+.field public static final edit_group_description_error_link:I = 0x7f090578
 
-.field public static final edit_group_description_error_network:I = 0x7f090573
+.field public static final edit_group_description_error_network:I = 0x7f090579
 
-.field public static final edit_group_description_title:I = 0x7f090574
+.field public static final edit_group_description_title:I = 0x7f09057a
 
 .field public static final email_address:I = 0x7f09012a
 
@@ -839,23 +851,23 @@
 
 .field public static final email_verification:I = 0x7f09013d
 
-.field public static final emoji_status_back_dialog_description:I = 0x7f090575
+.field public static final emoji_status_back_dialog_description:I = 0x7f09057b
 
-.field public static final emoji_status_description:I = 0x7f090576
+.field public static final emoji_status_description:I = 0x7f09057c
 
-.field public static final emoji_status_error_description:I = 0x7f090577
+.field public static final emoji_status_error_description:I = 0x7f09057d
 
-.field public static final emoji_status_error_title:I = 0x7f090578
+.field public static final emoji_status_error_title:I = 0x7f09057e
 
-.field public static final emoji_status_settings_title:I = 0x7f090579
+.field public static final emoji_status_settings_title:I = 0x7f09057f
 
-.field public static final emoji_status_tooltip_title:I = 0x7f09057a
+.field public static final emoji_status_tooltip_title:I = 0x7f090580
 
 .field public static final enable_debug:I = 0x7f09013e
 
-.field public static final end_video_chat_message:I = 0x7f09057b
+.field public static final end_video_chat_message:I = 0x7f090581
 
-.field public static final end_video_chat_prompt:I = 0x7f09057c
+.field public static final end_video_chat_prompt:I = 0x7f090582
 
 .field public static final enter_send_summary:I = 0x7f09013f
 
@@ -875,7 +887,7 @@
 
 .field public static final failed_to_launch:I = 0x7f090147
 
-.field public static final failed_to_load_message:I = 0x7f09057d
+.field public static final failed_to_load_message:I = 0x7f090583
 
 .field public static final failed_to_load_video:I = 0x7f090148
 
@@ -883,7 +895,7 @@
 
 .field public static final failed_to_start_conversation_with_user:I = 0x7f09014a
 
-.field public static final find_by_username_empty_state:I = 0x7f09057e
+.field public static final find_by_username_empty_state:I = 0x7f090584
 
 .field public static final find_friends_caps:I = 0x7f09014b
 
@@ -895,7 +907,7 @@
 
 .field public static final find_friends_on_kik:I = 0x7f09014f
 
-.field public static final find_friends_on_kik_camel:I = 0x7f09057f
+.field public static final find_friends_on_kik_camel:I = 0x7f090585
 
 .field public static final find_friends_uploading:I = 0x7f090150
 
@@ -927,7 +939,7 @@
 
 .field public static final find_people_search:I = 0x7f09015e
 
-.field public static final find_people_search_lower:I = 0x7f090580
+.field public static final find_people_search_lower:I = 0x7f090586
 
 .field public static final find_people_search_placeholder:I = 0x7f09015f
 
@@ -957,7 +969,7 @@
 
 .field public static final finding_username:I = 0x7f09016c
 
-.field public static final first_class_group_invite_message:I = 0x7f090581
+.field public static final first_class_group_invite_message:I = 0x7f090587
 
 .field public static final first_name_last_name_restricted_error:I = 0x7f09016d
 
@@ -971,7 +983,7 @@
 
 .field public static final first_run_by_tapping_next_accept_tos_and_privacy:I = 0x7f090172
 
-.field public static final font_fontFamily_medium:I = 0x7f090582
+.field public static final font_fontFamily_medium:I = 0x7f090588
 
 .field public static final forgot_interrogation:I = 0x7f090173
 
@@ -999,9 +1011,9 @@
 
 .field public static final friends_may_find_you:I = 0x7f09017e
 
-.field public static final fs_auto_transition_settings:I = 0x7f090583
+.field public static final fs_auto_transition_settings:I = 0x7f090589
 
-.field public static final fs_auto_transition_settings_detail:I = 0x7f090584
+.field public static final fs_auto_transition_settings_detail:I = 0x7f09058a
 
 .field public static final gallery:I = 0x7f09017f
 
@@ -1011,7 +1023,7 @@
 
 .field public static final generic_invalid_card_title:I = 0x7f090181
 
-.field public static final gif_camera:I = 0x7f090585
+.field public static final gif_camera:I = 0x7f09058b
 
 .field public static final gif_cant_load:I = 0x7f090182
 
@@ -1019,7 +1031,7 @@
 
 .field public static final gif_search:I = 0x7f090184
 
-.field public static final gif_search_emojis:I = 0x7f090586
+.field public static final gif_search_emojis:I = 0x7f09058c
 
 .field public static final gif_search_for:I = 0x7f090185
 
@@ -1093,7 +1105,7 @@
 
 .field public static final group_tag_too_short:I = 0x7f0901a8
 
-.field public static final group_tag_unavail_title:I = 0x7f090587
+.field public static final group_tag_unavail_title:I = 0x7f09058d
 
 .field public static final group_text:I = 0x7f0901a9
 
@@ -1115,13 +1127,13 @@
 
 .field public static final hint_search_country:I = 0x7f0901b2
 
-.field public static final hold_to_record:I = 0x7f090588
+.field public static final hold_to_record:I = 0x7f09058e
 
-.field public static final hour_abbreviation:I = 0x7f090589
+.field public static final hour_abbreviation:I = 0x7f09058f
 
 .field public static final ignore_chat_title:I = 0x7f0901b3
 
-.field public static final im_sure:I = 0x7f09058a
+.field public static final im_sure:I = 0x7f090590
 
 .field public static final im_sure_caps:I = 0x7f0901b4
 
@@ -1129,7 +1141,7 @@
 
 .field public static final image_saved:I = 0x7f0901b6
 
-.field public static final in_app_notifications_settings:I = 0x7f09058b
+.field public static final in_app_notifications_settings:I = 0x7f090591
 
 .field public static final incorrect_password:I = 0x7f0901b7
 
@@ -1179,7 +1191,7 @@
 
 .field public static final instabug_str_email_hint:I = 0x7f0901ce
 
-.field public static final instabug_str_empty:I = 0x7f09058c
+.field public static final instabug_str_empty:I = 0x7f090592
 
 .field public static final instabug_str_error_survey_without_answer:I = 0x7f0901cf
 
@@ -1207,9 +1219,9 @@
 
 .field public static final instabug_str_please_wait:I = 0x7f0901db
 
-.field public static final instabug_str_plus:I = 0x7f09058d
+.field public static final instabug_str_plus:I = 0x7f090593
 
-.field public static final instabug_str_powered_by_instabug:I = 0x7f09058e
+.field public static final instabug_str_powered_by_instabug:I = 0x7f090594
 
 .field public static final instabug_str_record_audio:I = 0x7f0901dc
 
@@ -1241,35 +1253,35 @@
 
 .field public static final instabug_str_video_recording_hint:I = 0x7f0901ea
 
-.field public static final interests_are_you_sure_dialog_body:I = 0x7f09058f
+.field public static final interests_are_you_sure_dialog_body:I = 0x7f090595
 
-.field public static final interests_body:I = 0x7f090590
+.field public static final interests_body:I = 0x7f090596
 
-.field public static final interests_limit_reached_dialog_body:I = 0x7f090591
+.field public static final interests_limit_reached_dialog_body:I = 0x7f090597
 
-.field public static final interests_limit_reached_dialog_title:I = 0x7f090592
+.field public static final interests_limit_reached_dialog_title:I = 0x7f090598
 
-.field public static final interests_network_error_body:I = 0x7f090593
+.field public static final interests_network_error_body:I = 0x7f090599
 
-.field public static final interests_settings_title:I = 0x7f090594
+.field public static final interests_settings_title:I = 0x7f09059a
 
-.field public static final interests_suggest_cancel_dialog_body:I = 0x7f090595
+.field public static final interests_suggest_cancel_dialog_body:I = 0x7f09059b
 
-.field public static final interests_suggest_edit_button:I = 0x7f090596
+.field public static final interests_suggest_edit_button:I = 0x7f09059c
 
-.field public static final interests_suggest_hint:I = 0x7f090597
+.field public static final interests_suggest_hint:I = 0x7f09059d
 
-.field public static final interests_suggest_link:I = 0x7f090598
+.field public static final interests_suggest_link:I = 0x7f09059e
 
-.field public static final interests_suggest_placeholder:I = 0x7f090599
+.field public static final interests_suggest_placeholder:I = 0x7f09059f
 
-.field public static final interests_suggest_title:I = 0x7f09059a
+.field public static final interests_suggest_title:I = 0x7f0905a0
 
-.field public static final interests_suggestion_contains_restriced_words:I = 0x7f09059b
+.field public static final interests_suggestion_contains_restriced_words:I = 0x7f0905a1
 
-.field public static final interests_suggestion_successful_title:I = 0x7f09059c
+.field public static final interests_suggestion_successful_title:I = 0x7f0905a2
 
-.field public static final interests_title:I = 0x7f09059d
+.field public static final interests_title:I = 0x7f0905a3
 
 .field public static final invalid_card_num_error:I = 0x7f0901eb
 
@@ -1285,13 +1297,13 @@
 
 .field public static final invalid_group_tag_error:I = 0x7f0901f1
 
-.field public static final invalid_hashtag_body:I = 0x7f09059e
+.field public static final invalid_hashtag_body:I = 0x7f0905a4
 
-.field public static final invalid_hashtag_title:I = 0x7f09059f
+.field public static final invalid_hashtag_title:I = 0x7f0905a5
 
 .field public static final invalid_password:I = 0x7f0901f2
 
-.field public static final invalid_short_hashtag_body:I = 0x7f0905a0
+.field public static final invalid_short_hashtag_body:I = 0x7f0905a6
 
 .field public static final invalid_username:I = 0x7f0901f3
 
@@ -1303,13 +1315,13 @@
 
 .field public static final invite_a_friend_to_group:I = 0x7f0901f7
 
-.field public static final invite_error_email_not_set_up:I = 0x7f0905a1
+.field public static final invite_error_email_not_set_up:I = 0x7f0905a7
 
-.field public static final invite_error_sms_not_set_up:I = 0x7f0905a2
+.field public static final invite_error_sms_not_set_up:I = 0x7f0905a8
 
-.field public static final invite_friend_email_body:I = 0x7f0905a3
+.field public static final invite_friend_email_body:I = 0x7f0905a9
 
-.field public static final invite_friend_email_subject:I = 0x7f0905a4
+.field public static final invite_friend_email_subject:I = 0x7f0905aa
 
 .field public static final invite_friend_from_phone_contacts_description:I = 0x7f0901f8
 
@@ -1331,53 +1343,53 @@
 
 .field public static final invite_friend_from_phone_contacts_syncing_contacts:I = 0x7f090201
 
-.field public static final invite_friend_sms:I = 0x7f0905a5
+.field public static final invite_friend_sms:I = 0x7f0905ab
 
 .field public static final invite_only_description:I = 0x7f090202
 
-.field public static final is_typing:I = 0x7f0905a6
+.field public static final is_typing:I = 0x7f0905ac
 
 .field public static final is_typing_:I = 0x7f090203
 
-.field public static final join_gif_tray_button_text:I = 0x7f0905a7
+.field public static final join_gif_tray_button_text:I = 0x7f0905ad
 
-.field public static final join_gif_tray_emoji_search:I = 0x7f0905a8
+.field public static final join_gif_tray_emoji_search:I = 0x7f0905ae
 
 .field public static final join_group:I = 0x7f090204
 
-.field public static final join_my_group_chat:I = 0x7f0905a9
+.field public static final join_my_group_chat:I = 0x7f0905af
 
-.field public static final join_public_groups_title:I = 0x7f0905aa
+.field public static final join_public_groups_title:I = 0x7f0905b0
 
-.field public static final join_video_chat_1_on_1_v1:I = 0x7f0905ab
+.field public static final join_video_chat_1_on_1_v1:I = 0x7f0905b1
 
-.field public static final join_video_chat_1_on_1_v2:I = 0x7f0905ac
+.field public static final join_video_chat_1_on_1_v2:I = 0x7f0905b2
 
-.field public static final join_video_chat_group_1_v1:I = 0x7f0905ad
+.field public static final join_video_chat_group_1_v1:I = 0x7f0905b3
 
-.field public static final join_video_chat_group_1_v2:I = 0x7f0905ae
+.field public static final join_video_chat_group_1_v2:I = 0x7f0905b4
 
-.field public static final join_video_chat_group_2:I = 0x7f0905af
+.field public static final join_video_chat_group_2:I = 0x7f0905b5
 
-.field public static final join_video_chat_group_3:I = 0x7f0905b0
+.field public static final join_video_chat_group_3:I = 0x7f0905b6
 
-.field public static final join_video_chat_group_other:I = 0x7f0905b1
+.field public static final join_video_chat_group_other:I = 0x7f0905b7
 
-.field public static final join_video_chat_group_other_prefix:I = 0x7f0905b2
+.field public static final join_video_chat_group_other_prefix:I = 0x7f0905b8
 
-.field public static final join_video_chat_title:I = 0x7f0905b3
+.field public static final join_video_chat_title:I = 0x7f0905b9
 
 .field public static final joining_group:I = 0x7f090205
 
-.field public static final just_now:I = 0x7f0905b4
+.field public static final just_now:I = 0x7f0905ba
 
 .field public static final kik_license_message:I = 0x7f090502
 
 .field public static final kik_messenger_was_reset__next_time_you_open_the_app__you_ll_need_to_login_again_or_register_with_a_new_account:I = 0x7f090206
 
-.field public static final kik_username:I = 0x7f0905b5
+.field public static final kik_username:I = 0x7f0905bb
 
-.field public static final kin_verified_bot:I = 0x7f0905b6
+.field public static final kin_verified_bot:I = 0x7f0905bc
 
 .field public static final label_check_network_settings:I = 0x7f090207
 
@@ -1447,11 +1459,11 @@
 
 .field public static final maximum_text_length:I = 0x7f090227
 
-.field public static final maybe_later:I = 0x7f0905b7
+.field public static final maybe_later:I = 0x7f0905bd
 
-.field public static final media_blur_action_row:I = 0x7f0905b8
+.field public static final media_blur_action_row:I = 0x7f0905be
 
-.field public static final media_blur_overlay:I = 0x7f0905b9
+.field public static final media_blur_overlay:I = 0x7f0905bf
 
 .field public static final media_tray_helper_tool_tip:I = 0x7f090228
 
@@ -1461,7 +1473,7 @@
 
 .field public static final message_decryption_error_single_message_erased:I = 0x7f09022b
 
-.field public static final message_discard_theme_change:I = 0x7f0905ba
+.field public static final message_discard_theme_change:I = 0x7f0905c0
 
 .field public static final message_history_summary:I = 0x7f09022c
 
@@ -1469,17 +1481,17 @@
 
 .field public static final messages_failed_to_send_notification:I = 0x7f09022e
 
-.field public static final minute_abbreviation:I = 0x7f0905bb
+.field public static final minute_abbreviation:I = 0x7f0905c1
 
 .field public static final minutes:I = 0x7f09022f
 
-.field public static final more:I = 0x7f0905bc
+.field public static final more:I = 0x7f0905c2
 
 .field public static final msg_rate_app:I = 0x7f090230
 
 .field public static final multiple_new_chats:I = 0x7f090231
 
-.field public static final multiple_new_chats_from:I = 0x7f0905bd
+.field public static final multiple_new_chats_from:I = 0x7f0905c3
 
 .field public static final must_enter_first_and_last_name:I = 0x7f090232
 
@@ -1493,11 +1505,11 @@
 
 .field public static final mute_conversation_until_time:I = 0x7f090237
 
-.field public static final mute_conversation_until_turn_back_on:I = 0x7f0905be
+.field public static final mute_conversation_until_turn_back_on:I = 0x7f0905c4
 
 .field public static final mute_name:I = 0x7f090238
 
-.field public static final mute_new_chats_you_will_be_notified:I = 0x7f0905bf
+.field public static final mute_new_chats_you_will_be_notified:I = 0x7f0905c5
 
 .field public static final name_change_successful:I = 0x7f090239
 
@@ -1527,13 +1539,13 @@
 
 .field public static final network_error_dialog_message:I = 0x7f090246
 
-.field public static final network_error_message:I = 0x7f0905c0
+.field public static final network_error_message:I = 0x7f0905c6
 
 .field public static final never:I = 0x7f090247
 
 .field public static final never_autoplay_videos:I = 0x7f090248
 
-.field public static final new_chat_reporting_tooltip_text:I = 0x7f0905c1
+.field public static final new_chat_reporting_tooltip_text:I = 0x7f0905c7
 
 .field public static final new_chats:I = 0x7f090249
 
@@ -1565,23 +1577,23 @@
 
 .field public static final new_people_too_popular_settings_message_privacy:I = 0x7f090257
 
-.field public static final no_access_to_contacts:I = 0x7f0905c2
+.field public static final no_access_to_contacts:I = 0x7f0905c8
 
 .field public static final no_action_associated_with_this_content:I = 0x7f090258
 
-.field public static final no_chats_new_people:I = 0x7f0905c3
+.field public static final no_chats_new_people:I = 0x7f0905c9
 
 .field public static final no_content_attached:I = 0x7f090259
 
-.field public static final no_conversations_start_chat:I = 0x7f0905c4
+.field public static final no_conversations_start_chat:I = 0x7f0905ca
 
-.field public static final no_conversations_sync_contacts:I = 0x7f0905c5
+.field public static final no_conversations_sync_contacts:I = 0x7f0905cb
 
-.field public static final no_conversations_tap:I = 0x7f0905c6
+.field public static final no_conversations_tap:I = 0x7f0905cc
 
 .field public static final no_email:I = 0x7f09025a
 
-.field public static final no_gif_favourites:I = 0x7f0905c7
+.field public static final no_gif_favourites:I = 0x7f0905cd
 
 .field public static final no_go_back:I = 0x7f09025b
 
@@ -1595,11 +1607,11 @@
 
 .field public static final no_network_alert:I = 0x7f090260
 
-.field public static final no_public_groups_result:I = 0x7f0905c8
+.field public static final no_public_groups_result:I = 0x7f0905ce
 
-.field public static final no_recent_gifs:I = 0x7f0905c9
+.field public static final no_recent_gifs:I = 0x7f0905cf
 
-.field public static final no_recents:I = 0x7f0905ca
+.field public static final no_recents:I = 0x7f0905d0
 
 .field public static final not_admin_ban_error:I = 0x7f090261
 
@@ -1629,19 +1641,19 @@
 
 .field public static final notification_new_app_message:I = 0x7f09026e
 
-.field public static final notification_new_card_message:I = 0x7f0905cb
+.field public static final notification_new_card_message:I = 0x7f0905d1
 
-.field public static final notification_new_gif_message:I = 0x7f0905cc
+.field public static final notification_new_gif_message:I = 0x7f0905d2
 
 .field public static final notification_new_message:I = 0x7f09026f
 
 .field public static final notification_new_picture_message:I = 0x7f090270
 
-.field public static final notification_new_sticker_message:I = 0x7f0905cd
+.field public static final notification_new_sticker_message:I = 0x7f0905d3
 
-.field public static final notification_new_video_message:I = 0x7f0905ce
+.field public static final notification_new_video_message:I = 0x7f0905d4
 
-.field public static final notification_new_voice_message:I = 0x7f0905cf
+.field public static final notification_new_voice_message:I = 0x7f0905d5
 
 .field public static final notification_one_message:I = 0x7f090271
 
@@ -1651,13 +1663,13 @@
 
 .field public static final notification_ticker_new_message:I = 0x7f090274
 
-.field public static final notification_ticker_unlock_to_read:I = 0x7f0905d0
+.field public static final notification_ticker_unlock_to_read:I = 0x7f0905d6
 
 .field public static final notification_x_and_x_new:I = 0x7f090275
 
 .field public static final notification_x_chats:I = 0x7f090276
 
-.field public static final notifications_behavior:I = 0x7f0905d1
+.field public static final notifications_behavior:I = 0x7f0905d7
 
 .field public static final notifications_from_x:I = 0x7f090277
 
@@ -1667,19 +1679,19 @@
 
 .field public static final notifications_new_chats_from_x:I = 0x7f09027a
 
-.field public static final notifications_off:I = 0x7f0905d2
+.field public static final notifications_off:I = 0x7f0905d8
 
-.field public static final notifications_off_eight:I = 0x7f0905d3
+.field public static final notifications_off_eight:I = 0x7f0905d9
 
-.field public static final notifications_off_one_hour:I = 0x7f0905d4
+.field public static final notifications_off_one_hour:I = 0x7f0905da
 
-.field public static final notifications_on:I = 0x7f0905d5
+.field public static final notifications_on:I = 0x7f0905db
 
 .field public static final notifies_when_friend_joins:I = 0x7f09027b
 
 .field public static final number_is_invalid:I = 0x7f09027c
 
-.field public static final off_until_notification_settings:I = 0x7f0905d6
+.field public static final off_until_notification_settings:I = 0x7f0905dc
 
 .field public static final ok:I = 0x7f09027d
 
@@ -1723,13 +1735,15 @@
 
 .field public static final open_kik_to_enable_share_extension:I = 0x7f090291
 
+.field public static final open_settings_button:I = 0x7f0905dd
+
 .field public static final opt_out_use_contacts:I = 0x7f090292
 
 .field public static final out_of_memory_toast:I = 0x7f090293
 
 .field public static final participant_needs_upgrade_message:I = 0x7f090294
 
-.field public static final password_at_least_six:I = 0x7f0905d7
+.field public static final password_at_least_six:I = 0x7f0905de
 
 .field public static final password_change_successful:I = 0x7f090295
 
@@ -1751,7 +1765,7 @@
 
 .field public static final password_reset_title:I = 0x7f09029e
 
-.field public static final password_toggle_content_description:I = 0x7f0905d8
+.field public static final password_toggle_content_description:I = 0x7f0905df
 
 .field public static final password_too_short_message:I = 0x7f09029f
 
@@ -1759,13 +1773,13 @@
 
 .field public static final paste_failed_file_too_large:I = 0x7f0902a1
 
-.field public static final path_password_eye:I = 0x7f0905d9
+.field public static final path_password_eye:I = 0x7f0905e0
 
-.field public static final path_password_eye_mask_strike_through:I = 0x7f0905da
+.field public static final path_password_eye_mask_strike_through:I = 0x7f0905e1
 
-.field public static final path_password_eye_mask_visible:I = 0x7f0905db
+.field public static final path_password_eye_mask_visible:I = 0x7f0905e2
 
-.field public static final path_password_strike_through:I = 0x7f0905dc
+.field public static final path_password_strike_through:I = 0x7f0905e3
 
 .field public static final pay_title:I = 0x7f0902a2
 
@@ -1795,61 +1809,61 @@
 
 .field public static final person:I = 0x7f0902af
 
-.field public static final personalize_my_profile:I = 0x7f0905dd
+.field public static final personalize_my_profile:I = 0x7f0905e4
 
-.field public static final pg_helper_find_new_friends:I = 0x7f0905de
+.field public static final pg_helper_find_new_friends:I = 0x7f0905e5
 
-.field public static final pg_helper_meet_new_people:I = 0x7f0905df
+.field public static final pg_helper_meet_new_people:I = 0x7f0905e6
 
-.field public static final pg_turn_off_dms_hint_title:I = 0x7f0905e0
+.field public static final pg_turn_off_dms_hint_title:I = 0x7f0905e7
 
 .field public static final photo_plugin_dl_error:I = 0x7f0902b0
 
-.field public static final photos_access_denied_title:I = 0x7f0905e1
+.field public static final photos_access_denied_title:I = 0x7f0905e8
 
-.field public static final picture_suggested_response_error_sending:I = 0x7f0905e2
+.field public static final picture_suggested_response_error_sending:I = 0x7f0905e9
 
-.field public static final pinch_to_zoom_and_move:I = 0x7f0905e3
+.field public static final pinch_to_zoom_and_move:I = 0x7f0905ea
 
-.field public static final pinlock_settings_change_pin:I = 0x7f0905e4
+.field public static final pinlock_settings_change_pin:I = 0x7f0905eb
 
-.field public static final pinlock_settings_description:I = 0x7f0905e5
+.field public static final pinlock_settings_description:I = 0x7f0905ec
 
-.field public static final pinlock_settings_lock_delay_10_min:I = 0x7f0905e6
+.field public static final pinlock_settings_lock_delay_10_min:I = 0x7f0905ed
 
-.field public static final pinlock_settings_lock_delay_1_min:I = 0x7f0905e7
+.field public static final pinlock_settings_lock_delay_1_min:I = 0x7f0905ee
 
-.field public static final pinlock_settings_lock_delay_immediately:I = 0x7f0905e8
+.field public static final pinlock_settings_lock_delay_immediately:I = 0x7f0905ef
 
-.field public static final pinlock_settings_off:I = 0x7f0905e9
+.field public static final pinlock_settings_off:I = 0x7f0905f0
 
-.field public static final pinlock_settings_on:I = 0x7f0905ea
+.field public static final pinlock_settings_on:I = 0x7f0905f1
 
-.field public static final pinlock_settings_pane_title:I = 0x7f0905eb
+.field public static final pinlock_settings_pane_title:I = 0x7f0905f2
 
-.field public static final pinlock_settings_pin_updated_success:I = 0x7f0905ec
+.field public static final pinlock_settings_pin_updated_success:I = 0x7f0905f3
 
-.field public static final pinlock_settings_require_pin:I = 0x7f0905ed
+.field public static final pinlock_settings_require_pin:I = 0x7f0905f4
 
-.field public static final pinlock_settings_require_pin_actionsheet_title:I = 0x7f0905ee
+.field public static final pinlock_settings_require_pin_actionsheet_title:I = 0x7f0905f5
 
-.field public static final pinlock_settings_set_pin_pins_dont_match:I = 0x7f0905ef
+.field public static final pinlock_settings_set_pin_pins_dont_match:I = 0x7f0905f6
 
-.field public static final pinlock_settings_set_pin_prompt_confirm_new_pin:I = 0x7f0905f0
+.field public static final pinlock_settings_set_pin_prompt_confirm_new_pin:I = 0x7f0905f7
 
-.field public static final pinlock_settings_set_pin_prompt_new_pin:I = 0x7f0905f1
+.field public static final pinlock_settings_set_pin_prompt_new_pin:I = 0x7f0905f8
 
-.field public static final pinlock_settings_set_pin_title:I = 0x7f0905f2
+.field public static final pinlock_settings_set_pin_title:I = 0x7f0905f9
 
-.field public static final pinlock_settings_toggle:I = 0x7f0905f3
+.field public static final pinlock_settings_toggle:I = 0x7f0905fa
 
-.field public static final pinlock_unlock_invalid_pin:I = 0x7f0905f4
+.field public static final pinlock_unlock_invalid_pin:I = 0x7f0905fb
 
-.field public static final pinlock_unlock_logout_dialog_description:I = 0x7f0905f5
+.field public static final pinlock_unlock_logout_dialog_description:I = 0x7f0905fc
 
-.field public static final pinlock_unlock_logout_dialog_title:I = 0x7f0905f6
+.field public static final pinlock_unlock_logout_dialog_title:I = 0x7f0905fd
 
-.field public static final pinlock_unlock_prompt:I = 0x7f0905f7
+.field public static final pinlock_unlock_prompt:I = 0x7f0905fe
 
 .field public static final platform_launch_string:I = 0x7f090504
 
@@ -1873,7 +1887,7 @@
 
 .field public static final please_rate_kik_:I = 0x7f0902ba
 
-.field public static final please_set_group_picture:I = 0x7f0905f8
+.field public static final please_set_group_picture:I = 0x7f0905ff
 
 .field public static final please_set_profile_picture:I = 0x7f0902bb
 
@@ -1909,23 +1923,23 @@
 
 .field public static final privacy_only_text:I = 0x7f0902cb
 
-.field public static final privacy_settings:I = 0x7f0905f9
+.field public static final privacy_settings:I = 0x7f090600
 
 .field public static final private_group_too_little_people:I = 0x7f0902cc
 
 .field public static final problem_uploading_profpic_message:I = 0x7f0902cd
 
-.field public static final profile_background_theme_picker_title:I = 0x7f0905fa
+.field public static final profile_background_theme_picker_title:I = 0x7f090601
 
-.field public static final profile_bio_edit_bio_title:I = 0x7f0905fb
+.field public static final profile_bio_edit_bio_title:I = 0x7f090602
 
-.field public static final profile_bio_empty_hint:I = 0x7f0905fc
+.field public static final profile_bio_empty_hint:I = 0x7f090603
 
-.field public static final profile_bio_error_no_links:I = 0x7f0905fd
+.field public static final profile_bio_error_no_links:I = 0x7f090604
 
-.field public static final profile_bio_error_restricted_words:I = 0x7f0905fe
+.field public static final profile_bio_error_restricted_words:I = 0x7f090605
 
-.field public static final profile_bio_message_discard_edits:I = 0x7f0905ff
+.field public static final profile_bio_message_discard_edits:I = 0x7f090606
 
 .field public static final profile_format_add_to:I = 0x7f0902ce
 
@@ -1935,13 +1949,13 @@
 
 .field public static final profile_format_talk_to:I = 0x7f0902d1
 
-.field public static final profile_frames_description:I = 0x7f090600
+.field public static final profile_frames_description:I = 0x7f090607
 
-.field public static final profile_frames_error_description:I = 0x7f090601
+.field public static final profile_frames_error_description:I = 0x7f090608
 
-.field public static final profile_frames_error_title:I = 0x7f090602
+.field public static final profile_frames_error_title:I = 0x7f090609
 
-.field public static final profile_frames_tooltip_title:I = 0x7f090603
+.field public static final profile_frames_tooltip_title:I = 0x7f09060a
 
 .field public static final profile_link_handling_connection_error:I = 0x7f0902d2
 
@@ -1949,13 +1963,15 @@
 
 .field public static final profile_link_handling_user_not_found_error:I = 0x7f0902d4
 
-.field public static final profile_new_to_kik_title:I = 0x7f090604
+.field public static final profile_new_to_kik_title:I = 0x7f09060b
 
 .field public static final profile_picture_changed_successfully:I = 0x7f0902d5
 
 .field public static final profile_picture_set:I = 0x7f0902d6
 
-.field public static final profile_set_background_theme:I = 0x7f090605
+.field public static final profile_set_background_photo:I = 0x7f09060c
+
+.field public static final profile_set_background_theme:I = 0x7f09060d
 
 .field public static final promote_to_admin:I = 0x7f0902d7
 
@@ -1965,47 +1981,47 @@
 
 .field public static final public_group_already_full:I = 0x7f0902da
 
-.field public static final public_group_call_to_action_cell_description:I = 0x7f090606
+.field public static final public_group_call_to_action_cell_description:I = 0x7f09060e
 
-.field public static final public_group_call_to_action_cell_title:I = 0x7f090607
+.field public static final public_group_call_to_action_cell_title:I = 0x7f09060f
 
-.field public static final public_group_call_to_action_find_a_group:I = 0x7f090608
+.field public static final public_group_call_to_action_find_a_group:I = 0x7f090610
 
-.field public static final public_group_intro_body:I = 0x7f090609
+.field public static final public_group_intro_body:I = 0x7f090611
 
-.field public static final public_group_intro_reminder:I = 0x7f09060a
+.field public static final public_group_intro_reminder:I = 0x7f090612
 
-.field public static final public_group_intro_reminder_body:I = 0x7f09060b
+.field public static final public_group_intro_reminder_body:I = 0x7f090613
 
-.field public static final public_group_intro_title:I = 0x7f09060c
+.field public static final public_group_intro_title:I = 0x7f090614
 
 .field public static final public_group_invite_to_group_subtitle:I = 0x7f090505
 
 .field public static final public_group_invite_to_group_title:I = 0x7f090506
 
-.field public static final public_group_quick_searches_header:I = 0x7f09060d
+.field public static final public_group_quick_searches_header:I = 0x7f090615
 
-.field public static final public_group_search_prompt:I = 0x7f09060e
+.field public static final public_group_search_prompt:I = 0x7f090616
 
-.field public static final public_groups_find_random:I = 0x7f09060f
+.field public static final public_groups_find_random:I = 0x7f090617
 
-.field public static final public_groups_title:I = 0x7f090610
+.field public static final public_groups_title:I = 0x7f090618
 
-.field public static final public_groups_ugc_restriction_body:I = 0x7f090611
+.field public static final public_groups_ugc_restriction_body:I = 0x7f090619
 
-.field public static final public_groups_ugc_restriction_title:I = 0x7f090612
+.field public static final public_groups_ugc_restriction_title:I = 0x7f09061a
 
-.field public static final public_groups_welcome_message:I = 0x7f090613
+.field public static final public_groups_welcome_message:I = 0x7f09061b
 
-.field public static final public_groups_welcome_message_chat_guidelines:I = 0x7f090614
+.field public static final public_groups_welcome_message_chat_guidelines:I = 0x7f09061c
 
-.field public static final public_groups_welcome_message_guidelines_link_text:I = 0x7f090615
+.field public static final public_groups_welcome_message_guidelines_link_text:I = 0x7f09061d
 
-.field public static final public_groups_welcome_message_say_hi:I = 0x7f090616
+.field public static final public_groups_welcome_message_say_hi:I = 0x7f09061e
 
 .field public static final pull_to_scan:I = 0x7f0902db
 
-.field public static final pull_to_search:I = 0x7f090617
+.field public static final pull_to_search:I = 0x7f09061f
 
 .field public static final purchase_restore_failed:I = 0x7f0902dc
 
@@ -2021,17 +2037,17 @@
 
 .field public static final push_token_yours:I = 0x7f0902e2
 
-.field public static final rate_chat:I = 0x7f090618
+.field public static final rate_chat:I = 0x7f090620
 
 .field public static final rate_it_:I = 0x7f0902e3
 
-.field public static final rating_chats_dialog_description:I = 0x7f090619
+.field public static final rating_chats_dialog_description:I = 0x7f090621
 
-.field public static final rating_chats_dialog_group_description:I = 0x7f09061a
+.field public static final rating_chats_dialog_group_description:I = 0x7f090622
 
-.field public static final rating_chats_dialog_title:I = 0x7f09061b
+.field public static final rating_chats_dialog_title:I = 0x7f090623
 
-.field public static final rating_chats_thank_you:I = 0x7f09061c
+.field public static final rating_chats_thank_you:I = 0x7f090624
 
 .field public static final re_enter_new_password:I = 0x7f0902e4
 
@@ -2039,7 +2055,7 @@
 
 .field public static final read_receipts_group_descriptor:I = 0x7f0902e6
 
-.field public static final recent:I = 0x7f09061d
+.field public static final recent:I = 0x7f090625
 
 .field public static final recent_images_title:I = 0x7f0902e7
 
@@ -2107,21 +2123,21 @@
 
 .field public static final registration_tos_and_privacy:I = 0x7f090300
 
-.field public static final registration_tos_and_privacy_v2:I = 0x7f09061e
+.field public static final registration_tos_and_privacy_v2:I = 0x7f090626
 
 .field public static final registration_tos_privacy:I = 0x7f090301
 
-.field public static final related_groups_header:I = 0x7f09061f
+.field public static final related_groups_header:I = 0x7f090627
 
-.field public static final release_to_chat:I = 0x7f090620
+.field public static final release_to_chat:I = 0x7f090628
 
-.field public static final release_to_full:I = 0x7f090621
+.field public static final release_to_full:I = 0x7f090629
 
 .field public static final release_to_scan:I = 0x7f090302
 
 .field public static final remember_this_card:I = 0x7f090303
 
-.field public static final remove_as_admin:I = 0x7f090622
+.field public static final remove_as_admin:I = 0x7f09062a
 
 .field public static final remove_from_contacts:I = 0x7f090304
 
@@ -2129,9 +2145,9 @@
 
 .field public static final replace_content_existing_content:I = 0x7f090306
 
-.field public static final reply_button_tooltip_text:I = 0x7f090623
+.field public static final reply_button_tooltip_text:I = 0x7f09062b
 
-.field public static final report_and_leave:I = 0x7f090624
+.field public static final report_and_leave:I = 0x7f09062c
 
 .field public static final report_as_spam:I = 0x7f090307
 
@@ -2141,29 +2157,29 @@
 
 .field public static final report_granular_reported_unwanted_spam:I = 0x7f09030a
 
-.field public static final report_group_abuse:I = 0x7f090625
+.field public static final report_group_abuse:I = 0x7f09062d
 
-.field public static final report_group_include_chat_history:I = 0x7f090626
+.field public static final report_group_include_chat_history:I = 0x7f09062e
 
-.field public static final report_group_offensive:I = 0x7f090627
+.field public static final report_group_offensive:I = 0x7f09062f
 
-.field public static final report_group_unwanted:I = 0x7f090628
+.field public static final report_group_unwanted:I = 0x7f090630
 
-.field public static final report_group_user_abuse:I = 0x7f090629
+.field public static final report_group_user_abuse:I = 0x7f090631
 
-.field public static final report_group_user_spam:I = 0x7f09062a
+.field public static final report_group_user_spam:I = 0x7f090632
 
-.field public static final report_group_user_unwanted:I = 0x7f09062b
+.field public static final report_group_user_unwanted:I = 0x7f090633
 
 .field public static final report_include_history:I = 0x7f09030b
 
 .field public static final report_name:I = 0x7f09030c
 
-.field public static final report_save_keep_chat:I = 0x7f09062c
+.field public static final report_save_keep_chat:I = 0x7f090634
 
-.field public static final report_save_remove_chat:I = 0x7f09062d
+.field public static final report_save_remove_chat:I = 0x7f090635
 
-.field public static final report_save_unblock:I = 0x7f09062e
+.field public static final report_save_unblock:I = 0x7f090636
 
 .field public static final report_spam_abuse:I = 0x7f09030d
 
@@ -2251,7 +2267,7 @@
 
 .field public static final sdk_not_supported_title:I = 0x7f090331
 
-.field public static final search_bot_name:I = 0x7f09062f
+.field public static final search_bot_name:I = 0x7f090637
 
 .field public static final search_chats_label:I = 0x7f090332
 
@@ -2265,13 +2281,13 @@
 
 .field public static final search_menu_title:I = 0x7f09002b
 
-.field public static final search_public_groups_placeholder:I = 0x7f090630
+.field public static final search_public_groups_placeholder:I = 0x7f090638
 
 .field public static final searching___:I = 0x7f090337
 
 .field public static final searching_for_group:I = 0x7f090338
 
-.field public static final second_abbreviation:I = 0x7f090631
+.field public static final second_abbreviation:I = 0x7f090639
 
 .field public static final seconds:I = 0x7f090339
 
@@ -2285,7 +2301,7 @@
 
 .field public static final select_a_person:I = 0x7f09033e
 
-.field public static final select_bot:I = 0x7f090632
+.field public static final select_bot:I = 0x7f09063a
 
 .field public static final select_people:I = 0x7f09033f
 
@@ -2295,11 +2311,11 @@
 
 .field public static final select_x_people:I = 0x7f090342
 
-.field public static final send_a_message_group:I = 0x7f090633
+.field public static final send_a_message_group:I = 0x7f09063b
 
-.field public static final send_a_message_one_to_one:I = 0x7f090634
+.field public static final send_a_message_one_to_one:I = 0x7f09063c
 
-.field public static final send_a_message_public_group:I = 0x7f090635
+.field public static final send_a_message_public_group:I = 0x7f09063d
 
 .field public static final send_a_message_to_start_chatting:I = 0x7f090343
 
@@ -2321,9 +2337,9 @@
 
 .field public static final settings_auto_download_videos:I = 0x7f09034c
 
-.field public static final settings_automatic_fullscreen_summary:I = 0x7f090636
+.field public static final settings_automatic_fullscreen_summary:I = 0x7f09063e
 
-.field public static final settings_automatic_fullscreen_title:I = 0x7f090637
+.field public static final settings_automatic_fullscreen_title:I = 0x7f09063f
 
 .field public static final settings_autoplay_videos:I = 0x7f09034d
 
@@ -2333,21 +2349,21 @@
 
 .field public static final settings_chat_summary:I = 0x7f090350
 
-.field public static final settings_chat_wallpaper:I = 0x7f090638
+.field public static final settings_chat_wallpaper:I = 0x7f090640
 
 .field public static final settings_notifications_summary:I = 0x7f090351
 
 .field public static final settings_privacy_summary:I = 0x7f090352
 
-.field public static final settings_public_group_direct_messages:I = 0x7f090639
+.field public static final settings_public_group_direct_messages:I = 0x7f090641
 
-.field public static final settings_public_group_direct_messages_description:I = 0x7f09063a
+.field public static final settings_public_group_direct_messages_description:I = 0x7f090642
 
 .field public static final settings_saved_successfully:I = 0x7f090353
 
 .field public static final settings_share_summary:I = 0x7f090354
 
-.field public static final settings_share_username:I = 0x7f09063b
+.field public static final settings_share_username:I = 0x7f090643
 
 .field public static final settings_successfully_updated_toast:I = 0x7f090355
 
@@ -2409,7 +2425,7 @@
 
 .field public static final share_with_other:I = 0x7f090372
 
-.field public static final shared_from_botname:I = 0x7f09063c
+.field public static final shared_from_botname:I = 0x7f090644
 
 .field public static final sharing_:I = 0x7f090373
 
@@ -2431,7 +2447,7 @@
 
 .field public static final simple_problem_uploading_profpic_message:I = 0x7f09037c
 
-.field public static final slide_to_cancel:I = 0x7f09063d
+.field public static final slide_to_cancel:I = 0x7f090645
 
 .field public static final smile_name_angry:I = 0x7f09037d
 
@@ -2483,7 +2499,7 @@
 
 .field public static final something_went_wrong_try_again:I = 0x7f090395
 
-.field public static final something_went_wrong_try_again_later:I = 0x7f09063e
+.field public static final something_went_wrong_try_again_later:I = 0x7f090646
 
 .field public static final something_went_wrong_video_upload:I = 0x7f090396
 
@@ -2507,13 +2523,13 @@
 
 .field public static final start_group_with:I = 0x7f0903a0
 
-.field public static final start_public_group_title:I = 0x7f09063f
+.field public static final start_public_group_title:I = 0x7f090647
 
 .field public static final start_with_basics:I = 0x7f0903a1
 
 .field public static final status_bar_notification_info_overflow:I = 0x7f09002c
 
-.field public static final stickers_tooltip_hint:I = 0x7f090640
+.field public static final stickers_tooltip_hint:I = 0x7f090648
 
 .field public static final stop_chatting_alert_message:I = 0x7f0903a2
 
@@ -2527,39 +2543,39 @@
 
 .field public static final suggest_to:I = 0x7f0903a7
 
-.field public static final suggested_chat_delete_contact_prompt_message:I = 0x7f090641
+.field public static final suggested_chat_delete_contact_prompt_message:I = 0x7f090649
 
-.field public static final suggested_chat_delete_contact_prompt_title:I = 0x7f090642
+.field public static final suggested_chat_delete_contact_prompt_title:I = 0x7f09064a
 
-.field public static final suggested_chat_delete_group_prompt_message:I = 0x7f090643
+.field public static final suggested_chat_delete_group_prompt_message:I = 0x7f09064b
 
-.field public static final suggested_chat_delete_group_prompt_title:I = 0x7f090644
+.field public static final suggested_chat_delete_group_prompt_title:I = 0x7f09064c
 
-.field public static final suggested_chat_header:I = 0x7f090645
+.field public static final suggested_chat_header:I = 0x7f09064d
 
-.field public static final suggested_groups_header:I = 0x7f090646
+.field public static final suggested_groups_header:I = 0x7f09064e
 
-.field public static final suggested_groups_header_find_new:I = 0x7f090647
+.field public static final suggested_groups_header_find_new:I = 0x7f09064f
 
-.field public static final suggested_groups_header_quick_search:I = 0x7f090648
+.field public static final suggested_groups_header_quick_search:I = 0x7f090650
 
-.field public static final suggested_groups_header_trending_searches:I = 0x7f090649
+.field public static final suggested_groups_header_trending_searches:I = 0x7f090651
 
-.field public static final suggested_groups_header_trending_topics:I = 0x7f09064a
+.field public static final suggested_groups_header_trending_topics:I = 0x7f090652
 
-.field public static final suggested_groups_not_avail_body:I = 0x7f09064b
+.field public static final suggested_groups_not_avail_body:I = 0x7f090653
 
-.field public static final suggested_groups_not_avail_header:I = 0x7f09064c
+.field public static final suggested_groups_not_avail_header:I = 0x7f090654
 
 .field public static final suggested_response_tray_header:I = 0x7f0903a8
 
-.field public static final suggestions:I = 0x7f09064d
+.field public static final suggestions:I = 0x7f090655
 
 .field public static final summary_developer:I = 0x7f0903a9
 
 .field public static final summary_notify_for_new_people:I = 0x7f0903aa
 
-.field public static final superadmins:I = 0x7f09064e
+.field public static final superadmins:I = 0x7f090656
 
 .field public static final suspected_spam:I = 0x7f0903ab
 
@@ -2573,11 +2589,11 @@
 
 .field public static final talk_to_empty_footer:I = 0x7f0903b0
 
-.field public static final talk_to_find_by_kik_code:I = 0x7f09064f
+.field public static final talk_to_find_by_kik_code:I = 0x7f090657
 
-.field public static final talk_to_find_by_phone_contacts:I = 0x7f090650
+.field public static final talk_to_find_by_phone_contacts:I = 0x7f090658
 
-.field public static final talk_to_find_by_username:I = 0x7f090651
+.field public static final talk_to_find_by_username:I = 0x7f090659
 
 .field public static final talk_to_inline_tray_table_footer_helper_text:I = 0x7f0903b1
 
@@ -2589,9 +2605,9 @@
 
 .field public static final talkto_find_people_search_placeholder:I = 0x7f0903b5
 
-.field public static final tap_to_invite_firstname:I = 0x7f090652
+.field public static final tap_to_invite_firstname:I = 0x7f09065a
 
-.field public static final tap_to_return:I = 0x7f090653
+.field public static final tap_to_return:I = 0x7f09065b
 
 .field public static final tap_to_reveal:I = 0x7f0903b6
 
@@ -2599,9 +2615,9 @@
 
 .field public static final tell_a_friend:I = 0x7f0903b8
 
-.field public static final temp_ban:I = 0x7f090654
+.field public static final temp_ban:I = 0x7f09065c
 
-.field public static final temp_ban_cannot_share:I = 0x7f090655
+.field public static final temp_ban_cannot_share:I = 0x7f09065d
 
 .field public static final text_delete_all_messages_confirm:I = 0x7f0903b9
 
@@ -2665,7 +2681,7 @@
 
 .field public static final title_cancel:I = 0x7f0903d7
 
-.field public static final title_cannot_join_vid_chat:I = 0x7f090656
+.field public static final title_cannot_join_vid_chat:I = 0x7f09065e
 
 .field public static final title_change_email_account:I = 0x7f0903d8
 
@@ -2681,9 +2697,9 @@
 
 .field public static final title_clear:I = 0x7f0903de
 
-.field public static final title_clear_chat_history:I = 0x7f090657
+.field public static final title_clear_chat_history:I = 0x7f09065f
 
-.field public static final title_community_guidelines:I = 0x7f090658
+.field public static final title_community_guidelines:I = 0x7f090660
 
 .field public static final title_confirm_download:I = 0x7f0903df
 
@@ -2715,7 +2731,7 @@
 
 .field public static final title_delete_convo:I = 0x7f0903ed
 
-.field public static final title_delete_sticker_pack:I = 0x7f090659
+.field public static final title_delete_sticker_pack:I = 0x7f090661
 
 .field public static final title_deleting:I = 0x7f0903ee
 
@@ -2727,9 +2743,9 @@
 
 .field public static final title_disable_notifications:I = 0x7f0903f2
 
-.field public static final title_discard:I = 0x7f09065a
+.field public static final title_discard:I = 0x7f090662
 
-.field public static final title_discover_bots:I = 0x7f09065b
+.field public static final title_discover_bots:I = 0x7f090663
 
 .field public static final title_done:I = 0x7f0903f3
 
@@ -2741,9 +2757,9 @@
 
 .field public static final title_email:I = 0x7f0903f7
 
-.field public static final title_emoji:I = 0x7f09065c
+.field public static final title_emoji:I = 0x7f090664
 
-.field public static final title_emoji_status:I = 0x7f09065d
+.field public static final title_emoji_status:I = 0x7f090665
 
 .field public static final title_empty_group:I = 0x7f0903f8
 
@@ -2769,21 +2785,21 @@
 
 .field public static final title_group_already_exists:I = 0x7f090403
 
-.field public static final title_group_full:I = 0x7f09065e
+.field public static final title_group_full:I = 0x7f090666
 
-.field public static final title_group_invite:I = 0x7f09065f
+.field public static final title_group_invite:I = 0x7f090667
 
 .field public static final title_group_name:I = 0x7f090404
 
-.field public static final title_hands:I = 0x7f090660
+.field public static final title_hands:I = 0x7f090668
 
 .field public static final title_help:I = 0x7f090405
 
 .field public static final title_help_about_us:I = 0x7f090406
 
-.field public static final title_hide:I = 0x7f090661
+.field public static final title_hide:I = 0x7f090669
 
-.field public static final title_hide_chat:I = 0x7f090662
+.field public static final title_hide_chat:I = 0x7f09066a
 
 .field public static final title_i_agree:I = 0x7f090407
 
@@ -2803,27 +2819,27 @@
 
 .field public static final title_invite:I = 0x7f09040f
 
-.field public static final title_invite_error:I = 0x7f090663
+.field public static final title_invite_error:I = 0x7f09066b
 
-.field public static final title_keep_chat:I = 0x7f090664
+.field public static final title_keep_chat:I = 0x7f09066c
 
 .field public static final title_kik_browser:I = 0x7f090410
 
 .field public static final title_kik_username:I = 0x7f090411
 
-.field public static final title_kin_wallet:I = 0x7f090665
+.field public static final title_kin_wallet:I = 0x7f09066d
 
 .field public static final title_last_name:I = 0x7f090412
 
 .field public static final title_launch_content:I = 0x7f090413
 
-.field public static final title_learn_more:I = 0x7f090666
+.field public static final title_learn_more:I = 0x7f09066e
 
 .field public static final title_leave:I = 0x7f090414
 
 .field public static final title_leave_convo:I = 0x7f090415
 
-.field public static final title_leave_video:I = 0x7f090667
+.field public static final title_leave_video:I = 0x7f09066f
 
 .field public static final title_led_color:I = 0x7f090416
 
@@ -2839,31 +2855,31 @@
 
 .field public static final title_log_in_error:I = 0x7f09041c
 
-.field public static final title_logged_out:I = 0x7f090668
+.field public static final title_logged_out:I = 0x7f090670
 
 .field public static final title_logging_in:I = 0x7f09041d
 
-.field public static final title_logging_out:I = 0x7f090669
+.field public static final title_logging_out:I = 0x7f090671
 
 .field public static final title_login_failed:I = 0x7f09041e
 
 .field public static final title_logout:I = 0x7f09041f
 
-.field public static final title_love:I = 0x7f09066a
+.field public static final title_love:I = 0x7f090672
 
 .field public static final title_microphone_no_access:I = 0x7f090420
 
 .field public static final title_microphone_predialog:I = 0x7f090421
 
-.field public static final title_misc:I = 0x7f09066b
+.field public static final title_misc:I = 0x7f090673
 
 .field public static final title_more:I = 0x7f090422
 
-.field public static final title_mute_all_notifications:I = 0x7f09066c
+.field public static final title_mute_all_notifications:I = 0x7f090674
 
 .field public static final title_mute_chat:I = 0x7f090423
 
-.field public static final title_mute_new_chats:I = 0x7f09066d
+.field public static final title_mute_new_chats:I = 0x7f090675
 
 .field public static final title_muted:I = 0x7f090424
 
@@ -2885,7 +2901,7 @@
 
 .field public static final title_no_access:I = 0x7f09042d
 
-.field public static final title_no_new_chats:I = 0x7f09066e
+.field public static final title_no_new_chats:I = 0x7f090676
 
 .field public static final title_no_photos:I = 0x7f09042e
 
@@ -2893,7 +2909,7 @@
 
 .field public static final title_not_recommended:I = 0x7f090430
 
-.field public static final title_notification_settings:I = 0x7f09066f
+.field public static final title_notification_settings:I = 0x7f090677
 
 .field public static final title_notifications:I = 0x7f090431
 
@@ -2915,7 +2931,7 @@
 
 .field public static final title_phonecall_error:I = 0x7f09043a
 
-.field public static final title_photo:I = 0x7f090670
+.field public static final title_photo:I = 0x7f090678
 
 .field public static final title_please_select_n_image:I = 0x7f09043b
 
@@ -2927,7 +2943,7 @@
 
 .field public static final title_profile:I = 0x7f09043f
 
-.field public static final title_profile_frames:I = 0x7f090671
+.field public static final title_profile_frames:I = 0x7f090679
 
 .field public static final title_profile_picture:I = 0x7f090440
 
@@ -2935,9 +2951,9 @@
 
 .field public static final title_promote_admin:I = 0x7f090442
 
-.field public static final title_rate_quality:I = 0x7f090672
+.field public static final title_rate_quality:I = 0x7f09067a
 
-.field public static final title_recents:I = 0x7f090673
+.field public static final title_recents:I = 0x7f09067b
 
 .field public static final title_register:I = 0x7f090443
 
@@ -2945,19 +2961,19 @@
 
 .field public static final title_registration_successful:I = 0x7f090445
 
-.field public static final title_reinstall:I = 0x7f090674
+.field public static final title_reinstall:I = 0x7f09067c
 
 .field public static final title_reload:I = 0x7f090446
 
 .field public static final title_remove:I = 0x7f090447
 
-.field public static final title_remove_admin:I = 0x7f090675
+.field public static final title_remove_admin:I = 0x7f09067d
 
-.field public static final title_remove_chat:I = 0x7f090676
+.field public static final title_remove_chat:I = 0x7f09067e
 
 .field public static final title_remove_user:I = 0x7f090448
 
-.field public static final title_removed:I = 0x7f090677
+.field public static final title_removed:I = 0x7f09067f
 
 .field public static final title_replace:I = 0x7f090449
 
@@ -2965,17 +2981,17 @@
 
 .field public static final title_reply:I = 0x7f09044b
 
-.field public static final title_reply_1:I = 0x7f090678
+.field public static final title_reply_1:I = 0x7f090680
 
-.field public static final title_reply_2:I = 0x7f090679
+.field public static final title_reply_2:I = 0x7f090681
 
 .field public static final title_report:I = 0x7f09044c
 
 .field public static final title_report_convo:I = 0x7f09044d
 
-.field public static final title_report_group:I = 0x7f09067a
+.field public static final title_report_group:I = 0x7f090682
 
-.field public static final title_report_user:I = 0x7f09067b
+.field public static final title_report_user:I = 0x7f090683
 
 .field public static final title_reset_kik_messenger:I = 0x7f09044e
 
@@ -2983,7 +2999,7 @@
 
 .field public static final title_retry_upload:I = 0x7f090450
 
-.field public static final title_reveal:I = 0x7f09067c
+.field public static final title_reveal:I = 0x7f090684
 
 .field public static final title_review:I = 0x7f090451
 
@@ -2991,13 +3007,13 @@
 
 .field public static final title_saved_messages_toggle:I = 0x7f090453
 
-.field public static final title_say_hi:I = 0x7f09067d
+.field public static final title_say_hi:I = 0x7f090685
 
 .field public static final title_scroll_to_last_read:I = 0x7f090454
 
 .field public static final title_search:I = 0x7f090455
 
-.field public static final title_select_content:I = 0x7f09067e
+.field public static final title_select_content:I = 0x7f090686
 
 .field public static final title_select_country:I = 0x7f090456
 
@@ -3021,31 +3037,31 @@
 
 .field public static final title_skip:I = 0x7f090460
 
-.field public static final title_smileys:I = 0x7f09067f
+.field public static final title_smileys:I = 0x7f090687
 
 .field public static final title_sound:I = 0x7f090461
 
 .field public static final title_start:I = 0x7f090462
 
-.field public static final title_start_a_chat:I = 0x7f090680
+.field public static final title_start_a_chat:I = 0x7f090688
 
 .field public static final title_start_a_group:I = 0x7f090463
 
 .field public static final title_status:I = 0x7f090464
 
-.field public static final title_stay:I = 0x7f090681
+.field public static final title_stay:I = 0x7f090689
 
-.field public static final title_sticker_shop:I = 0x7f090682
+.field public static final title_sticker_shop:I = 0x7f09068a
 
 .field public static final title_suggest:I = 0x7f090465
 
 .field public static final title_take_picture:I = 0x7f090466
 
-.field public static final title_tap_gif_to_chat:I = 0x7f090683
+.field public static final title_tap_gif_to_chat:I = 0x7f09068b
 
-.field public static final title_tap_sticker_to_chat:I = 0x7f090684
+.field public static final title_tap_sticker_to_chat:I = 0x7f09068c
 
-.field public static final title_tap_to_start_a_chat:I = 0x7f090685
+.field public static final title_tap_to_start_a_chat:I = 0x7f09068d
 
 .field public static final title_tell_a_friend_via_email:I = 0x7f090467
 
@@ -3057,17 +3073,17 @@
 
 .field public static final title_terms_of_service:I = 0x7f09046b
 
-.field public static final title_themeable_smileys:I = 0x7f090686
+.field public static final title_themeable_smileys:I = 0x7f09068e
 
 .field public static final title_trimming_video:I = 0x7f09046c
 
 .field public static final title_turn_off:I = 0x7f09046d
 
-.field public static final title_turn_off_all_notifications:I = 0x7f090687
+.field public static final title_turn_off_all_notifications:I = 0x7f09068f
 
 .field public static final title_turn_on:I = 0x7f09046e
 
-.field public static final title_turn_on_notifications:I = 0x7f090688
+.field public static final title_turn_on_notifications:I = 0x7f090690
 
 .field public static final title_tutorial:I = 0x7f09050e
 
@@ -3077,7 +3093,7 @@
 
 .field public static final title_unblock:I = 0x7f090471
 
-.field public static final title_unmute_new_chats:I = 0x7f090689
+.field public static final title_unmute_new_chats:I = 0x7f090691
 
 .field public static final title_unrecoverable_error:I = 0x7f090472
 
@@ -3113,9 +3129,9 @@
 
 .field public static final title_vibration:I = 0x7f090482
 
-.field public static final title_video:I = 0x7f09068a
+.field public static final title_video:I = 0x7f090692
 
-.field public static final title_video_chat_error:I = 0x7f09068b
+.field public static final title_video_chat_error:I = 0x7f090693
 
 .field public static final title_view:I = 0x7f090483
 
@@ -3123,7 +3139,7 @@
 
 .field public static final title_view_photo:I = 0x7f090485
 
-.field public static final title_view_profile:I = 0x7f09068c
+.field public static final title_view_profile:I = 0x7f090694
 
 .field public static final title_web_history:I = 0x7f090486
 
@@ -3135,13 +3151,13 @@
 
 .field public static final title_you:I = 0x7f09048a
 
-.field public static final title_you_have_no_chats_yet:I = 0x7f09068d
+.field public static final title_you_have_no_chats_yet:I = 0x7f090695
 
 .field public static final title_your_account_info:I = 0x7f09048b
 
-.field public static final title_your_stickers:I = 0x7f09068e
+.field public static final title_your_stickers:I = 0x7f090696
 
-.field public static final title_your_web_history:I = 0x7f09068f
+.field public static final title_your_web_history:I = 0x7f090697
 
 .field public static final toast_unable_to_select_another_person:I = 0x7f09048c
 
@@ -3157,13 +3173,13 @@
 
 .field public static final tomorrow:I = 0x7f090492
 
-.field public static final tooltip_pullDownToViewMore:I = 0x7f090690
+.field public static final tooltip_pullDownToViewMore:I = 0x7f090698
 
-.field public static final tooltip_swipeUpToDismiss:I = 0x7f090691
+.field public static final tooltip_swipeUpToDismiss:I = 0x7f090699
 
-.field public static final tooltip_tapForQuickReplies:I = 0x7f090692
+.field public static final tooltip_tapForQuickReplies:I = 0x7f09069a
 
-.field public static final tooltip_tapToViewBotInfo:I = 0x7f090693
+.field public static final tooltip_tapToViewBotInfo:I = 0x7f09069b
 
 .field public static final tos_agreement_text:I = 0x7f090493
 
@@ -3179,45 +3195,21 @@
 
 .field public static final tos_tos:I = 0x7f090499
 
-.field public static final trophy_GIF_body:I = 0x7f090694
-
-.field public static final trophy_GIF_title:I = 0x7f090695
-
-.field public static final trophy_bots_body:I = 0x7f090696
-
-.field public static final trophy_bots_title:I = 0x7f090697
-
-.field public static final trophy_case_title:I = 0x7f090698
-
-.field public static final trophy_email_body:I = 0x7f090699
-
-.field public static final trophy_email_title:I = 0x7f09069a
-
-.field public static final trophy_messages_body:I = 0x7f09069b
-
-.field public static final trophy_messages_title:I = 0x7f09069c
-
-.field public static final trophy_notification_title:I = 0x7f09069d
-
-.field public static final trophy_roster_body:I = 0x7f09069e
-
-.field public static final trophy_roster_title:I = 0x7f09069f
-
 .field public static final try_find_people:I = 0x7f09049a
 
 .field public static final try_uploading_again:I = 0x7f09049b
 
-.field public static final turn_off_eight_notifications:I = 0x7f0906a0
+.field public static final turn_off_eight_notifications:I = 0x7f09069c
 
-.field public static final turn_off_forever:I = 0x7f0906a1
+.field public static final turn_off_forever:I = 0x7f09069d
 
-.field public static final turn_off_one_hour_notifications:I = 0x7f0906a2
+.field public static final turn_off_one_hour_notifications:I = 0x7f09069e
 
 .field public static final turn_on_notifications:I = 0x7f09049c
 
-.field public static final type_to_discover_bots:I = 0x7f0906a3
+.field public static final type_to_discover_bots:I = 0x7f09069f
 
-.field public static final type_to_discover_roll:I = 0x7f0906a4
+.field public static final type_to_discover_roll:I = 0x7f0906a0
 
 .field public static final unable_to_attach_content:I = 0x7f09049d
 
@@ -3281,7 +3273,7 @@
 
 .field public static final user_is_admin_kick_error:I = 0x7f0904bb
 
-.field public static final user_is_banned:I = 0x7f0906a5
+.field public static final user_is_banned:I = 0x7f0906a1
 
 .field public static final user_phone_contacts_to_find_friends:I = 0x7f0904bc
 
@@ -3309,11 +3301,11 @@
 
 .field public static final username_too_short:I = 0x7f0904c8
 
-.field public static final verified_account:I = 0x7f0906a6
+.field public static final verified_account:I = 0x7f0906a2
 
-.field public static final verified_email:I = 0x7f0906a7
+.field public static final verified_email:I = 0x7f0906a3
 
-.field public static final verified_phone:I = 0x7f0906a8
+.field public static final verified_phone:I = 0x7f0906a4
 
 .field public static final vibrate_on_new_message:I = 0x7f0904c9
 
@@ -3321,45 +3313,45 @@
 
 .field public static final video_camera:I = 0x7f0904cb
 
-.field public static final video_chat_error_message:I = 0x7f0906a9
+.field public static final video_chat_error_message:I = 0x7f0906a5
 
-.field public static final video_chat_full_subtitle:I = 0x7f0906aa
+.field public static final video_chat_full_subtitle:I = 0x7f0906a6
 
-.field public static final video_chat_full_title:I = 0x7f0906ab
+.field public static final video_chat_full_title:I = 0x7f0906a7
 
-.field public static final video_chat_removed_from_group_error_message:I = 0x7f0906ac
+.field public static final video_chat_removed_from_group_error_message:I = 0x7f0906a8
 
 .field public static final video_could_not_send:I = 0x7f0904cc
 
 .field public static final video_invalid_could_not_attach:I = 0x7f0904cd
 
-.field public static final video_join_dialog_title:I = 0x7f0906ad
+.field public static final video_join_dialog_title:I = 0x7f0906a9
 
-.field public static final video_maybe_permission_detail:I = 0x7f0906ae
+.field public static final video_maybe_permission_detail:I = 0x7f0906aa
 
-.field public static final video_network_error_title:I = 0x7f0906af
+.field public static final video_network_error_title:I = 0x7f0906ab
 
-.field public static final video_permission_cancel:I = 0x7f0906b0
+.field public static final video_permission_cancel:I = 0x7f0906ac
 
-.field public static final video_permission_detail:I = 0x7f0906b1
+.field public static final video_permission_detail:I = 0x7f0906ad
 
-.field public static final video_permission_no_camera:I = 0x7f0906b2
+.field public static final video_permission_no_camera:I = 0x7f0906ae
 
-.field public static final video_permission_no_micropone:I = 0x7f0906b3
+.field public static final video_permission_no_micropone:I = 0x7f0906af
 
-.field public static final video_permission_open_settings:I = 0x7f0906b4
+.field public static final video_permission_open_settings:I = 0x7f0906b0
 
 .field public static final video_playback_error:I = 0x7f0904ce
 
-.field public static final video_rate_quality_cancel:I = 0x7f0906b5
+.field public static final video_rate_quality_cancel:I = 0x7f0906b1
 
-.field public static final video_rate_quality_send:I = 0x7f0906b6
+.field public static final video_rate_quality_send:I = 0x7f0906b2
 
 .field public static final video_saved:I = 0x7f0904cf
 
-.field public static final video_text_input_tooltip_text:I = 0x7f0906b7
+.field public static final video_text_input_tooltip_text:I = 0x7f0906b3
 
-.field public static final video_toggle_tooltip_text:I = 0x7f0906b8
+.field public static final video_toggle_tooltip_text:I = 0x7f0906b4
 
 .field public static final video_too_long:I = 0x7f0904d0
 
@@ -3371,7 +3363,7 @@
 
 .field public static final we_cannot_launch_sms_application_on_this_iphone_os__please_try_a_different_method:I = 0x7f0904d4
 
-.field public static final web_kik_community_guidelines:I = 0x7f0906b9
+.field public static final web_kik_community_guidelines:I = 0x7f0906b5
 
 .field public static final web_kik_privacy:I = 0x7f0904d5
 
@@ -3391,7 +3383,7 @@
 
 .field public static final what_would_you_like_to_do_with_your_username_:I = 0x7f0904dd
 
-.field public static final who_do_you_want_to_send_to:I = 0x7f0906ba
+.field public static final who_do_you_want_to_send_to:I = 0x7f0906b6
 
 .field public static final who_do_you_want_to_suggest:I = 0x7f0904de
 
@@ -3415,11 +3407,11 @@
 
 .field public static final x_minutes_ago_short:I = 0x7f0904e8
 
-.field public static final x_not_found:I = 0x7f0906bb
+.field public static final x_not_found:I = 0x7f0906b7
 
 .field public static final x_percent:I = 0x7f0904e9
 
-.field public static final x_video_chats_in_progress:I = 0x7f0906bc
+.field public static final x_video_chats_in_progress:I = 0x7f0906b8
 
 .field public static final x_would_like_to_link_to_your_kik_account:I = 0x7f0904ea
 
@@ -3429,11 +3421,11 @@
 
 .field public static final you_added_attribution_message:I = 0x7f0904ed
 
-.field public static final you_added_bot_attribution_message:I = 0x7f0906bd
+.field public static final you_added_bot_attribution_message:I = 0x7f0906b9
 
 .field public static final you_are_not_a_member_of_this_group:I = 0x7f0904ee
 
-.field public static final you_are_video_chatting:I = 0x7f0906be
+.field public static final you_are_video_chatting:I = 0x7f0906ba
 
 .field public static final you_cant_join_hashtag:I = 0x7f0904ef
 
@@ -3447,7 +3439,7 @@
 
 .field public static final you_ll_only_receive_messages_when_kik_is_open__re_enable_push_notifications_by_going_to_your_phone_s_settings__notifications_section_:I = 0x7f0904f4
 
-.field public static final you_need_to_accept_terms:I = 0x7f0906bf
+.field public static final you_need_to_accept_terms:I = 0x7f0906bb
 
 .field public static final you_will_only_receive_messages_when_kik_is_open:I = 0x7f0904f5
 
@@ -3477,7 +3469,7 @@
     .locals 0
 
     .prologue
-    .line 7727
+    .line 7756
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

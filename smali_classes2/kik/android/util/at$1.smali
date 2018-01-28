@@ -120,7 +120,7 @@
 
     iget-object v7, p0, Lkik/android/util/at$1;->a:Lkik/android/util/at;
 
-    invoke-static {v7}, Lkik/android/util/at;->d(Lkik/android/util/at;)Lkik/core/interfaces/ae;
+    invoke-static {v7}, Lkik/android/util/at;->d(Lkik/android/util/at;)Lkik/core/interfaces/ad;
 
     move-result-object v7
 
@@ -132,11 +132,11 @@
 
     iget-object v9, p0, Lkik/android/util/at$1;->a:Lkik/android/util/at;
 
-    invoke-static {v9}, Lkik/android/util/at;->f(Lkik/android/util/at;)Lkik/core/interfaces/aa;
+    invoke-static {v9}, Lkik/android/util/at;->f(Lkik/android/util/at;)Lkik/core/interfaces/z;
 
     move-result-object v9
 
-    invoke-direct/range {v0 .. v9}, Lkik/android/net/http/ContentUploadItem;-><init>(Lkik/core/datatypes/messageExtensions/ContentMessage;Ljava/lang/String;Ljava/lang/String;Lcom/kik/android/Mixpanel;Lkik/core/net/e;Lkik/core/interfaces/n;Lkik/core/interfaces/ae;Lkik/core/interfaces/IConversation;Lkik/core/interfaces/aa;)V
+    invoke-direct/range {v0 .. v9}, Lkik/android/net/http/ContentUploadItem;-><init>(Lkik/core/datatypes/messageExtensions/ContentMessage;Ljava/lang/String;Ljava/lang/String;Lcom/kik/android/Mixpanel;Lkik/core/net/e;Lkik/core/interfaces/n;Lkik/core/interfaces/ad;Lkik/core/interfaces/IConversation;Lkik/core/interfaces/z;)V
 
     .line 1098
     invoke-static {}, Lkik/android/net/http/b;->a()Lkik/android/net/http/b;

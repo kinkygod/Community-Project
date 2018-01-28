@@ -2,7 +2,7 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnClickListener;
+.implements Landroid/content/DialogInterface$OnCancelListener;
 
 
 # instance fields
@@ -20,7 +20,7 @@
     return-void
 .end method
 
-.method public static a(Lkik/android/chat/vm/DialogViewModel$a;)Landroid/content/DialogInterface$OnClickListener;
+.method public static a(Lkik/android/chat/vm/DialogViewModel$a;)Landroid/content/DialogInterface$OnCancelListener;
     .locals 1
 
     new-instance v0, Lkik/android/chat/vm/bz;
@@ -32,18 +32,15 @@
 
 
 # virtual methods
-.method public final onClick(Landroid/content/DialogInterface;I)V
+.method public final onCancel(Landroid/content/DialogInterface;)V
     .locals 1
 
     .prologue
     .line 0
     iget-object v0, p0, Lkik/android/chat/vm/bz;->a:Lkik/android/chat/vm/DialogViewModel$a;
 
-    .line 1725
+    .line 1666
     invoke-virtual {v0}, Lkik/android/chat/vm/DialogViewModel$a;->b()V
-
-    .line 1726
-    invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V
 
     .line 0
     return-void

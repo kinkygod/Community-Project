@@ -33,7 +33,7 @@
 
 # virtual methods
 .method public final call(Ljava/lang/Object;)V
-    .locals 3
+    .locals 5
 
     .prologue
     .line 0
@@ -41,20 +41,28 @@
 
     check-cast p1, Ljava/lang/Integer;
 
-    .line 1100
-    invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    .line 1615
+    invoke-virtual {v0}, Landroid/view/View;->getPaddingLeft()I
 
-    move-result-object v1
+    move-result v1
 
-    .line 1102
-    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
+    .line 1616
+    invoke-virtual {v0}, Landroid/view/View;->getPaddingTop()I
 
     move-result v2
 
-    iput v2, v1, Landroid/view/ViewGroup$LayoutParams;->height:I
+    .line 1617
+    invoke-virtual {v0}, Landroid/view/View;->getPaddingRight()I
 
-    .line 1104
-    invoke-virtual {v0, v1}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    move-result v3
+
+    .line 1618
+    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
+
+    move-result v4
+
+    .line 1614
+    invoke-virtual {v0, v1, v2, v3, v4}, Landroid/view/View;->setPadding(IIII)V
 
     .line 0
     return-void

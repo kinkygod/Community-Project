@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/core/util/i;->a(Ljava/util/List;Lkik/core/interfaces/w;)Ljava/util/List;
+    value = Lkik/core/util/i;->a(Ljava/util/List;Lkik/core/interfaces/v;)Ljava/util/List;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -29,16 +29,16 @@
 
 
 # instance fields
-.field final synthetic a:Lkik/core/interfaces/w;
+.field final synthetic a:Lkik/core/interfaces/v;
 
 
 # direct methods
-.method constructor <init>(Lkik/core/interfaces/w;)V
+.method constructor <init>(Lkik/core/interfaces/v;)V
     .locals 0
 
     .prologue
     .line 29
-    iput-object p1, p0, Lkik/core/util/i$1;->a:Lkik/core/interfaces/w;
+    iput-object p1, p0, Lkik/core/util/i$1;->a:Lkik/core/interfaces/v;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -55,11 +55,11 @@
     check-cast p1, Ljava/lang/String;
 
     .line 1033
-    iget-object v0, p0, Lkik/core/util/i$1;->a:Lkik/core/interfaces/w;
+    iget-object v0, p0, Lkik/core/util/i$1;->a:Lkik/core/interfaces/v;
 
     const/4 v1, 0x1
 
-    invoke-interface {v0, p1, v1}, Lkik/core/interfaces/w;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
+    invoke-interface {v0, p1, v1}, Lkik/core/interfaces/v;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
 
     move-result-object v0
 

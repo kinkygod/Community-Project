@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/vm/bc;
+.implements Lkik/android/chat/vm/be;
 
 
 # annotations
@@ -32,7 +32,7 @@
     .end annotation
 .end field
 
-.field protected d:Lkik/core/interfaces/w;
+.field protected d:Lkik/core/interfaces/v;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -189,13 +189,13 @@
 
     .line 124
     :pswitch_0
-    const v0, 0x7f09067a
+    const v0, 0x7f090682
 
     goto :goto_0
 
     .line 127
     :pswitch_1
-    const v0, 0x7f09067b
+    const v0, 0x7f090683
 
     goto :goto_0
 
@@ -575,7 +575,7 @@
     if-eq v0, v1, :cond_0
 
     .line 535
-    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->d:Lkik/core/interfaces/w;
+    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->d:Lkik/core/interfaces/v;
 
     iget-object v1, p0, Lkik/android/chat/vm/ReportDialogViewModel;->m:Lkik/core/datatypes/l;
 
@@ -585,7 +585,7 @@
 
     iget-object v2, p0, Lkik/android/chat/vm/ReportDialogViewModel;->o:Lkik/core/datatypes/f;
 
-    invoke-interface {v0, v1, v2, p1}, Lkik/core/interfaces/w;->a(Lkik/core/datatypes/k;Lkik/core/datatypes/f;Z)Lcom/kik/events/Promise;
+    invoke-interface {v0, v1, v2, p1}, Lkik/core/interfaces/v;->a(Lkik/core/datatypes/k;Lkik/core/datatypes/f;Z)Lcom/kik/events/Promise;
 
     .line 538
     :cond_0
@@ -695,640 +695,7 @@
 
 
 # virtual methods
-.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
-    .locals 3
-
-    .prologue
-    const/4 v2, 0x0
-
-    .line 243
-    invoke-interface {p1, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/chat/vm/ReportDialogViewModel;)V
-
-    .line 244
-    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/DialogViewModel;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
-
-    .line 246
-    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->m:Lkik/core/datatypes/l;
-
-    if-nez v0, :cond_0
-
-    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->k:Lkik/core/datatypes/k;
-
-    if-eqz v0, :cond_0
-
-    .line 247
-    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->d:Lkik/core/interfaces/w;
-
-    iget-object v1, p0, Lkik/android/chat/vm/ReportDialogViewModel;->k:Lkik/core/datatypes/k;
-
-    invoke-virtual {v1}, Lkik/core/datatypes/k;->a()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/w;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->m:Lkik/core/datatypes/l;
-
-    .line 250
-    :cond_0
-    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->n:Lkik/core/datatypes/l;
-
-    if-nez v0, :cond_2
-
-    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->l:Lkik/core/datatypes/k;
-
-    if-eqz v0, :cond_2
-
-    .line 251
-    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->d:Lkik/core/interfaces/w;
-
-    iget-object v1, p0, Lkik/android/chat/vm/ReportDialogViewModel;->l:Lkik/core/datatypes/k;
-
-    invoke-virtual {v1}, Lkik/core/datatypes/k;->a()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/w;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->n:Lkik/core/datatypes/l;
-
-    .line 1459
-    :cond_1
-    :goto_0
-    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->a:Lcom/kik/android/Mixpanel;
-
-    const-string v1, "Report Started"
-
-    invoke-virtual {v0, v1}, Lcom/kik/android/Mixpanel;->b(Ljava/lang/String;)Lcom/kik/android/Mixpanel$d;
-
-    move-result-object v0
-
-    const-string v1, "Screen"
-
-    iget-object v2, p0, Lkik/android/chat/vm/ReportDialogViewModel;->e:Ljava/lang/String;
-
-    .line 1460
-    invoke-virtual {v0, v1, v2}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
-
-    move-result-object v0
-
-    const-string v1, "Target"
-
-    iget-object v2, p0, Lkik/android/chat/vm/ReportDialogViewModel;->g:Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;
-
-    .line 1461
-    invoke-virtual {v2}, Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;->toTitleString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v0, v1, v2}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
-
-    move-result-object v0
-
-    const-string v1, "Chat"
-
-    iget-object v2, p0, Lkik/android/chat/vm/ReportDialogViewModel;->l:Lkik/core/datatypes/k;
-
-    .line 1462
-    invoke-virtual {v2}, Lkik/core/datatypes/k;->a()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v0, v1, v2}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
-
-    move-result-object v0
-
-    .line 1463
-    invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->g()Lcom/kik/android/Mixpanel$d;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
-
-    .line 259
-    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->c:Lkik/core/interfaces/IConversation;
-
-    iget-object v1, p0, Lkik/android/chat/vm/ReportDialogViewModel;->l:Lkik/core/datatypes/k;
-
-    invoke-virtual {v1}, Lkik/core/datatypes/k;->a()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-interface {v0, v1}, Lkik/core/interfaces/IConversation;->a(Ljava/lang/String;)Lkik/core/datatypes/f;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->o:Lkik/core/datatypes/f;
-
-    .line 260
-    return-void
-
-    .line 253
-    :cond_2
-    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->n:Lkik/core/datatypes/l;
-
-    if-nez v0, :cond_1
-
-    .line 254
-    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->k:Lkik/core/datatypes/k;
-
-    iput-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->l:Lkik/core/datatypes/k;
-
-    .line 255
-    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->m:Lkik/core/datatypes/l;
-
-    iput-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->n:Lkik/core/datatypes/l;
-
-    goto :goto_0
-.end method
-
-.method public final h()Z
-    .locals 1
-
-    .prologue
-    .line 384
-    iget-boolean v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->f:Z
-
-    return v0
-.end method
-
-.method public final i()Ljava/lang/String;
-    .locals 2
-
-    .prologue
-    .line 496
-    sget-object v0, Lkik/android/chat/vm/ReportDialogViewModel$1;->b:[I
-
-    iget-object v1, p0, Lkik/android/chat/vm/ReportDialogViewModel;->g:Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;
-
-    invoke-virtual {v1}, Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;->ordinal()I
-
-    move-result v1
-
-    aget v0, v0, v1
-
-    packed-switch v0, :pswitch_data_0
-
-    .line 502
-    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->b:Landroid/content/res/Resources;
-
-    const v1, 0x7f090311
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    :goto_0
-    return-object v0
-
-    .line 498
-    :pswitch_0
-    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->b:Landroid/content/res/Resources;
-
-    const v1, 0x7f090058
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_0
-
-    .line 496
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x1
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final k()Ljava/lang/String;
-    .locals 2
-
-    .prologue
-    .line 289
-    sget-object v0, Lkik/android/chat/vm/ReportDialogViewModel$1;->b:[I
-
-    iget-object v1, p0, Lkik/android/chat/vm/ReportDialogViewModel;->g:Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;
-
-    invoke-virtual {v1}, Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;->ordinal()I
-
-    move-result v1
-
-    aget v0, v0, v1
-
-    packed-switch v0, :pswitch_data_0
-
-    .line 296
-    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->b:Landroid/content/res/Resources;
-
-    const v1, 0x7f090313
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    :goto_0
-    return-object v0
-
-    .line 291
-    :pswitch_0
-    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->b:Landroid/content/res/Resources;
-
-    const v1, 0x7f090627
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_0
-
-    .line 293
-    :pswitch_1
-    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->b:Landroid/content/res/Resources;
-
-    const v1, 0x7f09062a
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_0
-
-    .line 289
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x1
-        :pswitch_0
-        :pswitch_1
-    .end packed-switch
-.end method
-
-.method public final m()Ljava/lang/String;
-    .locals 2
-
-    .prologue
-    .line 317
-    sget-object v0, Lkik/android/chat/vm/ReportDialogViewModel$1;->b:[I
-
-    iget-object v1, p0, Lkik/android/chat/vm/ReportDialogViewModel;->g:Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;
-
-    invoke-virtual {v1}, Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;->ordinal()I
-
-    move-result v1
-
-    aget v0, v0, v1
-
-    packed-switch v0, :pswitch_data_0
-
-    .line 323
-    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->b:Landroid/content/res/Resources;
-
-    const v1, 0x7f090310
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    :goto_0
-    return-object v0
-
-    .line 320
-    :pswitch_0
-    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->b:Landroid/content/res/Resources;
-
-    const v1, 0x7f090626
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_0
-
-    .line 317
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x1
-        :pswitch_0
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final n()Lrx/d;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/d",
-            "<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
-
-    .prologue
-    .line 360
-    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->r:Lrx/subjects/PublishSubject;
-
-    return-object v0
-.end method
-
-.method public final o()Lrx/d;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/d",
-            "<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
-
-    .prologue
-    .line 366
-    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->s:Lrx/subjects/PublishSubject;
-
-    return-object v0
-.end method
-
-.method public final p()Lrx/d;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/d",
-            "<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
-
-    .prologue
-    .line 372
-    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->t:Lrx/subjects/PublishSubject;
-
-    return-object v0
-.end method
-
-.method public final q()Lrx/d;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/d",
-            "<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
-
-    .prologue
-    .line 378
-    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->u:Lrx/subjects/PublishSubject;
-
-    return-object v0
-.end method
-
-.method public final t_()V
-    .locals 3
-
-    .prologue
-    .line 266
-    iget-boolean v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->i:Z
-
-    if-nez v0, :cond_0
-
-    const/4 v0, 0x1
-
-    :goto_0
-    iput-boolean v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->i:Z
-
-    .line 267
-    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->u:Lrx/subjects/PublishSubject;
-
-    iget-boolean v1, p0, Lkik/android/chat/vm/ReportDialogViewModel;->i:Z
-
-    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lrx/subjects/PublishSubject;->a(Ljava/lang/Object;)V
-
-    .line 2404
-    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->a:Lcom/kik/android/Mixpanel;
-
-    const-string v1, "Report With History Selected"
-
-    invoke-virtual {v0, v1}, Lcom/kik/android/Mixpanel;->b(Ljava/lang/String;)Lcom/kik/android/Mixpanel$d;
-
-    move-result-object v0
-
-    const-string v1, "Screen"
-
-    iget-object v2, p0, Lkik/android/chat/vm/ReportDialogViewModel;->e:Ljava/lang/String;
-
-    .line 2405
-    invoke-virtual {v0, v1, v2}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
-
-    move-result-object v1
-
-    const-string v2, "Selected"
-
-    iget-boolean v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->i:Z
-
-    if-eqz v0, :cond_1
-
-    const-string v0, "true"
-
-    .line 2406
-    :goto_1
-    invoke-virtual {v1, v2, v0}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
-
-    move-result-object v0
-
-    const-string v1, "Target"
-
-    iget-object v2, p0, Lkik/android/chat/vm/ReportDialogViewModel;->g:Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;
-
-    .line 2407
-    invoke-virtual {v2}, Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;->toTitleString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v0, v1, v2}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
-
-    move-result-object v0
-
-    const-string v1, "Chat"
-
-    iget-object v2, p0, Lkik/android/chat/vm/ReportDialogViewModel;->l:Lkik/core/datatypes/k;
-
-    .line 2408
-    invoke-virtual {v2}, Lkik/core/datatypes/k;->a()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v0, v1, v2}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
-
-    move-result-object v0
-
-    .line 2409
-    invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->g()Lcom/kik/android/Mixpanel$d;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
-
-    .line 269
-    return-void
-
-    .line 266
-    :cond_0
-    const/4 v0, 0x0
-
-    goto :goto_0
-
-    .line 2405
-    :cond_1
-    const-string v0, "false"
-
-    goto :goto_1
-.end method
-
-.method public final u_()Ljava/lang/String;
-    .locals 2
-
-    .prologue
-    .line 274
-    sget-object v0, Lkik/android/chat/vm/ReportDialogViewModel$1;->b:[I
-
-    iget-object v1, p0, Lkik/android/chat/vm/ReportDialogViewModel;->g:Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;
-
-    invoke-virtual {v1}, Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;->ordinal()I
-
-    move-result v1
-
-    aget v0, v0, v1
-
-    packed-switch v0, :pswitch_data_0
-
-    .line 281
-    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->b:Landroid/content/res/Resources;
-
-    const v1, 0x7f090316
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    :goto_0
-    return-object v0
-
-    .line 276
-    :pswitch_0
-    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->b:Landroid/content/res/Resources;
-
-    const v1, 0x7f090628
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_0
-
-    .line 278
-    :pswitch_1
-    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->b:Landroid/content/res/Resources;
-
-    const v1, 0x7f09062b
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_0
-
-    .line 274
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x1
-        :pswitch_0
-        :pswitch_1
-    .end packed-switch
-.end method
-
-.method public final v_()Ljava/lang/String;
-    .locals 2
-
-    .prologue
-    .line 303
-    sget-object v0, Lkik/android/chat/vm/ReportDialogViewModel$1;->b:[I
-
-    iget-object v1, p0, Lkik/android/chat/vm/ReportDialogViewModel;->g:Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;
-
-    invoke-virtual {v1}, Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;->ordinal()I
-
-    move-result v1
-
-    aget v0, v0, v1
-
-    packed-switch v0, :pswitch_data_0
-
-    .line 310
-    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->b:Landroid/content/res/Resources;
-
-    const v1, 0x7f09030d
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    :goto_0
-    return-object v0
-
-    .line 305
-    :pswitch_0
-    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->b:Landroid/content/res/Resources;
-
-    const v1, 0x7f090625
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_0
-
-    .line 307
-    :pswitch_1
-    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->b:Landroid/content/res/Resources;
-
-    const v1, 0x7f090629
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_0
-
-    .line 303
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x1
-        :pswitch_0
-        :pswitch_1
-    .end packed-switch
-.end method
-
-.method public final w_()V
+.method public final A_()V
     .locals 3
 
     .prologue
@@ -1377,7 +744,7 @@
     return-void
 .end method
 
-.method public final x_()V
+.method public final B_()V
     .locals 3
 
     .prologue
@@ -1439,7 +806,7 @@
     goto :goto_0
 .end method
 
-.method public final y_()V
+.method public final C_()V
     .locals 3
 
     .prologue
@@ -1488,7 +855,7 @@
     return-void
 .end method
 
-.method public final z_()V
+.method public final D_()V
     .locals 7
 
     .prologue
@@ -1511,7 +878,7 @@
 
     .line 3418
     :goto_0
-    invoke-static {p0}, Lkik/android/chat/vm/de;->a(Lkik/android/chat/vm/ReportDialogViewModel;)Lkik/core/util/a;
+    invoke-static {p0}, Lkik/android/chat/vm/dg;->a(Lkik/android/chat/vm/ReportDialogViewModel;)Lkik/core/util/a;
 
     move-result-object v6
 
@@ -1715,14 +1082,14 @@
 
     .line 3468
     :cond_3
-    new-instance v0, Lkik/android/chat/vm/di$a;
+    new-instance v0, Lkik/android/chat/vm/dk$a;
 
-    invoke-direct {v0}, Lkik/android/chat/vm/di$a;-><init>()V
+    invoke-direct {v0}, Lkik/android/chat/vm/dk$a;-><init>()V
 
     iget-object v1, p0, Lkik/android/chat/vm/ReportDialogViewModel;->h:Lkik/android/chat/vm/ReportDialogViewModel$ReportReason;
 
     .line 3469
-    invoke-virtual {v0, v1}, Lkik/android/chat/vm/di$a;->a(Lkik/android/chat/vm/ReportDialogViewModel$ReportReason;)Lkik/android/chat/vm/di$a;
+    invoke-virtual {v0, v1}, Lkik/android/chat/vm/dk$a;->a(Lkik/android/chat/vm/ReportDialogViewModel$ReportReason;)Lkik/android/chat/vm/dk$a;
 
     move-result-object v0
 
@@ -1736,44 +1103,44 @@
     .line 3508
     iget-object v1, p0, Lkik/android/chat/vm/ReportDialogViewModel;->b:Landroid/content/res/Resources;
 
-    const v2, 0x7f090676
+    const v2, 0x7f09067e
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-static {p0}, Lkik/android/chat/vm/df;->a(Lkik/android/chat/vm/ReportDialogViewModel;)Ljava/lang/Runnable;
+    invoke-static {p0}, Lkik/android/chat/vm/dh;->a(Lkik/android/chat/vm/ReportDialogViewModel;)Ljava/lang/Runnable;
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lkik/android/chat/vm/di$a;->a(Ljava/lang/String;Ljava/lang/Runnable;)Lkik/android/chat/vm/DialogViewModel$b;
+    invoke-virtual {v0, v1, v2}, Lkik/android/chat/vm/dk$a;->a(Ljava/lang/String;Ljava/lang/Runnable;)Lkik/android/chat/vm/DialogViewModel$b;
 
     .line 3515
     iget-object v1, p0, Lkik/android/chat/vm/ReportDialogViewModel;->b:Landroid/content/res/Resources;
 
-    const v2, 0x7f090664
+    const v2, 0x7f09066c
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-static {p0}, Lkik/android/chat/vm/dg;->a(Lkik/android/chat/vm/ReportDialogViewModel;)Ljava/lang/Runnable;
+    invoke-static {p0}, Lkik/android/chat/vm/di;->a(Lkik/android/chat/vm/ReportDialogViewModel;)Ljava/lang/Runnable;
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lkik/android/chat/vm/di$a;->b(Ljava/lang/String;Ljava/lang/Runnable;)Lkik/android/chat/vm/DialogViewModel$b;
+    invoke-virtual {v0, v1, v2}, Lkik/android/chat/vm/dk$a;->b(Ljava/lang/String;Ljava/lang/Runnable;)Lkik/android/chat/vm/DialogViewModel$b;
 
     .line 3480
     :goto_6
-    invoke-virtual {p0}, Lkik/android/chat/vm/ReportDialogViewModel;->B_()Lkik/android/chat/vm/aw;
+    invoke-virtual {p0}, Lkik/android/chat/vm/ReportDialogViewModel;->F_()Lkik/android/chat/vm/ay;
 
     move-result-object v1
 
-    invoke-virtual {v0}, Lkik/android/chat/vm/di$a;->b()Lkik/android/chat/vm/di;
+    invoke-virtual {v0}, Lkik/android/chat/vm/dk$a;->b()Lkik/android/chat/vm/dk;
 
     move-result-object v0
 
-    invoke-interface {v1, v0}, Lkik/android/chat/vm/aw;->a(Lkik/android/chat/vm/bd;)V
+    invoke-interface {v1, v0}, Lkik/android/chat/vm/ay;->a(Lkik/android/chat/vm/bf;)V
 
     .line 491
     return-void
@@ -1812,11 +1179,11 @@
 
     move-result-object v1
 
-    invoke-static {p0}, Lkik/android/chat/vm/dh;->a(Lkik/android/chat/vm/ReportDialogViewModel;)Ljava/lang/Runnable;
+    invoke-static {p0}, Lkik/android/chat/vm/dj;->a(Lkik/android/chat/vm/ReportDialogViewModel;)Ljava/lang/Runnable;
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lkik/android/chat/vm/di$a;->a(Ljava/lang/String;Ljava/lang/Runnable;)Lkik/android/chat/vm/DialogViewModel$b;
+    invoke-virtual {v0, v1, v2}, Lkik/android/chat/vm/dk$a;->a(Ljava/lang/String;Ljava/lang/Runnable;)Lkik/android/chat/vm/DialogViewModel$b;
 
     goto :goto_6
 
@@ -1829,4 +1196,637 @@
     move-object v1, v4
 
     goto/16 :goto_0
+.end method
+
+.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
+    .locals 3
+
+    .prologue
+    const/4 v2, 0x0
+
+    .line 243
+    invoke-interface {p1, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/chat/vm/ReportDialogViewModel;)V
+
+    .line 244
+    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/DialogViewModel;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
+
+    .line 246
+    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->m:Lkik/core/datatypes/l;
+
+    if-nez v0, :cond_0
+
+    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->k:Lkik/core/datatypes/k;
+
+    if-eqz v0, :cond_0
+
+    .line 247
+    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->d:Lkik/core/interfaces/v;
+
+    iget-object v1, p0, Lkik/android/chat/vm/ReportDialogViewModel;->k:Lkik/core/datatypes/k;
+
+    invoke-virtual {v1}, Lkik/core/datatypes/k;->a()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/v;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->m:Lkik/core/datatypes/l;
+
+    .line 250
+    :cond_0
+    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->n:Lkik/core/datatypes/l;
+
+    if-nez v0, :cond_2
+
+    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->l:Lkik/core/datatypes/k;
+
+    if-eqz v0, :cond_2
+
+    .line 251
+    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->d:Lkik/core/interfaces/v;
+
+    iget-object v1, p0, Lkik/android/chat/vm/ReportDialogViewModel;->l:Lkik/core/datatypes/k;
+
+    invoke-virtual {v1}, Lkik/core/datatypes/k;->a()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/v;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->n:Lkik/core/datatypes/l;
+
+    .line 1459
+    :cond_1
+    :goto_0
+    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->a:Lcom/kik/android/Mixpanel;
+
+    const-string v1, "Report Started"
+
+    invoke-virtual {v0, v1}, Lcom/kik/android/Mixpanel;->b(Ljava/lang/String;)Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v0
+
+    const-string v1, "Screen"
+
+    iget-object v2, p0, Lkik/android/chat/vm/ReportDialogViewModel;->e:Ljava/lang/String;
+
+    .line 1460
+    invoke-virtual {v0, v1, v2}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v0
+
+    const-string v1, "Target"
+
+    iget-object v2, p0, Lkik/android/chat/vm/ReportDialogViewModel;->g:Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;
+
+    .line 1461
+    invoke-virtual {v2}, Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;->toTitleString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v1, v2}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v0
+
+    const-string v1, "Chat"
+
+    iget-object v2, p0, Lkik/android/chat/vm/ReportDialogViewModel;->l:Lkik/core/datatypes/k;
+
+    .line 1462
+    invoke-virtual {v2}, Lkik/core/datatypes/k;->a()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v1, v2}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v0
+
+    .line 1463
+    invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->g()Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
+
+    .line 259
+    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->c:Lkik/core/interfaces/IConversation;
+
+    iget-object v1, p0, Lkik/android/chat/vm/ReportDialogViewModel;->l:Lkik/core/datatypes/k;
+
+    invoke-virtual {v1}, Lkik/core/datatypes/k;->a()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-interface {v0, v1}, Lkik/core/interfaces/IConversation;->a(Ljava/lang/String;)Lkik/core/datatypes/f;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->o:Lkik/core/datatypes/f;
+
+    .line 260
+    return-void
+
+    .line 253
+    :cond_2
+    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->n:Lkik/core/datatypes/l;
+
+    if-nez v0, :cond_1
+
+    .line 254
+    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->k:Lkik/core/datatypes/k;
+
+    iput-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->l:Lkik/core/datatypes/k;
+
+    .line 255
+    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->m:Lkik/core/datatypes/l;
+
+    iput-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->n:Lkik/core/datatypes/l;
+
+    goto :goto_0
+.end method
+
+.method public final h()Z
+    .locals 1
+
+    .prologue
+    .line 384
+    iget-boolean v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->f:Z
+
+    return v0
+.end method
+
+.method public final i()Ljava/lang/String;
+    .locals 2
+
+    .prologue
+    .line 496
+    sget-object v0, Lkik/android/chat/vm/ReportDialogViewModel$1;->b:[I
+
+    iget-object v1, p0, Lkik/android/chat/vm/ReportDialogViewModel;->g:Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;
+
+    invoke-virtual {v1}, Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;->ordinal()I
+
+    move-result v1
+
+    aget v0, v0, v1
+
+    packed-switch v0, :pswitch_data_0
+
+    .line 502
+    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->b:Landroid/content/res/Resources;
+
+    const v1, 0x7f090311
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    :goto_0
+    return-object v0
+
+    .line 498
+    :pswitch_0
+    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->b:Landroid/content/res/Resources;
+
+    const v1, 0x7f090058
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    .line 496
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final k()Ljava/lang/String;
+    .locals 2
+
+    .prologue
+    .line 289
+    sget-object v0, Lkik/android/chat/vm/ReportDialogViewModel$1;->b:[I
+
+    iget-object v1, p0, Lkik/android/chat/vm/ReportDialogViewModel;->g:Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;
+
+    invoke-virtual {v1}, Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;->ordinal()I
+
+    move-result v1
+
+    aget v0, v0, v1
+
+    packed-switch v0, :pswitch_data_0
+
+    .line 296
+    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->b:Landroid/content/res/Resources;
+
+    const v1, 0x7f090313
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    :goto_0
+    return-object v0
+
+    .line 291
+    :pswitch_0
+    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->b:Landroid/content/res/Resources;
+
+    const v1, 0x7f09062f
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    .line 293
+    :pswitch_1
+    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->b:Landroid/content/res/Resources;
+
+    const v1, 0x7f090632
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    .line 289
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_0
+        :pswitch_1
+    .end packed-switch
+.end method
+
+.method public final m()Ljava/lang/String;
+    .locals 2
+
+    .prologue
+    .line 317
+    sget-object v0, Lkik/android/chat/vm/ReportDialogViewModel$1;->b:[I
+
+    iget-object v1, p0, Lkik/android/chat/vm/ReportDialogViewModel;->g:Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;
+
+    invoke-virtual {v1}, Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;->ordinal()I
+
+    move-result v1
+
+    aget v0, v0, v1
+
+    packed-switch v0, :pswitch_data_0
+
+    .line 323
+    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->b:Landroid/content/res/Resources;
+
+    const v1, 0x7f090310
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    :goto_0
+    return-object v0
+
+    .line 320
+    :pswitch_0
+    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->b:Landroid/content/res/Resources;
+
+    const v1, 0x7f09062e
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    .line 317
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final n()Lrx/d;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+
+    .prologue
+    .line 360
+    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->r:Lrx/subjects/PublishSubject;
+
+    return-object v0
+.end method
+
+.method public final o()Lrx/d;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+
+    .prologue
+    .line 366
+    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->s:Lrx/subjects/PublishSubject;
+
+    return-object v0
+.end method
+
+.method public final p()Lrx/d;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+
+    .prologue
+    .line 372
+    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->t:Lrx/subjects/PublishSubject;
+
+    return-object v0
+.end method
+
+.method public final q()Lrx/d;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+
+    .prologue
+    .line 378
+    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->u:Lrx/subjects/PublishSubject;
+
+    return-object v0
+.end method
+
+.method public final x_()V
+    .locals 3
+
+    .prologue
+    .line 266
+    iget-boolean v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->i:Z
+
+    if-nez v0, :cond_0
+
+    const/4 v0, 0x1
+
+    :goto_0
+    iput-boolean v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->i:Z
+
+    .line 267
+    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->u:Lrx/subjects/PublishSubject;
+
+    iget-boolean v1, p0, Lkik/android/chat/vm/ReportDialogViewModel;->i:Z
+
+    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lrx/subjects/PublishSubject;->a(Ljava/lang/Object;)V
+
+    .line 2404
+    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->a:Lcom/kik/android/Mixpanel;
+
+    const-string v1, "Report With History Selected"
+
+    invoke-virtual {v0, v1}, Lcom/kik/android/Mixpanel;->b(Ljava/lang/String;)Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v0
+
+    const-string v1, "Screen"
+
+    iget-object v2, p0, Lkik/android/chat/vm/ReportDialogViewModel;->e:Ljava/lang/String;
+
+    .line 2405
+    invoke-virtual {v0, v1, v2}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v1
+
+    const-string v2, "Selected"
+
+    iget-boolean v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->i:Z
+
+    if-eqz v0, :cond_1
+
+    const-string v0, "true"
+
+    .line 2406
+    :goto_1
+    invoke-virtual {v1, v2, v0}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v0
+
+    const-string v1, "Target"
+
+    iget-object v2, p0, Lkik/android/chat/vm/ReportDialogViewModel;->g:Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;
+
+    .line 2407
+    invoke-virtual {v2}, Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;->toTitleString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v1, v2}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v0
+
+    const-string v1, "Chat"
+
+    iget-object v2, p0, Lkik/android/chat/vm/ReportDialogViewModel;->l:Lkik/core/datatypes/k;
+
+    .line 2408
+    invoke-virtual {v2}, Lkik/core/datatypes/k;->a()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v1, v2}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v0
+
+    .line 2409
+    invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->g()Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
+
+    .line 269
+    return-void
+
+    .line 266
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_0
+
+    .line 2405
+    :cond_1
+    const-string v0, "false"
+
+    goto :goto_1
+.end method
+
+.method public final y_()Ljava/lang/String;
+    .locals 2
+
+    .prologue
+    .line 274
+    sget-object v0, Lkik/android/chat/vm/ReportDialogViewModel$1;->b:[I
+
+    iget-object v1, p0, Lkik/android/chat/vm/ReportDialogViewModel;->g:Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;
+
+    invoke-virtual {v1}, Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;->ordinal()I
+
+    move-result v1
+
+    aget v0, v0, v1
+
+    packed-switch v0, :pswitch_data_0
+
+    .line 281
+    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->b:Landroid/content/res/Resources;
+
+    const v1, 0x7f090316
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    :goto_0
+    return-object v0
+
+    .line 276
+    :pswitch_0
+    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->b:Landroid/content/res/Resources;
+
+    const v1, 0x7f090630
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    .line 278
+    :pswitch_1
+    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->b:Landroid/content/res/Resources;
+
+    const v1, 0x7f090633
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    .line 274
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_0
+        :pswitch_1
+    .end packed-switch
+.end method
+
+.method public final z_()Ljava/lang/String;
+    .locals 2
+
+    .prologue
+    .line 303
+    sget-object v0, Lkik/android/chat/vm/ReportDialogViewModel$1;->b:[I
+
+    iget-object v1, p0, Lkik/android/chat/vm/ReportDialogViewModel;->g:Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;
+
+    invoke-virtual {v1}, Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;->ordinal()I
+
+    move-result v1
+
+    aget v0, v0, v1
+
+    packed-switch v0, :pswitch_data_0
+
+    .line 310
+    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->b:Landroid/content/res/Resources;
+
+    const v1, 0x7f09030d
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    :goto_0
+    return-object v0
+
+    .line 305
+    :pswitch_0
+    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->b:Landroid/content/res/Resources;
+
+    const v1, 0x7f09062d
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    .line 307
+    :pswitch_1
+    iget-object v0, p0, Lkik/android/chat/vm/ReportDialogViewModel;->b:Landroid/content/res/Resources;
+
+    const v1, 0x7f090631
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    .line 303
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_0
+        :pswitch_1
+    .end packed-switch
 .end method

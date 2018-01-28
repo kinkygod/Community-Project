@@ -17,31 +17,31 @@
 # instance fields
 .field protected _fiveStar:Landroid/widget/ImageView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1003b3
+        value = 0x7f1003af
     .end annotation
 .end field
 
 .field protected _fourStar:Landroid/widget/ImageView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1003b2
+        value = 0x7f1003ae
     .end annotation
 .end field
 
 .field protected _oneStar:Landroid/widget/ImageView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1003af
+        value = 0x7f1003ab
     .end annotation
 .end field
 
 .field protected _threeStar:Landroid/widget/ImageView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1003b1
+        value = 0x7f1003ad
     .end annotation
 .end field
 
 .field protected _twoStar:Landroid/widget/ImageView;
     .annotation build Lbutterknife/BindView;
-        value = 0x7f1003b0
+        value = 0x7f1003ac
     .end annotation
 .end field
 
@@ -79,7 +79,7 @@
     iput-object p2, p0, Lkik/android/videochat/RatingDialogFragment$Builder;->c:Lkik/android/videochat/ar;
 
     .line 59
-    const v0, 0x7f040151
+    const v0, 0x7f040156
 
     const/4 v1, 0x0
 
@@ -199,7 +199,7 @@
     invoke-virtual {p0, v0, v1}, Lkik/android/videochat/RatingDialogFragment$Builder;->b(ILandroid/content/DialogInterface$OnClickListener;)Lkik/android/chat/fragment/KikDialogFragment$a;
 
     .line 80
-    const v0, 0x7f090672
+    const v0, 0x7f09067a
 
     invoke-virtual {p0, v0}, Lkik/android/videochat/RatingDialogFragment$Builder;->a(I)Lkik/android/chat/fragment/KikDialogFragment$a;
 
@@ -308,7 +308,7 @@
     if-gt v1, v2, :cond_0
 
     .line 1097
-    const v1, 0x7f020327
+    const v1, 0x7f02030a
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -316,7 +316,7 @@
 
     .line 1100
     :cond_0
-    const v1, 0x7f020328
+    const v1, 0x7f02030b
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/kik/entity/mobile/EntityService$j;
+.implements Lcom/kik/entity/mobile/EntityService$k;
 
 
 # annotations
@@ -22,7 +22,7 @@
         "<",
         "Lcom/kik/entity/mobile/EntityService$PageToken$a;",
         ">;",
-        "Lcom/kik/entity/mobile/EntityService$j;"
+        "Lcom/kik/entity/mobile/EntityService$k;"
     }
 .end annotation
 
@@ -713,7 +713,7 @@
 
     .prologue
     .line 15725
-    invoke-static {}, Lcom/kik/entity/mobile/EntityService;->s()Lcom/google/protobuf/Descriptors$Descriptor;
+    invoke-static {}, Lcom/kik/entity/mobile/EntityService;->u()Lcom/google/protobuf/Descriptors$Descriptor;
 
     move-result-object v0
 
@@ -725,7 +725,7 @@
 
     .prologue
     .line 15696
-    invoke-static {}, Lcom/kik/entity/mobile/EntityService;->t()Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
+    invoke-static {}, Lcom/kik/entity/mobile/EntityService;->v()Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
     move-result-object v0
 

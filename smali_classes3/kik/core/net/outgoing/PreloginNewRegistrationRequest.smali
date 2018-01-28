@@ -240,34 +240,34 @@
     return v0
 .end method
 
-.method public getUserProfile()Lkik/core/datatypes/ac;
+.method public getUserProfile()Lkik/core/datatypes/ab;
     .locals 2
 
     .prologue
     .line 116
-    new-instance v0, Lkik/core/datatypes/ac;
+    new-instance v0, Lkik/core/datatypes/ab;
 
-    invoke-direct {v0}, Lkik/core/datatypes/ac;-><init>()V
+    invoke-direct {v0}, Lkik/core/datatypes/ab;-><init>()V
 
     .line 118
     iget-object v1, p0, Lkik/core/net/outgoing/PreloginNewRegistrationRequest;->_username:Ljava/lang/String;
 
-    iput-object v1, v0, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
+    iput-object v1, v0, Lkik/core/datatypes/ab;->c:Ljava/lang/String;
 
     .line 119
     iget-object v1, p0, Lkik/core/net/outgoing/PreloginNewRegistrationRequest;->_email:Ljava/lang/String;
 
-    iput-object v1, v0, Lkik/core/datatypes/ac;->a:Ljava/lang/String;
+    iput-object v1, v0, Lkik/core/datatypes/ab;->a:Ljava/lang/String;
 
     .line 120
     iget-object v1, p0, Lkik/core/net/outgoing/PreloginNewRegistrationRequest;->_first:Ljava/lang/String;
 
-    iput-object v1, v0, Lkik/core/datatypes/ac;->d:Ljava/lang/String;
+    iput-object v1, v0, Lkik/core/datatypes/ab;->d:Ljava/lang/String;
 
     .line 121
     iget-object v1, p0, Lkik/core/net/outgoing/PreloginNewRegistrationRequest;->_last:Ljava/lang/String;
 
-    iput-object v1, v0, Lkik/core/datatypes/ac;->e:Ljava/lang/String;
+    iput-object v1, v0, Lkik/core/datatypes/ab;->e:Ljava/lang/String;
 
     .line 123
     return-object v0

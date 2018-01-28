@@ -20,13 +20,13 @@
 # instance fields
 .field final synthetic a:Lcom/kik/metrics/augmentum/c;
 
-.field private final b:Lcom/kik/metrics/b/s;
+.field private final b:Lcom/kik/metrics/b/t;
 
 .field private final c:Lcom/kik/metrics/a/d;
 
 
 # direct methods
-.method constructor <init>(Lcom/kik/metrics/augmentum/c;Lcom/kik/metrics/b/s;Lcom/kik/metrics/a/d;)V
+.method constructor <init>(Lcom/kik/metrics/augmentum/c;Lcom/kik/metrics/b/t;Lcom/kik/metrics/a/d;)V
     .locals 0
 
     .prologue
@@ -36,7 +36,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 61
-    iput-object p2, p0, Lcom/kik/metrics/augmentum/c$b;->b:Lcom/kik/metrics/b/s;
+    iput-object p2, p0, Lcom/kik/metrics/augmentum/c$b;->b:Lcom/kik/metrics/b/t;
 
     .line 62
     iput-object p3, p0, Lcom/kik/metrics/augmentum/c$b;->c:Lcom/kik/metrics/a/d;
@@ -159,9 +159,9 @@
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/kik/metrics/augmentum/c$b;->b:Lcom/kik/metrics/b/s;
+    iget-object v2, p0, Lcom/kik/metrics/augmentum/c$b;->b:Lcom/kik/metrics/b/t;
 
-    invoke-static {v1, v0, v2}, Lcom/kik/metrics/augmentum/c;->a(Lorg/json/JSONObject;Ljava/lang/String;Lcom/kik/metrics/b/s;)V
+    invoke-static {v1, v0, v2}, Lcom/kik/metrics/augmentum/c;->a(Lorg/json/JSONObject;Ljava/lang/String;Lcom/kik/metrics/b/t;)V
 
     .line 88
     invoke-virtual {v1}, Lorg/json/JSONObject;->toString()Ljava/lang/String;

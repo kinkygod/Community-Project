@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/vm/profile/cu;
+.implements Lkik/android/chat/vm/profile/dh;
 
 
 # instance fields
@@ -12,10 +12,10 @@
     .end annotation
 .end field
 
-.field e:Lkik/core/interfaces/x;
+.field e:Lkik/core/interfaces/w;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lkik/core/interfaces/x",
+            "Lkik/core/interfaces/w",
             "<",
             "Landroid/graphics/Bitmap;",
             ">;"
@@ -188,7 +188,7 @@
 
 
 # virtual methods
-.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
     .locals 2
 
     .prologue
@@ -196,7 +196,7 @@
     invoke-interface {p1, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/chat/vm/profile/gridvm/n;)V
 
     .line 47
-    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/profile/gridvm/a;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
+    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/profile/gridvm/a;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 49
     iget-object v0, p0, Lkik/android/chat/vm/profile/gridvm/n;->d:Lcom/kik/core/domain/users/a;
@@ -213,66 +213,12 @@
     return-void
 .end method
 
-.method public final aB_()Lrx/d;
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/d",
-            "<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-
-    .prologue
-    .line 55
-    iget-object v0, p0, Lkik/android/chat/vm/profile/gridvm/n;->i:Lrx/d;
-
-    invoke-static {}, Lkik/android/chat/vm/profile/gridvm/o;->a()Lrx/functions/g;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lrx/d;->e(Lrx/functions/g;)Lrx/d;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final aD_()Lrx/d;
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/d",
-            "<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
-
-    .prologue
-    .line 67
-    iget-object v0, p0, Lkik/android/chat/vm/profile/gridvm/n;->g:Lrx/d;
-
-    invoke-static {p0}, Lkik/android/chat/vm/profile/gridvm/q;->a(Lkik/android/chat/vm/profile/gridvm/n;)Lrx/functions/g;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lrx/d;->e(Lrx/functions/g;)Lrx/d;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final ai_()V
+.method public final aj_()V
     .locals 4
 
     .prologue
     .line 79
-    invoke-virtual {p0}, Lkik/android/chat/vm/profile/gridvm/n;->ab_()Lrx/f/b;
+    invoke-virtual {p0}, Lkik/android/chat/vm/profile/gridvm/n;->ad_()Lrx/f/b;
 
     move-result-object v0
 
@@ -319,6 +265,33 @@
             "()",
             "Lrx/d",
             "<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+
+    .prologue
+    .line 55
+    iget-object v0, p0, Lkik/android/chat/vm/profile/gridvm/n;->i:Lrx/d;
+
+    invoke-static {}, Lkik/android/chat/vm/profile/gridvm/o;->a()Lrx/functions/g;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lrx/d;->e(Lrx/functions/g;)Lrx/d;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final i()Lrx/d;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<",
             "Lkik/core/interfaces/o",
             "<",
             "Landroid/graphics/Bitmap;",
@@ -328,18 +301,18 @@
 
     .prologue
     .line 73
-    iget-object v0, p0, Lkik/android/chat/vm/profile/gridvm/n;->e:Lkik/core/interfaces/x;
+    iget-object v0, p0, Lkik/android/chat/vm/profile/gridvm/n;->e:Lkik/core/interfaces/w;
 
     iget-object v1, p0, Lkik/android/chat/vm/profile/gridvm/n;->i:Lrx/d;
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/x;->a(Lrx/d;)Lrx/d;
+    invoke-interface {v0, v1}, Lkik/core/interfaces/w;->a(Lrx/d;)Lrx/d;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public final i()Lrx/d;
+.method public final k()Lrx/d;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -356,6 +329,33 @@
     iget-object v0, p0, Lkik/android/chat/vm/profile/gridvm/n;->g:Lrx/d;
 
     invoke-static {p0}, Lkik/android/chat/vm/profile/gridvm/p;->a(Lkik/android/chat/vm/profile/gridvm/n;)Lrx/functions/g;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lrx/d;->e(Lrx/functions/g;)Lrx/d;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final n()Lrx/d;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+
+    .prologue
+    .line 67
+    iget-object v0, p0, Lkik/android/chat/vm/profile/gridvm/n;->g:Lrx/d;
+
+    invoke-static {p0}, Lkik/android/chat/vm/profile/gridvm/q;->a(Lkik/android/chat/vm/profile/gridvm/n;)Lrx/functions/g;
 
     move-result-object v1
 

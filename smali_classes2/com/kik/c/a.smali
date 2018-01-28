@@ -17,17 +17,17 @@
 
 .field private e:Lkik/core/interfaces/n;
 
-.field private f:Lkik/core/interfaces/ae;
+.field private f:Lkik/core/interfaces/ad;
 
 .field private g:Lkik/core/interfaces/IConversation;
 
-.field private h:Lkik/core/interfaces/aa;
+.field private h:Lkik/core/interfaces/z;
 
 .field private i:Lkik/android/net/http/b;
 
 
 # direct methods
-.method public constructor <init>(Lkik/android/internal/platform/PlatformHelper;Lkik/android/net/http/b;Lcom/kik/cache/KikVolleyImageLoader;Lcom/kik/android/Mixpanel;Lkik/core/net/e;Lkik/core/interfaces/n;Lkik/core/interfaces/ae;Lkik/core/interfaces/IConversation;Lkik/core/interfaces/aa;)V
+.method public constructor <init>(Lkik/android/internal/platform/PlatformHelper;Lkik/android/net/http/b;Lcom/kik/cache/KikVolleyImageLoader;Lcom/kik/android/Mixpanel;Lkik/core/net/e;Lkik/core/interfaces/n;Lkik/core/interfaces/ad;Lkik/core/interfaces/IConversation;Lkik/core/interfaces/z;)V
     .locals 0
 
     .prologue
@@ -53,13 +53,13 @@
     iput-object p6, p0, Lcom/kik/c/a;->e:Lkik/core/interfaces/n;
 
     .line 50
-    iput-object p7, p0, Lcom/kik/c/a;->f:Lkik/core/interfaces/ae;
+    iput-object p7, p0, Lcom/kik/c/a;->f:Lkik/core/interfaces/ad;
 
     .line 51
     iput-object p8, p0, Lcom/kik/c/a;->g:Lkik/core/interfaces/IConversation;
 
     .line 52
-    iput-object p9, p0, Lcom/kik/c/a;->h:Lkik/core/interfaces/aa;
+    iput-object p9, p0, Lcom/kik/c/a;->h:Lkik/core/interfaces/z;
 
     .line 53
     return-void
@@ -97,17 +97,17 @@
 
     iget-object v6, p0, Lcom/kik/c/a;->e:Lkik/core/interfaces/n;
 
-    iget-object v7, p0, Lcom/kik/c/a;->f:Lkik/core/interfaces/ae;
+    iget-object v7, p0, Lcom/kik/c/a;->f:Lkik/core/interfaces/ad;
 
     iget-object v8, p0, Lcom/kik/c/a;->g:Lkik/core/interfaces/IConversation;
 
-    iget-object v9, p0, Lcom/kik/c/a;->h:Lkik/core/interfaces/aa;
+    iget-object v9, p0, Lcom/kik/c/a;->h:Lkik/core/interfaces/z;
 
     move-object v1, p1
 
     move-object v3, p3
 
-    invoke-direct/range {v0 .. v9}, Lkik/android/net/http/ContentUploadItem;-><init>(Lkik/core/datatypes/messageExtensions/ContentMessage;Ljava/lang/String;Ljava/lang/String;Lcom/kik/android/Mixpanel;Lkik/core/net/e;Lkik/core/interfaces/n;Lkik/core/interfaces/ae;Lkik/core/interfaces/IConversation;Lkik/core/interfaces/aa;)V
+    invoke-direct/range {v0 .. v9}, Lkik/android/net/http/ContentUploadItem;-><init>(Lkik/core/datatypes/messageExtensions/ContentMessage;Ljava/lang/String;Ljava/lang/String;Lcom/kik/android/Mixpanel;Lkik/core/net/e;Lkik/core/interfaces/n;Lkik/core/interfaces/ad;Lkik/core/interfaces/IConversation;Lkik/core/interfaces/z;)V
 
     .line 98
     iget-object v1, p0, Lcom/kik/c/a;->i:Lkik/android/net/http/b;

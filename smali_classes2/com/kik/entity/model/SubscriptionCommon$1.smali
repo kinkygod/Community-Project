@@ -22,7 +22,7 @@
     .locals 0
 
     .prologue
-    .line 1430
+    .line 1429
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -34,10 +34,10 @@
     .locals 1
 
     .prologue
-    .line 1433
+    .line 1432
     invoke-static {p1}, Lcom/kik/entity/model/SubscriptionCommon;->a(Lcom/google/protobuf/Descriptors$FileDescriptor;)Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    .line 1434
+    .line 1433
     const/4 v0, 0x0
 
     return-object v0

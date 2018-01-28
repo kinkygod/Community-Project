@@ -7,8 +7,8 @@
 
 
 # virtual methods
-.method public abstract U_()Ljava/lang/String;
+.method public abstract W_()Ljava/lang/String;
 .end method
 
-.method public abstract V_()Ljava/lang/String;
+.method public abstract X_()Ljava/lang/String;
 .end method

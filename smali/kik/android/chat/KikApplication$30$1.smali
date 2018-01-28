@@ -28,7 +28,7 @@
     .locals 0
 
     .prologue
-    .line 474
+    .line 476
     iput-object p1, p0, Lkik/android/chat/KikApplication$30$1;->b:Lkik/android/chat/KikApplication$30;
 
     iput-object p2, p0, Lkik/android/chat/KikApplication$30$1;->a:Ljava/lang/Integer;
@@ -44,7 +44,7 @@
     .locals 10
 
     .prologue
-    .line 478
+    .line 480
     invoke-static {}, Lkik/core/util/v;->b()J
 
     move-result-wide v0
@@ -53,7 +53,7 @@
 
     move-result-object v0
 
-    .line 479
+    .line 481
     invoke-static {}, Lkik/core/util/v;->d()J
 
     move-result-wide v2
@@ -62,7 +62,7 @@
 
     move-result-object v1
 
-    .line 481
+    .line 483
     invoke-virtual {v1}, Ljava/lang/Long;->longValue()J
 
     move-result-wide v2
@@ -73,7 +73,7 @@
 
     if-nez v1, :cond_0
 
-    .line 482
+    .line 484
     iget-object v1, p0, Lkik/android/chat/KikApplication$30$1;->b:Lkik/android/chat/KikApplication$30;
 
     iget-object v1, v1, Lkik/android/chat/KikApplication$30;->a:Lkik/android/chat/KikApplication;
@@ -92,7 +92,7 @@
 
     iget-object v4, p0, Lkik/android/chat/KikApplication$30$1;->a:Ljava/lang/Integer;
 
-    .line 483
+    .line 485
     invoke-virtual {v4}, Ljava/lang/Integer;->intValue()I
 
     move-result v4
@@ -109,7 +109,7 @@
 
     invoke-virtual/range {v1 .. v9}, Lcom/kik/clientmetrics/f;->a(Lcom/kik/clientmetrics/model/Clientmetrics$ClientUserEventType;Ljava/lang/String;JLjava/lang/String;Ljava/lang/String;J)V
 
-    .line 491
+    .line 493
     :goto_0
     iget-object v0, p0, Lkik/android/chat/KikApplication$30$1;->b:Lkik/android/chat/KikApplication$30;
 
@@ -127,7 +127,7 @@
 
     move-result-object v2
 
-    invoke-interface {v2}, Lkik/core/interfaces/IConversation;->F()Ljava/util/List;
+    invoke-interface {v2}, Lkik/core/interfaces/IConversation;->E()Ljava/util/List;
 
     move-result-object v2
 
@@ -137,7 +137,7 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/kik/android/Mixpanel;->a(Ljava/lang/String;I)Lcom/kik/android/Mixpanel;
 
-    .line 492
+    .line 494
     iget-object v0, p0, Lkik/android/chat/KikApplication$30$1;->b:Lkik/android/chat/KikApplication$30;
 
     iget-object v0, v0, Lkik/android/chat/KikApplication$30;->a:Lkik/android/chat/KikApplication;
@@ -154,7 +154,7 @@
 
     move-result-object v2
 
-    invoke-interface {v2}, Lkik/core/interfaces/IConversation;->H()Ljava/util/List;
+    invoke-interface {v2}, Lkik/core/interfaces/IConversation;->G()Ljava/util/List;
 
     move-result-object v2
 
@@ -164,10 +164,10 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/kik/android/Mixpanel;->a(Ljava/lang/String;I)Lcom/kik/android/Mixpanel;
 
-    .line 493
+    .line 495
     return-void
 
-    .line 487
+    .line 489
     :cond_0
     iget-object v1, p0, Lkik/android/chat/KikApplication$30$1;->b:Lkik/android/chat/KikApplication$30;
 
@@ -187,7 +187,7 @@
 
     iget-object v4, p0, Lkik/android/chat/KikApplication$30$1;->a:Ljava/lang/Integer;
 
-    .line 488
+    .line 490
     invoke-virtual {v4}, Ljava/lang/Integer;->intValue()I
 
     move-result v4

@@ -39,7 +39,7 @@
     .line 29
     const-string v3, "android.intent.extra.SUBJECT"
 
-    const v4, 0x7f0905a4
+    const v4, 0x7f0905aa
 
     invoke-virtual {p0, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -50,7 +50,7 @@
     .line 30
     const-string v3, "android.intent.extra.TEXT"
 
-    const v4, 0x7f0905a3
+    const v4, 0x7f0905a9
 
     const/4 v5, 0x3
 
@@ -141,7 +141,7 @@
     .line 53
     const-string v4, "sms_body"
 
-    const v5, 0x7f0905a5
+    const v5, 0x7f0905ab
 
     const/4 v6, 0x3
 

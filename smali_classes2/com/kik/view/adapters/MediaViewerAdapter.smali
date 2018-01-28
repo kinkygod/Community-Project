@@ -15,11 +15,11 @@
     .end annotation
 .end field
 
-.field private final b:Lkik/android/f/f;
+.field private final b:Lkik/android/f/e;
 
 
 # direct methods
-.method public constructor <init>(Landroid/support/v4/app/FragmentManager;Ljava/util/List;Lkik/android/f/f;)V
+.method public constructor <init>(Landroid/support/v4/app/FragmentManager;Ljava/util/List;Lkik/android/f/e;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -29,7 +29,7 @@
             "<",
             "Lkik/core/datatypes/Message;",
             ">;",
-            "Lkik/android/f/f;",
+            "Lkik/android/f/e;",
             ")V"
         }
     .end annotation
@@ -42,7 +42,7 @@
     iput-object p2, p0, Lcom/kik/view/adapters/MediaViewerAdapter;->a:Ljava/util/List;
 
     .line 38
-    iput-object p3, p0, Lcom/kik/view/adapters/MediaViewerAdapter;->b:Lkik/android/f/f;
+    iput-object p3, p0, Lcom/kik/view/adapters/MediaViewerAdapter;->b:Lkik/android/f/e;
 
     .line 39
     return-void
@@ -152,9 +152,9 @@
 
     .line 68
     :goto_2
-    iget-object v1, p0, Lcom/kik/view/adapters/MediaViewerAdapter;->b:Lkik/android/f/f;
+    iget-object v1, p0, Lcom/kik/view/adapters/MediaViewerAdapter;->b:Lkik/android/f/e;
 
-    invoke-virtual {v0, v1}, Lkik/android/chat/fragment/MediaItemFragment;->a(Lkik/android/f/f;)V
+    invoke-virtual {v0, v1}, Lkik/android/chat/fragment/MediaItemFragment;->a(Lkik/android/f/e;)V
 
     goto :goto_0
 

@@ -10,9 +10,9 @@
 
 
 # instance fields
-.field public final a:Landroid/widget/LinearLayout;
+.field public final a:Lcom/github/rahatarmanahmed/cpv/CircularProgressView;
 
-.field public final b:Landroid/widget/ImageView;
+.field public final b:Landroid/widget/LinearLayout;
 
 .field public final c:Lkik/android/widget/EllipsizingTextView;
 
@@ -39,7 +39,7 @@
     .line 12
     sput-object v0, Lkik/android/e/s;->e:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f1001a1
+    const v1, 0x7f1001a0
 
     const/4 v2, 0x1
 
@@ -48,7 +48,7 @@
     .line 13
     sget-object v0, Lkik/android/e/s;->e:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f1001a2
+    const v1, 0x7f1001a1
 
     const/4 v2, 0x2
 
@@ -84,27 +84,27 @@
     move-result-object v1
 
     .line 28
-    aget-object v0, v1, v3
-
-    check-cast v0, Landroid/widget/LinearLayout;
-
-    iput-object v0, p0, Lkik/android/e/s;->a:Landroid/widget/LinearLayout;
-
-    .line 29
-    iget-object v0, p0, Lkik/android/e/s;->a:Landroid/widget/LinearLayout;
-
-    const/4 v2, 0x0
-
-    invoke-virtual {v0, v2}, Landroid/widget/LinearLayout;->setTag(Ljava/lang/Object;)V
-
-    .line 30
     const/4 v0, 0x1
 
     aget-object v0, v1, v0
 
-    check-cast v0, Landroid/widget/ImageView;
+    check-cast v0, Lcom/github/rahatarmanahmed/cpv/CircularProgressView;
 
-    iput-object v0, p0, Lkik/android/e/s;->b:Landroid/widget/ImageView;
+    iput-object v0, p0, Lkik/android/e/s;->a:Lcom/github/rahatarmanahmed/cpv/CircularProgressView;
+
+    .line 29
+    aget-object v0, v1, v3
+
+    check-cast v0, Landroid/widget/LinearLayout;
+
+    iput-object v0, p0, Lkik/android/e/s;->b:Landroid/widget/LinearLayout;
+
+    .line 30
+    iget-object v0, p0, Lkik/android/e/s;->b:Landroid/widget/LinearLayout;
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v0, v2}, Landroid/widget/LinearLayout;->setTag(Ljava/lang/Object;)V
 
     .line 31
     const/4 v0, 0x2
@@ -130,7 +130,7 @@
 
     .prologue
     .line 130
-    const-string v0, "layout/chats_search_username_timed_out_0"
+    const-string v0, "layout/chats_search_username_searching_0"
 
     invoke-virtual {p0}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -252,10 +252,10 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 90
-    const/4 v0, 0x0
+    iget-object v1, p0, Lkik/android/e/s;->f:Lkik/android/chat/vm/chats/search/i;
 
     .line 91
-    iget-object v1, p0, Lkik/android/e/s;->f:Lkik/android/chat/vm/chats/search/i;
+    const/4 v0, 0x0
 
     .line 93
     and-long v4, v2, v8
@@ -268,7 +268,7 @@
     if-eqz v1, :cond_0
 
     .line 99
-    invoke-interface {v1}, Lkik/android/chat/vm/chats/search/i;->i()Lrx/d;
+    invoke-interface {v1}, Lkik/android/chat/vm/chats/search/i;->ac_()Lrx/d;
 
     move-result-object v0
 
@@ -281,7 +281,7 @@
     if-eqz v1, :cond_1
 
     .line 106
-    iget-object v1, p0, Lkik/android/e/s;->a:Landroid/widget/LinearLayout;
+    iget-object v1, p0, Lkik/android/e/s;->b:Landroid/widget/LinearLayout;
 
     invoke-static {v1, v0}, Lcom/kik/util/j;->j(Landroid/view/View;Lrx/d;)V
 

@@ -40,7 +40,37 @@
 
 
 # virtual methods
-.method public final a()V
+.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
+    .locals 0
+
+    .prologue
+    .line 67
+    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/e;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
+
+    .line 68
+    invoke-interface {p1, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/chat/vm/chats/publicgroups/PublicGroupQuickSearchItemViewModel;)V
+
+    .line 69
+    return-void
+.end method
+
+.method public final ag_()J
+    .locals 2
+
+    .prologue
+    .line 74
+    iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/PublicGroupQuickSearchItemViewModel;->d:Lkik/android/chat/vm/chats/publicgroups/PublicGroupQuickSearchItemViewModel$QuickSearchSymbol;
+
+    invoke-virtual {v0}, Lkik/android/chat/vm/chats/publicgroups/PublicGroupQuickSearchItemViewModel$QuickSearchSymbol;->ordinal()I
+
+    move-result v0
+
+    int-to-long v0, v0
+
+    return-wide v0
+.end method
+
+.method public final b()V
     .locals 4
 
     .prologue
@@ -95,7 +125,7 @@
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
 
     .line 86
-    invoke-virtual {p0}, Lkik/android/chat/vm/chats/publicgroups/PublicGroupQuickSearchItemViewModel;->B_()Lkik/android/chat/vm/aw;
+    invoke-virtual {p0}, Lkik/android/chat/vm/chats/publicgroups/PublicGroupQuickSearchItemViewModel;->F_()Lkik/android/chat/vm/ay;
 
     move-result-object v0
 
@@ -103,27 +133,13 @@
 
     invoke-direct {v1, p0}, Lkik/android/chat/vm/chats/publicgroups/PublicGroupQuickSearchItemViewModel$1;-><init>(Lkik/android/chat/vm/chats/publicgroups/PublicGroupQuickSearchItemViewModel;)V
 
-    invoke-interface {v0, v1}, Lkik/android/chat/vm/aw;->a(Lkik/android/chat/vm/bb;)V
+    invoke-interface {v0, v1}, Lkik/android/chat/vm/ay;->a(Lkik/android/chat/vm/bd;)V
 
     .line 106
     return-void
 .end method
 
-.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
-    .locals 0
-
-    .prologue
-    .line 67
-    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/e;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/aw;)V
-
-    .line 68
-    invoke-interface {p1, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/chat/vm/chats/publicgroups/PublicGroupQuickSearchItemViewModel;)V
-
-    .line 69
-    return-void
-.end method
-
-.method public final b()Ljava/lang/String;
+.method public final d()Ljava/lang/String;
     .locals 1
 
     .prologue
@@ -137,7 +153,7 @@
     return-object v0
 .end method
 
-.method public final d()I
+.method public final e()I
     .locals 1
 
     .prologue
@@ -147,20 +163,4 @@
     iget v0, v0, Lkik/android/chat/vm/chats/publicgroups/PublicGroupQuickSearchItemViewModel$QuickSearchSymbol;->icon:I
 
     return v0
-.end method
-
-.method public final j()J
-    .locals 2
-
-    .prologue
-    .line 74
-    iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/PublicGroupQuickSearchItemViewModel;->d:Lkik/android/chat/vm/chats/publicgroups/PublicGroupQuickSearchItemViewModel$QuickSearchSymbol;
-
-    invoke-virtual {v0}, Lkik/android/chat/vm/chats/publicgroups/PublicGroupQuickSearchItemViewModel$QuickSearchSymbol;->ordinal()I
-
-    move-result v0
-
-    int-to-long v0, v0
-
-    return-wide v0
 .end method

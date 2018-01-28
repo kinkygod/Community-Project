@@ -67,7 +67,7 @@
             "<",
             "Lcom/kik/entity/model/ElementCommon$UsernameElement;",
             "Lcom/kik/entity/model/ElementCommon$UsernameElement$a;",
-            "Lcom/kik/entity/model/ElementCommon$o;",
+            "Lcom/kik/entity/model/ElementCommon$q;",
             ">;"
         }
     .end annotation
@@ -97,7 +97,7 @@
             "<",
             "Lcom/kik/entity/model/ElementCommon$ProfilePicElement;",
             "Lcom/kik/entity/model/ElementCommon$ProfilePicElement$a;",
-            "Lcom/kik/entity/model/ElementCommon$k;",
+            "Lcom/kik/entity/model/ElementCommon$l;",
             ">;"
         }
     .end annotation
@@ -126,31 +126,31 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 3792
+    .line 5106
     invoke-direct {p0}, Lcom/google/protobuf/GeneratedMessageV3$Builder;-><init>()V
 
-    .line 3981
+    .line 5295
     iput-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->a:Lcom/kik/ximodel/XiBareUserJid;
 
-    .line 4098
+    .line 5412
     iput-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->c:Lcom/kik/entity/model/ElementCommon$EmojiStatusElement;
 
-    .line 4215
+    .line 5529
     iput-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->e:Lcom/kik/entity/model/ElementCommon$UsernameElement;
 
-    .line 4332
+    .line 5646
     iput-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->g:Lcom/kik/entity/model/ElementCommon$DisplayNameElement;
 
-    .line 4449
+    .line 5763
     iput-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->i:Lcom/kik/entity/model/ElementCommon$ProfilePicElement;
 
-    .line 4566
+    .line 5880
     iput-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->k:Lcom/kik/entity/model/ElementCommon$BotExtensionElement;
 
-    .line 4803
+    .line 6117
     invoke-static {}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry;->o()Z
 
-    .line 3794
+    .line 5108
     return-void
 .end method
 
@@ -158,7 +158,7 @@
     .locals 0
 
     .prologue
-    .line 3775
+    .line 5089
     invoke-direct {p0}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;-><init>()V
 
     return-void
@@ -170,31 +170,31 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 3798
+    .line 5112
     invoke-direct {p0, p1}, Lcom/google/protobuf/GeneratedMessageV3$Builder;-><init>(Lcom/google/protobuf/GeneratedMessageV3$BuilderParent;)V
 
-    .line 3981
+    .line 5295
     iput-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->a:Lcom/kik/ximodel/XiBareUserJid;
 
-    .line 4098
+    .line 5412
     iput-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->c:Lcom/kik/entity/model/ElementCommon$EmojiStatusElement;
 
-    .line 4215
+    .line 5529
     iput-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->e:Lcom/kik/entity/model/ElementCommon$UsernameElement;
 
-    .line 4332
+    .line 5646
     iput-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->g:Lcom/kik/entity/model/ElementCommon$DisplayNameElement;
 
-    .line 4449
+    .line 5763
     iput-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->i:Lcom/kik/entity/model/ElementCommon$ProfilePicElement;
 
-    .line 4566
+    .line 5880
     iput-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->k:Lcom/kik/entity/model/ElementCommon$BotExtensionElement;
 
-    .line 5803
+    .line 7117
     invoke-static {}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry;->o()Z
 
-    .line 3800
+    .line 5114
     return-void
 .end method
 
@@ -202,7 +202,7 @@
     .locals 0
 
     .prologue
-    .line 3775
+    .line 5089
     invoke-direct {p0, p1}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;-><init>(Lcom/google/protobuf/GeneratedMessageV3$BuilderParent;)V
 
     return-void
@@ -214,116 +214,116 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 3807
+    .line 5121
     invoke-super {p0}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->clear()Lcom/google/protobuf/GeneratedMessageV3$Builder;
 
-    .line 3808
+    .line 5122
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->b:Lcom/google/protobuf/SingleFieldBuilderV3;
 
     if-nez v0, :cond_0
 
-    .line 3809
+    .line 5123
     iput-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->a:Lcom/kik/ximodel/XiBareUserJid;
 
-    .line 3814
+    .line 5128
     :goto_0
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->d:Lcom/google/protobuf/SingleFieldBuilderV3;
 
     if-nez v0, :cond_1
 
-    .line 3815
+    .line 5129
     iput-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->c:Lcom/kik/entity/model/ElementCommon$EmojiStatusElement;
 
-    .line 3820
+    .line 5134
     :goto_1
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->f:Lcom/google/protobuf/SingleFieldBuilderV3;
 
     if-nez v0, :cond_2
 
-    .line 3821
+    .line 5135
     iput-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->e:Lcom/kik/entity/model/ElementCommon$UsernameElement;
 
-    .line 3826
+    .line 5140
     :goto_2
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->h:Lcom/google/protobuf/SingleFieldBuilderV3;
 
     if-nez v0, :cond_3
 
-    .line 3827
+    .line 5141
     iput-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->g:Lcom/kik/entity/model/ElementCommon$DisplayNameElement;
 
-    .line 3832
+    .line 5146
     :goto_3
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->j:Lcom/google/protobuf/SingleFieldBuilderV3;
 
     if-nez v0, :cond_4
 
-    .line 3833
+    .line 5147
     iput-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->i:Lcom/kik/entity/model/ElementCommon$ProfilePicElement;
 
-    .line 3838
+    .line 5152
     :goto_4
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->l:Lcom/google/protobuf/SingleFieldBuilderV3;
 
     if-nez v0, :cond_5
 
-    .line 3839
+    .line 5153
     iput-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->k:Lcom/kik/entity/model/ElementCommon$BotExtensionElement;
 
-    .line 3844
+    .line 5158
     :goto_5
     return-object p0
 
-    .line 3811
+    .line 5125
     :cond_0
     iput-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->a:Lcom/kik/ximodel/XiBareUserJid;
 
-    .line 3812
+    .line 5126
     iput-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->b:Lcom/google/protobuf/SingleFieldBuilderV3;
 
     goto :goto_0
 
-    .line 3817
+    .line 5131
     :cond_1
     iput-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->c:Lcom/kik/entity/model/ElementCommon$EmojiStatusElement;
 
-    .line 3818
+    .line 5132
     iput-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->d:Lcom/google/protobuf/SingleFieldBuilderV3;
 
     goto :goto_1
 
-    .line 3823
+    .line 5137
     :cond_2
     iput-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->e:Lcom/kik/entity/model/ElementCommon$UsernameElement;
 
-    .line 3824
+    .line 5138
     iput-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->f:Lcom/google/protobuf/SingleFieldBuilderV3;
 
     goto :goto_2
 
-    .line 3829
+    .line 5143
     :cond_3
     iput-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->g:Lcom/kik/entity/model/ElementCommon$DisplayNameElement;
 
-    .line 3830
+    .line 5144
     iput-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->h:Lcom/google/protobuf/SingleFieldBuilderV3;
 
     goto :goto_3
 
-    .line 3835
+    .line 5149
     :cond_4
     iput-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->i:Lcom/kik/entity/model/ElementCommon$ProfilePicElement;
 
-    .line 3836
+    .line 5150
     iput-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->j:Lcom/google/protobuf/SingleFieldBuilderV3;
 
     goto :goto_4
 
-    .line 3841
+    .line 5155
     :cond_5
     iput-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->k:Lcom/kik/entity/model/ElementCommon$BotExtensionElement;
 
-    .line 3842
+    .line 5156
     iput-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->l:Lcom/google/protobuf/SingleFieldBuilderV3;
 
     goto :goto_5
@@ -338,10 +338,10 @@
     .end annotation
 
     .prologue
-    .line 3967
+    .line 5281
     const/4 v2, 0x0
 
-    .line 3969
+    .line 5283
     :try_start_0
     invoke-static {}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry;->p()Lcom/google/protobuf/Parser;
 
@@ -356,23 +356,23 @@
     .catch Lcom/google/protobuf/InvalidProtocolBufferException; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 3974
+    .line 5288
     if-eqz v0, :cond_0
 
-    .line 3975
+    .line 5289
     invoke-virtual {p0, v0}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->a(Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry;)Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;
 
-    .line 3978
+    .line 5292
     :cond_0
     return-object p0
 
-    .line 3970
+    .line 5284
     :catch_0
     move-exception v0
 
     move-object v1, v0
 
-    .line 3971
+    .line 5285
     :try_start_1
     invoke-virtual {v1}, Lcom/google/protobuf/InvalidProtocolBufferException;->getUnfinishedMessage()Lcom/google/protobuf/MessageLite;
 
@@ -382,7 +382,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 3972
+    .line 5286
     :try_start_2
     invoke-virtual {v1}, Lcom/google/protobuf/InvalidProtocolBufferException;->unwrapIOException()Ljava/io/IOException;
 
@@ -392,7 +392,7 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 3974
+    .line 5288
     :catchall_0
     move-exception v1
 
@@ -405,13 +405,13 @@
     :goto_0
     if-eqz v1, :cond_1
 
-    .line 3975
+    .line 5289
     invoke-virtual {p0, v1}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->a(Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry;)Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;
 
     :cond_1
     throw v0
 
-    .line 3974
+    .line 5288
     :catchall_1
     move-exception v0
 
@@ -424,7 +424,7 @@
     .locals 1
 
     .prologue
-    .line 3910
+    .line 5224
     invoke-super {p0, p1}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->clearField(Lcom/google/protobuf/Descriptors$FieldDescriptor;)Lcom/google/protobuf/GeneratedMessageV3$Builder;
 
     move-result-object v0
@@ -438,7 +438,7 @@
     .locals 1
 
     .prologue
-    .line 3919
+    .line 5233
     invoke-super {p0, p1, p2, p3}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->setRepeatedField(Lcom/google/protobuf/Descriptors$FieldDescriptor;ILjava/lang/Object;)Lcom/google/protobuf/GeneratedMessageV3$Builder;
 
     move-result-object v0
@@ -452,7 +452,7 @@
     .locals 1
 
     .prologue
-    .line 3906
+    .line 5220
     invoke-super {p0, p1, p2}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->setField(Lcom/google/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lcom/google/protobuf/GeneratedMessageV3$Builder;
 
     move-result-object v0
@@ -466,7 +466,7 @@
     .locals 1
 
     .prologue
-    .line 3914
+    .line 5228
     invoke-super {p0, p1}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->clearOneof(Lcom/google/protobuf/Descriptors$OneofDescriptor;)Lcom/google/protobuf/GeneratedMessageV3$Builder;
 
     move-result-object v0
@@ -480,23 +480,23 @@
     .locals 1
 
     .prologue
-    .line 3927
+    .line 5241
     instance-of v0, p1, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry;
 
     if-eqz v0, :cond_0
 
-    .line 3928
+    .line 5242
     check-cast p1, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry;
 
     invoke-virtual {p0, p1}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->a(Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry;)Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;
 
     move-result-object p0
 
-    .line 3931
+    .line 5245
     :goto_0
     return-object p0
 
-    .line 3930
+    .line 5244
     :cond_0
     invoke-super {p0, p1}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->mergeFrom(Lcom/google/protobuf/Message;)Lcom/google/protobuf/AbstractMessage$Builder;
 
@@ -507,7 +507,7 @@
     .locals 1
 
     .prologue
-    .line 3924
+    .line 5238
     invoke-super {p0, p1, p2}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->addRepeatedField(Lcom/google/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lcom/google/protobuf/GeneratedMessageV3$Builder;
 
     move-result-object v0
@@ -521,26 +521,26 @@
     .locals 2
 
     .prologue
-    .line 3857
+    .line 5171
     invoke-direct {p0}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->c()Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry;
 
     move-result-object v0
 
-    .line 3858
+    .line 5172
     invoke-virtual {v0}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry;->isInitialized()Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    .line 3859
+    .line 5173
     invoke-static {v0}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->newUninitializedMessageException(Lcom/google/protobuf/Message;)Lcom/google/protobuf/UninitializedMessageException;
 
     move-result-object v0
 
     throw v0
 
-    .line 3861
+    .line 5175
     :cond_0
     return-object v0
 .end method
@@ -549,86 +549,86 @@
     .locals 2
 
     .prologue
-    .line 3865
+    .line 5179
     new-instance v1, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry;
 
     const/4 v0, 0x0
 
     invoke-direct {v1, p0, v0}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry;-><init>(Lcom/google/protobuf/GeneratedMessageV3$Builder;B)V
 
-    .line 3866
+    .line 5180
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->b:Lcom/google/protobuf/SingleFieldBuilderV3;
 
     if-nez v0, :cond_0
 
-    .line 3867
+    .line 5181
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->a:Lcom/kik/ximodel/XiBareUserJid;
 
     invoke-static {v1, v0}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry;->a(Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry;Lcom/kik/ximodel/XiBareUserJid;)Lcom/kik/ximodel/XiBareUserJid;
 
-    .line 3871
+    .line 5185
     :goto_0
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->d:Lcom/google/protobuf/SingleFieldBuilderV3;
 
     if-nez v0, :cond_1
 
-    .line 3872
+    .line 5186
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->c:Lcom/kik/entity/model/ElementCommon$EmojiStatusElement;
 
     invoke-static {v1, v0}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry;->a(Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry;Lcom/kik/entity/model/ElementCommon$EmojiStatusElement;)Lcom/kik/entity/model/ElementCommon$EmojiStatusElement;
 
-    .line 3876
+    .line 5190
     :goto_1
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->f:Lcom/google/protobuf/SingleFieldBuilderV3;
 
     if-nez v0, :cond_2
 
-    .line 3877
+    .line 5191
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->e:Lcom/kik/entity/model/ElementCommon$UsernameElement;
 
     invoke-static {v1, v0}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry;->a(Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry;Lcom/kik/entity/model/ElementCommon$UsernameElement;)Lcom/kik/entity/model/ElementCommon$UsernameElement;
 
-    .line 3881
+    .line 5195
     :goto_2
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->h:Lcom/google/protobuf/SingleFieldBuilderV3;
 
     if-nez v0, :cond_3
 
-    .line 3882
+    .line 5196
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->g:Lcom/kik/entity/model/ElementCommon$DisplayNameElement;
 
     invoke-static {v1, v0}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry;->a(Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry;Lcom/kik/entity/model/ElementCommon$DisplayNameElement;)Lcom/kik/entity/model/ElementCommon$DisplayNameElement;
 
-    .line 3886
+    .line 5200
     :goto_3
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->j:Lcom/google/protobuf/SingleFieldBuilderV3;
 
     if-nez v0, :cond_4
 
-    .line 3887
+    .line 5201
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->i:Lcom/kik/entity/model/ElementCommon$ProfilePicElement;
 
     invoke-static {v1, v0}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry;->a(Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry;Lcom/kik/entity/model/ElementCommon$ProfilePicElement;)Lcom/kik/entity/model/ElementCommon$ProfilePicElement;
 
-    .line 3891
+    .line 5205
     :goto_4
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->l:Lcom/google/protobuf/SingleFieldBuilderV3;
 
     if-nez v0, :cond_5
 
-    .line 3892
+    .line 5206
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->k:Lcom/kik/entity/model/ElementCommon$BotExtensionElement;
 
     invoke-static {v1, v0}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry;->a(Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry;Lcom/kik/entity/model/ElementCommon$BotExtensionElement;)Lcom/kik/entity/model/ElementCommon$BotExtensionElement;
 
-    .line 3896
+    .line 5210
     :goto_5
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->onBuilt()V
 
-    .line 3897
+    .line 5211
     return-object v1
 
-    .line 3869
+    .line 5183
     :cond_0
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->b:Lcom/google/protobuf/SingleFieldBuilderV3;
 
@@ -642,7 +642,7 @@
 
     goto :goto_0
 
-    .line 3874
+    .line 5188
     :cond_1
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->d:Lcom/google/protobuf/SingleFieldBuilderV3;
 
@@ -656,7 +656,7 @@
 
     goto :goto_1
 
-    .line 3879
+    .line 5193
     :cond_2
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->f:Lcom/google/protobuf/SingleFieldBuilderV3;
 
@@ -670,7 +670,7 @@
 
     goto :goto_2
 
-    .line 3884
+    .line 5198
     :cond_3
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->h:Lcom/google/protobuf/SingleFieldBuilderV3;
 
@@ -684,7 +684,7 @@
 
     goto :goto_3
 
-    .line 3889
+    .line 5203
     :cond_4
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->j:Lcom/google/protobuf/SingleFieldBuilderV3;
 
@@ -698,7 +698,7 @@
 
     goto :goto_4
 
-    .line 3894
+    .line 5208
     :cond_5
     iget-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->l:Lcom/google/protobuf/SingleFieldBuilderV3;
 
@@ -719,18 +719,18 @@
     .locals 2
 
     .prologue
-    .line 3936
+    .line 5250
     invoke-static {}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry;->m()Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry;
 
     move-result-object v0
 
     if-ne p1, v0, :cond_0
 
-    .line 3956
+    .line 5270
     :goto_0
     return-object p0
 
-    .line 3937
+    .line 5251
     :cond_0
     invoke-virtual {p1}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry;->a()Z
 
@@ -738,25 +738,25 @@
 
     if-eqz v0, :cond_1
 
-    .line 3938
+    .line 5252
     invoke-virtual {p1}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry;->b()Lcom/kik/ximodel/XiBareUserJid;
 
     move-result-object v0
 
-    .line 6034
+    .line 7348
     iget-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->b:Lcom/google/protobuf/SingleFieldBuilderV3;
 
     if-nez v1, :cond_8
 
-    .line 6035
+    .line 7349
     iget-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->a:Lcom/kik/ximodel/XiBareUserJid;
 
     if-eqz v1, :cond_7
 
-    .line 6036
+    .line 7350
     iget-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->a:Lcom/kik/ximodel/XiBareUserJid;
 
-    .line 6037
+    .line 7351
     invoke-static {v1}, Lcom/kik/ximodel/XiBareUserJid;->newBuilder(Lcom/kik/ximodel/XiBareUserJid;)Lcom/kik/ximodel/XiBareUserJid$Builder;
 
     move-result-object v1
@@ -771,11 +771,11 @@
 
     iput-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->a:Lcom/kik/ximodel/XiBareUserJid;
 
-    .line 6041
+    .line 7355
     :goto_1
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->onChanged()V
 
-    .line 3940
+    .line 5254
     :cond_1
     :goto_2
     invoke-virtual {p1}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry;->c()Z
@@ -784,25 +784,25 @@
 
     if-eqz v0, :cond_2
 
-    .line 3941
+    .line 5255
     invoke-virtual {p1}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry;->d()Lcom/kik/entity/model/ElementCommon$EmojiStatusElement;
 
     move-result-object v0
 
-    .line 6151
+    .line 7465
     iget-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->d:Lcom/google/protobuf/SingleFieldBuilderV3;
 
     if-nez v1, :cond_a
 
-    .line 6152
+    .line 7466
     iget-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->c:Lcom/kik/entity/model/ElementCommon$EmojiStatusElement;
 
     if-eqz v1, :cond_9
 
-    .line 6153
+    .line 7467
     iget-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->c:Lcom/kik/entity/model/ElementCommon$EmojiStatusElement;
 
-    .line 6154
+    .line 7468
     invoke-static {v1}, Lcom/kik/entity/model/ElementCommon$EmojiStatusElement;->a(Lcom/kik/entity/model/ElementCommon$EmojiStatusElement;)Lcom/kik/entity/model/ElementCommon$EmojiStatusElement$a;
 
     move-result-object v1
@@ -817,11 +817,11 @@
 
     iput-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->c:Lcom/kik/entity/model/ElementCommon$EmojiStatusElement;
 
-    .line 6158
+    .line 7472
     :goto_3
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->onChanged()V
 
-    .line 3943
+    .line 5257
     :cond_2
     :goto_4
     invoke-virtual {p1}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry;->e()Z
@@ -830,25 +830,25 @@
 
     if-eqz v0, :cond_3
 
-    .line 3944
+    .line 5258
     invoke-virtual {p1}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry;->f()Lcom/kik/entity/model/ElementCommon$UsernameElement;
 
     move-result-object v0
 
-    .line 6268
+    .line 7582
     iget-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->f:Lcom/google/protobuf/SingleFieldBuilderV3;
 
     if-nez v1, :cond_c
 
-    .line 6269
+    .line 7583
     iget-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->e:Lcom/kik/entity/model/ElementCommon$UsernameElement;
 
     if-eqz v1, :cond_b
 
-    .line 6270
+    .line 7584
     iget-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->e:Lcom/kik/entity/model/ElementCommon$UsernameElement;
 
-    .line 6271
+    .line 7585
     invoke-static {v1}, Lcom/kik/entity/model/ElementCommon$UsernameElement;->a(Lcom/kik/entity/model/ElementCommon$UsernameElement;)Lcom/kik/entity/model/ElementCommon$UsernameElement$a;
 
     move-result-object v1
@@ -863,11 +863,11 @@
 
     iput-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->e:Lcom/kik/entity/model/ElementCommon$UsernameElement;
 
-    .line 6275
+    .line 7589
     :goto_5
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->onChanged()V
 
-    .line 3946
+    .line 5260
     :cond_3
     :goto_6
     invoke-virtual {p1}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry;->g()Z
@@ -876,25 +876,25 @@
 
     if-eqz v0, :cond_4
 
-    .line 3947
+    .line 5261
     invoke-virtual {p1}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry;->h()Lcom/kik/entity/model/ElementCommon$DisplayNameElement;
 
     move-result-object v0
 
-    .line 6385
+    .line 7699
     iget-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->h:Lcom/google/protobuf/SingleFieldBuilderV3;
 
     if-nez v1, :cond_e
 
-    .line 6386
+    .line 7700
     iget-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->g:Lcom/kik/entity/model/ElementCommon$DisplayNameElement;
 
     if-eqz v1, :cond_d
 
-    .line 6387
+    .line 7701
     iget-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->g:Lcom/kik/entity/model/ElementCommon$DisplayNameElement;
 
-    .line 6388
+    .line 7702
     invoke-static {v1}, Lcom/kik/entity/model/ElementCommon$DisplayNameElement;->a(Lcom/kik/entity/model/ElementCommon$DisplayNameElement;)Lcom/kik/entity/model/ElementCommon$DisplayNameElement$a;
 
     move-result-object v1
@@ -909,11 +909,11 @@
 
     iput-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->g:Lcom/kik/entity/model/ElementCommon$DisplayNameElement;
 
-    .line 6392
+    .line 7706
     :goto_7
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->onChanged()V
 
-    .line 3949
+    .line 5263
     :cond_4
     :goto_8
     invoke-virtual {p1}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry;->i()Z
@@ -922,25 +922,25 @@
 
     if-eqz v0, :cond_5
 
-    .line 3950
+    .line 5264
     invoke-virtual {p1}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry;->j()Lcom/kik/entity/model/ElementCommon$ProfilePicElement;
 
     move-result-object v0
 
-    .line 6502
+    .line 7816
     iget-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->j:Lcom/google/protobuf/SingleFieldBuilderV3;
 
     if-nez v1, :cond_10
 
-    .line 6503
+    .line 7817
     iget-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->i:Lcom/kik/entity/model/ElementCommon$ProfilePicElement;
 
     if-eqz v1, :cond_f
 
-    .line 6504
+    .line 7818
     iget-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->i:Lcom/kik/entity/model/ElementCommon$ProfilePicElement;
 
-    .line 6505
+    .line 7819
     invoke-static {v1}, Lcom/kik/entity/model/ElementCommon$ProfilePicElement;->a(Lcom/kik/entity/model/ElementCommon$ProfilePicElement;)Lcom/kik/entity/model/ElementCommon$ProfilePicElement$a;
 
     move-result-object v1
@@ -955,11 +955,11 @@
 
     iput-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->i:Lcom/kik/entity/model/ElementCommon$ProfilePicElement;
 
-    .line 6509
+    .line 7823
     :goto_9
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->onChanged()V
 
-    .line 3952
+    .line 5266
     :cond_5
     :goto_a
     invoke-virtual {p1}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry;->k()Z
@@ -968,25 +968,25 @@
 
     if-eqz v0, :cond_6
 
-    .line 3953
+    .line 5267
     invoke-virtual {p1}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry;->l()Lcom/kik/entity/model/ElementCommon$BotExtensionElement;
 
     move-result-object v0
 
-    .line 6639
+    .line 7953
     iget-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->l:Lcom/google/protobuf/SingleFieldBuilderV3;
 
     if-nez v1, :cond_12
 
-    .line 6640
+    .line 7954
     iget-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->k:Lcom/kik/entity/model/ElementCommon$BotExtensionElement;
 
     if-eqz v1, :cond_11
 
-    .line 6641
+    .line 7955
     iget-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->k:Lcom/kik/entity/model/ElementCommon$BotExtensionElement;
 
-    .line 6642
+    .line 7956
     invoke-static {v1}, Lcom/kik/entity/model/ElementCommon$BotExtensionElement;->a(Lcom/kik/entity/model/ElementCommon$BotExtensionElement;)Lcom/kik/entity/model/ElementCommon$BotExtensionElement$a;
 
     move-result-object v1
@@ -1001,24 +1001,24 @@
 
     iput-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->k:Lcom/kik/entity/model/ElementCommon$BotExtensionElement;
 
-    .line 6646
+    .line 7960
     :goto_b
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->onChanged()V
 
-    .line 3955
+    .line 5269
     :cond_6
     :goto_c
     invoke-virtual {p0}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->onChanged()V
 
     goto/16 :goto_0
 
-    .line 6039
+    .line 7353
     :cond_7
     iput-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->a:Lcom/kik/ximodel/XiBareUserJid;
 
     goto/16 :goto_1
 
-    .line 6043
+    .line 7357
     :cond_8
     iget-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->b:Lcom/google/protobuf/SingleFieldBuilderV3;
 
@@ -1026,13 +1026,13 @@
 
     goto/16 :goto_2
 
-    .line 6156
+    .line 7470
     :cond_9
     iput-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->c:Lcom/kik/entity/model/ElementCommon$EmojiStatusElement;
 
     goto/16 :goto_3
 
-    .line 6160
+    .line 7474
     :cond_a
     iget-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->d:Lcom/google/protobuf/SingleFieldBuilderV3;
 
@@ -1040,13 +1040,13 @@
 
     goto/16 :goto_4
 
-    .line 6273
+    .line 7587
     :cond_b
     iput-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->e:Lcom/kik/entity/model/ElementCommon$UsernameElement;
 
     goto/16 :goto_5
 
-    .line 6277
+    .line 7591
     :cond_c
     iget-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->f:Lcom/google/protobuf/SingleFieldBuilderV3;
 
@@ -1054,13 +1054,13 @@
 
     goto/16 :goto_6
 
-    .line 6390
+    .line 7704
     :cond_d
     iput-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->g:Lcom/kik/entity/model/ElementCommon$DisplayNameElement;
 
     goto :goto_7
 
-    .line 6394
+    .line 7708
     :cond_e
     iget-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->h:Lcom/google/protobuf/SingleFieldBuilderV3;
 
@@ -1068,13 +1068,13 @@
 
     goto :goto_8
 
-    .line 6507
+    .line 7821
     :cond_f
     iput-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->i:Lcom/kik/entity/model/ElementCommon$ProfilePicElement;
 
     goto :goto_9
 
-    .line 6511
+    .line 7825
     :cond_10
     iget-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->j:Lcom/google/protobuf/SingleFieldBuilderV3;
 
@@ -1082,13 +1082,13 @@
 
     goto :goto_a
 
-    .line 6644
+    .line 7958
     :cond_11
     iput-object v0, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->k:Lcom/kik/entity/model/ElementCommon$BotExtensionElement;
 
     goto :goto_b
 
-    .line 6648
+    .line 7962
     :cond_12
     iget-object v1, p0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->l:Lcom/google/protobuf/SingleFieldBuilderV3;
 
@@ -1101,7 +1101,7 @@
     .locals 1
 
     .prologue
-    .line 3775
+    .line 5089
     invoke-direct {p0, p1, p2}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->b(Lcom/google/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;
 
     move-result-object v0
@@ -1113,7 +1113,7 @@
     .locals 1
 
     .prologue
-    .line 3775
+    .line 5089
     invoke-direct {p0, p1, p2}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->b(Lcom/google/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;
 
     move-result-object v0
@@ -1125,7 +1125,7 @@
     .locals 1
 
     .prologue
-    .line 3775
+    .line 5089
     invoke-direct {p0}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->b()Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry;
 
     move-result-object v0
@@ -1137,7 +1137,7 @@
     .locals 1
 
     .prologue
-    .line 3775
+    .line 5089
     invoke-direct {p0}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->b()Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry;
 
     move-result-object v0
@@ -1149,7 +1149,7 @@
     .locals 1
 
     .prologue
-    .line 3775
+    .line 5089
     invoke-direct {p0}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->c()Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry;
 
     move-result-object v0
@@ -1161,7 +1161,7 @@
     .locals 1
 
     .prologue
-    .line 3775
+    .line 5089
     invoke-direct {p0}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->c()Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry;
 
     move-result-object v0
@@ -1173,7 +1173,7 @@
     .locals 1
 
     .prologue
-    .line 3775
+    .line 5089
     invoke-direct {p0}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->a()Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;
 
     move-result-object v0
@@ -1185,7 +1185,7 @@
     .locals 1
 
     .prologue
-    .line 3775
+    .line 5089
     invoke-direct {p0}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->a()Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;
 
     move-result-object v0
@@ -1197,7 +1197,7 @@
     .locals 1
 
     .prologue
-    .line 3775
+    .line 5089
     invoke-direct {p0}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->a()Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;
 
     move-result-object v0
@@ -1209,7 +1209,7 @@
     .locals 1
 
     .prologue
-    .line 3775
+    .line 5089
     invoke-direct {p0}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->a()Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;
 
     move-result-object v0
@@ -1221,7 +1221,7 @@
     .locals 1
 
     .prologue
-    .line 3775
+    .line 5089
     invoke-direct {p0, p1}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->a(Lcom/google/protobuf/Descriptors$FieldDescriptor;)Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;
 
     move-result-object v0
@@ -1233,7 +1233,7 @@
     .locals 1
 
     .prologue
-    .line 3775
+    .line 5089
     invoke-direct {p0, p1}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->a(Lcom/google/protobuf/Descriptors$FieldDescriptor;)Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;
 
     move-result-object v0
@@ -1245,7 +1245,7 @@
     .locals 1
 
     .prologue
-    .line 3775
+    .line 5089
     invoke-direct {p0, p1}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->a(Lcom/google/protobuf/Descriptors$OneofDescriptor;)Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;
 
     move-result-object v0
@@ -1257,7 +1257,7 @@
     .locals 1
 
     .prologue
-    .line 3775
+    .line 5089
     invoke-direct {p0, p1}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->a(Lcom/google/protobuf/Descriptors$OneofDescriptor;)Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;
 
     move-result-object v0
@@ -1269,7 +1269,7 @@
     .locals 1
 
     .prologue
-    .line 3775
+    .line 5089
     invoke-direct {p0, p1}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->a(Lcom/google/protobuf/Descriptors$OneofDescriptor;)Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;
 
     move-result-object v0
@@ -1281,15 +1281,15 @@
     .locals 1
 
     .prologue
-    .line 3775
-    .line 8901
+    .line 5089
+    .line 10215
     invoke-super {p0}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->clone()Lcom/google/protobuf/GeneratedMessageV3$Builder;
 
     move-result-object v0
 
     check-cast v0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;
 
-    .line 3775
+    .line 5089
     return-object v0
 .end method
 
@@ -1297,15 +1297,15 @@
     .locals 1
 
     .prologue
-    .line 3775
-    .line 13901
+    .line 5089
+    .line 15215
     invoke-super {p0}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->clone()Lcom/google/protobuf/GeneratedMessageV3$Builder;
 
     move-result-object v0
 
     check-cast v0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;
 
-    .line 3775
+    .line 5089
     return-object v0
 .end method
 
@@ -1313,15 +1313,15 @@
     .locals 1
 
     .prologue
-    .line 3775
-    .line 7901
+    .line 5089
+    .line 9215
     invoke-super {p0}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->clone()Lcom/google/protobuf/GeneratedMessageV3$Builder;
 
     move-result-object v0
 
     check-cast v0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;
 
-    .line 3775
+    .line 5089
     return-object v0
 .end method
 
@@ -1329,15 +1329,15 @@
     .locals 1
 
     .prologue
-    .line 3775
-    .line 10901
+    .line 5089
+    .line 12215
     invoke-super {p0}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->clone()Lcom/google/protobuf/GeneratedMessageV3$Builder;
 
     move-result-object v0
 
     check-cast v0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;
 
-    .line 3775
+    .line 5089
     return-object v0
 .end method
 
@@ -1345,15 +1345,15 @@
     .locals 1
 
     .prologue
-    .line 3775
-    .line 11901
+    .line 5089
+    .line 13215
     invoke-super {p0}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->clone()Lcom/google/protobuf/GeneratedMessageV3$Builder;
 
     move-result-object v0
 
     check-cast v0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;
 
-    .line 3775
+    .line 5089
     return-object v0
 .end method
 
@@ -1366,15 +1366,15 @@
     .end annotation
 
     .prologue
-    .line 3775
-    .line 14901
+    .line 5089
+    .line 16215
     invoke-super {p0}, Lcom/google/protobuf/GeneratedMessageV3$Builder;->clone()Lcom/google/protobuf/GeneratedMessageV3$Builder;
 
     move-result-object v0
 
     check-cast v0, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;
 
-    .line 3775
+    .line 5089
     return-object v0
 .end method
 
@@ -1382,12 +1382,12 @@
     .locals 1
 
     .prologue
-    .line 13853
+    .line 15167
     invoke-static {}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry;->m()Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry;
 
     move-result-object v0
 
-    .line 3775
+    .line 5089
     return-object v0
 .end method
 
@@ -1395,12 +1395,12 @@
     .locals 1
 
     .prologue
-    .line 12853
+    .line 14167
     invoke-static {}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry;->m()Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry;
 
     move-result-object v0
 
-    .line 3775
+    .line 5089
     return-object v0
 .end method
 
@@ -1408,7 +1408,7 @@
     .locals 1
 
     .prologue
-    .line 3849
+    .line 5163
     invoke-static {}, Lcom/kik/entity/model/EntityCommon;->f()Lcom/google/protobuf/Descriptors$Descriptor;
 
     move-result-object v0
@@ -1420,7 +1420,7 @@
     .locals 3
 
     .prologue
-    .line 3786
+    .line 5100
     invoke-static {}, Lcom/kik/entity/model/EntityCommon;->g()Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
     move-result-object v0
@@ -1429,12 +1429,12 @@
 
     const-class v2, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;
 
-    .line 3787
+    .line 5101
     invoke-virtual {v0, v1, v2}, Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;->ensureFieldAccessorsInitialized(Ljava/lang/Class;Ljava/lang/Class;)Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
     move-result-object v0
 
-    .line 3786
+    .line 5100
     return-object v0
 .end method
 
@@ -1442,7 +1442,7 @@
     .locals 1
 
     .prologue
-    .line 3960
+    .line 5274
     const/4 v0, 0x1
 
     return v0
@@ -1457,7 +1457,7 @@
     .end annotation
 
     .prologue
-    .line 3775
+    .line 5089
     invoke-direct {p0, p1, p2}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->a(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;
 
     move-result-object v0
@@ -1469,7 +1469,7 @@
     .locals 1
 
     .prologue
-    .line 3775
+    .line 5089
     invoke-direct {p0, p1}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->a(Lcom/google/protobuf/Message;)Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;
 
     move-result-object v0
@@ -1486,7 +1486,7 @@
     .end annotation
 
     .prologue
-    .line 3775
+    .line 5089
     invoke-direct {p0, p1, p2}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->a(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;
 
     move-result-object v0
@@ -1503,7 +1503,7 @@
     .end annotation
 
     .prologue
-    .line 3775
+    .line 5089
     invoke-direct {p0, p1, p2}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->a(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;
 
     move-result-object v0
@@ -1515,7 +1515,7 @@
     .locals 1
 
     .prologue
-    .line 3775
+    .line 5089
     invoke-direct {p0, p1}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->a(Lcom/google/protobuf/Message;)Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;
 
     move-result-object v0
@@ -1532,7 +1532,7 @@
     .end annotation
 
     .prologue
-    .line 3775
+    .line 5089
     invoke-direct {p0, p1, p2}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->a(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;
 
     move-result-object v0
@@ -1544,7 +1544,7 @@
     .locals 0
 
     .prologue
-    .line 3775
+    .line 5089
     return-object p0
 .end method
 
@@ -1552,7 +1552,7 @@
     .locals 0
 
     .prologue
-    .line 3775
+    .line 5089
     return-object p0
 .end method
 
@@ -1560,7 +1560,7 @@
     .locals 0
 
     .prologue
-    .line 3775
+    .line 5089
     return-object p0
 .end method
 
@@ -1568,7 +1568,7 @@
     .locals 1
 
     .prologue
-    .line 3775
+    .line 5089
     invoke-direct {p0, p1, p2}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->a(Lcom/google/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;
 
     move-result-object v0
@@ -1580,7 +1580,7 @@
     .locals 1
 
     .prologue
-    .line 3775
+    .line 5089
     invoke-direct {p0, p1, p2}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->a(Lcom/google/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;
 
     move-result-object v0
@@ -1592,7 +1592,7 @@
     .locals 1
 
     .prologue
-    .line 3775
+    .line 5089
     invoke-direct {p0, p1, p2, p3}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->a(Lcom/google/protobuf/Descriptors$FieldDescriptor;ILjava/lang/Object;)Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;
 
     move-result-object v0
@@ -1604,7 +1604,7 @@
     .locals 1
 
     .prologue
-    .line 3775
+    .line 5089
     invoke-direct {p0, p1, p2, p3}, Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;->a(Lcom/google/protobuf/Descriptors$FieldDescriptor;ILjava/lang/Object;)Lcom/kik/entity/model/EntityCommon$EntityUserRosterEntry$a;
 
     move-result-object v0
@@ -1616,7 +1616,7 @@
     .locals 0
 
     .prologue
-    .line 3775
+    .line 5089
     return-object p0
 .end method
 
@@ -1624,6 +1624,6 @@
     .locals 0
 
     .prologue
-    .line 3775
+    .line 5089
     return-object p0
 .end method

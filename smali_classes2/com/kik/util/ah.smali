@@ -33,47 +33,17 @@
 
 # virtual methods
 .method public final call(Ljava/lang/Object;)V
-    .locals 4
+    .locals 2
 
-    .prologue
-    const/16 v3, 0x9
+    iget-object v0, p0, Lcom/kik/util/ah;->a:Landroid/view/View;
 
-    .line 0
-    iget-object v1, p0, Lcom/kik/util/ah;->a:Landroid/view/View;
+    check-cast p1, Ljava/lang/Integer;
 
-    check-cast p1, Ljava/lang/Boolean;
+    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
 
-    .line 1427
-    invoke-virtual {v1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    move-result v1
 
-    move-result-object v0
+    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
-    check-cast v0, Landroid/widget/RelativeLayout$LayoutParams;
-
-    .line 1429
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_0
-
-    .line 1430
-    const/4 v2, -0x1
-
-    invoke-virtual {v0, v3, v2}, Landroid/widget/RelativeLayout$LayoutParams;->addRule(II)V
-
-    .line 1436
-    :goto_0
-    invoke-virtual {v1, v0}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
-
-    .line 0
     return-void
-
-    .line 1433
-    :cond_0
-    const/4 v2, 0x0
-
-    invoke-virtual {v0, v3, v2}, Landroid/widget/RelativeLayout$LayoutParams;->addRule(II)V
-
-    goto :goto_0
 .end method

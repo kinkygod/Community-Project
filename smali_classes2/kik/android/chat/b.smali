@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/a/b;
+.implements Ldagger/internal/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/a/b",
+        "Ldagger/internal/b",
         "<",
         "Lkik/android/chat/ConversationCallToActionHelper;",
         ">;"
@@ -39,7 +39,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ae;",
+            "Lkik/core/interfaces/ad;",
             ">;"
         }
     .end annotation
@@ -106,7 +106,7 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ae;",
+            "Lkik/core/interfaces/ad;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -195,7 +195,7 @@
     return-void
 .end method
 
-.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)La/a/b;
+.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -206,7 +206,7 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ae;",
+            "Lkik/core/interfaces/ad;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -216,7 +216,7 @@
             "<",
             "Lkik/core/manager/n;",
             ">;)",
-            "La/a/b",
+            "Ldagger/internal/b",
             "<",
             "Lkik/android/chat/ConversationCallToActionHelper;",
             ">;"
@@ -258,7 +258,7 @@
 
     move-result-object v1
 
-    check-cast v1, Lkik/core/interfaces/ae;
+    check-cast v1, Lkik/core/interfaces/ad;
 
     iget-object v2, p0, Lkik/android/chat/b;->d:Ljavax/inject/Provider;
 
@@ -278,7 +278,7 @@
 
     check-cast v3, Lkik/core/manager/n;
 
-    invoke-direct {v4, v0, v1, v2, v3}, Lkik/android/chat/ConversationCallToActionHelper;-><init>(Lkik/core/interfaces/IAddressBookIntegration;Lkik/core/interfaces/ae;Lkik/core/interfaces/b;Lkik/core/manager/n;)V
+    invoke-direct {v4, v0, v1, v2, v3}, Lkik/android/chat/ConversationCallToActionHelper;-><init>(Lkik/core/interfaces/IAddressBookIntegration;Lkik/core/interfaces/ad;Lkik/core/interfaces/b;Lkik/core/manager/n;)V
 
     .line 11
     return-object v4

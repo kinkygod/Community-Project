@@ -130,36 +130,6 @@
     return-void
 .end method
 
-.method public final a(II)V
-    .locals 2
-
-    .prologue
-    .line 4959
-    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$RecyclerViewDataObserver;->a:Landroid/support/v7/widget/RecyclerView;
-
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, v1}, Landroid/support/v7/widget/RecyclerView;->assertNotInLayoutOrScroll(Ljava/lang/String;)V
-
-    .line 4960
-    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$RecyclerViewDataObserver;->a:Landroid/support/v7/widget/RecyclerView;
-
-    iget-object v0, v0, Landroid/support/v7/widget/RecyclerView;->mAdapterHelper:Landroid/support/v7/widget/AdapterHelper;
-
-    invoke-virtual {v0, p1, p2}, Landroid/support/v7/widget/AdapterHelper;->b(II)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 4961
-    invoke-direct {p0}, Landroid/support/v7/widget/RecyclerView$RecyclerViewDataObserver;->b()V
-
-    .line 4963
-    :cond_0
-    return-void
-.end method
-
 .method public final a(IILjava/lang/Object;)V
     .locals 2
 
@@ -186,6 +156,36 @@
     invoke-direct {p0}, Landroid/support/v7/widget/RecyclerView$RecyclerViewDataObserver;->b()V
 
     .line 4955
+    :cond_0
+    return-void
+.end method
+
+.method public final a_(II)V
+    .locals 2
+
+    .prologue
+    .line 4959
+    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$RecyclerViewDataObserver;->a:Landroid/support/v7/widget/RecyclerView;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/support/v7/widget/RecyclerView;->assertNotInLayoutOrScroll(Ljava/lang/String;)V
+
+    .line 4960
+    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$RecyclerViewDataObserver;->a:Landroid/support/v7/widget/RecyclerView;
+
+    iget-object v0, v0, Landroid/support/v7/widget/RecyclerView;->mAdapterHelper:Landroid/support/v7/widget/AdapterHelper;
+
+    invoke-virtual {v0, p1, p2}, Landroid/support/v7/widget/AdapterHelper;->b(II)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 4961
+    invoke-direct {p0}, Landroid/support/v7/widget/RecyclerView$RecyclerViewDataObserver;->b()V
+
+    .line 4963
     :cond_0
     return-void
 .end method

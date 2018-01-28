@@ -52,7 +52,7 @@
 
 .field private _registrationStatus:I
 
-.field private _upd:Lkik/core/datatypes/ac;
+.field private _upd:Lkik/core/datatypes/ab;
 
 .field private _userOrEmail:Ljava/lang/String;
 
@@ -68,7 +68,7 @@
             "Ljava/lang/String;",
             "Ljava/util/List",
             "<",
-            "Lkik/core/datatypes/ad;",
+            "Lkik/core/datatypes/ac;",
             ">;>;"
         }
     .end annotation
@@ -79,7 +79,7 @@
         value = {
             "Ljava/util/List",
             "<",
-            "Lkik/core/datatypes/ad;",
+            "Lkik/core/datatypes/ac;",
             ">;"
         }
     .end annotation
@@ -211,12 +211,12 @@
     return v0
 .end method
 
-.method public getUserProfile()Lkik/core/datatypes/ac;
+.method public getUserProfile()Lkik/core/datatypes/ab;
     .locals 1
 
     .prologue
     .line 81
-    iget-object v0, p0, Lkik/core/net/outgoing/PreloginReregistrationRequest;->_upd:Lkik/core/datatypes/ac;
+    iget-object v0, p0, Lkik/core/net/outgoing/PreloginReregistrationRequest;->_upd:Lkik/core/datatypes/ab;
 
     return-object v0
 .end method
@@ -241,7 +241,7 @@
             "Ljava/lang/String;",
             "Ljava/util/List",
             "<",
-            "Lkik/core/datatypes/ad;",
+            "Lkik/core/datatypes/ac;",
             ">;>;"
         }
     .end annotation
@@ -260,7 +260,7 @@
             "()",
             "Ljava/util/List",
             "<",
-            "Lkik/core/datatypes/ad;",
+            "Lkik/core/datatypes/ac;",
             ">;"
         }
     .end annotation
@@ -568,11 +568,11 @@
     invoke-virtual {p1, v0, v1}, Lkik/core/net/g;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 212
-    new-instance v0, Lkik/core/datatypes/ac;
+    new-instance v0, Lkik/core/datatypes/ab;
 
-    invoke-direct {v0}, Lkik/core/datatypes/ac;-><init>()V
+    invoke-direct {v0}, Lkik/core/datatypes/ab;-><init>()V
 
-    iput-object v0, p0, Lkik/core/net/outgoing/PreloginReregistrationRequest;->_upd:Lkik/core/datatypes/ac;
+    iput-object v0, p0, Lkik/core/net/outgoing/PreloginReregistrationRequest;->_upd:Lkik/core/datatypes/ab;
 
     .line 214
     :goto_0
@@ -641,7 +641,7 @@
     .line 242
     iget-object v1, p0, Lkik/core/net/outgoing/PreloginReregistrationRequest;->_xdataRecords:Ljava/util/List;
 
-    invoke-static {v0, v4, p1}, Lkik/core/net/outgoing/q;->a(Ljava/lang/String;Ljava/lang/String;Lkik/core/net/g;)Lkik/core/datatypes/ad;
+    invoke-static {v0, v4, p1}, Lkik/core/net/outgoing/q;->a(Ljava/lang/String;Ljava/lang/String;Lkik/core/net/g;)Lkik/core/datatypes/ac;
 
     move-result-object v0
 
@@ -665,7 +665,7 @@
     if-eqz v0, :cond_3
 
     .line 219
-    iget-object v0, p0, Lkik/core/net/outgoing/PreloginReregistrationRequest;->_upd:Lkik/core/datatypes/ac;
+    iget-object v0, p0, Lkik/core/net/outgoing/PreloginReregistrationRequest;->_upd:Lkik/core/datatypes/ab;
 
     new-instance v1, Ljava/lang/Boolean;
 
@@ -685,16 +685,16 @@
 
     invoke-direct {v1, v2}, Ljava/lang/Boolean;-><init>(Z)V
 
-    iput-object v1, v0, Lkik/core/datatypes/ac;->b:Ljava/lang/Boolean;
+    iput-object v1, v0, Lkik/core/datatypes/ab;->b:Ljava/lang/Boolean;
 
     .line 220
-    iget-object v0, p0, Lkik/core/net/outgoing/PreloginReregistrationRequest;->_upd:Lkik/core/datatypes/ac;
+    iget-object v0, p0, Lkik/core/net/outgoing/PreloginReregistrationRequest;->_upd:Lkik/core/datatypes/ab;
 
     invoke-virtual {p1}, Lkik/core/net/g;->nextText()Ljava/lang/String;
 
     move-result-object v1
 
-    iput-object v1, v0, Lkik/core/datatypes/ac;->a:Ljava/lang/String;
+    iput-object v1, v0, Lkik/core/datatypes/ab;->a:Ljava/lang/String;
 
     goto :goto_1
 
@@ -709,13 +709,13 @@
     if-eqz v0, :cond_4
 
     .line 223
-    iget-object v0, p0, Lkik/core/net/outgoing/PreloginReregistrationRequest;->_upd:Lkik/core/datatypes/ac;
+    iget-object v0, p0, Lkik/core/net/outgoing/PreloginReregistrationRequest;->_upd:Lkik/core/datatypes/ab;
 
     invoke-virtual {p1}, Lkik/core/net/g;->nextText()Ljava/lang/String;
 
     move-result-object v1
 
-    iput-object v1, v0, Lkik/core/datatypes/ac;->d:Ljava/lang/String;
+    iput-object v1, v0, Lkik/core/datatypes/ab;->d:Ljava/lang/String;
 
     goto :goto_1
 
@@ -730,13 +730,13 @@
     if-eqz v0, :cond_5
 
     .line 226
-    iget-object v0, p0, Lkik/core/net/outgoing/PreloginReregistrationRequest;->_upd:Lkik/core/datatypes/ac;
+    iget-object v0, p0, Lkik/core/net/outgoing/PreloginReregistrationRequest;->_upd:Lkik/core/datatypes/ab;
 
     invoke-virtual {p1}, Lkik/core/net/g;->nextText()Ljava/lang/String;
 
     move-result-object v1
 
-    iput-object v1, v0, Lkik/core/datatypes/ac;->e:Ljava/lang/String;
+    iput-object v1, v0, Lkik/core/datatypes/ab;->e:Ljava/lang/String;
 
     goto :goto_1
 
@@ -751,13 +751,13 @@
     if-eqz v0, :cond_6
 
     .line 229
-    iget-object v0, p0, Lkik/core/net/outgoing/PreloginReregistrationRequest;->_upd:Lkik/core/datatypes/ac;
+    iget-object v0, p0, Lkik/core/net/outgoing/PreloginReregistrationRequest;->_upd:Lkik/core/datatypes/ab;
 
     invoke-virtual {p1}, Lkik/core/net/g;->nextText()Ljava/lang/String;
 
     move-result-object v1
 
-    iput-object v1, v0, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
+    iput-object v1, v0, Lkik/core/datatypes/ab;->c:Ljava/lang/String;
 
     goto/16 :goto_1
 
@@ -772,13 +772,13 @@
     if-eqz v0, :cond_7
 
     .line 232
-    iget-object v0, p0, Lkik/core/net/outgoing/PreloginReregistrationRequest;->_upd:Lkik/core/datatypes/ac;
+    iget-object v0, p0, Lkik/core/net/outgoing/PreloginReregistrationRequest;->_upd:Lkik/core/datatypes/ab;
 
     invoke-virtual {p1}, Lkik/core/net/g;->nextText()Ljava/lang/String;
 
     move-result-object v1
 
-    iput-object v1, v0, Lkik/core/datatypes/ac;->f:Ljava/lang/String;
+    iput-object v1, v0, Lkik/core/datatypes/ab;->f:Ljava/lang/String;
 
     goto/16 :goto_1
 
@@ -793,7 +793,7 @@
     if-eqz v0, :cond_0
 
     .line 235
-    iget-object v0, p0, Lkik/core/net/outgoing/PreloginReregistrationRequest;->_upd:Lkik/core/datatypes/ac;
+    iget-object v0, p0, Lkik/core/net/outgoing/PreloginReregistrationRequest;->_upd:Lkik/core/datatypes/ab;
 
     new-instance v1, Ljava/lang/Boolean;
 
@@ -809,7 +809,7 @@
 
     invoke-direct {v1, v2}, Ljava/lang/Boolean;-><init>(Z)V
 
-    iput-object v1, v0, Lkik/core/datatypes/ac;->h:Ljava/lang/Boolean;
+    iput-object v1, v0, Lkik/core/datatypes/ab;->h:Ljava/lang/Boolean;
 
     goto/16 :goto_1
 

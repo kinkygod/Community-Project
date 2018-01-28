@@ -2,54 +2,42 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Ljava/util/Comparator;
+.implements Ljava/lang/Runnable;
 
 
-# static fields
-.field private static final a:Lkik/android/chat/vm/profile/co;
+# instance fields
+.field private final a:Lkik/android/chat/vm/profile/ca;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lkik/android/chat/vm/profile/co;
-
-    invoke-direct {v0}, Lkik/android/chat/vm/profile/co;-><init>()V
-
-    sput-object v0, Lkik/android/chat/vm/profile/co;->a:Lkik/android/chat/vm/profile/co;
-
-    return-void
-.end method
-
-.method private constructor <init>()V
+.method private constructor <init>(Lkik/android/chat/vm/profile/ca;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    iput-object p1, p0, Lkik/android/chat/vm/profile/co;->a:Lkik/android/chat/vm/profile/ca;
+
     return-void
 .end method
 
-.method public static a()Ljava/util/Comparator;
+.method public static a(Lkik/android/chat/vm/profile/ca;)Ljava/lang/Runnable;
     .locals 1
 
-    sget-object v0, Lkik/android/chat/vm/profile/co;->a:Lkik/android/chat/vm/profile/co;
+    new-instance v0, Lkik/android/chat/vm/profile/co;
+
+    invoke-direct {v0, p0}, Lkik/android/chat/vm/profile/co;-><init>(Lkik/android/chat/vm/profile/ca;)V
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
+.method public final run()V
     .locals 1
 
-    check-cast p1, Lcom/kik/core/network/xmpp/jid/a;
+    iget-object v0, p0, Lkik/android/chat/vm/profile/co;->a:Lkik/android/chat/vm/profile/ca;
 
-    check-cast p2, Lcom/kik/core/network/xmpp/jid/a;
+    invoke-static {v0}, Lkik/android/chat/vm/profile/ca;->b(Lkik/android/chat/vm/profile/ca;)V
 
-    invoke-static {p1, p2}, Lkik/android/chat/vm/profile/cn;->a(Lcom/kik/core/network/xmpp/jid/a;Lcom/kik/core/network/xmpp/jid/a;)I
-
-    move-result v0
-
-    return v0
+    return-void
 .end method

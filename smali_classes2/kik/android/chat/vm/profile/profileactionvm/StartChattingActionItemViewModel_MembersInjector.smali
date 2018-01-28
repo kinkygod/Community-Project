@@ -3,16 +3,16 @@
 .source "SourceFile"
 
 # interfaces
-.implements La/b;
+.implements Ldagger/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La/b",
+        "Ldagger/b",
         "<",
-        "Lkik/android/chat/vm/profile/profileactionvm/ao;",
+        "Lkik/android/chat/vm/profile/profileactionvm/at;",
         ">;"
     }
 .end annotation
@@ -227,7 +227,7 @@
     return-void
 .end method
 
-.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)La/b;
+.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
     .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -252,9 +252,9 @@
             "<",
             "Lkik/android/util/SponsoredUsersManager;",
             ">;)",
-            "La/b",
+            "Ldagger/b",
             "<",
-            "Lkik/android/chat/vm/profile/profileactionvm/ao;",
+            "Lkik/android/chat/vm/profile/profileactionvm/at;",
             ">;"
         }
     .end annotation
@@ -280,12 +280,12 @@
 
 
 # virtual methods
-.method public final synthetic a(Ljava/lang/Object;)V
+.method public final synthetic injectMembers(Ljava/lang/Object;)V
     .locals 2
 
     .prologue
     .line 12
-    check-cast p1, Lkik/android/chat/vm/profile/profileactionvm/ao;
+    check-cast p1, Lkik/android/chat/vm/profile/profileactionvm/at;
 
     .line 1062
     if-nez p1, :cond_0
@@ -314,7 +314,7 @@
 
     check-cast v0, Lcom/kik/android/Mixpanel;
 
-    iput-object v0, p1, Lkik/android/chat/vm/profile/profileactionvm/ao;->b:Lcom/kik/android/Mixpanel;
+    iput-object v0, p1, Lkik/android/chat/vm/profile/profileactionvm/at;->b:Lcom/kik/android/Mixpanel;
 
     .line 1068
     iget-object v0, p0, Lkik/android/chat/vm/profile/profileactionvm/StartChattingActionItemViewModel_MembersInjector;->d:Ljavax/inject/Provider;
@@ -325,7 +325,7 @@
 
     check-cast v0, Lkik/android/scan/c;
 
-    iput-object v0, p1, Lkik/android/chat/vm/profile/profileactionvm/ao;->c:Lkik/android/scan/c;
+    iput-object v0, p1, Lkik/android/chat/vm/profile/profileactionvm/at;->c:Lkik/android/scan/c;
 
     .line 1069
     iget-object v0, p0, Lkik/android/chat/vm/profile/profileactionvm/StartChattingActionItemViewModel_MembersInjector;->e:Ljavax/inject/Provider;
@@ -336,7 +336,7 @@
 
     check-cast v0, Lcom/kik/core/domain/users/a;
 
-    iput-object v0, p1, Lkik/android/chat/vm/profile/profileactionvm/ao;->d:Lcom/kik/core/domain/users/a;
+    iput-object v0, p1, Lkik/android/chat/vm/profile/profileactionvm/at;->d:Lcom/kik/core/domain/users/a;
 
     .line 1070
     iget-object v0, p0, Lkik/android/chat/vm/profile/profileactionvm/StartChattingActionItemViewModel_MembersInjector;->f:Ljavax/inject/Provider;
@@ -347,7 +347,7 @@
 
     check-cast v0, Lkik/android/util/SponsoredUsersManager;
 
-    iput-object v0, p1, Lkik/android/chat/vm/profile/profileactionvm/ao;->e:Lkik/android/util/SponsoredUsersManager;
+    iput-object v0, p1, Lkik/android/chat/vm/profile/profileactionvm/at;->e:Lkik/android/util/SponsoredUsersManager;
 
     .line 12
     return-void

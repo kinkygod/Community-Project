@@ -3,19 +3,19 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/core/interfaces/s;
+.implements Lkik/core/interfaces/r;
 
 
 # instance fields
 .field final a:Landroid/content/Context;
 
-.field final b:Lkik/core/interfaces/ae;
+.field final b:Lkik/core/interfaces/ad;
 
 .field private c:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lkik/core/interfaces/ae;)V
+.method public constructor <init>(Landroid/content/Context;Lkik/core/interfaces/ad;)V
     .locals 1
 
     .prologue
@@ -31,7 +31,7 @@
     iput-object p1, p0, Lcom/kik/b/a;->a:Landroid/content/Context;
 
     .line 27
-    iput-object p2, p0, Lcom/kik/b/a;->b:Lkik/core/interfaces/ae;
+    iput-object p2, p0, Lcom/kik/b/a;->b:Lkik/core/interfaces/ad;
 
     .line 28
     return-void
@@ -123,9 +123,9 @@
 
     .prologue
     .line 63
-    iget-object v0, p0, Lcom/kik/b/a;->b:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lcom/kik/b/a;->b:Lkik/core/interfaces/ad;
 
-    invoke-static {v0}, Lkik/core/z;->b(Lkik/core/interfaces/ae;)Lkik/core/z;
+    invoke-static {v0}, Lkik/core/z;->b(Lkik/core/interfaces/ad;)Lkik/core/z;
 
     move-result-object v0
 

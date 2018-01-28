@@ -24,7 +24,7 @@
     iput-object p1, p0, Lkik/android/chat/fragment/registration/RegistrationPhoneVerificationEnterCodeFragment_ViewBinding;->a:Lkik/android/chat/fragment/registration/RegistrationPhoneVerificationEnterCodeFragment;
 
     .line 26
-    const v0, 0x7f10021c
+    const v0, 0x7f10021e
 
     const-string v1, "field \'_enterCodeView\'"
 
@@ -39,7 +39,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/registration/RegistrationPhoneVerificationEnterCodeFragment;->_enterCodeView:Lkik/android/chat/view/ad;
 
     .line 27
-    const v0, 0x7f10021b
+    const v0, 0x7f10021d
 
     const-string v1, "method \'onSkipPhoneVerificationClick\'"
 

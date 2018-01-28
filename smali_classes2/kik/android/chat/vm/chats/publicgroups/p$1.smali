@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/android/chat/vm/chats/publicgroups/p;->i()Lrx/d;
+    value = Lkik/android/chat/vm/chats/publicgroups/p;->j()Lrx/d;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -36,7 +36,7 @@
     .locals 0
 
     .prologue
-    .line 110
+    .line 102
     iput-object p1, p0, Lkik/android/chat/vm/chats/publicgroups/p$1;->a:Lkik/android/chat/vm/chats/publicgroups/p;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -44,10 +44,48 @@
     return-void
 .end method
 
+.method private a()Lrx/d;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<",
+            "Landroid/graphics/Bitmap;",
+            ">;"
+        }
+    .end annotation
+
+    .prologue
+    .line 112
+    iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/p$1;->a:Lkik/android/chat/vm/chats/publicgroups/p;
+
+    iget-object v0, v0, Lkik/android/chat/vm/chats/publicgroups/p;->b:Landroid/content/res/Resources;
+
+    const v1, 0x7f02025d
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/graphics/drawable/BitmapDrawable;
+
+    .line 113
+    invoke-virtual {v0}, Landroid/graphics/drawable/BitmapDrawable;->getBitmap()Landroid/graphics/Bitmap;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lrx/d;->b(Ljava/lang/Object;)Lrx/d;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
 
 # virtual methods
 .method public final a(II)Lrx/d;
-    .locals 2
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",
@@ -59,29 +97,22 @@
     .end annotation
 
     .prologue
-    .line 114
-    .line 1120
-    iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/p$1;->a:Lkik/android/chat/vm/chats/publicgroups/p;
-
-    iget-object v0, v0, Lkik/android/chat/vm/chats/publicgroups/p;->b:Landroid/content/res/Resources;
-
-    const v1, 0x7f020275
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
+    .line 106
+    invoke-direct {p0}, Lkik/android/chat/vm/chats/publicgroups/p$1;->a()Lrx/d;
 
     move-result-object v0
 
-    check-cast v0, Landroid/graphics/drawable/BitmapDrawable;
+    return-object v0
+.end method
 
-    .line 1121
-    invoke-virtual {v0}, Landroid/graphics/drawable/BitmapDrawable;->getBitmap()Landroid/graphics/Bitmap;
+.method public final bridge synthetic a(IILjava/lang/Object;)Lrx/d;
+    .locals 1
+
+    .prologue
+    .line 102
+    invoke-direct {p0}, Lkik/android/chat/vm/chats/publicgroups/p$1;->a()Lrx/d;
 
     move-result-object v0
 
-    invoke-static {v0}, Lrx/d;->b(Ljava/lang/Object;)Lrx/d;
-
-    move-result-object v0
-
-    .line 114
     return-object v0
 .end method

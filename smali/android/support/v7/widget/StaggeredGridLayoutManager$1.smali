@@ -43,7 +43,7 @@
     .line 224
     iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$1;->a:Landroid/support/v7/widget/StaggeredGridLayoutManager;
 
-    invoke-virtual {v0}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->c()Z
+    invoke-virtual {v0}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b()Z
 
     .line 225
     return-void

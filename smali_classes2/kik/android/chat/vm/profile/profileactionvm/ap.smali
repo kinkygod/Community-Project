@@ -2,52 +2,50 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lrx/functions/g;
+.implements Lrx/functions/b;
 
 
-# static fields
-.field private static final a:Lkik/android/chat/vm/profile/profileactionvm/ap;
+# instance fields
+.field private final a:Lkik/android/chat/vm/profile/profileactionvm/ag$c;
+
+.field private final b:Ljava/lang/String;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lkik/android/chat/vm/profile/profileactionvm/ap;
-
-    invoke-direct {v0}, Lkik/android/chat/vm/profile/profileactionvm/ap;-><init>()V
-
-    sput-object v0, Lkik/android/chat/vm/profile/profileactionvm/ap;->a:Lkik/android/chat/vm/profile/profileactionvm/ap;
-
-    return-void
-.end method
-
-.method private constructor <init>()V
+.method private constructor <init>(Lkik/android/chat/vm/profile/profileactionvm/ag$c;Ljava/lang/String;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    iput-object p1, p0, Lkik/android/chat/vm/profile/profileactionvm/ap;->a:Lkik/android/chat/vm/profile/profileactionvm/ag$c;
+
+    iput-object p2, p0, Lkik/android/chat/vm/profile/profileactionvm/ap;->b:Ljava/lang/String;
+
     return-void
 .end method
 
-.method public static a()Lrx/functions/g;
+.method public static a(Lkik/android/chat/vm/profile/profileactionvm/ag$c;Ljava/lang/String;)Lrx/functions/b;
     .locals 1
 
-    sget-object v0, Lkik/android/chat/vm/profile/profileactionvm/ap;->a:Lkik/android/chat/vm/profile/profileactionvm/ap;
+    new-instance v0, Lkik/android/chat/vm/profile/profileactionvm/ap;
+
+    invoke-direct {v0, p0, p1}, Lkik/android/chat/vm/profile/profileactionvm/ap;-><init>(Lkik/android/chat/vm/profile/profileactionvm/ag$c;Ljava/lang/String;)V
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public final call(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.method public final call(Ljava/lang/Object;)V
+    .locals 2
 
-    check-cast p1, Lcom/kik/core/domain/users/a/c;
+    iget-object v0, p0, Lkik/android/chat/vm/profile/profileactionvm/ap;->a:Lkik/android/chat/vm/profile/profileactionvm/ag$c;
 
-    invoke-static {p1}, Lkik/android/chat/vm/profile/profileactionvm/ao;->a(Lcom/kik/core/domain/users/a/c;)Ljava/lang/Boolean;
+    iget-object v1, p0, Lkik/android/chat/vm/profile/profileactionvm/ap;->b:Ljava/lang/String;
 
-    move-result-object v0
+    check-cast p1, Lcom/kik/core/domain/a/a/c;
 
-    return-object v0
+    invoke-static {v0, v1, p1}, Lkik/android/chat/vm/profile/profileactionvm/ag$c;->a(Lkik/android/chat/vm/profile/profileactionvm/ag$c;Ljava/lang/String;Lcom/kik/core/domain/a/a/c;)V
+
+    return-void
 .end method

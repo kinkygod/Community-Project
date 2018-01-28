@@ -437,7 +437,7 @@
     goto :goto_0
 .end method
 
-.method public static a(Ljava/util/List;Lkik/core/interfaces/w;)Ljava/lang/String;
+.method public static a(Ljava/util/List;Lkik/core/interfaces/v;)Ljava/lang/String;
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -446,7 +446,7 @@
             "<",
             "Ljava/lang/String;",
             ">;",
-            "Lkik/core/interfaces/w;",
+            "Lkik/core/interfaces/v;",
             ")",
             "Ljava/lang/String;"
         }
@@ -501,7 +501,7 @@
     .line 418
     const/4 v3, 0x1
 
-    invoke-interface {p1, v0, v3}, Lkik/core/interfaces/w;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
+    invoke-interface {p1, v0, v3}, Lkik/core/interfaces/v;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
 
     move-result-object v0
 
@@ -522,7 +522,7 @@
     goto :goto_0
 .end method
 
-.method public static a(Ljava/util/List;Lkik/core/interfaces/w;I)Ljava/lang/String;
+.method public static a(Ljava/util/List;Lkik/core/interfaces/v;I)Ljava/lang/String;
     .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -531,7 +531,7 @@
             "<",
             "Ljava/lang/String;",
             ">;",
-            "Lkik/core/interfaces/w;",
+            "Lkik/core/interfaces/v;",
             "I)",
             "Ljava/lang/String;"
         }
@@ -595,7 +595,7 @@
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-interface {p1, v0, v5}, Lkik/core/interfaces/w;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
+    invoke-interface {p1, v0, v5}, Lkik/core/interfaces/v;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
 
     move-result-object v0
 
@@ -756,7 +756,7 @@
     goto :goto_1
 .end method
 
-.method public static a(Lkik/core/datatypes/p;Lkik/core/interfaces/w;)Ljava/lang/String;
+.method public static a(Lkik/core/datatypes/p;Lkik/core/interfaces/v;)Ljava/lang/String;
     .locals 2
 
     .prologue
@@ -779,7 +779,7 @@
 
     const/4 v1, 0x0
 
-    invoke-interface {p1, v0, v1}, Lkik/core/interfaces/w;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
+    invoke-interface {p1, v0, v1}, Lkik/core/interfaces/v;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
 
     move-result-object v0
 
@@ -820,14 +820,14 @@
     .line 1373
     const/4 v1, -0x1
 
-    invoke-static {v0, p1, v1}, Lkik/android/util/bs;->a(Ljava/util/List;Lkik/core/interfaces/w;I)Ljava/lang/String;
+    invoke-static {v0, p1, v1}, Lkik/android/util/bs;->a(Ljava/util/List;Lkik/core/interfaces/v;I)Ljava/lang/String;
 
     move-result-object v0
 
     goto :goto_0
 .end method
 
-.method public static a(Lkik/core/interfaces/IConversation;Lkik/core/interfaces/w;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+.method public static a(Lkik/core/interfaces/IConversation;Lkik/core/interfaces/v;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 11
 
     .prologue
@@ -836,7 +836,7 @@
     const/4 v3, 0x0
 
     .line 200
-    invoke-interface {p0}, Lkik/core/interfaces/IConversation;->H()Ljava/util/List;
+    invoke-interface {p0}, Lkik/core/interfaces/IConversation;->G()Ljava/util/List;
 
     move-result-object v8
 
@@ -889,7 +889,7 @@
     if-eqz v0, :cond_0
 
     .line 211
-    invoke-interface {p1, v0, v2}, Lkik/core/interfaces/w;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
+    invoke-interface {p1, v0, v2}, Lkik/core/interfaces/v;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
 
     move-result-object v7
 
@@ -1342,7 +1342,7 @@
     sput-boolean v7, Lkik/android/util/bs;->f:Z
 
     .line 1091
-    const v0, 0x7f0905b4
+    const v0, 0x7f0905ba
 
     invoke-static {v0}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
 
@@ -1797,7 +1797,7 @@
     if-gtz v0, :cond_1
 
     .line 3591
-    const v0, 0x7f0905b4
+    const v0, 0x7f0905ba
 
     invoke-virtual {p4, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

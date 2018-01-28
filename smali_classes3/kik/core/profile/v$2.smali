@@ -34,7 +34,7 @@
     .locals 0
 
     .prologue
-    .line 1213
+    .line 1201
     iput-object p1, p0, Lkik/core/profile/v$2;->b:Lkik/core/profile/v;
 
     iput-object p2, p0, Lkik/core/profile/v$2;->a:Lkik/core/datatypes/k;
@@ -50,10 +50,10 @@
     .locals 4
 
     .prologue
-    .line 1213
+    .line 1201
     check-cast p1, Lkik/core/net/outgoing/AddContactByJidRequest;
 
-    .line 2217
+    .line 2205
     iget-object v0, p0, Lkik/core/profile/v$2;->b:Lkik/core/profile/v;
 
     invoke-virtual {p1}, Lkik/core/net/outgoing/AddContactByJidRequest;->getJid()Lkik/core/datatypes/k;
@@ -70,9 +70,9 @@
 
     invoke-direct {v3, p0, p1}, Lkik/core/profile/v$2$1;-><init>(Lkik/core/profile/v$2;Lkik/core/net/outgoing/AddContactByJidRequest;)V
 
-    invoke-virtual {v0, v1, v2, v3}, Lkik/core/profile/v;->a(Ljava/lang/String;ZLkik/core/interfaces/w$a;)Lkik/core/datatypes/l;
+    invoke-virtual {v0, v1, v2, v3}, Lkik/core/profile/v;->a(Ljava/lang/String;ZLkik/core/interfaces/v$a;)Lkik/core/datatypes/l;
 
-    .line 1213
+    .line 1201
     return-void
 .end method
 
@@ -80,7 +80,7 @@
     .locals 2
 
     .prologue
-    .line 1238
+    .line 1226
     iget-object v0, p0, Lkik/core/profile/v$2;->b:Lkik/core/profile/v;
 
     invoke-static {v0}, Lkik/core/profile/v;->f(Lkik/core/profile/v;)Lcom/kik/events/g;
@@ -91,7 +91,7 @@
 
     invoke-virtual {v0, v1}, Lcom/kik/events/g;->a(Ljava/lang/Object;)V
 
-    .line 1240
+    .line 1228
     iget-object v0, p0, Lkik/core/profile/v$2;->b:Lkik/core/profile/v;
 
     invoke-static {v0}, Lkik/core/profile/v;->i(Lkik/core/profile/v;)Lcom/kik/events/g;
@@ -106,6 +106,6 @@
 
     invoke-virtual {v0, v1}, Lcom/kik/events/g;->a(Ljava/lang/Object;)V
 
-    .line 1241
+    .line 1229
     return-void
 .end method

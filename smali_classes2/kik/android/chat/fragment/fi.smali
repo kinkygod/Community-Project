@@ -2,50 +2,42 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Landroid/view/View$OnTouchListener;
+.implements Landroid/view/View$OnClickListener;
 
 
 # instance fields
-.field private final a:Lkik/android/chat/fragment/fh;
-
-.field private final b:Lkik/android/chat/fragment/fn;
+.field private final a:Lkik/android/chat/fragment/SendToFragment;
 
 
 # direct methods
-.method private constructor <init>(Lkik/android/chat/fragment/fh;Lkik/android/chat/fragment/fn;)V
+.method private constructor <init>(Lkik/android/chat/fragment/SendToFragment;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lkik/android/chat/fragment/fi;->a:Lkik/android/chat/fragment/fh;
-
-    iput-object p2, p0, Lkik/android/chat/fragment/fi;->b:Lkik/android/chat/fragment/fn;
+    iput-object p1, p0, Lkik/android/chat/fragment/fi;->a:Lkik/android/chat/fragment/SendToFragment;
 
     return-void
 .end method
 
-.method public static a(Lkik/android/chat/fragment/fh;Lkik/android/chat/fragment/fn;)Landroid/view/View$OnTouchListener;
+.method public static a(Lkik/android/chat/fragment/SendToFragment;)Landroid/view/View$OnClickListener;
     .locals 1
 
     new-instance v0, Lkik/android/chat/fragment/fi;
 
-    invoke-direct {v0, p0, p1}, Lkik/android/chat/fragment/fi;-><init>(Lkik/android/chat/fragment/fh;Lkik/android/chat/fragment/fn;)V
+    invoke-direct {v0, p0}, Lkik/android/chat/fragment/fi;-><init>(Lkik/android/chat/fragment/SendToFragment;)V
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public final onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
-    .locals 2
+.method public final onClick(Landroid/view/View;)V
+    .locals 1
 
-    iget-object v0, p0, Lkik/android/chat/fragment/fi;->a:Lkik/android/chat/fragment/fh;
+    iget-object v0, p0, Lkik/android/chat/fragment/fi;->a:Lkik/android/chat/fragment/SendToFragment;
 
-    iget-object v1, p0, Lkik/android/chat/fragment/fi;->b:Lkik/android/chat/fragment/fn;
+    invoke-static {v0}, Lkik/android/chat/fragment/SendToFragment;->a(Lkik/android/chat/fragment/SendToFragment;)V
 
-    invoke-static {v0, v1, p2}, Lkik/android/chat/fragment/fh;->a(Lkik/android/chat/fragment/fh;Lkik/android/chat/fragment/fn;Landroid/view/MotionEvent;)Z
-
-    move-result v0
-
-    return v0
+    return-void
 .end method

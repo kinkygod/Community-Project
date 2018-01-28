@@ -244,7 +244,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f040108
+    const v1, 0x7f04010c
 
     invoke-virtual {v0, v1, p1, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
@@ -269,16 +269,16 @@
 
     move-result-object v0
 
-    const v1, 0x7f040109
+    const v1, 0x7f04010d
 
     invoke-virtual {v0, v1, p1, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
     move-result-object v1
 
     .line 85
-    new-instance v0, Lkik/android/widget/dd;
+    new-instance v0, Lkik/android/widget/dr;
 
-    invoke-direct {v0, v1}, Lkik/android/widget/dd;-><init>(Landroid/view/View;)V
+    invoke-direct {v0, v1}, Lkik/android/widget/dr;-><init>(Landroid/view/View;)V
 
     goto :goto_0
 

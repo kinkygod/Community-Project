@@ -135,7 +135,7 @@
 
     iget-object v0, v0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_tray:Landroid/view/ViewGroup;
 
-    invoke-static {v0}, Lkik/android/util/ca;->b(Landroid/view/View;)Z
+    invoke-static {v0}, Lkik/android/util/cb;->b(Landroid/view/View;)Z
 
     move-result v0
 
@@ -152,11 +152,11 @@
     .line 1461
     iget-object v0, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl$2;->a:Lkik/android/chat/presentation/MediaTrayPresenterImpl;
 
-    invoke-static {v0}, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->O(Lkik/android/chat/presentation/MediaTrayPresenterImpl;)Lkik/android/chat/fragment/fd;
+    invoke-static {v0}, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->O(Lkik/android/chat/presentation/MediaTrayPresenterImpl;)Lkik/android/chat/fragment/fg;
 
     move-result-object v0
 
-    invoke-interface {v0, v1}, Lkik/android/chat/fragment/fd;->a(I)V
+    invoke-interface {v0, v1}, Lkik/android/chat/fragment/fg;->a(I)V
 
     .line 1464
     :cond_0

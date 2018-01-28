@@ -22,7 +22,7 @@
     iput-object p1, p0, Lkik/android/chat/fragment/ScanCodeTabFragment_ViewBinding;->a:Lkik/android/chat/fragment/ScanCodeTabFragment;
 
     .line 24
-    const v0, 0x7f100316
+    const v0, 0x7f100311
 
     const-string v1, "field \'_toggleHolder\'"
 
@@ -37,7 +37,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/ScanCodeTabFragment;->_toggleHolder:Landroid/widget/LinearLayout;
 
     .line 25
-    const v0, 0x7f1003de
+    const v0, 0x7f1003da
 
     const-string v1, "field \'_scanToggle\'"
 
@@ -52,7 +52,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/ScanCodeTabFragment;->_scanToggle:Landroid/widget/SeekBar;
 
     .line 26
-    const v0, 0x7f100318
+    const v0, 0x7f100313
 
     const-string v1, "field \'_codeIcon\'"
 
@@ -67,7 +67,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/ScanCodeTabFragment;->_codeIcon:Landroid/widget/ImageView;
 
     .line 27
-    const v0, 0x7f100317
+    const v0, 0x7f100312
 
     const-string v1, "field \'_cameraIcon\'"
 
@@ -119,7 +119,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/ScanCodeTabFragment;->_backButton:Landroid/view/View;
 
     .line 31
-    const v0, 0x7f100315
+    const v0, 0x7f100310
 
     const-string v1, "field \'_viewPager\'"
 

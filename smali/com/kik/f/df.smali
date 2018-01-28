@@ -4,36 +4,19 @@
 
 
 # instance fields
-.field private final a:Lcom/kik/android/b/g;
+.field private final a:Lkik/android/util/SponsoredUsersManager;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lkik/core/e/f;Lkik/core/interfaces/ae;Lcom/kik/events/Promise;Lkik/core/interfaces/ah;Lkik/core/interfaces/aa;Lkik/android/util/ai;Lkik/core/interfaces/t;)V
-    .locals 9
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroid/content/Context;",
-            "Lkik/core/e/f;",
-            "Lkik/core/interfaces/ae;",
-            "Lcom/kik/events/Promise",
-            "<",
-            "Ljava/lang/Object;",
-            ">;",
-            "Lkik/core/interfaces/ah;",
-            "Lkik/core/interfaces/aa;",
-            "Lkik/android/util/ai;",
-            "Lkik/core/interfaces/t;",
-            ")V"
-        }
-    .end annotation
+.method public constructor <init>(Lkik/core/interfaces/ad;Lkik/core/interfaces/ag;Lkik/core/interfaces/l;Lkik/android/config/b;Lkik/android/util/ai;)V
+    .locals 6
 
     .prologue
-    .line 28
+    .line 20
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 29
-    new-instance v0, Lcom/kik/android/b/g;
+    .line 21
+    new-instance v0, Lkik/android/util/SponsoredUsersManager;
 
     move-object v1, p1
 
@@ -45,30 +28,22 @@
 
     move-object v5, p5
 
-    move-object v6, p6
+    invoke-direct/range {v0 .. v5}, Lkik/android/util/SponsoredUsersManager;-><init>(Lkik/core/interfaces/ad;Lkik/core/interfaces/ag;Lkik/core/interfaces/l;Lkik/android/config/b;Lkik/android/util/ai;)V
 
-    move-object/from16 v7, p7
+    iput-object v0, p0, Lcom/kik/f/df;->a:Lkik/android/util/SponsoredUsersManager;
 
-    move-object/from16 v8, p8
-
-    invoke-direct/range {v0 .. v8}, Lcom/kik/android/b/g;-><init>(Landroid/content/Context;Lkik/core/e/f;Lkik/core/interfaces/ae;Lcom/kik/events/Promise;Lkik/core/interfaces/ah;Lkik/core/interfaces/aa;Lkik/android/util/ai;Lkik/core/interfaces/t;)V
-
-    iput-object v0, p0, Lcom/kik/f/df;->a:Lcom/kik/android/b/g;
-
-    .line 30
+    .line 22
     return-void
 .end method
 
 
 # virtual methods
-.method final a()Lcom/kik/android/b/g;
+.method final a()Lkik/android/util/SponsoredUsersManager;
     .locals 1
-    .annotation runtime Ljavax/inject/Singleton;
-    .end annotation
 
     .prologue
-    .line 36
-    iget-object v0, p0, Lcom/kik/f/df;->a:Lcom/kik/android/b/g;
+    .line 27
+    iget-object v0, p0, Lcom/kik/f/df;->a:Lkik/android/util/SponsoredUsersManager;
 
     return-object v0
 .end method

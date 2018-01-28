@@ -39,7 +39,7 @@
     .line 2174
     iget-object v0, p0, Lkik/android/chat/vm/messaging/ct$a;->a:Lkik/android/chat/vm/messaging/ct;
 
-    invoke-virtual {v0}, Lkik/android/chat/vm/messaging/ct;->x()Lkik/core/datatypes/Message;
+    invoke-virtual {v0}, Lkik/android/chat/vm/messaging/ct;->y()Lkik/core/datatypes/Message;
 
     move-result-object v0
 
@@ -71,17 +71,17 @@
     .line 3168
     iget-object v0, p0, Lkik/android/chat/vm/messaging/ct$a;->a:Lkik/android/chat/vm/messaging/ct;
 
-    iget-object v0, v0, Lkik/android/chat/vm/messaging/ct;->i:Lkik/core/interfaces/w;
+    iget-object v0, v0, Lkik/android/chat/vm/messaging/ct;->i:Lkik/core/interfaces/v;
 
     iget-object v1, p0, Lkik/android/chat/vm/messaging/ct$a;->a:Lkik/android/chat/vm/messaging/ct;
 
-    invoke-virtual {v1}, Lkik/android/chat/vm/messaging/ct;->u()Ljava/lang/String;
+    invoke-virtual {v1}, Lkik/android/chat/vm/messaging/ct;->v()Ljava/lang/String;
 
     move-result-object v1
 
     const/4 v2, 0x1
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/w;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/v;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
 
     move-result-object v0
 
@@ -108,15 +108,15 @@
     .line 4150
     iget-object v0, p0, Lkik/android/chat/vm/messaging/ct$a;->a:Lkik/android/chat/vm/messaging/ct;
 
-    iget-object v0, v0, Lkik/android/chat/vm/messaging/ct;->i:Lkik/core/interfaces/w;
+    iget-object v0, v0, Lkik/android/chat/vm/messaging/ct;->i:Lkik/core/interfaces/v;
 
     iget-object v2, p0, Lkik/android/chat/vm/messaging/ct$a;->a:Lkik/android/chat/vm/messaging/ct;
 
-    invoke-virtual {v2}, Lkik/android/chat/vm/messaging/ct;->u()Ljava/lang/String;
+    invoke-virtual {v2}, Lkik/android/chat/vm/messaging/ct;->v()Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-interface {v0, v2, v1}, Lkik/core/interfaces/w;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
+    invoke-interface {v0, v2, v1}, Lkik/core/interfaces/v;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
 
     move-result-object v0
 
@@ -153,17 +153,17 @@
     .line 5136
     iget-object v0, p0, Lkik/android/chat/vm/messaging/ct$a;->a:Lkik/android/chat/vm/messaging/ct;
 
-    iget-object v0, v0, Lkik/android/chat/vm/messaging/ct;->i:Lkik/core/interfaces/w;
+    iget-object v0, v0, Lkik/android/chat/vm/messaging/ct;->i:Lkik/core/interfaces/v;
 
     iget-object v1, p0, Lkik/android/chat/vm/messaging/ct$a;->a:Lkik/android/chat/vm/messaging/ct;
 
-    invoke-virtual {v1}, Lkik/android/chat/vm/messaging/ct;->u()Ljava/lang/String;
+    invoke-virtual {v1}, Lkik/android/chat/vm/messaging/ct;->v()Ljava/lang/String;
 
     move-result-object v1
 
     const/4 v2, 0x1
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/w;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/v;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
 
     move-result-object v0
 
@@ -211,7 +211,7 @@
     .line 5179
     iget-object v0, p0, Lkik/android/chat/vm/messaging/ct$a;->a:Lkik/android/chat/vm/messaging/ct;
 
-    invoke-virtual {v0}, Lkik/android/chat/vm/messaging/ct;->k()Lkik/core/datatypes/messageExtensions/ContentMessage;
+    invoke-virtual {v0}, Lkik/android/chat/vm/messaging/ct;->l()Lkik/core/datatypes/messageExtensions/ContentMessage;
 
     move-result-object v0
 
@@ -239,7 +239,7 @@
     .line 6156
     iget-object v0, p0, Lkik/android/chat/vm/messaging/ct$a;->a:Lkik/android/chat/vm/messaging/ct;
 
-    invoke-virtual {v0}, Lkik/android/chat/vm/messaging/ct;->k()Lkik/core/datatypes/messageExtensions/ContentMessage;
+    invoke-virtual {v0}, Lkik/android/chat/vm/messaging/ct;->l()Lkik/core/datatypes/messageExtensions/ContentMessage;
 
     move-result-object v0
 
@@ -303,7 +303,7 @@
     .line 6184
     iget-object v0, p0, Lkik/android/chat/vm/messaging/ct$a;->a:Lkik/android/chat/vm/messaging/ct;
 
-    invoke-virtual {v0}, Lkik/android/chat/vm/messaging/ct;->k()Lkik/core/datatypes/messageExtensions/ContentMessage;
+    invoke-virtual {v0}, Lkik/android/chat/vm/messaging/ct;->l()Lkik/core/datatypes/messageExtensions/ContentMessage;
 
     move-result-object v0
 

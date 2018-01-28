@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/vm/ar;
+.implements Lkik/android/chat/vm/at;
 
 
 # virtual methods
-.method public abstract G_()V
+.method public abstract K_()V
 .end method
 
-.method public abstract a()Lrx/d;
+.method public abstract b()Lrx/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -24,7 +24,7 @@
     .end annotation
 .end method
 
-.method public abstract b()Lrx/d;
+.method public abstract d()Lrx/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -36,7 +36,7 @@
     .end annotation
 .end method
 
-.method public abstract d()Lrx/d;
+.method public abstract e()Lrx/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -48,8 +48,11 @@
     .end annotation
 .end method
 
-.method public abstract e()V
+.method public abstract g()V
 .end method
 
-.method public abstract g()Z
+.method public abstract h()Z
+.end method
+
+.method public abstract i()Lkik/android/chat/vm/IBadgeViewModel;
 .end method

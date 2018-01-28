@@ -1,52 +1,43 @@
-.class public final Lkik/android/chat/vm/di;
-.super Lkik/android/chat/vm/DialogViewModel;
-.source "SourceFile"
+.class final synthetic Lkik/android/chat/vm/di;
+.super Ljava/lang/Object;
 
 # interfaces
-.implements Lkik/android/chat/vm/bd;
-
-
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lkik/android/chat/vm/di$a;
-    }
-.end annotation
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field private a:Lkik/android/chat/vm/ReportDialogViewModel$ReportReason;
+.field private final a:Lkik/android/chat/vm/ReportDialogViewModel;
 
 
 # direct methods
-.method public constructor <init>()V
+.method private constructor <init>(Lkik/android/chat/vm/ReportDialogViewModel;)V
     .locals 0
 
-    .prologue
-    .line 7
-    invoke-direct {p0}, Lkik/android/chat/vm/DialogViewModel;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lkik/android/chat/vm/di;->a:Lkik/android/chat/vm/ReportDialogViewModel;
 
     return-void
 .end method
 
-.method static synthetic a(Lkik/android/chat/vm/di;Lkik/android/chat/vm/ReportDialogViewModel$ReportReason;)Lkik/android/chat/vm/ReportDialogViewModel$ReportReason;
-    .locals 0
+.method public static a(Lkik/android/chat/vm/ReportDialogViewModel;)Ljava/lang/Runnable;
+    .locals 1
 
-    .prologue
-    .line 7
-    iput-object p1, p0, Lkik/android/chat/vm/di;->a:Lkik/android/chat/vm/ReportDialogViewModel$ReportReason;
+    new-instance v0, Lkik/android/chat/vm/di;
 
-    return-object p1
+    invoke-direct {v0, p0}, Lkik/android/chat/vm/di;-><init>(Lkik/android/chat/vm/ReportDialogViewModel;)V
+
+    return-object v0
 .end method
 
 
 # virtual methods
-.method public final a()Lkik/android/chat/vm/ReportDialogViewModel$ReportReason;
+.method public final run()V
     .locals 1
 
-    .prologue
-    .line 33
-    iget-object v0, p0, Lkik/android/chat/vm/di;->a:Lkik/android/chat/vm/ReportDialogViewModel$ReportReason;
+    iget-object v0, p0, Lkik/android/chat/vm/di;->a:Lkik/android/chat/vm/ReportDialogViewModel;
 
-    return-object v0
+    invoke-static {v0}, Lkik/android/chat/vm/ReportDialogViewModel;->b(Lkik/android/chat/vm/ReportDialogViewModel;)V
+
+    return-void
 .end method

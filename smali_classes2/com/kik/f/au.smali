@@ -45,7 +45,7 @@
 
     check-cast p1, Lrx/d;
 
-    invoke-static {v0, v1, p1}, Lcom/kik/f/at;->d(Lcom/kik/cache/KikVolleyImageLoader;Landroid/content/res/Resources;Lrx/d;)Lrx/d;
+    invoke-static {v0, v1, p1}, Lcom/kik/f/as;->c(Lcom/kik/cache/KikVolleyImageLoader;Landroid/content/res/Resources;Lrx/d;)Lrx/d;
 
     move-result-object v0
 

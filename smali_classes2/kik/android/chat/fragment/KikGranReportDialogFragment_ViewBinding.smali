@@ -22,7 +22,7 @@
     iput-object p1, p0, Lkik/android/chat/fragment/KikGranReportDialogFragment_ViewBinding;->a:Lkik/android/chat/fragment/KikGranReportDialogFragment;
 
     .line 21
-    const v0, 0x7f10025f
+    const v0, 0x7f10025b
 
     const-string v1, "field \'_portraitView\'"
 
@@ -37,7 +37,7 @@
     iput-object v0, p1, Lkik/android/chat/fragment/KikGranReportDialogFragment;->_portraitView:Landroid/view/ViewGroup;
 
     .line 22
-    const v0, 0x7f100260
+    const v0, 0x7f10025c
 
     const-string v1, "field \'_landscapeView\'"
 

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/core/interfaces/ah;
+.implements Lkik/core/interfaces/ag;
 
 
 # instance fields
@@ -20,11 +20,11 @@
     .end annotation
 .end field
 
-.field private c:Lkik/core/datatypes/ac;
+.field private c:Lkik/core/datatypes/ab;
 
 .field private d:Lkik/core/interfaces/ICommunication;
 
-.field private e:Lkik/core/interfaces/ae;
+.field private e:Lkik/core/interfaces/ad;
 
 .field private f:Lcom/kik/events/g;
     .annotation system Ldalvik/annotation/Signature;
@@ -59,18 +59,7 @@
     .end annotation
 .end field
 
-.field private i:Lcom/kik/events/g;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lcom/kik/events/g",
-            "<",
-            "Ljava/lang/Void;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private j:Lcom/kik/events/Promise;
+.field private i:Lcom/kik/events/Promise;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/kik/events/Promise",
@@ -83,11 +72,11 @@
 
 
 # direct methods
-.method public constructor <init>(Lkik/core/interfaces/ae;Lkik/core/interfaces/ICommunication;)V
+.method public constructor <init>(Lkik/core/interfaces/ad;Lkik/core/interfaces/ICommunication;)V
     .locals 1
 
     .prologue
-    .line 49
+    .line 48
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 27
@@ -104,114 +93,114 @@
 
     iput-object v0, p0, Lkik/core/profile/ae;->b:Lcom/kik/events/e;
 
-    .line 46
+    .line 45
     new-instance v0, Lcom/kik/events/Promise;
 
     invoke-direct {v0}, Lcom/kik/events/Promise;-><init>()V
 
-    iput-object v0, p0, Lkik/core/profile/ae;->j:Lcom/kik/events/Promise;
+    iput-object v0, p0, Lkik/core/profile/ae;->i:Lcom/kik/events/Promise;
+
+    .line 49
+    iput-object p1, p0, Lkik/core/profile/ae;->e:Lkik/core/interfaces/ad;
 
     .line 50
-    iput-object p1, p0, Lkik/core/profile/ae;->e:Lkik/core/interfaces/ae;
-
-    .line 51
     iput-object p2, p0, Lkik/core/profile/ae;->d:Lkik/core/interfaces/ICommunication;
 
-    .line 52
+    .line 51
     return-void
 .end method
 
-.method static synthetic a(Lkik/core/profile/ae;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkik/core/net/outgoing/UserProfileRequest;)Lkik/core/datatypes/ac;
+.method static synthetic a(Lkik/core/profile/ae;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkik/core/net/outgoing/UserProfileRequest;)Lkik/core/datatypes/ab;
     .locals 2
 
     .prologue
-    .line 240
-    invoke-virtual {p4}, Lkik/core/net/outgoing/UserProfileRequest;->getUserData()Lkik/core/datatypes/ac;
+    .line 222
+    invoke-virtual {p4}, Lkik/core/net/outgoing/UserProfileRequest;->getUserData()Lkik/core/datatypes/ab;
 
     move-result-object v0
 
     const-string v1, "PASSWORD"
 
-    invoke-virtual {p0, v0, v1}, Lkik/core/profile/ae;->a(Lkik/core/datatypes/ac;Ljava/lang/String;)V
+    invoke-virtual {p0, v0, v1}, Lkik/core/profile/ae;->a(Lkik/core/datatypes/ab;Ljava/lang/String;)V
 
-    .line 241
-    iget-object v0, p0, Lkik/core/profile/ae;->e:Lkik/core/interfaces/ae;
+    .line 223
+    iget-object v0, p0, Lkik/core/profile/ae;->e:Lkik/core/interfaces/ad;
 
     .line 4069
     const-string v1, "CredentialData.email_passkey"
 
-    invoke-interface {v0, v1, p1}, Lkik/core/interfaces/ae;->c(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-interface {v0, v1, p1}, Lkik/core/interfaces/ad;->c(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 4070
     const-string v1, "CredentialData.username_passkey"
 
-    invoke-interface {v0, v1, p2}, Lkik/core/interfaces/ae;->c(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-interface {v0, v1, p2}, Lkik/core/interfaces/ad;->c(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 4071
     const-string v1, "CredentialData.password"
 
-    invoke-interface {v0, v1, p3}, Lkik/core/interfaces/ae;->c(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-interface {v0, v1, p3}, Lkik/core/interfaces/ad;->c(Ljava/lang/String;Ljava/lang/String;)Z
 
-    .line 242
+    .line 224
     iget-object v0, p0, Lkik/core/profile/ae;->h:Lcom/kik/events/g;
 
     invoke-virtual {v0, p3}, Lcom/kik/events/g;->a(Ljava/lang/Object;)V
 
-    .line 244
-    invoke-virtual {p0}, Lkik/core/profile/ae;->d()Lkik/core/datatypes/ac;
+    .line 226
+    invoke-virtual {p0}, Lkik/core/profile/ae;->d()Lkik/core/datatypes/ab;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method static synthetic a(Lkik/core/profile/ae;Ljava/lang/String;Ljava/lang/String;Lkik/core/net/outgoing/UserProfileRequest;)Lkik/core/datatypes/ac;
+.method static synthetic a(Lkik/core/profile/ae;Ljava/lang/String;Ljava/lang/String;Lkik/core/net/outgoing/UserProfileRequest;)Lkik/core/datatypes/ab;
     .locals 2
 
     .prologue
-    .line 210
-    invoke-virtual {p3}, Lkik/core/net/outgoing/UserProfileRequest;->getUserData()Lkik/core/datatypes/ac;
+    .line 192
+    invoke-virtual {p3}, Lkik/core/net/outgoing/UserProfileRequest;->getUserData()Lkik/core/datatypes/ab;
 
     move-result-object v0
 
-    .line 212
-    iput-object p1, v0, Lkik/core/datatypes/ac;->d:Ljava/lang/String;
+    .line 194
+    iput-object p1, v0, Lkik/core/datatypes/ab;->d:Ljava/lang/String;
 
-    .line 213
-    iput-object p2, v0, Lkik/core/datatypes/ac;->e:Ljava/lang/String;
+    .line 195
+    iput-object p2, v0, Lkik/core/datatypes/ab;->e:Ljava/lang/String;
 
-    .line 215
+    .line 197
     const-string v1, "Display Name"
 
-    invoke-virtual {p0, v0, v1}, Lkik/core/profile/ae;->a(Lkik/core/datatypes/ac;Ljava/lang/String;)V
+    invoke-virtual {p0, v0, v1}, Lkik/core/profile/ae;->a(Lkik/core/datatypes/ab;Ljava/lang/String;)V
 
-    .line 217
-    invoke-virtual {p0}, Lkik/core/profile/ae;->d()Lkik/core/datatypes/ac;
+    .line 199
+    invoke-virtual {p0}, Lkik/core/profile/ae;->d()Lkik/core/datatypes/ab;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method static synthetic a(Lkik/core/profile/ae;Ljava/lang/String;[BLkik/core/net/outgoing/UserProfileRequest;)Lkik/core/datatypes/ac;
+.method static synthetic a(Lkik/core/profile/ae;Ljava/lang/String;[BLkik/core/net/outgoing/UserProfileRequest;)Lkik/core/datatypes/ab;
     .locals 3
 
     .prologue
-    .line 187
-    invoke-virtual {p3}, Lkik/core/net/outgoing/UserProfileRequest;->getUserData()Lkik/core/datatypes/ac;
+    .line 169
+    invoke-virtual {p3}, Lkik/core/net/outgoing/UserProfileRequest;->getUserData()Lkik/core/datatypes/ab;
 
     move-result-object v0
 
-    .line 189
-    iput-object p1, v0, Lkik/core/datatypes/ac;->a:Ljava/lang/String;
+    .line 171
+    iput-object p1, v0, Lkik/core/datatypes/ab;->a:Ljava/lang/String;
 
-    .line 191
+    .line 173
     const-string v1, "Email"
 
-    invoke-virtual {p0, v0, v1}, Lkik/core/profile/ae;->a(Lkik/core/datatypes/ac;Ljava/lang/String;)V
+    invoke-virtual {p0, v0, v1}, Lkik/core/profile/ae;->a(Lkik/core/datatypes/ab;Ljava/lang/String;)V
 
-    .line 193
-    iget-object v0, p0, Lkik/core/profile/ae;->e:Lkik/core/interfaces/ae;
+    .line 175
+    iget-object v0, p0, Lkik/core/profile/ae;->e:Lkik/core/interfaces/ad;
 
     .line 5061
     const-string v1, "CredentialData.email_passkey"
@@ -220,39 +209,39 @@
 
     move-result-object v2
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ae;->c(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->c(Ljava/lang/String;Ljava/lang/String;)Z
 
-    .line 195
-    invoke-virtual {p0}, Lkik/core/profile/ae;->d()Lkik/core/datatypes/ac;
+    .line 177
+    invoke-virtual {p0}, Lkik/core/profile/ae;->d()Lkik/core/datatypes/ab;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method static synthetic a(Lkik/core/profile/ae;ZLkik/core/net/outgoing/UserProfileRequest;)Lkik/core/datatypes/ac;
+.method static synthetic a(Lkik/core/profile/ae;ZLkik/core/net/outgoing/UserProfileRequest;)Lkik/core/datatypes/ab;
     .locals 2
 
     .prologue
-    .line 253
-    invoke-virtual {p2}, Lkik/core/net/outgoing/UserProfileRequest;->getUserData()Lkik/core/datatypes/ac;
+    .line 235
+    invoke-virtual {p2}, Lkik/core/net/outgoing/UserProfileRequest;->getUserData()Lkik/core/datatypes/ab;
 
     move-result-object v0
 
-    .line 255
+    .line 237
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v1
 
-    iput-object v1, v0, Lkik/core/datatypes/ac;->h:Ljava/lang/Boolean;
+    iput-object v1, v0, Lkik/core/datatypes/ab;->h:Ljava/lang/Boolean;
 
-    .line 257
+    .line 239
     const-string v1, "Notify New People"
 
-    invoke-virtual {p0, v0, v1}, Lkik/core/profile/ae;->a(Lkik/core/datatypes/ac;Ljava/lang/String;)V
+    invoke-virtual {p0, v0, v1}, Lkik/core/profile/ae;->a(Lkik/core/datatypes/ab;Ljava/lang/String;)V
 
-    .line 259
-    invoke-virtual {p0}, Lkik/core/profile/ae;->d()Lkik/core/datatypes/ac;
+    .line 241
+    invoke-virtual {p0}, Lkik/core/profile/ae;->d()Lkik/core/datatypes/ab;
 
     move-result-object v0
 
@@ -264,16 +253,16 @@
 
     .prologue
     .line 25
-    .line 5165
-    iget-object v0, p0, Lkik/core/profile/ae;->c:Lkik/core/datatypes/ac;
+    .line 5147
+    iget-object v0, p0, Lkik/core/profile/ae;->c:Lkik/core/datatypes/ab;
 
-    invoke-virtual {v0}, Lkik/core/datatypes/ac;->a()Z
+    invoke-virtual {v0}, Lkik/core/datatypes/ab;->a()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 5166
+    .line 5148
     invoke-virtual {p0}, Lkik/core/profile/ae;->f()V
 
     .line 25
@@ -292,20 +281,20 @@
             ")",
             "Lcom/kik/events/Promise",
             "<",
-            "Lkik/core/datatypes/ac;",
+            "Lkik/core/datatypes/ab;",
             ">;"
         }
     .end annotation
 
     .prologue
-    .line 181
-    iget-object v0, p0, Lkik/core/profile/ae;->e:Lkik/core/interfaces/ae;
+    .line 163
+    iget-object v0, p0, Lkik/core/profile/ae;->e:Lkik/core/interfaces/ad;
 
-    invoke-static {v0}, Lkik/core/z;->b(Lkik/core/interfaces/ae;)Lkik/core/z;
+    invoke-static {v0}, Lkik/core/z;->b(Lkik/core/interfaces/ad;)Lkik/core/z;
 
     move-result-object v0
 
-    .line 182
+    .line 164
     invoke-virtual {v0}, Lkik/core/z;->d()Ljava/lang/String;
 
     move-result-object v0
@@ -316,12 +305,12 @@
 
     move-result-object v0
 
-    .line 183
+    .line 165
     invoke-static {v0}, Lkik/core/util/u;->a([B)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 185
+    .line 167
     iget-object v2, p0, Lkik/core/profile/ae;->d:Lkik/core/interfaces/ICommunication;
 
     new-instance v3, Lkik/core/net/outgoing/UserProfileRequest$a;
@@ -369,13 +358,13 @@
             ")",
             "Lcom/kik/events/Promise",
             "<",
-            "Lkik/core/datatypes/ac;",
+            "Lkik/core/datatypes/ab;",
             ">;"
         }
     .end annotation
 
     .prologue
-    .line 208
+    .line 190
     iget-object v0, p0, Lkik/core/profile/ae;->d:Lkik/core/interfaces/ICommunication;
 
     new-instance v1, Lkik/core/net/outgoing/UserProfileRequest$a;
@@ -420,13 +409,13 @@
             "(Z)",
             "Lcom/kik/events/Promise",
             "<",
-            "Lkik/core/datatypes/ac;",
+            "Lkik/core/datatypes/ab;",
             ">;"
         }
     .end annotation
 
     .prologue
-    .line 251
+    .line 233
     iget-object v0, p0, Lkik/core/profile/ae;->d:Lkik/core/interfaces/ICommunication;
 
     new-instance v1, Lkik/core/net/outgoing/UserProfileRequest$a;
@@ -477,7 +466,7 @@
     .end annotation
 
     .prologue
-    .line 57
+    .line 56
     iget-object v0, p0, Lkik/core/profile/ae;->g:Lcom/kik/events/g;
 
     invoke-virtual {v0}, Lcom/kik/events/g;->a()Lcom/kik/events/c;
@@ -491,44 +480,37 @@
     .locals 3
 
     .prologue
-    .line 273
+    .line 255
     new-instance v0, Lcom/kik/events/a;
 
     invoke-direct {v0, p0, p1}, Lcom/kik/events/a;-><init>(Ljava/lang/Object;Ljava/util/concurrent/ExecutorService;)V
 
     iput-object v0, p0, Lkik/core/profile/ae;->f:Lcom/kik/events/g;
 
-    .line 274
+    .line 256
     new-instance v0, Lcom/kik/events/a;
 
     invoke-direct {v0, p0, p1}, Lcom/kik/events/a;-><init>(Ljava/lang/Object;Ljava/util/concurrent/ExecutorService;)V
 
     iput-object v0, p0, Lkik/core/profile/ae;->g:Lcom/kik/events/g;
 
-    .line 275
+    .line 257
     new-instance v0, Lcom/kik/events/g;
 
     invoke-direct {v0, p0}, Lcom/kik/events/g;-><init>(Ljava/lang/Object;)V
 
     iput-object v0, p0, Lkik/core/profile/ae;->h:Lcom/kik/events/g;
 
-    .line 276
-    new-instance v0, Lcom/kik/events/a;
+    .line 258
+    iget-object v0, p0, Lkik/core/profile/ae;->e:Lkik/core/interfaces/ad;
 
-    invoke-direct {v0, p0, p1}, Lcom/kik/events/a;-><init>(Ljava/lang/Object;Ljava/util/concurrent/ExecutorService;)V
-
-    iput-object v0, p0, Lkik/core/profile/ae;->i:Lcom/kik/events/g;
-
-    .line 277
-    iget-object v0, p0, Lkik/core/profile/ae;->e:Lkik/core/interfaces/ae;
-
-    invoke-static {v0}, Lkik/core/datatypes/ac;->a(Lkik/core/interfaces/ae;)Lkik/core/datatypes/ac;
+    invoke-static {v0}, Lkik/core/datatypes/ab;->a(Lkik/core/interfaces/ad;)Lkik/core/datatypes/ab;
 
     move-result-object v0
 
-    iput-object v0, p0, Lkik/core/profile/ae;->c:Lkik/core/datatypes/ac;
+    iput-object v0, p0, Lkik/core/profile/ae;->c:Lkik/core/datatypes/ab;
 
-    .line 278
+    .line 259
     iget-object v0, p0, Lkik/core/profile/ae;->a:Lcom/kik/events/d;
 
     iget-object v1, p0, Lkik/core/profile/ae;->d:Lkik/core/interfaces/ICommunication;
@@ -541,382 +523,334 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/kik/events/d;->a(Lcom/kik/events/c;Lcom/kik/events/e;)Lcom/kik/events/e;
 
-    .line 279
+    .line 260
     return-void
 .end method
 
-.method public final a(Lkik/core/datatypes/ac;Ljava/lang/String;)V
-    .locals 5
+.method public final a(Lkik/core/datatypes/ab;Ljava/lang/String;)V
+    .locals 4
 
     .prologue
-    const/4 v2, 0x0
+    const/4 v0, 0x0
 
     const/4 v1, 0x1
 
-    .line 93
-    iget-object v0, p0, Lkik/core/profile/ae;->c:Lkik/core/datatypes/ac;
+    .line 80
+    iget-object v2, p0, Lkik/core/profile/ae;->c:Lkik/core/datatypes/ab;
 
-    iget-object v0, v0, Lkik/core/datatypes/ac;->b:Ljava/lang/Boolean;
+    .line 2105
+    if-nez p1, :cond_1
 
-    if-eqz v0, :cond_1
+    .line 80
+    :goto_0
+    if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lkik/core/profile/ae;->c:Lkik/core/datatypes/ac;
+    .line 81
+    iget-object v1, p0, Lkik/core/profile/ae;->c:Lkik/core/datatypes/ab;
 
-    iget-object v0, v0, Lkik/core/datatypes/ac;->b:Ljava/lang/Boolean;
+    iget-object v2, p0, Lkik/core/profile/ae;->e:Lkik/core/interfaces/ad;
+
+    .line 3088
+    const-string v0, "user_profile_email"
+
+    iget-object v3, v1, Lkik/core/datatypes/ab;->a:Ljava/lang/String;
+
+    invoke-interface {v2, v0, v3}, Lkik/core/interfaces/ad;->c(Ljava/lang/String;Ljava/lang/String;)Z
+
+    .line 3089
+    const-string v3, "user_profile_email_emailConfirmed"
+
+    iget-object v0, v1, Lkik/core/datatypes/ab;->b:Ljava/lang/Boolean;
+
+    if-eqz v0, :cond_a
+
+    iget-object v0, v1, Lkik/core/datatypes/ab;->b:Ljava/lang/Boolean;
 
     invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result v0
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_a
 
-    move v0, v1
+    const-string v0, "true"
 
-    .line 94
-    :goto_0
-    iget-object v3, p0, Lkik/core/profile/ae;->c:Lkik/core/datatypes/ac;
-
-    .line 2105
-    if-nez p1, :cond_2
-
-    .line 94
     :goto_1
-    if-eqz v2, :cond_0
-
-    .line 95
-    iget-object v2, p0, Lkik/core/profile/ae;->c:Lkik/core/datatypes/ac;
-
-    iget-object v3, p0, Lkik/core/profile/ae;->e:Lkik/core/interfaces/ae;
-
-    .line 3088
-    const-string v1, "user_profile_email"
-
-    iget-object v4, v2, Lkik/core/datatypes/ac;->a:Ljava/lang/String;
-
-    invoke-interface {v3, v1, v4}, Lkik/core/interfaces/ae;->c(Ljava/lang/String;Ljava/lang/String;)Z
-
-    .line 3089
-    const-string v4, "user_profile_email_emailConfirmed"
-
-    iget-object v1, v2, Lkik/core/datatypes/ac;->b:Ljava/lang/Boolean;
-
-    if-eqz v1, :cond_b
-
-    iget-object v1, v2, Lkik/core/datatypes/ac;->b:Ljava/lang/Boolean;
-
-    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_b
-
-    const-string v1, "true"
-
-    :goto_2
-    invoke-interface {v3, v4, v1}, Lkik/core/interfaces/ae;->c(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-interface {v2, v3, v0}, Lkik/core/interfaces/ad;->c(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 3091
-    const-string v1, "user_profile_username"
+    const-string v0, "user_profile_username"
 
-    iget-object v4, v2, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
+    iget-object v3, v1, Lkik/core/datatypes/ab;->c:Ljava/lang/String;
 
-    invoke-interface {v3, v1, v4}, Lkik/core/interfaces/ae;->c(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-interface {v2, v0, v3}, Lkik/core/interfaces/ad;->c(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 3092
-    const-string v1, "user_profile_firstName"
+    const-string v0, "user_profile_firstName"
 
-    iget-object v4, v2, Lkik/core/datatypes/ac;->d:Ljava/lang/String;
+    iget-object v3, v1, Lkik/core/datatypes/ab;->d:Ljava/lang/String;
 
-    invoke-interface {v3, v1, v4}, Lkik/core/interfaces/ae;->c(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-interface {v2, v0, v3}, Lkik/core/interfaces/ad;->c(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 3093
-    const-string v1, "user_profile_lastName"
+    const-string v0, "user_profile_lastName"
 
-    iget-object v4, v2, Lkik/core/datatypes/ac;->e:Ljava/lang/String;
+    iget-object v3, v1, Lkik/core/datatypes/ab;->e:Ljava/lang/String;
 
-    invoke-interface {v3, v1, v4}, Lkik/core/interfaces/ae;->c(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-interface {v2, v0, v3}, Lkik/core/interfaces/ad;->c(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 3094
-    const-string v1, "user_profile_photoUrl"
+    const-string v0, "user_profile_photoUrl"
 
-    iget-object v4, v2, Lkik/core/datatypes/ac;->f:Ljava/lang/String;
+    iget-object v3, v1, Lkik/core/datatypes/ab;->f:Ljava/lang/String;
 
-    invoke-interface {v3, v1, v4}, Lkik/core/interfaces/ae;->c(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-interface {v2, v0, v3}, Lkik/core/interfaces/ad;->c(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 3095
-    const-string v4, "user_profile_is_updated"
+    const-string v3, "user_profile_is_updated"
 
-    iget-object v1, v2, Lkik/core/datatypes/ac;->g:Ljava/lang/Boolean;
+    iget-object v0, v1, Lkik/core/datatypes/ab;->g:Ljava/lang/Boolean;
 
-    if-eqz v1, :cond_c
+    if-eqz v0, :cond_b
 
-    iget-object v1, v2, Lkik/core/datatypes/ac;->g:Ljava/lang/Boolean;
+    iget-object v0, v1, Lkik/core/datatypes/ab;->g:Ljava/lang/Boolean;
 
-    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
 
-    move-result v1
+    move-result v0
 
-    if-eqz v1, :cond_c
+    if-eqz v0, :cond_b
 
-    const-string v1, "true"
+    const-string v0, "true"
 
-    :goto_3
-    invoke-interface {v3, v4, v1}, Lkik/core/interfaces/ae;->c(Ljava/lang/String;Ljava/lang/String;)Z
+    :goto_2
+    invoke-interface {v2, v3, v0}, Lkik/core/interfaces/ad;->c(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 3097
-    const-string v4, "notify_new_people"
+    const-string v3, "notify_new_people"
 
-    iget-object v1, v2, Lkik/core/datatypes/ac;->h:Ljava/lang/Boolean;
+    iget-object v0, v1, Lkik/core/datatypes/ab;->h:Ljava/lang/Boolean;
 
-    if-eqz v1, :cond_d
+    if-eqz v0, :cond_c
 
-    iget-object v1, v2, Lkik/core/datatypes/ac;->h:Ljava/lang/Boolean;
+    iget-object v0, v1, Lkik/core/datatypes/ab;->h:Ljava/lang/Boolean;
 
-    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
 
-    move-result v1
+    move-result v0
 
-    if-eqz v1, :cond_d
+    if-eqz v0, :cond_c
 
-    const-string v1, "true"
+    const-string v0, "true"
 
-    :goto_4
-    invoke-interface {v3, v4, v1}, Lkik/core/interfaces/ae;->c(Ljava/lang/String;Ljava/lang/String;)Z
+    :goto_3
+    invoke-interface {v2, v3, v0}, Lkik/core/interfaces/ad;->c(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 3099
-    const-string v4, "user_profile_verified"
+    const-string v3, "user_profile_verified"
 
-    iget-object v1, v2, Lkik/core/datatypes/ac;->i:Ljava/lang/Boolean;
+    iget-object v0, v1, Lkik/core/datatypes/ab;->i:Ljava/lang/Boolean;
 
-    if-eqz v1, :cond_e
+    if-eqz v0, :cond_d
 
-    iget-object v1, v2, Lkik/core/datatypes/ac;->i:Ljava/lang/Boolean;
+    iget-object v0, v1, Lkik/core/datatypes/ab;->i:Ljava/lang/Boolean;
 
-    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
 
-    move-result v1
+    move-result v0
 
-    if-eqz v1, :cond_e
+    if-eqz v0, :cond_d
 
-    const-string v1, "true"
+    const-string v0, "true"
 
-    :goto_5
-    invoke-interface {v3, v4, v1}, Lkik/core/interfaces/ae;->c(Ljava/lang/String;Ljava/lang/String;)Z
+    :goto_4
+    invoke-interface {v2, v3, v0}, Lkik/core/interfaces/ad;->c(Ljava/lang/String;Ljava/lang/String;)Z
 
-    .line 96
-    iget-object v1, p0, Lkik/core/profile/ae;->g:Lcom/kik/events/g;
+    .line 82
+    iget-object v0, p0, Lkik/core/profile/ae;->g:Lcom/kik/events/g;
 
-    invoke-virtual {v1, p2}, Lcom/kik/events/g;->a(Ljava/lang/Object;)V
+    invoke-virtual {v0, p2}, Lcom/kik/events/g;->a(Ljava/lang/Object;)V
 
-    .line 98
-    iget-object v1, p1, Lkik/core/datatypes/ac;->b:Ljava/lang/Boolean;
-
-    if-eqz v1, :cond_0
-
-    iget-object v1, p1, Lkik/core/datatypes/ac;->b:Ljava/lang/Boolean;
-
-    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    if-nez v0, :cond_0
-
-    .line 99
-    iget-object v0, p0, Lkik/core/profile/ae;->i:Lcom/kik/events/g;
-
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, v1}, Lcom/kik/events/g;->a(Ljava/lang/Object;)V
-
-    .line 102
+    .line 84
     :cond_0
     return-void
 
-    :cond_1
-    move v0, v2
-
-    .line 93
-    goto/16 :goto_0
-
     .line 2109
-    :cond_2
-    iget-object v4, p1, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
+    :cond_1
+    iget-object v3, p1, Lkik/core/datatypes/ab;->c:Ljava/lang/String;
 
-    if-eqz v4, :cond_3
+    if-eqz v3, :cond_2
 
     .line 2110
-    iget-object v2, p1, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
+    iget-object v0, p1, Lkik/core/datatypes/ab;->c:Ljava/lang/String;
 
-    iput-object v2, v3, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
+    iput-object v0, v2, Lkik/core/datatypes/ab;->c:Ljava/lang/String;
 
-    move v2, v1
+    move v0, v1
 
     .line 2113
-    :cond_3
-    iget-object v4, p1, Lkik/core/datatypes/ac;->a:Ljava/lang/String;
+    :cond_2
+    iget-object v3, p1, Lkik/core/datatypes/ab;->a:Ljava/lang/String;
 
-    if-eqz v4, :cond_4
+    if-eqz v3, :cond_3
 
     .line 2114
-    iget-object v2, p1, Lkik/core/datatypes/ac;->a:Ljava/lang/String;
+    iget-object v0, p1, Lkik/core/datatypes/ab;->a:Ljava/lang/String;
 
-    iput-object v2, v3, Lkik/core/datatypes/ac;->a:Ljava/lang/String;
+    iput-object v0, v2, Lkik/core/datatypes/ab;->a:Ljava/lang/String;
 
-    move v2, v1
+    move v0, v1
 
     .line 2117
-    :cond_4
-    iget-object v4, p1, Lkik/core/datatypes/ac;->b:Ljava/lang/Boolean;
+    :cond_3
+    iget-object v3, p1, Lkik/core/datatypes/ab;->b:Ljava/lang/Boolean;
 
-    if-eqz v4, :cond_5
+    if-eqz v3, :cond_4
 
     .line 2118
-    iget-object v2, p1, Lkik/core/datatypes/ac;->b:Ljava/lang/Boolean;
+    iget-object v0, p1, Lkik/core/datatypes/ab;->b:Ljava/lang/Boolean;
 
-    iput-object v2, v3, Lkik/core/datatypes/ac;->b:Ljava/lang/Boolean;
+    iput-object v0, v2, Lkik/core/datatypes/ab;->b:Ljava/lang/Boolean;
 
-    move v2, v1
+    move v0, v1
 
     .line 2121
-    :cond_5
-    iget-object v4, p1, Lkik/core/datatypes/ac;->d:Ljava/lang/String;
+    :cond_4
+    iget-object v3, p1, Lkik/core/datatypes/ab;->d:Ljava/lang/String;
 
-    if-eqz v4, :cond_6
+    if-eqz v3, :cond_5
 
     .line 2122
-    iget-object v2, p1, Lkik/core/datatypes/ac;->d:Ljava/lang/String;
+    iget-object v0, p1, Lkik/core/datatypes/ab;->d:Ljava/lang/String;
 
-    iput-object v2, v3, Lkik/core/datatypes/ac;->d:Ljava/lang/String;
+    iput-object v0, v2, Lkik/core/datatypes/ab;->d:Ljava/lang/String;
 
-    move v2, v1
+    move v0, v1
 
     .line 2125
-    :cond_6
-    iget-object v4, p1, Lkik/core/datatypes/ac;->e:Ljava/lang/String;
+    :cond_5
+    iget-object v3, p1, Lkik/core/datatypes/ab;->e:Ljava/lang/String;
 
-    if-eqz v4, :cond_7
+    if-eqz v3, :cond_6
 
     .line 2126
-    iget-object v2, p1, Lkik/core/datatypes/ac;->e:Ljava/lang/String;
+    iget-object v0, p1, Lkik/core/datatypes/ab;->e:Ljava/lang/String;
 
-    iput-object v2, v3, Lkik/core/datatypes/ac;->e:Ljava/lang/String;
+    iput-object v0, v2, Lkik/core/datatypes/ab;->e:Ljava/lang/String;
 
-    move v2, v1
+    move v0, v1
 
     .line 2129
-    :cond_7
-    iget-object v4, p1, Lkik/core/datatypes/ac;->f:Ljava/lang/String;
+    :cond_6
+    iget-object v3, p1, Lkik/core/datatypes/ab;->f:Ljava/lang/String;
 
-    if-eqz v4, :cond_8
+    if-eqz v3, :cond_7
 
     .line 2130
-    iget-object v2, p1, Lkik/core/datatypes/ac;->f:Ljava/lang/String;
+    iget-object v0, p1, Lkik/core/datatypes/ab;->f:Ljava/lang/String;
 
-    iput-object v2, v3, Lkik/core/datatypes/ac;->f:Ljava/lang/String;
+    iput-object v0, v2, Lkik/core/datatypes/ab;->f:Ljava/lang/String;
 
-    move v2, v1
+    move v0, v1
 
     .line 2133
-    :cond_8
-    iget-object v4, p1, Lkik/core/datatypes/ac;->g:Ljava/lang/Boolean;
+    :cond_7
+    iget-object v3, p1, Lkik/core/datatypes/ab;->g:Ljava/lang/Boolean;
 
-    if-eqz v4, :cond_9
+    if-eqz v3, :cond_8
 
     .line 2134
-    iget-object v2, p1, Lkik/core/datatypes/ac;->g:Ljava/lang/Boolean;
+    iget-object v0, p1, Lkik/core/datatypes/ab;->g:Ljava/lang/Boolean;
 
-    iput-object v2, v3, Lkik/core/datatypes/ac;->g:Ljava/lang/Boolean;
+    iput-object v0, v2, Lkik/core/datatypes/ab;->g:Ljava/lang/Boolean;
 
-    move v2, v1
+    move v0, v1
 
     .line 2137
-    :cond_9
-    iget-object v4, p1, Lkik/core/datatypes/ac;->h:Ljava/lang/Boolean;
+    :cond_8
+    iget-object v3, p1, Lkik/core/datatypes/ab;->h:Ljava/lang/Boolean;
 
-    if-eqz v4, :cond_a
+    if-eqz v3, :cond_9
 
     .line 2138
-    iget-object v2, p1, Lkik/core/datatypes/ac;->h:Ljava/lang/Boolean;
+    iget-object v0, p1, Lkik/core/datatypes/ab;->h:Ljava/lang/Boolean;
 
-    iput-object v2, v3, Lkik/core/datatypes/ac;->h:Ljava/lang/Boolean;
+    iput-object v0, v2, Lkik/core/datatypes/ab;->h:Ljava/lang/Boolean;
 
-    move v2, v1
+    move v0, v1
 
     .line 2141
-    :cond_a
-    iget-object v4, p1, Lkik/core/datatypes/ac;->i:Ljava/lang/Boolean;
+    :cond_9
+    iget-object v3, p1, Lkik/core/datatypes/ab;->i:Ljava/lang/Boolean;
 
-    if-eqz v4, :cond_f
+    if-eqz v3, :cond_e
 
     .line 2142
-    iget-object v2, p1, Lkik/core/datatypes/ac;->i:Ljava/lang/Boolean;
+    iget-object v0, p1, Lkik/core/datatypes/ab;->i:Ljava/lang/Boolean;
 
-    iput-object v2, v3, Lkik/core/datatypes/ac;->i:Ljava/lang/Boolean;
+    iput-object v0, v2, Lkik/core/datatypes/ab;->i:Ljava/lang/Boolean;
 
-    :goto_6
-    move v2, v1
+    :goto_5
+    move v0, v1
 
     .line 2146
-    goto/16 :goto_1
+    goto/16 :goto_0
 
     .line 3089
+    :cond_a
+    const-string v0, "false"
+
+    goto/16 :goto_1
+
+    .line 3095
     :cond_b
-    const-string v1, "false"
+    const-string v0, "false"
 
     goto/16 :goto_2
 
-    .line 3095
-    :cond_c
-    const-string v1, "false"
-
-    goto/16 :goto_3
-
     .line 3097
-    :cond_d
-    const-string v1, "false"
+    :cond_c
+    const-string v0, "false"
 
-    goto/16 :goto_4
+    goto :goto_3
 
     .line 3099
+    :cond_d
+    const-string v0, "false"
+
+    goto :goto_4
+
     :cond_e
-    const-string v1, "false"
+    move v1, v0
 
-    goto/16 :goto_5
-
-    :cond_f
-    move v1, v2
-
-    goto :goto_6
+    goto :goto_5
 .end method
 
 .method public final a([B[B)V
     .locals 2
 
     .prologue
-    .line 133
-    iget-object v0, p0, Lkik/core/profile/ae;->e:Lkik/core/interfaces/ae;
+    .line 115
+    iget-object v0, p0, Lkik/core/profile/ae;->e:Lkik/core/interfaces/ad;
 
-    iget-object v1, p0, Lkik/core/profile/ae;->c:Lkik/core/datatypes/ac;
+    iget-object v1, p0, Lkik/core/profile/ae;->c:Lkik/core/datatypes/ab;
 
-    invoke-interface {v0, p1, v1}, Lkik/core/interfaces/ae;->a([BLkik/core/datatypes/ac;)V
+    invoke-interface {v0, p1, v1}, Lkik/core/interfaces/ad;->a([BLkik/core/datatypes/ab;)V
 
-    .line 134
-    iget-object v0, p0, Lkik/core/profile/ae;->e:Lkik/core/interfaces/ae;
+    .line 116
+    iget-object v0, p0, Lkik/core/profile/ae;->e:Lkik/core/interfaces/ad;
 
-    iget-object v1, p0, Lkik/core/profile/ae;->c:Lkik/core/datatypes/ac;
+    iget-object v1, p0, Lkik/core/profile/ae;->c:Lkik/core/datatypes/ab;
 
-    invoke-interface {v0, p2, v1}, Lkik/core/interfaces/ae;->b([BLkik/core/datatypes/ac;)V
+    invoke-interface {v0, p2, v1}, Lkik/core/interfaces/ad;->b([BLkik/core/datatypes/ab;)V
 
-    .line 135
+    .line 117
     iget-object v0, p0, Lkik/core/profile/ae;->g:Lcom/kik/events/g;
 
     const-string v1, "Profile Picture"
 
     invoke-virtual {v0, v1}, Lcom/kik/events/g;->a(Ljava/lang/Object;)V
 
-    .line 136
+    .line 118
     return-void
 .end method
 
@@ -929,18 +863,18 @@
             ")",
             "Lcom/kik/events/Promise",
             "<",
-            "Lkik/core/datatypes/ac;",
+            "Lkik/core/datatypes/ab;",
             ">;"
         }
     .end annotation
 
     .prologue
-    .line 224
-    invoke-virtual {p0}, Lkik/core/profile/ae;->d()Lkik/core/datatypes/ac;
+    .line 206
+    invoke-virtual {p0}, Lkik/core/profile/ae;->d()Lkik/core/datatypes/ab;
 
     move-result-object v0
 
-    .line 228
+    .line 210
     :try_start_0
     const-string v1, "SHA1"
 
@@ -950,7 +884,7 @@
 
     move-result-object v1
 
-    .line 234
+    .line 216
     invoke-virtual {p1}, Ljava/lang/String;->getBytes()[B
 
     move-result-object v2
@@ -963,8 +897,8 @@
 
     move-result-object v1
 
-    .line 235
-    iget-object v2, v0, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
+    .line 217
+    iget-object v2, v0, Lkik/core/datatypes/ab;->c:Ljava/lang/String;
 
     const-string v3, "niCRwL7isZHny24qgLvy"
 
@@ -976,8 +910,8 @@
 
     move-result-object v2
 
-    .line 236
-    iget-object v0, v0, Lkik/core/datatypes/ac;->a:Ljava/lang/String;
+    .line 218
+    iget-object v0, v0, Lkik/core/datatypes/ab;->a:Ljava/lang/String;
 
     const-string v3, "niCRwL7isZHny24qgLvy"
 
@@ -989,7 +923,7 @@
 
     move-result-object v0
 
-    .line 238
+    .line 220
     iget-object v3, p0, Lkik/core/profile/ae;->d:Lkik/core/interfaces/ICommunication;
 
     new-instance v4, Lkik/core/net/outgoing/UserProfileRequest$a;
@@ -1027,7 +961,7 @@
     :goto_0
     return-object v0
 
-    .line 231
+    .line 213
     :catch_0
     move-exception v0
 
@@ -1051,7 +985,7 @@
     .end annotation
 
     .prologue
-    .line 63
+    .line 62
     iget-object v0, p0, Lkik/core/profile/ae;->f:Lcom/kik/events/g;
 
     invoke-virtual {v0}, Lcom/kik/events/g;->a()Lcom/kik/events/c;
@@ -1074,7 +1008,7 @@
     .end annotation
 
     .prologue
-    .line 69
+    .line 68
     iget-object v0, p0, Lkik/core/profile/ae;->h:Lcom/kik/events/g;
 
     invoke-virtual {v0}, Lcom/kik/events/g;->a()Lcom/kik/events/c;
@@ -1084,64 +1018,64 @@
     return-object v0
 .end method
 
-.method public final d()Lkik/core/datatypes/ac;
+.method public final d()Lkik/core/datatypes/ab;
     .locals 3
 
     .prologue
-    .line 75
-    iget-object v0, p0, Lkik/core/profile/ae;->c:Lkik/core/datatypes/ac;
+    .line 74
+    iget-object v0, p0, Lkik/core/profile/ae;->c:Lkik/core/datatypes/ab;
 
     .line 1161
-    new-instance v1, Lkik/core/datatypes/ac;
+    new-instance v1, Lkik/core/datatypes/ab;
 
-    invoke-direct {v1}, Lkik/core/datatypes/ac;-><init>()V
+    invoke-direct {v1}, Lkik/core/datatypes/ab;-><init>()V
 
     .line 1162
-    iget-object v2, v0, Lkik/core/datatypes/ac;->a:Ljava/lang/String;
+    iget-object v2, v0, Lkik/core/datatypes/ab;->a:Ljava/lang/String;
 
-    iput-object v2, v1, Lkik/core/datatypes/ac;->a:Ljava/lang/String;
+    iput-object v2, v1, Lkik/core/datatypes/ab;->a:Ljava/lang/String;
 
     .line 1163
-    iget-object v2, v0, Lkik/core/datatypes/ac;->b:Ljava/lang/Boolean;
+    iget-object v2, v0, Lkik/core/datatypes/ab;->b:Ljava/lang/Boolean;
 
-    iput-object v2, v1, Lkik/core/datatypes/ac;->b:Ljava/lang/Boolean;
+    iput-object v2, v1, Lkik/core/datatypes/ab;->b:Ljava/lang/Boolean;
 
     .line 1164
-    iget-object v2, v0, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
+    iget-object v2, v0, Lkik/core/datatypes/ab;->c:Ljava/lang/String;
 
-    iput-object v2, v1, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
+    iput-object v2, v1, Lkik/core/datatypes/ab;->c:Ljava/lang/String;
 
     .line 1165
-    iget-object v2, v0, Lkik/core/datatypes/ac;->d:Ljava/lang/String;
+    iget-object v2, v0, Lkik/core/datatypes/ab;->d:Ljava/lang/String;
 
-    iput-object v2, v1, Lkik/core/datatypes/ac;->d:Ljava/lang/String;
+    iput-object v2, v1, Lkik/core/datatypes/ab;->d:Ljava/lang/String;
 
     .line 1166
-    iget-object v2, v0, Lkik/core/datatypes/ac;->e:Ljava/lang/String;
+    iget-object v2, v0, Lkik/core/datatypes/ab;->e:Ljava/lang/String;
 
-    iput-object v2, v1, Lkik/core/datatypes/ac;->e:Ljava/lang/String;
+    iput-object v2, v1, Lkik/core/datatypes/ab;->e:Ljava/lang/String;
 
     .line 1167
-    iget-object v2, v0, Lkik/core/datatypes/ac;->f:Ljava/lang/String;
+    iget-object v2, v0, Lkik/core/datatypes/ab;->f:Ljava/lang/String;
 
-    iput-object v2, v1, Lkik/core/datatypes/ac;->f:Ljava/lang/String;
+    iput-object v2, v1, Lkik/core/datatypes/ab;->f:Ljava/lang/String;
 
     .line 1168
-    iget-object v2, v0, Lkik/core/datatypes/ac;->g:Ljava/lang/Boolean;
+    iget-object v2, v0, Lkik/core/datatypes/ab;->g:Ljava/lang/Boolean;
 
-    iput-object v2, v1, Lkik/core/datatypes/ac;->g:Ljava/lang/Boolean;
+    iput-object v2, v1, Lkik/core/datatypes/ab;->g:Ljava/lang/Boolean;
 
     .line 1169
-    iget-object v2, v0, Lkik/core/datatypes/ac;->h:Ljava/lang/Boolean;
+    iget-object v2, v0, Lkik/core/datatypes/ab;->h:Ljava/lang/Boolean;
 
-    iput-object v2, v1, Lkik/core/datatypes/ac;->h:Ljava/lang/Boolean;
+    iput-object v2, v1, Lkik/core/datatypes/ab;->h:Ljava/lang/Boolean;
 
     .line 1170
-    iget-object v0, v0, Lkik/core/datatypes/ac;->i:Ljava/lang/Boolean;
+    iget-object v0, v0, Lkik/core/datatypes/ab;->i:Ljava/lang/Boolean;
 
-    iput-object v0, v1, Lkik/core/datatypes/ac;->i:Ljava/lang/Boolean;
+    iput-object v0, v1, Lkik/core/datatypes/ab;->i:Ljava/lang/Boolean;
 
-    .line 75
+    .line 74
     return-object v1
 .end method
 
@@ -1149,19 +1083,19 @@
     .locals 2
 
     .prologue
-    .line 266
+    .line 248
     iget-object v0, p0, Lkik/core/profile/ae;->f:Lcom/kik/events/g;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/kik/events/g;->a(Ljava/lang/Object;)V
 
-    .line 267
-    iget-object v0, p0, Lkik/core/profile/ae;->j:Lcom/kik/events/Promise;
+    .line 249
+    iget-object v0, p0, Lkik/core/profile/ae;->i:Lcom/kik/events/Promise;
 
     invoke-virtual {v0}, Lcom/kik/events/Promise;->f()V
 
-    .line 268
+    .line 250
     return-void
 .end method
 
@@ -1169,7 +1103,7 @@
     .locals 3
 
     .prologue
-    .line 107
+    .line 89
     iget-object v0, p0, Lkik/core/profile/ae;->d:Lkik/core/interfaces/ICommunication;
 
     new-instance v1, Lkik/core/net/outgoing/UserProfileRequest;
@@ -1188,7 +1122,7 @@
 
     invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
 
-    .line 116
+    .line 98
     return-void
 .end method
 
@@ -1196,14 +1130,14 @@
     .locals 2
 
     .prologue
-    .line 121
-    iget-object v0, p0, Lkik/core/profile/ae;->j:Lcom/kik/events/Promise;
+    .line 103
+    iget-object v0, p0, Lkik/core/profile/ae;->i:Lcom/kik/events/Promise;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Ljava/lang/Object;)V
 
-    .line 122
+    .line 104
     return-void
 .end method
 
@@ -1220,8 +1154,8 @@
     .end annotation
 
     .prologue
-    .line 127
-    iget-object v0, p0, Lkik/core/profile/ae;->j:Lcom/kik/events/Promise;
+    .line 109
+    iget-object v0, p0, Lkik/core/profile/ae;->i:Lcom/kik/events/Promise;
 
     return-object v0
 .end method
@@ -1230,25 +1164,25 @@
     .locals 1
 
     .prologue
-    .line 285
-    iget-object v0, p0, Lkik/core/profile/ae;->c:Lkik/core/datatypes/ac;
+    .line 266
+    iget-object v0, p0, Lkik/core/profile/ae;->c:Lkik/core/datatypes/ab;
 
-    invoke-virtual {v0}, Lkik/core/datatypes/ac;->a()Z
+    invoke-virtual {v0}, Lkik/core/datatypes/ab;->a()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 286
+    .line 267
     invoke-virtual {p0}, Lkik/core/profile/ae;->f()V
 
-    .line 289
+    .line 270
     :cond_0
     iget-object v0, p0, Lkik/core/profile/ae;->a:Lcom/kik/events/d;
 
     invoke-virtual {v0}, Lcom/kik/events/d;->a()V
 
-    .line 290
+    .line 271
     return-void
 .end method
 
@@ -1256,10 +1190,10 @@
     .locals 1
 
     .prologue
-    .line 153
-    iget-object v0, p0, Lkik/core/profile/ae;->e:Lkik/core/interfaces/ae;
+    .line 135
+    iget-object v0, p0, Lkik/core/profile/ae;->e:Lkik/core/interfaces/ad;
 
-    invoke-interface {v0}, Lkik/core/interfaces/ae;->s()Z
+    invoke-interface {v0}, Lkik/core/interfaces/ad;->s()Z
 
     move-result v0
 
@@ -1270,14 +1204,14 @@
     .locals 1
 
     .prologue
-    .line 159
-    iget-object v0, p0, Lkik/core/profile/ae;->c:Lkik/core/datatypes/ac;
+    .line 141
+    iget-object v0, p0, Lkik/core/profile/ae;->c:Lkik/core/datatypes/ab;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lkik/core/profile/ae;->c:Lkik/core/datatypes/ac;
+    iget-object v0, p0, Lkik/core/profile/ae;->c:Lkik/core/datatypes/ab;
 
-    iget-object v0, v0, Lkik/core/datatypes/ac;->f:Ljava/lang/String;
+    iget-object v0, v0, Lkik/core/datatypes/ab;->f:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
@@ -1290,43 +1224,4 @@
     const/4 v0, 0x0
 
     goto :goto_0
-.end method
-
-.method public final l()Z
-    .locals 1
-
-    .prologue
-    .line 87
-    iget-object v0, p0, Lkik/core/profile/ae;->c:Lkik/core/datatypes/ac;
-
-    iget-object v0, v0, Lkik/core/datatypes/ac;->b:Ljava/lang/Boolean;
-
-    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public final m()Lcom/kik/events/c;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lcom/kik/events/c",
-            "<",
-            "Ljava/lang/Void;",
-            ">;"
-        }
-    .end annotation
-
-    .prologue
-    .line 81
-    iget-object v0, p0, Lkik/core/profile/ae;->i:Lcom/kik/events/g;
-
-    invoke-virtual {v0}, Lcom/kik/events/g;->a()Lcom/kik/events/c;
-
-    move-result-object v0
-
-    return-object v0
 .end method
