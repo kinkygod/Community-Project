@@ -22,6 +22,6 @@
             <ImageView android:id="@id/conversation_mute_icon" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_conversation_muted" android:scaleType="centerCrop" />
         </LinearLayout>
     </LinearLayout>
-    <include android:id="@id/conversation_divider_short" android:layout_width="fill_parent" android:layout_height="@dimen/list_divider_line_height" android:layout_marginLeft="84.0dip" android:layout_alignParentBottom="true" layout="@layout/list_divider" />
-    <include android:id="@id/conversation_divider_long" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/list_divider_line_height" android:layout_alignParentBottom="true" layout="@layout/list_divider" />
+    <include android:id="@id/conversation_divider_short" android:layout_width="fill_parent" android:layout_height="@dimen/list_divider_line_height" android:layout_alignParentBottom="true" layout="@layout/list_divider" />
+    <include android:id="@id/conversation_divider_long" android:layout_width="fill_parent" android:layout_height="@dimen/list_divider_line_height" android:layout_alignParentBottom="true" layout="@layout/list_divider" />
 </RelativeLayout>

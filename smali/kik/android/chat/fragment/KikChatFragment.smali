@@ -1557,6 +1557,12 @@
     invoke-interface {v0, v3, v4}, Lkik/core/interfaces/b;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
+	
+	const-string v0, "kinky.voice"
+
+    invoke-static {v0}, Lkinky/values;->getBoolean(Ljava/lang/String;)Z
+
+    move-result v0
 
     .line 10224
     if-eqz v0, :cond_1

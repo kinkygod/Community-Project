@@ -537,7 +537,7 @@
 .end method
 
 .method private q()Z
-    .locals 3
+    .locals 8
 
     .prologue
     .line 247
@@ -550,6 +550,20 @@
     invoke-interface {v0, v1, v2}, Lkik/core/interfaces/b;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
+	
+	const-string v6, "kinky.group"
+
+    invoke-static {v6}, Lkinky/values;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v7
+
+    .line 69
+    .local v0, "value":Ljava/lang/String;
+    const-string v6, "inline"
+
+    invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
 
     if-nez v0, :cond_0
 
@@ -560,6 +574,20 @@
     const-string v2, "list"
 
     invoke-interface {v0, v1, v2}, Lkik/core/interfaces/b;->a(Ljava/lang/String;Ljava/lang/String;)Z
+
+    move-result v0
+	
+	const-string v6, "kinky.group"
+
+    invoke-static {v6}, Lkinky/values;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v7
+
+    .line 69
+    .local v0, "value":Ljava/lang/String;
+    const-string v6, "list"
+
+    invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -885,7 +913,7 @@
 .end method
 
 .method public final o()Lrx/d;
-    .locals 3
+    .locals 8
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -905,6 +933,20 @@
     const-string v2, "inline"
 
     invoke-interface {v0, v1, v2}, Lkik/core/interfaces/b;->a(Ljava/lang/String;Ljava/lang/String;)Z
+
+    move-result v0
+	
+	const-string v6, "kinky.group"
+
+    invoke-static {v6}, Lkinky/values;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v7
+
+    .line 69
+    .local v0, "value":Ljava/lang/String;
+    const-string v6, "inline"
+
+    invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -944,7 +986,7 @@
 .end method
 
 .method public final p()Lrx/d;
-    .locals 3
+    .locals 8
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -964,6 +1006,20 @@
     const-string v2, "inline"
 
     invoke-interface {v0, v1, v2}, Lkik/core/interfaces/b;->a(Ljava/lang/String;Ljava/lang/String;)Z
+
+    move-result v0
+	
+	const-string v6, "kinky.group"
+
+    invoke-static {v6}, Lkinky/values;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v7
+
+    .line 69
+    .local v0, "value":Ljava/lang/String;
+    const-string v6, "inline"
+
+    invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 

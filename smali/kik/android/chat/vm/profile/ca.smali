@@ -702,7 +702,7 @@
 .end method
 
 .method static synthetic e(Lkik/android/chat/vm/profile/ca;Lcom/kik/core/domain/a/a/c;)V
-    .locals 5
+    .locals 8
 
     .prologue
     const/4 v0, 0x1
@@ -822,6 +822,20 @@
     const-string v4, "list"
 
     invoke-interface {v2, v3, v4}, Lkik/core/interfaces/b;->a(Ljava/lang/String;Ljava/lang/String;)Z
+
+    move-result v2
+	
+	const-string v6, "kinky.group"
+
+    invoke-static {v6}, Lkinky/values;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v7
+
+    .line 69
+    .local v0, "value":Ljava/lang/String;
+    const-string v6, "list"
+
+    invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
@@ -1253,7 +1267,7 @@
 .end method
 
 .method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
-    .locals 4
+    .locals 8
 
     .prologue
     const/4 v1, 0x1
@@ -1329,6 +1343,20 @@
     invoke-interface {v0, v2, v3}, Lkik/core/interfaces/b;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
+	
+	const-string v6, "kinky.group"
+
+    invoke-static {v6}, Lkinky/values;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v7
+
+    .line 69
+    .local v0, "value":Ljava/lang/String;
+    const-string v6, "list"
+
+    invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
 
     if-nez v0, :cond_0
 
@@ -1339,6 +1367,20 @@
     const-string v3, "inline"
 
     invoke-interface {v0, v2, v3}, Lkik/core/interfaces/b;->a(Ljava/lang/String;Ljava/lang/String;)Z
+
+    move-result v0
+	
+	const-string v6, "kinky.group"
+
+    invoke-static {v6}, Lkinky/values;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v7
+
+    .line 69
+    .local v0, "value":Ljava/lang/String;
+    const-string v6, "inline"
+
+    invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 

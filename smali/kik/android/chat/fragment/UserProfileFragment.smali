@@ -1330,6 +1330,12 @@
     invoke-interface {v3, v4, v5}, Lkik/core/interfaces/b;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v3
+	
+	const-string v3, "kinky.bios"
+
+    invoke-static {v3}, Lkinky/values;->getBoolean(Ljava/lang/String;)Z
+
+    move-result v3
 
     if-eqz v3, :cond_3
 
@@ -1419,6 +1425,24 @@
     .prologue
     .line 453
     const v0, 0x7f070018
+
+    invoke-direct {p0, v0}, Lkik/android/chat/fragment/UserProfileFragment;->a(I)V
+
+    .line 454
+    return-void
+.end method
+
+.method public onModsTapped()V
+    .locals 1
+    .annotation build Lbutterknife/OnClick;
+        value = {
+            0x7f10042c
+        }
+    .end annotation
+
+    .prologue
+    .line 453
+    const v0, 0x7f070023
 
     invoke-direct {p0, v0}, Lkik/android/chat/fragment/UserProfileFragment;->a(I)V
 

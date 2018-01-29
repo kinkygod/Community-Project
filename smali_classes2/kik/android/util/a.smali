@@ -35,16 +35,8 @@
 
     .prologue
     .line 21
-    if-nez p0, :cond_0
+    if-eqz p0, :cond_1
 
-    .line 22
-    const/4 v0, 0x0
-
-    .line 24
-    :goto_0
-    return v0
-
-    :cond_0
     const-string v0, "multiple_photos"
 
     const-string v1, "multiple_photos"
@@ -53,6 +45,25 @@
 
     move-result v0
 
+    if-nez v0, :cond_0
+
+    const-string v0, "kinky.photo"
+
+    invoke-static {v0}, Lkinky/values;->getBoolean(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :goto_0
+    return v0
+
+    :cond_1
+    const/4 v0, 0x0
+
     goto :goto_0
 .end method
 
@@ -60,17 +71,9 @@
     .locals 3
 
     .prologue
-    const/4 v0, 0x0
-
     .line 29
-    if-nez p0, :cond_1
+    if-eqz p0, :cond_1
 
-    .line 33
-    :cond_0
-    :goto_0
-    return v0
-
-    :cond_1
     const-string v1, "profile_daysonkik_android"
 
     const-string v2, "show"
@@ -79,7 +82,15 @@
 
     move-result v1
 
-    if-eqz v1, :cond_0
+    if-nez v1, :cond_0
+
+    const-string v1, "kinky.day"
+
+    invoke-static {v1}, Lkinky/values;->getBoolean(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
 
     const-string v1, "profile-bios"
 
@@ -89,9 +100,24 @@
 
     move-result v1
 
-    if-nez v1, :cond_0
+    if-eqz v1, :cond_0
 
+    const-string v1, "kinky.bios"
+
+    invoke-static {v1}, Lkinky/values;->getBoolean(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_1
+
+    :cond_0
     const/4 v0, 0x1
+
+    :goto_0
+    return v0
+
+    :cond_1
+    const/4 v0, 0x0
 
     goto :goto_0
 .end method

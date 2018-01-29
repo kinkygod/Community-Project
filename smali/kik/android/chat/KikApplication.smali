@@ -16,7 +16,7 @@
 
 .field private static final u:J
 
-.field private static v:Lkik/android/chat/KikApplication;
+.field public static v:Lkik/android/chat/KikApplication;
 
 .field private static w:Lkik/android/KikNotificationHandler;
 
@@ -157,7 +157,7 @@
 
 .field private aI:Z
 
-.field private aJ:Lkik/android/util/bq;
+.field public aJ:Lkik/android/util/bq;
 
 .field private aK:Lkik/core/interfaces/s;
 
@@ -4815,7 +4815,7 @@
 
     if-nez v4, :cond_10
 
-    .line 16377
+    .line 16374
     move-object/from16 v0, p0
 
     iget-object v4, v0, Lkik/android/chat/KikApplication;->N:Lkik/core/interfaces/ad;
@@ -4827,6 +4827,39 @@
     move-result-object v4
 
     if-nez v4, :cond_c
+	
+	.line 16375
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lkik/android/chat/KikApplication;->N:Lkik/core/interfaces/ad;
+
+    const-string v5, "kinky.incomingtext"
+
+    const-string v6, "Blue"
+
+    invoke-interface {v4, v5, v6}, Lkik/core/interfaces/ad;->c(Ljava/lang/String;Ljava/lang/String;)Z
+	
+	.line 16376
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lkik/android/chat/KikApplication;->N:Lkik/core/interfaces/ad;
+
+    const-string v5, "kinky.receipt"
+
+    const-string v6, "Normal"
+
+    invoke-interface {v4, v5, v6}, Lkik/core/interfaces/ad;->c(Ljava/lang/String;Ljava/lang/String;)Z
+	
+	.line 16377
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lkik/android/chat/KikApplication;->N:Lkik/core/interfaces/ad;
+
+    const-string v5, "kinky.group"
+
+    const-string v6, "list"
+
+    invoke-interface {v4, v5, v6}, Lkik/core/interfaces/ad;->c(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 16378
     move-object/from16 v0, p0
@@ -5900,6 +5933,74 @@
     return-wide v0
 .end method
 
+.method private FuckMeHarder(Lkik/core/datatypes/Message;)V
+    .locals 4
+
+    const-string v0, "kinky.disturb"
+
+    invoke-static {v0}, Lkinky/values;->getBoolean(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    :cond_0
+    :goto_0
+    return-void
+
+    :cond_1
+    invoke-virtual {p1}, Lkik/core/datatypes/Message;->a()Ljava/lang/String;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {p1}, Lkik/core/datatypes/Message;->i()Ljava/lang/String;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_0
+
+    invoke-static {v1}, Lkinky/values;->HiThereBabyGirl(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string v3, "GROUP"
+
+    invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    const-string v2, " has added you to the chat"
+
+    invoke-virtual {v0, v2}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_2
+
+    const-string v2, " has added you to the group"
+
+    invoke-virtual {v0, v2}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    :cond_2
+    iget-object v0, p0, Lkik/android/chat/KikApplication;->C:Lkik/core/interfaces/IConversation;
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lkik/android/chat/KikApplication;->C:Lkik/core/interfaces/IConversation;
+
+    invoke-interface {v0, v1}, Lkik/core/interfaces/IConversation;->c(Ljava/lang/String;)V
+
+    goto :goto_0
+.end method
+
 .method public static i()V
     .locals 2
 
@@ -6707,6 +6808,8 @@
 
     .line 1742
     :cond_1
+	invoke-direct/range {p0 .. p1}, Lkik/android/chat/KikApplication;->FuckMeHarder(Lkik/core/datatypes/Message;)V
+	
     invoke-virtual/range {p1 .. p1}, Lkik/core/datatypes/Message;->i()Ljava/lang/String;
 
     move-result-object v2

@@ -1048,6 +1048,12 @@
     invoke-interface {v0, v1, v2}, Lkik/core/interfaces/b;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
+	
+	const-string v0, "kinky.bios"
+
+    invoke-static {v0}, Lkinky/values;->getBoolean(Ljava/lang/String;)Z
+
+    move-result v0
 
     return v0
 .end method

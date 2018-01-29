@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="Modded Settings" android:key="@string/title_chat_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kik="http://schemas.android.com/apk/res-auto">
+	<kinky.Empty android:title="Chat" />
+	<kinky.Toggle android:title="Disable Typing" android:summary="other users will not be able to see when you are typing" android:key="kinky.typing" />
+	<kinky.List android:entries="@array/kinky_recipients" android:title="Read Receipts" android:key="kinky.receipt" android:summary="how your messages are perceived" android:entryValues="@array/kinky_recipients" />
+	<kinky.List android:entries="@array/kinky_colors" android:title="Change Incoming Text Color" android:key="kinky.incomingtext" android:summary="how your incoming messages text color appears" android:entryValues="@array/kinky_colors" />
+	<kinky.Toggle android:title="Voice Messages" android:summary="allows you to send voice messages" android:key="kinky.voice" />
+	<kinky.Toggle android:title="Gif Favorites" android:summary="enables favoriting Gifs" android:key="kinky.gif" />
+	<kinky.Toggle android:title="Disable Vid Chat" android:summary="disables video chatting toggle" android:key="kinky.vid" />
+	<kinky.Toggle android:title="Multi Photos" android:summary="allows you to send groups of photos from gallery" android:key="kinky.photo" />
+	<kinky.Empty android:title="Group Chat" />
+	<kinky.List android:entries="@array/group_des" android:title="Group Descriptions" android:key="kinky.group" android:summary="same thing as bios but for groups" android:entryValues="@array/group_des" />
+	<kinky.Toggle android:title="Enable Admin Badges" android:summary="puts badges on admin profile pictures in chat" android:key="kinky.admin" />
+	<kinky.Toggle android:title="Blur Media" android:summary="gallery pictures sent in groups will be blurred" android:key="kinky.blur" />
+	<kinky.Empty android:title="Profile" />
+	<kinky.Toggle android:title="Days On Kik" android:summary="allows you to view how many days other users have been on kik" android:key="kinky.day" />
+	<kinky.Toggle android:title="Enable Bios" android:summary="enables editing your bio and viewing other user bios" android:key="kinky.bios" />
+	<kinky.Empty android:title="Other" />
+	<kinky.Toggle android:title="No Pull" android:summary="disables pull to search in conversations list" android:key="kinky.pull" />
+	<kinky.Toggle android:title="Privacy Mode" android:summary="hides conversations screen messages" android:key="kinky.private" />
+	<kinky.Toggle android:title="Do Not Disturb" android:summary="auto leaves groups you get added to" android:key="kinky.disturb" />
+	<kinky.Toggle android:title="Enable New Chat Reporting" android:summary="allows you to report new chats" android:key="report.kinky" />
+</PreferenceScreen>
